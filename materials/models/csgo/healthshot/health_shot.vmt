@@ -1,0 +1,12 @@
+"vertexlitgeneric"
+{
+	"$basetexture"               "models/csgo/healthshot/health_shot"
+	"$bumpmap"                   "effects/flat_normal"
+	"$phongboost"                "1"
+	"$phongexponent"             "10"
+	"$phongfresnelranges"        "[1 4 30]"
+	"$basemapluminancephongmask" "1"
+	"$halflambert"               "1"
+	"$phong"                     "0"
+	"gpu>=2?$phong"              "1"
+}

@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/csgo/flash/m84_flashbang_grenade"
+	$bumpmap "null-bumpmap"
+	
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongfresnelranges" "[.83 .83 1]"
+	"$phongboost" ".6"
+	"$phongalbedoboost" "10"
+
+	"$phongalbedotint" "1"
+
+	"$phongexponenttexture" "models/csgo/flash/m84_flashbang_grenade_exponent"
+
+	"$phongdisablehalflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.01 .01 .01]"
+
+	"$GRADIENTTEXTURE" "models/csgo/flash/m84_flashbang_gradiant"
+}

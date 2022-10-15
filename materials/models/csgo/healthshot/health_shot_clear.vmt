@@ -1,0 +1,13 @@
+"vertexlitgeneric"
+{
+	"$basetexture"            "models/csgo/healthshot/health_shot_clear"
+	"$translucent"            "1"
+	"$bumpmap"                "dev/dev_normal"
+	"$phong"                  "1"
+	"$phongboost"             "50"
+	"$phongexponent"          "200"
+	"$phongfresnelranges"     "[.1 0.5 2]"
+	"$envmap"                 "env_cubemap"
+	"$envmapfresnel"          "1"
+	"$envmapfresnelminmaxexp" "[2 5 .4]"
+}

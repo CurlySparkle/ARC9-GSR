@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/csgo/decoy/decoy_grenade"
+	$bumpmap "null-bumpmap"
+	
+	"$basemapalphaphongmask" "1"
+	"$phong" "1"
+	"$phongfresnelranges" "[.83 .83 1]"
+	"$phongboost" ".6"
+	"$phongalbedoboost" "10"
+
+	"$phongalbedotint" "1"
+
+	"$phongexponenttexture" "models/csgo/decoy/decoy_grenade_exponent"
+
+	"$phongdisablehalflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.01 .01 .01]"
+}

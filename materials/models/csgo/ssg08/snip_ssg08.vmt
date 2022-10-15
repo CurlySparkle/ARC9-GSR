@@ -1,0 +1,23 @@
+
+VertexLitGeneric
+{
+	$baseTexture  "models/csgo/ssg08/snip_ssg08"
+	$bumpmap  "models/csgo/ssg08/snip_ssg08_n"
+
+	$phong  "1"
+	$phongboost  "4"
+	$phongalbedoboost  "60"
+	$phongfresnelranges  "[.8 .8 1]"
+//	$phongexponent  12
+	$phongexponenttexture  "models/csgo/ssg08/snip_ssg08_exponent"
+
+	$basemapalphaphongmask  "1"
+	
+	$envmap  "env_cubemap"
+	$envmapfresnel  "1"
+	$envmaptint  		"[.2 .2 .2]"
+
+	$phongalbedotint  "1"
+	$phongdisablehalflambert  "1"
+}
+

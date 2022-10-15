@@ -48,11 +48,6 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.SpreadAddMove = 0.08
-SWEP.SpreadAddMidAir = 0
-SWEP.SpreadAddHipFire = 0.01
-SWEP.SpreadAddCrouch = -0.1
-
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 33 -- Damage done at point blank range
@@ -88,14 +83,6 @@ SWEP.Crosshair = true
 
 SWEP.RPM = 666
 
--- Works different to ArcCW
-
--- -1: Automatic
--- 0: Safe. Don't use this for safety.
--- 1: Semi.
--- 2: Two-round burst.
--- 3: Three-round burst.
--- n: n-round burst.
 SWEP.Firemodes = {
     {
         Mode = -1,
@@ -149,6 +136,11 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+
+SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMidAir = 0
+SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
 
@@ -242,6 +234,11 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineSounds = "weapon.ImpactSoft" -- Table of sounds a dropped magazine should play.
+SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
+SWEP.DropMagazineTime = 0.35
+
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.m4a4.Fire"
@@ -270,14 +267,28 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         HideBoneIndex = 1,
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
+        },
     },
     ["reload_empty"] = {
         Source = "reload",
         HideBoneIndex = 1,
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
+			{s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 57 / 30},
+        },
     },
     ["ready"] = {
         Source = "draw",
         HideBoneIndex = 1,
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
+			{s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 17 / 30},
+        },
     },
     ["draw"] = {
         Source = "draw_short",
@@ -286,6 +297,9 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         HideBoneIndex = 1,
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0 / 30},
+        },
     },
     ["idle"] = {
         Source = "idle",

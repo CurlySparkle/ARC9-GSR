@@ -1,0 +1,22 @@
+VertexLitGeneric
+{
+	$basetexture "models/csgo/famas/rif_famas"
+	$bumpmap "null-bumpmap"
+	
+	"$phong" "1"
+	"$phongboost" "7"
+	"$phongalbedoboost" "40"
+	"$phongfresnelranges" "[.8 .8 1]"
+//	"$phongexponent" 12
+	"$phongexponenttexture" "models/csgo/famas/rif_famas_exponent"
+
+	"$basemapalphaphongmask" "1"
+	
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.3 .3 .3]"
+
+	"$phongalbedotint" "1"
+	"$phongdisablehalflambert" "1"
+}
+

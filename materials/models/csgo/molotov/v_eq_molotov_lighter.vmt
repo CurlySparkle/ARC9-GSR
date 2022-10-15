@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/csgo/molotov/v_eq_molotov_lighter"
+	$bumpmap "null-bumpmap"
+	
+  	"$phong" "1"
+    "$phongboost" "5"
+
+	"$phongexponent" "120"
+    "$phongfresnelranges" "[.1 .4 1]"
+		
+	"$phongexponenttexture" "models/csgo/molotov/v_eq_molotov_lighter_ref"
+	
+	"$basemapalphaphongmask" "1"
+	
+     
+	//"$basealphaenvmapmask" "1"
+
+
+   //"$envmap" "env_cubemap"
+   //"$envmapfresnel" "1"
+   //"$envmapFresnelMinMaxExp" "[0 5 .4]"
+   //"$envmaptint" 		"[.5 .5 .5]"
+   
+   //"$phongalbedotint" "1"
+
+}
+

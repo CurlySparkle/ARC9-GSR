@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	$baseTexture "models/csgo/shared/scope"
+	$translucent "1"
+	$alpha "0"
+}

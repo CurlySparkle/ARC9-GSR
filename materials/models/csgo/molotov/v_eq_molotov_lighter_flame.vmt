@@ -1,0 +1,9 @@
+"UnLitGeneric"
+{
+	$basetexture "models/csgo/molotov/v_eq_molotov_bottle"
+	$bumpmap "null-bumpmap"
+	"$translucent" "1"
+
+	$model  1
+
+}

@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/csgo/frag/m67_grenade_01"
+	$bumpmap "null-bumpmap"
+	
+	"$phong" "1"
+	"$phongboost" "1.25"
+	"$phongfresnelranges" "[ .6 .8 1]"
+	"$phongexponent" 6
+
+	"$basemapalphaphongmask" "1"
+
+	"$phongdisablehalflambert" "1"
+}

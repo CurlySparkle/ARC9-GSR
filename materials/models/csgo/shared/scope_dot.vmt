@@ -1,0 +1,16 @@
+UnlitGeneric
+{
+	$basetexture "models/csgo/shared/scope_dot_white"
+	
+	$translucent 1
+	
+	$color2 "[0 .5 0]"
+	
+	Proxies
+	{
+		TFAReticuleColor
+		{
+			resultVar $color2
+		}
+	}
+}

@@ -1,0 +1,28 @@
+VertexLitGeneric
+{
+	$basetexture "models/csgo/cz75/pist_cz_75"
+	$bumpmap "null-bumpmap"
+	
+	"$phongalbedotint" "1"
+	"$phongdisablehalflambert" "1"
+
+	"$phongexponenttexture" "models/csgo/cz75/pist_cz_75_exponent"
+"$phongalbedoboost" "100"
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongfresnelranges" "[.8 .8 1]"
+
+	"$phongcolortint" "[.1 .1 .6]"
+	
+	 
+	"$basemapalphaphongmask" "1"
+
+	
+	"$envmap" "env_cubemap"
+ 
+	"$envmapfresnel" "1"
+	
+	"$envmaptint" 		"[.5 .5 .5]"
+}
+
+

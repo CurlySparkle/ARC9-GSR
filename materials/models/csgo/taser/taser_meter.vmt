@@ -1,0 +1,10 @@
+vertexlitgeneric
+{
+	"$basetexture" "models/csgo/taser/taser_meter"
+	"proxies"
+	{
+		"tasermeter"
+		{
+		}
+	}
+}
