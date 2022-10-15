@@ -35,8 +35,8 @@ SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart,
 
 end
 
-SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
---SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_rif_ak47.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
 SWEP.Slot = 2
 
@@ -48,14 +48,9 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.SpreadAddMove = 0.08
-SWEP.SpreadAddMidAir = 0
-SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadAddCrouch = -0.1
-
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 33 -- Damage done at point blank range
+SWEP.DamageMax = 36 -- Damage done at point blank range
 SWEP.DamageMin = 20 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -86,43 +81,18 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 666
+SWEP.RPM = 600
 
--- Works different to ArcCW
-
--- -1: Automatic
--- 0: Safe. Don't use this for safety.
--- 1: Semi.
--- 2: Two-round burst.
--- 3: Three-round burst.
--- n: n-round burst.
 SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
     }
-    -- {
-        -- Mode = -1,
-        -- PrintName = "SIL",
-        -- Silencer = true,
-        -- Hook_TranslateAnimation = function(swep, anim)
-            -- return anim .. "_silenced"
-        -- end,
-        -- RecoilMult = 0.8,
-        -- SpreadMultSights = 0.75,
-        -- DamageMaxMult = 0.9,
-        -- DamageMinMult = 0.9,
-        -- ShootVolumeMult = 0.8,
-        -- RPM = 666
-    -- }
-    -- {
-    --     Mode = 1
-    -- }
 }
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -140,7 +110,7 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultCrouch = 0.8
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -150,29 +120,20 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
+SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMidAir = 0
+SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddCrouch = -0.05
+
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
-
-SWEP.FreeAimRadiusSights = 0
-
 SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
-
--- SWEP.SpeedMult = 0.95
--- SWEP.SpeedMultSights = 0.75
--- SWEP.SpeedMultShooting = 0.7
--- SWEP.SpeedMultMelee = 0.75
--- SWEP.SpeedMultCrouch = 1
--- SWEP.SpeedMultBlindFire = 1
 
 -------------------------- MELEE
 
@@ -200,7 +161,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -3, 0)
+SWEP.SprintPos = Vector(0, -3, -0.3)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.ActivePos = Vector(0, 0, 0)
@@ -230,7 +191,6 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
---SWEP.MuzzleParticleSilenced = "muzzleflash_suppressed"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -242,94 +202,75 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineSounds = "weapon.ImpactSoft" -- Table of sounds a dropped magazine should play.
+SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
+SWEP.DropMagazineTime = 0.35
+
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "CSGO.ak47.Fire"
-SWEP.ShootSoundSilenced = "weapons/m4a1/m4a1-1.wav"
+SWEP.ShootSound = "CSGO.AK47.Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {
-    "v_weapon.m4_Silencer"
 }
 
 SWEP.HideBonesSilenced = {}
 
 SWEP.ReloadHideBoneTables = {
-    [1] = {"v_weapon.m4_Silencer"}
 }
 
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        HideBoneIndex = 1,
     },
     ["reload"] = {
         Source = "reload_short",
-        HideBoneIndex = 1,
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
+        },
     },
     ["reload_empty"] = {
         Source = "reload",
-        HideBoneIndex = 1,
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
+			{s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+        },
     },
     ["ready"] = {
         Source = "draw",
-        HideBoneIndex = 1,
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0 / 30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11 / 30},
+        },
     },
     ["draw"] = {
         Source = "draw_short",
-        HideBoneIndex = 1,
     },
     ["holster"] = {
         Source = "holster",
-        HideBoneIndex = 1,
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0 / 30},
+        },
     },
     ["idle"] = {
         Source = "idle",
-        HideBoneIndex = 1,
     },
     ["idle_sprint"] = {
         Source = "sprint",
-        HideBoneIndex = 1,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        HideBoneIndex = 1,
 		Time = 0.1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        HideBoneIndex = 1,
 		Time = 0.1,
     },
-    -- ["fire_silenced"] = {
-        -- Source = {"shoot1", "shoot2", "shoot3"},
-        -- -- Source = "idle",
-        -- Mult = 0.5
-    -- },
-    -- ["reload_silenced"] = {
-        -- Source = "reload"
-    -- },
-    -- ["draw_silenced"] = {
-        -- Source = "draw"
-    -- },
-    -- ["holster_silenced"] = {
-        -- Source = "draw",
-        -- Reverse = true
-    -- },
-    -- ["idle_silenced"] = {
-        -- Source = "idle"
-    -- },
-    -- ["firemode_2"] = {
-        -- Source = "detach_silencer",
-        -- HideBoneIndex = 0,
-    -- },
-    -- ["firemode_1"] = {
-        -- Source = "add_silencer"
-    -- },
 }
 
 -------------------------- ATTACHMENTS

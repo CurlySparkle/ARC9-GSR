@@ -68,7 +68,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 6,
     volume = 1.0,
     level = 140,
-    pitch = {90, 115},
+    pitch = 100,
     sound = {
         "^weapons/csgo/ak47/ak47_01.wav",
     }
