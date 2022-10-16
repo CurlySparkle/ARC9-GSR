@@ -56,7 +56,7 @@ SWEP.DamageMin = 20 -- Damage done at maximum range
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 9000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -225,7 +225,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.m4a4.Fire"
-SWEP.ShootSoundSilenced = "weapons/m4a1/m4a1-1.wav"
+SWEP.DistantShootSound = "weapons/csgo/m4a1/m4a1_distant_01.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
@@ -262,9 +262,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 17 / 30},
+            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
+            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
+            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -289,6 +289,14 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 0.1,
+    },
+    ["inspect"] = {
+        Source = "lookat01",
+        EventTable = {
+            { s = "weapons/csgo/movement1.wav", t = 2/30 },
+            { s = "weapons/csgo/movement2.wav", t = 92/30 },
+            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+        },
     },
 }
 

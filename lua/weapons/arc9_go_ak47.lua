@@ -56,7 +56,7 @@ SWEP.DamageMin = 20 -- Damage done at maximum range
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 9000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -120,8 +120,8 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.075
-SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 
@@ -219,6 +219,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.AK47.Fire"
+SWEP.DistantShootSound = "weapons/csgo/ak47/ak47-1-distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -279,6 +280,14 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 0.1,
+    },
+    ["inspect"] = {
+        Source = "lookat01",
+        EventTable = {
+            { s = "weapons/csgo/movement1.wav", t = 2/30 },
+            { s = "weapons/csgo/movement2.wav", t = 92/30 },
+            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+        },
     },
 }
 
