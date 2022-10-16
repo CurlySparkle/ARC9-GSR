@@ -197,9 +197,9 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
 
-SWEP.ShellModel = "models/shells/shell_556.mdl"
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
-SWEP.ShellScale = 1
+SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+SWEP.ShellCorrectAng = Angle(0, 0, 0)
+SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true

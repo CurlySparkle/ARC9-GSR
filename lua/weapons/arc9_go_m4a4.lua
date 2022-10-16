@@ -88,31 +88,17 @@ SWEP.Firemodes = {
         Mode = -1,
         -- add other attachment modifiers
     }
-    -- {
-        -- Mode = -1,
-        -- PrintName = "SIL",
-        -- Silencer = true,
-        -- Hook_TranslateAnimation = function(swep, anim)
-            -- return anim .. "_silenced"
-        -- end,
-        -- RecoilMult = 0.8,
-        -- SpreadMultSights = 0.75,
-        -- DamageMaxMult = 0.9,
-        -- DamageMinMult = 0.9,
-        -- ShootVolumeMult = 0.8,
-        -- RPM = 666
-    -- }
-    -- {
-    --     Mode = 1
-    -- }
 }
 -------------------------- RECOIL
 
 -- General recoil multiplier
 SWEP.Recoil = 0.75
 
+SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
+
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+
 SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -120,10 +106,10 @@ SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -137,8 +123,8 @@ SWEP.Spread = 0.001
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.075
-SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 
@@ -147,24 +133,10 @@ SWEP.SpreadAddCrouch = -0.05
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
-
-SWEP.FreeAimRadiusSights = 0
-
 SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
-
--- SWEP.SpeedMult = 0.95
--- SWEP.SpeedMultSights = 0.75
--- SWEP.SpeedMultShooting = 0.7
--- SWEP.SpeedMultMelee = 0.75
--- SWEP.SpeedMultCrouch = 1
--- SWEP.SpeedMultBlindFire = 1
 
 -------------------------- MELEE
 
@@ -222,7 +194,6 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
---SWEP.MuzzleParticleSilenced = "muzzleflash_suppressed"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -232,9 +203,9 @@ SWEP.NoViewBob = false
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 
-SWEP.ShellModel = "models/shells/shell_556.mdl"
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
-SWEP.ShellScale = 1
+SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+SWEP.ShellCorrectAng = Angle(0, 0, 0)
+SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
@@ -254,23 +225,19 @@ SWEP.ShootVolume = 145
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {
-    "v_weapon.m4_Silencer"
 }
 
 SWEP.HideBonesSilenced = {}
 
 SWEP.ReloadHideBoneTables = {
-    [1] = {"v_weapon.m4_Silencer"}
 }
 
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        HideBoneIndex = 1,
     },
     ["reload"] = {
         Source = "reload_short",
-        HideBoneIndex = 1,
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
@@ -278,7 +245,6 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-        HideBoneIndex = 1,
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
@@ -287,7 +253,6 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
-        HideBoneIndex = 1,
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
             {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
@@ -296,58 +261,27 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw_short",
-        HideBoneIndex = 1,
     },
     ["holster"] = {
         Source = "holster",
-        HideBoneIndex = 1,
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
     ["idle"] = {
         Source = "idle",
-        HideBoneIndex = 1,
     },
     ["idle_sprint"] = {
         Source = "sprint",
-        HideBoneIndex = 1,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        HideBoneIndex = 1,
         Time = 0.1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        HideBoneIndex = 1,
         Time = 0.1,
     },
-    -- ["fire_silenced"] = {
-        -- Source = {"shoot1", "shoot2", "shoot3"},
-        -- -- Source = "idle",
-        -- Mult = 0.5
-    -- },
-    -- ["reload_silenced"] = {
-        -- Source = "reload"
-    -- },
-    -- ["draw_silenced"] = {
-        -- Source = "draw"
-    -- },
-    -- ["holster_silenced"] = {
-        -- Source = "draw",
-        -- Reverse = true
-    -- },
-    -- ["idle_silenced"] = {
-        -- Source = "idle"
-    -- },
-    -- ["firemode_2"] = {
-        -- Source = "detach_silencer",
-        -- HideBoneIndex = 0,
-    -- },
-    -- ["firemode_1"] = {
-        -- Source = "add_silencer"
-    -- },
 }
 
 -------------------------- ATTACHMENTS
