@@ -234,9 +234,10 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
-SWEP.DropMagazineSounds = "weapon.ImpactSoft" -- Table of sounds a dropped magazine should play.
-SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
+SWEP.ShouldDropMag = true
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl"
+SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
+SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS

@@ -1,13 +1,13 @@
 sound.Add( {
-    name = "CSGO.Item.Mags",
+    name = "CSGO.Item.MagDrops",
     channel = CHAN_USER_BASE+1,
     volume = 1.0,
     level = 125,
     pitch = {90, 115},
     sound = {
-        "^weapons/csgo/movement1.wav",
-		"^weapons/csgo/movement2.wav",
-		"^weapons/csgo/movement3.wav",
+        "~physics/metal/weapon_impact_soft1.wav",
+		"~physics/metal/weapon_impact_soft2.wav",
+		"~physics/metal/weapon_impact_soft3.wav",
     }
 } )
 
@@ -26,7 +26,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.m4a4.Fire",
-    channel = CHAN_WEAPON + 6,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
     pitch = {95, 105},
@@ -40,7 +40,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.m4a1.Fire_Unsil",
-    channel = CHAN_WEAPON + 6,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -51,7 +51,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.m4a1.Fire_Sil",
-    channel = CHAN_WEAPON + 6,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
     pitch = {95, 105},
@@ -65,7 +65,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AK47.Fire",
-    channel = CHAN_WEAPON + 6,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -76,7 +76,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Famas.Fire",
-    channel = CHAN_WEAPON + 6,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
     pitch = 100,
