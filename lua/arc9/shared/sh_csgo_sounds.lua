@@ -43,7 +43,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 6,
     volume = 1.0,
     level = 140,
-    pitch = {90, 115},
+    pitch = {97,103},
     sound = {
         "^weapons/csgo/m4a1/m4a1_silencer_01.wav",
     }
@@ -68,8 +68,22 @@ sound.Add( {
     channel = CHAN_WEAPON + 6,
     volume = 1.0,
     level = 140,
-    pitch = 100,
+    pitch = {97,103},
     sound = {
         "^weapons/csgo/ak47/ak47_01.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Famas.Fire",
+    channel = CHAN_WEAPON + 6,
+    volume = 1.0,
+    level = 140,
+    pitch = 100,
+    sound = {
+        "^weapons/csgo/famas/famas_01.wav",
+		"^weapons/csgo/famas/famas_02.wav",
+		"^weapons/csgo/famas/famas_03.wav",
+		"^weapons/csgo/famas/famas_04.wav",
     }
 } )
