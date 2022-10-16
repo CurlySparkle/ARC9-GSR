@@ -100,16 +100,16 @@ SWEP.PostBurstDelay = 0.15
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 0.6
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -118,19 +118,19 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.8
+SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0.001
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.05
-SWEP.SpreadAddMidAir = 0
-SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddMove = 0.075
+SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -162,8 +162,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.2, -10, 0.5),
-    Ang = Angle(0, 0, -3),
+    Pos = Vector(-6.3, -10, 0.9),
+    Ang = Angle(0, -0.05, -3),
     Magnification = 1.25,
 }
 
@@ -239,7 +239,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
             {s = "weapons/csgo/famas/famas_clipin.wav", t = 42 / 30},
-			{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
+            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
         },
     },
     ["reload_empty"] = {
@@ -247,9 +247,9 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
             {s = "weapons/csgo/famas/famas_clipin.wav", t = 42 / 30},
-			{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
-			{s = "weapons/csgo/famas/famas_boltback.wav", t = 76 / 30},
-			{s = "weapons/csgo/famas/famas_boltforward.wav", t = 78 / 30},
+            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
+            {s = "weapons/csgo/famas/famas_boltback.wav", t = 76 / 30},
+            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 78 / 30},
         },
     },
     ["ready"] = {
@@ -257,7 +257,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/famas/famas_draw.wav", t = 0 / 30},
             {s = "weapons/csgo/famas/famas_boltback.wav", t = 9 / 30},
-			{s = "weapons/csgo/famas/famas_boltforward.wav", t = 12 / 30},
+            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 12 / 30},
         },
     },
     ["draw"] = {
@@ -277,11 +277,11 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-		Time = 0.1,
+        Time = 0.1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-		Time = 0.1,
+        Time = 0.1,
     },
 }
 
