@@ -109,11 +109,11 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0.75
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.25 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -133,13 +133,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0.001
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.05
-SWEP.SpreadAddMidAir = 0
-SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddMove = 0.075
+SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -185,8 +185,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.2, -10, 0.5),
-    Ang = Angle(0, 0, -3),
+    Pos = Vector(-5.21, -10, 0.575),
+    Ang = Angle(-0.05, -0.1, -3),
     Magnification = 1.25,
 }
 
@@ -228,6 +228,9 @@ SWEP.ProceduralViewQCA = 1
 
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
+
+SWEP.ShouldDropMag = true
+SWEP.ShouldDropMagEmpty = true
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
@@ -279,7 +282,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
-			{s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 57 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 57 / 30},
         },
     },
     ["ready"] = {
@@ -288,7 +291,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
             {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
-			{s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 17 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -313,12 +316,12 @@ SWEP.Animations = {
     ["exit_sprint"] = {
         Source = "sprint_out",
         HideBoneIndex = 1,
-		Time = 0.1,
+        Time = 0.1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
         HideBoneIndex = 1,
-		Time = 0.1,
+        Time = 0.1,
     },
     -- ["fire_silenced"] = {
         -- Source = {"shoot1", "shoot2", "shoot3"},

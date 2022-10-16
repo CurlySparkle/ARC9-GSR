@@ -92,16 +92,16 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 0.9
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -120,9 +120,9 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.05
-SWEP.SpreadAddMidAir = 0
-SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddMove = 0.075
+SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -154,8 +154,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.2, -10, 0.5),
-    Ang = Angle(0, 0, -3),
+    Pos = Vector(-5, -10, 0.4),
+    Ang = Angle(0.1, 1.25, -2.75),
     Magnification = 1.25,
 }
 
@@ -239,7 +239,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
             {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
-			{s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
         },
     },
     ["ready"] = {
@@ -266,11 +266,11 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-		Time = 0.1,
+        Time = 0.1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-		Time = 0.1,
+        Time = 0.1,
     },
 }
 
