@@ -87,3 +87,17 @@ sound.Add( {
 		"^weapons/csgo/famas/famas_04.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.GALIL.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/galilar/galil_01.wav",
+		"^weapons/csgo/galilar/galil_02.wav",
+		"^weapons/csgo/galilar/galil_03.wav",
+		"^weapons/csgo/galilar/galil_04.wav",
+    }
+} )
