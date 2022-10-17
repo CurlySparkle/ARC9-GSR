@@ -2,6 +2,7 @@ game.AddParticles( "particles/cs_weapon_fx.pcf" )
 
 -- FX
 PrecacheParticleSystem("weapon_muzzle_flash_assaultrifle")
+PrecacheParticleSystem("weapon_muzzle_flash_assaultrifle_silenced")
 PrecacheParticleSystem("weapon_muzzle_flash_autoshotgun")
 PrecacheParticleSystem("weapon_muzzle_flash_awp")
 PrecacheParticleSystem("weapon_muzzle_flash_huntingrifle")

@@ -39,7 +39,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.m4a1.Fire_Unsil",
+    name = "CSGO.m4a1.Fire_Sil",
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
@@ -50,11 +50,11 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.m4a1.Fire_Sil",
+    name = "CSGO.m4a1.Fire_UnSil",
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
-    pitch = {95, 105},
+    pitch = {97,103},
     sound = {
         "^weapons/csgo/m4a1/m4a1_us_01.wav",
 		"^weapons/csgo/m4a1/m4a1_us_02.wav",

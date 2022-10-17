@@ -86,32 +86,28 @@ SWEP.RPM = 600
 SWEP.Firemodes = {
     {
         Mode = -1,
+		PrintName = "Silent/AUTO",
         -- add other attachment modifiers
     },
     {
         Mode = -1,
-        PrintName = "Silenced",
+        PrintName = "AUTO",
         Silencer = true,
         Hook_TranslateAnimation = function(swep, anim)
             return anim .. "_silenced"
         end,
-        RecoilMult = 0.8,
-        SpreadMultSights = 0.75,
-        DamageMaxMult = 0.9,
-        DamageMinMult = 0.9,
     }
 }
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.75
+SWEP.Recoil = 0.6
 
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
-
-SWEP.RecoilSide = 0.85 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -164,14 +160,19 @@ SWEP.PostBashTime = 0.5
 -------------------------- TRACERS
 
 SWEP.TracerNum = 1 -- Tracer every X
-SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
+SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
 
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.21, -10, 0.575),
-    Ang = Angle(-0.05, -0.1, -3),
-    Magnification = 1.25,
+    Pos = Vector(-5.4, -9, 0.1),
+    Ang = Angle(0, -0, -1),
+    Midpoint = { -- Where the gun should be at the middle of it's irons
+        Pos = Vector(0, 15, -4),
+        Ang = Angle(0, 0, -45),
+    },
+    Magnification = 1.1,
+    CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -194,9 +195,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(41, 40, 7)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeNoRotate = false
+SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 
@@ -213,8 +214,8 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
-SWEP.MuzzleParticleSilenced = "muzzleflash_suppressed"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle_silenced"
+SWEP.MuzzleParticleSilenced = "weapon_muzzle_flash_assaultrifle"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -230,16 +231,18 @@ SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl"
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a1_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "CSGO.m4a1.Fire_Unsil"
-SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_Sil"
-SWEP.DistantShootSound = "weapons/csgo/m4a1/m4a1_distant_01.wav"
+local path = "weapons/csgo/m4a1/"
+
+SWEP.ShootSound = "CSGO.m4a1.Fire_sil"
+SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_unSil"
+SWEP.DistantShootSound = path .. "m4a1_us_distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
@@ -247,11 +250,15 @@ SWEP.ShootVolume = 145
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {
+    "v_rif_m4a1_s_silencer"
 }
 
-SWEP.HideBonesSilenced = {}
+SWEP.HideBonesSilenced = {
+    "v_rif_m4a1_s_silencer"
+}
 
 SWEP.ReloadHideBoneTables = {
+    [1] = {"v_rif_m4a1_s_silencer"}
 }
 
 SWEP.Animations = {
@@ -261,24 +268,24 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
+            {s = path.."m4a1_clipout.wav", t = 11 / 30},
+            {s = path.."m4a1_clipin.wav", t = 35 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 57 / 30},
+            {s = path.."m4a1_clipout.wav", t = 11 / 30},
+            {s = path.."m4a1_clipin.wav", t = 35 / 30},
+            {s = path.."m4a1_silencer_boltforward.wav", t = 57 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
-            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
-            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 17 / 30},
+            {s = path.."m4a1_draw.wav", t = 0 / 30},
+            {s = path.."m4a1_silencer_boltback.wav", t = 10 / 30},
+            {s = path.."m4a1_silencer_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -306,6 +313,81 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        EventTable = {
+            { s = "weapons/csgo/movement1.wav", t = 2/30 },
+            { s = "weapons/csgo/movement2.wav", t = 92/30 },
+            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+        },
+    },
+    ["firemode_2"] = {
+        Source = "attach",
+    },
+    ["firemode_1"] = {
+        Source = "detach",
+		HideBoneIndex = 0,
+    },
+    ["fire_silenced"] = {
+        Source = {"shoot1", "shoot2", "shoot3"},
+		HideBoneIndex = 1,
+    },
+    ["reload_silenced"] = {
+        Source = "reload_short",
+		HideBoneIndex = 1,
+        EventTable = {
+            {s = path.."m4a1_clipout.wav", t = 11 / 30},
+            {s = path.."m4a1_clipin.wav", t = 35 / 30},
+        },
+    },
+    ["reload_empty_silenced"] = {
+        Source = "reload",
+		HideBoneIndex = 1,
+        EventTable = {
+            {s = path.."m4a1_clipout.wav", t = 11 / 30},
+            {s = path.."m4a1_clipin.wav", t = 35 / 30},
+            {s = path.."m4a1_silencer_boltforward.wav", t = 57 / 30},
+        },
+    },
+    ["ready_silenced"] = {
+        Source = "draw",
+		HideBoneIndex = 1,
+        EventTable = {
+            {s = path.."m4a1_draw.wav", t = 0 / 30},
+            {s = path.."m4a1_silencer_boltback.wav", t = 10 / 30},
+            {s = path.."m4a1_silencer_boltforward.wav", t = 17 / 30},
+        },
+    },
+    ["draw_silenced"] = {
+        Source = "draw_short",
+		HideBoneIndex = 1,
+    },
+    ["holster_silenced"] = {
+        Source = "holster",
+		HideBoneIndex = 1,
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0 / 30},
+        },
+    },
+    ["idle_silenced"] = {
+        Source = "idle",
+		HideBoneIndex = 1,
+    },
+    ["idle_sprint_silenced"] = {
+        Source = "sprint",
+		HideBoneIndex = 1,
+    },
+    ["exit_sprint_silenced"] = {
+        Source = "sprint_out",
+        Time = 0.1,
+		HideBoneIndex = 1,
+    },
+    ["enter_sprint_silenced"] = {
+        Source = "sprint_in",
+        Time = 0.1,
+		HideBoneIndex = 1,
+    },
+    ["inspect_silenced"] = {
+        Source = "lookat01",
+		HideBoneIndex = 1,
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2/30 },
             { s = "weapons/csgo/movement2.wav", t = 92/30 },
