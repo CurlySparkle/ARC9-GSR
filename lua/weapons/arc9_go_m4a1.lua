@@ -86,18 +86,31 @@ SWEP.RPM = 600
 SWEP.Firemodes = {
     {
         Mode = -1,
-		PrintName = "Silent/AUTO",
+        PrintName = "Silent/AUTO",
+        Silencer = true,
         -- add other attachment modifiers
     },
     {
         Mode = -1,
         PrintName = "AUTO",
-        Silencer = true,
-        Hook_TranslateAnimation = function(swep, anim)
-            return anim .. "_silenced"
-        end,
+        Silencer = false,
+        ActivateElements = {"unsil"},
+        -- Hook_TranslateAnimation = function(swep, anim)
+        --     return anim .. "_silenced"
+        -- end,
     }
 }
+
+
+SWEP.Hook_ModifyBodygroups = function(self, data)
+    local vm = data.model
+    local attached = data.elements
+    if attached["unsil"] then
+        vm:SetBodygroup(1,1)
+    else
+        vm:SetBodygroup(1,0)
+    end
+end
 -------------------------- RECOIL
 
 -- General recoil multiplier
@@ -241,8 +254,10 @@ SWEP.DropMagazineTime = 0.35
 
 local path = "weapons/csgo/m4a1/"
 
-SWEP.ShootSound = "CSGO.m4a1.Fire_sil"
-SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_unSil"
+-- SWEP.ShootSound = "CSGO.m4a1.Fire_sil"
+-- SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_unSil"
+SWEP.ShootSound = "CSGO.m4a1.Fire_unSil"
+SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
 SWEP.DistantShootSound = path .. "m4a1_us_distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -269,24 +284,24 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path.."m4a1_clipout.wav", t = 11 / 30},
-            {s = path.."m4a1_clipin.wav", t = 35 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
+            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = path.."m4a1_clipout.wav", t = 11 / 30},
-            {s = path.."m4a1_clipin.wav", t = 35 / 30},
-            {s = path.."m4a1_silencer_boltforward.wav", t = 57 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
+            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 57 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path.."m4a1_draw.wav", t = 0 / 30},
-            {s = path.."m4a1_silencer_boltback.wav", t = 10 / 30},
-            {s = path.."m4a1_silencer_boltforward.wav", t = 17 / 30},
+            {s = path .. "m4a1_draw.wav", t = 0 / 30},
+            {s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -315,9 +330,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
     ["firemode_2"] = {
@@ -325,74 +340,74 @@ SWEP.Animations = {
     },
     ["firemode_1"] = {
         Source = "detach",
-		HideBoneIndex = 0,
+        HideBoneIndex = 0,
     },
     ["fire_silenced"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
     },
     ["reload_silenced"] = {
         Source = "reload_short",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
         EventTable = {
-            {s = path.."m4a1_clipout.wav", t = 11 / 30},
-            {s = path.."m4a1_clipin.wav", t = 35 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
+            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
         },
     },
     ["reload_empty_silenced"] = {
         Source = "reload",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
         EventTable = {
-            {s = path.."m4a1_clipout.wav", t = 11 / 30},
-            {s = path.."m4a1_clipin.wav", t = 35 / 30},
-            {s = path.."m4a1_silencer_boltforward.wav", t = 57 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
+            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 57 / 30},
         },
     },
     ["ready_silenced"] = {
         Source = "draw",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
         EventTable = {
-            {s = path.."m4a1_draw.wav", t = 0 / 30},
-            {s = path.."m4a1_silencer_boltback.wav", t = 10 / 30},
-            {s = path.."m4a1_silencer_boltforward.wav", t = 17 / 30},
+            {s = path .. "m4a1_draw.wav", t = 0 / 30},
+            {s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw_silenced"] = {
         Source = "draw_short",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
     },
     ["holster_silenced"] = {
         Source = "holster",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
     ["idle_silenced"] = {
         Source = "idle",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
     },
     ["idle_sprint_silenced"] = {
         Source = "sprint",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
     },
     ["exit_sprint_silenced"] = {
         Source = "sprint_out",
         Time = 0.1,
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
     },
     ["enter_sprint_silenced"] = {
         Source = "sprint_in",
         Time = 0.1,
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
     },
     ["inspect_silenced"] = {
         Source = "lookat01",
-		HideBoneIndex = 1,
+        HideBoneIndex = 1,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
 }
