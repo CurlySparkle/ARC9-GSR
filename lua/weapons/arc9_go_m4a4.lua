@@ -5,8 +5,8 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
 
-SWEP.PrintName = "M4A1-S"
-SWEP.TrueName = "M4A1-S"
+SWEP.PrintName = "M4A4"
+SWEP.TrueName = "M4A4"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
@@ -35,13 +35,13 @@ SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart,
 
 end
 
-SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1_s.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
@@ -87,18 +87,6 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
-    },
-    {
-        Mode = -1,
-        PrintName = "Silenced",
-        Silencer = true,
-        Hook_TranslateAnimation = function(swep, anim)
-            return anim .. "_silenced"
-        end,
-        RecoilMult = 0.8,
-        SpreadMultSights = 0.75,
-        DamageMaxMult = 0.9,
-        DamageMinMult = 0.9,
     }
 }
 -------------------------- RECOIL
@@ -131,7 +119,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.001
+SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
@@ -164,7 +152,7 @@ SWEP.PostBashTime = 0.5
 -------------------------- TRACERS
 
 SWEP.TracerNum = 1 -- Tracer every X
-SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
+SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if tracer effect supports it. For physical bullets, this is compressed down to 9-bit color.
 
 -------------------------- POSITIONS
 
@@ -214,7 +202,6 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
-SWEP.MuzzleParticleSilenced = "muzzleflash_suppressed"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -237,8 +224,7 @@ SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "CSGO.m4a1.Fire_Unsil"
-SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_Sil"
+SWEP.ShootSound = "CSGO.M4A4.Fire"
 SWEP.DistantShootSound = "weapons/csgo/m4a1/m4a1_distant_01.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
