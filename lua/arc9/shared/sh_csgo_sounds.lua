@@ -38,6 +38,19 @@ sound.Add( {
     }
 } )
 
+sound.Add( {
+    name = "CSGO.SG556.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/sg556/sg556_01.wav",
+		"^weapons/csgo/sg556/sg556_02.wav",
+		"^weapons/csgo/sg556/sg556_03.wav",
+		"^weapons/csgo/sg556/sg556_04.wav",
+    }
+} )
 
 sound.Add( {
     name = "CSGO.m4a4.Fire",

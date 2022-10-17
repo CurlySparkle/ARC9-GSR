@@ -5,15 +5,15 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
 
-SWEP.PrintName = "AUG"
+SWEP.PrintName = "SG 553"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
+    ["Country of Origin"] = "Switzerland",
+    ["Caliber"] = "5.56×45 NATO",
     ["Weight (Loaded)"] = "3.22kg",
     ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
+    ["Muzzle Velocity"] = "2,989 Feet/Second",
     ["Muzzle Energy"] = "1570 Joules"
 }
 
@@ -22,15 +22,15 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire.]]
+SWEP.Description = [[The terrorist-exclusive SG 553 is a premium scoped alternative to the AK-47 for effective long-range engagement.]]
 
-SWEP.ViewModel = "models/weapons/csgo/c_rif_aug.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_rif_sg556.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_sg556.mdl"
 
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_aug.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
@@ -39,7 +39,7 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 28 -- Damage done at point blank range
+SWEP.DamageMax = 30 -- Damage done at point blank range
 SWEP.DamageMin = 10 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -50,6 +50,16 @@ SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before deali
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 15
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 3.16,
+    [HITGROUP_CHEST] = 0.91,
+    [HITGROUP_STOMACH] = 1.22,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.82,
+    [HITGROUP_RIGHTLEG] = 0.82,
+}
 
 -------------------------- PHYS BULLET BALLISTICS
 
@@ -70,7 +80,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 600
+SWEP.RPM = 545
 
 SWEP.Firemodes = {
     {
@@ -81,11 +91,11 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0.8
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -99,7 +109,7 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.8
+SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -145,15 +155,15 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.59, -3, 0.2),
+    Pos = Vector(-5.13, 0, 1.37),
     Ang = Angle(0, -0.5, 0),
     Magnification = 2,
-	ViewModelFOV = 25,
+	ViewModelFOV = 16,
 }
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, 0, -0.3)
+SWEP.SprintPos = Vector(0, -2, -0.3)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.ActivePos = Vector(0, 0, 0)
@@ -199,7 +209,7 @@ SWEP.NoViewBob = false
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.05
+SWEP.ShellScale = 0.06
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
@@ -210,16 +220,16 @@ SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/aug/"
+local path = "weapons/csgo/sg556/"
 
-SWEP.ShootSound = "CSGO.AUG.Fire"
-SWEP.DistantShootSound = path .. "aug_distant.wav"
+SWEP.ShootSound = "CSGO.SG556.Fire"
+SWEP.DistantShootSound = path .. "sg556_distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.EnterSightsSound = path .. "aug_zoom_in.wav"
-SWEP.ExitSightsSound = path .. "aug_zoom_out.wav"
+SWEP.EnterSightsSound = path .. "sg556_zoom_in.wav"
+SWEP.ExitSightsSound = path .. "sg556_zoom_out.wav"
 
 SWEP.HideBones = {
 }
@@ -239,27 +249,26 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path.."aug_clipout.wav", t = 15 / 30},
-            {s = path.."aug_clipin.wav", t = 44 / 30},
-            {s = path.."aug_cliphit.wav", t = 60 / 30},
+            {s = path.."sg556_clipout.wav", t = 9 / 30},
+            {s = path.."sg556_clipin.wav", t = 29 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = path.."aug_clipout.wav", t = 15 / 30},
-            {s = path.."aug_clipin.wav", t = 44 / 30},
-            {s = path.."aug_cliphit.wav", t = 60 / 30},
-			{s = path.."aug_boltpull.wav", t = 79 / 30},
-			{s = path.."aug_boltrelease.wav", t = 84 / 30},
+            {s = path.."sg556_clipout.wav", t = 9 / 30},
+            {s = path.."sg556_clipin.wav", t = 29 / 30},
+            --{s = path.."sg556_cliphit.wav", t = 60 / 30},
+			{s = path.."sg556_boltback.wav", t = 58 / 30},
+			{s = path.."sg556_boltforward.wav", t = 66 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path.."aug_draw.wav", t = 0 / 30},
-            {s = path.."aug_boltpull.wav", t = 8 / 30},
-            {s = path.."aug_boltrelease.wav", t = 14 / 30},
+            {s = path.."sg556_draw.wav", t = 0 / 30},
+            {s = path.."sg556_boltback.wav", t = 9 / 30},
+            {s = path.."sg556_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -301,12 +310,4 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Attachments = {
-    {
-        PrintName = "Stickers",
-        DefaultCompactName = "None",
-        Bone = "v_weapon.aug_parent",
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers_aug",
-    },
 }
