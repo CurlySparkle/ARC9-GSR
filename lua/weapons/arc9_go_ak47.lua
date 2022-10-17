@@ -157,6 +157,7 @@ SWEP.IronSights = {
     Pos = Vector(-5, -10, 0.4),
     Ang = Angle(0.1, 1.25, -2.75),
     Magnification = 1.25,
+	ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -296,4 +297,13 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Stickers",
+        DefaultCompactName = "None",
+        Bone = "v_weapon.ak47_parent",
+        Pos = Vector(0, -1.13, 0),
+        Ang = Angle(90, 0, -90),
+        Category = "stickers_ak",
+    },
+}

@@ -160,6 +160,7 @@ SWEP.IronSights = {
     Pos = Vector(-5.21, -10, 0.575),
     Ang = Angle(-0.05, -0.1, -3),
     Magnification = 1.25,
+	ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56

@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"models/csgo/aug/aug_dot"
+	"$detailblendmode" "2"
+	"$detailframe"	"0"
+	"$translucent" 	"1"
+	"$additive"	"1"
+}

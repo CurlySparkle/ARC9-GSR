@@ -25,16 +25,31 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.AUG.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/AUG/aug_01.wav",
+		"^weapons/csgo/AUG/aug_02.wav",
+		"^weapons/csgo/AUG/aug_03.wav",
+		"^weapons/csgo/AUG/aug_04.wav",
+    }
+} )
+
+
+sound.Add( {
     name = "CSGO.m4a4.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
-    level = 140,
-    pitch = {95, 105},
+    level = 120,
+    pitch = {97,103},
     sound = {
         "^weapons/csgo/m4a1/m4a1_01.wav",
 		"^weapons/csgo/m4a1/m4a1_02.wav",
-		"^weapons/csgo/m4a1/m4a1_03.wav",
-		"^weapons/csgo/m4a1/m4a1_04.wav",
+		--"^weapons/csgo/m4a1/m4a1_03.wav",
+		--"^weapons/csgo/m4a1/m4a1_04.wav",
     }
 } )
 
