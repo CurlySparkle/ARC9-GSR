@@ -143,3 +143,17 @@ sound.Add( {
 		"^weapons/csgo/galilar/galil_04.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.MP9.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mp9/mp9_01.wav",
+		"^weapons/csgo/mp9/mp9_02.wav",
+		"^weapons/csgo/mp9/mp9_03.wav",
+		"^weapons/csgo/mp9/mp9_04.wav",
+    }
+} )
