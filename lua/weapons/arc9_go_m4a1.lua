@@ -187,7 +187,7 @@ SWEP.IronSights = {
     },
     Magnification = 1.1,
     CrosshairInSights = false,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -278,6 +278,9 @@ SWEP.ReloadHideBoneTables = {
 }
 
 SWEP.Animations = {
+    ["idle"] = {
+        Source = "idle",
+    },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
@@ -313,19 +316,16 @@ SWEP.Animations = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
-    ["idle"] = {
-        Source = "idle",
-    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 0.1,
+        Time = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 0.1,
+        Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -341,11 +341,11 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement1.wav", t = 3 / 30},
             {s = path .. "m4a1_silencer_screw_on_start.wav", t = 33 / 30},
             {s = path .. "m4a1_silencer_screw_1.wav", t = 47 / 30},
-			{s = path .. "m4a1_silencer_screw_2.wav", t = 65 / 30},
-			{s = path .. "m4a1_silencer_screw_3.wav", t = 77 / 30},
-			{s = path .. "m4a1_silencer_screw_4.wav", t = 89 / 30},
-			{s = path .. "m4a1_silencer_screw_5.wav", t = 98 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 120 / 30},
+            {s = path .. "m4a1_silencer_screw_2.wav", t = 65 / 30},
+            {s = path .. "m4a1_silencer_screw_3.wav", t = 77 / 30},
+            {s = path .. "m4a1_silencer_screw_4.wav", t = 89 / 30},
+            {s = path .. "m4a1_silencer_screw_5.wav", t = 98 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 120 / 30},
         },
     },
     ["firemode_1"] = {
@@ -355,13 +355,18 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement1.wav", t = 3 / 30},
             {s = path .. "m4a1_silencer_screw_1.wav", t = 24 / 30},
             {s = path .. "m4a1_silencer_screw_2.wav", t = 43 / 30},
-			{s = path .. "m4a1_silencer_screw_3.wav", t = 54 / 30},
-			{s = path .. "m4a1_silencer_screw_4.wav", t = 66 / 30},
-			{s = path .. "m4a1_silencer_screw_5.wav", t = 76 / 30},
-			{s = path .. "m4a1_silencer_screw_off_end.wav", t = 88 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 91 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 105 / 30},
+            {s = path .. "m4a1_silencer_screw_3.wav", t = 54 / 30},
+            {s = path .. "m4a1_silencer_screw_4.wav", t = 66 / 30},
+            {s = path .. "m4a1_silencer_screw_5.wav", t = 76 / 30},
+            {s = path .. "m4a1_silencer_screw_off_end.wav", t = 88 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 91 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 105 / 30},
         },
+    },
+-- SILENCED
+    ["idle_silenced"] = {
+        Source = "idle_silenced",
+        HideBoneIndex = 1,
     },
     ["fire_silenced"] = {
         Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
@@ -404,22 +409,18 @@ SWEP.Animations = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
-    ["idle_silenced"] = {
-        Source = "idle_silenced",
-        HideBoneIndex = 1,
-    },
     ["idle_sprint_silenced"] = {
         Source = "sprint_silenced",
         HideBoneIndex = 1,
     },
     ["exit_sprint_silenced"] = {
         Source = "sprint_out_silenced",
-        Time = 0.1,
+        Time = 1,
         HideBoneIndex = 1,
     },
     ["enter_sprint_silenced"] = {
         Source = "sprint_in_silenced",
-        Time = 0.1,
+        Time = 1,
         HideBoneIndex = 1,
     },
     ["inspect_silenced"] = {
