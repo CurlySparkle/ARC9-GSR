@@ -1,13 +1,13 @@
 "VertexLitGeneric"
 {
-	$basetexture	"models/csgo/scar20/snip_scar20"
+	$basetexture	"models/csgo/scar/rif_scar"
 	$bumpmap "null-bumpmap"
 	
 	"$phong" "1"
 	"$phongboost" ".5"
 	"$phongalbedoboost" "30"
 	"$phongfresnelranges" "[.83 .83 1]"
-	"$phongexponenttexture" "models/csgo/scar20/snip_scar20_exponent"
+	"$phongexponenttexture" "models/csgo/scar/rif_scar_exponent"
 
 	"$basemapalphaphongmask" "1"
 
@@ -19,5 +19,6 @@
 
 	"$phongdisablehalflambert" "1"
 }
+
 
 

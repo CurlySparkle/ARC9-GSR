@@ -67,6 +67,20 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.SCAR17.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/m4a1/m4a1_01.wav",
+		"^weapons/csgo/m4a1/m4a1_02.wav",
+		"^weapons/csgo/m4a1/m4a1_03.wav",
+		"^weapons/csgo/m4a1/m4a1_04.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.m4a1.Fire_Sil",
     channel = CHAN_STATIC,
     volume = 1.0,
