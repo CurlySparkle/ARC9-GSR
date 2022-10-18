@@ -94,23 +94,24 @@ SWEP.Firemodes = {
         Mode = -1,
         PrintName = "AUTO",
         Silencer = false,
-        ActivateElements = {"unsil"},
-        -- Hook_TranslateAnimation = function(swep, anim)
-        --     return anim .. "_silenced"
-        -- end,
+        --ActivateElements = {"unsil"},
+        Hook_TranslateAnimation = function(swep, anim)
+            return anim .. "_silenced"
+        end,
     }
 }
 
 
-SWEP.Hook_ModifyBodygroups = function(self, data)
-    local vm = data.model
-    local attached = data.elements
-    if attached["unsil"] then
-        vm:SetBodygroup(1,1)
-    else
-        vm:SetBodygroup(1,0)
-    end
-end
+-- SWEP.Hook_ModifyBodygroups = function(self, data)
+    -- local vm = data.model
+    -- local attached = data.elements
+    -- if attached["unsil"] then
+        -- vm:SetBodygroup(1,1)
+    -- else
+        -- vm:SetBodygroup(1,0)
+    -- end
+-- end
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
@@ -228,8 +229,8 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle_silenced"
-SWEP.MuzzleParticleSilenced = "weapon_muzzle_flash_assaultrifle"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
+SWEP.MuzzleParticleSilenced = "weapon_muzzle_flash_assaultrifle_silenced"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -270,7 +271,6 @@ SWEP.HideBones = {
 }
 
 SWEP.HideBonesSilenced = {
-    "v_rif_m4a1_s_silencer"
 }
 
 SWEP.ReloadHideBoneTables = {
@@ -337,17 +337,38 @@ SWEP.Animations = {
     },
     ["firemode_2"] = {
         Source = "attach",
+        EventTable = {
+            {s = "weapons/csgo/movement1.wav", t = 3 / 30},
+            {s = path .. "m4a1_silencer_screw_on_start.wav", t = 33 / 30},
+            {s = path .. "m4a1_silencer_screw_1.wav", t = 47 / 30},
+			{s = path .. "m4a1_silencer_screw_2.wav", t = 65 / 30},
+			{s = path .. "m4a1_silencer_screw_3.wav", t = 77 / 30},
+			{s = path .. "m4a1_silencer_screw_4.wav", t = 89 / 30},
+			{s = path .. "m4a1_silencer_screw_5.wav", t = 98 / 30},
+			{s = "weapons/csgo/movement3.wav", t = 120 / 30},
+        },
     },
     ["firemode_1"] = {
         Source = "detach",
         HideBoneIndex = 0,
+        EventTable = {
+            {s = "weapons/csgo/movement1.wav", t = 3 / 30},
+            {s = path .. "m4a1_silencer_screw_1.wav", t = 24 / 30},
+            {s = path .. "m4a1_silencer_screw_2.wav", t = 43 / 30},
+			{s = path .. "m4a1_silencer_screw_3.wav", t = 54 / 30},
+			{s = path .. "m4a1_silencer_screw_4.wav", t = 66 / 30},
+			{s = path .. "m4a1_silencer_screw_5.wav", t = 76 / 30},
+			{s = path .. "m4a1_silencer_screw_off_end.wav", t = 88 / 30},
+			{s = "weapons/csgo/movement3.wav", t = 91 / 30},
+			{s = "weapons/csgo/movement3.wav", t = 105 / 30},
+        },
     },
     ["fire_silenced"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
         HideBoneIndex = 1,
     },
     ["reload_silenced"] = {
-        Source = "reload_short",
+        Source = "reload_short_silenced",
         HideBoneIndex = 1,
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11 / 30},
@@ -355,7 +376,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty_silenced"] = {
-        Source = "reload",
+        Source = "reload_silenced",
         HideBoneIndex = 1,
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11 / 30},
@@ -364,7 +385,7 @@ SWEP.Animations = {
         },
     },
     ["ready_silenced"] = {
-        Source = "draw",
+        Source = "draw_silenced",
         HideBoneIndex = 1,
         EventTable = {
             {s = path .. "m4a1_draw.wav", t = 0 / 30},
@@ -373,36 +394,36 @@ SWEP.Animations = {
         },
     },
     ["draw_silenced"] = {
-        Source = "draw_short",
+        Source = "draw_short_silenced",
         HideBoneIndex = 1,
     },
     ["holster_silenced"] = {
-        Source = "holster",
+        Source = "holster_silenced",
         HideBoneIndex = 1,
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
     ["idle_silenced"] = {
-        Source = "idle",
+        Source = "idle_silenced",
         HideBoneIndex = 1,
     },
     ["idle_sprint_silenced"] = {
-        Source = "sprint",
+        Source = "sprint_silenced",
         HideBoneIndex = 1,
     },
     ["exit_sprint_silenced"] = {
-        Source = "sprint_out",
+        Source = "sprint_out_silenced",
         Time = 0.1,
         HideBoneIndex = 1,
     },
     ["enter_sprint_silenced"] = {
-        Source = "sprint_in",
+        Source = "sprint_in_silenced",
         Time = 0.1,
         HideBoneIndex = 1,
     },
     ["inspect_silenced"] = {
-        Source = "lookat01",
+        Source = "lookat01_silenced",
         HideBoneIndex = 1,
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
