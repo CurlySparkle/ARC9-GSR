@@ -7,7 +7,7 @@
 	"$phongboost" "1"
 	"$phongalbedoboost" "40"
 	"$phongfresnelranges" "[.83 .83 1]"
-	//"$phongexponenttexture" "models\weapons\v_models\rif_sg556\rif_sg556_exponent"
+	"$phongexponenttexture" "models/csgo/ump45/smg_ump45_exponent"
 
 	"$basemapalphaphongmask" "1"
 

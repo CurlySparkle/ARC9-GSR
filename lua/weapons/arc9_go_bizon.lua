@@ -5,8 +5,8 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
 
-SWEP.PrintName = "MP9"
-SWEP.TrueName = "MP9"
+SWEP.PrintName = "PP-Bizon"
+SWEP.TrueName = "PP-Bizon"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
@@ -23,15 +23,15 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms.]]
+SWEP.Description = [[The Bizon SMG is low-damage, but offers a uniquely designed high-capacity drum magazine that reloads quickly.]]
 
-SWEP.ViewModel = "models/weapons/csgo/c_smg_mp9.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
 
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_mp9.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
@@ -40,8 +40,8 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 26 -- Damage done at point blank range
-SWEP.DamageMin = 16 -- Damage done at maximum range
+SWEP.DamageMax = 27 -- Damage done at point blank range
+SWEP.DamageMin = 7 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
@@ -61,7 +61,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 30 -- Self-explanatory.
+SWEP.ClipSize = 64 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -71,7 +71,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 857
+SWEP.RPM = 750
 
 SWEP.Firemodes = {
     {
@@ -82,9 +82,9 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.65
 
-SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
+SWEP.RecoilSeed = 36387 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
@@ -113,7 +113,7 @@ SWEP.Spread = 0.02
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.06
+SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
@@ -147,16 +147,16 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.77, -5, 0.55),
-    Ang = Angle(-0.05, 0.5, -2),
+    Pos = Vector(-6, -8, 1.57),
+    Ang = Angle(0.5, 0.5, -2),
     Magnification = 1.25,
 	ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -3, 0)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = Vector(-1, -5, 0)
+SWEP.SprintAng = Angle(-5, 0, 5)
 
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -188,10 +188,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "smg1"
+SWEP.HoldType = "smg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "smg1"
+SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -213,19 +213,21 @@ SWEP.ShouldDropMagEmpty = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.09
+SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp9_mag.mdl"
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_bizon_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "CSGO.MP9.Fire"
-SWEP.DistantShootSound = "weapons/csgo/mp9/mp9-1-distant.wav"
+local path = "weapons/csgo/bizon/"
+
+SWEP.ShootSound = "CSGO.Bizon.Fire"
+SWEP.DistantShootSound = "CSGO.Bizon.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
@@ -250,25 +252,25 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = "weapons/csgo/mp9/mp9_clipout.wav", t = 7 / 30},
-            {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 24 / 30},
+            {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = path .. "bizon_clipin.wav", t = 31 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = "weapons/csgo/mp9/mp9_clipout.wav", t = 7 / 30},
-            {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 24 / 30},
-            {s = "weapons/csgo/mp9/mp9_boltback.wav", t = 40 / 30},
-			{s = "weapons/csgo/mp9/mp9_boltforward.wav", t = 46 / 30},
+            {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = path .. "bizon_clipin.wav", t = 31 / 30},
+			{s = path .. "bizon_boltback.wav", t = 48 / 30},
+			{s = path .. "bizon_boltforward.wav", t = 56 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = "weapons/csgo/mp9/mp9_draw.wav", t = 2 / 30},
-            {s = "weapons/csgo/mp9/mp9_boltback.wav", t = 11 / 30},
-            {s = "weapons/csgo/mp9/mp9_boltforward.wav", t = 15 / 30},
+            {s = path .. "bizon_draw.wav", t = 0 / 30},
+            {s = path .. "bizon_boltback.wav", t = 8 / 30},
+            {s = path .. "bizon_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {

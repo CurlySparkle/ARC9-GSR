@@ -157,3 +157,87 @@ sound.Add( {
 		"^weapons/csgo/mp9/mp9_04.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.MAC10.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mac10/mac10_01.wav",
+		"^weapons/csgo/mac10/mac10_02.wav",
+		"^weapons/csgo/mac10/mac10_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Bizon.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/bizon/bizon_01.wav",
+		"^weapons/csgo/bizon/bizon_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Bizon.Fire.Distance",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/bizon/bizon-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP7.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mp7/mp7_01.wav",
+		"^weapons/csgo/mp7/mp7_02.wav",
+		"^weapons/csgo/mp7/mp7_02.wav",
+		"^weapons/csgo/mp7/mp7_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP7.Fire.Distance",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mp7/mp7-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.UMP.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/ump/ump45_02.wav",
+		"^weapons/csgo/ump/ump45_04.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.UMP.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.8,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/ump/ump45-1-distant.wav",
+    }
+} )
