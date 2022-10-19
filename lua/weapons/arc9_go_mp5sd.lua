@@ -5,8 +5,8 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
 
-SWEP.PrintName = "UMP-45"
-SWEP.TrueName = "UMP-45"
+SWEP.PrintName = "MP5-SD"
+SWEP.TrueName = "MP5-SD"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
@@ -23,15 +23,15 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic]]
+SWEP.Description = [[Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant comes equipped with an integrated silencer, making an already formidable weapon whisper-quiet.]]
 
-SWEP.ViewModel = "models/weapons/csgo/c_smg_ump.mdl"
-SWEP.WorldModel = "models/weapons/w_smg_ump.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5sd.mdl"
+SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
 
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_ump.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_mp5sd.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
@@ -40,8 +40,8 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 35 -- Damage done at point blank range
-SWEP.DamageMin = 15 -- Damage done at maximum range
+SWEP.DamageMax = 27 -- Damage done at point blank range
+SWEP.DamageMin = 10 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
@@ -61,7 +61,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 25 -- Self-explanatory.
+SWEP.ClipSize = 50 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -71,7 +71,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 600
+SWEP.RPM = 750
 
 SWEP.Firemodes = {
     {
@@ -82,9 +82,9 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.65
+SWEP.Recoil = 0.6
 
-SWEP.RecoilSeed = 59299 -- CSGO Seed Input Test
+SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
@@ -94,7 +94,7 @@ SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
-SWEP.RecoilRandomSide = 0.2
+SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -113,9 +113,9 @@ SWEP.Spread = 0.02
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.07
+SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -201,7 +201,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_smg"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle_silenced"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
@@ -218,17 +218,17 @@ SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_ump45_mag.mdl"
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/ump/"
+local path = "weapons/csgo/mp5/"
 
-SWEP.ShootSound = "CSGO.UMP.Fire"
-SWEP.DistantShootSound = "CSGO.UMP.Fire.Distance"
+SWEP.ShootSound = "CSGO.MP5.Fire"
+SWEP.DistantShootSound = "CSGO.MP5.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
@@ -253,25 +253,24 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "ump45_clipout.wav", t = 8 / 30},
-            {s = path .. "ump45_clipin.wav", t = 41 / 30},
+            {s = path .. "mp5_clipout.wav", t = 27 / 30},
+			{s = path .. "mp5_clipin.wav", t = 69 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = path .. "ump45_clipout.wav", t = 8 / 30},
-            {s = path .. "ump45_clipin.wav", t = 41 / 30},
-			{s = path .. "ump45_boltback.wav", t = 64 / 30},
-			{s = path .. "ump45_boltforward.wav", t = 73 / 30},
+            {s = path .. "mp5_slideback.wav", t = 5 / 30},
+            {s = path .. "mp5_clipout.wav", t = 27 / 30},
+			{s = path .. "mp5_clipin.wav", t = 69 / 30},
+			{s = path .. "mp5_slideforward.wav", t = 85 / 30},
         },
     },
     ["ready"] = {
-        Source = "draw",
+        Source = {"draw", "draw2"},
         EventTable = {
-            {s = path .. "ump45_draw.wav", t = 0 / 30},
-            {s = path .. "ump45_boltback.wav", t = 8 / 30},
-            {s = path .. "ump45_boltforward.wav", t = 14 / 30},
+            {s = path .. "mp5_draw.wav", t = 7 / 30},
+            {s = path .. "mp5_slideforward.wav", t = 19 / 30},
         },
     },
     ["draw"] = {
@@ -302,9 +301,11 @@ SWEP.Animations = {
 		MinProgress = 0.1,
 		FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement2.wav", t = 2/30 },
+            { s = "weapons/csgo/movement1.wav", t = 125/30 },
+            { s = "weapons/csgo/movement2.wav", t = 130/30 },
+            { s = "weapons/csgo/movement3.wav", t = 163/30 },
+			{ s = "weapons/csgo/movement1.wav", t = 210/30 },
         },
     },
 }

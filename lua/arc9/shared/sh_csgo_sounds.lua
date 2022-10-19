@@ -241,3 +241,49 @@ sound.Add( {
         "^weapons/csgo/ump/ump45-1-distant.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.P90.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/p90/p90_01.wav",
+		"^weapons/csgo/p90/p90_02.wav",
+		"^weapons/csgo/p90/p90_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.P90.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.6,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/p90/p90-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mp5/mp5_01.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mp5/mp5_01.wav",
+    }
+} )

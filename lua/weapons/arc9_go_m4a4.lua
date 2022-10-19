@@ -97,25 +97,28 @@ SWEP.Recoil = 0.65
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.4 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.85 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.2
 
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+--SWEP.ViewRecoil = true -- true
+--SWEP.ViewRecoilUpMult = -20 -- 40-100
 
 -------------------------- SPREAD
 
@@ -125,7 +128,7 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -184,6 +187,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -203,6 +207,7 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
+SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 

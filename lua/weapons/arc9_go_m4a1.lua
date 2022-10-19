@@ -211,6 +211,9 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(41, 40, 7)
+
+SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(-20, 0, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = true
 
@@ -231,6 +234,8 @@ SWEP.AnimDraw = false
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
 SWEP.MuzzleParticleSilenced = "weapon_muzzle_flash_assaultrifle_silenced"
+SWEP.AfterShotParticle = "weapon_muzzle_smoke"
+SWEP.AfterShotQCA = 3
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -264,7 +269,7 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = ""
 
 SWEP.HideBones = {
     "v_rif_m4a1_s_silencer"
@@ -302,9 +307,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "m4a1_draw.wav", t = 0 / 30},
-            {s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
-            {s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_draw.wav", t = 0 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -395,9 +400,9 @@ SWEP.Animations = {
         Source = "draw_silenced",
         HideBoneIndex = 1,
         EventTable = {
-            {s = path .. "m4a1_draw.wav", t = 0 / 30},
-            {s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
-            {s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_draw.wav", t = 0 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw_silenced"] = {
