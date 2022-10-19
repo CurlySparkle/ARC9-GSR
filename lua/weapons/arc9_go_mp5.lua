@@ -155,7 +155,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -5, 0)
+SWEP.SprintPos = Vector(0, 2, 0)
 SWEP.SprintAng = Angle(-5, 0, 5)
 
 SWEP.ActivePos = Vector(0, 0, 0)
@@ -228,7 +228,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/mp5/"
 
 SWEP.ShootSound = "CSGO.MP7.Fire"
-SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
+--SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
@@ -253,8 +253,8 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "mp5_clipout.wav", t = 26 / 30},
-			{s = path .. "mp5_clipin.wav", t = 61 / 30},
+            {s = path .. "mp5_clipout.wav", t = 20 / 30},
+			{s = path .. "mp5_clipin.wav", t = 55 / 30},
         },
     },
     ["reload_empty"] = {
