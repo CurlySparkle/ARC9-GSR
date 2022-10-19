@@ -1,5 +1,5 @@
 ATT.PrintName = "Trijicon ACOG TA31 (4x)"
-ATT.CompactName = [[ACOG 1]]
+ATT.CompactName = [[ACOG 2]]
 -- ATT.Icon = Material("entities/mwc_atts/optics/mw3_acog.png", "mips smooth")
 ATT.Description = [[
     Medium range combat scope for improved precision at longer ranges.
@@ -17,15 +17,15 @@ ATT.Folder = "SCOPE"
 ATT.Category = {"csgo_optic"}
 
 
-ATT.Model = "models/weapons/csgo/atts/scopes/acog_1.mdl"
+ATT.Model = "models/weapons/csgo/atts/scopes/acog_2.mdl"
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, -0.09, 0)
+ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.005, 7, -1.35),
-        Ang = Angle(0.1, 0.1, 0),
+        Pos = Vector(-0.005, 7, -1.48),
+        Ang = Angle(-1.15, 0, 0),
         ViewModelFOV = 60,
         Magnification = 1,
         IgnoreExtra = true

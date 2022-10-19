@@ -303,6 +303,15 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
+        PrintName = "Scope",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, -5, 3.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        InstalledElements = {"mount"},
+        CorrectiveAng = Angle(-0.1, 0, 0),
+    },
+    {
         PrintName = "Stickers",
         DefaultCompactName = "None",
         Bone = "v_weapon.aug_parent",
