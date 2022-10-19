@@ -308,7 +308,23 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mount"] = {
+        Bodygroups = {
+            {1,1},
+            {2,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Scope",
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(-0.09, -4.8, 4.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        InstalledElements = {"mount"},
+        Installed = "csgo_optic_acog_1",
+        CorrectiveAng = Angle(0, 0, 0),
+    },
 }
