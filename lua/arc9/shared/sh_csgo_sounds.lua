@@ -287,3 +287,133 @@ sound.Add( {
         "^weapons/csgo/mp5/mp5_01.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.Nova.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/nova/nova-1.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Nova.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/nova/nova-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Nova.Shell_Insert",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/nova/nova_insertshell_01.wav",
+		"^weapons/csgo/nova/nova_insertshell_02.wav",
+		"^weapons/csgo/nova/nova_insertshell_03.wav",
+		"^weapons/csgo/nova/nova_insertshell_04.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.XM1014.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/xm1014/xm1014-1.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.XM1014.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/xm1014/xm1014-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.XM1014.Shell_Insert",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/xm1014/xm1014_insertshell_01.wav",
+		"^weapons/csgo/xm1014/xm1014_insertshell_02.wav",
+		"^weapons/csgo/xm1014/xm1014_insertshell_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SawedOff.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/sawedoff/sawedoff-1.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SawedOff.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/sawedoff/sawedoff-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SawedOff.Shell_Insert",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/sawedoff/sawedoff_insertshell_01.wav",
+		"^weapons/csgo/sawedoff/sawedoff_insertshell_02.wav",
+		"^weapons/csgo/sawedoff/sawedoff_insertshell_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MAG7.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mag7/mag7_01.wav",
+		"^weapons/csgo/mag7/mag7_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MAG7.Fire.Distance",
+    channel = CHAN_STATIC,
+    volume = 0.5,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mag7/mag7_distant_01.wav",
+		"^weapons/csgo/mag7/mag7_distant_02.wav",
+    }
+} )

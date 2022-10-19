@@ -289,6 +289,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_sights"] = {
+        Source = "shoot1_ads",
+    },
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
@@ -378,6 +381,9 @@ SWEP.Animations = {
     ["fire_silenced"] = {
         Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
         HideBoneIndex = 1,
+    },
+    ["fire_sights_silenced"] = {
+        Source = "shoot1_silenced_ads",
     },
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
