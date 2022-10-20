@@ -164,6 +164,11 @@ SWEP.ViewModelFOVBase = 56
 SWEP.SprintPos = Vector(0, -3, -0.3)
 SWEP.SprintAng = Angle(0, 0, 0)
 
+SWEP.SprintMidPoint = {
+    Pos = Vector(0, -1.5, -0.15),
+    Ang = Angle(0, 0, 0)
+}
+
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
@@ -242,25 +247,25 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path.."galil_clipout.wav", t = 13 / 30},
-            {s = path.."galil_clipin.wav", t = 32 / 30},
+            {s = path .. "galil_clipout.wav", t = 13 / 30},
+            {s = path .. "galil_clipin.wav", t = 32 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = path.."galil_clipout.wav", t = 13 / 30},
-            {s = path.."galil_clipin.wav", t = 32 / 30},
-			{s = path.."galil_boltback.wav", t = 55 / 30},
-			{s = path.."galil_boltforward.wav", t = 62 / 30},
+            {s = path .. "galil_clipout.wav", t = 13 / 30},
+            {s = path .. "galil_clipin.wav", t = 32 / 30},
+            {s = path .. "galil_boltback.wav", t = 55 / 30},
+            {s = path .. "galil_boltforward.wav", t = 62 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path.."galil_draw.wav", t = 0 / 30},
-			{s = path.."galil_boltback.wav", t = 9 / 30},
-			{s = path.."galil_boltforward.wav", t = 12 / 30},
+            {s = path .. "galil_draw.wav", t = 0 / 30},
+            {s = path .. "galil_boltback.wav", t = 9 / 30},
+            {s = path .. "galil_boltforward.wav", t = 12 / 30},
         },
     },
     ["draw"] = {
@@ -289,9 +294,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
 }

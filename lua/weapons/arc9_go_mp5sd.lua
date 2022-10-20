@@ -158,6 +158,11 @@ SWEP.ViewModelFOVBase = 56
 SWEP.SprintPos = Vector(-1, -5, 0)
 SWEP.SprintAng = Angle(-5, 0, 5)
 
+SWEP.SprintMidPoint = {
+    Pos = Vector(-0.5, -2.5, 0),
+    Ang = Angle(-2.5, 0, 2.5)
+}
+
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 

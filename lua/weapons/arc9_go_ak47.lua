@@ -157,13 +157,18 @@ SWEP.IronSights = {
     Pos = Vector(-5, -10, 0.4),
     Ang = Angle(0.1, 1.25, -2.75),
     Magnification = 1.25,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
 
 SWEP.SprintPos = Vector(0, -3, -0.3)
 SWEP.SprintAng = Angle(0, 0, 0)
+
+SWEP.SprintMidPoint = {
+    Pos = Vector(0, -1.5, -0.15),
+    Ang = Angle(0, 0, 0)
+}
 
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -289,9 +294,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
 }
