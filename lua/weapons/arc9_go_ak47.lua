@@ -278,13 +278,13 @@ SWEP.Animations = {
     ["idle_sprint"] = {
         Source = "sprint",
     },
-    ["exit_sprint"] = {
-        Source = "sprint_out",
-        Time = 0.1,
-    },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 0.1,
+        Time = 1,
+    },
+    ["exit_sprint"] = {
+        Source = "sprint_out",
+        Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",

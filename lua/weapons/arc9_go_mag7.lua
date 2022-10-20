@@ -155,7 +155,7 @@ SWEP.IronSights = {
     Pos = Vector(-4.35, -7, 2.1),
     Ang = Angle(0, 0.5, -1),
     Magnification = 1.25,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -256,7 +256,7 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
         EventTable = {
             {s = path .. "mag7_pump_back.wav", t = 1 / 30},
-			{s = path .. "mag7_pump_forward.wav", t = 4 / 30},
+            {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
         },
     },
     ["reload"] = {
@@ -279,8 +279,8 @@ SWEP.Animations = {
         Source = {"draw"},
         EventTable = {
             {s = path .. "mag7_draw.wav", t = 0 / 30},
-			{s = path .. "mag7_pump_back.wav", t = 11 / 30},
-			{s = path .. "mag7_pump_forward.wav", t = 14 / 30},
+            {s = path .. "mag7_pump_back.wav", t = 11 / 30},
+            {s = path .. "mag7_pump_forward.wav", t = 14 / 30},
         },
     },
     ["draw"] = {
@@ -308,12 +308,12 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-		MinProgress = 0.1,
-		FireASAP = true,
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 52/30 },
-            { s = "weapons/csgo/movement3.wav", t = 79/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 52 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 79 / 30 },
         },
     },
 }

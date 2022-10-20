@@ -155,7 +155,7 @@ SWEP.IronSights = {
     Pos = Vector(-4.35, -7, 2.1),
     Ang = Angle(0, 0.5, -1),
     Magnification = 1.25,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -275,7 +275,7 @@ SWEP.Animations = {
         Source = {"draw"},
         EventTable = {
             {s = path .. "nova_draw.wav", t = 0 / 30},
-			{s = path .. "nova_pump.wav", t = 19 / 30},
+            {s = path .. "nova_pump.wav", t = 19 / 30},
         },
     },
     ["draw"] = {
@@ -295,20 +295,20 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 0.1,
+        Time = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 0.1,
+        Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",
-		MinProgress = 0.1,
-		FireASAP = true,
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 44/30 },
-            { s = "weapons/csgo/movement3.wav", t = 117/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 44 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 117 / 30 },
         },
     },
 }
