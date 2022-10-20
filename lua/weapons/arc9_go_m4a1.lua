@@ -334,8 +334,8 @@ SWEP.Animations = {
     },
     ["firemode_2"] = {
         Source = "attach",
-		MinProgress = 0.9,
-		FireASAP = false,
+        MinProgress = 0.9,
+        FireASAP = false,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 3 / 30},
             {s = path .. "m4a1_silencer_screw_on_start.wav", t = 33 / 30},
@@ -349,8 +349,8 @@ SWEP.Animations = {
     },
     ["firemode_1"] = {
         Source = "detach",
-		MinProgress = 0.9,
-		FireASAP = false,
+        MinProgress = 0.9,
+        FireASAP = false,
         HideBoneIndex = 0,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 3 / 30},
