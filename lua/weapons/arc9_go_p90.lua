@@ -147,10 +147,10 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.02, -8, -0.55),
-    Ang = Angle(0.5, 0.5, -0.5),
+    Pos = Vector(-5.15, -8, -0.35),
+    Ang = Angle(0.1, -0.1, -0.5),
     Magnification = 1.25,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -255,8 +255,8 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "p90_cliprelease.wav", t = 10 / 30},
             {s = path .. "p90_clipout.wav", t = 12 / 30},
-			{s = path .. "p90_clipin.wav", t = 41 / 30},
-			{s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_clipin.wav", t = 41 / 30},
+            {s = path .. "p90_cliphit.wav", t = 58 / 30},
         },
     },
     ["reload_empty"] = {
@@ -264,10 +264,10 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "p90_cliprelease.wav", t = 10 / 30},
             {s = path .. "p90_clipout.wav", t = 12 / 30},
-			{s = path .. "p90_clipin.wav", t = 41 / 30},
-			{s = path .. "p90_cliphit.wav", t = 58 / 30},
-			{s = path .. "p90_boltback.wav", t = 82 / 30},
-			{s = path .. "p90_boltforward.wav", t = 89 / 30},
+            {s = path .. "p90_clipin.wav", t = 41 / 30},
+            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_boltback.wav", t = 82 / 30},
+            {s = path .. "p90_boltforward.wav", t = 89 / 30},
         },
     },
     ["ready"] = {
@@ -303,13 +303,13 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-		MinProgress = 0.1,
-		FireASAP = true,
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 88/30 },
-            { s = "weapons/csgo/movement3.wav", t = 94/30 },
-			{ s = "weapons/csgo/movement1.wav", t = 130/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 88 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 94 / 30 },
+            { s = "weapons/csgo/movement1.wav", t = 130 / 30 },
         },
     },
 }

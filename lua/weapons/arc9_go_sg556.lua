@@ -158,7 +158,7 @@ SWEP.IronSights = {
     Pos = Vector(-5.16, -10, 1.15),
     Ang = Angle(0.025, -0.2, 0),
     Magnification = 2,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -250,26 +250,26 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path.."sg556_clipout.wav", t = 9 / 30},
-            {s = path.."sg556_clipin.wav", t = 29 / 30},
+            {s = path .. "sg556_clipout.wav", t = 9 / 30},
+            {s = path .. "sg556_clipin.wav", t = 29 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = path.."sg556_clipout.wav", t = 9 / 30},
-            {s = path.."sg556_clipin.wav", t = 29 / 30},
-            --{s = path.."sg556_cliphit.wav", t = 60 / 30},
-			{s = path.."sg556_boltback.wav", t = 58 / 30},
-			{s = path.."sg556_boltforward.wav", t = 66 / 30},
+            {s = path .. "sg556_clipout.wav", t = 9 / 30},
+            {s = path .. "sg556_clipin.wav", t = 29 / 30},
+            --{s = path .. "sg556_cliphit.wav", t = 60 / 30},
+            {s = path .. "sg556_boltback.wav", t = 58 / 30},
+            {s = path .. "sg556_boltforward.wav", t = 66 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path.."sg556_draw.wav", t = 0 / 30},
-            {s = path.."sg556_boltback.wav", t = 9 / 30},
-            {s = path.."sg556_boltforward.wav", t = 17 / 30},
+            {s = path .. "sg556_draw.wav", t = 0 / 30},
+            {s = path .. "sg556_boltback.wav", t = 9 / 30},
+            {s = path .. "sg556_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
@@ -298,9 +298,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
 }

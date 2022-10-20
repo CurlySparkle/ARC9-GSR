@@ -150,7 +150,7 @@ SWEP.IronSights = {
     Pos = Vector(-6, -8, 1.57),
     Ang = Angle(0.5, 0.5, -2),
     Magnification = 1.25,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -254,7 +254,7 @@ SWEP.Animations = {
         Source = "reload_short",
         EventTable = {
             {s = path .. "mp5_clipout.wav", t = 20 / 30},
-			{s = path .. "mp5_clipin.wav", t = 55 / 30},
+            {s = path .. "mp5_clipin.wav", t = 55 / 30},
         },
     },
     ["reload_empty"] = {
@@ -262,15 +262,15 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "mp5_clipout.wav", t = 26 / 30},
             {s = path .. "mp5_clipout.wav", t = 61 / 30},
-			{s = path .. "mp5_slideback.wav", t = 89 / 30},
-			{s = path .. "mp5_slideforward.wav", t = 93 / 30},
+            {s = path .. "mp5_slideback.wav", t = 89 / 30},
+            {s = path .. "mp5_slideforward.wav", t = 93 / 30},
         },
     },
     ["ready"] = {
         Source = {"draw", "draw2"},
         EventTable = {
             {s = path .. "mp5_draw.wav", t = 0 / 30},
-			{s = path .. "mp5_slideback.wav", t = 13 / 30},
+            {s = path .. "mp5_slideback.wav", t = 13 / 30},
             {s = path .. "mp5_slideforward.wav", t = 17 / 30},
         },
     },
@@ -299,14 +299,14 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-		MinProgress = 0.1,
-		FireASAP = true,
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement2.wav", t = 2/30 },
-            { s = "weapons/csgo/movement1.wav", t = 125/30 },
-            { s = "weapons/csgo/movement2.wav", t = 130/30 },
-            { s = "weapons/csgo/movement3.wav", t = 163/30 },
-			{ s = "weapons/csgo/movement1.wav", t = 210/30 },
+            { s = "weapons/csgo/movement2.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement1.wav", t = 125 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 130 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 163 / 30 },
+            { s = "weapons/csgo/movement1.wav", t = 210 / 30 },
         },
     },
 }

@@ -101,17 +101,6 @@ SWEP.Firemodes = {
     }
 }
 
-
--- SWEP.Hook_ModifyBodygroups = function(self, data)
-    -- local vm = data.model
-    -- local attached = data.elements
-    -- if attached["unsil"] then
-        -- vm:SetBodygroup(1,1)
-    -- else
-        -- vm:SetBodygroup(1,0)
-    -- end
--- end
-
 -------------------------- RECOIL
 
 -- General recoil multiplier
@@ -272,14 +261,14 @@ SWEP.ShootVolume = 145
 SWEP.FiremodeSound = ""
 
 SWEP.HideBones = {
-    "v_rif_m4a1_s_silencer"
+    "v_weapon.M4A1_Silencer"
 }
 
 SWEP.HideBonesSilenced = {
 }
 
 SWEP.ReloadHideBoneTables = {
-    [1] = {"v_rif_m4a1_s_silencer"}
+    -- [1] = {"v_weapon.M4A1_Silencer"}
 }
 
 SWEP.Animations = {
@@ -451,7 +440,18 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.DefaultBodygroups = "00"
 SWEP.AttachmentElements = {
 }
+
+SWEP.Hook_ModifyBodygroups = function(self, data, anim)
+    local vm = data.model
+    local CUSTSTATE = self:GetCustomize()
+
+    if CUSTSTATE and self:GetFiremodeName() == "AUTO" then
+        vm:SetBodygroup(1,1)
+    end
+
+end
 
 SWEP.Attachments = {}

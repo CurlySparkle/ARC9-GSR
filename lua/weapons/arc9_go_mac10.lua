@@ -147,10 +147,10 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-6, -8, 1.57),
-    Ang = Angle(0.5, 0.5, -2),
+    Pos = Vector(-6.18, -8, 2.05),
+    Ang = Angle(0.15, -0.3, -2),
     Magnification = 1.25,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -262,8 +262,8 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "mac10_clipout.wav", t = 9 / 30},
             {s = path .. "mac10_clipin.wav", t = 30 / 30},
-			{s = path .. "mac10_boltback.wav", t = 50 / 30},
-			{s = path .. "mac10_boltforward.wav", t = 60 / 30},
+            {s = path .. "mac10_boltback.wav", t = 50 / 30},
+            {s = path .. "mac10_boltforward.wav", t = 60 / 30},
         },
     },
     ["ready"] = {
@@ -299,12 +299,12 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-		MinProgress = 0.1,
-		FireASAP = true,
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2/30 },
-            { s = "weapons/csgo/movement2.wav", t = 92/30 },
-            { s = "weapons/csgo/movement3.wav", t = 116/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
 }
