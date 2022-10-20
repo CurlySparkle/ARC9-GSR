@@ -1,0 +1,10 @@
+"spritecard"
+{
+	"$basetexture" "particle\particle_flares\particle_flare_gray"
+	$depthblend 0
+	//"!srgb?$overbrightfactor" "1.2"
+	$ignorez 1
+	//$VERTEXFOGAMOUNT 1
+	$nocull 1
+	"GPU<2?$BLENDFRAMES" "0"
+}

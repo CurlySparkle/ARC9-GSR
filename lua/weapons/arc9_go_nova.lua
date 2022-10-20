@@ -25,13 +25,13 @@ SWEP.Credits = {
 
 SWEP.Description = [[The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team.]]
 
-SWEP.ViewModel = "models/weapons/csgo/c_smg_nova.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_shot_nova.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
 
 SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_nova.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_nova.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
@@ -178,7 +178,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(22, 35, 7)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -272,7 +272,7 @@ SWEP.Animations = {
         },
     },
     ["ready"] = {
-        Source = {"draw", "draw2"},
+        Source = {"draw"},
         EventTable = {
             {s = path .. "nova_draw.wav", t = 0 / 30},
 			{s = path .. "nova_pump.wav", t = 19 / 30},

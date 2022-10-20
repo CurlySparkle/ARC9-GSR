@@ -1,0 +1,7 @@
+"SpriteCard"
+{
+	// Original shader: AddTexture
+	"$basetexture" "effects/spark.vtf"
+	"$additive" 1
+	$splinetype 2
+}

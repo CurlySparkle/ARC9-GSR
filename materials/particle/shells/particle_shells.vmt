@@ -1,0 +1,6 @@
+"spritecard"
+{
+	"$basetexture" "particle\shells\particle_shells"
+	$depthblend 0
+	"$blendframes" "0"
+}

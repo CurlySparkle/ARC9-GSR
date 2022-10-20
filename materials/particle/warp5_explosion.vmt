@@ -1,0 +1,22 @@
+"Refract"
+{
+
+	"<dx90"
+	{
+		"$fallbackmaterial" "particle/warp5_explosion"
+	}
+
+ 	"$normalmap" "particle/warp5_explosion"
+ 	"$refractamount" "-0.5"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$translucent" "1"
+	"$forcerefract" 1
+ 	"$bluramount" "1"
+	"$nofog" "1"
+	"$vertexcolormodulate" "1"
+	$NoCull 1
+	$ignoreZ 1
+}
+
+
