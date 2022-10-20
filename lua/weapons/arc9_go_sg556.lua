@@ -155,10 +155,10 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.13, 0, 1.37),
-    Ang = Angle(0, -0.5, 0),
+    Pos = Vector(-5.16, -10, 1.15),
+    Ang = Angle(0.025, -0.2, 0),
     Magnification = 2,
-	ViewModelFOV = 16,
+	ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -306,6 +306,8 @@ SWEP.Animations = {
 }
 
 -------------------------- ATTACHMENTS
+
+SWEP.DefaultBodygroups = "0000"
 
 SWEP.AttachmentElements = {
     ["mount"] = {

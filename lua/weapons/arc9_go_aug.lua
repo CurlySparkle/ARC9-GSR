@@ -148,7 +148,7 @@ SWEP.IronSights = {
     Pos = Vector(-3.59, -3, 0.2),
     Ang = Angle(0, -0.5, 0),
     Magnification = 2,
-	ViewModelFOV = 25,
+	ViewModelFOV = 58,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -310,6 +310,8 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(-0.1, 0, 0),
+        Installed = "csgo_optic_acog_2",
+        Integral = true,
     },
     {
         PrintName = "Stickers",
