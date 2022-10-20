@@ -5,10 +5,10 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
 
-SWEP.PrintName = "MP5-SD"
-SWEP.TrueName = "MP5-SD"
+SWEP.PrintName = "Nova"
+SWEP.TrueName = "Nova"
 
-SWEP.Class = "Submachine Gun"
+SWEP.Class = "Shotgun"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
     ["Caliber"] = "5.56 NATO",
@@ -23,15 +23,15 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant comes equipped with an integrated silencer, making an already formidable weapon whisper-quiet.]]
+SWEP.Description = [[The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team.]]
 
-SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5sd.mdl"
-SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
+SWEP.ViewModel = "models/weapons/csgo/c_smg_nova.mdl"
+SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_mp5sd.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_nova.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
@@ -40,28 +40,30 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 27 -- Damage done at point blank range
-SWEP.DamageMin = 10 -- Damage done at maximum range
+SWEP.DamageMax = 15 -- Damage done at point blank range
+SWEP.DamageMin = 4 -- Damage done at maximum range
+
+SWEP.Num = 9
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2900 * 12
+SWEP.PhysBulletMuzzleVelocity = 1250 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
+SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 30 -- Self-explanatory.
+SWEP.ClipSize = 8 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -71,32 +73,33 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 750
+SWEP.RPM = 68
 
 SWEP.Firemodes = {
     {
-        Mode = -1,
-        -- add other attachment modifiers
-    }
+        Mode = 1,
+        PrintName = "PUMP"
+    },
 }
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 1.25
 
-SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
+SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.2
+SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
@@ -109,14 +112,16 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.015
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
+SWEP.SpreadAddSighted = 0
 SWEP.SpreadAddMove = 0.055
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadMultHipFire = 3
+SWEP.SpreadAddCrouch = -0.004
 
 -------------------------- HANDLING
 
@@ -147,15 +152,15 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-6, -8, 1.57),
-    Ang = Angle(0.5, 0.5, -2),
+    Pos = Vector(-4.35, -7, 2.1),
+    Ang = Angle(0, 0.5, -1),
     Magnification = 1.25,
 	ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -5, 0)
+SWEP.SprintPos = Vector(0, 2, 0)
 SWEP.SprintAng = Angle(-5, 0, 5)
 
 SWEP.ActivePos = Vector(0, 0, 0)
@@ -180,28 +185,28 @@ SWEP.CustomizeNoRotate = false
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
+SWEP.BlindFireRightPos = Vector(-22, 20, 0)
+SWEP.BlindFireRightAng = Angle(-80, -20, 3)
 
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.BlindFireLeftPos = Vector(22, 20, 0)
+SWEP.BlindFireLeftAng = Angle(80, -20, 3)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "smg"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
+SWEP.HoldType = "rpg"
+SWEP.HoldTypeSprint = "normal"
+SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle_silenced"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_autoshotgun"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
@@ -209,31 +214,29 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
 
-SWEP.ShouldDropMag = true
-SWEP.ShouldDropMagEmpty = true
-
-SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
-SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.08
+SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellCorrectAng = Angle(0, 180, 0)
+SWEP.ShellScale = 2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
-SWEP.ShouldDropMag = true
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
-SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
-SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.ShouldDropMag = false
+SWEP.ShouldDropMagEmpty = false
+
+SWEP.EjectDelay = 0.5
+
+SWEP.ShotgunReload = true
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/mp5/"
+local path = "weapons/csgo/nova/"
 
-SWEP.ShootSound = "CSGO.MP5.Fire"
-SWEP.DistantShootSound = "CSGO.MP5.Fire.Distance"
+SWEP.ShootSound = "CSGO.NOVA.Fire"
+SWEP.DistantShootSound = "CSGO.NOVA.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
 SWEP.HideBones = {
 }
@@ -246,31 +249,33 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-    },
-    ["fire_sights"] = {
-        Source = "shoot1_ads",
-    },
-    ["reload"] = {
-        Source = "reload_short",
         EventTable = {
-            {s = path .. "mp5_clipout.wav", t = 25 / 30},
-			{s = path .. "mp5_clipin.wav", t = 69 / 30},
+            {s = path .. "nova_pump.wav", t = 8 / 30},
         },
     },
-    ["reload_empty"] = {
-        Source = "reload",
+    ["reload_start"] = {
+        Source = "reload_start",
+    },
+    ["reload_insert"] = {
+        Source = "reload_loop",
         EventTable = {
-            {s = path .. "mp5_slideback.wav", t = 5 / 30},
-            {s = path .. "mp5_clipout.wav", t = 27 / 30},
-			{s = path .. "mp5_clipin.wav", t = 69 / 30},
-			{s = path .. "mp5_slideforward.wav", t = 85 / 30},
+            {s = "CSGO.Nova.Shell_Insert", t = 5 / 30},
+        },
+    },
+    ["reload_finish"] = {
+        Source = "reload_end",
+    },
+    ["reload_finish_empty"] = {
+        Source = "reload_end_empty",
+        EventTable = {
+            {s = path .. "nova_pump.wav", t = 15 / 30},
         },
     },
     ["ready"] = {
         Source = {"draw", "draw2"},
         EventTable = {
-            {s = path .. "mp5_draw.wav", t = 7 / 30},
-            {s = path .. "mp5_slideforward.wav", t = 19 / 30},
+            {s = path .. "nova_draw.wav", t = 0 / 30},
+			{s = path .. "nova_pump.wav", t = 19 / 30},
         },
     },
     ["draw"] = {
@@ -301,11 +306,9 @@ SWEP.Animations = {
 		MinProgress = 0.1,
 		FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement2.wav", t = 2/30 },
-            { s = "weapons/csgo/movement1.wav", t = 125/30 },
-            { s = "weapons/csgo/movement2.wav", t = 130/30 },
-            { s = "weapons/csgo/movement3.wav", t = 163/30 },
-			{ s = "weapons/csgo/movement1.wav", t = 210/30 },
+            { s = "weapons/csgo/movement1.wav", t = 2/30 },
+            { s = "weapons/csgo/movement2.wav", t = 44/30 },
+            { s = "weapons/csgo/movement3.wav", t = 117/30 },
         },
     },
 }

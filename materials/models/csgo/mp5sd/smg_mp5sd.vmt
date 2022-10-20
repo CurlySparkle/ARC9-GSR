@@ -1,18 +1,23 @@
-"vertexlitgeneric"
+"VertexLitGeneric"
 {
-	"$basetexture"             "models/csgo/mp5sd/smg_mp5sd"
-	"$phong"                   "1"
-	"$phongboost"              "12"
-	"$phongalbedoboost"        "8"
-	"$phongfresnelranges"      "[.83 .83 1]"
-	"$phongexponenttexture"    "models/csgo/mp5sd/smg_mp5sd_exponent"
-	"$phongalbedotint"         "1"
+	$basetexture "models/csgo/mp5sd/smg_mp5sd"
+	$bumpmap "null-bumpmap"
+	$phongexponenttexture "models/csgo/mp5sd/smg_mp5sd_exponent"
+
+	"$phong" "1"
+
+
+	"$phongboost" "2"
+	"$phongalbedoboost" "25"
+	"$phongfresnelranges" "[.83 .83 1]"
+
+	"$basemapalphaphongmask" "1"
+
+	"$phongalbedotint" "1"
+
 	"$phongdisablehalflambert" "1"
-	"$basemapalphaphongmask"   "1"	
-	
-	"$envmap"                  "env_cubemap"
-	//"$envmap"                  "environment maps/metal_generic_006"
-	"$envmapfresnel"           "1"
-	"$envmaptint"              "0.5"	
-	"$basealphaenvmapmask"     "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.15 .15 .15]"
 }
