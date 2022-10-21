@@ -45,9 +45,9 @@ SWEP.DamageMin = 55 -- Damage done at maximum range
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 10000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 0 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 25
 
@@ -57,7 +57,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "sniper" -- What ammo type this gun uses.
+SWEP.Ammo = "SniperRound" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.
@@ -75,7 +75,6 @@ SWEP.RPM = 41
 SWEP.Firemodes = {
     {
         Mode = 1,
-        -- add other attachment modifiers
     }
 }
 -------------------------- RECOIL
@@ -105,11 +104,11 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.2
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
@@ -124,7 +123,7 @@ SWEP.SwayMultSights = 0
 SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -192,6 +191,7 @@ SWEP.HoldTypeBlindfire = "pistol"
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimDraw = false
+
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_awp"
@@ -224,8 +224,8 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.EnterSightsSound = path .. "zoom.wav"
-SWEP.ExitSightsSound = path .. "zoom.wav"
+SWEP.EnterSightsSound = ""
+SWEP.ExitSightsSound = ""
 
 SWEP.HideBones = {
 }
