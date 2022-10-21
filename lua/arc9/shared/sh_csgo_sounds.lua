@@ -492,3 +492,27 @@ sound.Add( {
 		"^weapons/csgo/g3sg1/g3sg1_distant_03.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.hkp2000.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/hkp2000/hkp2000_01.wav",
+		"^weapons/csgo/hkp2000/hkp2000_02.wav",
+		"^weapons/csgo/hkp2000/hkp2000_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.hkp2000.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/hkp2000/hkp2000-1-distant.wav",
+    }
+} )

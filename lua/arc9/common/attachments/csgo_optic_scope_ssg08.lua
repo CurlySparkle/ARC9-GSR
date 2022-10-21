@@ -1,8 +1,8 @@
 ATT.PrintName = "Scope 8x"
-ATT.CompactName = [[SCOPE AWP]]
+ATT.CompactName = [[SCOPE SSG08]]
 -- ATT.Icon = Material("entities/mwc_atts/optics/mw3_acog.png", "mips smooth")
 ATT.Description = [[
-    Medium range combat scope for improved precision at longer ranges.
+    Large range combat scope for improved precision at longer ranges.
 ]]
 ATT.Pros = {
     "+ 8x Zoom",
@@ -17,16 +17,16 @@ ATT.Folder = "SCOPE"
 ATT.Category = {"csgo_optic"}
 
 
-ATT.Model = "models/weapons/csgo/atts/scopes/scope_awp.mdl"
+ATT.Model = "models/weapons/csgo/atts/scopes/scope_ssg08.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.005, 9.5, -1.55),
+        Pos = Vector(-0.005, 9, -1.55),
         Ang = Angle(-1.15, 0, 0),
-        ViewModelFOV = 60,
+        ViewModelFOV = 56,
         Magnification = 1,
         IgnoreExtra = true
     },

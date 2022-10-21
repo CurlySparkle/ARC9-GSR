@@ -1,0 +1,6 @@
+"SpriteCard"
+{
+	"$basetexture" "effects/muzzleflashX2.vtf"
+	"$additive" "1"
+	"$depthblend" "0"
+}

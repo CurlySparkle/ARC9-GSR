@@ -27,7 +27,7 @@ SWEP.Description = [[High risk and high reward, the infamous AWP is recognizable
 SWEP.ViewModel = "models/weapons/csgo/c_snip_awp.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_awp.mdl"
@@ -44,8 +44,8 @@ SWEP.DamageMin = 55 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 10000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 3500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 18000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -53,7 +53,7 @@ SWEP.ImpactForce = 25
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2900 * 12
+SWEP.PhysBulletMuzzleVelocity = 3000 * 12
 
 -------------------------- MAGAZINE
 
@@ -104,14 +104,15 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.2
+SWEP.Spread = 0.0002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.2
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSighted = -10
 
 -------------------------- HANDLING
 
@@ -147,7 +148,7 @@ SWEP.IronSights = {
     Pos = Vector(-3.59, -3, 0.2),
     Ang = Angle(0, -0.5, 0),
     Magnification = 2,
-    ViewModelFOV = 58,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -177,6 +178,8 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(24, 32, 8)
 SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(3, 20, 0)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
