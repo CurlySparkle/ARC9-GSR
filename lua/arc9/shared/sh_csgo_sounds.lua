@@ -417,3 +417,78 @@ sound.Add( {
 		"^weapons/csgo/mag7/mag7_distant_02.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.SG008.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/ssg08/ssg08_01.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.AWP.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/awp/awp_01.wav",
+		"^weapons/csgo/awp/awp_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SCAR20.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/scar20/scar20_01.wav",
+		"^weapons/csgo/scar20/scar20_02.wav",
+		"^weapons/csgo/scar20/scar20_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SCAR20.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/scar20/scar20_distant_01.wav",
+		"^weapons/csgo/scar20/scar20_distant_02.wav",
+		"^weapons/csgo/scar20/scar20_distant_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.G3SG1.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/g3sg1/g3sg1_01.wav",
+		"^weapons/csgo/g3sg1/g3sg1_02.wav",
+		"^weapons/csgo/g3sg1/g3sg1_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.G3SG1.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/g3sg1/g3sg1_distant_01.wav",
+		"^weapons/csgo/g3sg1/g3sg1_distant_02.wav",
+		"^weapons/csgo/g3sg1/g3sg1_distant_03.wav",
+    }
+} )

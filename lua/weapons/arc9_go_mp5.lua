@@ -61,7 +61,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 50 -- Self-explanatory.
+SWEP.ClipSize = 30 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -230,7 +230,7 @@ SWEP.DropMagazineTime = 0.35
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/mp5/"
+local path = "weapons/csgo/mp9/"
 
 SWEP.ShootSound = "CSGO.MP7.Fire"
 --SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
@@ -258,25 +258,25 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "mp5_clipout.wav", t = 20 / 30},
-            {s = path .. "mp5_clipin.wav", t = 55 / 30},
+            {s = path .. "mp9_clipout.wav", t = 15 / 30},
+            {s = path .. "mp9_clipin.wav", t = 50 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         EventTable = {
-            {s = path .. "mp5_clipout.wav", t = 26 / 30},
-            {s = path .. "mp5_clipout.wav", t = 61 / 30},
-            {s = path .. "mp5_slideback.wav", t = 89 / 30},
-            {s = path .. "mp5_slideforward.wav", t = 93 / 30},
+            {s = path .. "mp9_clipout.wav", t = 15 / 30},
+            {s = path .. "mp9_clipin.wav", t = 50 / 30},
+            {s = path .. "mp9_boltback.wav", t = 75 / 30},
+            {s = path .. "mp9_boltforward.wav", t = 83 / 30},
         },
     },
     ["ready"] = {
-        Source = {"draw", "draw2"},
+        Source = {"draw"},
         EventTable = {
-            {s = path .. "mp5_draw.wav", t = 0 / 30},
-            {s = path .. "mp5_slideback.wav", t = 13 / 30},
-            {s = path .. "mp5_slideforward.wav", t = 17 / 30},
+            {s = path .. "mp9_draw.wav", t = 0 / 30},
+            {s = path .. "mp9_boltback.wav", t = 13 / 30},
+            {s = path .. "mp9_boltforward.wav", t = 17 / 30},
         },
     },
     ["draw"] = {
