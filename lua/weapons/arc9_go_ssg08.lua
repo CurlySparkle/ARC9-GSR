@@ -108,9 +108,9 @@ SWEP.Spread = 0.0002
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.1
+SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.2
+SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.05
 SWEP.SpreadAddSighted = -10
 
@@ -212,7 +212,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.EjectDelay = 0.6
 
 SWEP.ShouldDropMag = true
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_ssg08_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_scout_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineTime = 0.3

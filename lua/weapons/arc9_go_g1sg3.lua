@@ -172,7 +172,7 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.16, -10, 1.15),
+    Pos = Vector(-4.72, -8, 1.05),
     Ang = Angle(0.025, -0.2, 0),
     Magnification = 2,
     ViewModelFOV = 56,
@@ -362,9 +362,9 @@ SWEP.Attachments = {
 
 
 SWEP.RTScope = true
-SWEP.RTScopeSubmatIndex = 2
-SWEP.RTScopeFOV = 10
+SWEP.RTScopeSubmatIndex = 3
+SWEP.RTScopeFOV = 20
 SWEP.RTScopeReticle = Material("hud/arc9_csgo/scopes/scope_overlay.png", "mips smooth")
 SWEP.RTScopeColorable = true
 SWEP.RTScopeShadowIntensity = 10
-SWEP.ScopeScreenRatio = 0.9
+SWEP.ScopeScreenRatio = 1

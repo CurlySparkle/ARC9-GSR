@@ -516,3 +516,97 @@ sound.Add( {
         "^weapons/csgo/hkp2000/hkp2000-1-distant.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.USP.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/usp/usp_unsilenced_01.wav",
+		"^weapons/csgo/usp/usp_unsilenced_02.wav",
+		"^weapons/csgo/usp/usp_unsilenced_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.USP.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/usp/usp_unsil-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.USP.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/usp/usp_01.wav",
+		"^weapons/csgo/usp/usp_02.wav",
+		"^weapons/csgo/usp/usp_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.USP.Distance_Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/usp/usp1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.M249.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/m249/m249-1.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.M249.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/m249/m249-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.NEGEV.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 125,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/negev/negev_01.wav",
+		"^weapons/csgo/negev/negev_02.wav",
+		"^weapons/csgo/negev/negev_05.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.NEGEV.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/negev/negev-1-distant.wav",
+    }
+} )
