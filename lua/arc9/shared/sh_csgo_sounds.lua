@@ -563,6 +563,51 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Fiveseven.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/fiveseven/fiveseven_01.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Fiveseven.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/fiveseven/fiveseven-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Tec9.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/tec9/tec9_01.wav",
+		"^weapons/csgo/tec9/tec9_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Tec9.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/tec9/tec9_distant_01.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.USP.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
