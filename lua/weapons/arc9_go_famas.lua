@@ -10,12 +10,12 @@ SWEP.TrueName = "Famas"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
+    ["Country of Origin"] = "France",
     ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
+    ["Weight (Loaded)"] = "3.40kg",
     ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Muzzle Velocity"] = "2212 Feet/Second",
+    ["Muzzle Energy"] = "1712 Joules"
 }
 
 SWEP.Credits = {
@@ -23,17 +23,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
+SWEP.Description = [[A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs.]]
 
-if ARC9:UseTrueNames() then
-
-SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
-SWEP.PrintName = SWEP.TrueName
-
-else
-
-SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart, the Maverick is the full-auto assault rifle of choice for CTs.]]
-
-end
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_famas.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -55,8 +46,8 @@ SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 4000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 15000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -64,7 +55,7 @@ SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2900 * 12
+SWEP.PhysBulletMuzzleVelocity = 2212 * 12
 
 -------------------------- MAGAZINE
 
@@ -89,7 +80,11 @@ SWEP.Firemodes = {
     },
     {
         Mode = 3,
-        RPM = 800
+        RPM = 800,
+		SpreadAddRecoil = 0.0002,
+		SpreadAddHipFire = 0.02,
+		SpreadAddMove = 0.05,
+		ActivePos = Vector(-0.3, 0, -0.3)
         -- add other attachment modifiers
     }
 }
@@ -124,13 +119,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.001
+SWEP.Spread = 0.0002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.075
 SWEP.SpreadAddMidAir = 0.025
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
