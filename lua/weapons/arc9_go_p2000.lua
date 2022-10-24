@@ -82,13 +82,13 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0.8
 
 SWEP.RecoilSeed = 59299 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -112,9 +112,9 @@ SWEP.Spread = 0.02
 
 SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.07
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING

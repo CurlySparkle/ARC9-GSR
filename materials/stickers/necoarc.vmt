@@ -1,9 +1,10 @@
-"VertexLitGeneric"
+"vertexlitgeneric"
 {
 	"$basetexture"		"stickers\necoarc"
 	"$envmap"		"env_cubemap"
 	"$envmaptint"		"[ .07 .07 .07 ]"
 	"$phong"		"1"
+     "$decalsecondpass" "1"
 	"$phongexponent"		"2"
 	"$phongfresnelranges"		"[ .2 .5 1 ]"
 	"$phongalbedotint"		"1"

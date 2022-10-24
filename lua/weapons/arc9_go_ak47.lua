@@ -185,10 +185,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizePos = Vector(19, 32, 2)
 
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-5, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -309,7 +309,31 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Stickers",
-        DefaultCompactName = "None",
+        DefaultCompactName = "Stickers",
+        Bone = "v_weapon.ak47_parent",
+        Pos = Vector(0, -1.13, 0),
+        Ang = Angle(90, 0, -90),
+        Category = "stickers_ak",
+    },
+    {
+        PrintName = "Stickers",
+        DefaultCompactName = "Stickers",
+        Bone = "v_weapon.ak47_parent",
+        Pos = Vector(0, -1.13, 0),
+        Ang = Angle(90, 0, -90),
+        Category = "stickers_ak",
+    },
+	{
+        PrintName = "Stickers",
+        DefaultCompactName = "Stickers",
+        Bone = "v_weapon.ak47_parent",
+        Pos = Vector(0, -1.13, 0),
+        Ang = Angle(90, 0, -90),
+        Category = "stickers_ak",
+    },
+	{
+        PrintName = "Stickers",
+        DefaultCompactName = "Stickers",
         Bone = "v_weapon.ak47_parent",
         Pos = Vector(0, -1.13, 0),
         Ang = Angle(90, 0, -90),

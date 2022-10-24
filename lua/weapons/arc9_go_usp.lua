@@ -121,11 +121,11 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.008 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.07
+SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -136,7 +136,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -190,7 +190,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 20, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
+SWEP.CustomizeSnapshotPos = Vector(5, -3, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -221,7 +221,8 @@ SWEP.AnimDraw = false
 SWEP.MuzzleParticle = "weapon_muzzle_flash_pistol"
 SWEP.MuzzleParticleSilenced = "weapon_muzzle_flash_assaultrifle_silenced"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke_pistols"
-SWEP.MuzzleEffectQCA = 1
+SWEP.MuzzleEffectQCA = 3
+SWEP.CaseEffectQCA = 2
 SWEP.ProceduralViewQCA = 1
 
 SWEP.CamOffsetAng = Angle(0, 0, 0)
@@ -250,7 +251,7 @@ SWEP.ShootSoundSilenced = "CSGO.USP.Silenced_Fire"
 SWEP.DistantShootSound = path .. "CSGO.USP.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = ""
 
 SWEP.HideBones = {
 }
@@ -330,12 +331,12 @@ SWEP.Animations = {
         FireASAP = false,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2 / 30},
-            {s = path .. "m4a1_silencer_screw_on_start.wav", t = 32 / 30},
-            {s = path .. "m4a1_silencer_screw_1.wav", t = 55 / 30},
-            {s = path .. "m4a1_silencer_screw_2.wav", t = 69 / 30},
-            {s = path .. "m4a1_silencer_screw_3.wav", t = 80 / 30},
-            {s = path .. "m4a1_silencer_screw_4.wav", t = 91 / 30},
-            {s = path .. "m4a1_silencer_screw_5.wav", t = 99 / 30},
+            {s = path .. "usp_silencer_screw_on_start.wav", t = 32 / 30},
+            {s = path .. "usp_silencer_screw1.wav", t = 55 / 30},
+            {s = path .. "usp_silencer_screw2.wav", t = 69 / 30},
+            {s = path .. "usp_silencer_screw3.wav", t = 80 / 30},
+            {s = path .. "usp_silencer_screw4.wav", t = 91 / 30},
+            {s = path .. "usp_silencer_screw5.wav", t = 99 / 30},
             {s = "weapons/csgo/movement3.wav", t = 112 / 30},
         },
     },
@@ -346,12 +347,12 @@ SWEP.Animations = {
         HideBoneIndex = 0,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 9 / 30},
-            {s = path .. "m4a1_silencer_screw_1.wav", t = 28 / 30},
-            {s = path .. "m4a1_silencer_screw_2.wav", t = 48 / 30},
-            {s = path .. "m4a1_silencer_screw_3.wav", t = 60 / 30},
-            {s = path .. "m4a1_silencer_screw_4.wav", t = 70 / 30},
-            {s = path .. "m4a1_silencer_screw_5.wav", t = 80 / 30},
-            {s = path .. "m4a1_silencer_screw_off_end.wav", t = 93 / 30},
+            {s = path .. "usp_silencer_screw1.wav", t = 28 / 30},
+            {s = path .. "usp_silencer_screw2.wav", t = 48 / 30},
+            {s = path .. "usp_silencer_screw3.wav", t = 60 / 30},
+            {s = path .. "usp_silencer_screw4.wav", t = 70 / 30},
+            {s = path .. "usp_silencer_screw5.wav", t = 80 / 30},
+            {s = path .. "usp_silencer_screw_off_end.wav", t = 93 / 30},
             {s = "weapons/csgo/movement3.wav", t = 114 / 30},
         },
     },

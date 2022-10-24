@@ -518,6 +518,51 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Glock.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/glock18/glock_01.wav",
+		"^weapons/csgo/glock18/glock_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Glock.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/glock18/glock18-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.P250.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/p250/p250_01.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.P250.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/p250/p250_distant_01.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.USP.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,

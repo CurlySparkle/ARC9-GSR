@@ -176,7 +176,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizePos = Vector(26, 40, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, 20, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -304,6 +304,8 @@ SWEP.Animations = {
         },
     },
 }
+
+--SWEP.Hook_Think	= SWEP:DoShootSounds
 
 -------------------------- ATTACHMENTS
 
