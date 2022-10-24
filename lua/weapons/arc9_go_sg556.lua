@@ -10,10 +10,10 @@ SWEP.PrintName = "SG 553"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Switzerland",
-    ["Caliber"] = "5.56×45 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
+    ["Caliber"] = "5.56 NATO",
+    ["Weight (Loaded)"] = "3.1kg",
     ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2,989 Feet/Second",
+    ["Muzzle Velocity"] = "2900 Feet/Second",
     ["Muzzle Energy"] = "1570 Joules"
 }
 
@@ -25,7 +25,7 @@ SWEP.Credits = {
 SWEP.Description = [[The terrorist-exclusive SG 553 is a premium scoped alternative to the AK-47 for effective long-range engagement.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_sg556.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_sg556.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
 
 SWEP.Slot = 2
 
@@ -44,8 +44,8 @@ SWEP.DamageMin = 10 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -186,8 +186,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizePos = Vector(22, 32, 5)
 SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(-0, 5, 3)
+SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
@@ -219,10 +221,10 @@ SWEP.ShellScale = 0.06
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
-SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_aug_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_sg556_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.45
 
 -------------------------- SOUNDS
 
