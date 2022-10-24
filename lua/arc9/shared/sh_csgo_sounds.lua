@@ -608,6 +608,54 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Elite.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/elite/elites_01.wav",
+		"^weapons/csgo/elite/elites_02.wav",
+		"^weapons/csgo/elite/elites_03.wav",
+		"^weapons/csgo/elite/elites_04.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Elite.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/elite/elite-1-distant.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Deagle.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/deagle/deagle_01.wav",
+		"^weapons/csgo/deagle/deagle_02.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Deagle.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+         "^weapons/csgo/deagle/deagle_01.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.USP.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
