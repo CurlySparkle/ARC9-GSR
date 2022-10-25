@@ -146,8 +146,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.83, -3, 0.6),
-    Ang = Angle(0, 1.2, 0),
+    Pos = Vector(-3.74, -3, 0.25),
+    Ang = Angle(0.34, 0.9, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
 }
@@ -255,7 +255,8 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
     ["fire_sights"] = {
-        Source = "shoot1_ads",
+        Source = "shoot3",
+        Mult = 0.75
     },
     ["reload"] = {
         Source = "reload_short",
