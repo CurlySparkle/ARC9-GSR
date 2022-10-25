@@ -76,8 +76,21 @@ SWEP.RPM = 85
 SWEP.Firemodes = {
     {
         Mode = 1,
-        -- add other attachment modifiers
-    }
+		PrintName = "Fanning",
+    },
+    {
+        Mode = 1,
+		PrintName = "Hammering",
+		SpreadAddHipFire = 0.01,
+		SpreadAddMove = 0.03,
+		SpreadAddRecoil = 0.05,
+		TriggerDelay = 0,
+		RPM = 150,
+		TriggerDelay = false,
+        Hook_TranslateAnimation = function(swep, anim)
+            return anim .. "_alt"
+        end,
+    },
 }
 -------------------------- RECOIL
 
@@ -296,7 +309,12 @@ SWEP.Animations = {
         },
     },
     ["draw"] = {
-        Source = "draw_short",
+        Source = "draw2",
+        EventTable = {
+            {s = path .. "revolver_draw.wav", t = 4 / 30},
+			{s = path .. "revolver_clipin.wav", t = 20 / 30},
+			{s = path .. "revolver_sideback.wav", t = 22 / 30},
+        },
     },
     ["holster"] = {
         Source = "holster",
