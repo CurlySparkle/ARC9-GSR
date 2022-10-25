@@ -232,7 +232,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_r8_bullet.mdl"
 SWEP.DropMagazineSounds = {"arc9/casings/casing_9mm_1.wav", "arc9/casings/casing_9mm_2.wav", "arc9/casings/casing_9mm_3"}
 SWEP.DropMagazineAmount = 8
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.7
 
 -------------------------- SOUNDS
 
