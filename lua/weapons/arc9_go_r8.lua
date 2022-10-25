@@ -157,6 +157,8 @@ SWEP.IronSights = {
     ViewModelFOV = 56,
 }
 
+SWEP.HasSights = false
+
 SWEP.ViewModelFOVBase = 56
 
 SWEP.SprintPos = Vector(-1, 0, 0)
@@ -258,6 +260,9 @@ SWEP.Animations = {
     },
     ["fire_alt"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+    },
+    ["dryfire"] = {
+        Source = {"dryfire"},
     },
     ["trigger"] = {
         Source = {"trigger"},
