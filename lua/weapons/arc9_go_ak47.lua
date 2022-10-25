@@ -84,7 +84,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
@@ -98,13 +98,16 @@ SWEP.RecoilRandomSide = 0.6
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.8
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.ViewRecoil = true -- true
+SWEP.ViewRecoilUpMult = -10 -- 40-100
 
 -------------------------- SPREAD
 
@@ -221,7 +224,8 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.AK47.Fire"
-SWEP.DistantShootSound = "weapons/csgo/ak47/ak47-1-distant.wav"
+SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
+SWEP.DistantShootSound = "weapons/csgo/ak47/ak47-1-distant.wava"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -330,6 +334,21 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.13, 0),
         Ang = Angle(90, 0, -90),
         Category = "stickers_ak",
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -3.4, 25),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Tactical",
+        Category = "tac",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(-0.55, -3.9, 14),
+        Ang = Angle(90, 0, 180),
     },
     {
         PrintName = "Perk",

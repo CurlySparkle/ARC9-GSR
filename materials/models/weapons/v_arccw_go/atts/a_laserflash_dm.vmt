@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_arccw_go\atts\a_laserflash_dm"
+	"$bumpmap" "models\weapons\v_arccw_go\atts\a_laserflash_nm"
+        "$color"			"[1 1 1]"
+
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongalbedoboost" "40"
+	"$phongfresnelranges" "[.83 .83 1]"
+
+//	"$phongexponenttexture"         "models\weapons\laserflash\weapon_laserflash_exp"
+
+	"$envmap"                       "env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"                   "[0.13 0.13 0.13]"
+}

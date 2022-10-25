@@ -678,6 +678,32 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.CZ75.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/cz75a/cz75_01.wav",
+		"^weapons/csgo/cz75a/cz75_02.wav",
+		"^weapons/csgo/cz75a/cz75_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.CZ75.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/cz75a/cz75_01.wav",
+		"^weapons/csgo/cz75a/cz75_02.wav",
+		"^weapons/csgo/cz75a/cz75_03.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.USP.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,

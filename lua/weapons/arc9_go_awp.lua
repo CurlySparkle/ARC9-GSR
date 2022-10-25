@@ -34,7 +34,8 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_awp.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+	TPIKPos = Vector(-12, 5, -2),
 }
 
 -------------------------- DAMAGE PROFILE
