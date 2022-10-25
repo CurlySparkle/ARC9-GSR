@@ -9,12 +9,12 @@ SWEP.PrintName = "AWP"
 
 SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "United Kingdom",
+    ["Caliber"] = ".338 Lapua Magnum",
+    ["Weight (Loaded)"] = "6kg",
+    ["Projectile Weight"] = "16.2 Grams",
+    ["Muzzle Velocity"] = "3000 Feet/Second",
+    ["Muzzle Energy"] = "7000 Joules"
 }
 
 SWEP.Credits = {

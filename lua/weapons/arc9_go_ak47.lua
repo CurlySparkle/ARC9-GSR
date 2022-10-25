@@ -10,12 +10,12 @@ SWEP.TrueName = "AK-47"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Russia",
+    ["Caliber"] = "7.62x39mm",
+    ["Weight (Loaded)"] = "4.79kg",
+    ["Projectile Weight"] = "7.9 Grams",
+    ["Muzzle Velocity"] = "2329 Feet/Second",
+    ["Muzzle Energy"] = "1992 Joules"
 }
 
 SWEP.Credits = {
@@ -23,20 +23,10 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-
-if ARC9:UseTrueNames() then
-
-SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
-SWEP.PrintName = SWEP.TrueName
-
-else
-
-SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart, the Maverick is the full-auto assault rifle of choice for CTs.]]
-
-end
+SWEP.Description = [[Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_ak47.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 
 SWEP.Slot = 2
 
@@ -45,7 +35,9 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_ak47.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+	TPIKPos = Vector(-11, 6, -6),
+    TPIKAng = Angle(0, 0, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -338,5 +330,9 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.13, 0),
         Ang = Angle(90, 0, -90),
         Category = "stickers_ak",
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
     },
 }

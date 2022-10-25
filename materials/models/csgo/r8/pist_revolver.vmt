@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-	$basetexture "models/csgo/revolver/pist_revolver"
+	$basetexture "models/csgo/r8/pist_revolver"
 	$bumpmap "null-bumpmap"
-	$phongexponenttexture "models/csgo/revolver/pist_revolver_exponent"
+	$phongexponenttexture "models/csgo/r8/pist_revolver_exponent"
 	
 	$phong "1"
 	$phongfresnelranges "[0.15 0.65 1.00]"

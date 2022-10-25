@@ -656,6 +656,28 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.R8.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/revolver/revolver-1_01.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.R8.Distance_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+         "^weapons/csgo/revolver/revolver-1_distant.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.USP.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,

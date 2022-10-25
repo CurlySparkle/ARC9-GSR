@@ -8,3 +8,8 @@ ARC9.CSGO.BlendEmpty = function(wep)
     vm:SetPoseParameter("empty", 0)
     end
 end
+
+ARC9.CSGO.BlendCylinder = function(wep)
+    local vm = wep:GetOwner():GetViewModel()
+    vm:SetPoseParameter("cyl", wep:Clip1())
+end
