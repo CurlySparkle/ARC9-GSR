@@ -52,7 +52,7 @@ SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before deali
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 15
+SWEP.ImpactForce = 25
 
 -------------------------- PHYS BULLET BALLISTICS
 
@@ -152,8 +152,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.35, -7, 2.1),
-    Ang = Angle(0, 0.5, -1),
+    Pos = Vector(-4.1, -7, 1.4),
+    Ang = Angle(0, 0, -1),
     Magnification = 1.25,
     ViewModelFOV = 56,
 }
@@ -236,6 +236,7 @@ SWEP.ShotgunReload = true
 local path = "weapons/csgo/xm1014/"
 
 SWEP.ShootSound = "CSGO.xm1014.Fire"
+SWEP.ShootSoundSilenced = "weapons/m3_suppressed.wav"
 SWEP.DistantShootSound = "CSGO.xm1014.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -322,4 +323,17 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.xm1014_Parent",
+        Pos = Vector(-0.5, -3.1, 25),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}

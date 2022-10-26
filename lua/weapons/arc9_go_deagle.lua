@@ -154,7 +154,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, 0, 0)
+SWEP.SprintPos = Vector(0, -1, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -237,6 +237,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/deagle/"
 
 SWEP.ShootSound = "CSGO.Deagle.Fire"
+SWEP.ShootSoundSilenced = "weapons/m3_suppressed.wav"
 SWEP.DistantShootSound = "CSGO.Deagle.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -325,4 +326,17 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(-0.025, -3, 8.85),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}

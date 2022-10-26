@@ -234,6 +234,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/hkp2000/"
 
 SWEP.ShootSound = "CSGO.hkp2000.Fire"
+SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
 SWEP.DistantShootSound = "CSGO.hkp2000.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -320,4 +321,17 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(-0.025, -2.3, 5.9),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
