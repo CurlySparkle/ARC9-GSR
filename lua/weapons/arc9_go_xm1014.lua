@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.Base = "arc9_base"
+SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
@@ -85,7 +85,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.25
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 24862 -- CSGO Seed Input Test
 
@@ -104,7 +104,7 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25

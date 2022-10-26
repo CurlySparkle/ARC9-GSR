@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.Base = "arc9_base"
+SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
@@ -156,6 +156,8 @@ SWEP.IronSights = {
     ViewModelFOV = 46,
     CrosshairInSights = false
 }
+
+SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
