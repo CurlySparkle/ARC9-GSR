@@ -237,8 +237,6 @@ SWEP.ShootSound = "CSGO.P90.Fire"
 SWEP.DistantShootSound = "CSGO.P90.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.ShootVolume = 145
-
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {

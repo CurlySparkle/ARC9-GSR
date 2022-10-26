@@ -23,17 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-
-if ARC9:UseTrueNames() then
-
-SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
-SWEP.PrintName = SWEP.TrueName
-
-else
-
-SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart, the Maverick is the full-auto assault rifle of choice for CTs.]]
-
-end
+SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -117,9 +107,6 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
---SWEP.ViewRecoil = true -- true
---SWEP.ViewRecoilUpMult = -20 -- 40-100
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
@@ -128,7 +115,7 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -236,10 +223,9 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.M4A4.Fire"
+SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
 SWEP.DistantShootSound = "weapons/csgo/m4a1/m4a1_distant_01.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -335,5 +321,17 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(0.5, 1.1, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -5.1, 17.7),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
     },
 }
