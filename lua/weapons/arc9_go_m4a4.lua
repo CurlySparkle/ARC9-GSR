@@ -27,6 +27,7 @@ SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart,
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 
@@ -301,8 +302,6 @@ SWEP.Animations = {
 }
 
 -------------------------- ATTACHMENTS
-
-SWEP.DefaultBodygroups = "00"
 
 SWEP.AttachmentElements = {
     ["mount"] = {

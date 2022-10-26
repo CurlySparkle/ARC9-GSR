@@ -27,6 +27,7 @@ SWEP.Description = [[As expensive as it is powerful, the Desert Eagle is an icon
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_deagle.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

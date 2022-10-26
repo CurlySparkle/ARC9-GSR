@@ -27,6 +27,7 @@ SWEP.Description = [[Accurate and controllable, the German-made P2000 is a servi
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_p2000.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

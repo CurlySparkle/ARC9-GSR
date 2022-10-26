@@ -27,6 +27,7 @@ SWEP.Description = [[Firing two large-mag Berettas at once will lower accuracy a
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_elite.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

@@ -28,6 +28,7 @@ SWEP.Description = [[A cheap option for cash-strapped players, the FAMAS effecti
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_famas.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

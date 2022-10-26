@@ -27,6 +27,7 @@ SWEP.Description = [[The Nova's rock-bottom price tag makes it a great ambush we
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_nova.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 

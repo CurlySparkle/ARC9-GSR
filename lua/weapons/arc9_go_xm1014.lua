@@ -27,6 +27,7 @@ SWEP.Description = [[The XM1014 is a powerful fully automatic shotgun that justi
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_xm1014.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 

@@ -27,6 +27,7 @@ SWEP.Description = [[The Glock 18 is a serviceable first-round pistol that works
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_glock.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

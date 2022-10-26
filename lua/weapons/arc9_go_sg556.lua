@@ -26,6 +26,7 @@ SWEP.Description = [[The terrorist-exclusive SG 553 is a premium scoped alternat
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

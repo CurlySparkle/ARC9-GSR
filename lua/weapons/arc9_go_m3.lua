@@ -27,6 +27,7 @@ SWEP.Description = [[The M3's average damage and range makes it a great mid to c
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_m3.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 

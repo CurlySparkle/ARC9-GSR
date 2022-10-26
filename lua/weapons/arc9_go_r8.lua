@@ -27,6 +27,7 @@ SWEP.Description = [[The R8 Revolver delivers a highly accurate and powerful rou
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_r8.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

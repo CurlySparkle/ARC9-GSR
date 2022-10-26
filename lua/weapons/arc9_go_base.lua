@@ -9,6 +9,7 @@ SWEP.PrintName = "CS:GO Base"
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.BashDamage = 50
 SWEP.BashLungeRange = 64

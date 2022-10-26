@@ -27,6 +27,7 @@ SWEP.Description = [[Manufactured in Switzerland, the cutting-edge MP9 SMG is an
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp9.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

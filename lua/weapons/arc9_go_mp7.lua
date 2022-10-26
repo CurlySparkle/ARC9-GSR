@@ -27,6 +27,7 @@ SWEP.Description = [[Versatile but expensive, the German-made MP7 SMG is the per
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp7.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

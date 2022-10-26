@@ -27,6 +27,7 @@ SWEP.Description = [[A fan favorite from Counter-Strike: Source, the Silenced US
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_usp.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

@@ -27,6 +27,7 @@ SWEP.Description = [[Powerful and reliable, the AK-47 is one of the most popular
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_ak47.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 
@@ -36,7 +37,7 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
-	TPIKPos = Vector(-11, 6, -6),
+    TPIKPos = Vector(-11, 6, -6),
     TPIKAng = Angle(0, 0, 175)
 }
 
@@ -304,38 +305,6 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Stickers",
-        DefaultCompactName = "Stickers",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -1.13, 0),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers_ak",
-    },
-    {
-        PrintName = "Stickers",
-        DefaultCompactName = "Stickers",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -1.13, 0),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers_ak",
-    },
-	{
-        PrintName = "Stickers",
-        DefaultCompactName = "Stickers",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -1.13, 0),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers_ak",
-    },
-	{
-        PrintName = "Stickers",
-        DefaultCompactName = "Stickers",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -1.13, 0),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers_ak",
-    },
-    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
@@ -353,5 +322,13 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk",
+    },
+    {
+        PrintName = "Stickers",
+        DefaultCompactName = "Stickers",
+        Bone = "v_weapon.ak47_parent",
+        Pos = Vector(0, -1.13, 0),
+        Ang = Angle(90, 0, -90),
+        Category = "stickers_ak",
     },
 }

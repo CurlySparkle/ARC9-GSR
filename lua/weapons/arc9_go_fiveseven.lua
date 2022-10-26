@@ -27,6 +27,7 @@ SWEP.Description = [[Highly accurate and armor-piercing, the pricy Five-Seven is
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_fiveseven.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_fiveseven.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

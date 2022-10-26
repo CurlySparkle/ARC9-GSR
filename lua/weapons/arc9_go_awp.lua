@@ -26,6 +26,7 @@ SWEP.Description = [[High risk and high reward, the infamous AWP is recognizable
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_awp.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 
@@ -35,7 +36,7 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
-	TPIKPos = Vector(-12, 5, -2),
+    TPIKPos = Vector(-12, 5, -2),
 }
 
 -------------------------- DAMAGE PROFILE
@@ -317,10 +318,10 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.awp_Parent",
-        Pos = Vector(-0.01, -4.2, 6),
+        Pos = Vector(-0.05, -4.2, 6),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
-        CorrectiveAng = Angle(-0.1, 0, 0),
+        CorrectiveAng = Angle(0.8, 0.5, 0),
         Installed = "csgo_optic_scope_awp",
         Integral = true,
     },

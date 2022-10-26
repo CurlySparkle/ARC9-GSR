@@ -27,6 +27,7 @@ SWEP.Description = [[The classic Sawed-Off deals very heavy close-range damage, 
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_mag7.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 

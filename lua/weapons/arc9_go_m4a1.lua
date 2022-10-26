@@ -27,6 +27,7 @@ SWEP.Description = [[With a smaller magazine than its unmuffled counterpart, the
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 
@@ -435,7 +436,6 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "00"
 SWEP.AttachmentElements = {
 }
 

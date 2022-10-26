@@ -27,6 +27,7 @@ SWEP.Description = [[An ideal pistol for the Terrorist on the move, the Tec-9 is
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_tec9.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_fiveseven.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

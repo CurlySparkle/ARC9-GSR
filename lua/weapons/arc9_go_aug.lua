@@ -26,6 +26,7 @@ SWEP.Description = [[Powerful and accurate, the AUG scoped assault rifle compens
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_aug.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

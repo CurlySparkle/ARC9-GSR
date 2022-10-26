@@ -37,6 +37,7 @@ end
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_galilar.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

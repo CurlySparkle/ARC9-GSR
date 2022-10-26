@@ -26,6 +26,7 @@ SWEP.Description = [[The SSG 08 bolt-action is a low-damage but very cost-effect
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_ssg08.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_scout.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 

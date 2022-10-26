@@ -27,6 +27,7 @@ SWEP.Description = [[A strong open-area LMG, the M249 is the perfect choice for 
 
 SWEP.ViewModel = "models/weapons/csgo/c_mach_m249.mdl"
 SWEP.WorldModel = "models/weapons/w_mach_m249para.mdl"
+SWEP.DefaultBodygroups = "0000000000000000000"
 
 SWEP.Slot = 3
 

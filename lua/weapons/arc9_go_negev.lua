@@ -27,6 +27,7 @@ SWEP.Description = [[The Negev is a beast that can keep the enemy at bay with it
 
 SWEP.ViewModel = "models/weapons/csgo/c_mach_negev.mdl"
 SWEP.WorldModel = "models/weapons/w_mach_m249para.mdl"
+SWEP.DefaultBodygroups = "0000000000000000000"
 
 SWEP.Slot = 3
 

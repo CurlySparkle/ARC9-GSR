@@ -26,6 +26,7 @@ SWEP.Description = [[The SCAR-20 is a semi-automatic sniper rifle that trades a 
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_scar20.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg556.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 

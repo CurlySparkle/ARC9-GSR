@@ -28,6 +28,7 @@ SWEP.Description = [[The SCAR-17 is a automatic with a burst-fire option that tr
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_scar17.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_rif_scar.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

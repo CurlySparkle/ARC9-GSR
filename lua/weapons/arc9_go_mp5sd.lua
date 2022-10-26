@@ -27,6 +27,7 @@ SWEP.Description = [[Often imitated but never equaled, the iconic MP5 is perhaps
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5sd.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

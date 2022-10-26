@@ -27,6 +27,7 @@ SWEP.Description = [[Deadly at close, not good at mid to large distances, the MP
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

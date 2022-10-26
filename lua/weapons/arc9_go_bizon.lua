@@ -27,6 +27,7 @@ SWEP.Description = [[The Bizon SMG is low-damage, but offers a uniquely designed
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 

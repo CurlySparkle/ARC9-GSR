@@ -27,6 +27,7 @@ SWEP.Description = [[A low-recoil firearm with a high rate of fire, the P250 is 
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_p250.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_p228.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 

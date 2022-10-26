@@ -26,6 +26,7 @@ SWEP.Description = [[The pricy G3SG1 lowers movement speed considerably but comp
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_g3sg1.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 
@@ -176,6 +177,7 @@ SWEP.IronSights = {
     Ang = Angle(0.025, -0.2, 0),
     Magnification = 2,
     ViewModelFOV = 56,
+    AssociatedSlot = 1,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -330,7 +332,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "0000"
+SWEP.DefaultBodygroups = "000000"
 
 SWEP.AttachmentElements = {
     ["rearsight"] = {
@@ -343,6 +345,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1,1},
             {2,1},
+            {3,1},
         },
     },
 }
@@ -351,20 +354,20 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.g3sg1_Parent",
-        Pos = Vector(0, -6.1, 3.4),
+        Pos = Vector(0.1, -4.85, 3.4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"rearsight","rail"},
         --Installed = "csgo_optic_scope_scar20",
-        CorrectiveAng = Angle(0, 0, 0),
+        CorrectiveAng = Angle(0.8, 0.5, 0),
     },
 }
 
 
-SWEP.RTScope = true
-SWEP.RTScopeSubmatIndex = 3
-SWEP.RTScopeFOV = 20
-SWEP.RTScopeReticle = Material("hud/arc9_csgo/scopes/scope_overlay.png", "mips smooth")
-SWEP.RTScopeColorable = true
-SWEP.RTScopeShadowIntensity = 10
-SWEP.ScopeScreenRatio = 1
+-- SWEP.RTScope = true
+-- SWEP.RTScopeSubmatIndex = 3
+-- SWEP.RTScopeFOV = 20
+-- SWEP.RTScopeReticle = Material("hud/arc9_csgo/scopes/scope_overlay.png", "mips smooth")
+-- SWEP.RTScopeColorable = true
+-- SWEP.RTScopeShadowIntensity = 10
+-- SWEP.ScopeScreenRatio = 1

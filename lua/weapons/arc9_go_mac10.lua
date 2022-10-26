@@ -27,6 +27,7 @@ SWEP.Description = [[Essentially a box that bullets come out of, the MAC-10 SMG 
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mac10.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mac10.mdl"
+SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 
