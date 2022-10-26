@@ -229,7 +229,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.famas.Fire"
-SWEP.DistantShootSound = "weapons/csgo/famas/famas_distant_01.wav"
+SWEP.DistantShootSound = "CSGO.famas.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"

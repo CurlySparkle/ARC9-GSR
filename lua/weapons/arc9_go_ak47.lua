@@ -225,7 +225,7 @@ SWEP.DropMagazineTime = 0.35
 
 SWEP.ShootSound = "CSGO.AK47.Fire"
 SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
-SWEP.DistantShootSound = "weapons/csgo/ak47/ak47-1-distant.wava"
+SWEP.DistantShootSound = "CSGO.AK47.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"

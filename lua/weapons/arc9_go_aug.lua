@@ -223,7 +223,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/aug/"
 
 SWEP.ShootSound = "CSGO.AUG.Fire"
-SWEP.DistantShootSound = path .. "aug_distant.wav"
+SWEP.DistantShootSound =  "CSGO.AUG.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"

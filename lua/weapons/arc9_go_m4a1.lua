@@ -23,7 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
+SWEP.Description = [[With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -83,6 +83,8 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         PrintName = "AUTO",
+		AfterShotQCA = 1,
+        MuzzleEffectQCA = 1,
         Silencer = false,
         --ActivateElements = {"unsil"},
         Hook_TranslateAnimation = function(swep, anim)

@@ -39,6 +39,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.AUG.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/AUG/aug_distant.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.SG556.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -117,10 +128,35 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.AK47.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/ak47/ak47_distant.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Famas.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
+    pitch = 100,
+    sound = {
+        "^weapons/csgo/famas/famas_01.ogg",
+		"^weapons/csgo/famas/famas_02.ogg",
+		"^weapons/csgo/famas/famas_03.ogg",
+		"^weapons/csgo/famas/famas_04.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Famas.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
     pitch = 100,
     sound = {
         "^weapons/csgo/famas/famas_01.ogg",
@@ -143,6 +179,18 @@ sound.Add( {
 		"^weapons/csgo/galilar/galil_04.ogg",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.GALIL.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = 100,
+    sound = {
+        "^weapons/csgo/galilar/galil-1-distant.ogg",
+    }
+} )
+
 
 sound.Add( {
     name = "CSGO.MP9.Fire",
@@ -437,6 +485,28 @@ sound.Add( {
     sound = {
         "^weapons/csgo/awp/awp_01.ogg",
 		"^weapons/csgo/awp/awp_02.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Scout.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/ssg08/ssg08-1.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Scout.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/ssg08/ssg08-1-distant.ogg",
     }
 } )
 

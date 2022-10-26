@@ -84,6 +84,8 @@ SWEP.Firemodes = {
         Mode = 1,
         PrintName = "Unsil",
         Silencer = false,
+		AfterShotQCA = 1,
+        MuzzleEffectQCA = 1,
         --ActivateElements = {"unsil"},
         Hook_TranslateAnimation = function(swep, anim)
             return anim .. "_silenced"
