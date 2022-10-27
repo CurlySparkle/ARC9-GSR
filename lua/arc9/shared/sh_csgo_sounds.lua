@@ -18,9 +18,9 @@ sound.Add( {
     level = 125,
     pitch = {90, 115},
     sound = {
-        "^weapons/csgo/movement1.ogg",
-		"^weapons/csgo/movement2.ogg",
-		"^weapons/csgo/movement3.ogg",
+        "^weapons/csgo/movement1.wav",
+		"^weapons/csgo/movement2.wav",
+		"^weapons/csgo/movement3.wav",
     }
 } )
 
@@ -64,6 +64,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.SG556.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/sg556/sg556_distant.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.m4a4.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -78,6 +89,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.m4a4.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/m4a1/m4a1_distant_01.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.SCAR17.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -88,6 +110,17 @@ sound.Add( {
 		"^weapons/csgo/m4a1/m4a1_02.ogg",
 		"^weapons/csgo/m4a1/m4a1_03.ogg",
 		"^weapons/csgo/m4a1/m4a1_04.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SCAR17.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/m4a1/m4a1_distant_01.ogg",
     }
 } )
 

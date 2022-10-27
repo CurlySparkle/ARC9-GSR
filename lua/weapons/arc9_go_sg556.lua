@@ -232,7 +232,7 @@ SWEP.DropMagazineTime = 0.45
 local path = "weapons/csgo/sg556/"
 
 SWEP.ShootSound = "CSGO.SG556.Fire"
-SWEP.DistantShootSound = path .. "sg556_distant.wav"
+SWEP.DistantShootSound = "CSGO.SG556.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
