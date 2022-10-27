@@ -315,7 +315,7 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.M4A1_Parent",
-        Pos = Vector(0, -6.3, 3.5),
+        Pos = Vector(0, -6.3, 2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
