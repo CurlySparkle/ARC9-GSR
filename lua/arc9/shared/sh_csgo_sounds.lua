@@ -292,8 +292,8 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP7.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 1.0,
-    level = 140,
+    volume = 0.1,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/mp7/mp7-1-distant.ogg",
@@ -343,6 +343,17 @@ sound.Add( {
     pitch = {97,103},
     sound = {
         "^weapons/csgo/p90/p90-1-distant.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.P90.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/p90_suppressed.ogg",
     }
 } )
 

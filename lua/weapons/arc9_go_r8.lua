@@ -233,7 +233,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
+SWEP.MuzzleParticle = "weapon_muzzle_smoke_magnum"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke_pistols"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1

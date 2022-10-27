@@ -208,7 +208,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_smg"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
@@ -236,6 +236,7 @@ local path = "weapons/csgo/p90/"
 
 SWEP.ShootSound = "CSGO.P90.Fire"
 SWEP.DistantShootSound = "CSGO.P90.Fire.Distance"
+SWEP.ShootSoundSilenced = "CSGO.P90.Fire_Silenced"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -326,4 +327,17 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -3.05, 7.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}

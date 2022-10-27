@@ -19,11 +19,11 @@ SWEP.PostBashTime = 0.5
 
 SWEP.SpeedMultMelee = 1
 SWEP.SpeedMultSights = 0.65
-SWEP.SpeedMultReload = 0.5
+SWEP.SpeedMultReload = 0.75
 
 -- This is for recoil that goes directly to camera, makes gun shoot where sights at but center of screen will be in different place. Like escape from shitlord
 SWEP.ViewRecoil = true -- true
-SWEP.ViewRecoilUpMult = -10 -- 40-100
+SWEP.ViewRecoilUpMult = -5 -- 40-100
 
 -- Extras
 

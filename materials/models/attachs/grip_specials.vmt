@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/attachs/grip_specials_d"
+	$bumpmap "null-bumpmap"
+	
+	"$phong" "1"
+	"$phongboost" "1.2"
+	"$phongalbedoboost" "30"
+	"$phongfresnelranges" "[.83 .83 1]"
+	"$phongexponenttexture" "models/attachs/grip_specials_e"
+
+	"$basemapalphaphongmask" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.21 .21 .21]"
+
+	"$phongalbedotint" "1"
+
+	"$phongdisablehalflambert" "1"
+}
+
+
+
+
+
+
+
