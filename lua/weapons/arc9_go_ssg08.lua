@@ -247,6 +247,13 @@ SWEP.Animations = {
             {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
         },
     },
+    ["fire_ads"] = {
+        Source = {"shoot1_ads"},
+        EventTable = {
+            {s = path .. "ssg08_boltback.wav", t = 18 / 30},
+            {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
+        },
+    },
     ["reload"] = {
         Source = "reload_short",
         EventTable = {

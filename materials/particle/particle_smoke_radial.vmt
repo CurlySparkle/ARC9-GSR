@@ -1,0 +1,13 @@
+"SpriteCard"
+{
+	"$basetexture"          "particle/particle_smoke_radial"
+	"$SEQUENCE_BLEND_MODE"  "1" 
+	"$MAXLUMFRAMEBLEND1"    "0"
+	"$MAXLUMFRAMEBLEND2"    "1"
+	"$translucent"          "1"
+	"$vertexcolor"          "1"
+	"$vertexalpha"          "1"
+	"$depthblend"           "1"
+	"$depthblendscale"      "45"
+	"$blendframes"          "1"
+}

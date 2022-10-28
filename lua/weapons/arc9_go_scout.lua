@@ -177,9 +177,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(26, 40, 4)
+SWEP.CustomizePos = Vector(20, 35, 1)
+
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(2, 8, 1)
+SWEP.CustomizeSnapshotPos = Vector(1, 3, 4)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -210,7 +211,7 @@ SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.6
+SWEP.EjectDelay = 0.7
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_awp_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -220,14 +221,15 @@ SWEP.DropMagazineTime = 0.4
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/ssg08/"
-
 SWEP.ShootSound = "CSGO.Scout.Fire"
+SWEP.ShootSoundSilenced = "CSGO.Scout.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.Scout.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.EnterSightsSound = ""
-SWEP.ExitSightsSound = ""
+SWEP.EnterSightsSound = "weapons/csgo/aug/aug_zoom_in.wav"
+SWEP.ExitSightsSound = "weapons/csgo/aug/aug_zoom_out.wav"
+
+local path = "weapons/csgo/ssg08/"
 
 SWEP.HideBones = {
 }
@@ -314,12 +316,25 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Scope",
-        Bone = "v_weapon.awp_Parent",
-        Pos = Vector(0, -3.65, 6.1),
+        Bone = "v_weapon.scout_Parent",
+        Pos = Vector(-0.1, -3.9, 4.6),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
-        CorrectiveAng = Angle(-0.1, 0, 0),
+        CorrectiveAng = Angle(0.3, 0, -0.2),
         Installed = "csgo_optic_scope_scout",
         Integral = true,
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.scout_Parent",
+        Pos = Vector(0, -3.27, 26),
+        Ang = Angle(90, 0, -90),
+		Scale = 0.6,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
     },
 }

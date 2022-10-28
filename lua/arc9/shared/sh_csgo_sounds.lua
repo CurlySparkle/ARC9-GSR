@@ -544,9 +544,20 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Scout.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/svd_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Scout.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 1.0,
+    volume = 0.2,
     level = 120,
     pitch = {97,103},
     sound = {
@@ -694,6 +705,32 @@ sound.Add( {
     pitch = {97,103},
     sound = {
         "^weapons/csgo/fiveseven/fiveseven-1-distant.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.cz75a.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/cz75a/cz75_01.ogg",
+		"^weapons/csgo/cz75a/cz75_02.ogg",
+        "^weapons/csgo/cz75a/cz75_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.cz75a.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.2,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/cz75a/cz75_01.ogg",
+		"^weapons/csgo/cz75a/cz75_02.ogg",
+        "^weapons/csgo/cz75a/cz75_03.ogg",
     }
 } )
 
