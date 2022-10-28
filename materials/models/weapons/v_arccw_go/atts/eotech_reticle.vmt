@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "models\weapons\v_arccw_go\atts\eotech_reticle"
+	"$additive" "1"
+}

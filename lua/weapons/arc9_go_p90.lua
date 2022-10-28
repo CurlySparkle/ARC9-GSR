@@ -10,12 +10,12 @@ SWEP.TrueName = "P90"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Belgium",
+    ["Caliber"] = "5.7x28mm",
+    ["Weight (Loaded)"] = "3kg",
+    ["Projectile Weight"] = "2 Grams",
+    ["Muzzle Velocity"] = "2345 Feet/Second",
+    ["Muzzle Energy"] = "465 Joules"
 }
 
 SWEP.Credits = {
@@ -258,6 +258,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "p90_cliprelease.wav", t = 10 / 30},
             {s = path .. "p90_clipout.wav", t = 12 / 30},
@@ -267,6 +289,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "p90_cliprelease.wav", t = 10 / 30},
             {s = path .. "p90_clipout.wav", t = 12 / 30},
@@ -278,6 +322,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "p90_draw.wav", t = 0 / 30},
             {s = path .. "p90_boltback.wav", t = 11 / 30},
@@ -311,6 +377,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 88 / 30 },
@@ -325,6 +413,16 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["top_rail"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["sights"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -334,6 +432,23 @@ SWEP.Attachments = {
         Category = "muzzle",
         Bone = "v_weapon.p90_Parent",
         Pos = Vector(0, -3.05, 7.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Barrel",
+        DefaultAttName = "Standard Barrel",
+        Category = "p90_barrel",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -2.9, 7.2),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Top",
+        DefaultAttName = "Standard Top Rail",
+        Category = "p90_top",
+        Bone = "v_weapon.p90_Parent",
+		InstalledElements = {"top_rail","sights"},
+        Pos = Vector(0, -4.17, 4.25),
         Ang = Angle(90, 0, -90),
     },
     {

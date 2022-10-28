@@ -83,7 +83,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2
+SWEP.Recoil = 1.8
 
 SWEP.RecoilSeed = 1454 -- CSGO Seed Input Test
 
@@ -113,7 +113,7 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.003
 SWEP.SpreadAddCrouch = -0.02
@@ -222,7 +222,7 @@ SWEP.ShouldDropMagEmpty = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.1
+SWEP.ShellScale = 0.12
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true

@@ -330,6 +330,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.HKP2000_Parent",
         Pos = Vector(-0.025, -2.3, 5.9),
         Ang = Angle(90, 0, -90),
+		Scale = 0.8,
     },
     {
         PrintName = "Perk",

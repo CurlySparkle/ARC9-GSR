@@ -237,11 +237,9 @@ SWEP.ShotgunReload = true
 local path = "weapons/csgo/xm1014/"
 
 SWEP.ShootSound = "CSGO.xm1014.Fire"
-SWEP.ShootSoundSilenced = "weapons/m3_suppressed.wav"
+SWEP.ShootSoundSilenced = "weapons/xm1014_suppresed.ogg"
 SWEP.DistantShootSound = "CSGO.xm1014.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
@@ -329,8 +327,8 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
-        Bone = "v_weapon.xm1014_Parent",
-        Pos = Vector(-0.5, -3.1, 25),
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(0, -1.8, 27),
         Ang = Angle(90, 0, -90),
     },
     {
