@@ -167,9 +167,9 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.83, -3, 0.6),
-    Ang = Angle(0, 1.2, 0),
-    Magnification = 1.25,
+    Pos = Vector(0, 0, 0),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1,
     ViewModelFOV = 56,
 }
 
@@ -233,7 +233,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_smoke_magnum"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_magnum"
 SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
@@ -292,6 +292,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
+		MinProgress = 0.7,
         EventTable = {
             {s = path .. "revolver_siderelease.wav", t = 3 / 30},
 			{s = path .. "revolver_prepare.wav", t = 3 / 30},

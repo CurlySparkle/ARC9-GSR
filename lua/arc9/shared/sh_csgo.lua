@@ -25,7 +25,6 @@ end
 
 ARC9.CSGO.BlendCylinder = function(wep)
     local vm = wep:GetOwner():GetViewModel()
-    local deltap = math.cos(delta * (math.pi / 2))
-    vm:SetPoseParameter("cyl",8-wep:Clip1(),Lerp(deltap, 0, 1) )
+    vm:SetPoseParameter("cyl",8-wep:Clip1())
 end
 
