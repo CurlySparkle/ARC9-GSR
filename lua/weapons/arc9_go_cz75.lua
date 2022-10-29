@@ -206,7 +206,7 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_pistol"
-SWEP.AfterShotParticle = "weapon_muzzle_smoke_pistols"
+SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -232,6 +232,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/p250/"
 
 SWEP.ShootSound = "CSGO.cz75a.Fire"
+SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
 SWEP.DistantShootSound = "CSGO.cz75a.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -305,6 +306,68 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
         },
     },
+-- Alt Animations
+    ["fire_alt"] = {
+        Source = {"shoot1_alt"},
+    },
+    ["reload_alt"] = {
+        Source = "reload_short_alt",
+        EventTable = {
+            {s = path .. "p250_clipout.wav", t = 12 / 30},
+            {s = path .. "p250_clipin.wav", t = 25 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload_empty_normal_alt",
+		MinProgress = 0.45,
+        EventTable = {
+            {s = path .. "p250_clipout.wav", t = 12 / 30},
+            {s = path .. "p250_clipin.wav", t = 25 / 30},
+            {s = path .. "p250_slideback.wav", t = 44 / 30},
+            {s = path .. "p250_sliderelease.wav", t = 50 / 30},
+        },
+    },
+    ["ready_alt"] = {
+        Source = "draw_alt",
+        EventTable = {
+            {s = path .. "p250_draw.wav", t = 1 / 30},
+            {s = path .. "p250_clipin.wav", t = 20 / 30},
+            {s = path .. "p250_slideback.wav", t = 30 / 30},
+            {s = path .. "p250_sliderelease.wav", t = 36 / 30},
+        },
+    },
+    ["draw_alt"] = {
+        Source = "draw_short_alt",
+    },
+    ["holster_alt"] = {
+        Source = "holster_alt",
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0 / 30},
+        },
+    },
+    ["idle_alt"] = {
+        Source = "idle_alt",
+    },
+    ["idle_sprint_alt"] = {
+        Source = "sprint_alt",
+    },
+    ["exit_sprint_alt"] = {
+        Source = "sprint_out_alt",
+        Time = 1,
+    },
+    ["enter_sprint_alt"] = {
+        Source = "sprint_in_alt",
+        Time = 1,
+    },
+    ["inspect_alt"] = {
+        Source = "lookat01_alt",
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+        },
+    },
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
@@ -314,4 +377,18 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.cz_parent",
+        Pos = Vector(-0.025, -2.45, 6.9),
+        Ang = Angle(90, 0, -90),
+		Scale = 0.8,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
