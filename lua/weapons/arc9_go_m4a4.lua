@@ -247,6 +247,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
@@ -254,6 +276,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
@@ -262,6 +306,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
             {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 10 / 30},
@@ -293,6 +359,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -319,7 +407,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
-        CorrectiveAng = Angle(0.5, 1.1, 0),
+        CorrectiveAng = Angle(-0.1, 0.5, 0),
     },
     {
         PrintName = "Muzzle",
@@ -328,6 +416,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.M4A1_Parent",
         Pos = Vector(0, -5.1, 17.7),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = "grip",
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -3.9, 10.5),
+        Ang = Angle(90, 0, 90),
     },
     {
         PrintName = "Perk",

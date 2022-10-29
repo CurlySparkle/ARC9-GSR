@@ -427,6 +427,15 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
+        PrintName = "Optics",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -5.8, 3.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        InstalledElements = {"sights"},
+        CorrectiveAng = Angle(0.3, 0, 0),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
@@ -440,15 +449,6 @@ SWEP.Attachments = {
         Category = "p90_barrel",
         Bone = "v_weapon.p90_Parent",
         Pos = Vector(0, -2.9, 7.2),
-        Ang = Angle(90, 0, -90),
-    },
-    {
-        PrintName = "Top",
-        DefaultAttName = "Standard Top Rail",
-        Category = "p90_top",
-        Bone = "v_weapon.p90_Parent",
-		InstalledElements = {"top_rail","sights"},
-        Pos = Vector(0, -4.17, 4.25),
         Ang = Angle(90, 0, -90),
     },
     {
