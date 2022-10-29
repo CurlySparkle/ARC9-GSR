@@ -244,7 +244,27 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+-- local magnumber = 0
+-- SWEP.Hook_TranslateAnimation = function(swep, anim)
+--     local ap = ""
+--     if magnumber == 0 then
+--         ap = ""
+--         if anim == "reload_empty" then
+--             magnumber = magnumber + 1
+--             print(magnumber)
+--         end
+--     end
+--     if magnumber >= 1 then
+--         ap = "_alt"
+--     end
+--     -- magnumber = 0
+--     return anim .. ap
+-- end
+
 SWEP.Animations = {
+    ["idle"] = {
+        Source = "idle",
+    },
     ["fire"] = {
         Source = {"shoot1"},
     },
@@ -257,7 +277,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.45,
+        MinProgress = 0.45,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
@@ -283,9 +303,6 @@ SWEP.Animations = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
-    ["idle"] = {
-        Source = "idle",
-    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -307,6 +324,9 @@ SWEP.Animations = {
         },
     },
 -- Alt Animations
+    ["idle_alt"] = {
+        Source = "idle_alt",
+    },
     ["fire_alt"] = {
         Source = {"shoot1_alt"},
     },
@@ -319,7 +339,7 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload_empty_alt",
-		MinProgress = 0.45,
+        MinProgress = 0.45,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
@@ -344,9 +364,6 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
-    },
-    ["idle_alt"] = {
-        Source = "idle_alt",
     },
     ["idle_sprint_alt"] = {
         Source = "sprint_alt",
@@ -385,7 +402,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.cz_parent",
         Pos = Vector(-0.025, -2.45, 6.9),
         Ang = Angle(90, 0, -90),
-		Scale = 0.8,
+        Scale = 0.8,
     },
     {
         PrintName = "Perk",

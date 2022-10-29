@@ -84,7 +84,7 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         PrintName = "AUTO",
-		AfterShotQCA = 1,
+        AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         Silencer = false,
         --ActivateElements = {"unsil"},
