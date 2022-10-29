@@ -90,8 +90,8 @@ SWEP.Recoil = 1
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -241,7 +241,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_elite_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
-SWEP.DropMagazineAmount = 1
+SWEP.DropMagazineAmount = 2
 SWEP.DropMagazineTime = 0.45
 
 -------------------------- SOUNDS
@@ -336,7 +336,7 @@ SWEP.Animations = {
     },
 }
 
-SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 
 -------------------------- ATTACHMENTS
 

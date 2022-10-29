@@ -206,7 +206,7 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_pistol"
-SWEP.AfterShotParticle = "weapon_muzzle_smoke"
+SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -232,8 +232,8 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/p250/"
 
 SWEP.ShootSound = "CSGO.cz75a.Fire"
-SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
 SWEP.DistantShootSound = "CSGO.cz75a.Fire.Distance"
+SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.HideBones = {
@@ -256,7 +256,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty"] = {
-        Source = "reload_empty_normal",
+        Source = "reload_empty",
 		MinProgress = 0.45,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
@@ -318,7 +318,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty_alt"] = {
-        Source = "reload_empty_normal_alt",
+        Source = "reload_empty_alt",
 		MinProgress = 0.45,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},

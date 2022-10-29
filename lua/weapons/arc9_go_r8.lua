@@ -350,7 +350,7 @@ SWEP.Animations = {
     },
 }
 
-SWEP.Hook_Think	= ARC9.CSGO.BlendCylinder
+SWEP.Hook_Think	= ARC9.CSGO.BlendCylinder2
 
 -------------------------- ATTACHMENTS
 

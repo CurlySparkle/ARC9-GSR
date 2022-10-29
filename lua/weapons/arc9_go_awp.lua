@@ -248,7 +248,7 @@ SWEP.Animations = {
             {s = path .. "awp_boltforward.wav", t = 28 / 30},
         },
     },
-    ["fire_ads"] = {
+    ["fire_sights"] = {
         Source = {"shoot1_ads"},
         EventTable = {
             {s = path .. "awp_boltback.wav", t = 18 / 30},
