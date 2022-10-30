@@ -79,10 +79,6 @@ SWEP.RPM = 85
 SWEP.Firemodes = {
     {
         Mode = 1,
-		PrintName = "Fanning",
-    },
-    {
-        Mode = 1,
 		PrintName = "Hammering",
 		SpreadAddHipFire = 0.01,
 		SpreadAddMove = 0.03,
@@ -90,10 +86,11 @@ SWEP.Firemodes = {
 		TriggerDelay = 0,
 		RPM = 150,
 		TriggerDelay = false,
-        Hook_TranslateAnimation = function(swep, anim)
-            return anim .. "_alt"
-        end,
     },
+    -- {
+        -- Mode = 1,
+		-- PrintName = "Fanning",
+    -- },
 }
 -------------------------- RECOIL
 
@@ -130,8 +127,10 @@ SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.003
+SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.02
+
+SWEP.SpreadAddRecoilSight = 0
 
 -------------------------- HANDLING
 
@@ -140,7 +139,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.5 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.TriggerDelay = 2 -- Set to > 0 to play the "trigger" animation before shooting. Delay time is based on this value.
@@ -148,16 +147,8 @@ SWEP.TriggerDelay = 2 -- Set to > 0 to play the "trigger" animation before shoot
 SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
 SWEP.TriggerDelayTime = 0.2 -- Time until weapon fires.
 
--------------------------- MELEE
-
-SWEP.Bash = true
-SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.TriggerDelaySights = 0.2
+SWEP.RPMSights = 85
 
 -------------------------- TRACERS
 
@@ -167,13 +158,18 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(0, 0, 0),
+    Pos = Vector(-1, 1, 0),
     Ang = Angle(0, 0, 0),
-    Magnification = 1,
+    Magnification = 1.1,
     ViewModelFOV = 56,
+	CrosshairInSights = true,
+	PrintName = "Fanning",
 }
 
-SWEP.HasSights = false
+SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
+    Pos = Vector(0, 1, 0),
+    Ang = Angle(0, 0, 5),
+}
 
 SWEP.ViewModelFOVBase = 56
 
@@ -272,23 +268,10 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1_alt"},
-    },
-    ["fire_alt"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
     ["dryfire"] = {
         Source = {"dryfire"},
-    },
-    ["trigger"] = {
-        Source = {"trigger"},
-        EventTable = {
-            {s = path .. "revolver_prepare.wav", t = 0 / 30},
-        },
-    },
-    ["untrigger"] = {
-        Source = {"trigger"},
-		Reverse = true,
     },
     ["reload"] = {
         Source = "reload",
@@ -347,6 +330,23 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 5 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 155 / 30 },
+        },
+    },
+    ["trigger_sights"] = {
+        Source = {"trigger"},
+		MinProgress = 0.8,
+        EventTable = {
+            {s = path .. "revolver_prepare.wav", t = 0 / 30},
+        },
+    },
+    ["fire_sights"] = {
+        Source = {"shoot1_alt"},
+    },
+    ["untrigger_sights"] = {
+        Source = {"untrigger"},
+		MinProgress = 0.8,
+        EventTable = {
+            {s = path .. "revolver_prepare.wav", t = 0 / 30},
         },
     },
 }
