@@ -2,7 +2,7 @@ ATT.PrintName = "Vertical Grip"
 ATT.CompactName = "Vertical"
 ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip onto, improving recoil control and reducing recoil drift.]]
 
---ATT.Icon = Material("entities/arc9_att_m16_grip_wood.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_grip_vertical.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/grip_vertical.mdl"
 

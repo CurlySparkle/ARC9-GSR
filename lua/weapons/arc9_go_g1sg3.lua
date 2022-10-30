@@ -361,6 +361,10 @@ SWEP.Attachments = {
         --Installed = "csgo_optic_scope_scar20",
         CorrectiveAng = Angle(0.8, 0.5, 0),
     },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
 }
 
 

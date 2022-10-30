@@ -2,7 +2,7 @@ ATT.PrintName = "Extended Barrel"
 ATT.CompactName = "EXTENDED B"
 ATT.Description = [[Extended barrel for the P90 for longer and better purposes. Adds support for extra foregrips.]]
 
---ATT.Icon = Material("entities/arc9_att_ak_handguard_zenit.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/p90_extended_barrel.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "p90_barrel"

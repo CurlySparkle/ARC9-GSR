@@ -83,18 +83,18 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.7
+SWEP.Recoil = 0.5
 
 SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.2
+SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
@@ -234,10 +234,9 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/mp9/"
 
 SWEP.ShootSound = "CSGO.MP7.Fire"
---SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
+SWEP.ShootSoundSilenced = "CSGO.MP7.Fire_Silenced"
+SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -258,6 +257,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp9_clipout.wav", t = 15 / 30},
             {s = path .. "mp9_clipin.wav", t = 50 / 30},
@@ -265,6 +286,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp9_clipout.wav", t = 15 / 30},
             {s = path .. "mp9_clipin.wav", t = 50 / 30},
@@ -274,6 +317,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = {"draw"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp9_draw.wav", t = 0 / 30},
             {s = path .. "mp9_boltback.wav", t = 13 / 30},
@@ -322,6 +387,44 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["rearsight"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["side_cover"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["bottom_cover"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.MP5_Parent",
+        Pos = Vector(0, -3.9, 16),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = "grip",
+        Bone = "v_weapon.MP5_Parent",
+        InstalledElements = {"bottom_cover"},
+        Pos = Vector(0, -2.5, 10.5),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}

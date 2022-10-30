@@ -41,7 +41,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.AUG.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.5,
+    volume = 0.3,
     level = 120,
     pitch = {97,103},
     sound = {
@@ -116,7 +116,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.SCAR17.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.5,
+    volume = 0.3,
     level = 120,
     pitch = {97,103},
     sound = {
@@ -240,10 +240,38 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.MP9.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = 100,
+    sound = {
+        "^weapons/csgo/mp9/mp9_01.ogg",
+		"^weapons/csgo/mp9/mp9_02.ogg",
+		"^weapons/csgo/mp9/mp9_03.ogg",
+		"^weapons/csgo/mp9/mp9_04.ogg",
+    }
+} )
+
+
+sound.Add( {
     name = "CSGO.MAC10.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mac10/mac10_01.ogg",
+		"^weapons/csgo/mac10/mac10_02.ogg",
+		"^weapons/csgo/mac10/mac10_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MAC10.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/mac10/mac10_01.ogg",
@@ -267,8 +295,8 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.Bizon.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 1.0,
-    level = 140,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/bizon/bizon-1-distant.ogg",
@@ -286,6 +314,17 @@ sound.Add( {
 		"^weapons/csgo/mp7/mp7_02.ogg",
 		"^weapons/csgo/mp7/mp7_02.ogg",
 		"^weapons/csgo/mp7/mp7_02.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP7.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+    sound = {
+        "^weapons/mp7_suppressed.wav",
     }
 } )
 
@@ -314,9 +353,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.UMP.Fire.Distance",
-    channel = CHAN_STATIC,
-    volume = 0.8,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/ump/ump45-1-distant.ogg",
@@ -338,8 +377,8 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.P90.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 1,
-    level = 140,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/p90/p90-1-distant.ogg",
@@ -370,9 +409,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5.Fire.Distance",
-    channel = CHAN_STATIC,
-    volume = 0.5,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/mp5/mp5_01.ogg",
@@ -392,9 +431,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Nova.Fire.Distance",
-    channel = CHAN_STATIC,
-    volume = 0.5,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/nova/nova-1-distant.ogg",
@@ -428,9 +467,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.XM1014.Fire.Distance",
-    channel = CHAN_STATIC,
-    volume = 0.5,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/xm1014/xm1014-1-distant.ogg",
@@ -463,9 +502,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SawedOff.Fire.Distance",
-    channel = CHAN_STATIC,
-    volume = 0.5,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/sawedoff/sawedoff-1-distant.ogg",
@@ -499,9 +538,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MAG7.Fire.Distance",
-    channel = CHAN_STATIC,
-    volume = 0.5,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/mag7/mag7_distant_01.ogg",
@@ -580,9 +619,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SCAR20.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/scar20/scar20_distant_01.ogg",
@@ -606,9 +645,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.G3SG1.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/g3sg1/g3sg1_distant_01.ogg",
@@ -632,9 +671,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/hkp2000/hkp2000-1-distant.ogg",
@@ -655,9 +694,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Glock.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/glock18/glock18-1-distant.ogg",
@@ -677,9 +716,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.P250.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/p250/p250_distant_01.ogg",
@@ -699,9 +738,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Fiveseven.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/fiveseven/fiveseven-1-distant.ogg",
@@ -712,19 +751,6 @@ sound.Add( {
     name = "CSGO.cz75a.Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
-    level = 120,
-    pitch = {97,103},
-    sound = {
-        "^weapons/csgo/cz75a/cz75_01.ogg",
-		"^weapons/csgo/cz75a/cz75_02.ogg",
-        "^weapons/csgo/cz75a/cz75_03.ogg",
-    }
-} )
-
-sound.Add( {
-    name = "CSGO.cz75a.Distance_Fire",
-    channel = CHAN_WEAPON,
-    volume = 0.2,
     level = 120,
     pitch = {97,103},
     sound = {
@@ -748,9 +774,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Tec9.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/tec9/tec9_distant_01.ogg",
@@ -773,9 +799,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Elite.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/elite/elite-1-distant.ogg",
@@ -796,9 +822,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Deagle.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
          "^weapons/csgo/deagle/deagle_01.ogg",
@@ -818,34 +844,12 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.R8.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
-    pitch = {97,103},
-    sound = {
-         "^weapons/csgo/revolver/revolver-1_distant.ogg",
-    }
-} )
-
-sound.Add( {
-    name = "CSGO.CZ75.Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
-    pitch = {97,103},
-    sound = {
-        "^weapons/csgo/cz75a/cz75_01.ogg",
-    }
-} )
-
-sound.Add( {
-    name = "CSGO.CZ75.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.2,
+    volume = 0.3,
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/cz75a/cz75_01.ogg",
+         "^weapons/csgo/revolver/revolver-1_distant.ogg",
     }
 } )
 
@@ -864,9 +868,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.USP.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/usp/usp_unsil-1-distant.ogg",
@@ -888,9 +892,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.USP.Distance_Silenced_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/usp/usp1-distant.ogg",
@@ -910,9 +914,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.M249.Distance_Fire",
-    channel = CHAN_STATIC,
-    volume = 1.0,
-    level = 140,
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/m249/m249-1-distant.ogg",
@@ -935,7 +939,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.NEGEV.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 1.0,
+    volume = 0.3,
     level = 120,
     pitch = {97,103},
     sound = {

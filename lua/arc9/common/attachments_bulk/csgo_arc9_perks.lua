@@ -35,7 +35,7 @@ ATT = {}
 
 ATT.PrintName = [[Enforcer]]
 ATT.CompactName = [[Enforcer]]
-ATT.Icon = Material("entities/attachs/go_perk_headshot.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_perk_juggernaut.png", "mips smooth")
 ATT.Description = [[
     Gain 30% resistance to damage.
 ]]

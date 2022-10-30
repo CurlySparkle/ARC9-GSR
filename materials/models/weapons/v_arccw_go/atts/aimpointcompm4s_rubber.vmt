@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_arccw_go\atts\AimpointCompM4S"	
+	"$bumpmap" "models\weapons\v_arccw_go\atts\AimpointCompM4S_Normal"
+	"$phong" 			"1"
+	"$phongexponent"		"50"
+	"$phongboost" 			"6"
+	"$phongfresnelranges"		"[0.5 1.5 3.0]"//"[0.1 0.4 .8]"
+	"$halflambert"			"1"
+	"$normalmapalphaenvmapmask"	"1"
+	
+	"$rimlight" 0
+	"$rimlightexponent" 15
+}

@@ -1,6 +1,6 @@
 ATT.PrintName = [[Heavy Suppressor]]
 ATT.Description = [[Heavy tactical suppressor. Reduces audible report by a lot with a penalty of significant bulk.]]
-ATT.Icon = Material("entities/acwATT_go_supp_ssq.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/silencer_m4.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true
@@ -8,8 +8,8 @@ ATT.Category = {"muzzle"}
 
 ATT.Model = "models/weapons/csgo/atts/silencer_m4.mdl"
 
-ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.RangeMaxMult = 1.1
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 0.9
 
 ATT.Silencer = true

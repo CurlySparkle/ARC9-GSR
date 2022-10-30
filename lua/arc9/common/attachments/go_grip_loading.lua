@@ -1,16 +1,15 @@
 ATT.PrintName = "Loading Grip"
-ATT.CompactName = "Foregrip"
-ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip onto, improving recoil control and reducing recoil drift.]]
+ATT.CompactName = "Loading"
+ATT.Description = [[Loading grip, improves reload speed by 15%]]
 
---ATT.Icon = Material("entities/arc9_att_m16_grip_wood.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_grip_Loading.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/grip_Loading.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
 
-ATT.RecoilPatternDriftMult = 0.75
-ATT.RecoilAutoControlMult = 1.15
+ATT.ReloadTimeMult = 0.95
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true

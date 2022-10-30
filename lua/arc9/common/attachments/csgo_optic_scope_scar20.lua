@@ -1,6 +1,6 @@
 ATT.PrintName = "Scope 8x"
 ATT.CompactName = [[SCOPE SCAR]]
--- ATT.Icon = Material("entities/mwc_atts/optics/mw3_acog.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_optic_schmidt.png", "mips smooth")
 ATT.Description = [[
     Large range combat scope for improved precision at longer ranges.
 ]]

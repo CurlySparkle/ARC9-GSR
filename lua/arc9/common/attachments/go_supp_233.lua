@@ -1,6 +1,6 @@
 ATT.PrintName = [[Light Suppressor]]
 ATT.Description = [[Light tactical suppressor. Reduces audible report on average with a less penalty.]]
-ATT.Icon = Material("entities/acwATT_go_supp_ssq.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/silencer_233.png", "mips smooth")
 
 ATT.SortOrder = 0.5
 ATT.AutoStats = true

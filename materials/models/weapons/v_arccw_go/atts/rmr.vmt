@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	//"$color"							"[1.25 1.25 1.25]"
+	$basetexture 						"models\weapons\v_arccw_go\atts\rmr_d"
+	$bumpmap 							"models\weapons\v_arccw_go\atts\rmr_n"
+	$phongexponenttexture				"models\weapons\v_arccw_go\atts\rmr_e"
+	
+	"$alphatest"				"1"
+	"$envmap" 				"env_cubemap"
+	"$halflambert"				"0"
+	"$envmapfresnel" 	        "0"
+	"$envmapfresnelminmaxexp"   "[0 0 0]"
+	"$envmaptint" "[.15 .15 .15]"
+	"$phong" 			"1"
+	"$phongexponent"		"1"
+	"$phongboost" 			"1"
+	"$phongfresnelranges"		"[0.1 0.4 .8]"
+	"$halflambert"			"1"
+	"$normalmapalphaenvmapmask"	"1"
+	
+	//$rimlight 				1
+	//$rimlightexponent       100
+	//$rimlightboost          .005
+}

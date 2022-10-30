@@ -1,15 +1,15 @@
-ATT.PrintName = "Ergo Grip Large"
-ATT.CompactName = "Ergo L"
+ATT.PrintName = "Ergo Grip"
+ATT.CompactName = "Ergo"
 ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip onto, improving recoil control and reducing recoil drift.]]
 
---ATT.Icon = Material("entities/arc9_att_m16_grip_wood.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/grip_ergo_large.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/grip_ergo_large.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
 
-ATT.RecoilAutoControlMult = 1.2
+ATT.RecoilAutoControlMult = 1.15
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true
