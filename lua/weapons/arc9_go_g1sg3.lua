@@ -362,6 +362,14 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.8, 0.5, 0),
     },
     {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -2, 12),
+        Ang = Angle(90, 0, 90),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
     },
