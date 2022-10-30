@@ -225,7 +225,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.AK47.Fire"
-SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
+SWEP.ShootSoundSilenced = "CSGO.AK47.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.AK47.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -245,6 +245,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
             {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
@@ -252,6 +274,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
             {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
@@ -260,6 +304,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0 / 30},
             {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11 / 30},
@@ -290,6 +356,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -309,15 +397,35 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(0, -3.4, 25),
+        Pos = Vector(0, -3.4, 25.3),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Tactical",
-        Category = "tac",
+        PrintName = "Top",
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(-0.55, -3.9, 14),
-        Ang = Angle(90, 0, 180),
+        Pos = Vector(0, -4.3, 2.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic",},
+        InstalledElements = {"rearsight"},
+        CorrectiveAng = Angle(0.8, 0.5, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(-0.9, -3.9, 14),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.ak47_Parent",
+        InstalledElements = {"bottom_cover"},
+        Pos = Vector(0, -2.2, 13),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
     },
     {
         PrintName = "Perk",

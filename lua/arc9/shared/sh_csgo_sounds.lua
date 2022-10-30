@@ -946,3 +946,71 @@ sound.Add( {
         "^weapons/csgo/negev/negev-1-distant.ogg",
     }
 } )
+
+-- SILENCERS
+
+sound.Add( {
+    name = "CSGO.G3SG1.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/svd_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/mp5/mp5_01.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.AK47.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/ak47_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.AUG.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/aug_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.AWP.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/awp_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.xm1014.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/xm1014_suppresed.ogg",
+    }
+} )

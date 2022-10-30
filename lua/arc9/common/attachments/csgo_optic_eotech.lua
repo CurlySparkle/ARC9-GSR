@@ -17,21 +17,20 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/sight_eotech.mdl"
-ATT.Scale = 1.5
-ATT.ModelOffset = Vector(0, 0, 0)
-ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Scale = 1.25
+ATT.ModelOffset = Vector(0, -0.05, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.7),
-        Ang = Angle(-0.55, 0.55, 0),
-        ViewModelFOV = 60,
-        Magnification = 1,
+        Pos = Vector(0.025, 5, -1.13633) * 1.25,
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 56,
         IgnoreExtra = false
     },
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/holo.png", "mips smooth")
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/go_eotech.png", "mips smooth")
 ATT.HoloSightSize = 512
 ATT.HoloSightColorable = true

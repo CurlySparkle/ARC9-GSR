@@ -234,7 +234,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/mp9/"
 
 SWEP.ShootSound = "CSGO.MP7.Fire"
-SWEP.ShootSoundSilenced = "CSGO.MP7.Fire_Silenced"
+SWEP.ShootSoundSilenced = "CSGO.MP5.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -414,14 +414,32 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
+        PrintName = "Top",
+        Bone = "v_weapon.MP5_Parent",
+        Pos = Vector(0, -5.1, 2.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic",},
+        InstalledElements = {"rearsight"},
+        CorrectiveAng = Angle(0.8, 0.5, 0),
+    },
+    {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "grip",
+        Category = "csgo_rail_ub",
         Bone = "v_weapon.MP5_Parent",
         InstalledElements = {"bottom_cover"},
         Pos = Vector(0, -2.5, 10.5),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.MP5_Parent",
+		InstalledElements = {"side_cover"},
+        Pos = Vector(-1, -3.95, 12),
+        Ang = Angle(90, 90, 90),
     },
     {
         PrintName = "Perk",

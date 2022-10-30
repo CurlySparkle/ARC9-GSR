@@ -173,9 +173,9 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.72, -8, 1.05),
-    Ang = Angle(0.025, -0.2, 0),
-    Magnification = 2,
+    Pos = Vector(-4.72, -11, 2),
+    Ang = Angle(0.025, 0.3, 0),
+    Magnification = 1.1,
     ViewModelFOV = 56,
     AssociatedSlot = 1,
 }
@@ -250,6 +250,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/g3sg1/"
 
 SWEP.ShootSound = "CSGO.g3sg1.Fire"
+SWEP.ShootSoundSilenced = "CSGO.G3SG1.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.g3sg1.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -275,6 +276,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "g3sg1_clipout.wav", t = 16 / 30},
             {s = path .. "g3sg1_clipin.wav", t = 73 / 30},
@@ -282,6 +305,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "g3sg1_clipout.wav", t = 16 / 30},
             {s = path .. "g3sg1_clipin.wav", t = 73 / 30},
@@ -291,6 +336,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "g3sg1_draw.wav", t = 0 / 30},
             {s = path .. "g3sg1_slideback.wav", t = 6 / 30},
@@ -322,6 +389,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 5 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 74 / 30 },
@@ -338,28 +427,35 @@ SWEP.AttachmentElements = {
     ["rearsight"] = {
         Bodygroups = {
             {1,1},
-            {2,1},
         },
     },
-    ["rail"] = {
+    ["rearsight2"] = {
         Bodygroups = {
-            {1,1},
-            {2,1},
-            {3,1},
+            {1,0},
         },
     },
 }
 
 SWEP.Attachments = {
     {
-        PrintName = "Scope",
+        PrintName = "Top",
         Bone = "v_weapon.g3sg1_Parent",
-        Pos = Vector(0.1, -4.85, 3.4),
+        Pos = Vector(0.1, -4.2, 2.1),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
-        InstalledElements = {"rearsight","rail"},
-        --Installed = "csgo_optic_scope_scar20",
+        Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
+        InstalledElements = {"rearsight"},
+        Installed = "csgo_optic_scope_g3sg1",
+		Integral = true,
         CorrectiveAng = Angle(0.8, 0.5, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0.17, -3.25, 27),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.1,
     },
     {
         PrintName = "Grip",
@@ -367,6 +463,14 @@ SWEP.Attachments = {
         Category = "csgo_rail_ub",
         Bone = "v_weapon.g3sg1_Parent",
         Pos = Vector(0, -2, 12),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(-0.8, -3.5, 19),
         Ang = Angle(90, 0, 90),
     },
     {

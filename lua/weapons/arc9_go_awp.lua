@@ -211,7 +211,7 @@ SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.6
+SWEP.EjectDelay = 0.75
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_awp_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -224,6 +224,7 @@ SWEP.DropMagazineTime = 0.3
 local path = "weapons/csgo/awp/"
 
 SWEP.ShootSound = "CSGO.awp.Fire"
+SWEP.ShootSoundSilenced = "CSGO.AWP.Fire_Silenced"
 SWEP.DistantShootSound = path .. "awp1-distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -331,5 +332,25 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.8, 0.5, 0),
         Installed = "csgo_optic_scope_awp",
         Integral = true,
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.awp_Parent",
+        Pos = Vector(0, -3.4, 39.1),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.awp_Parent",
+        Pos = Vector(-1.2, -2.6, 17.7),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
     },
 }

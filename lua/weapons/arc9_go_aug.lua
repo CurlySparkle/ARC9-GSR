@@ -224,6 +224,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/aug/"
 
 SWEP.ShootSound = "CSGO.AUG.Fire"
+SWEP.ShootSoundSilenced = "CSGO.AUG.Fire_Silenced"
 SWEP.DistantShootSound =  "CSGO.AUG.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -324,11 +325,28 @@ SWEP.Attachments = {
         Integral = true,
     },
     {
-        PrintName = "Stickers",
-        DefaultCompactName = "None",
-        Bone = "v_weapon.aug_parent",
-        Pos = Vector(0, 0, 0),
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, -3.5, 16.5),
         Ang = Angle(90, 0, -90),
-        Category = "stickers_aug",
     },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.aug_Parent",
+		InstalledElements = {"side_cover"},
+        Pos = Vector(-1, -3.6, 4),
+        Ang = Angle(90, 50, 90),
+    },
+    -- {
+        -- PrintName = "Stickers",
+        -- DefaultCompactName = "None",
+        -- Bone = "v_weapon.aug_parent",
+        -- Pos = Vector(0, 0, 0),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = "stickers_aug",
+    -- },
 }

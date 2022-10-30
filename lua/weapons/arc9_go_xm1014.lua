@@ -153,7 +153,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.1, -7, 1.4),
+    Pos = Vector(-4.4, -7, 1.5),
     Ang = Angle(0, 0, -1),
     Magnification = 1.25,
     ViewModelFOV = 56,
@@ -237,7 +237,7 @@ SWEP.ShotgunReload = true
 local path = "weapons/csgo/xm1014/"
 
 SWEP.ShootSound = "CSGO.xm1014.Fire"
-SWEP.ShootSoundSilenced = "weapons/xm1014_suppresed.ogg"
+SWEP.ShootSoundSilenced = "CSGO.xm1014.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.xm1014.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -264,18 +264,71 @@ SWEP.Animations = {
     },
     ["reload_start"] = {
         Source = "reload_start",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 0,
+                rhik = 0
+            },
+        },
     },
     ["reload_insert"] = {
         Source = "reload_loop",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+        },
         EventTable = {
             {s = "CSGO.xm1014.Shell_Insert", t = 5 / 30},
         },
     },
     ["reload_finish"] = {
         Source = "reload_end",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["ready"] = {
         Source = {"draw"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "xm1014_draw.wav", t = 0 / 30},
         },
@@ -324,12 +377,29 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
+        PrintName = "Optics",
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(-0.05, -2.5, 7.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        CorrectiveAng = Angle(0.8, 0.5, 0),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.m3_Parent",
         Pos = Vector(0, -1.8, 27),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(0, 0.15, 13.6),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
     },
     {
         PrintName = "Perk",

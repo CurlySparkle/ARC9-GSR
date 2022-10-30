@@ -1,0 +1,20 @@
+ "VertexLitGeneric"
+{
+	"$color"					"[0.9 0.9 0.9]"
+	"$basetexture" "models\weapons\v_arccw_go\atts\kv04_d"
+	"$bumpmap" "models\weapons\v_arccw_go\atts\kv04_n"
+
+	"$phong" 					1
+	"$phongboost" 				0.2
+	"$phongtint"				"[0.7 0.8 1]"
+	"$phongexponent"			"65"
+	"$phongfresnelranges"        "[2 4 6]"
+
+	"$envmap"                     "env_cubemap"
+	"$envmaptint"                   "[0.004 0.004 0.004]"
+	
+	$rimlight               1
+	$rimlightexponent      80
+	$rimlightboost          0.05	
+	
+}
