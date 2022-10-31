@@ -236,6 +236,12 @@ SWEP.ShootSound = "CSGO.cz75a.Fire"
 SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep:GetNthReload() >= 1 then
+        return anim .. "_alt"
+    end
+end
+
 SWEP.HideBones = {
 }
 
