@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_arccw_go\atts\su230_d"	
+	"$bumpmap" "models\weapons\v_arccw_go\atts\su230_n"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.02 .02 .02]"
+	"$phongexponenttexture" "models\weapons\v_arccw_go\atts\su230_e"
+	"$phong" 			"1"
+	"$phongexponent"		"10"
+	"$phongboost" 			"4"
+	"$phongfresnelranges"		"[0.1 0.1 .1]"
+	"$halflambert"			"1"
+}

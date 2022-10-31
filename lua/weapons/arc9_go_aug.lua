@@ -179,7 +179,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizePos = Vector(17, 32, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-9, 0, 0)
@@ -250,6 +250,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "aug_clipout.wav", t = 15 / 30},
             {s = path .. "aug_clipin.wav", t = 44 / 30},
@@ -258,6 +280,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "aug_clipout.wav", t = 15 / 30},
             {s = path .. "aug_clipin.wav", t = 44 / 30},
@@ -268,6 +312,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "aug_draw.wav", t = 0 / 30},
             {s = path .. "aug_boltpull.wav", t = 8 / 30},
@@ -299,6 +365,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.3,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -310,6 +398,16 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["grip"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["grip_extender"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -329,17 +427,29 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(0, -3.5, 16.5),
+        Pos = Vector(0, -3.5, 12.5),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = "grip",
+        Bone = "v_weapon.aug_Parent",
+		InstalledElements = {"grip","grip_extender"},
+        Pos = Vector(0, -1.7, 9.5),
+        Ang = Angle(90, 0, 90),
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.aug_Parent",
-		InstalledElements = {"side_cover"},
         Pos = Vector(-1, -3.6, 4),
         Ang = Angle(90, 50, 90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
     },
     -- {
         -- PrintName = "Stickers",

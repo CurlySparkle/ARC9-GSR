@@ -405,6 +405,15 @@ SWEP.Attachments = {
         Scale = 0.8,
     },
     {
+        PrintName = "Top",
+        Bone = "v_weapon.cz_parent",
+        Pos = Vector(0, -1, 4.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_pistols",},
+        --CorrectiveAng = Angle(0.8, 0.5, 0),
+		Scale = 0.85,
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
     },

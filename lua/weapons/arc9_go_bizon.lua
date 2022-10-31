@@ -234,10 +234,9 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/bizon/"
 
 SWEP.ShootSound = "CSGO.Bizon.Fire"
+SWEP.ShootSoundSilenced = "CSGO.Bizon.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.Bizon.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -322,4 +321,33 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, -3.15, 17),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, -4.3, 2.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic",},
+        CorrectiveAng = Angle(0.8, 0.5, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(-0.9, -3.7, 13),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}

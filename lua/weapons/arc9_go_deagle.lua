@@ -255,8 +255,7 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
     ["fire_sights"] = {
-        Source = "shoot3",
-        Mult = 0.75
+        Source = "shoot1_ads",
     },
     ["reload"] = {
         Source = "reload_short",
@@ -267,7 +266,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+		MinProgress = 0.45,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8 / 30},
             {s = path .. "de_clipin.wav", t = 19 / 30},
@@ -331,8 +330,27 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.deagle_parent",
-        Pos = Vector(-0.025, -3, 8.85),
+        Pos = Vector(-0.025, -3.1, 8.8),
         Ang = Angle(90, 0, -90),
+		Scale = 0.7,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -1.5, 6.4),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_pistols",},
+        --CorrectiveAng = Angle(0.8, 0.5, 0),
+		Scale = 0.85,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -1.8, 5),
+        Ang = Angle(90, 180, 90),
+		Scale = 1.1,
     },
     {
         PrintName = "Perk",

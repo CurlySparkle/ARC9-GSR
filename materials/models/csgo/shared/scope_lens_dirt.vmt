@@ -1,4 +1,4 @@
-unlitgeneric
+"VertexLitGeneric"
 {
 	$translucent 1
 	$basetexture models\csgo\shared\scope_lens_dirt

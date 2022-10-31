@@ -1014,3 +1014,14 @@ sound.Add( {
         "^weapons/xm1014_suppresed.ogg",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.Bizon.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/mp7_suppressed.wav",
+    }
+} )
