@@ -299,7 +299,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.5,
                 lhik = 1,
                 rhik = 1
             },
@@ -391,6 +391,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.m3_Parent",
         Pos = Vector(0, -1.8, 27),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(-1.2, -0.7, 15.5),
+        Ang = Angle(90, 0, 90),
     },
     {
         PrintName = "Bottom",

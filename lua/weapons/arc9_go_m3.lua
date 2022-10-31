@@ -239,6 +239,7 @@ SWEP.ShotgunReload = true
 local path = "weapons/csgo/nova/"
 
 SWEP.ShootSound = "CSGO.NOVA.Fire"
+SWEP.ShootSoundSilenced = "CSGO.xm1014.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.NOVA.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -261,24 +262,89 @@ SWEP.Animations = {
     },
     ["reload_start"] = {
         Source = "reload_start",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 0,
+                rhik = 0
+            },
+        },
     },
     ["reload_insert"] = {
         Source = "reload_loop",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+        },
         EventTable = {
             {s = "CSGO.Nova.Shell_Insert", t = 5 / 30},
         },
     },
     ["reload_finish"] = {
         Source = "reload_end",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.5,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload_finish_empty"] = {
         Source = "reload_end_empty",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.5,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "nova_pump.wav", t = 15 / 30},
         },
     },
     ["ready"] = {
         Source = {"draw"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "nova_draw.wav", t = 0 / 30},
             {s = path .. "nova_pump.wav", t = 19 / 30},
@@ -326,4 +392,44 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.M3_PARENT",
+        Pos = Vector(0, -1.9, 8),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic",},
+        CorrectiveAng = Angle(0.8, 0.5, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(0, -1.88, 28.1),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.M3_PUMP",
+        Pos = Vector(-1.4, -0.3, 3.5),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.M3_PUMP",
+        Pos = Vector(-0.3, 1, 2),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 4

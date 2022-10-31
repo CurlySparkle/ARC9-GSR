@@ -24,7 +24,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.005, 9, -1.55),
+        Pos = Vector(-0.005, 10, -1.55),
         Ang = Angle(-1.05, -0.3, 0),
         ViewModelFOV = 56,
         Magnification = 1,
@@ -33,7 +33,7 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 8
 ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")

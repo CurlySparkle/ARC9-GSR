@@ -1036,3 +1036,25 @@ sound.Add( {
         "^weapons/p90_suppresed.ogg",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.Famas.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/m4a1_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.fiveseven.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/m9_suppressed.wav",
+    }
+} )

@@ -17,12 +17,12 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/sight_eotech.mdl"
-ATT.Scale = 1.25
+ATT.Scale = 1.4
 ATT.ModelOffset = Vector(0, -0.05, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0.025, 5, -1.13633) * 1.25,
+        Pos = Vector(-0.06, 7, -1.24) * 1.25,
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,

@@ -158,9 +158,10 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-6.335, -10, 1.02),
+    Pos = Vector(-6.335, -9, 1.02),
     Ang = Angle(-0.15, -0.2, -2.5),
     Magnification = 1.25,
+	ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -230,6 +231,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.famas.Fire"
+SWEP.ShootSoundSilenced = "CSGO.Famas.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.famas.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -252,6 +254,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.2,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
             {s = "weapons/csgo/famas/famas_clipin.wav", t = 42 / 30},
@@ -260,6 +284,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.2,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
             {s = "weapons/csgo/famas/famas_clipin.wav", t = 42 / 30},
@@ -270,6 +316,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/famas/famas_draw.wav", t = 0 / 30},
             {s = "weapons/csgo/famas/famas_boltback.wav", t = 9 / 30},
@@ -314,4 +382,43 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.famas_Parent",
+        Pos = Vector(0, -2.9, 13.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.famas_Parent",
+        Pos = Vector(0, -6.2, 5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_alt",},
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.famas_Parent",
+        Pos = Vector(-1, -6.4, 10),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.famas_Parent",
+        Pos = Vector(0, -1.5, 9),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}
+
+SWEP.GripPoseParam = 1
