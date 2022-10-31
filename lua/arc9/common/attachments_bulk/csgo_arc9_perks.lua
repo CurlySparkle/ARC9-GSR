@@ -64,3 +64,111 @@ hook.Add("EntityTakeDamage", "ARC9_CSGO_PERK_ENFORCER", function(ent, dmg)
         dmg:ScaleDamage(0.7)
     end
 end)
+
+ATT = {}
+
+ATT.PrintName = [[Ace In The Hole]]
+ATT.Description = [[Against NPCs, 33% chance for each shot to deal 200% damage.]]
+ATT.Icon = Material("entities/attachs/go_perk_ace.png", "mips smooth")
+ATT.AutoStats = true
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+ATT.ActivateElements = {"acehole"}
+
+ATT.DamageMult = newdamage
+
+hook.Add("EntityTakeDamage", "ARC9_CSGO_PERK_ACEHOLE", function(ent, data)
+    if !(ent:IsPlayer() or ent:IsNPC()) then return end
+    local wep = ent:GetActiveWeapon()
+    if !IsValid(wep) or !wep.ARC9 then return end
+    local attached = wep:GetElements()
+    if !attached["acehole"] then return end
+
+    if attached["acehole"] and math.Rand(0, 1) <= 0.333 then
+        ATT.DamageMult = 2
+    else
+        ATT.DamageMult = 1
+    end
+end)
+
+ARC9.LoadAttachment(ATT, "csgo_perk_ace")
+
+ATT = {}
+
+ATT.PrintName = [[Deft Hands]]
+ATT.Description = [[Cycling the weapon is 25% faster.]]
+ATT.Icon = Material("entities/attachs/go_perk_bolt.png", "mips smooth")
+ATT.AutoStats = true
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+ATT.ActivateElements = {"perk_bolt"}
+
+ATT.CycleTimeMult = 0.75
+
+ARC9.LoadAttachment(ATT, "csgo_perk_bolt")
+
+ATT = {}
+
+ATT.PrintName = [[Enhanced Burst]]
+ATT.Description = [[Alters weapon fire group to support 3-burst and semi-automatic fire instead. Enhances effective fire rate.]]
+ATT.Icon = Material("entities/attachs/go_perk_burst.png", "mips smooth")
+ATT.AutoStats = true
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+ATT.ActivateElements = {"perk_burst"}
+
+ATT.RPMMult = 1.15
+
+ATT.FiremodesOverride = {
+    {
+        Mode = 3,
+    },
+    {
+        Mode = 1,
+    },
+}
+
+ARC9.LoadAttachment(ATT, "csgo_perk_burst")
+
+ATT = {}
+
+ATT.PrintName = [[Gung Ho]]
+ATT.Description = [[Special technique allows for shooting while sprinting.]]
+ATT.Icon = Material("entities/attachs/go_perk_cowboy.png", "mips smooth")
+ATT.AutoStats = true
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+ATT.ActivateElements = {"perk_cowboy"}
+
+ATT.ShootWhileSprint = true
+
+ARC9.LoadAttachment(ATT, "csgo_perk_cowboy")
+
+ATT = {}
+
+ATT.PrintName = [[Deep Sea]]
+ATT.Description = [[Enables the weapon to keep firing while underwater with specially sealed internal parts.]]
+ATT.Icon = Material("entities/attachs/go_perk_cowboy.png", "mips smooth")
+ATT.AutoStats = true
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+ATT.ActivateElements = {"perk_diver"}
+
+ATT.CanFireUnderwater = true
+
+ARC9.LoadAttachment(ATT, "csgo_perk_diver")
