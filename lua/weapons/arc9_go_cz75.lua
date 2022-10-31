@@ -227,6 +227,8 @@ SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/met
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.35
 
+SWEP.PartialReloadCountsTowardsNthReload = false
+
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/p250/"
