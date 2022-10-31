@@ -182,7 +182,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(17, 32, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-9, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(-1, 0, 2)
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes

@@ -987,7 +987,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 120,
-    pitch = {97,103},
+    pitch = {90,110},
     sound = {
         "^weapons/aug_suppressed.wav",
     }
@@ -1012,6 +1012,17 @@ sound.Add( {
     pitch = {97,103},
     sound = {
         "^weapons/xm1014_suppresed.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Deagle.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/deagle_suppressed.wav",
     }
 } )
 
