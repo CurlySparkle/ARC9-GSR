@@ -236,7 +236,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/deagle/"
 
 SWEP.ShootSound = "CSGO.Deagle.Fire"
-SWEP.ShootSoundSilenced = "weapons/m3_suppressed.wav"
+SWEP.ShootSoundSilenced = "CSGO.Deagle.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.Deagle.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
