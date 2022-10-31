@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_Loading.mdl"
 ATT.SortOrder = 0
 ATT.Category = "grip"
 
-ATT.ReloadTimeMult = 0.95
+ATT.ReloadTimeMult = 0.9
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true
@@ -20,3 +20,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.075
+
+ATT.DrawFunc = function(swep, model, wm)
+    model:SetPoseParameter("gripstyle2", swep.GripPoseParam2 or 0)
+end

@@ -446,3 +446,5 @@ SWEP.Attachments = {
         Category = "go_perk"
     },
 }
+
+SWEP.GripPoseParam = 3

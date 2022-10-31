@@ -440,3 +440,5 @@ SWEP.Attachments = {
         Category = "stickers_ak",
     },
 }
+
+SWEP.GripPoseParam = 4

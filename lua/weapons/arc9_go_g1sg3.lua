@@ -479,6 +479,7 @@ SWEP.Attachments = {
     },
 }
 
+SWEP.GripPoseParam = 3
 
 -- SWEP.RTScope = true
 -- SWEP.RTScopeSubmatIndex = 3

@@ -285,12 +285,13 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.45,
+        MinProgress = 0.65,
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
-            {s = path .. "p250_slideback.wav", t = 44 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 50 / 30},
+            {s = path .. "p250_clipout.wav", t = 9 / 30},
+			{s = path .. "p250_clipout.wav", t = 23 / 30},
+            {s = path .. "p250_clipin.wav", t = 46 / 30},
+            {s = path .. "p250_slideback.wav", t = 64 / 30},
+            {s = path .. "p250_sliderelease.wav", t = 68 / 30},
         },
     },
     ["ready"] = {
