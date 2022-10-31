@@ -18,6 +18,9 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0, -0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
-
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.95
+
+ATT.DrawFunc = function(swep, model, wm)
+    model:SetPoseParameter("gripstyle", swep.GripPoseParam or 0)
+end
