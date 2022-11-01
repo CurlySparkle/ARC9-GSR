@@ -26,7 +26,7 @@ SWEP.Credits = {
 SWEP.Description = [[A fully automatic variant of the CZ75, the CZ75-Auto is another inexpensive choice against armored opponents. But with very little ammo provided, strong trigger discipline is required.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_cz75.mdl"
-SWEP.WorldModel = "models/weapons/w_pist_glock.mdl"
+SWEP.WorldModel = "models/weapons/w_pist_fiveseven.mdl"
 SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1

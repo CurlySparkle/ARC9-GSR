@@ -382,7 +382,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.05, -2.5, 7.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
-        CorrectiveAng = Angle(0.8, 0.5, 0),
+        CorrectiveAng = Angle(0, 0, 0),
     },
     {
         PrintName = "Muzzle",

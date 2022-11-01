@@ -346,10 +346,11 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.glock_parent",
-        Pos = Vector(0, -0.8, 4.5),
+        Pos = Vector(0, -0.8, 4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
-		Scale = 0.85,
+		Scale = 1,
+		CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
         PrintName = "Tactical",
@@ -358,7 +359,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -1.4, 4.5),
         Ang = Angle(90, 180, 90),
-		Scale = 1.1,
+		Scale = 1,
     },
     {
         PrintName = "Perk",
