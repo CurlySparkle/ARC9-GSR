@@ -433,3 +433,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 4
+SWEP.GripPoseParam2 = 7

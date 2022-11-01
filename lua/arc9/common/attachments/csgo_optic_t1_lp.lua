@@ -13,7 +13,7 @@ ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SIGHTS"
 
-ATT.Category = {"csgo_optic","csgo_sights"}
+ATT.Category = {"csgo_optic","csgo_optics_pistols"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/t1lp.mdl"
@@ -32,6 +32,6 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/go_aimpoint.png", "mips smooth")
-ATT.HoloSightSize = 40
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
+ATT.HoloSightSize = 512
 ATT.HoloSightColorable = true

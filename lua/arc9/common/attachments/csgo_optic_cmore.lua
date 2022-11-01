@@ -17,13 +17,13 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/cmore.mdl"
-ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Scale = 1.25
+ATT.ModelOffset = Vector(0, 0, 0.05)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -1.26295),
+        Pos = Vector(-0.01, 6, -1.5),
         Ang = Angle(0, 0, 0),
         ViewModelFOV = 56,
         Magnification = 1.1,
@@ -32,6 +32,6 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/dot.png", "mips smooth")
-ATT.HoloSightSize = 40
-ATT.HoloSightColorable = true
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
+ATT.HoloSightSize = 512
+ATT.HoloSightColorable = false

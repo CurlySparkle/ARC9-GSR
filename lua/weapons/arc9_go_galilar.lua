@@ -230,6 +230,7 @@ SWEP.DropMagazineTime = 0.45
 local path = "weapons/csgo/galilar/"
 
 SWEP.ShootSound = "CSGO.GALIL.Fire"
+SWEP.ShootSoundSilenced = "CSGO.GALIL.Silenced_Fire"
 SWEP.DistantShootSound = path .. "galil-1-distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -247,8 +248,33 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_sights"] = {
+        Source = {""},
+    },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13 / 30},
             {s = path .. "galil_clipin.wav", t = 32 / 30},
@@ -256,6 +282,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13 / 30},
             {s = path .. "galil_clipin.wav", t = 32 / 30},
@@ -265,6 +313,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "galil_draw.wav", t = 0 / 30},
             {s = path .. "galil_boltback.wav", t = 9 / 30},
@@ -309,4 +379,44 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Scope",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -4.9, 3),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        CorrectiveAng = Angle(0.13, 0, 0.),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -3.25, 20),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(-1.5, -3.3, 12.5),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -2.1, 11),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 3

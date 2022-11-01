@@ -246,6 +246,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/glock18/"
 
 SWEP.ShootSound = "CSGO.Glock.Fire"
+SWEP.ShootSoundSilenced = "CSGO.Glock.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.Glock.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -332,4 +333,35 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.glock_parent",
+        Pos = Vector(-0.025, -2.15, 6.1),
+        Ang = Angle(90, 0, -90),
+        Scale = 0.8,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.glock_parent",
+        Pos = Vector(0, -0.8, 4.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_pistols",},
+		Scale = 0.85,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = {"csgo_tac","csgo_tac_pistols"},
+        Bone = "v_weapon.glock_parent",
+        Pos = Vector(0, -1.4, 4.5),
+        Ang = Angle(90, 180, 90),
+		Scale = 1.1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}

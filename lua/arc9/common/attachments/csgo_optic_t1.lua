@@ -32,6 +32,6 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/go_aimpoint.png", "mips smooth")
-ATT.HoloSightSize = 40
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
+ATT.HoloSightSize = 512
 ATT.HoloSightColorable = true

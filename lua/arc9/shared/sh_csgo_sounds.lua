@@ -1037,6 +1037,7 @@ sound.Add( {
     }
 } )
 
+
 sound.Add( {
     name = "CSGO.Famas.Fire_Silenced",
     channel = CHAN_STATIC,
@@ -1056,5 +1057,27 @@ sound.Add( {
     pitch = {95,105},
     sound = {
         "^weapons/m9_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Glock.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/glock_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Galil.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/galil_suppressed.wav",
     }
 } )

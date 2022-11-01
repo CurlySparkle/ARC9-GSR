@@ -21,7 +21,7 @@ ATT.Attachments = {
         Pos = Vector(2.5, 0, -2.8),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optics_pistols"},
 		Scale = 1
     }
 }

@@ -18,13 +18,13 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/specter.mdl"
-ATT.Scale = 1
+ATT.Scale = 1.2
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5.5, -1.47),
+        Pos = Vector(0, 7, -1.8),
         Ang = Angle(0.1, 0.1, 0),
         ViewModelFOV = 60,
         Magnification = 1,
