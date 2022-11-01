@@ -243,6 +243,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_sights"] = {
+        Source = "shoot1_ads",
+    },
     ["reload"] = {
         Source = "reload_short",
         IKTimeLine = {
@@ -406,8 +409,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -4.3, 2.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},
-        InstalledElements = {"rearsight"},
-        CorrectiveAng = Angle(0.8, 0.5, 0),
+        CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {
         PrintName = "Side",
@@ -422,7 +424,6 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_rail_ub",
         Bone = "v_weapon.ak47_Parent",
-        InstalledElements = {"bottom_cover"},
         Pos = Vector(0, -2.2, 13),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
