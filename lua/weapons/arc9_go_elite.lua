@@ -250,6 +250,7 @@ local path = "weapons/csgo/elite/"
 
 SWEP.ShootSound = "CSGO.elite.Fire"
 SWEP.DistantShootSound = "CSGO.elite.Fire.Distance"
+SWEP.ShootSoundSilenced = "weapons/csgo/usp/usp_01.ogg"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
@@ -343,4 +344,19 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(-0.025, -3.325, 8.2),
+        Ang = Angle(90, 0, -90),
+        DuplicateModels = {
+            {
+                Bone = "v_weapon.m9a1_R_parent",
+            }
+        },
+        Scale = 0.8,
+    },
+}
