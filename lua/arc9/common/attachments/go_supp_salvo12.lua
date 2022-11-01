@@ -1,7 +1,7 @@
 ATT.PrintName = [[Salvo-12 Suppressor]]
 ATT.CompactName = [[Salvo-12]]
 ATT.Description = [[Heavy tactical suppressor. Reduces audible report by a lot with a penalty of significant bulk.]]
-ATT.Icon = Material("entities/attachs/silencer_m4.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/silencer_salvo12.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true

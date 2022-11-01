@@ -1,8 +1,8 @@
-ATT.PrintName = "Eotech Sight"
-ATT.CompactName = [[Eotech]]
-ATT.Icon = Material("entities/attachs/go_optic_eotech.png", "mips smooth")
+ATT.PrintName = "OKP-7"
+ATT.CompactName = [[OKP-7]]
+ATT.Icon = Material("entities/attachs/okp.png", "mips smooth")
 ATT.Description = [[
-    Medium range sight for some improved precision.
+    OKP-7 sight that provides an effective aiming reticle.
 ]]
 ATT.Pros = {
     "+ Clearer sight picture"
@@ -16,13 +16,14 @@ ATT.Folder = "SIGHTS"
 ATT.Category = {"csgo_optic"}
 
 
-ATT.Model = "models/weapons/csgo/atts/sights/eotech.mdl"
+ATT.Model = "models/weapons/csgo/atts/sights/okp.mdl"
 ATT.Scale = 0.5
 ATT.ModelOffset = Vector(0, 0, 0.1)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -1.45) * 1.25,
+        Pos = Vector(0.25, 6, -1.3),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,
@@ -31,6 +32,7 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleEOTech.png", "mips smooth")
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleOPK.png", "mips smooth")
 ATT.HoloSightSize = 512
-ATT.HoloSightColorable = true
+ATT.HoloSightColorable = false
+ATT.HoloSightColor = Color(55, 155, 55)

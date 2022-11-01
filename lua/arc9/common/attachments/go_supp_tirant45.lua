@@ -1,7 +1,7 @@
 ATT.PrintName = [[Ti-Rant 45 Suppressor]]
 ATT.CompactName = [[Ti-Rant 45]]
 ATT.Description = [[Tactical suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
-ATT.Icon = Material("entities/attachs/silencer_m4.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/silencer_TiRant45.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true
