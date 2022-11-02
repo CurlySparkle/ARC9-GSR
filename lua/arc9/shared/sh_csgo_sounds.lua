@@ -1103,3 +1103,14 @@ sound.Add( {
         "^weapons/mp7_suppressed.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.mag7.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/xm1014_suppresed.ogg",
+    }
+} )

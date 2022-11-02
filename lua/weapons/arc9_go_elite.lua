@@ -187,7 +187,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 30, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -8, 3)
+SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -358,5 +358,9 @@ SWEP.Attachments = {
             }
         },
         Scale = 0.8,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
     },
 }

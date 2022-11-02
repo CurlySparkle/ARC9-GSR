@@ -184,9 +184,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 35, 7)
+SWEP.CustomizePos = Vector(25, 35, 5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(5, -9, 0)
+SWEP.CustomizeSnapshotPos = Vector(4, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -244,10 +244,9 @@ SWEP.ShotgunReload = false
 local path = "weapons/csgo/mag7/"
 
 SWEP.ShootSound = "CSGO.mag7.Fire"
+SWEP.ShootSoundSilenced = "CSGO.mag7.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.mag7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
@@ -267,8 +266,37 @@ SWEP.Animations = {
             {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
         },
     },
+    ["fire_sights"] = {
+        Source = "shoot1_ads",
+        EventTable = {
+            {s = path .. "mag7_pump_back.wav", t = 1 / 30},
+            {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
+        },
+    },
     ["reload"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mag7_clipout.wav", t = 7 / 30},
             {s = path .. "mag7_clipin.wav", t = 26 / 30},
@@ -276,6 +304,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mag7_clipout.wav", t = 7 / 30},
             {s = path .. "mag7_clipin.wav", t = 26 / 30},
@@ -285,6 +335,18 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = {"draw"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+        },
         EventTable = {
             {s = path .. "mag7_draw.wav", t = 0 / 30},
             {s = path .. "mag7_pump_back.wav", t = 11 / 30},
@@ -318,6 +380,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 52 / 30 },
@@ -333,4 +417,44 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.mag7_parent",
+        Pos = Vector(0, -4.1, 16.8),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.2,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.mag7_parent",
+        Pos = Vector(-0.3, -4.6, 2.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic",},
+        CorrectiveAng = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.mag7_parent",
+        Pos = Vector(-1.4, -4.5, 11.9),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.pump",
+        Pos = Vector(0, -2.5, -0.6),
+        Ang = Angle(-5, -90, 180),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}
+
+SWEP.GripPoseParam = 3
