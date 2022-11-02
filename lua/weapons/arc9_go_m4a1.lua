@@ -197,12 +197,12 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(41, 40, 7)
+SWEP.CustomizePos = Vector(22, 40, 5)
 
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-20, 0, 0)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeNoRotate = true
+SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
@@ -279,6 +279,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11 / 30},
             {s = path .. "m4a1_clipin.wav", t = 35 / 30},
@@ -286,6 +308,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11 / 30},
             {s = path .. "m4a1_clipin.wav", t = 35 / 30},
@@ -294,6 +338,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "m4a1_draw.wav", t = 0 / 30},
             {s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
@@ -322,6 +388,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -332,6 +420,28 @@ SWEP.Animations = {
         Source = "attach",
         MinProgress = 0.9,
         FireASAP = false,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 3 / 30},
             {s = path .. "m4a1_silencer_screw_on_start.wav", t = 33 / 30},
@@ -348,6 +458,28 @@ SWEP.Animations = {
         MinProgress = 0.9,
         FireASAP = false,
         HideBoneIndex = 0,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 3 / 30},
             {s = path .. "m4a1_silencer_screw_1.wav", t = 24 / 30},
@@ -374,6 +506,28 @@ SWEP.Animations = {
     },
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         HideBoneIndex = 1,
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11 / 30},
@@ -382,6 +536,28 @@ SWEP.Animations = {
     },
     ["reload_empty_silenced"] = {
         Source = "reload_silenced",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         HideBoneIndex = 1,
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11 / 30},
@@ -391,6 +567,28 @@ SWEP.Animations = {
     },
     ["ready_silenced"] = {
         Source = "draw_silenced",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         HideBoneIndex = 1,
         EventTable = {
             {c = CHAN_STATIC, s = path .. "m4a1_draw.wav", t = 0 / 30},
@@ -425,6 +623,28 @@ SWEP.Animations = {
     },
     ["inspect_silenced"] = {
         Source = "lookat01_silenced",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         HideBoneIndex = 1,
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
@@ -449,4 +669,36 @@ SWEP.Hook_ModifyBodygroups = function(self, data, anim)
 
 end
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(-0.2, -7.4, 3.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_alt",},
+        CorrectiveAng = Angle(-0.1, 0.45, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(-2, -5.3, 11),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, -3.9, 10.5),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 3

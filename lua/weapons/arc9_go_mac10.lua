@@ -27,7 +27,7 @@ SWEP.Description = [[Essentially a box that bullets come out of, the MAC-10 SMG 
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mac10.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mac10.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 2
 
@@ -234,6 +234,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/mac10/"
 
 SWEP.ShootSound = "CSGO.MAC10.Fire"
+SWEP.ShootSoundSilenced = "CSGO.MAC10.Silenced_Fire"
 SWEP.DistantShootSound = path .. "mac10-1-distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -258,6 +259,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mac10_clipout.wav", t = 9 / 30},
             {s = path .. "mac10_clipin.wav", t = 30 / 30},
@@ -265,6 +288,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mac10_clipout.wav", t = 9 / 30},
             {s = path .. "mac10_clipin.wav", t = 30 / 30},
@@ -274,6 +319,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mac10_draw.wav", t = 0 / 30},
             {s = path .. "mac10_boltback.wav", t = 10 / 30},
@@ -320,6 +387,48 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["DefGrip"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["Stock"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.mac10_parent",
+        Pos = Vector(0, -2.92, 7.4),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.mac10_parent",
+        Pos = Vector(-1.9, -3.05, 5.15),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Rail",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_mac10",
+        Bone = "v_weapon.mac10_parent",
+		InstalledElements = {"DefGrip"},
+        Pos = Vector(0, -5.5, 5),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}
+
+SWEP.GripPoseParam = 3

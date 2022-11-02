@@ -129,7 +129,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
@@ -215,7 +215,7 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_para"
-SWEP.AfterShotParticle = "weapon_muzzle_smoke_pistols"
+SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -241,6 +241,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/m249/"
 
 SWEP.ShootSound = "CSGO.M249.Fire"
+SWEP.ShootSoundSilenced = "CSGO.M249.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.M249.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -280,6 +281,28 @@ SWEP.Animations = {
         Source = "reload_short",
 		MinProgress = 0.9,
         MagSwapTime = 2.3,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "m249_coverup.wav", t = 16 / 30},
             {s = path .. "m249_boxout.wav", t = 40 / 30},
@@ -292,6 +315,28 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.9,
         MagSwapTime = 2.3,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "m249_coverup.wav", t = 16 / 30},
             {s = path .. "m249_boxout.wav", t = 40 / 30},
@@ -303,6 +348,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "m249_draw.wav", t = 0 / 30},
             {s = path .. "m249_pump.wav", t = 7 / 30},
@@ -343,6 +410,58 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["rearsight"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["bipod"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, -4.4, 28),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.topHinge",
+        Pos = Vector(0, 0.3, -8),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic"},
+		InstalledElements = {"rearsight"},
+        CorrectiveAng = Angle(-0.8, 0, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(-1.5, -4, 16.7),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.m249_Parent",
+		InstalledElements = {"bipod"},
+        Pos = Vector(0, -1, 14.4),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}
+
+SWEP.GripPoseParam = 4

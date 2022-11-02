@@ -18,7 +18,7 @@ ATT.IconOffset = Vector(0, 0, 0)
 ATT.Attachments = {
     {
         PrintName = "Optic",
-        Pos = Vector(0, 0, -1.15),
+        Pos = Vector(0.5, 0, -1.05),
         Ang = Angle(0, 0, 0),
 		--CorrectiveAng = Angle(1, 1, 1),
         Icon_Offset = Vector(0, 0, 1.5),

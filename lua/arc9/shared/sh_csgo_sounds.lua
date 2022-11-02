@@ -1081,3 +1081,25 @@ sound.Add( {
         "^weapons/galil_suppressed.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.M249.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/m249_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Mac10.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp7_suppressed.wav",
+    }
+} )
