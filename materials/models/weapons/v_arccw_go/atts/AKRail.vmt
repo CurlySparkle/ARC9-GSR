@@ -10,7 +10,7 @@
 	"$envmaptint"				"[ .13 .13 .13 ]"
 
 	"$phong"					"1"
-	"$phongboost"				"15"
+	"$phongboost"				"5"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
 
 	"$rimlight"					"1"

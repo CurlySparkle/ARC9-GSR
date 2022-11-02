@@ -1,6 +1,6 @@
 ATT.PrintName = "CompM4 (RDS)"
 ATT.CompactName = [[CompM4]]
-ATT.Icon = Material("entities/attachs/go_optic_compm4.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/CompM4.png", "mips smooth")
 ATT.Description = [[
 Tube-based red dot sight for rifles.
 ]]
@@ -16,17 +16,17 @@ ATT.Folder = "SIGHTS"
 ATT.Category = {"csgo_optic"}
 
 
-ATT.Model = "models/weapons/csgo/atts/sights/compm4.mdl"
-ATT.Scale = 1.2
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Model = "models/weapons/csgo/atts/sights/CompM4.mdl"
+ATT.Scale = 0.5
+ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.018321, 7, -1.6),
+        Pos = Vector(0, 7, -1.75),
         Ang = Angle(0, 0, 0),
         ViewModelFOV = 56,
-        Magnification = 1.1,
+        Magnification = 1.15,
         IgnoreExtra = false
     },
 }

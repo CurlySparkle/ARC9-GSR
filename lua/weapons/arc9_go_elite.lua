@@ -150,15 +150,27 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 
 -------------------------- POSITIONS
 
+-- SWEP.IronSights = {
+    -- Pos = Vector(0, 8, 0),
+    -- Ang = Angle(0, 0, 0),
+    -- Magnification = 1.15,
+    -- ViewModelFOV = 56,
+    -- CrosshairInSights = false
+-- }
+
 SWEP.IronSights = {
-    Pos = Vector(0, 8, 0),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(0, 0, -1),
+    Ang = Angle(0, 2, 0),
+    Midpoint = { -- Where the gun should be at the middle of it's irons
+        Pos = Vector(0, -1, -1),
+        Ang = Angle(0, 0, 0),
+    },
     Magnification = 1.1,
-    ViewModelFOV = 46,
-    CrosshairInSights = false
+	ViewModelFOV = 56,
+    CrosshairInSights = true
 }
 
-SWEP.HasSights = false
+SWEP.HasSights = true
 
 SWEP.ViewModelFOVBase = 56
 
@@ -199,8 +211,6 @@ SWEP.BlindFireRightAng = Angle(-90, -20, 0)
 
 SWEP.BlindFireLeftPos = Vector(12, 25, 0)
 SWEP.BlindFireLeftAng = Angle(90, -20, 0)
-
-SWEP.SpeedMultMelee = 1
 
 -------------------------- HoldTypes
 
@@ -334,6 +344,21 @@ SWEP.Animations = {
 			{ s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 93 / 30 },
 			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
         },
+    },
+    ["enter_sights"] = {
+        Source = "ads_enter",
+    },
+    ["idle_sights"] = {
+        Source = "ads_idle",
+    },
+    ["fire_left_sights"] = {
+        Source = "shoot1_right_ads",
+    },
+    ["fire_right_sights"] = {
+        Source = "shoot1_left_ads",
+    },
+    ["exit_sights"] = {
+        Source = "ads_exit",
     },
 }
 

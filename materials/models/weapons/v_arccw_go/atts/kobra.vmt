@@ -3,8 +3,8 @@
 	"$basetexture"				"models\weapons\v_arccw_go\atts\kobra_d"
 	"$bumpmap"					"models\weapons\v_arccw_go\atts\kobra_n"
 	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\kobra_s"
-	"$color2"					"[0.1 0.1 0.1]"
-	"$blendTintByBaseAlpha"		"1"
+	"$color2"					"[0.7 0.7 0.7]"
+	"$blendTintByBaseAlpha"		"0"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
