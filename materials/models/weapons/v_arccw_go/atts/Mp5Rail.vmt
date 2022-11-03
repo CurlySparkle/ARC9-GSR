@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+	"$basetexture"				"models\weapons\v_arccw_go\atts\Mp5Rail_d"
+	"$bumpmap"					"models\weapons\v_arccw_go\atts\Mp5Rail_n"
+	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\Mp5Rail_s"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
+
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
+
+	"$phong"					"1"
+	"$phongboost"				"1"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
+}

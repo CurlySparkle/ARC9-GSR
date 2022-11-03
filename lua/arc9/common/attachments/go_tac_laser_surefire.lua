@@ -4,11 +4,11 @@ ATT.Description = [[
 Medium-power laser pointer. Improves hip fire and sight time.
 ]]
 
-ATT.Icon = Material("entities/attachs/go_laser_surefire.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/GENLaserRAS.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
-ATT.Model = "models/weapons/csgo/atts/tactical/laser_surefire.mdl"
+ATT.Model = "models/weapons/csgo/atts/tactical/GENLaserRAS.mdl"
 ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
@@ -16,7 +16,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser Red",
         Laser = true,
-        LaserStrength = 0.7,
+        LaserStrength = 0.5,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
         Flare = true,
@@ -31,7 +31,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser Green",
         Laser = true,
-        LaserStrength = 0.7,
+        LaserStrength = 0.5,
         LaserColor = Color(0, 255, 0),
         LaserAttachment = 1,
         Flare = true,
@@ -46,7 +46,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser Blue",
         Laser = true,
-        LaserStrength = 0.7,
+        LaserStrength = 0.5,
         LaserColor = Color(0, 0, 255),
         LaserAttachment = 1,
         Flare = true,
@@ -64,6 +64,6 @@ ATT.ToggleStats = {
 }
 
 
-ATT.Scale = 1
+ATT.Scale = 0.4
 
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, -0.05)

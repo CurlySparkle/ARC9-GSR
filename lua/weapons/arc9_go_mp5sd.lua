@@ -179,9 +179,12 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(23, 35, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+
+SWEP.CustomizeSnapshotPos = Vector(2, 0, 3)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -258,6 +261,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.3,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp5_clipout.wav", t = 25 / 30},
             {s = path .. "mp5_clipin.wav", t = 69 / 30},
@@ -265,6 +290,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp5_slideback.wav", t = 5 / 30},
             {s = path .. "mp5_clipout.wav", t = 27 / 30},
@@ -274,6 +321,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = {"draw", "draw2"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp5_draw.wav", t = 7 / 30},
             {s = path .. "mp5_slideforward.wav", t = 19 / 30},
@@ -323,4 +392,44 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    -- {
+        -- PrintName = "Muzzle",
+        -- DefaultAttName = "Standard Muzzle",
+        -- Category = "muzzle",
+        -- Bone = "v_weapon.ak47_Parent",
+        -- Pos = Vector(0, -3.4, 25.3),
+        -- Ang = Angle(90, 0, -90),
+    -- },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 3.7, 5),
+        Ang = Angle(0, -90, 0),
+        Category = {"csgo_rail_optic",},
+        CorrectiveAng = Angle(0.2, 0.15, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(-1.7, 14, 3.6),
+        Ang = Angle(0, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_mp5",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 11.5, 1.5),
+        Ang = Angle(0, -90, 0),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}
+
+SWEP.GripPoseParam = 4

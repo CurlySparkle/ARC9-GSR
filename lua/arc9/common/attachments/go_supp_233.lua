@@ -1,4 +1,5 @@
 ATT.PrintName = [[Light Suppressor]]
+ATT.CompactName = [[Light Supp]]
 ATT.Description = [[Light tactical suppressor. Reduces audible report on average with a less penalty.]]
 ATT.Icon = Material("entities/attachs/silencer_233.png", "mips smooth")
 

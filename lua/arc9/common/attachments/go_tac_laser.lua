@@ -4,11 +4,11 @@ ATT.Description = [[
 Low-power laser pointer. Improves hip-fire accuracy by a little.
 ]]
 
-ATT.Icon = Material("entities/attachs/go_laser.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/MR73.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
-ATT.Model = "models/weapons/csgo/atts/tactical/flashlight.mdl"
+ATT.Model = "models/weapons/csgo/atts/tactical/MR73.mdl"
 ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
@@ -16,7 +16,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
-        LaserStrength = 0.5,
+        LaserStrength = 0.3,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
         Flare = true,
@@ -32,6 +32,6 @@ ATT.ToggleStats = {
 }
 
 
-ATT.Scale = 1
+ATT.Scale = 0.7
 
 ATT.ModelOffset = Vector(0, 0, 0)

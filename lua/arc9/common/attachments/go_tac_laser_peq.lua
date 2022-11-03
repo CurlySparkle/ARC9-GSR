@@ -8,7 +8,7 @@ ATT.Icon = Material("entities/attachs/go_laser_peq.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
-ATT.Model = "models/weapons/csgo/atts/tactical/laser_peq.mdl"
+ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
 ATT.Folder = "TACTICAL"
 
 ATT.ToggleStats = {
@@ -72,6 +72,6 @@ ATT.ToggleStats = {
 }
 
 
-ATT.Scale = 1
+ATT.Scale = 0.3
 
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, -0.1)

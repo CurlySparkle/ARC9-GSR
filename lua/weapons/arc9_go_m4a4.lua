@@ -397,6 +397,28 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["frontiron"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["sidecover"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
+    ["barrel"] = {
+        Bodygroups = {
+            {5,0},
+			{5,1},
+        },
+    },
+    ["barrel_Sup"] = {
+        Bodygroups = {
+            {6,0},
+			{6,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -406,13 +428,13 @@ SWEP.Attachments = {
         Pos = Vector(0, -6.3, 2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
-        InstalledElements = {"mount"},
+        InstalledElements = {"mount","frontiron"},
         CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_m4"},
         Bone = "v_weapon.M4A1_Parent",
         Pos = Vector(0, -5.1, 17.7),
         Ang = Angle(90, 0, -90),
@@ -424,6 +446,15 @@ SWEP.Attachments = {
         Bone = "v_weapon.M4A1_Parent",
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.M4A1_Parent",
+		InstalledElements = {"sidecover"},
+        Pos = Vector(-1.2, -5.1, 12),
+        Ang = Angle(90, 90, 90),
     },
     {
         PrintName = "Perk",

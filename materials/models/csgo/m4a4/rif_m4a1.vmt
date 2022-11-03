@@ -1,8 +1,8 @@
 "VertexLitGeneric"
 {
-	$basetexture "models/csgo/m4a4/m4a4"
+	$basetexture "models/csgo/m4a4/rif_m4a1"
 	$bumpmap "null-bumpmap"
-	$phongexponenttexture "models/csgo/m4a4/m4a4_exponent"
+	$phongexponenttexture "models/csgo/m4a4/rif_m4a1_exponent"
 
 	"$phong" "1"
 
