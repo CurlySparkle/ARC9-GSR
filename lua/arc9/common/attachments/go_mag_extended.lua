@@ -1,6 +1,6 @@
 ATT.PrintName = [[Extended Magazine]]
 ATT.CompactName = [[Ext Mag]]
---ATT.Icon = Material("entities/bo1_atts/ammo/ext_mag.png")
+ATT.Icon = Material("entities/attachs/ext_mag.png")
 ATT.Description = [[
 Extended capacity by 50% more with the cost of increased reload time.
 ]]

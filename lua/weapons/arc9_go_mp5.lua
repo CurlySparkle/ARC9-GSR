@@ -402,6 +402,16 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["mag"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
+    ["stock"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -440,6 +450,11 @@ SWEP.Attachments = {
 		InstalledElements = {"side_cover"},
         Pos = Vector(-1, -3.95, 12),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.MP5_Clip",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

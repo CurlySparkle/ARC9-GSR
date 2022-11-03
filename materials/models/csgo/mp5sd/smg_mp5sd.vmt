@@ -5,6 +5,7 @@
 	$phongexponenttexture "models/csgo/mp5sd/smg_mp5sd_exponent"
 
 	"$phong" "1"
+     "$nocull" "1"
 
 
 	"$phongboost" "2"

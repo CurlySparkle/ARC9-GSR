@@ -258,6 +258,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/mp9/mp9_clipout.wav", t = 7 / 30},
             {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 24 / 30},
@@ -265,6 +287,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/mp9/mp9_clipout.wav", t = 7 / 30},
             {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 24 / 30},
@@ -274,6 +318,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/mp9/mp9_draw.wav", t = 2 / 30},
             {s = "weapons/csgo/mp9/mp9_boltback.wav", t = 11 / 30},
@@ -307,6 +373,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -320,6 +408,67 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["grip"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Scope",
+        Bone = "v_weapon.mp9_parent",
+        Pos = Vector(0, -4.2, 0.4),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        CorrectiveAng = Angle(0.25, 0, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle"},
+        Bone = "v_weapon.mp9_parent",
+        Pos = Vector(0, -2.96, 6.5),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = "grip",
+        Bone = "v_weapon.mp9_parent",
+        Pos = Vector(0, -1.2, 5.5),
+        Ang = Angle(90, 0, 90),
+        InstalledElements = {"grip"},
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.mp9_parent",
+        Pos = Vector(-0.9, -3.45, 4.5),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.clip",
+        Category = "go_mag"
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 4.7

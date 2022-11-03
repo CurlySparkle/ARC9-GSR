@@ -366,6 +366,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Mag",
+		Bone = "v_weapon.p250_magazine",
         Category = "go_mag"
     },
     {

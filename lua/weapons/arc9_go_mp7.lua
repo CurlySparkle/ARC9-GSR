@@ -423,6 +423,11 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["mag"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -460,6 +465,11 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp7_parent",
         Pos = Vector(-0.7, -2.2, 6),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.clip",
+        Category = "go_mag"
     },
     {
         PrintName = "Stock",

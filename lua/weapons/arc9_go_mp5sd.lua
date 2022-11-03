@@ -1,3 +1,7 @@
+if CLIENT then
+    killicon.Add( "arc9_go_mp5sd", "VGUI/apex_killicon_3030", Color(251, 85, 25, 255))
+end
+
 AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
@@ -395,6 +399,11 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["mag"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -436,9 +445,13 @@ SWEP.Attachments = {
         Category = "stock_mp7"
     },
     {
+        PrintName = "Mag",
+        Category = "go_mag"
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk",
     },
 }
 
-SWEP.GripPoseParam = 4
+SWEP.GripPoseParam = 3

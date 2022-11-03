@@ -22,7 +22,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
-        LaserStrength = 0.7,
+        LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
         Flare = true,
