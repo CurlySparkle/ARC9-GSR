@@ -322,6 +322,11 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -360,6 +365,10 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.75, 4.5),
         Ang = Angle(90, 180, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

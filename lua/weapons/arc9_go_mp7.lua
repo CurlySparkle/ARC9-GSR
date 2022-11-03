@@ -156,7 +156,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -5, 0)
+SWEP.SprintPos = Vector(-1, -2, 0)
 SWEP.SprintAng = Angle(-5, 0, 5)
 
 SWEP.SprintMidPoint = {
@@ -179,9 +179,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(19, 32, 5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -7, 0)
+SWEP.CustomizeSnapshotPos = Vector(3, -7, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -235,6 +235,7 @@ SWEP.DropMagazineTime = 0.55
 local path = "weapons/csgo/mp7/"
 
 SWEP.ShootSound = "CSGO.mp7.Fire"
+SWEP.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.mp7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -257,6 +258,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp7_clipout.wav", t = 9 / 30},
             {s = path .. "mp7_clipin.wav", t = 41 / 30},
@@ -264,6 +287,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp7_clipout.wav", t = 9 / 30},
             {s = path .. "mp7_clipin.wav", t = 41 / 30},
@@ -273,6 +318,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mp7_draw.wav", t = 0 / 30},
             {s = path .. "mp7_slideback.wav", t = 8 / 30},
@@ -306,6 +373,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -319,6 +408,67 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mount"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["grip"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["stock"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Scope",
+        Bone = "v_weapon.mp7_parent",
+        Pos = Vector(0, -4.1, 0.2),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        InstalledElements = {"mount"},
+        CorrectiveAng = Angle(0.25, 0, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle"},
+        Bone = "v_weapon.mp7_parent",
+        Pos = Vector(0, -2.3, 8.1),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.mp7_parent",
+		InstalledElements = {"grip"},
+        Pos = Vector(0, -1.6, 5.5),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.mp7_parent",
+        Pos = Vector(-0.7, -2.2, 6),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Stock",
+        Category = "stock_mp7"
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 4

@@ -390,6 +390,11 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["stock"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -425,6 +430,10 @@ SWEP.Attachments = {
         Pos = Vector(0, 11.5, 1.5),
         Ang = Angle(0, -90, 0),
 		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        Category = "stock_mp7"
     },
     {
         PrintName = "Perk",

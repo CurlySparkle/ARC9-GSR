@@ -320,6 +320,11 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -328,9 +333,40 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.HKP2000_Parent",
-        Pos = Vector(-0.025, -2.3, 5.9),
+        Pos = Vector(-0.025, -2.5, 5.8),
         Ang = Angle(90, 0, -90),
+        Scale = 0.8,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, -0.5, 4),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_pistols",},
+		Scale = 1,
+		CorrectiveAng = Angle(0.67, 0.65, 0),
+    },
+    {
+        PrintName = "Sights",
+        Bone = "v_weapon.HKP2000_Slide",
+        Pos = Vector(0, -0.1, 1),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optics_pistols_alt",},
+        CorrectiveAng = Angle(0.7, 0.6, 0),
 		Scale = 0.8,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = {"csgo_tac","csgo_tac_pistols"},
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, -1.4, 5),
+        Ang = Angle(90, 180, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

@@ -1,4 +1,4 @@
-ATT.PrintName = "Trijicon"
+ATT.PrintName = "Trijicon SEC"
 ATT.CompactName = [[Trijicon]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
 ATT.Description = [[
@@ -17,13 +17,13 @@ ATT.Category = {"csgo_optics_pistols"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/trijicon.mdl"
-ATT.Scale = 1
+ATT.Scale = 0.5
 ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -1.1),
+        Pos = Vector(-0.05, 10, -1),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,
@@ -33,5 +33,5 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
-ATT.HoloSightSize = 512
+ATT.HoloSightSize = 1024
 ATT.HoloSightColorable = true

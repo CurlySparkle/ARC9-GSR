@@ -1072,6 +1072,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.P250.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/p225_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Galil.Silenced_Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -1112,5 +1123,27 @@ sound.Add( {
     pitch = {95,105},
     sound = {
         "^weapons/xm1014_suppresed.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP7.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp7_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP9.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp7_suppressed.wav",
     }
 } )

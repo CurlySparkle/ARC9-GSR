@@ -331,6 +331,11 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -353,6 +358,15 @@ SWEP.Attachments = {
 		CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
+        PrintName = "Sights",
+        Bone = "v_weapon.glock_slide",
+        Pos = Vector(0, -0.3, 2),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optics_pistols_alt",},
+        CorrectiveAng = Angle(0.7, 0.65, 0),
+		Scale = 0.8,
+    },
+    {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
@@ -360,6 +374,10 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.4, 4.5),
         Ang = Angle(90, 180, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

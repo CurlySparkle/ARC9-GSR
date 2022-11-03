@@ -480,7 +480,7 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
-
+SWEP.GripPoseParam3 = 3.2
 -- SWEP.RTScope = true
 -- SWEP.RTScopeSubmatIndex = 3
 -- SWEP.RTScopeFOV = 20
