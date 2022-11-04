@@ -113,7 +113,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.008 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.015 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
@@ -149,8 +149,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.185, -3, 4),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-5.11, -3, 2.5),
+    Ang = Angle(0.1, 0, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
 }

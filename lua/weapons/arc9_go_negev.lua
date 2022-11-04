@@ -114,11 +114,11 @@ SWEP.ViewRecoilUpMult = -5 -- 40-100
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.02
 
 -------------------------- HANDLING
@@ -129,7 +129,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
@@ -184,9 +184,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 20, 2.5)
+SWEP.CustomizePos = Vector(27, 40, 4)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(12, 20, 4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 0, 4)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -215,7 +216,7 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_para"
-SWEP.AfterShotParticle = "weapon_muzzle_smoke_pistols"
+SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -241,6 +242,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/negev/"
 
 SWEP.ShootSound = "CSGO.NEGEV.Fire"
+SWEP.ShootSoundSilenced = "CSGO.NEGEV.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.NEGEV.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -287,6 +289,28 @@ SWEP.Animations = {
         Source = "reload_short",
 		MinProgress = 0.9,
         MagSwapTime = 2.1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "negev_coverup.wav", t = 18 / 30},
             {s = path .. "negev_boxout.wav", t = 39 / 30},
@@ -299,6 +323,28 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.9,
         MagSwapTime = 2.1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "negev_coverup.wav", t = 18 / 30},
             {s = path .. "negev_boxout.wav", t = 39 / 30},
@@ -310,6 +356,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "negev_draw.wav", t = 0 / 30},
             {s = path .. "negev_pump.wav", t = 7 / 30},
@@ -342,6 +410,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 
@@ -352,4 +442,43 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -5.15, 21),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.2,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -5.7, 2.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic",},
+        CorrectiveAng = Angle(-0.85, 0, 0),
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(-1.5, -4.5, 11),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -3, 13),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+}

@@ -1016,6 +1016,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.R8.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/deagle_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Bizon.Fire_Silenced",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -1045,7 +1056,7 @@ sound.Add( {
     level = 140,
     pitch = {95,105},
     sound = {
-        "^weapons/m4a1_suppressed.wav",
+        "^weapons/famas_suppressed.wav",
     }
 } )
 
@@ -1111,7 +1122,7 @@ sound.Add( {
     level = 140,
     pitch = {95,105},
     sound = {
-        "^weapons/mp7_suppressed.wav",
+        "^weapons/mac10_suppressed.wav",
     }
 } )
 
@@ -1145,5 +1156,49 @@ sound.Add( {
     pitch = {95,105},
     sound = {
         "^weapons/mp7_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.NEGEV.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/negev_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.M4A4.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/mk18_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Nova.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/m3_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.sawedoff.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/m3_suppressed.wav",
     }
 } )

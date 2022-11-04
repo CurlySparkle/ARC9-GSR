@@ -40,6 +40,6 @@ ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/c79_overlay.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.95
 ATT.RTScopeShadowIntensity = 1.5
-ATT.RTScopeColor = Color(100, 255, 100)
+ATT.RTScopeColor = Color(0, 0, 0)
 ATT.RTScopeNoPP = false
 ATT.RTScopeColorable = false

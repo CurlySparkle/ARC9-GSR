@@ -197,9 +197,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 3)
+SWEP.CustomizePos = Vector(20, 25, 1.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
+
+SWEP.CustomizeSnapshotPos = Vector(2, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -254,6 +255,7 @@ SWEP.DropMagazineTime = 0.7
 local path = "weapons/csgo/revolver/"
 
 SWEP.ShootSound = "CSGO.R8.Fire"
+SWEP.ShootSoundSilenced = "CSGO.R8.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.R8.Fire.Distance"
 SWEP.DryFireSound = "weapons/csgo/revolver/revolver_sideback.wav"
 
@@ -359,4 +361,36 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendCylinder
 SWEP.AttachmentElements = {
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = "muzzle",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(-0.025, -3.35, 10),
+        Ang = Angle(90, 0, -90),
+		Scale = 0.8,
+    },
+    {
+        PrintName = "Sights",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -4.1, 4.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optics_pistols",},
+        CorrectiveAng = Angle(-0.4, 0.8, 0),
+		Scale = 1,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = {"csgo_tac","csgo_tac_pistols"},
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -2.3, 6.5),
+        Ang = Angle(90, 180, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}

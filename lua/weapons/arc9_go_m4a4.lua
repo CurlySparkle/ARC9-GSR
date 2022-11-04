@@ -179,7 +179,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(18, 35, 4)
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
@@ -224,7 +224,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.M4A4.Fire"
-SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
+SWEP.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.m4a4.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -413,10 +413,9 @@ SWEP.AttachmentElements = {
 			{5,1},
         },
     },
-    ["barrel_Sup"] = {
+    ["mag"] = {
         Bodygroups = {
-            {6,0},
-			{6,1},
+            {6,1},
         },
     },
 }
@@ -455,6 +454,11 @@ SWEP.Attachments = {
 		InstalledElements = {"sidecover"},
         Pos = Vector(-1.2, -5.1, 12),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.M4A1_Clip",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

@@ -424,12 +424,13 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.2, 0.15, 0),
     },
     {
-        PrintName = "Side",
+        PrintName = "Tactical",
         DefaultAttName = "Default",
-        Category = "csgo_rail_tac",
+        Category = "csgo_tac",
         Bone = "v_weapon.mp5sd_parent",
-        Pos = Vector(-1.7, 14, 3.6),
-        Ang = Angle(0, 0, 90),
+        Pos = Vector(-1.4, 14, 3.7),
+        Ang = Angle(0, -90, -90),
+		Scale = 1.1,
     },
     {
         PrintName = "Bottom",
