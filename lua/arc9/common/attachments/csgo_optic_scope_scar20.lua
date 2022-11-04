@@ -19,14 +19,14 @@ ATT.Category = {"csgo_optic"}
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_scar.mdl"
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, -0.25)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.05, 9, -2.2),
-        Ang = Angle(-2, -0.8, 0),
-        ViewModelFOV = 60,
+        Pos = Vector(-0.003, 9, -2.14),
+        Ang = Angle(0, 0, 0),
+        ViewModelFOV = 56,
         Magnification = 1,
         IgnoreExtra = true
     },

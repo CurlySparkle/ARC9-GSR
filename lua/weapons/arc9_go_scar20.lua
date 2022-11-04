@@ -25,7 +25,7 @@ SWEP.Credits = {
 SWEP.Description = [[The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_scar20.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_sg556.mdl"
+SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
 SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
@@ -249,6 +249,7 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/scar20/"
 
 SWEP.ShootSound = "CSGO.scar20.Fire"
+SWEP.ShootSoundSilenced = "CSGO.scar20.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.SCAR20.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -274,6 +275,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "scar20_clipout.wav", t = 13 / 30},
             {s = path .. "scar20_clipin.wav", t = 38 / 30},
@@ -281,6 +304,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "scar20_clipout.wav", t = 13 / 30},
             {s = path .. "scar20_clipin.wav", t = 38 / 30},
@@ -289,6 +334,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "scar20_draw.wav", t = 0 / 30},
             {s = path .. "scar20_boltback.wav", t = 14 / 30},
@@ -320,6 +387,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 94 / 30 },
@@ -345,11 +434,43 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(0, -6.1, 3.4),
+        Pos = Vector(0, -6.4, 3.4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         Installed = "csgo_optic_scope_scar20",
-        CorrectiveAng = Angle(0, 0, 0),
+        CorrectiveAng = Angle(0.35, -1.25, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle"},
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0, -4.52, 21),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.1,
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = "grip",
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0, -3.6, 10.5),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(-0.8, -4.6, 18),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
     },
 }
+
+SWEP.GripPoseParam = 4.5
+SWEP.GripPoseParam2 = 0.5

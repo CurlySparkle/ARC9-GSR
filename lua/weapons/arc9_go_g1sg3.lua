@@ -205,9 +205,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizePos = Vector(24, 35, 4)
+
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-1, 7, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 7, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -446,7 +447,7 @@ SWEP.Attachments = {
         InstalledElements = {"rearsight"},
         Installed = "csgo_optic_scope_g3sg1",
 		Integral = true,
-        CorrectiveAng = Angle(0.8, 0.5, 0),
+        CorrectiveAng = Angle(0.2, -0.25, 0),
     },
     {
         PrintName = "Muzzle",

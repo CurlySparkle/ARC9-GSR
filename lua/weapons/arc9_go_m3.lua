@@ -86,7 +86,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.25
+SWEP.Recoil = 1.75
 
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
@@ -110,6 +110,8 @@ SWEP.RecoilKick = 1
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultSights = 3
+SWEP.RecoilKickSights = 2
 
 -------------------------- SPREAD
 
@@ -184,7 +186,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 35, 5)
+SWEP.CustomizePos = Vector(23, 40, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
@@ -256,6 +258,12 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        EventTable = {
+            {s = path .. "nova_pump.wav", t = 8 / 30},
+        },
+    },
+    ["fire_sights"] = {
+        Source = "shoot1_ads",
         EventTable = {
             {s = path .. "nova_pump.wav", t = 8 / 30},
         },
@@ -377,6 +385,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 44 / 30 },

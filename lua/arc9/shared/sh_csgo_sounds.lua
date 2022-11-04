@@ -939,6 +939,17 @@ sound.Add( {
 -- SILENCERS
 
 sound.Add( {
+    name = "CSGO.scar20.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+        "^weapons/svd_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.G3SG1.Fire_Silenced",
     channel = CHAN_STATIC,
     volume = 1.0,

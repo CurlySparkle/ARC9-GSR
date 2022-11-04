@@ -30,6 +30,14 @@ ATT.Sights = {
         Magnification = 1,
         IgnoreExtra = true
     },
+    {
+        Pos = Vector(0, 8.5, -3.15),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 56,
+        IgnoreExtra = false,
+        Disassociate = true,
+    },
 }
 
 ATT.RTScope = true
