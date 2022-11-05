@@ -249,6 +249,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ssg08_clipout.wav", t = 7 / 30},
             {s = path .. "ssg08_clipin.wav", t = 40 / 30},
@@ -257,6 +279,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ssg08_clipout.wav", t = 7 / 30},
             {s = path .. "ssg08_clipin.wav", t = 40 / 30},
@@ -331,10 +375,30 @@ SWEP.Attachments = {
         Bone = "v_weapon.scout_Parent",
         Pos = Vector(0, -3.27, 26),
         Ang = Angle(90, 0, -90),
-		Scale = 0.6,
+		Scale = 0.9,
+    },
+    {
+        PrintName = "Side",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_tac",
+        Bone = "v_weapon.scout_Parent",
+        Pos = Vector(-1.2, -2.6, 17.2),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = {"csgo_rail_ub","grip_scout"},
+        Bone = "v_weapon.scout_Parent",
+        Pos = Vector(0, -1.5, 13.6),
+        Ang = Angle(90, 0, 90),
+		Scale = 1,
     },
     {
         PrintName = "Perk",
         Category = "go_perk"
     },
 }
+
+SWEP.GripPoseParam = 5
+SWEP.GripPoseParam2 = 0.3

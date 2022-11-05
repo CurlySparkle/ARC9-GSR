@@ -79,14 +79,9 @@ SWEP.Firemodes = {
         Mode = -1,
     },
     {
-        Mode = 3,
-        RPM = 666,
-        -- add other attachment modifiers
+        Mode = 1,
     }
 }
-
-SWEP.RunawayBurst = true
-SWEP.PostBurstDelay = 0.15
 -------------------------- RECOIL
 
 -- General recoil multiplier
@@ -232,10 +227,9 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.SCAR17.Fire"
+SWEP.ShootSoundSilenced = "CSGO.SCAR17.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.SCAR17.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -251,8 +245,33 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_sights"] = {
+        Source = {"shoot1_ads"},
+    },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 43 / 30},
@@ -260,6 +279,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 56 / 30},
@@ -268,6 +309,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
             {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 14 / 30},
@@ -309,6 +372,51 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["sights"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Scope",
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0, -6.4, 2),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        InstalledElements = {"sights"},
+        CorrectiveAng = Angle(-0.85, 0, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle"},
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0, -4.5, 19.4),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = {"grip","grip_scar"},
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0, -3.55, 10),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(-0.8, -5.1, 12),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 5

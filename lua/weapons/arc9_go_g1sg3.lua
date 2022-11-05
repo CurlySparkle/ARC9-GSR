@@ -349,12 +349,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1,
+                t = 0.95,
                 lhik = 1,
                 rhik = 1
             },
@@ -461,7 +456,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub","grip_g3sg1"},
         Bone = "v_weapon.g3sg1_Parent",
         Pos = Vector(0, -2, 12),
         Ang = Angle(90, 0, 90),

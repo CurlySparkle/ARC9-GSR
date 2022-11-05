@@ -1005,6 +1005,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.SSG08.Fire_Silenced",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+        "^weapons/scout_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.xm1014.Fire_Silenced",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -1189,6 +1200,17 @@ sound.Add( {
     pitch = {90,105},
     sound = {
         "^weapons/mk18_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.SCAR17.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/scar_suppressed.wav",
     }
 } )
 

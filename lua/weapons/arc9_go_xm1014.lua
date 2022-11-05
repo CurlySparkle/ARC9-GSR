@@ -188,6 +188,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(22, 32, 7)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -404,7 +405,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub","grip_xm1014"},
         Bone = "v_weapon.m3_Parent",
         Pos = Vector(0, 0.15, 13.6),
         Ang = Angle(90, 0, 90),
