@@ -455,9 +455,9 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = "Bottom/Grip",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"grip","grip_mp7"},
         Bone = "v_weapon.mp7_parent",
 		InstalledElements = {"grip"},
         Pos = Vector(0, -1.6, 5.5),
@@ -485,7 +485,7 @@ SWEP.Attachments = {
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.7, -4.75),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+		Scale = 1,
     },
     {
         PrintName = "Perk",

@@ -27,7 +27,7 @@ SWEP.Description = [[With a smaller magazine than its unmuffled counterpart, the
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 2
 
@@ -657,6 +657,21 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["stock_retract"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["foregrip_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(self, data, anim)
@@ -689,11 +704,26 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = {"csgo_rail_ub","grip_mk18_alt"},
+        Category = {"csgo_rail_ub","grip_mk18_alt","grip_m4_2"},
         Bone = "v_weapon.M4A1_s_Parent",
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.M4A1_s_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(-0.2, -5.17, -3.2),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.M4A1_Clip",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

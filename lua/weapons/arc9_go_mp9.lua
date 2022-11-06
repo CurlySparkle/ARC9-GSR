@@ -273,7 +273,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -388,7 +388,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -447,9 +447,9 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Grip",
+        PrintName = "Bottom/Grip",
         DefaultAttName = "Default",
-        Category = "grip",
+        Category = {"grip","grip_mp9"},
         Bone = "v_weapon.mp9_parent",
         Pos = Vector(0, -1.2, 5.5),
         Ang = Angle(90, 0, 90),
@@ -466,7 +466,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract"},
+        Category = {"csgo_tube","stock_retract",},
         Bone = "v_weapon.mp9_parent",
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.4, -3.3),
