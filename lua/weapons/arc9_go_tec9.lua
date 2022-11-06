@@ -180,9 +180,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 25, 5)
+SWEP.CustomizePos = Vector(20, 30, 4)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(1, -5, 3)
+SWEP.CustomizeSnapshotPos = Vector(1, 0, 4)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -240,6 +240,7 @@ SWEP.DropMagazineTime = 0.45
 local path = "weapons/csgo/tec9/"
 
 SWEP.ShootSound = "CSGO.Tec9.Fire"
+SWEP.ShootSoundSilenced = "CSGO.Tec9.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.Tec9.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -325,6 +326,58 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Sights",
+        Bone = "v_weapon.tec9_parent",
+        Pos = Vector(0, -4, 1),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optics_pistols",},
+        CorrectiveAng = Angle(0.25, 0, 0),
+		Scale = 1,
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle"},
+        Bone = "v_weapon.tec9_parent",
+        Pos = Vector(0, -3.32, 10.8),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = {"csgo_tac","csgo_tac_pistols"},
+        Bone = "v_weapon.tec9_parent",
+        Pos = Vector(0, -2.2, 7.6),
+        Ang = Angle(90, 180, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = "csgo_tube",
+        Bone = "v_weapon.tec9_parent",
+        Pos = Vector(0, -2.9, -1.6),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.Clip",
+        Category = "go_mag"
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 3.5

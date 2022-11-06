@@ -181,11 +181,11 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(45, 32, 7)
+SWEP.CustomizePos = Vector(22, 35, 3)
+SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(2, 5, 3)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-3, -10, -1)
-SWEP.CustomizeSnapshotAng = Angle(-90, 0, 0)
-SWEP.CustomizeNoRotate = true
+SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
@@ -247,6 +247,7 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
+		Mult = 0.6,
     },
     ["reload"] = {
         Source = "reload_short",
@@ -377,6 +378,16 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -394,7 +405,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(0, -4.5, 19.4),
+        Pos = Vector(-0.05, -4.6, 19.4),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -404,6 +415,16 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -3.55, 10),
         Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.SCAR_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -5.05, -3.8),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
     },
     {
         PrintName = "Tactical",

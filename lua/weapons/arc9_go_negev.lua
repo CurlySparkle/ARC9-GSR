@@ -440,6 +440,26 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["sight"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["bipod"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -458,6 +478,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -5.7, 2.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},
+        --InstalledElements = {"sight"},
         CorrectiveAng = Angle(-0.85, 0, 0),
     },
     {
@@ -469,10 +490,21 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.negev_parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -4.7, -4.3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.2,
+    },
+    {
         PrintName = "Bottom",
         DefaultAttName = "Default",
         Category = "csgo_rail_ub",
         Bone = "v_weapon.negev_parent",
+		--InstalledElements = {"bipod"},
         Pos = Vector(0, -3, 13),
         Ang = Angle(90, 0, 90),
 		Scale = 1,

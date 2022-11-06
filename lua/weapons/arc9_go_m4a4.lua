@@ -403,6 +403,11 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["stock_none"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
     ["sidecover"] = {
         Bodygroups = {
             {4,1},
@@ -455,6 +460,16 @@ SWEP.Attachments = {
 		InstalledElements = {"sidecover"},
         Pos = Vector(-1.2, -5.1, 12),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = "csgo_tube",
+        Bone = "v_weapon.M4A1_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -5.05, -2.95),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.05,
     },
     {
         PrintName = "Mag",

@@ -26,7 +26,7 @@ SWEP.Credits = {
 SWEP.Description = [[The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_ump.mdl"
-SWEP.WorldModel = "models/weapons/w_smg_ump.mdl"
+SWEP.WorldModel = "models/weapons/w_smg_ump45.mdl"
 SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
@@ -148,9 +148,9 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.15, -8, 0.75),
-    Ang = Angle(0, 1.2, -2),
-    Magnification = 1.25,
+    Pos = Vector(-5.1, -12, 0.75),
+    Ang = Angle(0, 1.2, 0),
+    Magnification = 1.1,
     ViewModelFOV = 56,
 }
 
@@ -179,7 +179,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(22, 32, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -234,10 +234,9 @@ SWEP.DropMagazineTime = 0.35
 local path = "weapons/csgo/ump/"
 
 SWEP.ShootSound = "CSGO.UMP.Fire"
+SWEP.ShootSoundSilenced = "CSGO.UMP.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.UMP.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -258,6 +257,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ump45_clipout.wav", t = 8 / 30},
             {s = path .. "ump45_clipin.wav", t = 41 / 30},
@@ -265,6 +286,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ump45_clipout.wav", t = 8 / 30},
             {s = path .. "ump45_clipin.wav", t = 41 / 30},
@@ -274,6 +317,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ump45_draw.wav", t = 0 / 30},
             {s = path .. "ump45_boltback.wav", t = 8 / 30},
@@ -320,6 +385,81 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["grip"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
 }
 
-SWEP.Attachments = {}
+SWEP.Attachments = {
+    {
+        PrintName = "Scope",
+        Bone = "v_weapon.ump45_Parent",
+        Pos = Vector(0, -6.2, 3.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        CorrectiveAng = Angle(-0.1, 0, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle"},
+        Bone = "v_weapon.ump45_Parent",
+        Pos = Vector(0, -3.95, 15),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = {"grip"},
+        Bone = "v_weapon.ump45_Parent",
+		InstalledElements = {"grip"},
+        Pos = Vector(0, -2.7, 11.5),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.ump45_Parent",
+        Pos = Vector(-1, -4, 12),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.ump45_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -5.05, -1.8),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.ump45_Clip",
+        Category = "go_mag"
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
+    },
+}
+
+SWEP.GripPoseParam = 3.5

@@ -123,6 +123,7 @@ SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.015
 SWEP.SpreadMultHipFire = 3
 SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddSights = 0.03
 
 -------------------------- HANDLING
 
@@ -415,6 +416,11 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -444,6 +450,16 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube"},
+        Bone = "v_weapon.mag7_parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(-0.05, -4.2, -6.1),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.2,
+    },
+    {
         PrintName = "Bottom",
         DefaultAttName = "Default",
         Category = "csgo_rail_ub",
@@ -458,3 +474,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.3

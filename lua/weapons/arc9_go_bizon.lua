@@ -319,6 +319,16 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["stock_retract"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -336,7 +346,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -4.3, 2.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},
-        CorrectiveAng = Angle(0.8, 0.5, 0),
+        CorrectiveAng = Angle(0.05, 0, 0),
     },
     {
         PrintName = "Side",
@@ -345,6 +355,16 @@ SWEP.Attachments = {
         Bone = "v_weapon.bizon_Parent",
         Pos = Vector(-0.9, -3.7, 13),
         Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.bizon_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.8, -1.3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.1,
     },
     {
         PrintName = "Perk",

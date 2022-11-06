@@ -181,7 +181,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(19, 32, 5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(3, -7, 3)
+SWEP.CustomizeSnapshotPos = Vector(-1, 0, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -235,6 +235,7 @@ SWEP.DropMagazineTime = 0.55
 local path = "weapons/csgo/mp7/"
 
 SWEP.ShootSound = "CSGO.mp7.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
 SWEP.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.mp7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
@@ -418,9 +419,14 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
-    ["stock"] = {
+    ["stock_extend"] = {
         Bodygroups = {
             {3,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {3,2},
         },
     },
     ["mag"] = {
@@ -473,7 +479,13 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Category = "stock_mp7"
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_extend"},
+        Bone = "v_weapon.mp7_parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.7, -4.75),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.1,
     },
     {
         PrintName = "Perk",

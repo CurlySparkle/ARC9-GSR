@@ -236,6 +236,7 @@ local path = "weapons/csgo/p90/"
 
 SWEP.ShootSound = "CSGO.P90.Fire"
 SWEP.DistantShootSound = "CSGO.P90.Fire.Distance"
+SWEP.FirstShootSoundSilenced = "CSGO.P90.Fire_Silenced_First"
 SWEP.ShootSoundSilenced = "CSGO.P90.Fire_Silenced"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 

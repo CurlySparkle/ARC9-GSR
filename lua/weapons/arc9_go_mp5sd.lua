@@ -394,9 +394,14 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["stock"] = {
+    ["stock_extend"] = {
         Bodygroups = {
             {1,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,2},
         },
     },
     ["mag"] = {
@@ -443,7 +448,13 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Category = "stock_mp7"
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_extend"},
+        Bone = "v_weapon.mp5sd_parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.6, 3.75),
+        Ang = Angle(0, -90, 0),
+		Scale = 1,
     },
     {
         PrintName = "Mag",

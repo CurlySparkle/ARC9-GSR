@@ -179,9 +179,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(16, 32, 3.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-3, -8, 0)
+SWEP.CustomizeSnapshotPos = Vector(-1, 0, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -234,10 +234,8 @@ SWEP.DropMagazineTime = 0.35
 
 SWEP.ShootSound = "CSGO.MP9.Fire"
 SWEP.ShootSoundSilenced = "CSGO.MP9.Silenced_Fire"
-SWEP.DistantShootSound = "weapons/csgo/mp9/mp9-1-distant.wav"
+SWEP.DistantShootSound = "weapons/csgo/mp9/mp9-1-distant.ogg"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -413,14 +411,19 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["grip"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
     ["stock_retract"] = {
         Bodygroups = {
             {3,1},
         },
     },
-    ["grip"] = {
+    ["stock_none"] = {
         Bodygroups = {
-            {2,1},
+            {3,2},
         },
     },
 }
@@ -459,6 +462,16 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp9_parent",
         Pos = Vector(-0.9, -3.45, 4.5),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.mp9_parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.4, -3.3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
     },
     {
         PrintName = "Mag",

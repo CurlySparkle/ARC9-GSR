@@ -185,10 +185,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 32, 7)
+SWEP.CustomizePos = Vector(22, 40, 2)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
-SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 3, 4)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -375,6 +375,16 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["stock_retract"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -403,6 +413,16 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.m3_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -0.3, 1.5),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.1,
+    },
+    {
         PrintName = "Bottom",
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_xm1014"},
@@ -418,3 +438,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.5

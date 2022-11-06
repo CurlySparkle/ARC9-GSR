@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/csgo/m4a4/rif_m4a1"
+	$bumpmap "null-bumpmap"
+	$phongexponenttexture "models/csgo/m4a4/rif_m4a1_exponent"
+
+	"$phong" "1"
+
+
+	"$phongboost" "2"
+	"$phongalbedoboost" "25"
+	"$phongfresnelranges" "[.83 .83 1]"
+
+	"$basemapalphaphongmask" "1"
+
+	"$phongalbedotint" "1"
+
+	"$phongdisablehalflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.15 .15 .15]"
+}

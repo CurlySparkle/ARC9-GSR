@@ -187,7 +187,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 32, 5)
+SWEP.CustomizePos = Vector(23, 37, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(-0, 5, 3)
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
@@ -232,6 +232,7 @@ SWEP.DropMagazineTime = 0.45
 local path = "weapons/csgo/sg556/"
 
 SWEP.ShootSound = "CSGO.SG556.Fire"
+SWEP.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.SG556.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -257,6 +258,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "sg556_clipout.wav", t = 9 / 30},
             {s = path .. "sg556_clipin.wav", t = 29 / 30},
@@ -264,6 +287,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "sg556_clipout.wav", t = 9 / 30},
             {s = path .. "sg556_clipin.wav", t = 29 / 30},
@@ -305,6 +350,28 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -324,6 +391,11 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["stock_none"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -335,6 +407,47 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         Installed = "csgo_optic_acog_1",
-        CorrectiveAng = Angle(0, 0, 0),
+        CorrectiveAng = Angle(-0.55, -0.65, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle","muzzle_m4"},
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, -3.15, 24.6),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = {"grip"},
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, -1.35, 14),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
+        Bone = "v_weapon.sg556_Parent",
+		InstalledElements = {"sidecover"},
+        Pos = Vector(-1, -3.6, 18),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = "csgo_tube",
+        Bone = "v_weapon.sg556_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -3, -1.9),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.05,
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk"
     },
 }
+
+SWEP.GripPoseParam = 4.3

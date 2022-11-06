@@ -26,7 +26,6 @@ SWEP.Description = [[The SCAR-20 is a semi-automatic sniper rifle that trades a 
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_scar20.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
-SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 
@@ -419,13 +418,22 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "0000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.AttachmentElements = {
     ["mount"] = {
         Bodygroups = {
             {1,1},
+        },
+    },
+    ["stock_retract"] = {
+        Bodygroups = {
             {2,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,2},
         },
     },
 }
@@ -457,6 +465,16 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -3.6, 10.5),
         Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.SCAR_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -5.3, -3.5),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
     },
     {
         PrintName = "Tactical",

@@ -27,7 +27,7 @@ SWEP.Description = [[Deadly at close, not good at mid to large distances, the MP
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 2
 
@@ -72,12 +72,15 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 750
+SWEP.RPM = 800
 
 SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
     }
 }
 -------------------------- RECOIL
@@ -179,9 +182,11 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(18, 36, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+
+SWEP.CustomizeSnapshotPos = Vector(2, 0, 3)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -233,8 +238,10 @@ SWEP.DropMagazineTime = 0.35
 
 local path = "weapons/csgo/mp9/"
 
-SWEP.ShootSound = "CSGO.MP7.Fire"
-SWEP.ShootSoundSilenced = "CSGO.MP5.Fire_Silenced"
+SWEP.FirstShootSound = "CSGO.MP5A2.Fire_First"
+SWEP.ShootSound = "CSGO.MP5A2.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.MP5A2.Silenced_Fire_First"
+SWEP.ShootSoundSilenced = "CSGO.MP5A2.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -407,9 +414,14 @@ SWEP.AttachmentElements = {
             {4,1},
         },
     },
-    ["stock"] = {
+    ["stock_retract"] = {
         Bodygroups = {
             {5,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {5,2},
         },
     },
 }
@@ -430,7 +442,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},
         InstalledElements = {"rearsight"},
-        CorrectiveAng = Angle(0.8, 0.5, 0),
+        CorrectiveAng = Angle(0, 0, 0),
     },
     {
         PrintName = "Grip",
@@ -450,6 +462,16 @@ SWEP.Attachments = {
 		InstalledElements = {"side_cover"},
         Pos = Vector(-1, -3.95, 12),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract"},
+        Bone = "v_weapon.MP5_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -3.8, -2.7),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.2,
     },
     {
         PrintName = "Mag",

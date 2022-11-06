@@ -104,12 +104,9 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 120,
-    pitch = {97,103},
+    pitch = {95,105},
     sound = {
-        "^weapons/csgo/m4a1/m4a1_01.ogg",
-		"^weapons/csgo/m4a1/m4a1_02.ogg",
-		"^weapons/csgo/m4a1/m4a1_03.ogg",
-		"^weapons/csgo/m4a1/m4a1_04.ogg",
+        "^weapons/scar_unsuppressed.wav",
     }
 } )
 
@@ -936,6 +933,28 @@ sound.Add( {
     }
 } )
 
+sound.Add( {
+    name = "CSGO.MP5A2.Fire_First",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp5_unsuppressed_first.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5A2.Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp5_unsuppressed_loop.wav",
+    }
+} )
+
 -- SILENCERS
 
 sound.Add( {
@@ -1060,16 +1079,26 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.P90.Fire_Silenced_First",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/p90_suppresed_first.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.P90.Fire_Silenced",
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
-    pitch = {97,103},
+    pitch = {90,115},
     sound = {
-        "^weapons/p90_suppresed.ogg",
+        "^weapons/p90_suppresed_loop.wav",
     }
 } )
-
 
 sound.Add( {
     name = "CSGO.Famas.Fire_Silenced",
@@ -1159,6 +1188,18 @@ sound.Add( {
     }
 } )
 
+
+sound.Add( {
+    name = "CSGO.MP7.Silenced_Fire_First",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp7_suppressed_first.wav",
+    }
+} )
+
 sound.Add( {
     name = "CSGO.MP7.Silenced_Fire",
     channel = CHAN_STATIC,
@@ -1166,7 +1207,7 @@ sound.Add( {
     level = 140,
     pitch = {95,105},
     sound = {
-        "^weapons/mp7_suppressed.wav",
+        "^weapons/mp7_suppressed_loop.wav",
     }
 } )
 
@@ -1204,6 +1245,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.SG556.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/m4a1_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.SCAR17.Silenced_Fire",
     channel = CHAN_STATIC,
     volume = 1.0,
@@ -1233,5 +1285,49 @@ sound.Add( {
     pitch = {90,105},
     sound = {
         "^weapons/m3_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.UMP.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/scar_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Tec9.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+    sound = {
+        "^weapons/mac10_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5A2.Silenced_Fire_First",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp5_suppressed_first.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5A2.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/mp5_suppressed_loop.wav",
     }
 } )
