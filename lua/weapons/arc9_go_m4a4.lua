@@ -403,6 +403,11 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
     ["stock_none"] = {
         Bodygroups = {
             {3,2},
@@ -464,7 +469,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = "csgo_tube",
+        Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.M4A1_Parent",
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -5.05, -2.95),

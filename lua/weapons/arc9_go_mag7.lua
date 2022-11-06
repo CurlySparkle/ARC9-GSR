@@ -462,7 +462,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub","grip_mag7"},
         Bone = "v_weapon.pump",
         Pos = Vector(0, -2.5, -0.6),
         Ang = Angle(-5, -90, 180),

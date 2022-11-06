@@ -5,7 +5,8 @@ ATT.Description = [[
     Typical holograpic sight which uses a holographic reticle for faster sight acquisition Coupled with a 3x Magnifier.
 ]]
 ATT.Pros = {
-    "+ Clearer sight picture"
+    "+ Clearer sight picture",
+	"+ 2x Zoom"
 }
 ATT.Cons = {}
 ATT.SortOrder = 2
