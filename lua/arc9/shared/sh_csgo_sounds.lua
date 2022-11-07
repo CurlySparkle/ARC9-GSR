@@ -1017,7 +1017,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 120,
-    pitch = {90,110},
+    pitch = {85,115},
     sound = {
         "^weapons/aug_suppressed.wav",
     }
@@ -1094,7 +1094,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
-    pitch = {95,105},
+    pitch = {90,115},
     sound = {
         "^weapons/p90_suppresed_first.wav",
     }
