@@ -406,6 +406,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, -3.4, 39.1),
         Ang = Angle(90, 0, -90),
+		Scale = 1.1,
     },
     {
         PrintName = "Side",
@@ -425,7 +426,14 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
+        PrintName = "Ammo",
+        Category = {"go_ammo","go_ammo_sniper"},
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
     },
 }
+
+SWEP.GripPoseParam = 4.5
+SWEP.GripPoseParam2 = 0.5

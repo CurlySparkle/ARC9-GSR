@@ -4,7 +4,10 @@
 	$bumpmap "null-bumpmap"
 	$phongexponenttexture "models/csgo/m4a1/rif_m4a1_s_exponent"
 
-	"$phongboost" "15"
+	"$phong" "1"
+
+
+	"$phongboost" "5"
 	"$phongalbedoboost" "25"
 	"$phongfresnelranges" "[.83 .83 1]"
 
@@ -16,9 +19,8 @@
 
 	"$envmap" "env_cubemap"
 	"$envmapfresnel" "1"
-	"$envmaptint" 		"[.1 .1 .1]"
-
-	
+	"$envmaptint" 		"[.15 .15 .15]"
 }
+
 
 

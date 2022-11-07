@@ -179,7 +179,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(21, 32, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -257,6 +257,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10 / 30},
             {s = path .. "bizon_clipin.wav", t = 31 / 30},
@@ -264,6 +286,28 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10 / 30},
             {s = path .. "bizon_clipin.wav", t = 31 / 30},
@@ -273,6 +317,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "bizon_draw.wav", t = 0 / 30},
             {s = path .. "bizon_boltback.wav", t = 8 / 30},
@@ -306,6 +372,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.3,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
@@ -343,7 +431,7 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.bizon_Parent",
-        Pos = Vector(0, -4.3, 2.5),
+        Pos = Vector(0, -4.3, 3.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},
         CorrectiveAng = Angle(0.05, 0, 0),
@@ -354,6 +442,14 @@ SWEP.Attachments = {
         Category = "csgo_rail_tac",
         Bone = "v_weapon.bizon_Parent",
         Pos = Vector(-0.9, -3.7, 13),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Gripping",
+        DefaultAttName = "Default",
+        Category = {"grip_bizon"},
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
     },
     {

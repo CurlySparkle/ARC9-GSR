@@ -33,11 +33,6 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1_s.mdl"
-SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
-    Scale = 1
-}
 
 -------------------------- DAMAGE PROFILE
 
@@ -163,13 +158,10 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 SWEP.IronSights = {
     Pos = Vector(-5.42, -9, -0.2),
     Ang = Angle(-0.1, 1.25, -1.5),
-    Midpoint = { -- Where the gun should be at the middle of it's irons
-        Pos = Vector(0, 15, -4),
-        Ang = Angle(0, 0, -45),
-    },
+    Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
-    CrosshairInSights = false,
-    ViewModelFOV = 56,
+	ViewModelFOV = 56,
+	CrosshairInSights = false,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -206,15 +198,22 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "ar2"
-SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
+SWEP.HoldType = "rpg"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeCustomize = "physgun"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.WorldModelOffset = {
+    Pos = Vector(-10.3, 5.5, -4.5),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-10, 5, -0), -- rpg
+    TPIKAng = Angle(-5, 0, 180),
+    Scale = 1
+}
+
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

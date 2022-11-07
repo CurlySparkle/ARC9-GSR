@@ -991,13 +991,24 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.AK47.Fire_Silenced_First",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 120,
+    pitch = {90,115},
+    sound = {
+        "^weapons/ak47_suppressed_first.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.AK47.Fire_Silenced",
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 120,
-    pitch = {97,103},
+    pitch = {90,115},
     sound = {
-        "^weapons/ak47_suppressed.wav",
+        "^weapons/ak47_suppressed_loop.wav",
     }
 } )
 

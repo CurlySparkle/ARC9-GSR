@@ -80,7 +80,11 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
-    }
+    },
+    {
+        Mode = 1,
+        -- add other attachment modifiers
+    },
 }
 -------------------------- RECOIL
 
@@ -181,7 +185,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 32, 2)
+SWEP.CustomizePos = Vector(22, 40, 2)
 
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 5)
@@ -225,6 +229,7 @@ SWEP.DropMagazineTime = 0.35
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.AK47.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.AK47.Fire_Silenced_First"
 SWEP.ShootSoundSilenced = "CSGO.AK47.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.AK47.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
@@ -406,9 +411,9 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(0, -4.3, 2.5),
+        Pos = Vector(-0.2, -4.45, 4.4),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic",},
+        Category = {"csgo_rail_optic_ak",},
         CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {
