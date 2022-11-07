@@ -397,6 +397,21 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["topcover"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["foregrip"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -434,17 +449,27 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube"},
+        Bone = "v_weapon.ak47_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.6, -1.3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.05,
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk",
     },
-    {
-        PrintName = "Stickers",
-        DefaultCompactName = "Stickers",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -1.13, 0),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers_ak",
-    },
+    -- {
+        -- PrintName = "Stickers",
+        -- DefaultCompactName = "Stickers",
+        -- Bone = "v_weapon.ak47_parent",
+        -- Pos = Vector(0, -1.13, 0),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = "stickers_ak",
+    -- },
 }
 
 SWEP.GripPoseParam = 4

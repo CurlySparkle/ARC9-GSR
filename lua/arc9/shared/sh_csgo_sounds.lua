@@ -164,7 +164,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/ak47/ak47_distant.ogg",
+        "^weapons/csgo/ak47/ak47_distant.wav",
     }
 } )
 
