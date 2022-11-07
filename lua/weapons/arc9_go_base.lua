@@ -30,6 +30,5 @@ SWEP.ViewRecoilUpMultSights = 10
 
 SWEP.SprintVerticalOffset = false
 SWEP.CanBlindFire = false
-SWEP.NoTPIK = true
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
