@@ -37,7 +37,7 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-12, 6, -6),
+    TPIKPos = Vector(-12, 5, -14),
     TPIKAng = Angle(0, -5, 190)
 }
 
@@ -217,7 +217,7 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 SWEP.HoldType = "duel"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "ar2"
+SWEP.HoldTypeSights = "duel"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

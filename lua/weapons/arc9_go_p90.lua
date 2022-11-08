@@ -32,10 +32,13 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_p90.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-6, 4.5, -1),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-6, 4.5, -1), -- rpg
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -178,10 +181,13 @@ SWEP.MovingAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
+SWEP.RestPos = Vector(0, 5, 0)
+SWEP.RestAng = Angle(0, 0, 0)
+
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(18, 32, 2)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-3, -10, -1)
+SWEP.CustomizeSnapshotPos = Vector(-3, -10, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -195,10 +201,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "rpg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

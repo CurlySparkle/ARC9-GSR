@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "arc9/weaponicons/frags/go_nade_flash"
+	"$translucent" 1
+}

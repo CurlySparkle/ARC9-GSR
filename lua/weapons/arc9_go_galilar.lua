@@ -185,7 +185,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 32, 7.5)
+SWEP.CustomizePos = Vector(21, 35, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(0, 0, 0)
@@ -231,7 +231,7 @@ local path = "weapons/csgo/galilar/"
 
 SWEP.ShootSound = "CSGO.GALIL.Fire"
 SWEP.ShootSoundSilenced = "CSGO.GALIL.Silenced_Fire"
-SWEP.DistantShootSound = path .. "galil-1-distant.wav"
+SWEP.DistantShootSound = "CSGO.GALIL.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -330,7 +330,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -407,7 +407,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub","grip_galil"},
         Bone = "v_weapon.galilar_parent",
         Pos = Vector(0, -2.1, 11),
         Ang = Angle(90, 0, 90),

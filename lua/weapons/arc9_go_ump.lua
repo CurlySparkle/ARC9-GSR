@@ -32,9 +32,10 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_ump.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-14, 7, -3),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -194,10 +195,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "smg"
+SWEP.HoldType = "rpg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -274,7 +275,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -427,7 +428,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = {"grip"},
+        Category = {"grip","grip_ump"},
         Bone = "v_weapon.ump45_Parent",
 		InstalledElements = {"grip"},
         Pos = Vector(0, -2.7, 11.5),

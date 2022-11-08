@@ -1,14 +1,12 @@
 "VertexLitGeneric"
 {
-	$basetexture "models/csgo/smoke/smoke_grenade"
-	$bumpmap "null-bumpmap"
-	
+	"$baseTexture" "models/csgo/smoke/incendiary_grenade"
 	"$basemapalphaphongmask" "1"
 	"$phong" "1"
 	"$phongfresnelranges" "[.83 .83 1]"
-	"$phongboost" ".5"
-	"$phongalbedoboost" "65"
-	"$phongalbedotint" "1"
+	"$phongboost" "1.2"
+//	"$phongalbedoboost" "65"
+//	"$phongalbedotint" "1"
 
 	"$phongexponenttexture" "models/csgo/smoke/smoke_grenade_exponent"
 
@@ -16,6 +14,5 @@
 
 	"$envmap" "env_cubemap"
 	"$envmapfresnel" "1"
-	"$envmaptint" 		"[.3 .3 .4]"
-
+	"$envmaptint" 		"[.1 .1 .1]"
 }

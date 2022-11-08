@@ -213,7 +213,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.GALIL.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.5,
+    volume = 0.3,
     level = 120,
     pitch = 100,
     sound = {
@@ -1205,7 +1205,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
-    pitch = {90,110},
+    pitch = {90,115},
     sound = {
         "^weapons/mp7_suppressed_first.wav",
     }
@@ -1216,7 +1216,7 @@ sound.Add( {
     channel = CHAN_STATIC,
     volume = 1.0,
     level = 140,
-    pitch = {90,110},
+    pitch = {90,115},
     sound = {
         "^weapons/mp7_suppressed_loop.wav",
     }

@@ -461,7 +461,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "grip",
+        Category = {"grip","grip_scar20"},
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -3.6, 10.5),
         Ang = Angle(90, 0, 90),

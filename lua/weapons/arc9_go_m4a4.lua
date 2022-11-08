@@ -36,6 +36,8 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-8.5, 2.8, -8),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -156,7 +158,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -3, 0)
+SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -446,7 +448,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_m4"},
         Bone = "v_weapon.M4A1_Parent",
-        Pos = Vector(0, -5.1, 17.7),
+        Pos = Vector(0, -5.1, 17.4),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -465,6 +467,7 @@ SWEP.Attachments = {
 		InstalledElements = {"sidecover"},
         Pos = Vector(-1.2, -5.1, 12),
         Ang = Angle(90, 90, 90),
+		LaserCorrectionAngle = Angle(-0.4, 0, 0.2),
     },
     {
         PrintName = "Stock",

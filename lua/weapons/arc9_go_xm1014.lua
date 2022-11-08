@@ -32,10 +32,13 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_xm1014.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-10.3, 5.5, -4.5),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-5, 5, -4),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -204,7 +207,7 @@ SWEP.BlindFireLeftAng = Angle(80, -20, 3)
 SWEP.HoldType = "rpg"
 SWEP.HoldTypeSprint = "normal"
 SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

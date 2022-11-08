@@ -34,8 +34,10 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_p2000.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-15.5, 5.5, -4),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-6, 6, -5), -- rpg
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 

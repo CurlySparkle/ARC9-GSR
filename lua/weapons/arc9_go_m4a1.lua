@@ -32,6 +32,7 @@ SWEP.DefaultBodygroups = "0000000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 
 -------------------------- DAMAGE PROFILE
@@ -156,12 +157,16 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.42, -9, -0.2),
+    Pos = Vector(-5.42, -2, -0.2),
     Ang = Angle(-0.1, 1.25, -1.5),
-    Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
+    Midpoint = { -- Where the gun should be at the middle of it's irons
+        Pos = Vector(0, 50, -4),
+        Ang = Angle(0, 0, -45),
+		ViewModelFOV = 50,
+    },
     Magnification = 1.1,
-	ViewModelFOV = 56,
-	CrosshairInSights = false,
+    CrosshairInSights = false,
+    ViewModelFOV = 36,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -207,13 +212,14 @@ SWEP.HoldTypeCustomize = "physgun"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10.3, 5.5, -4.5),
     Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-10, 5, -0), -- rpg
+    TPIKPos = Vector(-11, 5, -4),
     TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
 }
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC -- While in TPIK only
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2 -- Non TPIK
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

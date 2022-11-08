@@ -32,13 +32,13 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_fiveseven.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
-    Scale = 1,
-    TPIKPos = Vector(-5, 0, 0),
-    TPIKAng = Angle(0, 0, 190)
+    Pos = Vector(-6, 5.5, -4),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-6, 6, -5),
+    TPIKAng = Angle(-5, 0, 180),
 }
 
 -------------------------- DAMAGE PROFILE
