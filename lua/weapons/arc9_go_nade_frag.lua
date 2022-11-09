@@ -40,7 +40,7 @@ SWEP.BottomlessClip = true
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = true -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
-SWEP.ThrowSpeed = 1
+SWEP.ThrowAnimSpeed = 1
 
 SWEP.FuseTimer = 3 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
@@ -51,6 +51,8 @@ SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right cl
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
+
+SWEP.Disposable = true
 
 SWEP.PhysBulletMuzzleVelocity = 960 * 39.37
 
@@ -202,18 +204,30 @@ SWEP.Animations = {
         Source = "idle"
     },
     ["draw"] = {
-        Source = "draw",
+        Source = "deploy",
     },
     ["holster"] = {
         Source = "holster",
     },
     ["pullpin"] = {
         Source = "pullpin",
+        MinProgress = 0.666,
+        FireASAP = true,
+        EventTable = {
+            { s = "weapons/csgo/hegrenade/pinpull_start.wav", t = 0 },
+            { s = "weapons/csgo/hegrenade/pinpull.wav", t = 10 / 30 },
+        }
     },
     ["throw"] = {
         Source = "throw",
+        EventTable = {
+            { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
+        }
     },
     ["toss"] = {
         Source = "underhand",
+        EventTable = {
+            { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
+        }
     },
 }
