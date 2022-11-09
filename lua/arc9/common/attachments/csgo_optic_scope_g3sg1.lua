@@ -40,6 +40,6 @@ ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/scope_overlay.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.95
-ATT.RTScopeShadowIntensity = 1.5
+ATT.RTScopeShadowIntensity = 15
 ATT.RTScopeNoPP = false
 ATT.RTScopeColorable = false
