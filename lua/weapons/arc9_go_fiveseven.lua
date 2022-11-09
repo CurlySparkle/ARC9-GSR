@@ -200,15 +200,14 @@ SWEP.SpeedMultMelee = 1
 -------------------------- HoldTypes
 
 SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "normal"
-SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "ar2"
-SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
-SWEP.HoldTypeNPC = "pistol"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.HoldTypeCustomize = "physgun"
+
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

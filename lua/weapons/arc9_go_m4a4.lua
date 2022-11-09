@@ -27,16 +27,17 @@ SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart,
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-8.5, 2.8, -8),
+    Pos = Vector(-10.3, 5.5, -4.5),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-11, 5, -4),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -120,6 +121,7 @@ SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.1
 
 -------------------------- HANDLING
 
@@ -158,7 +160,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, 0, 0)
+SWEP.SprintPos = Vector(0, -2, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -189,12 +191,11 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "ar2"
-SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
+SWEP.HoldType = "rpg"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeCustomize = "physgun"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
@@ -482,7 +483,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.M4A1_Clip",
-        Category = "go_mag"
+        Category = "go_mag_m4"
     },
     {
         PrintName = "Perk",

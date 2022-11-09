@@ -32,10 +32,11 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_ak47.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-10.3, 5.5, -4.5),
+    Ang = Angle(-7, 0, 180),
     Scale = 1,
     TPIKPos = Vector(-11, 6, -6),
     TPIKAng = Angle(0, 0, 175)
@@ -194,10 +195,10 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "ar2"
+SWEP.HoldType = "rpg"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

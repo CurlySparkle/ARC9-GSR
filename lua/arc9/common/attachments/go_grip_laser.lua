@@ -37,5 +37,16 @@ ATT.ToggleStats = {
     }
 }
 
+ATT.Sights = {
+    {
+        Pos = Vector(-2, 17, -4),
+        Ang = Angle(-0.35, -1, 35),
+        ViewModelFOV = 56,
+        Magnification = 1.1,
+        IgnoreExtra = false
+    },
+}
+
+
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.08

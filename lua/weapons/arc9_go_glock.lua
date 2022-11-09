@@ -34,9 +34,9 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_glock.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
-	TPIKPos = Vector(-6, 6, -5), -- rpg
+    Pos = Vector(-15.5, 5.5, -4),
+    Ang = Angle(-7, 0, 180),
+    TPIKPos = Vector(-6, 6, -5),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -208,15 +208,14 @@ SWEP.SpeedMultMelee = 1
 -------------------------- HoldTypes
 
 SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "normal"
-SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "ar2"
-SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
-SWEP.HoldTypeNPC = "pistol"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.HoldTypeCustomize = "physgun"
+
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

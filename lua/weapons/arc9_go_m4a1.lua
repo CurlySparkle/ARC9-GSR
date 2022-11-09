@@ -171,7 +171,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -3, 0)
+SWEP.SprintPos = Vector(0, -5, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -677,6 +677,11 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["mag"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(self, data, anim)
@@ -728,7 +733,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.M4A1_Clip",
-        Category = "go_mag"
+        Category = "go_mag_m4"
     },
     {
         PrintName = "Perk",
