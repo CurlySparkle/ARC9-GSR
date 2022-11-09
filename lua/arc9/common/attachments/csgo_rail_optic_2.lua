@@ -5,6 +5,7 @@ ATT.Description = [[Optic Riser with standard rail system that allows attachment
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
+ATT.Ignore = true -- This thing literally doesn't fit on fucking anything
 
 ATT.Category = {"csgo_rail_optic"}
 ATT.ActivateElements = {"csgo_optic_riser1"}

@@ -383,7 +383,7 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.galilar_parent",
-        Pos = Vector(0, -4.9, 3),
+        Pos = Vector(0, -4.75, 3),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.13, 0, 0.),
@@ -411,7 +411,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.galilar_parent",
         Pos = Vector(0, -2.1, 11),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Perk",
