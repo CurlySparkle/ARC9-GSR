@@ -9,7 +9,7 @@ SWEP.PrintName = "CS:GO Base"
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.BashDamage = 50
 SWEP.BashLungeRange = 64
@@ -30,5 +30,8 @@ SWEP.ViewRecoilUpMultSights = 10
 
 SWEP.SprintVerticalOffset = false
 SWEP.CanBlindFire = false
+
+SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"

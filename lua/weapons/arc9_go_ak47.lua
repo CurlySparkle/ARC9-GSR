@@ -27,7 +27,7 @@ SWEP.Description = [[Powerful and reliable, the AK-47 is one of the most popular
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_ak47.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000"
 
 SWEP.Slot = 2
 
@@ -413,6 +413,11 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["mag"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },c
 }
 
 SWEP.Attachments = {
@@ -441,20 +446,37 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"grip"},
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(0, -2.2, 13),
+		InstalledElements = {"foregrip"},
+        Pos = Vector(0, -2.3, 14),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
     },
+    -- {
+        -- PrintName = "Bottom",
+        -- DefaultAttName = "Default",
+        -- Category = "csgo_rail_ub",
+        -- Bone = "v_weapon.ak47_Parent",
+        -- Pos = Vector(0, -2.2, 13),
+        -- Ang = Angle(90, 0, 90),
+		-- Scale = 1,
+    -- },
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
         Category = {"csgo_tube"},
         Bone = "v_weapon.ak47_Parent",
 		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.6, -1.3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.05,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.AK47_clip",
+        Category = "go_mag_ak",
         Pos = Vector(0, -2.6, -1.3),
         Ang = Angle(90, 0, -90),
 		Scale = 1.05,

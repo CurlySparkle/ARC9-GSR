@@ -9,12 +9,16 @@ ATT.Cons = {}
 ATT.SortOrder = 5
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
+--ATT.Scale = 0.45
+ATT.ModelOffset = Vector(1.4, 0, -2.5)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.Category = {"go_mag_m4"}
+ATT.Category = {"go_mag_ak"}
 ATT.ClipSizeMult = 1.5
-ATT.ReloadTimeMult = 1.25
+ATT.ReloadTimeMult = 1.2
 ATT.RecoilMult = 1.1
 ATT.RecoilKickMult = 1.1
 
 ATT.ActivateElements = {"mag"}
-ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
+ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
+ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
