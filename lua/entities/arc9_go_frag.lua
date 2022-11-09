@@ -14,9 +14,7 @@ ENT.Radius = 250
 ENT.ImpactDamage = 0
 ENT.FuseTime = 5
 
-ENT.SmokeTrail = true
-ENT.SmokeTrailSize = 1
-ENT.SmokeTrailTime = 1
+ENT.SmokeTrail = false
 
 if CLIENT then
     killicon.Add( "arc9_go_nade_frag", "arc9/weaponicons/frags/go_nade_frag", Color( 255, 255, 255, 255 ) )
