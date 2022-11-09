@@ -39,7 +39,7 @@ SWEP.ShootEnt = "arc9_go_frag" -- Set to an entity to launch it out of this weap
 SWEP.BottomlessClip = true
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
-SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
+SWEP.Tossable = true -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
 SWEP.ThrowSpeed = 1
 
 SWEP.FuseTimer = 3 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
@@ -50,7 +50,7 @@ SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right cl
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
-SWEP.ThrowTumble = false -- Grenade tumbles when thrown.
+SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 
 SWEP.PhysBulletMuzzleVelocity = 960 * 39.37
 
@@ -213,7 +213,7 @@ SWEP.Animations = {
     ["throw"] = {
         Source = "throw",
     },
-    ["throw_alt"] = {
+    ["toss"] = {
         Source = "underhand",
     },
 }
