@@ -31,9 +31,10 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_awp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-12, 5, -2),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
     TPIKPos = Vector(-12, 5, -2),
@@ -187,14 +188,14 @@ SWEP.CustomizeNoRotate = false
 -------------------------- HoldTypes
 
 SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "normal"
-SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
@@ -217,7 +218,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_awp_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.4
 
 -------------------------- SOUNDS
 
@@ -395,7 +396,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.05, -4.2, 6),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
-        CorrectiveAng = Angle(0.8, 0.5, 0),
+        CorrectiveAng = Angle(0.18, -0.22, 0),
         Installed = "csgo_optic_scope_awp",
         Integral = true,
     },
@@ -419,7 +420,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub","grip_awp"},
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, -1.3, 13.6),
         Ang = Angle(90, 0, 90),

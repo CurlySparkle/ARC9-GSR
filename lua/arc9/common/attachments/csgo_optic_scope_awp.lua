@@ -24,7 +24,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.06, 9.5, -1.59),
+        Pos = Vector(-0.093, 9.5, -1.56),
         Ang = Angle(-2, 0.3, 0),
         ViewModelFOV = 60,
         Magnification = 1,
@@ -39,6 +39,6 @@ ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/scope_overlay.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.95
-ATT.RTScopeShadowIntensity = 15
+ATT.RTScopeShadowIntensity = 1
 ATT.RTScopeNoPP = false
 ATT.RTScopeColorable = false

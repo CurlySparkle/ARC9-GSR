@@ -64,7 +64,7 @@ ATT.RTScopeRes = 1024
 ATT.RTScopeSurface = Material("models/weapons/v_arccw_go/atts/aimpoint_lense")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/2x_eotech.png", "mips")
 ATT.RTScopeReticleScale = 1
-ATT.RTScopeShadowIntensity = 15
+ATT.RTScopeShadowIntensity = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
 

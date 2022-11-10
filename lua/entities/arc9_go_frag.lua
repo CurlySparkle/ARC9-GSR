@@ -9,9 +9,9 @@ ENT.Model = "models/weapons/w_eq_fraggrenade_thrown.mdl"
 ENT.DragCoefficient = 0.15
 
 ENT.ExplodeOnImpact = false
-ENT.Damage = 100
-ENT.Radius = 250
-ENT.ImpactDamage = 0
+ENT.Damage = 125
+ENT.Radius = 360
+ENT.ImpactDamage = 5
 ENT.FuseTime = 5
 
 ENT.SmokeTrail = false
