@@ -146,7 +146,6 @@ SWEP.SpreadAddCrouch = -0.01
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
-
 SWEP.SwayMultSights = 0
 
 SWEP.SpeedMultSights = 0.65
@@ -419,7 +418,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "0000000000"
+SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.AttachmentElements = {
     ["mount"] = {
@@ -435,6 +434,11 @@ SWEP.AttachmentElements = {
     ["stock_none"] = {
         Bodygroups = {
             {2,2},
+        },
+    },
+    ["mag"] = {
+        Bodygroups = {
+            {3,1},
         },
     },
 }
@@ -484,6 +488,11 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.8, -4.6, 18),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.SCAR_Clip",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

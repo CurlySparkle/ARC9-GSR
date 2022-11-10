@@ -23,3 +23,4 @@ ENT.BounceSounds = {
 if CLIENT then
     killicon.Add( "arc9_go_nade_frag", "arc9/weaponicons/frags/go_nade_frag", Color( 255, 255, 255, 255 ) )
 end
+
