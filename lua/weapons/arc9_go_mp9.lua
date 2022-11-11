@@ -196,8 +196,8 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 -------------------------- HoldTypes
 
 SWEP.HoldType = "smg1"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
 SWEP.HoldTypeSights = "smg1"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"

@@ -31,10 +31,13 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-10.3, 7, -4.5),
+    Ang = Angle(-10, 0, 180),
+    TPIKPos = Vector(-11, 5, -4),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -132,7 +135,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0
 
-SWEP.SpeedMultSights = 0.65
+SWEP.SpeedMultSights = 0
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
@@ -158,7 +161,7 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 SWEP.IronSights = {
     Pos = Vector(-5.16, -10, 1.15),
     Ang = Angle(0.025, -0.2, 0),
-    Magnification = 2,
+    Magnification = 1.15,
     ViewModelFOV = 56,
 }
 
@@ -195,10 +198,10 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
-SWEP.HoldTypeSprint = "passive"
-SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "ar2"
+SWEP.HoldType = "rpg"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

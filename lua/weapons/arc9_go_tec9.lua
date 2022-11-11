@@ -37,7 +37,7 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-15, 9, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-17, 5, 0),
+    TPIKPos = Vector(-13, 5, 0),
     TPIKAng = Angle(0, 10, 180)
 }
 
@@ -200,9 +200,9 @@ SWEP.SpeedMultMelee = 1
 -------------------------- HoldTypes
 
 SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "normal"
-SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "ar2"
+SWEP.HoldTypeSprint = "rpg"
+SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = "pistol"
