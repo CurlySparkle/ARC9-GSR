@@ -266,7 +266,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.45,
+		MinProgress = 0.42,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8 / 30},
             {s = path .. "de_clipin.wav", t = 19 / 30},
@@ -333,9 +333,9 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.deagle_parent",
-        Pos = Vector(-0.025, -3.1, 8.8),
+        Pos = Vector(-0.025, -3.1, 8.74),
         Ang = Angle(90, 0, -90),
 		Scale = 0.8,
     },

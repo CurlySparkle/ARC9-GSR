@@ -14,6 +14,9 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.Folder = "Tube"
 ATT.IconOffset = Vector(0, 0, 0)
 
+ATT.RecoilUpMult = 1.05
+ATT.AimDownSightsTimeMult = 0.95
+
 ATT.Attachments = {
     {
         PrintName = "Stock",

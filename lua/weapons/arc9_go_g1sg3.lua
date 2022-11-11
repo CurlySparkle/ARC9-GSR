@@ -31,9 +31,10 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_g3sg1.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-12, 6, -4),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -141,6 +142,7 @@ SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.1
 SWEP.SpreadAddCrouch = -0.04
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 

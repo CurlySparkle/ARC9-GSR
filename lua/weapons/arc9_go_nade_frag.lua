@@ -35,6 +35,9 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.BottomlessClip = true
+SWEP.ClipSize = 1
+SWEP.ChamberSize = 0
+SWEP.SupplyLimit = 0
 SWEP.Crosshair = true
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.

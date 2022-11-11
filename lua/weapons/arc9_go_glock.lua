@@ -343,7 +343,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.glock_parent",
         Pos = Vector(-0.025, -2.15, 6.1),
         Ang = Angle(90, 0, -90),

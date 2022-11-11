@@ -14,7 +14,7 @@ ATT.RangeMaxMult = 1.1
 ATT.RangeMinMult = 0.8
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced"
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true

@@ -24,10 +24,10 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.005, 6, -1.48),
-        Ang = Angle(-1.15, 0, 0),
-        ViewModelFOV = 60,
-        Magnification = 1,
+        Pos = Vector(0.023, 6.5, -1.45),
+        Ang = Angle(0, 0, 0),
+        ViewModelFOV = 46,
+        Magnification = 1.15,
         IgnoreExtra = true
     },
 }

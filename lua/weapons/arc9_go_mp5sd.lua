@@ -36,10 +36,13 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_mp5sd.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-12, 7.5, -1),
+    Ang = Angle(-7, 3, 180),
+    TPIKPos = Vector(-6, 4.5, -1), -- rpg
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 

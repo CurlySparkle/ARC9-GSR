@@ -17,6 +17,6 @@ ATT.SpreadAddRecoil = 0.01
 ATT.SpreadAddHipFire = 0.005
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced"
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true

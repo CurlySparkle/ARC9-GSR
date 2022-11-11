@@ -32,10 +32,13 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-10, 6, 0),
+    Ang = Angle(-3, 3, 180),
+    TPIKPos = Vector(-6, 4.5, -1), -- rpg
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -227,7 +230,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_bizon_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.45
 
 -------------------------- SOUNDS
 

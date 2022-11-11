@@ -32,10 +32,11 @@ SWEP.DefaultBodygroups = "0000000000000000000"
 SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_mach_m249.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-18, 11, 0),
+    Ang = Angle(-5, 8, 180),
     Scale = 1
 }
 
@@ -184,7 +185,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 20, 2.5)
+SWEP.CustomizePos = Vector(28, 40, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(12, 20, 4)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -420,6 +421,11 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["stock_none"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -457,6 +463,16 @@ SWEP.Attachments = {
         Pos = Vector(0, -1, 14.4),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube"},
+        Bone = "v_weapon.m249_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -4.7, -4.45),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.25,
     },
     {
         PrintName = "Perk",
