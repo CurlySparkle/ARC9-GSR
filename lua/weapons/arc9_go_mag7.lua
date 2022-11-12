@@ -89,12 +89,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.3
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1.5 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
@@ -103,10 +103,10 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
