@@ -490,6 +490,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.8, -4.6, 18),
         Ang = Angle(90, 90, 90),
+		LaserCorrectionAngle = Angle(0.4, 0, 1),
     },
     {
         PrintName = "Mag",

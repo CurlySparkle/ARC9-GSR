@@ -275,7 +275,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 1,
@@ -290,7 +290,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
         },
         EventTable = {
@@ -336,7 +336,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
@@ -390,7 +390,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
@@ -421,6 +421,16 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["pistolgrip"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -456,6 +466,19 @@ SWEP.Attachments = {
         Pos = Vector(0, 1.2, 5),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.NOVA_LOADER",
+        Category = "go_mag"
+    },
+    {
+        PrintName = "Pistol Grip",
+        Bone = "v_weapon.NOVA_PARENT",
+        Category = "go_pistol_grip",
+		InstalledElements = {"pistolgrip"},
+        Ang = Angle(90, 0, 90),
+        Pos = Vector(0, 1.12, 2),
     },
     {
         PrintName = "Perk",
