@@ -16,5 +16,5 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.RecoilMult = 0.9
+ATT.AimDownSightsTimeMult = 1.15
+ATT.RecoilMult = 0.85

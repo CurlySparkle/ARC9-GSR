@@ -94,7 +94,7 @@ SWEP.Recoil = 1.3
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
@@ -103,16 +103,26 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRateSights = 50
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2.5 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
+SWEP.RecoilKickSights = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.ViewRecoil = true
+SWEP.ViewRecoilUpMult = 7
+
+SWEP.UseVisualRecoil = true 
+SWEP.VisualRecoil = 2
+SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
@@ -276,12 +286,12 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 1,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
         },
     },
@@ -291,7 +301,12 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
+            },
+            {
+                t = 1,
+                lhik = 0,
+                rhik = 1
             },
         },
         EventTable = {
@@ -304,10 +319,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.5,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -319,10 +339,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.5,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -337,7 +362,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 1,
@@ -381,17 +406,17 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 1.15,
@@ -412,6 +437,22 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+			{2,1},
+        },
+    },
+    ["pistolgrip"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
+    ["stock_extend"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -447,6 +488,27 @@ SWEP.Attachments = {
         Pos = Vector(0, 3.5, -0.4),
         Ang = Angle(0, -90, 180),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.sawedoff_parent",
+        Category = "go_mag",
+		Icon_Offset = Vector(0, 0, 1.5),
+    },
+    {
+        PrintName = "Pistol Grip",
+        Bone = "v_weapon.sawedoff_parent",
+        Category = {"go_pistol_grip","stock_extend"},
+		InstalledElements = {"pistolgrip"},
+        Ang = Angle(90, 0, 90),
+        Pos = Vector(0, 1, 2.1),
+    },
+    {
+        PrintName = "Pistol Grip",
+        Bone = "v_weapon.sawedoff_parent",
+        Category = {"stock_extend"},
+        Ang = Angle(90, 0, 90),
+        Pos = Vector(0, 1, 2.1),
     },
     {
         PrintName = "Perk",

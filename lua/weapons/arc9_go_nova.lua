@@ -94,7 +94,7 @@ SWEP.Recoil = 3
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
@@ -114,6 +114,14 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.ViewRecoil = true
+SWEP.ViewRecoilUpMult = 7
+
+SWEP.UseVisualRecoil = true 
+SWEP.VisualRecoil = 2
+SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilMultSights = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.015
@@ -126,6 +134,7 @@ SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadMultHipFire = 3
 SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddSightsMove = -0.1
 
 -------------------------- HANDLING
 
@@ -280,7 +289,7 @@ SWEP.Animations = {
             {
                 t = 1,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
         },
     },
@@ -289,6 +298,11 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 0,
                 rhik = 1
             },
@@ -303,10 +317,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 0.5,
+                t = 0.4,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -318,10 +337,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.5,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -335,21 +359,21 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
+                lhik = 0,
                 rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 0.9,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -395,15 +419,15 @@ SWEP.Animations = {
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 0.9,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -461,7 +485,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub","grip_nova_1"},
         Bone = "v_weapon.NOVA_PUMP",
         Pos = Vector(0, 1.2, 5),
         Ang = Angle(90, 0, 90),
