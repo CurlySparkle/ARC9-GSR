@@ -111,8 +111,12 @@ SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultSights = 0.6
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.ViewRecoil = true
+SWEP.ViewRecoilUpMult = 5
 
 -------------------------- SPREAD
 
@@ -265,6 +269,9 @@ SWEP.StripperClipBones = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+    },
+    ["fire_sights"] = {
+        Source = "shoot1_ads",
     },
     ["reload_start"] = {
         Source = "reload_start",

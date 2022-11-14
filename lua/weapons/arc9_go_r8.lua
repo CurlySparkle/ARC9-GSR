@@ -158,8 +158,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-1, 1, 0),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-2.5, 0.5, -0.8),
+    Ang = Angle(0, 0, -15),
     Magnification = 1.1,
     ViewModelFOV = 56,
 	CrosshairInSights = true,
@@ -388,6 +388,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.3, 6.5),
         Ang = Angle(90, 180, 90),
 		Scale = 1,
+		LaserCorrectionAngle = Angle(-0.3, 0, 0),
     },
     {
         PrintName = "Perk",

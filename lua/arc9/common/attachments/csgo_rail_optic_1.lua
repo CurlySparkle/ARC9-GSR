@@ -6,7 +6,7 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 
-ATT.Category = {"csgo_rail_optic"}
+ATT.Category = {"csgo_rail_optic","csgo_rail_optic_ak"}
 ATT.ActivateElements = {"csgo_optic_riser1"}
 ATT.Model = "models/weapons/csgo/atts/rail_sights.mdl"
 ATT.Scale = 1

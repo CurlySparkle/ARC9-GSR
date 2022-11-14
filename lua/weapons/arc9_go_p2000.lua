@@ -150,9 +150,9 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 
 SWEP.IronSights = {
     Pos = Vector(-2.8, -3, 0.75),
-    Ang = Angle(0.04, 1.25, 0),
-    Magnification = 1.25,
-    ViewModelFOV = 56,
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 46,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -342,7 +342,7 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.HKP2000_Parent",
-        Pos = Vector(0, -0.5, 4),
+        Pos = Vector(0, -0.35, 4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,

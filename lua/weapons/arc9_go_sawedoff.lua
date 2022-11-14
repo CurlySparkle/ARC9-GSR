@@ -244,7 +244,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.EjectDelay = 0.2
+SWEP.EjectDelay = 0.35
 
 SWEP.ShotgunReload = true
 
@@ -271,7 +271,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 3 / 30},
+            {s = path .. "sawedoff_pump.wav", t = 6 / 30},
         },
     },
     ["fire_sights"] = {
@@ -442,6 +442,7 @@ SWEP.AttachmentElements = {
             {1,1},
 			{2,1},
         },
+    AttPosMods = { [2] = { Pos = Vector(0, -2, 27), } }	
     },
     ["pistolgrip"] = {
         Bodygroups = {
