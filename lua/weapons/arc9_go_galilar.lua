@@ -37,7 +37,6 @@ end
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_galilar.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 
@@ -224,7 +223,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_galil_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.55
+SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 
@@ -377,7 +377,14 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.DefaultBodygroups = "0000000"
+
 SWEP.AttachmentElements = {
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -413,6 +420,16 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.1, 11),
         Ang = Angle(90, 0, 90),
         Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube"},
+        Bone = "v_weapon.galilar_parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.8, -1.1),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
     },
     {
         PrintName = "Perk",

@@ -252,7 +252,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_elite_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 2
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineQCA = 5
 
 -------------------------- SOUNDS
 

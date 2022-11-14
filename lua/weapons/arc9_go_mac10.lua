@@ -179,7 +179,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 7)
+SWEP.CustomizePos = Vector(23, 30, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -227,7 +227,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mac10_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.5
+SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 
@@ -237,8 +238,6 @@ SWEP.ShootSound = "CSGO.MAC10.Fire"
 SWEP.ShootSoundSilenced = "CSGO.MAC10.Silenced_Fire"
 SWEP.DistantShootSound = path .. "mac10-1-distant.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -392,9 +391,14 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
-    ["Stock"] = {
+    ["stock_extend"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,2},
         },
     },
 }
@@ -422,8 +426,20 @@ SWEP.Attachments = {
         Category = "csgo_rail_mac10",
         Bone = "v_weapon.mac10_parent",
 		InstalledElements = {"DefGrip"},
-        Pos = Vector(0, -5.5, 5),
+        Pos = Vector(0, -5.5, 4.5),
         Ang = Angle(90, 0, 90),
+		CorrectiveAng = Angle(-0.25, 0, 0),
+		Scale = 1.05,
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_extend"},
+        Bone = "v_weapon.mac10_parent",
+		--InstalledElements = {"stock_none"},
+        Pos = Vector(0, -3.1, -3.7),
+        Ang = Angle(90, 0, -90),
+		Scale = 1,
     },
     {
         PrintName = "Perk",

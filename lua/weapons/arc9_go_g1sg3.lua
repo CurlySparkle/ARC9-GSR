@@ -246,7 +246,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_g3sg1_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.85
+SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 
@@ -419,7 +420,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "000000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.AttachmentElements = {
     ["rearsight"] = {
@@ -430,6 +431,11 @@ SWEP.AttachmentElements = {
     ["rearsight2"] = {
         Bodygroups = {
             {1,0},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,3},
         },
     },
 }
@@ -470,6 +476,16 @@ SWEP.Attachments = {
         Bone = "v_weapon.g3sg1_Parent",
         Pos = Vector(-0.8, -3.5, 19),
         Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_tube"},
+        Bone = "v_weapon.g3sg1_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0.1, -3.35, -3.3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.15,
     },
     {
         PrintName = "Perk",

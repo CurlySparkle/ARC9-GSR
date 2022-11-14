@@ -244,7 +244,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.EjectDelay = 0.35
+SWEP.EjectDelay = 0.15
 
 SWEP.ShotgunReload = true
 
@@ -269,17 +269,17 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot6"},
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 6 / 30},
+            {s = path .. "sawedoff_pump.wav", t = 2 / 30},
         },
     },
-    ["fire_sights"] = {
-        Source = "shoot1_ads",
-        EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 3 / 30},
-        },
-    },
+    -- ["fire_sights"] = {
+        -- Source = "shoot1_ads",
+        -- EventTable = {
+            -- {s = path .. "sawedoff_pump.wav", t = 3 / 30},
+        -- },
+    -- },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {
@@ -432,7 +432,7 @@ SWEP.Animations = {
     },
 }
 
---SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 

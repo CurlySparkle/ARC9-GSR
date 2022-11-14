@@ -163,7 +163,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -5, 0)
+SWEP.SprintPos = Vector(-1, -1, 0)
 SWEP.SprintAng = Angle(-5, 0, 5)
 
 SWEP.SprintMidPoint = {
@@ -237,7 +237,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.7
+SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 

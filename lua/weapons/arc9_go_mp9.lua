@@ -232,6 +232,7 @@ SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp9_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 

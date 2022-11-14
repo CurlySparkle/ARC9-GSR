@@ -211,19 +211,19 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
 
-SWEP.ShouldDropMag = true
-SWEP.ShouldDropMagEmpty = true
-
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
+SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.55
+SWEP.DropMagazineQCA = 3
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 
 -------------------------- SOUNDS
 

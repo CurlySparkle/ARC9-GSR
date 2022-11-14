@@ -28,3 +28,9 @@ ARC9.CSGO.BlendCylinder = function(wep)
     vm:SetPoseParameter("cyl",8-wep:Clip1())
 end
 
+ARC9.CSGO.BlendSights = function(wep)
+    local vm = wep:GetOwner():GetViewModel()
+    local delta = wep:GetSightDelta()
+    local coolilove = math.cos(delta * (math.pi / 2))
+    vm:SetPoseParameter( "sights", Lerp(coolilove, 0, 1) ) -- thanks fesiug
+end

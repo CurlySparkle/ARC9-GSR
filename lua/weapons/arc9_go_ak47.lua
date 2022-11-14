@@ -218,14 +218,15 @@ SWEP.NoViewBob = false
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.09
+SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.65
+SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 
@@ -412,12 +413,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
+    AttPosMods = { [4] = { Pos = Vector(-0.9, -3.34, 14), } }	
     },
     ["mag"] = {
         Bodygroups = {
             {4,1},
         },
-    },c
+    },
 }
 
 SWEP.Attachments = {
@@ -430,11 +432,22 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Top",
+        PrintName = "Optics",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -5, 4),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic",},
+        InstalledElements = {"topcover"},
+		ExcludeElements = {"csgo_rail_optic_ak"},
+        CorrectiveAng = Angle(0.75, 0.7, 0),
+    },
+    {
+        PrintName = "Dovetail",
         Bone = "v_weapon.ak47_Parent",
         Pos = Vector(-0.2, -4.45, 4.4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_ak",},
+		ExcludeElements = {"topcover"},
         CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {

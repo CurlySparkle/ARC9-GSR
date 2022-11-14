@@ -13,5 +13,5 @@ ATT.Category = "grip_nova_1"
 ATT.LHIK_Priority = 5
 ATT.LHIK = true
 
-ATT.ModelOffset = Vector(-1, 0, 1)
+ATT.ModelOffset = Vector(-2.5, 0.1, 1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)

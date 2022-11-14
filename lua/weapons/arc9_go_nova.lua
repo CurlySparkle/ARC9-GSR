@@ -267,17 +267,17 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot3_new"},
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 8 / 30},
+            {s = path .. "nova_pump.wav", t = 11 / 30},
         },
     },
-    ["fire_sights"] = {
-        Source = "shoot1_ads",
-        EventTable = {
-            {s = path .. "nova_pump.wav", t = 8 / 30},
-        },
-    },
+    -- ["fire_sights"] = {
+        -- Source = "shoot1_ads",
+        -- EventTable = {
+            -- {s = path .. "nova_pump.wav", t = 8 / 30},
+        -- },
+    -- },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {
@@ -440,7 +440,7 @@ SWEP.Animations = {
     },
 }
 
---SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 
