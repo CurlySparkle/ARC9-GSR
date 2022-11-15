@@ -119,11 +119,11 @@ SWEP.ViewRecoilUpMult = -10 -- 40-100
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -434,7 +434,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optics",
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(0, -5, 4),
+        Pos = Vector(0, -5, 3.3),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic",},
         InstalledElements = {"topcover"},

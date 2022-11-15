@@ -263,6 +263,16 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["go_mag_extended"] then
+        return "reload_longmag"
+    elseif anim == "reload_empty" then
+        return "reload_longmag_empty"
+    end
+end
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -271,13 +281,13 @@ SWEP.Animations = {
             {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
         },
     },
-    ["fire_sights"] = {
-        Source = "shoot1_ads",
-        EventTable = {
-            {s = path .. "mag7_pump_back.wav", t = 1 / 30},
-            {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
-        },
-    },
+    -- ["fire_sights"] = {
+        -- Source = "shoot1_ads",
+        -- EventTable = {
+            -- {s = path .. "mag7_pump_back.wav", t = 1 / 30},
+            -- {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
+        -- },
+    -- },
     ["reload"] = {
         Source = "reload",
         IKTimeLine = {
@@ -413,9 +423,69 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 79 / 30 },
         },
     },
+    ["reload_longmag"] = {
+        Source = "reload_extra",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mag7_clipout.wav", t = 7 / 30},
+            {s = path .. "mag7_clipin.wav", t = 26 / 30},
+        },
+    },
+    ["reload_longmag_empty"] = {
+        Source = "reload_empty_extra",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mag7_clipout.wav", t = 7 / 30},
+            {s = path .. "mag7_clipin.wav", t = 26 / 30},
+            {s = path .. "mag7_pump_back.wav", t = 54 / 30},
+            {s = path .. "mag7_pump_forward.wav", t = 60 / 30},
+        },
+    },
 }
 
---SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 
@@ -423,6 +493,11 @@ SWEP.AttachmentElements = {
     ["stock_none"] = {
         Bodygroups = {
             {1,1},
+        },
+    },
+    ["mag"] = {
+        Bodygroups = {
+            {2,1},
         },
     },
 }
@@ -470,6 +545,12 @@ SWEP.Attachments = {
         Bone = "v_weapon.pump",
         Pos = Vector(0, -2.5, -0.6),
         Ang = Angle(-5, -90, 180),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.magazine",
+        Category = "go_mag",
+		InstalledElements = {"mag"},
     },
     {
         PrintName = "Perk",
