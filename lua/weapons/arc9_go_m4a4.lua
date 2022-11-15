@@ -27,7 +27,7 @@ SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart,
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.DefaultBodygroups = "0000000"
+SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.Slot = 2
 
@@ -411,25 +411,42 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
-    ["stock_none"] = {
+    ["stock_sniper"] = {
         Bodygroups = {
             {3,2},
         },
     },
-    ["sidecover"] = {
+    ["stock_none"] = {
         Bodygroups = {
-            {4,1},
+            {3,3},
         },
     },
-    ["barrel"] = {
+    ["sidecover"] = {
         Bodygroups = {
-            {5,0},
-			{5,1},
+            {4,2},
         },
+    },
+    ["sidecover_long"] = {
+        Bodygroups = {
+            {4,2},
+        },
+    },
+    ["m4_barrel_long"] = {
+        Bodygroups = {
+			{5,1},
+			{2,2},
+			{4,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -5.1, 23.1), } }	
     },
     ["mag"] = {
         Bodygroups = {
             {6,1},
+        },
+    },
+    ["mag_20"] = {
+        Bodygroups = {
+            {6,2},
         },
     },
 }
@@ -453,6 +470,14 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
+        PrintName = "Barrel",
+        DefaultAttName = "Default",
+        Category = {"go_m4_barrel"},
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -5, 10.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
         PrintName = "Grip",
         DefaultAttName = "Default",
         Category = {"grip","grip_mk18","grip_m4"},
@@ -465,7 +490,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.M4A1_Parent",
-		InstalledElements = {"sidecover"},
+		InstalledElements = {"sidecover","sidecover_long"},
         Pos = Vector(-1.2, -5.1, 12),
         Ang = Angle(90, 90, 90),
 		LaserCorrectionAngle = Angle(-0.4, 0, 0.2),
@@ -473,9 +498,9 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract"},
+        Category = {"csgo_tube","stock_retract","stock_m4"},
         Bone = "v_weapon.M4A1_Parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -5.05, -2.95),
         Ang = Angle(90, 0, -90),
 		Scale = 1.05,

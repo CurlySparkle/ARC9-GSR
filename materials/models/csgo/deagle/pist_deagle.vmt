@@ -19,4 +19,5 @@ VertexLitGeneric
 
 	"$phongalbedotint" "1"
 	"$phongdisablehalflambert" "1"
+	"$nocull" "1"
 }
