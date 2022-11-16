@@ -74,7 +74,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 534
+SWEP.RPM = 334
 
 SWEP.Firemodes = {
     {
@@ -123,7 +123,7 @@ SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.004
 SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddsights = -0.03
+SWEP.SpreadAddsights = -0.05
 
 -------------------------- HANDLING
 
@@ -283,10 +283,10 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire_left"] = {
-        Source = "shoot1_right",
+        Source = "shoot1_left",
     },
     ["fire_right"] = {
-        Source = "shoot1_left",
+        Source = "shoot1_right",
     },
     ["reload"] = {
         Source = "reload",
@@ -315,9 +315,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "elite_draw.wav", t = 0 / 30},
-            {s = path .. "elite_sliderelease.wav", t = 11 / 30},
-            {s = path .. "elite_sliderelease.wav", t = 14 / 30},
+            {s = path .. "de_draw.wav", t = 0 / 30},
+            {s = path .. "de_slideforward.wav", t = 11 / 30},
+            {s = path .. "de_slideforward.wav", t = 14 / 30},
         },
     },
     ["draw"] = {
@@ -363,20 +363,20 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Attachments = {
-    -- {
-        -- PrintName = "Muzzle",
-        -- DefaultAttName = "Standard Muzzle",
-        -- Category = "muzzle",
-        -- Bone = "v_weapon.m9a1_L_parent",
-        -- Pos = Vector(-0.025, -3.325, 8.2),
-        -- Ang = Angle(90, 0, -90),
-        -- DuplicateModels = {
-            -- {
-                -- Bone = "v_weapon.m9a1_R_parent",
-            -- }
-        -- },
-        -- Scale = 0.8,
-    -- },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle","muzzle_pistols"},
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(8.68, 0, 1.6),
+        Ang = Angle(0, 0, 0),
+        DuplicateModels = {
+            {
+                Bone = "tag_pistol_attachments_l",
+            }
+        },
+        Scale = 0.8,
+    },
     {
         PrintName = "Perk",
         Category = "go_perk",

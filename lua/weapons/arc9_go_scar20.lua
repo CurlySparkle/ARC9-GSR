@@ -424,6 +424,12 @@ SWEP.Animations = {
 
 SWEP.DefaultBodygroups = "00000000000"
 
+SWEP.AttachmentTableOverrides = {
+    ["go_mag_extended"] = {
+        DropMagazineModel = "models/weapons/csgo/mags/w_smg_mac10_mag.mdl"
+    }
+}
+
 SWEP.AttachmentElements = {
     ["mount"] = {
         Bodygroups = {

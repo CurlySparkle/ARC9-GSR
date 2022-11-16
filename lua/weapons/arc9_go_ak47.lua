@@ -108,7 +108,7 @@ SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.8
+SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -163,7 +163,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -3, -0.3)
+SWEP.SprintPos = Vector(0, -1, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
