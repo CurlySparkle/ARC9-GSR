@@ -292,22 +292,26 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.95,
         EventTable = {
+		    {s = "CSGO.Item.Movement", t = 0 / 30},
             {s = path .. "de_clipout.wav", t = 5 / 30},
             {s = path .. "de_clipout.wav", t = 8 / 30},
+			{s = "CSGO.Item.Movement", t = 19 / 30},
 			{s = path .. "de_clipin.wav", t = 45 / 30},
 			{s = path .. "de_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement1.wav", t = 68 / 30},
+			{s = "CSGO.Item.Movement", t = 65 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.95,
         EventTable = {
+		    {s = "CSGO.Item.Movement", t = 0 / 30},
             {s = path .. "de_clipout.wav", t = 7 / 30},
             {s = path .. "de_clipout.wav", t = 8 / 30},
+			{s = "CSGO.Item.Movement", t = 19 / 30},
             {s = path .. "de_clipin.wav", t = 50 / 30},
             {s = path .. "de_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 65 / 30},
+			{s = "CSGO.Item.Movement", t = 65 / 30},
             {s = path .. "de_slideforward.wav", t = 75 / 30},
             {s = path .. "de_slideforward.wav", t = 77 / 30},
         },
@@ -348,9 +352,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            { s = "CSGO.Item.Movement", t = 2 / 30 },
+            { s = "CSGO.Item.Movement", t = 55 / 30 },
+			{ s = "CSGO.Item.Movement", t = 113 / 30 },
         },
     },
 }
@@ -364,6 +368,20 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
+        PrintName = "Slide",
+		Bone = "v_weapon.deagle_parent",
+        Category = "go_deagle_long_slide",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(8.6, 0, 1.6),
+        Ang = Angle(0, 0, 0),
+        DuplicateModels = {
+            {
+                Bone = "tag_pistol_attachments_l",
+            }
+        },
+		Scale = 0.85,
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
@@ -376,6 +394,29 @@ SWEP.Attachments = {
             }
         },
         Scale = 0.8,
+    },
+    {
+        PrintName = "Sights",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(4.2, -0.05, 1.95),
+        Ang = Angle(0, 0, 0),
+        Category = {"csgo_optics_pistols",},
+        CorrectiveAng = Angle(0.2, 0.2, 0),
+		Scale = 0.9,
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = {"csgo_tac","csgo_tac_pistols"},
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(4.5, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+        DuplicateModels = {
+            {
+                Bone = "tag_pistol_attachments_l",
+            }
+        },
+		Scale = 1,
     },
     {
         PrintName = "Perk",

@@ -1,23 +1,30 @@
-
-VertexLitGeneric
+"VertexLitGeneric"
 {
 	$basetexture "models/csgo/deagle/pist_deagle"
 	$bumpmap "null-bumpmap"
-	
+	$phongexponenttexture "models/csgo/deagle/pist_deagle_exponent"
+
 	"$phong" "1"
-	"$phongboost" "1"
-	"$phongalbedoboost" "40"
-	"$phongfresnelranges" "[.8 .8 1]"
-//	"$phongexponent" 12
-	"$phongexponenttexture" "models/csgo/deagle/pist_deagle_exponent"
+
+
+	"$phongboost" "25"
+	"$phongalbedoboost" "25"
+	"$phongfresnelranges" "[.83 .83 1]"
 
 	"$basemapalphaphongmask" "1"
-	
-	"$envmap" "env_cubemap"
-	"$envmapfresnel" "1"
-	"$envmaptint" 		"[.4 .4 .4]"
 
 	"$phongalbedotint" "1"
+
 	"$phongdisablehalflambert" "1"
-	"$nocull" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.15 .15 .15]"
+
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 }
+

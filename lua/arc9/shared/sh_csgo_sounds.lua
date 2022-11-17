@@ -13,7 +13,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Item.Movement",
-    channel = CHAN_USER_BASE+1,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     level = 125,
     pitch = {90, 115},

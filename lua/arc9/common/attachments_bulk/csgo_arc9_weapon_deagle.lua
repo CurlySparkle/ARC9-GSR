@@ -77,6 +77,11 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
+        DuplicateModels = {
+            {
+                Bone = "tag_pistol_attachments_l",
+            }
+        },
 		ExcludeElements = {"Standard Muzzle"},
     }
 }
