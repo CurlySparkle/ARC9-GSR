@@ -1156,6 +1156,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.hkp2000.Silenced_Fire",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95,105},
+    sound = {
+        "^weapons/p225_suppressed.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Galil.Silenced_Fire",
     channel = CHAN_STATIC,
     volume = 1.0,

@@ -1,5 +1,5 @@
-ATT.PrintName = [[Compensator]]
-ATT.CompactName = [[Compensator]]
+ATT.PrintName = [[AK Compensator]]
+ATT.CompactName = [[AK Comp]]
 ATT.Description = [[A muzzle brake for reducing the vertical kick of a weapon, at the cost of increasing random recoil.]]
 ATT.Icon = Material("entities/attachs/muzzle_AKM.png", "mips smooth")
 
@@ -7,6 +7,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
+ATT.Folder = "Muzzles"
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AKM.mdl"
 

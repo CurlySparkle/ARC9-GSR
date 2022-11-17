@@ -255,6 +255,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_alt"] = {
+        Source = {"shoot_alt"},
+    },
     ["fire_sights"] = {
         Source = "shoot1_ads",
     },
@@ -328,13 +331,28 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["deagle_slide_long"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 11.9), } }	
+    },
 }
 
 SWEP.Attachments = {
     {
+        PrintName = "Slide",
+		Bone = "v_weapon.deagle_parent",
+        Category = "go_deagle_long_slide",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(-0.025, -3.1, 8.74),
+        Ang = Angle(90, 0, -90),
+		Scale = 0.8,
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = {"muzzle","muzzle_pistols"},
+        Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(-0.025, -3.1, 8.74),
         Ang = Angle(90, 0, -90),
@@ -355,6 +373,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -3.4, 5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols",},
+		ExcludeElements = {"csgo_rail_optic_pistols"},
         CorrectiveAng = Angle(1, 0.4, 0),
 		Scale = 1,
     },

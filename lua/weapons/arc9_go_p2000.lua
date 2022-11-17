@@ -238,7 +238,7 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/hkp2000/"
 
 SWEP.ShootSound = "CSGO.hkp2000.Fire"
-SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
+SWEP.ShootSoundSilenced = "CSGO.hkp2000.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.hkp2000.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 

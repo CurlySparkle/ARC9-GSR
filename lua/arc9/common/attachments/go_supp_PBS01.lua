@@ -7,6 +7,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Scale = 0.4
+ATT.Folder = "Suppresors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_PBS01.mdl"
 
@@ -15,6 +16,7 @@ ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 0.9
 ATT.SpreadAddRecoil = 0.01
 ATT.SpreadAddHipFire = 0.005
+ATT.DamageMult = 0.9
 
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"

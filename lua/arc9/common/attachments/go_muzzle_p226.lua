@@ -8,6 +8,7 @@ ATT.AutoStats = true
 ATT.Category = {"muzzle_pistols"}
 ATT.Scale = 0.5
 ATT.ModelOffset = Vector(0.1, 0, 0)
+ATT.Folder = "Muzzles"
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_p226.mdl"
 

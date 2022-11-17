@@ -6,6 +6,7 @@ ATT.Icon = Material("entities/attachs/silencer_233.png", "mips smooth")
 ATT.SortOrder = 0.5
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
+ATT.Folder = "Suppresors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_233.mdl"
 

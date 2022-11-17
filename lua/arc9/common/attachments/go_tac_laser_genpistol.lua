@@ -1,7 +1,7 @@
 ATT.PrintName = "Gen Laser Sight"
 ATT.CompactName = "GEN"
 ATT.Description = [[
-Mid-power laser pointer. Improves hip-fire accuracy.
+Mid-power laser pointer. Improves hip-fire accuracy and gives a better sight view.
 ]]
 
 ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
@@ -31,6 +31,15 @@ ATT.ToggleStats = {
     }
 }
 
+ATT.Sights = {
+    {
+        Pos = Vector(-2, 17, -4),
+        Ang = Angle(0.8, -0.8, 35),
+        ViewModelFOV = 56,
+        Magnification = 1.1,
+        IgnoreExtra = false
+    },
+}
 
 ATT.Scale = 0.5
 
