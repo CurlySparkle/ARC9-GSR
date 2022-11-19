@@ -41,10 +41,7 @@ ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
 ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"go_deagle_long_slide"}
-ATT.Scale = 0.5
-ATT.ModelOffset = Vector(-0.015, 0.02, -0.06)
-
-ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_deagle.mdl"
+ATT.ActivateElements = {"deagle_slide_long"}
 
 ATT.ShootVolumeMult = 1.2
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
@@ -70,23 +67,45 @@ ATT.Hook_TranslateAnimation = function (self, anim)
     end
 end
 
-ATT.Attachments = {
-    {
-        PrintName = "Muzzle",
-        Pos = Vector(-1.4, 0, 0),
-        Ang = Angle(0, 0, 180),
-        Icon_Offset = Vector(0, 0, 0),
-        Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
-        DuplicateModels = {
-            {
-                Bone = "tag_pistol_attachments_l",
-            }
-        },
-		ExcludeElements = {"Standard Muzzle"},
-    }
-}
-
 ARC9.LoadAttachment(ATT, "csgo_deagle_c")
+
+ATT = {}
+
+ATT.PrintName = [[DEagle Extender Slide 2]]
+ATT.CompactName = [[DE Slide 2]]
+ATT.Description = [[A muzzle brake for reducing even more recoil of the weapon with the cost of even less handling.(Gives a better shooting handling)]]
+ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
+
+ATT.SortOrder = 1
+ATT.AutoStats = true
+ATT.Category = {"go_deagle_long_slide"}
+ATT.ActivateElements = {"deagle_slide_long_long"}
+
+ATT.ShootVolumeMult = 1.2
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 0.8
+ATT.RecoilSideMult = 0.8
+ATT.RecoilRandomMult = 0.85
+
+ATT.RecoilKickMult = 0.85
+ATT.VisualRecoilMult = 0.85
+
+ATT.AimDownSightsTimeMult = 1.2
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "fire" and attached["csgo_deagle_c_2"] then
+        return "fire_alt"
+    --elseif anim == "reload_empty" then
+        --return "reload_longmag_empty"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_c_2")
 
 ATT = {}
 
@@ -101,10 +120,10 @@ ATT.AutoStats = true
 ATT.Free = false
 
 ATT.Category = {"go_deagle_long_slide"}
-ATT.ActivateElements = {"deagle_slide_long"}
+ATT.ActivateElements = {"deagle_barrel_long"}
 
-ATT.AimDownSightsTimeMult = 0.975
-ATT.SprintToFireTimeMult = 0.975
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25

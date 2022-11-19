@@ -325,12 +325,32 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
+            {2,1},
+        },
+    },
+    ["slide_short"] = {
+        Bodygroups = {
+		    {0,1},
             {1,1},
         },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.2, 5.66), } }	
+    },
+    ["slide_long"] = {
+        Bodygroups = {
+		    --{0,1},
+            {1,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.2, 6.53), } }	
     },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Slide",
+		DefaultAttName = "Standard",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_fiveseven_slide"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -338,7 +358,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.fiveSeven_parent",
         Pos = Vector(-0.025, -2.15, 6.2),
         Ang = Angle(90, 0, -90),
-        Scale = 0.7,
+        Scale = 0.75,
     },
     {
         PrintName = "Top",

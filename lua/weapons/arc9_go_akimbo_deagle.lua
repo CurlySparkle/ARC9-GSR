@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC-9 - CS:GO"
+SWEP.Category = "ARC-9 - CS:GO: Akimbo"
 
 SWEP.PrintName = "Dual Eagles"
 SWEP.TrueName = "Dual Eagles"
@@ -235,8 +235,8 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 2
 SWEP.MuzzleEffectQCAEvenShot = 1
 
-SWEP.CaseEffectQCA = 4
-SWEP.CaseEffectQCAEvenShot = 3
+SWEP.CaseEffectQCA = 3
+SWEP.CaseEffectQCAEvenShot = 4
 
 SWEP.AfterShotQCA = 1
 SWEP.AfterShotQCAEvenShot = 2
@@ -364,6 +364,29 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["deagle_slide_long"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(9.71, 0, 1.6), } }	
+    },
+    ["deagle_slide_long_long"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(10.71, 0, 1.6), } }	
+    },
+    ["deagle_barrel_long"] = {
+        Bodygroups = {
+            {2,3},
+        },
+    AttPosMods = { [2] = { Pos = Vector(8.68, 0, 1.6), } }	
+    },
 }
 
 SWEP.Attachments = {
@@ -371,26 +394,26 @@ SWEP.Attachments = {
         PrintName = "Slide",
 		Bone = "v_weapon.deagle_parent",
         Category = "go_deagle_long_slide",
-        Bone = "tag_pistol_attachments",
+        Bone = "tag_pistol_attachments_l",
         Pos = Vector(8.6, 0, 1.6),
         Ang = Angle(0, 0, 0),
         DuplicateModels = {
             {
-                Bone = "tag_pistol_attachments_l",
+                Bone = "tag_pistol_attachments",
             }
         },
-		Scale = 0.85,
+		Scale = 1,
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
-        Bone = "tag_pistol_attachments",
+        Bone = "tag_pistol_attachments_l",
         Pos = Vector(8.68, 0, 1.6),
         Ang = Angle(0, 0, 0),
         DuplicateModels = {
             {
-                Bone = "tag_pistol_attachments_l",
+                Bone = "tag_pistol_attachments",
             }
         },
         Scale = 0.8,
@@ -403,6 +426,11 @@ SWEP.Attachments = {
         Category = {"csgo_optics_pistols",},
         CorrectiveAng = Angle(0.2, 0.2, 0),
 		Scale = 0.9,
+        DuplicateModels = {
+            {
+                Bone = "tag_pistol_attachments_l",
+            }
+        },
     },
     {
         PrintName = "Tactical",
@@ -417,6 +445,11 @@ SWEP.Attachments = {
             }
         },
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "j_mag1_l",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

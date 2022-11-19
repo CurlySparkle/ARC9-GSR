@@ -238,7 +238,7 @@ SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_glock18_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.55
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -260,6 +260,16 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["go_mag_extended"] then
+        return "reload_longmag"
+    elseif anim == "reload_empty" then
+        return "reload_longmag_empty"
+    end
+end
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -277,7 +287,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+		MinProgress = 0.45,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12 / 30},
             {s = path .. "glock_clipin.wav", t = 25 / 30},
@@ -325,6 +335,23 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
         },
     },
+    ["reload_longmag"] = {
+        Source = "reload_short_alt",
+        EventTable = {
+            {s = path .. "glock_clipout.wav", t = 12 / 30},
+            {s = path .. "glock_clipin.wav", t = 25 / 30},
+        },
+    },
+    ["reload_longmag_empty"] = {
+        Source = "reload_alt",
+		MinProgress = 0.45,
+        EventTable = {
+            {s = path .. "glock_clipout.wav", t = 12 / 30},
+            {s = path .. "glock_clipin.wav", t = 25 / 30},
+            {s = path .. "glock_slideback.wav", t = 44 / 30},
+            {s = path .. "glock_sliderelease.wav", t = 50 / 30},
+        },
+    },
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
@@ -334,12 +361,24 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
-            {1,1},
+            {0,1},
+			{1,1},
         },
+    },
+    ["slide_long"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.15, 6.55), } }	
     },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Slide",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_glock_s"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",

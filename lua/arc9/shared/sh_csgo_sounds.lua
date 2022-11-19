@@ -26,9 +26,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AUG.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 120,
+    level = 140,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/AUG/aug_01.ogg",
@@ -51,9 +51,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SG556.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 120,
+    level = 140,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/sg556/sg556_01.ogg",
@@ -76,9 +76,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.m4a4.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 120,
+    level = 140,
     pitch = {97,103},
     sound = {
         "^weapons/csgo/m4a1/m4a1_01.ogg",
@@ -101,9 +101,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SCAR17.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 120,
+    level = 140,
     pitch = {95,105},
     sound = {
         "^weapons/scar_unsuppressed.wav",
@@ -123,7 +123,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.m4a1.Fire_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -148,7 +148,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AK47.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -170,7 +170,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Famas.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = 100,
@@ -198,7 +198,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.GALIL.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -224,7 +224,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP9.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -253,7 +253,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MAC10.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -279,7 +279,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Bizon.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -302,7 +302,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP7.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -316,7 +316,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP7.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -338,7 +338,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.UMP.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -361,7 +361,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.P90.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -384,7 +384,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -406,7 +406,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Nova.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -442,7 +442,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.XM1014.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -477,7 +477,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SawedOff.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -512,7 +512,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MAG7.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -536,7 +536,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SG008.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -547,7 +547,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AWP.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -559,7 +559,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -570,7 +570,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -592,7 +592,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SCAR20.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -618,7 +618,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.G3SG1.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -644,7 +644,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -668,7 +668,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Glock.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -691,7 +691,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.P250.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -713,7 +713,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Fiveseven.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -735,7 +735,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.cz75a.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -748,7 +748,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Tec9.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -771,7 +771,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Elite.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -796,7 +796,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Deagle.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -819,7 +819,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.R8.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -841,10 +841,10 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.USP.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 140,
-    pitch = {97,103},
+    level = 120,
+    pitch = {95,105},
     sound = {
         "^weapons/csgo/usp/usp_unsilenced_01.ogg",
 		"^weapons/csgo/usp/usp_unsilenced_02.ogg",
@@ -865,10 +865,10 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.USP.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 140,
-    pitch = {97,103},
+    level = 120,
+    pitch = {95,105},
     sound = {
         "^weapons/csgo/usp/usp_01.ogg",
 		"^weapons/csgo/usp/usp_02.ogg",
@@ -889,7 +889,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.M249.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {97,103},
@@ -911,10 +911,10 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.NEGEV.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 125,
-    pitch = {97,103},
+    level = 140,
+    pitch = {95,105},
     sound = {
         "^weapons/csgo/negev/negev_01.ogg",
 		"^weapons/csgo/negev/negev_02.ogg",
@@ -935,7 +935,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5A2.Fire_First",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -946,7 +946,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5A2.Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -959,7 +959,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.scar20.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {95,105},
@@ -970,7 +970,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.G3SG1.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -981,7 +981,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -992,7 +992,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AK47.Fire_Silenced_First",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {90,115},
@@ -1003,7 +1003,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AK47.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {90,115},
@@ -1014,7 +1014,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AUG.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {85,115},
@@ -1025,7 +1025,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AWP.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -1036,7 +1036,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SSG08.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {95,105},
@@ -1047,7 +1047,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.xm1014.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -1058,7 +1058,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Deagle.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -1069,7 +1069,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.R8.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -1080,7 +1080,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Bizon.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
     pitch = {97,103},
@@ -1091,7 +1091,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.P90.Fire_Silenced_First",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,115},
@@ -1102,7 +1102,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.P90.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,115},
@@ -1113,7 +1113,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Famas.Fire_Silenced",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1124,7 +1124,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.fiveseven.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1135,7 +1135,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Glock.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1146,7 +1146,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.P250.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1157,7 +1157,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1168,7 +1168,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Galil.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1179,7 +1179,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.M249.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1190,7 +1190,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Mac10.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1201,7 +1201,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.mag7.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1213,7 +1213,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP7.Silenced_Fire_First",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,115},
@@ -1224,7 +1224,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP7.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,115},
@@ -1235,7 +1235,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP9.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1246,7 +1246,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.NEGEV.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1257,7 +1257,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.M4A4.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1268,7 +1268,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SG556.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1279,7 +1279,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.SCAR17.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1290,7 +1290,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Nova.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1301,7 +1301,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.sawedoff.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1312,7 +1312,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.UMP.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1323,7 +1323,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Tec9.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {90,105},
@@ -1334,7 +1334,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5A2.Silenced_Fire_First",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},
@@ -1345,7 +1345,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5A2.Silenced_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
     pitch = {95,105},

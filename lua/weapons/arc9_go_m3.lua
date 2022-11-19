@@ -190,7 +190,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(23, 40, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 2)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -258,29 +258,29 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1"},
         EventTable = {
             {s = path .. "nova_pump.wav", t = 8 / 30},
         },
     },
-    ["fire_sights"] = {
-        Source = "shoot1_ads",
-        EventTable = {
-            {s = path .. "nova_pump.wav", t = 8 / 30},
-        },
-    },
+    -- ["fire_sights"] = {
+        -- Source = "shoot1_ads",
+        -- EventTable = {
+            -- {s = path .. "nova_pump.wav", t = 8 / 30},
+        -- },
+    -- },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 1,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
         },
     },
@@ -290,7 +290,12 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
+            },
+            {
+                t = 1,
+                lhik = 0,
+                rhik = 1
             },
         },
         EventTable = {
@@ -303,10 +308,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 0.5,
+                t = 0.4,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -318,10 +328,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.5,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -335,21 +350,21 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
-                rhik = 0
+                lhik = 0,
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 0.9,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -390,20 +405,20 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 1.1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -416,11 +431,21 @@ SWEP.Animations = {
     },
 }
 
---SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["pistolgrip"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -435,7 +460,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle_shotgun","muzzle"},
         Bone = "v_weapon.m3_Parent",
         Pos = Vector(0, -1.88, 28.1),
         Ang = Angle(90, 0, -90),
@@ -456,6 +481,19 @@ SWEP.Attachments = {
         Pos = Vector(-0.3, 1, 2),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.M3_LOADER",
+        Category = "go_mag"
+    },
+    {
+        PrintName = "Pistol Grip",
+        Bone = "v_weapon.m3_Parent",
+        Category = "go_pistol_grip",
+		InstalledElements = {"pistolgrip"},
+        Ang = Angle(90, 0, 90),
+        Pos = Vector(0, 1.02, 2.05),
     },
     {
         PrintName = "Perk",

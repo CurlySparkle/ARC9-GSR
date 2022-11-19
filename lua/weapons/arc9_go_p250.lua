@@ -27,7 +27,7 @@ SWEP.Description = [[A low-recoil firearm with a high rate of fire, the P250 is 
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_p250.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_p228.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 1
 
@@ -147,7 +147,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.725, -3, 0.625),
+    Pos = Vector(-2.73, -3, 0.55),
     Ang = Angle(0.26, 1.2, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
@@ -326,9 +326,29 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["slide_long"] = {
+        Bodygroups = {
+		    {0,1},
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 6.8), } }	
+    },
+    ["slide_short"] = {
+        Bodygroups = {
+		    {0,2},
+            {2,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 5.35), } }	
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Slide",
+		DefaultAttName = "Standard",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_p250_slide"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",

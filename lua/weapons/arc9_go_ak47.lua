@@ -500,7 +500,7 @@ SWEP.Attachments = {
     },
     -- {
         -- PrintName = "Stickers",
-        -- DefaultCompactName = "Stickers",
+        -- DefaultCompactName = "None",
         -- Bone = "v_weapon.ak47_parent",
         -- Pos = Vector(0, -1.13, 0),
         -- Ang = Angle(90, 0, -90),

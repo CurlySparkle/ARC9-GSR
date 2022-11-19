@@ -335,6 +335,18 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 9.81), } }	
+    },
+    ["deagle_slide_long_long"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 10.8), } }	
+    },
+    ["deagle_barrel_long"] = {
+        Bodygroups = {
+            {2,3},
+        },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 11.9), } }	
     },
 }

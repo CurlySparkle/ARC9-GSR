@@ -17,13 +17,13 @@ ATT.Category = {"csgo_optic","csgo_optics_pistols"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/t1lp.mdl"
-ATT.Scale = 1.3
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Scale = 1.4
+ATT.ModelOffset = Vector(0, 0, 0.02)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 15, -1.1),
+        Pos = Vector(0, 15, -1.15),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 35,
@@ -32,6 +32,7 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
-ATT.HoloSightSize = 1024
-ATT.HoloSightColorable = true
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 512
+ATT.HoloSightColorable = false

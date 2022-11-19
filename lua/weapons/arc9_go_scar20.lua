@@ -426,7 +426,8 @@ SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.AttachmentTableOverrides = {
     ["go_mag_extended"] = {
-        DropMagazineModel = "models/weapons/csgo/mags/w_smg_mac10_mag.mdl"
+        DropMagazineModel = "models/weapons/csgo/mags/w_snip_scar20_mag.mdl",
+		Scale = 1.5
     }
 }
 
@@ -451,6 +452,16 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    AttPosMods = { 
+	[6] = { Pos = Vector(-0.8, -4.6, 11), },
+	[4] = { Pos = Vector(0, -3.6, 9), },
+	[3] = { Pos = Vector(0.05, -4.52, 18), }
+	}
+    },
 }
 
 SWEP.Attachments = {
@@ -465,11 +476,18 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.35, -1.25, 0),
     },
     {
+        PrintName = "Barrel",
+		Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0, -4.52, 21),
+        Ang = Angle(90, 0, -90),
+        Category = "cs_barrel_short"
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(0, -4.52, 21),
+        Pos = Vector(0, -4.52, 27),
         Ang = Angle(90, 0, -90),
 		Scale = 1.1,
     },
@@ -478,7 +496,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"grip","grip_scar20"},
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(0, -3.6, 10.5),
+        Pos = Vector(0, -3.6, 10),
         Ang = Angle(90, 0, 90),
     },
     {

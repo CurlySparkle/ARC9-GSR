@@ -32,7 +32,7 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 512
-ATT.HoloSightColorable = true
+ATT.HoloSightColorable = false

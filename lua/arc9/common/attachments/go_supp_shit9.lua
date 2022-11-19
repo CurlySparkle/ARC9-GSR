@@ -1,10 +1,10 @@
 ATT.PrintName = [[SEC9mm Suppressor]]
 ATT.CompactName = [[SEC9mm]]
-ATT.Description = [[SEC9mm suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[SEC9mm suppressor that reduces audible report by a lot with a penalty of significant bulk designed for small arms types.]]
 ATT.Icon = Material("entities/attachs/silencer_SEC9mm.png", "mips smooth")
 
 ATT.SortOrder = 1
-ATT.AutoStats = true
+ATT.AutoStats = false
 ATT.Category = {"muzzle"}
 ATT.Folder = "Suppresors"
 

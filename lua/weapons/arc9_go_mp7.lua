@@ -448,7 +448,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
-        CorrectiveAng = Angle(0.25, 0, 0),
+        CorrectiveAng = Angle(0.2, -0.05, 0),
     },
     {
         PrintName = "Muzzle",
@@ -464,7 +464,7 @@ SWEP.Attachments = {
         Category = {"grip","grip_mp7"},
         Bone = "v_weapon.mp7_parent",
 		InstalledElements = {"grip"},
-        Pos = Vector(0, -1.6, 5.5),
+        Pos = Vector(0, -1.6, 6),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
     },

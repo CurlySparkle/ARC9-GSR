@@ -149,8 +149,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.8, -3, 0.75),
-    Ang = Angle(0, 0, 0),
+    Pos = Vector(-2.82, -3, 0.8),
+    Ang = Angle(0, 1, 0),
     Magnification = 1.15,
     ViewModelFOV = 46,
 }
@@ -252,6 +252,17 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["go_mag_extended"] then
+        return "reload_longmag"
+    elseif anim == "reload_empty" then
+        return "reload_longmag_empty"
+    end
+end
+
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -316,6 +327,23 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
         },
     },
+    ["reload_longmag"] = {
+        Source = "reload_short_alt",
+        EventTable = {
+            {s = path .. "hkp2000_clipout.wav", t = 12 / 30},
+            {s = path .. "hkp2000_clipin.wav", t = 25 / 30},
+        },
+    },
+    ["reload_longmag_empty"] = {
+        Source = "reload_alt",
+		MinProgress = 0.4,
+        EventTable = {
+            {s = path .. "hkp2000_clipout.wav", t = 12 / 30},
+            {s = path .. "hkp2000_clipin.wav", t = 25 / 30},
+            {s = path .. "hkp2000_slideback.wav", t = 44 / 30},
+            {s = path .. "hkp2000_sliderelease.wav", t = 50 / 30},
+        },
+    },
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
@@ -328,15 +356,26 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["slide_long"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -2.4, 6.85), } }	
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Slide",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_glock_s"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.HKP2000_Parent",
-        Pos = Vector(-0.025, -2.5, 5.8),
+        Pos = Vector(0, -2.4, 5.8),
         Ang = Angle(90, 0, -90),
         Scale = 0.8,
     },

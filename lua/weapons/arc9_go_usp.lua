@@ -194,9 +194,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 20, 2.5)
+SWEP.CustomizePos = Vector(20, 30, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(5, -3, 2)
+SWEP.CustomizeSnapshotPos = Vector(5, -3, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -246,7 +246,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_usp_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.5
 SWEP.DropMagazineQCA = 4
 
 -------------------------- SOUNDS
@@ -448,9 +448,25 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["silencer"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["slide_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Slide",
+		--Bone = "v_weapon.glock_magazine",
+		InstalledElements = {"silencer"},
+        Category = "go_glock_s"
+    },
     {
         PrintName = "Top",
         Bone = "v_weapon.223_parent",

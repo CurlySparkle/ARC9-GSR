@@ -1,15 +1,28 @@
-VertexLitGeneric
+"VertexLitGeneric"
 {
-$baseTexture "models/csgo/m3/shot_m3super90"
-$phong 1
-$phongboost 10
-$phongfresnelranges "[.1 .4 1]"
-$phongexponenttexture "models/csgo/m3/shot_m3super90_exponent"
-$basemapalphaphongmask 1
-$specexpmapbluephongmask 1
-$envmap env_cubemap
-$envmapfresnel 1
-$envmapFresnelMinMaxExp "[0 5 .4]"
-$envmaptint "[.05 .05 .05]"
-$phongalbedotint 1
+	$basetexture "models/csgo/m3/shot_m3super90"
+	$bumpmap "null-bumpmap"
+	$phongexponenttexture "models/csgo/m3/shot_m3super90_exponent"
+
+	"$phong" "1"
+	"$phongboost" "20"
+	"$phongalbedoboost" "25"
+	"$phongfresnelranges" "[.83 .83 1]"
+
+	"$basemapalphaphongmask" "1"
+
+	"$phongalbedotint" "1"
+
+	"$phongdisablehalflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.15 .15 .15]"
+
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 }
+

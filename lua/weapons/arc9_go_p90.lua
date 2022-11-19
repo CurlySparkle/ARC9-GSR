@@ -447,22 +447,32 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_p90","p90_barrel"},
         Bone = "v_weapon.p90_Parent",
         Pos = Vector(0, -3.05, 7.5),
         Ang = Angle(90, 0, -90),
     },
-    {
-        PrintName = "Barrel",
-        DefaultAttName = "Standard Barrel",
-        Category = "p90_barrel",
-        Bone = "v_weapon.p90_Parent",
-        Pos = Vector(0, -2.9, 7.2),
-        Ang = Angle(90, 0, -90),
-    },
+    -- {
+        -- PrintName = "Barrel",
+        -- DefaultAttName = "Standard Barrel",
+        -- Category = "p90_barrel",
+        -- Bone = "v_weapon.p90_Parent",
+        -- Pos = Vector(0, -2.9, 7.2),
+        -- Ang = Angle(90, 0, -90),
+    -- },
     {
         PrintName = "Perk",
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -3, 0),
+    },
+    {
+        PrintName = "Stickers",
+        DefaultCompactName = "Stickers",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0.05, 1.25, -7.1),
+        Ang = Angle(90, 0, -90),
+        Category = "stickers_p90",
     },
 }
 
