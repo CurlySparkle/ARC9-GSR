@@ -241,8 +241,8 @@ SWEP.PartialReloadCountsTowardsNthReload = false
 local path = "weapons/csgo/p250/"
 
 SWEP.ShootSound = "CSGO.cz75a.Fire"
---SWEP.DistantShootSound = "CSGO.cz75a.Distance_Fire"
-SWEP.ShootSoundSilenced = "weapons/m9_suppressed.wav"
+SWEP.DistantShootSound = "CSGO.cz75a.Distance_Fire"
+SWEP.ShootSoundSilenced = "CSGO.P250.Silenced_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)

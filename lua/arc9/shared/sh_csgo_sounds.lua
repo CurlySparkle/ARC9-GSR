@@ -769,6 +769,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.cz75a.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
+    pitch = {97,103},
+    sound = {
+        "^weapons/csgo/cz75a/cz75_distant_01.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Tec9.Fire",
     channel = CHAN_WEAPON + 10,
     volume = 1.0,

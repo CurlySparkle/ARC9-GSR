@@ -28,15 +28,19 @@ SWEP.Description = [[The SCAR-17 is a automatic with a burst-fire option that tr
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_scar17.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_rif_scar.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000"
 
 SWEP.Slot = 2
 
-SWEP.MirrorVMWM = false
+SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
+SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_scar17.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-12, 4, -2),
     Ang = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+    TPIKPos = Vector(-11, 3, -2),
+    TPIKAng = Angle(0, 20, 180)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -113,11 +117,11 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.001 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadAddCrouch = -0.05
 SWEP.SpreadAddSights = -0.05
 
@@ -158,8 +162,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(3, -5, 0)
-SWEP.SprintAng = Angle(0, -5, 0)
+SWEP.SprintPos = Vector(0, 0, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -2.5, 0),
@@ -183,7 +187,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(22, 35, 3)
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(2, 5, 3)
+SWEP.CustomizeSnapshotPos = Vector(3, 0, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -244,7 +248,8 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot4"},
+		Mult = 0.7
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
@@ -275,8 +280,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 43 / 30},
+		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 4 / 30},
+		    {s = "CSGO.Item.Movement", t = 5 / 30},
+            {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
+			{s = "CSGO.Item.Movement", t = 25 / 30},
+            {s = "weapons/csgo/scar/scar_clipin.wav", t = 40 / 30},
+			{s = "CSGO.Item.Movement", t = 45 / 30},
         },
     },
     ["reload_empty"] = {
@@ -304,9 +313,13 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 56 / 30},
-            {s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 67 / 30},
+		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 4 / 30},
+		    {s = "CSGO.Item.Movement", t = 5 / 30},
+            {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
+			{s = "CSGO.Item.Movement", t = 25 / 30},
+            {s = "weapons/csgo/scar/scar_clipin.wav", t = 53 / 30},
+            {s = "weapons/csgo/scar/scar_boltforward.wav", t = 67 / 30},
+			{s = "CSGO.Item.Movement", t = 70 / 30},
         },
     },
     ["ready"] = {
@@ -334,9 +347,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_draw.wav", t = 0 / 30},
-            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 14 / 30},
-            {c = CHAN_AUTO, s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 18 / 30},
+            {c = CHAN_AUTO, s = "weapons/csgo/scar/scar_draw.wav", t = 0 / 30},
+            {c = CHAN_AUTO, s = "weapons/csgo/scar/scar_charging_handle_pull.wav", t = 14 / 30},
+            {c = CHAN_AUTO, s = "weapons/csgo/scar/scar_charging_handle_release.wav", t = 18 / 30},
         },
     },
     ["draw"] = {
