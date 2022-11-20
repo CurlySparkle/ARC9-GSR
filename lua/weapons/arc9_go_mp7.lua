@@ -422,7 +422,8 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    },
+    }, 
+	["grip_folded"] = { Bodygroups = { {2,2}, }, },
     ["stock_extend"] = {
         Bodygroups = {
             {3,1},
@@ -439,6 +440,13 @@ SWEP.AttachmentElements = {
         },
     },
 }
+
+// Forced Override Bodygroup
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("grip_folded") then model:SetBodygroup(2,2) end	
+end
+
 
 SWEP.Attachments = {
     {

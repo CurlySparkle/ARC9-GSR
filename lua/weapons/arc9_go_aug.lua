@@ -436,6 +436,7 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+	["grip_folded"] = { Bodygroups = { {1,2}, }, },	
     ["grip_extender"] = {
         Bodygroups = {
             {2,1},
@@ -462,6 +463,14 @@ SWEP.AttachmentElements = {
     },
 }
 
+// Forced Override Bodygroup
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("grip_folded") then model:SetBodygroup(1,2) end	
+	if wep:HasElement("grip_folded") then model:SetBodygroup(2,0) end		
+end
+
+
 SWEP.Attachments = {
     {
         PrintName = "Scope",
@@ -476,7 +485,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Barrel",
-		--Bone = "v_weapon.glock_magazine",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, -3.5, 10),
+        Ang = Angle(90, 0, -90),
         Category = "csgo_aug_barrel",
     },
     {
@@ -491,7 +502,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "grip",
+        Category = {"grip","grip_aug"},
         Bone = "v_weapon.aug_Parent",
 		InstalledElements = {"grip","grip_extender"},
         Pos = Vector(0, -1.7, 9.5),
