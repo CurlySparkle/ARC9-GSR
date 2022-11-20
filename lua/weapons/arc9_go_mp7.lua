@@ -445,6 +445,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("grip_folded") then model:SetBodygroup(2,2) end	
+	if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end		
 end
 
 
@@ -454,7 +455,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp7_parent",
         Pos = Vector(0, -4.1, 0.2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic", "go_optic_mp7"},
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(0.2, -0.05, 0),
     },

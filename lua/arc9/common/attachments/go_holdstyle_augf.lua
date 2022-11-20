@@ -13,5 +13,5 @@ ATT.ActivateElements = {"grip_folded"}
 ATT.LHIK_Priority = 5
 ATT.LHIK = true
 
-ATT.ModelOffset = Vector(3, -0.1, 0)
-ATT.ModelAngleOffset = Angle(0, 10, 170)
+ATT.ModelOffset = Vector(3, -0.15, -0.2)
+ATT.ModelAngleOffset = Angle(0, 10, 160)
