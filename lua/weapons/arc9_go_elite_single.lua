@@ -197,7 +197,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, -4)
-SWEP.CustomizePos = Vector(18, 30, 2.5)
+SWEP.CustomizePos = Vector(18, 30, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -221,7 +221,7 @@ SWEP.HoldTypeSights = "duel"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
@@ -252,8 +252,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_elite_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.3
-SWEP.DropMagazineQCA = 5
+SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineQCA = 6
 
 -------------------------- SOUNDS
 
@@ -311,8 +311,9 @@ SWEP.Animations = {
         Source = "draw",
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.75, lhik = 0, rhik = 0 },
+            {t = 0.3, lhik = 0, rhik = 0},
+            {t = 0.65, lhik = 0, rhik = 0 },
+            {t = 0.9, lhik = 1, rhik = 1 },
             {t = 1, lhik = 1, rhik = 1 },
         },			
         EventTable = {
@@ -363,7 +364,7 @@ SWEP.Animations = {
     },
 }
 
-SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
+SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyEliteSingle
 
 -------------------------- ATTACHMENTS
 
@@ -387,7 +388,7 @@ SWEP.Attachments = {
     {
         PrintName = "Pourquoi",
         Bone = "v_weapon.m9a1_R_parent",
-        Pos = Vector(2.75, -7, -10),
+        Pos = Vector(2.4, -6.85, -11),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_elite"},
         InstalledElements = {"mount"},
