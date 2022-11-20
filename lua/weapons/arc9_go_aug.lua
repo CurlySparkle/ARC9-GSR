@@ -312,6 +312,35 @@ SWEP.Animations = {
             {s = path .. "aug_boltrelease.wav", t = 84 / 30},
         },
     },
+	
+    ["reload_9"] = {
+        Source = "reload_9mm_wet",
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.7, lhik = 0, rhik = 0 },
+            {t = 0.9, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "aug_clipout.wav", t = 15 / 30},
+            {s = path .. "aug_clipin.wav", t = 44 / 30},
+        },
+    },
+    ["reload_empty_9"] = {
+        Source = "reload_9mm",
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.7, lhik = 0, rhik = 0 },
+            {t = 0.9, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "aug_clipout.wav", t = 15 / 30},
+            {s = path .. "aug_clipin.wav", t = 44 / 30},
+            {s = path .. "aug_boltpull.wav", t = 66 / 30},
+            {s = path .. "aug_boltrelease.wav", t = 72 / 30},
+        },
+    },	
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -410,6 +439,9 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+
+    ["mag_9mm"] = { Bodygroups = {{3,1},},},
+    ["mag_9mmx"] = { Bodygroups = {{3,2},},},	
 }
 
 SWEP.Attachments = {
@@ -451,8 +483,15 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Category = "go_perk",
+        Category = "go_perk",	
     },
+    {
+        PrintName = "Magazine",
+        Category = "go_mag_aug",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, 1, -4),
+        Ang = Angle(90, 0, -90),			
+    },	
     -- {
         -- PrintName = "Stickers",
         -- DefaultCompactName = "None",
