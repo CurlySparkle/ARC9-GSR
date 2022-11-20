@@ -182,16 +182,16 @@ SWEP.SprintMidPoint = {
     Ang = Angle(-2.5, 0, 2.5)
 }
 
-SWEP.ActivePos = Vector(0, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-2, 2, 1)
+SWEP.ActiveAng = Angle(-5, -2.75, 3)
 
 SWEP.MovingMidPoint = {
     Pos = Vector(0, -0.5, -0.5),
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
-SWEP.MovingAng = Angle(0, 0, 0)
+SWEP.MovingPos = Vector(-2, 1.5, 0.5)
+SWEP.MovingAng = Angle(-5, -2.75, 3)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
@@ -282,10 +282,10 @@ SWEP.Animations = {
         Source = "reload_single_wet",
 		MinProgress = 0.95,
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 0 },
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.65, lhik = 0, rhik = 0 },
-            {t = 0.85, lhik = 1, rhik = 1 },
+            {t = 0,	lhik = 1, rhik = 1 },
+            {t = 0.1, lhik = 0, rhik = 0},
+            {t = 0.75, lhik = 0, rhik = 0 },
+            {t = 0.95, lhik = 1, rhik = 1 },
         },		
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5 / 30},
@@ -296,9 +296,9 @@ SWEP.Animations = {
         Source = "reload_single",
 		MinProgress = 0.95,
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 0 },
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.65, lhik = 0, rhik = 0 },
+            {t = 0,	lhik = 1, rhik = 1 },
+            {t = 0.1, lhik = 0, rhik = 0},
+            {t = 0.7, lhik = 0, rhik = 0 },
             {t = 0.85, lhik = 1, rhik = 1 },
         },		
         EventTable = {
@@ -324,18 +324,24 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
-        Source = "idle",
+        Source = "idle",				
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        IKTimeLine = {
+            {t = 0,	lhik = 0, rhik = 0 }, {t = 1, lhik = 0, rhik = 0 },
+        },		
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
         Time = 1,
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 }, {t = 1, lhik = 1, rhik = 1 },
+        },		
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 1,
+        Time = 1,		
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -375,8 +381,8 @@ SWEP.Attachments = {
     {
         PrintName = "Pourquoi",
         Bone = "v_weapon.m9a1_R_parent",
-        Pos = Vector(0, 0, 5),
-        Ang = Angle(80, 0, 90),
+        Pos = Vector(2.75, -7, -10),
+        Ang = Angle(90, 0, 90),
         Category = {"go_grip_elite"},
         InstalledElements = {"mount"},
         Installed = "go_holdstyle_elite_intergral",
@@ -390,6 +396,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,
+		CorrectiveAng = Angle(-5, -2.75, 3),		
     },
     {
         PrintName = "Tactical",
