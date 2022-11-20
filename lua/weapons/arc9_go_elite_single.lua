@@ -283,7 +283,7 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
-            {t = 0.1, lhik = 0, rhik = 0},
+            {t = 0.2, lhik = 0, rhik = 0},
             {t = 0.75, lhik = 0, rhik = 0 },
             {t = 0.95, lhik = 1, rhik = 1 },
         },		
@@ -297,8 +297,8 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
-            {t = 0.1, lhik = 0, rhik = 0},
-            {t = 0.7, lhik = 0, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.65, lhik = 0, rhik = 0 },
             {t = 0.85, lhik = 1, rhik = 1 },
         },		
         EventTable = {
@@ -309,6 +309,12 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 1 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.75, lhik = 0, rhik = 0 },
+            {t = 1, lhik = 1, rhik = 1 },
+        },			
         EventTable = {
             {s = path .. "elite_draw.wav", t = 0 / 30},
             {s = path .. "elite_sliderelease.wav", t = 15 / 30},
