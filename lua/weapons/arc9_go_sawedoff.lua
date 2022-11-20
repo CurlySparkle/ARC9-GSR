@@ -456,6 +456,12 @@ SWEP.AttachmentElements = {
     },
 }
 
+// Forced Override Bodygroup
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end		
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Top",

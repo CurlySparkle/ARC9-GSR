@@ -26,7 +26,7 @@ SWEP.Description = [[Powerful and accurate, the AUG scoped assault rifle compens
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_aug.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
-SWEP.DefaultBodygroups = "0000000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.Slot = 2
 
@@ -151,10 +151,10 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.59, -3, 0.2),
-    Ang = Angle(0, -0.5, 0),
-    Magnification = 2,
-    ViewModelFOV = 58,
+    Pos = Vector(-3.61, -6, 0.7),
+    Ang = Angle(0, -0.1, 0),
+    Magnification = 1.25,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -431,6 +431,7 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mount"] = { Bodygroups = {{5,1},},},
     ["grip"] = {
         Bodygroups = {
             {1,1},
@@ -481,7 +482,7 @@ SWEP.Attachments = {
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(-0.7, -0.7, 0),
         Installed = "csgo_optic_acog_2",
-        Integral = true,
+        Integral = false,
     },
     {
         PrintName = "Barrel",
