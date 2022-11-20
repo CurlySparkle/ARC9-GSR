@@ -280,7 +280,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 4 / 30},
+		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 8 / 30},
 		    {s = "CSGO.Item.Movement", t = 5 / 30},
             {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
 			{s = "CSGO.Item.Movement", t = 25 / 30},
@@ -313,7 +313,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 4 / 30},
+		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 8 / 30},
 		    {s = "CSGO.Item.Movement", t = 5 / 30},
             {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
 			{s = "CSGO.Item.Movement", t = 25 / 30},

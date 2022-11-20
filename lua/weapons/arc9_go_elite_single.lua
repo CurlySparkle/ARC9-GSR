@@ -278,6 +278,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1_right",
     },
+    ["fire_sights"] = {
+        Source = "shoot1_right_ads",
+    },
     ["reload"] = {
         Source = "reload_single_wet",
 		MinProgress = 0.95,
@@ -403,7 +406,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,
-		CorrectiveAng = Angle(-5, -2.75, 3),		
+		CorrectiveAng = Angle(-8, 2.5, 0),		
     },
     {
         PrintName = "Tactical",
