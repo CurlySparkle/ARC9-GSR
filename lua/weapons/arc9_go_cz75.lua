@@ -99,12 +99,17 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
+SWEP.RecoilRandomUpSights = 0.5
+SWEP.RecoilRandomSideSights = 0.5
+
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRateSights = 40
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
+SWEP.RecoilKickSights = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
@@ -122,6 +127,7 @@ SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = -0.02
 
 -------------------------- HANDLING
 
@@ -225,7 +231,8 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_cz_75_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.55
+SWEP.DropMagazineQCA = 3
 
 SWEP.PartialReloadCountsTowardsNthReload = false
 
@@ -275,6 +282,9 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot1"},
+    },
+    ["fire_sights"] = {
+        Source = "",
     },
     ["reload"] = {
         Source = "reload_short",
@@ -339,6 +349,9 @@ SWEP.Animations = {
     ["fire_alt"] = {
         Source = {"shoot1_alt"},
     },
+    ["fire_sights_alt"] = {
+        Source = "",
+    },
     ["reload_alt"] = {
         Source = "reload_short_alt",
         EventTable = {
@@ -401,13 +414,42 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+		    {1,1},
+            {2,1},
+        },
+    },
+    ["slide_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 7.3), } }	
+    },
+    ["slide_short"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 5.5), } }	
+    },
+    ["slide_factory"] = {
+        Bodygroups = {
+            {3,3},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 6.5), } }	
+    },
 }
 
 SWEP.Attachments = {
     {
+        PrintName = "Slide",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_cz_slide"
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.cz_parent",
         Pos = Vector(-0.025, -2.45, 6.9),
         Ang = Angle(90, 0, -90),
@@ -416,11 +458,16 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.cz_parent",
-        Pos = Vector(0, -1, 4.5),
+        Pos = Vector(0, -0.6, 3.7),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
         --CorrectiveAng = Angle(0.8, 0.5, 0),
-		Scale = 0.85,
+		Scale = 0.9,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.cz_magazine",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

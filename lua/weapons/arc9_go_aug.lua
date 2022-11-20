@@ -26,7 +26,7 @@ SWEP.Description = [[Powerful and accurate, the AUG scoped assault rifle compens
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_aug.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 2
 
@@ -180,10 +180,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17, 32, 4)
+SWEP.CustomizePos = Vector(17, 35, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-1, 0, 2)
+SWEP.CustomizeSnapshotPos = Vector(-1, 5, 2)
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
@@ -218,7 +218,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_aug_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.55
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -439,9 +439,25 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
-
-    ["mag_9mm"] = { Bodygroups = {{3,1},},},
-    ["mag_9mmx"] = { Bodygroups = {{3,2},},},	
+    ["mag"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
+    ["mag_9mm"] = { Bodygroups = {{4,2},},},
+    ["mag_9mmx"] = { Bodygroups = {{4,3},},},	
+    ["barrel_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 19.3), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 13), } }	
+    },
 }
 
 SWEP.Attachments = {
@@ -457,12 +473,18 @@ SWEP.Attachments = {
         Integral = true,
     },
     {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "csgo_aug_barrel",
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(0, -3.5, 12.5),
+        Pos = Vector(0, -3.5, 15.4),
         Ang = Angle(90, 0, -90),
+		Scale = 1.05,
     },
     {
         PrintName = "Grip",
@@ -487,7 +509,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Magazine",
-        Category = "go_mag_aug",
+        Category = {"go_mag_aug","go_mag"},
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(0, 1, -4),
         Ang = Angle(90, 0, -90),			

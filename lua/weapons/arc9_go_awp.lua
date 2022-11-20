@@ -26,7 +26,7 @@ SWEP.Description = [[High risk and high reward, the infamous AWP is recognizable
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_awp.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "00000000"
 
 SWEP.Slot = 3
 
@@ -86,12 +86,12 @@ SWEP.Firemodes = {
 SWEP.Recoil = 2
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.3
+SWEP.RecoilRandomUp = 0.4
 SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
@@ -99,7 +99,7 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 0.75
+SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.8
 SWEP.RecoilMultHipFire = 1.25
@@ -388,6 +388,44 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag_15"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
+    ["mag_5"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["sight_iron"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["barrel_bull"] = {
+        Bodygroups = {
+            {1,3},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.4, 28.3), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.4, 21.4), } }	
+    },
+    ["barrel_factory"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.4, 29.4), } }	
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -396,10 +434,15 @@ SWEP.Attachments = {
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(-0.05, -4.2, 6),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic","csgo_sights_awp"},
         CorrectiveAng = Angle(0.18, -0.22, 0),
         Installed = "csgo_optic_scope_awp",
         Integral = true,
+    },
+    {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_awp_barrel"
     },
     {
         PrintName = "Muzzle",
@@ -426,6 +469,24 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.3, 13.6),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        --DefaultAttName = "Default",
+        Category = {"csgo_tube"},
+        Bone = "v_weapon.awp_Parent",
+		InstalledElements = {"stock_none"},
+        Pos = Vector(0, -2.2, -1.1),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.15,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.awp_clip",
+        Category = "go_awp_mag",
+        --Pos = Vector(0, 0, 0),
+        --Ang = Angle(90, 0, -90),
+		--Scale = 1,
     },
     {
         PrintName = "Ammo",
