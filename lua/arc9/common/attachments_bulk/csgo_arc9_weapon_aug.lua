@@ -6,9 +6,10 @@ ATT.PrintName = "9mm Magazine"
 ATT.CompactName = "9mm"
 ATT.Description = [[]]
 
-//ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
 ATT.ShootSound = "CSGO.MP9.Fire"
-ATT.ShootSoundSilenced = "CSGO.MP9.Silenced_Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
 ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 
 ATT.RPMMult = 900/600
@@ -21,7 +22,7 @@ ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
-ATT.Ammo = "smg1"
+ATT.Ammo = "SMG1"
 
 ATT.SortOrder = 0
 ATT.Category = "go_mag_aug"
@@ -41,9 +42,10 @@ ATT.PrintName = "Extended 9mm Magazine"
 ATT.CompactName = "9mmX"
 ATT.Description = [[]]
 
-//ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm_extended.png", "mips smooth")
 ATT.ShootSound = "CSGO.MP9.Fire"
-ATT.ShootSoundSilenced = "CSGO.MP9.Silenced_Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
 ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 
 ATT.RPMMult = 900/600
@@ -55,7 +57,7 @@ ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
-ATT.Ammo = "smg1"
+ATT.Ammo = "SMG1"
 
 ATT.SortOrder = 1
 ATT.Category = "go_mag_aug"

@@ -225,9 +225,9 @@ SWEP.DropMagazineQCA = 3
 
 local path = "weapons/csgo/awp/"
 
-SWEP.ShootSound = "CSGO.awp.Fire"
+SWEP.ShootSound = "CSGO.AWP.Fire"
 SWEP.ShootSoundSilenced = "CSGO.AWP.Fire_Silenced"
-SWEP.DistantShootSound = path .. "awp1-distant.wav"
+SWEP.DistantShootSound = "CSGO.AWP.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"

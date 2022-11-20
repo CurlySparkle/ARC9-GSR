@@ -100,9 +100,11 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
 
-SWEP.RecoilMultCrouch = 0.8
+SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilKickCrouch = 1
+
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -323,7 +325,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "aug_clipout.wav", t = 15 / 30},
-            {s = path .. "aug_clipin.wav", t = 44 / 30},
+            {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 44 / 30},
         },
     },
     ["reload_empty_9"] = {
@@ -336,7 +338,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "aug_clipout.wav", t = 15 / 30},
-            {s = path .. "aug_clipin.wav", t = 44 / 30},
+            {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 44 / 30},
             {s = path .. "aug_boltpull.wav", t = 66 / 30},
             {s = path .. "aug_boltrelease.wav", t = 72 / 30},
         },

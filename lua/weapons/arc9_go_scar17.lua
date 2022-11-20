@@ -62,7 +62,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 25 -- Self-explanatory.
+SWEP.ClipSize = 20 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -85,28 +85,27 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.5
-
-SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
+SWEP.Recoil = 0.6
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.2
 
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
+SWEP.RecoilKickSights = 1
 
-SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -114,12 +113,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.001 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -222,7 +222,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_scar20_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.5
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -381,13 +381,35 @@ SWEP.AttachmentElements = {
     },
     ["stock_retract"] = {
         Bodygroups = {
-            {2,1},
+            {2,2},
         },
     },
     ["stock_none"] = {
         Bodygroups = {
-            {2,2},
+            {2,1},
         },
+    },
+    ["stock_specialized"] = {
+        Bodygroups = {
+            {2,3},
+        },
+    },
+    ["mag"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 20.2), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {4,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 16.6), } }	
     },
 }
 
@@ -402,11 +424,16 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.85, 0, 0),
     },
     {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_scar17_barrel",
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(-0.05, -4.6, 19.4),
+        Pos = Vector(-0.05, -4.54, 18),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -420,10 +447,10 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract"},
+        Category = {"csgo_tube","stock_retract","go_scar17_stock"},
         Bone = "v_weapon.SCAR_Parent",
-		InstalledElements = {"stock_none"},
-        Pos = Vector(0, -5.05, -3.8),
+		--InstalledElements = {"stock_none"},
+        Pos = Vector(0, -5.05, -3.2),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
     },
@@ -434,6 +461,11 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.8, -5.1, 12),
         Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.SCAR_Clip",
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",

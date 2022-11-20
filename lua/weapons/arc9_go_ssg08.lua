@@ -26,7 +26,7 @@ SWEP.Description = [[The SSG 08 bolt-action is a low-damage but very cost-effect
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_ssg08.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_scout.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 3
 
@@ -226,7 +226,7 @@ local path = "weapons/csgo/ssg08/"
 
 SWEP.ShootSound = "CSGO.SG008.Fire"
 SWEP.ShootSoundSilenced = "CSGO.SSG08.Fire_Silenced"
-SWEP.DistantShootSound = path .. "ssg08-1-distant.wav"
+SWEP.DistantShootSound = "CSGO.SG008.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -380,6 +380,43 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag_15"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["mag_5"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["sight_iron"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0.3, -2.2, 25), } }	
+    },
+    ["barrel_factory"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0.3, -2.2, 28.8), } }	
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -388,10 +425,15 @@ SWEP.Attachments = {
         Bone = "v_weapon.ssg08_Parent",
         Pos = Vector(0.2, -3.1, 8.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic","csgo_sights_ssg08"},
         CorrectiveAng = Angle(0.2, -0.25, 0),
         Installed = "csgo_optic_scope_ssg08",
         Integral = true,
+    },
+    {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_ssg08_barrel"
     },
     {
         PrintName = "Muzzle",
@@ -418,6 +460,23 @@ SWEP.Attachments = {
         Pos = Vector(0, -0, 16),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        --DefaultAttName = "Default",
+        Category = {"csgo_tube","stock_retract",},
+        Bone = "v_weapon.ssg08_Parent",
+        Pos = Vector(0.5, -0, -3),
+        Ang = Angle(90, 0, -90),
+		Scale = 1.15,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.weapon_Clip",
+        Category = "go_ssg08_mag",
+        --Pos = Vector(0, 0, 0),
+        --Ang = Angle(90, 0, -90),
+		--Scale = 1,
     },
     {
         PrintName = "Perk",

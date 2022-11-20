@@ -546,6 +546,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.SG008.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+         "^weapons/csgo/ssg08/ssg08-1-distant.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.AWP.Fire",
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
@@ -554,6 +565,17 @@ sound.Add( {
     sound = {
         "^weapons/csgo/awp/awp_01.ogg",
 		"^weapons/csgo/awp/awp_02.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.AWP.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+         "^weapons/csgo/awp/awp1-distant.ogg",
     }
 } )
 
