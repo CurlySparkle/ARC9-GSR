@@ -413,6 +413,13 @@ SWEP.AttachmentElements = {
     },
 }
 
+// Forced Override Bodygroup
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end		
+end
+
+
 SWEP.Attachments = {
     {
         PrintName = "Scope",

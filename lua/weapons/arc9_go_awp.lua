@@ -426,7 +426,14 @@ SWEP.AttachmentElements = {
             {4,1},
         },
     },
+    ["stock_lc10"] = {Bodygroups = {{4,2},},},	
 }
+
+// Forced Override Bodygroup
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("stock_lc10") then model:SetBodygroup(4,2) end		
+end
 
 SWEP.Attachments = {
     {
@@ -473,7 +480,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         --DefaultAttName = "Default",
-        Category = {"csgo_tube"},
+        Category = {"csgo_tube", "go_stock_awp"},
         Bone = "v_weapon.awp_Parent",
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.2, -1.1),
