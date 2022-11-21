@@ -512,7 +512,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mag7_parent",
         Pos = Vector(0, -4.1, 16.8),
         Ang = Angle(90, 0, -90),
-		Scale = 1.2,
+        Scale = 1.2,
     },
     {
         PrintName = "Top",
@@ -535,10 +535,10 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube"},
         Bone = "v_weapon.mag7_parent",
-		InstalledElements = {"stock_none"},
+        InstalledElements = {"stock_none"},
         Pos = Vector(-0.05, -4.2, -6.1),
         Ang = Angle(90, 0, -90),
-		Scale = 1.2,
+        Scale = 1.2,
     },
     {
         PrintName = "Bottom",
@@ -550,9 +550,16 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Mag",
-		Bone = "v_weapon.magazine",
+        Bone = "v_weapon.magazine",
         Category = "go_mag",
-		InstalledElements = {"mag"},
+        InstalledElements = {"mag"},
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.magazine",
+        Category = "go_ammo_sg",
+        Icon_Offset = Vector(0, -3, 0),
     },
     {
         PrintName = "Perk",

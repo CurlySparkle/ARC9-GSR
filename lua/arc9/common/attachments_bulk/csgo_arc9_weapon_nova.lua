@@ -1,6 +1,6 @@
 local ATT = {}
 
-ATT.PrintName = [[6 Round Tube]]
+ATT.PrintName = [[Nova 6 Round Tube]]
 ATT.CompactName = [[6-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
 ATT.Description = [[A longer tube that holds a few more shells.
@@ -26,7 +26,7 @@ ARC9.LoadAttachment(ATT, "csgo_nova_mag_6")
 -------------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = [[8 Round Tube]]
+ATT.PrintName = [[Nova 8 Round Tube]]
 ATT.CompactName = [[8-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
 ATT.Description = [[An extra long tube that holds twice as much shells.
@@ -104,3 +104,29 @@ ATT.RecoilAutoControlMult = 0.5
 ATT.RecoilKickMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_nova_stock_xm1014")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[M3 7 Round Tube]]
+ATT.CompactName = [[7-RND]]
+ATT.Icon = Material("entities/attachs/ext_mag.png")
+ATT.Description = [[A longer tube that holds a few more shells.
+Extra frontal weight impacts weapon handling while on the move.]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_m3_mag"}
+ATT.ClipSizeAdd = 2
+ATT.SpreadAddHipFire = 0.01
+
+ATT.SpeedAddSights = -0.05
+ATT.SprintToFireTimeAdd = 0.075
+ATT.AimDownSightsTimeAdd = 0.075
+
+ATT.ActivateElements = {"mag"}
+
+ARC9.LoadAttachment(ATT, "csgo_m3_mag_7")
