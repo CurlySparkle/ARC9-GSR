@@ -23,6 +23,14 @@ ATT.Scale = 0.45
 ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
+ATT.DrawFunc = function(swep, model, wm)
+    if swep:GetElements()["acog_mount_rail"] then
+        model:SetBodygroup(1,0)
+    else
+        model:SetBodygroup(1,1)
+    end
+end
+
 ATT.Sights = {
     {
         Pos = Vector(-0.013, 7.5, -1.55),
@@ -51,12 +59,12 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"has_optic"},	
+		InstalledElements = {"acog_mount_rail"},	
 		
         Category = {"csgo_optics_pistols",},
         Pos = Vector(3.75, 0, -2.85),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -2,
-		Scale = 0.9,		
+		Scale = 0.9,			
     },		
 }
