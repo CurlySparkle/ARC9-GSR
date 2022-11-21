@@ -518,7 +518,7 @@ SWEP.Attachments = {
     {
         PrintName = "Pistol Grip",
         Bone = "v_weapon.m3_Parent",
-        Category = "go_pistol_grip",
+        Category = "go_pgrip",
 		InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1.02, 2.05),

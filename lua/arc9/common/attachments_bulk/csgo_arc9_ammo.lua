@@ -5,7 +5,8 @@ ATT = {}
 
 ATT.PrintName = "Armor Piercing Rounds"
 ATT.CompactName = "AP"
-ATT.Description = [[Bullets made of hard material designed to pierce armor. Deals some damage through any form of protection.]]
+ATT.Description = [[Bullets made of hard material designed to pierce armor.
+High penetrating capabilities, but wounding potential is reduced.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_tmj.png", "mips smooth")
@@ -16,13 +17,12 @@ ATT.Free = true
 
 ATT.Category = {"go_ammo"}
 
-ATT.SpreadMult = 1.1
-ATT.PhysBulletMuzzleVelocityMult = 1.05
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
 ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.8
+ATT.DamageMinMult = 0.9
 
-ATT.PenetrationMult = 1.33
+ATT.PenetrationMult = 1.5
 ATT.ArmorPiercingAdd = 0.3
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_ap")
@@ -71,17 +71,18 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_exacto")
 -------------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Subsonic"
-ATT.CompactName = "SUB"
+ATT.PrintName = "Low Profile Rounds"
+ATT.CompactName = "LP"
 ATT.Icon = Material("entities/attachs/go_ammo_sub.png", "mips smooth")
-ATT.Description = [[Rounds with a reduced load. Tracers are invisible. Reduces report slightly.]]
+ATT.Description = [[Reduced powder load rounds made for easier weapon handling.
+Recoil and firing report is reduced at the cost of ballistics.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
 
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 
-ATT.RangeMaxMult = 0.8
+ATT.RangeMaxMult = 0.85
 
 ATT.PenetrationMult = 0.75
 
@@ -89,7 +90,7 @@ ATT.ShootVolumeMult = 0.9
 
 ATT.TracerNum = 0
 
-ATT.RecoilMult = 0.94
+ATT.RecoilMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_subsonic")
 
@@ -212,7 +213,7 @@ ATT.SortOrder = 20
 ATT.Category = {"go_ammo_sg"}
 
 ATT.NumMult = 2.5
-ATT.SpreadMult = 1.75
+ATT.SpreadMult = 1.5
 
 ATT.DamageMaxMult = 1 / 2.5
 ATT.DamageMinMult = 1 / 2.5
@@ -232,6 +233,7 @@ ATT.SortOrder = 1
 ATT.Category = {"go_ammo_sg"}
 
 ATT.SpreadMult = 0.25
+ATT.SpreadMultHipFire = 0.75
 ATT.RangeMaxMult = 2
 
 ATT.DamageMaxOverride = 110

@@ -91,14 +91,14 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.3
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 3 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -109,10 +109,9 @@ SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilDissipationRateSights = 50
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 2.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
-SWEP.RecoilKickSights = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
@@ -128,17 +127,18 @@ SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.018
+SWEP.Spread = 0.05
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSighted = 0
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddSights = 0
+SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadMultHipFire = 3
+SWEP.SpreadAddHipFire = 0.025
+SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
-SWEP.SpreadAddSights = 0.04
+SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddSightsMove = -0.1
 
 -------------------------- HANDLING
 
@@ -147,8 +147,8 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.22 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.21 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -441,10 +441,24 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
-            {1,1},
+            {1, 1},
+        },
+    },
+    ["mag2"] = {
+        Bodygroups = {
+            {1, 2},
+        },
+    },
+    ["mag3"] = {
+        Bodygroups = {
+            {1, 3},
+        },
+    },
+    ["barrel_ext"] = {
+        Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(0, -2, 27), } }
+        AttPosMods = { [3] = { Pos = Vector(0, -2, 27), } },
     },
     ["pistolgrip"] = {
         Bodygroups = {
@@ -458,7 +472,13 @@ SWEP.AttachmentElements = {
     },
 }
 
-// Forced Override Bodygroup
+
+SWEP.HookP_NameChange = function(self, name)
+    if wep:HasElement("barrel_ext") then
+        return "Remington 870"
+    end
+end
+
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end
@@ -474,6 +494,12 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0),
     },
     {
+        PrintName = "Barrel",
+        Bone = "v_weapon.sawedoff_parent",
+        Category = "go_sawedoff_barrel",
+        Icon_Offset = Vector(0, -2, 12),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle_shotgun","muzzle"},
@@ -486,7 +512,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.sawedoff_parent",
-        Pos = Vector(-1, -1, 20),
+        Pos = Vector(-1, -1, 18),
         Ang = Angle(90, 0, 90),
     },
     {
@@ -501,8 +527,8 @@ SWEP.Attachments = {
     {
         PrintName = "Tube",
         Bone = "v_weapon.sawedoff_parent",
-        Category = "go_mag_sg",
-        Icon_Offset = Vector(0, -1, 12),
+        Category = "go_sawedoff_mag",
+        Icon_Offset = Vector(0, -0.8, 22),
     },
     {
         PrintName = "Ammo",
@@ -514,7 +540,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         Bone = "v_weapon.sawedoff_parent",
-        Category = {"go_pistol_grip","stock_extend"},
+        Category = "go_sawedoff_stock",
         InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1, 2.1),

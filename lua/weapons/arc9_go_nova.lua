@@ -88,12 +88,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 3
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
@@ -103,9 +103,10 @@ SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRateSights = 50
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
@@ -123,15 +124,15 @@ SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.008
+SWEP.Spread = 0.04
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = 0.04
+SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadMultHipFire = 3
+SWEP.SpreadAddHipFire = 0.065
+SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
 
@@ -449,9 +450,19 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["mag2"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    },
     ["pistolgrip"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+    ["noirons"] = {
+        Bodygroups = {
+            {3,1},
         },
     },
 }
@@ -503,9 +514,9 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0.5, 2),
     },
     {
-        PrintName = "Pistol Grip",
+        PrintName = "Stock",
         Bone = "v_weapon.NOVA_PARENT",
-        Category = "go_pistol_grip",
+        Category = {"go_nova_stock"},
         InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1.12, 2),
