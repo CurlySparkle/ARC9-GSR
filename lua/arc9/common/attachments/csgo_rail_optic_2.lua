@@ -7,7 +7,7 @@ ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 ATT.Ignore = false -- This thing literally doesn't fit on fucking anything < "Yes it does."
 
-ATT.Category = {"csgo_rail_optic"}
+ATT.Category = {"csgo_rail_optic_custom"}
 ATT.ActivateElements = {"csgo_optic_riser1"}
 ATT.Model = "models/weapons/csgo/atts/rail_mount_ak.mdl"
 ATT.Scale = 0.5

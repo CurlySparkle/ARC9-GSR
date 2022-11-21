@@ -440,7 +440,7 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 SWEP.AttachmentTableOverrides = {
     ["csgo_rail_optic_2"] = {
-    ModelOffset = Vector(0, 0, 0.5),
+    ModelOffset = Vector(0, 0, -5),
     Attachments = {
     {
         PrintName = "Optic",
@@ -470,9 +470,19 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.M3_PARENT",
+        Pos = Vector(0, -1.5, 8),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_custom"},
+        CorrectiveAng = Angle(0, 0, 0),
+		MergeSlots = {2},
+		Hidden = true,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.M3_PARENT",
         Pos = Vector(0, -1.9, 8),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic",},
+        Category = {"csgo_rail_optic"},
         CorrectiveAng = Angle(0, 0, 0),
     },
     {
