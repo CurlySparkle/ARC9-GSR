@@ -922,10 +922,10 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.M249.Fire",
-    channel = CHAN_WEAPON + 10,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     level = 140,
-    pitch = {97,103},
+    pitch = {90,105},
     sound = {
         "^weapons/csgo/m249/m249-1.ogg",
     }
@@ -1215,7 +1215,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
-    pitch = {95,105},
+    pitch = {90,105},
     sound = {
         "^weapons/m249_suppressed.wav",
     }
