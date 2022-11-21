@@ -20,7 +20,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team.]]
+SWEP.Description = [[The Nova's high sighted precision makes it a great ambush weapon, though it is not as effective while on the move.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_nova.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
@@ -42,7 +42,7 @@ SWEP.WorldModelOffset = {
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 15 -- Damage done at point blank range
-SWEP.DamageMin = 4 -- Damage done at maximum range
+SWEP.DamageMin = 5 -- Damage done at maximum range
 
 SWEP.Num = 8
 
@@ -124,14 +124,14 @@ SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.04
+SWEP.Spread = 0.03
 
 SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 SWEP.SpreadAddSights = 0
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.07
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.065
+SWEP.SpreadAddHipFire = 0.075
 SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1

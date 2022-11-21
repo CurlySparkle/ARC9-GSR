@@ -23,7 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[The M3's average damage and range makes it a great mid to close distance weapon for a good kill.]]
+SWEP.Description = [[The M3 is a well-rounded shotgun that retains effectiveness at medium ranges without giving up on close range power.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_m3.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
@@ -44,17 +44,17 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 15 -- Damage done at point blank range
-SWEP.DamageMin = 4 -- Damage done at maximum range
+SWEP.DamageMax = 14 -- Damage done at point blank range
+SWEP.DamageMin = 5 -- Damage done at maximum range
 
-SWEP.Num = 9
+SWEP.Num = 10
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 750 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2750 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 15
 
@@ -62,12 +62,14 @@ SWEP.ImpactForce = 15
 
 SWEP.PhysBulletMuzzleVelocity = 1250 * 12
 
+SWEP.RicochetChance = 0
+
 -------------------------- MAGAZINE
 
 SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 8 -- Self-explanatory.
+SWEP.ClipSize = 6 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -89,12 +91,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.75
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
@@ -106,7 +108,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
@@ -119,16 +121,17 @@ SWEP.RecoilUpSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.015
+SWEP.Spread = 0.035
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = 0.04
+SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadMultHipFire = 2.5
+SWEP.SpreadAddHipFire = 0.065
+SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddSightsMove = -0.1
 
 -------------------------- HANDLING
 
@@ -474,8 +477,8 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_custom"},
         CorrectiveAng = Angle(0, 0, 0),
-		MergeSlots = {2},
-		Hidden = true,
+        MergeSlots = {2},
+        Hidden = true,
     },
     {
         PrintName = "Top",
@@ -508,24 +511,25 @@ SWEP.Attachments = {
         Bone = "v_weapon.M3_PUMP",
         Pos = Vector(-0.3, 1, 2),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
+        Scale = 1,
     },
     {
-        PrintName = "Mag",
-        Bone = "v_weapon.M3_LOADER",
-        Category = "go_mag"
+        PrintName = "Tube",
+        Bone = "v_weapon.m3_Parent",
+        Category = "go_mag",
+        Icon_Offset = Vector(0, -0.5, 22),
     },
     {
         PrintName = "Pistol Grip",
         Bone = "v_weapon.m3_Parent",
-        Category = "go_nova_stock",
-		InstalledElements = {"pistolgrip"},
+        Category = "go_m3_stock",
+        InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1.02, 2.05),
     },
     {
         PrintName = "Ammo",
-        Bone = "v_weapon.NOVA_LOADER",
+        Bone = "v_weapon.M3_LOADER",
         Category = "go_ammo_sg",
         Icon_Offset = Vector(0, 0.5, 2),
     },

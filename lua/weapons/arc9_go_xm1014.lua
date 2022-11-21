@@ -23,7 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[The XM1014 is a powerful fully automatic shotgun that justifies its heftier price tag with the ability to paint a room with lead fast.]]
+SWEP.Description = [[The XM1014 is a powerful automatic shotgun with the ability to paint a room with lead fast.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_xm1014.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
@@ -54,7 +54,7 @@ SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 =
 SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 25
 
@@ -91,21 +91,21 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.5
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 24862 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1.5 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.5
 
-SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
@@ -122,17 +122,17 @@ SWEP.ViewRecoilUpMult = 5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.012
+SWEP.Spread = 0.035
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 SWEP.SpreadAddSighted = 0
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.065
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadMultHipFire = 3
+SWEP.SpreadAddHipFire = 0.035
+SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
-SWEP.SpreadAddSights = 0.04
+SWEP.SpreadAddSightsMove = -0.1
 
 -------------------------- HANDLING
 

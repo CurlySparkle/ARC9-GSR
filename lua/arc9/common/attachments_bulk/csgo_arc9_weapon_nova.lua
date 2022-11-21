@@ -90,7 +90,7 @@ ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")
 ATT.Model = "models/weapons/csgo/atts/pistol_grips/grip_xm1014.mdl"
 
 ATT.SortOrder = 2
-ATT.Category = "go_nova_stock"
+ATT.Category = {"go_nova_stock", "go_m3_stock"}
 
 ATT.RHIK_Priority = 10
 ATT.RHIK = true
