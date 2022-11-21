@@ -44,15 +44,15 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 32 -- Damage done at point blank range
-SWEP.DamageMin = 5 -- Damage done at maximum range
+SWEP.DamageMax = 36 -- Damage done at point blank range
+SWEP.DamageMin = 6 -- Damage done at maximum range
 
 SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 750 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 1750 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
@@ -62,12 +62,14 @@ SWEP.ImpactForce = 15
 
 SWEP.PhysBulletMuzzleVelocity = 1250 * 12
 
+SWEP.RicochetChance = 0
+
 -------------------------- MAGAZINE
 
 SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 7 -- Self-explanatory.
+SWEP.ClipSize = 4 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -119,7 +121,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.ViewRecoil = true
 SWEP.ViewRecoilUpMult = 7
 
-SWEP.UseVisualRecoil = true 
+SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 2
 SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilMultSights = 1

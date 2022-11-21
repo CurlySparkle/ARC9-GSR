@@ -1,4 +1,4 @@
-
+local ATT = {}
 
 ATT.PrintName = [[Extended Tube]]
 ATT.CompactName = [[EXT]]
@@ -18,3 +18,5 @@ ATT.SprintToFireTimeAdd = 0.08
 ATT.AimDownSightsTimeAdd = 0.08
 
 ATT.ActivateElements = {"mag"}
+
+ARC9.LoadAttachment(ATT, "csgo_mag_sg_ext")
