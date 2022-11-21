@@ -27,7 +27,7 @@ SWEP.Description = [[Mais oui.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_elite_single.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000"
 
 SWEP.Slot = 1
 
@@ -121,6 +121,7 @@ SWEP.SpreadAddMove = 0.02/2
 SWEP.SpreadAddMidAir = 0.02/2
 SWEP.SpreadAddHipFire = 0.004/2
 SWEP.SpreadAddCrouch = -0.02/2 -- wait, if its add a negative, then should i be mutliplying?
+SWEP.SpreadAddSights = -0.02/2
 
 -------------------------- HANDLING
 
@@ -214,10 +215,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "duel"
+SWEP.HoldType = "rpg"
 SWEP.HoldTypeSprint = "rpg"
 SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "duel"
+SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -371,24 +372,47 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyEliteSingle
 
 -------------------------- ATTACHMENTS
 
--- SWEP.AttachmentTableOverrides = {
-    -- ["go_tac_laser_genpistol"] = {
-    -- Sights = {
-    -- {
-        -- Pos = Vector(-2, 17, -4),
-        -- Ang = Angle(0.8, -50, 35),
-        -- ViewModelFOV = 56,
-        -- Magnification = 1.15,
-        -- IgnoreExtra = false
-    -- }
-    -- }
-    -- }
--- }
+SWEP.AttachmentTableOverrides = {
+    ["go_tac_laser_genpistol"] = {
+    Sights = {
+    {
+        Pos = Vector(-2, 17, -4),
+        Ang = Angle(-8, -2.5, 35),
+        ViewModelFOV = 56,
+        Magnification = 1.15,
+        IgnoreExtra = false
+    }
+    }
+    }
+}
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+			{2,1},
+        },
+    },
+    ["slide_long"] = {
+        Bodygroups = {
+		    {0,1},
+            {1,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 9.1), } }	
+    },
+    ["slide_short"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Slide",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_elite_s"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -397,10 +421,6 @@ SWEP.Attachments = {
         Pos = Vector(-0.025, -3.325, 8.2),
         Ang = Angle(90, 0, -90),
         Scale = 0.8,
-    },
-    {
-        PrintName = "Perk",
-        Category = "go_perk",
     },
     {
         PrintName = "Pourquoi",
@@ -430,5 +450,14 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.825, 5.5),
         Ang = Angle(90, 180, 90),
 		Scale = 1,
-    },	
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.m9a1_R_magazine",
+        Category = "go_mag"
+    },
+    {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
 }
