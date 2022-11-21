@@ -471,6 +471,16 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, -1.5, 8),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_optic_custom"},
+        CorrectiveAng = Angle(0, 0, 0),
+		MergeSlots = {2},
+		Hidden = true,
+    },
+    {
+        PrintName = "Top",
+        Bone = "v_weapon.NOVA_PARENT",
         Pos = Vector(0, -1.9, 8),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},

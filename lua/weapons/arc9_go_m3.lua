@@ -438,20 +438,20 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 
-SWEP.AttachmentTableOverrides = {
-    ["csgo_rail_optic_2"] = {
-    ModelOffset = Vector(0, 0, -5),
-    Attachments = {
-    {
-        PrintName = "Optic",
-        Pos = Vector(0, -0.05, -0.9),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 1.5),
-        Category = {"csgo_optic"},
-    }
-   }
- }
-}
+-- SWEP.AttachmentTableOverrides = {
+    -- ["csgo_rail_optic_2"] = {
+    -- ModelOffset = Vector(0, 0, -5),
+    -- Attachments = {
+    -- {
+        -- PrintName = "Optic",
+        -- Pos = Vector(0, -0.05, -0.9),
+        -- Ang = Angle(0, 0, 0),
+        -- Icon_Offset = Vector(0, 0, 1.5),
+        -- Category = {"csgo_optic"},
+    -- }
+   -- }
+ -- }
+-- }
 
 SWEP.AttachmentElements = {
     ["mag"] = {
@@ -518,10 +518,16 @@ SWEP.Attachments = {
     {
         PrintName = "Pistol Grip",
         Bone = "v_weapon.m3_Parent",
-        Category = "go_pgrip",
+        Category = "go_nova_stock",
 		InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1.02, 2.05),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.NOVA_LOADER",
+        Category = "go_ammo_sg",
+        Icon_Offset = Vector(0, 0.5, 2),
     },
     {
         PrintName = "Perk",
