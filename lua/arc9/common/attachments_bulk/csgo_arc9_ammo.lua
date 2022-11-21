@@ -236,6 +236,8 @@ ATT.SpreadMult = 0.25
 ATT.SpreadMultHipFire = 0.75
 ATT.RangeMaxMult = 2
 
+ATT.RicochetChanceOverride = 1
+
 ATT.DamageMaxOverride = 110
 ATT.DamageMinOverride = 40
 
@@ -258,6 +260,8 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.RangeMaxMult = 1.5
 ATT.SpreadMult = 0.5
+
+ATT.RicochetChanceOverride = 2
 
 ATT.DamageMaxOverride = 37
 ATT.DamageMinOverride = 15
@@ -292,20 +296,44 @@ ATT = {}
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
 ATT.CompactName = "FRAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
-ATT.Description = [[A load containing an explosive compound.
-Explodes on impact, dealing damage in a small radius. Effectiveness is highly limited by the small caliber size.]]
+ATT.Description = [[A load containing an explosive compound, dealing damage in a small radius.
+Effectiveness is limited by the small caliber size.]]
 ATT.SortOrder = 1.5
 
 ATT.Category = {"go_ammo_sg"}
 
 ATT.NumOverride = 1
 
+ATT.SpreadMult = 0.35
+
+ATT.PhysBulletGravityMult = 3
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+
 ATT.DamageMaxOverride = 35
 ATT.DamageMinOverride = 10
 
 ATT.ExplosionRadiusOverride = 128
 ATT.ExplosionDamageOverride = 80
-ATT.ExplosionEffect = "weapon_muzzle_flash_HE" -- HelicopterMegaBomb
+ATT.ExplosionEffect = "HelicopterMegaBomb" -- placeholder
 
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "7mm Rebounder Rounds"
+ATT.CompactName = "RBD"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
+ATT.Description = [[A load containing pellets with a high chance to ricochet.
+Using a specialized shell design, these rounds are harder to load.]]
+ATT.SortOrder = 8
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.RicochetChanceOverride = 10
+ATT.RicochetAngleMaxOverride = 180
+
+ATT.ReloadTimeMult = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
