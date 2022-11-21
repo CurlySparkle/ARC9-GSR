@@ -388,7 +388,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "0000"
+SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
     ["mount"] = {
@@ -401,8 +401,21 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
-    },
+    }, 
+	["stock_fold"] = { Bodygroups = { {3,2}, }, },
+	["552"] = { 
+	Bodygroups = { {4,1}, {1,2}, {2,2} }, 
+    AttPosMods = { [2] = { Pos = Vector(0, -2.8, 18), }, [4] = { Pos = Vector(0, -1.5, 11.5), }, [5] = { Pos = Vector(-1, -3.6, 11.5), } }		
+	},	
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("stock_fold") then model:SetBodygroup(3,2) end	
+
+	if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(2,1) end		
+end
+
 
 SWEP.Attachments = {
     {
@@ -424,6 +437,14 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
+        PrintName = "Barrel",
+        DefaultAttName = "Default",
+        Category = {"go_sg556_barrel"},
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, -3.15, 10),
+        Ang = Angle(90, 0, -90),
+    },	
+    {
         PrintName = "Grip",
         DefaultAttName = "Default",
         Category = {"grip"},
@@ -443,7 +464,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = "csgo_tube",
+        Category = {"csgo_tube", "go_sg556_stock"},
         Bone = "v_weapon.sg556_Parent",
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -3, -1.9),

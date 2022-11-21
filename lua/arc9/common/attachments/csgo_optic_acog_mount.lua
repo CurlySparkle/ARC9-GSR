@@ -65,6 +65,6 @@ ATT.Attachments = {
         Pos = Vector(3.75, 0, -2.85),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -2,
-		Scale = 0.9,			
+		Scale = 0.9,
     },		
 }
