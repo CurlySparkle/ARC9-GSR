@@ -285,3 +285,27 @@ ATT.PenetrationOverride = 12
 ATT.DamageMaxMult = 1 / 1.5 * 0.85
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
+ATT.CompactName = "FRAG"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
+ATT.Description = [[A load containing an explosive compound.
+Explodes on impact, dealing damage in a small radius. Effectiveness is highly limited by the small caliber size.]]
+ATT.SortOrder = 1.5
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.NumOverride = 1
+
+ATT.DamageMaxOverride = 35
+ATT.DamageMinOverride = 10
+
+ATT.ExplosionRadiusOverride = 128
+ATT.ExplosionDamageOverride = 80
+ATT.ExplosionEffect = "weapon_muzzle_flash_HE" -- HelicopterMegaBomb
+
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag")

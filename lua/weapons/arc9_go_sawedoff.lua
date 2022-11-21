@@ -475,8 +475,9 @@ SWEP.AttachmentElements = {
 
 SWEP.HookP_NameChange = function(self, name)
     if wep:HasElement("barrel_ext") then
-        return "Remington 870"
+        name = "Remington 870"
     end
+    return name
 end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
