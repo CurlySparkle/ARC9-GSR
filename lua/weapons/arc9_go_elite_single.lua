@@ -371,6 +371,20 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyEliteSingle
 
 -------------------------- ATTACHMENTS
 
+-- SWEP.AttachmentTableOverrides = {
+    -- ["go_tac_laser_genpistol"] = {
+    -- Sights = {
+    -- {
+        -- Pos = Vector(-2, 17, -4),
+        -- Ang = Angle(0.8, -50, 35),
+        -- ViewModelFOV = 56,
+        -- Magnification = 1.15,
+        -- IgnoreExtra = false
+    -- }
+    -- }
+    -- }
+-- }
+
 SWEP.AttachmentElements = {
 }
 
@@ -378,7 +392,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.m9a1_R_parent",
         Pos = Vector(-0.025, -3.325, 8.2),
         Ang = Angle(90, 0, -90),
