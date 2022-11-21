@@ -11,7 +11,7 @@ SWEP.TrueName = "Sawed-Off"
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
+    ["Caliber"] = "12×70 Shotshell",
     ["Weight (Loaded)"] = "3.22kg",
     ["Projectile Weight"] = "4 Grams",
     ["Muzzle Velocity"] = "2900 Feet/Second",
@@ -440,9 +440,9 @@ SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
             {1,1},
-			{2,1},
+            {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(0, -2, 27), } }	
+    AttPosMods = { [2] = { Pos = Vector(0, -2, 27), } }
     },
     ["pistolgrip"] = {
         Bodygroups = {
@@ -457,9 +457,9 @@ SWEP.AttachmentElements = {
 }
 
 // Forced Override Bodygroup
-SWEP.Hook_ModifyBodygroups = function(wep, data)  
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end		
+    if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end
 end
 
 SWEP.Attachments = {
@@ -494,26 +494,26 @@ SWEP.Attachments = {
         Bone = "v_weapon.sawedoff_pump",
         Pos = Vector(0, 3.5, -0.4),
         Ang = Angle(0, -90, 180),
-		Scale = 1,
+        Scale = 1,
     },
     {
-        PrintName = "Mag",
+        PrintName = "Tube",
         Bone = "v_weapon.sawedoff_parent",
-        Category = "go_mag",
-		Icon_Offset = Vector(0, 0, 1.5),
+        Category = "go_mag_sg",
+        Icon_Offset = Vector(0, -1, 12),
     },
     {
-        PrintName = "Pistol Grip",
+        PrintName = "Ammo",
+        DefaultAttName = "BUCK",
+        Bone = "v_weapon.sawedoff_parent",
+        Icon_Offset = Vector(0, 0, 8.25),
+        Category = "go_ammo_sg",
+    },
+    {
+        PrintName = "Stock",
         Bone = "v_weapon.sawedoff_parent",
         Category = {"go_pistol_grip","stock_extend"},
-		InstalledElements = {"pistolgrip"},
-        Ang = Angle(90, 0, 90),
-        Pos = Vector(0, 1, 2.1),
-    },
-    {
-        PrintName = "Pistol Grip",
-        Bone = "v_weapon.sawedoff_parent",
-        Category = {"stock_extend"},
+        InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1, 2.1),
     },

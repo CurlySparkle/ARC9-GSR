@@ -1,8 +1,9 @@
 local ATT = {}
 
+-------------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Armor Piercing"
+ATT.PrintName = "Armor Piercing Rounds"
 ATT.CompactName = "AP"
 ATT.Description = [[Bullets made of hard material designed to pierce armor. Deals some damage through any form of protection.]]
 ATT.SortOrder = 0
@@ -26,12 +27,14 @@ ATT.ArmorPiercingAdd = 0.3
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_ap")
 
+-------------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Frangible"
-ATT.CompactName = "FRA"
+ATT.PrintName = "Hollow Point Rounds"
+ATT.CompactName = "HP"
 ATT.Icon = Material("entities/attachs/go_ammo_jhp.png", "mips smooth")
-ATT.Description = [[Bullets specifically designed to shatter on impact dealing more damage with a cost of 0% penetration.]]
+ATT.Description = [[Bullets with a hollow tip that expands when hitting its target, incapacitating them more easily.
+Widely used in police and civilian markets due to its inability to penetrate and ricochet.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
@@ -40,11 +43,11 @@ ATT.PenetrationMult = 0
 ATT.RicochetChanceMult = 0
 ATT.ArmorPiercingMult = 0
 
-ATT.DamageMaxMult = 1.20
-ATT.DamageMinMult = 1.35
+ATT.DamageMaxMult = 1.1
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_fra")
 
+-------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "EXtreme ACcuracy Tasked Ordnance Rounds"
@@ -65,6 +68,7 @@ ATT.PhysBulletGravityMult = 0
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_exacto")
 
+-------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "Subsonic"
@@ -89,6 +93,7 @@ ATT.RecoilMult = 0.94
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_subsonic")
 
+-------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "Weapon Color Tracer"
@@ -118,6 +123,7 @@ end
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_tracer_col")
 
+-------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "High Explosive"
@@ -153,16 +159,39 @@ ATT.ExplosionEffect = "HelicopterMegaBomb"
 ATT.Hook_BulletHit = function(wep, data)
     local ent = data.tr.Entity
     local effectdata = EffectData()
-	
+
     effectdata:SetOrigin( data.tr.HitPos )
     util.Effect( "Explosion", effectdata)
-	
+
     local rad = math.Clamp(math.ceil(wep:GetDamage(0)), (wep.Damage + wep.DamageMin)*5/2, (wep.Damage + wep.DamageMin)*8/2)
     util.BlastDamage(wep, wep:GetOwner(), data.tr.HitPos, rad, wep:GetDamage(data.range))
-	
+
     if ent:IsValid() and ent:GetClass() == {"npc_helicopter"} then
         data.dmgtype = DMG_AIRBOAT
     end
 end
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_he")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "8.5mm Magnum Buckshot"
+ATT.CompactName = "MAGNUM"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
+ATT.Description = [[A high-power buckshot load with fewer larger lead pellets.
+Provides better close range power, but range and precision is worse.]]
+ATT.SortOrder = 0
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.PhysBulletDragMult = 2
+
+ATT.RecoilKickMult = 1.25
+ATT.RecoilAutoControlMult = 0.75
+ATT.DamageMaxMult = 1.2
+
+ATT.PelletSpreadMult = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum")
