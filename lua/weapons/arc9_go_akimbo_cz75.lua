@@ -74,7 +74,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 452
+SWEP.RPM = 600
 
 SWEP.Firemodes = {
     {
@@ -83,7 +83,7 @@ SWEP.Firemodes = {
     },
     {
         Mode = -1,
-		RPM = 600
+		RPM = 1200
     }
 }
 -------------------------- RECOIL

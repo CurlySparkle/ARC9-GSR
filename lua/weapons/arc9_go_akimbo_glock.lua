@@ -82,8 +82,8 @@ SWEP.Firemodes = {
         -- add other attachment modifiers
     },
     {
-        Mode = 2,
-        RPM = 800,
+        Mode = 6,
+        RPM = 2000,
 		RecoilUp = 1,
 		RecoilKick = 1.5,
 		SpreadAddRecoil = 0.005,
