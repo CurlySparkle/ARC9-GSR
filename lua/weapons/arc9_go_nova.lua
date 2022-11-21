@@ -11,11 +11,8 @@ SWEP.TrueName = "Nova"
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Caliber"] = "12×70 Shotshell",
+    ["Weight (Loaded)"] = "3.63kg",
 }
 
 SWEP.Credits = {
@@ -47,14 +44,14 @@ SWEP.WorldModelOffset = {
 SWEP.DamageMax = 15 -- Damage done at point blank range
 SWEP.DamageMin = 4 -- Damage done at maximum range
 
-SWEP.Num = 9
+SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2950 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 15
 
@@ -62,12 +59,14 @@ SWEP.ImpactForce = 15
 
 SWEP.PhysBulletMuzzleVelocity = 1250 * 12
 
+SWEP.RicochetChance = 0
+
 -------------------------- MAGAZINE
 
 SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 8 -- Self-explanatory.
+SWEP.ClipSize = 4 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -117,14 +116,14 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.ViewRecoil = true
 SWEP.ViewRecoilUpMult = 7
 
-SWEP.UseVisualRecoil = true 
+SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 2
 SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.015
+SWEP.Spread = 0.008
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
@@ -489,18 +488,25 @@ SWEP.Attachments = {
         Bone = "v_weapon.NOVA_PUMP",
         Pos = Vector(0, 1.2, 5),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
+        Scale = 1,
     },
     {
-        PrintName = "Mag",
+        PrintName = "Tube",
+        Bone = "v_weapon.NOVA_PARENT",
+        Category = "go_nova_mag",
+        Icon_Offset = Vector(0, -0.5, 24),
+    },
+    {
+        PrintName = "Ammo",
         Bone = "v_weapon.NOVA_LOADER",
-        Category = "go_mag"
+        Category = "go_ammo_sg",
+        Icon_Offset = Vector(0, 0.5, 2),
     },
     {
         PrintName = "Pistol Grip",
         Bone = "v_weapon.NOVA_PARENT",
         Category = "go_pistol_grip",
-		InstalledElements = {"pistolgrip"},
+        InstalledElements = {"pistolgrip"},
         Ang = Angle(90, 0, 90),
         Pos = Vector(0, 1.12, 2),
     },

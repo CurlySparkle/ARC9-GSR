@@ -177,21 +177,109 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_he")
 ATT = {}
 
 ATT.PrintName = "8.5mm Magnum Buckshot"
-ATT.CompactName = "MAGNUM"
+ATT.CompactName = "MAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
 ATT.Description = [[A high-power buckshot load with fewer larger lead pellets.
 Provides better close range power, but range and precision is worse.]]
-ATT.SortOrder = 0
+ATT.SortOrder = 6
 
 ATT.Category = {"go_ammo_sg"}
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.PhysBulletDragMult = 2
 
+ATT.NumMult = 0.75
 ATT.RecoilKickMult = 1.25
 ATT.RecoilAutoControlMult = 0.75
-ATT.DamageMaxMult = 1.2
 
-ATT.PelletSpreadMult = 1.25
+ATT.DamageMaxMult = 1 / 0.75 * 1.2
+ATT.DamageMinMult = 1 / 0.75
+
+ATT.SpreadMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "3.5mm Birdshot"
+ATT.CompactName = "BIRD"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_scatter.png", "mips smooth")
+ATT.Description = [[A reduced diameter load containing more pellets.
+Spread is increased, making hitting targets more likely.]]
+ATT.SortOrder = 20
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.NumMult = 2.5
+ATT.SpreadMult = 1.75
+
+ATT.DamageMaxMult = 1 / 2.5
+ATT.DamageMinMult = 1 / 2.5
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm Full-bore Slug"
+ATT.CompactName = "SLUG"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
+ATT.Description = [[A single large projectile loaded in the shotshell.
+The aerodynamic pellet has much higher effective range.]]
+ATT.SortOrder = 1
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.SpreadMult = 0.25
+ATT.RangeMaxMult = 2
+
+ATT.DamageMaxOverride = 110
+ATT.DamageMinOverride = 40
+
+ATT.NumOverride = 1
+
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm Triple Hit Slugs"
+ATT.CompactName = "TRI"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_triple.png", "mips smooth")
+ATT.Description = [[A load containing 3 short, slug-sized pellets.
+The slugs provide increased range and precision, but not as much as a full slug.]]
+ATT.SortOrder = 3
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.RangeMaxMult = 1.5
+ATT.SpreadMult = 0.5
+
+ATT.DamageMaxOverride = 37
+ATT.DamageMinOverride = 15
+
+ATT.NumOverride = 3
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "25mm Flechettes"
+ATT.CompactName = "FLE"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
+ATT.Description = [[A load containing thin, dart-shaped projectiles.
+Provides a tighter spread and much higher penetration, but much lower stopping power.]]
+ATT.SortOrder = 12
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.SpreadMult = 0.35
+
+ATT.NumMult = 1.5
+ATT.PenetrationOverride = 12
+ATT.DamageMaxMult = 1 / 1.5 * 0.85
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")

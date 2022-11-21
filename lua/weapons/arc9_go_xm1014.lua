@@ -51,8 +51,8 @@ SWEP.Num = 6
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
@@ -61,6 +61,8 @@ SWEP.ImpactForce = 25
 -------------------------- PHYS BULLET BALLISTICS
 
 SWEP.PhysBulletMuzzleVelocity = 1250 * 12
+
+SWEP.RicochetChance = 0
 
 -------------------------- MAGAZINE
 
@@ -120,7 +122,7 @@ SWEP.ViewRecoilUpMult = 5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.015
+SWEP.Spread = 0.012
 
 SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
@@ -426,10 +428,10 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.m3_Parent",
-		InstalledElements = {"stock_none"},
+        InstalledElements = {"stock_none"},
         Pos = Vector(0, -0.3, 1.5),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+        Scale = 1.1,
     },
     {
         PrintName = "Bottom",
@@ -438,7 +440,13 @@ SWEP.Attachments = {
         Bone = "v_weapon.m3_Parent",
         Pos = Vector(0, 0.15, 13.6),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
+        Scale = 1,
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.m3_Parent",
+        Category = "go_ammo_sg",
+        Icon_Offset = Vector(0, 0.5, 7.5),
     },
     {
         PrintName = "Perk",
