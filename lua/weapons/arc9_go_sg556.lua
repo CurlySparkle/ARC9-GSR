@@ -546,7 +546,7 @@ SWEP.Attachments = {
         PrintName = "Mag",
         Bone = "v_weapon.sg556_Parent",
         Category = "go_mag_sg556",
-        Pos = Vector(0, -2.6, -1.3),
+        Pos = Vector(0, 1, 6),
         Ang = Angle(90, 0, -90),
         Scale = 1,
     },	

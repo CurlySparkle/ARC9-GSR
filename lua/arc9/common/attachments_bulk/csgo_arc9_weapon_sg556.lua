@@ -23,17 +23,17 @@ ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 
-ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_m4.mdl"
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_ump.mdl"
 
 ATT.LHIK_Priority = 5
 ATT.LHIK = true
 
-ATT.ModelOffset = Vector(1.25, -0.3, -0.55)
+ATT.ModelOffset = Vector(2, 0.2, -0.4)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.4, 16, -3.05),
+        Pos = Vector(0.1, 16, -2.9),
         Ang = Angle(-0.5, 0, 0),
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
