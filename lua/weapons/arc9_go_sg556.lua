@@ -403,17 +403,26 @@ SWEP.AttachmentElements = {
         },
     }, 
 	["stock_fold"] = { Bodygroups = { {3,2}, }, },
+	["stock_proto"] = { Bodygroups = { {3,3}, }, },
 	["552"] = { 
 	Bodygroups = { {4,1}, {1,2}, {2,2} }, 
-    AttPosMods = { [2] = { Pos = Vector(0, -2.8, 18), }, [4] = { Pos = Vector(0, -1.5, 11.5), }, [5] = { Pos = Vector(-1, -3.6, 11.5), } }		
+    AttPosMods = { [2] = { Pos = Vector(0, -2.8, 18), }, [4] = { Pos = Vector(0, -1.5, 11.5), }, [5] = { Pos = Vector(-0.95, -2.95, 12.5), } }		
 	},	
+	["proto"] = { 
+	Bodygroups = { {4,2}, {1,2}, {2,3} }, 
+    AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, [4] = { Pos = Vector(0, -1, 11.5), }, [5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75), } }		
+	},		
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_fold") then model:SetBodygroup(3,2) end	
+	if wep:HasElement("stock_proto") then model:SetBodygroup(3,3) end	
 
-	if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(2,1) end		
+	if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(2,1) end
+	if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(1,2) end			
+	if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(2,1) end		
+	if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(1,2) end			
 end
 
 
