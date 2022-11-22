@@ -492,7 +492,7 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.sg556_Parent",
-        Pos = Vector(-0.09, -4.8, 4.5),
+        Pos = Vector(-0.09, -4.8, 3.7),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
@@ -557,3 +557,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 4.3
+SWEP.GripPoseParam2 = 0.7
