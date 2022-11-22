@@ -287,8 +287,8 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.75, lhik = 0, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 1},
+            {t = 0.75, lhik = 0, rhik = 1 },
             {t = 0.95, lhik = 1, rhik = 1 },
         },		
         EventTable = {
@@ -301,8 +301,8 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.65, lhik = 0, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 1},
+            {t = 0.65, lhik = 0, rhik = 1 },
             {t = 0.85, lhik = 1, rhik = 1 },
         },		
         EventTable = {
@@ -431,7 +431,7 @@ SWEP.Attachments = {
     {
         PrintName = "Pourquoi",
         Bone = "v_weapon.m9a1_R_parent",
-        Pos = Vector(2.4, -6.85, -11),
+        Pos = Vector(2.375, -6.55, -10),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_elite"},
         InstalledElements = {"mount"},
