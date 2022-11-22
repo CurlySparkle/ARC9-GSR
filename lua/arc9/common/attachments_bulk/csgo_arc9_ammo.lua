@@ -338,3 +338,34 @@ ATT.RicochetAngleMaxOverride = 180
 ATT.ReloadTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm \"FRAG-12\" High Explosive X4"
+ATT.CompactName = "FRAG X4"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_he_x4.png", "mips smooth")
+ATT.Description = [[A load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.
+Effectiveness is limited by the small caliber size.]]
+ATT.SortOrder = 1.6
+
+ATT.Category = {"go_ammo_sg"}
+
+ATT.NumOverride = 4
+
+ATT.SpreadMult = 1
+ATT.SpreadMultCrouch = 0.5
+
+ATT.PhysBulletGravityMult = 3
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+
+ATT.DamageMaxOverride = 15
+ATT.DamageMinOverride = 10
+
+ATT.ExplosionRadiusOverride = 65
+ATT.ExplosionDamageOverride = 25
+ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
+ATT.ImpactDecal = "FadingScorch"
+
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")

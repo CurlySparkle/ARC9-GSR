@@ -2,7 +2,7 @@ function EFFECT:Init(data, weapon, dmgInfo, tr)
 	local pos = data:GetOrigin()
 	local norm = data:GetNormal()
 	ParticleEffect("weapon_muzzle_flash_HE",pos,norm:Angle())
-	sound.Play("HE.ExplosiveHit",pos,norm:Angle())
+	sound.Play("HE.ExplosiveHit", data:GetOrigin(), SNDLVL_100dB, 100, 1)
 	
     local dynlight = DynamicLight(0)
         dynlight.Pos = data:GetOrigin()
