@@ -60,8 +60,46 @@ ATT.Free = false
 ATT.Category = {"go_mag_m4"}
 ATT.ClipSizeOverride = 20
 ATT.DamageMult = 1.25
+ATT.RPM = 160
+ATT.DamageMaxMult = 1.35
+ATT.DamageMinMult = 1.35
+ATT.RecoilMult = 1.55
 
 ATT.ActivateElements = {"mag_20"}
 --ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
 
+ATT.Firemodes = {
+    {
+        Mode = 1,
+        -- add other attachment modifiers
+    }
+}
+
+ATT.ShootSound = "CSGO.SCAR20.Fire"
+ATT.ShootSoundSilenced = "CSGO.SCAR20.Silenced_Fire"
+
 ARC9.LoadAttachment(ATT, "csgo_m4_mag_20")
+
+ATT = {}
+
+ATT.PrintName = "Sniper Barrel"
+ATT.CompactName = "SB"
+ATT.Description = [[Sniper long barrel, Good for long range engagements.]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_m4_barrel"}
+ATT.ActivateElements = {"m4_barrel_sniper"}
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.RangeMaxMult = 1.45
+ATT.RangeMinMult = 1.45
+ATT.PhysBulletMuzzleVelocityMult = 1.35
+
+ARC9.LoadAttachment(ATT, "csgo_m4_barrel_sniper")

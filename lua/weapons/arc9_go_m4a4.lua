@@ -439,6 +439,21 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [2] = { Pos = Vector(0, -5.1, 23.1), } }	
     },
+    ["m4_barrel_sniper"] = {
+        Bodygroups = {
+			{5,2},
+			{3,4},
+			{5,2},
+			{7,1},
+			{2,4},
+        },
+    AttPosMods = { 
+	[2] = { Pos = Vector(0, -5, 27.4),
+	},
+	[4] = { Pos = Vector(0, -3.75, 10.5),
+	},
+	}
+    },
     ["mag"] = {
         Bodygroups = {
             {6,1},
@@ -446,7 +461,7 @@ SWEP.AttachmentElements = {
     },
     ["mag_20"] = {
         Bodygroups = {
-            {6,2},
+            {6,3},
         },
     },
 }
