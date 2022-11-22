@@ -194,8 +194,8 @@ SWEP.MovingMidPoint = {
 SWEP.MovingPos = Vector(-2, 1.5, 0.5)
 SWEP.MovingAng = Angle(-5, -2.75, 3)
 
-SWEP.CrouchPos = Vector(-0.5, -0, -1)
-SWEP.CrouchAng = Angle(0, 0, 0)
+SWEP.CrouchPos = Vector(-2.2, 2, 0)
+SWEP.CrouchAng = Angle(-5, -2.75, -3)
 
 SWEP.CustomizeAng = Angle(90, 0, -4)
 SWEP.CustomizePos = Vector(18, 30, 4)
@@ -411,6 +411,11 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
     },
+	
+    ["slide_p38"] = { 
+	Bodygroups = { {0,2},{1,3}, },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
+	},	
 }
 
 SWEP.Attachments = {

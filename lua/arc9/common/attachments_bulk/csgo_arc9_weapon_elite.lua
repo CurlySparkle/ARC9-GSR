@@ -50,3 +50,31 @@ ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RPMMult = 1.1
 
 ARC9.LoadAttachment(ATT, "csgo_elite_slide_short")
+
+
+
+ATT = {}
+
+ATT.PrintName = "Officer Slide"
+ATT.CompactName = "OS"
+ATT.Description = [[Piss.]]
+ATT.SortOrder = 1
+
+// ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_elite_s"}
+ATT.ActivateElements = {"slide_p38"}
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.RecoilMult = 1.15
+
+ATT.RangeMaxMult = 0.85
+ATT.RangeMinMult = 0.85
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RPMMult = 1.1
+
+ARC9.LoadAttachment(ATT, "csgo_elite_slide_p38")
