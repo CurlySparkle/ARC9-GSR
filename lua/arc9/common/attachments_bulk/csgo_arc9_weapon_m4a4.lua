@@ -101,5 +101,7 @@ ATT.SprintToFireTimeMult = 0.975
 ATT.RangeMaxMult = 1.45
 ATT.RangeMinMult = 1.45
 ATT.PhysBulletMuzzleVelocityMult = 1.35
+ATT.SpreadMultRecoil = 1.3
+ATT.SpreadMultHipFire = 1.5
 
 ARC9.LoadAttachment(ATT, "csgo_m4_barrel_sniper")
