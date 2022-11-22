@@ -295,7 +295,7 @@ ATT = {}
 
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
 ATT.CompactName = "FRAG"
-ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_ammo_sg_he.png", "mips smooth")
 ATT.Description = [[A load containing an explosive compound, dealing damage in a small radius.
 Effectiveness is limited by the small caliber size.]]
 ATT.SortOrder = 1.5
@@ -312,9 +312,10 @@ ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.DamageMaxOverride = 35
 ATT.DamageMinOverride = 10
 
-ATT.ExplosionRadiusOverride = 128
+ATT.ExplosionRadiusOverride = 75
 ATT.ExplosionDamageOverride = 80
-ATT.ExplosionEffect = "HelicopterMegaBomb" -- placeholder
+ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
+ATT.ImpactDecal = "FadingScorch"
 
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag")
