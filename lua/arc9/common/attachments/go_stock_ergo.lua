@@ -15,5 +15,5 @@ ATT.Model = "models/weapons/csgo/atts/stocks/stock_ergo.mdl"
 
 ATT.RecoilMult = 1.1
 ATT.RecoilKickMult = 1.05
-ATT.AimDownSightsTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.8
 ATT.RecoilAutoControlMult = 0.95

@@ -318,6 +318,34 @@ SWEP.Animations = {
             },
         },
     },
+    ["reload_finish_empty"] = {
+        Source = "reload_end_empty",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.5,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "xm1014_pump.wav", t = 19 / 30},
+        },
+    },
     ["ready"] = {
         Source = {"draw"},
         IKTimeLine = {
