@@ -358,12 +358,18 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 1},
+			{t = 0.1, lhik = 0, rhik = 0},
+            {t = 0.15, lhik = 0, rhik = 0},
+            {t = 0.55, lhik = 0, rhik = 0},
+            {t = 0.95, lhik = 0, rhik = 0},
+			{t = 1, lhik = 1, rhik = 1},
+        },	
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 88 / 30 },
-			{ s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 93 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            { s = "CSGO.Item.Movement", t = 2 / 30 },
+			{ s = "CSGO.Item.Movement", t = 138 / 30 },
+            { s = "CSGO.Item.Movement", t = 175 / 30 },
         },
     },
 }

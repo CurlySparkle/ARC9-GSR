@@ -1,3 +1,19 @@
+AddCSLuaFile()
+
+sound.Add({
+    name = "HE.ExplosiveHit",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+    "^shared/frag_expl_01.ogg",
+	"^shared/frag_expl_02.ogg",
+	"^shared/frag_expl_03.ogg",
+    "^shared/frag_expl_04.ogg",} 
+})
+
+
 sound.Add( {
     name = "CSGO.Item.MagDrops",
     channel = CHAN_USER_BASE+1,
@@ -996,6 +1012,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/svd_suppressed.wav",
     }
@@ -1007,6 +1024,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/svd_suppressed.wav",
     }
@@ -1018,6 +1036,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/csgo/mp5/mp5_01.ogg",
     }
@@ -1029,6 +1048,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {90,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/ak47_suppressed_first.wav",
     }
@@ -1040,6 +1060,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {90,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/ak47_suppressed_loop.wav",
     }
@@ -1051,6 +1072,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {85,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/aug_suppressed.wav",
     }
@@ -1062,6 +1084,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/awp_suppressed.wav",
     }
@@ -1073,6 +1096,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/scout_suppressed.wav",
     }
@@ -1084,6 +1108,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/xm1014_suppresed.ogg",
     }
@@ -1095,6 +1120,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/deagle_suppressed.wav",
     }
@@ -1106,6 +1132,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/deagle_suppressed.wav",
     }
@@ -1117,6 +1144,7 @@ sound.Add( {
     volume = 1.0,
     level = 120,
     pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp7_suppressed.wav",
     }
@@ -1128,6 +1156,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/p90_suppresed_first.wav",
     }
@@ -1139,6 +1168,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/p90_suppresed_loop.wav",
     }
@@ -1150,6 +1180,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/famas_suppressed.wav",
     }
@@ -1161,6 +1192,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/m9_suppressed.wav",
     }
@@ -1172,6 +1204,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/glock_suppressed.wav",
     }
@@ -1183,6 +1216,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/p225_suppressed.wav",
     }
@@ -1194,6 +1228,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/p225_suppressed.wav",
     }
@@ -1205,6 +1240,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/galil_suppressed.wav",
     }
@@ -1216,6 +1252,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/m249_suppressed.wav",
     }
@@ -1227,6 +1264,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mac10_suppressed.wav",
     }
@@ -1238,6 +1276,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/xm1014_suppresed.ogg",
     }
@@ -1250,6 +1289,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp7_suppressed_first.wav",
     }
@@ -1261,6 +1301,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,115},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp7_suppressed_loop.wav",
     }
@@ -1272,6 +1313,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp7_suppressed.wav",
     }
@@ -1283,6 +1325,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/negev_suppressed.wav",
     }
@@ -1294,6 +1337,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mk18_suppressed.wav",
     }
@@ -1305,6 +1349,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/m4a1_suppressed.wav",
     }
@@ -1316,6 +1361,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/scar_suppressed.wav",
     }
@@ -1327,6 +1373,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/m3_suppressed.wav",
     }
@@ -1338,6 +1385,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/m3_suppressed.wav",
     }
@@ -1349,6 +1397,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/scar_suppressed.wav",
     }
@@ -1360,6 +1409,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mac10_suppressed.wav",
     }
@@ -1371,6 +1421,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp5_suppressed_first.wav",
     }
@@ -1382,6 +1433,7 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     pitch = {95,105},
+    soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp5_suppressed_loop.wav",
     }

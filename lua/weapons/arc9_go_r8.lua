@@ -328,6 +328,8 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+		RareSource = {"lookat02","lookat03"},
+		RareSourceChance = 0.3,
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
