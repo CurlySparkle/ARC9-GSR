@@ -322,6 +322,67 @@ SWEP.Animations = {
             {s = path .. "sg556_boltback.wav", t = 58 / 30},
             {s = path .. "sg556_boltforward.wav", t = 66 / 30},
         },
+    }, 
+	["reload_ak"] = {
+        Source = "reload_short_ak",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "sg556_clipout.wav", t = 9 / 30},
+            {s = path .. "sg556_clipin.wav", t = 29 / 30},
+        },
+    },
+    ["reload_empty_ak"] = {
+        Source = "reload_ak",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.4,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "sg556_clipout.wav", t = 9 / 30},
+            {s = path .. "sg556_clipin.wav", t = 29 / 30},
+            --{s = path .. "sg556_cliphit.wav", t = 60 / 30},
+            {s = path .. "sg556_boltback.wav", t = 58 / 30},
+            {s = path .. "sg556_boltforward.wav", t = 66 / 30},
+        },
     },
     ["ready"] = {
         Source = "draw",
@@ -411,7 +472,8 @@ SWEP.AttachmentElements = {
 	["proto"] = { 
 	Bodygroups = { {4,2}, {1,2}, {2,3} }, 
     AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, [4] = { Pos = Vector(0, -1, 11.5), }, [5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75), } }		
-	},		
+	},	
+	["mag_ak"] = { Bodygroups = { {0,1}, {6,1}, }, },	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
@@ -480,6 +542,14 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
 		Scale = 1.05,
     },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.sg556_Parent",
+        Category = "go_mag_sg556",
+        Pos = Vector(0, -2.6, -1.3),
+        Ang = Angle(90, 0, -90),
+        Scale = 1,
+    },	
     {
         PrintName = "Perk",
         Category = "go_perk"

@@ -16,8 +16,8 @@ ATT.RPMMult = 900/600
 ATT.ClipSizeOverride = 25
 
 ATT.ReloadTimeMult = 0.85
-ATT.DamageMaxMult = 28/18
-ATT.DamageMinMult = 39/27 
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
@@ -51,8 +51,8 @@ ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 ATT.RPMMult = 900/600
 ATT.ClipSizeOverride = 32
 
-ATT.DamageMaxMult = 28/18
-ATT.DamageMinMult = 39/27 
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85

@@ -134,4 +134,34 @@ ATT.AimDownSightsTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "csgo_sg556_stock_proto")
 
+----------------------------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "7.62 Magazine"
+ATT.CompactName = "AK"
+ATT.Description = [[the swiss has joined the warsaw pact.]]
+
+ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
+
+ATT.SortOrder = 2
+ATT.Category = "go_mag_sg556"
+ATT.ActivateElements = {"mag_ak"}
+
+ATT.RPMMult = 520/545
+
+ATT.DamageMaxMult = 35/30
+ATT.DamageMinMult = 18/10
+ATT.SpreadMultSights = 0.8
+ATT.SpreadMult = 0.8
+ATT.RecoilMult = 1.2
+ATT.RecoilKickMult = 1.2
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_ak"
+end
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
+
+ARC9.LoadAttachment(ATT, "csgo_sg556_mag_ak")
+
 --------------------------------------------------
