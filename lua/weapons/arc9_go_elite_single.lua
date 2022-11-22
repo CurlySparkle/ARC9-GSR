@@ -355,7 +355,7 @@ SWEP.Animations = {
         Time = 1,		
     },
     ["inspect"] = {
-        Source = "lookat01",
+        Source = "lookat01_single",
         MinProgress = 0.1,
         FireASAP = true,
         IKTimeLine = {
@@ -368,8 +368,8 @@ SWEP.Animations = {
         },	
         EventTable = {
             { s = "CSGO.Item.Movement", t = 2 / 30 },
-			{ s = "CSGO.Item.Movement", t = 138 / 30 },
-            { s = "CSGO.Item.Movement", t = 175 / 30 },
+			{ s = "CSGO.Item.Movement", t = 25 / 30 },
+            { s = "CSGO.Item.Movement", t = 105 / 30 },
         },
     },
 }
