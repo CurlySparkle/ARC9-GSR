@@ -118,6 +118,18 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+
+SWEP.VisualRecoilCenter = Vector(2, 16, 2) 
+SWEP.VisualRecoilUp = 0.4
+SWEP.VisualRecoilSide = 0.06
+SWEP.VisualRecoilRoll = 1
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunchMultSights = 0.5
+
+SWEP.VisualRecoilDampingConst = 70 -- How spring will be visual recoil, 120 is default
+SWEP.VisualRecoilSpringMagnitude = 0.6
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.0002
@@ -128,6 +140,7 @@ SWEP.SpreadAddMove = 0.075
 SWEP.SpreadAddMidAir = 0.025
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.03
 
 -------------------------- HANDLING
 
@@ -189,7 +202,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
+SWEP.CustomizePos = Vector(18, 32, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-6, 0, 0)
@@ -233,9 +246,9 @@ SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "CSGO.famas.Fire"
+SWEP.ShootSound = "CSGO.Famas.Fire"
 SWEP.ShootSoundSilenced = "CSGO.Famas.Fire_Silenced"
-SWEP.DistantShootSound = "CSGO.famas.Distance_Fire"
+SWEP.DistantShootSound = "CSGO.Famas.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -251,6 +264,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+		Mult = 0.5,
     },
     ["fire_iron"] = {
         Source = ""
@@ -383,25 +397,72 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag_increased"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["mag_decreased"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -2.85, 18), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -2.85, 14.1), } }	
+    },
+    ["bipod_deployed"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["sight_mount"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Barrel",
+		DefaultAttName = "Standard",
+		--Bone = "v_weapon.gloqck_magazine",
+        Category = "go_famas_barrel"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.famas_Parent",
-        Pos = Vector(0, -2.9, 13.5),
+        Pos = Vector(0, -2.85, 16.5),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Top",
+        PrintName = "Scope",
         Bone = "v_weapon.famas_Parent",
-        Pos = Vector(0, -6.2, 5),
+        Pos = Vector(0, -7.4, 3),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_alt",},
+        Category = {"csgo_optic"},
         CorrectiveAng = Angle(-0.15, 0.2, 0),
+		InstalledElements = {"sight_mount"},
     },
+    -- {
+        -- PrintName = "Top",
+        -- Bone = "v_weapon.famas_Parent",
+        -- Pos = Vector(0, -6.2, 5),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_rail_optic_alt",},
+        -- CorrectiveAng = Angle(-0.15, 0.2, 0),
+    -- },
     {
         PrintName = "Side",
         DefaultAttName = "Default",
@@ -411,6 +472,11 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Bipod",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_famas_bipod"
+    },
+    {
         PrintName = "Bottom",
         DefaultAttName = "Default",
         Category = "csgo_rail_ub",
@@ -418,6 +484,11 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.5, 9),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.famas_magazine",
+        Category = {"go_mag_famas"},
     },
     {
         PrintName = "Perk",

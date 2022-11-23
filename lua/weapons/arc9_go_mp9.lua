@@ -237,8 +237,9 @@ SWEP.DropMagazineQCA = 3
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "CSGO.MP9.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.MP9.Silenced_Fire_First"
 SWEP.ShootSoundSilenced = "CSGO.MP9.Silenced_Fire"
-SWEP.DistantShootSound = "weapons/csgo/mp9/mp9-1-distant.ogg"
+SWEP.DistantShootSound = "CSGO.MP9.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -415,6 +416,11 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["mag_decreased"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    },
     ["grip"] = {
         Bodygroups = {
             {2,1},
@@ -430,6 +436,18 @@ SWEP.AttachmentElements = {
             {3,2},
         },
     },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 7.85), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {4,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6), } }	
+    },
 }
 
 SWEP.Attachments = {
@@ -440,6 +458,12 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.25, 0, 0),
+    },
+    {
+        PrintName = "Barrel",
+		DefaultAttName = "Standard",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_mp9_barrel"
     },
     {
         PrintName = "Muzzle",
@@ -475,12 +499,12 @@ SWEP.Attachments = {
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.4, -3.3),
         Ang = Angle(90, 0, -90),
-		Scale = 1,
+		Scale = 0.8,
     },
     {
         PrintName = "Mag",
 		Bone = "v_weapon.clip",
-        Category = "go_mag"
+        Category = {"go_mag","go_mag_mp9"},
     },
     {
         PrintName = "Perk",

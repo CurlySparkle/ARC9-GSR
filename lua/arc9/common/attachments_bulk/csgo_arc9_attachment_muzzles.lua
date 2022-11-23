@@ -115,3 +115,32 @@ ATT.SpreadMultHipFire = 2
 
 ARC9.LoadAttachment(ATT, "go_muzzle_r870")
 -------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[UZI Compensator]]
+ATT.CompactName = [[UZI Comp]]
+ATT.Description = [[The UZI Compensator straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]
+ATT.Icon = Material("entities/attachs/muzzle_uzi.png", "mips smooth")
+
+ATT.SortOrder = 1
+ATT.AutoStats = true
+ATT.Category = {"muzzle"}
+ATT.Scale = 0.45
+ATT.Folder = "Muzzles"
+
+ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_uzi.mdl"
+
+ATT.ShootVolumeMult = 1.15
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 1.1
+ATT.RecoilSideMult = 0.9
+ATT.RecoilRandomMult = 1.15
+
+ATT.RecoilKickMult = 1.05
+ATT.VisualRecoilMult = 0.9
+
+ARC9.LoadAttachment(ATT, "go_muzzle_uzi")
+-------------------------------------------------------------------------------
