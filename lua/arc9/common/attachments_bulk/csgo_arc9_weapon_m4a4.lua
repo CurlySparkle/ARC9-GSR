@@ -78,6 +78,16 @@ ATT.Firemodes = {
 ATT.ShootSound = "CSGO.SCAR20.Fire"
 ATT.ShootSoundSilenced = "CSGO.SCAR20.Silenced_Fire"
 
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_m4_mag_20"] then
+        return "reload_sniper"
+    elseif anim == "reload_empty" then
+        return "reload_empty_sniper"
+    end
+end
+
 ARC9.LoadAttachment(ATT, "csgo_m4_mag_20")
 
 ATT = {}

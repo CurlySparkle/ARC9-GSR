@@ -391,6 +391,66 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
+    ["reload_sniper"] = {
+        Source = "reload_short_sniper",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
+        },
+    },
+    ["reload_empty_sniper"] = {
+        Source = "reload_sniper",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 37 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 70 / 30},
+			{s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 77 / 30},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS

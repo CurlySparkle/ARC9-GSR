@@ -83,7 +83,7 @@ ATT.PrintName = "5.56 Magazine"
 ATT.CompactName = "5.56"
 ATT.Description = [[]]
 
-// ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_scar17_mag_20.png", "mips smooth")
 ATT.ShootSound = "CSGO.M4A4.Fire"
 ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
 ATT.ShellModelOverride = "models/models/weapons/shared/shell_762_hr.mdl"
@@ -119,7 +119,7 @@ ATT.PrintName = "Extended 5.56 Magazine"
 ATT.CompactName = "5.56X"
 ATT.Description = [[]]
 
-// ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_scar17_mag_10_50.png", "mips smooth")
 ATT.ShootSound = "CSGO.M4A4.Fire"
 ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
 ATT.ShellModelOverride = "models/models/weapons/shared/shell_762_hr.mdl"

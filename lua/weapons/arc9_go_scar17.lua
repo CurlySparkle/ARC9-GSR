@@ -299,9 +299,9 @@ SWEP.Animations = {
         EventTable = {
 		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 8 / 30},
 		    {s = "CSGO.Item.Movement", t = 5 / 30},
-            {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
 			{s = "CSGO.Item.Movement", t = 25 / 30},
-            {s = "weapons/csgo/scar/scar_clipin.wav", t = 32 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 32 / 30},
             {s = "weapons/csgo/scar/scar_boltforward.wav", t = 45 / 30},
 			{s = "CSGO.Item.Movement", t = 42 / 30},
         },
@@ -317,9 +317,9 @@ SWEP.Animations = {
         EventTable = {
 		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 8 / 30},
 		    {s = "CSGO.Item.Movement", t = 5 / 30},
-            {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 11 / 30},
 			{s = "CSGO.Item.Movement", t = 25 / 30},
-            {s = "weapons/csgo/scar/scar_clipin.wav", t = 32 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 32 / 30},
 			{s = "CSGO.Item.Movement", t = 37 / 30},
         },
     },
@@ -449,8 +449,6 @@ SWEP.AttachmentElements = {
     },
     ["mag_556"] = { Bodygroups = { {3,4}, }, },	
     ["mag_556x"] = { Bodygroups = { {3,3}, }, },	
-    ["stock_specialized"] = { Bodygroups = {{2,5},},
-    },	
     ["barrel_long"] = {
         Bodygroups = {
             {4,1},
@@ -469,7 +467,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end	
-	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,2) end		
+	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,5) end		
 end
 
 
