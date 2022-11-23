@@ -17,7 +17,7 @@ ATT.Folder = "Muzzles"
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AKM.mdl"
 
 ATT.ShootVolumeMult = 1.15
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -78,7 +78,7 @@ ATT.Folder = "Muzzles"
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_ar15.mdl"
 
 ATT.ShootVolumeMult = 1.15
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 

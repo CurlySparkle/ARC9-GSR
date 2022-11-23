@@ -197,6 +197,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Folder = "Suppresors"
+ATT.Scale = 0.4
 
 ATT.Model = "models/weapons/csgo/atts/silencer_clothwrapped.mdl"
 
