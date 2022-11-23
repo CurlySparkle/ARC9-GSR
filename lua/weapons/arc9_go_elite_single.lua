@@ -340,7 +340,7 @@ SWEP.Animations = {
     ["idle_sprint"] = {
         Source = "sprint",
         IKTimeLine = {
-            {t = 0,	lhik = 0, rhik = 0 }, {t = 1, lhik = 0, rhik = 0 },
+            {t = 0,	lhik = 0, rhik = 1 }, {t = 1, lhik = 0, rhik = 1 },
         },		
     },
     ["exit_sprint"] = {
@@ -352,7 +352,8 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 1,		
+        Time = 1,	
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
     },
     ["inspect"] = {
         Source = "lookat01_single",

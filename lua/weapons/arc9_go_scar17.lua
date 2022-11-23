@@ -288,6 +288,41 @@ SWEP.Animations = {
 			{s = "CSGO.Item.Movement", t = 45 / 30},
         },
     },
+    ["reload_empty_556"] = {
+        Source = "reload2",
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0},
+            { t = 0.7, lhik = 0, rhik = 0 },
+			{ t = 0.9, lhik = 1, rhik = 1 }, 
+		},
+        EventTable = {
+		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 8 / 30},
+		    {s = "CSGO.Item.Movement", t = 5 / 30},
+            {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
+			{s = "CSGO.Item.Movement", t = 25 / 30},
+            {s = "weapons/csgo/scar/scar_clipin.wav", t = 32 / 30},
+            {s = "weapons/csgo/scar/scar_boltforward.wav", t = 45 / 30},
+			{s = "CSGO.Item.Movement", t = 42 / 30},
+        },
+    },
+    ["reload_556"] = {
+        Source = "reload_short2",
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0},
+            { t = 0.7, lhik = 0, rhik = 0 },
+			{ t = 0.9, lhik = 1, rhik = 1 }, 
+		},
+        EventTable = {
+		    {s = "weapons/csgo/scar/scar_mag_release.wav", t = 8 / 30},
+		    {s = "CSGO.Item.Movement", t = 5 / 30},
+            {s = "weapons/csgo/scar/scar_clipout.wav", t = 11 / 30},
+			{s = "CSGO.Item.Movement", t = 25 / 30},
+            {s = "weapons/csgo/scar/scar_clipin.wav", t = 32 / 30},
+			{s = "CSGO.Item.Movement", t = 37 / 30},
+        },
+    },
     ["reload_empty"] = {
         Source = "reload",
         IKTimeLine = {
@@ -321,7 +356,7 @@ SWEP.Animations = {
             {s = "weapons/csgo/scar/scar_boltforward.wav", t = 67 / 30},
 			{s = "CSGO.Item.Movement", t = 70 / 30},
         },
-    },
+    },	
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -412,6 +447,10 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["mag_556"] = { Bodygroups = { {3,4}, }, },	
+    ["mag_556x"] = { Bodygroups = { {3,3}, }, },	
+    ["stock_specialized"] = { Bodygroups = {{2,5},},
+    },	
     ["barrel_long"] = {
         Bodygroups = {
             {4,1},
@@ -429,7 +468,8 @@ SWEP.AttachmentElements = {
 // Forced Override Bodygroup
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end		
+	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end	
+	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,2) end		
 end
 
 
@@ -485,7 +525,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.SCAR_Clip",
-        Category = "go_mag"
+        Category = {"go_mag", "go_mag_scar17"}
     },
     {
         PrintName = "Perk",
