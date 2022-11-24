@@ -424,9 +424,26 @@ SWEP.AttachmentElements = {
             {1,2},
         },
     },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 27), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -1.75, 23.5), } }	
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "csgo_xm1014_barrel"
+    },
     {
         PrintName = "Optics",
         Bone = "v_weapon.m3_Parent",

@@ -212,3 +212,33 @@ ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_clothwrapped")
 -------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[M110 Suppressor]]
+ATT.CompactName = [[M110 S]]
+ATT.Description = [[The M110 Suppressor helps with reducing audible report by a lot with a penalty of significant bulk designed for small arms types.]]
+ATT.Icon = Material("entities/attachs/silencer_m110.png", "mips smooth")
+
+ATT.SortOrder = 1
+ATT.AutoStats = false
+ATT.Category = {"muzzle_snipers"}
+ATT.Folder = "Suppresors"
+
+ATT.Model = "models/weapons/csgo/atts/silencer_m110.mdl"
+ATT.Scale = 0.5
+
+ATT.RecoilMult = 0.95
+ATT.RecoilUpMult = 0.95
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.05
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ARC9.LoadAttachment(ATT, "go_supp_m110")
+-------------------------------------------------------------------------------
