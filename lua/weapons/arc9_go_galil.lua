@@ -263,7 +263,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -323,7 +323,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -371,6 +371,12 @@ SWEP.Animations = {
 
 SWEP.DefaultBodygroups = "0000000"
 
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_15"] = {
+    ModelOffset = Vector(-0.5, -0.1, 1)
+ }
+}
+
 SWEP.AttachmentElements = {
     ["stock_retract"] = {
         Bodygroups = {
@@ -382,9 +388,31 @@ SWEP.AttachmentElements = {
             {1,2},
         },
     },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    AttPosMods = { [4] = { Pos = Vector(0, -3.39, 25.5), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    AttPosMods = { [4] = { Pos = Vector(0, -3.39, 21.4), } }	
+    },
+    ["mag"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_galil_barrel"
+    },
     {
         PrintName = "Top",
         Bone = "v_weapon.ak47_parent",
@@ -392,7 +420,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_custom"},
         CorrectiveAng = Angle(0.6, 0.5, 0),
-        MergeSlots = {2},
+        MergeSlots = {3},
         Hidden = true,
     },
     {
@@ -408,7 +436,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -3.37, 25.5),
+        Pos = Vector(0, -3.39, 22.4),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -437,6 +465,15 @@ SWEP.Attachments = {
         Pos = Vector(-0.1, -2.9, -0.8),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.AK47_clip",
+        Category = "go_mag_ak",
+		InstalledElements = {"mag"},
+        Pos = Vector(0, -2.7, -1.1),
+        Ang = Angle(90, 0, -90),
+        Scale = 1.05,
     },
     {
         PrintName = "Perk",
