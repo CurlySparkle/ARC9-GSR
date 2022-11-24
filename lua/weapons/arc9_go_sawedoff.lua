@@ -473,7 +473,7 @@ SWEP.AttachmentElements = {
 }
 
 
-SWEP.HookP_NameChange = function(self, name)
+SWEP.HookP_NameChange = function(wep, name)
     if wep:HasElement("barrel_ext") then
         name = "Remington 870"
     end
