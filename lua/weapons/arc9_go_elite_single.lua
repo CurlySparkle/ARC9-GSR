@@ -327,6 +327,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw_short",
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },				
     },
     ["holster"] = {
         Source = "holster",
@@ -335,7 +336,8 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
-        Source = "idle",				
+        Source = "idle",	
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -347,7 +349,7 @@ SWEP.Animations = {
         Source = "sprint_out",
         Time = 1,
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 0 }, {t = 1, lhik = 1, rhik = 1 },
+            {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 },
         },		
     },
     ["enter_sprint"] = {

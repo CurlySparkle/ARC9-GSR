@@ -515,7 +515,7 @@ SWEP.AttachmentElements = {
 			{3,4},
 			{5,2},
 			{7,1},
-			{2,4},
+			{2,2},
         },
     AttPosMods = { 
 	[2] = { Pos = Vector(0, -5, 27.4),
@@ -535,6 +535,11 @@ SWEP.AttachmentElements = {
         },
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("frontiron") and not wep.Attachments[3].Installed then model:SetBodygroup(2,1) end		
+end
 
 SWEP.Attachments = {
     {
