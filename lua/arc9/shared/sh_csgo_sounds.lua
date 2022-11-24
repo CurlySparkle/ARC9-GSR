@@ -1042,7 +1042,66 @@ sound.Add( {
     }
 } )
 
+sound.Add( {
+    name = "CSGO.GALILAR.Fire_First",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {97,103},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/galil_fire_first.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.GALILAR.Fire",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/galil_fire_loop.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.GALILAR.Distance_Fire",
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+        "^weapons/csgo/m4a1/m4a1_distant_01.ogg",
+    }
+} )
+
 -- SILENCERS
+
+sound.Add( {
+    name = "CSGO.GALILAR.Silenced_Fire_First",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 120,
+    pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/galil_sup_first.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.GALILAR.Silenced_Fire",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 120,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/galil_sup_loop.wav",
+    }
+} )
 
 sound.Add( {
     name = "CSGO.scar20.Silenced_Fire",
