@@ -334,6 +334,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
     },
     ["idle"] = {
         Source = "idle",	
