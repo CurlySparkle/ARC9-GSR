@@ -40,12 +40,14 @@ ATT.Free = false
 
 ATT.Category = {"csgo_xm1014_barrel"}
 ATT.ActivateElements = {"barrel_short"}
+ATT.ExcludeElements = {"mag_long"}
 
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.8
 
 ATT.SpreadMultHipFire = 1.5
 ATT.RecoilMult = 1.1
+ATT.ClipSizeOverride = 5
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85

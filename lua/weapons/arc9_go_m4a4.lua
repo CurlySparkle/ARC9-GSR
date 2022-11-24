@@ -242,6 +242,16 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["go_mag_extended_m4"] then
+        return "reload_sniper"
+    elseif anim == "reload_empty" then
+        return "reload_empty_sniper"
+    end
+end
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},

@@ -433,8 +433,19 @@ SWEP.AttachmentElements = {
     ["barrel_short"] = {
         Bodygroups = {
             {2,2},
+			{3,3},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.75, 23.5), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 24.5), } }	
+    },
+    ["mag_short"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["mag_long"] = {
+        Bodygroups = {
+            {3,2},
+        },
     },
 }
 
@@ -486,6 +497,12 @@ SWEP.Attachments = {
         Pos = Vector(0, 0.15, 13.6),
         Ang = Angle(90, 0, 90),
         Scale = 1,
+    },
+    {
+        PrintName = "Capacity",
+        Bone = "v_weapon.m3_Parent",
+        Category = "go_xm1014_mag",
+        Icon_Offset = Vector(0, 0.5, 7.5),
     },
     {
         PrintName = "Ammo",

@@ -1,5 +1,60 @@
 local ATT = {}
 
+ATT = {}
+
+ATT.PrintName = [[XM 4 Round Tube]]
+ATT.CompactName = [[4-RND]]
+ATT.Icon = Material("entities/attachs/ext_mag.png")
+ATT.Description = [[A short tube that holds only a few shells.
+Extra frontal weight impacts weapon handling while on the move.]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_xm1014_mag"}
+ATT.ClipSizeOverride = 4
+ATT.SpreadAddHipFire = 0.01
+
+ATT.SpeedAddSights = -0.05
+ATT.SprintToFireTimeAdd = 0.075
+ATT.AimDownSightsTimeAdd = 0.075
+
+ATT.ActivateElements = {"mag_short"}
+
+ARC9.LoadAttachment(ATT, "csgo_xm1014_mag_6")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[XM 10 Round Tube]]
+ATT.CompactName = [[10-RND]]
+ATT.Icon = Material("entities/attachs/ext_mag.png")
+ATT.Description = [[An extra long tube that holds twice as much shells.
+Makes the weapon significantly worse on the move.]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_xm1014_mag"}
+ATT.ClipSizeOverride = 10
+ATT.SpreadAddHipFire = 0.02
+
+ATT.SpeedAddSights = -0.1
+ATT.SprintToFireTimeAdd = 0.15
+ATT.AimDownSightsTimeAdd = 0.15
+
+ATT.ActivateElements = {"mag_long"}
+ATT.ExcludeElements = {"barrel_short"}
+
+ARC9.LoadAttachment(ATT, "csgo_xm1014_mag_8")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = [[Nova 6 Round Tube]]
 ATT.CompactName = [[6-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
