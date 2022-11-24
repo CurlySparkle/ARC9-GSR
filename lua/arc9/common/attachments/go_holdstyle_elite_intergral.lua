@@ -17,4 +17,4 @@ ATT.RHIK = true
 
 ATT.ModelOffset = Vector(-5, -0.3, -2)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
-ATT.ModelBodygroups = "22200"
+ATT.ModelBodygroups = "22300"
