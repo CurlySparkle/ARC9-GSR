@@ -369,14 +369,22 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.15, 6.55), } }	
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 6.55), } }	
     },
+    ["slide_auto"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 6.55), } }	
+    },	
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Slide",
-		--Bone = "v_weapon.glock_magazine",
+        Bone = "v_weapon.glock_parent",
+        Pos = Vector(-0.025, -2.15, 3),
+        Ang = Angle(90, 0, -90),
         Category = "go_glock_s"
     },
     {

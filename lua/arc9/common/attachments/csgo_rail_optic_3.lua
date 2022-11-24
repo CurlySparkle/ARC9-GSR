@@ -18,10 +18,10 @@ ATT.IconOffset = Vector(0, 0, 0)
 ATT.Attachments = {
     {
         PrintName = "Optic",
-        Pos = Vector(0.5, 0.05, -2.8),
+        Pos = Vector(0.5, -0.1, -2.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
         Category = {"csgo_optics_pistols"},
-		Scale = 1
+		Scale = 0.95
     }
 }
