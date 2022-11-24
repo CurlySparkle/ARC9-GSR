@@ -223,7 +223,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_galil_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.55
+SWEP.DropMagazineTime = 0.65
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -331,7 +331,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -385,6 +385,39 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
+    ["mag"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["mag_ak47"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {2,3},
+        },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 24.6), } }	
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 16.6), } }	
+    },
+    ["barrel_factory"] = {
+        Bodygroups = {
+            {3,3},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.9), } }	
+    },
 }
 
 SWEP.Attachments = {
@@ -397,11 +430,16 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.13, 0, 0.),
     },
     {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_galilar_barrel"
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.galilar_parent",
-        Pos = Vector(0, -3.25, 20),
+        Pos = Vector(0, -3.22, 21.6),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -419,6 +457,15 @@ SWEP.Attachments = {
         Bone = "v_weapon.galilar_parent",
         Pos = Vector(0, -2.1, 11),
         Ang = Angle(90, 0, 90),
+        Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.magazine",
+        Category = "go_galilar_mag",
+		--InstalledElements = {"mag"},
+        Pos = Vector(0, -2.7, -1.1),
+        Ang = Angle(90, 0, -90),
         Scale = 1,
     },
     {
