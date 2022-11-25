@@ -70,7 +70,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 600
+SWEP.RPM = 650
 
 SWEP.Firemodes = {
     {
@@ -222,9 +222,11 @@ SWEP.DropMagazineQCA = 3
 
 local path = "weapons/csgo/galilar/"
 
-SWEP.ShootSound = "CSGO.GALIL.Fire"
-SWEP.ShootSoundSilenced = "CSGO.GALIL.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.GALIL.Distance_Fire"
+SWEP.FirstShootSound = "CSGO.GALILAR.Fire_First"
+SWEP.ShootSound = "CSGO.GALILAR.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire_First"
+SWEP.ShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire"
+SWEP.DistantShootSound = "CSGO.GALILAR.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -236,6 +238,16 @@ SWEP.HideBonesSilenced = {}
 
 SWEP.ReloadHideBoneTables = {
 }
+
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["go_mag_extended_ak47"] then
+        return "reload_2"
+    elseif anim == "reload_empty" and attached["go_mag_extended_ak47"] then 
+        return "reload_empty_2"
+    end
+end
 
 SWEP.Animations = {
     ["fire"] = {
@@ -365,6 +377,66 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
+    ["reload_2"] = {
+        Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38 / 30},
+        },
+    },
+    ["reload_empty_2"] = {
+        Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.2,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38 / 30},
+            {s = path .. "galil_boltback.wav", t = 54 / 30},
+            {s = path .. "galil_boltforward.wav", t = 57 / 30},
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -392,17 +464,27 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
-    AttPosMods = { [4] = { Pos = Vector(0, -3.39, 25.5), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.39, 25.5), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
         },
-    AttPosMods = { [4] = { Pos = Vector(0, -3.39, 21.4), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.39, 21.4), } }	
     },
     ["mag"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+    ["sight_mount"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
+    ["foregrip"] = {
+        Bodygroups = {
+            {5,1},
         },
     },
 }
@@ -413,23 +495,32 @@ SWEP.Attachments = {
         --Bone = "v_weapon.glock_magazine",
         Category = "go_galil_barrel"
     },
+    -- {
+        -- PrintName = "Top",
+        -- Bone = "v_weapon.ak47_parent",
+        -- Pos = Vector(0, -4, 5),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_rail_optic_custom"},
+        -- CorrectiveAng = Angle(0.6, 0.5, 0),
+        -- MergeSlots = {3},
+        -- Hidden = true,
+    -- },
+    -- {
+        -- PrintName = "Top",
+        -- Bone = "v_weapon.ak47_parent",
+        -- Pos = Vector(0, -4.2, 4.5),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_rail_optic"},
+        -- CorrectiveAng = Angle(0.6, 0.5, 0),
+    -- },
     {
-        PrintName = "Top",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -4, 5),
+        PrintName = "Optics",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -5.5, 3.6),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_custom"},
-        CorrectiveAng = Angle(0.6, 0.5, 0),
-        MergeSlots = {3},
-        Hidden = true,
-    },
-    {
-        PrintName = "Top",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -4.2, 4.5),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic"},
-        CorrectiveAng = Angle(0.6, 0.5, 0),
+        Category = {"csgo_optic",},
+        InstalledElements = {"sight_mount"},
+        CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {
         PrintName = "Muzzle",
@@ -447,14 +538,23 @@ SWEP.Attachments = {
         Pos = Vector(-1.1, -3.5, 12.5),
         Ang = Angle(90, 0, 90),
     },
+    -- {
+        -- PrintName = "Bottom",
+        -- DefaultAttName = "Default",
+        -- Category = {"csgo_rail_ub","grip_galil"},
+        -- Bone = "v_weapon.ak47_parent",
+        -- Pos = Vector(0, -2.1, 12.5),
+        -- Ang = Angle(90, 0, 90),
+        -- Scale = 1,
+    -- },
     {
-        PrintName = "Bottom",
+        PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = {"csgo_rail_ub","grip_galil"},
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -2.1, 12.5),
+        Category = {"grip"},
+        Bone = "v_weapon.ak47_Parent",
+        InstalledElements = {"foregrip"},
+        Pos = Vector(-0.05, -1.95, 12.5),
         Ang = Angle(90, 0, 90),
-        Scale = 1,
     },
     {
         PrintName = "Stock",
@@ -489,3 +589,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 4
+SWEP.GripPoseParam2 = 0.4

@@ -14,7 +14,7 @@ ATT.ReloadTimeMult = 0.9
 ATT.LHIK_Priority = 10
 ATT.LHIK = true
 
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 

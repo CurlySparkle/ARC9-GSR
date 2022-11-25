@@ -61,10 +61,10 @@ ATT.Attachments = {
         DefaultName = "None",
 		InstalledElements = {"acog_mount_rail"},	
 		
-        Category = {"csgo_optics_pistols",},
-        Pos = Vector(3.75, 0, -2.85),
+        Category = {"csgo_optics_pistols_alt",},
+        Pos = Vector(4.2, 0, -3.15),
         Ang = Angle(0, 0, 0),
-        ExtraSightDistance = -2,
-		Scale = 0.9,
+        ExtraSightDistance = -4,
+		Scale = 0.8,
     },		
 }
