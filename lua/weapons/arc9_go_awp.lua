@@ -432,7 +432,7 @@ SWEP.AttachmentElements = {
 // Forced Override Bodygroup
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("stock_lc10") then model:SetBodygroup(4,2) end		
+    if wep:HasElement("stock_lc10") then model:SetBodygroup(4,2) end
 end
 
 SWEP.Attachments = {
@@ -448,7 +448,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Barrel",
-		--Bone = "v_weapon.glock_magazine",
+        --Bone = "v_weapon.glock_magazine",
         Category = "go_awp_barrel"
     },
     {
@@ -458,7 +458,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, -3.4, 39.1),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+        Scale = 1.1,
     },
     {
         PrintName = "Side",
@@ -475,29 +475,29 @@ SWEP.Attachments = {
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, -1.3, 13.6),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Stock",
         --DefaultAttName = "Default",
         Category = {"csgo_tube", "go_stock_awp"},
         Bone = "v_weapon.awp_Parent",
-		InstalledElements = {"stock_none"},
+        InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.2, -1.1),
         Ang = Angle(90, 0, -90),
-		Scale = 1.15,
+        Scale = 1.15,
     },
     {
         PrintName = "Mag",
-		Bone = "v_weapon.awp_clip",
+        Bone = "v_weapon.awp_Parent",
         Category = "go_awp_mag",
-        --Pos = Vector(0, 0, 0),
-        --Ang = Angle(90, 0, -90),
-		--Scale = 1,
+        Icon_Offset = Vector(0, -1, 6.2),
     },
     {
         PrintName = "Ammo",
+        Bone = "v_weapon.awp_clip",
         Category = {"go_ammo","go_ammo_sniper"},
+        Icon_Offset = Vector(0, 1, 0),
     },
     {
         PrintName = "Perk",

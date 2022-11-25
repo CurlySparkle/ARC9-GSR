@@ -498,9 +498,7 @@ SWEP.Attachments = {
         PrintName = "Ammo",
         Bone = "v_weapon.AK47_clip",
         Category = "go_ammo",
-        Pos = Vector(0, 1, 1),
-        Ang = Angle(90, 0, -90),
-        Scale = 1.05,
+        Icon_Offset = Vector(0, 1, 1),
     },
     {
         PrintName = "Perk",

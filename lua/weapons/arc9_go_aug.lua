@@ -60,7 +60,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "ar2" -- What ammo type this gun uses.
+SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
@@ -314,7 +314,7 @@ SWEP.Animations = {
             {s = path .. "aug_boltrelease.wav", t = 84 / 30},
         },
     },
-	
+
     ["reload_9"] = {
         Source = "reload_9mm_wet",
         IKTimeLine = {
@@ -342,7 +342,7 @@ SWEP.Animations = {
             {s = path .. "aug_boltpull.wav", t = 66 / 30},
             {s = path .. "aug_boltrelease.wav", t = 72 / 30},
         },
-    },	
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -437,7 +437,7 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
-	["grip_folded"] = { Bodygroups = { {1,2}, }, },	
+    ["grip_folded"] = { Bodygroups = { {1,2}, }, },
     ["grip_extender"] = {
         Bodygroups = {
             {2,1},
@@ -449,26 +449,26 @@ SWEP.AttachmentElements = {
         },
     },
     ["mag_9mm"] = { Bodygroups = {{4,2},},},
-    ["mag_9mmx"] = { Bodygroups = {{4,3},},},	
+    ["mag_9mmx"] = { Bodygroups = {{4,3},},},
     ["barrel_long"] = {
         Bodygroups = {
             {3,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 19.3), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 19.3), } }
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 13), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 13), } }
     },
 }
 
 // Forced Override Bodygroup
-SWEP.Hook_ModifyBodygroups = function(wep, data)  
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	if wep:HasElement("grip_folded") then model:SetBodygroup(1,2) end	
-	if wep:HasElement("grip_folded") then model:SetBodygroup(2,0) end		
+    if wep:HasElement("grip_folded") then model:SetBodygroup(1,2) end
+    if wep:HasElement("grip_folded") then model:SetBodygroup(2,0) end
 end
 
 
@@ -498,14 +498,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(0, -3.5, 15.4),
         Ang = Angle(90, 0, -90),
-		Scale = 1.05,
+        Scale = 1.05,
     },
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
         Category = {"grip","grip_aug"},
         Bone = "v_weapon.aug_Parent",
-		InstalledElements = {"grip","grip_extender"},
+        InstalledElements = {"grip","grip_extender"},
         Pos = Vector(0, -1.7, 9.5),
         Ang = Angle(90, 0, 90),
     },
@@ -519,15 +519,21 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Category = "go_perk",	
+        Category = "go_perk",
     },
     {
         PrintName = "Magazine",
         Category = {"go_mag_aug","go_mag"},
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(0, 1, -4),
-        Ang = Angle(90, 0, -90),			
-    },	
+        Pos = Vector(0, -2, -4.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.aug_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0, 0),
+    },
     -- {
         -- PrintName = "Stickers",
         -- DefaultCompactName = "None",

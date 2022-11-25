@@ -57,7 +57,7 @@ SWEP.PhysBulletMuzzleVelocity = 2013 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "ar2" -- What ammo type this gun uses.
+SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
@@ -84,16 +84,16 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.15
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.3 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.6
+SWEP.RecoilRandomSide = 0.4
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -145,11 +145,11 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.52, -9, 2.04),
-    Ang = Angle(0.05, 0.6, 0),
+    Pos = Vector(-4.12, -5, 0.9),
+    Ang = Angle(0, 0.6, -2),
     Magnification = 1.25,
-	ViewModelFOV = 40,
-    CrosshairInSights = true
+    ViewModelFOV = 40,
+    CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -410,7 +410,7 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Barrel",
-		--Bone = "v_weapon.glock_magazine",
+        --Bone = "v_weapon.glock_magazine",
         Category = "go_galil_barrel"
     },
     {
@@ -461,19 +461,26 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.ak47_parent",
-		--InstalledElements = {"stock_none"},
+        --InstalledElements = {"stock_none"},
         Pos = Vector(-0.1, -2.9, -0.8),
         Ang = Angle(90, 0, -90),
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Mag",
         Bone = "v_weapon.AK47_clip",
         Category = "go_mag_ak",
-		InstalledElements = {"mag"},
+        InstalledElements = {"mag"},
         Pos = Vector(0, -2.7, -1.1),
         Ang = Angle(90, 0, -90),
         Scale = 1.05,
+        Icon_Offset = Vector(0.5, 0, 0),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.AK47_clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0, -0.25),
     },
     {
         PrintName = "Perk",
