@@ -87,7 +87,7 @@ ATT.Attachments = {
         ExtraSightDistance = -2,
 		Scale = 0.8,
 		CorrectiveAng = Angle(0.67, 0.65, 0),	
-        KeepBaseIrons = true, -- troll		
+        KeepBaseIrons = false, -- troll		
     },		
 }
 

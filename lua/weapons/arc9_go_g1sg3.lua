@@ -528,13 +528,13 @@ SWEP.AttachmentElements = {
     },
     ["barrel_g3a3"] = {
         Bodygroups = {
-            {0,1},
 			{3,4},
         },
+    AttPosMods = { [3] = { Pos = Vector(0.17, -3.25, 24), } }	
     },
     ["rearsight"] = {
         Bodygroups = {
-            {1,1},
+            {1,0},
         },
     },
     ["rearsight2"] = {
@@ -568,7 +568,7 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.g3sg1_Parent",
-        Pos = Vector(0.1, -4.2, 2.1),
+        Pos = Vector(0.1, -4.2, 3.4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
         InstalledElements = {"rearsight"},
@@ -629,6 +629,7 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.5
 SWEP.GripPoseParam3 = 3.2
 -- SWEP.RTScope = true
 -- SWEP.RTScopeSubmatIndex = 3

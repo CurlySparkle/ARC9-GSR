@@ -37,6 +37,33 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_sd")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "360mm A3"
+ATT.CompactName = "360mm A3"
+ATT.Description = [[
+Medium length G3A3 barrel. Improves recoil, though offers much worse handling.
+]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_g3_barrel_med.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_g3_barrel"}
+ATT.ActivateElements = {"barrel_g3a3"}
+
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.RecoilMult = 0.9
+
+ATT.RangeMaxMult = 1.25
+ATT.RangeMinMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "450mm Barrel"
 ATT.CompactName = "450mm"
 ATT.Description = [[
