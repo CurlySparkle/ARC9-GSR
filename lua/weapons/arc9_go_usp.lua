@@ -91,6 +91,8 @@ SWEP.Firemodes = {
 		AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         --ActivateElements = {"unsil"},
+		MuzzleParticleOverride = "weapon_muzzle_flash_pistol",
+        MuzzleParticleOverride_Priority = 100,
         Hook_TranslateAnimation = function(swep, anim)
             return anim .. "_silenced"
         end,
@@ -255,7 +257,7 @@ local path = "weapons/csgo/usp/"
 
 SWEP.ShootSound = "CSGO.USP.Fire"
 SWEP.ShootSoundSilenced = "CSGO.USP.Silenced_Fire"
-SWEP.DistantShootSound = path .. "CSGO.USP.Distance_Fire"
+SWEP.DistantShootSound = "CSGO.USP.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = ""

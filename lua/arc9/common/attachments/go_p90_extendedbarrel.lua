@@ -25,7 +25,7 @@ ATT.Attachments = {
     {
         PrintName = "Grip",
         Category = "grip",
-        Pos = Vector(-2.5, 0, 1),
+        Pos = Vector(-2.5, 0, 1.1),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0),
     },

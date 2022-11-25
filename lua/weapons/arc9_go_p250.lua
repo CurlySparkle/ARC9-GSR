@@ -240,7 +240,7 @@ local path = "weapons/csgo/p250/"
 
 SWEP.ShootSound = "CSGO.P250.Fire"
 SWEP.ShootSoundSilenced = "CSGO.P250.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.P250.Fire.Distance"
+SWEP.DistantShootSound = "CSGO.P250.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
@@ -338,6 +338,12 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.1, lhik = 0, rhik = 0},
+            {t = 0.825, lhik = 0, rhik = 0 },
+            {t = 1.1, lhik = 1, rhik = 1 },
+        },	
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 175 / 30 },

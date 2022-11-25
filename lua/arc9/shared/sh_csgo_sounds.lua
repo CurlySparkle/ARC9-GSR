@@ -693,13 +693,37 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.G3SG1.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.2,
     level = 120,
-    pitch = {97,103},
+    pitch = {95,105},
     sound = {
         "^weapons/csgo/g3sg1/g3sg1_distant_01.ogg",
 		"^weapons/csgo/g3sg1/g3sg1_distant_02.ogg",
 		"^weapons/csgo/g3sg1/g3sg1_distant_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.G3SG1.Fire_Auto_First",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {85,110},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/g3_auto_fire_first.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.G3SG1.Fire_Auto",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {85,110},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/g3_auto_fire_loop.wav",
     }
 } )
 
@@ -1078,6 +1102,30 @@ sound.Add( {
 } )
 
 -- SILENCERS
+
+sound.Add( {
+    name = "CSGO.G3SG1.Silenced_Fire_Auto_First",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/g3_auto_supp_fire_first.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.G3SG1.Silenced_Fire_Auto",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/g3_auto_supp_fire_loop.wav",
+    }
+} )
 
 sound.Add( {
     name = "CSGO.GALILAR.Silenced_Fire_First",

@@ -10,7 +10,7 @@
 	"$envmaptint"				"[ .13 .13 .13 ]"
 
 	"$phong"					"1"
-	"$phongboost"				"1"
+	"$phongboost"				"35"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
 
