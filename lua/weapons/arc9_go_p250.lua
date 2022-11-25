@@ -274,6 +274,35 @@ SWEP.Animations = {
             {s = path .. "p250_sliderelease.wav", t = 50 / 30},
         },
     },
+    ["reload_flux"] = {
+        Source = "reload_short_2",
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.675, lhik = 0, rhik = 0 },
+            {t = 0.875, lhik = 1, rhik = 1 },
+        },		
+        EventTable = {
+            {s = path .. "p250_clipout.wav", t = 12 / 30},
+            {s = path .. "p250_clipin.wav", t = 25 / 30},
+        },
+    },
+    ["reload_empty_flux"] = {
+        Source = "reload_2",
+		MinProgress = 0.4,
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.825, lhik = 0, rhik = 0 },
+            {t = 0.95, lhik = 1, rhik = 1 },
+        },		
+        EventTable = {
+            {s = path .. "p250_clipout.wav", t = 12 / 30},
+            {s = path .. "p250_clipin.wav", t = 25 / 30},
+            {s = path .. "p250_slideback.wav", t = 44 / 30},
+            {s = path .. "p250_sliderelease.wav", t = 50 / 30},
+        },
+    },	
     ["ready"] = {
         Source = "draw",
         EventTable = {
@@ -340,13 +369,23 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 5.35), } }	
     },
+
+    ["slide_flux"] = {
+        Bodygroups = {
+		    {0,3},
+            {2,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 6.8), }, [5] = { Pos = Vector(0, -1.1, 6.5), } }		
+    },	
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Slide",
 		DefaultAttName = "Standard",
-		--Bone = "v_weapon.glock_magazine",
+        Bone = "v_weapon.p250_parent",
+        Pos = Vector(-0.025, -2.6, 2),
+        Ang = Angle(90, 0, -90),		
         Category = "go_p250_slide"
     },
     {
@@ -363,6 +402,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.p250_parent",
         Pos = Vector(0, -0.5, 4),
         Ang = Angle(90, 0, -90),
+		ExcludeElements = {"slide_flux"},		
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,
 		CorrectiveAng = Angle(0.67, 0.65, 0),
