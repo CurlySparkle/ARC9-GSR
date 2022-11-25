@@ -425,11 +425,19 @@ SWEP.AttachmentElements = {
     ["top_rail"] = {
         Bodygroups = {
             {1,1},
+			{2,1},
+			{4,1},
         },
+    AttPosMods = { [1] = { Pos = Vector(0, -6.31, 4), } }	
     },
     ["sights"] = {
         Bodygroups = {
-            {2,1},
+            {2,2},
+        },
+    },
+    ["sling"] = {
+        Bodygroups = {
+            {3,1},
         },
     },
 }
@@ -443,6 +451,12 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"sights"},
         CorrectiveAng = Angle(0.3, 0, 0),
+    },
+    {
+        PrintName = "Top",
+        Category = "go_p90_top",
+        --Bone = "v_weapon.p90_Parent",
+        --Pos = Vector(0, -3, -3),
     },
     {
         PrintName = "Muzzle",
@@ -467,6 +481,12 @@ SWEP.Attachments = {
         Pos = Vector(0, -3, 0),
     },
     {
+        PrintName = "Sling",
+        Category = "go_p90_sling",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -3, -3),
+    },
+    {
         PrintName = "Stickers",
         DefaultCompactName = "Stickers",
         Bone = "v_weapon.p90_Parent",
@@ -477,3 +497,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 1
+SWEP.GripPoseParam2 = 0.2

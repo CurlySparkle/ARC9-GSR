@@ -82,6 +82,9 @@ SWEP.Firemodes = {
         PrintName = "AUTO",
         AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
+        IgnoreMuzzleDevice = true,
+        MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle",
+        MuzzleParticleOverride_Priority = 100,
         Silencer = false,
         --ActivateElements = {"unsil"},
         Hook_TranslateAnimation = function(swep, anim)
@@ -424,7 +427,7 @@ SWEP.Animations = {
     },
     ["firemode_2"] = {
         Source = "attach",
-        MinProgress = 0.9,
+        MinProgress = 1,
         FireASAP = false,
         IKTimeLine = {
             {
@@ -461,7 +464,7 @@ SWEP.Animations = {
     },
     ["firemode_1"] = {
         Source = "detach",
-        MinProgress = 0.9,
+        MinProgress = 1,
         FireASAP = false,
         HideBoneIndex = 0,
         IKTimeLine = {
@@ -663,9 +666,14 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["silencer_remove"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
     ["stock_retract"] = {
         Bodygroups = {
-            {2,1},
+            {1,1},
         },
     },
     ["stock_none"] = {
@@ -703,6 +711,15 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_alt",},
         CorrectiveAng = Angle(-0.1, 0.45, 0),
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Standard Muzzle",
+        Category = {"muzzle","muzzle_m4"},
+        Bone = "v_weapon.M4A1_Silencer",
+		InstalledElements = {"silencer_remove"},
+        Pos = Vector(0, -0.8, 0.1),
+        Ang = Angle(0, -90, 0),
     },
     {
         PrintName = "Side",

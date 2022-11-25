@@ -91,6 +91,8 @@ SWEP.Firemodes = {
 		AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         --ActivateElements = {"unsil"},
+		MuzzleParticleOverride = "weapon_muzzle_flash_pistol",
+        MuzzleParticleOverride_Priority = 100,
         Hook_TranslateAnimation = function(swep, anim)
             return anim .. "_silenced"
         end,
@@ -255,7 +257,7 @@ local path = "weapons/csgo/usp/"
 
 SWEP.ShootSound = "CSGO.USP.Fire"
 SWEP.ShootSoundSilenced = "CSGO.USP.Silenced_Fire"
-SWEP.DistantShootSound = path .. "CSGO.USP.Distance_Fire"
+SWEP.DistantShootSound = "CSGO.USP.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = ""
@@ -268,6 +270,18 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)   --- pourquoi est-ce qu'il ne marche pas????
+    if wep:GetUBGL() and wep:Clip2() == 0 then  -- il y a une probleme mais je ne sais pas quoi
+    		if anim == "idle" then  return "idle_ubgl_dry" end
+    		if anim == "idle_empty" then  return "idle_ubgl_dry" end	
+    		if anim == "idle_ubgl" then  return "idle_ubgl_dry" end
+    		if anim == "idle_ubgl_empty" then  return "idle_ubgl_dry" end	
+    		if anim == "enter_ubgl" then  return "idle_ubgl_dry" end
+    		if anim == "exit_ubgl" then  return "idle_ubgl_dry" end				
+    end		
+end
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -275,6 +289,62 @@ SWEP.Animations = {
     ["fire_sights"] = {
         Source = "shoot1_ads",
     },
+
+    ["idle_ubgl_dry"] = {
+        Source = "idle_silenced",
+        HideBoneIndex = 1,	
+    },	
+    ["enter_ubgl"] = {
+        Source = "attach",
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},	
+        EventTable = {
+            {s = "weapons/csgo/movement1.wav", t = 2 / 30},
+            {s = path .. "usp_silencer_screw_on_start.wav", t = 32 / 30},
+            {s = path .. "usp_silencer_screw1.wav", t = 55 / 30},
+            {s = path .. "usp_silencer_screw2.wav", t = 69 / 30},
+            {s = path .. "usp_silencer_screw3.wav", t = 80 / 30},
+            {s = path .. "usp_silencer_screw4.wav", t = 91 / 30},
+            {s = path .. "usp_silencer_screw5.wav", t = 99 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 112 / 30},
+        },			
+    },  
+	["exit_ubgl"] = {
+        Source = "detach",
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }},		
+        EventTable = {
+            {s = "weapons/csgo/movement1.wav", t = 9 / 30},
+            {s = path .. "usp_silencer_screw1.wav", t = 28 / 30},
+            {s = path .. "usp_silencer_screw2.wav", t = 48 / 30},
+            {s = path .. "usp_silencer_screw3.wav", t = 60 / 30},
+            {s = path .. "usp_silencer_screw4.wav", t = 70 / 30},
+            {s = path .. "usp_silencer_screw5.wav", t = 80 / 30},
+            {s = path .. "usp_silencer_screw_off_end.wav", t = 93 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 114 / 30},
+        },			
+    },  
+	["reload_ubgl"] = {
+        Source = "attach",
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+        EventTable = {
+            {s = "weapons/csgo/movement1.wav", t = 2 / 30},
+            {s = path .. "usp_silencer_screw_on_start.wav", t = 32 / 30},
+            {s = path .. "usp_silencer_screw1.wav", t = 55 / 30},
+            {s = path .. "usp_silencer_screw2.wav", t = 69 / 30},
+            {s = path .. "usp_silencer_screw3.wav", t = 80 / 30},
+            {s = path .. "usp_silencer_screw4.wav", t = 91 / 30},
+            {s = path .. "usp_silencer_screw5.wav", t = 99 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 112 / 30},
+        },				
+    },  	
+	["idle_ubgl"] = {
+        Source = "idle",
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+    },
+    ["fire_ubgl"] = {
+        Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+    },
+	
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
@@ -448,6 +518,7 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["rocket_usb"] = { Bodygroups = { {1,2}, }, },	
     ["silencer"] = {
         Bodygroups = {
             {1,1},
@@ -460,12 +531,17 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("rocket_usb") then model:SetBodygroup(1,2) end		
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Slide",
 		--Bone = "v_weapon.glock_magazine",
 		InstalledElements = {"silencer"},
-        Category = "go_glock_s"
+        Category = {"go_glock_s", "csgo_why_usp"}
     },
     {
         PrintName = "Top",

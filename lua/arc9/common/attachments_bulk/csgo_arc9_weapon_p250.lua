@@ -50,3 +50,59 @@ ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RPMMult = 1.1
 
 ARC9.LoadAttachment(ATT, "csgo_p250_slide_short")
+
+--------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Flux Raider Frame"
+ATT.CompactName = "P250 FR"
+ATT.Description = [[Buttframe 2042.]]
+ATT.SortOrder = -1
+
+// ATT.Icon = Material("entities/attachs/go_p250_slide_long.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_p250_slide"}
+ATT.ActivateElements = {"slide_flux"}
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_mk18.mdl"
+
+ATT.LHIK_Priority = 5
+ATT.LHIK = true
+
+ATT.ModelOffset = Vector(1, -0.5, -4)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		
+        Category = {"csgo_optics_pistols"},
+        Pos = Vector(5, 0, -1.25),
+        Ang = Angle(0, 0, 0),
+        ExtraSightDistance = -2,
+		Scale = 0.8,
+		CorrectiveAng = Angle(0.67, 0.65, 0),	
+        KeepBaseIrons = true, -- troll		
+    },		
+}
+
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.05
+ATT.RecoilMult = 0.75
+
+ATT.RangeMaxMult = 1.35
+ATT.RangeMinMult = 1.35
+ATT.PhysBulletMuzzleVelocityMult = 1.35
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_flux"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_p250_slide_flux")
+
+ATT = {}
