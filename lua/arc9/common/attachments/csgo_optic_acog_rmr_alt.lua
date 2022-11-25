@@ -1,8 +1,8 @@
-ATT.PrintName = "Trijicon SEC"
-ATT.CompactName = [[Trijicon]]
+ATT.PrintName = "RMR INS"
+ATT.CompactName = [[TrijAlt]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
 ATT.Description = [[
-    Low-profile Trijicon sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.
+    Low-profile alt version of the RMR sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.
 ]]
 ATT.Pros = {
     "+ Clearer sight picture"
@@ -16,7 +16,8 @@ ATT.Folder = "SIGHTS"
 ATT.Category = {"csgo_optics_pistols"}
 
 
-ATT.Model = "models/weapons/csgo/atts/sights/trijicon.mdl"
+ATT.Model = "models/weapons/csgo/atts/sights/trijicon_alt_nonrail_acog.mdl"
+ATT.ModelBodygroups = "10"
 ATT.Scale = 0.5
 ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
