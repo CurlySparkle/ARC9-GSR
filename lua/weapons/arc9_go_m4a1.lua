@@ -81,10 +81,10 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         PrintName = "AUTO",
-        AfterShotQCA = 3,
-        MuzzleEffectQCA = 3,
-		MuzzleParticleOverride_Priority = 50,
-        Override_MuzzleEffectAttachment = 3,
+        AfterShotQCA = 1,
+        MuzzleEffectQCA = 1,
+		MuzzleParticleOverride_Priority = 20,
+        --Override_MuzzleEffectAttachment = 1,
         Silencer = false,
         --ActivateElements = {"unsil"},
         Hook_TranslateAnimation = function(swep, anim)
