@@ -2,10 +2,11 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "Short Barrel"
-ATT.CompactName = "SB"
-ATT.Description = [[Compact handguard configuration. Good for close range engagements.]]
-ATT.SortOrder = 0
+ATT.PrintName = "226mm Commando Barrel"
+ATT.CompactName = "CMDO"
+ATT.Description = [[Compact handguard configuration from the SG 552 Commando.\
+Good for close range engagements.]]
+ATT.SortOrder = 226
 
 // ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
 ATT.AutoStats = true
@@ -14,14 +15,19 @@ ATT.Free = false
 
 ATT.Category = {"go_sg556_barrel"}
 ATT.ActivateElements = {"552"}
-ATT.RPMMult = 700/545
 
-ATT.AimDownSightsTimeMult = 0.975
-ATT.SprintToFireTimeMult = 0.975
+ATT.RPMMult = 700 / 545
 
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.8
-ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.AimDownSightsTimeAdd = -0.12
+ATT.SprintToFireTimeAdd = -0.09
+
+ATT.SpreadAdd = 0.01
+ATT.SpreadAddMove = -0.08
+
+ATT.RangeMaxMult = 0.5
+ATT.RangeMinMult = 0.5
+
+ATT.RecoilKickMult = 1.5
 
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_ump.mdl"
 
@@ -50,26 +56,31 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_short")
 
 ATT = {}
 
-ATT.PrintName = "Prototype Barrel"
-ATT.CompactName = "PB"
-ATT.Description = [[Light weight preproduction model.]]
-ATT.SortOrder = 0
+ATT.PrintName = "300mm Prototype Barrel"
+ATT.CompactName = "PROTO"
+ATT.Description = [[Light weight preproduction model from the SG 541 Prototype.
+Increases fire rate and agility.]]
+ATT.SortOrder = 300
 
-// ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
+-- ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
 ATT.AutoStats = true
 
 ATT.Free = false
 
 ATT.Category = {"go_sg556_barrel"}
 ATT.ActivateElements = {"proto"}
-ATT.RPMMult = 620/545
+ATT.RPMMult = 620 / 545
 
-ATT.AimDownSightsTimeMult = 0.975
-ATT.SprintToFireTimeMult = 0.975
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.06
 
-ATT.RangeMaxMult = 1.25
-ATT.RangeMinMult = 1.25
-ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.SpreadAdd = 0.005
+ATT.SpreadAddMove = -0.04
+
+ATT.RangeMaxMult = 0.7
+ATT.RangeMinMult = 0.7
+
+ATT.RecoilKickMult = 1.15
 
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_m4.mdl"
 
@@ -99,8 +110,9 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_proto")
 ATT = {}
 
 ATT.PrintName = "Folding Stock"
-ATT.CompactName = "FP"
-ATT.Description = [[Wholly.]]
+ATT.CompactName = "FOLD"
+ATT.Description = [[A lightweight stock used on the SG 552 Commando.
+Improves agility, but recoil is less stable.]]
 
 ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
 
@@ -108,9 +120,10 @@ ATT.SortOrder = 2
 ATT.Category = "go_sg556_stock"
 ATT.ActivateElements = {"stock_fold"}
 
-ATT.RecoilMult = 0.75
-ATT.SprintToFireTimeMult = 1.3
-ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeAdd = -0.08
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.RecoilSideMult = 1.4
+ATT.SpreadAddMove = -0.03
 
 ARC9.LoadAttachment(ATT, "csgo_sg556_stock_folding")
 
@@ -119,8 +132,9 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_stock_folding")
 ATT = {}
 
 ATT.PrintName = "Prototype Stock"
-ATT.CompactName = "PP"
-ATT.Description = [[Cununglishgs.]]
+ATT.CompactName = "PROTO"
+ATT.Description = [[A solid stock used on the SG 541 prototype.
+Provides better recoil control.]]
 
 ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
 
@@ -129,8 +143,8 @@ ATT.Category = "go_sg556_stock"
 ATT.ActivateElements = {"stock_proto"}
 
 ATT.RecoilMult = 0.75
-ATT.SprintToFireTimeMult = 1.3
-ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeAdd = 0.08
+ATT.AimDownSightsTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "csgo_sg556_stock_proto")
 

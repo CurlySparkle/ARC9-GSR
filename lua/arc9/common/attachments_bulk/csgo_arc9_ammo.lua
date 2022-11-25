@@ -232,7 +232,7 @@ ATT.SortOrder = 1
 
 ATT.Category = {"go_ammo_sg"}
 
-ATT.SpreadMult = 0.25
+ATT.SpreadMult = 0.15
 ATT.SpreadMultHipFire = 0.75
 ATT.RangeMaxMult = 2
 
@@ -259,7 +259,7 @@ ATT.SortOrder = 3
 ATT.Category = {"go_ammo_sg"}
 
 ATT.RangeMaxMult = 1.5
-ATT.SpreadMult = 0.5
+ATT.SpreadMult = 0.35
 
 ATT.RicochetChanceOverride = 2
 
@@ -282,7 +282,7 @@ ATT.SortOrder = 12
 
 ATT.Category = {"go_ammo_sg"}
 
-ATT.SpreadMult = 0.35
+ATT.SpreadMult = 0.25
 
 ATT.NumMult = 1.5
 ATT.PenetrationOverride = 12
@@ -304,7 +304,7 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.NumOverride = 1
 
-ATT.SpreadMult = 0.35
+ATT.SpreadMult = 0.3
 
 ATT.PhysBulletGravityMult = 3
 ATT.PhysBulletMuzzleVelocityMult = 0.75

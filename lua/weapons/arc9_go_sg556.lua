@@ -5,7 +5,7 @@ SWEP.Base = "arc9_go_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CS:GO"
 
-SWEP.PrintName = "SG 553"
+SWEP.PrintName = "SIG556"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
@@ -22,7 +22,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[The terrorist-exclusive SG 553 is a premium scoped alternative to the AK-47 for effective long-range engagement.]]
+SWEP.Description = [[The SG 556 is a premium scoped alternative to the AK-47 for effective long-range engagement.
+Originally a civilian rifle, it has been illegally converted for automatic fire.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
@@ -71,7 +72,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "ar2" -- What ammo type this gun uses.
+SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
@@ -95,11 +96,11 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.8
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.8 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -136,8 +137,8 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.37 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.34 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -204,7 +205,7 @@ SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
@@ -320,8 +321,8 @@ SWEP.Animations = {
             {s = path .. "sg556_boltback.wav", t = 58 / 30},
             {s = path .. "sg556_boltforward.wav", t = 66 / 30},
         },
-    }, 
-	["reload_ak"] = {
+    },
+    ["reload_ak"] = {
         Source = "reload_short_ak",
         IKTimeLine = {
             {
@@ -460,29 +461,39 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
-    }, 
-	["stock_fold"] = { Bodygroups = { {3,2}, }, },
-	["stock_proto"] = { Bodygroups = { {3,3}, }, },
-	["552"] = { 
-	Bodygroups = { {4,1}, {1,2}, {2,2} }, 
-    AttPosMods = { [2] = { Pos = Vector(0, -2.8, 18), }, [4] = { Pos = Vector(0, -1.5, 11.5), }, [5] = { Pos = Vector(-0.95, -2.95, 12.5), } }		
-	},	
-	["proto"] = { 
-	Bodygroups = { {4,2}, {1,2}, {2,3} }, 
-    AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, [4] = { Pos = Vector(0, -1, 11.5), }, [5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75), } }		
-	},	
-	["mag_ak"] = { Bodygroups = { {0,1}, {6,1}, }, },	
+    },
+    ["stock_fold"] = { Bodygroups = { {3,2}, }, },
+    ["stock_proto"] = { Bodygroups = { {3,3}, }, },
+    ["552"] = {
+    Bodygroups = { {4,1}, {1,2}, {2,2} },
+    AttPosMods = { [2] = { Pos = Vector(0, -2.8, 18), }, [4] = { Pos = Vector(0, -1.5, 11.5), }, [5] = { Pos = Vector(-0.95, -2.95, 12.5), } }
+    },
+    ["proto"] = {
+    Bodygroups = { {4,2}, {1,2}, {2,3} },
+    AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, [4] = { Pos = Vector(0, -1, 11.5), }, [5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75), } }
+    },
+    ["mag_ak"] = { Bodygroups = { {0,1}, {6,1}, }, },
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)  
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	if wep:HasElement("stock_fold") then model:SetBodygroup(3,2) end	
-	if wep:HasElement("stock_proto") then model:SetBodygroup(3,3) end	
+    if wep:HasElement("stock_fold") then model:SetBodygroup(3,2) end
+    if wep:HasElement("stock_proto") then model:SetBodygroup(3,3) end
 
-	if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(2,1) end
-	if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(1,2) end			
-	if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(2,1) end		
-	if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(1,2) end			
+    if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(2,1) end
+    if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(1,2) end
+    if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(2,1) end
+    if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(1,2) end
+end
+
+SWEP.HookP_NameChange = function(wep, name)
+    if wep:HasElement("552") then
+        name = "SG 552 Commando"
+    end
+    if wep:HasElement("proto") then
+        name = "SG 541 Prototype"
+    end
+    return name
 end
 
 
@@ -512,7 +523,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.sg556_Parent",
         Pos = Vector(0, -3.15, 10),
         Ang = Angle(90, 0, -90),
-    },	
+    },
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
@@ -526,7 +537,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.sg556_Parent",
-		InstalledElements = {"sidecover"},
+        InstalledElements = {"sidecover"},
         Pos = Vector(-1, -3.6, 18),
         Ang = Angle(90, 90, 90),
     },
@@ -535,10 +546,10 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube", "go_sg556_stock"},
         Bone = "v_weapon.sg556_Parent",
-		InstalledElements = {"stock_none"},
+        InstalledElements = {"stock_none"},
         Pos = Vector(0, -3, -1.9),
         Ang = Angle(90, 0, -90),
-		Scale = 1.05,
+        Scale = 1.05,
     },
     {
         PrintName = "Mag",
@@ -547,7 +558,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 1, 6),
         Ang = Angle(90, 0, -90),
         Scale = 1,
-    },	
+    },
     {
         PrintName = "Perk",
         Category = "go_perk"
