@@ -19,6 +19,6 @@ ATT.ReloadTimeMult = 1.2
 ATT.RecoilMult = 1.1
 ATT.RecoilKickMult = 1.1
 
-ATT.ActivateElements = {"mag"}
+ATT.ActivateElements = {"mag","mag_none"}
 ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
 ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"

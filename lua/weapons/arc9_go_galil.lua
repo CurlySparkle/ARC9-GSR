@@ -472,9 +472,19 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [3] = { Pos = Vector(0, -3.39, 21.4), } }	
     },
-    ["mag"] = {
+    ["mag_35"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+    ["mag_drum"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {2,3},
         },
     },
     ["sight_mount"] = {
@@ -570,7 +580,6 @@ SWEP.Attachments = {
         PrintName = "Mag",
         Bone = "v_weapon.AK47_clip",
         Category = "go_mag_ak",
-        InstalledElements = {"mag"},
         Pos = Vector(0, -2.7, -1.1),
         Ang = Angle(90, 0, -90),
         Scale = 1.05,
