@@ -392,7 +392,8 @@ SWEP.Attachments = {
         Bone = "v_weapon.p250_parent",
         Pos = Vector(-0.025, -2.6, 2),
         Ang = Angle(90, 0, -90),		
-        Category = "go_p250_slide"
+        Category = "go_p250_slide",
+		CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
         PrintName = "Muzzle",

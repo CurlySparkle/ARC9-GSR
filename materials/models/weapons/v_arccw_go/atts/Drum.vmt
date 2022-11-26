@@ -1,8 +1,8 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models\weapons\v_arccw_go\atts\SU230_d"
-	"$bumpmap"					"models\weapons\v_arccw_go\atts\SU230_n"
-	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\SU230_s"
+	"$basetexture"				"models\weapons\v_arccw_go\atts\Drum_d"
+	"$bumpmap"					"models\weapons\v_arccw_go\atts\Drum_n"
+	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\Drum_s"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
 

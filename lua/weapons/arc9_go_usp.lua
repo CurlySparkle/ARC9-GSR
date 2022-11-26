@@ -91,6 +91,7 @@ SWEP.Firemodes = {
 		AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         --ActivateElements = {"unsil"},
+		IgnoreMuzzleDevice = true,
 		MuzzleParticleOverride = "weapon_muzzle_flash_pistol",
         MuzzleParticleOverride_Priority = 100,
         Hook_TranslateAnimation = function(swep, anim)
@@ -241,7 +242,7 @@ SWEP.ShouldDropMagEmpty = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.09
+SWEP.ShellScale = 0.11
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
@@ -443,7 +444,7 @@ SWEP.Animations = {
         HideBoneIndex = 1,
     },
     ["fire_sights_silenced"] = {
-        Source = "shoot1_silenced_ads",
+        Source = "shoot1_ads_silenced",
     },
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
@@ -518,22 +519,36 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
-    ["rocket_usb"] = { Bodygroups = { {1,2}, }, },	
+    ["rocket_usb"] = { Bodygroups = { {1,3}, }, },	
     ["silencer"] = {
         Bodygroups = {
             {1,1},
+        },
+    },
+    ["silencer_none"] = {
+        Bodygroups = {
+            {1,4},
         },
     },
     ["slide_long"] = {
         Bodygroups = {
             {3,1},
         },
+    AttPosMods = { [2] = { Pos = Vector(0, 0.4, 0), } }	
+    },
+    ["slide_short"] = {
+        Bodygroups = {
+            {3,2},
+			{0,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -1.9, 0), } }	
     },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("rocket_usb") then model:SetBodygroup(1,2) end		
+	if wep:HasElement("rocket_usb") then model:SetBodygroup(1,3) end
+	if wep:HasElement("silencer_none") then model:SetBodygroup(1,4) end		
 end
 
 SWEP.Attachments = {
@@ -541,7 +556,17 @@ SWEP.Attachments = {
         PrintName = "Slide",
 		--Bone = "v_weapon.glock_magazine",
 		InstalledElements = {"silencer"},
-        Category = {"go_glock_s", "csgo_why_usp"}
+        Category = {"go_usp_slide", "csgo_why_usp"}
+    },
+    {
+        PrintName = "Muzzle",
+        DefaultAttName = "Default",
+        Category = {"muzzle","muzzle_pistols"},
+        Bone = "v_weapon.silencer",
+		InstalledElements = {"silencer_none"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+        Scale = 1,
     },
     {
         PrintName = "Top",
