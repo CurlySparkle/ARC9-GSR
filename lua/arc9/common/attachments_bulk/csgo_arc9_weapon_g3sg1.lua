@@ -233,7 +233,9 @@ ATT.RPM = 500
 
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10
-ATT.SpreadMult = 0.1
+ATT.SpreadMultRecoil = 1.3
+ATT.SpreadMultHipFire = 0.3
+ATT.SpreadMultMove = 0.7
 
 ATT.ShootSound = "CSGO.G3SG1.Fire_Auto"
 ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
