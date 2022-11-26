@@ -327,15 +327,25 @@ ATT.PrintName = "7mm Rebounder Rounds"
 ATT.CompactName = "RBD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
 ATT.Description = [[A load containing pellets with a high chance to ricochet.
-Using a specialized shell design, these rounds are harder to load.]]
+Specialized shell design makes this round somewhat harder to cycle.]]
 ATT.SortOrder = 8
 
 ATT.Category = {"go_ammo_sg"}
 
-ATT.RicochetChanceOverride = 10
-ATT.RicochetAngleMaxOverride = 180
+ATT.DamageMinOverride = 24
+ATT.DamageMaxOverride = 24
+ATT.NumOverride = 6
 
-ATT.ReloadTimeMult = 1.25
+ATT.RicochetChanceOverride = 2
+ATT.RicochetAngleMaxOverride = 90
+ATT.RicochetSeeking = true
+ATT.RicochetSeekingRange = 1024
+ATT.RicochetSeekingAngle = 45
+
+ATT.CycleTimeMult = 1.1
+
+ATT.TracerColor = Color(255, 255, 255, 150)
+ATT.TracerSizeAdd = -0.5
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
 
