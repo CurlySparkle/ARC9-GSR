@@ -106,7 +106,7 @@ ATT.SortOrder = 0
 ATT.Category = {"go_ammo"}
 
 ATT.TracerNum = 1
-ATT.TracerSizeAdd = 6
+ATT.TracerSizeAdd = 1
 
 ATT.TracerColorHook = function(swep, col)
     if IsValid(swep:GetOwner()) and swep:GetOwner():IsPlayer() then

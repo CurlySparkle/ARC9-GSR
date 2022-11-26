@@ -125,6 +125,7 @@ SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -494,7 +495,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
         Bone = "v_weapon.AK47_clip",
-        Category = "go_mag_ak",
+        Category = {"go_mag_ak"},
         Pos = Vector(0, -2.6, -1.3),
         Ang = Angle(90, 0, -90),
         Scale = 1.05,

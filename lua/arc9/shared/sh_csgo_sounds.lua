@@ -225,7 +225,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
-    pitch = {97,103},
+    pitch = {95,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/csgo/galilar/galil_01.ogg",
@@ -1071,7 +1071,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
-    pitch = {97,103},
+    pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/galil_fire_first.wav",
@@ -1132,7 +1132,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
-    pitch = {95,105},
+    pitch = {85,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/galil_sup_first.wav",
@@ -1144,7 +1144,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 120,
-    pitch = {90,105},
+    pitch = {85,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/galil_sup_loop.wav",

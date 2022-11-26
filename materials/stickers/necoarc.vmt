@@ -12,7 +12,7 @@
 	"$phongalbedoboost"		"10"
 
                 "$translucent" "1"
-                "$decal" "1"
+                "$decal" "0"
                 //"$vertexcolor" "1"
                 //"$vertexalpha" "1"
 }
