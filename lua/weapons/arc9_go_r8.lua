@@ -361,10 +361,17 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendCylinder
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["r6"] = { Bodygroups = {{0,1},},},
 }
 
 SWEP.Attachments = {
     {
+        PrintName = "Model",
+        DefaultAttName = "R8",
+        Category = "go_r8",
+--        Bone = "v_weapon.deagle_parent",
+    }, 
+	{
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",

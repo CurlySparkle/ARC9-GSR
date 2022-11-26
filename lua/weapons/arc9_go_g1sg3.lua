@@ -26,7 +26,6 @@ SWEP.Description = [[The pricy G3SG1 lowers movement speed considerably but comp
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_g3sg1.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
-SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 
@@ -260,8 +259,8 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.EnterSightsSound = path .. "sg556_zoom_in.wav"
-SWEP.ExitSightsSound = path .. "sg556_zoom_out.wav"
+SWEP.EnterSightsSound = ""
+SWEP.ExitSightsSound = ""
 
 SWEP.HideBones = {
 }
@@ -277,6 +276,10 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+    },
+    ["fire_alt"] = {
+        Source = {"shoot1_alt"},
+		Mult = 1.5,
     },
     ["reload"] = {
         Source = "reload_short",
@@ -304,7 +307,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "g3sg1_clipout.wav", t = 16 / 30},
-            {s = path .. "g3sg1_clipin.wav", t = 73 / 30},
+            {s = path .. "g3sg1_clipin.wav", t = 65 / 30},
         },
     },
     ["reload_empty"] = {
@@ -333,7 +336,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "g3sg1_clipout.wav", t = 16 / 30},
-            {s = path .. "g3sg1_clipin.wav", t = 73 / 30},
+            {s = path .. "g3sg1_clipin.wav", t = 65 / 30},
             {s = path .. "g3sg1_slideback.wav", t = 97 / 30},
 			{s = path .. "g3sg1_slideforward.wav", t = 104 / 30},
         },
@@ -361,6 +364,91 @@ SWEP.Animations = {
             {s = path .. "g3sg1_draw.wav", t = 0 / 30},
             {s = path .. "g3sg1_slideback.wav", t = 6 / 30},
             {s = path .. "g3sg1_slideforward.wav", t = 12 / 30},
+        },
+    },
+    ["reload_alt"] = {
+        Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
+            {s = path .. "g3sg1_charging_handle_pull.wav", t = 97 / 30},
+			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104 / 30},
+        },
+    },
+    ["ready_alt"] = {
+        Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "g3sg1_draw.wav", t = 0 / 30},
+            {s = path .. "g3sg1_charging_handle_pull.wav", t = 6 / 30},
+            {s = path .. "g3sg1_charging_handle_lock.wav", t = 12 / 30},
         },
     },
     ["draw"] = {
@@ -420,12 +508,33 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "0000000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.AttachmentElements = {
+    ["barrel_med"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
+    ["barrel_sd"] = {
+        Bodygroups = {
+            {3,3},
+        },
+    },
+    ["barrel_g3a3"] = {
+        Bodygroups = {
+			{3,4},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0.17, -3.25, 24), } }	
+    },
     ["rearsight"] = {
         Bodygroups = {
-            {1,1},
+            {1,0},
         },
     },
     ["rearsight2"] = {
@@ -438,13 +547,28 @@ SWEP.AttachmentElements = {
             {2,3},
         },
     },
+    ["stock_collapsed"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["mag_30"] = {
+        Bodygroups = {
+            {4,2},
+        },
+    },
+    ["mag_10"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.g3sg1_Parent",
-        Pos = Vector(0.1, -4.2, 2.1),
+        Pos = Vector(0.1, -4.2, 3.4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
         InstalledElements = {"rearsight"},
@@ -453,10 +577,16 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.2, -0.25, 0),
     },
     {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+        Category = "go_g3_barrel"
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.g3sg1_Parent",
+		ExcludeElements = {"barrel_sd"},
         Pos = Vector(0.17, -3.25, 27),
         Ang = Angle(90, 0, -90),
 		Scale = 1.1,
@@ -480,12 +610,17 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube"},
+        Category = {"csgo_tube","go_g3_stock"},
         Bone = "v_weapon.g3sg1_Parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(0.1, -3.35, -3.3),
         Ang = Angle(90, 0, -90),
 		Scale = 1.15,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.g3sg1_Clip",
+        Category = "go_mag_g3"
     },
     {
         PrintName = "Perk",
@@ -494,6 +629,7 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.5
 SWEP.GripPoseParam3 = 3.2
 -- SWEP.RTScope = true
 -- SWEP.RTScopeSubmatIndex = 3

@@ -536,9 +536,10 @@ SWEP.AttachmentElements = {
     },
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)  
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	if wep:HasElement("frontiron") and not wep.Attachments[3].Installed then model:SetBodygroup(2,1) end		
+    if wep:HasElement("m4_barrel_long") and wep.Attachments[1].Installed then model:SetBodygroup(2,3) end
+    if wep:HasElement("m4_barrel_sniper") then model:SetBodygroup(2,4) end
 end
 
 SWEP.Attachments = {

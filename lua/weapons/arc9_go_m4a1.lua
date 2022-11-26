@@ -75,7 +75,6 @@ SWEP.Firemodes = {
         Mode = -1,
         PrintName = "Silent/AUTO",
         Silencer = true,
-		AfterShotQCA = 1,
         -- add other attachment modifiers
     },
     {

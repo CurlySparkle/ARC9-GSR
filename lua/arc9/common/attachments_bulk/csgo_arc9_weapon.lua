@@ -53,3 +53,36 @@ ATT.Sights = {
 }
 
 ARC9.LoadAttachment(ATT, "csgo_mp7_iron2")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ATT = {}
+
+ATT.PrintName = "R6"
+ATT.CompactName = "R"
+ATT.Description = [[6-round cylinder and slim barrel.]]
+
+// ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+
+--ATT.Model = "models/weapons/csgo/atts/grip_vertical.mdl"
+
+ATT.SortOrder = 0
+ATT.Category = "go_r8"
+ATT.ActivateElements = {"r6"}
+ATT.ClipSizeOverride = 6
+
+ARC9.LoadAttachment(ATT, "csgo_mp7_iron2")

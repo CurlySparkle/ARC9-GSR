@@ -56,7 +56,7 @@ ATT.PrintName = [[20 Mag]]
 ATT.CompactName = [[20 Mag]]
 ATT.Icon = Material("entities/attachs/go_mp9_mag_15.png")
 ATT.Description = [[
-Decreases capacity by 30% more with the benefit of decreased reload time and better handling.
+Decreases capacity by 30% more with the cost of decreased reload time and less handling.
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
