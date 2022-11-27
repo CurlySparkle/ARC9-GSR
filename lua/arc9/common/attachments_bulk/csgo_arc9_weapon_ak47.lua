@@ -22,5 +22,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_drum"
 end
 
+ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_drum.mdl"
+--ATT.DropMagazineTime = 0.8
+
 ARC9.LoadAttachment(ATT, "csgo_ak47_mag_50")
 -------------------------------------------------------------------------------------------------
