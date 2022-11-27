@@ -30,6 +30,55 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_ap")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "High Ricochet Rounds"
+ATT.CompactName = "HR"
+ATT.Description = [[Bullets made of soft material designed to ricochet of surfaces.
+High ricochet capabilities, but less damage output.]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_ammo_ricochet.png", "mips smooth")
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_ammo"}
+
+ATT.DamageMaxMult = 0.85
+ATT.DamageMinMult = 0.85
+
+ATT.RicochetChance = 0.5
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_hr")
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "High Ricochet Seekers"
+ATT.CompactName = "HRS"
+ATT.Description = [[Bullets made of soft material and special tech designed to ricochet from surfaces to its targets.
+High ricochet capabilities with a seeking capability, but even less damage output.]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_ammo_ricochetseeker.png", "mips smooth")
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_ammo"}
+
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 0.75
+
+ATT.RicochetChance = 0.75
+ATT.RicochetSeeking = true
+ATT.RicochetSeekingAngle = 360
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_hr_seeker")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Hollow Point Rounds"
 ATT.CompactName = "HP"
 ATT.Icon = Material("entities/attachs/go_ammo_jhp.png", "mips smooth")

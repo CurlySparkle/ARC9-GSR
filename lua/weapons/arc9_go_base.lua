@@ -31,6 +31,8 @@ SWEP.ViewRecoilUpMultSights = 10
 SWEP.SprintVerticalOffset = false
 SWEP.CanBlindFire = false
 
+SWEP.RicochetChance = 0.05
+
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
