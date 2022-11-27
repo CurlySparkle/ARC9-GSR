@@ -1,0 +1,10 @@
+"SpriteCard"
+{
+	$basetexture "particle/particle_smokegrenade"
+	$vertexcolor 1
+	$vertexalpha 1
+	$translucent 1
+	$startfadesize .6
+	$endfadesize .9
+	$DEPTHBLEND 0
+}

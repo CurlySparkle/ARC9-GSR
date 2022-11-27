@@ -3,10 +3,10 @@ SWEP.Category = "ARC-9 - CS:GO: ETC"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Frag Grenade"
+SWEP.PrintName = "Incendiary Nade"
 SWEP.Class = "Grenade"
 SWEP.Description = [[
-    The experimental fragmentation grenade can output extreme amounts of highly explosive damage in a wider area, making it ideal for both attacking and defensive strategies.
+When thrown, the incendiary grenade releases a high-temperature chemical reaction capable of burning anyone within its wide blast radius.
 ]]
 SWEP.Trivia = {
     ["Country"] = "USA",
@@ -22,7 +22,7 @@ SWEP.Slot = 4
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/csgo/v_eq_fraggrenade.mdl"
+SWEP.ViewModel = "models/weapons/csgo/v_eq_incediary.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_fraggrenade.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -43,14 +43,14 @@ SWEP.Crosshair = true
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.ShootEnt = "arc9_csgo_nade_frag"
+SWEP.ShootEnt = "arc9_csgo_nade_incendiary"
 SWEP.Ammo = "grenade"
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = true -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
 SWEP.ThrowAnimSpeed = 1
 
-SWEP.FuseTimer = 3 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
+SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
 SWEP.ThrowForceMin = 500 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
@@ -132,7 +132,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-		Mult = 0.4,
+		Mult = 0.6,
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },

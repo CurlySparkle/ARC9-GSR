@@ -70,9 +70,12 @@ ATT.Category = {"go_ammo"}
 ATT.DamageMaxMult = 0.75
 ATT.DamageMinMult = 0.75
 
-ATT.RicochetChance = 0.75
+--ATT.RicochetChance = 0.75
+ATT.RicochetChanceOverride = 1
+ATT.RicochetAngleMaxOverride = 90
 ATT.RicochetSeeking = true
-ATT.RicochetSeekingAngle = 360
+ATT.RicochetSeekingRange = 1024
+ATT.RicochetSeekingAngle = 45
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_hr_seeker")
 

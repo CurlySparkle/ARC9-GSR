@@ -47,3 +47,10 @@ PrecacheParticleSystem("weapon_tracers")
 PrecacheParticleSystem("weapon_tracers_50cal")
 PrecacheParticleSystem("weapon_tracers_mach")
 PrecacheParticleSystem("weapon_tracers_pistol")
+
+-- Grenades
+PrecacheParticleSystem("explosion_basic")
+PrecacheParticleSystem("explosion_basic_water")
+PrecacheParticleSystem("explosion_c4_500")
+PrecacheParticleSystem("explosion_c4_500_fallback")
+PrecacheParticleSystem("explosion_smokegrenade")

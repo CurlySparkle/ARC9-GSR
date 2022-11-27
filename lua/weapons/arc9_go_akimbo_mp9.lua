@@ -230,8 +230,8 @@ SWEP.AnimDraw = false
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_pistol"
 SWEP.AfterShotParticle = "muzzle_smoke_trace"
-SWEP.MuzzleEffectQCA = 2
-SWEP.MuzzleEffectQCAEvenShot = 1
+SWEP.MuzzleEffectQCA = 1
+SWEP.MuzzleEffectQCAEvenShot = 2
 
 SWEP.CaseEffectQCA = 4
 SWEP.CaseEffectQCAEvenShot = 3
@@ -262,7 +262,7 @@ SWEP.DropMagazineQCAEvenShot = 6
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/hkp2000/"
+local path = "weapons/csgo/mp9/"
 
 SWEP.ShootSound = "CSGO.MP9.Fire"
 SWEP.FirstShootSoundSilenced = "CSGO.MP9.Silenced_Fire_First"
@@ -292,11 +292,11 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 5 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 8 / 30},
+            {s = path .. "mp9_clipout.wav", t = 5 / 30},
+            {s = path .. "mp9_clipout.wav", t = 8 / 30},
 			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-			{s = path .. "hkp2000_clipin.wav", t = 45 / 30},
-			{s = path .. "hkp2000_clipin.wav", t = 55 / 30},
+			{s = path .. "mp9_clipin.wav", t = 45 / 30},
+			{s = path .. "mp9_clipin.wav", t = 55 / 30},
 			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
         },
     },
@@ -305,22 +305,22 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 7 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 8 / 30},
+            {s = path .. "mp9_clipout.wav", t = 7 / 30},
+            {s = path .. "mp9_clipout.wav", t = 8 / 30},
 			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 50 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 55 / 30},
+            {s = path .. "mp9_clipin.wav", t = 50 / 30},
+            {s = path .. "mp9_clipin.wav", t = 55 / 30},
 			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 75 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 77 / 30},
+            {s = path .. "mp9_boltforward.wav", t = 75 / 30},
+            {s = path .. "mp9_boltforward.wav", t = 77 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "hkp2000_draw.wav", t = 0 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 11 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 14 / 30},
+            {s = path .. "mp9_draw.wav", t = 0 / 30},
+            {s = path .. "mp9_boltforward.wav", t = 11 / 30},
+            {s = path .. "mp9_boltforward.wav", t = 14 / 30},
         },
     },
     ["draw"] = {
@@ -421,7 +421,7 @@ SWEP.Attachments = {
                 Bone = "tag_pistol_attachments",
             }
         },
-        Scale = 0.7,
+        Scale = 1,
     },
     {
         PrintName = "Sights",
