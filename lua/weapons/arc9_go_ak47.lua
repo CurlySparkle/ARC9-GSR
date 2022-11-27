@@ -313,6 +313,67 @@ SWEP.Animations = {
             {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
         },
     },
+    ["reload_drum"] = {
+        Source = "reload_short_drum",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/global_drummag_mag_out.wav", t = 9 / 30},
+            {s = "weapons/csgo/global_drummag_mag_in.wav", t = 25 / 30},
+			{s = "weapons/csgo/global_drummag_mag_hit.wav", t = 34 / 30},
+        },
+    },
+    ["reload_empty_drum"] = {
+        Source = "reload_drum",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/global_drummag_mag_out.wav", t = 9 / 30},
+            {s = "weapons/csgo/global_drummag_mag_in.wav", t = 25 / 30},
+			{s = "weapons/csgo/global_drummag_mag_hit.wav", t = 34 / 30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
