@@ -6,7 +6,7 @@ ENT.Information = ""
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
-ENT.Model = "models/weapons/arccw_go/w_eq_molotov_thrown.mdl"
+ENT.Model = "models/weapons/w_eq_molotov_thrown.mdl"
 ENT.FuseTime = 5
 ENT.ArmTime = 0
 ENT.FireTime = 15
@@ -105,8 +105,8 @@ end
 function ENT:Detonate()
     if self.Exploded then return end
     self.Exploded = true
-    self:EmitSound("arccw_go/molotov/molotov_detonate_1.wav", 75, 100, 1, CHAN_ITEM)
-    self:EmitSound("arccw_go/molotov/molotov_detonate_1_distant.wav", 100, 100, 1, CHAN_WEAPON)
+    self:EmitSound("weapons/csgo/molotov/molotov_detonate_1.wav", 75, 100, 1, CHAN_ITEM)
+    self:EmitSound("weapons/csgo/molotov/molotov_detonate_1_distant.wav", 100, 100, 1, CHAN_WEAPON)
 
     for i = 1,10 do
         local cloud = ents.Create( "arccw_go_fire" )

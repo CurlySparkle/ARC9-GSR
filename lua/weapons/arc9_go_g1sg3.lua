@@ -626,6 +626,10 @@ SWEP.Attachments = {
         PrintName = "Perk",
         Category = "go_perk"
     },
+    {
+        PrintName = "View",
+        Category = "go_g3_view"
+    },
 }
 
 SWEP.GripPoseParam = 3

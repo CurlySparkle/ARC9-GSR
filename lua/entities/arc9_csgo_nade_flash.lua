@@ -6,7 +6,7 @@ ENT.Information = ""
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
-ENT.Model = "models/weapons/w_eq_flashbang.mdl"
+ENT.Model = "models/weapons/w_eq_flashbang_thrown.mdl"
 ENT.FuseTime = 2.5
 ENT.ArmTime = 0
 ENT.ImpactFuse = false
@@ -44,9 +44,9 @@ end
 function ENT:PhysicsCollide(data, physobj)
     if SERVER then
         if data.Speed > 75 then
-            self:EmitSound(Sound("physics/metal/metal_grenade_impact_hard" .. math.random(1,3) .. ".wav"))
+            self:EmitSound(Sound("weapons/csgo/flashbang/grenade_hit" .. math.random(1,3) .. ".wav"))
         elseif data.Speed > 25 then
-            self:EmitSound(Sound("physics/metal/metal_grenade_impact_soft" .. math.random(1,3) .. ".wav"))
+            self:EmitSound(Sound("weapons/csgo/flashbang/grenade_hit" .. math.random(1,3) .. ".wav"))
         end
 
         if (CurTime() - self.SpawnTime >= self.ArmTime) and self.ImpactFuse then
@@ -61,10 +61,10 @@ function ENT:Think()
     end
 end
 
-function ENT:FlashBang()
+function ENT:FlashBang(data)
     if !self:IsValid() then return end
-    self:EmitSound("weapons/arccw/flashbang/flashbang_explode1.wav", 100, 100, 1, CHAN_ITEM)
-    self:EmitSound("weapons/arccw/flashbang/flashbang_explode1_distant.wav", 140, 100, 1, CHAN_WEAPON)
+    self:EmitSound("weapons/csgo/flashbang/flashbang_explode1.wav", 100, 100, 1, CHAN_ITEM)
+    self:EmitSound("weapons/csgo/flashbang/flashbang_explode1_distant.wav", 140, 100, 1, CHAN_WEAPON)
 
     local attacker = self
 
@@ -77,7 +77,9 @@ function ENT:FlashBang()
     local effectdata = EffectData()
     effectdata:SetOrigin( self:GetPos() )
 
-    util.Effect( "arccw_flashexplosion", effectdata)
+    --util.Effect( "arccw_flashexplosion", effectdata)
+    --util.Effect("Explosion", effectdata)
+    --util.Effect("hl2mmod_explosion_grenade", effectdata)
 
     local flashorigin = self:GetPos()
 
@@ -123,7 +125,34 @@ function ENT:Detonate()
 
     self:FlashBang()
 
-    self:Remove()
+    if SERVER then
+        if !self:IsValid() then return end
+        local effectdata = EffectData()
+            effectdata:SetOrigin( self:GetPos() )
+
+        if self:WaterLevel() >= 1 then
+            util.Effect("WaterSurfaceExplosion", effectdata)
+            self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
+        else
+            local explode = ents.Create( "info_particle_system" )
+            explode:SetKeyValue( "effect_name", "explosion_hegrenade_brief" )
+            explode:SetOwner( self.Owner )
+            explode:SetPos( self:GetPos() )
+            explode:Spawn()
+            explode:Activate()
+            explode:Fire( "start", "", 0 )
+            explode:Fire( "kill", "", 30 )
+        end
+
+        local attacker = self
+
+        if self.Owner:IsValid() then
+            attacker = self.Owner
+        end
+
+        self:Remove()
+
+    end
 end
 
 function ENT:Draw()

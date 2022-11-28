@@ -36,14 +36,14 @@ ATT.Free = false
 ATT.Category = {"go_p90_top"}
 ATT.ActivateElements = {"top_rail"}
 
-ATT.Sights = {
-    {
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 50,
-        IgnoreExtra = true,
-    },
-}
+-- ATT.Sights = {
+    -- {
+        -- Pos = Vector(0, 0, 0),
+        -- Ang = Angle(0, 0, 0),
+        -- Magnification = 1.15,
+        -- ViewModelFOV = 50,
+        -- IgnoreExtra = true,
+    -- },
+-- }
 
 ARC9.LoadAttachment(ATT, "csgo_p90_top_2")

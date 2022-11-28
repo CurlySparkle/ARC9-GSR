@@ -141,7 +141,7 @@ SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = -0.08
 
 
 -------------------------- HANDLING
@@ -435,6 +435,7 @@ SWEP.AttachmentElements = {
     ["mount"] = {
         Bodygroups = {
             {1,1},
+			{5,0},
         },
     },
     ["stock_retract"] = {
@@ -452,9 +453,50 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["mag_556_20"] = {
+        Bodygroups = {
+            {3,2},
+			{0,1},
+        },
+    },
+    ["mag_556_30"] = {
+        Bodygroups = {
+            {3,3},
+			{0,1},
+        },
+    },
+    ["mag_556_60"] = {
+        Bodygroups = {
+            {3,3},
+			{0,1},
+        },
+    },
     ["barrel_short"] = {
         Bodygroups = {
             {4,1},
+			{5,3},
+    },
+    AttPosMods = { 
+	[6] = { Pos = Vector(-0.8, -4.6, 11), },
+	[4] = { Pos = Vector(0, -3.6, 9), },
+	[3] = { Pos = Vector(0.05, -4.52, 18), }
+	}
+    },
+    ["barrel_stub"] = {
+        Bodygroups = {
+            {4,2},
+			{5,4},
+        },
+    AttPosMods = { 
+	[6] = { Pos = Vector(-0.8, -4.6, 9), },
+	[4] = { Pos = Vector(0, -3.6, 8), },
+	[3] = { Pos = Vector(0.05, -4.52, 14.7), }
+	}
+    },
+    ["barrel_factory"] = {
+        Bodygroups = {
+            {4,3},
+			{5,6},
         },
     AttPosMods = { 
 	[6] = { Pos = Vector(-0.8, -4.6, 11), },
@@ -468,6 +510,9 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,1) end		
+	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,2) end
+	if wep:HasElement("barrel_stub") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
+	if wep:HasElement("barrel_factory") and wep.Attachments[1].Installed then model:SetBodygroup(5,7) end
 end
 
 SWEP.Attachments = {
@@ -486,7 +531,7 @@ SWEP.Attachments = {
 		Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -4.52, 21),
         Ang = Angle(90, 0, -90),
-        Category = "cs_barrel_short"
+        Category = "go_scar20_barrel"
     },
     {
         PrintName = "Muzzle",
@@ -527,7 +572,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.SCAR_Clip",
-        Category = "go_mag"
+        Category = "go_scar20_mag"
     },
     {
         PrintName = "Perk",
