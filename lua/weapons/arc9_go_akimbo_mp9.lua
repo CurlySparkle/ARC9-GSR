@@ -23,7 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Global Offensive"
 }
 
-SWEP.Description = [[Accurate and controllable, the German-made P2000 is a serviceable first-round pistol that works best against unarmored opponents.]]
+SWEP.Description = [[Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_mp9.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
@@ -163,8 +163,8 @@ SWEP.IronSights = {
     Pos = Vector(0, 1, 0.5),
     Ang = Angle(0, 0, 2.5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
-        Pos = Vector(0, 0, -0),
-        Ang = Angle(0, -2, 0),
+        Pos = Vector(0, 0.5, 0.25),
+        Ang = Angle(0, -0.5, 1.5),
     },
     Magnification = 1.1,
 	ViewModelFOV = 56,
