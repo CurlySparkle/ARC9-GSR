@@ -121,6 +121,7 @@ SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.03
 
 -------------------------- HANDLING
 
@@ -186,6 +187,8 @@ SWEP.CustomizePos = Vector(21, 32, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
+SWEP.CustomizeSnapshotPos = Vector(2, 3, 3)
+
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
 
@@ -230,7 +233,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_bizon_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.55
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -421,15 +424,50 @@ SWEP.AttachmentElements = {
             {1,2},
         },
     },
+    ["barrel_mid"] = {
+        Bodygroups = {
+            {2,1},
+			{3,1},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18), } }	
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {2,2},
+			{3,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18.5), } }	
+    },
+    ["muzzle_none"] = {
+        Bodygroups = {
+			{3,3},
+        },
+    },
+    ["mag_82"] = {
+        Bodygroups = {
+			{4,2},
+        },
+    },
+    ["mag_47"] = {
+        Bodygroups = {
+			{4,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Barrel",
+        --Bone = "v_weapon.glock_magazine",
+        Category = "go_bizon_barrel"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.bizon_Parent",
-        Pos = Vector(0, -3.15, 17),
+		InstalledElements = {"muzzle_none"},
+        Pos = Vector(0, -3.15, 16.4),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -445,7 +483,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.bizon_Parent",
-        Pos = Vector(-0.9, -3.7, 13),
+        Pos = Vector(-0.9, -3.1, 13),
         Ang = Angle(90, 0, 90),
     },
     {
@@ -465,6 +503,18 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.8, -1.3),
         Ang = Angle(90, 0, -90),
 		Scale = 1.1,
+    },
+    {
+        PrintName = "Mag",
+        Bone = "v_weapon.bizon_clip",
+        Category = "go_bizon_mag",
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Ammo",
+        --Bone = "v_weapon.bizon_clip",
+        Category = {"go_ammo"},
+        --Icon_Offset = Vector(0, 1, 0),
     },
     {
         PrintName = "Perk",
