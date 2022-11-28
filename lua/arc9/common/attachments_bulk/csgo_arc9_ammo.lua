@@ -369,6 +369,8 @@ ATT.ExplosionDamageOverride = 80
 ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
 ATT.ImpactDecal = "FadingScorch"
 
+ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
+ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag")
 
@@ -429,5 +431,7 @@ ATT.ExplosionDamageOverride = 25
 ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
 ATT.ImpactDecal = "FadingScorch"
 
+ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
+ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")
