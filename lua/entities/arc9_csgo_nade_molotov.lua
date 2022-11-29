@@ -6,7 +6,7 @@ ENT.Information = ""
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
-ENT.Model = "models/weapons/w_eq_molotov_thrown.mdl"
+ENT.Model =  "models/weapons/w_eq_incendiarygrenade_thrown.mdl"
 ENT.FuseTime = 5
 ENT.ArmTime = 0
 ENT.FireTime = 15

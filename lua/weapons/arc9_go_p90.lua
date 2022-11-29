@@ -27,7 +27,6 @@ SWEP.Description = [[Easily recognizable for its unique bullpup design, the P90 
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_p90.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_p90.mdl"
-SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 2
 
@@ -261,6 +260,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+		Mult = 0.8,
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -315,7 +315,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -421,6 +421,8 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.DefaultBodygroups = "00000000"
+
 SWEP.AttachmentElements = {
     ["top_rail"] = {
         Bodygroups = {
@@ -428,7 +430,10 @@ SWEP.AttachmentElements = {
 			{2,1},
 			{4,1},
         },
-    AttPosMods = { [1] = { Pos = Vector(0, -6.31, 4), } }	
+    AttPosMods = { 
+	[1] = { Pos = Vector(0, -6.25, 4), },
+	[5] = { Pos = Vector(-0.9, -5.5, 5.5), },
+	}	
     },
     ["sights"] = {
         Bodygroups = {
@@ -438,6 +443,29 @@ SWEP.AttachmentElements = {
     ["sling"] = {
         Bodygroups = {
             {3,1},
+        },
+    },
+    ["ext_barrel"] = {
+    AttPosMods = { 
+	[4] = { Pos = Vector(0, -2.78, 13.3), },
+	[5] = { Pos = Vector(-0.85, -2.77, 9), },
+	}	
+    },
+    ["barrel_mid"] = {
+        Bodygroups = {
+            {5,1},
+			{6,1},
+        },
+    AttPosMods = { [4] = { Pos = Vector(0, -3.05, 10), } }	
+    },
+    ["muzzle_none"] = {
+        Bodygroups = {
+			{6,2},
+        },
+    },
+    ["mag_30"] = {
+        Bodygroups = {
+			{7,1},
         },
     },
 }
@@ -459,26 +487,43 @@ SWEP.Attachments = {
         --Pos = Vector(0, -3, -3),
     },
     {
+        PrintName = "Barrel",
+        Category = "go_p90_barrel",
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -2.9, 7.2),
+        Ang = Angle(90, 0, -90),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_p90","p90_barrel"},
         Bone = "v_weapon.p90_Parent",
-        Pos = Vector(0, -3.05, 7.5),
+		InstalledElements = {"muzzle_none"},
+        Pos = Vector(0, -3.05, 7.3),
         Ang = Angle(90, 0, -90),
     },
-    -- {
-        -- PrintName = "Barrel",
-        -- DefaultAttName = "Standard Barrel",
-        -- Category = "p90_barrel",
-        -- Bone = "v_weapon.p90_Parent",
-        -- Pos = Vector(0, -2.9, 7.2),
-        -- Ang = Angle(90, 0, -90),
-    -- },
     {
-        PrintName = "Perk",
-        Category = "go_perk",
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = "csgo_tac",
         Bone = "v_weapon.p90_Parent",
-        Pos = Vector(0, -3, 0),
+        Pos = Vector(-0.5, -5.25, 5.5),
+        Ang = Angle(90, 90, 90),
+    },
+    {
+        PrintName = "Gripping",
+        DefaultAttName = "Default",
+        Category = {"grip_p90"},
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -1, 4.7),
+        Ang = Angle(90, 0, 90),
+    },
+    {
+        PrintName = "Magazine",
+        Category = {"go_p90_mag"},
+        Bone = "v_weapon.p90_Clip",
+        --Pos = Vector(0, -2, -4.5),
+        --Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "Sling",
@@ -487,37 +532,53 @@ SWEP.Attachments = {
         Pos = Vector(0, -3, -3),
     },
     {
-        PrintName = "Sticker A",
-        Bone = "v_weapon.p90_Parent",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_a.mdl",
-        Pos = Vector(0.05, 1.25, -5),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers",
+        PrintName = "Ammo",
+        --Bone = "v_weapon.bizon_clip",
+        Category = {"go_ammo"},
+        --Icon_Offset = Vector(0, 1, 0),
     },
     {
-        PrintName = "Sticker B",
+        PrintName = "Perk",
+        Category = "go_perk",
         Bone = "v_weapon.p90_Parent",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_b.mdl",
-        Pos = Vector(0.05, 1.25, -6.1),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers",
+        Pos = Vector(0, -3, 0),
     },
     {
-        PrintName = "Sticker C",
-        Bone = "v_weapon.p90_Parent",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_c.mdl",
-        Pos = Vector(0.05, 1.25, -7.2),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers",
+        PrintName = "View",
+        Category = "go_p90_view"
     },
-    {
-        PrintName = "Sticker D",
-        Bone = "v_weapon.p90_Parent",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_d.mdl",
-        Pos = Vector(0.05, 1.25, -8.3),
-        Ang = Angle(90, 0, -90),
-        Category = "stickers",
-    },
+    -- {
+        -- PrintName = "Sticker A",
+        -- Bone = "v_weapon.p90_Parent",
+        -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_a.mdl",
+        -- Pos = Vector(0.05, 1.25, -5),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = "stickers",
+    -- },
+    -- {
+        -- PrintName = "Sticker B",
+        -- Bone = "v_weapon.p90_Parent",
+        -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_b.mdl",
+        -- Pos = Vector(0.05, 1.25, -6.1),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = "stickers",
+    -- },
+    -- {
+        -- PrintName = "Sticker C",
+        -- Bone = "v_weapon.p90_Parent",
+        -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_c.mdl",
+        -- Pos = Vector(0.05, 1.25, -7.2),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = "stickers",
+    -- },
+    -- {
+        -- PrintName = "Sticker D",
+        -- Bone = "v_weapon.p90_Parent",
+        -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_d.mdl",
+        -- Pos = Vector(0.05, 1.25, -8.3),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = "stickers",
+    -- },
 }
 
 SWEP.GripPoseParam = 1

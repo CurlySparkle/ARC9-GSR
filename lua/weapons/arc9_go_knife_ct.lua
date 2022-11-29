@@ -58,7 +58,7 @@ SWEP.Firemodes = {
 
 SWEP.FreeAimRadius = 0
 
-SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = true
 
