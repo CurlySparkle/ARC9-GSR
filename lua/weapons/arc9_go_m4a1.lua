@@ -130,6 +130,7 @@ SWEP.SpreadAddMove = 0.2
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -684,7 +685,16 @@ SWEP.AttachmentElements = {
     ["foregrip_long"] = {
         Bodygroups = {
             {3,1},
+			{5,2},
         },
+    },
+    ["foregrip_m16a4"] = {
+        Bodygroups = {
+		    {0,1},
+            {3,2},
+			{5,4},
+        },
+    AttPosMods = { [4] = { Pos = Vector(-1.35, -5.2, 15.5), } }
     },
     ["mag"] = {
         Bodygroups = {
@@ -713,6 +723,14 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {
+        PrintName = "Barrel",
+        DefaultAttName = "Default",
+        Category = {"go_m4a1_barrel"},
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -5, 10.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_m4"},
@@ -730,10 +748,23 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = {"grip","grip_mk18","grip_m4"},
+        Bone = "v_weapon.M4A1_s_Parent",
+		InstalledElements = {"m16a4"},
+		RequireElements = {"foregrip_m16a4"},
+		ExcludeElements = {"bottom"},
+        Pos = Vector(-0.2, -4, 10.5),
+        Ang = Angle(90, 0, 90),
+    },
+    {
         PrintName = "Bottom",
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_mk18_alt","grip_m4_2"},
         Bone = "v_weapon.M4A1_s_Parent",
+		InstalledElements = {"bottom"},
+		ExcludeElements = {"m16a4"},
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
