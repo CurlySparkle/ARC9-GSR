@@ -99,6 +99,41 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_mag_82")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = [[30-Round 9mm Saiga]]
+ATT.CompactName = [[30-Round]]
+ATT.Icon = Material("entities/attachs/go_bizon_mag_82.png")
+ATT.Description = [[
+Small stick magazine improves handling at the cost of capacity.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = -1
+ATT.Free = false
+
+ATT.LHIK_Priority = 5
+ATT.LHIK = true
+
+ATT.ModelOffset = Vector(5.5, 0, 1.5)
+ATT.ModelAngleOffset = Angle(0, -5, 0)
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scar20.mdl"
+
+ATT.Category = {"go_bizon_mag"}
+ATT.ActivateElements = {"mag_saiga"}
+--ATT.ExcludeElements = {"barrel_mid"}
+ATT.ClipSizeOverride = 30
+ATT.ReloadTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_saiga"
+end
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_mag_82")
+--------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Alt Hold 2"
 ATT.CompactName = "Alt Hold 2"
 ATT.Description = [[Changes the holding style of the weapon 2.]]

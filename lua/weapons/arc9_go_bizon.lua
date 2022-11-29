@@ -27,7 +27,7 @@ SWEP.Description = [[The Bizon SMG is low-damage, but offers a uniquely designed
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.Slot = 2
 
@@ -322,6 +322,66 @@ SWEP.Animations = {
             {s = path .. "bizon_boltforward.wav", t = 56 / 30},
         },
     },
+    ["reload_saiga"] = {
+        Source = "reload_saiga_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = path .. "bizon_clipin.wav", t = 31 / 30},
+        },
+    },
+    ["reload_empty_saiga"] = {
+        Source = "reload_saiga",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = path .. "bizon_clipin.wav", t = 31 / 30},
+            {s = path .. "bizon_boltback.wav", t = 48 / 30},
+            {s = path .. "bizon_boltforward.wav", t = 56 / 30},
+        },
+    },	
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -453,7 +513,14 @@ SWEP.AttachmentElements = {
 			{4,1},
         },
     },
+    ["mag_saiga"] = { Bodygroups = {{4,3},{5,1},},},	
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("mag_saiga") and wep:HasElement("barrel_long") then model:SetBodygroup(5,2) end	
+end
+
 
 SWEP.Attachments = {
     {
@@ -508,6 +575,8 @@ SWEP.Attachments = {
         PrintName = "Mag",
         Bone = "v_weapon.bizon_clip",
         Category = "go_bizon_mag",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(90, 0, -90),		
         Icon_Offset = Vector(0, 0, 0),
     },
     {
