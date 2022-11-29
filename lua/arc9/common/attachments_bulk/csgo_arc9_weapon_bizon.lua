@@ -130,7 +130,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 ATT.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
 
-ARC9.LoadAttachment(ATT, "csgo_bizon_mag_82")
+ARC9.LoadAttachment(ATT, "csgo_bizon_mag_saiga")
 --------------------------------------------------------------------
 ATT = {}
 

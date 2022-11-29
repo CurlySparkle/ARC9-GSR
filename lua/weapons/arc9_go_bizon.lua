@@ -513,7 +513,13 @@ SWEP.AttachmentElements = {
 			{4,1},
         },
     },
-    ["mag_saiga"] = { Bodygroups = {{4,3},{5,1},},},	
+    ["mag_saiga"] = {
+        Bodygroups = {
+            {4,3},
+			{5,1},
+        },
+    AttPosMods = { [6] = { Pos = Vector(-0.3, -5.1, 12), } }	
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
@@ -554,12 +560,27 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Bottom",
+        DefaultAttName = "Default",
+        Category = "csgo_rail_ub",
+        Bone = "v_weapon.bizon_Parent",
+		InstalledElements = {"bottom"},
+		RequireElements = {"mag_saiga"},
+		ExcludeElements = {"gripping"},
+        Pos = Vector(0, -2, 12),
+        Ang = Angle(90, 0, 90),
+        Scale = 1,
+    },
+    {
         PrintName = "Gripping",
         DefaultAttName = "Default",
         Category = {"grip_bizon"},
         Bone = "v_weapon.bizon_Parent",
+		InstalledElements = {"gripping"},
+		ExcludeElements = {"bottom"},
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
+		Icon_Offset = Vector(0, 0, 3),
     },
     {
         PrintName = "Stock",
@@ -590,3 +611,6 @@ SWEP.Attachments = {
         Category = "go_perk",
     },
 }
+
+SWEP.GripPoseParam = 4.4
+SWEP.GripPoseParam2 = 0.5

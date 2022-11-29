@@ -463,7 +463,7 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["stock_none"] = {
         Bodygroups = {
-            {1,1},
+            {1,3},
         },
     },
     ["topcover"] = {
@@ -471,25 +471,70 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
-    ["foregrip"] = {
+    ["grip_poly"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
+    ["barrel_tactical"] = {
         Bodygroups = {
             {3,1},
         },
-    AttPosMods = { [4] = { Pos = Vector(-0.9, -3.34, 14), } }
+    AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3), } }
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -3.4, 31.4), } }
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {3,3},
+        },
+    AttPosMods = { 
+	[2] = { Pos = Vector(0, -3.4, 17.5), },
+	[6] = { Pos = Vector(0, -2.3, 12), },
+	}
     },
     ["mag_drum"] = {
         Bodygroups = {
             {4,1},
         },
     },
-    ["mag_none"] = {
+    ["mag_556"] = {
         Bodygroups = {
             {4,2},
+        },
+    },
+    ["mag_556_ext"] = {
+        Bodygroups = {
+            {4,3},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {4,4},
+        },
+    },
+    ["stock_rpk"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["stock_skeleton"] = {
+        Bodygroups = {
+            {1,2},
         },
     },
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Barrel",
+        --Bone = "v_weapon.glock_magazine",
+        Category = "go_ak47_barrel"
+    },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
@@ -530,7 +575,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"grip"},
         Bone = "v_weapon.ak47_Parent",
-        InstalledElements = {"foregrip"},
+        --InstalledElements = {"foregrip"},
         Pos = Vector(0, -2.3, 14),
         Ang = Angle(90, 0, 90),
     },
@@ -546,9 +591,9 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube"},
+        Category = {"csgo_tube","go_ak47_stock"},
         Bone = "v_weapon.ak47_Parent",
-        InstalledElements = {"stock_none"},
+        --InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.6, -1.3),
         Ang = Angle(90, 0, -90),
         Scale = 1.05,
@@ -560,6 +605,10 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.6, -1.3),
         Ang = Angle(90, 0, -90),
         Scale = 1.05,
+    },
+    {
+        PrintName = "Pistol Grip",
+        Category = "go_ak47_grip",
     },
     {
         PrintName = "Ammo",

@@ -109,9 +109,10 @@ ATT = {}
 
 ATT.PrintName = [[M3 7 Round Tube]]
 ATT.CompactName = [[7-RND]]
-ATT.Icon = Material("entities/attachs/ext_mag.png")
+ATT.Icon = Material("entities/attachs/go_m3_cap_8.png")
 ATT.Description = [[A longer tube that holds a few more shells.
-Extra frontal weight impacts weapon handling while on the move.]]
+Extra frontal weight impacts weapon handling while on the move.
+(Requires a longer barrel).]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
@@ -126,9 +127,110 @@ ATT.SpeedAddSights = -0.05
 ATT.SprintToFireTimeAdd = 0.075
 ATT.AimDownSightsTimeAdd = 0.075
 
-ATT.ActivateElements = {"mag"}
+ATT.ActivateElements = {"mag_long"}
+ATT.ExcludeElements = {"barrel_short","barrel_default"}
 
 ARC9.LoadAttachment(ATT, "csgo_m3_mag_7")
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[M3 4 Round Tube]]
+ATT.CompactName = [[4-RND]]
+ATT.Icon = Material("entities/attachs/go_m3_cap_4.png")
+ATT.Description = [[A shorter tube that holds only a few shells.
+Extra handling speed and less reload time.]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_m3_mag"}
+ATT.ClipSizeOverride = 4
+ATT.SpreadAddHipFire = 0.02
+
+ATT.ReloadTimeMult = 0.8
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+ATT.ActivateElements = {"mag_none"}
+
+ARC9.LoadAttachment(ATT, "csgo_m3_mag_4")
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[M3 Default Barrel]]
+ATT.CompactName = [[Default]]
+--ATT.Icon = Material("entities/attachs/go_m3_cap_8.png")
+ATT.Description = [[Default Barrel.]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+ATT.Hidden = true
+
+ATT.Category = {"go_m3_barrel"}
+
+ATT.ActivateElements = {"barrel_default"}
+ATT.ExcludeElements = {"mag_long"}
+
+ARC9.LoadAttachment(ATT, "csgo_m3_barrel_default")
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[M3 Extended Barrel]]
+ATT.CompactName = [[Barrel L]]
+ATT.Icon = Material("entities/attachs/go_m3_barrel_long.png")
+ATT.Description = [[Extends the M3 barrel.
+Significantly increases range and precision.]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_m3_barrel"}
+
+ATT.RangeMaxMult = 2
+ATT.SpreadAdd = -0.009
+ATT.RecoilMult = 0.85
+
+ATT.SpreadAddHipFire = 0.025
+ATT.SprintToFireTimeAdd = 0.1
+ATT.AimDownSightsTimeAdd = 0.08
+
+ATT.ActivateElements = {"barrel_long"}
+--ATT.ExcludeElements = {"mag_long"}
+
+ARC9.LoadAttachment(ATT, "csgo_m3_barrel_long")
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "M3 Short Barrel"
+ATT.CompactName = "Barrel S"
+ATT.Description = [[Shorter barrel that improves handling, but at the cost of spread/capacity.]]
+ATT.SortOrder = 1.5
+
+ATT.Icon = Material("entities/attachs/go_m3_barrel_short.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_m3_barrel"}
+ATT.ActivateElements = {"barrel_short"}
+ATT.ExcludeElements = {"mag_long"}
+
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+ATT.SpreadMultHipFire = 0.5
+ATT.RecoilMult = 1.15
+
+ATT.RangeMaxMult = 0.85
+ATT.RangeMinMult = 0.85
+
+ARC9.LoadAttachment(ATT, "csgo_m3_barrel_short")
 
 -------------------------------------------------------------------------------
 ATT = {}

@@ -27,7 +27,6 @@ SWEP.Description = [[The M3 is a well-rounded shotgun that retains effectiveness
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_m3.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
-SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 3
 
@@ -441,6 +440,8 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 
+SWEP.DefaultBodygroups = "000000000"
+
 -- SWEP.AttachmentTableOverrides = {
     -- ["csgo_rail_optic_2"] = {
     -- ModelOffset = Vector(0, 0, -5),
@@ -457,15 +458,37 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 -- }
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
+    ["mag_default"] = {
+        Bodygroups = {
+            {2,0},
+        },
+    },
+    ["mag_long"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {2,2},
         },
     },
     ["pistolgrip"] = {
         Bodygroups = {
             {1,1},
         },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    AttPosMods = { [4] = { Pos = Vector(0, -1.85, 28.3), } }
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    AttPosMods = { [4] = { Pos = Vector(0, -1.8, 23.2), } }
     },
 }
 
@@ -489,11 +512,17 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0),
     },
     {
+        PrintName = "Barrel",
+        Bone = "v_weapon.M3_PARENT",
+        Category = "go_m3_barrel",
+        Icon_Offset = Vector(0, -2, 12),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle_shotgun","muzzle"},
         Bone = "v_weapon.m3_Parent",
-        Pos = Vector(0, -1.88, 28.1),
+        Pos = Vector(0, -1.8, 25.3),
         Ang = Angle(90, 0, -90),
     },
     {
