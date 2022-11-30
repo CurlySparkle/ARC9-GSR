@@ -121,6 +121,7 @@ SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.01
 
 -------------------------- HANDLING
 
@@ -184,7 +185,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(19, 32, 5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-1, 0, 3)
+SWEP.CustomizeSnapshotPos = Vector(-1, 0, 2)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -292,6 +293,66 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mp7_clipout.wav", t = 9 / 30},
+            {s = path .. "mp7_clipin.wav", t = 41 / 30},
+            {s = path .. "mp7_slideback.wav", t = 63 / 30},
+            {s = path .. "mp7_slideforward.wav", t = 70 / 30},
+        },
+    },
+    ["reload_smallmag"] = {
+        Source = "reload_short_smallmag",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mp7_clipout.wav", t = 9 / 30},
+            {s = path .. "mp7_clipin.wav", t = 41 / 30},
+        },
+    },
+    ["reload_empty_smallmag"] = {
+        Source = "reload_smallmag",
         IKTimeLine = {
             {
                 t = 0,
@@ -434,9 +495,14 @@ SWEP.AttachmentElements = {
             {3,2},
         },
     },
-    ["mag"] = {
+    ["mag_20"] = {
         Bodygroups = {
             {4,1},
+        },
+    },
+    ["mag_40"] = {
+        Bodygroups = {
+            {4,2},
         },
     },
 }
@@ -488,7 +554,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.clip",
-        Category = "go_mag"
+        Category = "go_mp7_mag"
     },
     {
         PrintName = "Stock",
@@ -501,9 +567,20 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, -2, 0),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_mp7_view"
     },
 }
 
 SWEP.GripPoseParam = 4
+SWEP.GripPoseParam2 = 0.5
