@@ -191,8 +191,8 @@ SWEP.HasSights = true
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, 0, -1)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = Vector(-1, -6, -15)
+SWEP.SprintAng = Angle(0, 45, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -207,7 +207,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(-1, -2, -1)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
@@ -216,7 +216,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 30, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
+SWEP.CustomizeSnapshotPos = Vector(7, 8, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -246,11 +246,11 @@ SWEP.AnimDraw = false
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_autoshotgun"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke"
-SWEP.MuzzleEffectQCA = 2
-SWEP.MuzzleEffectQCAEvenShot = 1
+SWEP.MuzzleEffectQCA = 1
+SWEP.MuzzleEffectQCAEvenShot = 2
 
-SWEP.CaseEffectQCA = 4
-SWEP.CaseEffectQCAEvenShot = 3
+SWEP.CaseEffectQCA = 3
+SWEP.CaseEffectQCAEvenShot = 4
 
 SWEP.AfterShotQCA = 1
 SWEP.AfterShotQCAEvenShot = 2
@@ -264,6 +264,8 @@ SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
+
+SWEP.EjectDelay = 0.5
 
 SWEP.ShotgunReload = true
 
@@ -289,12 +291,14 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire_left"] = {
         Source = "fire_left",
+		Mult = 0.75,
         EventTable = {
             {s = path .. "sawedoff_pump.wav", t = 15 / 30},			
         },			
     },
     ["fire_right"] = {
         Source = "fire1_right",
+		Mult = 0.75,
         EventTable = {
             {s = path .. "sawedoff_pump.wav", t = 15 / 30},			
         },				
@@ -359,56 +363,57 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Slide",
-		--Bone = "v_weapon.glock_magazine",
-        Category = "go_glock_s"
-    },
-    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = {"muzzle","muzzle_pistols"},
-        Bone = "tag_pistol_attachments_l",
-        Pos = Vector(5.23, 0, 1),
-        Ang = Angle(0, 0, 0),
+        Category = {"muzzle_shotgun","muzzle"},
+        Bone = "W_Main2_L",
+        Pos = Vector(0, -1.55, 19.5),
+        Ang = Angle(90, 0, -90),
         DuplicateModels = {
             {
-                Bone = "tag_pistol_attachments",
+                Bone = "W_Main2_R",
             }
         },
-        Scale = 0.7,
+        Scale = 1,
     },
-    {
-        PrintName = "Sights",
-        Bone = "j_slide",
-        Pos = Vector(-2.5, 0, 0.2),
-        Ang = Angle(0, 0, 0),
-        Category = {"csgo_optics_pistols",},
-        CorrectiveAng = Angle(0.03, 0.1, 0),
-        DuplicateModels = {
-            {
-                Bone = "j_slide_l",
-            }
-        },
-		Scale = 0.9,
-    },
+    -- {
+        -- PrintName = "Sights",
+        -- Bone = "j_slide",
+        -- Pos = Vector(-2.5, 0, 0.2),
+        -- Ang = Angle(0, 0, 0),
+        -- Category = {"csgo_optics_pistols",},
+        -- CorrectiveAng = Angle(0.03, 0.1, 0),
+        -- DuplicateModels = {
+            -- {
+                -- Bone = "j_slide_l",
+            -- }
+        -- },
+		-- Scale = 0.9,
+    -- },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
-        Category = {"csgo_tac","csgo_tac_pistols"},
-        Bone = "tag_pistol_attachments",
-        Pos = Vector(4.3, 0, 0),
-        Ang = Angle(0, 0, 0),
+        Category = {"csgo_tac"},
+        Bone = "W_Main2_L",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(90, 0, -90),
         DuplicateModels = {
             {
-                Bone = "tag_pistol_attachments_l",
+                Bone = "W_Main2_R",
             }
         },
 		Scale = 1,
     },
+    -- {
+        -- PrintName = "Mag",
+		-- Bone = "j_mag1_l",
+        -- Category = "go_mag"
+    -- },
     {
-        PrintName = "Mag",
-		Bone = "j_mag1_l",
-        Category = "go_mag"
+        PrintName = "Ammo",
+        --Bone = "v_weapon.M3_LOADER",
+        Category = "go_ammo_sg",
+        --Icon_Offset = Vector(0, 0.5, 2),
     },
     {
         PrintName = "Perk",
