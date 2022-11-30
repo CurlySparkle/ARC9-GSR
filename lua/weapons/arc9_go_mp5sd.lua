@@ -327,6 +327,66 @@ SWEP.Animations = {
             {s = path .. "mp5_slideforward.wav", t = 85 / 30},
         },
     },
+    ["reload_alt"] = {
+        Source = "reload_short_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.3,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mp5_clipout.wav", t = 25 / 30},
+            {s = path .. "mp5_clipin.wav", t = 69 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mp5_slideback.wav", t = 5 / 30},
+            {s = path .. "mp5_clipout.wav", t = 27 / 30},
+            {s = path .. "mp5_clipin.wav", t = 64 / 30},
+            {s = path .. "mp5_slideforward.wav", t = 86 / 30},
+        },
+    },
     ["ready"] = {
         Source = {"draw", "draw2"},
         IKTimeLine = {

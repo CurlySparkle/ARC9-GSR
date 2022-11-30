@@ -377,11 +377,11 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.UMP.Fire.Distance",
+    name = "CSGO.UMP.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.4,
     level = 120,
-    pitch = {97,103},
+    pitch = {90,115},
     sound = {
         "^weapons/csgo/ump/ump45-1-distant.ogg",
     }

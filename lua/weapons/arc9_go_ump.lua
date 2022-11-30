@@ -119,6 +119,7 @@ SWEP.SpreadAddMove = 0.07
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.03
 
 -------------------------- HANDLING
 
@@ -149,8 +150,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.1, -12, 0.75),
-    Ang = Angle(0, 1.2, 0),
+    Pos = Vector(-5.12, -12, 1.4),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.1,
     ViewModelFOV = 56,
 }
@@ -180,9 +181,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 32, 5)
+SWEP.CustomizePos = Vector(22, 36, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+SWEP.CustomizeSnapshotPos = Vector(2, 5, 3)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -238,7 +240,7 @@ local path = "weapons/csgo/ump/"
 
 SWEP.ShootSound = "CSGO.UMP.Fire"
 SWEP.ShootSoundSilenced = "CSGO.UMP.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.UMP.Fire.Distance"
+SWEP.DistantShootSound = "CSGO.UMP.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -254,6 +256,10 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+    },
+    ["fire_alt"] = {
+        Source = {"shoot1_alt", "shoot2_alt", "shoot3_alt"},
+		Mult = 0.7,
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -388,14 +394,19 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
+    ["mag_15"] = {
         Bodygroups = {
-            {1,1},
+            {2,1},
+        },
+    },
+    ["mag_30_9"] = {
+        Bodygroups = {
+            {2,2},
         },
     },
     ["grip"] = {
         Bodygroups = {
-            {2,1},
+            {4,1},
         },
     },
     ["stock_retract"] = {
@@ -407,6 +418,17 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,2},
         },
+    },
+    ["barrel_med"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.95, 20.4), } }
     },
 }
 
@@ -420,11 +442,15 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.1, 0, 0),
     },
     {
+        PrintName = "Barrel",
+        Category = "go_ump_barrel"
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.ump45_Parent",
-        Pos = Vector(0, -3.95, 15),
+        Pos = Vector(0, -3.95, 14.7),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -457,12 +483,24 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.ump45_Clip",
-        Category = "go_mag"
+        Category = "go_ump_mag"
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.ump45_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1, 1),
     },
     {
         PrintName = "Perk",
         Category = "go_perk"
     },
+    {
+        PrintName = "View",
+        Category = "go_ump_view"
+    },
 }
 
 SWEP.GripPoseParam = 3.5
+
+SWEP.GripPoseParam2 = 0.3
