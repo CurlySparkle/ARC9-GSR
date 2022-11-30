@@ -519,7 +519,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mag7_parent",
         Pos = Vector(-0.3, -4.6, 2.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic",},
+        Category = {"csgo_rail_optic","go_optic_mp7"},
         CorrectiveAng = Angle(0, 0, 0),
     },
     {
