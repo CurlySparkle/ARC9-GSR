@@ -27,7 +27,6 @@ SWEP.Description = [[An ideal pistol for the Terrorist on the move, the Tec-9 is
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_tec9.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_fiveseven.mdl"
-SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 
@@ -149,7 +148,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.11, -3, 2.5),
+    Pos = Vector(-3.35, -5, 2.5),
     Ang = Angle(0.1, 0, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
@@ -157,8 +156,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, 0, 0)
-SWEP.SprintAng = Angle(0, 0, 5)
+SWEP.SprintPos = Vector(2, 3, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -173,7 +172,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -0.5, -0.5)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
@@ -261,31 +260,99 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
     ["fire_sights"] = {
-        Source = "shoot1",
+        Source = "shoot1_ads",
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
-            {s = path .. "tec9_clipout.wav", t = 12 / 30},
-            {s = path .. "tec9_clipin.wav", t = 36 / 30},
+            {s = path .. "tec9_clipout.wav", t = 10 / 50},
+            {s = path .. "tec9_clipin.wav", t = 62 / 50},
+			{s = "CSGO.Item.Movement", t = 39 / 50},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.4,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
-            {s = path .. "tec9_clipout.wav", t = 12 / 30},
-            {s = path .. "tec9_clipin.wav", t = 36 / 30},
-            {s = path .. "tec9_boltpull.wav", t = 55 / 30},
-            {s = path .. "tec9_boltrelease.wav", t = 62 / 30},
+            {s = path .. "tec9_clipout.wav", t = 10 / 50},
+            {s = path .. "tec9_clipin.wav", t = 62 / 50},
+			{s = "CSGO.Item.Movement", t = 39 / 50},
+            {s = path .. "tec9_boltpull.wav", t = 98 / 50},
+            {s = path .. "tec9_boltrelease.wav", t = 105 / 50},
         },
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
-            {s = path .. "tec9_draw.wav", t = 0 / 30},
-            {s = path .. "tec9_boltpull.wav", t = 8 / 30},
-            {s = path .. "tec9_boltrelease.wav", t = 14 / 30},
+            {s = path .. "tec9_draw.wav", t = 0 / 38},
+            {s = path .. "tec9_boltpull.wav", t = 12 / 38},
+            {s = path .. "tec9_boltrelease.wav", t = 22 / 38},
         },
     },
     ["draw"] = {
@@ -315,10 +382,33 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 3 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 33 / 30 },
-			{ s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            { s = "CSGO.Item.Movement", t = 7 / 40 },
+            { s = "CSGO.Item.Movement", t = 59 / 40 },
+			{ s = "CSGO.Item.Movement", t = 135 / 40 },
+			{ s = "CSGO.Item.Movement", t = 166 / 40 },
         },
     },
 }
@@ -326,55 +416,114 @@ SWEP.Animations = {
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 -------------------------- ATTACHMENTS
+SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
+    ["mag_10"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["mag_32"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
+    ["barrel_short"] = {
         Bodygroups = {
             {1,1},
+        },
+	AttPosMods = { [3] = { Pos = Vector(0.5, -4, 8.5), } }	
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0.5, -3.98, 15.5), } }	
+    },
+    ["ubrms"] = {
+        Bodygroups = {
+            {4,2},
+        },
+    },
+    ["tacms"] = {
+        Bodygroups = {
+            {4,1},
         },
     },
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("ubrms") and wep.Attachments[4].Installed then model:SetBodygroup(4,3) end
+    if wep:HasElement("tacms") and wep.Attachments[5].Installed then model:SetBodygroup(4,3) end
+end
+
 SWEP.Attachments = {
+    -- {
+        -- PrintName = "Sights",
+        -- Bone = "v_weapon.tec9_parent",
+        -- Pos = Vector(0, -4, 1),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_optics_pistols",},
+        -- CorrectiveAng = Angle(0.25, 0, 0),
+		-- Scale = 1,
+    -- },
     {
-        PrintName = "Sights",
+        PrintName = "Top",
         Bone = "v_weapon.tec9_parent",
-        Pos = Vector(0, -4, 1),
+        Pos = Vector(0.5, -4.35, 2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols",},
-        CorrectiveAng = Angle(0.25, 0, 0),
-		Scale = 1,
+        Category = {"csgo_rail_optic"},
+        CorrectiveAng = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Barrel",
+        --Bone = "v_weapon.p250_parent",
+        --Pos = Vector(-0.025, -2.6, 2),
+        --Ang = Angle(90, 0, -90),		
+        Category = "go_tec9_barrel",
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.tec9_parent",
-        Pos = Vector(0, -3.32, 10.8),
+        Pos = Vector(0.5, -4, 11.1),
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
-        Category = {"csgo_tac","csgo_tac_pistols"},
+        Category = {"csgo_tac"},
         Bone = "v_weapon.tec9_parent",
-        Pos = Vector(0, -2.2, 7.6),
-        Ang = Angle(90, 180, 90),
-		Scale = 1,
+		InstalledElements = {"tacms"},
+        Pos = Vector(-0.9, -4, 8.2),
+        Ang = Angle(90, 90, 90),
+		Scale = 1.15,
+    },
+    {
+        PrintName = "Grip",
+        DefaultAttName = "Default",
+        Category = {"grip"},
+        Bone = "v_weapon.tec9_parent",
+		InstalledElements = {"ubrms"},
+        Pos = Vector(0.5, -2.5, 9),
+        Ang = Angle(90, 0, 90),
     },
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
         Category = "csgo_tube",
         Bone = "v_weapon.tec9_parent",
-        Pos = Vector(0, -2.9, -1.6),
+        Pos = Vector(0.5, -3.5, -2),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
     },
     {
         PrintName = "Mag",
 		Bone = "v_weapon.Clip",
-        Category = "go_mag"
+        Category = "go_tec9_mag"
     },
     {
         PrintName = "Perk",
@@ -382,4 +531,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 3.5
+SWEP.GripPoseParam = 4
+SWEP.GripPoseParam2 = 0.3

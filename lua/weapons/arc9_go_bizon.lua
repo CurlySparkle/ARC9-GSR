@@ -259,6 +259,10 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_saiga"] = {
+        Source = {"shoot1", "shoot2", "shoot3"},
+		Mult = 0.7,
+    },
     ["fire_sights"] = {
         Source = "shoot1_ads",
     },
