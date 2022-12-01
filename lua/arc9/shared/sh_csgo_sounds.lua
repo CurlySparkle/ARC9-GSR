@@ -573,7 +573,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
-    pitch = {97,103},
+    pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/csgo/ssg08/ssg08_01.ogg",
@@ -583,7 +583,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.SG008.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.5,
+    volume = 0.2,
     level = 120,
     pitch = {95,105},
     sound = {

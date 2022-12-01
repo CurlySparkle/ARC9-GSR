@@ -1,24 +1,24 @@
-"VertexLitGeneric"
+"VertexlitGeneric"
 {
-	$basetexture "models/csgo/aug/rif_aug_scope"
-	$bumpmap "null-bumpmap"
-	
-	"$phong" "1"
-	"$phongboost" "1"
-	"$phongalbedoboost" "60"
-	"$phongfresnelranges" "[.83 .83 1]"
-	"$phongexponenttexture" "models/csgo/aug/rif_aug_scope_exponent"
-
+	"$basetexture"				"models/csgo/aug/rif_aug_scope"
+	"$bumpmap"					"null-bumpmap"
+	"$phongexponenttexture"		"models/csgo/aug/rif_aug_scope_exponent"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
 	"$basemapalphaphongmask" "1"
 
-	"$envmap" "env_cubemap"
-	"$envmapfresnel" "1"
-	"$envmaptint" 		"[.35 .35 .35]"
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
 
-	"$phongalbedotint" "1"
+	"$phong"					"1"
+	"$phongboost"				"15"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
-	"$phongdisablehalflambert" "1"
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 }
-
-
-	

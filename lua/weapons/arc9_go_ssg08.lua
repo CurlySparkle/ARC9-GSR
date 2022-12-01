@@ -244,17 +244,18 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1"},
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 18 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
+            {s = path .. "ssg08_boltback.wav", t = 18 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 28 / 50},
         },
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
+		Mult = 0.5,
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 18 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
+            {s = path .. "ssg08_boltback.wav", t = 20 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 39 / 50},
         },
     },
     ["reload"] = {
@@ -282,9 +283,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_clipout.wav", t = 9 / 30},
-            {s = path .. "ssg08_clipin.wav", t = 44 / 30},
-            {s = path .. "ssg08_cliphit.wav", t = 59 / 30},
+		    {s = "weapons/csgo/movement1.wav", t = 0 / 60 },
+            {s = path .. "ssg08_clipout.wav", t = 14 / 60},
+            {s = path .. "ssg08_clipin.wav", t = 65 / 60},
+            {s = path .. "ssg08_cliphit.wav", t = 70 / 60},
+			{s = "weapons/csgo/movement1.wav", t = 80 / 60 },
         },
     },
     ["reload_empty"] = {
@@ -307,19 +310,21 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_clipout.wav", t = 9 / 30},
-            {s = path .. "ssg08_clipin.wav", t = 44 / 30},
-            {s = path .. "ssg08_cliphit.wav", t = 59 / 30},
-            {s = path .. "ssg08_boltback.wav", t = 78 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 90 / 30},
+		    {s = "weapons/csgo/movement1.wav", t = 0 / 60 },
+            {s = path .. "ssg08_clipout.wav", t = 53 / 60},
+            {s = path .. "ssg08_clipin.wav", t = 110 / 60},
+            {s = path .. "ssg08_cliphit.wav", t = 105 / 60},
+            {s = path .. "ssg08_boltback.wav", t = 23 / 60},
+			{s = "weapons/csgo/movement1.wav", t = 130 / 60 },
+            {s = path .. "ssg08_boltforward.wav", t = 145 / 60},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "ssg08_draw.wav", t = 0 / 30},
-            {s = path .. "ssg08_boltback.wav", t = 6 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 13 / 30},
+            {s = path .. "ssg08_draw.wav", t = 0 / 50},
+            {s = path .. "ssg08_boltback.wav", t = 6 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 13 / 50},
         },
     },
     ["draw"] = {
@@ -399,13 +404,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0.3, -2.2, 25), } }	
+    AttPosMods = { [3] = { Pos = Vector(0.3, -2.7, 26.5), } }	
     },
     ["barrel_factory"] = {
         Bodygroups = {
             {1,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0.3, -2.2, 28.8), } }	
+    AttPosMods = { [3] = { Pos = Vector(0.3, -2.7, 30.5), } }	
     },
     ["stock_none"] = {
         Bodygroups = {
@@ -423,12 +428,13 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0.2, -3.1, 8.5),
+        Pos = Vector(0.2, -3.65, 9.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic","csgo_sights_ssg08"},
         CorrectiveAng = Angle(0.2, -0.25, 0),
         Installed = "csgo_optic_scope_ssg08",
         Integral = true,
+		Scale = 1.2,
     },
     {
         PrintName = "Barrel",
@@ -440,16 +446,16 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0.3, -2.2, 33.4),
+        Pos = Vector(0.3, -2.7, 36),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+		Scale = 1.2,
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(-0.8, -1.4, 21),
+        Pos = Vector(-0.9, -1.75, 23),
         Ang = Angle(90, 90, 90),
     },
     {
@@ -457,7 +463,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_ssg08"},
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0, -0, 16),
+        Pos = Vector(0.17, -0.2, 17),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
     },
@@ -468,7 +474,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.ssg08_Parent",
         Pos = Vector(0.5, -0, -3),
         Ang = Angle(90, 0, -90),
-		Scale = 1.15,
+		Scale = 1.2,
     },
     {
         PrintName = "Mag",
@@ -484,4 +490,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 0.65
+SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.2
