@@ -352,8 +352,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 55 / 30 },
+			{ s = "weapons/csgo/movement3.wav", t = 113 / 30 },
         },
     },
 }
