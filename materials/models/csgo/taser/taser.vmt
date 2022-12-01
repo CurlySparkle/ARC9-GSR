@@ -1,22 +1,24 @@
-VertexLitGeneric
+"VertexlitGeneric"
 {
-	"$baseTexture" "models\csgo\taser\taser"
-
-	"$phong" "1"
-	"$phongboost" ".8"
-	"$phongfresnelranges" "[.3 .3 1]"
-
-	"$phongexponent" 17
-//	"$phongexponenttexture" "models\csgo\taser\taser_exponent"
-
+	"$basetexture"				"models/csgo/taser/taser"
+	"$bumpmap"					"null-bumpmap"
+	"$phongexponenttexture"		"models/csgo/taser/taser_exponent"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
 	"$basemapalphaphongmask" "1"
-	
 
-	"$envmap" "env_cubemap"
-	"$envmapfresnel" "1"
-	"$envmapFresnelMinMaxExp" "[0 5 .4]"
-	"$envmaptint" 		"[.01 .01 .01]"
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
 
-//	"$phongalbedotint" "1"
-	"$phongdisablehalflambert" "1"
+	"$phong"					"1"
+	"$phongboost"				"15"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 }

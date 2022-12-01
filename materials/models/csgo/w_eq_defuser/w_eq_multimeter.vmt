@@ -1,7 +1,0 @@
-vertexlitgeneric
-{
-	$basetexture			models/csgo/w_eq_defuser/w_eq_multimeter
-	$envmap					env_cubemap
-	$envmaptint 			"[0.2 0.2 0.2]"
-	$basealphaenvmapmask	1	
-}

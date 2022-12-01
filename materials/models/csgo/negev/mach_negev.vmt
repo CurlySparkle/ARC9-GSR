@@ -1,24 +1,24 @@
-"VertexLitGeneric"
+"VertexlitGeneric"
 {
-	$baseTexture  "models/csgo/negev/mach_negev"
-	$bumpMap  "models/csgo/negev/mach_negev_normal"
-	$phongexponenttexture  "models/csgo/negev/mach_negev_exponent"
-	$phong  "1"
+	"$basetexture"				"models/csgo/negev/mach_negev"
+	"$bumpmap"					"models/csgo/negev/mach_negev_normal"
+	"$phongexponenttexture"		"models/csgo/negev/mach_negev_exponent"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
+	"$basemapalphaphongmask" "1"
 
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
 
-	$phongboost  "1.5"
-	$phongalbedoboost  "80"
-	$phongfresnelranges  "[.83 .83 1]"
+	"$phong"					"1"
+	"$phongboost"				"15"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
-	$basemapalphaphongmask  "1"
-
-	$phongalbedotint  "1"
-
-	$phongdisablehalflambert  "1"
-
-	$envmap  "env_cubemap"
-	$envmapfresnel  "1"
-	$envmaptint  		"[.1 .1 .1]"
-
-	
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 }

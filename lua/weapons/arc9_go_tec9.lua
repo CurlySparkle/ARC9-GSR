@@ -257,7 +257,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1", "shoot2"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -532,4 +532,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 4
-SWEP.GripPoseParam2 = 0.3
+SWEP.GripPoseParam2 = 0.6
