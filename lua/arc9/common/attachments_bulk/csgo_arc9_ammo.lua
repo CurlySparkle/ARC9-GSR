@@ -329,7 +329,7 @@ ATT.PrintName = "25mm Flechettes"
 ATT.CompactName = "FLE"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
 ATT.Description = [[A load containing thin, dart-shaped projectiles.
-Provides a tighter spread and much higher penetration, but much lower stopping power.]]
+Provides a tighter spread and better range as well as much higher penetration, but much lower stopping power.]]
 ATT.SortOrder = 12
 
 ATT.Category = {"go_ammo_sg"}
@@ -339,6 +339,8 @@ ATT.SpreadMult = 0.25
 ATT.NumMult = 1.5
 ATT.PenetrationOverride = 12
 ATT.DamageMaxMult = 1 / 1.5 * 0.85
+ATT.RangeMaxMult = 1.25
+ATT.RangeMinMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
 
@@ -401,7 +403,7 @@ ATT.RicochetSeekingAngle = 45
 ATT.TracerColor = Color(255, 255, 255, 150)
 ATT.TracerSizeAdd = -0.5
 
-ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_rebounder")
 
 -------------------------------------------------------------------------------
 ATT = {}

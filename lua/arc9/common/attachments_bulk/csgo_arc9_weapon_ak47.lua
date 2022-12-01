@@ -190,6 +190,10 @@ ATT.ReloadTimeMult = 1.05
 
 ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_galil_mag.mdl"
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
 ARC9.LoadAttachment(ATT, "csgo_ak47_mag_556")
 -------------------------------------------------------------------------------------------------
 ATT = {}
@@ -218,5 +222,9 @@ ATT.ClipSizeOverride = 50
 ATT.ReloadTimeMult = 1.2
 
 ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_galil_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
 
 ARC9.LoadAttachment(ATT, "csgo_ak47_mag_556_ext")

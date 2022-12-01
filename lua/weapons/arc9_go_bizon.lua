@@ -386,6 +386,66 @@ SWEP.Animations = {
             {s = path .. "bizon_boltforward.wav", t = 56 / 30},
         },
     },	
+    ["reload_alt"] = {
+        Source = "reload_short_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = path .. "bizon_clipin.wav", t = 31 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = path .. "bizon_clipin.wav", t = 31 / 30},
+            {s = path .. "bizon_boltback.wav", t = 48 / 30},
+            {s = path .. "bizon_boltforward.wav", t = 56 / 30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {

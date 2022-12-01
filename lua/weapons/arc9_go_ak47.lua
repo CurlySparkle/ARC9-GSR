@@ -251,6 +251,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_alt"] = {
+        Source = {"shoot1_alt", "shoot2_alt"},
+    },
     ["fire_sights"] = {
         Source = "shoot1_ads",
     },
@@ -285,6 +288,65 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+        },
+    },
+    ["reload_alt"] = {
+        Source = "reload_short_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload_alt",
         IKTimeLine = {
             {
                 t = 0,
@@ -403,7 +465,39 @@ SWEP.Animations = {
             {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11 / 30},
         },
     },
+    ["ready_alt"] = {
+        Source = "draw_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0 / 30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11 / 30},
+        },
+    },
     ["draw"] = {
+        Source = "draw_short",
+    },
+    ["draw_alt"] = {
         Source = "draw_short",
     },
     ["holster"] = {

@@ -72,6 +72,10 @@ ATT.ReloadTimeMult = 0.85
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
 ARC9.LoadAttachment(ATT, "csgo_bizon_mag_47")
 --------------------------------------------------------------------
 ATT = {}
@@ -94,6 +98,10 @@ ATT.ClipSizeOverride = 82
 ATT.ReloadTimeMult = 1.2
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
 
 ARC9.LoadAttachment(ATT, "csgo_bizon_mag_82")
 --------------------------------------------------------------------
