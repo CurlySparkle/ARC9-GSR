@@ -55,4 +55,4 @@ ATT.Category = "go_r8"
 ATT.ActivateElements = {"r6"}
 ATT.ClipSizeOverride = 6
 
-ARC9.LoadAttachment(ATT, "csgo_mp7_iron2")
+ARC9.LoadAttachment(ATT, "csgo_r8_model")
