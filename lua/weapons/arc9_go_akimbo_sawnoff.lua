@@ -214,7 +214,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 30, 2.5)
+SWEP.CustomizePos = Vector(22, 40, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(7, 8, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -426,13 +426,13 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
-        Category = {"csgo_tac"},
-        Bone = "W_Main2_L",
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(90, 0, -90),
+        Category = {"csgo_rail_tac"},
+        Bone = "W_Pump_R",
+        Pos = Vector(-1, -0.75, 1),
+        Ang = Angle(90, 0, 90),
         DuplicateModels = {
             {
-                Bone = "W_Main2_R",
+                Bone = "W_Pump_L",
             }
         },
 		Scale = 1,

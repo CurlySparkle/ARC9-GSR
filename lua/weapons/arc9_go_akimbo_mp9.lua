@@ -198,7 +198,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 30, 2.5)
+SWEP.CustomizePos = Vector(18, 40, 2)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -425,14 +425,14 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Sights",
-        Bone = "j_slide",
-        Pos = Vector(-2.5, 0, 0.2),
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(0, 0, 2),
         Ang = Angle(0, 0, 0),
         Category = {"csgo_optic",},
-        CorrectiveAng = Angle(0.03, 0.1, 0),
+        CorrectiveAng = Angle(0.03, 0.1, 0.5),
         DuplicateModels = {
             {
-                Bone = "j_slide_l",
+                Bone = "tag_pistol_attachments_l",
             }
         },
 		Scale = 0.9,
@@ -440,10 +440,10 @@ SWEP.Attachments = {
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
-        Category = {"csgo_tac","csgo_tac_pistols"},
+        Category = "csgo_tac",
         Bone = "tag_pistol_attachments",
-        Pos = Vector(4.3, 0, 0),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(4.1, 1, 1.3),
+        Ang = Angle(0, 0, -90),
         DuplicateModels = {
             {
                 Bone = "tag_pistol_attachments_l",
@@ -457,8 +457,8 @@ SWEP.Attachments = {
         Category = {"csgo_tube","stock_retract",},
         Bone = "tag_pistol_attachments",
 		InstalledElements = {"stock_none"},
-        Pos = Vector(0, -2.4, -3.3),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(-5, 0, 0.25),
+        Ang = Angle(0, 0, -90),
 		Scale = 0.8,
     },	
     {

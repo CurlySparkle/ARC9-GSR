@@ -28,18 +28,6 @@ ARC9.LoadAttachment(ATT, "csgo_barrel_short")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ATT = {}
 
 ATT.PrintName = "R6"
