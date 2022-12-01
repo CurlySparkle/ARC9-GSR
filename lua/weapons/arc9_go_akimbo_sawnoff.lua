@@ -78,7 +78,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 80
+SWEP.RPM = 85
 
 SWEP.Firemodes = {
     {
@@ -176,10 +176,10 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -- }
 
 SWEP.IronSights = {
-    Pos = Vector(0, 3, 0.5),
+    Pos = Vector(-1, 3, 0.5),
     Ang = Angle(0, 0, 2.5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
-        Pos = Vector(0, 0, -0),
+        Pos = Vector(-1, 0, -0),
         Ang = Angle(0, 0, -2.5),
     },
     Magnification = 1.1,
@@ -191,8 +191,8 @@ SWEP.HasSights = true
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -6, -15)
-SWEP.SprintAng = Angle(0, 45, 0)
+SWEP.SprintPos = Vector(0, -2, -1.5)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -203,7 +203,7 @@ SWEP.ActivePos = Vector(-1, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.MovingMidPoint = {
-    Pos = Vector(0, -0.5, -0.5),
+    Pos = Vector(-1, -0.5, -1),
     Ang = Angle(0, 0, 0)
 }
 
@@ -293,18 +293,24 @@ SWEP.Animations = {
         Source = "fire_left",
 		Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 15 / 30},			
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},	
         },			
     },
     ["fire_right"] = {
-        Source = "fire1_right",
+        Source = "fire_right",
 		Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 15 / 30},			
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},			
         },				
     },
     ["reload_start"] = {
         Source = "reload_start",
+        EventTable = {
+            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
+        },			
     },
     ["reload_insert"] = {
         Source = "reload",
@@ -318,31 +324,58 @@ SWEP.Animations = {
     ["reload_finish"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 7 / 30},	
-            {s = path .. "sawedoff_pump.wav", t = 10 / 30},				
+            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},	
+            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},					
         },			
     },
     ["ready"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 7 / 30},	
-            {s = path .. "sawedoff_pump.wav", t = 10 / 30},				
+            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},	
+            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},				
         },	
     },
     ["draw"] = {
-        Source = "reload_end",
+        Source = "draw",
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 7 / 30},	
-            {s = path .. "sawedoff_pump.wav", t = 10 / 30},				
+            {s = "CSGO.Item.Movement", t = 0 / 30},
         },			
     },
     ["holster"] = {
-        Source = "idle",
-		Time = 0,
+        Source = "holster",
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0 / 30},
+        },
     },
     ["idle"] = {
         Source = "idle",
     },
+    ["idle_sprint"] = {
+        Source = "sprint",
+    },
+    ["exit_sprint"] = {
+        Source = "draw",
+    },
+    ["enter_sprint"] = {
+        Source = "holster",
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0 / 30},
+        },
+    },
+    ["inspect"] = {
+        Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
+			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+        },
+    },	
 }
 
 -------------------------- ATTACHMENTS
