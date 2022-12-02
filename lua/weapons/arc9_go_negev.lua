@@ -229,7 +229,7 @@ SWEP.NoViewBob = false
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 
-SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)

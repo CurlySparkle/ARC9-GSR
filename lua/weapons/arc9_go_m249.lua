@@ -97,14 +97,15 @@ SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
+SWEP.RecoilKickSights = 1
 
-SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -155,8 +156,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-7.935, -10, 1.35),
-    Ang = Angle(-0.4, 0, -1.5),
+    Pos = Vector(-6.25, -9, 1.1),
+    Ang = Angle(0, 1, -5),
     Magnification = 1.25,
     ViewModelFOV = 56,
 }
@@ -227,7 +228,7 @@ SWEP.NoViewBob = false
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 
-SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
@@ -293,7 +294,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -303,7 +304,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -330,7 +331,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -340,7 +341,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -494,7 +495,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.m249_Parent",
         Pos = Vector(0, -4.4, 32.1),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+		Scale = 1.2,
     },
     {
         PrintName = "Scope",
@@ -517,7 +518,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = {"grip"},
+        Category = {"grip","go_m249_bipod"},
         Bone = "v_weapon.m249_Parent",
 		InstalledElements = {"foregrip"},
         Pos = Vector(0, -0.73, 14.4),

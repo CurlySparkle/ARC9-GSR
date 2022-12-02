@@ -187,42 +187,23 @@ ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo_sniper"}
 
-ATT.PhysBulletMuzzleVelocityMult = 0.65
+ATT.NumOverride = 1
 
-ATT.DamageMaxMult = 0.5
+ATT.SpreadMult = 0.3
 
-ATT.PenetrationMult = 0
-ATT.RicochetChanceMult = 0
-ATT.ArmorPiercingMult = 0
+ATT.PhysBulletGravityMult = 3
+ATT.PhysBulletMuzzleVelocityMult = 0.75
 
-ATT.TracerColor = Color(255, 255, 255)
-ATT.TracerSizeAdd = 8
+ATT.DamageMaxOverride = 35
+ATT.DamageMinOverride = 10
 
-ATT.ImpactDecal = "SmallScorch"
-
-ATT.ExplosionDamage = 85
-ATT.ExplosionRadius = 75
+ATT.ExplosionRadiusOverride = 75
+ATT.ExplosionDamageOverride = 80
+ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
+ATT.ImpactDecal = "FadingScorch"
 
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
-
-ATT.ExplosionEffect = "HelicopterMegaBomb"
-
-
-ATT.Hook_BulletHit = function(wep, data)
-    local ent = data.tr.Entity
-    local effectdata = EffectData()
-
-    effectdata:SetOrigin( data.tr.HitPos )
-    util.Effect( "Explosion", effectdata)
-
-    local rad = math.Clamp(math.ceil(wep:GetDamage(0)), (wep.Damage + wep.DamageMin)*5/2, (wep.Damage + wep.DamageMin)*8/2)
-    util.BlastDamage(wep, wep:GetOwner(), data.tr.HitPos, rad, wep:GetDamage(data.range))
-
-    if ent:IsValid() and ent:GetClass() == {"npc_helicopter"} then
-        data.dmgtype = DMG_AIRBOAT
-    end
-end
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_he")
 

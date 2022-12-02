@@ -143,3 +143,25 @@ ATT.DistantShootSound = "CSGO.xm1014.Fire.Distance"
 ATT.ShellModel = "models/shells/shell_12gauge.mdl"
 
 ARC9.LoadAttachment(ATT, "csgo_m249_mag_12g")
+----------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Bipod Deployed"
+ATT.CompactName = "Deploy"
+ATT.Description = [[Deploys the bipod, gives extra recoil control while crouched/mounted.]]
+
+ATT.Icon = Material("entities/attachs/go_famas_bipod.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "go_m249_bipod"
+ATT.ActivateElements = {"bipod_deployed"}
+
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.RecoilMult = 0.95
+ATT.RecoilMultCrouch = 0.85
+ATT.RecoilPatternDriftMult = 0.85
+ATT.RecoilAutoControlMult = 1.15
+
+ARC9.LoadAttachment(ATT, "csgo_m249_bipod_on")
