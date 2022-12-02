@@ -90,9 +90,12 @@ ATT.Free = false
 
 ATT.Category = {"go_awp_mag"}
 ATT.ClipSizeMult = 1.5
-ATT.ReloadTimeMult = 1.1
 
 ATT.ActivateElements = {"mag_15"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_long"
+end
 
 ARC9.LoadAttachment(ATT, "csgo_awp_mag_15")
 
@@ -111,7 +114,6 @@ ATT.Free = false
 
 ATT.Category = {"go_awp_mag"}
 ATT.ClipSizeMult = 0.5
-ATT.ReloadTimeMult = 1.1
 
 ATT.DamageMaxMult = 1.10
 ATT.DamageMinMult = 1.20
@@ -120,6 +122,10 @@ ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 
 ATT.ActivateElements = {"mag_5"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_5"
+end
 
 ARC9.LoadAttachment(ATT, "csgo_awp_mag_5")
 

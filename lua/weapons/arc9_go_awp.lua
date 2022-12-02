@@ -261,26 +261,10 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.9,
-                lhik = 1,
-                rhik = 1
-            },
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0.9,lhik = 1, rhik = 1 },
         },
         EventTable = {
             {s = path .. "awp_clipout.wav", t = 7 / 30},
@@ -291,26 +275,10 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload",
         IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.9,
-                lhik = 1,
-                rhik = 1
-            },
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0.9,lhik = 1, rhik = 1 },
         },
         EventTable = {
             {s = path .. "awp_clipout.wav", t = 7 / 30},
@@ -319,7 +287,66 @@ SWEP.Animations = {
             {s = path .. "awp_boltback.wav", t = 77 / 30},
             {s = path .. "awp_boltforward.wav", t = 89 / 30},
         },
+    }, 
+	["reload_5"] = {
+        Source = "reload_short_5",
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0.9,lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "awp_clipout.wav", t = 7 / 30},
+            {s = path .. "awp_clipin.wav", t = 40 / 30},
+        },
     },
+    ["reload_empty_5"] = {
+        Source = "reload_5",
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0.9,lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "awp_clipout.wav", t = 7 / 30},
+            {s = path .. "awp_clipin.wav", t = 40 / 30},
+            {s = path .. "awp_boltback.wav", t = 65 / 30},
+            {s = path .. "awp_boltforward.wav", t = 78 / 30},
+        },
+    },
+    ["reload_long"] = {
+        Source = "reload_short",
+		Mult = 1.1,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0.9,lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "awp_clipout.wav", t = 7 / 30},
+            {s = path .. "awp_clipin.wav", t = 40 / 30},
+            {s = path .. "awp_cliphit.wav", t = 60 / 30},			
+        },
+    },	
+    ["reload_empty_long"] = {
+        Source = "reload_long",
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 0 },
+            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0.9,lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "awp_boltback.wav", t = 7 / 30},		
+            {s = path .. "awp_clipout.wav", t = 27 / 30},
+            {s = path .. "awp_clipin.wav", t = 60 / 30},
+            {s = path .. "awp_cliphit.wav", t = 80 / 30},
+            {s = path .. "awp_boltforward.wav", t = 95 / 30},
+        },
+    },	
     ["ready"] = {
         Source = "draw",
         EventTable = {
