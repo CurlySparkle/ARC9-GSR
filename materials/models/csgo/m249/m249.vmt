@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
 	"$basetexture"				"models/csgo/m249/m249"
-	"$bumpmap"					"null-bumpmap"
+	"$bumpmap"					"effects/flat_normal"
 	"$phongexponenttexture"		"models/csgo/m249/m249_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"

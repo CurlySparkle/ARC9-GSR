@@ -1011,7 +1011,7 @@ sound.Add( {
     channel = CHAN_WEAPON,
     volume = 0.3,
     level = 120,
-    pitch = {97,103},
+    pitch = {95,105},
     sound = {
         "^weapons/csgo/m249/m249-1-distant.ogg",
     }
@@ -1392,6 +1392,18 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.M249.Silenced_Fire_First",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/m249_suppressed_first.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.M249.Silenced_Fire",
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
@@ -1399,7 +1411,8 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m249_suppressed.wav",
+        "^weapons/m249_suppressed_loop.wav",
+		"^weapons/m249_suppressed_loop2.wav",
     }
 } )
 

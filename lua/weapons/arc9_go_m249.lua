@@ -73,7 +73,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 750
+SWEP.RPM = 741 
 
 SWEP.Firemodes = {
     {
@@ -84,7 +84,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.2
 
 SWEP.RecoilSeed = 50310 -- CSGO Seed Input Test
 
@@ -102,7 +102,7 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 0.3
+SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1
@@ -115,12 +115,13 @@ SWEP.ViewRecoilUpMult = -5 -- 40-100
 
 SWEP.Spread = 0.004
 
-SWEP.SpreadAddRecoil = 0.006 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.25
+SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.005
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -160,10 +161,10 @@ SWEP.IronSights = {
     ViewModelFOV = 56,
 }
 
-SWEP.ViewModelFOVBase = 56
+SWEP.ViewModelFOVBase = 65
 
-SWEP.SprintPos = Vector(-1, -6, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(0, 0, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -178,16 +179,16 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -0.5, -0.5)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(28, 40, 2.5)
+SWEP.CustomizePos = Vector(24, 45, 5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(12, 20, 4)
+SWEP.CustomizeSnapshotPos = Vector(0, 20, 6)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -215,7 +216,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_para"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
@@ -243,6 +244,7 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/m249/"
 
 SWEP.ShootSound = "CSGO.M249.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.M249.Silenced_Fire_First" 
 SWEP.ShootSoundSilenced = "CSGO.M249.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.M249.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
@@ -274,8 +276,8 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-		Mult = 0.7,
+        Source = {"shoot1","shoot2","shoot3","shoot4"},
+		Mult = 1,
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -307,11 +309,14 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "m249_coverup.wav", t = 16 / 30},
-            {s = path .. "m249_boxout.wav", t = 40 / 30},
-            {s = path .. "m249_boxin.wav", t = 75 / 30},
-            {s = path .. "m249_chain.wav", t = 85 / 30},
-			{s = path .. "m249_coverdown.wav", t = 111 / 30},
+		    {s = "CSGO.Item.Movement", t = 7 / 40},
+            {s = path .. "m249_coverup.wav", t = 26 / 40},
+            {s = path .. "m249_boxout.wav", t = 60 / 40},
+			{s = "weapons/csgo/famas/famas_draw", t = 78 / 40},
+            {s = path .. "m249_boxin.wav", t = 123 / 40},
+            {s = path .. "m249_chain.wav", t = 155 / 40},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin", t = 175 / 40},
+			{s = path .. "m249_coverdown.wav", t = 210 / 40},
         },
     },
     ["reload_empty"] = {
@@ -341,12 +346,15 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "m249_coverup.wav", t = 16 / 30},
-            {s = path .. "m249_boxout.wav", t = 40 / 30},
-            {s = path .. "m249_boxin.wav", t = 75 / 30},
-            {s = path .. "m249_chain.wav", t = 85 / 30},
-			{s = path .. "m249_coverdown.wav", t = 111 / 30},
-			{s = path .. "m249_pump.wav", t = 133 / 30},
+		    {s = "CSGO.Item.Movement", t = 7 / 40},
+            {s = path .. "m249_coverup.wav", t = 26 / 40},
+            {s = path .. "m249_boxout.wav", t = 60 / 40},
+			{s = "weapons/csgo/famas/famas_draw", t = 78 / 40},
+            {s = path .. "m249_boxin.wav", t = 123 / 40},
+            {s = path .. "m249_chain.wav", t = 155 / 40},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin", t = 175 / 40},
+			{s = path .. "m249_coverdown.wav", t = 210 / 40},
+			{s = path .. "m249_pump.wav", t = 245 / 40},
         },
     },
     ["ready"] = {
@@ -374,8 +382,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "m249_draw.wav", t = 0 / 30},
-            {s = path .. "m249_pump.wav", t = 7 / 30},
+            {s = path .. "m249_draw.wav", t = 0 / 40},
+            {s = path .. "m249_pump.wav", t = 7 / 40},
+			{s = "weapons/csgo/famas/famas_draw", t = 25 / 40},
         },
     },
     ["draw"] = {
@@ -405,6 +414,12 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        EventTable = {
+		    {s = "CSGO.Item.Movement", t = 25 / 40},
+			{s = "CSGO.Item.Movement", t = 120 / 40},
+			{s = "CSGO.Item.Movement", t = 192 / 40},
+			{s = "CSGO.Item.Movement", t = 219 / 40},
+        },
     },
 }
 
@@ -413,50 +428,83 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["rearsight"] = {
+    ["barrel_short"] = {
         Bodygroups = {
             {1,1},
         },
+    AttPosMods = { [2] = { Pos = Vector(0, -4.4, 26.5), } }
     },
-    ["bipod"] = {
+    ["barrel_long"] = {
         Bodygroups = {
-            {2,1},
+            {1,2},
+        },
+    AttPosMods = { [2] = { Pos = Vector(0, -4.4, 37), } }
+    },
+    ["stock_skeleton"] = {
+        Bodygroups = {
+            {5,1},
         },
     },
     ["stock_none"] = {
         Bodygroups = {
+            {5,2},
+        },
+    },
+    ["foregrip"] = {
+        Bodygroups = {
+            {3,2},
+        },
+    },
+    ["bipod_deployed"] = {
+        Bodygroups = {
             {3,1},
+        },
+    },
+    ["go_m249_mag_9_200"] = {
+        Bodygroups = {
+            {0,1},
+			{2,1},
+			{4,2},
+        },
+    },
+    ["go_m249_mag_12g_45"] = {
+        Bodygroups = {
+            {0,2},
+			{2,2},
+			{4,3},
+        },
+    },
+    ["rearsight"] = {
+        Bodygroups = {
+            {6,1},
+			{7,1},
         },
     },
 }
 
 SWEP.Attachments = {
     {
+        PrintName = "Barrel",
+        Category = "go_m249_barrel",
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.m249_Parent",
-        Pos = Vector(0, -4.4, 28),
+        Pos = Vector(0, -4.4, 32.1),
         Ang = Angle(90, 0, -90),
+		Scale = 1.1,
     },
     {
-        PrintName = "Top",
+        PrintName = "Scope",
         Bone = "v_weapon.topHinge",
-        Pos = Vector(0, 0.6, -8),
+        Pos = Vector(0, -0.9, -7),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_custom"},
-        CorrectiveAng = Angle(-0.8, 0, 0),
-		MergeSlots = {3},
-		Hidden = true,
-    },
-    {
-        PrintName = "Top",
-        Bone = "v_weapon.topHinge",
-        Pos = Vector(0, 0.3, -8),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic"},
-		InstalledElements = {"rearsight"},
-        CorrectiveAng = Angle(-0.8, 0, 0),
+        Category = {"csgo_optic"},
+        InstalledElements = {"rearsight"},
+        CorrectiveAng = Angle(0, 0, 0),
+		Scale = 1.1,
     },
     {
         PrintName = "Side",
@@ -467,24 +515,33 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"grip"},
         Bone = "v_weapon.m249_Parent",
-		InstalledElements = {"bipod"},
-        Pos = Vector(0, -1, 14.4),
+		InstalledElements = {"foregrip"},
+        Pos = Vector(0, -0.73, 14.4),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
     },
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube"},
+        Category = {"csgo_tube","go_m249_stock"},
         Bone = "v_weapon.m249_Parent",
 		InstalledElements = {"stock_none"},
         Pos = Vector(0, -4.7, -4.45),
         Ang = Angle(90, 0, -90),
 		Scale = 1.25,
+    },
+    {
+        PrintName = "Magazine",
+        Category = "go_m249_mag",
+    },
+    {
+        PrintName = "Ammo",
+        --Bone = "v_weapon.AK47_clip",
+        Category = "go_ammo",
+        --Icon_Offset = Vector(0, 1, 1),
     },
     {
         PrintName = "Perk",
@@ -493,3 +550,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 4
+SWEP.GripPoseParam2 = 1
