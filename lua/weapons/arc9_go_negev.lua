@@ -92,19 +92,20 @@ SWEP.RecoilSeed = 57966 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.4
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 1.5
+SWEP.RecoilKickSights = 1
 
 SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
@@ -123,6 +124,7 @@ SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = -0.03
 
 -------------------------- HANDLING
 
@@ -218,7 +220,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "weapon_muzzle_flash_para"
+SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle"
 SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
@@ -231,8 +233,8 @@ SWEP.ShouldDropMagEmpty = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.09
-SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
+SWEP.ShellScale = 0.08
+SWEP.ShellPhysBox = Vector(0, 0, 0)
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_mach_negev_mag.mdl"
@@ -246,6 +248,7 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/negev/"
 
 SWEP.ShootSound = "CSGO.NEGEV.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.NEGEV.Silenced_Fire_First" 
 SWEP.ShootSoundSilenced = "CSGO.NEGEV.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.NEGEV.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
@@ -311,7 +314,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1.1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -345,7 +348,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -445,9 +448,10 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["sight"] = {
+    ["rearsight"] = {
         Bodygroups = {
             {1,1},
+			{4,1},
         },
     },
     ["stock_retract"] = {
@@ -455,14 +459,40 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
-    ["stock_none"] = {
+    ["stock_skeleton"] = {
         Bodygroups = {
             {2,2},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,3},
         },
     },
     ["bipod"] = {
         Bodygroups = {
             {3,1},
+        },
+    },
+    ["foregrip"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {7,1},
+        },
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {7,2},
+        },
+    },
+    ["mag_762"] = {
+        Bodygroups = {
+            {0,1},
+			{6,1},
         },
     },
 }
@@ -478,24 +508,24 @@ SWEP.Attachments = {
 		Scale = 1.2,
     },
     {
-        PrintName = "Top",
+        PrintName = "Scope",
         Bone = "v_weapon.negev_parent",
-        Pos = Vector(0, -5.1, 2.5),
+        Pos = Vector(0, -6.4, 1.2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_custom"},
-        CorrectiveAng = Angle(0, 0, 0),
-		MergeSlots = {3},
-		Hidden = true,
-    },
-    {
-        PrintName = "Top",
-        Bone = "v_weapon.negev_parent",
-        Pos = Vector(0, -5.7, 2.5),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic",},
-        --InstalledElements = {"sight"},
+        Category = {"csgo_optic"},
+        InstalledElements = {"rearsight"},
         CorrectiveAng = Angle(-0.85, 0, 0),
+		Scale = 1,
     },
+    -- {
+        -- PrintName = "Top",
+        -- Bone = "v_weapon.negev_parent",
+        -- Pos = Vector(0, -5.7, 2.5),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_rail_optic",},
+        -- --InstalledElements = {"sight"},
+        -- CorrectiveAng = Angle(-0.85, 0, 0),
+    -- },
     {
         PrintName = "Side",
         DefaultAttName = "Default",
@@ -507,25 +537,51 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract"},
+        Category = {"csgo_tube","stock_retract","go_negev_stock"},
         Bone = "v_weapon.negev_parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -4.7, -4.3),
         Ang = Angle(90, 0, -90),
 		Scale = 1.2,
     },
+    -- {
+        -- PrintName = "Bottom",
+        -- DefaultAttName = "Default",
+        -- Category = "csgo_rail_ub",
+        -- Bone = "v_weapon.negev_parent",
+		-- --InstalledElements = {"bipod"},
+        -- Pos = Vector(0, -3, 13),
+        -- Ang = Angle(90, 0, 90),
+		-- Scale = 1,
+    -- },
     {
-        PrintName = "Bottom",
+        PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"grip"},
         Bone = "v_weapon.negev_parent",
-		--InstalledElements = {"bipod"},
-        Pos = Vector(0, -3, 13),
+		InstalledElements = {"foregrip"},
+        Pos = Vector(0, -2.15, 12.5),
         Ang = Angle(90, 0, 90),
-		Scale = 1,
+    },
+    {
+        PrintName = "Ammo",
+        --Bone = "v_weapon.AK47_clip",
+        Category = "go_ammo",
+        --Icon_Offset = Vector(0, 1, 1),
+    },
+    {
+        PrintName = "Magazine",
+        Category = "go_negev_mag",
     },
     {
         PrintName = "Perk",
         Category = "go_perk",
     },
+    {
+        PrintName = "View",
+        Category = "go_negev_view"
+    },
 }
+
+SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.2

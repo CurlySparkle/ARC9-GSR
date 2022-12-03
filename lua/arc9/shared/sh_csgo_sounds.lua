@@ -1490,6 +1490,18 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.NEGEV.Silenced_Fire_First",
+    channel = CHAN_WEAPON + 10,
+    volume = 1.0,
+    level = 140,
+    pitch = {90,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/negev_suppresed_first.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.NEGEV.Silenced_Fire",
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
@@ -1497,7 +1509,8 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/negev_suppressed.wav",
+        "^weapons/negev_suppresed_loop.wav",
+		"^weapons/negev_suppresed_loop2.wav",
     }
 } )
 

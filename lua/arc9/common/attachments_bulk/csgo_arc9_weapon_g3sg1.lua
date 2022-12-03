@@ -363,4 +363,7 @@ ATT.ActiveAng = Angle(0, 0, 0)
 ATT.MovingPos = Vector(-1, -4, 0)
 ATT.MovingAng = Angle(0, 0, 0)
 
+ATT.CrouchPos = Vector(-1, -4, 0)
+ATT.CrouchAng = Angle(0, 0, 0)
+
 ARC9.LoadAttachment(ATT, "csgo_g3_view_alt_1")
