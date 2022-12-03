@@ -1,6 +1,6 @@
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = false
-SWEP.Category = "ARC-9 - CS:GO"
+SWEP.Category = "ARC9 - CS:GO"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "CS:GO Base"

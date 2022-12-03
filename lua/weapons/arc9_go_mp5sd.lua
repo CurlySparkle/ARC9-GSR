@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC-9 - CS:GO"
+SWEP.Category = "ARC9 - CS:GO"
 
 SWEP.PrintName = "MP5-SD"
 SWEP.TrueName = "MP5-SD"

@@ -1,5 +1,5 @@
 SWEP.Base = "arc9_base_nade"
-SWEP.Category = "ARC-9 - CS:GO: ETC"
+SWEP.Category = "ARC9 - CS:GO: ETC"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 
