@@ -35,9 +35,9 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_xm1014.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10.3, 5.5, -4.5),
-    Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-5, 5, -4),
+    Pos = Vector(-9, 5.5, -4.5),
+    Ang = Angle(-10, 0, 180),
+    TPIKPos = Vector(-9, 5, -4),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }

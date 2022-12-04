@@ -31,9 +31,10 @@ SWEP.WorldModel = "models/weapons/w_pist_fiveseven.mdl"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_tec9.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-10, 4, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
     TPIKPos = Vector(-13, 5, 0),

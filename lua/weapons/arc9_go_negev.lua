@@ -35,10 +35,10 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_mach_negev.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-18, 10, 0),
-    Ang = Angle(-7, 7, 180),
-    TPIKPos = Vector(-11, 5, -4),
-    TPIKAng = Angle(-5, 0, 180),
+    Pos = Vector(-18, 8.5, -7.2),
+    Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-15, 10, 0),
+    TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
 
