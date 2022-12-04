@@ -304,6 +304,17 @@ SWEP.Animations = {
             {s = path .. "p250_sliderelease.wav", t = 68 / 30},
         },
     },
+    ["reload_empty_ext"] = {
+        Source = "reload_empty_ext",
+        MinProgress = 0.65,
+        EventTable = {
+            {s = path .. "p250_clipout.wav", t = 9 / 30},
+			{s = path .. "p250_clipout.wav", t = 23 / 30},
+            {s = path .. "p250_clipin.wav", t = 46 / 30},
+            {s = path .. "p250_slideback.wav", t = 64 / 30},
+            {s = path .. "p250_sliderelease.wav", t = 68 / 30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         EventTable = {
@@ -467,7 +478,13 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.cz_magazine",
-        Category = "go_mag"
+        Category = "go_cz_mag"
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.cz_magazine",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "Perk",

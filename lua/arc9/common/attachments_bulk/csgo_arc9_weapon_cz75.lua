@@ -74,3 +74,29 @@ ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_cz_slide_factory")
+
+ATT = {}
+
+ATT.PrintName = [[Extended Magazine]]
+ATT.CompactName = [[Ext Mag]]
+ATT.Icon = Material("entities/attachs/ext_mag.png")
+ATT.Description = [[
+Extended capacity by 50% more with the cost of increased reload time.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_cz_mag"}
+ATT.ClipSizeMult = 1.5
+ATT.ReloadTimeMult = 1.1
+
+ATT.ActivateElements = {"mag"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_ext"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_cz_mag_ext")
