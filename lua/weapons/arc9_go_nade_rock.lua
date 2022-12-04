@@ -107,7 +107,7 @@ SWEP.HoldTypeSights = "rpg"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
@@ -124,8 +124,8 @@ SWEP.PostBashTime = 0.2
 
 SWEP.ImpactForce = 25
 
-SWEP.MeleeHitSound = "CSGO.Knife.HitBody"
-SWEP.MeleeHitWallSound = "CSGO.Knife.HitWall"
+SWEP.MeleeHitSound = "rock_hit.wav"
+SWEP.MeleeHitWallSound = "rock_hit_world.wav"
 SWEP.MeleeSwingSound = "CSGO.Knife.Slash"
 
 SWEP.Animations = {
