@@ -1,0 +1,22 @@
+VertexlitGeneric
+{
+	"$basetexture"	"models/csgo/shield/glass"
+	"$bumpmap"	"models/csgo/shield/glass_n"
+
+	"$phongexponenttexture" "models/csgo/shield/glass_exponent"
+	"$envmapmask" "models/csgo/shield/glass_exponent"
+
+	"$normalmapalphaenvmapmask" "1"
+	
+	"$blendtintbybasealpha" "1"
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongalbedotint" "2"
+	"$PhongFresnelRanges" "[ 2 5 4 ]"
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "0.01"
+	"$envmaptint" "[ .01 .01 .01 ]"
+
+	"$nocull" "1"
+	"$translucent" "1"
+}

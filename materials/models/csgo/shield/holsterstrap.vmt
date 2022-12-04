@@ -1,0 +1,7 @@
+vertexlitgeneric
+{
+	$basetexture "models/csgo/shield/holsterstrap"
+	$phong 1
+	$phongexponent 60
+	$basemapalphaphongmask 1
+}
