@@ -149,9 +149,9 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.73, -3, 0.55),
+    Pos = Vector(-2.5, -3, 1),
     Ang = Angle(0.26, 1.2, 0),
-    Magnification = 1.25,
+    Magnification = 1.15,
     ViewModelFOV = 56,
 }
 
@@ -272,7 +272,7 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
-            {s = path .. "p250_slideback.wav", t = 44 / 30},
+            --{s = path .. "p250_slideback.wav", t = 44 / 30},
             {s = path .. "p250_sliderelease.wav", t = 50 / 30},
         },
     },
@@ -301,7 +301,7 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
-            {s = path .. "p250_slideback.wav", t = 44 / 30},
+            --{s = path .. "p250_slideback.wav", t = 44 / 30},
             {s = path .. "p250_sliderelease.wav", t = 50 / 30},
         },
     },	
@@ -347,8 +347,9 @@ SWEP.Animations = {
             {t = 1.1, lhik = 1, rhik = 1 },
         },	
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+            { s = "CSGO.Item.Movement", t = 2 / 30 },
+            { s = "CSGO.Item.Movement", t = 175 / 30 },
+			{ s = "CSGO.Item.Movement", t = 175 / 30 },
         },
     },
 }
@@ -391,7 +392,7 @@ SWEP.Attachments = {
     {
         PrintName = "Slide",
 		DefaultAttName = "Standard",
-        Bone = "v_weapon.p250_parent",
+        Bone = "v_weapon.glock_parent",
         Pos = Vector(-0.025, -2.6, 2),
         Ang = Angle(90, 0, -90),		
         Category = "go_p250_slide",
@@ -401,14 +402,14 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
-        Bone = "v_weapon.p250_parent",
+        Bone = "v_weapon.glock_parent",
         Pos = Vector(-0.025, -2.6, 6.2),
         Ang = Angle(90, 0, -90),
-        Scale = 0.8,
+        Scale = 0.9,
     },
     {
         PrintName = "Top",
-        Bone = "v_weapon.p250_parent",
+        Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -0.5, 4),
         Ang = Angle(90, 0, -90),
 		ExcludeElements = {"slide_flux"},		
@@ -418,21 +419,21 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Sights",
-        Bone = "v_weapon.p250_slide",
-        Pos = Vector(0, -0.3, 2),
+        Bone = "v_weapon.glock_slide",
+        Pos = Vector(0, -0.8, 2.2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt",},
         CorrectiveAng = Angle(1, 0.4, 0),
-		Scale = 0.8,
+		Scale = 0.9,
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
-        Bone = "v_weapon.p250_parent",
+        Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -1.4, 5),
         Ang = Angle(90, 180, 90),
-		Scale = 1,
+		Scale = 1.1,
     },
     {
         PrintName = "Mag",

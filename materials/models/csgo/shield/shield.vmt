@@ -11,10 +11,11 @@
 	"$envmaptint"				"[ .13 .13 .13 ]"
 
 	"$phong"					"1"
-	"$phongboost"				"5"
+	"$phongboost"				"3"
+	"$phongexponent"				"75"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
-	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
 	"$rimlight"					"1"
 	"$rimlightexponent"			"80"	

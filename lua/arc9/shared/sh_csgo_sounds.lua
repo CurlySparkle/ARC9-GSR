@@ -1,5 +1,43 @@
 AddCSLuaFile()
 
+sound.Add( {
+    name = "ARC9_CSGO_Pistol_Draw",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 120,
+    pitch = {95, 110},
+    sound = {
+        "^weapons/csgo/p250/p250_draw.wav",
+		"^weapons/csgo/glock18/glock_draw.wav",
+		"^weapons/csgo/fiveseven/fiveseven_draw.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ARC9_CSGO_Rifle_Draw",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 120,
+    pitch = {95, 110},
+    sound = {
+        "^weapons/csgo/ak47/ak47_draw.wav",
+	    "^weapons/csgo/aug/aug_draw.wav",
+    }
+} )
+
+sound.Add( {
+    name = "ARC9_CSGO_SMG_Draw",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 120,
+    pitch = {95, 110},
+    sound = {
+        "^weapons/csgo/p90/p90_draw.wav",
+		"^weapons/csgo/mp5/mp5_draw.wav",
+		"^weapons/csgo/mp7/mp7_draw.wav",
+    }
+} )
+
 sound.Add({
     name = "HE.ExplosiveHit",
     channel = CHAN_WEAPON,

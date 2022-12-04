@@ -59,7 +59,7 @@ SWEP.Firemodes = {
 
 SWEP.FreeAimRadius = 0
 
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = true
 
@@ -104,7 +104,7 @@ SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.ViewModelFOVBase = 65
 
-SWEP.ActivePos = Vector(0, 3, 0)
+SWEP.ActivePos = Vector(0, 5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.MovingMidPoint = {
@@ -112,7 +112,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -0.3, -0.5)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(-90, 90, 90)
@@ -133,17 +133,25 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimDraw = false
 
--------------------------- SOUNDS
+function SWEP:SecondaryAttack()
+    return self:MeleeAttack()
+end
 
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle1",
     },
-    ["draw"] = {
+    ["ready"] = {
         Source = "draw",
+    },
+    ["draw"] = {
+        Source = "draw_short",
     },
     ["holster"] = {
         Source = "holster",
+        EventTable = {
+            { s = "melee/shield_equip_01.wav", t = 0 / 30 },
+        },
     },
     ["bash"] = {
         Source = {"bash2","bash3"},
@@ -169,6 +177,16 @@ SWEP.Animations = {
         },
     },
 }
+
+sound.Add({
+    name = "ARC9_CSGO_Shield.Draw",
+    channel = 16,
+    volume = 1.0,
+    sound = {
+        "melee/shield_equip_01.wav",
+		"melee/shield_equip_02.wav",
+    }
+})
 
 -------------------------- ATTACHMENTS
 
