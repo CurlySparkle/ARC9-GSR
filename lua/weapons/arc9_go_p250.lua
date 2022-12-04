@@ -261,6 +261,12 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.7, lhik = 0, rhik = 0 },
+            {t = 0.9, lhik = 1, rhik = 1 },
+        },			
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
@@ -269,44 +275,27 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.4,
-        EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
-            --{s = path .. "p250_slideback.wav", t = 44 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 50 / 30},
-        },
-    },
-    ["reload_flux"] = {
-        Source = "reload_short_2",
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 0 },
             {t = 0.2, lhik = 0, rhik = 0},
             {t = 0.675, lhik = 0, rhik = 0 },
             {t = 0.875, lhik = 1, rhik = 1 },
-        },		
-        EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
-        },
-    },
-    ["reload_empty_flux"] = {
-        Source = "reload_2",
-		MinProgress = 0.4,
-        IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 0 },
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.825, lhik = 0, rhik = 0 },
-            {t = 0.95, lhik = 1, rhik = 1 },
-        },		
+        },			
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
             --{s = path .. "p250_slideback.wav", t = 44 / 30},
             {s = path .. "p250_sliderelease.wav", t = 50 / 30},
         },
-    },	
+    },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.5, lhik = 0, rhik = 0 },
+            {t = 0.8, lhik = 1, rhik = 1 },
+        },				
         EventTable = {
             {s = path .. "p250_draw.wav", t = 0 / 30},
             {s = path .. "p250_slideback.wav", t = 8 / 30},

@@ -82,12 +82,12 @@ ATT.Attachments = {
         DefaultName = "None",
 		
         Category = {"csgo_optics_pistols"},
-        Pos = Vector(5, 0, -1.25),
+        Pos = Vector(5, -0.075, -1.3),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -2,
-		Scale = 0.8,
+		Scale = 0.9,
 		CorrectiveAng = Angle(0.67, 0.65, 0),	
-        KeepBaseIrons = false, -- troll		
+        KeepBaseIrons = true, -- troll		
     },		
 }
 
@@ -98,10 +98,6 @@ ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.35
 ATT.RangeMinMult = 1.35
 ATT.PhysBulletMuzzleVelocityMult = 1.35
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_flux"
-end
 
 ARC9.LoadAttachment(ATT, "csgo_p250_slide_flux")
 
