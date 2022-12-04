@@ -367,3 +367,180 @@ ATT.CrouchPos = Vector(-1, -4, 0)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_g3_view_alt_1")
+
+
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[20 5.56 Mag]]
+ATT.CompactName = [[20 5.56]]
+ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
+ATT.Description = [[
+hk33/53 whatever
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 35
+ATT.Free = false
+
+ATT.Category = {"go_mag_g3"}
+ATT.ActivateElements = {"mag_556_20"}
+ATT.ClipSizeOverride = 20
+ATT.ReloadTimeMult = 0.9
+
+ATT.RPM = 700
+
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
+ATT.SpreadMultRecoil = 0.85
+ATT.SpreadMultHipFire = 1.1
+ATT.SpreadMultMove = 1.2
+
+ATT.ShootSound = "CSGO.SG556.Fire"
+//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
+//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
+ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 1,
+    }
+}
+
+ATT.Hook_TranslateAnimation = function (self, anim) --???
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_g3_mag_20_556"] then
+        return "reload_alt"
+    elseif anim == "reload_empty" and attached["csgo_g3_mag_20_556"] then 
+        return "reload_empty_alt"
+    elseif anim == "fire" and attached["csgo_g3_mag_20_556"] then 
+        return "fire_alt"
+    elseif anim == "ready" and attached["csgo_g3_mag_20_556"] then 
+        return "ready_alt"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_g3_mag_20_556")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[30 5.56 Mag]]
+ATT.CompactName = [[30 5.56]]
+ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
+ATT.Description = [[
+hk33/53 whatever
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 36
+ATT.Free = false
+
+ATT.Category = {"go_mag_g3"}
+ATT.ActivateElements = {"mag_556_30"}
+ATT.ClipSizeOverride = 30
+
+ATT.RPM = 700
+
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
+ATT.SpreadMultRecoil = 0.85
+ATT.SpreadMultHipFire = 1.1
+ATT.SpreadMultMove = 1.2
+
+ATT.ShootSound = "CSGO.SG556.Fire"
+//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
+//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
+ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 1,
+    }
+}
+
+ATT.Hook_TranslateAnimation = function (self, anim) --???
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_g3_mag_20_556"] then
+        return "reload_alt"
+    elseif anim == "reload_empty" and attached["csgo_g3_mag_20_556"] then 
+        return "reload_empty_alt"
+    elseif anim == "fire" and attached["csgo_g3_mag_20_556"] then 
+        return "fire_alt"
+    elseif anim == "ready" and attached["csgo_g3_mag_20_556"] then 
+        return "ready_alt"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_556")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[60 5.56 Mag]]
+ATT.CompactName = [[60 5.56]]
+ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
+ATT.Description = [[
+hk33/53 whatever
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 36
+ATT.Free = false
+
+ATT.Category = {"go_mag_g3"}
+ATT.ActivateElements = {"mag_556_60"}
+ATT.ClipSizeOverride = 60
+
+ATT.RPM = 700
+
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
+ATT.SpreadMultRecoil = 0.85
+ATT.SpreadMultHipFire = 1.1
+ATT.SpreadMultMove = 1.2
+
+ATT.ShootSound = "CSGO.SG556.Fire"
+//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
+//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
+ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 1,
+    }
+}
+
+ATT.Hook_TranslateAnimation = function (self, anim) --???
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_g3_mag_50_556"] then
+        return "reload_alt"
+    elseif anim == "reload_empty" and attached["csgo_g3_mag_50_556"] then 
+        return "reload_empty_alt"
+    elseif anim == "fire" and attached["csgo_g3_mag_50_556"] then 
+        return "fire_alt"
+    elseif anim == "ready" and attached["csgo_g3_mag_50_556"] then 
+        return "ready_alt"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_g3_mag_50_556")

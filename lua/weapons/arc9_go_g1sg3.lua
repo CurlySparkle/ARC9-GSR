@@ -508,7 +508,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "000000000"
+SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.AttachmentElements = {
     ["barrel_med"] = {
@@ -562,6 +562,10 @@ SWEP.AttachmentElements = {
             {4,1},
         },
     },
+
+    ["mag_556_20"] = { Bodygroups = {{4,3},{5,1} },},
+	["mag_556_30"] = { Bodygroups = {{4,4},{5,1} },},
+	["mag_556_60"] = { Bodygroups = {{4,5},{5,1} },},
 }
 
 SWEP.Attachments = {

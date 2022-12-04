@@ -9,8 +9,8 @@ SWEP.Description = [[
     The experimental rock, very deadly and quite a "Stoner" upon hitting enemies.
 ]]
 SWEP.Trivia = {
-    ["Country"] = "USA",
-    ["Year"] = "1968",
+    ["Country"] = "Nova Pangea",
+    ["Year"] = "-3300000",
 }
 
 SWEP.Credits = {
