@@ -405,7 +405,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1.1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -434,7 +434,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1.1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -595,8 +595,10 @@ end
 SWEP.Attachments = {
     {
         PrintName = "Barrel",
-        --Bone = "v_weapon.glock_magazine",
-        Category = "go_bizon_barrel"
+        Bone = "v_weapon.bizon_Parent",
+        Category = "go_bizon_barrel",
+        Pos = Vector(0, -3.15, 9.5),
+        Ang = Angle(90, 0, -90),		
     },
     {
         PrintName = "Muzzle",
@@ -622,18 +624,6 @@ SWEP.Attachments = {
         Bone = "v_weapon.bizon_Parent",
         Pos = Vector(-0.9, -3.1, 13),
         Ang = Angle(90, 0, 90),
-    },
-    {
-        PrintName = "Bottom",
-        DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
-        Bone = "v_weapon.bizon_Parent",
-		InstalledElements = {"bottom"},
-		RequireElements = {"mag_saiga"},
-		ExcludeElements = {"gripping", "saiga_b"},
-        Pos = Vector(0, -2, 12),
-        Ang = Angle(90, 0, 90),
-        Scale = 1,
     },
     {
         PrintName = "Gripping",
@@ -666,9 +656,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo",
-        --Bone = "v_weapon.bizon_clip",
+        Bone = "v_weapon.bizon_clip",
         Category = {"go_ammo"},
-        --Icon_Offset = Vector(0, 1, 0),
+        Pos = Vector(5, 0, 1),
+        Ang = Angle(90, 0, -90),		
     },
     {
         PrintName = "Perk",
