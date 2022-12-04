@@ -118,7 +118,7 @@ ATT.Cons = {}
 ATT.SortOrder = -1
 ATT.Free = false
 
-ATT.LHIK_Priority = 5
+ATT.LHIK_Priority = 0
 ATT.LHIK = true
 
 ATT.ModelOffset = Vector(5.5, 0, 1.5)
@@ -126,7 +126,7 @@ ATT.ModelAngleOffset = Angle(0, -5, 0)
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scar20.mdl"
 
 ATT.Category = {"go_bizon_mag"}
-ATT.ActivateElements = {"mag_saiga"}
+ATT.ActivateElements = {"mag_saiga", "saiga_b"}
 --ATT.ExcludeElements = {"barrel_mid"}
 ATT.ClipSizeOverride = 30
 ATT.ReloadTimeMult = 0.85
@@ -137,6 +137,29 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_saiga"
 end
 ATT.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
+
+ATT.Attachments = {
+    {
+        PrintName = [[Bottom/Gripping]],
+        DefaultName = "None",
+		
+        Category = {"csgo_rail_ub"},
+        Pos = Vector(-7, 0, -0.3),
+        Ang = Angle(0, 0, 180),
+		InstalledElements = {"bottom"},
+		MergeSlots = {2}			
+	},
+    {
+        PrintName = "Gripping",
+        DefaultAttName = "Default",
+        Hidden = true,		
+        Category = {"grip_bizon"},
+		InstalledElements = {"gripping"},
+        Pos = Vector(-7, 0.2, -4.25),
+        Ang = Angle(0, 0, 180),
+		Icon_Offset = Vector(0, 0, 3),
+    },	
+}
 
 ARC9.LoadAttachment(ATT, "csgo_bizon_mag_saiga")
 --------------------------------------------------------------------
