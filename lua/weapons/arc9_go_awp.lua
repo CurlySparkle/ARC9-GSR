@@ -277,8 +277,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 0 },
             { t = 0.2, lhik = 0, rhik = 0 },
-            { t = 0.7, lhik = 0, rhik = 0 },
-            { t = 0.9,lhik = 1, rhik = 1 },
+            { t = 0.6, lhik = 0, rhik = 0 },
+            { t = 0.7,lhik = 1, rhik = 1 },
         },
         EventTable = {
             {s = path .. "awp_clipout.wav", t = 7 / 30},
@@ -306,8 +306,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 0 },
             { t = 0.2, lhik = 0, rhik = 0 },
-            { t = 0.7, lhik = 0, rhik = 0 },
-            { t = 0.9,lhik = 1, rhik = 1 },
+            { t = 0.5, lhik = 0, rhik = 0 },
+            { t = 0.65,lhik = 1, rhik = 1 },
         },
         EventTable = {
             {s = path .. "awp_clipout.wav", t = 7 / 30},
@@ -335,9 +335,10 @@ SWEP.Animations = {
         Source = "reload_long",
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 0 },
-            { t = 0.2, lhik = 0, rhik = 0 },
+            { t = 0.15, lhik = 1, rhik = 0 },
+            { t = 0.3, lhik = 0, rhik = 0 },
             { t = 0.7, lhik = 0, rhik = 0 },
-            { t = 0.9,lhik = 1, rhik = 1 },
+            { t = 0.875,lhik = 1, rhik = 1 },
         },
         EventTable = {
             {s = path .. "awp_boltback.wav", t = 7 / 30},		

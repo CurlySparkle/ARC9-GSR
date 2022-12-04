@@ -307,15 +307,25 @@ SWEP.Animations = {
     },
     ["reload_start"] = {
         Source = "reload_start",
+		EjectAt = 0.5,		
         EventTable = {
             {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
             {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
         },			
     },
+    ["reload_start_empty"] = {
+        Source = "reload_start",
+		EjectAt = 0.5,
+        RestoreAmmo = 0,		
+        EventTable = {
+            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
+        },			
+    },	
     ["reload_insert"] = {
         Source = "reload",
 		Time = 0.75,
-        RestoreAmmo = 2,			
+        RestoreAmmo = 1,			
         EventTable = {
             {s = "CSGO.sawedoff.Shell_Insert", t = 2 / 30},
             {s = "CSGO.sawedoff.Shell_Insert", t = 9 / 30},			
@@ -444,8 +454,10 @@ SWEP.Attachments = {
     -- },
     {
         PrintName = "Ammo",
-        --Bone = "v_weapon.M3_LOADER",
+        Bone = "W_Main2_L",
         Category = "go_ammo_sg",
+        Pos = Vector(0, -0.5, 5.5),
+        Ang = Angle(90, 0, 90),		
         --Icon_Offset = Vector(0, 0.5, 2),
     },
     {
