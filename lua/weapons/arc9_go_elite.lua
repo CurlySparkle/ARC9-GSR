@@ -34,7 +34,7 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_elite.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-12, 5, -4.5),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
     TPIKPos = Vector(-12, 5, -14),
@@ -215,14 +215,15 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 -------------------------- HoldTypes
 
 SWEP.HoldType = "duel"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldTypeSprint = "duel"
+SWEP.HoldTypeHolstered = "duel"
 SWEP.HoldTypeSights = "duel"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_DUEL
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_DUEL
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

@@ -34,11 +34,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10.3, 7, -4.5),
-    Ang = Angle(-10, 0, 180),
-    TPIKPos = Vector(-11, 5, -4),
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Pos = Vector(-10.9, 6, -6.5),
+    Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-10, 4, 0),
+    TPIKAng = Angle(0, 0, 175),
+    Scale = 1,
 }
 
 -------------------------- DAMAGE PROFILE

@@ -26,10 +26,9 @@ SWEP.ViewModel = "models/weapons/csgo/v_eq_fraggrenade.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_fraggrenade.mdl"
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
-    Pos        =    Vector(-3, 5, -7.5),
-    Ang        =    Angle(5, 7, 180),
-    Bone    =    "ValveBiped.Bip01_R_Hand",
-    TPIKPos = Vector(-7, 1, -0),
+    Pos = Vector(-3, 5, -7.5),
+    Ang = Angle(5, 7, 180),
+    TPIKPos = Vector(-12, 1, -0),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1,
 }
@@ -100,10 +99,10 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "knife"
+SWEP.HoldTypeSprint = "knife"
+SWEP.HoldTypeHolstered = "knife"
+SWEP.HoldTypeSights = "knife"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

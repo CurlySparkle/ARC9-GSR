@@ -32,9 +32,10 @@ SWEP.DefaultBodygroups = "0000000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_akimbo_cz75.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-13, 5.5, -3.5),
     Ang = Angle(-5, 0, 180),
     Scale = 1,
     TPIKPos = Vector(-12, 5, -14),
@@ -231,8 +232,9 @@ SWEP.HoldTypeSights = "duel"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_DUEL
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_DUEL
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

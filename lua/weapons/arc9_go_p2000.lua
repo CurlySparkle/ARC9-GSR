@@ -34,12 +34,13 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_p2000.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15.5, 5.5, -4),
-    Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-6, 6, -5), -- rpg
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Pos = Vector(-12.5, 4, -3.7),
+    Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-15, 1, -2),
+    TPIKAng = Angle(0, 0, 180),
+    Scale = 1,
 }
+
 
 -------------------------- DAMAGE PROFILE
 
@@ -197,10 +198,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "revolver"
+SWEP.HoldTypeSprint = "revolver"
+SWEP.HoldTypeHolstered = "revolver"
+SWEP.HoldTypeSights = "revolver"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = "pistol"

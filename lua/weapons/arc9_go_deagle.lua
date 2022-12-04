@@ -34,8 +34,10 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_deagle.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-12.5, 5, -3.7),
     Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-14, 1, -2),
+    TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
 
@@ -195,10 +197,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "revolver"
+SWEP.HoldTypeSprint = "revolver"
+SWEP.HoldTypeHolstered = "revolver"
+SWEP.HoldTypeSights = "revolver"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = "pistol"

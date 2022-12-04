@@ -22,11 +22,12 @@ SWEP.WorldModel = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
 SWEP.Slot = 0
 
 SWEP.MirrorVMWM = true
-SWEP.NoTPIKVMPos = true
+-- SWEP.NoTPIKVMPos = true
+SWEP.NoTPIK = true
 SWEP.WorldModelMirror = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-13, 5, -3),
-    Ang = Angle(0, 0, 180),
+    Pos = Vector(-17, 2.5, 1), -- total ass
+    Ang = Angle(-20, 15, 180 + 90),
     Scale = 1
 }
 
@@ -114,9 +115,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
+SWEP.HoldType = "knife"
+SWEP.HoldTypeSprint = "knife"
+SWEP.HoldTypeHolstered = "knife"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
