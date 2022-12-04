@@ -52,9 +52,9 @@ SWEP.ThrowAnimSpeed = 1
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
-SWEP.ThrowForceMin = 500 -- Minimum force that the grenade will be thrown with.
-SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
-SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right clicked.
+SWEP.ThrowForceMin = 1000 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMax = 2000 -- Maximum force that the grenade will be thrown with.
+SWEP.TossForce = 500 -- Force that the grenade will be thrown with when right clicked.
 SWEP.ShootEntInheritPlayerVelocity = true
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
@@ -170,10 +170,11 @@ SWEP.Animations = {
     ["bash"] = {
         Source = {"melee"}
     },
-    ["impact"] = {
-        Source = {"melee"}
-    },
     ["inspect"] = {
         Source = "lookat01",
     },
 }
+
+function SWEP:SecondaryAttack()
+    return self:MeleeAttack()
+end
