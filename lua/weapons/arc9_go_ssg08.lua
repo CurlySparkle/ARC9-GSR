@@ -247,6 +247,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
+		InstantIdle = true,
         EventTable = {
             {s = path .. "ssg08_boltback.wav", t = 18 / 50},
             {s = path .. "ssg08_boltforward.wav", t = 28 / 50},
@@ -255,6 +256,7 @@ SWEP.Animations = {
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
 		Mult = 0.5,
+		InstantIdle = true,
         EventTable = {
             {s = path .. "ssg08_boltback.wav", t = 20 / 50},
             {s = path .. "ssg08_boltforward.wav", t = 39 / 50},
@@ -406,7 +408,7 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0.2, -3.65, 9.5),
+        Pos = Vector(0.2, -3.5, 9.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic","csgo_sights_ssg08"},
         CorrectiveAng = Angle(0.2, -0.25, 0),

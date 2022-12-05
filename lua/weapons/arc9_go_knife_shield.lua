@@ -98,8 +98,8 @@ SWEP.FiremodeSound = ""
 -------------------------- SHIELD
 
 SWEP.ShieldModel = "models/weapons/csgo/w_shield_hitbox.mdl"
-SWEP.ShieldOffset = Vector(-3, 6, -15)
-SWEP.ShieldAngle = Angle(10, 0, 185)
+SWEP.ShieldOffset = Vector(5, 7, 2)
+SWEP.ShieldAngle = Angle(-10, 0, 185)
 SWEP.ShieldScale = 1
 
 

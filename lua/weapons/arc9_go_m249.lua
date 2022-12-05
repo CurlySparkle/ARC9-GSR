@@ -107,7 +107,7 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1.5
 SWEP.RecoilKickSights = 1
 
-SWEP.RecoilMultCrouch = 0.6
+SWEP.RecoilMultCrouch = 0.5
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -556,6 +556,11 @@ SWEP.AttachmentElements = {
     ["go_m249_mag_556_60"] = { Bodygroups = { {4,6},{2,3},{8,1}, },},
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("bipod_deployed") then model:SetBodygroup(3,1) end
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Barrel",
@@ -587,6 +592,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.m249_Parent",
         Pos = Vector(-1.5, -4, 16.7),
         Ang = Angle(90, 0, 90),
+		Scale = 1.2,
     },
     {
         PrintName = "Grip",
@@ -626,5 +632,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 4
+SWEP.GripPoseParam = 3
 SWEP.GripPoseParam2 = 1
