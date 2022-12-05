@@ -165,3 +165,108 @@ ATT.RecoilPatternDriftMult = 0.85
 ATT.RecoilAutoControlMult = 1.15
 
 ARC9.LoadAttachment(ATT, "csgo_m249_bipod_on")
+----------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[20-Round 5.56 Mag Feed]]
+ATT.CompactName = [[20 5.56]]
+ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Description = [[
+5.56 conversion.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 6
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_m249_mag"}
+ATT.ActivateElements = {"go_m249_mag_556_20"}
+
+ATT.DamageMaxMult = 1.1
+ATT.DamageMinMult = 1.1
+ATT.RecoilMult = 0.9
+ATT.ReloadTimeMult = 0.95
+ATT.ClipSizeOverride = 20
+
+ATT.RPM = 741
+
+ATT.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_stag"
+end
+
+
+ARC9.LoadAttachment(ATT, "csgo_m249_mag_556_20")
+----------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[30-Round 5.56 Mag Feed]]
+ATT.CompactName = [[30 5.56]]
+ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
+ATT.Description = [[
+5.56 conversion.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 7
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_m249_mag"}
+ATT.ActivateElements = {"go_m249_mag_556_30"}
+
+ATT.DamageMaxMult = 1.1
+ATT.DamageMinMult = 1.1
+ATT.RecoilMult = 1.1
+ATT.ReloadTimeMult = 0.9
+ATT.ClipSizeOverride = 30
+
+ATT.RPM = 741
+
+ATT.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_stag"
+end
+
+
+ARC9.LoadAttachment(ATT, "csgo_m249_mag_556_30")
+----------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[60-Round 5.56 Mag Feed]]
+ATT.CompactName = [[60 5.56]]
+ATT.Icon = Material("entities/attachs/go_scar17_mag_10_50.png")
+ATT.Description = [[
+5.56 conversion.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 8
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_m249_mag"}
+ATT.ActivateElements = {"go_m249_mag_556_60"}
+
+ATT.DamageMaxMult = 1.1
+ATT.DamageMinMult = 1.1
+ATT.RecoilMult = 1.15
+ATT.ReloadTimeMult = 0.9
+ATT.ClipSizeOverride = 60
+
+ATT.RPM = 741
+
+ATT.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_m4a4_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_stag"
+end
+
+
+ARC9.LoadAttachment(ATT, "csgo_m249_mag_556_60")

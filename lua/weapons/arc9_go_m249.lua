@@ -315,10 +315,10 @@ SWEP.Animations = {
 		    {s = "CSGO.Item.Movement", t = 7 / 40},
             {s = path .. "m249_coverup.wav", t = 26 / 40},
             {s = path .. "m249_boxout.wav", t = 60 / 40},
-			{s = "weapons/csgo/famas/famas_draw", t = 78 / 40},
+			{s = "weapons/csgo/famas/famas_draw.wav", t = 78 / 40},
             {s = path .. "m249_boxin.wav", t = 123 / 40},
             {s = path .. "m249_chain.wav", t = 155 / 40},
-			{s = "weapons/csgo/fiveseven/fiveseven_clipin", t = 175 / 40},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 175 / 40},
 			{s = path .. "m249_coverdown.wav", t = 210 / 40},
         },
     },
@@ -352,12 +352,80 @@ SWEP.Animations = {
 		    {s = "CSGO.Item.Movement", t = 7 / 40},
             {s = path .. "m249_coverup.wav", t = 26 / 40},
             {s = path .. "m249_boxout.wav", t = 60 / 40},
-			{s = "weapons/csgo/famas/famas_draw", t = 78 / 40},
+			{s = "weapons/csgo/famas/famas_draw.wav", t = 78 / 40},
             {s = path .. "m249_boxin.wav", t = 123 / 40},
             {s = path .. "m249_chain.wav", t = 155 / 40},
-			{s = "weapons/csgo/fiveseven/fiveseven_clipin", t = 175 / 40},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 175 / 40},
 			{s = path .. "m249_coverdown.wav", t = 210 / 40},
 			{s = path .. "m249_pump.wav", t = 245 / 40},
+        },
+    },
+    ["reload_stag"] = {
+        Source = "reload_stag_short",
+		MinProgress = 0.9,
+        MagSwapTime = 2.3,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+		    {s = "CSGO.Item.Movement", t = 7 / 40},
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 20 / 40},
+			{s = "weapons/csgo/famas/famas_draw.wav", t = 36 / 40},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 60 / 40},
+        },
+    },
+    ["reload_empty_stag"] = {
+        Source = "reload_stag",
+		MinProgress = 0.9,
+        MagSwapTime = 2.3,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+		    {s = "CSGO.Item.Movement", t = 7 / 40},
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 20 / 40},
+			{s = "weapons/csgo/famas/famas_draw.wav", t = 36 / 40},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 60 / 40},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 74 / 40},
+			{s = path .. "m249_pump.wav", t = 84 / 40},
         },
     },
     ["ready"] = {
@@ -481,6 +549,24 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {6,1},
 			{7,1},
+        },
+    },
+    ["go_m249_mag_556_20"] = {
+        Bodygroups = {
+            {4,4},
+			{2,3},
+        },
+    },
+    ["go_m249_mag_556_30"] = {
+        Bodygroups = {
+            {4,5},
+			{2,3},
+        },
+    },
+    ["go_m249_mag_556_60"] = {
+        Bodygroups = {
+            {4,6},
+			{2,3},
         },
     },
 }
