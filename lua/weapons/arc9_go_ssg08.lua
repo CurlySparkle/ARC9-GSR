@@ -212,7 +212,7 @@ SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.7
+SWEP.EjectDelay = 0.5
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_scout_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -329,6 +329,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+		Mult = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -353,8 +354,8 @@ SWEP.Animations = {
         },
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 94 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 128 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 120 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 225 / 30 },
         },
     },
 }
@@ -381,13 +382,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0.3, -2.7, 26.5), } }	
+    AttPosMods = { [3] = { Pos = Vector(0.3, -2.6, 24.5), } }	
     },
     ["barrel_factory"] = {
         Bodygroups = {
             {1,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0.3, -2.7, 30.5), } }	
+    AttPosMods = { [3] = { Pos = Vector(0.3, -2.55, 27.6), } }	
     },
     ["stock_none"] = {
         Bodygroups = {
@@ -411,7 +412,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.2, -0.25, 0),
         Installed = "csgo_optic_scope_ssg08",
         Integral = true,
-		Scale = 1.2,
+		Scale = 1.1,
     },
     {
         PrintName = "Barrel",
@@ -423,16 +424,16 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0.3, -2.7, 36),
+        Pos = Vector(0.3, -2.6, 32.15),
         Ang = Angle(90, 0, -90),
-		Scale = 1.2,
+		Scale = 1.1,
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(-0.9, -1.75, 23),
+        Pos = Vector(-0.9, -1.75, 20.5),
         Ang = Angle(90, 90, 90),
     },
     {
@@ -440,7 +441,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_ssg08"},
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0.17, -0.2, 17),
+        Pos = Vector(0.17, -0.3, 17),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
     },
@@ -451,7 +452,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.ssg08_Parent",
         Pos = Vector(0.5, -0, -3),
         Ang = Angle(90, 0, -90),
-		Scale = 1.2,
+		Scale = 1.1,
     },
     {
         PrintName = "Mag",
@@ -462,10 +463,16 @@ SWEP.Attachments = {
 		--Scale = 1,
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.weapon_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1, 1),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
     },
 }
 
-SWEP.GripPoseParam = 3
-SWEP.GripPoseParam2 = 0.2
+SWEP.GripPoseParam = 3.3
+SWEP.GripPoseParam2 = 0.4

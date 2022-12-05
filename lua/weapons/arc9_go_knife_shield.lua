@@ -63,6 +63,9 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.ShootWhileSprint = true
 
+SWEP.CamQCA = 1 -- QC Attachment for camera movement.
+--SWEP.CamQCA_Mult = nil -- Intensity for QC camera movement.
+
 -------------------------- MELEE
 
 SWEP.Bash = true
@@ -71,14 +74,24 @@ SWEP.PrimaryBash = true
 SWEP.BashDamage = 55
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.35
-SWEP.PostBashTime = 0.35
+SWEP.PreBashTime = 0.2
+SWEP.PostBashTime = 0.6
 
 SWEP.ImpactForce = 15
 
 SWEP.MeleeHitSound = "CSGO.Shield.HitBody"
 SWEP.MeleeHitWallSound = "CSGO.Shield.HitWall"
 SWEP.MeleeSwingSound = "CSGO.Shield.Swing"
+
+SWEP.BashThirdArmAnimation = {
+        rig = "models/weapons/csgo/v_shield.mdl",
+        sequence = {"bash2", "bash3"},
+        -- sequence = "melee1",
+        gun_controller_attachment = 1,
+        -- offsetang = Angle(90, 180, 90),
+        mult = 1,
+        invisible = false,
+}
 
 SWEP.FiremodeSound = ""
 
@@ -104,7 +117,7 @@ SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.ViewModelFOVBase = 65
 
-SWEP.ActivePos = Vector(0, 5, 0)
+SWEP.ActivePos = Vector(0, 5, -0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.MovingMidPoint = {
@@ -112,14 +125,17 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -0.3, -0.5)
+SWEP.MovingPos = Vector(0, 3.5, -0.5)
 SWEP.MovingAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(-90, 90, 90)
-SWEP.CustomizePos = Vector(-7.5, 32, 10)
-SWEP.CustomizeSnapshotFOV = 64
+SWEP.CustomizeAng = Angle(0, 0, 0)
+SWEP.CustomizePos = Vector(17, 55, 12)
+SWEP.CustomizeSnapshotFOV = 65
 
-SWEP.CrouchPos = Vector(-0.5, -0, -1)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(-15, 75, 3)
+
+SWEP.CrouchPos = Vector(0, 3.5, -0.5)
 SWEP.CrouchAng = Angle(0, 0, 0)
 -------------------------- HoldTypes
 
@@ -145,7 +161,7 @@ SWEP.Animations = {
         Source = "draw",
     },
     ["draw"] = {
-        Source = "draw_short",
+        Source = {"draw_short"},
     },
     ["holster"] = {
         Source = "holster",
