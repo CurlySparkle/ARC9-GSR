@@ -189,6 +189,13 @@ ATT.RecoilMult = 0.9
 ATT.ReloadTimeMult = 0.95
 ATT.ClipSizeOverride = 20
 
+ATT.LHIK_Priority = 0
+ATT.LHIK = true
+
+ATT.ModelOffset = Vector(8, -0.2, 0.2)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scar20.mdl"
+
 ATT.RPM = 741
 
 ATT.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
@@ -224,6 +231,13 @@ ATT.RecoilMult = 1.1
 ATT.ReloadTimeMult = 0.9
 ATT.ClipSizeOverride = 30
 
+ATT.LHIK_Priority = 0
+ATT.LHIK = true
+
+ATT.ModelOffset = Vector(8, -0.2, 0.2)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scar20.mdl"
+
 ATT.RPM = 741
 
 ATT.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
@@ -258,6 +272,13 @@ ATT.DamageMinMult = 1.1
 ATT.RecoilMult = 1.15
 ATT.ReloadTimeMult = 0.9
 ATT.ClipSizeOverride = 60
+
+ATT.LHIK_Priority = 0
+ATT.LHIK = true
+
+ATT.ModelOffset = Vector(8, -0.2, 0.2)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scar20.mdl"
 
 ATT.RPM = 741
 

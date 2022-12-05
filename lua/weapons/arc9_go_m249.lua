@@ -387,10 +387,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-		    {s = "CSGO.Item.Movement", t = 7 / 40},
-            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 20 / 40},
-			{s = "weapons/csgo/famas/famas_draw.wav", t = 36 / 40},
-            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 60 / 40},
+		    {s = "CSGO.Item.Movement", t = 7 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 15 / 30},
+			{s = "weapons/csgo/famas/famas_draw.wav", t = 36 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 55 / 30},
         },
     },
     ["reload_empty_stag"] = {
@@ -420,12 +420,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-		    {s = "CSGO.Item.Movement", t = 7 / 40},
-            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 20 / 40},
-			{s = "weapons/csgo/famas/famas_draw.wav", t = 36 / 40},
-            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 60 / 40},
-			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 74 / 40},
-			{s = path .. "m249_pump.wav", t = 84 / 40},
+		    {s = "CSGO.Item.Movement", t = 7 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 15 / 30},
+			{s = "weapons/csgo/famas/famas_draw.wav", t = 36 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 55 / 30},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 74 / 30},
+			{s = path .. "m249_pump.wav", t = 84 / 30},
         },
     },
     ["ready"] = {
@@ -551,24 +551,9 @@ SWEP.AttachmentElements = {
 			{7,1},
         },
     },
-    ["go_m249_mag_556_20"] = {
-        Bodygroups = {
-            {4,4},
-			{2,3},
-        },
-    },
-    ["go_m249_mag_556_30"] = {
-        Bodygroups = {
-            {4,5},
-			{2,3},
-        },
-    },
-    ["go_m249_mag_556_60"] = {
-        Bodygroups = {
-            {4,6},
-			{2,3},
-        },
-    },
+    ["go_m249_mag_556_20"] = { Bodygroups = { {4,4},{2,3},{8,1}, },},
+    ["go_m249_mag_556_30"] = { Bodygroups = { {4,5},{2,3},{8,1}, },},
+    ["go_m249_mag_556_60"] = { Bodygroups = { {4,6},{2,3},{8,1}, },},
 }
 
 SWEP.Attachments = {
@@ -625,6 +610,9 @@ SWEP.Attachments = {
     {
         PrintName = "Magazine",
         Category = "go_m249_mag",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, -1, 6),
+        Ang = Angle(90, 0, -90),		
     },
     {
         PrintName = "Ammo",
