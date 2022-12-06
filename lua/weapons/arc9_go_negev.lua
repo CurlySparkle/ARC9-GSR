@@ -361,7 +361,68 @@ SWEP.Animations = {
 			{s = path .. "negev_coverdown.wav", t = 114 / 30},
 			{s = path .. "negev_pump.wav", t = 135 / 30},
         },
+    },	
+    ["reload_empty_mag"] = {
+        Source = "reload_mag",
+		MinProgress = 0.9,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.5,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "negev_boxout.wav", t = 11 / 30},
+            {s = path .. "negev_boxin.wav", t = 51 / 30},
+			{s = path .. "negev_pump.wav", t = 78 / 30},
+        },
     },
+    ["reload_mag"] = {
+        Source = "reload_short_mag",
+		MinProgress = 0.9,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0,
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0,
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0,
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1,
+            },
+        },
+        EventTable = {
+            {s = path .. "negev_boxout.wav", t = 11 / 30},
+            {s = path .. "negev_boxin.wav", t = 51 / 30},
+        },
+    },	
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -495,6 +556,12 @@ SWEP.AttachmentElements = {
 			{6,1},
         },
     },
+    ["mag_556m"] = {
+        Bodygroups = {
+            {0,2},
+			{6,2},
+        },
+    },	
 }
 
 SWEP.Attachments = {

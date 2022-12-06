@@ -124,3 +124,29 @@ ATT.RecoilMult = 1.1
 ATT.ShellScale = 0.1
 
 ARC9.LoadAttachment(ATT, "csgo_negev_mag_762")
+
+----------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[50-Round 5.56mm Drum Magazine]]
+ATT.CompactName = [[50 5.56mm]]
+ATT.Icon = Material("entities/attachs/go_negev_belt_100.png")
+ATT.Description = [[
+hes so fast doe.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_negev_mag"}
+ATT.ActivateElements = {"mag_556m"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_mag"
+end
+
+ATT.ClipSizeOverride = 50
+
+ARC9.LoadAttachment(ATT, "csgo_negev_mag_556m")
