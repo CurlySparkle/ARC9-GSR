@@ -522,7 +522,15 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Mag",
-        Category = "go_mag"
+        Bone = "v_weapon.mag",
+        Category = "go_mag",
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.mag",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, -1, 2),
     },
     {
         PrintName = "Perk",

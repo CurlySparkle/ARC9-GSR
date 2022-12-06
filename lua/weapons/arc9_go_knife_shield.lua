@@ -154,6 +154,9 @@ function SWEP:SecondaryAttack()
 end
 
 SWEP.Animations = {
+    ["blowback"] = {
+        Source = "blowback",
+    },
     ["idle"] = {
         Source = "idle1",
     },
