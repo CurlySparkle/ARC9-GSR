@@ -56,10 +56,9 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
+SWEP.ChamberSize = 0
 SWEP.ClipSize = 1 -- Self-explanatory.
-SWEP.SupplyLimit = 3 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
-SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
+SWEP.SupplyLimit = 2 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 
 SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
@@ -213,6 +212,8 @@ SWEP.EjectDelay = 0
 SWEP.AlwaysPhysBullet = false
 SWEP.NeverPhysBullet = true
 
+SWEP.ImpactEffect = "AR2Impact"
+
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/hkp2000/"
@@ -262,6 +263,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
+		MinProgress = 0.65,
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 9 / 50 },
 			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 40 / 50 },
