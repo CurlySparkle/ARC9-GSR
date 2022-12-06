@@ -213,6 +213,7 @@ SWEP.AlwaysPhysBullet = false
 SWEP.NeverPhysBullet = true
 
 SWEP.ImpactEffect = "AR2Impact"
+SWEP.ImpactDecal = "FadingScorch"
 
 -------------------------- SOUNDS
 
