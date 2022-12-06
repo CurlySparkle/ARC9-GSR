@@ -285,7 +285,7 @@ SWEP.Animations = {
             {s = path .. "p250_clipout.wav", t = 12 / 30},
             {s = path .. "p250_clipin.wav", t = 25 / 30},
             --{s = path .. "p250_slideback.wav", t = 44 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 50 / 30},
+            {s = path .. "p250_sliderelease.wav", t = 45 / 30},
         },
     },
     ["ready"] = {

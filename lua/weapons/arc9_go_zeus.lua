@@ -44,7 +44,7 @@ SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 =
 SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 15 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 0 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 25
 
@@ -54,7 +54,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "pistol" -- What ammo type this gun uses.
+SWEP.Ammo = "AR2AltFire" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0
 SWEP.ClipSize = 1 -- Self-explanatory.
@@ -109,6 +109,7 @@ SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -117,7 +118,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.1 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
@@ -169,10 +170,11 @@ SWEP.MovingAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 3)
+SWEP.CustomizeAng = Angle(90, -20, 0)
+SWEP.CustomizePos = Vector(20, 25, -3)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
+
+SWEP.CustomizeSnapshotPos = Vector(0, -8, 8.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -313,6 +315,15 @@ SWEP.AttachmentElements = {
 }
 
 SWEP.Attachments = {
+    {
+        PrintName = "Sights",
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, -1.3, -0.2),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optics_pistols_alt",},
+        CorrectiveAng = Angle(0.15, 0.2, 0),
+		Scale = 1,
+    },
     {
         PrintName = "Perk",
         Category = "go_perk"
