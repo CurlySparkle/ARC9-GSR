@@ -172,3 +172,19 @@ ATT.ActivateElements = {"perk_diver"}
 ATT.CanFireUnderwater = true
 
 ARC9.LoadAttachment(ATT, "csgo_perk_diver")
+
+ATT = {}
+
+ATT.PrintName = [[Lounger]]
+ATT.Description = [[Adds lounge range for more prceice hits.]]
+ATT.Icon = Material("entities/attachs/go_perk_lounge.png", "mips smooth")
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk_melee"}
+
+ATT.BashLungeRange = 74
+
+ARC9.LoadAttachment(ATT, "csgo_perk_melee_lounge")

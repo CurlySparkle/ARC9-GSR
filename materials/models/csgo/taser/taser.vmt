@@ -11,7 +11,8 @@
 	"$envmaptint"				"[ .13 .13 .13 ]"
 
 	"$phong"					"1"
-	"$phongboost"				"15"
+	"$phongboost"				"5"
+	"$phongexponent"			"55"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
 	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"

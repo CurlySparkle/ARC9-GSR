@@ -62,6 +62,7 @@ SWEP.FreeAimRadius = 0
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = true
+SWEP.SprintVerticalOffset = true
 
 SWEP.CamQCA = 1 -- QC Attachment for camera movement.
 --SWEP.CamQCA_Mult = nil -- Intensity for QC camera movement.
@@ -209,5 +210,9 @@ sound.Add({
 
 -------------------------- ATTACHMENTS
 
-SWEP.AttachmentElements = {
+SWEP.Attachments = {
+    {
+        PrintName = "Perk",
+        Category = {"go_perk","go_perk_melee"},
+    },
 }

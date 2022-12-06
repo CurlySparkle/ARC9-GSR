@@ -195,5 +195,9 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.AttachmentElements = {
+SWEP.Attachments = {
+    {
+        PrintName = "Perk",
+        Category = {"go_perk","go_perk_melee"},
+    },
 }
