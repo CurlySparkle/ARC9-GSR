@@ -794,8 +794,8 @@ sound.Add( {
     name = "CSGO.Glock.Fire",
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
-    level = 140,
-    pitch = {97,103},
+    level = 120,
+    pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/csgo/glock18/glock_01.ogg",

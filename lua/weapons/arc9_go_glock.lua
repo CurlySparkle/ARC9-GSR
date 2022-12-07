@@ -162,7 +162,6 @@ SWEP.IronSights = {
     Ang = Angle(-0.1, 1.2, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
-    CrosshairInSights = true
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -283,8 +282,8 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12 / 30},
-            {s = path .. "glock_clipin.wav", t = 25 / 30},
+            {s = path .. "glock_clipout.wav", t = 16 / 30},
+            {s = path .. "glock_clipin.wav", t = 28 / 30},
         },
     },
     ["reload_empty"] = {
@@ -400,16 +399,16 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.glock_parent",
-        Pos = Vector(0, -0.8, 4),
+        Pos = Vector(0, -0.7, 4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
-		Scale = 1,
+		Scale = 1.1,
 		CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
         PrintName = "Sights",
         Bone = "v_weapon.glock_slide",
-        Pos = Vector(0, -0.3, 2),
+        Pos = Vector(0, -0.5, 2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt",},
         CorrectiveAng = Angle(0.7, 0.65, 0),
@@ -420,9 +419,9 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.glock_parent",
-        Pos = Vector(0, -1.4, 4.5),
+        Pos = Vector(0, -1.3, 4.9),
         Ang = Angle(90, 180, 90),
-		Scale = 1,
+		Scale = 1.1,
     },
     {
         PrintName = "Mag",
