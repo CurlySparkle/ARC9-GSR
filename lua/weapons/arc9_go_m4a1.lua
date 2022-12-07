@@ -696,9 +696,14 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [4] = { Pos = Vector(-1.35, -5.2, 15.5), } }
     },
-    ["mag"] = {
+    ["mag_30"] = {
         Bodygroups = {
             {4,1},
+        },
+    },
+    ["mag_50"] = {
+        Bodygroups = {
+            {4,3},
         },
     },
 }
@@ -782,7 +787,13 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.M4A1_Clip",
-        Category = "go_mag_m4"
+        Category = "go_m4a1_mag"
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.M4A1_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0.3, -2),
     },
     {
         PrintName = "Perk",
