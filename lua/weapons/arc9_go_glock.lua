@@ -88,7 +88,12 @@ SWEP.Firemodes = {
 		RecoilUp = 0.75,
 		SpreadAddRecoil = 0.01,
 		RunawayBurst = true,
-		PostBurstDelay = 0.3
+		PostBurstDelay = 0.3,
+		Hook_TranslateAnimation = function (self, anim)
+		if anim == "fire" then
+        return "fire_auto"
+		end
+		end
     }
 }
 -------------------------- RECOIL
@@ -274,6 +279,9 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+    },
+    ["fire_auto"] = {
+        Source = {"shoot4"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",

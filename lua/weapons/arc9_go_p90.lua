@@ -240,6 +240,7 @@ SWEP.DropMagazineQCA = 1
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/p90/"
+local path2 = "weapons/csgo/m4a1/"
 
 SWEP.ShootSound = "CSGO.P90.Fire"
 SWEP.DistantShootSound = "CSGO.P90.Fire.Distance"
@@ -324,6 +325,134 @@ SWEP.Animations = {
             {s = path .. "p90_cliprelease.wav", t = 10 / 30},
             {s = path .. "p90_clipout.wav", t = 12 / 30},
             {s = path .. "p90_clipin.wav", t = 41 / 30},
+            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_boltback.wav", t = 82 / 30},
+            {s = path .. "p90_boltforward.wav", t = 89 / 30},
+        },
+    },
+    ["reload_stanag30"] = {
+        Source = "reload_short_stag_30",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
+            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+        },
+    },
+    ["reload_empty_stanag30"] = {
+        Source = "reload_stag_30",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
+            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_boltback.wav", t = 82 / 30},
+            {s = path .. "p90_boltforward.wav", t = 89 / 30},
+        },
+    },
+    ["reload_stanag20"] = {
+        Source = "reload_short_stag_20",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
+            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+        },
+    },
+    ["reload_empty_stanag20"] = {
+        Source = "reload_stag_20",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.15,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
             {s = path .. "p90_cliphit.wav", t = 58 / 30},
             {s = path .. "p90_boltback.wav", t = 82 / 30},
             {s = path .. "p90_boltforward.wav", t = 89 / 30},
@@ -466,6 +595,16 @@ SWEP.AttachmentElements = {
     ["mag_30"] = {
         Bodygroups = {
 			{7,1},
+        },
+    },
+    ["mag_30_stanag"] = {
+        Bodygroups = {
+			{7,2},
+        },
+    },
+    ["mag_20_stanag"] = {
+        Bodygroups = {
+			{7,3},
         },
     },
 }

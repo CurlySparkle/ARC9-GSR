@@ -173,5 +173,69 @@ ATT.ReloadTimeMult = 0.85
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 
-ARC9.LoadAttachment(ATT, "csgo_p90_mag_35")
+ARC9.LoadAttachment(ATT, "csgo_p90_mag_30")
 -------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[30-round STANAG]]
+ATT.CompactName = [[30-STANAG]]
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
+ATT.Description = [[
+Conversion to 5.56 with the use of a STANAG mag with 30 capacity. 
+(Wacky right? how is this possible!?)
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 3
+ATT.Free = false
+
+ATT.Category = {"go_p90_mag"}
+ATT.ActivateElements = {"mag_30_stanag"}
+ATT.ClipSizeOverride = 30
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_p90_mag_30_stanag"] then
+        return "reload_stanag30"
+    elseif anim == "reload_empty" then
+        return "reload_empty_stanag30"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_p90_mag_30_stanag")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[20-round STANAG]]
+ATT.CompactName = [[20-STANAG]]
+ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Description = [[
+Conversion to 5.56 with the use of a STANAG mag with 20 capacity. 
+(Wacky right? how is this still possible!?)
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 4
+ATT.Free = false
+
+ATT.Category = {"go_p90_mag"}
+ATT.ActivateElements = {"mag_20_stanag"}
+ATT.ClipSizeOverride = 20
+ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_p90_mag_20_stanag"] then
+        return "reload_stanag20"
+    elseif anim == "reload_empty" then
+        return "reload_empty_stanag20"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_p90_mag_20_stanag")
