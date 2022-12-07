@@ -158,10 +158,11 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.84, -3, 1.1),
+    Pos = Vector(-2.65, -3, 1.25),
     Ang = Angle(-0.1, 1.2, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
+    CrosshairInSights = true
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -261,15 +262,15 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
-SWEP.Hook_TranslateAnimation = function (self, anim)
-    local attached = self:GetElements()
+-- SWEP.Hook_TranslateAnimation = function (self, anim)
+    -- local attached = self:GetElements()
 
-    if anim == "reload" and attached["go_mag_extended"] then
-        return "reload_longmag"
-    elseif anim == "reload_empty" then
-        return "reload_longmag_empty"
-    end
-end
+    -- if anim == "reload" and attached["go_mag_extended"] then
+        -- return "reload_longmag"
+    -- elseif anim == "reload_empty" then
+        -- return "reload_longmag_empty"
+    -- end
+-- end
 
 SWEP.Animations = {
     ["fire"] = {
@@ -292,8 +293,7 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12 / 30},
             {s = path .. "glock_clipin.wav", t = 25 / 30},
-            {s = path .. "glock_slideback.wav", t = 44 / 30},
-            {s = path .. "glock_sliderelease.wav", t = 50 / 30},
+            {s = path .. "glock_sliderelease.wav", t = 43 / 30},
         },
     },
     ["ready"] = {
@@ -370,13 +370,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 6.55), } }	
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 7.1), } }	
     },
     ["slide_auto"] = {
         Bodygroups = {
             {2,2},
         },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 6.55), } }	
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.375, 6.6), } }	
     },	
 }
 
@@ -393,7 +393,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.glock_parent",
-        Pos = Vector(-0.025, -2.375, 6.1),
+        Pos = Vector(-0.025, -2.375, 6.6),
         Ang = Angle(90, 0, -90),
         Scale = 0.8,
     },
