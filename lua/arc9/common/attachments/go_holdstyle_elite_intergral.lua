@@ -15,6 +15,6 @@ ATT.LHIK = true
 ATT.RHIK_Priority = 1
 ATT.RHIK = true
 
-ATT.ModelOffset = Vector(-5, -0.3, -2)
+ATT.ModelOffset = Vector(-5.5, -0.3, -1.5)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ModelBodygroups = "22300"
