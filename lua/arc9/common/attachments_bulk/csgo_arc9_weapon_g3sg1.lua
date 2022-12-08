@@ -388,7 +388,7 @@ ATT.ActivateElements = {"mag_556_20"}
 ATT.ClipSizeOverride = 20
 ATT.ReloadTimeMult = 0.9
 
-ATT.RPM = 700
+ATT.RPM = 750 
 
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10
@@ -446,7 +446,7 @@ ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_556_30"}
 ATT.ClipSizeOverride = 30
 
-ATT.RPM = 700
+ATT.RPM = 750 
 
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10
@@ -474,16 +474,17 @@ ATT.Firemodes = {
 ATT.Hook_TranslateAnimation = function (self, anim) --???
     local attached = self:GetElements()
 
-    if anim == "reload" and attached["csgo_g3_mag_20_556"] then
+    if anim == "reload" and attached["csgo_g3_mag_30_556"] then
         return "reload_alt"
-    elseif anim == "reload_empty" and attached["csgo_g3_mag_20_556"] then 
+    elseif anim == "reload_empty" and attached["csgo_g3_mag_30_556"] then 
         return "reload_empty_alt"
-    elseif anim == "fire" and attached["csgo_g3_mag_20_556"] then 
+    elseif anim == "fire" and attached["csgo_g3_mag_30_556"] then 
         return "fire_alt"
-    elseif anim == "ready" and attached["csgo_g3_mag_20_556"] then 
+    elseif anim == "ready" and attached["csgo_g3_mag_30_556"] then 
         return "ready_alt"
     end
 end
+
 
 ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_556")
 -------------------------------------------------------------------------------------------------
@@ -504,7 +505,7 @@ ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_556_60"}
 ATT.ClipSizeOverride = 60
 
-ATT.RPM = 700
+ATT.RPM = 750 
 
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10
