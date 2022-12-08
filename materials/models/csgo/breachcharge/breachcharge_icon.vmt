@@ -1,0 +1,5 @@
+unlitgeneric
+{
+	$alphatest 1
+	$basetexture "models\csgo\breachcharge\breachcharge_icon"
+}

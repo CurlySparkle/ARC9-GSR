@@ -1,0 +1,29 @@
+"unlittwotexture"
+{
+	"$nofog"             1
+	"$basetexture"       "models/csgo/bump_mine/bump_mine_glow_01"
+	"$texture2" 	   "models/csgo/bump_mine/bump_mine_glow_02"
+	"$alpha"             "1"
+	"$translucent"       "1"
+	"$additive" "1"
+	"$nocull"	"1"
+//	"$vertexalpha" "1"
+//	"$vertexcolor" 1
+	"proxies"
+	{
+		"texturescroll"
+		{
+			"texturescrollvar"   "$basetexturetransform"
+			"texturescrollrate"  0.2
+			"texturescrollangle" 0
+			"texturescale"       1
+		}
+		"texturescroll"
+		{
+			"texturescrollvar"   "$texture2transform"
+			"texturescrollrate"  .05
+			"texturescrollangle" 0
+			"texturescale"       1
+		}
+	}
+}
