@@ -256,6 +256,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+		Mult = 0.7,
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -508,8 +509,18 @@ SWEP.Attachments = {
         Category = {"go_mag","go_mag_mp9"},
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, -2, 0),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_mp9_view"
     },
 }
 
