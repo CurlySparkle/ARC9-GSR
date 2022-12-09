@@ -20,7 +20,7 @@ ATT.ActivateElements = {"rearsight2"}
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_g3sg1.mdl"
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(-1.3, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
@@ -34,7 +34,7 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 8
 ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")

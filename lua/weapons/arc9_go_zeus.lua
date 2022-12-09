@@ -265,12 +265,14 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.65,
+		MinProgress = 0.75,
+		Mult = 0.8,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 9 / 50 },
-			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 40 / 50 },
-			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 55 / 50 },
-            { s = "weapons/csgo/taser/taser_draw.ogg", t = 63 / 50 },
+            { s = "weapons/csgo/movement1.wav", t = 9 / 30 },
+			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 20 / 30 },
+			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 60 / 30 },
+			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 65 / 30 },
+            { s = "weapons/csgo/taser/taser_draw.ogg", t = 77 / 30 },
         },
     },
     ["idle_sprint"] = {

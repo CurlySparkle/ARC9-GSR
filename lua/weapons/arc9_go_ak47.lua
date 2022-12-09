@@ -607,9 +607,19 @@ SWEP.AttachmentElements = {
             {4,3},
         },
     },
-    ["mag_none"] = {
+    ["mag_545"] = {
         Bodygroups = {
             {4,4},
+        },
+    },
+    ["mag_545_ext"] = {
+        Bodygroups = {
+            {4,5},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {4,6},
         },
     },
     ["stock_rpk"] = {

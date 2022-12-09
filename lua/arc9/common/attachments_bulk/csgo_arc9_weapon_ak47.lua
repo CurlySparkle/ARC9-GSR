@@ -173,7 +173,7 @@ ATT.Description = [[
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 5
+ATT.SortOrder = 3
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 
@@ -206,7 +206,7 @@ ATT.Description = [[
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 5
+ATT.SortOrder = 4
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 
@@ -228,3 +228,73 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ARC9.LoadAttachment(ATT, "csgo_ak47_mag_556_ext")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[30-Round 5.45x39]]
+ATT.CompactName = [[30 5.45x39]]
+ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
+ATT.Description = [[
+5.45x39 conversion for the AK-47. less RPM with the benefit and cost of good damage for more recoil.
+(30 Capacity)
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_mag_ak"}
+ATT.ActivateElements = {"mag_545"}
+
+ATT.DamageMaxMult = 1.15
+ATT.DamageMinMult = 1.15
+ATT.RecoilMult = 1.2
+
+ATT.RPM = 650
+
+ATT.ClipSizeOverride = 30
+--ATT.ReloadTimeMult = 1.2
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/mag_ak74_30.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_ak47_mag_545")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[40-Round 5.45x39]]
+ATT.CompactName = [[40 5.45x39]]
+ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
+ATT.Description = [[
+5.45x39 conversion for the AK-47. less RPM with the benefit and cost of good damage for more recoil.
+(40 Capacity)
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 6
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_mag_ak"}
+ATT.ActivateElements = {"mag_545_ext"}
+
+ATT.DamageMaxMult = 1.15
+ATT.DamageMinMult = 1.15
+ATT.RecoilMult = 1.2
+
+ATT.RPM = 650
+
+ATT.ClipSizeOverride = 30
+ATT.ReloadTimeMult = 1.15
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/mag_ak74_30.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_ak47_mag_545_ext")
