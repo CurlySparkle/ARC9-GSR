@@ -568,6 +568,9 @@ SWEP.AttachmentElements = {
     ["mag_556_20"] = { Bodygroups = {{4,3},{0,2} },},
 	["mag_556_30"] = { Bodygroups = {{4,4},{0,2} },},
 	["mag_556_60"] = { Bodygroups = {{4,5},{0,2} },},
+    ["mag_g41_20"] = { Bodygroups = {{4,6},{5,1} },},
+	["mag_g41_30"] = { Bodygroups = {{4,7},{5,1} },},
+	["mag_g41_60"] = { Bodygroups = {{4,8},{5,1} },},
 }
 
 SWEP.Attachments = {

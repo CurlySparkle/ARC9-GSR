@@ -10,7 +10,7 @@ ATT.Icon = Material("entities/attachs/silencer_233.png", "mips smooth")
 
 ATT.SortOrder = 0.5
 ATT.AutoStats = true
-ATT.Category = {"muzzle"}
+ATT.Category = {"muzzle","silencers"}
 ATT.Folder = "Suppresors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_233.mdl"
@@ -36,7 +36,7 @@ ATT.Icon = Material("entities/attachs/silencer_m4.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true
-ATT.Category = {"muzzle"}
+ATT.Category = {"muzzle","silencers"}
 ATT.Folder = "Suppresors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_m4.mdl"
@@ -87,7 +87,7 @@ ATT.Icon = Material("entities/attachs/silencer_PBS01.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true
-ATT.Category = {"muzzle"}
+ATT.Category = {"muzzle","silencers"}
 ATT.Scale = 0.4
 ATT.Folder = "Suppresors"
 
@@ -116,7 +116,7 @@ ATT.Icon = Material("entities/attachs/silencer_SEC9mm.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = false
-ATT.Category = {"muzzle"}
+ATT.Category = {"muzzle","silencers"}
 ATT.Folder = "Suppresors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_SEC9mm.mdl"
@@ -170,7 +170,7 @@ ATT.Icon = Material("entities/attachs/silencer_TiRant45.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true
-ATT.Category = {"muzzle"}
+ATT.Category = {"muzzle","silencers"}
 ATT.Folder = "Suppresors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_TiRant45.mdl"
@@ -195,7 +195,7 @@ ATT.Icon = Material("entities/attachs/silencer_clothwrapped.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.AutoStats = true
-ATT.Category = {"muzzle"}
+ATT.Category = {"muzzle","silencers"}
 ATT.Folder = "Suppresors"
 ATT.Scale = 0.4
 

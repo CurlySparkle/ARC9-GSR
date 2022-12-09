@@ -564,7 +564,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Default",
-        Category = {"muzzle","muzzle_pistols"},
+        Category = {"silencers"},
         Bone = "v_weapon.silencer",
 		InstalledElements = {"silencer_none"},
         Pos = Vector(0, 0, 0),

@@ -207,6 +207,19 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.m4a1.Fire_Distance",
+    channel = CHAN_WEAPON,
+    volume = 0.5,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+        "^weapons/csgo/m4a1/m4a1_us_distant.ogg",
+		"^weapons/csgo/m4a1/m4a1_us_distant_02.ogg",
+		"^weapons/csgo/m4a1/m4a1_us_distant_03.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.AK47.Fire",
     channel = CHAN_WEAPON + 10,
     volume = 1.0,

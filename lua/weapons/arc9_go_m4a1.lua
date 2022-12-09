@@ -261,7 +261,7 @@ local path = "weapons/csgo/m4a1/"
 -- SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_unSil"
 SWEP.ShootSound = "CSGO.m4a1.Fire_unSil"
 SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
-SWEP.DistantShootSound = path .. "m4a1_us_distant.wav"
+SWEP.DistantShootSound = "CSGO.m4a1.Fire_Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = ""
@@ -738,11 +738,12 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Category = {"muzzle","muzzle_m4"},
+        Category = {"silencers"},
         Bone = "v_weapon.M4A1_Silencer",
 		InstalledElements = {"silencer_remove"},
-        Pos = Vector(0, -0.8, 0.1),
+        Pos = Vector(0, -0.8, 0),
         Ang = Angle(0, -90, 0),
+		Scale = 1.1,
     },
     {
         PrintName = "Side",
