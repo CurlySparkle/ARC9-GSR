@@ -266,15 +266,15 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
--- SWEP.Hook_TranslateAnimation = function (self, anim)
-    -- local attached = self:GetElements()
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
 
-    -- if anim == "reload" and attached["go_mag_extended"] then
-        -- return "reload_longmag"
-    -- elseif anim == "reload_empty" then
-        -- return "reload_longmag_empty"
-    -- end
--- end
+    if anim == "reload" and attached["go_mag_extended"] then
+       return "reload_x"
+    elseif anim == "reload_empty" then
+        return "reload_empty_x"
+    end
+end
 
 SWEP.Animations = {
     ["fire"] = {
@@ -296,6 +296,22 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.45,
+        EventTable = {
+            {s = path .. "glock_clipout.wav", t = 12 / 30},
+            {s = path .. "glock_clipin.wav", t = 25 / 30},
+            {s = path .. "glock_sliderelease.wav", t = 43 / 30},
+        },
+    },
+    ["reload_x"] = {
+        Source = "reload_short_x",
+        EventTable = {
+            {s = path .. "glock_clipout.wav", t = 16 / 30},
+            {s = path .. "glock_clipin.wav", t = 28 / 30},
+        },
+    },
+    ["reload_empty_x"] = {
+        Source = "reload_x",
 		MinProgress = 0.45,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12 / 30},
