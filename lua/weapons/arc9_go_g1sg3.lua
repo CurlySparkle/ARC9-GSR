@@ -427,6 +427,66 @@ SWEP.Animations = {
             {s = path .. "g3sg1_charging_handle_pull.wav", t = 97 / 30},
 			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104 / 30},
         },
+    },  
+	["reload_smg"] = {
+        Source = "reload_short_smg",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
+        },
+    },
+    ["reload_empty_smg"] = {
+        Source = "reload_smg",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
+            {s = path .. "g3sg1_charging_handle_pull.wav", t = 97 / 30},
+			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104 / 30},
+        },
     },
     ["ready_alt"] = {
         Source = "draw",
@@ -571,7 +631,17 @@ SWEP.AttachmentElements = {
     ["mag_g41_20"] = { Bodygroups = {{4,6},{5,1} },},
 	["mag_g41_30"] = { Bodygroups = {{4,7},{5,1} },},
 	["mag_g41_60"] = { Bodygroups = {{4,8},{5,1} },},
+	["mag_g4_waffle"] = { Bodygroups = { {0,1},{2,3},{3,8},{4,9} },},
+	["mag_g4_mp9"] = { Bodygroups = { {0,1},{2,3},{3,8},{4,11} },},	
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3") then model:SetBodygroup(3,6) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end	
+end
 
 SWEP.Attachments = {
     {
@@ -588,8 +658,8 @@ SWEP.Attachments = {
     {
         PrintName = "Barrel",
 		--Bone = "v_weapon.glock_magazine",
-        Category = "go_g3_barrel"
-    },
+        Category = "go_g3_barrel"	
+    },  
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",

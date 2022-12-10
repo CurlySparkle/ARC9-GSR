@@ -434,12 +434,12 @@ SWEP.AttachmentElements = {
     },
     ["stock_none"] = {
         Bodygroups = {
-            {2,1},
+            {2,4},
         },
     },
     ["stock_specialized"] = {
         Bodygroups = {
-            {2,3},
+            {2,4},
         },
     },
     ["mag"] = {

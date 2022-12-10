@@ -49,7 +49,7 @@ ATT.AutoStats = true
 
 ATT.Free = false
 
-ATT.Category = {"go_g3_barrel"}
+ATT.Category = {"go_g3_barrel", "go_g3_barrel_smg"}
 ATT.ActivateElements = {"barrel_g3a3"}
 
 ATT.AimDownSightsTimeMult = 1.1
@@ -725,3 +725,128 @@ ATT.Hook_TranslateAnimation = function (self, anim) --???
 end
 
 ARC9.LoadAttachment(ATT, "csgo_g3_mag_60_g41")
+
+
+
+
+
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[30-Round .45ACP]]
+ATT.CompactName = [[30 .45ACP]]
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
+ATT.Description = [[
+ayyo who let the Dutch touched this?
+Sub-machinegun conversion of a battle rifle because of course
+Chambered in .45ACP
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 330
+ATT.Free = false
+
+ATT.Category = {"go_mag_g3"}
+ATT.ActivateElements = {"mag_g4_waffle", "smg_g3"}
+ATT.ClipSizeOverride = 30
+ATT.ReloadTimeMult = 0.9
+
+ATT.RPM = 650
+
+ATT.DamageMaxMult = 0.6
+ATT.DamageMinMult = 0.7
+ATT.SpreadMultRecoil = 0.7
+ATT.SpreadMultHipFire = 1.2
+ATT.SpreadMultMove = 1.25
+ATT.RecoilMult = 0.75
+
+ATT.ShootSound = "CSGO.SG556.Fire"
+//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
+//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
+ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 1,
+    }
+}
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    if anim == "reload" then
+        return "reload_smg"
+    elseif anim == "reload_empty" then 
+        return "reload_empty_smg"
+    elseif anim == "fire" then 
+        return "fire_alt"
+    elseif anim == "ready" then 
+        return "ready_alt"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_waf")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[40-Round 9mm]]
+ATT.CompactName = [[40 9mm]]
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
+ATT.Description = [[
+ayyo who let the Dutch touched this?
+Sub-machinegun conversion of a battle rifle because of course
+Chambered in .45ACP
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 340
+ATT.Free = false
+
+ATT.Category = {"go_mag_g3"}
+ATT.ActivateElements = {"mag_g4_mp9", "smg_g3"}
+ATT.ClipSizeOverride = 30
+ATT.ReloadTimeMult = 0.9
+
+ATT.RPM = 750
+
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.5
+ATT.SpreadMultRecoil = 0.5
+ATT.SpreadMultHipFire = 1.3
+ATT.SpreadMultMove = 1.5
+ATT.RecoilMult = 0.65
+
+ATT.ShootSound = "CSGO.SG556.Fire"
+//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
+//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
+ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
+
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 1,
+    }
+}
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    if anim == "reload" then
+        return "reload_smg"
+    elseif anim == "reload_empty" then 
+        return "reload_empty_smg"
+    elseif anim == "fire" then 
+        return "fire_alt"
+    elseif anim == "ready" then 
+        return "ready_alt"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_g3_mag_40_mp9")
