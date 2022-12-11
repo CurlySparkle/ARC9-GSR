@@ -174,3 +174,81 @@ ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_scar17_stock_pdw")
+
+------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "SCARAB Stock"
+ATT.CompactName = [[PDW]]
+ATT.Description = [[
+Ultra lightweight bullpup PDW kit
+]]
+ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
+ATT.Desc_Pros = {
+}
+ATT.Desc_Cons = {
+}
+ATT.AutoStats = true
+ATT.Category = "go_scar17_stock"
+ATT.ActivateElements = {"stock_scarab"}
+
+ATT.RecoilMult = 1.1
+ATT.RecoilKickMult = 1.2
+ATT.RecoilMultCrouch = 0.9
+ATT.RecoilMultHipFire = 1.05
+ATT.AimDownSightsTimeMult = 0.8
+ATT.SprintToFireTimeMult = 0.7
+
+ATT.RHIK_Priority = 1
+ATT.RHIK = true
+
+ATT.Model = "models/weapons/csgo/c_rif_scar17.mdl"
+ATT.ModelOffset = Vector(6.5, -5, 4.5)
+ATT.ModelAngleOffset = Angle(-90, 0, 0)
+ATT.ModelBodygroups = "224231"
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 5, 0)
+end
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Gripping",
+        Pos = Vector(5, 0.5, 3),
+        Ang = Angle(0, 0, 0),
+        //Hidden = true,
+		//Installed = "csgo_scar17_grip_bullpup",
+        //Integral = true,		
+        Category = {"grip_scarbullpup"},
+    },	
+}
+
+ARC9.LoadAttachment(ATT, "csgo_scar17_stock_bullpup")
+
+------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "SCARAB Stock"
+ATT.CompactName = [[PDW]]
+ATT.Description = [[
+Ultra lightweight bullpup PDW kit
+]]
+ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
+ATT.Desc_Pros = {
+}
+ATT.Desc_Cons = {
+}
+ATT.Category = "grip_scarbullpup"
+
+ATT.LHIK_Priority = -10
+ATT.LHIK = true
+
+ATT.Model = "models/weapons/csgo/c_rif_scar17.mdl"
+ATT.ModelOffset = Vector(7.5, -5, 4.5)
+ATT.ModelAngleOffset = Angle(-90, 0, -5)
+ATT.ModelBodygroups = "224231"
+
+ARC9.LoadAttachment(ATT, "csgo_scar17_grip_bullpup")

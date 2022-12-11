@@ -28,7 +28,7 @@ SWEP.Description = [[The SCAR-17 is a automatic with a burst-fire option that tr
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_scar17.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_rif_scar.mdl"
-SWEP.DefaultBodygroups = "000000"
+SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.Slot = 2
 
@@ -261,17 +261,17 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.9,
@@ -291,9 +291,9 @@ SWEP.Animations = {
     ["reload_empty_556"] = {
         Source = "reload2",
         IKTimeLine = {
-            { t = 0, lhik = 1, rhik = 0 },
-            { t = 0.2, lhik = 0, rhik = 0},
-            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1},
+            { t = 0.7, lhik = 0, rhik = 1 },
 			{ t = 0.9, lhik = 1, rhik = 1 }, 
 		},
         EventTable = {
@@ -309,9 +309,9 @@ SWEP.Animations = {
     ["reload_556"] = {
         Source = "reload_short2",
         IKTimeLine = {
-            { t = 0, lhik = 1, rhik = 0 },
-            { t = 0.2, lhik = 0, rhik = 0},
-            { t = 0.7, lhik = 0, rhik = 0 },
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1},
+            { t = 0.7, lhik = 0, rhik = 1 },
 			{ t = 0.9, lhik = 1, rhik = 1 }, 
 		},
         EventTable = {
@@ -329,17 +329,17 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.9,
@@ -363,17 +363,17 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.9,
@@ -447,8 +447,12 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
-    ["mag_556"] = { Bodygroups = { {3,4}, }, },	
-    ["mag_556x"] = { Bodygroups = { {3,3}, }, },	
+    ["mag_556"] = { Bodygroups = { {3,4},{0,1} }, },
+    ["mag_556x"] = { Bodygroups = { {3,3},{0,1} }, }, 
+	["stock_scarab"] = {
+	Bodygroups = { {5,1},{2,6} },
+    AttPosMods = { [4] = { Pos = Vector(0, -3.3, 16), }, [1] = { Pos = Vector(0, -6.35, 4), } },
+	},
     ["barrel_long"] = {
         Bodygroups = {
             {4,1},
@@ -467,7 +471,8 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end	
-	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,5) end		
+	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,5) end	
+	if wep:HasElement("stock_scarab") then model:SetBodygroup(2,6) end		
 end
 
 
