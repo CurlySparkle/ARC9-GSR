@@ -375,7 +375,7 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.9,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -450,7 +450,7 @@ SWEP.AttachmentElements = {
     ["mag_556x"] = { Bodygroups = { {3,3},{0,1} }, }, 
 	["stock_scarab"] = {
 	Bodygroups = { {5,1},{2,6} },
-    AttPosMods = { [4] = { Pos = Vector(0, -3.3, 16), }, [1] = { Pos = Vector(0, -6.35, 4), } },
+    AttPosMods = { [4] = { Pos = Vector(0, -2.4, 17), }, [1] = { Pos = Vector(0, -6.35, 4), } },
 	},
     ["barrel_long"] = {
         Bodygroups = {

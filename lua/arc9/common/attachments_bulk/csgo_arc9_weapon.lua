@@ -41,6 +41,6 @@ ATT.Description = [[6-round cylinder and slim barrel.]]
 ATT.SortOrder = 0
 ATT.Category = "go_r8"
 ATT.ActivateElements = {"r6"}
-ATT.ClipSizeOverride = 6
+ATT.ClipSizeMult = 6/8
 
 ARC9.LoadAttachment(ATT, "csgo_r8_model")
