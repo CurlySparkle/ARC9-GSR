@@ -131,7 +131,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -239,6 +239,7 @@ SWEP.AfterShotQCAEvenShot = 2
 
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
+SWEP.NoShellEject = true
 
 -------------------------- SOUNDS
 

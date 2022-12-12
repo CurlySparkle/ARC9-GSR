@@ -289,9 +289,9 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.GALIL.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.2,
     level = 120,
-    pitch = 100,
+    pitch = {95,103},
     sound = {
         "^weapons/csgo/galilar/galil-1-distant.ogg",
     }

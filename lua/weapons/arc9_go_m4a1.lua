@@ -124,9 +124,9 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.015 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMove = 0.13
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
@@ -690,11 +690,14 @@ SWEP.AttachmentElements = {
     },
     ["foregrip_m16a4"] = {
         Bodygroups = {
-		    {0,1},
             {3,2},
 			{5,4},
+			{7,1},
         },
-    AttPosMods = { [4] = { Pos = Vector(-1.35, -5.2, 15.5), } }
+    AttPosMods = {
+	[4] = { Pos = Vector(-1.35, -5.2, 15), },
+	[3] = { Pos = Vector(0, -2.3, 0), },
+	}
     },
     ["mag_30"] = {
         Bodygroups = {
@@ -706,25 +709,43 @@ SWEP.AttachmentElements = {
             {4,3},
         },
     },
+    ["reciever_m16a4"] = {
+        Bodygroups = {
+            {6,1},
+        },
+    },
+    ["reciever_m16"] = {
+        Bodygroups = {
+            {6,1},
+			
+        },
+    },
+    ["reciever_m16a2"] = {
+        Bodygroups = {
+            {6,1},
+			
+        },
+    },
 }
 
-SWEP.Hook_ModifyBodygroups = function(self, data, anim)
-    local vm = data.model
-    local CUSTSTATE = self:GetCustomize()
-
-    if CUSTSTATE and self:GetFiremodeName() == "AUTO" then
-        vm:SetBodygroup(1,1)
-    end
-
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("foregrip_m16a4") and wep.Attachments[3].Installed then model:SetBodygroup(7,0) end
+	if wep:HasElement("foregrip_m16a4") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
+	if wep:HasElement("reciever_m16") and wep.Attachments[1].Installed then model:SetBodygroup(5,4) end
 end
+
 
 SWEP.Attachments = {
     {
-        PrintName = "Top",
+        PrintName = "Scope",
         Bone = "v_weapon.M4A1_s_Parent",
-        Pos = Vector(-0.2, -7.4, 3.5),
+        Pos = Vector(-0.25, -6.37, 2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_alt",},
+        Category = {"csgo_optic","csgo_optic_m4a1"},
+        --InstalledElements = {"reciever_m16a4"},
+		Installed = "csgo_m4a1_reciever_default",
+        Integral = true,
         CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {

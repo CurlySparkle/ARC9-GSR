@@ -95,7 +95,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
@@ -117,13 +117,17 @@ SWEP.RecoilMultCrouch = 0.8
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.ViewRecoil = true -- true
+SWEP.ViewRecoilUpMult = 10 -- 40-100
+SWEP.ViewRecoilUpMultSights = 20
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
@@ -175,6 +179,9 @@ SWEP.SprintMidPoint = {
 
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
+
+SWEP.ReloadPos = Vector(5, 0, 0)
+SWEP.ReloadAng = Angle(25, 0, 0)
 
 SWEP.MovingMidPoint = {
     Pos = Vector(0, -0.5, -0.5),
@@ -234,7 +241,8 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/galilar/"
 
 SWEP.ShootSound = "CSGO.GALIL.Fire"
-SWEP.ShootSoundSilenced = "CSGO.GALIL.Silenced_Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire_First"
+SWEP.ShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.GALIL.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -482,9 +490,20 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.magazine",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0, -0.25),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_galilar_view"
     },
 }
 
 SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.8

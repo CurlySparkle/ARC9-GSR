@@ -25,6 +25,8 @@ ATT.DamageMinMult = 0.9
 ATT.PenetrationMult = 1.5
 ATT.ArmorPiercingAdd = 0.3
 
+ATT.DamageType = DMG_AIRBOAT
+
 ARC9.LoadAttachment(ATT, "csgo_ammo_ap")
 
 -------------------------------------------------------------------------------

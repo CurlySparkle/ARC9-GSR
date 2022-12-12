@@ -27,6 +27,46 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_barrel_m16a4")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "M16 Reciever"
+ATT.CompactName = "M16 Reciever"
+ATT.Description = [[Default M16 Reciever for the M4A1-S.]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_m4_reciever_default.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"csgo_optic_m4a1"}
+ATT.ActivateElements = {"reciever_m16","reciever_m16a2"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		
+        Category = {"csgo_rail_optic_alt"},
+        Pos = Vector(-0.8, 0, -1.3),
+        Ang = Angle(0, 0, 0),
+		IgnoreExtra = true
+		--CorrectiveAng = Angle(0.67, 0.65, 0),	
+    },		
+}
+
+ATT.Sights = {
+    {
+        Pos = Vector(0.05, 8, -2.1),
+        Ang = Angle(0.15, -0.8, 0),
+        ViewModelFOV = 60,
+        Magnification = 1.15,
+        IgnoreExtra = true
+    },
+}
+
+ARC9.LoadAttachment(ATT, "csgo_m4a1_reciever_default")
+--------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
