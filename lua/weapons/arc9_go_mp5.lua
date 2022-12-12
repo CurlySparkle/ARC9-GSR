@@ -443,7 +443,7 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.MP5_Parent",
-        Pos = Vector(0, -5.1, 2.5),
+        Pos = Vector(0, -5.2, 3.15),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic",},
         InstalledElements = {"rearsight"},
@@ -481,7 +481,14 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.MP5_Clip",
-        Category = "go_mag"
+        Category = "go_mag",
+		Icon_Offset = Vector(0, -2, -0.5),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.MP5_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "Perk",

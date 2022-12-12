@@ -245,6 +245,9 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
+SWEP.TriggerDownSound = ""
+SWEP.TriggerUpSound = ""
+
 SWEP.HideBones = {
 }
 

@@ -570,7 +570,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "00000000000"
+SWEP.DefaultBodygroups = "000000000000000"
 
 SWEP.AttachmentElements = {
     ["barrel_med"] = {
@@ -640,7 +640,17 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3") then model:SetBodygroup(3,6) end	
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) end	
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) end	
-	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
+	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
+	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,3) end	
+end
+
+SWEP.Hook_GetAttPos = function(self, data)
+  if data.atttbl.Installed == "csgo_g3_mag_30_waf" then
+    data.pos = Vector(1, 2, 3)
+    data.ang = Angle(0, 0, 15)
+  end
+  return data
 end
 
 SWEP.Attachments = {

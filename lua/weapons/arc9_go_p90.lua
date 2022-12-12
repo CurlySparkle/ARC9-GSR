@@ -261,7 +261,6 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-		Mult = 0.8,
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",

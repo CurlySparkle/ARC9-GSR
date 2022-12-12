@@ -113,13 +113,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.0002
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.03
+SWEP.SpreadAddSights = -0.04
 
 -------------------------- HANDLING
 
@@ -160,6 +160,9 @@ SWEP.ViewModelFOVBase = 56
 SWEP.SprintPos = Vector(0, -3, -0.3)
 SWEP.SprintAng = Angle(0, 0, 0)
 
+SWEP.ReloadPos = Vector(5, 0, 0)
+SWEP.ReloadAng = Angle(25, 0, 0)
+
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1.5, -0.15),
     Ang = Angle(0, 0, 0)
@@ -173,7 +176,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -0.5, -0.5)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
