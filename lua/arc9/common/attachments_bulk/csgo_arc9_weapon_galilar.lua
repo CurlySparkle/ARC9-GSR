@@ -75,18 +75,18 @@ ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 
 ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_factory")
-
+-------------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = [[40-Round 7.62mm Poly]]
-ATT.CompactName = [[40-Round 7.62mm]]
+ATT.CompactName = [[40 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png")
 ATT.Description = [[
 7.62mm conversion turning rifle into Galil ACE 34. Superior range and damage at the cost of recoil. Large magazine has inferior handling.
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 5
+ATT.SortOrder = 3
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 --ATT.Scale = 0.45
@@ -111,18 +111,18 @@ ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
 ATT.DropMagazineTime = 0.75
 
 ARC9.LoadAttachment(ATT, "csgo_galilar_mag_ak_45")
-
+-------------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = [[30-Round 7.62mm Poly]]
-ATT.CompactName = [[30-Round 7.62mm]]
+ATT.CompactName = [[30 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png")
 ATT.Description = [[
 7.62mm conversion turning rifle into Galil ACE 34. Superior range and damage at the cost of recoil. Large magazine has inferior handling.
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 5
+ATT.SortOrder = 4
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 
@@ -142,18 +142,68 @@ ATT.ActivateElements = {"mag_ak47"}
 ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
 
 ARC9.LoadAttachment(ATT, "csgo_galilar_mag_ak_30")
+-------------------------------------------------------------------------------------
+ATT = {}
 
+ATT.PrintName = [[30-Round 5.45mm Poly]]
+ATT.CompactName = [[30 5.45mm]]
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
+ATT.Description = [[
+Average magazine that can hold 30 rounds, though cumbersome.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 4.5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_galilar_mag"}
+
+ATT.ClipSizeOverride = 30
+ATT.ReloadTimeMult = 1.05
+ATT.RecoilMult = 1.1
+ATT.RecoilKickMult = 1.1
+
+ATT.ActivateElements = {"mag_30"}
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_30")
+-------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[40-Round 5.45mm Poly]]
+ATT.CompactName = [[40 5.45mm]]
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
+ATT.Description = [[
+Almost huge casket magazine that can hold 40 rounds, though cumbersome.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_galilar_mag"}
+
+ATT.ClipSizeOverride = 40
+ATT.ReloadTimeMult = 1.15
+ATT.RecoilMult = 1.2
+ATT.RecoilKickMult = 1.2
+
+ATT.ActivateElements = {"mag_40"}
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_40")
+-------------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = [[60-Round 5.45mm Poly]]
-ATT.CompactName = [[60-Round 5.45mm]]
+ATT.CompactName = [[60 5.45mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
 ATT.Description = [[
 Huge casket magazine that can hold 60 rounds, though very cumbersome.
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 5
+ATT.SortOrder = 5.5
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 
@@ -164,7 +214,7 @@ ATT.ReloadTimeMult = 1.35
 ATT.RecoilMult = 1.3
 ATT.RecoilKickMult = 1.3
 
-ATT.ActivateElements = {"mag"}
+ATT.ActivateElements = {"mag_60"}
 ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
 
 ARC9.LoadAttachment(ATT, "csgo_galilar_mag_60")

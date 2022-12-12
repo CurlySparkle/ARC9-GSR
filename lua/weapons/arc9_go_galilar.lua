@@ -74,7 +74,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 30 -- Self-explanatory.
+SWEP.ClipSize = 20 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -328,7 +328,7 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 0,
+                lhik = 1,
                 rhik = 0
             },
             {
@@ -337,12 +337,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.4,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.65,
                 lhik = 1,
                 rhik = 1
             },
@@ -396,40 +396,58 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
-    ["mag"] = {
+    ["mag_30"] = {
         Bodygroups = {
             {2,1},
         },
     },
-    ["mag_ak47"] = {
+    ["mag_40"] = {
         Bodygroups = {
             {2,2},
         },
     },
-    ["mag_none"] = {
+    ["mag_60"] = {
         Bodygroups = {
             {2,3},
+        },
+    },
+    ["mag_ak47"] = {
+        Bodygroups = {
+            {2,4},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {2,5},
         },
     },
     ["barrel_long"] = {
         Bodygroups = {
             {3,1},
+			{4,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 24.6), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 24), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
+			{4,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 16.6), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 15.8), } }	
     },
     ["barrel_factory"] = {
         Bodygroups = {
             {3,3},
+			{4,3},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.9), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.2), } }	
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep.Attachments[3].Installed then model:SetBodygroup(4,4) end
+end
 
 SWEP.Attachments = {
     {
@@ -450,7 +468,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.galilar_parent",
-        Pos = Vector(0, -3.22, 21.6),
+        Pos = Vector(0, -3.22, 21),
         Ang = Angle(90, 0, -90),
     },
     {

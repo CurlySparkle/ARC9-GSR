@@ -1,0 +1,16 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/csgo/taser/counter_akimbo/numbers_plate1"
+	"$additive" "1"
+     "$blendtintcoloroverbase" "0 0 1"
+	"$decal" "1"
+     "$color2" "0.6 0.6 1"
+	Proxies // proxies are listed inside this block
+	{
+		ARC9_AMMO_COUNTER
+		{
+			resultVar 1
+			prefixstring "models/csgo/taser/counter_akimbo/numbers_plate"
+		}
+	}
+}

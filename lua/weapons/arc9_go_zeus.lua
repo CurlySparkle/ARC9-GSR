@@ -208,7 +208,7 @@ SWEP.ProceduralViewQCA = 1
 
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
-SWEP.EjectDelay = 0
+SWEP.NoShellEject = true
 
 SWEP.AlwaysPhysBullet = false
 SWEP.NeverPhysBullet = true

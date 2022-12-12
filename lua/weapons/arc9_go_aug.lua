@@ -113,9 +113,9 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
@@ -454,14 +454,16 @@ SWEP.AttachmentElements = {
     ["barrel_long"] = {
         Bodygroups = {
             {3,1},
+			{6,1},
         },
     AttPosMods = { [3] = { Pos = Vector(0, -3.5, 19.3), } }
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
+			{6,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 13), } }
+    AttPosMods = { [3] = { Pos = Vector(0, -3.5, 12.5), } }
     },
 }
 
@@ -470,6 +472,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("grip_folded") then model:SetBodygroup(1,2) end
     if wep:HasElement("grip_folded") then model:SetBodygroup(2,0) end
+	if wep.Attachments[3].Installed then model:SetBodygroup(6,3) end
 end
 
 

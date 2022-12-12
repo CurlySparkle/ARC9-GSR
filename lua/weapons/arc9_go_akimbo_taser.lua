@@ -160,7 +160,7 @@ SWEP.IronSights = {
     CrosshairInSights = true
 }
 
-SWEP.HasSights = true
+SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
@@ -222,14 +222,16 @@ SWEP.MuzzleParticle = "weapon_muzzle_flash_taser"
 SWEP.TracerEffect = "csgo_taser_tracer"
 SWEP.MuzzleEffectQCA = 2
 SWEP.MuzzleEffectQCAEvenShot = 1
-SWEP.ProceduralViewQCA = 1
+
+SWEP.CaseEffectQCA = 4
+SWEP.CaseEffectQCAEvenShot = 3
 
 SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
-SWEP.EjectDelay = 0
 
 SWEP.AlwaysPhysBullet = false
 SWEP.NeverPhysBullet = true
+SWEP.NoShellEject = true
 
 SWEP.ImpactEffect = "AR2Impact"
 SWEP.ImpactDecal = "FadingScorch"
@@ -261,6 +263,10 @@ SWEP.Hook_BulletImpact = function(wep, data)
         wep.Owner:EmitSound("weapons/csgo/taser/hpain1.wav", 60, 100, 1, CHAN_VOICE_BASE)
     end
     end
+end
+
+function SWEP:SecondaryAttack()
+    return self:PrimaryAttack()
 end
 
 SWEP.Animations = {

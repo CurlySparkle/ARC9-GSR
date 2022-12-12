@@ -340,14 +340,14 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "tag_pistol_attachments_l",
-        Pos = Vector(5.6, 0, 1),
+        Pos = Vector(8.5, 0, 1.8),
         Ang = Angle(0, 0, 0),
         DuplicateModels = {
             {
                 Bone = "tag_pistol_attachments",
             }
         },
-        Scale = 0.75,
+        Scale = 0.85,
     },
     {
         PrintName = "Sights",
@@ -376,11 +376,6 @@ SWEP.Attachments = {
             }
         },
 		Scale = 1,
-    },
-    {
-        PrintName = "Mag",
-		Bone = "j_mag1_l",
-        Category = "go_mag"
     },
     {
         PrintName = "Perk",

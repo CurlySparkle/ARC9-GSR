@@ -437,7 +437,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.MP5_Parent",
-        Pos = Vector(0, -3.9, 16),
+        Pos = Vector(0, -3.91, 17),
         Ang = Angle(90, 0, -90),
     },
     {

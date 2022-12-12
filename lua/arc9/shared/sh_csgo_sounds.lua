@@ -1110,7 +1110,7 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
-    pitch = {95,105},
+    pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "^weapons/mp5_unsuppressed_loop.wav",
