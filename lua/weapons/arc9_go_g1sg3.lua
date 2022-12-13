@@ -576,12 +576,22 @@ SWEP.AttachmentElements = {
     ["barrel_med"] = {
         Bodygroups = {
             {3,1},
+			{6,1},
         },
+	AttPosMods = { 
+	[3] = { Pos = Vector(0.17, -3.3, 20.85), },
+	[5] = { Pos = Vector(-0.8, -3.5, 15), },
+	}	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
+			{6,2},
         },
+	AttPosMods = { 
+	[3] = { Pos = Vector(0.17, -3.3, 19), },
+	[5] = { Pos = Vector(-0.8, -3.5, 15), },
+	}
     },
     ["barrel_sd"] = {
         Bodygroups = {
@@ -591,8 +601,9 @@ SWEP.AttachmentElements = {
     ["barrel_g3a3"] = {
         Bodygroups = {
 			{3,4},
+			{6,4},
         },
-    AttPosMods = { [3] = { Pos = Vector(0.17, -3.25, 24), } }	
+    AttPosMods = { [3] = { Pos = Vector(0.17, -3.3, 22.1), } }	
     },
     ["rearsight"] = {
         Bodygroups = {
@@ -606,7 +617,7 @@ SWEP.AttachmentElements = {
     },
     ["stock_none"] = {
         Bodygroups = {
-            {2,3},
+            {2,4},
         },
     },
     ["stock_collapsed"] = {
@@ -642,16 +653,17 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) end	
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
-	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,3) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,4) end	
+	if wep.Attachments[3].Installed then model:SetBodygroup(6,9) end
 end
 
-SWEP.Hook_GetAttPos = function(self, data)
-  if data.atttbl.Installed == "csgo_g3_mag_30_waf" then
-    data.pos = Vector(1, 2, 3)
-    data.ang = Angle(0, 0, 15)
-  end
-  return data
-end
+-- SWEP.Hook_GetAttPos = function(self, data, wep)
+  -- if data.atttbl.Installed == "csgo_g3_mag_30_waf" then
+    -- AttPosMods = { [3] = { Pos = Vector(0.17, -3.25, 20), } }	
+    -- --data.ang = Angle(90, 0, -90)
+  -- end
+  -- return data
+-- end
 
 SWEP.Attachments = {
     {
@@ -661,8 +673,8 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
         InstalledElements = {"rearsight"},
-        Installed = "csgo_optic_scope_g3sg1",
-		Integral = true,
+        --Installed = "csgo_optic_scope_g3sg1",
+		--Integral = true,
         CorrectiveAng = Angle(0.2, -0.25, 0),
     },
     {
@@ -675,10 +687,11 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.g3sg1_Parent",
-		ExcludeElements = {"barrel_sd"},
-        Pos = Vector(0.17, -3.25, 27),
+		InstalledElements = {"barrel_muzzle"},
+		--ExcludeElements = {"barrel_sd"},
+        Pos = Vector(0.17, -3.3, 25.1),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+		Scale = 1,
     },
     {
         PrintName = "Grip",

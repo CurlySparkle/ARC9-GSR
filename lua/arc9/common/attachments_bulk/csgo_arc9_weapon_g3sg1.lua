@@ -17,7 +17,7 @@ ATT.Free = false
 
 ATT.Category = {"go_g3_barrel"}
 ATT.ActivateElements = {"barrel_sd"}
-ATT.ExcludeElements = {"muzzle"}
+ATT.ExcludeElements = {"barrel_muzzle"}
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
