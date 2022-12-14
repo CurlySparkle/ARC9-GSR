@@ -53,15 +53,15 @@ ATT.Attachments = {
     },		
 }
 
-ATT.Sights = {
-    {
-        Pos = Vector(0.05, 8, -2.1),
-        Ang = Angle(0.15, -0.8, 0),
-        ViewModelFOV = 60,
-        Magnification = 1.15,
-        IgnoreExtra = true
-    },
-}
+-- ATT.Sights = {
+    -- {
+        -- Pos = Vector(0.05, 8, -2.1),
+        -- Ang = Angle(0.15, -0.8, 0),
+        -- ViewModelFOV = 60,
+        -- Magnification = 1.15,
+        -- IgnoreExtra = true
+    -- },
+-- }
 
 ARC9.LoadAttachment(ATT, "csgo_m4a1_reciever_default")
 --------------------------------------------------------------------

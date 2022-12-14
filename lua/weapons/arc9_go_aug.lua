@@ -538,6 +538,11 @@ SWEP.Attachments = {
         Category = "go_ammo",
         Icon_Offset = Vector(0, 0, 0),
     },
+    {
+        PrintName = "Skins",
+        --Bone = "v_weapon.Clip",
+        Category = "go_skins_aug"
+    },
     -- {
         -- PrintName = "Stickers",
         -- DefaultCompactName = "None",

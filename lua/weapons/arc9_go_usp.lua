@@ -594,9 +594,9 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.223_parent",
-        Pos = Vector(0, -1.75, 5.5),
+        Pos = Vector(-0.02, -1.75, 5.6),
         Ang = Angle(90, 180, 90),
-		Scale = 1,
+		Scale = 1.15,
     },
     {
         PrintName = "Mag",
@@ -606,5 +606,10 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "Skins",
+        --Bone = "v_weapon.Clip",
+        Category = "go_skins_usp"
     },
 }

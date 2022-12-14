@@ -725,6 +725,11 @@ SWEP.Attachments = {
         PrintName = "Perk",
         Category = "go_perk",
     },
+    {
+        PrintName = "Skins",
+        --Bone = "v_weapon.Clip",
+        Category = "go_skins_ak47"
+    },
     -- {
         -- PrintName = "Stickers",
         -- DefaultCompactName = "None",

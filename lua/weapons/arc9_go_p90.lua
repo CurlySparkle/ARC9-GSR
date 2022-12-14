@@ -682,6 +682,11 @@ SWEP.Attachments = {
         Pos = Vector(0, -3, 0),
     },
     {
+        PrintName = "Skins",
+        --Bone = "v_weapon.Clip",
+        Category = "go_skins_p90"
+    },
+    {
         PrintName = "View",
         Category = "go_p90_view"
     },

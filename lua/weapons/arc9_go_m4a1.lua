@@ -27,7 +27,7 @@ SWEP.Description = [[With a smaller magazine than its unmuffled counterpart, the
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.DefaultBodygroups = "0000000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
 
@@ -717,7 +717,10 @@ SWEP.AttachmentElements = {
     ["reciever_m16"] = {
         Bodygroups = {
             {6,1},
-			
+        },
+        Override_IronSights = {
+			Pos = Vector(-5.42, -2, -0.2),
+			Ang = Angle(-0.1, 1.25, -1.5),
         },
     },
     ["reciever_m16a2"] = {
@@ -820,6 +823,11 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "Skins",
+        --Bone = "v_weapon.Clip",
+        Category = "go_skins_m4a1"
     },
 }
 
