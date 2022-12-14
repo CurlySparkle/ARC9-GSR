@@ -348,6 +348,40 @@ ARC9.LoadAttachment(ATT, "csgo_g3_stock_collapsed")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "Padded Stock"
+ATT.CompactName = "Padded"
+ATT.Description = [[G3 sniper-style stock. Improves recoil at the cost of handling.]]
+
+ATT.Icon = Material("entities/attachs/go_g3_stock_padded.png", "mips smooth")
+
+ATT.SortOrder = 2.5
+ATT.Category = "go_g3_stock"
+ATT.ActivateElements = {"stock_padded"}
+
+ATT.RecoilMult = 0.9
+ATT.AimDownSightsTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "csgo_g3_stock_padded")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "A2 fixed stock"
+ATT.CompactName = "A2 Fixed"
+ATT.Description = [[A2 fixed stock. Improves recoil even more at the cost of more handling.]]
+
+ATT.Icon = Material("entities/attachs/go_g3_stock_fixed.png", "mips smooth")
+
+ATT.SortOrder = 3
+ATT.Category = "go_g3_stock"
+ATT.ActivateElements = {"stock_fixed"}
+
+ATT.RecoilMult = 0.8
+ATT.AimDownSightsTimeMult = 1.15
+
+ARC9.LoadAttachment(ATT, "csgo_g3_stock_fixed")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -357,13 +391,13 @@ ATT.Description = [[Changes the view of the weapon for a more closer look.]]
 ATT.SortOrder = 0
 ATT.Category = "go_g3_view"
 
-ATT.ActivePos = Vector(-1, -3.5, 1)
+ATT.ActivePos = Vector(-1, -5, 1)
 ATT.ActiveAng = Angle(0, 0, 0)
 
-ATT.MovingPos = Vector(-1, -4, 0)
+ATT.MovingPos = Vector(-1, -5.5, 0)
 ATT.MovingAng = Angle(0, 0, 0)
 
-ATT.CrouchPos = Vector(-1, -4, 0)
+ATT.CrouchPos = Vector(-1, -5.5, 0)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_g3_view_alt_1")
@@ -755,9 +789,9 @@ ATT.RPM = 650
 
 ATT.DamageMaxMult = 0.6
 ATT.DamageMinMult = 0.7
-ATT.SpreadMultRecoil = 0.7
-ATT.SpreadMultHipFire = 1.2
-ATT.SpreadMultMove = 1.25
+ATT.SpreadMultRecoil = 1.1
+ATT.SpreadMultHipFire = 0.5
+ATT.SpreadMultMove = 1.1
 ATT.RecoilMult = 0.75
 
 ATT.ShootSound = "CSGO.SG556.Fire"

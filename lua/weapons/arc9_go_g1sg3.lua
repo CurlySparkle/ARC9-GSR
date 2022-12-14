@@ -570,7 +570,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "000000000000000"
+SWEP.DefaultBodygroups = "00000000000000000000000"
 
 SWEP.AttachmentElements = {
     ["barrel_med"] = {
@@ -615,14 +615,29 @@ SWEP.AttachmentElements = {
             {1,0},
         },
     },
-    ["stock_none"] = {
+    ["stock_padded"] = {
         Bodygroups = {
-            {2,4},
+            {2,1},
         },
     },
     ["stock_collapsed"] = {
         Bodygroups = {
             {2,2},
+        },
+    },
+    ["stock_short"] = {
+        Bodygroups = {
+            {2,3},
+        },
+    },
+    ["stock_fixed"] = {
+        Bodygroups = {
+            {2,4},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,5},
         },
     },
     ["mag_30"] = {
@@ -648,12 +663,12 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3") then model:SetBodygroup(3,6) end	
-	if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) end	
-	if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) end	
-	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
+	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3") then model:SetBodygroup(3,6) end	
+	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) end	
+	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) end	
+	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
-	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,4) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,5) end	
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,9) end
 end
 
