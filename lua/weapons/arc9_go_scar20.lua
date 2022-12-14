@@ -477,28 +477,31 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {4,1},
 			{5,3},
+			{6,1},
     },
     AttPosMods = { 
 	[6] = { Pos = Vector(-0.8, -4.6, 11), },
 	[4] = { Pos = Vector(0, -3.6, 9), },
-	[3] = { Pos = Vector(0.05, -4.52, 18), }
+	[3] = { Pos = Vector(0.05, -4.52, 15.55), }
 	}
     },
     ["barrel_stub"] = {
         Bodygroups = {
             {4,2},
 			{5,4},
+			{6,2},
         },
     AttPosMods = { 
 	[6] = { Pos = Vector(-0.8, -4.6, 9), },
 	[4] = { Pos = Vector(0, -3.6, 8), },
-	[3] = { Pos = Vector(0.05, -4.52, 14.7), }
+	[3] = { Pos = Vector(0.05, -4.52, 12.15), }
 	}
     },
     ["barrel_factory"] = {
         Bodygroups = {
             {4,3},
 			{5,6},
+			{6,3},
         },
     AttPosMods = { 
 	[6] = { Pos = Vector(-0.8, -4.6, 11), },
@@ -515,6 +518,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,2) end
 	if wep:HasElement("barrel_stub") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
 	if wep:HasElement("barrel_factory") and wep.Attachments[1].Installed then model:SetBodygroup(5,7) end
+	if wep.Attachments[3].Installed then model:SetBodygroup(6,4) end
 end
 
 SWEP.Attachments = {
@@ -540,9 +544,9 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(0, -4.52, 27),
+        Pos = Vector(0, -4.52, 23.1),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+		Scale = 1,
     },
     {
         PrintName = "Grip",

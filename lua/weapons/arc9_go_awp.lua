@@ -455,7 +455,17 @@ SWEP.AttachmentElements = {
             {4,1},
         },
     },
-    ["stock_lc10"] = {Bodygroups = {{4,2},},},	
+    ["stock_lc10"] = {Bodygroups = {{4,2},},},
+    ["stock_folding"] = {
+        Bodygroups = {
+            {4,3},
+        },
+    },
+    ["stock_retract"] = {
+        Bodygroups = {
+            {4,5},
+        },
+    },
 }
 
 // Forced Override Bodygroup
@@ -509,7 +519,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         --DefaultAttName = "Default",
-        Category = {"csgo_tube", "go_stock_awp"},
+        Category = {"csgo_tube", "go_stock_awp","stock_retract"},
         Bone = "v_weapon.awp_Parent",
         InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.2, -1.1),

@@ -455,14 +455,16 @@ SWEP.AttachmentElements = {
     ["barrel_long"] = {
         Bodygroups = {
             {4,1},
+			{6,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 20.2), } }	
+    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 19), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {4,2},
+			{6,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 16.6), } }	
+    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 15.5), } }	
     },
 }
 
@@ -472,6 +474,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end	
 	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,5) end	
 	if wep:HasElement("stock_scarab") then model:SetBodygroup(2,6) end		
+	if wep.Attachments[3].Installed then model:SetBodygroup(6,3) end
 end
 
 
@@ -495,7 +498,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.SCAR_Parent",
-        Pos = Vector(-0.05, -4.54, 18),
+        Pos = Vector(-0.05, -4.54, 16.4),
         Ang = Angle(90, 0, -90),
     },
     {

@@ -77,6 +77,28 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_factory")
 
 ATT = {}
 
+ATT.PrintName = "Folding Stock"
+ATT.CompactName = [[Folding]]
+ATT.Description = [[
+Folding Stock for the AWP. Improves recoil at the cost of handling.
+]]
+ATT.Icon = Material("entities/attachs/awp_stock_folding.png", "mips smooth")
+ATT.Desc_Pros = {
+}
+ATT.Desc_Cons = {
+}
+ATT.AutoStats = true
+ATT.Category = "go_stock_awp"
+ATT.ActivateElements = {"stock_folding"}
+
+ATT.RecoilMult = 0.9
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "csgo_awp_stock_folding")
+
+ATT = {}
+
 ATT.PrintName = [[15-Round .338 AWM]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_15.png")
