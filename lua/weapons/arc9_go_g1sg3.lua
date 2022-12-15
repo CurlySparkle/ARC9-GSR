@@ -573,9 +573,34 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "00000000000000000000000"
 
 SWEP.AttachmentElements = {
+    ["barrel_1"] = {
+    },
+    ["barrel_2"] = {
+    },
+    ["mag_g4_barrel"] = {
+        Bodygroups = {
+			{3,5},
+			{6,5},
+        },
+	AttPosMods = { 
+	[3] = { Pos = Vector(0.17, -3.315, 17.8), },
+	[5] = { Pos = Vector(-0.8, -3.5, 13), },
+	[4] = { Pos = Vector(0, -2, 11), },
+	}
+    },
     ["barrel_med"] = {
         Bodygroups = {
             {3,1},
+			{6,1},
+        },
+	AttPosMods = { 
+	[3] = { Pos = Vector(0.17, -3.3, 20.85), },
+	[5] = { Pos = Vector(-0.8, -3.5, 15), },
+	}	
+    },
+    ["barrel_med_alt"] = {
+        Bodygroups = {
+            {3,6},
 			{6,1},
         },
 	AttPosMods = { 
@@ -593,9 +618,20 @@ SWEP.AttachmentElements = {
 	[5] = { Pos = Vector(-0.8, -3.5, 15), },
 	}
     },
+    ["barrel_short_alt"] = {
+        Bodygroups = {
+            {3,7},
+			{6,7},
+        },
+	AttPosMods = { 
+	[3] = { Pos = Vector(0.17, -3.32, 17.1), },
+	[5] = { Pos = Vector(-0.8, -3.5, 13), },
+	}
+    },
     ["barrel_sd"] = {
         Bodygroups = {
             {3,3},
+			{6,3},
         },
     },
     ["barrel_g3a3"] = {
@@ -604,6 +640,16 @@ SWEP.AttachmentElements = {
 			{6,4},
         },
     AttPosMods = { [3] = { Pos = Vector(0.17, -3.3, 22.1), } }	
+    },
+    ["barrel_g3a3_alt"] = {
+        Bodygroups = {
+			{3,6},
+			{6,4},
+        },
+	AttPosMods = { 
+	[3] = { Pos = Vector(0.17, -3.3, 16.3), },
+	[5] = { Pos = Vector(-0.8, -3.5, 12), },
+	}
     },
     ["rearsight"] = {
         Bodygroups = {
@@ -657,16 +703,16 @@ SWEP.AttachmentElements = {
     ["mag_g41_20"] = { Bodygroups = {{4,6},{5,1} },},
 	["mag_g41_30"] = { Bodygroups = {{4,7},{5,1} },},
 	["mag_g41_60"] = { Bodygroups = {{4,8},{5,1} },},
-	["mag_g4_waffle"] = { Bodygroups = { {0,1},{2,3},{3,8},{4,9} },},
+	["mag_g4_waffle"] = { Bodygroups = { {0,1},{2,3},{4,9} },},
 	["mag_g4_mp9"] = { Bodygroups = { {0,1},{2,3},{3,8},{4,11} },},	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3") then model:SetBodygroup(3,6) end	
-	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) end	
-	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) end	
-	-- if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3_alt") then model:SetBodygroup(3,6) model:SetBodygroup(6,6) end	
+	--if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) model:SetBodygroup(6,5) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) model:SetBodygroup(6,6) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,5) end	
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,9) end
@@ -695,6 +741,8 @@ SWEP.Attachments = {
     {
         PrintName = "Barrel",
 		--Bone = "v_weapon.glock_magazine",
+		InstalledElements = {"barrel_1"},
+		ExcludeElements = {"mag_g4_barrel"},
         Category = "go_g3_barrel"	
     },  
     {
@@ -703,7 +751,7 @@ SWEP.Attachments = {
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.g3sg1_Parent",
 		InstalledElements = {"barrel_muzzle"},
-		--ExcludeElements = {"barrel_sd"},
+		ExcludeElements = {"barrel_sd"},
         Pos = Vector(0.17, -3.3, 25.1),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
@@ -758,6 +806,14 @@ SWEP.Attachments = {
         PrintName = "View",
         Category = "go_g3_view"
     },
+    {
+        PrintName = "Barrel",
+		--Bone = "v_weapon.glock_magazine",
+		InstalledElements = {"barrel_2","mag_g4_barrel"},
+		ExcludeElements = {"barrel_1"},
+		RequireElements = {"mag_g4_barrel"},
+        Category = "go_g3_barrel_smg2"	
+    },  
 }
 
 SWEP.GripPoseParam = 3

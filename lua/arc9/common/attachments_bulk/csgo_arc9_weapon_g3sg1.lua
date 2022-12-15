@@ -35,6 +35,38 @@ ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_sd")
 -------------------------------------------------------------------------------------------------
+ATT.PrintName = "640mm Whisper Barrel"
+ATT.CompactName = "640mm SD"
+ATT.Description = [[
+G3 integral silencer. Reduces weapon report and improves weapon characteristics. Superior handling compared to a standalone suppressor.
+]]
+ATT.SortOrder = 1
+
+ATT.Icon = Material("entities/attachs/go_g3_barrel_sd.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_g3_barrel_smg2"}
+ATT.ActivateElements = {"barrel_sd"}
+ATT.ExcludeElements = {"barrel_muzzle"}
+
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+ATT.RecoilMult = 1.1
+
+ATT.RangeMaxMult = 1.15
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.Override_MuzzleEffectAttachment = 1
+ATT.MuzzleDevice = true
+
+ARC9.LoadAttachment(ATT, "csgo_g3_barrel_sd_smg")
+-------------------------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "360mm A3"
@@ -61,6 +93,33 @@ ATT.RangeMinMult = 1.25
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "360mm A3"
+ATT.CompactName = "360mm A3"
+ATT.Description = [[
+Medium length G3A3 barrel. Improves recoil, though offers much worse handling.
+]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_g3_barrel_med.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_g3_barrel_smg2"}
+ATT.ActivateElements = {"barrel_g3a3_alt"}
+
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.RecoilMult = 0.9
+
+ATT.RangeMaxMult = 1.25
+ATT.RangeMinMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3_smg")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
@@ -115,6 +174,33 @@ ATT.RangeMinMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_short")
+-------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "315mm Kurz Barrel"
+ATT.CompactName = "315mm"
+ATT.Description = [[
+Short length G3KA4 barrel. Improves handling, though offers much worse range and accuracy.
+]]
+ATT.SortOrder = 1
+
+ATT.Icon = Material("entities/attachs/go_g3_barrel_short.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_g3_barrel_smg2"}
+ATT.ActivateElements = {"barrel_short_alt"}
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.RecoilMult = 1.15
+
+ATT.RangeMaxMult = 0.85
+ATT.RangeMinMult = 0.85
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
+ARC9.LoadAttachment(ATT, "csgo_g3_barrel_short_smg")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
@@ -781,7 +867,7 @@ ATT.SortOrder = 330
 ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
-ATT.ActivateElements = {"mag_g4_waffle", "smg_g3"}
+ATT.ActivateElements = {"mag_g4_waffle","smg_g3","mag_g4_barrel",}
 ATT.ClipSizeOverride = 30
 ATT.ReloadTimeMult = 0.9
 
