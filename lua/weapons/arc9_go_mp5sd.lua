@@ -31,7 +31,7 @@ SWEP.Description = [[Often imitated but never equaled, the iconic MP5 is perhaps
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5sd.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
 
@@ -463,14 +463,24 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
-    ["stock_none"] = {
+    ["stock_fixed"] = {
         Bodygroups = {
             {1,2},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {1,3},
         },
     },
     ["mag"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+    ["mag_none"] = {
+        Bodygroups = {
+            {2,2},
         },
     },
 }
@@ -513,9 +523,9 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_extend"},
+        Category = {"csgo_tube","stock_extend","go_mp5_stock"},
         Bone = "v_weapon.mp5sd_parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.6, 3.75),
         Ang = Angle(0, -90, 0),
 		Scale = 1,

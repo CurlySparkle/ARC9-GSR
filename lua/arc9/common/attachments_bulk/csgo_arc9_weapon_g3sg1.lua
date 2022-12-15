@@ -458,7 +458,7 @@ ATT.Description = [[A2 fixed stock. Improves recoil even more at the cost of mor
 ATT.Icon = Material("entities/attachs/go_g3_stock_fixed.png", "mips smooth")
 
 ATT.SortOrder = 3
-ATT.Category = "go_g3_stock"
+ATT.Category = {"go_g3_stock","go_mp5_stock"}
 ATT.ActivateElements = {"stock_fixed"}
 
 ATT.RecoilMult = 0.8

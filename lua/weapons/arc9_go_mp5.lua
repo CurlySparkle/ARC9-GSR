@@ -424,9 +424,14 @@ SWEP.AttachmentElements = {
             {5,1},
         },
     },
-    ["stock_none"] = {
+    ["stock_fixed"] = {
         Bodygroups = {
             {5,2},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {5,3},
         },
     },
 }
@@ -471,9 +476,9 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract"},
+        Category = {"csgo_tube","stock_retract","go_mp5_stock"},
         Bone = "v_weapon.MP5_Parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -3.8, -2.7),
         Ang = Angle(90, 0, -90),
 		Scale = 1.2,
