@@ -1,4 +1,5 @@
--- Made by Matsilagi
+--I still own this code. - Matsilagi
+--To Twilight: You're changing the sounds.
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
@@ -65,17 +66,17 @@ function ENT:Explosion()
 		local traceres = util.TraceLine(tr)
 
 		if !traceres.Hit or traceres.Fraction>=1 or traceres.Fraction<=0 then
-			v:SetNWFloat("ARC9_GSOR_LastFlash", CurTime())
-			v:SetNWEntity("ARC9_GSOR_LastFlashBy", self:GetOwner())
-			v:SetNWFloat("ARC9_GSOR_FlashDistance", v:GetShootPos():Distance(self:GetPos()))
-			v:SetNWFloat("ARC9_GSOR_FlashFactor", self:EntityFacingFactor(v))
+			v:SetNWFloat("ARC9_GSR_LastFlash", CurTime())
+			v:SetNWEntity("ARC9_GSR_LastFlashBy", self:GetOwner())
+			v:SetNWFloat("ARC9_GSR_FlashDistance", v:GetShootPos():Distance(self:GetPos()))
+			v:SetNWFloat("ARC9_GSR_FlashFactor", self:EntityFacingFactor(v))
 
-			if v:GetNWFloat("ARC9_GSOR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 1500 and v:GetNWFloat("FlashFactor",self:EntityFacingFactor(v)) < tr.endpos:Distance(self:GetPos(v)) then
-				if v:GetNWFloat("ARC9_GSOR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 1000 then
+			if v:GetNWFloat("ARC9_GSR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 1500 and v:GetNWFloat("FlashFactor",self:EntityFacingFactor(v)) < tr.endpos:Distance(self:GetPos(v)) then
+				if v:GetNWFloat("ARC9_GSR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 1000 then
 					v:SetDSP( 37 , false )
-				elseif v:GetNWFloat("ARC9_GSOR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 800 then
+				elseif v:GetNWFloat("ARC9_GSR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 800 then
 					v:SetDSP( 36 , false )
-				elseif v:GetNWFloat("ARC9_GSOR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 600 then
+				elseif v:GetNWFloat("ARC9_GSR_FlashDistance",v:GetShootPos():Distance(self:GetPos())) < 600 then
 					v:SetDSP( 35, false )
 				end
 			end
@@ -96,10 +97,10 @@ function ENT:Explosion()
 				local intensity = ( 1-math.Clamp(((CurTime()-flashtime)/distancefac-csgo_flashtime+csgo_flashfade)/csgo_flashfade,0,1) )
 
 				if intensity>0.8 then
-					v:SetNWFloat("ARC9_GSOR_LastFlash", CurTime())
-					v:SetNWEntity("ARC9_GSOR_LastFlashBy", self:GetOwner())
-					v:SetNWFloat("ARC9_GSOR_FlashDistance", v:GetShootPos():Distance(self:GetPos()))
-					v:SetNWFloat("ARC9_GSOR_FlashFactor", self:EntityFacingFactor(v))
+					v:SetNWFloat("ARC9_GSR_LastFlash", CurTime())
+					v:SetNWEntity("ARC9_GSR_LastFlashBy", self:GetOwner())
+					v:SetNWFloat("ARC9_GSR_FlashDistance", v:GetShootPos():Distance(self:GetPos()))
+					v:SetNWFloat("ARC9_GSR_FlashFactor", self:EntityFacingFactor(v))
 
 					if v.ClearSchedule then
 						v:ClearSchedule()
@@ -127,7 +128,7 @@ function ENT:Explosion()
 	local dlight = EffectData()
 	dlight:SetOrigin(self:GetPos())
 	dlight:SetEntity(self.Owner) //i dunno, just use it!
-	util.Effect("csgo_nade_flashbang_light", dlight)
+	util.Effect("arc9_flashbang_light", dlight)
 	
 	self.deactivated = true
 end

@@ -23,8 +23,8 @@ SWEP.Slot = 4
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_bumpmines.mdl"
-SWEP.WorldModel = "models/weapons/w_eq_fraggrenade.mdl"
-SWEP.MirrorVMWM = true
+SWEP.WorldModel = "models/weapons/csgo/w_eq_bumpmine.mdl"
+SWEP.MirrorVMWM = false
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-3, 5, -7.5),
     Ang        =    Angle(5, 7, 180),
@@ -93,16 +93,16 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 20, 3)
 
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 5)
+SWEP.CustomizeSnapshotPos = Vector(-13, 10, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "slam"
+SWEP.HoldTypeSprint = "slam"
+SWEP.HoldTypeHolstered = "slam"
+SWEP.HoldTypeSights = "slam"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

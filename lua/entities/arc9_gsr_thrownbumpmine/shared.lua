@@ -149,7 +149,7 @@ if SERVER then
 		local ent = data.HitEntity
 		local phys = self:GetPhysicsObject()
 
-		if ent:IsNPC() or ent:IsPlayer() then return false end
+		if ent:IsNPC() or ent:IsPlayer() or ent:IsNextBot() then return false end
 		if !self:IsValid() then return end
 
 		if self:GetNWBool("Stuck") != true then
@@ -157,7 +157,7 @@ if SERVER then
 		end
 			
 		self:EmitSound("CSGO.Mine.Armed")
-		--self:SetBodygroup(1,1)
+		self:SetBodygroup(1,1)
 		
 		if ent:IsWorld() then
 			phys:EnableMotion(false)
@@ -202,7 +202,7 @@ if SERVER then
 		
 		local entsph = ents.FindInSphere(self:GetPos(), 25)
 		for k, v in pairs(entsph) do
-			if IsValid(v) and v:IsPlayer() or v:IsNPC() then
+			if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
 				if self.EmittedSound != true then
 					self:EmitSound("CSGO.Mine.PreDetonate")
 					self.EmittedSound = true
@@ -230,7 +230,7 @@ if SERVER then
 		
 		local entsph2 = ents.FindInSphere(self:GetPos(), 100)
 		for k, v in pairs(entsph2) do
-			if IsValid(v) and v:IsPlayer() or v:IsNPC() then
+			if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
 				v:SetVelocity(self:GetAngles():Up()*1000)
 				if self.PlayerParticleCreated != true then
 					local trail = ents.Create("info_particle_system")

@@ -1,5 +1,4 @@
---I still own this code. - Matsilagi
---To Twilight: You're changing the sounds.
+-- Made by Matsilagi
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
@@ -31,7 +30,7 @@ function ENT:Initialize()
 	
 	self.particleCreated = false
 	
-	self:EmitSound("TFA_CSGO_Decoy.Throw")
+	self:EmitSound("CSGO.HE.Throw")
 	
 	timer.Simple(15,function()
 		if IsValid(self) then self.active = false self:Explode() self:Remove() end
@@ -81,7 +80,7 @@ function ENT:Think()
 			bul.Spread = vector_origin
 			bul.Src = self:GetPos()
 			self.Owner:FireBullets(bul,true)
-			local fsound = Sound("weapons/tfa_csgo/ak47/ak47-1-distant.wav")
+			local fsound = Sound("weapons/csgo/ak47/ak47_01.ogg")
 			if self.Owner.GetActiveWeapon then
 				local wep = self.Owner:GetActiveWeapon()
 				if IsValid(wep) and wep.Primary and wep.Primary.Sound then
@@ -127,7 +126,7 @@ if SERVER then
 		explode2:Activate()
 		explode2:Fire( "start", "", 0 )
 		explode2:Fire( "kill", "", 15 )
-	self:EmitSound( "TFA_CSGO_BaseGrenade.Explode" )
+	self:EmitSound( "CSGO.Frag.Explode" )
 end
 	util.BlastDamage( self, self.Owner, self:GetPos(), 354, 7 )
 	local spos = self:GetPos()

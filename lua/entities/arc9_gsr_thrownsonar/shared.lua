@@ -92,7 +92,7 @@ if SERVER then
 			local tab   = {}
 
 			for k, v in pairs(_ents) do
-				if v:IsNPC() or v:IsPlayer() then
+				if v:IsNPC() or v:IsPlayer() or v:IsNextBot() then
 					if v ~= self.Owner then
 						table.insert(tab, v)
 					end
@@ -150,7 +150,7 @@ if SERVER then
 	function ENT:PhysicsCollide(data, physObj)
 		if not self:GetNWBool("Fused") then
 			if data.HitEntity then
-				if not (data.HitEntity:IsNPC() or data.HitEntity:IsPlayer()) then
+				if not (data.HitEntity:IsNPC() or data.HitEntity:IsPlayer() or data.HitEntity:IsNextBot()) then
 					self:SetNWBool("Fused", true)
 
 					timer.Simple(0, function()

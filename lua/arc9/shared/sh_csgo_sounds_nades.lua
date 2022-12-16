@@ -2,10 +2,9 @@ AddCSLuaFile()
 
 sound.Add( {
     name = "CSGO.Flashbang.Explode",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     level = 140,
-    pitch = {95, 115},
     sound = {
         "^weapons/csgo/flashbang/flashbang_explode1.wav",
 		"^weapons/csgo/flashbang/flashbang_explode2.wav",
@@ -14,14 +13,25 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Frag.Explode",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     level = 140,
-    pitch = {95, 115},
     sound = {
         "^weapons/csgo/hegrenade/hegrenade_detonate_01.wav",
 		"^weapons/csgo/hegrenade/hegrenade_detonate_02.wav",
 		"^weapons/csgo/hegrenade/hegrenade_detonate_03.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Incendiary.Explode",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 140,
+    sound = {
+        "^weapons/csgo/incgrenade/inc_grenade_detonate_1.wav",
+		"^weapons/csgo/incgrenade/inc_grenade_detonate_2.wav",
+		"^weapons/csgo/incgrenade/inc_grenade_detonate_3.wav",
     }
 } )
 

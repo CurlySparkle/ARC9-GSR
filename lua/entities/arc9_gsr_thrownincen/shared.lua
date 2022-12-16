@@ -67,7 +67,7 @@ function ENT:PhysicsCollide( data,phys )
 			self:DrawShadow( false )
 			self:StopParticles()
 		end
-		self:EmitSound("CSGO.Incendiary.Start")
+		self:EmitSound("CSGO.Incendiary.Explode")
 		self.IgniteEnd = 1
 		self.IgniteEndTimer = CurTime() + 7
 		self.IgniteStage = 1

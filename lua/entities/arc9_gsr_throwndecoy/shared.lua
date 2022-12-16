@@ -1,7 +1,7 @@
 -- Made by Matsilagi
 
 ENT.Type = "anim"
-ENT.PrintName			= "Sonar Grenade"
+ENT.PrintName			= "Decoy Grenade"
 ENT.Author			= ""
 ENT.Contact			= ""
 ENT.Purpose			= ""

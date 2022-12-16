@@ -43,7 +43,7 @@ end
 function ENT:Think()
 	if SERVER then
 		for k, v in pairs( ents.FindInSphere( self:GetPos(), 150 ) ) do
-			if v:IsPlayer() or v:IsNPC() then
+			if v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
 				if v:GetPos():Distance( self:GetPos() ) < 150 then
 					damage = DamageInfo()
 					damage:SetDamage( math.random( 3, 7 ) )
