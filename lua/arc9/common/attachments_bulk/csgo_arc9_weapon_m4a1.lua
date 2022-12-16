@@ -67,6 +67,26 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_reciever_default")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "M16 Stock"
+ATT.CompactName = "Fullstock"
+ATT.Description = [[Change the stock to an M16 fullstock, provides great recoil for the cost of less handling speed.]]
+
+ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
+
+--ATT.Model = "models/weapons/csgo/atts/grip_vertical.mdl"
+
+ATT.SortOrder = 2
+ATT.Category = "stock_m4a1"
+ATT.ActivateElements = {"stock_m16"}
+
+ATT.RecoilMult = 0.85
+ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.15
+
+ARC9.LoadAttachment(ATT, "csgo_m4a1_stock_m16")
+--------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")

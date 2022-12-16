@@ -1,0 +1,8 @@
+"sprite"
+{
+	"$spriteorientation" "vp_parallel"
+	"$spriteorigin"      "[ 0.50 0.50 ]"
+	"$basetexture"       "csgo/sprites/flare_sprite_01"
+	"$translucent"       1
+	"$additive"          1
+}

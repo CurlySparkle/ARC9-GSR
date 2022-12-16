@@ -581,6 +581,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
 			{3,5},
 			{6,5},
+			{7,2},
         },
 	AttPosMods = { 
 	[3] = { Pos = Vector(0.17, -3.315, 17.8), },
@@ -592,6 +593,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
 			{6,1},
+			{7,1},
         },
 	AttPosMods = { 
 	[3] = { Pos = Vector(0.17, -3.3, 20.85), },
@@ -600,11 +602,14 @@ SWEP.AttachmentElements = {
     },
     ["barrel_med_alt"] = {
         Bodygroups = {
-            {3,6},
+            {3,1},
 			{6,1},
+			{7,1},
+			{8,1},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.3, 20.85), },
+	[3] = { Pos = Vector(0.17, -3.3, 21), },
+	[4] = { Pos = Vector(0, -2, 12), },
 	[5] = { Pos = Vector(-0.8, -3.5, 15), },
 	}	
     },
@@ -632,12 +637,21 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,3},
 			{6,3},
+			{7,2},
+        },
+    },
+    ["barrel_sd_alt"] = {
+        Bodygroups = {
+            {3,3},
+			{6,3},
+			{7,2},
         },
     },
     ["barrel_g3a3"] = {
         Bodygroups = {
 			{3,4},
 			{6,4},
+			{7,1},
         },
     AttPosMods = { [3] = { Pos = Vector(0.17, -3.3, 22.1), } }	
     },
@@ -645,6 +659,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
 			{3,6},
 			{6,4},
+			{7,1},
         },
 	AttPosMods = { 
 	[3] = { Pos = Vector(0.17, -3.3, 16.3), },
@@ -710,7 +725,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_g3a3_alt") then model:SetBodygroup(3,6) model:SetBodygroup(6,6) end	
-	--if wep:HasElement("smg_g3") and wep:HasElement("barrel_med") then model:SetBodygroup(3,5) model:SetBodygroup(6,5) end	
+	if wep:HasElement("smg_g3") and wep:HasElement("barrel_med_alt") then model:SetBodygroup(3,1) model:SetBodygroup(6,1) model:SetBodygroup(7,1) model:SetBodygroup(8,1) end	
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_short") then model:SetBodygroup(3,7) model:SetBodygroup(6,6) end	
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
@@ -750,7 +765,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.g3sg1_Parent",
-		InstalledElements = {"barrel_muzzle"},
+		--InstalledElements = {"barrel_muzzle"},
 		ExcludeElements = {"barrel_sd"},
         Pos = Vector(0.17, -3.3, 25.1),
         Ang = Angle(90, 0, -90),

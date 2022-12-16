@@ -130,7 +130,7 @@ SWEP.SpreadAddMove = 0.13
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = -0.06
 
 -------------------------- HANDLING
 
@@ -677,9 +677,14 @@ SWEP.AttachmentElements = {
             {1,1},
         },
     },
-    ["stock_none"] = {
+    ["stock_m16"] = {
         Bodygroups = {
             {2,2},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,3},
         },
     },
     ["foregrip_long"] = {
@@ -802,9 +807,9 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract"},
+        Category = {"csgo_tube","stock_retract","stock_m4a1"},
         Bone = "v_weapon.M4A1_s_Parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(-0.2, -5.17, -3.2),
         Ang = Angle(90, 0, -90),
 		Scale = 1.1,

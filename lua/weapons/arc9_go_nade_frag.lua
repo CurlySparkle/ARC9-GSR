@@ -36,13 +36,13 @@ SWEP.WorldModelOffset = {
 SWEP.BottomlessClip = true
 SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 0
+SWEP.SupplyLimit = 2
 SWEP.Crosshair = true
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.ShootEnt = "arc9_csgo_nade_frag"
+SWEP.ShootEnt = "arc9_gsr_thrownfrag"
 SWEP.Ammo = "grenade"
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.

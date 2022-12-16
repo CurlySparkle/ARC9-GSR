@@ -231,7 +231,7 @@ SWEP.NoViewBob = false
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 
-SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
+SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr_2.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0, 0, 0)
@@ -242,6 +242,21 @@ SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/met
 SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 1
 SWEP.DropMagazineQCA = 3
+
+SWEP.ExtraShellModels = {
+        model = "models/models/weapons/shared/lmg_link.mdl",
+        physbox = Vector(1, 1, 1)
+}
+
+-- SWEP.Hook_PrimaryAttack = function(self)
+    -- if self:GetElements()["mag_556m"] then return end
+
+    -- self:DoEject(1, 3)
+
+    -- if self:Clip1() == self:GetCapacity() then
+        -- self:DoEject(2, 3)
+    -- end
+-- end
 
 -------------------------- SOUNDS
 
