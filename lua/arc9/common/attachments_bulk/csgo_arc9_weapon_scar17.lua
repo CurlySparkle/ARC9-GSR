@@ -180,10 +180,11 @@ ARC9.LoadAttachment(ATT, "csgo_scar17_stock_pdw")
 ATT = {}
 
 ATT.PrintName = "SCARAB Stock"
-ATT.CompactName = [[PDW]]
+ATT.CompactName = [[SCARAB]]
 ATT.Description = [[
 Ultra lightweight bullpup PDW kit
 ]]
+ATT.SortOrder = 10
 ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -206,22 +207,29 @@ ATT.RHIK = true
 ATT.Model = "models/weapons/csgo/c_rif_scar17.mdl"
 ATT.ModelOffset = Vector(6.5, -5, 4.5)
 ATT.ModelAngleOffset = Angle(-90, 0, 0)
-ATT.ModelBodygroups = "224231"
+ATT.ModelBodygroups = "2242313"
 
-ATT.ActivePosHook = function(swep, pos)
-    return pos - Vector(0, 5, 0)
-end
+ATT.ActivePos = Vector(0, -5, -0.5)
+ATT.ActiveAng = Angle(0, 0, 0)
 
+ATT.MovingPos = Vector(0, -5.5, 0)
+ATT.MovingAng = Angle(0, 0, 0)
+
+ATT.CrouchPos = Vector(0, -5.5, 0)
+ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.SprintPos = Vector(0, -2, -0.5)
+ATT.SprintAng = Angle(0, 0, 0)
 
 ATT.Attachments = {
     {
         PrintName = "Gripping",
         Pos = Vector(5, 0.5, 3),
         Ang = Angle(0, 0, 0),
-        //Hidden = true,
+        Hidden = true,
 		//Installed = "csgo_scar17_grip_bullpup",
         //Integral = true,		
-        Category = {"grip_scarbullpup"},
+        //Category = {"grip_scarbullpup"},
     },	
 }
 

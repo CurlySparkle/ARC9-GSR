@@ -894,7 +894,7 @@ ATT.SortOrder = 330
 ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
-ATT.ActivateElements = {"mag_g4_waffle","smg_g3","mag_g4_barrel",}
+ATT.ActivateElements = {"mag_g4_waffle","smg_g3", "mag_g4_barrel",}
 ATT.ClipSizeOverride = 30
 ATT.ReloadTimeMult = 0.9
 
@@ -907,11 +907,10 @@ ATT.SpreadMultHipFire = 0.5
 ATT.SpreadMultMove = 1.1
 ATT.RecoilMult = 0.75
 
-ATT.ShootSound = "CSGO.SG556.Fire"
-//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
-//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
-ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
-ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+ATT.ShootSound = "CSGO.UMP.Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.UMP.Silenced_Fire"
+ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
 
@@ -944,9 +943,8 @@ ATT.PrintName = [[40-Round 9mm]]
 ATT.CompactName = [[40 9mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
 ATT.Description = [[
-ayyo who let the Dutch touched this?
 Sub-machinegun conversion of a battle rifle because of course
-Chambered in .45ACP
+Chambered in extended 9mm stick magazines
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -954,7 +952,7 @@ ATT.SortOrder = 340
 ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
-ATT.ActivateElements = {"mag_g4_mp9", "smg_g3"}
+ATT.ActivateElements = {"mag_g4_mp9", "smg_g3", "mag_g4_barrel",}
 ATT.ClipSizeOverride = 30
 ATT.ReloadTimeMult = 0.9
 
@@ -967,11 +965,10 @@ ATT.SpreadMultHipFire = 1.3
 ATT.SpreadMultMove = 1.5
 ATT.RecoilMult = 0.65
 
-ATT.ShootSound = "CSGO.SG556.Fire"
-//ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
-//ATT.FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First"
-ATT.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
-ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
+ATT.ShootSound = "CSGO.MP9.Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
+ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle"
 

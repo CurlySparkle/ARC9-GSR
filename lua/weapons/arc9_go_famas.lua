@@ -285,12 +285,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.75,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.15,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -315,12 +315,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.2,
+                t = 0.95,
                 lhik = 1,
                 rhik = 1
             },
@@ -455,6 +455,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(-0.15, 0.2, 0),
+		KeepBaseIrons = true,
 		InstalledElements = {"sight_mount"},
     },
     -- {
