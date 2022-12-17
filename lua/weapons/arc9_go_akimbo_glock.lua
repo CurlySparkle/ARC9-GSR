@@ -392,7 +392,7 @@ SWEP.Attachments = {
         PrintName = "Slide",
 		DefaultAttName = "Standard",
 		--Bone = "v_weapon.glock_magazine",
-        Category = "go_glock_s"
+        Category = "go_glock_s2"
     },
     {
         PrintName = "Muzzle",

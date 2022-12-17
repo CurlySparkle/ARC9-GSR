@@ -23,8 +23,8 @@ SWEP.Slot = 4
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_sonar_bomb.mdl"
-SWEP.WorldModel = "models/weapons/csgo/w_eq_sensorgrenade.mdl"
-SWEP.MirrorVMWM = true
+SWEP.WorldModel = "models/weapons/csgo/w_eq_sensor_grenade.mdl"
+SWEP.MirrorVMWM = false
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-3, 5, -7.5),
     Ang        =    Angle(5, 7, 180),
@@ -92,17 +92,16 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 20, 3)
 
-SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-13, 15, 2)
+SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "slam"
+SWEP.HoldTypeSprint = "slam"
+SWEP.HoldTypeHolstered = "slam"
+SWEP.HoldTypeSights = "slam"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -117,12 +116,6 @@ SWEP.Animations = {
     },
     ["idle_primed"] = {
         Source = "idle_primed"
-    },
-    ["ready"] = {
-        Source = "deploy",
-        EventTable = {
-            {s = "weapons/csgo/sensorgrenade/sensor_equip.wav", t = 7 / 30},
-        },
     },
     ["draw"] = {
         Source = "deploy",
@@ -158,5 +151,14 @@ SWEP.Animations = {
             { s = "weapons/csgo/sensorgrenade/sensor_throw.wav", t = 0 },
         },
         MinProgress = 0.5
+    },
+    ["idle_sprint"] = {
+        Source = "sprint",
+    },
+    ["enter_sprint"] = {
+        Source = "sprint_in",
+    },
+    ["exit_sprint"] = {
+        Source = "sprint_out",
     },
 }

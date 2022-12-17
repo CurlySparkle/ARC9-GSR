@@ -12,7 +12,7 @@ ATT.AutoStats = true
 
 ATT.Free = false
 
-ATT.Category = {"go_glock_s"}
+ATT.Category = {"go_glock_s","go_glock_s2"}
 ATT.ActivateElements = {"slide_long"}
 
 ATT.AimDownSightsTimeMult = 0.975

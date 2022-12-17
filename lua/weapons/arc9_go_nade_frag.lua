@@ -23,12 +23,12 @@ SWEP.Slot = 4
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_fraggrenade.mdl"
-SWEP.WorldModel = "models/weapons/csgo/w_frag.mdl"
-SWEP.MirrorVMWM = true
+SWEP.WorldModel = "models/weapons/csgo/w_eq_fraggrenade.mdl"
+SWEP.MirrorVMWM = false
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3, 5, -7.5),
-    Ang = Angle(5, 7, 180),
-    TPIKPos = Vector(-12, 1, -0),
+    Pos = Vector(0, 0, 0),
+    Ang = Angle(-10, 0, 180),
+    TPIKPos = Vector(-10, 10, -10),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1,
 }
@@ -49,7 +49,7 @@ SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = true -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
 SWEP.ThrowAnimSpeed = 1
 
-SWEP.FuseTimer = 3 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
+SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
 SWEP.ThrowForceMin = 500 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
@@ -61,14 +61,16 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true 
 
+-------------------------- HANDLING
+SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
 -------------------------- POSITIONS
 
 SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -1, -0.3)
-SWEP.SprintAng = Angle(3, -5, 0)
+SWEP.SprintPos = Vector(0, 0, -1.5)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1.5, -0.15),
@@ -92,17 +94,16 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 20, 3)
 
-SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-13, 13, 3)
+SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "knife"
-SWEP.HoldTypeSprint = "knife"
-SWEP.HoldTypeHolstered = "knife"
-SWEP.HoldTypeSights = "knife"
+SWEP.HoldType = "slam"
+SWEP.HoldTypeSprint = "slam"
+SWEP.HoldTypeHolstered = "slam"
+SWEP.HoldTypeSights = "slam"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -118,17 +119,8 @@ SWEP.Animations = {
     ["idle_primed"] = {
         Source = "idle_primed"
     },
-    ["ready"] = {
-        Source = "deploy",
-        EventTable = {
-            {s = "weapons/csgo/hegrenade/he_draw.wav", t = 1 / 30},
-        },
-    },
     ["draw"] = {
         Source = "deploy",
-        EventTable = {
-            {s = "weapons/csgo/hegrenade/he_draw.wav", t = 1 / 30},
-        },
     },
     ["holster"] = {
         Source = "holster",
@@ -159,5 +151,14 @@ SWEP.Animations = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
         MinProgress = 0.5
+    },
+    ["idle_sprint"] = {
+        Source = "sprint",
+    },
+    ["enter_sprint"] = {
+        Source = "sprint_in",
+    },
+    ["exit_sprint"] = {
+        Source = "sprint_out",
     },
 }

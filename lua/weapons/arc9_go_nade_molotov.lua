@@ -23,8 +23,8 @@ SWEP.Slot = 4
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_molotov.mdl"
-SWEP.WorldModel = "models/weapons/csgo/w_molotov.mdl"
-SWEP.MirrorVMWM = true
+SWEP.WorldModel = "models/weapons/csgo/w_eq_molotov.mdl"
+SWEP.MirrorVMWM = false
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-3, 5, -7.5),
     Ang        =    Angle(5, 7, 180),
@@ -67,7 +67,7 @@ SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -1, -0.3)
+SWEP.SprintPos = Vector(0, -1, -0.5)
 SWEP.SprintAng = Angle(3, -5, 0)
 
 SWEP.SprintMidPoint = {
@@ -99,10 +99,10 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "slam"
+SWEP.HoldTypeSprint = "slam"
+SWEP.HoldTypeHolstered = "slam"
+SWEP.HoldTypeSights = "slam"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

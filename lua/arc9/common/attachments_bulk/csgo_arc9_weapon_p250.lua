@@ -12,7 +12,7 @@ ATT.AutoStats = true
 
 ATT.Free = false
 
-ATT.Category = {"go_p250_slide"}
+ATT.Category = {"go_p250_slide","go_p250_slide2"}
 ATT.ActivateElements = {"slide_long"}
 
 ATT.AimDownSightsTimeMult = 1.1
@@ -37,7 +37,7 @@ ATT.AutoStats = true
 
 ATT.Free = false
 
-ATT.Category = {"go_p250_slide"}
+ATT.Category = {"go_p250_slide","go_p250_slide2"}
 ATT.ActivateElements = {"slide_short"}
 
 ATT.AimDownSightsTimeMult = 0.9
@@ -100,5 +100,3 @@ ATT.RangeMinMult = 1.35
 ATT.PhysBulletMuzzleVelocityMult = 1.35
 
 ARC9.LoadAttachment(ATT, "csgo_p250_slide_flux")
-
-ATT = {}
