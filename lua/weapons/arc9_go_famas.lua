@@ -244,7 +244,7 @@ SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_famas_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.55
+SWEP.DropMagazineTime = 1
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -266,11 +266,10 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-		Mult = 0.5,
+        Source = {"shoot4"},
     },
     ["fire_iron"] = {
-        Source = ""
+        Source = "shoot1_ads"
     },
     ["reload"] = {
         Source = "reload_short",
@@ -291,7 +290,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1.2,
+                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
@@ -328,8 +327,8 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
-            {s = "weapons/csgo/famas/famas_clipin.wav", t = 42 / 30},
-            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
+            {s = "weapons/csgo/famas/famas_clipin.wav", t = 45 / 30},
+            --{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
             {s = "weapons/csgo/famas/famas_boltback.wav", t = 76 / 30},
             {s = "weapons/csgo/famas/famas_boltforward.wav", t = 78 / 30},
         },
@@ -496,6 +495,10 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk",
+    },
+    {
+        PrintName = "View",
+        Category = "go_famas_view"
     },
     {
         PrintName = "Skins",
