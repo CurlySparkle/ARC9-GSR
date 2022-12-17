@@ -52,32 +52,11 @@ ARC9.LoadAttachment(ATT, "csgo_famas_barrel_short")
 
 ATT = {}
 
-ATT.PrintName = [[25 Mag]]
-ATT.CompactName = [[25 Mag]]
-ATT.Icon = Material("entities/attachs/go_famas_mag_25.png")
+ATT.PrintName = [[30 Mag]]
+ATT.CompactName = [[30 Mag]]
+ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
 ATT.Description = [[
-Decreases capacity by 30% more with the benefit of decreased reload time and better handling.
-]]
-ATT.Pros = {}
-ATT.Cons = {}
-ATT.SortOrder = 2
-ATT.Free = false
-
-ATT.Category = {"go_mag_famas"}
-ATT.ClipSizeOverride = 25
-ATT.ReloadTimeMult = 0.85
-
-ATT.ActivateElements = {"mag_decreased"}
-
-ARC9.LoadAttachment(ATT, "csgo_famas_mag_short")
-
-ATT = {}
-
-ATT.PrintName = [[60 Mag]]
-ATT.CompactName = [[60 Mag]]
-ATT.Icon = Material("entities/attachs/go_aug_mag_60.png")
-ATT.Description = [[
-Increases capacity with a heavy mag of 60 bullets with the cost of less handling and reload speed.
+Increas the capacity to 30 rounds, more rounds for the cost of more handling.
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -85,10 +64,32 @@ ATT.SortOrder = 1
 ATT.Free = false
 
 ATT.Category = {"go_mag_famas"}
+ATT.ClipSizeOverride = 30
+ATT.AimDownSightsTimeMult = 1.1
+
+ATT.ActivateElements = {"mag_decreased"}
+
+ARC9.LoadAttachment(ATT, "csgo_famas_mag_30")
+
+ATT = {}
+
+ATT.PrintName = [[60 Mag]]
+ATT.CompactName = [[60 Mag]]
+ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
+ATT.Description = [[
+Increases capacity with a heavy mag of 60 bullets with the cost of less handling and reload speed.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 2
+ATT.Free = false
+
+ATT.Category = {"go_mag_famas"}
 ATT.ClipSizeOverride = 60
-ATT.ReloadTimeMult = 1.3
+ATT.ReloadTimeMult = 1.25
 
 ATT.ActivateElements = {"mag_increased"}
+--ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
 
 ARC9.LoadAttachment(ATT, "csgo_famas_mag_long")
 

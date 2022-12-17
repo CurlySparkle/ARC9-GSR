@@ -28,7 +28,7 @@ SWEP.Description = [[A cheap option for cash-strapped players, the FAMAS effecti
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_famas.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
 
@@ -208,7 +208,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 32, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-6, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 3)
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
@@ -401,12 +401,12 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["mag_increased"] = {
         Bodygroups = {
-            {1,1},
+            {1,2},
         },
     },
     ["mag_decreased"] = {
         Bodygroups = {
-            {1,2},
+            {1,1},
         },
     },
     ["barrel_long"] = {
@@ -492,6 +492,12 @@ SWEP.Attachments = {
         PrintName = "Mag",
 		Bone = "v_weapon.famas_magazine",
         Category = {"go_mag_famas"},
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.famas_magazine",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1.5, 0),
     },
     {
         PrintName = "Perk",
