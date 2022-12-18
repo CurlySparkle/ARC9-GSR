@@ -1,14 +1,15 @@
 -- Made by Matsilagi
+
 AddCSLuaFile()
 
 if SERVER then
-	util.AddNetworkString("ARC9_GSOR_SONAR_EXPLODE")
+	util.AddNetworkString("ARC9_GSR_SONAR_EXPLODE")
 end
 
 ENT.Type      = "anim"
 ENT.Spawnable = false
 
-ENT.FindRadius = 250
+ENT.FindRadius = 500
 
 ENT.Model = "models/weapons/w_eq_sensorgrenade_thrown.mdl"
 
@@ -99,7 +100,7 @@ if SERVER then
 				end
 			end
 
-			net.Start("ARC9_GSOR_SONAR_EXPLODE")
+			net.Start("ARC9_GSR_SONAR_EXPLODE")
 			net.WriteTable(tab)
 			net.Send(self.Owner)
 		end
@@ -113,9 +114,9 @@ if SERVER then
 
 			local trace = util.TraceLine(tr)
 			if not trace.Hit or trace.Fraction >= 1 or trace.Fraction <= 0 then
-				v:SetNWFloat("ARC9_GSOR_LastFlash", CurTime() - 4)
-				v:SetNWFloat("ARC9_GSOR_FlashDistance", tr.endpos:Distance(origin))
-				v:SetNWFloat("ARC9_GSOR_FlashFactor", EntityFacingFactor(self, v) * 0.5)
+				v:SetNWFloat("ARC9_GSR_LastFlash", CurTime() - 4)
+				v:SetNWFloat("ARC9_GSR_FlashDistance", tr.endpos:Distance(origin))
+				v:SetNWFloat("ARC9_GSR_FlashFactor", EntityFacingFactor(self, v) * 0.5)
 			end
 		end
 
@@ -230,9 +231,9 @@ if CLIENT then
 	end
 
 	local ARC9_HaloManager = {}
-	ARC9_HaloManager.EVENT_NAME = "ARC9_GSOR_SONAR"
+	ARC9_HaloManager.EVENT_NAME = "ARC9_GSR_SONAR"
 
-	local function ARC9_GSOR_SONAR_CREATE_HALOS(len, ply)
+	local function ARC9_GSR_SONAR_CREATE_HALOS(len, ply)
 		local _ents = net.ReadTable()
 
 		timer.Simple(0.5, function()
@@ -289,7 +290,7 @@ if CLIENT then
 		return Vector(minX, minY), Vector(maxX, maxY)
 	end
 
-	net.Receive("ARC9_GSOR_SONAR_EXPLODE", ARC9_GSOR_SONAR_CREATE_HALOS)
+	net.Receive("ARC9_GSR_SONAR_EXPLODE", ARC9_GSR_SONAR_CREATE_HALOS)
 
 	function ARC9_HaloManager:Add(ent, t)
 		table.insert(self, {ent = ent, t = CurTime() + t})

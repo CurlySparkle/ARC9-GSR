@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/killicons/arc9_go_nade_breach"
+	"$vertexcolor"	"1"
+	"$vertexalpha"	"1"
+	"$translucent"	"1"
+	"$additive"		"1"
+}

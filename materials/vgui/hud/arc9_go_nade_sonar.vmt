@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	$basetexture  "vgui/hud/arc9_go_nade_sonar"
+	$translucent  1
+	$vertexalpha  1
+	$vertexcolor  1
+}

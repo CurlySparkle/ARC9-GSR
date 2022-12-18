@@ -92,7 +92,7 @@ function ENT:Think()
 	
 	for k, v in pairs (ents.GetAll()) do
 		local SmokeHidden2 = v:GetNWBool( "IsInsideSmoke", false )
-		if IsValid(v) and v:IsPlayer() or v:IsNPC() and v.SmokeHidden2 != nil or v.SmokeHidden2 == true then
+		if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() and v.SmokeHidden2 != nil or v.SmokeHidden2 == true then
 			v:SetNWBool("IsInsideSmoke", false)
 			v:RemoveFlags(FL_NOTARGET)
 		end
@@ -107,14 +107,14 @@ function ENT:Think()
 				ParticleEffect( "extinguish_fire", self:GetPos(), self:GetAngles() )
 				self.ExtinguishParticleCreated = true
 			end
-			if IsValid(v) and v:IsPlayer() or v:IsNPC() then
+			if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
 				local SmokeHidden = v:GetNWBool( "IsInsideSmoke", false )
 				if v.SmokeHidden != false or v.SmokeHidden == nil then
 					v:SetNWBool("IsInsideSmoke", true)
 					v:AddFlags(FL_NOTARGET)
 				end
 			end
-			if IsValid(v) and v:IsNPC() and v.SmokeHidden == true then
+			if IsValid(v) and v:IsNPC() or v:IsNextBot() and v.SmokeHidden == true then
 				if v.OldProfiecency == nil then
 					v.OldProfiecency = v:GetCurrentWeaponProficiency()
 				end
@@ -166,11 +166,11 @@ end
 function ENT:OnRemove()
 	for k, v in pairs (ents.GetAll()) do
 		local SmokeHidden = v:GetNWBool( "IsInsideSmoke", false )
-		if v:IsPlayer() or v:IsNPC() and v.SmokeHidden2 != nil or v.SmokeHidden2 == true then
+		if v:IsPlayer() or v:IsNPC() or v:IsNextBot() and v.SmokeHidden2 != nil or v.SmokeHidden2 == true then
 			v:SetNWBool("IsInsideSmoke", false)
 			v:RemoveFlags(FL_NOTARGET)
 		end
-		if v:IsNPC() and v.OldProfiecency != nil then
+		if v:IsNPC() or v:IsNextBot() and v.OldProfiecency != nil then
 			v:SetCurrentWeaponProficiency(v.OldProfiecency)
 		end
 	end
