@@ -426,15 +426,31 @@ SWEP.AttachmentElements = {
     },
     ["stock_fixed"] = {
         Bodygroups = {
-            {5,2},
+			{5,2},
         },
     },
     ["stock_none"] = {
         Bodygroups = {
-            {5,3},
+			{5,3},
+        },
+    }, 
+	["stock_k"] = {
+        Bodygroups = {
+			{5,4},
         },
     },
+    ["hg_k"] = {
+		Bodygroups = { {0,1}, },
+		AttPosMods = { [1] = { Pos = Vector(0, -3.91, 14), } }	
+	},	
 }
+
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("hg_k") then model:SetBodygroup(2,1) end 
+	if wep:HasElement("hg_k") then model:SetBodygroup(3,1) end
+end
 
 SWEP.Attachments = {
     {
@@ -457,7 +473,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = "csgo_rail_ub",
+        Category = {"csgo_rail_ub", "go_mp5_hg"},
         Bone = "v_weapon.MP5_Parent",
         InstalledElements = {"bottom_cover"},
         Pos = Vector(0, -2.5, 10.5),

@@ -478,7 +478,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_stock_padded")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "A2 fixed stock"
+ATT.PrintName = "A2 Fixed Stock"
 ATT.CompactName = "A2 Fixed"
 ATT.Description = [[A2 fixed stock. Improves recoil even more at the cost of more handling.]]
 
