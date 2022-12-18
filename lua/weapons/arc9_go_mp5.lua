@@ -416,7 +416,7 @@ SWEP.AttachmentElements = {
     },
     ["mag"] = {
         Bodygroups = {
-            {4,1},
+            {4,3},
         },
     },
     ["stock_retract"] = {

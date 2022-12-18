@@ -325,7 +325,7 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["r6"] = { Bodygroups = {{0,1},},},
+    ["r6"] = { Bodygroups = {{0,1},{1,1}},},
 }
 
 SWEP.Attachments = {
