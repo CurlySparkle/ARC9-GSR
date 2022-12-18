@@ -87,3 +87,21 @@ ATT.RecoilMult = 0.8
 ATT.AimDownSightsTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "csgo_mp5_stock_k")
+
+
+ATT = {}
+-- note: 10mm or 45acp instead?
+ATT.PrintName = "Short Magazine" 
+ATT.CompactName = "Kurz"
+ATT.Description = [[Shortened handguard.]]
+
+// ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "go_mp5_mag"
+ATT.ActivateElements = {"mag_k"}
+
+ATT.ClipSizeOverride = 20 -- or 15???
+ATT.ReloadTimeMult = 0.85
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_mag_k")
