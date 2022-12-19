@@ -114,7 +114,7 @@ ATT.CompactName = "FOLD"
 ATT.Description = [[A lightweight stock used on the SG 552 Commando.
 Improves agility, but recoil is less stable.]]
 
-ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_sg556_stock_folding.png", "mips smooth")
 
 ATT.SortOrder = 2
 ATT.Category = "go_sg556_stock"
@@ -136,7 +136,7 @@ ATT.CompactName = "PROTO"
 ATT.Description = [[A solid stock used on the SG 541 prototype.
 Provides better recoil control.]]
 
-ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_sg556_stock_proto.png", "mips smooth")
 
 ATT.SortOrder = 2
 ATT.Category = "go_sg556_stock"
@@ -156,7 +156,7 @@ ATT.PrintName = "7.62 Magazine"
 ATT.CompactName = "AK"
 ATT.Description = [[the swiss has joined the warsaw pact.]]
 
-ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
 
 ATT.SortOrder = 2
 ATT.Category = "go_mag_sg556"
@@ -169,7 +169,7 @@ ATT.DamageMinMult = 18/10
 ATT.SpreadMultSights = 0.8
 ATT.SpreadMult = 0.8
 ATT.RecoilMult = 1.2
-ATT.RecoilKickMult = 1.2
+ATT.RecoilKickMult = 1.1
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ak"

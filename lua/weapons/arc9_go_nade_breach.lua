@@ -1,7 +1,4 @@
-local hudcolor = Color(255, 80, 0, 191)
-if killicon and killicon.Add then
-    killicon.Add("arc9_go_nade_breach", "vgui/killicons/csgo_breachcharge", hudcolor)
-end
+SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_breach")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - CS:GO: ETC"
