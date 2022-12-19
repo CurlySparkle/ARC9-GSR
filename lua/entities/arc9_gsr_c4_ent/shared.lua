@@ -7,6 +7,10 @@ ENT.Spawnable = false
 ENT.Zombies = {}
 ENT.VJExists = false
 
+if CLIENT then
+    killicon.Add( "arc9_gsr_c4_ent", "vgui/killicons/csgo_c4", Color(251, 85, 25, 255))
+end
+
 function ENT:Draw()
 	self:DrawModel()
 end

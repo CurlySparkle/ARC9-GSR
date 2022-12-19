@@ -6,6 +6,10 @@ ENT.Type = "anim"
 ENT.Base = "base_anim"
 ENT.Spawnable = false
 
+if CLIENT then
+    killicon.Add( "arc9_gsr_thrownmolotov", "vgui/killicons/csgo_molotov", Color(251, 85, 25, 255))
+end
+
 function ENT:Draw()
 	self:DrawModel()
 end

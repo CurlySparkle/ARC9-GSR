@@ -26,8 +26,8 @@ SWEP.Slot = 4
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_rock.mdl"
-SWEP.WorldModel = "models/weapons/w_eq_fraggrenade.mdl"
-SWEP.MirrorVMWM = true
+SWEP.WorldModel = "models/weapons/csgo/w_eq_rock.mdl"
+SWEP.MirrorVMWM = false
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-3, 5, -7.5),
     Ang        =    Angle(5, 7, 180),
@@ -38,15 +38,16 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.BottomlessClip = true
+SWEP.InfiniteAmmo = true
 SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 2
+SWEP.SupplyLimit = 0
 SWEP.Crosshair = true
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.ShootEnt = "arc9_csgo_nade_rock"
+SWEP.ShootEnt = "arc9_gsr_thrownrock"
 SWEP.Ammo = "grenade"
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
@@ -58,7 +59,6 @@ SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in y
 SWEP.ThrowForceMin = 1000 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 2000 -- Maximum force that the grenade will be thrown with.
 SWEP.TossForce = 500 -- Force that the grenade will be thrown with when right clicked.
-SWEP.ShootEntInheritPlayerVelocity = true
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
@@ -94,19 +94,17 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 20, 3)
+SWEP.CustomizePos = Vector(16, 10, 0)
 
-SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(-13, 10, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "slam"
+SWEP.HoldTypeSprint = "slam"
+SWEP.HoldTypeHolstered = "slam"
+SWEP.HoldTypeSights = "slam"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

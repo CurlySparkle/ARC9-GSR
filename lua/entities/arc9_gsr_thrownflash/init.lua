@@ -1,5 +1,4 @@
---I still own this code. - Matsilagi
---To Twilight: You're changing the sounds.
+-- Made by Matsilagi
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )

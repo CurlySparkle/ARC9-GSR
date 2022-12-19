@@ -4,6 +4,10 @@ AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
 include('shared.lua')
 
+if CLIENT then
+    killicon.Add( "arc9_gsr_throwndecoy", "vgui/killicons/csgo_decoy", Color(251, 85, 25, 255))
+end
+
 function ENT:Initialize()
 	self.VJExists = (file.Exists("lua/autorun/vj_base_autorun.lua","GAME") or false)
 	

@@ -8,6 +8,10 @@ ENT.Damage = 100
 ENT.Radius = 354
 ENT.LifeTime = 1.5
 
+if CLIENT then
+    killicon.Add( "arc9_gsr_thrownfrag", "vgui/killicons/csgo_frag", Color(251, 85, 25, 255))
+end
+
 if SERVER then
     function ENT:Detonate()
         if not self:IsValid() then return end
