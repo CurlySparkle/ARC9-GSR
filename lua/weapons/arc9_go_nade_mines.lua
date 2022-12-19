@@ -50,7 +50,7 @@ SWEP.ShootEnt = "arc9_gsr_thrownbumpmine"
 SWEP.Ammo = "grenade"
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
-SWEP.Tossable = true -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
+SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
 SWEP.ThrowAnimSpeed = 1
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
@@ -113,6 +113,24 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 0.5
+
+function SWEP:SecondaryAttack()
+    return self:MeleeAttack()
+end
+
+SWEP.BashDamage = 35
+SWEP.BashLungeRange = 0
+SWEP.BashRange = 64
+SWEP.PreBashTime = 0.1
+SWEP.PostBashTime = 0.75
+
+SWEP.ImpactForce = 15
+
+SWEP.MeleeHitSound = "CSGO.Melee.HitBody"
+SWEP.MeleeHitWallSound = "CSGO.Melee.HitWall"
+SWEP.MeleeSwingSound = "CSGO.Shield.Swing"
 
 SWEP.Animations = {
     ["idle"] = {
@@ -136,16 +154,13 @@ SWEP.Animations = {
     },
     ["throw"] = {
         Source = "throw",
+		Mult = 0.8,
         EventTable = {
             { s = "weapons/csgo/bumpmines/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.5
+        MinProgress = 0
     },
-    ["toss"] = {
-        Source = "underhand",
-        EventTable = {
-            { s = "weapons/csgo/bumpmines/grenade_throw.wav", t = 0 },
-        },
-        MinProgress = 0.5
+    ["bash"] = {
+        Source = "melee"
     },
 }

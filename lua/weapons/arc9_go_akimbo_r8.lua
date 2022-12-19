@@ -135,14 +135,16 @@ SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being a
 
 -------------------------- MELEE
 
+function SWEP:SecondaryAttack()
+    return self:MeleeAttack()
+end
+
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
+SWEP.BashLungeRange = 64
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
 
 -------------------------- TRACERS
 
@@ -171,7 +173,7 @@ SWEP.IronSights = {
     CrosshairInSights = true
 }
 
-SWEP.HasSights = true
+SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
@@ -233,12 +235,12 @@ SWEP.MuzzleParticle = "weapon_muzzle_flash_magnum"
 SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.MuzzleEffectQCAEvenShot = 2
+SWEP.CamQCA = 7
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.AfterShotQCA = 1
 SWEP.AfterShotQCAEvenShot = 2
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
 SWEP.NoShellEject = true
 
 -------------------------- SOUNDS
@@ -317,6 +319,9 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
 			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
         },
+    },
+    ["bash"] = {
+        Source = {"melee"}
     },
 }
 

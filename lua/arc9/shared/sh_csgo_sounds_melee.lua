@@ -92,3 +92,32 @@ sound.Add( {
 		"^melee/shield_swing_04.wav",
     }
 } )
+
+sound.Add( {
+    name = "CSGO.Melee.HitBody",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 125,
+    pitch = {95, 115},
+    sound = {
+        "^melee/melee_hit_flesh_01.wav",
+		"^melee/melee_hit_flesh_02.wav",
+		"^melee/melee_hit_flesh_03.wav",
+		"^melee/melee_hit_flesh_04.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Melee.HitWall",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 125,
+    pitch = {95, 115},
+    sound = {
+        "^melee/melee_hit_world_01.wav",
+		"^melee/melee_hit_world_02.wav",
+		"^melee/melee_hit_world_03.wav",
+		"^melee/melee_hit_world_04.wav",
+		"^melee/melee_hit_world_05.wav",
+    }
+} )

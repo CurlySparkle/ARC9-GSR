@@ -122,17 +122,6 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
--------------------------- MELEE
-
-SWEP.Bash = true
-SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
-
 -------------------------- TRACERS
 
 SWEP.TracerNum = 1 -- Tracer every X
@@ -223,11 +212,11 @@ SWEP.TracerEffect = "csgo_taser_tracer"
 SWEP.MuzzleEffectQCA = 2
 SWEP.MuzzleEffectQCAEvenShot = 1
 
-SWEP.CaseEffectQCA = 4
-SWEP.CaseEffectQCAEvenShot = 3
+SWEP.CaseEffectQCA = 3
+SWEP.CaseEffectQCAEvenShot = 4
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 7
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.AlwaysPhysBullet = false
 SWEP.NeverPhysBullet = true
@@ -266,7 +255,7 @@ SWEP.Hook_BulletImpact = function(wep, data)
 end
 
 function SWEP:SecondaryAttack()
-    return self:PrimaryAttack()
+    return self:MeleeAttack()
 end
 
 SWEP.Animations = {
@@ -330,6 +319,9 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
 			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
         },
+    },
+    ["bash"] = {
+        Source = "melee",
     },
 }
 

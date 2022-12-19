@@ -159,14 +159,14 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.4
+        MinProgress = 0.3
     },
     ["toss"] = {
         Source = "underhand",
         EventTable = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.4
+        MinProgress = 0.3
     },
     ["bash"] = {
         Source = {"melee"}

@@ -7,15 +7,19 @@ SWEP.PrintName = "CS:GO Base"
 
 -------------------------- MELEE
 
+SWEP.MeleeHitSound = "CSGO.Melee.HitBody"
+SWEP.MeleeHitWallSound = "CSGO.Melee.HitWall"
+SWEP.MeleeSwingSound = "CSGO.Shield.Swing"
+
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.BashDamage = 50
-SWEP.BashLungeRange = 64
+SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.1
+SWEP.PostBashTime = 0.65
 
 SWEP.SpeedMultMelee = 1
 SWEP.SpeedMultSights = 0.65
