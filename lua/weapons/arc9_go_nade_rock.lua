@@ -120,14 +120,17 @@ SWEP.PrimaryBash = true
 SWEP.BashDamage = 50
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 74
-SWEP.PreBashTime = 0.2
-SWEP.PostBashTime = 0.2
+SWEP.PreBashTime = 0.1
+SWEP.PostBashTime = 0.7
 
 SWEP.ImpactForce = 25
 
 SWEP.MeleeHitSound = "rock_hit.wav"
 SWEP.MeleeHitWallSound = "rock_hit_world.wav"
 SWEP.MeleeSwingSound = "CSGO.Knife.Slash"
+
+SWEP.CamQCA = 2
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.Animations = {
     ["idle"] = {
@@ -159,14 +162,14 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.3
+        MinProgress = 0.2
     },
     ["toss"] = {
         Source = "underhand",
         EventTable = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.3
+        MinProgress = 0.2
     },
     ["bash"] = {
         Source = {"melee"}
