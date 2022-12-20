@@ -322,11 +322,19 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee"}
+        Source = {"melee","melee2"}
     },
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+
+-- SWEP.Hook_TranslateAnimation = function(swep, anim)    
+    -- if anim == "reload" then
+        -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2))
+
+        -- return anim .. rand ..
+    -- end
+-- end
 
 -------------------------- ATTACHMENTS
 
