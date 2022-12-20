@@ -37,7 +37,8 @@ ATT.Sights = {
         Ang = Angle(0.8, -0.8, 35),
         ViewModelFOV = 56,
         Magnification = 1.1,
-        IgnoreExtra = false
+        IgnoreExtra = false,
+		KeepBaseIrons = true,
     },
 }
 
