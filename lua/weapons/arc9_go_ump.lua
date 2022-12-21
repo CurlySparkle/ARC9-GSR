@@ -386,7 +386,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee", "melee2"},
+        Source = {"mele2e","melee"},
     },
 }
 
@@ -403,6 +403,11 @@ SWEP.AttachmentElements = {
     ["mag_30_9"] = {
         Bodygroups = {
             {2,2},
+        },
+    },
+    ["mag"] = {
+        Bodygroups = {
+            {2,3},
         },
     },
     ["grip"] = {
@@ -484,7 +489,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.ump45_Clip",
-        Category = "go_ump_mag"
+        Category = {"go_ump_mag","go_mag"},
     },
     {
         PrintName = "Ammo",

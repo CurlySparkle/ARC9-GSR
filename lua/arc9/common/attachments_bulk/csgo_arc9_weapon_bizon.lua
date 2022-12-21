@@ -185,3 +185,24 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ARC9.LoadAttachment(ATT, "csgo_bizon_hold_2")
 --------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View"
+ATT.CompactName = "Alt View"
+ATT.Description = [[Changes the view of the weapon for a more closer look.]]
+
+--ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "go_bizon_view"
+
+ATT.ActivePos = Vector(-1.5, -4, 0)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+ATT.MovingPos = Vector(-1.5, -4.5, -0.5)
+ATT.MovingAng = Angle(0, 0, 0)
+
+ATT.CrouchPos = Vector(-1.5, -4.5, -0.5)
+ATT.CrouchAng = Angle(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_view")

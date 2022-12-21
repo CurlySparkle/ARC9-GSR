@@ -514,8 +514,6 @@ ATT.CrouchPos = Vector(-1, -5.5, 0)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_g3_view_alt_1")
-
-
 -------------------------------------------------------------------------------------------------
 ATT = {}
 

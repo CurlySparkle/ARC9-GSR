@@ -133,10 +133,8 @@ SWEP.Bash = true
 SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.15
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -152,9 +150,9 @@ SWEP.IronSights = {
     ViewModelFOV = 56,
 }
 
-SWEP.ViewModelFOVBase = 56
+SWEP.ViewModelFOVBase = 54
 
-SWEP.SprintPos = Vector(0, 0, -0.3)
+SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -170,7 +168,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -0.7, -0.7)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
@@ -204,14 +202,14 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.7
+SWEP.EjectDelay = 0.75
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_awp_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -244,6 +242,57 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "ssg08_boltback.wav", t = 18 / 30},
+            {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
+        },
+    },
+    ["fire_sights"] = {
+        Source = {"shoot1_ads"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ssg08_boltback.wav", t = 18 / 30},
             {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
@@ -255,20 +304,20 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.7,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 1.1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -285,16 +334,21 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 1
             },
             {
                 t = 0.7,
-                lhik = 0,
+                lhik = 1,
                 rhik = 0
             },
             {
@@ -313,6 +367,28 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "ssg08_draw.wav", t = 0 / 30},
             {s = path .. "ssg08_boltback.wav", t = 7 / 30},
@@ -350,6 +426,9 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
+    },
 }
 
 --SWEP.Hook_Think	= SWEP:DoShootSounds
@@ -357,44 +436,81 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {1,1},
+        },
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {1,2},
+        },
+    },
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Scope",
-        Bone = "v_weapon.scout_Parent",
-        Pos = Vector(-0.1, -3.9, 4.6),
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(0.07, -3.9, 6.1),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.3, 0, -0.2),
-        Installed = "csgo_optic_scope_scout",
-        Integral = true,
+        --Installed = "csgo_optic_scope_scout",
+        Integral = false,
+		Scale = 0.9,
     },
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
-        Bone = "v_weapon.scout_Parent",
-        Pos = Vector(0, -3.27, 26),
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(0.15, -3.35, 29),
         Ang = Angle(90, 0, -90),
-		Scale = 0.9,
+		Scale = 0.85,
     },
     {
         PrintName = "Side",
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
-        Bone = "v_weapon.scout_Parent",
-        Pos = Vector(-1.2, -2.6, 17.2),
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(-0.65, -2.6, 19.5),
         Ang = Angle(90, 0, 90),
     },
     {
+        PrintName = "Pourquoi",
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(-0.25, -1, 13),
+        Ang = Angle(90, 0, 90),
+        Category = {"grip_xm1014"},
+		Installed = "go_holdstyle_1",
+        Integral = true,
+        Hidden = true,		
+    },	
+    {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = {"csgo_rail_ub","grip_scout"},
-        Bone = "v_weapon.scout_Parent",
-        Pos = Vector(0, -1.5, 13.6),
+        Category = {"csgo_rail_ub"},
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(0.1, -1.1, 14),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.awp_clip",
+        Category = {"go_mag"},
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.awp_clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1.5, 0),
     },
     {
         PrintName = "Perk",
@@ -405,7 +521,17 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_scout"
     },
+    {
+        PrintName = "R_Pourquoi",
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(-0.7, -2.1, 4.5),
+        Ang = Angle(90, 0, 90),
+        Category = {"go_grip_scuty"},
+		--Installed = "go_holdstyle_scout_integral",
+        Integral = false,
+        Hidden = false,		
+    },	
 }
 
-SWEP.GripPoseParam = 5
-SWEP.GripPoseParam2 = 0.3
+SWEP.GripPoseParam = 4.5
+SWEP.GripPoseParam2 = 0.6

@@ -154,12 +154,8 @@ SWEP.SprintToFireTime = 0.21 -- How long it takes to go from sprinting to being 
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -235,8 +231,8 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 3
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -432,6 +428,32 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 145 / 30 },
         },
     },
+    ["bash"] = {
+        Source = {"melee3", "melee4"},
+		Mult = 0.7,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendSights
@@ -549,6 +571,10 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_sawedoff_view"
     },
     {
         PrintName = "Skins",

@@ -161,12 +161,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.15
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -233,8 +229,8 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -420,6 +416,9 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 128 / 30 },
         },
     },
+    ["bash"] = {
+        Source = {"melee", "melee2"},
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -574,6 +573,12 @@ SWEP.Attachments = {
         Pos = Vector(-0.8, -4.6, 18),
         Ang = Angle(90, 90, 90),
 		LaserCorrectionAngle = Angle(0.4, 0, 1),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.SCAR_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1.5, 0),
     },
     {
         PrintName = "Mag",

@@ -237,8 +237,8 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 2
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -354,6 +354,9 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "revolver_prepare.wav", t = 0 / 30},
         },
+    },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
     },
 }
 

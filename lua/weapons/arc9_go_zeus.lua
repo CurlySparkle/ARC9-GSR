@@ -124,12 +124,8 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -206,8 +202,9 @@ SWEP.TracerEffect = "csgo_taser_tracer"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 2
+SWEP.CamQCA_Mult = 0.5
+
 SWEP.NoShellEject = true
 
 SWEP.AlwaysPhysBullet = false
@@ -294,6 +291,9 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
         },
+    },
+    ["bash"] = {
+        Source = {"melee","melee2"},
     },
 }
 
