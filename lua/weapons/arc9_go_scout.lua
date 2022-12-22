@@ -365,6 +365,48 @@ SWEP.Animations = {
             {s = path .. "ssg08_boltforward.wav", t = 89 / 30},
         },
     },
+	["reload_empty_long"] = {
+        Source = "reload_long",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.3,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "ssg08_boltback.wav", t = 7 / 30},		
+            {s = path .. "ssg08_clipout.wav", t = 25 / 30},
+            {s = path .. "ssg08_clipin.wav", t = 59 / 30},
+            {s = path .. "ssg08_cliphit.wav", t = 79 / 30},
+            {s = path .. "ssg08_boltforward.wav", t = 95 / 30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -432,6 +474,15 @@ SWEP.Animations = {
 }
 
 --SWEP.Hook_Think	= SWEP:DoShootSounds
+
+
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+   if anim == "reload_empty" and attached["go_mag_extended"] then 
+        return "reload_empty_long"
+    end
+end
 
 -------------------------- ATTACHMENTS
 

@@ -578,33 +578,17 @@ SWEP.AttachmentElements = {
 	[5] = { Pos = Vector(-0.85, -2.77, 9), },
 	}	
     },
+	
     ["barrel_mid"] = {
-        Bodygroups = {
-            {5,1},
-			{6,1},
-        },
+	Bodygroups = { {5,1}, {6,1}, },
     AttPosMods = { [4] = { Pos = Vector(0, -3.05, 10), } }	
     },
-    ["muzzle_none"] = {
-        Bodygroups = {
-			{6,2},
-        },
-    },
-    ["mag_30"] = {
-        Bodygroups = {
-			{7,1},
-        },
-    },
-    ["mag_30_stanag"] = {
-        Bodygroups = {
-			{7,2},
-        },
-    },
-    ["mag_20_stanag"] = {
-        Bodygroups = {
-			{7,3},
-        },
-    },
+    ["muzzle_none"] = { Bodygroups = { {6,2}, }, },
+	
+    ["mag_30"] = { Bodygroups = { {7,1}, }, },
+    ["mag_30_stanag"] = { Bodygroups = { {7,2}, }, },
+    ["mag_20_stanag"] = { Bodygroups = { {7,3}, }, }, 
+	["no_stock"] = { Bodygroups = { {0,1}, }, },
 }
 
 SWEP.Attachments = {
@@ -663,7 +647,7 @@ SWEP.Attachments = {
         --Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Sling",
+        PrintName = "Sling/Stock",
         Category = "go_p90_sling",
         Bone = "v_weapon.p90_Parent",
         Pos = Vector(0, -3, -3),

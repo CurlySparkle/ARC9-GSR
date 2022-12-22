@@ -24,6 +24,27 @@ ARC9.LoadAttachment(ATT, "csgo_p90_sling")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "Compact Frame"
+ATT.CompactName = "Compact"
+ATT.Description = [[Gives the p90 a more conventional grip and removes half of its stock.]]
+ATT.SortOrder = -1
+
+//ATT.Icon = Material("entities/attachs/go_p90_sling.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_p90_sling"}
+ATT.ActivateElements = {"no_stock"}
+
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
+ATT.RecoilMult = 1.2
+
+ARC9.LoadAttachment(ATT, "csgo_p90_nosock")
+--------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Alt Top Cover"
 ATT.CompactName = "Alt Top"
 ATT.Description = [[Changes the top cover of the P90 with an alternative type.]]
