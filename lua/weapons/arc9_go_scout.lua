@@ -384,12 +384,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.8,
+                t = 0.675,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.9,
+                t = 0.85,
                 lhik = 1,
                 rhik = 0
             },
@@ -508,13 +508,13 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.awp_parent",
-        Pos = Vector(0.07, -3.9, 6.1),
+        Pos = Vector(0.09, -3.8, 6.2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.3, 0, -0.2),
         --Installed = "csgo_optic_scope_scout",
         Integral = false,
-		Scale = 0.9,
+		Scale = 1,
     },
     {
         PrintName = "Muzzle",
