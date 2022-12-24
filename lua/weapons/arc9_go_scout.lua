@@ -581,7 +581,12 @@ SWEP.Attachments = {
 		--Installed = "go_holdstyle_scout_integral",
         Integral = false,
         Hidden = false,		
-    },	
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/scout_a.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4.5

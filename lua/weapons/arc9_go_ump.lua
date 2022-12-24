@@ -512,7 +512,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stickers",
-        StickerModel = "models/weapons/stickers/v_models/smg_ump45_decal_a.mdl",
+        StickerModel = "models/weapons/stickers/v_models/smg_ump45_decal_c.mdl",
         Category = "stickers",
     },
 }

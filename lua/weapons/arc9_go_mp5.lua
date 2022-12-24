@@ -488,7 +488,7 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract","go_mp5_stock"},
+        Category = {"csgo_tube","stock_retract","go_mp5_stock","go_mp5_stock2"},
         Bone = "v_weapon.MP5_Parent",
 		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -3.8, -2.7),

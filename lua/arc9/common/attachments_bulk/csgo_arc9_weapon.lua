@@ -77,10 +77,10 @@ ATT.PrintName = "Folding Stock"
 ATT.CompactName = "Folding"
 ATT.Description = [[PDW stock.]]
 
-ATT.Icon = Material("entities/attachs/go_g3_stock_fixed.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_mp5_stock_folding.png", "mips smooth")
 
 ATT.SortOrder = 3
-ATT.Category = {"go_mp5_stock"}
+ATT.Category = {"go_mp5_stock2"}
 ATT.ActivateElements = {"stock_k"}
 
 ATT.RecoilMult = 0.8

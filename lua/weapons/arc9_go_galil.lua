@@ -606,6 +606,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_galil"
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/galil_a.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4
