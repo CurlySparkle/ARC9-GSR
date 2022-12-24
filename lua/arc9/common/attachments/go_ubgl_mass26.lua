@@ -13,6 +13,8 @@ ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
 ATT.ShotgunReloadUBGL = false
+ATT.ModelOffset = Vector(-2.75, 0, -2.75)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
@@ -62,6 +64,7 @@ ATT.IKAnimationProxy = {
     },
 } -- When an animation event plays, override it with one based on this LHIK model.
 ATT.IKGunMotionQCA = 2
+ATT.IKCameraMotionQCA = nil
 
 ATT.IKGunMotionOffset = Vector(0, 0, 0)
 //ATT.IKGunMotionAngleOffset = Angle(0, 0, 90)  -- WHICH ONE IS IT?
@@ -92,8 +95,13 @@ ATT.RPMUBGL = 60
 ATT.SpreadUBGL = 0.035
 
 ATT.FirstShootSoundUBGL = false
-ATT.ShootSoundUBGL = "gekolt_css/xm1014-1.wav"
-ATT.DistantShootSoundUBGL = false
+ATT.ShootSoundUBGL = "CSGO.xm1014.Fire"
+ATT.ShootSoundSilencedUBGL = "CSGO.xm1014.Fire_Silenced"  -- M'AIDEZ CE N'EST PAS MARCHE
+ATT.DistantShootSoundUBGL = "CSGO.xm1014.Fire.Distance"
+ATT.DryFireSoundUBGL = "weapons/clipempty_rifle.wav"
+
+ATT.MuzzleParticleUBGL = "muzzleflash_shotgun"
+
 ATT.HasSightsUBGL = false
 
 
@@ -135,9 +143,21 @@ ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before de
 
 ATT.PenetrationUBGL = 2 -- Units of wood that can be penetrated by this gun.
 
-
-
-ATT.MuzzleParticleUBGL = "muzzleflash_shotgun"
-
-ATT.ModelOffset = Vector(-2.75, 0, -2.75)
-ATT.ModelAngleOffset = Angle(0, 0, 180)
+ATT.Attachments = {
+    {
+        PrintName = [[Muzzle]],
+        DefaultName = "None",
+		
+        Category = {"muzzle_shotgun_ubgl"},
+        Pos = Vector(-15.5, 0.2, -0.75),
+        Ang = Angle(0, 0, 0),
+	},   
+    {
+        PrintName = "Ammo",
+        DefaultName = "None",
+		
+        Category = "go_ammo_sg_ubgl",
+        Pos = Vector(-5, 0.2, -5),
+        Ang = Angle(0, 0, 0),		
+    },
+}

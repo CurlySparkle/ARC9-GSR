@@ -419,4 +419,220 @@ ATT.ImpactDecal = "FadingScorch"
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
-ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")
+
+
+
+
+
+--- UBGL/Shotgun ---
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "8.5mm Magnum Buckshot"
+ATT.CompactName = "MAG"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
+ATT.Description = [[A high-power buckshot load with fewer larger lead pellets.
+Provides better close range power, but range and precision is worse.]]
+ATT.SortOrder = 6
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.PhysBulletMuzzleVelocityMultUBGL = 1.1
+ATT.PhysBulletDragMultUBGL = 2
+
+ATT.NumMultUBGL = 0.75
+ATT.RecoilKickMultUBGL = 1.25
+ATT.RecoilAutoControlMultUBGL = 0.75
+
+ATT.DamageMaxMultUBGL = 1 / 0.75 * 1.2
+ATT.DamageMinMultUBGL = 1 / 0.75
+
+ATT.SpreadMultUBGL = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "3.5mm Birdshot"
+ATT.CompactName = "BIRD"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_scatter.png", "mips smooth")
+ATT.Description = [[A reduced diameter load containing more pellets.
+Spread is increased, making hitting targets more likely.]]
+ATT.SortOrder = 20
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.NumMultUBGL = 2.5
+ATT.SpreadMultUBGL = 1.5
+
+ATT.DamageMaxMultUBGL = 1 / 2.5
+ATT.DamageMinMultUBGL = 1 / 2.5
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm Full-bore Slug"
+ATT.CompactName = "SLUG"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
+ATT.Description = [[A single large projectile loaded in the shotshell.
+The aerodynamic pellet has much higher effective range.]]
+ATT.SortOrder = 1
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.SpreadMultUBGL = 0.15
+ATT.SpreadMultUBGLHipFire = 0.75
+ATT.RangeMaxMultUBGL = 2
+
+ATT.RicochetChanceOverrideUBGL = 1
+
+ATT.DamageMaxOverrideUBGL = 110
+ATT.DamageMinOverrideUBGL = 40
+
+ATT.NumOverrideUBGL = 1
+
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm Triple Hit Slugs"
+ATT.CompactName = "TRI"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_triple.png", "mips smooth")
+ATT.Description = [[A load containing 3 short, slug-sized pellets.
+The slugs provide increased range and precision, but not as much as a full slug.]]
+ATT.SortOrder = 3
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.RangeMaxMultUBGL = 1.5
+ATT.SpreadMultUBGL = 0.35
+
+ATT.RicochetChanceOverrideUBGL = 2
+
+ATT.DamageMaxOverrideUBGL = 37
+ATT.DamageMinOverrideUBGL = 15
+
+ATT.NumOverrideUBGL = 3
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "25mm Flechettes"
+ATT.CompactName = "FLE"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
+ATT.Description = [[A load containing thin, dart-shaped projectiles.
+Provides a tighter spread and better range as well as much higher penetration, but much lower stopping power.]]
+ATT.SortOrder = 12
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.SpreadMultUBGL = 0.25
+
+ATT.NumMultUBGL = 1.5
+ATT.PenetrationOverrideUBGL = 12
+ATT.DamageMaxMultUBGL = 1 / 1.5 * 0.85
+ATT.RangeMaxMultUBGL = 1.25
+ATT.RangeMinMultUBGL = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
+ATT.CompactName = "FRAG"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_he.png", "mips smooth")
+ATT.Description = [[A load containing an explosive compound, dealing damage in a small radius.
+Effectiveness is limited by the small caliber size.]]
+ATT.SortOrder = 1.5
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.NumOverrideUBGL = 1
+
+ATT.SpreadMultUBGL = 0.3
+
+ATT.PhysBulletGravityMultUBGL = 3
+ATT.PhysBulletMuzzleVelocityMultUBGL = 0.75
+
+ATT.DamageMaxOverrideUBGL = 35
+ATT.DamageMinOverrideUBGL = 10
+
+ATT.ExplosionRadiusOverrideUBGL = 75
+ATT.ExplosionDamageOverrideUBGL = 80
+ATT.ExplosionEffectUBGL = "csgo_muzzle_he" -- placeholder
+ATT.ImpactDecalUBGL = "FadingScorch"
+
+ATT.Override_DamageTypeUBGL = DMG_BLAST + DMG_AIRBOAT
+ATT.DamageTypeUBGL = DMG_BLAST + DMG_AIRBOAT
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "10mm Rebounder Rounds"
+ATT.CompactName = "RBD"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
+ATT.Description = [[A load containing specialized pellets with a high chance to ricochet.
+The pellet will bounce at any angle, and triples in damage as it ricochets.
+However, it does minimal damage on direct impact.]]
+ATT.SortOrder = 8
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.DamageMinOverrideUBGL = 10
+ATT.DamageMaxOverrideUBGL = 10
+ATT.NumOverrideUBGL = 6
+
+ATT.RicochetChanceOverrideUBGL = 2
+ATT.RicochetAngleMaxOverrideUBGL = 180
+ATT.PenetrationDeltaUBGL = 3
+ATT.RicochetSeekingUBGL = true
+ATT.RicochetSeekingRangeUBGL = 1024
+ATT.RicochetSeekingAngleUBGL = 45
+
+ATT.TracerColorUBGL = Color(255, 255, 255, 150)
+ATT.TracerSizeAddUBGL = -0.5
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_rebounder_ubgl")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "70mm \"FRAG-12\" High Explosive X4"
+ATT.CompactName = "FRAG X4"
+ATT.Icon = Material("entities/attachs/go_ammo_sg_he_x4.png", "mips smooth")
+ATT.Description = [[A load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.
+Effectiveness is limited by the small caliber size.]]
+ATT.SortOrder = 1.6
+
+ATT.Category = {"go_ammo_sg_ubgl"}
+
+ATT.NumOverrideUBGL = 4
+
+ATT.SpreadMultUBGL = 1
+ATT.SpreadMultUBGLCrouch = 0.5
+
+ATT.PhysBulletGravityMultUBGL = 3
+ATT.PhysBulletMuzzleVelocityMultUBGL = 0.75
+
+ATT.DamageMaxOverrideUBGL = 15
+ATT.DamageMinOverrideUBGL = 10
+
+ATT.ExplosionRadiusOverrideUBGL = 65
+ATT.ExplosionDamageOverrideUBGL = 25
+ATT.ExplosionEffectUBGL = "csgo_muzzle_he" -- placeholder
+ATT.ImpactDecalUBGL = "FadingScorch"
+
+ATT.Override_DamageTypeUBGL = DMG_BLAST + DMG_AIRBOAT
+ATT.DamageTypeUBGL = DMG_BLAST + DMG_AIRBOAT
+
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4_ubgl")

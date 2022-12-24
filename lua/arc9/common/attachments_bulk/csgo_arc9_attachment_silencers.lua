@@ -162,6 +162,32 @@ ATT.MuzzleDevice = true
 ARC9.LoadAttachment(ATT, "go_supp_shitvo")
 -------------------------------------------------------------------------------
 ATT = {}
+-- MASS26 et des autres, you can't just slap a UBGL prefix for everything cuz attachment on the main gun will also affect the ubgl in that case
+ATT.PrintName = [[Salvo-12 Suppressor]]
+ATT.CompactName = [[Salvo-12]]
+ATT.Description = [[Tactical shotgun heavy suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Icon = Material("entities/attachs/silencer_salvo12.png", "mips smooth")
+
+ATT.SortOrder = 1
+ATT.AutoStats = true
+ATT.Category = {"muzzle_shotgun_ubgl"}
+ATT.Folder = "Suppresors"
+
+ATT.Model = "models/weapons/csgo/atts/silencer_salvo12.mdl"
+
+ATT.PhysBulletMuzzleVelocityMultUBGL = 1.1
+ATT.RangeMaxMultUBGL = 1.2
+ATT.RangeMinMultUBGL = 0.9
+
+ATT.ShootSoundUBGL = "CSGO.xm1014.Fire_Silenced" -- kill me
+ATT.SilencerUBGL = true -- DOES THIS WORK??
+ATT.MuzzleParticleOverrideUBGL = "weapon_muzzle_flash_shotgun_parent_silenced"
+ATT.MuzzleParticleOverride_PriorityUBGL = 10
+ATT.MuzzleDeviceUBGL = true
+
+ARC9.LoadAttachment(ATT, "go_supp_shitvo_ubgl")
+-------------------------------------------------------------------------------
+ATT = {}
 
 ATT.PrintName = [[Ti-Rant 45 Suppressor]]
 ATT.CompactName = [[Ti-Rant 45]]
