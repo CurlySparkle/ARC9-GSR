@@ -12,6 +12,7 @@ ATT.Folder = "UBGL"
 ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
+ATT.ShotgunReloadUBGL = false
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
