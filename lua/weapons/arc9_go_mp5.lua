@@ -389,7 +389,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = "melee",
+        Source = {"melee", "melee2", "melee3"},
     },
 }
 

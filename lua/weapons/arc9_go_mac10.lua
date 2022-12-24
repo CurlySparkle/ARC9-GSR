@@ -136,12 +136,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -215,8 +211,8 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -239,7 +235,7 @@ local path = "weapons/csgo/mac10/"
 
 SWEP.ShootSound = "CSGO.MAC10.Fire"
 SWEP.ShootSoundSilenced = "CSGO.MAC10.Silenced_Fire"
-SWEP.DistantShootSound = path .. "mac10-1-distant.wav"
+SWEP.DistantShootSound = "CSGO.MAC10.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
@@ -382,6 +378,31 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
         },
     },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
 }
 
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
@@ -445,8 +466,18 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.mac10_clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1, 0),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk",
+    },
+    {
+        PrintName = "View",
+        Category = "go_mac10_view"
     },
     {
         PrintName = "Skins",

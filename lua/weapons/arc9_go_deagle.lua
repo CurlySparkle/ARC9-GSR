@@ -280,6 +280,23 @@ SWEP.Animations = {
             {s = path .. "de_slideforward.wav", t = 47 / 30},
         },
     },
+    ["reload_alt"] = {
+        Source = "reload_short_alt",
+        EventTable = {
+            {s = path .. "de_clipout.wav", t = 10 / 30},
+            {s = path .. "de_clipin.wav", t = 25 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload_alt",
+		MinProgress = 0.42,
+        EventTable = {
+            {s = path .. "de_clipout.wav", t = 10 / 30},
+            {s = path .. "de_clipin.wav", t = 25 / 30},
+            {s = path .. "de_slideback.wav", t = 41 / 30},
+            {s = path .. "de_slideforward.wav", t = 47 / 30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         EventTable = {
@@ -322,7 +339,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee","melee2"}
+        Source = {"melee", "melee2", "melee3"}
     },
 }
 
@@ -414,7 +431,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.deagle_clip",
-        Category = "go_mag"
+        Category = "go_deagle_mag"
     },
     {
         PrintName = "Perk",

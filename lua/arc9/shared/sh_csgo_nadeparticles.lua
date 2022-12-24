@@ -1,5 +1,4 @@
 GSORParticleFiles = {}
-table.insert(GSORParticleFiles, #GSORParticleFiles, "bumpmine_fx")
 table.insert(GSORParticleFiles, #GSORParticleFiles, "grenade_fx")
 table.insert(GSORParticleFiles, #GSORParticleFiles, "inferno_fx")
 table.insert(GSORParticleFiles, #GSORParticleFiles, "arc9_gsr_nadefx")

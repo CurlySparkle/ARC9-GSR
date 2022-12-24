@@ -117,7 +117,7 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadAddCrouch = -0.05
@@ -137,12 +137,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -208,8 +204,8 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -461,6 +457,31 @@ SWEP.Animations = {
 			{s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 77 / 30},
         },
     },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -571,7 +592,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = {"grip","grip_mk18","grip_m4"},
+        Category = {"grip","grip_mk18","grip_m4","csgo_ubgl"},
         Bone = "v_weapon.M4A1_Parent",
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
@@ -602,8 +623,18 @@ SWEP.Attachments = {
         Category = "go_mag_m4"
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.M4A1_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1, 0),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_m4a4_view"
     },
     {
         PrintName = "Skins",

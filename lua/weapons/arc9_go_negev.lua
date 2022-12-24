@@ -143,12 +143,8 @@ SWEP.SpeedMultShooting = 0.5
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -225,13 +221,13 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 
-SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr_2.mdl"
+SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0, 0, 0)
@@ -244,19 +240,14 @@ SWEP.DropMagazineTime = 1
 SWEP.DropMagazineQCA = 3
 
 SWEP.ExtraShellModels = {
-        model = "models/models/weapons/shared/lmg_link.mdl",
+    [1] = {
+        model = "models/models/weapons/shared/shell_249_hr.mdl",
         physbox = Vector(1, 1, 1)
+    },
+    [2] = {
+        model = "models/models/weapons/shared/lmg_starter.mdl",
+    }
 }
-
--- SWEP.Hook_PrimaryAttack = function(self)
-    -- if self:GetElements()["mag_556m"] then return end
-
-    -- self:DoEject(1, 3)
-
-    -- if self:Clip1() == self:GetCapacity() then
-        -- self:DoEject(2, 3)
-    -- end
--- end
 
 -------------------------- SOUNDS
 
@@ -517,9 +508,55 @@ SWEP.Animations = {
             },
         },
     },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
 }
 
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
+
+SWEP.Hook_PrimaryAttack = function(self)
+    if self:GetElements()["mag_556m"] then return end
+
+    self:DoEject(1, 3)
+
+    if self:Clip1() == self:GetCapacity() then
+        self:DoEject(2, 3)
+    end
+end
+
+SWEP.Hook_HideBones = function(self, bones)
+    if self:GetLoadedRounds() < self:GetCapacity() then
+	    bones["v_weapon.bullet_15"] = true
+	    bones["v_weapon.bullet_16"] = true
+        bones["v_weapon.bullet_17"] = true
+        bones["v_weapon.bullet_18"] = true
+
+        return bones
+    end
+end
 
 -------------------------- ATTACHMENTS
 

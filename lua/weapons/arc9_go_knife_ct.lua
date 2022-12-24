@@ -26,8 +26,8 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIK = true
 SWEP.WorldModelMirror = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-17, 2.5, 1), -- total ass
-    Ang = Angle(-20, 15, 180 + 90),
+    Pos = Vector(-7.5, -16, -5.5), -- total ass
+    Ang = Angle(-5, -50, 180 + 70),
     Scale = 1
 }
 
@@ -59,7 +59,7 @@ SWEP.Firemodes = {
 
 SWEP.FreeAimRadius = 0
 
-SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = true
 
@@ -67,12 +67,22 @@ SWEP.ShootWhileSprint = true
 
 SWEP.Bash = true
 SWEP.PrimaryBash = true
+SWEP.SecondaryBash = true
 
-SWEP.BashDamage = 70
-SWEP.BashLungeRange = 0
+SWEP.BashDamage = 35
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.2
-SWEP.PostBashTime = 0.2
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.3
+
+SWEP.BashDamage = 45
+SWEP.PreBash2Time = 0.05
+SWEP.PostBash2Time = 0.85
+
+SWEP.Backstab = true
+SWEP.BackstabDamage = 100
+SWEP.BackstabRange = 64
+SWEP.PreBackstabTime = 0.5
+SWEP.PostBackstabTime = 0.5
 
 SWEP.ImpactForce = 15
 
@@ -104,7 +114,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -3, -1)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(-90, 90, 90)
@@ -118,8 +128,8 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.HoldType = "knife"
 SWEP.HoldTypeSprint = "knife"
 SWEP.HoldTypeHolstered = "knife"
-SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
+SWEP.HoldTypeCustomize = "knife"
+SWEP.HoldTypeBlindfire = "knife"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
@@ -142,14 +152,15 @@ SWEP.Animations = {
     ["bash"] = {
         Source = {"light_hit1","light_hit2"}
     },
-
-    ["bash_backstab"] = {
+    ["bash2"] = {
+        Source = {"heavy_hit1"}
+    },
+    ["backstab"] = {
         Source = {"light_backstab"},
     },
-    ["bash2_backstab"] = {
+    ["backstab2"] = {
         Source = {"heavy_backstab"},
     },
-
     ["idle_sprint"] = {
         Source = "sprint",
     },

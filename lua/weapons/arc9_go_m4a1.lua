@@ -146,12 +146,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -235,8 +231,8 @@ SWEP.AfterShotQCA = 3
 SWEP.MuzzleEffectQCA = 3
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 5
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -502,6 +498,31 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement3.wav", t = 105 / 30},
         },
     },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3", "melee4", "melee5"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
 -- SILENCED
     ["idle_silenced"] = {
         Source = "idle_silenced",
@@ -660,6 +681,31 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
             { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+        },
+    },
+    ["bash_silenced"] = {
+        Source = {"melee_silenced", "melee2_silenced"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
         },
     },
 }
@@ -828,6 +874,10 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_m4a4_view"
     },
     {
         PrintName = "Skins",

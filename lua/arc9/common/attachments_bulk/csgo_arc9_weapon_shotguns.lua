@@ -16,6 +16,7 @@ ATT.Free = false
 ATT.Category = {"go_xm1014_mag"}
 ATT.ClipSizeOverride = 4
 ATT.SpreadAddHipFire = 0.01
+ATT.ReloadTimeMult = 0.9
 
 ATT.SpeedAddSights = -0.05
 ATT.SprintToFireTimeAdd = 0.075

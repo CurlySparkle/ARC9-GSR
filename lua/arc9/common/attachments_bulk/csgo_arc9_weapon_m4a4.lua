@@ -115,3 +115,25 @@ ATT.SpreadMultRecoil = 1.3
 ATT.SpreadMultHipFire = 1.5
 
 ARC9.LoadAttachment(ATT, "csgo_m4_barrel_sniper")
+----------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View"
+ATT.CompactName = "Alt View"
+ATT.Description = [[Changes the view of the weapon for a more closer look.]]
+
+--ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "go_m4a4_view"
+
+ATT.ActivePos = Vector(-1.5, -2, 0)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+ATT.MovingPos = Vector(-1.5, -2.3, -0.3)
+ATT.MovingAng = Angle(0, 0, 0)
+
+ATT.CrouchPos = Vector(-1.5, -2.3, -0.3)
+ATT.CrouchAng = Angle(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_m4a4_view")

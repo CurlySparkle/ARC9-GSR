@@ -1,18 +1,6 @@
 "vertexlitgeneric"
 {
-	"$basetexture"		"stickers\kawai"
-	"$envmap"		"env_cubemap"
-	"$envmaptint"		"[ .07 .07 .07 ]"
-	"$phong"		"1"
-     "$decalsecondpass" "1"
-	"$phongexponent"		"2"
-	"$phongfresnelranges"		"[ .2 .5 1 ]"
-	"$phongalbedotint"		"1"
-	"$phongboost"		"1"
-	"$phongalbedoboost"		"10"
-
-                "$translucent" "1"
-                "$decal" "1"
-                //"$vertexcolor" "1"
-                //"$vertexalpha" "1"
+	"$basetexture"	"stickers\kawai"
+     "$alphatest"	"1"
+     "$decal"		"1"
 }

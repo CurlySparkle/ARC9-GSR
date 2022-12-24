@@ -540,7 +540,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee"}
+        Source = {"melee","melee4","melee5","melee3"}
     },
 }
 
@@ -673,36 +673,36 @@ SWEP.Attachments = {
         PrintName = "View",
         Category = "go_p90_view"
     },
-    -- {
-        -- PrintName = "Sticker A",
-        -- Bone = "v_weapon.p90_Parent",
-        -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_a.mdl",
-        -- Pos = Vector(0.05, 1.25, -5),
-        -- Ang = Angle(90, 0, -90),
-        -- Category = "stickers",
-    -- },
+    {
+        PrintName = "Sticker A",
+        --Bone = "v_weapon.p90_Parent",
+        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_a.mdl",
+        --Pos = Vector(0.05, 1.25, -0),
+        --Ang = Angle(90, 0, -90),
+        Category = "stickers",
+    },
     -- {
         -- PrintName = "Sticker B",
         -- Bone = "v_weapon.p90_Parent",
         -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_b.mdl",
-        -- Pos = Vector(0.05, 1.25, -6.1),
-        -- Ang = Angle(90, 0, -90),
+        -- --Pos = Vector(0.05, 1.25, -6.1),
+        -- --Ang = Angle(90, 0, -90),
         -- Category = "stickers",
     -- },
     -- {
         -- PrintName = "Sticker C",
         -- Bone = "v_weapon.p90_Parent",
         -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_c.mdl",
-        -- Pos = Vector(0.05, 1.25, -7.2),
-        -- Ang = Angle(90, 0, -90),
+        -- --Pos = Vector(0.05, 1.25, -7.2),
+        -- --Ang = Angle(90, 0, -90),
         -- Category = "stickers",
     -- },
     -- {
         -- PrintName = "Sticker D",
         -- Bone = "v_weapon.p90_Parent",
         -- StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_d.mdl",
-        -- Pos = Vector(0.05, 1.25, -8.3),
-        -- Ang = Angle(90, 0, -90),
+        -- --Pos = Vector(0.05, 1.25, -8.3),
+        -- --Ang = Angle(90, 0, -90),
         -- Category = "stickers",
     -- },
 }

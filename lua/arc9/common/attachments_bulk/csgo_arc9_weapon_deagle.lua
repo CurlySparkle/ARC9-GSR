@@ -130,3 +130,35 @@ ATT.RangeMinMult = 1.25
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_deagle_barrel")
+
+ATT = {}
+
+ATT.PrintName = [[Extended Magazine]]
+ATT.CompactName = [[Ext Mag]]
+ATT.Icon = Material("entities/attachs/ext_mag.png")
+ATT.Description = [[
+Extended capacity by 50% more with the cost of increased reload time.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.Free = false
+
+ATT.Category = {"go_deagle_mag"}
+ATT.ClipSizeOverride = 15
+ATT.ReloadTimeMult = 1.1
+
+ATT.ActivateElements = {"mag"}
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" and attached["csgo_deagle_mag_extend"] then
+        return "reload_alt"
+    elseif anim == "reload_empty" then
+        return "reload_empty_alt"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_mag_extend")

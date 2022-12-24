@@ -510,6 +510,11 @@ SWEP.Attachments = {
         PrintName = "View",
         Category = "go_ump_view"
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/smg_ump45_decal_a.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 3.5

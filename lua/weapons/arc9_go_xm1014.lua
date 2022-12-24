@@ -518,6 +518,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_xm1014"
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/xm1014_a.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 3

@@ -141,21 +141,17 @@ SWEP.SpreadAddSightsMove = -0.1
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.SwayMultSights = 0.3
+SWEP.SwayMultSights = 0
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -173,8 +169,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, 0, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(0, -1, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1, 0),
@@ -227,12 +223,12 @@ SWEP.AnimDraw = false
 -------------------------- EFFECTS
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_autoshotgun"
-SWEP.AfterShotParticle = "weapon_muzzle_smoke"
+SWEP.AfterShotParticle = "barrel_smoke_plume"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 3
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
@@ -438,6 +434,31 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement3.wav", t = 117 / 30 },
         },
     },
+    ["bash"] = {
+        Source = {"melee","melee2","melee4"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.1,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendSights
@@ -534,6 +555,10 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk"
+    },
+    {
+        PrintName = "View",
+        Category = "go_nova_view"
     },
     {
         PrintName = "Skins",

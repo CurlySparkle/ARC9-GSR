@@ -614,4 +614,9 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_usp"
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/pist_223_decal_a.mdl",
+        Category = "stickers",
+    },
 }

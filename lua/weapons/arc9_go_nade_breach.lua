@@ -63,6 +63,7 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true 
+SWEP.Detonator = true
 
 -------------------------- HANDLING
 SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
@@ -151,38 +152,38 @@ SWEP.Animations = {
         Source = "sprint_out",
     },
 --  Empty Sequences
-    ["idle_empty"] = {
+    ["idle_detonator"] = {
         Source = "idle_empty",
     },
-    ["draw_empty"] = {
+    ["draw_detonator"] = {
         Source = "deploy_empty",
     },
-    ["holster_empty"] = {
+    ["holster_detonator"] = {
         Source = "holster_empty",
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
-    ["throw_empty"] = {
+    ["throw_detonator"] = {
       Source = "throw_empty",
       EventTable = {
           { s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0 },
       },
       MinProgress = 0.5
     },
-    ["detonate_empty"] = {
+    ["detonate_detonator"] = {
         Source = "detonate_empty",
         EventTable = {
             { s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0 },
         },
     },
-    ["idle_sprint_empty"] = {
+    ["idle_sprint_detonator"] = {
         Source = "sprint_empty",
     },
-    ["enter_sprint_empty"] = {
+    ["enter_sprint_detonator"] = {
         Source = "sprint_in_empty",
     },
-    ["exit_sprint_empty"] = {
+    ["exit_sprint_detonator"] = {
         Source = "sprint_out_empty",
     },
 }
