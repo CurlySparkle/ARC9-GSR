@@ -196,7 +196,6 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(22, 40, 5)
 
-SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-2, 0, 2)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
