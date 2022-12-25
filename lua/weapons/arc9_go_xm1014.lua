@@ -516,12 +516,26 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_xm1014"
+        Category = "go_skins_xm1014",
+		CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/xm1014_a.mdl",
         Category = "stickers",
+		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/xm1014_b.mdl",
+        Category = "stickers",
+		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/xm1014_c.mdl",
+        Category = "stickers",
+		CosmeticOnly = true,
     },
 }
 

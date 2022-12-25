@@ -604,11 +604,27 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_galil"
+        Category = "go_skins_galil",
+		CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/galil_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/galil_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/galil_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/galil_d.mdl",
         Category = "stickers",
     },
 }

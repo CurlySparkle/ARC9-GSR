@@ -579,7 +579,8 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_mp7"
+        Category = "go_skins_mp7",
+		CosmeticOnly = true,
     },
     {
         PrintName = "View",

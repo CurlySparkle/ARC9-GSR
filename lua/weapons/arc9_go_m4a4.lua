@@ -591,7 +591,7 @@ SWEP.Attachments = {
     {
         PrintName = "Grip",
         DefaultAttName = "Default",
-        Category = {"grip","grip_mk18","grip_m4","csgo_ubgl"},
+        Category = {"grip","grip_mk18","grip_m4","fas_ubgl"},
         Bone = "v_weapon.M4A1_Parent",
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
@@ -638,8 +638,29 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_m4a4"
+        Category = "go_skins_m4a4",
+		CosmeticOnly = true,
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_c.mdl",
+        Category = "stickers",
+    },
+    -- {
+        -- PrintName = "Stickers",
+        -- StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_d.mdl",
+        -- Category = "stickers",
+    -- },
 }
 
 SWEP.GripPoseParam2 = 0

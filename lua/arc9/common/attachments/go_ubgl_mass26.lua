@@ -12,7 +12,10 @@ ATT.Folder = "UBGL"
 ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
+
 ATT.ShotgunReloadUBGL = false
+ATT.MuzzleDeviceUBGL = true
+
 ATT.ModelOffset = Vector(-2.75, 0, -2.75)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
@@ -20,7 +23,7 @@ ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
         EventTable = {
-            {s =  "weapons/csgo/nova//nova_pump.wav" ,   t = 14 / 40},
+            {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 14 / 40},
         },		
     },
     ["fire_ubgl_empty"] = {
@@ -38,7 +41,7 @@ ATT.IKAnimationProxy = {
         EventTable = {		
             {s =  "weapons/csgo/m4a1/m4a1_clipout.wav" ,   t = 8 / 40},
             {s =  "weapons/csgo/m4a1/m4a1_clipin.wav" ,    t = 54 / 40},	
-            {s =  "weapons/csgo/nova//nova_pump.wav" ,   t = 80 / 40},			
+            {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 80 / 40},			
         },
     },	
     ["enter_ubgl"] = {
@@ -64,14 +67,17 @@ ATT.IKAnimationProxy = {
     },
 } -- When an animation event plays, override it with one based on this LHIK model.
 ATT.IKGunMotionQCA = 2
-ATT.IKCameraMotionQCA = nil
-
-ATT.IKGunMotionOffset = Vector(0, 0, 0)
-//ATT.IKGunMotionAngleOffset = Angle(0, 0, 90)  -- WHICH ONE IS IT?
-//ATT.IKGunMotionOffsetAngle = Angle(0, 0, 90)  -- DOES THIS EVEN WORK?
-
 ATT.IKGunMotionMult = 0.5
 ATT.IKGunMotionAngleMult = 0.5
+
+-- ATT.IKGunMotionOffset = Vector(0, 0, 0)
+-- //ATT.IKGunMotionAngleOffset = Angle(0, 0, 90)  -- WHICH ONE IS IT?
+-- //ATT.IKGunMotionOffsetAngle = Angle(0, 0, 90)  -- DOES THIS EVEN WORK?
+
+ATT.IKCameraMotionQCA = nil
+ATT.IKCameraMotionOffsetAngle = Angle(0, 90, 90)
+
+ATT.CamCoolViewUBGL = false
 
 ATT.Category = {"ubgl", "grip"}  -- maybe its own category?
 
@@ -100,14 +106,14 @@ ATT.ShootSoundSilencedUBGL = "CSGO.xm1014.Fire_Silenced"  -- M'AIDEZ CE NE MARCH
 ATT.DistantShootSoundUBGL = "CSGO.xm1014.Fire.Distance"
 ATT.DryFireSoundUBGL = "weapons/clipempty_rifle.wav"
 
-ATT.MuzzleParticleUBGL = "muzzleflash_shotgun"
+ATT.MuzzleParticleUBGL = "weapon_muzzle_flash_autoshotgun"
 
 ATT.HasSightsUBGL = false
 
 
 ATT.NumUBGL = 6
 -- General recoil multiplier
-ATT.RecoilUBGL = 1
+ATT.RecoilUBGL = 1.2
 ATT.RecoilSeedUBGL = 24862
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
@@ -143,19 +149,22 @@ ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before de
 
 ATT.PenetrationUBGL = 2 -- Units of wood that can be penetrated by this gun.
 
+-- ATT.Hook_ModifyBodygroups = function(wep, data)
+    -- local model = data.model
+    -- if wep.Attachments[1].Installed then model:SetBodygroup(3,1) end
+-- end
+
 ATT.Attachments = {
     {
         PrintName = [[Muzzle]],
         DefaultName = "None",
-		
         Category = {"muzzle_shotgun_ubgl"},
         Pos = Vector(-15.5, 0.2, -0.75),
-        Ang = Angle(0, 0, 0),
+        Ang = Angle(0, 0, 180),
 	},   
     {
         PrintName = "Ammo",
         DefaultName = "None",
-		
         Category = "go_ammo_sg_ubgl",
         Pos = Vector(-5, 0.2, -5),
         Ang = Angle(0, 0, 0),		

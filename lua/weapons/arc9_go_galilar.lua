@@ -520,12 +520,33 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_galilar"
+        Category = "go_skins_galilar",
+		CosmeticOnly = true,
     },
     {
         PrintName = "View",
         Category = "go_galilar_view"
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_c.mdl",
+        Category = "stickers",
+    },
+    -- {
+        -- PrintName = "Stickers",
+        -- StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_d.mdl",
+        -- Category = "stickers",
+    -- },
 }
 
 SWEP.GripPoseParam = 3

@@ -727,16 +727,24 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_ak47"
+        Category = "go_skins_ak47",
+		CosmeticOnly = true,
     },
-    -- {
-        -- PrintName = "Stickers",
-        -- DefaultCompactName = "None",
-        -- Bone = "v_weapon.ak47_parent",
-        -- Pos = Vector(0, -1.13, 0),
-        -- Ang = Angle(90, 0, -90),
-        -- Category = "stickers_ak",
-    -- },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_c.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4

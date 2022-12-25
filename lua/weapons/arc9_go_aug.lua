@@ -483,7 +483,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
-        //CorrectiveAng = Angle(-0.7, -0.7, 0),
+        CorrectiveAng = Angle(-0.7, -0.7, 0),
         Installed = "csgo_optic_acog_2",
         Integral = false,
     },
@@ -540,16 +540,29 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_aug"
+        Category = "go_skins_aug",
+		CosmeticOnly = true,
     },
-    -- {
-        -- PrintName = "Stickers",
-        -- DefaultCompactName = "None",
-        -- Bone = "v_weapon.aug_parent",
-        -- Pos = Vector(0, 0, 0),
-        -- Ang = Angle(90, 0, -90),
-        -- Category = "stickers_aug",
-    -- },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_aug_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_aug_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_aug_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rif_aug_decal_d.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4
