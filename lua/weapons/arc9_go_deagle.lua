@@ -249,6 +249,20 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    //local attached = self:GetElements()
+    local rng = math.Truncate(util.SharedRandom("ik hou van jij", 0,100))
+
+	if rng <= 30 then -- kill me
+		if anim == "reload" then		
+			return "reload_tacticool" 
+		end	
+		if anim == "reload_empty" then		
+			return "reload_tacticool_empty" 
+		end
+    end
+end
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -261,23 +275,36 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		RareSource = {"reload_short_tacticool"},
-		RareSourceChance = 0.3,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8 / 30},
             {s = path .. "de_clipin.wav", t = 19 / 30},
+        },
+    },  
+	["reload_tacticool"] = {
+        Source = "reload_short_tacticool",
+        EventTable = {
+            {s = path .. "de_clipout.wav", t = 15 / 30},
+            {s = path .. "de_clipin.wav", t = 32 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.42,
-		RareSource = {"reload_tacticool"},
-		RareSourceChance = 0.3,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8 / 30},
             {s = path .. "de_clipin.wav", t = 19 / 30},
             {s = path .. "de_slideback.wav", t = 41 / 30},
             {s = path .. "de_slideforward.wav", t = 47 / 30},
+        },
+    },   
+	["reload_tacticool_empty"] = {
+        Source = "reload_tacticool",
+		MinProgress = 0.48,
+        EventTable = {
+            {s = path .. "de_clipout.wav", t = 15 / 30},
+            {s = path .. "de_clipin.wav", t = 32 / 30},
+            {s = path .. "de_slideback.wav", t = 52 / 30},
+            {s = path .. "de_slideforward.wav", t = 58 / 30},
         },
     },
     ["reload_alt"] = {
@@ -293,7 +320,7 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "de_clipout.wav", t = 10 / 30},
             {s = path .. "de_clipin.wav", t = 25 / 30},
-            {s = path .. "de_slideback.wav", t = 41 / 30},
+            //{s = path .. "de_slideback.wav", t = 41 / 30},
             {s = path .. "de_slideforward.wav", t = 47 / 30},
         },
     },
@@ -344,14 +371,6 @@ SWEP.Animations = {
 }
 
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
-
--- SWEP.Hook_TranslateAnimation = function(swep, anim)    
-    -- if anim == "reload" then
-        -- local rand = math.Truncate(util.SharedRandom("hi", 0, 2))
-
-        -- return anim .. rand ..
-    -- end
--- end
 
 -------------------------- ATTACHMENTS
 
