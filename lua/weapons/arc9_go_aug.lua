@@ -484,7 +484,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
-        CorrectiveAng = Angle(-0.7, -0.7, 0),
+        //CorrectiveAng = Angle(-0.7, -0.7, 0),
         Installed = "csgo_optic_acog_2",
         Integral = false,
     },

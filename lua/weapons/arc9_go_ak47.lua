@@ -656,7 +656,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic",},
         InstalledElements = {"topcover"},
         ExcludeElements = {"csgo_rail_optic_ak"},
-        CorrectiveAng = Angle(0.75, 0.7, 0),
+        //CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {
         PrintName = "Dovetail",

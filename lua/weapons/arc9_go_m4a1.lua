@@ -800,7 +800,7 @@ SWEP.Attachments = {
         --InstalledElements = {"reciever_m16a4"},
 		Installed = "csgo_m4a1_reciever_default",
         Integral = true,
-        CorrectiveAng = Angle(-0.1, 0.45, 0),
+        //CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {
         PrintName = "Barrel",
