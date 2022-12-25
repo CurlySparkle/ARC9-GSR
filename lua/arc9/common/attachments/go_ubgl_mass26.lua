@@ -96,7 +96,7 @@ ATT.SpreadUBGL = 0.035
 
 ATT.FirstShootSoundUBGL = false
 ATT.ShootSoundUBGL = "CSGO.xm1014.Fire"
-ATT.ShootSoundSilencedUBGL = "CSGO.xm1014.Fire_Silenced"  -- M'AIDEZ CE N'EST PAS MARCHE
+ATT.ShootSoundSilencedUBGL = "CSGO.xm1014.Fire_Silenced"  -- M'AIDEZ CE NE MARCHE PAS
 ATT.DistantShootSoundUBGL = "CSGO.xm1014.Fire.Distance"
 ATT.DryFireSoundUBGL = "weapons/clipempty_rifle.wav"
 
