@@ -27,7 +27,7 @@ SWEP.Description = [[Essentially a box that bullets come out of, the MAC-10 SMG 
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mac10.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mac10.mdl"
-SWEP.DefaultBodygroups = "0000000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
 
@@ -248,6 +248,15 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
+SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload_empty" and attached["DefGrip"] then 
+        return "reload_empty_optic"
+    end
+end
+
+
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -286,6 +295,37 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mac10_clipout.wav", t = 9 / 30},
+            {s = path .. "mac10_clipin.wav", t = 30 / 30},
+            {s = path .. "mac10_boltback.wav", t = 50 / 30},
+            {s = path .. "mac10_boltforward.wav", t = 60 / 30},
+        },
+    },  
+	["reload_empty_optic"] = {
+        Source = "reload_optic",
         IKTimeLine = {
             {
                 t = 0,
@@ -412,7 +452,7 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["DefGrip"] = {
         Bodygroups = {
-            {1,1},
+            {1,1}, {3,1},
         },
     },
     ["stock_extend"] = {
