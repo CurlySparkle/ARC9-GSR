@@ -29,7 +29,10 @@ ATT.Bipod = true
 ATT.DrawFunc = function(self, model, wm)
 	if self:GetBipod() then
 		model:SetBodygroup(0,1)
+	else 
+		model:SetBodygroup(0,0)
 	end
 end
+
 ATT.BipodPos = Vector(-6, 0, 0)
 ATT.BipodAng = Angle(0, 0, 0)
