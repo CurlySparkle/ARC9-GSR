@@ -67,9 +67,8 @@ ATT.Category = {"ubgl", "grip"}  -- maybe its own category?
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
-
--- note to Miss Brony: this shit works exactly like a normal weapon lua but with a UBGL suffix at the end
--- might want to change this cuz this is the exact stats from the xm1014
+---- stats ----
+ATT.NumUBGL = 1
 
 ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"
