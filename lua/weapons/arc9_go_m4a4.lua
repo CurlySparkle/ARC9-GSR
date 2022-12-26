@@ -633,7 +633,7 @@ SWEP.AttachmentElements = {
     AttPosMods = { 
 	[2] = { Pos = Vector(0, -5, 27.4),
 	},
-	[4] = { Pos = Vector(0, -3.75, 10.5),
+	[4] = { Pos = Vector(0, -3.75, 10),
 	},
 	}
     },
@@ -689,7 +689,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"grip","grip_mk18","grip_m4","fas_ubgl"},
         Bone = "v_weapon.M4A1_Parent",
-        Pos = Vector(0, -3.9, 10.5),
+        Pos = Vector(0, -3.9, 10),
         Ang = Angle(90, 0, 90),
     },
     {
