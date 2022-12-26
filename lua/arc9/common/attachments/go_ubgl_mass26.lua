@@ -56,9 +56,6 @@ ATT.IKAnimationProxy = {
     ["idle_ubgl_empty"] = {
         Source = "ubgl"
     },
-    ["idle"] = {
-        Source = "idle",
-    },
     ["exit_ubgl"] = {
         Source = "from_ubgl",
         EventTable = {		
