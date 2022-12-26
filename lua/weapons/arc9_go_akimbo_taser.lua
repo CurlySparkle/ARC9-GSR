@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - CS:GO: Akimbo"
+SWEP.Category = "ARC9 - GS:R: Akimbo"
 
 SWEP.PrintName = "Dual Zeus x27"
 SWEP.TrueName = "Dual Zeus x27"

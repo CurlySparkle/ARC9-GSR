@@ -1,6 +1,8 @@
+local ATT = {}
+
 ATT.PrintName = [[MASS-26 Breaching Shotgun]]
 ATT.CompactName = [[M26]]
-//ATT.Icon = Material("entities/att/acwatt_uc_ubgl_m203.png")
+ATT.Icon = Material("entities/attachs/go_attach_ubgl_mass.png")
 ATT.Description = [[
     5-Round 12 gauge box magazine pumping shotgun for your handguard
 ]]
@@ -63,6 +65,15 @@ ATT.IKAnimationProxy = {
             {s =  "ARC9_CSGO_SMG_Draw", t = 0 / 40},	
         },			
     },
+    ["idle_sprint_ubgl"] = {
+        Source = "",
+    },
+    ["exit_sprint_ubgl"] = {
+        Source = "",
+    },
+    ["enter_sprint_ubgl"] = {
+        Source = "",
+    },
 } -- When an animation event plays, override it with one based on this LHIK model.
 ATT.IKGunMotionQCA = 2
 ATT.IKGunMotionMult = 0.5
@@ -107,10 +118,12 @@ ATT.MuzzleParticleUBGL = "weapon_muzzle_flash_autoshotgun"
 
 ATT.HasSightsUBGL = false
 
+ATT.SprintAngUBGL = Angle(30, -15, 0)
+ATT.SprintPosUBGL = Vector(2, 4, 2)
 
 ATT.NumUBGL = 6
 -- General recoil multiplier
-ATT.RecoilUBGL = 1.2
+ATT.RecoilUBGL = 1.5
 ATT.RecoilSeedUBGL = 24862
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
@@ -144,7 +157,7 @@ ATT.DamageRandUBGL = 0.1 -- Damage varies randomly per shot by this fraction. 0.
 ATT.RangeMinUBGL = 300 -- How far bullets retain their maximum damage for.
 ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-ATT.PenetrationUBGL = 2 -- Units of wood that can be penetrated by this gun.
+ATT.PenetrationUBGL = 5 -- Units of wood that can be penetrated by this gun.
 
 ATT.DrawFunc = function(swep, model, wm)
     if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
@@ -167,3 +180,5 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 }
+
+ARC9.LoadAttachment(ATT, "go_ubgl_mass26")

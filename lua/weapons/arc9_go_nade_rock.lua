@@ -1,7 +1,7 @@
 SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_rock")
 
 SWEP.Base = "arc9_base_nade"
-SWEP.Category = "ARC9 - CS:GO: ETC"
+SWEP.Category = "ARC9 - GS:R: ETC"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true

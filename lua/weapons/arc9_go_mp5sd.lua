@@ -7,7 +7,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - CS:GO"
+SWEP.Category = "ARC9 - GS:R"
 
 SWEP.PrintName = "MP5-SD"
 SWEP.TrueName = "MP5-SD"
@@ -550,6 +550,26 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_mp5sd",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_d.mdl",
+        Category = "stickers",
     },
 }
 

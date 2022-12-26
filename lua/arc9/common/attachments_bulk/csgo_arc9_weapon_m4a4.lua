@@ -122,7 +122,7 @@ ATT = {}
 
 ATT.PrintName = [[25-Round 9mm Magazine]]
 ATT.CompactName = [[25 9mm]]
-//ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Icon = Material("entities/attachs/go_m4_mag_21_9mm.png")
 ATT.Description = [[
 How.
 ]]
@@ -166,7 +166,7 @@ ATT = {}
 
 ATT.PrintName = [[32-Round 9mm Magazine]]
 ATT.CompactName = [[32 9mm]]
-//ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Icon = Material("entities/attachs/go_m4_mag_30_9mm.png")
 ATT.Description = [[
 How.
 ]]
