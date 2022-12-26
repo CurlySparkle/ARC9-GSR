@@ -10,6 +10,7 @@ ATT.SortOrder = 100
 ATT.Folder = "UBGL"
 
 ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
+ATT.ModelBodygroups = "00000000"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
 
@@ -68,8 +69,8 @@ ATT.IKGunMotionMult = 0.5
 ATT.IKGunMotionAngleMult = 0.5
 
 -- ATT.IKGunMotionOffset = Vector(0, 0, 0)
--- //ATT.IKGunMotionAngleOffset = Angle(0, 0, 90)  -- WHICH ONE IS IT?
--- //ATT.IKGunMotionOffsetAngle = Angle(0, 0, 90)  -- DOES THIS EVEN WORK?
+-- ATT.IKGunMotionAngleOffset = Angle(0, 0, 90)  -- WHICH ONE IS IT?
+-- ATT.IKGunMotionOffsetAngle = Angle(0, 0, 90)  -- DOES THIS EVEN WORK?
 
 ATT.IKCameraMotionQCA = nil
 ATT.IKCameraMotionOffsetAngle = Angle(0, 90, 90)
@@ -83,8 +84,7 @@ ATT.SprintToFireTimeMult = 1.1
 
 
 -- note to Miss Brony: this shit works exactly like a normal weapon lua but with a UBGL suffix at the end
--- might want to change this cuz i use my css mod for stats here
-
+-- might want to change this cuz this is the exact stats from the xm1014
 
 ATT.UBGL = true
 ATT.UBGLAmmo = "buckshot"
@@ -146,17 +146,17 @@ ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before de
 
 ATT.PenetrationUBGL = 2 -- Units of wood that can be penetrated by this gun.
 
--- ATT.Hook_ModifyBodygroups = function(wep, data)
-    -- local model = data.model
-    -- if wep.Attachments[1].Installed then model:SetBodygroup(3,1) end
--- end
+ATT.DrawFunc = function(swep, model, wm)
+    if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
+end
 
 ATT.Attachments = {
     {
         PrintName = [[Muzzle]],
         DefaultName = "None",
         Category = {"muzzle_shotgun_ubgl"},
-        Pos = Vector(-15.5, 0.2, -0.75),
+        InstalledElements = {"ubgl_accune_canon"},		
+        Pos = Vector(-15.4, 0.2, -0.75),
         Ang = Angle(0, 0, 180),
 	},   
     {

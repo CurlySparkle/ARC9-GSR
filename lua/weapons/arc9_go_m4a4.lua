@@ -312,6 +312,99 @@ SWEP.Animations = {
             {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 35 / 30},
             {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 57 / 30},
         },
+    }, 
+	["reload_alt"] = {
+        Source = "reload_short_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 10 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 34 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 50 / 30},
+        },
+    },
+    ["reload_empty_alt"] = {
+        Source = "reload_alt",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 10 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 34 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 50 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_boltback.wav", t = 65 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_boltforward.wav", t = 70 / 30},			
+        },
+    }, 
+	["reload_empty_alt_2"] = {
+        Source = "reload_alt_2",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = "weapons/csgo/m4a1/m4a1_clipout.wav", t = 10 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_clipin.wav", t = 34 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 50 / 30},
+            {s = "weapons/csgo/m4a1/m4a1_cliphit.wav", t = 65 / 30},			
+        },
     },
     ["ready"] = {
         Source = "draw",
@@ -554,6 +647,9 @@ SWEP.AttachmentElements = {
             {6,3},
         },
     },
+    ["mag_20_5"] = { Bodygroups = { {6,2}, }, },  
+	["mag_25_9"] = { Bodygroups = { {6,4}, }, },
+	["mag_32_9"] = { Bodygroups = { {6,5}, }, },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -625,7 +721,7 @@ SWEP.Attachments = {
         PrintName = "Ammo",
         Bone = "v_weapon.M4A1_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 1, 0),
+        Icon_Offset = Vector(0, 0, -4),
     },
     {
         PrintName = "Perk",

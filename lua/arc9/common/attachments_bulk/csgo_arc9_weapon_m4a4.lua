@@ -90,6 +90,123 @@ end
 
 ARC9.LoadAttachment(ATT, "csgo_m4_mag_20")
 
+------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[20-Round 5.56 Magazine]]
+ATT.CompactName = [[20 5.56]]
+ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Description = [[
+Less capacity.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = -2
+ATT.Free = false
+
+ATT.Category = {"go_mag_m4"}
+ATT.ClipSizeOverride = 20
+ATT.ReloadTimeMult = 0.95
+
+ATT.ActivateElements = {"mag_20_5"}
+--ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_m4_mag_20_5")
+
+------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[25-Round 9mm Magazine]]
+ATT.CompactName = [[25 9mm]]
+//ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Description = [[
+How.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = -2
+ATT.Free = false
+
+ATT.Category = {"go_mag_m4"}
+ATT.ClipSizeOverride = 25
+ATT.ReloadTimeMult = 0.9
+
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
+ATT.SpreadMultSights = 1.1
+ATT.SpreadMult = 1.15
+ATT.RecoilMult = 0.85
+ATT.RecoilKickMult = 0.85
+ATT.Ammo = "SMG1"
+
+ATT.ActivateElements = {"mag_25_9"}
+--ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+	if anim == "reload_empty" then 
+        return "reload_empty_alt_2"
+    end	
+
+    return anim .. "_alt"
+end
+
+ATT.ShootSound = "CSGO.MAC10.Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
+ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
+
+ARC9.LoadAttachment(ATT, "csgo_m4_mag_25_9")
+
+------------------------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[32-Round 9mm Magazine]]
+ATT.CompactName = [[32 9mm]]
+//ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
+ATT.Description = [[
+How.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = -2
+ATT.Free = false
+
+ATT.Category = {"go_mag_m4"}
+ATT.ClipSizeOverride = 32
+ATT.ReloadTimeMult = 1
+
+ATT.DamageMaxMult = 19/28
+ATT.DamageMinMult = 8/10
+ATT.SpreadMultSights = 1.1
+ATT.SpreadMult = 1.15
+ATT.RecoilMult = 0.85
+ATT.RecoilKickMult = 0.85
+ATT.Ammo = "SMG1"
+
+ATT.ActivateElements = {"mag_32_9"}
+--ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+	if anim == "reload_empty" then 
+        return "reload_empty_alt_2"
+    end	
+
+    return anim .. "_alt"
+end
+
+ATT.ShootSound = "CSGO.MAC10.Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
+ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
+
+ARC9.LoadAttachment(ATT, "csgo_m4_mag_32_9")
+
+------------------------------------------------------------------------------------------------
+
 ATT = {}
 
 ATT.PrintName = "Sniper Barrel"
