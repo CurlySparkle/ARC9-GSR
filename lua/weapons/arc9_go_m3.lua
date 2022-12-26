@@ -231,6 +231,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 0)
 SWEP.NoViewBob = false
 
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)

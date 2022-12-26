@@ -51,18 +51,19 @@ SWEP.Num = 6
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1700 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 4200 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 1 -- Units of wood that can be penetrated by this gun.
+SWEP.RicochetChance = 0
 
 SWEP.ImpactForce = 25
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 1250 * 12
-
-SWEP.RicochetChance = 0
+SWEP.PhysBulletMuzzleVelocity = 1410.76 * 12
+SWEP.PhysBulletGravity = 2
+SWEP.PhysBulletDrag = 3
 
 -------------------------- MAGAZINE
 
@@ -220,6 +221,7 @@ SWEP.AnimDraw = false
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_autoshotgun"
 SWEP.AfterShotParticle = "barrel_smoke_plume"
+SWEP.AfterShotParticleDelay = 0
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -227,6 +229,7 @@ SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
