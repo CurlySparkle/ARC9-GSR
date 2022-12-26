@@ -676,17 +676,17 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Sticker",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_a.mdl",
+        StickerModel = "models/weapons/stickers/v_models/p90_a.mdl",
         Category = "stickers",
     },
     {
         PrintName = "Sticker",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_b.mdl",
+        StickerModel = "models/weapons/stickers/v_models/p90_b.mdl",
         Category = "stickers",
     },
     {
         PrintName = "Sticker",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_c.mdl",
+        StickerModel = "models/weapons/stickers/v_models/p90_c.mdl",
         Category = "stickers",
     },
     {
