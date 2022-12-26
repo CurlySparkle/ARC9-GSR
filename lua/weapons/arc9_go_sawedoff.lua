@@ -582,6 +582,26 @@ SWEP.Attachments = {
         Category = "go_skins_sawnoff",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_d.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4

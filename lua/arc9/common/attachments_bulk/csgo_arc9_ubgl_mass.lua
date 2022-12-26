@@ -114,7 +114,7 @@ ATT.ShootSoundSilencedUBGL = "CSGO.xm1014.Fire_Silenced"  -- M'AIDEZ CE NE MARCH
 ATT.DistantShootSoundUBGL = "CSGO.xm1014.Fire.Distance"
 ATT.DryFireSoundUBGL = "weapons/clipempty_rifle.wav"
 
-ATT.MuzzleParticleUBGL = "weapon_muzzle_flash_autoshotgun"
+ATT.MuzzleParticleUBGL = "weapon_muzzle_flash_assaultrifle_comp"
 
 ATT.HasSightsUBGL = false
 

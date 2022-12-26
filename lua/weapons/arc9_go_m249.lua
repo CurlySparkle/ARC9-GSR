@@ -657,6 +657,21 @@ SWEP.Attachments = {
         Category = "go_skins_m249",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/m249_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/m249_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/m249_c.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 3

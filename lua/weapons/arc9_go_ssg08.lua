@@ -60,7 +60,7 @@ SWEP.PhysBulletMuzzleVelocity = 3000 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "SniperRound" -- What ammo type this gun uses.
+SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.
@@ -478,6 +478,21 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_ssg08",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/ssg08_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/ssg08_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/ssg08_c.mdl",
+        Category = "stickers",
     },
 }
 

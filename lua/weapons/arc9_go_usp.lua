@@ -620,4 +620,19 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_a.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/pist_223_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/pist_223_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/pist_223_decal_d.mdl",
+        Category = "stickers",
+    },
 }

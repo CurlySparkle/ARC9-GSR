@@ -529,6 +529,26 @@ SWEP.Attachments = {
         PrintName = "View",
         Category = "go_mp9_view"
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp9_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp9_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp9_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mp9_decal_d.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4.7

@@ -58,7 +58,7 @@ SWEP.PhysBulletMuzzleVelocity = 3000 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "SniperRound" -- What ammo type this gun uses.
+SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.

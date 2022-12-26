@@ -463,4 +463,24 @@ SWEP.Attachments = {
         Category = "go_skins_glock",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/glock_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/glock_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/glock_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/glock_d.mdl",
+        Category = "stickers",
+    },
 }

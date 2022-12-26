@@ -706,6 +706,26 @@ SWEP.Attachments = {
         PrintName = "View",
         Category = "go_negev_view"
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_d.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 3

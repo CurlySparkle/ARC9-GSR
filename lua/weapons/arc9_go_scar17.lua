@@ -540,6 +540,21 @@ SWEP.Attachments = {
         Category = "go_skins_scar17",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/scar17_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/scar17_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/scar17_c.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 5

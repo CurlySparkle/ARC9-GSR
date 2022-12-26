@@ -525,6 +525,26 @@ SWEP.Attachments = {
         Category = "go_skins_mac10",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mac10_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mac10_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mac10_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_mac10_decal_d.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 3

@@ -223,7 +223,7 @@ SWEP.ShouldDropMagEmpty = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.08
+SWEP.ShellScale = 0.06
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
@@ -687,6 +687,11 @@ SWEP.Attachments = {
     {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_d.mdl",
         Category = "stickers",
     },
 }

@@ -11,6 +11,8 @@ ATT.Category = {"csgo_tac"}
 ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
 ATT.Folder = "TACTICAL"
 
+ATT.ToggleOnF = true
+
 ATT.ToggleStats = {
     {
         PrintName = "Laser",

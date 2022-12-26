@@ -829,7 +829,27 @@ SWEP.Attachments = {
 		ExcludeElements = {"barrel_1"},
 		RequireElements = {"mag_g4_barrel"},
         Category = "go_g3_barrel_smg2"	
-    },  
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/g3sg1_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/g3sg1_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/g3sg1_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/g3sg1_c.mdl",
+        Category = "stickers",
+    },	
 }
 
 SWEP.GripPoseParam = 3

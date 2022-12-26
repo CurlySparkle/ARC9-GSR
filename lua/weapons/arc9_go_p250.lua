@@ -460,4 +460,24 @@ SWEP.Attachments = {
         Category = "go_skins_p250",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/p255_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/p255_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/p255_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/p255_d.mdl",
+        Category = "stickers",
+    },
 }

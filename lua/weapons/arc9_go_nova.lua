@@ -566,6 +566,26 @@ SWEP.Attachments = {
         Category = "go_skins_nova",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_d.mdl",
+        Category = "stickers",
+    },
 }
 
 SWEP.GripPoseParam = 4

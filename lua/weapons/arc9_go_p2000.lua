@@ -421,4 +421,24 @@ SWEP.Attachments = {
         Category = "go_skins_p2000",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_d.mdl",
+        Category = "stickers",
+    },
 }

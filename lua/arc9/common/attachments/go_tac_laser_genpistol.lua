@@ -11,7 +11,7 @@ ATT.Category = {"csgo_tac_pistols"}
 ATT.Model = "models/weapons/csgo/atts/tactical/GENLaserPISTOL.mdl"
 ATT.Folder = "TACTICAL"
 
-ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
         PrintName = "Laser",
