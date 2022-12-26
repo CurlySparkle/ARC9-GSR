@@ -19,8 +19,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[An ideal pistol for the Terrorist on the move, the Tec-9 is lethal in close quarters and features a high magazine capacity but a terrible recoi.]]

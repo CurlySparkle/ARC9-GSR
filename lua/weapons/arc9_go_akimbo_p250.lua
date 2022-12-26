@@ -19,8 +19,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents.]]
@@ -448,5 +448,25 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_p250",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_p250_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_p250_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_p250_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_p250_d.mdl",
+        Category = "stickers",
     },
 }

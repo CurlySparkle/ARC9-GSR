@@ -19,8 +19,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[Mais oui.]]
@@ -481,4 +481,24 @@ SWEP.Attachments = {
         Category = "go_skins_elite",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_b.mdl",
+        Category = "stickers",
+    },
+    -- {
+        -- PrintName = "Stickers",
+        -- StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_c.mdl",
+        -- Category = "stickers",
+    -- },
+    -- {
+        -- PrintName = "Stickers",
+        -- StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_d.mdl",
+        -- Category = "stickers",
+    -- },
 }

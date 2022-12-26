@@ -18,8 +18,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[The SG 556 is a premium scoped alternative to the AK-47 for effective long-range engagement.

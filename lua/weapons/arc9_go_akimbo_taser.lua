@@ -11,8 +11,8 @@ SWEP.TrueName = "Dual Zeus x27"
 SWEP.Class = "Special"
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit.]]

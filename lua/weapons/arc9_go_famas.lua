@@ -19,8 +19,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs.]]
@@ -88,7 +88,7 @@ SWEP.Firemodes = {
 		SpreadAddRecoil = 0.0002,
 		SpreadAddHipFire = 0.02,
 		SpreadAddMove = 0.05,
-		ActivePos = Vector(-0.3, 0, -0.3)
+		--ActivePos = Vector(-0.3, 0, -0.3)
         -- add other attachment modifiers
     }
 }

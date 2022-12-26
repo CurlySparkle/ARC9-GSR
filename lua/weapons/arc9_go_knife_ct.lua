@@ -1,6 +1,8 @@
 AddCSLuaFile()
 
-SWEP.Base = "arc9_go_base"
+SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_ctknife")
+
+SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R: Melee"
@@ -10,30 +12,28 @@ SWEP.PrintName = "CT Knife"
 SWEP.Class = "Melee"
 
 SWEP.Credits = {
-    Author = "Twilight Sparle/eckololt",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill.]]
 
 SWEP.ViewModel = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
-SWEP.WorldModel = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
+SWEP.WorldModel = "models/weapons/w_knife_ct.mdl"
+
+SWEP.NoTPIKVMPos = true
+SWEP.NoTPIK = true
 
 SWEP.Slot = 0
 
 SWEP.MirrorVMWM = true
--- SWEP.NoTPIKVMPos = true
-SWEP.NoTPIK = true
-SWEP.WorldModelMirror = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, -16, -5.5), -- total ass
-    Ang = Angle(-5, -50, 180 + 70),
-    Scale = 1
+    Pos = Vector(-15, -3, -7),
+    TPIKPos = Vector(-18, 4, -4),
+    Ang = Angle(0, 0, -99),
+    Scale = 0.75
 }
 
-SWEP.DefaultBodygroups = "00"
-
-SWEP.CanBlindFire = false
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 -------------------------- MAGAZINE
@@ -63,26 +63,33 @@ SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being a
 
 SWEP.ShootWhileSprint = true
 
+SWEP.SprintVerticalOffset = false
+
 -------------------------- MELEE
 
 SWEP.Bash = true
 SWEP.PrimaryBash = true
+SWEP.Bash2 = true
 SWEP.SecondaryBash = true
+
+SWEP.BashLungeRange = 0
+SWEP.Bash2LungeRange = 0
 
 SWEP.BashDamage = 35
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.13
+SWEP.PreBashTime = 0.12
 SWEP.PostBashTime = 0.3
 
 SWEP.BashDamage = 45
-SWEP.PreBash2Time = 0.05
+SWEP.PreBash2Time = 0.04
 SWEP.PostBash2Time = 0.85
 
 SWEP.Backstab = true
-SWEP.BackstabDamage = 100
+SWEP.BackstabDamage = 250
 SWEP.BackstabRange = 64
-SWEP.PreBackstabTime = 0.5
-SWEP.PostBackstabTime = 0.5
+SWEP.PreBackstabTime = 0
+SWEP.PostBackstabTime = 1
+SWEP.BackstabDamageType = DMG_SLASH
 
 SWEP.ImpactForce = 15
 
@@ -117,9 +124,9 @@ SWEP.MovingMidPoint = {
 SWEP.MovingPos = Vector(0, -3, -1)
 SWEP.MovingAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(-90, 90, 90)
-SWEP.CustomizePos = Vector(-7.5, 32, 10)
-SWEP.CustomizeSnapshotFOV = 64
+SWEP.CustomizeAng = Angle(0, 90, 90)
+SWEP.CustomizePos = Vector(-20, 15, -17)
+SWEP.CustomizeSnapshotFOV = 56
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
@@ -131,9 +138,11 @@ SWEP.HoldTypeHolstered = "knife"
 SWEP.HoldTypeCustomize = "knife"
 SWEP.HoldTypeBlindfire = "knife"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL
 SWEP.AnimDraw = false
+SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 
 -------------------------- SOUNDS
 
@@ -150,16 +159,21 @@ SWEP.Animations = {
 		Mult = 0.2,
     },
     ["bash"] = {
-        Source = {"light_hit1","light_hit2"}
+        Source = {
+            "light_hit1",
+            "light_hit2"
+        }
     },
     ["bash2"] = {
-        Source = {"heavy_hit1"}
+        Source = {
+            "heavy_hit1"
+        }
     },
     ["backstab"] = {
-        Source = {"light_backstab"},
+        Source = "light_backstab"
     },
     ["backstab2"] = {
-        Source = {"heavy_backstab"},
+        Source = "heavy_backstab"
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -214,6 +228,7 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_knife_ct"
+        Category = "go_skins_knife_ct",
+		CosmeticOnly = true,
     },
 }

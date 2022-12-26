@@ -19,8 +19,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Arctic/Twilight",
-    Assets = "Counter-Strike Global Offensive"
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it.]]
@@ -227,7 +227,7 @@ SWEP.CamQCA_Mult = 0.5
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 
-SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
+SWEP.ShellModel = "models/models/weapons/shared/shell_249_hr_2.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0, 0, 0)
@@ -537,15 +537,15 @@ SWEP.Animations = {
 
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
-SWEP.Hook_PrimaryAttack = function(self)
-    if self:GetElements()["mag_556m"] then return end
+-- SWEP.Hook_PrimaryAttack = function(self)
+    -- if self:GetElements()["mag_556m"] then return end
 
-    self:DoEject(1, 3)
+    -- self:DoEject(1, 3)
 
-    if self:Clip1() == self:GetCapacity() then
-        self:DoEject(2, 3)
-    end
-end
+    -- if self:Clip1() == self:GetCapacity() then
+        -- self:DoEject(2, 3)
+    -- end
+-- end
 
 SWEP.Hook_HideBones = function(self, bones)
     if self:GetLoadedRounds() < self:GetCapacity() then
@@ -716,11 +716,11 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_b.mdl",
         Category = "stickers",
     },
-    {
-        PrintName = "Sticker",
-        StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_c.mdl",
-        Category = "stickers",
-    },
+    -- {
+        -- PrintName = "Sticker",
+        -- StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_c.mdl",
+        -- Category = "stickers",
+    -- },
     {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_d.mdl",

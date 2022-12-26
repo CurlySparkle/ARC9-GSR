@@ -11,7 +11,7 @@ SWEP.Class = "Melee"
 
 SWEP.Credits = {
     Author = "Twilight Sparle/SlogoKolt",
-    Assets = "Counter-Strike Global Offensive"
+    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Description = [[
