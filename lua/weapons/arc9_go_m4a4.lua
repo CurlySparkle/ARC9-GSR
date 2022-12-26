@@ -666,7 +666,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"mount","frontiron"},
-        //CorrectiveAng = Angle(-0.1, 0.45, 0),
+        CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {
         PrintName = "Muzzle",

@@ -484,7 +484,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"sights"},
-        //CorrectiveAng = Angle(-0.85, 0, 0),
+        CorrectiveAng = Angle(-0.85, 0, 0),
     },
     {
         PrintName = "Barrel",
