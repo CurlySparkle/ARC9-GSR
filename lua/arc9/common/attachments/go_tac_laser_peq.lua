@@ -11,24 +11,30 @@ ATT.Category = {"csgo_tac"}
 ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
 ATT.Folder = "TACTICAL"
 
-ATT.ToggleOnF = true
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpreadMult = 0.9
 
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = "Laser",
+        PrintName = "Both",
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
-        LaserAttachment = 1,
+        LaserAttachment = 2,
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 70,
+        FlashlightAttachment = 1,
+        SwayMult = 1.02,
+        FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
-        FlareColor = Color(255, 0, 0),
-        FlareSize = 50,
-        FlareAttachment = 1,
-        FlareFocus = true,
-		ToggleOnF = false,
-        AimDownSightsTimeMult = 0.9,
-        SprintToFireTimeMult = 0.9,
-        SpreadMultHipFire = 0.9
+        FlareColor = Color(150, 255, 150),
+        FlareSize = 150,
+        FlareAttachment = 1
     },
     {
         PrintName = "Light",
@@ -37,36 +43,27 @@ ATT.ToggleStats = {
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 1024,
         FlashlightFOV = 70,
-        FlashlightAttachment = 2,
+        FlashlightAttachment = 1,
+        SwayMult = 1.02,
+        FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
-		ToggleOnF = true,
         FlareColor = Color(255, 255, 255),
         FlareSize = 125,
-        FlareAttachment = 2,
-        AimDownSightsTimeMult = 0.9,
-        SprintToFireTimeMult = 0.9,
-        SpreadMultHipFire = 0.9
+        FlareAttachment = 1
     },
     {
-        PrintName = "Both",
+        PrintName = "Laser",
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
-        LaserAttachment = 1,
-        Flashlight = true,
-        FlashlightColor = Color(255, 255, 255),
-        FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 1024,
-        FlashlightFOV = 70,
-        FlashlightAttachment = 2,
+        LaserAttachment = 2,
+        SwayMult = 1.02,
+        FreeAimRadiusMultHipFire = 0.75,
         Flare = true,
-		ToggleOnF = true,
-        FlareColor = Color(150, 255, 150),
-        FlareSize = 150,
+        FlareColor = Color(0, 255, 0),
+        FlareSize = 50,
         FlareAttachment = 2,
-        AimDownSightsTimeMult = 0.9,
-        SprintToFireTimeMult = 0.9,
-        SpreadMultHipFire = 0.9
+        FlareFocus = true
     },
     {
         PrintName = "None",

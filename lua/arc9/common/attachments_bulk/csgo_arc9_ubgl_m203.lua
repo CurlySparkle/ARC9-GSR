@@ -106,7 +106,7 @@ ATT.SpreadUBGL = 0
 
 ATT.FirstShootSoundUBGL = false
 ATT.ShootSoundUBGL = "weapons/m230_fire.ogg"
-ATT.DistantShootSoundUBGL = "weapons/m230_fire.ogg"
+ATT.DistantShootSoundUBGL = false
 ATT.HasSightsUBGL = false
 
 -- General recoil multiplier

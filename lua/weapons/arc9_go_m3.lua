@@ -393,11 +393,9 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -437,7 +435,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 1
+                rhik = 0
             },
             {
                 t = 0.2,
@@ -446,8 +444,8 @@ SWEP.Animations = {
             },
             {
                 t = 0.7,
-                lhik = 0,
-                rhik = 0
+                lhik = 1,
+                rhik = 1
             },
             {
                 t = 0.75,

@@ -64,6 +64,8 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true 
 
+SWEP.ShootAngOffset = Angle(3, 0, 0)
+
 -------------------------- POSITIONS
 
 SWEP.HasSights = false
