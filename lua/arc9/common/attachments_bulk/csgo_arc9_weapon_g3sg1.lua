@@ -288,8 +288,8 @@ ATT.ClipSizeOverride = 30
 
 ATT.RPM = 500
 
-ATT.DamageMaxMult = 19/28
-ATT.DamageMinMult = 8/10
+ATT.DamageMaxMult = 0.3
+ATT.DamageMinMult = 0.3
 
 ATT.ShootSound = "CSGO.G3SG1.Fire_Auto"
 ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -344,8 +344,8 @@ ATT.ReloadTimeMult = 0.95
 
 ATT.RPM = 500
 
-ATT.DamageMaxMult = 19/28
-ATT.DamageMinMult = 8/10
+ATT.DamageMaxMult = 0.3
+ATT.DamageMinMult = 0.3
 ATT.SpreadMultRecoil = 1.3
 ATT.SpreadMultHipFire = 0.3
 ATT.SpreadMultMove = 0.7
