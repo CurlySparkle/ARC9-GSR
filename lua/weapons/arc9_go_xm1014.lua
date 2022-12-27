@@ -27,7 +27,7 @@ SWEP.Description = [[The XM1014 is a powerful automatic shotgun with the ability
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_xm1014.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 3
 
@@ -372,6 +372,62 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "xm1014_draw.wav", t = 0 / 30},
         },
+    }, 
+	["reload_empty"] = {
+        Source = {"reload"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.5,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+},
+        EventTable = {
+            {s = path .. "xm1014_draw.wav", t = 0 / 30},
+        },
+    },
+	["reload"] = {
+        Source = {"reload_short"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.65,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "xm1014_draw.wav", t = 0 / 30},
+        },
     },
     ["draw"] = {
         Source = "draw_short",
@@ -442,6 +498,11 @@ SWEP.AttachmentElements = {
     ["mag_short"] = {
         Bodygroups = {
             {3,1},
+        },
+    }, 
+	["mag_fed"] = {
+        Bodygroups = {
+            {3,1}, {4,1},
         },
     },
     ["mag_long"] = {

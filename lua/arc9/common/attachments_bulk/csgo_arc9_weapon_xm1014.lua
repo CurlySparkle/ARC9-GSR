@@ -53,3 +53,26 @@ ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
 
 ARC9.LoadAttachment(ATT, "csgo_xm1014_barrel_short")
+----------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "5 Round Magazine"
+ATT.CompactName = "Mag"
+ATT.Description = [[Ditch the tube system for a magazine conversion]]
+ATT.SortOrder = 1
+
+//ATT.Icon = Material("entities/attachs/go_m1014_barrel_short.png", "mips smooth")
+ATT.AutoStats = true
+ATT.ShotgunReload = false
+
+ATT.Free = false
+
+ATT.Category = {"go_xm1014_mag"}
+ATT.ActivateElements = {"mag_fed"}
+
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ClipSizeOverride = 5
+
+ARC9.LoadAttachment(ATT, "csgo_xm1014_mag_fed")
