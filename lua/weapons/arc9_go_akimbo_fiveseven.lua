@@ -449,4 +449,24 @@ SWEP.Attachments = {
         Category = "go_skins_fiveseven",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_fiveseven_a.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_fiveseven_b.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_fiveseven_c.mdl",
+        Category = "stickers",
+    },
+    {
+        PrintName = "Sticker",
+        StickerModel = "models/weapons/stickers/v_models/akimbo_fiveseven_d.mdl",
+        Category = "stickers",
+    },
 }

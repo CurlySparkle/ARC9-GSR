@@ -100,8 +100,8 @@ ATT.ShootVolumeUBGL = 130
 ATT.SpreadUBGL = 0
 
 ATT.FirstShootSoundUBGL = false
-ATT.ShootSoundUBGL = "weapons/p225_suppressed.wav"
-ATT.DistantShootSoundUBGL = "weapons/p225_suppressed.wav"
+ATT.ShootSoundUBGL = "weapons/m230_fire.ogg"
+ATT.DistantShootSoundUBGL = "weapons/m230_fire.ogg"
 ATT.HasSightsUBGL = false
 
 -- General recoil multiplier

@@ -2,7 +2,7 @@ local ATT = {}
  
 ATT.PrintName = [[XM1014 Breaching Shotgun]]
 ATT.CompactName = [[XM1014]]
-//ATT.Icon = Material("entities/attachs/go_attach_ubgl_mass.png")
+ATT.Icon = Material("entities/attachs/go_attach_ubgl_xm1014.png")
 ATT.Description = [[
     Super cutdowned xm1014 for your handguard
 ]]
