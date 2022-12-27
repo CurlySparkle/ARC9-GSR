@@ -50,7 +50,7 @@ ATT.IKAnimationProxy = {
         },
     },
     ["reload_ubgl_start_empty"] = {
-        Source = "ubgl_dry_2",
+        Source = "ubgl_dry",
         RestoreAmmo = 1,			
         EventTable = {		
             {s = "CSGO.xm1014.Shell_Insert", t = 32 / 30},
