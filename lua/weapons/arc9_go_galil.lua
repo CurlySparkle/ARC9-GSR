@@ -134,11 +134,8 @@ SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.13
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -157,7 +154,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -3, -0.3)
+SWEP.SprintPos = Vector(3, -3, -1)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.ReloadPos = Vector(5, 0, 0)
@@ -209,8 +206,8 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -441,6 +438,31 @@ SWEP.Animations = {
             {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38 / 30},
             {s = path .. "galil_boltback.wav", t = 54 / 30},
             {s = path .. "galil_boltforward.wav", t = 57 / 30},
+        },
+    },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 1,
+                rhik = 1
+            },
         },
     },
 }

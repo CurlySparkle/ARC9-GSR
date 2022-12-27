@@ -141,7 +141,7 @@ ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
-ATT.Ammo = "SMG1"
+ATT.Ammo = "pistol"
 
 ATT.ActivateElements = {"mag_25_9"}
 --ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
@@ -185,7 +185,7 @@ ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
-ATT.Ammo = "SMG1"
+ATT.Ammo = "pistol"
 
 ATT.ActivateElements = {"mag_32_9"}
 --ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
@@ -205,8 +205,7 @@ ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 
 ARC9.LoadAttachment(ATT, "csgo_m4_mag_32_9")
 
-------------------------------------------------------------------------------------------------
-
+-------------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "Sniper Barrel"
@@ -254,3 +253,24 @@ ATT.CrouchPos = Vector(-1.5, -2.3, -0.3)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_m4a4_view")
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Retracted Buffer Tube"
+ATT.CompactName = "Retract Tube"
+ATT.Description = [[Retracts the stocks, increases sight speed for the cost of more recoil.]]
+ATT.SortOrder = 0
+
+ATT.Icon = Material("entities/attachs/go_stock_none.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_m4_tube"}
+ATT.ActivateElements = {"stock_none_m4"}
+
+ATT.AimDownSightsTimeMult = 0.85
+
+ATT.RecoilMult = 1.15
+
+ARC9.LoadAttachment(ATT, "csgo_m4_tube_retract")

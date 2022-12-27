@@ -589,20 +589,13 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
     ["stock_sniper"] = {
         Bodygroups = {
             {3,2},
         },
     },
-    ["stock_none"] = {
-        Bodygroups = {
-            {3,3},
-        },
+    ["stock_none_m4"] = {
+    AttPosMods = { [7] = { Pos = Vector(0, -5.05, -0.25), } }	
     },
     ["sidecover"] = {
         Bodygroups = {
@@ -703,14 +696,25 @@ SWEP.Attachments = {
 		LaserCorrectionAngle = Angle(-0.4, 0, 0.2),
     },
     {
-        PrintName = "Stock",
-        DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_retract","stock_m4"},
+        PrintName = "Tube",
+        Category = {"go_m4_tube"},
         Bone = "v_weapon.M4A1_Parent",
 		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -5.05, -2.95),
         Ang = Angle(90, 0, -90),
-		Scale = 1.05,
+		Scale = 1,
+    },
+    {
+        PrintName = "Stock",
+        DefaultAttName = "Default",
+        Category = {"csgo_stock","stock_m4"},
+        Bone = "v_weapon.M4A1_Parent",
+        Installed = "go_stock_contractor",
+		--InstalledElements = {"stock_none"},
+        Pos = Vector(0, -5.05, -2.95),
+        Ang = Angle(90, 0, -90),
+        Icon_Offset = Vector(-3, 0, 0),
+		Scale = 1.06,
     },
     {
         PrintName = "Mag",
@@ -721,7 +725,7 @@ SWEP.Attachments = {
         PrintName = "Ammo",
         Bone = "v_weapon.M4A1_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 0, -4),
+        Icon_Offset = Vector(0, 0, -2),
     },
     {
         PrintName = "Perk",

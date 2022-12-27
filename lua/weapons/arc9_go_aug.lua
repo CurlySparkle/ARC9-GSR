@@ -137,12 +137,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-
-SWEP.BashDamage = 50
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.5
+SWEP.PreBashTime = 0.15
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -208,8 +204,8 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 4
+SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -424,6 +420,31 @@ SWEP.Animations = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
             { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+        },
+    },
+    ["bash"] = {
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.75,
+                lhik = 1,
+                rhik = 1
+            },
         },
     },
 }
