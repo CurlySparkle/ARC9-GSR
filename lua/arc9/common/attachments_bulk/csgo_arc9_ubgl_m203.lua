@@ -1,5 +1,7 @@
 local ATT = {}
 
+ATT = {}
+
 ATT.PrintName = [[M203 Grenade Launcher]]
 ATT.CompactName = [[M203]]
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png")
@@ -24,6 +26,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
+        Source = "fire",	
+    },  
+	["fire_sights_ubgl"] = {
         Source = "fire",	
     },
     ["fire_ubgl_empty"] = {
@@ -117,4 +122,61 @@ ATT.MuzzleParticleUBGL = "weapon_muzzle_flash_assaultrifle_silenced2"
 
 ATT.ShootAngOffsetUBGL = Angle(5, 0, 0)
 
+
+-- too clear up confusion, anything attachment related written in french belongs to ubgl
+
+ATT.DrawFunc = function(swep, model, wm) 
+    if swep:GetElements()["ubgl_viseur_du_lanceur"] then model:SetBodygroup(2,1) end
+end
+
+ATT.Attachments = {
+    {
+        PrintName = [[Sight]],
+        DefaultName = "None",
+        Category = {"sight_m203_ubgl"},		
+        Pos = Vector(-15.4, 0.2, -0.75),
+        Ang = Angle(0, 0, 180),
+	},   
+--[[ 
+   {
+        PrintName = "Ammo",
+        DefaultName = "None",
+        Category = "go_ammo_m203_ubgl",
+        Pos = Vector(-5, 0.2, -5),
+        Ang = Angle(0, 0, 0),		
+    },	
+	]] -- peut etre plus tard?
+}
+
 ARC9.LoadAttachment(ATT, "go_ubgl_m203")
+
+------------------ le viseur du lanceur m203 specifique -------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[M203 Sight]]
+ATT.CompactName = [[Sight]]
+//ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png")
+ATT.Description = [[
+    Aiming module for extra precision.
+]]
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+
+ATT.Category = {"sight_m203_ubgl"}
+ATT.ActivateElements = {"ubgl_viseur_du_lanceur"}
+ATT.HasSightsUBGL = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0.2, 30, -3.5),
+        Ang = Angle(-5.5, 1.5, 30),
+        Reticle = nil, 
+
+        Blur = true,
+        UBGLOnly = true,
+    },		
+}
+
+ARC9.LoadAttachment(ATT, "go_ubgl_m203_sight")
