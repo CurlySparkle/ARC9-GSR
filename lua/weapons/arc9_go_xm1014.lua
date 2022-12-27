@@ -244,6 +244,7 @@ SWEP.ShotgunReload = true
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/xm1014/"
+local path2 = "weapons/csgo/mag7/"
 
 SWEP.ShootSound = "CSGO.xm1014.Fire"
 SWEP.ShootSoundSilenced = "CSGO.xm1014.Fire_Silenced"
@@ -398,7 +399,9 @@ SWEP.Animations = {
             },
 },
         EventTable = {
-            {s = path .. "xm1014_draw.wav", t = 0 / 30},
+            {s = path2 .. "mag7_clipout.wav", t = 5 / 30},
+            {s = path2 .. "mag7_clipin.wav", t = 24 / 30},
+            {s = path .. "xm1014_pump.wav", t = 51 / 30},			
         },
     },
 	["reload"] = {
@@ -426,7 +429,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "xm1014_draw.wav", t = 0 / 30},
+            {s = path2 .. "mag7_clipout.wav", t = 5 / 30},
+            {s = path2 .. "mag7_clipin.wav", t = 24 / 30},
         },
     },
     ["draw"] = {
