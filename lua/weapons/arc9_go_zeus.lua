@@ -350,4 +350,9 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/taser_c.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
 }

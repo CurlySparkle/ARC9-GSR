@@ -706,6 +706,11 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_b.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
 }
 
 SWEP.GripPoseParam = 1

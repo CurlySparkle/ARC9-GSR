@@ -149,7 +149,7 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.1
+SWEP.PreBashTime = 0.17
 SWEP.PostBashTime = 0.7
 
 -------------------------- TRACERS
@@ -604,6 +604,11 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/xm1014_c.mdl",
         Category = "stickers",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
 }
 

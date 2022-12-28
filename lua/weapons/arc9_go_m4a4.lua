@@ -758,6 +758,11 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_c.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
     -- {
         -- PrintName = "Stickers",
         -- StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_d.mdl",

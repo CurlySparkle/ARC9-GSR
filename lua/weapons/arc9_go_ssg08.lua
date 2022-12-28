@@ -514,6 +514,11 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/ssg08_c.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
 }
 
 SWEP.GripPoseParam = 3.3

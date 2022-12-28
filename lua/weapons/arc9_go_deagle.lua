@@ -495,4 +495,9 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_d.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
 }
