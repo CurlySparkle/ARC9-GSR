@@ -163,10 +163,11 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.65, -3, 1.25),
-    Ang = Angle(-0.1, 1.2, 0),
+    Pos = Vector(-2.6, -5, 1.47),
+    Ang = Angle(0, 0.85, 0),
     Magnification = 1.25,
-    ViewModelFOV = 56,
+    ViewModelFOV = 70,
+    CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -235,6 +236,7 @@ SWEP.CamQCA = 4
 SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
+SWEP.ShellSounds = ARC9.PistolShellSoundsTable
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
