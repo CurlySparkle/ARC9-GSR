@@ -50,8 +50,8 @@ SWEP.DamageMin = 10 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 6000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -59,7 +59,9 @@ SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2900 * 12
+SWEP.PhysBulletMuzzleVelocity = 3150 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.25
 
 -------------------------- MAGAZINE
 
@@ -119,7 +121,7 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.05
@@ -156,7 +158,7 @@ SWEP.IronSights = {
     ViewModelFOV = 46,
 }
 
-SWEP.ViewModelFOVBase = 56
+SWEP.ViewModelFOVBase = 60
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
@@ -174,14 +176,14 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -0.5, -0.5)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 35, 3)
+SWEP.CustomizePos = Vector(22, 25, 3)
 SWEP.CustomizeSnapshotPos = Vector(3, 0, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
@@ -529,6 +531,12 @@ SWEP.Attachments = {
         PrintName = "Mag",
 		Bone = "v_weapon.SCAR_Clip",
         Category = {"go_mag", "go_mag_scar17"}
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.SCAR_Clip",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 0, -2),
     },
     {
         PrintName = "Perk",

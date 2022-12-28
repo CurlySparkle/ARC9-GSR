@@ -34,13 +34,13 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl_start"] = {
         Source = "ubgl_start",
         EventTable = {		
-            {s = "CSGO.xm1014.Shell_Insert", t = 5 / 30},		
+            {s = "CSGO.Item.Movement", t = 0 / 30},		
         },
     },
     ["reload_ubgl_finish"] = {
         Source = "ubgl_end",
         EventTable = {		
-            {s = "CSGO.xm1014.Shell_Insert", t = 5 / 30},		
+            {s = "CSGO.Item.Movement", t = 0 / 30},		
         },
     },
     ["reload_ubgl_insert"] = {

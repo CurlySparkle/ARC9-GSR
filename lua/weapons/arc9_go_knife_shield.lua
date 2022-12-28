@@ -64,6 +64,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 SWEP.ShootWhileSprint = true
 SWEP.SprintVerticalOffset = true
 
+SWEP.CanLean = false
+
 SWEP.CamQCA = 1 -- QC Attachment for camera movement.
 --SWEP.CamQCA_Mult = nil -- Intensity for QC camera movement.
 

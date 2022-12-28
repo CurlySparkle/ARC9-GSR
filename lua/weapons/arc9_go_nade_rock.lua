@@ -24,6 +24,7 @@ SWEP.Credits = {
 SWEP.Slot = 4
 
 SWEP.UseHands = true
+SWEP.CanLean = false
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_rock.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_eq_rock.mdl"
@@ -115,7 +116,7 @@ SWEP.AnimDraw = false
 -------------------------- MELEE
 
 SWEP.Bash = true
-SWEP.PrimaryBash = true
+SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 50
 SWEP.BashLungeRange = 0

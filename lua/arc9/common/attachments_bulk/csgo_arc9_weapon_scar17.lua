@@ -57,7 +57,7 @@ ATT.CompactName = [[Specialized]]
 ATT.Description = [[
 Specialized stock produced for the MK17. Improves recoil at the cost of handling.
 ]]
-ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_scar17_stock_specialized.png", "mips smooth")
 ATT.Desc_Pros = {
 }
 ATT.Desc_Cons = {
@@ -157,7 +157,7 @@ ATT.CompactName = [[PDW]]
 ATT.Description = [[
 Lightweight cutdown stock improves handling
 ]]
-ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_scar17_stock_pdw.png", "mips smooth")
 ATT.Desc_Pros = {
 }
 ATT.Desc_Cons = {
@@ -185,7 +185,7 @@ ATT.Description = [[
 Ultra lightweight bullpup PDW kit
 ]]
 ATT.SortOrder = 10
-ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_scar17_stock_scarab.png", "mips smooth")
 ATT.Desc_Pros = {
 }
 ATT.Desc_Cons = {
@@ -205,8 +205,8 @@ ATT.RHIK_Priority = 1
 ATT.RHIK = true
 
 ATT.Model = "models/weapons/csgo/c_rif_scar17.mdl"
-ATT.ModelOffset = Vector(6.5, -5, 4.5)
-ATT.ModelAngleOffset = Angle(-90, 0, 0)
+ATT.ModelOffset = Vector(-0.5, -3.5, 3.4)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.ModelBodygroups = "2242313"
 
 ATT.ActivePos = Vector(0, -5, -0.5)

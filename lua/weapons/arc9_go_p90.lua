@@ -43,21 +43,34 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 25 -- Damage done at point blank range
-SWEP.DamageMin = 10 -- Damage done at maximum range
+SWEP.DamageMax = 22 -- Damage done at point blank range
+SWEP.DamageMin = 5 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 900 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 4000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 11 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 15
 
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1.1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.9,
+    [HITGROUP_RIGHTLEG] = 0.9,
+}
+
+
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2900 * 12
+SWEP.PhysBulletMuzzleVelocity = 1312 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.15
 
 -------------------------- MAGAZINE
 
@@ -181,9 +194,8 @@ SWEP.RestPos = Vector(0, 5, 0)
 SWEP.RestAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 2)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-3, -10, 3)
+SWEP.CustomizePos = Vector(18, 20, 2)
+SWEP.CustomizeSnapshotPos = Vector(-3, 0, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -691,7 +703,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Sticker",
-        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_d.mdl",
+        StickerModel = "models/weapons/stickers/v_models/smg_p90_decal_b.mdl",
         Category = "stickers",
     },
 }

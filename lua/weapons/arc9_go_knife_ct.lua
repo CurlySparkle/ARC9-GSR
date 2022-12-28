@@ -65,6 +65,8 @@ SWEP.ShootWhileSprint = true
 
 SWEP.SprintVerticalOffset = false
 
+SWEP.CanLean = false
+
 -------------------------- MELEE
 
 SWEP.Bash = true

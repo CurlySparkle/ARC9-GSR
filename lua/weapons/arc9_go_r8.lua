@@ -45,12 +45,12 @@ SWEP.WorldModelOffset = {
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 86 -- Damage done at point blank range
-SWEP.DamageMin = 46 -- Damage done at maximum range
+SWEP.DamageMin = 40 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 12000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 400 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 1500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
@@ -58,7 +58,9 @@ SWEP.ImpactForce = 25
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 1380 * 12
+SWEP.PhysBulletMuzzleVelocity = 1921 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 2.5
 
 -------------------------- MAGAZINE
 
