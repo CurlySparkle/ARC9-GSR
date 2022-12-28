@@ -1,13 +1,13 @@
 AddCSLuaFile()
 
-SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_ctknife")
+SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_tknife")
 
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R: Melee"
 
-SWEP.PrintName = "CT Knife"
+SWEP.PrintName = "T Knife"
 
 SWEP.Class = "Melee"
 
@@ -18,7 +18,7 @@ SWEP.Credits = {
 
 SWEP.Description = [[Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill.]]
 
-SWEP.ViewModel = "models/weapons/csgo/knifes/v_knife_default_ct.mdl"
+SWEP.ViewModel = "models/weapons/csgo/knifes/v_knife_default_t.mdl"
 SWEP.WorldModel = "models/weapons/w_knife_ct.mdl"
 
 SWEP.NoTPIKVMPos = true
@@ -91,8 +91,9 @@ SWEP.PreBackstabTime = 0
 SWEP.PostBackstabTime = 1
 SWEP.BackstabDamageType = DMG_SLASH
 
-SWEP.ImpactForce = 15
 SWEP.SpeedMultMelee = 1
+
+SWEP.ImpactForce = 15
 
 SWEP.MeleeHitSound = "CSGO.Knife.HitBody"
 SWEP.MeleeHitWallSound = "CSGO.Knife.HitWall"
@@ -229,7 +230,7 @@ SWEP.Attachments = {
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_knife_ct",
+        Category = "go_skins_knife_t",
 		CosmeticOnly = true,
     },
 }

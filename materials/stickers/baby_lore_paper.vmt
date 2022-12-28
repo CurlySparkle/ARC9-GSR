@@ -1,7 +1,7 @@
 "vertexlitgeneric"
 {
-	"$basetexture"	"stickers/kawai"
-     //"$bumpmap" 	"stickers/kawai_n"
+	"$basetexture"	"stickers/baby_lore_paper"
+     //"$bumpmap" 	"stickers/baby_lore_paper_n"
      "$alphatest"	"1"
      "$decal"		"1"
 
