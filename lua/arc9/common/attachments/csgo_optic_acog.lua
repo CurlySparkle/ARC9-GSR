@@ -29,7 +29,7 @@ ATT.Sights = {
         ViewModelFOV = 46,
         Magnification = 1.25,
         IgnoreExtra = true,
-		CrosshairInSights = true
+		CrosshairInSights = false
     },
     {
         Pos = Vector(-0.013, 9, -1.55),
@@ -38,7 +38,7 @@ ATT.Sights = {
         Magnification = 1.25,
 		RTScopeFOV = 5,
         IgnoreExtra = true,
-		CrosshairInSights = true
+		CrosshairInSights = false
     },
     {
         Pos = Vector(-0.013, 9, -1.55),
@@ -47,7 +47,7 @@ ATT.Sights = {
         Magnification = 1.25,
 		RTScopeFOV = 3,
         IgnoreExtra = true,
-		CrosshairInSights = true
+		CrosshairInSights = false
     }
 }
 

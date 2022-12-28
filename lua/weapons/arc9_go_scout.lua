@@ -45,20 +45,22 @@ SWEP.DamageMin = 45 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 3500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 18000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 800 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 15 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 13 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 25
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 3000 * 12
+SWEP.PhysBulletMuzzleVelocity = 2723 * 12
+SWEP.PhysBulletGravity = 1
+SWEP.PhysBulletDrag = 1
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
+SWEP.Ammo = "sniperPenetratedRound" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.
@@ -71,7 +73,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 48
+SWEP.RPM = 250
 
 SWEP.Firemodes = {
     {
@@ -104,6 +106,10 @@ SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.RecoilUpMultSights = 0.3
 
+SWEP.ViewRecoil = false -- true
+SWEP.ViewRecoilUpMult = 40 -- 40-100
+SWEP.ViewRecoilUpMultSights = 10
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.0002
@@ -127,6 +133,9 @@ SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
 
 -------------------------- MELEE
 
@@ -210,7 +219,7 @@ SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.75
+SWEP.EjectDelay = 0.4
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_awp_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -242,36 +251,13 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.2,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.9,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 18 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
-        },
+        Source = {"shoot1"},
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
+    },
+    ["cycle"] = {
+        Source = {"bolt"},
         IKTimeLine = {
             {
                 t = 0,
@@ -295,8 +281,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 18 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 28 / 30},
+            {s = path .. "ssg08_boltback.wav", t = 8 / 30},
+            {s = path .. "ssg08_boltforward.wav", t = 18 / 30},
         },
     },
     ["reload"] = {
@@ -514,7 +500,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.3, 0, -0.2),
         --Installed = "csgo_optic_scope_scout",
-        Integral = false,
+        --Integral = false,
 		Scale = 1,
     },
     {

@@ -48,8 +48,8 @@ SWEP.DamageMin = 55 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 3500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 18000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -57,11 +57,13 @@ SWEP.ImpactForce = 25
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 3000 * 12
+SWEP.PhysBulletMuzzleVelocity = 2799 * 12
+SWEP.PhysBulletGravity = 2
+SWEP.PhysBulletDrag = 2.5
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
+SWEP.Ammo = "sniperPenetratedRound" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.
@@ -74,7 +76,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 41
+SWEP.RPM = 250
 
 SWEP.Firemodes = {
     {
@@ -131,11 +133,14 @@ SWEP.SpeedMultSights = 0.65
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
+
 -------------------------- MELEE
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.15
+SWEP.PreBashTime = 0.2
 SWEP.PostBashTime = 0.7
 
 -------------------------- TRACERS
@@ -210,7 +215,7 @@ SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.75
+SWEP.EjectDelay = 0.45
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_awp_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -243,17 +248,23 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-        EventTable = {
-            {s = path .. "awp_boltback.wav", t = 18 / 30},
-            {s = path .. "awp_boltforward.wav", t = 28 / 30},
-        },
+        Source = {"shoot4"},
     },
     ["fire_sights"] = {
-        Source = {"shoot1_ads"},
+        Source = {"shoot4_ads"},
+    },
+    -- ["fire_sights"] = {
+        -- Source = {"shoot1_ads"},
+        -- EventTable = {
+            -- {s = path .. "awp_boltback.wav", t = 18 / 30},
+            -- {s = path .. "awp_boltforward.wav", t = 28 / 30},
+        -- },
+    -- },
+    ["cycle"] = {
+        Source = {"bolt"},
         EventTable = {
-            {s = path .. "awp_boltback.wav", t = 18 / 30},
-            {s = path .. "awp_boltforward.wav", t = 28 / 30},
+            {s = path .. "awp_boltback.wav", t = 8 / 30},
+            {s = path .. "awp_boltforward.wav", t = 18 / 30},
         },
     },
     ["reload"] = {
@@ -485,7 +496,7 @@ SWEP.AttachmentElements = {
     },
     ["stock_retract"] = {
         Bodygroups = {
-            {4,5},
+            {4,4},
         },
     },
 }

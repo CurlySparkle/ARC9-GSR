@@ -60,7 +60,7 @@ SWEP.PhysBulletMuzzleVelocity = 3000 * 12
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
+SWEP.Ammo = "sniperPenetratedRound" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.
@@ -73,7 +73,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 48
+SWEP.RPM = 250
 
 SWEP.Firemodes = {
     {
@@ -129,6 +129,9 @@ SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
 
 -------------------------- MELEE
 
@@ -208,7 +211,7 @@ SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-SWEP.EjectDelay = 0.5
+SWEP.EjectDelay = 0.4
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_snip_scout_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -242,20 +245,37 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1"},
+        Source = {"shoot2"},
 		InstantIdle = true,
-        EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 18 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 28 / 50},
-        },
+        -- EventTable = {
+            -- {s = path .. "ssg08_boltback.wav", t = 18 / 50},
+            -- {s = path .. "ssg08_boltforward.wav", t = 28 / 50},
+        -- },
     },
     ["fire_sights"] = {
-        Source = {"shoot1_ads"},
-		Mult = 0.5,
+        Source = {"shoot2_ads"},
 		InstantIdle = true,
+        -- EventTable = {
+            -- {s = path .. "ssg08_boltback.wav", t = 20 / 50},
+            -- {s = path .. "ssg08_boltforward.wav", t = 39 / 50},
+        -- },
+    },
+    ["cycle"] = {
+        Source = {"bolt"},
+		InstantIdle = true,
+		Mult = 0.8,
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 20 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 39 / 50},
+            {s = path .. "ssg08_boltback.wav", t = 10 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 29 / 50},
+        },
+    },
+    ["cycle_sights"] = {
+        Source = {"bolt_ads"},
+		InstantIdle = true,
+		Mult = 0.8,
+        EventTable = {
+            {s = path .. "ssg08_boltback.wav", t = 10 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 29 / 50},
         },
     },
     ["reload"] = {
