@@ -468,7 +468,24 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee"}
+        Source = {"melee"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 

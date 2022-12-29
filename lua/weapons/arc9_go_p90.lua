@@ -133,14 +133,14 @@ SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.02
+SWEP.SpreadAddSights = -0.03
 
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.SwayMultSights = 0.3
+SWEP.SwayMultSights = 0
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
@@ -560,11 +560,11 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "00000000"
+SWEP.DefaultBodygroups = "0000000000000"
 
 SWEP.AttachmentElements = {
     ["top_rail"] = {
-        Bodygroups = {
+    Bodygroups = {
             {1,1},
 			{2,1},
 			{4,1},
@@ -572,7 +572,11 @@ SWEP.AttachmentElements = {
     AttPosMods = { 
 	[1] = { Pos = Vector(0, -6.25, 4), },
 	[5] = { Pos = Vector(-0.9, -5.5, 5.5), },
-	}	
+	},
+    Override_IronSights = {
+    Pos = Vector(-5.145, -50, -0.325),
+    Ang = Angle(0.1, -0.025, 0),
+        },
     },
     ["sights"] = {
         Bodygroups = {
@@ -616,8 +620,9 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Category = "go_p90_top",
-        --Bone = "v_weapon.p90_Parent",
-        --Pos = Vector(0, -3, -3),
+        Bone = "v_weapon.p90_Parent",
+        Pos = Vector(0, -5, 4),
+        Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "Barrel",

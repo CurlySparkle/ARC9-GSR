@@ -60,11 +60,13 @@ ATT.ActivateElements = {"top_rail"}
 
 -- ATT.Sights = {
     -- {
-        -- Pos = Vector(0, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-        -- Magnification = 1.15,
-        -- ViewModelFOV = 50,
-        -- IgnoreExtra = true,
+        -- Pos = Vector(-0.045, 7, -2.1),
+        -- Ang = Angle(0.4, 0.5, 0),
+        -- ViewModelFOV = 56,
+        -- Magnification = 1.1,
+        -- IgnoreExtra = false,
+		-- KeepBaseIrons = false,
+		-- CrosshairInSights = false
     -- },
 -- }
 

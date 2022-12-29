@@ -3,8 +3,8 @@
 	"$basetexture"				"models/csgo/ump45/smg_ump45"
 	"$bumpmap"					"null-bumpmap"
 	"$phongexponenttexture"		"models/csgo/ump45/smg_ump45_exponent"
-	"$color2"					"[0.8 0.8 0.8]"
-	"$blendTintByBaseAlpha"		"1"
+	"$color2"					"[0.7 0.7 0.7]"
+	"$blendTintByBaseAlpha"		"0"
 	"$basemapalphaphongmask" "1"
 
 	"$envmap"					"env_cubemap"
