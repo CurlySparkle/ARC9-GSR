@@ -47,8 +47,8 @@ SWEP.DamageMin = 30 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 15000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 3000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
@@ -63,7 +63,9 @@ SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2800 * 12
+SWEP.PhysBulletMuzzleVelocity = 2625 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.25
 
 -------------------------- MAGAZINE
 
@@ -113,6 +115,27 @@ SWEP.RecoilMultCrouch = 0.6
 
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+
+SWEP.PhysicalVisualRecoil = true
+
+SWEP.VisualRecoilUp = 2 -- Vertical tilt for visual recoil.F
+SWEP.VisualRecoilSide = 0.15 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 15 -- Roll tilt for visual recoil.
+SWEP.VisualRecoilPunch = 0.25
+
+SWEP.VisualRecoil = 1
+SWEP.VisualRecoilMultSights = 1
+SWEP.VisualRecoilPositionBump = 1.5
+
+SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilSideMultHipFire = 2
+
+SWEP.VisualRecoilDampingConst = 40
+SWEP.VisualRecoilSpringMagnitude = 1
+
+SWEP.VisualRecoilCenter = Vector(4, 4, 1)
 
 -------------------------- VISUAL RECOIL
 
@@ -862,12 +885,12 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stickers",
-        StickerModel = "models/weapons/stickers/v_models/g3sg1_b.mdl",
+        StickerModel = "models/weapons/stickers/v_models/g3sg1_c.mdl",
         Category = "stickers",
     },
     {
         PrintName = "Stickers",
-        StickerModel = "models/weapons/stickers/v_models/g3sg1_c.mdl",
+        StickerModel = "models/weapons/stickers/v_models/g3sg1_d.mdl",
         Category = "stickers",
     },	
 }

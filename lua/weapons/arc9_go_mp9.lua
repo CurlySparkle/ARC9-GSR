@@ -89,7 +89,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
 

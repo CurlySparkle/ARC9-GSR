@@ -98,12 +98,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.5
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 6213 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
 
@@ -149,8 +149,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.15
-SWEP.PostBashTime = 0.7
+SWEP.PreBashTime = 0.17
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -195,7 +195,7 @@ SWEP.RestAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(18, 20, 2)
-SWEP.CustomizeSnapshotPos = Vector(-3, 0, 3)
+SWEP.CustomizeSnapshotPos = Vector(-3, 5, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -242,7 +242,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_smg_p90_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.6
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -275,6 +275,8 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		RareSource = "reload_short_alt",
+		RareSourceChance = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -306,6 +308,8 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		RareSource = "reload_alt",
+		RareSourceChance = 0.5,
         IKTimeLine = {
             {
                 t = 0,
@@ -552,7 +556,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee","melee4","melee5","melee3"},
+        Source = {"melee8","melee7","melee6","melee5"},
         IKTimeLine = {
             {
                 t = 0,
@@ -581,6 +585,11 @@ SWEP.Animations = {
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 -------------------------- ATTACHMENTS
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("top_rail") and wep.Attachments[1].Installed then model:SetBodygroup(2,2) end
+end
 
 SWEP.DefaultBodygroups = "0000000000000"
 
