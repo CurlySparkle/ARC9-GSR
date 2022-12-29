@@ -1,14 +1,14 @@
-ATT.PrintName = "ATPIAL-C AN/PEQ-15"
-ATT.CompactName = "PEQ-15"
+ATT.PrintName = "Surefire X300U"
+ATT.CompactName = "Surefire"
 ATT.Description = [[
-High-power laser pointer with extra flashlight function. Improves hip fire, spread with the cost of less sights speed.
+High-power Surefire X300U. Improves spread with the cost of less sights speed.
 ]]
 
-ATT.Icon = Material("entities/attachs/go_laser_peq.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_laser_surefire.png", "mips smooth")
 
 ATT.SortOrder = 0
-ATT.Category = {"csgo_tac"}
-ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
+ATT.Category = {"csgo_tac_pistols"}
+ATT.Model = "models/weapons/csgo/atts/tactical/laser_sure3.mdl"
 ATT.Folder = "TACTICAL"
 
 ATT.AimDownSightsTimeMult = 1.05
@@ -19,7 +19,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Both",
         Laser = true,
-        LaserStrength = 1,
+        LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
         Flashlight = true,
@@ -49,7 +49,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
-        LaserStrength = 1,
+        LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
         Flare = true,
@@ -64,6 +64,6 @@ ATT.ToggleStats = {
 }
 
 
-ATT.Scale = 0.3
+--ATT.Scale = 0.3
 
-ATT.ModelOffset = Vector(0, 0, -0.1)
+ATT.ModelOffset = Vector(0, 0, -0.05)

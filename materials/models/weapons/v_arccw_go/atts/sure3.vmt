@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture"				"models\weapons\v_arccw_go\atts\sure3_d"
+	"$bumpmap"					"models\weapons\v_arccw_go\atts\sure3_n"
+	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\sure3_s"
+	"$color2"					"[0 0 0]"
+	"$blendTintByBaseAlpha"		"1"
+
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
+
+	"$phong"					"1"
+	"$phongboost"				"5"
+	"$phongexponent"			"55"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+
+	"$rimlight"					"1"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
+}

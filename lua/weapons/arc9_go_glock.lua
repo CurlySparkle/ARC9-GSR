@@ -470,7 +470,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.glock_parent",
-        Pos = Vector(0, -1.3, 4.9),
+        Pos = Vector(0, -1.35, 4.9),
         Ang = Angle(90, 180, 90),
 		Scale = 1.1,
     },
