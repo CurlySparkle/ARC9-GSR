@@ -1,9 +1,9 @@
 "VertexlitGeneric"
 {
 	"$basetexture"				"models/csgo/mp7/smg_mp7"
-	"$bumpmap"					"models/csgo/mp7/smg_mp7n"
+	"$bumpmap"					"models/csgo/mp7/smg_mp7_n"
 	"$phongexponenttexture"		"models/csgo/mp7/smg_mp7_exponent"
-	"$color2"					"[0.75 0.75 0.75]"
+	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"0"
 	"$basemapalphaphongmask" "1"
 

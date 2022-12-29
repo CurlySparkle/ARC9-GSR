@@ -10,8 +10,9 @@ ATT.SortOrder = 0
 ATT.Category = "stock_retract"
 ATT.ActivateElements = {"stock_retract"}
 
-ATT.SprintToFireTimeMult = 0.85
-ATT.AimDownSightsTimeMult = 0.80
+ATT.SprintToFireTimeMult = 0.90
+ATT.AimDownSightsTimeMult = 0.90
+
 ATT.RecoilMult = 1.1
 ATT.RecoilKickMult = 1.1
 

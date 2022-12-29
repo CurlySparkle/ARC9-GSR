@@ -1,5 +1,6 @@
 ATT.PrintName = [[Kawai Killer]]
-ATT.Description = [[]]
+ATT.Description = [[
+Sticker included in Gunsmight Reloaded.]]
 ATT.Icon = Material("stickers/kawai")
 
 ATT.SortOrder = 0

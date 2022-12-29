@@ -15,6 +15,7 @@ ATT.Model = "models/weapons/csgo/atts/stocks/stock_xm10.mdl"
 
 ATT.Scale = 1.1
 ATT.ModelOffset = Vector(0.7, 0, 1)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.RecoilMult = 0.75
 ATT.RecoilKickMult = 0.75
