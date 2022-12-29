@@ -255,7 +255,7 @@ local path = "weapons/csgo/glock18/"
 
 SWEP.ShootSound = "CSGO.Glock.Fire"
 SWEP.ShootSoundSilenced = "CSGO.Glock.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.Glock.Fire.Distance"
+SWEP.DistantShootSound = "CSGO.Glock.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"

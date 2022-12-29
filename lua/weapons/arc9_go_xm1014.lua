@@ -27,7 +27,6 @@ SWEP.Description = [[The XM1014 is a powerful automatic shotgun with the ability
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_xm1014.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
-SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 3
 
@@ -474,6 +473,7 @@ SWEP.Animations = {
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 -------------------------- ATTACHMENTS
+SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.AttachmentElements = {
     ["stock_retract"] = {
@@ -506,7 +506,7 @@ SWEP.AttachmentElements = {
     }, 
 	["mag_fed"] = {
         Bodygroups = {
-            {3,1}, {4,1},
+            {3,4}, {4,1},
         },
     },
     ["mag_long"] = {

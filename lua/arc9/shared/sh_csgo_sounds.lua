@@ -819,7 +819,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.Glock.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.1,
     level = 120,
     pitch = {97,103},
     sound = {

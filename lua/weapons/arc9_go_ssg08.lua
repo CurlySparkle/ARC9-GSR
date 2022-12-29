@@ -515,6 +515,11 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/ssg08_d.mdl",
+        Category = "stickers",
+    },
+    {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
         CosmeticOnly = true,

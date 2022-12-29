@@ -1,7 +1,3 @@
-if CLIENT then
-    killicon.Add( "arc9_go_mp5sd", "VGUI/apex_killicon_3030", Color(251, 85, 25, 255))
-end
-
 AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
@@ -262,6 +258,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+		Mult = 0.5,
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -440,8 +437,29 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-        MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement2.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement1.wav", t = 125 / 30 },
@@ -577,3 +595,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
+SWEP.GripPoseParam2 = 0.3
