@@ -172,10 +172,11 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.16, -10, 1.15),
-    Ang = Angle(0.025, -0.2, 0),
-    Magnification = 2,
+    Pos = Vector(-4.84, -9, 2.15),
+    Ang = Angle(1.1, -3, 0),
+    Magnification = 1.15,
     ViewModelFOV = 56,
+	CrosshairInSights = true
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -423,7 +424,7 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.DefaultBodygroups = "00000000000"
+SWEP.DefaultBodygroups = "00000000000000"
 
 SWEP.AttachmentTableOverrides = {
     ["go_mag_extended"] = {
@@ -436,7 +437,7 @@ SWEP.AttachmentElements = {
     ["mount"] = {
         Bodygroups = {
             {1,1},
-			{5,0},
+			{5,1},
         },
     },
     ["stock_retract"] = {
@@ -475,7 +476,7 @@ SWEP.AttachmentElements = {
     ["barrel_short"] = {
         Bodygroups = {
             {4,1},
-			{5,3},
+			{5,6},
 			{6,1},
     },
     AttPosMods = { 
@@ -529,6 +530,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         Installed = "csgo_optic_scope_scar20",
+		Integral = true,
         CorrectiveAng = Angle(0.35, -1.25, 0),
     },
     {
