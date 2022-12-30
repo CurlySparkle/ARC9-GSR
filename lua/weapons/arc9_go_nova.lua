@@ -57,7 +57,9 @@ SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 1250 * 12
+SWEP.PhysBulletMuzzleVelocity = 1410.76 * 12
+SWEP.PhysBulletGravity = 2
+SWEP.PhysBulletDrag = 3
 
 SWEP.RicochetChance = 0
 
@@ -76,7 +78,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 68
+SWEP.RPM = 250
 
 SWEP.Firemodes = {
     {
@@ -88,9 +90,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
-
-SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
+SWEP.Recoil = 5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
@@ -102,25 +102,17 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
-SWEP.RecoilDissipationRateSights = 50
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 8 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
-
-SWEP.ViewRecoil = true
-SWEP.ViewRecoilUpMult = 7
-
-SWEP.UseVisualRecoil = true
-SWEP.VisualRecoil = 2
-SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilMultSights = 1
+SWEP.RecoilMultSights = 0.5
 
 -------------------------- SPREAD
 
@@ -145,6 +137,9 @@ SWEP.SwayMultSights = 0
 
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
 
 -------------------------- MELEE
 
@@ -225,6 +220,7 @@ SWEP.AnimDraw = false
 SWEP.MuzzleParticle = "weapon_muzzle_flash_autoshotgun"
 SWEP.AfterShotParticle = "barrel_smoke_plume"
 SWEP.MuzzleEffectQCA = 1
+SWEP.CaseEffectQCA = 2
 SWEP.ProceduralViewQCA = 1
 
 SWEP.CamQCA = 3
@@ -239,7 +235,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.EjectDelay = 0.5
+SWEP.EjectDelay = 0.3
 
 SWEP.ShotgunReload = true
 
@@ -264,9 +260,13 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot3_new"},
+        Source = {"shoot1"},
+		Mult = 0.8,
+    },
+    ["cycle"] = {
+        Source = {"pump"},
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 11 / 30},
+            {s = path .. "nova_pump.wav", t = 5 / 30},
         },
     },
     -- ["fire_sights"] = {
@@ -441,7 +441,7 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 1
+                rhik = 0
             },
             {
                 t = 0.1,
@@ -454,7 +454,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.8,
                 lhik = 1,
                 rhik = 1
             },

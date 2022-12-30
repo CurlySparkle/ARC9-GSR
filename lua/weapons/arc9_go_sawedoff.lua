@@ -51,8 +51,8 @@ SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 750 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 1750 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1700 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 4200 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
@@ -60,7 +60,9 @@ SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 1250 * 12
+SWEP.PhysBulletMuzzleVelocity = 1410.76 * 12
+SWEP.PhysBulletGravity = 2
+SWEP.PhysBulletDrag = 3
 
 SWEP.RicochetChance = 0
 
@@ -79,7 +81,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 71
+SWEP.RPM = 250
 
 SWEP.Firemodes = {
     {
@@ -136,6 +138,7 @@ SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.025
 SWEP.SpreadMultHipFire = 1
+SWEP.SpreadMultSights = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
@@ -145,17 +148,18 @@ SWEP.SpreadAddSightsMove = -0.1
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.22 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.21 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
 
 -------------------------- MELEE
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
-SWEP.PostBashTime = 0.6
+SWEP.PreBashTime = 0.15
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -268,17 +272,25 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot6"},
+        Source = {"shoot1"},
+		Mult = 1.5,
+    },
+    ["fire_sights"] = {
+        Source = {"shoot1_ads"},
+		Mult = 1.2,
+    },
+    ["cycle"] = {
+        Source = {"pump"},
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 2 / 30},
+            {s = path .. "sawedoff_pump.wav", t = 4 / 30},
         },
     },
-    -- ["fire_sights"] = {
-        -- Source = "shoot1_ads",
-        -- EventTable = {
-            -- {s = path .. "sawedoff_pump.wav", t = 3 / 30},
-        -- },
-    -- },
+    ["cycle_sights"] = {
+        Source = {"pump_ads"},
+        EventTable = {
+            {s = path .. "sawedoff_pump.wav", t = 4 / 30},
+        },
+    },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {
@@ -605,5 +617,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 4
+SWEP.GripPoseParam = 4.3
 SWEP.GripPoseParam2 = 0.5
