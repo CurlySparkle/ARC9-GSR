@@ -22,6 +22,15 @@ ATT.MuzzleDeviceUBGL = true
 ATT.ModelOffset = Vector(2, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
+ATT.ActivePosUBGL = Vector(-1.35, -0.5, 1.25)
+ATT.ActiveAngUBGL = Angle(0, 0, 0)
+
+ATT.MovingPosUBGL = Vector(-1.5, -1, 1.25)
+ATT.MovingAngUBGL = Angle(0, 0, 0)
+
+ATT.CrouchPosUBGL = Vector(-1.35, -1, 1.25)
+ATT.CrouchAngUBGL = Angle(0, 0, 0)
+
 local path = "weapons/csgo/xm1014/"
 
 ATT.IKAnimationProxy = {
@@ -34,27 +43,28 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl_start"] = {
         Source = "ubgl_start",
         EventTable = {		
-            {s = "CSGO.Item.Movement", t = 0 / 30},		
+            {s = "CSGO.Item.Movement", t = 0 / 40},		
         },
     },
     ["reload_ubgl_finish"] = {
         Source = "ubgl_end",
         EventTable = {		
-            {s = "CSGO.Item.Movement", t = 0 / 30},		
+            {s = "CSGO.Item.Movement", t = 0 / 40},		
         },
     },
     ["reload_ubgl_insert"] = {
         Source = "ubgl_reload",
         EventTable = {		
-            {s = "CSGO.xm1014.Shell_Insert", t = 5 / 30},		
+            {s = "CSGO.xm1014.Shell_Insert", t = 4 / 40},		
         },
     },
     ["reload_ubgl_start_empty"] = {
         Source = "ubgl_dry",
         RestoreAmmo = 1,			
         EventTable = {		
-            {s = "CSGO.xm1014.Shell_Insert", t = 32 / 30},
-            {s = path .. "xm1014_pump.wav", t = 42 / 30},					
+            {s = "CSGO.Item.Movement", t = 0 / 40},				
+            {s = "CSGO.xm1014.Shell_Insert", t = 20 / 40},
+            {s = "weapons/csgo/sawedoff/sawedoff_pump2.ogg", t = 39 / 40},					
         },
     },	
     ["enter_ubgl"] = {
@@ -66,7 +76,7 @@ ATT.IKAnimationProxy = {
     ["idle_ubgl"] = {
         Source = "ubgl"
     },
-    ["idle_ubgl_empty"] = {
+    ["idle_ubgl_empty"] = { -- DOES THIS WORK?
         Source = "ubgl_empty"
     },
     ["exit_ubgl"] = {
@@ -175,14 +185,14 @@ ATT.Attachments = {
         DefaultName = "None",
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
-        Pos = Vector(-15.4, 0.2, -0.75),
+        Pos = Vector(-14.1, 0.2, -0.25),
         Ang = Angle(0, 0, 180),
 	},   
     {
         PrintName = "Ammo",
         DefaultName = "None",
         Category = "go_ammo_sg_ubgl",
-        Pos = Vector(-5, 0.2, -5),
+        Pos = Vector(-3, 0.2, -2),
         Ang = Angle(0, 0, 0),		
     },
 }
