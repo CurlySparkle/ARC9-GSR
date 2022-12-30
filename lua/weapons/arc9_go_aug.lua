@@ -506,7 +506,7 @@ SWEP.Attachments = {
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(-0.7, -0.7, 0),
         Installed = "csgo_optic_acog_2",
-        Integral = false,
+        Integral = true,
     },
     {
         PrintName = "Barrel",
@@ -538,8 +538,8 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(-1, -3.6, 4),
-        Ang = Angle(90, 50, 90),
+        Pos = Vector(-1.219, -3.727, 4.5),
+        Ang = Angle(90, 0, 132.5),
     },
     {
         PrintName = "Perk",

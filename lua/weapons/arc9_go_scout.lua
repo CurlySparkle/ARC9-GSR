@@ -499,8 +499,8 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.3, 0, -0.2),
-        --Installed = "csgo_optic_scope_scout",
-        --Integral = false,
+        Installed = "csgo_optic_scope_scout",
+        Integral = true,
 		Scale = 1,
     },
     {

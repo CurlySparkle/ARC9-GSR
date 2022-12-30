@@ -165,3 +165,12 @@ SWEP.Animations = {
         Source = "sprint_out",
     },
 }
+
+-------------------------- ATTACHMENTS
+
+SWEP.Attachments = {
+    {
+        PrintName = "Functions",
+        Category = {"go_nade_type"},
+    },
+}

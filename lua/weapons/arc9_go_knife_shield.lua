@@ -28,8 +28,8 @@ SWEP.NoTPIKVMPos = true
 SWEP.NoTPIK = true
 SWEP.WorldModelMirror = "models/weapons/csgo/v_shield.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3, 6, -15),
-    Ang = Angle(10, 0, 185),
+    Pos = Vector(-2, 11, -11),
+    Ang = Angle(10, 0, 165),
     Scale = 1
 }
 
@@ -101,8 +101,8 @@ SWEP.FiremodeSound = ""
 -------------------------- SHIELD
 
 SWEP.ShieldModel = "models/weapons/csgo/w_shield_hitbox.mdl"
-SWEP.ShieldOffset = Vector(5, 7, 2)
-SWEP.ShieldAngle = Angle(-10, 0, 185)
+SWEP.ShieldOffset = Vector(5, 7, 5.5)
+SWEP.ShieldAngle = Angle(-10, 0, 165)
 SWEP.ShieldScale = 1
 
 
@@ -142,11 +142,8 @@ SWEP.CrouchPos = Vector(0, 3.5, -0.5)
 SWEP.CrouchAng = Angle(0, 0, 0)
 -------------------------- HoldTypes
 
-SWEP.HoldType = "duel"
-SWEP.HoldTypeSprint = "duel"
-SWEP.HoldTypeHolstered = "duel"
-SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
+SWEP.HoldTypeHolstered = "none"
+SWEP.HoldType = "melee2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
@@ -237,5 +234,10 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/shield_c.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
 }

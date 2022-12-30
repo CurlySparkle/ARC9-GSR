@@ -23,7 +23,7 @@ ATT.ToggleStats = {
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
         Flashlight = true,
-        FlashlightColor = Color(155, 155, 155),
+        FlashlightColor = Color(55, 55, 55),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 2048,
         FlashlightFOV = 80,
@@ -36,7 +36,7 @@ ATT.ToggleStats = {
     {
         PrintName = "Light",
         Flashlight = true,
-        FlashlightColor = Color(155, 155, 155),
+        FlashlightColor = Color(55, 55, 55),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 2048,
         FlashlightFOV = 80,
@@ -64,6 +64,6 @@ ATT.ToggleStats = {
 }
 
 
-ATT.Scale = 0.4
+ATT.Scale = 1
 
-ATT.ModelOffset = Vector(0, 0, -0.1)
+ATT.ModelOffset = Vector(0, 0, 0)

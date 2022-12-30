@@ -792,8 +792,8 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
         InstalledElements = {"rearsight"},
-        --Installed = "csgo_optic_scope_g3sg1",
-		--Integral = true,
+        Installed = "csgo_optic_scope_g3sg1",
+		Integral = true,
         CorrectiveAng = Angle(0.2, -0.25, 0),
     },
     {
