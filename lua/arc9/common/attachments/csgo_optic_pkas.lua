@@ -1,9 +1,7 @@
 ATT.PrintName = "PK-AS"
 ATT.CompactName = [[PK-AS]]
 ATT.Icon = Material("entities/attachs/pkas.png", "mips smooth")
-ATT.Description = [[
-    Long range combat scope for improved precision at longer ranges.
-]]
+ATT.Description = [[Long range combat scope for improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 2x Zoom",
     "+ Clearer sight picture"

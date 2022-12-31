@@ -1,8 +1,6 @@
 ATT.PrintName = "Contractor Stock"
 ATT.CompactName = [[Contractor]]
-ATT.Description = [[
-Adjustable modular stock. Improves hip fire accuracy and recoil, at the cost of aim speed.
-]]
+ATT.Description = [[Adjustable modular stock. Improves hip fire accuracy and recoil, at the cost of aim speed.]]
 ATT.Icon = Material("entities/attachs/go_stock_contractor.png", "mips smooth")
 ATT.Desc_Pros = {
 }

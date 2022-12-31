@@ -1,9 +1,7 @@
 ATT.PrintName = "Trijicon INS"
 ATT.CompactName = [[TrijAlt]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[
-    Low-profile alt version of the Trijicon sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.
-]]
+ATT.Description = [[Low-profile alt version of the Trijicon sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

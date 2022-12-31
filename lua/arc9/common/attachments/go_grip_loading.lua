@@ -1,6 +1,6 @@
 ATT.PrintName = "Loading Grip"
 ATT.CompactName = "Loading"
-ATT.Description = [[Loading grip, improves reload speed by 15%]]
+ATT.Description = [[Loading grip, improves reload speed by 15%.]]
 
 ATT.Icon = Material("entities/attachs/go_grip_Loading.png", "mips smooth")
 

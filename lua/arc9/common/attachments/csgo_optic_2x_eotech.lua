@@ -1,9 +1,7 @@
 ATT.PrintName = "EOTech + Magnifier"
 ATT.CompactName = [[2x EO]]
 ATT.Icon = Material("entities/attachs/2x_eotech.png", "mips smooth")
-ATT.Description = [[
-    Typical holograpic sight which uses a holographic reticle for faster sight acquisition Coupled with a 3x Magnifier.
-]]
+ATT.Description = [[Typical holograpic sight which uses a holographic reticle for faster sight acquisition Coupled with a 3x Magnifier.]]
 ATT.Pros = {
     "+ Clearer sight picture",
 	"+ 2x Zoom"

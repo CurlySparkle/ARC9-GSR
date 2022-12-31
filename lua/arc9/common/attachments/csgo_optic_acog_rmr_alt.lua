@@ -1,9 +1,7 @@
 ATT.PrintName = "RMR INS"
 ATT.CompactName = [[RMR]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[
-    Low-profile alt version of the RMR sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.
-]]
+ATT.Description = [[Low-profile alt version of the RMR sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

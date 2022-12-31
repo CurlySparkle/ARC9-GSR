@@ -1,8 +1,6 @@
 ATT.PrintName = "M3X Flashlight"
 ATT.CompactName = "M3X"
-ATT.Description = [[
-Rail-mounted flashlight type M3X.
-]]
+ATT.Description = [[Rail-mounted flashlight type M3X.]]
 
 ATT.Icon = Material("entities/attachs/M3X.png", "mips smooth")
 

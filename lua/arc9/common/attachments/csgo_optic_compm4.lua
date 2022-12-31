@@ -1,9 +1,7 @@
 ATT.PrintName = "CompM4 (RDS)"
 ATT.CompactName = [[CompM4]]
 ATT.Icon = Material("entities/attachs/CompM4.png", "mips smooth")
-ATT.Description = [[
-Tube-based red dot sight for rifles.
-]]
+ATT.Description = [[Tube-based red dot sight for rifles.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

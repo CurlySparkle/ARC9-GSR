@@ -1,9 +1,7 @@
 ATT.PrintName = "Trijicon MRO"
 ATT.CompactName = [[Trijicon]]
 ATT.Icon = Material("entities/attachs/trijicon_mro.png", "mips smooth")
-ATT.Description = [[
-    Trijicon MR sight that provides an effective aiming dot. Mounted on a riser to improve clearance..
-]]
+ATT.Description = [[Trijicon MR sight that provides an effective aiming dot. Mounted on a riser to improve clearance.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

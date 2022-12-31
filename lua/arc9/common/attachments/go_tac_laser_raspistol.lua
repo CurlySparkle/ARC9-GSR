@@ -1,8 +1,6 @@
 ATT.PrintName = "RAS Laser Sight"
-ATT.CompactName = "Ras"
-ATT.Description = [[
-Low-power laser pointer. Improves hip-fire accuracy.
-]]
+ATT.CompactName = "RAS"
+ATT.Description = [[Low-power laser pointer. Improves hip-fire accuracy.]]
 
 ATT.Icon = Material("entities/attachs/go_laser.png", "mips smooth")
 

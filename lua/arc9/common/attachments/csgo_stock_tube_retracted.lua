@@ -1,7 +1,7 @@
-ATT.PrintName = [[Buf Tube (Alt)]]
-ATT.CompactName = [[Buftube 2]]
+ATT.PrintName = [[Buffer Tube (Alt)]]
+ATT.CompactName = [[Buffer Tube 2]]
 ATT.Icon = Material("entities/attachs/go_stock_none.png")
-ATT.Description = [[Buftube attachment for custom stock options. (Retracted Version)]]
+ATT.Description = [[Buffer tube attachment for custom stock options. (Retracted Version)]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false

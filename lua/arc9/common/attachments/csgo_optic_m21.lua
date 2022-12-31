@@ -1,9 +1,7 @@
 ATT.PrintName = "Mepro M21 Red Dot"
 ATT.CompactName = [[Mepro M21]]
 ATT.Icon = Material("entities/attachs/sight_galil.png", "mips smooth")
-ATT.Description = [[
-    Mepro M21 Red Dot sight that provides an effective aiming dot. Mounted on a riser to improve clearance..
-]]
+ATT.Description = [[Mepro M21 Red Dot sight that provides an effective aiming dot. Mounted on a riser to improve clearance.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

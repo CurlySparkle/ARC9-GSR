@@ -1,8 +1,6 @@
 ATT.PrintName = "Ergonomic Stock"
 ATT.CompactName = [[Ergo]]
-ATT.Description = [[
-Lightweight modular stock. Improves ADS speed at the cost of recoil.
-]]
+ATT.Description = [[Lightweight modular stock. Improves ADS speed at the cost of recoil.]]
 ATT.Icon = Material("entities/attachs/go_stock_ergo.png", "mips smooth")
 ATT.Desc_Pros = {
 }

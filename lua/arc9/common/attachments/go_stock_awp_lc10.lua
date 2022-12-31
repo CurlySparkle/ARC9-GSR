@@ -1,8 +1,6 @@
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = [[Ske]]
-ATT.Description = [[
-Il est froid.
-]]
+ATT.Description = [[Il est froid.]]
 ATT.Icon = Material("entities/attachs/go_stock_xm10.png", "mips smooth")
 ATT.Desc_Pros = {
 }

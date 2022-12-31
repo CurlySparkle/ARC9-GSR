@@ -1,8 +1,6 @@
 ATT.PrintName = "GenRas Flashlight"
 ATT.CompactName = "GenRas F"
-ATT.Description = [[
-Rail-mounted flashlight.
-]]
+ATT.Description = [[Rail-mounted flashlight.]]
 
 ATT.Icon = Material("entities/attachs/GENFlashRAS.png", "mips smooth")
 

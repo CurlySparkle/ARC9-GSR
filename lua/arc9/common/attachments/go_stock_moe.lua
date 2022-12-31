@@ -1,8 +1,6 @@
 ATT.PrintName = "MOE Stock"
-ATT.CompactName = [[Moe]]
-ATT.Description = [[
-Modular stock produced by Magpul. Improves recoil at the cost of handling.
-]]
+ATT.CompactName = [[MOE]]
+ATT.Description = [[Modular stock produced by Magpul. Improves recoil at the cost of handling.]]
 ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
 ATT.Desc_Pros = {
 }

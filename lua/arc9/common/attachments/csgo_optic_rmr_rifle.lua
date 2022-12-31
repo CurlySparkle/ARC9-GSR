@@ -1,9 +1,7 @@
 ATT.PrintName = "Trijicon SEC"
 ATT.CompactName = [[Trijicon]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[
-    Low-profile Trijicon sight that provides an effective aiming dot, mounted on a high-profile rail.
-]]
+ATT.Description = [[Low-profile Trijicon sight that provides an effective aiming dot, mounted on a high-profile rail.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

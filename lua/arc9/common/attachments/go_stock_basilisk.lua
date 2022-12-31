@@ -1,8 +1,6 @@
 ATT.PrintName = "Basilisk Stock"
 ATT.CompactName = [[Basilisk]]
-ATT.Description = [[
-Modular crane stock. Improves moving accuracy and strafe performance at the cost of recoil
-]]
+ATT.Description = [[Modular crane stock. Improves moving accuracy and strafe performance at the cost of recoil.]]
 ATT.Icon = Material("entities/attachs/go_stock_basilisk.png", "mips smooth")
 ATT.Desc_Pros = {
 }

@@ -1,9 +1,7 @@
 ATT.PrintName = "Eotech Sight"
 ATT.CompactName = [[Eotech]]
 ATT.Icon = Material("entities/attachs/go_optic_eotech.png", "mips smooth")
-ATT.Description = [[
-    Medium range sight for some improved precision.
-]]
+ATT.Description = [[Medium range sight for some improved precision.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

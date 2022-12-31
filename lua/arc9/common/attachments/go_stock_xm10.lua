@@ -1,8 +1,6 @@
 ATT.PrintName = "XM10 Stock"
 ATT.CompactName = [[XM10]]
-ATT.Description = [[
-Modular XM10 stock used on the XM1014. Improves recoil at the cost of even more handling.
-]]
+ATT.Description = [[Modular XM10 stock used on the XM1014. Improves recoil at the cost of even more handling.]]
 ATT.Icon = Material("entities/attachs/go_stock_xm10.png", "mips smooth")
 ATT.Desc_Pros = {
 }

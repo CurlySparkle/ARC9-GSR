@@ -1,9 +1,7 @@
 ATT.PrintName = "C-More (RDS)"
 ATT.CompactName = [[C-More]]
 ATT.Icon = Material("entities/attachs/go_optic_cmore.png", "mips smooth")
-ATT.Description = [[
-Open multipurpose red dot sight.
-]]
+ATT.Description = [[Open multipurpose red dot sight.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

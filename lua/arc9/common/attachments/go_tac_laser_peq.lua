@@ -1,8 +1,6 @@
 ATT.PrintName = "ATPIAL-C AN/PEQ-15"
 ATT.CompactName = "PEQ-15"
-ATT.Description = [[
-High-power laser pointer with extra flashlight function. Improves hip fire, spread with the cost of less sights speed.
-]]
+ATT.Description = [[High-power laser pointer with extra flashlight function. Improves hip fire, spread with the cost of less sights speed.]]
 
 ATT.Icon = Material("entities/attachs/go_laser_peq.png", "mips smooth")
 
