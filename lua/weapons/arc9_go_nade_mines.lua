@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 
-SWEP.PrintName = "Bump Mines"
+SWEP.PrintName = "Bump mines"
 SWEP.Class = "Grenade"
 SWEP.Description = [[
 Toss one of these on the ground and send your opponents flying (Can also be set to explode). Hope you don't step on one.
@@ -17,7 +17,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
     Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 

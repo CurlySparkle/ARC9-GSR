@@ -12,7 +12,7 @@ SWEP.PrintName = "CT Knife"
 SWEP.Class = "Melee"
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
     Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
