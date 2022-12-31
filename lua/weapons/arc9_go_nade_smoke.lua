@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Smoke Grenade"
 SWEP.Class = "Grenade"
-SWEP.Description = [[
-The smoke grenade creates a medium-area smoke screen. It can effectively hide your team from snipers, or even just create a useful distraction.
-]]
+SWEP.Description = [[The smoke grenade creates a medium-area smoke screen. It can effectively hide your team from snipers, or even just create a useful distraction.]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

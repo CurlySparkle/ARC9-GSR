@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Molotov"
 SWEP.Class = "Grenade"
-SWEP.Description = [[
-The Molotov is a powerful and unpredictable area denial weapon that bursts into flames when thrown on the ground, injuring any player in its radius.
-]]
+SWEP.Description = [[The Molotov is a powerful and unpredictable area denial weapon that bursts into flames when thrown on the ground, injuring any player in its radius.]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

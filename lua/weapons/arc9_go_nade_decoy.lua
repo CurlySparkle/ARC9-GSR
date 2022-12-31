@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Decoy Grenade"
 SWEP.Class = "Grenade"
-SWEP.Description = [[
-When thrown, the decoy grenade emulates the sound of the most powerful weapon you are carrying, creating the illusion of additional supporting forces.
-]]
+SWEP.Description = [[When thrown, the decoy grenade emulates the sound of the most powerful weapon you are carrying, creating the illusion of additional supporting forces.]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

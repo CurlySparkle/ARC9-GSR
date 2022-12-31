@@ -20,10 +20,10 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[The Mag-7 excels as a mobile, close range ambush weapon. Its magazine reload makes it a great tactical choice as well.]]
+SWEP.Description = [[The MAG-7 excels as a mobile, close range ambush weapon. Its magazine reload makes it a great tactical choice as well.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_mag7.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"

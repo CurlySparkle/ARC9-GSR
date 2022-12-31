@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Breach Charge"
 SWEP.Class = "Special Explosives"
-SWEP.Description = [[
-    The Breach Charge is an explosive equipment which allows to breaching doors and areas. You can only hold a maximum 3 breach charges at a time. 
-]]
+SWEP.Description = [[The Breach Charge is an explosive equipment which allows to breaching doors and areas. You can only hold a maximum 3 breach charges at a time. ]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

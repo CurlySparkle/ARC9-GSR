@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Flashbang"
 SWEP.Class = "Grenade"
-SWEP.Description = [[
-The non-lethal flashbang grenade temporarily blinds anybody within its concussive blast, making it perfect for flushing out closed-in areas. Its loud explosion also temporarily masks the sound of footsteps.
-]]
+SWEP.Description = [[The non-lethal flashbang grenade temporarily blinds anybody within its concussive blast, making it perfect for flushing out closed-in areas. Its loud explosion also temporarily masks the sound of footsteps.]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

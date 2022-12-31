@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Incendiary Grenade"
 SWEP.Class = "Grenade"
-SWEP.Description = [[
-When thrown, the incendiary grenade releases a high-temperature chemical reaction capable of burning anyone within its wide blast radius.
-]]
+SWEP.Description = [[When thrown, the incendiary grenade releases a high-temperature chemical reaction capable of burning anyone within its wide blast radius.]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

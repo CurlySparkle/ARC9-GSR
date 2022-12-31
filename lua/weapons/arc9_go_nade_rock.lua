@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Rock"
 SWEP.Class = "Throwable"
-SWEP.Description = [[
-    The experimental rock, very deadly and quite a "Stoner" upon hitting enemies.
-]]
+SWEP.Description = [[The experimental rock, very deadly and quite a "Stoner" upon hitting enemies.]]
 SWEP.Trivia = {
     ["Country"] = "Nova Pangea",
     ["Year"] = "-3300000",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4

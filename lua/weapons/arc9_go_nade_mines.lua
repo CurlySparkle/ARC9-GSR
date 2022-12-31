@@ -8,9 +8,7 @@ SWEP.NoDynamicKillIcon = true
 
 SWEP.PrintName = "Bump Mines"
 SWEP.Class = "Grenade"
-SWEP.Description = [[
-Toss one of these on the ground and send your opponents flying (Can also be set to explode). Hope you don't step on one.
-]]
+SWEP.Description = [[Toss one of these on the ground and send your opponents flying (also can be set to explode). Hope you don't step on one.]]
 SWEP.Trivia = {
     ["Country"] = "USA",
     ["Year"] = "1968",
@@ -18,7 +16,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
 SWEP.Slot = 4
