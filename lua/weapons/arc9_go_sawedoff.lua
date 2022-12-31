@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_shot_sawedoff.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Category = 3
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -275,22 +275,22 @@ SWEP.Animations = {
         Source = {"shoot1"},
 		Mult = 1.5,
     },
-    ["fire_sights"] = {
-        Source = {"shoot1_ads"},
-		Mult = 1.2,
-    },
+    -- ["fire_sights"] = {
+        -- Source = {"shoot1_ads"},
+		-- Mult = 1.2,
+    -- },
     ["cycle"] = {
         Source = {"pump"},
         EventTable = {
             {s = path .. "sawedoff_pump.wav", t = 4 / 30},
         },
     },
-    ["cycle_sights"] = {
-        Source = {"pump_ads"},
-        EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 4 / 30},
-        },
-    },
+    -- ["cycle_sights"] = {
+        -- Source = {"pump_ads"},
+        -- EventTable = {
+            -- {s = path .. "sawedoff_pump.wav", t = 4 / 30},
+        -- },
+    -- },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {

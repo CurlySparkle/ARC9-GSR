@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_smg_ump.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_ump45.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Category = 2
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true

@@ -28,7 +28,7 @@ Originally a civilian rifle, it has been illegally converted for automatic fire.
 SWEP.ViewModel = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
 
-SWEP.Category = 2
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true

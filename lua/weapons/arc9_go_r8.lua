@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_pist_r8.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Category = 1
+SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_r8.mdl"

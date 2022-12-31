@@ -28,7 +28,7 @@ SWEP.Description = [[Easily recognizable for its unique bullpup design, the P90 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_p90.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_p90.mdl"
 
-SWEP.Category = 2
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true

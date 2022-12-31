@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
 SWEP.DefaultBodygroups = "0000000000"
 
-SWEP.Category = 2
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
