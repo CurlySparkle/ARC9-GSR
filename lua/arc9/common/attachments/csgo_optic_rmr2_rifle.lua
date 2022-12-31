@@ -2,7 +2,7 @@ ATT.PrintName = "RMR INS"
 ATT.CompactName = [[RMR]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
 ATT.Description = [[
-    Low-profile alt version of the RMR sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.
+    Low-profile alt version of the RMR sight that provides an effective aiming dot, mounted on a high-profile rail.
 ]]
 ATT.Pros = {
     "+ Clearer sight picture"
@@ -13,21 +13,21 @@ ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SIGHTS"
 
-ATT.Category = {"csgo_optics_pistols_alt"}
+ATT.Category = {"csgo_optic"}
 
 
-ATT.Model = "models/weapons/csgo/atts/sights/trijicon_alt_nonrail_acog.mdl"
-ATT.ModelBodygroups = "01"
-ATT.Scale = 0.5
-ATT.ModelOffset = Vector(0, -0.04, 0.1)
+ATT.Model = "models/weapons/csgo/atts/sights/trijicon_rifle.mdl"
+ATT.ModelBodygroups = "00"
+ATT.Scale = 0.4
+ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.05, 12, -0.8),
+        Pos = Vector(-0.01, 7.5, -1.6),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.1,
         ViewModelFOV = 56,
+        Magnification = 1.1,
         IgnoreExtra = false
     },
 }
