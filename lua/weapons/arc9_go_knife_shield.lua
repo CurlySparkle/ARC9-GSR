@@ -10,7 +10,7 @@ SWEP.PrintName = "Riot Shield"
 SWEP.Class = "Melee"
 
 SWEP.Credits = {
-    Author = "Twilight Sparle/SlogoKolt",
+    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
     Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 

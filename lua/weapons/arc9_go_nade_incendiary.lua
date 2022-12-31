@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 
-SWEP.PrintName = "Incendiary Nade"
+SWEP.PrintName = "Incendiary Grenade"
 SWEP.Class = "Grenade"
 SWEP.Description = [[
 When thrown, the incendiary grenade releases a high-temperature chemical reaction capable of burning anyone within its wide blast radius.
@@ -17,7 +17,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/eckololt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
     Assets = "Counter-Strike Global Offensive/Insurgency: Sandstorm"
 }
 
