@@ -129,17 +129,15 @@ SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.05
+SWEP.Spread = 0.035
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = 0
-SWEP.SpreadAddMove = 0.035
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.025
-SWEP.SpreadMultHipFire = 1
-SWEP.SpreadMultSights = 1
-SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddHipFire = 0.035
+SWEP.SpreadMultHipFire = 1.2
+SWEP.SpreadMultSights = 2
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
 
@@ -204,16 +202,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(26, 30, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 3)
-
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-22, 20, 0)
-SWEP.BlindFireRightAng = Angle(-80, -20, 3)
-
-SWEP.BlindFireLeftPos = Vector(22, 20, 0)
-SWEP.BlindFireLeftAng = Angle(80, -20, 3)
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 3)
 
 -------------------------- HoldTypes
 
@@ -273,7 +262,6 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
-		Mult = 1.5,
     },
     -- ["fire_sights"] = {
         -- Source = {"shoot1_ads"},
@@ -281,6 +269,7 @@ SWEP.Animations = {
     -- },
     ["cycle"] = {
         Source = {"pump"},
+		Mult = 0.7,
         EventTable = {
             {s = path .. "sawedoff_pump.wav", t = 4 / 30},
         },

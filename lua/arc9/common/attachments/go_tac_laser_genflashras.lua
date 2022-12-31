@@ -16,13 +16,13 @@ ATT.ToggleStats = {
     {
         PrintName = "Light",
         Flashlight = true,
-        FlashlightColor = Color(200, 225, 255),
+        FlashlightColor = Color(55, 55, 55),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 2048,
         FlashlightFOV = 80,
         FlashlightAttachment = 1,
         Flare = true,
-        FlareColor = Color(255, 255, 255),
+        FlareColor = Color(55, 55, 55),
         FlareSize = 300,
         FlareAttachment = 1
     },
