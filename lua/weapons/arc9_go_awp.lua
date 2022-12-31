@@ -596,6 +596,13 @@ SWEP.Attachments = {
         Category = {"universal_camo"},
         CosmeticOnly = true,
     },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.awp_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.75, -2.5, 6), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 SWEP.GripPoseParam = 4.5

@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_pist_p2000.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Slot = 1
+SWEP.Category = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_p2000.mdl"
@@ -442,4 +442,11 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_d.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.HKP2000_Slide", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.6, 0.1, 5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -80),
+	},
 }

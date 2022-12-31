@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_pist_usp.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Slot = 1
+SWEP.Category = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_usp.mdl"
@@ -643,5 +643,12 @@ SWEP.Attachments = {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
         CosmeticOnly = true,
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.slide", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.6, -0.4, 5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -85),
     },
 }

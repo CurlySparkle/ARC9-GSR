@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_shot_sawedoff.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Slot = 3
+SWEP.Category = 3
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -614,6 +614,13 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.sawedoff_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.65, -2.1, 6), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
     },
 }
 

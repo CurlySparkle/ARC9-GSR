@@ -383,6 +383,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1.1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             { s = "weapons/csgo/movement2.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement1.wav", t = 125 / 30 },
@@ -534,6 +556,13 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/mp5_c.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.MP5_Parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(1, -4, 7.1), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
     },
 }
 

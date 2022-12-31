@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
 SWEP.DefaultBodygroups = "0000000000"
 
-SWEP.Slot = 2
+SWEP.Category = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -698,6 +698,13 @@ SWEP.Attachments = {
         -- StickerModel = "models/weapons/stickers/v_models/smg_bizon_decal_d.mdl",
         -- Category = "stickers",
     -- },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.bizon_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.75, -3.5, 6), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 SWEP.GripPoseParam = 4.4

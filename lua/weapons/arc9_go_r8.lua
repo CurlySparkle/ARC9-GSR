@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_pist_r8.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Slot = 1
+SWEP.Category = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_r8.mdl"
@@ -434,5 +434,12 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.deagle_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.5, -3.4, 6.5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
     },
 }

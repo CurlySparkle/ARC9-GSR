@@ -28,7 +28,7 @@ SWEP.Description = [[Easily recognizable for its unique bullpup design, the P90 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_p90.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_p90.mdl"
 
-SWEP.Slot = 2
+SWEP.Category = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -746,6 +746,13 @@ SWEP.Attachments = {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
         CosmeticOnly = true,
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.p90_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(1.1, -4.5, 1), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
     },
 }
 

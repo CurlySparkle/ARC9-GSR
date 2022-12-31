@@ -500,4 +500,11 @@ SWEP.Attachments = {
         Category = {"universal_camo"},
         CosmeticOnly = true,
     },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.deagle_slide", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.5, 0, 5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
+    },
 }

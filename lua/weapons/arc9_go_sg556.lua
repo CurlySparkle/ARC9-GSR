@@ -28,7 +28,7 @@ Originally a civilian rifle, it has been illegally converted for automatic fire.
 SWEP.ViewModel = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_sg552.mdl"
 
-SWEP.Slot = 2
+SWEP.Category = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -594,6 +594,13 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.sg556_Parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.65, -3.25, 6.5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -85),
     },
 }
 

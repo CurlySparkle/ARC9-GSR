@@ -124,7 +124,7 @@ SWEP.Spread = 0.002
 
 SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.05
@@ -767,6 +767,13 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_c.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0.8, -3.3, 8.5),
+        Ang = Angle(90, 0, -90),
     },
 }
 

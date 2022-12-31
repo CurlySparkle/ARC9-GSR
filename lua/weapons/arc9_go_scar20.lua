@@ -27,7 +27,7 @@ SWEP.Description = [[The SCAR-20 is a semi-automatic sniper rifle that trades a 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_scar20.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
 
-SWEP.Slot = 3
+SWEP.Category = 3
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -616,6 +616,13 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.SCAR_Parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.71, -4.75, 5.6), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
     },
 }
 

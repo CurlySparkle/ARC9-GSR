@@ -462,7 +462,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.m9a1_R_parent",
-        Pos = Vector(0, -1.825, 5.5),
+        Pos = Vector(0, -1.9, 5.5),
         Ang = Angle(90, 180, 90),
 		Scale = 1,
     },
@@ -501,4 +501,11 @@ SWEP.Attachments = {
         -- StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_d.mdl",
         -- Category = "stickers",
     -- },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.m9a1_R_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.5, -2.2, 5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
+    },
 }

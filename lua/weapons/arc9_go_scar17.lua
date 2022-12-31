@@ -415,6 +415,28 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.8,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 
@@ -562,6 +584,13 @@ SWEP.Attachments = {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/scar17_c.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.SCAR_Parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.65, -4.5, 5.5), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -80),
     },
 }
 

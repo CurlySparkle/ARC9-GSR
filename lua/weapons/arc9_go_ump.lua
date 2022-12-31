@@ -29,7 +29,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_smg_ump.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_ump45.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Slot = 2
+SWEP.Category = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -523,6 +523,13 @@ SWEP.Attachments = {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
         CosmeticOnly = true,
+    },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.ump45_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(1, -4, 3), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
     },
 }
 

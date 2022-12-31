@@ -620,6 +620,13 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/shot_mag7_decal_d.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "v_weapon.mag7_parent", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(1, -4.7, -3), -- offset that the attachment will be relative to the bone
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 SWEP.GripPoseParam = 3
