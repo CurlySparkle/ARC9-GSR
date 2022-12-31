@@ -63,7 +63,7 @@ ATT.AutoStats = true
 ATT.Free = false
 
 ATT.Category = {"go_ump_barrel"}
-ATT.ActivateElements = {"barrel_mid"}
+ATT.ActivateElements = {"barrel_med"}
 --ATT.ExcludeElements = {"mag_82"}
 
 ATT.AimDownSightsTimeMult = 1.1
