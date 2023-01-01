@@ -89,7 +89,7 @@ ATT.SortOrder = 2
 ATT.Free = false
 
 ATT.Category = {"go_tec9_mag"}
-ATT.ClipSizeOverride = 32
+ATT.ClipSizeOverride = 10
 ATT.ReloadTimeMult = 0.9
 
 ATT.AimDownSightsTimeMult = 0.9

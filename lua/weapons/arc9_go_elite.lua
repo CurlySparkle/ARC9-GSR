@@ -391,6 +391,24 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["mag"] = {
+        Bodygroups = {
+			{2,1},
+        },
+    },
+    ["slide_long"] = {
+        Bodygroups = {
+		    {1,2},
+        },
+    AttPosMods = { [1] = { Pos = Vector(-0.025, -3.325, 9.1), } }	
+    },
+    ["slide_short"] = {
+        Bodygroups = {
+            {1,1},
+            {0,1},
+        },
+    AttPosMods = { [1] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
+    },
 }
 
 SWEP.Attachments = {
@@ -407,6 +425,34 @@ SWEP.Attachments = {
             }
         },
         Scale = 0.8,
+    },
+    {
+        PrintName = "Slide",
+        Category = "go_elite_slide"
+    },
+    {
+        PrintName = "Tactical",
+        DefaultAttName = "Default",
+        Category = {"csgo_tac","csgo_tac_pistols"},
+        Bone = "v_weapon.m9a1_L_parent",
+        DuplicateModels = {
+            {
+                Bone = "v_weapon.m9a1_R_parent",
+            }
+        },
+        Pos = Vector(0, -1.9, 5.5),
+        Ang = Angle(90, 180, 90),
+		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.m9a1_L_parent",
+        DuplicateModels = {
+            {
+                Bone = "v_weapon.m9a1_R_parent",
+            }
+        },
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",
