@@ -29,7 +29,7 @@ ATT.IKAnimationProxy = {
             {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 14 / 40},
         },		
     },
-    ["fire_ubgl_empty"] = {
+    ["fire_empty_ubgl"] = {
         Source = "fire_empty",
     },
     ["reload_ubgl"] = {
