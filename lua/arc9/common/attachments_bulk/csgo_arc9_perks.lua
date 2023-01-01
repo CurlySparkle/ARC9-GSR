@@ -3,7 +3,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = [[Rapid Reload]]
-ATT.Description = [[20% Reload Speed]]
+ATT.Description = [[Reload your weapon 20% faster than normal.]]
 ATT.Icon = Material("entities/attachs/go_perk_fastreload.png", "mips smooth")
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.AutoStats = true
@@ -36,9 +36,7 @@ ATT = {}
 ATT.PrintName = [[Enforcer]]
 ATT.CompactName = [[Enforcer]]
 ATT.Icon = Material("entities/attachs/go_perk_juggernaut.png", "mips smooth")
-ATT.Description = [[
-    Gain 30% resistance to damage.
-]]
+ATT.Description = [[Gain 30% resistance to damage.]]
 ATT.Pros = {
     "+ 30% Resistance to all damage."
 }
@@ -192,7 +190,7 @@ ARC9.LoadAttachment(ATT, "csgo_perk_melee_lounge")
 ATT = {}
 
 ATT.PrintName = [[Speed Melee]]
-ATT.Description = [[Increases the speed of swings by 35%]]
+ATT.Description = [[Increases the speed of swings by 35%.]]
 --ATT.Icon = Material("entities/attachs/go_perk_lounge.png", "mips smooth")
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.AutoStats = true

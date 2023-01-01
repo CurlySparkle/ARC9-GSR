@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "Glock Long Slide"
 ATT.CompactName = "Glock L"
-ATT.Description = [[Longer Barrel. Good for long range engagements.]]
+ATT.Description = [[Longer barrel. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_glock_slide_auto.png", "mips smooth")

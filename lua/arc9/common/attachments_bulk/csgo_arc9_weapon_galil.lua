@@ -55,9 +55,7 @@ ATT = {}
 ATT.PrintName = [[35 Mag]]
 ATT.CompactName = [[35 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[
-Increases capacity to 35 with the cost of decreased reload time and less handling.
-]]
+ATT.Description = [[Increases capacity to 35 round, at the cost of decreased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -75,9 +73,7 @@ ATT = {}
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[
-Increases capacity to 50 with the cost of decreased reload time and less handling.
-]]
+ATT.Description = [[Increases capacity to 50 round, at the cost of decreased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -95,9 +91,8 @@ ATT = {}
 ATT.PrintName = [[30-Round 7.62mm Poly]]
 ATT.CompactName = [[30 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png")
-ATT.Description = [[
-7.62mm conversion turning rifle into Galil ACE 34. Superior range and damage at the cost of recoil. Large magazine has inferior handling.
-]]
+ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine. Superior range and damage at the cost of recoil.
+Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.Free = false
@@ -131,9 +126,8 @@ ATT = {}
 ATT.PrintName = [[40-Round 7.62mm Poly]]
 ATT.CompactName = [[40 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png")
-ATT.Description = [[
-7.62mm conversion turning rifle into Galil ACE 34. Superior range and damage at the cost of recoil. Large magazine has inferior handling.
-]]
+ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine. Superior range and damage at the cost of recoil.
+Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.Free = false

@@ -5,9 +5,7 @@ ATT = {}
 ATT.PrintName = [[M203 Grenade Launcher]]
 ATT.CompactName = [[M203]]
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png")
-ATT.Description = [[
-    Explosive auxiliary device right in the comfort of your handguard or floating rails.
-]]
+ATT.Description = [[Explosive auxiliary device right in the comfort of your handguard or floating rails.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
@@ -157,9 +155,7 @@ ATT = {}
 ATT.PrintName = [[M203 Sight]]
 ATT.CompactName = [[Sight]]
 //ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png")
-ATT.Description = [[
-    Aiming module for extra precision.
-]]
+ATT.Description = [[Aiming module for extra precision.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1

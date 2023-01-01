@@ -81,9 +81,7 @@ ATT = {}
 ATT.PrintName = [[12-Round .45 UMP]]
 ATT.CompactName = [[12-Round]]
 ATT.Icon = Material("entities/attachs/go_ump_mag_12.png")
-ATT.Description = [[
-Small magazine with lighter load. Improves handling and reload speed.
-]]
+ATT.Description = [[Small magazine with lighter load. Improves handling and reload speed.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -103,9 +101,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 9mm UMP-9]]
 ATT.CompactName = [[30-Round 9mm]]
 ATT.Icon = Material("entities/attachs/go_ump_mag_30_9mm.png")
-ATT.Description = [[
-9mm magazine conversion for the UMP-45 submachine gun
-]]
+ATT.Description = [[9mm mag conversion from UMP9.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1

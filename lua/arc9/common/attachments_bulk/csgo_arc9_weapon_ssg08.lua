@@ -55,9 +55,7 @@ ATT = {}
 ATT.PrintName = [[15-Round .308 SSG]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_ssg08_mag_10.png")
-ATT.Description = [[
-Extended magazine improves capacity at the cost of handling and reload time.
-]]
+ATT.Description = [[Extended magazine improves capacity at the cost of handling and reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -78,9 +76,7 @@ ATT = {}
 ATT.PrintName = [[5-Round .338 SSG]]
 ATT.CompactName = [[5-Round]]
 ATT.Icon = Material("entities/attachs/go_ssg08_mag_5_338.png")
-ATT.Description = [[
-Modification to use .338 Lapua Magnum rounds, which are more powerful over long range.
-]]
+ATT.Description = [[.338 Lapua Magnum conversion, which are more powerful over long range.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -108,9 +104,7 @@ ATT = {}
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = [[Iron]]
 --ATT.Icon = Material("entities/attachs/go_optic_t1.png", "mips smooth")
-ATT.Description = [[
-Gives the AWP a standard iron sight, good for close quarters, bad for long distances.
-]]
+ATT.Description = [[Gives the AWP a standard iron sight. Good for close quarters but bad for long distances.]]
 
 ATT.Category = {"csgo_sights_ssg08"}
 ATT.ActivateElements = {"sight_iron"}

@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "226mm Commando Barrel"
 ATT.CompactName = "CMDO"
-ATT.Description = [[Compact handguard configuration from the SG 552 Commando.\
+ATT.Description = [[Compact handguard configuration from the SG 552 Commando.
 Good for close range engagements.]]
 ATT.SortOrder = 226
 
@@ -154,7 +154,7 @@ ATT = {}
 
 ATT.PrintName = "7.62 Magazine"
 ATT.CompactName = "AK"
-ATT.Description = [[the swiss has joined the warsaw pact.]]
+ATT.Description = [[The Swiss has joined the Warsaw pact.]]
 
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
 

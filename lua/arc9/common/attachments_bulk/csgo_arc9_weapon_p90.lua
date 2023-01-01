@@ -5,7 +5,7 @@ ATT = {}
 
 ATT.PrintName = "Sling"
 ATT.CompactName = "Sling"
-ATT.Description = [[Gives the p90 a sling that helps reduce a bit of recoil.]]
+ATT.Description = [[Gives the P90 a sling that helps reduce a bit of recoil.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_p90_sling.png", "mips smooth")
@@ -26,7 +26,7 @@ ATT = {}
 
 ATT.PrintName = "Compact Frame"
 ATT.CompactName = "Compact"
-ATT.Description = [[Gives the p90 a more conventional grip and removes half of its stock.]]
+ATT.Description = [[Gives the P90 a more conventional grip and removes half of its stock.]]
 ATT.SortOrder = -1
 
 //ATT.Icon = Material("entities/attachs/go_p90_sling.png", "mips smooth")
@@ -152,9 +152,7 @@ ATT = {}
 
 ATT.PrintName = "410mm PS90 Barrel"
 ATT.CompactName = "410mm PS90"
-ATT.Description = [[
-Medium-length barrel used on the PS90 carbine.
-]]
+ATT.Description = [[Medium-length barrel used on the PS90 carbine.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_p90_barrel_med.png", "mips smooth")
@@ -180,9 +178,7 @@ ATT = {}
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_p90_mag_30.png")
-ATT.Description = [[
-Decreases the capacity to 30 with the benefit of decreased reload time and more handling.
-]]
+ATT.Description = [[Decreases the capacity to 30, gives a decreased reload time and more handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -202,10 +198,8 @@ ATT = {}
 ATT.PrintName = [[30-round STANAG]]
 ATT.CompactName = [[30-STANAG]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[
-Conversion to 5.56 with the use of a STANAG mag with 30 capacity. 
-(Wacky right? how is this possible!?)
-]]
+ATT.Description = [[Conversion to 5.56 with the use of a STANAG 30 round magazine.
+(Wacky right? How is this possible!?)]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
@@ -234,10 +228,8 @@ ATT = {}
 ATT.PrintName = [[20-round STANAG]]
 ATT.CompactName = [[20-STANAG]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
-ATT.Description = [[
-Conversion to 5.56 with the use of a STANAG mag with 20 capacity. 
-(Wacky right? how is this still possible!?)
-]]
+ATT.Description = [[Conversion to 5.56 with the use of a STANAG 20 round magazine.
+(Wacky right? How is this still possible!?)]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4

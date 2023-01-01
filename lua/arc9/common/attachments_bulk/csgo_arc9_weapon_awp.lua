@@ -79,9 +79,7 @@ ATT = {}
 
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = [[Folding]]
-ATT.Description = [[
-Folding Stock for the AWP. Improves recoil at the cost of handling.
-]]
+ATT.Description = [[Folding Stock for the AWP. Improves recoil at the cost of handling.]]
 ATT.Icon = Material("entities/attachs/awp_stock_folding.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -102,9 +100,7 @@ ATT = {}
 ATT.PrintName = [[15-Round .338 AWM]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_15.png")
-ATT.Description = [[
-Extended capacity by 50% more with the cost of increased reload time.
-]]
+ATT.Description = [[Extended capacity by 50%, at the cost of increased reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -126,9 +122,7 @@ ATT = {}
 ATT.PrintName = [[5-Round .338 AWM]]
 ATT.CompactName = [[5-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_5.png")
-ATT.Description = [[
-Reduced capacity by 50% with an increased of reload speed and extra damage and handling.
-]]
+ATT.Description = [[Reduced capacity by 50%. Gives an increased of reload speed, extra damage, and handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -156,9 +150,7 @@ ATT = {}
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = [[Iron]]
 --ATT.Icon = Material("entities/attachs/go_optic_t1.png", "mips smooth")
-ATT.Description = [[
-Gives the AWP a standard iron sight, good for close quarters, bad for long distances.
-]]
+ATT.Description = [[Gives the AWP a standard iron sight. Good for close quarters but bad for long distances.]]
 
 ATT.Category = {"csgo_sights_awp"}
 ATT.ActivateElements = {"sight_iron"}

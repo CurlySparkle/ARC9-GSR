@@ -6,9 +6,7 @@ ATT = {}
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_ak47_mag_drum.png")
-ATT.Description = [[
-Increases capacity to 50 with the cost of decreased reload time and less handling.
-]]
+ATT.Description = [[Increases capacity to 50 round, at the cost of decreased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -168,9 +166,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.56mm Poly]]
 ATT.CompactName = [[30 5.56mm]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[
-5.56MM conversion for the AK-47. Lighter weight and with better recoil, though at the cost of overall range and damage.
-]]
+ATT.Description = [[5.56mm conversion for the AK-47 with 30 round magazine. Lighter weight and with better recoil, though at the cost of overall range and damage.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
@@ -201,9 +197,7 @@ ATT = {}
 ATT.PrintName = [[50-Round 5.56mm Poly]]
 ATT.CompactName = [[50 5.56mm]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[
-5.56MM conversion for the AK-47. Huge casket magazine that can hold 50 rounds, though very cumbersome.
-]]
+ATT.Description = [[5.56mm conversion for the AK-47. Huge casket magazine that can hold 50 rounds, though very cumbersome.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4
@@ -234,10 +228,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.45x39]]
 ATT.CompactName = [[30 5.45x39]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[
-5.45x39 conversion for the AK-47. less RPM with the benefit and cost of good damage for more recoil.
-(30 Capacity)
-]]
+ATT.Description = [[5.45x39 conversion for the AK-47 with 30 round magazine. Less RPM with the benefit and cost of good damage for more recoil.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
@@ -269,10 +260,7 @@ ATT = {}
 ATT.PrintName = [[40-Round 5.45x39]]
 ATT.CompactName = [[40 5.45x39]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[
-5.45x39 conversion for the AK-47. less RPM with the benefit and cost of good damage for more recoil.
-(40 Capacity)
-]]
+ATT.Description = [[5.45x39 conversion for the AK-47 with 40 round magazine. Less RPM with the benefit and cost of good damage for more recoil.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6

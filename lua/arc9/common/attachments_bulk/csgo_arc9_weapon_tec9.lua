@@ -56,9 +56,7 @@ ATT = {}
 ATT.PrintName = [[32-Round 9mm TEC-9]]
 ATT.CompactName = [[32-Round]]
 ATT.Icon = Material("entities/attachs/go_tec9_mag_32.png")
-ATT.Description = [[
-Extended magazine improves capacity at the cost of handling.
-]]
+ATT.Description = [[Extended magazine. Improves capacity, at the cost of handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -80,9 +78,7 @@ ATT = {}
 ATT.PrintName = [[10-Round 9mm TEC-9]]
 ATT.CompactName = [[10-Round]]
 ATT.Icon = Material("entities/attachs/go_tec9_mag_10.png")
-ATT.Description = [[
-Small magazine with lighter load. Improves handling.
-]]
+ATT.Description = [[Small magazine with lighter load. Improves handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

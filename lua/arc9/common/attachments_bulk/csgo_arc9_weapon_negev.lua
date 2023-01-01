@@ -101,9 +101,8 @@ ATT = {}
 ATT.PrintName = [[50-Round 7.62mm Bullet Type]]
 ATT.CompactName = [[50 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_negev_belt_100.png")
-ATT.Description = [[
-Conversion for the Negev into 7.62mm, Superior range and damage at the cost of recoil and inferior handling with less RPM.
-]]
+ATT.Description = [[7.62mm conversion with 50 round magazine.
+Superior range and damage at the cost of recoil and inferior handling with less RPM.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -131,9 +130,7 @@ ATT = {}
 ATT.PrintName = [[50-Round 5.56mm Drum Magazine]]
 ATT.CompactName = [[50 5.56mm]]
 ATT.Icon = Material("entities/attachs/go_negev_belt_100.png")
-ATT.Description = [[
-hes so fast doe.
-]]
+ATT.Description = [[He's so fast doe.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1

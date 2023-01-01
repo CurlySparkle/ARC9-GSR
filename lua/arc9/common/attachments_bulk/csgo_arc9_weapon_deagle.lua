@@ -35,7 +35,7 @@ ATT = {}
 
 ATT.PrintName = [[DEagle Extender Slide]]
 ATT.CompactName = [[DE Slide]]
-ATT.Description = [[A muzzle brake for reducing the recoil of the weapon with the cost of less handling.(Gives a better shooting handling)]]
+ATT.Description = [[A muzzle brake for reducing the recoil of the weapon with the cost of less handling (Gives a better shooting handling).]]
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -73,7 +73,7 @@ ATT = {}
 
 ATT.PrintName = [[DEagle Extender Slide 2]]
 ATT.CompactName = [[DE Slide 2]]
-ATT.Description = [[A muzzle brake for reducing even more recoil of the weapon with the cost of even less handling.(Gives a better shooting handling)]]
+ATT.Description = [[A muzzle brake for reducing even more recoil of the weapon with the cost of even less handling (Gives a better shooting handling).]]
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -136,9 +136,7 @@ ATT = {}
 ATT.PrintName = [[Extended Magazine]]
 ATT.CompactName = [[Ext Mag]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[
-Extended capacity by 50% more with the cost of increased reload time.
-]]
+ATT.Description = [[Extended capacity by 50%, at the cost of increased reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5

@@ -55,9 +55,7 @@ ATT = {}
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[
-Increas the capacity to 30 rounds, more rounds for the cost of more handling.
-]]
+ATT.Description = [[Increase the capacity to 30 round, at the cost of more handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -76,9 +74,7 @@ ATT = {}
 ATT.PrintName = [[60 Mag]]
 ATT.CompactName = [[60 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[
-Increases capacity with a heavy mag of 60 bullets with the cost of less handling and reload speed.
-]]
+ATT.Description = [[Increases capacity with a heavy mag of 60 round magazine, at the cost of less handling and reload speed.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

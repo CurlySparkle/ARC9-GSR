@@ -158,7 +158,7 @@ ATT = {}
 ATT.PrintName = "Weapon Color Tracer"
 ATT.CompactName = "TR-WCLR"
 ATT.Icon = Material("entities/attachs/go_ammo_color.png", "mips smooth")
-ATT.Description = [[Tracer rounds. Loaded with colors matching the user's weapon (physgun) color. (Pretty cool right?)]]
+ATT.Description = [[Tracer rounds. Loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?).]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
@@ -188,7 +188,8 @@ ATT = {}
 ATT.PrintName = "High Explosive"
 ATT.CompactName = "HE"
 ATT.Icon = Material("entities/attachs/go_ammo_tr.png", "mips smooth")
-ATT.Description = [[Explosive rounds sacrifice direct damage in favor of dealing damage in a radius around the impact point. The effect is spectacular, but little explosive filler can be put inside most bullets.]]
+ATT.Description = [[Explosive rounds sacrifice direct damage in favor of dealing damage in a radius around the impact point.
+The effect is spectacular, but little explosive filler can be put inside most bullets.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo_sniper"}

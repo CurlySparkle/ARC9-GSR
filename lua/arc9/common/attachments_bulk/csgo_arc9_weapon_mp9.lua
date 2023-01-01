@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "350mm Barrel"
 ATT.CompactName = "350mm"
-ATT.Description = [[extended barrel, Good for long range engagements..]]
+ATT.Description = [[Extended barrel, good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_mp9_barrel_long.png", "mips smooth")
@@ -55,9 +55,7 @@ ATT = {}
 ATT.PrintName = [[20 Mag]]
 ATT.CompactName = [[20 Mag]]
 ATT.Icon = Material("entities/attachs/go_mp9_mag_15.png")
-ATT.Description = [[
-Decreases capacity by 30% more with the cost of decreased reload time and less handling.
-]]
+ATT.Description = [[Decreases capacity by 30%, gives a decreased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

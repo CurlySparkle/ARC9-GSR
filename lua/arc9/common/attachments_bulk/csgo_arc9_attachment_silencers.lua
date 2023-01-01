@@ -56,7 +56,8 @@ ATT = {}
 
 ATT.PrintName = [[P90 Suppressor]]
 ATT.CompactName = [[P90 Supp]]
-ATT.Description = [[A tactical suppressor that reduces audible report by a lot with a penalty of significant bulk designed for the P90. May not be suitable for other weapons.]]
+ATT.Description = [[A tactical suppressor that reduces audible report by a lot with a penalty of significant bulk designed for the P90.
+May not be suitable for other weapons.]]
 ATT.Icon = Material("entities/attachs/silencer_p90.png", "mips smooth")
 
 ATT.SortOrder = 1

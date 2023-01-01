@@ -90,9 +90,7 @@ ATT = {}
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[
-Increases the capacity to 30.
-]]
+ATT.Description = [[Increases the magazine capacity to 30.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -109,9 +107,7 @@ ATT = {}
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_drum.png")
-ATT.Description = [[
-Increases the capacity to 50 with the cost of increased reload time and less handling.
-]]
+ATT.Description = [[Increases the magazine capacity to 50, at the cost of increased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

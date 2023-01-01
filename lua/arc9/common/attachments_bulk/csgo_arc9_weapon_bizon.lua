@@ -57,9 +57,7 @@ ATT = {}
 ATT.PrintName = [[47-Round 9mm Bizon]]
 ATT.CompactName = [[47-Round]]
 ATT.Icon = Material("entities/attachs/go_bizon_mag_47.png")
-ATT.Description = [[
-Small magazine with lighter load. Improves handling.
-]]
+ATT.Description = [[Small magazine with lighter load. Improves handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -83,9 +81,7 @@ ATT = {}
 ATT.PrintName = [[82-Round 9mm Helix]]
 ATT.CompactName = [[82-Round]]
 ATT.Icon = Material("entities/attachs/go_bizon_mag_82.png")
-ATT.Description = [[
-Extended magazine improves capacity at the cost of handling.
-]]
+ATT.Description = [[Extended magazine. Improves capacity, at the cost of handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -110,9 +106,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 9mm Saiga]]
 ATT.CompactName = [[30-Round]]
 ATT.Icon = Material("entities/attachs/go_bizon_mag_82.png")
-ATT.Description = [[
-Small stick magazine improves handling at the cost of capacity.
-]]
+ATT.Description = [[Small stick magazine. Improves handling, at the cost of capacity.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = -1

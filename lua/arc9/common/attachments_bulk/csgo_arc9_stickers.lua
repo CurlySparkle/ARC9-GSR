@@ -2,9 +2,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = [[Kawai Killer]]
+ATT.PrintName = [[Kawaii Killer]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/kawai")
 
 ATT.SortOrder = 0
@@ -21,7 +21,7 @@ ATT = {}
 
 ATT.PrintName = [[Baby Lore]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/baby_lore_paper")
 
 ATT.SortOrder = 0
@@ -37,7 +37,7 @@ ATT = {}
 
 ATT.PrintName = [[Baby Medusa]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/baby_medusa_paper")
 
 ATT.SortOrder = 0
@@ -53,7 +53,7 @@ ATT = {}
 
 ATT.PrintName = [[Kawaii CT]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/kawaii_ct_holo_base")
 
 ATT.SortOrder = 0
@@ -69,7 +69,7 @@ ATT = {}
 
 ATT.PrintName = [[Nice Try]]
 ATT.Description = [[Nice try bozo.
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/nice_try_holo_base")
 
 ATT.SortOrder = 0
@@ -85,7 +85,7 @@ ATT = {}
 
 ATT.PrintName = [[Noble Steed]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/noble_steed_paper")
 
 ATT.SortOrder = 0
@@ -101,7 +101,7 @@ ATT = {}
 
 ATT.PrintName = [[Rush B]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/rush_b_csgo10_paper")
 
 ATT.SortOrder = 0
@@ -117,7 +117,7 @@ ATT = {}
 
 ATT.PrintName = [[Zeusception]]
 ATT.Description = [[
-Sticker included in Gunsmight Reloaded.]]
+Sticker included in Gunsmith Reloaded.]]
 ATT.Icon = Material("stickers/zeusception_holo_base")
 
 ATT.SortOrder = 0

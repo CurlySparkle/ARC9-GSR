@@ -54,9 +54,7 @@ ATT = {}
 
 ATT.PrintName = "Specialized Stock"
 ATT.CompactName = [[Specialized]]
-ATT.Description = [[
-Specialized stock produced for the MK17. Improves recoil at the cost of handling.
-]]
+ATT.Description = [[Specialized stock produced for the MK 17. Improves recoil at the cost of handling.]]
 ATT.Icon = Material("entities/attachs/go_scar17_stock_specialized.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -154,9 +152,7 @@ ATT = {}
 
 ATT.PrintName = "PDW Stock"
 ATT.CompactName = [[PDW]]
-ATT.Description = [[
-Lightweight cutdown stock improves handling
-]]
+ATT.Description = [[Lightweight cutdown stock, improves handling.]]
 ATT.Icon = Material("entities/attachs/go_scar17_stock_pdw.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -181,9 +177,7 @@ ATT = {}
 
 ATT.PrintName = "SCARAB Stock"
 ATT.CompactName = [[SCARAB]]
-ATT.Description = [[
-Ultra lightweight bullpup PDW kit
-]]
+ATT.Description = [[Ultra lightweight bullpup PDW kit.]]
 ATT.SortOrder = 10
 ATT.Icon = Material("entities/attachs/go_scar17_stock_scarab.png", "mips smooth")
 ATT.Desc_Pros = {

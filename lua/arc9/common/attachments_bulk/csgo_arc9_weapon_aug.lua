@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "9mm Magazine"
 ATT.CompactName = "9mm"
-ATT.Description = [[]]
+ATT.Description = [[9mm conversion with 25 round magazine.]]
 
 ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
 ATT.ShootSound = "CSGO.MP9.Fire"
@@ -40,7 +40,7 @@ ATT = {}
 
 ATT.PrintName = "Extended 9mm Magazine"
 ATT.CompactName = "9mmX"
-ATT.Description = [[]]
+ATT.Description = [[9mm conversion with 32 round extended magazine.]]
 
 ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm_extended.png", "mips smooth")
 ATT.ShootSound = "CSGO.MP9.Fire"
