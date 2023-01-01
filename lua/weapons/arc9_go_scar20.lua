@@ -530,7 +530,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         Installed = "csgo_optic_scope_scar20",
-		Integral = true,
+		//Integral = true,
         CorrectiveAng = Angle(0.35, -1.25, 0),
     },
     {
