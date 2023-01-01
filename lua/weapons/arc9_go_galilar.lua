@@ -178,9 +178,6 @@ SWEP.SprintMidPoint = {
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.ReloadPos = Vector(5, 0, 0)
-SWEP.ReloadAng = Angle(25, 0, 0)
-
 SWEP.MovingMidPoint = {
     Pos = Vector(0, -0.5, -0.5),
     Ang = Angle(0, 0, 0)
