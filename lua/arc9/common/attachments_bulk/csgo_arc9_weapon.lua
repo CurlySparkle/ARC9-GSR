@@ -32,7 +32,7 @@ ATT = {}
 
 ATT.PrintName = "R6"
 ATT.CompactName = "R"
-ATT.Description = [[6-round cylinder and slim barrel.]]
+ATT.Description = [[6-round cylinder and slim barrel, increases trigger response.]]
 
 // ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -42,6 +42,7 @@ ATT.SortOrder = 0
 ATT.Category = "go_r8"
 ATT.ActivateElements = {"r6"}
 ATT.ClipSizeMult = 6/8
+ATT.RPMMult = 2
 
 ARC9.LoadAttachment(ATT, "csgo_r8_model")
 

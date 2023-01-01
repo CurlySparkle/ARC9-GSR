@@ -75,7 +75,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 200
+SWEP.RPM = 120
 
 SWEP.Firemodes = {
     {
@@ -326,7 +326,12 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["r6"] = { Bodygroups = {{0,1},{1,1}},},
+    ["r6"] = { 
+	Bodygroups = {
+	{0,1},{1,1}
+	},
+  --AttPosMods = { [2] = { Pos = Vector(10.5, 0.55, 1.8), } }
+  },
 }
 
 SWEP.Attachments = {
@@ -343,6 +348,7 @@ SWEP.Attachments = {
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(8.5, 0.55, 1.8),
         Ang = Angle(0, 0, 0),
+		ExcludeElements = {"r6"},
         DuplicateModels = {
             {
                 Bone = "tag_pistol_attachments",
@@ -354,31 +360,36 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Sights",
-        Bone = "j_slide",
-        Pos = Vector(-2, 0, 0.2),
-        Ang = Angle(0, 0, 0),
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0.7, 2.65),
+        Ang = Angle(0, 0, 10),
         Category = {"csgo_optics_pistols",},
-        CorrectiveAng = Angle(0.0, 0.05, 0),
+        CorrectiveAng = Angle(-0.45, -0.5, 0),
+		ExcludeElements = {"r6"},
         DuplicateModels = {
             {
-                Bone = "j_slide_l",
+                Bone = "tag_pistol_attachments",
+				Pos = Vector(3, -0.7, 2.65),
+				Ang = Angle(0, 0, -10),
             }
         },
-		Scale = 0.9,
+		Scale = 0.8,
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
-        Bone = "tag_pistol_attachments",
-        Pos = Vector(4, 0, 0.17),
-        Ang = Angle(0, 0, 0),
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(5, 0.4, 0.8),
+        Ang = Angle(0, 0, 10),
         DuplicateModels = {
             {
-                Bone = "tag_pistol_attachments_l",
+                Bone = "tag_pistol_attachments",
+				Pos = Vector(5, -0.4, 0.8),
+                Ang = Angle(0, 0, -10),
             }
         },
-		Scale = 1,
+		Scale = 0.8,
     },
     {
         PrintName = "Perk",

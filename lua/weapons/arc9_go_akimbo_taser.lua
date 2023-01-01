@@ -149,7 +149,7 @@ SWEP.IronSights = {
     CrosshairInSights = true
 }
 
-SWEP.HasSights = false
+SWEP.HasSights = true
 
 SWEP.ViewModelFOVBase = 56
 
@@ -254,9 +254,9 @@ SWEP.Hook_BulletImpact = function(wep, data)
     end
 end
 
-function SWEP:SecondaryAttack()
-    return self:MeleeAttack()
-end
+-- function SWEP:SecondaryAttack()
+    -- return self:MeleeAttack()
+-- end
 
 SWEP.Animations = {
     ["fire_left"] = {
@@ -330,31 +330,18 @@ SWEP.Animations = {
 SWEP.Attachments = {
     {
         PrintName = "Sights",
-        Bone = "j_slide",
-        Pos = Vector(-3.5, 0, 1.4),
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(-0.5, -0.05, 1.6),
         Ang = Angle(0, 0, 0),
         Category = {"csgo_optics_pistols",},
         CorrectiveAng = Angle(0.25, 0.25, 0),
         DuplicateModels = {
             {
-                Bone = "j_slide_l",
+                Bone = "tag_pistol_attachments_l",
+				Pos = Vector(-0.5, -0.05, 1.7),
             }
         },
 		Scale = 0.9,
-    },
-    {
-        PrintName = "Tactical",
-        DefaultAttName = "Default",
-        Category = {"csgo_tac","csgo_tac_pistols"},
-        Bone = "tag_pistol_attachments",
-        Pos = Vector(5.4, 0, 0.5),
-        Ang = Angle(0, 0, 0),
-        DuplicateModels = {
-            {
-                Bone = "tag_pistol_attachments_l",
-            }
-        },
-		Scale = 1,
     },
     {
         PrintName = "Perk",
