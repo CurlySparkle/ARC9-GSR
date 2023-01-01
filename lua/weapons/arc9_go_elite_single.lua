@@ -23,7 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[Mais oui.]]
+SWEP.Description = [[Losing one large-mag Beretta will increase accuracy and decrease load times. On the bright side, you'll get to fire one large-mag Beretta instead.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_elite_single.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
@@ -285,8 +285,8 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
-            {t = 0.75, lhik = 0, rhik = 1 },
-            {t = 0.95, lhik = 1, rhik = 1 },
+            {t = 0.8, lhik = 0, rhik = 1 },
+            {t = 1, lhik = 1, rhik = 1 },
         },		
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5 / 30},
@@ -299,8 +299,8 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
-            {t = 0.65, lhik = 0, rhik = 1 },
-            {t = 0.85, lhik = 1, rhik = 1 },
+            {t = 0.75, lhik = 0, rhik = 1 },
+            {t = 0.9, lhik = 1, rhik = 1 },
         },		
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5 / 30},
@@ -420,13 +420,20 @@ SWEP.AttachmentElements = {
 	Bodygroups = { {0,2},{1,3}, },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
 	},	
+    ["slide_raffica"] = { 
+	Bodygroups = { {0,3},{1,4}, },
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
+	},	
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Slide",
-		--Bone = "v_weapon.glock_magazine",
-        Category = "go_elite_s"
+        DefaultAttName = "Standard Slide",
+        Bone = "v_weapon.m9a1_R_parent",
+        Pos = Vector(-0.025, -3.325, 4),
+        Ang = Angle(90, 0, -90),
+        Category = "go_elite_s",
     },
     {
         PrintName = "Muzzle",
@@ -437,14 +444,13 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Scale = 0.8,
     },
-    {
+    { -- c'est pour les bras cachees.     ne modifiez PAS sil vous plait    -TOUJOURS INTEGRE-
         PrintName = "Pourquoi",
         Bone = "v_weapon.m9a1_R_parent",
         Pos = Vector(2.375, -6.55, -10),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_elite"},
-        InstalledElements = {"mount"},
-        Installed = "go_holdstyle_elite_intergral",
+        Installed = "csgo_elite_ik_bodge",
         Integral = true,
         Hidden = true,		
     },	

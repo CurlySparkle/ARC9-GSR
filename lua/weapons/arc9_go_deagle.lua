@@ -254,9 +254,9 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Hook_TranslateAnimation = function (self, anim)
     //local attached = self:GetElements()
-    local rng = math.Truncate(util.SharedRandom("ik hou van jij", 1,100))
+    local rng = math.Truncate(util.SharedRandom("ik hou van jij", 1,100)) -- nombre aleatoire, d'un a cent
 	
---	0 - 30 - 70 - 100 | 1/3 1/3 1/3
+--	0 - 50 et 70 - 100 | 1/2 et 1/3
  
 	if rng >= 70 then -- kill me
 		if anim == "reload" then		
@@ -266,7 +266,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
 			return "reload_tacticool_empty" 
 		end
     end	
-	if rng <= 30 then -- lol?
+	if rng <= 50 then -- lol?
 		if anim == "reload" then		
 			return "reload_alt" 
 		end	

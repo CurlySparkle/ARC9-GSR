@@ -322,10 +322,10 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
-            {s = "weapons/csgo/famas/famas_clipin.wav", t = 52 / 30},
+            {s = "weapons/csgo/famas/famas_clipin.wav", t = 49 / 30},
             --{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
-            {s = "weapons/csgo/famas/famas_boltback.wav", t = 76 / 30},
-            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 78 / 30},
+            {s = "weapons/csgo/famas/famas_boltback.wav", t = 71 / 30},
+            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 77 / 30},
         },
     },
     ["ready"] = {
