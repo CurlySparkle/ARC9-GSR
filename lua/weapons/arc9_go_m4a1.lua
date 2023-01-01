@@ -259,6 +259,7 @@ local path = "weapons/csgo/m4a1/"
 SWEP.ShootSound = "CSGO.m4a1.Fire_unSil"
 SWEP.ShootSoundSilenced = "CSGO.m4a1.Fire_sil"
 SWEP.DistantShootSound = "CSGO.m4a1.Fire_Distance"
+SWEP.DistantShootSoundSilenced = "CSGO.m4a1.Fire_Distance_Sil"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = ""

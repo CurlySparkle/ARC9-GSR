@@ -137,8 +137,8 @@ SWEP.NoLastCycle = true
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
-SWEP.PostBashTime = 0.6
+SWEP.PreBashTime = 0.15
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -266,7 +266,7 @@ SWEP.Animations = {
 		Mult = 0.8,
         EventTable = {
             {s = path .. "ssg08_boltback.wav", t = 10 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 29 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 25 / 50},
         },
     },
     ["cycle_sights"] = {
@@ -275,7 +275,7 @@ SWEP.Animations = {
 		Mult = 0.8,
         EventTable = {
             {s = path .. "ssg08_boltback.wav", t = 10 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 29 / 50},
+            {s = path .. "ssg08_boltforward.wav", t = 25 / 50},
         },
     },
     ["reload"] = {
@@ -378,6 +378,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee","melee2","melee3"},
+		Mult = 0.9,
     },
 }
 

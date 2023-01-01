@@ -75,7 +75,8 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 857*1.5
+--SWEP.RPM = 857*1.5 -- Why this????
+SWEP.RPM = 857
 
 SWEP.Firemodes = {
     {
@@ -86,20 +87,20 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1.9 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 20 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
@@ -460,10 +461,24 @@ SWEP.Attachments = {
         Category = {"csgo_tube","stock_retract",},
         Bone = "tag_pistol_attachments",
 		InstalledElements = {"stock_none"},
-        Pos = Vector(-5, 0, 0.25),
-        Ang = Angle(0, 0, -90),
+        Pos = Vector(-4, 0, 0.3),
+        Ang = Angle(0, 0, 0),
+        DuplicateModels = {
+            {
+                Bone = "tag_pistol_attachments_l",
+                Pos = Vector(-4, 0, 0.5),
+                Ang = Angle(0, 0, 0),
+				Scale = 0.8,
+            }
+        },
 		Scale = 0.8,
-    },	
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "j_mag1_l",
+        Category = "go_ammo",
+        Icon_Offset = Vector(0, 1, 0),
+    },
     {
         PrintName = "Mag",
 		Bone = "j_mag1_l",

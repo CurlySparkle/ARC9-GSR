@@ -207,6 +207,17 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.m4a1.Fire_Distance_Sil",
+    channel = CHAN_WEAPON,
+    volume = 0.3,
+    level = 120,
+    pitch = {95,105},
+    sound = {
+        "^weapons/csgo/m4a1/m4a1_silencer_01.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.m4a1.Fire_Distance",
     channel = CHAN_WEAPON,
     volume = 0.5,
