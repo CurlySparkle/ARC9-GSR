@@ -226,7 +226,7 @@ SWEP.Animations = {
 SWEP.Attachments = {
     {
         PrintName = "Perk",
-        Category = {"go_perk","go_perk_melee"},
+        Category = {"go_perk_melee"},
     },
     {
         PrintName = "Skins",

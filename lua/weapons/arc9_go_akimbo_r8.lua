@@ -135,10 +135,6 @@ SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being a
 
 -------------------------- MELEE
 
-function SWEP:SecondaryAttack()
-    return self:MeleeAttack()
-end
-
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
@@ -173,7 +169,7 @@ SWEP.IronSights = {
     CrosshairInSights = true
 }
 
-SWEP.HasSights = false
+SWEP.HasSights = true
 
 SWEP.ViewModelFOVBase = 56
 
@@ -345,11 +341,13 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "tag_pistol_attachments_l",
-        Pos = Vector(8.5, 0, 1.8),
+        Pos = Vector(8.5, 0.55, 1.8),
         Ang = Angle(0, 0, 0),
         DuplicateModels = {
             {
                 Bone = "tag_pistol_attachments",
+		        Pos = Vector(8.5, -0.55, 1.7),
+                Ang = Angle(0, 0, 0),
             }
         },
         Scale = 0.85,

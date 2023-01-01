@@ -3,7 +3,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = [[Rapid Reload]]
-ATT.Description = [[25% Reload Speed]]
+ATT.Description = [[20% Reload Speed]]
 ATT.Icon = Material("entities/attachs/go_perk_fastreload.png", "mips smooth")
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.AutoStats = true
@@ -12,7 +12,7 @@ ATT.Free = true
 
 ATT.Category = {"go_perk"}
 
-ATT.ReloadTimeMult = 0.85
+ATT.ReloadTimeMult = 0.80
 
 ARC9.LoadAttachment(ATT, "csgo_perk_fastreload")
 
@@ -48,7 +48,7 @@ ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 
 ATT.Free = true
 
-ATT.Category = {"go_perk"}
+ATT.Category = {"go_perk","go_perk_melee"}
 ATT.ActivateElements = {"enforcer"}
 
 ARC9.LoadAttachment(ATT, "csgo_perk_enforcer")
@@ -68,7 +68,7 @@ end)
 ATT = {}
 
 ATT.PrintName = [[Ace In The Hole]]
-ATT.Description = [[Against NPCs, 33% chance for each shot to deal 200% damage.]]
+ATT.Description = [[Against NPCs, 33% chance for each hit to deal 200% damage.]]
 ATT.Icon = Material("entities/attachs/go_perk_ace.png", "mips smooth")
 ATT.AutoStats = true
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
@@ -176,7 +176,7 @@ ARC9.LoadAttachment(ATT, "csgo_perk_diver")
 ATT = {}
 
 ATT.PrintName = [[Lounger]]
-ATT.Description = [[Adds lounge range for more prceice hits.]]
+ATT.Description = [[Adds lounge range for more precise hits.]]
 ATT.Icon = Material("entities/attachs/go_perk_lounge.png", "mips smooth")
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.AutoStats = true

@@ -143,9 +143,10 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.HoldTypeHolstered = "none"
 SWEP.HoldType = "melee2"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RELOAD_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
-SWEP.AnimDraw = false
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
+SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_SLAM 
 
 function SWEP:SecondaryAttack()
     return self:MeleeAttack()
@@ -210,7 +211,7 @@ sound.Add({
 SWEP.Attachments = {
     {
         PrintName = "Perk",
-        Category = {"go_perk","go_perk_melee"},
+        Category = {"go_perk_melee"},
     },
     {
         PrintName = "Skins",

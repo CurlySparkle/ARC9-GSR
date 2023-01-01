@@ -26,14 +26,15 @@ SWEP.Credits = {
 SWEP.Description = [[The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you'd better kill what you hit.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_sawnoff.mdl"
-SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
+SWEP.WorldModel = "models/weapons/csgo/w_akimbo_sawnoff.mdl"
 SWEP.DefaultBodygroups = "00000"
 
 SWEP.Slot = 1
 
-SWEP.MirrorVMWM = true
+SWEP.MirrorVMWM = false
 SWEP.WorldModelMirror = "models/weapons/csgo/c_akimbo_sawnoff.mdl"
 SWEP.NoTPIKVMPos = true
+SWEP.NoTPIK = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-13, 5.5, -3.5),
     Ang = Angle(-5, 0, 180),
