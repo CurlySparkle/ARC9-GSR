@@ -111,8 +111,6 @@ ATT.ModelOffset = Vector(0, 0.3, -1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_elite_slide_raffica")
-
-
 -----------------------------------------------------------------------
 
 -- ATT = {}

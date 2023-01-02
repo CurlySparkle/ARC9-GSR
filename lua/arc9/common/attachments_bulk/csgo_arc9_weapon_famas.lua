@@ -122,13 +122,13 @@ ATT.Description = [[Changes the view of the weapon for a more closer look.]]
 ATT.SortOrder = 0
 ATT.Category = "go_famas_view"
 
-ATT.ActivePos = Vector(-2.5, -5, 0.5)
+ATT.ActivePos = Vector(-2.5, -4, 0.5)
 ATT.ActiveAng = Angle(0, 0, 0)
 
-ATT.MovingPos = Vector(-2.5, -5.5, 0)
+ATT.MovingPos = Vector(-2.5, -5, 0)
 ATT.MovingAng = Angle(0, 0, 0)
 
-ATT.CrouchPos = Vector(-2.5, -5.5, 0)
+ATT.CrouchPos = Vector(-2.5, -5, 0)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ATT.SprintPos = Vector(0, -6, -0.3)

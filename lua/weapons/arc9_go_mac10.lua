@@ -124,6 +124,7 @@ SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddsights = -0.02
 
 -------------------------- HANDLING
 
@@ -496,7 +497,7 @@ SWEP.Attachments = {
 		InstalledElements = {"DefGrip"},
         Pos = Vector(0, -5.5, 4.5),
         Ang = Angle(90, 0, 90),
-		CorrectiveAng = Angle(-0.25, 0, 0),
+		CorrectiveAng = Angle(0, 0, 0),
 		Scale = 1.05,
     },
     {

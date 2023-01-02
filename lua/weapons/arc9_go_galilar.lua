@@ -235,10 +235,10 @@ SWEP.DropMagazineQCA = 3
 
 local path = "weapons/csgo/galilar/"
 
-SWEP.ShootSound = "CSGO.GALIL.Fire"
+SWEP.ShootSound = "CSGO.GALILAR.Fire"
 SWEP.FirstShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire_First"
 SWEP.ShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.GALIL.Distance_Fire"
+SWEP.DistantShootSound = "CSGO.GALILAR.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"

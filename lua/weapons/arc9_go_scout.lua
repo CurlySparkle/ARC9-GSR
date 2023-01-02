@@ -562,11 +562,12 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "R_Pourquoi",
+        PrintName = "Rhik",
         Bone = "v_weapon.awp_parent",
         Pos = Vector(-0.7, -2.1, 4.5),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_scuty"},
+        InstalledElements = {"mount"},
 		Installed = "go_holdstyle_scout_integral",
         Integral = true,
         Hidden = true,		

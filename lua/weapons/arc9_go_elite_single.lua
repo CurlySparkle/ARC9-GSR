@@ -315,7 +315,7 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 1},
+            {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.3, lhik = 0, rhik = 0},
             {t = 0.65, lhik = 0, rhik = 0 },
             {t = 0.9, lhik = 1, rhik = 1 },
@@ -447,13 +447,14 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Scale = 0.7,
     },
-    { -- c'est pour les bras cachees.     ne modifiez PAS sil vous plait    -TOUJOURS INTEGRE-
+    {
         PrintName = "Pourquoi",
         Bone = "v_weapon.m9a1_R_parent",
         Pos = Vector(2.375, -6.55, -10),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_elite"},
-		Installed = "csgo_elite_ik_bodge",
+        InstalledElements = {"mount"},
+        Installed = "go_holdstyle_elite_intergral",
         Integral = true,
         Hidden = true,				
     },	

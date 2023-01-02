@@ -6,7 +6,7 @@ ATT.Icon = Material("entities/attachs/holdstyle.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scout.mdl"
 
-ATT.SortOrder = 0
+ATT.SortOrder = 1
 ATT.Category = "go_grip_scuty"
 
 ATT.RHIK_Priority = 1
