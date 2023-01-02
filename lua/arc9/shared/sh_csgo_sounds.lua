@@ -7,9 +7,9 @@ sound.Add( {
     level = 120,
     pitch = {95, 110},
     sound = {
-        "^weapons/csgo/p250/p250_draw.wav",
-		"^weapons/csgo/glock18/glock_draw.wav",
-		"^weapons/csgo/fiveseven/fiveseven_draw.wav",
+        "weapons/csgo/p250/p250_draw.wav",
+		"weapons/csgo/glock18/glock_draw.wav",
+		"weapons/csgo/fiveseven/fiveseven_draw.wav",
     }
 } )
 
@@ -20,8 +20,8 @@ sound.Add( {
     level = 120,
     pitch = {95, 110},
     sound = {
-        "^weapons/csgo/ak47/ak47_draw.wav",
-	    "^weapons/csgo/aug/aug_draw.wav",
+        "weapons/csgo/ak47/ak47_draw.wav",
+	    "weapons/csgo/aug/aug_draw.wav",
     }
 } )
 
@@ -32,9 +32,9 @@ sound.Add( {
     level = 120,
     pitch = {95, 110},
     sound = {
-        "^weapons/csgo/p90/p90_draw.wav",
-		"^weapons/csgo/mp5/mp5_draw.wav",
-		"^weapons/csgo/mp7/mp7_draw.wav",
+        "weapons/csgo/p90/p90_draw.wav",
+		"weapons/csgo/mp5/mp5_draw.wav",
+		"weapons/csgo/mp7/mp7_draw.wav",
     }
 } )
 
@@ -45,10 +45,10 @@ sound.Add({
     level = 140,
     soundlevel = SNDLVL_GUNFIRE,
     sound = {
-    "^shared/frag_expl_01.ogg",
-	"^shared/frag_expl_02.ogg",
-	"^shared/frag_expl_03.ogg",
-    "^shared/frag_expl_04.ogg",} 
+    "shared/frag_expl_01.ogg",
+	"shared/frag_expl_02.ogg",
+	"shared/frag_expl_03.ogg",
+    "shared/frag_expl_04.ogg",} 
 })
 
 
@@ -72,9 +72,9 @@ sound.Add( {
     level = 125,
     pitch = {90, 115},
     sound = {
-        "^weapons/csgo/movement1.wav",
-		"^weapons/csgo/movement2.wav",
-		"^weapons/csgo/movement3.wav",
+        "weapons/csgo/movement1.wav",
+		"weapons/csgo/movement2.wav",
+		"weapons/csgo/movement3.wav",
     }
 } )
 
@@ -86,10 +86,10 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/AUG/aug_01.ogg",
-		"^weapons/csgo/AUG/aug_02.ogg",
-		"^weapons/csgo/AUG/aug_03.ogg",
-		"^weapons/csgo/AUG/aug_04.ogg",
+        "weapons/csgo/AUG/aug_01.ogg",
+		"weapons/csgo/AUG/aug_02.ogg",
+		"weapons/csgo/AUG/aug_03.ogg",
+		"weapons/csgo/AUG/aug_04.ogg",
     }
 } )
 
@@ -100,7 +100,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/AUG/aug_distant.ogg",
+        "weapons/csgo/AUG/aug_distant.ogg",
     }
 } )
 
@@ -112,10 +112,10 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/sg556/sg556_01.ogg",
-		"^weapons/csgo/sg556/sg556_02.ogg",
-		"^weapons/csgo/sg556/sg556_03.ogg",
-		"^weapons/csgo/sg556/sg556_04.ogg",
+        "weapons/csgo/sg556/sg556_01.ogg",
+		"weapons/csgo/sg556/sg556_02.ogg",
+		"weapons/csgo/sg556/sg556_03.ogg",
+		"weapons/csgo/sg556/sg556_04.ogg",
     }
 } )
 
@@ -126,7 +126,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/sg556/sg556_distant.ogg",
+        "weapons/csgo/sg556/sg556_distant.ogg",
     }
 } )
 
@@ -138,10 +138,10 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/m4a1/m4a1_01.ogg",
-		"^weapons/csgo/m4a1/m4a1_02.ogg",
-		--"^weapons/csgo/m4a1/m4a1_03.ogg",
-		--"^weapons/csgo/m4a1/m4a1_04.ogg",
+        "weapons/csgo/m4a1/m4a1_01.ogg",
+		"weapons/csgo/m4a1/m4a1_02.ogg",
+		--"weapons/csgo/m4a1/m4a1_03.ogg",
+		--"weapons/csgo/m4a1/m4a1_04.ogg",
     }
 } )
 
@@ -152,7 +152,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/m4a1/m4a1_distant_01.ogg",
+        "weapons/csgo/m4a1/m4a1_distant_01.ogg",
     }
 } )
 
@@ -164,7 +164,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/scar_unsuppressed.wav",
+        "weapons/scar_unsuppressed.wav",
     }
 } )
 
@@ -175,7 +175,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/m4a1/m4a1_distant_01.ogg",
+        "weapons/csgo/m4a1/m4a1_distant_01.ogg",
     }
 } )
 
@@ -187,7 +187,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/m4a1/m4a1_silencer_01.ogg",
+        "weapons/csgo/m4a1/m4a1_silencer_01.ogg",
     }
 } )
 
@@ -199,10 +199,10 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/m4a1/m4a1_us_01.ogg",
-		"^weapons/csgo/m4a1/m4a1_us_02.ogg",
-		"^weapons/csgo/m4a1/m4a1_us_03.ogg",
-		"^weapons/csgo/m4a1/m4a1_us_04.ogg",
+        "weapons/csgo/m4a1/m4a1_us_01.ogg",
+		"weapons/csgo/m4a1/m4a1_us_02.ogg",
+		"weapons/csgo/m4a1/m4a1_us_03.ogg",
+		"weapons/csgo/m4a1/m4a1_us_04.ogg",
     }
 } )
 
@@ -213,7 +213,7 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "^weapons/csgo/m4a1/m4a1_silencer_01.ogg",
+        "weapons/csgo/m4a1/m4a1_silencer_01.ogg",
     }
 } )
 
@@ -224,9 +224,9 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "^weapons/csgo/m4a1/m4a1_us_distant.ogg",
-		"^weapons/csgo/m4a1/m4a1_us_distant_02.ogg",
-		"^weapons/csgo/m4a1/m4a1_us_distant_03.ogg",
+        "weapons/csgo/m4a1/m4a1_us_distant.ogg",
+		"weapons/csgo/m4a1/m4a1_us_distant_02.ogg",
+		"weapons/csgo/m4a1/m4a1_us_distant_03.ogg",
     }
 } )
 
@@ -238,7 +238,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/ak47/ak47_01.ogg",
+        "weapons/csgo/ak47/ak47_01.ogg",
     }
 } )
 
@@ -249,7 +249,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/ak47/ak47_distant.wav",
+        "weapons/csgo/ak47/ak47_distant.wav",
     }
 } )
 
@@ -261,10 +261,10 @@ sound.Add( {
     pitch = 100,
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/famas/famas_01.ogg",
-		"^weapons/csgo/famas/famas_02.ogg",
-		"^weapons/csgo/famas/famas_03.ogg",
-		"^weapons/csgo/famas/famas_04.ogg",
+        "weapons/csgo/famas/famas_01.ogg",
+		"weapons/csgo/famas/famas_02.ogg",
+		"weapons/csgo/famas/famas_03.ogg",
+		"weapons/csgo/famas/famas_04.ogg",
     }
 } )
 
@@ -275,10 +275,10 @@ sound.Add( {
     level = 120,
     pitch = 100,
     sound = {
-        "^weapons/csgo/famas/famas_01.ogg",
-		"^weapons/csgo/famas/famas_02.ogg",
-		"^weapons/csgo/famas/famas_03.ogg",
-		"^weapons/csgo/famas/famas_04.ogg",
+        "weapons/csgo/famas/famas_01.ogg",
+		"weapons/csgo/famas/famas_02.ogg",
+		"weapons/csgo/famas/famas_03.ogg",
+		"weapons/csgo/famas/famas_04.ogg",
     }
 } )
 
@@ -290,10 +290,10 @@ sound.Add( {
     pitch = {95,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/galilar/galil_01.ogg",
-		"^weapons/csgo/galilar/galil_02.ogg",
-		"^weapons/csgo/galilar/galil_03.ogg",
-		"^weapons/csgo/galilar/galil_04.ogg",
+        "weapons/csgo/galilar/galil_01.ogg",
+		"weapons/csgo/galilar/galil_02.ogg",
+		"weapons/csgo/galilar/galil_03.ogg",
+		"weapons/csgo/galilar/galil_04.ogg",
     }
 } )
 
@@ -304,7 +304,7 @@ sound.Add( {
     level = 120,
     pitch = {95,103},
     sound = {
-        "^weapons/csgo/galilar/galil-1-distant.ogg",
+        "weapons/csgo/galilar/galil-1-distant.ogg",
     }
 } )
 
@@ -317,10 +317,10 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/mp9/mp9_01.ogg",
-		"^weapons/csgo/mp9/mp9_02.ogg",
-		"^weapons/csgo/mp9/mp9_03.ogg",
-		"^weapons/csgo/mp9/mp9_04.ogg",
+        "weapons/csgo/mp9/mp9_01.ogg",
+		"weapons/csgo/mp9/mp9_02.ogg",
+		"weapons/csgo/mp9/mp9_03.ogg",
+		"weapons/csgo/mp9/mp9_04.ogg",
     }
 } )
 
@@ -331,7 +331,7 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "^weapons/csgo/mp9/mp9-1-distant.ogg",
+        "weapons/csgo/mp9/mp9-1-distant.ogg",
     }
 } )
 
@@ -344,9 +344,9 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/mac10/mac10_01.ogg",
-		"^weapons/csgo/mac10/mac10_02.ogg",
-		"^weapons/csgo/mac10/mac10_03.ogg",
+        "weapons/csgo/mac10/mac10_01.ogg",
+		"weapons/csgo/mac10/mac10_02.ogg",
+		"weapons/csgo/mac10/mac10_03.ogg",
     }
 } )
 
@@ -357,9 +357,9 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/mac10/mac10_01.ogg",
-		"^weapons/csgo/mac10/mac10_02.ogg",
-		"^weapons/csgo/mac10/mac10_03.ogg",
+        "weapons/csgo/mac10/mac10_01.ogg",
+		"weapons/csgo/mac10/mac10_02.ogg",
+		"weapons/csgo/mac10/mac10_03.ogg",
     }
 } )
 
@@ -371,8 +371,8 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/bizon/bizon_01.ogg",
-		"^weapons/csgo/bizon/bizon_02.ogg",
+        "weapons/csgo/bizon/bizon_01.ogg",
+		"weapons/csgo/bizon/bizon_02.ogg",
     }
 } )
 
@@ -383,7 +383,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/bizon/bizon-1-distant.ogg",
+        "weapons/csgo/bizon/bizon-1-distant.ogg",
     }
 } )
 
@@ -395,10 +395,10 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/mp7/mp7_01.ogg",
-		"^weapons/csgo/mp7/mp7_02.ogg",
-		"^weapons/csgo/mp7/mp7_02.ogg",
-		"^weapons/csgo/mp7/mp7_02.ogg",
+        "weapons/csgo/mp7/mp7_01.ogg",
+		"weapons/csgo/mp7/mp7_02.ogg",
+		"weapons/csgo/mp7/mp7_02.ogg",
+		"weapons/csgo/mp7/mp7_02.ogg",
     }
 } )
 
@@ -410,7 +410,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp7_suppressed.wav",
+        "weapons/mp7_suppressed.wav",
     }
 } )
 
@@ -421,7 +421,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/mp7/mp7-1-distant.ogg",
+        "weapons/csgo/mp7/mp7-1-distant.ogg",
     }
 } )
 
@@ -433,8 +433,8 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/ump/ump45_02.ogg",
-		"^weapons/csgo/ump/ump45_04.ogg",
+        "weapons/csgo/ump/ump45_02.ogg",
+		"weapons/csgo/ump/ump45_04.ogg",
     }
 } )
 
@@ -445,7 +445,7 @@ sound.Add( {
     level = 120,
     pitch = {90,115},
     sound = {
-        "^weapons/csgo/ump/ump45-1-distant.ogg",
+        "weapons/csgo/ump/ump45-1-distant.ogg",
     }
 } )
 
@@ -457,8 +457,8 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/p90/p90_01.ogg",
-		"^weapons/csgo/p90/p90_02.ogg",
+        "weapons/csgo/p90/p90_01.ogg",
+		"weapons/csgo/p90/p90_02.ogg",
     }
 } )
 
@@ -469,7 +469,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/p90/p90-1-distant.ogg",
+        "weapons/csgo/p90/p90-1-distant.ogg",
     }
 } )
 
@@ -481,7 +481,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/mp5/mp5_01.ogg",
+        "weapons/csgo/mp5/mp5_01.ogg",
     }
 } )
 
@@ -492,7 +492,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/mp5/mp5_01.ogg",
+        "weapons/csgo/mp5/mp5_01.ogg",
     }
 } )
 
@@ -504,7 +504,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/nova/nova-1.ogg",
+        "weapons/csgo/nova/nova-1.ogg",
     }
 } )
 
@@ -515,7 +515,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/nova/nova-1-distant.ogg",
+        "weapons/csgo/nova/nova-1-distant.ogg",
     }
 } )
 
@@ -526,10 +526,10 @@ sound.Add( {
     level = 140,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/nova/nova_insertshell_01.ogg",
-		"^weapons/csgo/nova/nova_insertshell_02.ogg",
-		"^weapons/csgo/nova/nova_insertshell_03.ogg",
-		"^weapons/csgo/nova/nova_insertshell_04.ogg",
+        "weapons/csgo/nova/nova_insertshell_01.ogg",
+		"weapons/csgo/nova/nova_insertshell_02.ogg",
+		"weapons/csgo/nova/nova_insertshell_03.ogg",
+		"weapons/csgo/nova/nova_insertshell_04.ogg",
     }
 } )
 
@@ -541,7 +541,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/xm1014/xm1014-1.ogg",
+        "weapons/csgo/xm1014/xm1014-1.ogg",
     }
 } )
 
@@ -552,7 +552,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/xm1014/xm1014-1-distant.ogg",
+        "weapons/csgo/xm1014/xm1014-1-distant.ogg",
     }
 } )
 
@@ -563,9 +563,9 @@ sound.Add( {
     level = 140,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/xm1014/xm1014_insertshell_01.ogg",
-		"^weapons/csgo/xm1014/xm1014_insertshell_02.ogg",
-		"^weapons/csgo/xm1014/xm1014_insertshell_03.ogg",
+        "weapons/csgo/xm1014/xm1014_insertshell_01.ogg",
+		"weapons/csgo/xm1014/xm1014_insertshell_02.ogg",
+		"weapons/csgo/xm1014/xm1014_insertshell_03.ogg",
     }
 } )
 
@@ -577,7 +577,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/sawedoff/sawedoff-1.ogg",
+        "weapons/csgo/sawedoff/sawedoff-1.ogg",
     }
 } )
 
@@ -588,7 +588,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/sawedoff/sawedoff-1-distant.ogg",
+        "weapons/csgo/sawedoff/sawedoff-1-distant.ogg",
     }
 } )
 
@@ -599,9 +599,9 @@ sound.Add( {
     level = 140,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/sawedoff/sawedoff_insertshell_01.ogg",
-		"^weapons/csgo/sawedoff/sawedoff_insertshell_02.ogg",
-		"^weapons/csgo/sawedoff/sawedoff_insertshell_03.ogg",
+        "weapons/csgo/sawedoff/sawedoff_insertshell_01.ogg",
+		"weapons/csgo/sawedoff/sawedoff_insertshell_02.ogg",
+		"weapons/csgo/sawedoff/sawedoff_insertshell_03.ogg",
     }
 } )
 
@@ -613,8 +613,8 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/mag7/mag7_01.ogg",
-		"^weapons/csgo/mag7/mag7_02.ogg",
+        "weapons/csgo/mag7/mag7_01.ogg",
+		"weapons/csgo/mag7/mag7_02.ogg",
     }
 } )
 
@@ -625,8 +625,8 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/mag7/mag7_distant_01.ogg",
-		"^weapons/csgo/mag7/mag7_distant_02.ogg",
+        "weapons/csgo/mag7/mag7_distant_01.ogg",
+		"weapons/csgo/mag7/mag7_distant_02.ogg",
     }
 } )
 
@@ -638,7 +638,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/ssg08/ssg08_01.ogg",
+        "weapons/csgo/ssg08/ssg08_01.ogg",
     }
 } )
 
@@ -649,7 +649,7 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-         "^weapons/csgo/ssg08/ssg08-1-distant.ogg",
+         "weapons/csgo/ssg08/ssg08-1-distant.ogg",
     }
 } )
 
@@ -661,8 +661,8 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/awp/awp_01.ogg",
-		"^weapons/csgo/awp/awp_02.ogg",
+        "weapons/csgo/awp/awp_01.ogg",
+		"weapons/csgo/awp/awp_02.ogg",
     }
 } )
 
@@ -673,7 +673,7 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-         "^weapons/csgo/awp/awp1-distant.ogg",
+         "weapons/csgo/awp/awp1-distant.ogg",
     }
 } )
 
@@ -685,7 +685,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/ssg08/ssg08-1.ogg",
+        "weapons/csgo/ssg08/ssg08-1.ogg",
     }
 } )
 
@@ -696,7 +696,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/svd_suppressed.wav",
+        "weapons/svd_suppressed.wav",
     }
 } )
 
@@ -707,7 +707,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/ssg08/ssg08-1-distant.ogg",
+        "weapons/csgo/ssg08/ssg08-1-distant.ogg",
     }
 } )
 
@@ -719,9 +719,9 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/scar20/scar20_01.ogg",
-		"^weapons/csgo/scar20/scar20_02.ogg",
-		"^weapons/csgo/scar20/scar20_03.ogg",
+        "weapons/csgo/scar20/scar20_01.ogg",
+		"weapons/csgo/scar20/scar20_02.ogg",
+		"weapons/csgo/scar20/scar20_03.ogg",
     }
 } )
 
@@ -732,9 +732,9 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/scar20/scar20_distant_01.ogg",
-		"^weapons/csgo/scar20/scar20_distant_02.ogg",
-		"^weapons/csgo/scar20/scar20_distant_03.ogg",
+        "weapons/csgo/scar20/scar20_distant_01.ogg",
+		"weapons/csgo/scar20/scar20_distant_02.ogg",
+		"weapons/csgo/scar20/scar20_distant_03.ogg",
     }
 } )
 
@@ -746,9 +746,9 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/g3sg1/g3sg1_01.ogg",
-		"^weapons/csgo/g3sg1/g3sg1_02.ogg",
-		"^weapons/csgo/g3sg1/g3sg1_03.ogg",
+        "weapons/csgo/g3sg1/g3sg1_01.ogg",
+		"weapons/csgo/g3sg1/g3sg1_02.ogg",
+		"weapons/csgo/g3sg1/g3sg1_03.ogg",
     }
 } )
 
@@ -759,9 +759,9 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "^weapons/csgo/g3sg1/g3sg1_distant_01.ogg",
-		"^weapons/csgo/g3sg1/g3sg1_distant_02.ogg",
-		"^weapons/csgo/g3sg1/g3sg1_distant_03.ogg",
+        "weapons/csgo/g3sg1/g3sg1_distant_01.ogg",
+		"weapons/csgo/g3sg1/g3sg1_distant_02.ogg",
+		"weapons/csgo/g3sg1/g3sg1_distant_03.ogg",
     }
 } )
 
@@ -773,7 +773,7 @@ sound.Add( {
     pitch = {85,110},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/g3_auto_fire_first.wav",
+        "weapons/g3_auto_fire_first.wav",
     }
 } )
 
@@ -785,7 +785,7 @@ sound.Add( {
     pitch = {85,110},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/g3_auto_fire_loop.wav",
+        "weapons/g3_auto_fire_loop.wav",
     }
 } )
 
@@ -797,9 +797,9 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/hkp2000/hkp2000_01.ogg",
-		"^weapons/csgo/hkp2000/hkp2000_02.ogg",
-		"^weapons/csgo/hkp2000/hkp2000_03.ogg",
+        "weapons/csgo/hkp2000/hkp2000_01.ogg",
+		"weapons/csgo/hkp2000/hkp2000_02.ogg",
+		"weapons/csgo/hkp2000/hkp2000_03.ogg",
     }
 } )
 
@@ -810,7 +810,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/hkp2000/hkp2000-1-distant.ogg",
+        "weapons/csgo/hkp2000/hkp2000-1-distant.ogg",
     }
 } )
 
@@ -822,8 +822,8 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/glock18/glock_01.ogg",
-		"^weapons/csgo/glock18/glock_02.ogg",
+        "weapons/csgo/glock18/glock_01.ogg",
+		"weapons/csgo/glock18/glock_02.ogg",
     }
 } )
 
@@ -834,7 +834,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/glock18/glock18-1-distant.ogg",
+        "weapons/csgo/glock18/glock18-1-distant.ogg",
     }
 } )
 
@@ -846,7 +846,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/p250/p250_01.ogg",
+        "weapons/csgo/p250/p250_01.ogg",
     }
 } )
 
@@ -857,7 +857,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/p250/p250_distant_01.ogg",
+        "weapons/csgo/p250/p250_distant_01.ogg",
     }
 } )
 
@@ -869,7 +869,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/fiveseven/fiveseven_01.ogg",
+        "weapons/csgo/fiveseven/fiveseven_01.ogg",
     }
 } )
 
@@ -880,7 +880,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/fiveseven/fiveseven-1-distant.ogg",
+        "weapons/csgo/fiveseven/fiveseven-1-distant.ogg",
     }
 } )
 
@@ -892,9 +892,9 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/cz75a/cz75_01.ogg",
-		"^weapons/csgo/cz75a/cz75_02.ogg",
-        "^weapons/csgo/cz75a/cz75_03.ogg",
+        "weapons/csgo/cz75a/cz75_01.ogg",
+		"weapons/csgo/cz75a/cz75_02.ogg",
+        "weapons/csgo/cz75a/cz75_03.ogg",
     }
 } )
 
@@ -905,7 +905,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/cz75a/cz75_distant_01.ogg",
+        "weapons/csgo/cz75a/cz75_distant_01.ogg",
     }
 } )
 
@@ -914,11 +914,11 @@ sound.Add( {
     channel = CHAN_WEAPON + 10,
     volume = 1.0,
     level = 140,
-    pitch = {97,103},
+    pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/tec9/tec9_01.ogg",
-		"^weapons/csgo/tec9/tec9_02.ogg",
+        "weapons/csgo/tec9/tec9_01.ogg",
+		"weapons/csgo/tec9/tec9_02.ogg",
     }
 } )
 
@@ -929,7 +929,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/tec9/tec9_distant_01.ogg",
+        "weapons/csgo/tec9/tec9_distant_01.ogg",
     }
 } )
 
@@ -941,10 +941,10 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/elite/elites_01.ogg",
-		"^weapons/csgo/elite/elites_02.ogg",
-		"^weapons/csgo/elite/elites_03.ogg",
-		"^weapons/csgo/elite/elites_04.ogg",
+        "weapons/csgo/elite/elites_01.ogg",
+		"weapons/csgo/elite/elites_02.ogg",
+		"weapons/csgo/elite/elites_03.ogg",
+		"weapons/csgo/elite/elites_04.ogg",
     }
 } )
 
@@ -955,7 +955,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/elite/elite-1-distant.ogg",
+        "weapons/csgo/elite/elite-1-distant.ogg",
     }
 } )
 
@@ -967,8 +967,8 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/deagle/deagle_01.ogg",
-		"^weapons/csgo/deagle/deagle_02.ogg",
+        "weapons/csgo/deagle/deagle_01.ogg",
+		"weapons/csgo/deagle/deagle_02.ogg",
     }
 } )
 
@@ -979,7 +979,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-         "^weapons/csgo/deagle/deagle_01.ogg",
+         "weapons/csgo/deagle/deagle_01.ogg",
     }
 } )
 
@@ -991,7 +991,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/revolver/revolver-1_01.ogg",
+        "weapons/csgo/revolver/revolver-1_01.ogg",
     }
 } )
 
@@ -1002,7 +1002,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-         "^weapons/csgo/revolver/revolver-1_distant.ogg",
+         "weapons/csgo/revolver/revolver-1_distant.ogg",
     }
 } )
 
@@ -1014,9 +1014,9 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/usp/usp_unsilenced_01.ogg",
-		"^weapons/csgo/usp/usp_unsilenced_02.ogg",
-		"^weapons/csgo/usp/usp_unsilenced_03.ogg",
+        "weapons/csgo/usp/usp_unsilenced_01.ogg",
+		"weapons/csgo/usp/usp_unsilenced_02.ogg",
+		"weapons/csgo/usp/usp_unsilenced_03.ogg",
     }
 } )
 
@@ -1027,7 +1027,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/usp/usp_unsil-1-distant.ogg",
+        "weapons/csgo/usp/usp_unsil-1-distant.ogg",
     }
 } )
 
@@ -1039,9 +1039,9 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/usp/usp_01.ogg",
-		"^weapons/csgo/usp/usp_02.ogg",
-		"^weapons/csgo/usp/usp_03.ogg",
+        "weapons/csgo/usp/usp_01.ogg",
+		"weapons/csgo/usp/usp_02.ogg",
+		"weapons/csgo/usp/usp_03.ogg",
     }
 } )
 
@@ -1052,7 +1052,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/usp/usp1-distant.ogg",
+        "weapons/csgo/usp/usp1-distant.ogg",
     }
 } )
 
@@ -1064,7 +1064,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/m249/m249-1.ogg",
+        "weapons/csgo/m249/m249-1.ogg",
     }
 } )
 
@@ -1075,7 +1075,7 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "^weapons/csgo/m249/m249-1-distant.ogg",
+        "weapons/csgo/m249/m249-1-distant.ogg",
     }
 } )
 
@@ -1087,9 +1087,9 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/negev/negev_01.ogg",
-		"^weapons/csgo/negev/negev_02.ogg",
-		"^weapons/csgo/negev/negev_05.ogg",
+        "weapons/csgo/negev/negev_01.ogg",
+		"weapons/csgo/negev/negev_02.ogg",
+		"weapons/csgo/negev/negev_05.ogg",
     }
 } )
 
@@ -1100,7 +1100,7 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "^weapons/csgo/negev/negev-1-distant.ogg",
+        "weapons/csgo/negev/negev-1-distant.ogg",
     }
 } )
 
@@ -1112,7 +1112,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp5_unsuppressed_first.wav",
+        "weapons/mp5_unsuppressed_first.wav",
     }
 } )
 
@@ -1124,7 +1124,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp5_unsuppressed_loop.wav",
+        "weapons/mp5_unsuppressed_loop.wav",
     }
 } )
 
@@ -1136,7 +1136,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/galil_fire_first.wav",
+        "weapons/galil_fire_first.wav",
     }
 } )
 
@@ -1148,7 +1148,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/galil_fire_loop.wav",
+        "weapons/galil_fire_loop.wav",
     }
 } )
 
@@ -1159,7 +1159,7 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "^weapons/csgo/m4a1/m4a1_distant_01.ogg",
+        "weapons/csgo/m4a1/m4a1_distant_01.ogg",
     }
 } )
 
@@ -1173,7 +1173,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/g3_auto_supp_fire_first.wav",
+        "weapons/g3_auto_supp_fire_first.wav",
     }
 } )
 
@@ -1185,7 +1185,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/g3_auto_supp_fire_loop.wav",
+        "weapons/g3_auto_supp_fire_loop.wav",
     }
 } )
 
@@ -1197,7 +1197,7 @@ sound.Add( {
     pitch = {85,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/galil_sup_first.wav",
+        "weapons/galil_sup_first.wav",
     }
 } )
 
@@ -1209,7 +1209,7 @@ sound.Add( {
     pitch = {85,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/galil_sup_loop.wav",
+        "weapons/galil_sup_loop.wav",
     }
 } )
 
@@ -1221,7 +1221,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/svd_suppressed.wav",
+        "weapons/svd_suppressed.wav",
     }
 } )
 
@@ -1233,7 +1233,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/svd_suppressed.wav",
+        "weapons/svd_suppressed.wav",
     }
 } )
 
@@ -1245,7 +1245,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/csgo/mp5/mp5_01.ogg",
+        "weapons/csgo/mp5/mp5_01.ogg",
     }
 } )
 
@@ -1257,7 +1257,7 @@ sound.Add( {
     pitch = {90,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/ak47_suppressed_first.wav",
+        "weapons/ak47_suppressed_first.wav",
     }
 } )
 
@@ -1269,7 +1269,7 @@ sound.Add( {
     pitch = {90,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/ak47_suppressed_loop.wav",
+        "weapons/ak47_suppressed_loop.wav",
     }
 } )
 
@@ -1281,7 +1281,7 @@ sound.Add( {
     pitch = {85,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/aug_suppressed.wav",
+        "weapons/aug_suppressed.wav",
     }
 } )
 
@@ -1293,7 +1293,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/awp_suppressed.wav",
+        "weapons/awp_suppressed.wav",
     }
 } )
 
@@ -1305,7 +1305,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/scout_suppressed.wav",
+        "weapons/scout_suppressed.wav",
     }
 } )
 
@@ -1317,7 +1317,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/xm1014_suppresed.ogg",
+        "weapons/xm1014_suppresed.ogg",
     }
 } )
 
@@ -1329,7 +1329,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/deagle_suppressed.wav",
+        "weapons/deagle_suppressed.wav",
     }
 } )
 
@@ -1341,7 +1341,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/deagle_suppressed.wav",
+        "weapons/deagle_suppressed.wav",
     }
 } )
 
@@ -1353,7 +1353,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp7_suppressed.wav",
+        "weapons/mp7_suppressed.wav",
     }
 } )
 
@@ -1365,7 +1365,7 @@ sound.Add( {
     pitch = {90,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/p90_suppresed_first.wav",
+        "weapons/p90_suppresed_first.wav",
     }
 } )
 
@@ -1377,7 +1377,7 @@ sound.Add( {
     pitch = {90,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/p90_suppresed_loop.wav",
+        "weapons/p90_suppresed_loop.wav",
     }
 } )
 
@@ -1389,7 +1389,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/famas_suppressed.wav",
+        "weapons/famas_suppressed.wav",
     }
 } )
 
@@ -1401,7 +1401,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m9_suppressed.wav",
+        "weapons/m9_suppressed.wav",
     }
 } )
 
@@ -1413,7 +1413,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/glock_suppressed.wav",
+        "weapons/glock_suppressed.wav",
     }
 } )
 
@@ -1425,7 +1425,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/p225_suppressed.wav",
+        "weapons/p225_suppressed.wav",
     }
 } )
 
@@ -1437,7 +1437,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/p225_suppressed.wav",
+        "weapons/p225_suppressed.wav",
     }
 } )
 
@@ -1449,7 +1449,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/galil_suppressed.wav",
+        "weapons/galil_suppressed.wav",
     }
 } )
 
@@ -1461,7 +1461,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m249_suppressed_first.wav",
+        "weapons/m249_suppressed_first.wav",
     }
 } )
 
@@ -1473,8 +1473,8 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m249_suppressed_loop.wav",
-		"^weapons/m249_suppressed_loop2.wav",
+        "weapons/m249_suppressed_loop.wav",
+		"weapons/m249_suppressed_loop2.wav",
     }
 } )
 
@@ -1486,7 +1486,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mac10_suppressed.wav",
+        "weapons/mac10_suppressed.wav",
     }
 } )
 
@@ -1498,7 +1498,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/xm1014_suppresed.ogg",
+        "weapons/xm1014_suppresed.ogg",
     }
 } )
 
@@ -1511,7 +1511,7 @@ sound.Add( {
     pitch = {90,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp7_suppressed_first.wav",
+        "weapons/mp7_suppressed_first.wav",
     }
 } )
 
@@ -1523,7 +1523,7 @@ sound.Add( {
     pitch = {90,115},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp7_suppressed_loop.wav",
+        "weapons/mp7_suppressed_loop.wav",
     }
 } )
 
@@ -1535,7 +1535,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp9_suppressed_first.wav",
+        "weapons/mp9_suppressed_first.wav",
     }
 } )
 
@@ -1547,7 +1547,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp9_suppressed_loop.wav",
+        "weapons/mp9_suppressed_loop.wav",
     }
 } )
 
@@ -1559,7 +1559,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/negev_suppresed_first.wav",
+        "weapons/negev_suppresed_first.wav",
     }
 } )
 
@@ -1571,8 +1571,8 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/negev_suppresed_loop.wav",
-		"^weapons/negev_suppresed_loop2.wav",
+        "weapons/negev_suppresed_loop.wav",
+		"weapons/negev_suppresed_loop2.wav",
     }
 } )
 
@@ -1584,7 +1584,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mk18_suppressed.wav",
+        "weapons/mk18_suppressed.wav",
     }
 } )
 
@@ -1596,7 +1596,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m4a1_suppressed.wav",
+        "weapons/m4a1_suppressed.wav",
     }
 } )
 
@@ -1608,7 +1608,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/scar_suppressed.wav",
+        "weapons/scar_suppressed.wav",
     }
 } )
 
@@ -1620,7 +1620,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m3_suppressed.wav",
+        "weapons/m3_suppressed.wav",
     }
 } )
 
@@ -1632,7 +1632,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/m3_suppressed.wav",
+        "weapons/m3_suppressed.wav",
     }
 } )
 
@@ -1644,7 +1644,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/scar_suppressed.wav",
+        "weapons/scar_suppressed.wav",
     }
 } )
 
@@ -1656,7 +1656,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mac10_suppressed.wav",
+        "weapons/mac10_suppressed.wav",
     }
 } )
 
@@ -1668,7 +1668,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp5_suppressed_first.wav",
+        "weapons/mp5_suppressed_first.wav",
     }
 } )
 
@@ -1680,6 +1680,6 @@ sound.Add( {
     pitch = {95,105},
     soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "^weapons/mp5_suppressed_loop.wav",
+        "weapons/mp5_suppressed_loop.wav",
     }
 } )
