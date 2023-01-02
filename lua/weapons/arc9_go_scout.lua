@@ -566,9 +566,9 @@ SWEP.Attachments = {
         Pos = Vector(-0.7, -2.1, 4.5),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_scuty"},
-		--Installed = "go_holdstyle_scout_integral",
-        Integral = false,
-        Hidden = false,		
+		Installed = "go_holdstyle_scout_integral",
+        Integral = true,
+        Hidden = true,		
     },
     {
         PrintName = "Stickers",

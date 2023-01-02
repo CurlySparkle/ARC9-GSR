@@ -424,7 +424,7 @@ SWEP.AttachmentElements = {
 	},	
     ["slide_raffica"] = { 
 	Bodygroups = { {0,3},{1,4}, },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 8.2), } }	
 	},	
 }
 
@@ -444,7 +444,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.m9a1_R_parent",
         Pos = Vector(-0.025, -3.325, 8.2),
         Ang = Angle(90, 0, -90),
-        Scale = 0.8,
+        Scale = 0.7,
     },
     { -- c'est pour les bras cachees.     ne modifiez PAS sil vous plait    -TOUJOURS INTEGRE-
         PrintName = "Pourquoi",
@@ -452,9 +452,9 @@ SWEP.Attachments = {
         Pos = Vector(2.375, -6.55, -10),
         Ang = Angle(90, 0, 90),
         Category = {"go_grip_elite"},
-        Installed = "csgo_elite_ik_bodge",
+		Installed = "csgo_elite_ik_bodge",
         Integral = true,
-        Hidden = true,		
+        Hidden = true,				
     },	
     {
         PrintName = "Top",
@@ -470,6 +470,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.m9a1_R_parent",
+		ExcludeElements = {"slide_raffica"},
         Pos = Vector(0, -1.9, 5.5),
         Ang = Angle(90, 180, 90),
 		Scale = 1,
