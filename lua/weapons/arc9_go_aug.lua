@@ -586,6 +586,11 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to

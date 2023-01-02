@@ -35,6 +35,7 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_akimbo_glock.mdl"
 SWEP.NoTPIKVMPos = true
+SWEP.NotForNPCs = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-13, 5.5, -3.5),
     Ang = Angle(-5, 0, 180),
@@ -472,5 +473,10 @@ SWEP.Attachments = {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
 }

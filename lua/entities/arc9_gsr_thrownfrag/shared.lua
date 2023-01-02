@@ -51,6 +51,8 @@ function ENT:Detonate()
 		ParticleEffect("explosion_hegrenade_interior", self:GetPos(), Angle(0, 0, 0), nil)
         ParticleEffect("bumpmine_detonate", self:GetPos(), Angle(0, 0, 0), nil)
 		ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), Angle(0, 0, 0), nil)
+		ParticleEffect("smoke_plume_b", self:GetPos(), Angle(0, 0, 0), nil)
+		ParticleEffect("smoke_plume_c", self:GetPos(), Angle(0, 0, 0), nil)
 
         // Overpressure radius
         util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 300, 300)

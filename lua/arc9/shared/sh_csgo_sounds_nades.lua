@@ -224,3 +224,49 @@ sound.Add( {
     level = 0,
     sound = "weapons/csgo/arm_bomb.wav"
 } )
+
+sound.Add({
+	name = "CSGO.Breacher.BreachDefused",
+	channel = CHAN_STATIC,
+	level  = 75,
+	volume = 0.7,
+	sound = "weapons/csgo/breachcharges/breach_defuse_01.wav"
+})
+
+sound.Add({
+	name = "CSGO.Breacher.BreachUse",
+	channel = CHAN_STATIC,
+	volume = 1.0,
+	level = 75,
+	pitch = 100,
+	sound = "weapons/csgo/breachcharges/breach_charge_pickup_01.wav"	
+})
+
+sound.Add({
+	name = "CSGO.Breacher.BreachThrow",
+	channel = CHAN_STATIC,
+	volume = 0.8,
+	pitch = 120,
+	level = 65,
+	sound = { 
+	"weapons/csgo/breachcharges/breach_throw_01.wav", 
+	"weapons/csgo/breachcharges/breach_throw_02.wav", 
+	"weapons/csgo/breachcharges/breach_throw_03.wav"}
+})
+
+sound.Add({
+	name = "CSGO.Breacher.BreachSoundWarningBeep",
+	channel	= CHAN_STATIC,
+	volume = 0.5,
+	level = 75,
+	pitch = 100,
+	sound =	"weapons/csgo/breachcharges/breach_warning_beep_01.wav"
+})
+
+sound.Add({
+	name = "CSGO.Breacher.BreachChargeSetArmed",
+	channel	= CHAN_STATIC,
+	volume = 1,
+	level = 85,
+	sound = "weapons/csgo/breachcharges/breach_land_01.wav"
+})

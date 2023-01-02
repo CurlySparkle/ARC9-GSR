@@ -36,6 +36,7 @@ SWEP.MirrorVMWM = false
 SWEP.WorldModelMirror = "models/weapons/csgo/c_akimbo_sawnoff.mdl"
 SWEP.NoTPIKVMPos = true
 SWEP.NoTPIK = true
+SWEP.NotForNPCs = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-13, 5.5, -3.5),
     Ang = Angle(-5, 0, 180),

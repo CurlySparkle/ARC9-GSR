@@ -385,7 +385,7 @@ SWEP.Attachments = {
     {
         PrintName = "Top",
         Bone = "v_weapon.fiveSeven_parent",
-        Pos = Vector(0, -0.5, 4),
+        Pos = Vector(0, -0.3, 3.7),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,

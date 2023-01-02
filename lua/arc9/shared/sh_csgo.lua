@@ -43,3 +43,5 @@ ARC9.CSGO.BlendSights = function(wep)
     local coolilove = math.cos(delta * (math.pi / 2))
     vm:SetPoseParameter( "sights", Lerp(coolilove, 0, 1) ) -- thanks fesiug
 end
+
+game.AddAmmoType({name = "arc9_csgo_charge"})

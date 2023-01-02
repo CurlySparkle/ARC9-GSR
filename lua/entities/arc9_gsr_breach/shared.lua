@@ -43,7 +43,7 @@ if SERVER then
 		end
 		
 		if self:GetNWBool("Defused") != false then
-			self:EmitSound("TFA_CSGO_Survival.BreachDefused")
+			self:EmitSound("CSGO.Breacher.BreachDefused")
 			self:Remove()
 		else
 			self:Explode()
@@ -66,7 +66,7 @@ if SERVER then
 		end
 		
 		phys:EnableMotion(false)
-		self:EmitSound("TFA_CSGO_Survival.BreachChargeSetArmed")
+		self:EmitSound("CSGO.Breacher.BreachChargeSetArmed")
 		local tr = util.TraceLine( {
 			start = self:GetPos(),
 			endpos = self:GetPos() + Vector(0,0,-5),
@@ -124,7 +124,7 @@ if SERVER then
 		shake:Activate()
 		shake:Fire("StartShake", "", 0)
 		util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal) 
-		self:EmitSound( "TFA_CSGO_BaseGrenade.Explode" )
+		self:EmitSound("CSGO.Frag.Explode")
 		SafeRemoveEntity(self)
 	end
 	
@@ -143,7 +143,7 @@ function ENT:Fuse(ent)
 			
 		if self:GetNWBool("Fused") != false then
 			if not self.SoundEmitted then
-				self:EmitSound("TFA_CSGO_Survival.BreachSoundWarningBeep")
+				self:EmitSound("CSGO.Breacher.BreachSoundWarningBeep")
 				self.SoundEmitted = true	
 			end
 				
@@ -156,27 +156,27 @@ function ENT:Fuse(ent)
 	end
 end
 
-local weaponclass = "tfa_csgo_breachcharge" --Change to the weapon classname in Arc9
+local weaponclass = "arc9_go_nade_breach" --Change to the weapon classname in Arc9
 
 function ENT:Use( activator, caller, useType, value )
-	local chargesamt = activator:GetAmmoCount("csgo_charge")
+	local chargesamt = activator:GetAmmoCount("arc9_csgo_charge")
 	
 	if (activator:IsPlayer() and activator == self:GetNWEntity("owner") and self:GetNWBool("Defused") != true) then
 		if activator:GetWeapon(weaponclass) == NULL then 
 			activator:Give(weaponclass, false)
-			activator:EmitSound("TFA_CSGO_Survival.BreachUse")	
+			activator:EmitSound("CSGO.Breacher.BreachUse")	
 			self:Remove()
 		elseif activator:GetWeapon(weaponclass) != NULL then
-			activator:GiveAmmo(1, "csgo_charge", true)
+			activator:GiveAmmo(1, "arc9_csgo_charge", true)
 			--activator:SetAmmo(chargesamt+1, "csgo_charge")
-			activator:EmitSound("TFA_CSGO_Survival.BreachUse")
+			activator:EmitSound("CSGO.Breacher.BreachUse")
 			self:Remove()
 		end
 	elseif (activator:IsPlayer() and activator != self:GetNWEntity("owner") ) then
-		self:EmitSound("TFA_CSGO_Survival.BreachDefused")
+		self:EmitSound("CSGO.Breacher.BreachDefused")
 		self:SetNWBool("Defused", true)
 	else
-		self:EmitSound("TFA_CSGO_Survival.BreachDefused")
+		self:EmitSound("CSGO.Breacher.BreachDefused")
 		self:Remove()
 	end
 end

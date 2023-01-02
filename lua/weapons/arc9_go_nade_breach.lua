@@ -45,7 +45,7 @@ SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire
 SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.ShootEnt = "arc9_gsr_breach"
-SWEP.Ammo = "grenade"
+SWEP.Ammo = "arc9_csgo_charge"
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
@@ -72,7 +72,7 @@ SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 65
 
-SWEP.SprintPos = Vector(0, 0, -1.5)
+SWEP.SprintPos = Vector(0, 0, -2)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -176,13 +176,13 @@ SWEP.Animations = {
             { s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0 },
         },
     },
-    ["idle_sprint_detonator"] = {
-        Source = "sprint_empty",
-    },
-    ["enter_sprint_detonator"] = {
-        Source = "sprint_in_empty",
-    },
-    ["exit_sprint_detonator"] = {
-        Source = "sprint_out_empty",
-    },
+    -- ["idle_sprint_detonator"] = {
+        -- Source = "sprint_empty",
+    -- },
+    -- ["enter_sprint_detonator"] = {
+        -- Source = "sprint_in_empty",
+    -- },
+    -- ["exit_sprint_detonator"] = {
+        -- Source = "sprint_out_empty",
+    -- },
 }
