@@ -4,6 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "MAC-10"
 SWEP.TrueName = "MAC-10"

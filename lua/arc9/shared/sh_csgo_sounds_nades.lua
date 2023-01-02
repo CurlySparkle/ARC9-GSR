@@ -6,8 +6,8 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     sound = {
-        "^weapons/csgo/flashbang/flashbang_explode1.wav",
-		"^weapons/csgo/flashbang/flashbang_explode2.wav",
+        "weapons/csgo/flashbang/flashbang_explode1.wav",
+		"weapons/csgo/flashbang/flashbang_explode2.wav",
     }
 } )
 
@@ -17,9 +17,9 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     sound = {
-        "^weapons/csgo/hegrenade/hegrenade_detonate_01.wav",
-		"^weapons/csgo/hegrenade/hegrenade_detonate_02.wav",
-		"^weapons/csgo/hegrenade/hegrenade_detonate_03.wav",
+        "weapons/csgo/hegrenade/hegrenade_detonate_01.wav",
+		"weapons/csgo/hegrenade/hegrenade_detonate_02.wav",
+		"weapons/csgo/hegrenade/hegrenade_detonate_03.wav",
     }
 } )
 
@@ -29,9 +29,9 @@ sound.Add( {
     volume = 1.0,
     level = 140,
     sound = {
-        "^weapons/csgo/incgrenade/inc_grenade_detonate_1.wav",
-		"^weapons/csgo/incgrenade/inc_grenade_detonate_2.wav",
-		"^weapons/csgo/incgrenade/inc_grenade_detonate_3.wav",
+        "weapons/csgo/incgrenade/inc_grenade_detonate_1.wav",
+		"weapons/csgo/incgrenade/inc_grenade_detonate_2.wav",
+		"weapons/csgo/incgrenade/inc_grenade_detonate_3.wav",
     }
 } )
 
@@ -42,7 +42,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/hegrenade/grenade_throw.wav",
+        "weapons/csgo/hegrenade/grenade_throw.wav",
     }
 } )
 
@@ -53,7 +53,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/hegrenade/he_bounce-1.wav",
+        "weapons/csgo/hegrenade/he_bounce-1.wav",
     }
 } )
 
@@ -64,7 +64,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/smokegrenade/grenade_bounce-1.wav",
+        "weapons/csgo/smokegrenade/grenade_bounce-1.wav",
     }
 } )
 
@@ -75,7 +75,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/smokegrenade/smoke_emit.wav",
+        "weapons/csgo/smokegrenade/smoke_emit.wav",
     }
 } )
 
@@ -86,7 +86,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/incgrenade/inc_grenade_throw.wav",
+        "weapons/csgo/incgrenade/inc_grenade_throw.wav",
     }
 } )
 
@@ -97,7 +97,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/molotov/molotov_extinguish.wav",
+        "weapons/csgo/molotov/molotov_extinguish.wav",
     }
 } )
 
@@ -108,9 +108,9 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/incgrenade/inc_grenade_detonate_1.wav",
-		"^weapons/csgo/incgrenade/inc_grenade_detonate_2.wav",
-		"^weapons/csgo/incgrenade/inc_grenade_detonate_3.wav",
+        "weapons/csgo/incgrenade/inc_grenade_detonate_1.wav",
+		"weapons/csgo/incgrenade/inc_grenade_detonate_2.wav",
+		"weapons/csgo/incgrenade/inc_grenade_detonate_3.wav",
     }
 } )
 
@@ -121,7 +121,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/bumpmines/bumpmine_land_01.wav",
+        "weapons/csgo/bumpmines/bumpmine_land_01.wav",
     }
 } )
 
@@ -132,7 +132,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/bumpmines/bumpmine_warning_beep.wav",
+        "weapons/csgo/bumpmines/bumpmine_warning_beep.wav",
     }
 } )
 
@@ -143,7 +143,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/bumpmines/bumpmine_detonate.wav",
+        "weapons/csgo/bumpmines/bumpmine_detonate.wav",
     }
 } )
 
@@ -154,7 +154,7 @@ sound.Add( {
     level = 140,
     pitch = {95, 115},
     sound = {
-        "^weapons/csgo/bumpmines/bumpmine_predonate.wav",
+        "weapons/csgo/bumpmines/bumpmine_predonate.wav",
     }
 } )
 

@@ -4,6 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "Shotguns"
 
 SWEP.PrintName = "Benelli M3 Super 90"
 SWEP.TrueName = "Benelli M3 Super 90"

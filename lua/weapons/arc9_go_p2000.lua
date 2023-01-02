@@ -4,6 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "Pistols"
 
 SWEP.PrintName = "P2000"
 SWEP.TrueName = "P2000"

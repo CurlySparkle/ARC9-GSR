@@ -4,6 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "LMGs"
 
 SWEP.PrintName = "M249"
 SWEP.TrueName = "M249"
@@ -156,10 +157,11 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-6.25, -9, 1.1),
-    Ang = Angle(0, 1, -5),
-    Magnification = 1.25,
+    Pos = Vector(-6.3, -9, 1.75),
+    Ang = Angle(0, 0, -5),
+    Magnification = 1.15,
     ViewModelFOV = 56,
+	CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 65
@@ -601,7 +603,7 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.topHinge",
-        Pos = Vector(0, -0.9, -7),
+        Pos = Vector(0, -0.8, -7),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"rearsight"},
