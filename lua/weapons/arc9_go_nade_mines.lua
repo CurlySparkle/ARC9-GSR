@@ -1,7 +1,8 @@
 SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_mines")
 
 SWEP.Base = "arc9_base_nade"
-SWEP.Category = "ARC9 - GS:R: ETC"
+SWEP.Category = "ARC9 - GS:R: Extras"
+SWEP.SubCategory = "Extras"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true

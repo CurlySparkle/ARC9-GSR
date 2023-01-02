@@ -1,7 +1,8 @@
 SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_rock")
 
 SWEP.Base = "arc9_base_nade"
-SWEP.Category = "ARC9 - GS:R: ETC"
+SWEP.Category = "ARC9 - GS:R: Extras"
+SWEP.SubCategory = "Extras"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -181,3 +182,15 @@ SWEP.Animations = {
 function SWEP:SecondaryAttack()
     return self:MeleeAttack()
 end
+
+SWEP.Attachments = {
+    {
+        PrintName = "Perk",
+        Category = {"go_perk_melee"},
+    },
+    {
+        PrintName = "Stickers",
+        StickerModel = "models/weapons/stickers/v_models/rock_a.mdl",
+        Category = "stickers",
+    },
+}

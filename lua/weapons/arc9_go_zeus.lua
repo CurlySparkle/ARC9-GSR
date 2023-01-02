@@ -3,7 +3,8 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - GS:R: ETC"
+SWEP.Category = "ARC9 - GS:R: Extras"
+SWEP.SubCategory = "Extras"
 
 SWEP.PrintName = "Zeus x27"
 SWEP.TrueName = "Zeus x27"

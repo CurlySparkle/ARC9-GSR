@@ -80,13 +80,13 @@ ATT.Description = [[Changes the view of the weapon for a more closer look.]]
 ATT.SortOrder = 0
 ATT.Category = "go_mp9_view"
 
-ATT.ActivePos = Vector(-1.5, -3, -0.5)
+ATT.ActivePos = Vector(-1.5, -2, -0.5)
 ATT.ActiveAng = Angle(0, 0, 0)
 
-ATT.MovingPos = Vector(-1.5, -3.3, -0.7)
+ATT.MovingPos = Vector(-1.5, -2.9, -0.7)
 ATT.MovingAng = Angle(0, 0, 0)
 
-ATT.CrouchPos = Vector(-1.5, -3.3, -0.7)
+ATT.CrouchPos = Vector(-1.5, -2.9, -0.7)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ATT.ViewModelFOVBase = 60
