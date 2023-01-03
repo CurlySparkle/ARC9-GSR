@@ -257,9 +257,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 SWEP.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
     local rng = math.Truncate(util.SharedRandom("jij bent zo leuk", 1,100)) -- nombre aleatoire, d'un a cent
 
-	if rng <= 50 then -- lol?
+	if rng <= 50 and not attached["csgo_bizon_mag_saiga"] then -- lol?
 		if anim == "reload" then		
 			return "reload_alt" 
 		end	
