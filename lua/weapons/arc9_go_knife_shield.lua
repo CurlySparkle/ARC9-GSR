@@ -3,7 +3,8 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - GS:R: Melee"
+SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "Melee"
 
 SWEP.PrintName = "Riot Shield"
 

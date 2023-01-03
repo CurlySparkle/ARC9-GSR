@@ -5,7 +5,8 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_ctknife")
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - GS:R: Melee"
+SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "Melee"
 
 SWEP.PrintName = "CT Knife"
 

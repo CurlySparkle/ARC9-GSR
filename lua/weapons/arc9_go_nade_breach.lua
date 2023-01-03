@@ -65,14 +65,14 @@ SWEP.Disposable = true
 SWEP.Detonator = true
 
 -------------------------- HANDLING
-SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
 -------------------------- POSITIONS
 
 SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 65
 
-SWEP.SprintPos = Vector(0, 0, -2)
+SWEP.SprintPos = Vector(0, 0, -4)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -129,11 +129,11 @@ SWEP.Animations = {
         },
     },
     ["throw"] = {
-      Source = "throw",
+      Source = "throw_empty",
       EventTable = {
           { s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0 },
       },
-      MinProgress = 0.1
+      MinProgress = 0
     },
     ["detonate"] = {
         Source = "detonate",
@@ -141,15 +141,15 @@ SWEP.Animations = {
             { s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0 },
         },
     },
-    ["idle_sprint"] = {
-        Source = "sprint",
-    },
-    ["enter_sprint"] = {
-        Source = "sprint_in",
-    },
-    ["exit_sprint"] = {
-        Source = "sprint_out",
-    },
+    -- ["idle_sprint"] = {
+        -- Source = "sprint",
+    -- },
+    -- ["enter_sprint"] = {
+        -- Source = "sprint_in",
+    -- },
+    -- ["exit_sprint"] = {
+        -- Source = "sprint_out",
+    -- },
 --  Empty Sequences
     ["idle_detonator"] = {
         Source = "idle_empty",
@@ -168,7 +168,7 @@ SWEP.Animations = {
       EventTable = {
           { s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0 },
       },
-      MinProgress = 0.5
+      MinProgress = 0
     },
     ["detonate_detonator"] = {
         Source = "detonate_empty",

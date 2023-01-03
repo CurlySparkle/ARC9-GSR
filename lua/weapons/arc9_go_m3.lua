@@ -81,7 +81,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 68
+SWEP.RPM = 200
 
 SWEP.Firemodes = {
     {
@@ -142,8 +142,11 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
 
 -------------------------- MELEE
 
@@ -229,7 +232,7 @@ SWEP.ProceduralViewQCA = 1
 SWEP.CamQCA = 3
 SWEP.CamQCA_Mult = 0.5
 
-SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellModel = "models/models/weapons/shared/shell_shotgun.mdl"
 SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 2
@@ -238,7 +241,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 
-SWEP.EjectDelay = 0.5
+SWEP.EjectDelay = 0.1
 
 SWEP.ShotgunReload = true
 
@@ -264,16 +267,13 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
+    },
+    ["cycle"] = {
+        Source = {"pump"},
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 8 / 30},
+            {s = path .. "nova_pump.wav", t = 0 / 30},
         },
     },
-    -- ["fire_sights"] = {
-        -- Source = "shoot1_ads",
-        -- EventTable = {
-            -- {s = path .. "nova_pump.wav", t = 8 / 30},
-        -- },
-    -- },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {
