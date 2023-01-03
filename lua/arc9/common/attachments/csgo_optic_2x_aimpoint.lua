@@ -1,7 +1,7 @@
 ATT.PrintName = "CompM4 + Magnifier"
 ATT.CompactName = [[2x CompM4]]
 ATT.Icon = Material("entities/attachs/2x_aimpoint.png", "mips smooth")
-ATT.Description = [[Typical holograpic sight which uses a holographic reticle for faster sight acquisition Coupled with a 3x Magnifier.]]
+ATT.Description = [[Typical holographic sight which uses a holographic reticle for faster sight acquisition Coupled with a 3x Magnifier.]]
 ATT.Pros = {
     "+ Clearer sight picture",
 	"+ 2x Zoom"

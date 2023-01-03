@@ -1,7 +1,7 @@
-ATT.PrintName = "SpecterDR (4x)"
-ATT.CompactName = [[SpecterDR]]
+ATT.PrintName = "C79 Scope"
+ATT.CompactName = [[C79]]
 ATT.Icon = Material("entities/attachs/c79.png", "mips smooth")
-ATT.Description = [[Long range combat scope for improved precision at longer ranges.]]
+ATT.Description = [[A 4x magnification scope for medium range engagements.]]
 ATT.Pros = {
     "+ 4x Zoom",
     "+ Clearer sight picture"
