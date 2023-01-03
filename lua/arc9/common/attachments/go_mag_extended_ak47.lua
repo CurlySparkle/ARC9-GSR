@@ -1,7 +1,7 @@
 ATT.PrintName = [[Extended Magazine]]
 ATT.CompactName = [[Ext Mag]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[Extended capacity by 50% more with the cost of increased reload time.]]
+ATT.Description = [[Increased ammo capacity by 50%, at the cost of increased reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5

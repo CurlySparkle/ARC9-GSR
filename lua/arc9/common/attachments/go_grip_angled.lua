@@ -1,6 +1,6 @@
 ATT.PrintName = "Angled Grip"
 ATT.CompactName = "Angled"
-ATT.Description = [[Angled foregrip provides better weapon handling with a smooth surface, though at the cost of recoil control.]]
+ATT.Description = [[Provides better weapon handling with a smooth surface, though at the cost of recoil control.]]
 
 ATT.Icon = Material("entities/attachs/go_grip_angled.png", "mips smooth")
 
