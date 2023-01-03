@@ -1,7 +1,8 @@
-ATT.PrintName = "Trijicon INS"
-ATT.CompactName = [[TrijAlt]] -- what the fuck is this -ij- Dutch is real!!!!
+ATT.PrintName = "Trijicon RMR 3"
+ATT.CompactName = [[T RMR 3]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[Low-profile alt version of the RMR sight that provides an effective aiming dot, mounted on a high-profile rail.]]
+ATT.Description = [[Another alternative version of Trijicon RMR sight from Insurgency: Sandstorm. 
+Designed only for firearms, mounted on a high-profile rail.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

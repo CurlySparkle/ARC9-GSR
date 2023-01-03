@@ -1,7 +1,8 @@
-ATT.PrintName = "Trijicon INS"
-ATT.CompactName = [[TrijAlt]]
+ATT.PrintName = "Trijicon SRO (NR)"
+ATT.CompactName = [[T SRO (NR)]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[Low-profile alt version of the Trijicon sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.]]
+ATT.Description = [[SRO (Specialized Reflex Optic) from Insurgency: Sandstorm, provides an effective aiming dot.
+Designed only for sidearms, mounted on a low-profile rail.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

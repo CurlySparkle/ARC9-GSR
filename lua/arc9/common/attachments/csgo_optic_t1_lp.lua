@@ -1,7 +1,8 @@
 ATT.PrintName = "Micro T1 (LP)"
 ATT.CompactName = [[Micro T1 LP]]
 ATT.Icon = Material("entities/attachs/go_optic_t1lp.png", "mips smooth")
-ATT.Description = [[Low-profile red dot sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.]]
+ATT.Description = [[Low-profile red dot sight, provides an effective aiming dot. Mounted on a low-profile rail.
+Not designed for larger weapon types.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

@@ -1,7 +1,8 @@
-ATT.PrintName = "Trijicon SEC"
-ATT.CompactName = [[Trijicon]]
+ATT.PrintName = "Trijicon RMR (NR)"
+ATT.CompactName = [[T RMR (NR)]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[Low-profile Trijicon sight that provides an effective aiming dot, mounted on a low-profile rail, not designed for larger weapon types.]]
+ATT.Description = [[RMR (Ruggedized Miniature Reflex) sight from Insurgency: Sandstorm, provides an effective aiming dot. 
+Designed only for sidearms, mounted on a low-profile rail.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }
