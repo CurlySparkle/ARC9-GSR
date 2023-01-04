@@ -129,6 +129,8 @@ ATT.RPMMult = 1.15
 ATT.FiremodesOverride = {
     {
         Mode = 3,
+        RunawayBurst = true,
+        PostBurstDelay = 0.2,
     },
     {
         Mode = 1,
