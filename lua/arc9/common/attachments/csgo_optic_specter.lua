@@ -1,7 +1,7 @@
 ATT.PrintName = "SpecterDR (4x)"
 ATT.CompactName = [[SpecterDR]]
 ATT.Icon = Material("entities/attachs/specter.png", "mips smooth")
-ATT.Description = [[Long range combat scope for improved precision at longer ranges.]]
+ATT.Description = [[Long-range combat scope for improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 4x Zoom",
     "+ Clearer sight picture"

@@ -1,7 +1,7 @@
 ATT.PrintName = "Trijicon ACOG B"
 ATT.CompactName = [[ACOG B]]
 ATT.Icon = Material("entities/attachs/TA31_RMR.png", "mips smooth")
-ATT.Description = [[Long range combat scope for improved precision at longer ranges.]]
+ATT.Description = [[Long-range combat scope for improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 4x Zoom",
     "+ Clearer sight picture",

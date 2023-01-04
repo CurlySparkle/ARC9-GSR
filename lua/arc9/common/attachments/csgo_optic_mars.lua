@@ -1,7 +1,8 @@
 ATT.PrintName = "ITL MARS"
 ATT.CompactName = [[MARS]]
 ATT.Icon = Material("entities/attachs/mars.png", "mips smooth")
-ATT.Description = [[Sight that combines two sighting devices, a reflex sight and a laser sight.]]
+ATT.Description = [[Sight that combines two sighting devices.
+A reflex sight and a laser sight.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }
