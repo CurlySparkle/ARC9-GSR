@@ -42,8 +42,8 @@ SWEP.DamageMin = 0 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 100 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 150 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 150 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 200 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 0 -- Units of wood that can be penetrated by this gun.
 
