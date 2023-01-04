@@ -322,7 +322,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.parent",
         Pos = Vector(0, -1.3, -0.2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt",},
+        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0.15, 0.2, 0),
 		Scale = 1,
     },

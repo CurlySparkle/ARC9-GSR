@@ -256,7 +256,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -476,9 +476,9 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.galilar_parent",
-        Pos = Vector(0, -4.75, 3),
+        Pos = Vector(0, -4.9, 3),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic","eft_optic_medium"},
         CorrectiveAng = Angle(0.13, 0, 0.),
     },
     {
@@ -580,4 +580,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
-SWEP.GripPoseParam2 = 0.8
+SWEP.GripPoseParam2 = 0

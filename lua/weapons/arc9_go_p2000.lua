@@ -395,7 +395,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.HKP2000_Slide",
         Pos = Vector(0, -0.1, 1),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt",},
+        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0.7, 0.6, 0),
 		Scale = 0.8,
     },

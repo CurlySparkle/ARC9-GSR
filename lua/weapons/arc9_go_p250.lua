@@ -259,6 +259,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
+    ["fire_sights"] = {
+        Source = {"shoot1_ads"},
+    },
     ["reload"] = {
         Source = "reload_short",
         IKTimeLine = {
@@ -436,7 +439,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.glock_slide",
         Pos = Vector(0, -0.8, 2.2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt",},
+        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(1, 0.4, 0),
 		Scale = 0.9,
     },

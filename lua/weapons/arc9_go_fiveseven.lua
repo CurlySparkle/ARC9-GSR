@@ -254,7 +254,7 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
     ["fire_sights"] = {
-        Source = "shoot1",
+        Source = "shoot1_ads",
     },
     ["reload"] = {
         Source = "reload_short",
@@ -390,6 +390,15 @@ SWEP.Attachments = {
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,
 		CorrectiveAng = Angle(1, 0.4, -0),
+    },
+    {
+        PrintName = "Sights",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, -2.6, 0.8),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
+        CorrectiveAng = Angle(1, 0.4, 0),
+		Scale = 0.8,
     },
     {
         PrintName = "Tactical",

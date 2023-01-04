@@ -392,7 +392,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(0, -4.1, 4.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols",},
+        Category = {"csgo_optics_pistols","eft_optic_small"},
         CorrectiveAng = Angle(-0.4, 0.8, 0),
 		Scale = 1,
     },
