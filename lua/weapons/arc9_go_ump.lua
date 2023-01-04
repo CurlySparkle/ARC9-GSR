@@ -84,6 +84,10 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
+        -- add other attachment modifiers
     }
 }
 -------------------------- RECOIL
@@ -235,7 +239,7 @@ SWEP.ShootSoundSilenced = "CSGO.UMP.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.UMP.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }
@@ -484,12 +488,15 @@ SWEP.Attachments = {
         PrintName = "Mag",
 		Bone = "v_weapon.ump45_Clip",
         Category = {"go_ump_mag","go_mag"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Ammo",
         Bone = "v_weapon.ump45_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 1, 1),
+        Pos = Vector(0, 1, 0),
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Perk",

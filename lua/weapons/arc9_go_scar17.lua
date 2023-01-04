@@ -234,7 +234,7 @@ SWEP.ShootSoundSilenced = "CSGO.SCAR17.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.SCAR17.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }

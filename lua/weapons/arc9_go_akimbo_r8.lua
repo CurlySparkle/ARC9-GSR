@@ -394,6 +394,10 @@ SWEP.Attachments = {
 		Scale = 0.8,
     },
     {
+        PrintName = "Ammo",
+        Category = "go_ammo",
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk",
     },

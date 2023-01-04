@@ -236,7 +236,7 @@ SWEP.ShootSoundSilenced = "CSGO.AK47.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.AK47.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }

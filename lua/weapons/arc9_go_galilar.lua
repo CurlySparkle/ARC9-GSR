@@ -91,6 +91,9 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
     }
 }
 -------------------------- RECOIL
@@ -241,7 +244,7 @@ SWEP.ShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.GALILAR.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }

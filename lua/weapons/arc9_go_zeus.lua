@@ -221,7 +221,7 @@ local path = "weapons/csgo/hkp2000/"
 SWEP.ShootSound = "weapons/csgo/taser/taser_shoot.ogg"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }

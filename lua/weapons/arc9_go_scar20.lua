@@ -256,7 +256,7 @@ SWEP.ShootSoundSilenced = "CSGO.scar20.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.SCAR20.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.EnterSightsSound = path .. "sg556_zoom_in.wav"
 SWEP.ExitSightsSound = path .. "sg556_zoom_out.wav"

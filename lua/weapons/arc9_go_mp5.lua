@@ -87,7 +87,12 @@ SWEP.Firemodes = {
     },
     {
         Mode = 1,
-    }
+    },
+    {
+        Mode = 3,
+		RunawayBurst = true,
+		PostBurstDelay = 0.2,
+    },
 }
 -------------------------- RECOIL
 
@@ -249,7 +254,7 @@ SWEP.ShootSoundSilenced = "CSGO.MP5A2.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }

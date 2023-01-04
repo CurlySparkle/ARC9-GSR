@@ -94,6 +94,10 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
+        -- add other attachment modifiers
     }
 }
 -------------------------- RECOIL
@@ -257,7 +261,7 @@ SWEP.FirstShootSoundSilenced = "CSGO.P90.Fire_Silenced_First"
 SWEP.ShootSoundSilenced = "CSGO.P90.Fire_Silenced"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.SMG.Switch_Mode"
 
 SWEP.HideBones = {
 }

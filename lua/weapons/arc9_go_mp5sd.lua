@@ -83,7 +83,9 @@ SWEP.RPM = 750
 SWEP.Firemodes = {
     {
         Mode = -1,
-        -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
     }
 }
 -------------------------- RECOIL
@@ -246,7 +248,7 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.ShootVolume = 145
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }

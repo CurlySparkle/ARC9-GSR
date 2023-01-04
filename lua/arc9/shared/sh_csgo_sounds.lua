@@ -17,6 +17,32 @@ AddCSLuaFile()
 --
 
 
+sound.Add( {
+    name = "CSGO.Rifle.Switch_Mode",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 60,
+    pitch = {95, 110},
+    sound = {
+        "shared/rifle_foley_fire_select_1.ogg",
+		"shared/rifle_foley_fire_select_2.ogg",
+		"shared/rifle_foley_fire_select_3.ogg",
+		"shared/rifle_foley_fire_select_4.ogg",
+    }
+} )
+
+
+sound.Add( {
+    name = "CSGO.SMG.Switch_Mode",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 60,
+    pitch = {95, 110},
+    sound = {
+        "shared/smg_foley_fire_select_1.ogg",
+		"shared/smg_foley_fire_select_2.ogg",
+    }
+} )
 
 sound.Add( {
     name = "ARC9_CSGO_Pistol_Draw",

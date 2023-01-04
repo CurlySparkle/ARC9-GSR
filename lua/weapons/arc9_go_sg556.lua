@@ -93,6 +93,10 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
+        -- add other attachment modifiers
     }
 }
 -------------------------- RECOIL
@@ -238,7 +242,7 @@ SWEP.ShootSoundSilenced = "CSGO.SG556.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.SG556.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.EnterSightsSound = path .. "sg556_zoom_in.wav"
 SWEP.ExitSightsSound = path .. "sg556_zoom_out.wav"

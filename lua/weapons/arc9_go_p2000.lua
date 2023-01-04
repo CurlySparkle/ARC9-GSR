@@ -241,7 +241,7 @@ SWEP.ShootSoundSilenced = "CSGO.hkp2000.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.hkp2000.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }
@@ -411,7 +411,16 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.HKP2000_Clip",
-        Category = "go_mag"
+        Category = "go_mag",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.HKP2000_Clip",
+        Category = "go_ammo",
+        Pos = Vector(0, 1, 0),
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Perk",

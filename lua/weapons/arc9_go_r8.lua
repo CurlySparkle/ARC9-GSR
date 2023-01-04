@@ -407,6 +407,13 @@ SWEP.Attachments = {
 		LaserCorrectionAngle = Angle(-0.3, 0, 0),
     },
     {
+        PrintName = "Ammo",
+        Bone = "v_weapon.deagle_parent",
+        Category = "go_ammo",
+        Pos = Vector(0, -2.8, 3.3),
+        Ang = Angle(0, 0, 0),
+    },
+    {
         PrintName = "Perk",
         Category = "go_perk"
     },
