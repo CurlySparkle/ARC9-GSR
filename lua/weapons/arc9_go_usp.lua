@@ -658,4 +658,8 @@ SWEP.Attachments = {
         Pos = Vector(0.6, -0.4, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -85),
     },
+    {
+        PrintName = "View",
+        Category = "go_pistols_view"
+    },
 }
