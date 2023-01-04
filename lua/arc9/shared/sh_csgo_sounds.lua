@@ -58,15 +58,15 @@ sound.Add( {
 
 sound.Add({
     name = "HE.ExplosiveHit",
-    channel = CHAN_USERBASE,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     level = 100,
     soundlevel = SNDLVL_GUNFIRE,
     sound = {
-    "shared/frag_expl_01.ogg",
-	"shared/frag_expl_02.ogg",
-	"shared/frag_expl_03.ogg",
-    "shared/frag_expl_04.ogg",} 
+    "^shared/frag_expl_01.ogg",
+	"^shared/frag_expl_02.ogg",
+	"^shared/frag_expl_03.ogg",
+    "^shared/frag_expl_04.ogg",} 
 })
 
 
@@ -298,7 +298,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.GALIL.Fire",     -- GALIL used by galilar
+    name = "CSGO.GALIL.Fire_First",     -- GALIL used by galil
     channel = CHAN_USERBASE,
     volume = 1.0,
     level = 100,
@@ -313,7 +313,22 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.GALIL.Distance_Fire",     -- GALIL used by galilar
+    name = "CSGO.GALIL.Fire",     -- GALIL used by galil
+    channel = CHAN_USERBASE,
+    volume = 1.0,
+    level = 100,
+    pitch = {95,103},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/csgo/galilar/galil_01.ogg",
+		"weapons/csgo/galilar/galil_02.ogg",
+		"weapons/csgo/galilar/galil_03.ogg",
+		"weapons/csgo/galilar/galil_04.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.GALIL.Distance_Fire",     -- GALIL used by galil
     channel = CHAN_WEAPON,
     volume = 0.3,
     level = 120,
@@ -1453,6 +1468,18 @@ sound.Add( {
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "weapons/p225_suppressed.wav",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Galil.Silenced_Fire_First",
+    channel = CHAN_USERBASE,
+    volume = 1.0,
+    level = 90,
+    pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/galil_suppressed.wav",
     }
 } )
 

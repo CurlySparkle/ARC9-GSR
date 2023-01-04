@@ -474,6 +474,15 @@ end
 
 -------------------------- ATTACHMENTS
 
+SWEP.AttachmentTableOverrides = {
+    ["go_supp_m110"] = {
+    Scale = 0.3,
+    },
+    ["go_muzzle_akm"] = {
+    Scale = 0.35,
+    },
+}
+
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {

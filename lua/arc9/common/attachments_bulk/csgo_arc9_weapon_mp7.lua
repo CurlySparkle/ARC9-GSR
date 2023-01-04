@@ -54,13 +54,13 @@ ATT.Description = [[Changes the view of the weapon for a more closer look.]]
 ATT.SortOrder = 0
 ATT.Category = "go_mp7_view"
 
-ATT.ActivePos = Vector(-1.8, -2.5, 0)
+ATT.ActivePos = Vector(-1.8, -2, 0)
 ATT.ActiveAng = Angle(0, 0, 0)
 
-ATT.MovingPos = Vector(-1.8, -2.8, -0.3)
+ATT.MovingPos = Vector(-1.8, -2.5, -0.3)
 ATT.MovingAng = Angle(0, 0, 0)
 
-ATT.CrouchPos = Vector(-1.8, -2.8, -0.3)
+ATT.CrouchPos = Vector(-1.8, -2.5, -0.3)
 ATT.CrouchAng = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_mp7_view_alt")
