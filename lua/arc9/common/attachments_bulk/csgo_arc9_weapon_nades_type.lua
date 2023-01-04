@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = [[Nade Fuse]]
 ATT.Description = [[Makes your nade have a fuse of 3 seconds (Better plan your throws).]]
---ATT.Icon = Material("stickers/kawai")
+ATT.Icon = Material("entities/attachs/go_nade_timer")
 
 ATT.SortOrder = 0
 ATT.Free = true
