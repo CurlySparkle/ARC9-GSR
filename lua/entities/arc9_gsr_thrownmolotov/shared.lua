@@ -23,7 +23,7 @@ function ENT:Initialize()
 		self:SetCollisionGroup( COLLISION_GROUP_NONE )
 		self:DrawShadow( false )
 	end
-	self:EmitSound( "weapons/csgo/molotov/grenade_throw.wav", 75, 100, 1, CHAN_AUTO )
+	--self:EmitSound( "weapons/csgo/molotov/grenade_throw.wav", 75, 100, 1, CHAN_AUTO )
 	--self:EmitSound( "weapons/csgo/molotov/molotov_detonate_1.wav", 75, 100, 1, CHAN_AUTO )
 	self.ActiveTimer = CurTime() + 1.5
 	self.IgniteEnd = 0

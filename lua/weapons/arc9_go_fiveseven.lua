@@ -265,7 +265,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+		MinProgress = 0.7,
         EventTable = {
             {s = path .. "fiveseven_clipout.wav", t = 12 / 30},
             {s = path .. "fiveseven_clipin.wav", t = 25 / 30},

@@ -22,7 +22,7 @@ function ENT:Initialize()
 		self:SetCollisionGroup( COLLISION_GROUP_NONE )
 		self:DrawShadow( false )
 	end
-	self:EmitSound("CSGO.Incendiary.Throw")
+	--self:EmitSound("CSGO.Incendiary.Throw")
 	self.ActiveTimer = CurTime() + 1.5
 	self.IgniteEnd = 0
 	self.IgniteEndTimer = CurTime()

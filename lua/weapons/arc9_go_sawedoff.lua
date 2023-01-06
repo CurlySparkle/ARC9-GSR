@@ -82,7 +82,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 250
+SWEP.RPM = 220
 
 SWEP.Firemodes = {
     {
@@ -272,7 +272,7 @@ SWEP.Animations = {
         Source = {"pump"},
 		Mult = 0.7,
         EventTable = {
-            {s = path .. "sawedoff_pump.wav", t = 4 / 30},
+            {s = path .. "sawedoff_pump.wav", t = 3 / 30},
         },
     },
     -- ["cycle_sights"] = {

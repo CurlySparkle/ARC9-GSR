@@ -102,19 +102,6 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.Incendiary.Explode",
-    channel = CHAN_AUTO,
-    volume = 1.0,
-    level = 140,
-    pitch = {95, 115},
-    sound = {
-        "weapons/csgo/incgrenade/inc_grenade_detonate_1.wav",
-		"weapons/csgo/incgrenade/inc_grenade_detonate_2.wav",
-		"weapons/csgo/incgrenade/inc_grenade_detonate_3.wav",
-    }
-} )
-
-sound.Add( {
     name = "CSGO.Mine.Armed",
     channel = CHAN_AUTO,
     volume = 1.0,

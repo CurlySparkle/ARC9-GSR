@@ -111,20 +111,20 @@ ATT = {}
 
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
-ATT.Description = [[Changes the view of the weapon for a more tactical view.]]
+ATT.Description = [[Changes the view of the weapon for a more "tactical" view.]]
 
 --ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "go_pistols_view"
 
-ATT.ActivePos = Vector(-3.5,0,-2.7)
+ATT.ActivePos = Vector(-3,0,-3)
 ATT.ActiveAng = Angle(0,0,-35)
 
-ATT.MovingPos = Vector(-3.5,-0.7,-2.9)
+ATT.MovingPos = Vector(-3,-0.7,-3.3)
 ATT.MovingAng = Angle(0,0,-35)
 
-ATT.CrouchPos = Vector(-3.5,-0.8,-3)
+ATT.CrouchPos = Vector(-3,-0.8,-3.3)
 ATT.CrouchAng = Angle(0,0,-35)
 
 ARC9.LoadAttachment(ATT, "csgo_pistols_view")
@@ -133,7 +133,7 @@ ATT = {}
 
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
-ATT.Description = [[Changes the view of the weapon for a more tactical view.]]
+ATT.Description = [[Changes the view of the weapon for a more "tactical" view.]]
 
 --ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
 
@@ -155,7 +155,7 @@ ATT = {}
 
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
-ATT.Description = [[Changes the view of the weapon for a more tactical view.]]
+ATT.Description = [[Changes the view of the weapon for a more "tactical" view.]]
 
 --ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
 
