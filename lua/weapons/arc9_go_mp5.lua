@@ -97,7 +97,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.5
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
 
@@ -126,12 +126,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.02
-SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddCrouch = -0.01
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
