@@ -437,9 +437,11 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.m9a1_L_parent",
+        LaserCorrectionAngle = Angle(6, 30, 0),
         DuplicateModels = {
             {
                 Bone = "v_weapon.m9a1_R_parent",
+                LaserCorrectionAngle = Angle(-6, -35, 0),
             }
         },
         Pos = Vector(0, -1.9, 5.5),
