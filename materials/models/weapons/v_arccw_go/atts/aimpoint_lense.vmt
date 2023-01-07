@@ -1,25 +1,14 @@
 "VertexLitGeneric"
 {
-	"$basetexture"	"models\weapons\v_arccw_go\atts\optic_lense"
-	"$bumpmap"	"models\weapons\v_arccw_go\atts\eotech_lense_nm"
-	"normalmapalphaenvmapmask"	"1"
-	"$color" 		"[.5 .5 .5]"
-	"$model" 		"1"
+	"$basetexture"	"models\weapons\v_arccw_go\atts\lens"
+	"$bumpmap"	"effects/arc9/glass_nm"
 	"$translucent" 	"1"
-	"$phong"		"1"
-	"$phongtint"	"[.5 .5 .5]"
-	"$envmap" 	"env_cubemap"
-	"$envmapcontrast" 	".8"
-	"$envmapsaturation" "1"
-	"$envmaptint" 	"[2 1 5]"
 	
 	"Proxies"
 	{
-		"IronsightVectorResult"
+		"arc9_scope_alpha"
 		{
-			"resultVar"		"$envmaptint"
-			"ResultDefault"	"2.0 1.0 5.0"
-			"ResultZoomed"	"0.7 0.5 0.8"
+			"resultVar" "$envmaptint"
 		}
 	}
 }

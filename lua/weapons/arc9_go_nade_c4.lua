@@ -6,6 +6,7 @@ SWEP.SubCategory = "Extras"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
+SWEP.NotForNPCs = true
 
 SWEP.PrintName = "C4 Explosive"
 SWEP.Class = "Explosive"

@@ -241,7 +241,7 @@ SWEP.ShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.GALILAR.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
 SWEP.HideBones = {
 }
@@ -506,9 +506,9 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.galilar_parent",
-        Pos = Vector(0, -4.75, 3),
+        Pos = Vector(0, -4.9, 3),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic","eft_optic_medium"},
         CorrectiveAng = Angle(0.13, 0, 0.),
     },
     {
@@ -600,6 +600,11 @@ SWEP.Attachments = {
         -- StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_d.mdl",
         -- Category = "stickers",
     -- },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
     {
         PrintName = "Charm",
         Category = "charm",

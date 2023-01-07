@@ -241,7 +241,7 @@ SWEP.ShootSoundSilenced = "CSGO.hkp2000.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.hkp2000.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "arc9/firemode.wav"
+SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
 SWEP.HideBones = {
 }
@@ -405,7 +405,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.HKP2000_Slide",
         Pos = Vector(0, -0.1, 1),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt",},
+        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0.7, 0.6, 0),
 		Scale = 0.8,
     },
@@ -421,6 +421,16 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.HKP2000_Clip",
+        Category = "go_mag",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Ammo",
+        Bone = "v_weapon.HKP2000_Clip",
+        Category = "go_ammo",
+        Pos = Vector(0, 1, 0),
+        Ang = Angle(0, 0, 0),
         Category = "go_mag"
     },
     {
@@ -460,4 +470,8 @@ SWEP.Attachments = {
         Pos = Vector(0.6, 0.1, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -80),
 	},
+    {
+        PrintName = "View",
+        Category = "go_pistols_view"
+    },
 }

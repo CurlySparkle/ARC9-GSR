@@ -2,6 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
 
+SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
@@ -80,8 +81,14 @@ SWEP.RPM = 750
 
 SWEP.Firemodes = {
     {
+        Mode = 1,
+		PrintName = "Single",
+        -- add other attachment modifiers
+    },
+    {
         Mode = 2,
         PostBurstDelay = 0.12,
+		PrintName = "Double",
         -- add other attachment modifiers
     }
 }
@@ -443,6 +450,10 @@ SWEP.Attachments = {
         PrintName = "Mag",
 		Bone = "j_mag1_l",
         Category = "go_mag"
+    },
+    {
+        PrintName = "Ammo",
+        Category = "go_ammo",
     },
     {
         PrintName = "Perk",

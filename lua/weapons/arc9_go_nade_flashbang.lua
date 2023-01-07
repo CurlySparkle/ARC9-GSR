@@ -6,6 +6,7 @@ SWEP.SubCategory = "Extras"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
+SWEP.NotForNPCs = true
 
 SWEP.PrintName = "Flashbang"
 SWEP.Class = "Grenade"
