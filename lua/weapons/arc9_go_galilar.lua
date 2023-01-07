@@ -253,7 +253,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1"},
         EventTable = {
             {s = "CSGO.GALILAR.Fire_Beef", t = 0 / 30},
             {s = "CSGO.GALILAR.Fire_Mech", t = 0 / 30},
