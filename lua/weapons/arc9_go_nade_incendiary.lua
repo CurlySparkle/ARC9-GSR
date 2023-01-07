@@ -22,6 +22,14 @@ SWEP.Credits = {
 
 SWEP.Slot = 4
 
+SWEP.Firemodes = {
+    {
+        Mode = 1,
+        PrintName = "Throwable"
+        -- add other attachment modifiers
+    },
+}
+
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/csgo/v_eq_incediary.mdl"
@@ -127,7 +135,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-		Mult = 0.6,
+		Mult = 0.5,
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },

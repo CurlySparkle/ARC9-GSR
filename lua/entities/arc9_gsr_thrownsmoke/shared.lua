@@ -30,7 +30,7 @@ function ENT:Initialize()
         self.IsDetonated = false
     end
 
-    self:EmitSound("weapons/csgo/smokegrenade/smokegrenade_draw.wav", 75, 100, 1, CHAN_AUTO)
+    --self:EmitSound("weapons/csgo/smokegrenade/smokegrenade_draw.wav", 75, 100, 1, CHAN_AUTO)
 end
 
 function ENT:PhysicsCollide(data, physobj)

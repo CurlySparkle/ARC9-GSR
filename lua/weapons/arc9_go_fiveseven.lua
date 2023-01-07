@@ -86,7 +86,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.75
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -265,7 +265,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+		MinProgress = 0.7,
         EventTable = {
             {s = path .. "fiveseven_clipout.wav", t = 12 / 30},
             {s = path .. "fiveseven_clipin.wav", t = 25 / 30},

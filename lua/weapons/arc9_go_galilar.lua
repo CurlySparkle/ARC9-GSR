@@ -263,6 +263,8 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		RareSource = "reload_short_alt",
+		RareSourceChance = 0.65,
         IKTimeLine = {
             {
                 t = 0,
@@ -292,6 +294,8 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		RareSource = "reload_alt",
+		RareSourceChance = 0.65,
         IKTimeLine = {
             {
                 t = 0,

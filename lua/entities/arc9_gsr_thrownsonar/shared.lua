@@ -28,7 +28,7 @@ function ENT:Initialize()
 			phys:Wake()
 		end
 	end
-	self:EmitSound("CSGO.HE.Throw")
+	--self:EmitSound("CSGO.HE.Throw")
 end
 
 function ENT:Think()

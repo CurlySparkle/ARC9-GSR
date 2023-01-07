@@ -529,9 +529,9 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5.Fire",
-    channel = CHAN_USERBASE,
+    channel = CHAN_WEAPON,
     volume = 1.0,
-    level = 90,
+    level = 140,
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {

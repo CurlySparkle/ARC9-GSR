@@ -86,7 +86,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.2
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -157,7 +157,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -- }
 
 SWEP.IronSights = {
-    Pos = Vector(-5, 1, 2.5),
+    Pos = Vector(-5, -4, 2.5),
     Ang = Angle(-5, -2.75, 3),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, -1, -1),

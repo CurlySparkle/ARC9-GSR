@@ -91,7 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
 
@@ -245,8 +245,6 @@ local path = "weapons/csgo/mp5/"
 SWEP.ShootSound = "CSGO.MP5.Fire"
 SWEP.DistantShootSound = "CSGO.MP5.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
-
-SWEP.ShootVolume = 145
 
 SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 

@@ -34,7 +34,7 @@ function ENT:Initialize()
 	
 	self.particleCreated = false
 	
-	self:EmitSound("CSGO.HE.Throw")
+	--self:EmitSound("CSGO.HE.Throw")
 	
 	timer.Simple(15,function()
 		if IsValid(self) then self.active = false self:Explode() self:Remove() end
