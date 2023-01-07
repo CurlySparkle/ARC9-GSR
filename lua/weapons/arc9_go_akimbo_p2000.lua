@@ -3,8 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Akimbos"
+SWEP.Category = "ARC9 - GS:R: Akimbo"
 
 SWEP.PrintName = "Dual P2000"
 SWEP.TrueName = "Dual P2000"
@@ -35,7 +34,6 @@ SWEP.Slot = 1
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_akimbo_p2000.mdl"
 SWEP.NoTPIKVMPos = true
-SWEP.NotForNPCs = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-13, 5.5, -3.5),
     Ang = Angle(-5, 0, 180),
@@ -77,11 +75,11 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 452
+SWEP.RPM = 500
 
 SWEP.Firemodes = {
     {
-        Mode = 1,
+        Mode = 2,
         -- add other attachment modifiers
     }
 }
@@ -287,21 +285,28 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire_left"] = {
         Source = "shoot1_left",
+        EventTable = {
+            {s = "CSGO.hkp2000.Fire_Beef", t = 0 / 30},
+        },
     },
     ["fire_right"] = {
         Source = "shoot1_right",
+        EventTable = {
+            {s = "CSGO.hkp2000.Fire_Beef", t = 0 / 30},
+        },
     },
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.95,
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 5 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-			{s = path .. "hkp2000_clipin.wav", t = 45 / 30},
-			{s = path .. "hkp2000_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
+			{s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 3 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 5 / 30},
+			{s = path .. "hkp2000_clipin.wav", t = 22 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 25 / 30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 35 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 49 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 65 / 30},
         },
     },
     ["reload_empty"] = {
@@ -309,14 +314,18 @@ SWEP.Animations = {
 		MinProgress = 0.95,
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 7 / 30},
-            {s = path .. "hkp2000_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 50 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 75 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 77 / 30},
+			{s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 3 / 30},
+			{s = path .. "hkp2000_clipout.wav", t = 3 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 5 / 30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 8 / 30},
+			{s = path .. "hkp2000_clipin.wav", t = 22 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 25 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 30 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 49 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 65 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 67 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 69 / 30},
+            {s = "ARC9_CSGO_HKP2000.SlideforwardAlt", t = 74 / 30},
         },
     },
     ["ready"] = {
@@ -434,10 +443,6 @@ SWEP.Attachments = {
         Category = "go_mag"
     },
     {
-        PrintName = "Ammo",
-        Category = "go_ammo",
-    },
-    {
         PrintName = "Perk",
         Category = "go_perk",
     },
@@ -468,3 +473,14 @@ SWEP.Attachments = {
         Category = "stickers",
     },
 }
+
+
+
+-- function SWEP:ThinkSights()
+
+ -- if self:GetOwner():KeyDown(IN_ATTACK2) then
+	-- self.RPM = 7000
+ -- else
+	-- self.RPM = 400
+ -- end
+ -- end

@@ -91,9 +91,6 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
-    },
-    {
-        Mode = 1,
     }
 }
 -------------------------- RECOIL
@@ -244,7 +241,7 @@ SWEP.ShootSoundSilenced = "CSGO.GALILAR.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.GALILAR.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
+SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {
 }
@@ -256,15 +253,21 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1"},
+        Source = {"shoot1", "shoot2", "shoot3"},
+        EventTable = {
+            {s = "CSGO.GALILAR.Fire_Beef", t = 0 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 0 / 30},
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        EventTable = {
+            {s = "CSGO.GALILAR.Fire_Beef_ADS", t = 0 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0 / 30},
+        },
     },
     ["reload"] = {
         Source = "reload_short",
-		RareSource = "reload_short_alt",
-		RareSourceChance = 0.65,
         IKTimeLine = {
             {
                 t = 0,
@@ -288,14 +291,18 @@ SWEP.Animations = {
             },
         },
         EventTable = {
+            {s = path .. "galil_reload_start.wav", t = 0 / 30},
+            {s = path .. "galil_bolt_extra.wav", t = 11 / 30},
             {s = path .. "galil_clipout.wav", t = 13 / 30},
-            {s = path .. "galil_clipin.wav", t = 32 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 13 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 23 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 31 / 30},
+            {s = path .. "galil_clipin_full.wav", t = 32 / 30},
+            {s = path .. "galil_reload_end.wav", t = 42 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
-		RareSource = "reload_alt",
-		RareSourceChance = 0.65,
         IKTimeLine = {
             {
                 t = 0,
@@ -319,13 +326,22 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_clipout.wav", t = 13 / 30},
-            {s = path .. "galil_clipin.wav", t = 32 / 30},
-            {s = path .. "galil_boltback.wav", t = 55 / 30},
-            {s = path .. "galil_boltforward.wav", t = 62 / 30},
+            {s = path .. "galil_reload_start.wav", t = 0 / 30},
+            {s = path .. "galil_bolt_extra.wav", t = 12 / 30},
+            {s = path .. "galil_clipout_full.wav", t = 13 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 23 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 31 / 30},
+            {s = path .. "galil_clipin_full.wav", t = 32 / 30},
+            {s = path .. "galil_bolt_extra.wav", t = 53 / 30},
+            {s = path .. "galil_back.wav", t = 55 / 30},
+            {s = path .. "galil_boltforward.wav", t = 55 / 30},
+            {s = path .. "galil_bolt_extra.wav", t = 62 / 30},
+            {s = path .. "galil_forward.wav", t = 64 / 30},
+            {s = path .. "galil_reload_end.wav", t = 70 / 30},
         },
     },
     ["ready"] = {
+    -- ["draw"] = {
         Source = "draw",
         IKTimeLine = {
             {
@@ -350,17 +366,27 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_draw.wav", t = 0 / 30},
-            {s = path .. "galil_boltback.wav", t = 9 / 30},
-            {s = path .. "galil_boltforward.wav", t = 12 / 30},
+            {s = path .. "galil_reload_start.wav", t = 0 / 30},
+            {s = path .. "galil_boltback.wav", t = 0 / 30},
+            -- {s = path .. "galil_boltback.wav", t = 8 / 30},
+            {s = path .. "galil_bolt_extra.wav", t = 8 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 10 / 30},
+            {s = path .. "galil_back.wav", t = 11 / 30},
+            {s = path .. "galil_boltforward.wav", t = 13 / 30},
+            {s = path .. "galil_reload_end.wav", t = 15 / 30},
         },
     },
     ["draw"] = {
+    -- ["ready"] = {
         Source = "draw_short",
+        EventTable = {
+            {s = path .. "galil_draw.wav", t = 0 / 30},
+        },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
+            {s = path .. "galil_reload_start.wav", t = 0 / 30},
             {s = "CSGO.Item.Movement", t = 0 / 30},
         },
     },
@@ -382,8 +408,8 @@ SWEP.Animations = {
         Source = "lookat01",
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 66 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 106 / 30 },
         },
     },
     ["bash"] = {
@@ -480,9 +506,9 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.galilar_parent",
-        Pos = Vector(0, -4.9, 3),
+        Pos = Vector(0, -4.75, 3),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic","eft_optic_medium"},
+        Category = {"csgo_optic"},
         CorrectiveAng = Angle(0.13, 0, 0.),
     },
     {
@@ -575,11 +601,6 @@ SWEP.Attachments = {
         -- Category = "stickers",
     -- },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
-    },
-    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.galilar_parent", -- relevant bone any attachments will be mostly referring to
@@ -589,4 +610,4 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
-SWEP.GripPoseParam2 = 0
+SWEP.GripPoseParam2 = 0.8

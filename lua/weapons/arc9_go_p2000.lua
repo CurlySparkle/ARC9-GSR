@@ -241,7 +241,7 @@ SWEP.ShootSoundSilenced = "CSGO.hkp2000.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.hkp2000.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
+SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {
 }
@@ -265,33 +265,41 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        EventTable = {
+            {s = "CSGO.hkp2000.Fire_Beef", t = 0 / 30},
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        EventTable = {
+            {s = "CSGO.hkp2000.Fire_Beef_ADS", t = 0 / 30},
+        },
     },
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "hkp2000_clipout.wav", t = 12 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 25 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 10 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 37 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.4,
         EventTable = {
-            {s = path .. "hkp2000_clipout.wav", t = 12 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 25 / 30},
-            {s = path .. "hkp2000_slideback.wav", t = 44 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 50 / 30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 44 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 50 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55 / 30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
             {s = path .. "hkp2000_draw.wav", t = 0 / 30},
-            {s = path .. "hkp2000_slideback.wav", t = 8 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 14 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 6 / 30},
+            {s = "ARC9_CSGO_HKP2000.SlideforwardAlt", t = 12 / 30},
         },
     },
     ["draw"] = {
@@ -329,18 +337,20 @@ SWEP.Animations = {
     ["reload_longmag"] = {
         Source = "reload_short_alt",
         EventTable = {
-            {s = path .. "hkp2000_clipout.wav", t = 12 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 25 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 10 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 37 / 30},
         },
     },
     ["reload_longmag_empty"] = {
         Source = "reload_alt",
 		MinProgress = 0.4,
         EventTable = {
-            {s = path .. "hkp2000_clipout.wav", t = 12 / 30},
-            {s = path .. "hkp2000_clipin.wav", t = 25 / 30},
-            {s = path .. "hkp2000_slideback.wav", t = 44 / 30},
-            {s = path .. "hkp2000_sliderelease.wav", t = 50 / 30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 41 / 30},
+            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 48 / 30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55 / 30},
         },
     },
     ["bash"] = {
@@ -395,7 +405,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.HKP2000_Slide",
         Pos = Vector(0, -0.1, 1),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
+        Category = {"csgo_optics_pistols_alt",},
         CorrectiveAng = Angle(0.7, 0.6, 0),
 		Scale = 0.8,
     },
@@ -411,16 +421,7 @@ SWEP.Attachments = {
     {
         PrintName = "Mag",
 		Bone = "v_weapon.HKP2000_Clip",
-        Category = "go_mag",
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Ammo",
-        Bone = "v_weapon.HKP2000_Clip",
-        Category = "go_ammo",
-        Pos = Vector(0, 1, 0),
-        Ang = Angle(0, 0, 0),
+        Category = "go_mag"
     },
     {
         PrintName = "Perk",
@@ -459,8 +460,4 @@ SWEP.Attachments = {
         Pos = Vector(0.6, 0.1, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -80),
 	},
-    {
-        PrintName = "View",
-        Category = "go_pistols_view"
-    },
 }

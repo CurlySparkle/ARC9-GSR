@@ -230,7 +230,7 @@ SWEP.ShootSoundSilenced = "CSGO.GALIL.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.GALIL.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
-SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
+SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.HideBones = {
 }
@@ -253,9 +253,17 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        EventTable = {
+            {s = "CSGO.GALIL.Fire_Beef", t = 0 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 0 / 30},
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        EventTable = {
+            {s = "CSGO.GALIL.Fire_Beef_ADS", t = 0 / 30},
+            {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0 / 30},
+        },
     },
     ["reload"] = {
         Source = "reload_short",
