@@ -3,7 +3,8 @@ AddCSLuaFile()
 SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - GS:R: Akimbo"
+SWEP.Category = "ARC9 - GS:R"
+SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual P2000"
 SWEP.TrueName = "Dual P2000"
@@ -75,11 +76,12 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 500
+SWEP.RPM = 750
 
 SWEP.Firemodes = {
     {
         Mode = 2,
+        PostBurstDelay = 0.12,
         -- add other attachment modifiers
     }
 }
@@ -473,14 +475,3 @@ SWEP.Attachments = {
         Category = "stickers",
     },
 }
-
-
-
--- function SWEP:ThinkSights()
-
- -- if self:GetOwner():KeyDown(IN_ATTACK2) then
-	-- self.RPM = 7000
- -- else
-	-- self.RPM = 400
- -- end
- -- end
