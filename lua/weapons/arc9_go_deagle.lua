@@ -267,7 +267,7 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
 			return "reload_tacticool_empty" 
 		end
     end	
-	if rng <= 50 then -- lol?
+	if rng <= 90 then -- lol?
 		if anim == "reload" then		
 			return "reload_alt" 
 		end	
