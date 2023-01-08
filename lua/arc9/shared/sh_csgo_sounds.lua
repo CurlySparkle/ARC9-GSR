@@ -10,7 +10,31 @@ AddCSLuaFile()
 -- ~Switched draw and movement flags to use CHAN_ITEM as distant gunshots use CHAN_WEAPON and would get replaced otherwise
 --
 
+sound.Add( {
+    name = "CSGO.Rifle.Switch_Mode",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 60,
+    pitch = {95, 110},
+    sound = {
+        "shared/rifle_foley_fire_select_1.ogg",
+		"shared/rifle_foley_fire_select_2.ogg",
+		"shared/rifle_foley_fire_select_3.ogg",
+		"shared/rifle_foley_fire_select_4.ogg",
+    }
+} )
 
+sound.Add( {
+    name = "CSGO.SMG.Switch_Mode",
+    channel = CHAN_WEAPON,
+    volume = 1.0,
+    level = 60,
+    pitch = {95, 110},
+    sound = {
+        "shared/smg_foley_fire_select_1.ogg",
+		"shared/smg_foley_fire_select_2.ogg",
+    }
+} )
 
 sound.Add( {
     name = "ARC9_CSGO_Magazinefetch.Rifle",
@@ -70,10 +94,10 @@ sound.Add({
     level = 100,
     soundlevel = SNDLVL_GUNFIRE,
     sound = {
-    "shared/frag_expl_01.ogg",
-	"shared/frag_expl_02.ogg",
-	"shared/frag_expl_03.ogg",
-    "shared/frag_expl_04.ogg",} 
+    "^shared/frag_expl_01.ogg",
+	"^shared/frag_expl_02.ogg",
+	"^shared/frag_expl_03.ogg",
+    "^shared/frag_expl_04.ogg",} 
 })
 
 

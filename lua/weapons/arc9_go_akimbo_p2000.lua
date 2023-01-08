@@ -241,8 +241,8 @@ SWEP.AnimDraw = false
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_pistol"
 SWEP.AfterShotParticle = "muzzle_smoke_trace"
-SWEP.MuzzleEffectQCA = 2
-SWEP.MuzzleEffectQCAEvenShot = 1
+SWEP.MuzzleEffectQCA = 1
+SWEP.MuzzleEffectQCAEvenShot = 2
 
 SWEP.CaseEffectQCA = 4
 SWEP.CaseEffectQCAEvenShot = 3
