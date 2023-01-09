@@ -574,9 +574,9 @@ SWEP.Attachments = {
         Category = {"silencers"},
         Bone = "v_weapon.silencer",
 		InstalledElements = {"silencer_none"},
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, -1, 0),
         Ang = Angle(0, -90, 0),
-        Scale = 1,
+        Scale = 0.9,
     },
     {
         PrintName = "Top",
