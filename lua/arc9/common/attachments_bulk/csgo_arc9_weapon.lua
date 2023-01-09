@@ -93,10 +93,10 @@ ARC9.LoadAttachment(ATT, "csgo_mp5_stock_k")
 ATT = {}
 -- note: 10mm or 45acp instead?
 ATT.PrintName = "Short Magazine" 
-ATT.CompactName = "Kurz"
-ATT.Description = [[Shortened handguard.]]
+ATT.CompactName = "20R"
+ATT.Description = [[Decreases capcity to 20 with an increase on reload speed and handling.]]
 
-// ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_mp5_mag_15.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "go_mp5_mag"

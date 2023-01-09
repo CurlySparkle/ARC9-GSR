@@ -118,13 +118,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.01
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -265,66 +265,6 @@ SWEP.Animations = {
         Source = "shoot1_ads",
     },
     ["reload"] = {
-        Source = "reload_short",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.3,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.1,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = path .. "mp5_clipout.wav", t = 25 / 30},
-            {s = path .. "mp5_clipin.wav", t = 69 / 30},
-        },
-    },
-    ["reload_empty"] = {
-        Source = "reload",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.15,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = path .. "mp5_slideback.wav", t = 5 / 30},
-            {s = path .. "mp5_clipout.wav", t = 27 / 30},
-            {s = path .. "mp5_clipin.wav", t = 69 / 30},
-            {s = path .. "mp5_slideforward.wav", t = 85 / 30},
-        },
-    },
-    ["reload_alt"] = {
         Source = "reload_short_alt",
         IKTimeLine = {
             {
@@ -353,7 +293,7 @@ SWEP.Animations = {
             {s = path .. "mp5_clipin.wav", t = 69 / 30},
         },
     },
-    ["reload_empty_alt"] = {
+    ["reload_empty"] = {
         Source = "reload_alt",
         IKTimeLine = {
             {

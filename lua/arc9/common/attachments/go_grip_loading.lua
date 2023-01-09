@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_Loading.mdl"
 ATT.SortOrder = 0
 ATT.Category = "grip"
 
-ATT.ReloadTimeMult = 0.9
+ATT.ReloadTimeMult = 0.85
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true

@@ -22,6 +22,10 @@ ATT.MuzzleDeviceUBGL = true
 ATT.ModelOffset = Vector(3, 0, -0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
+ATT.DrawFunc = function(swep, model, wm)
+    model:SetBodygroup("0", swep.UBGLBodygroup or 0)
+end
+
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",	
