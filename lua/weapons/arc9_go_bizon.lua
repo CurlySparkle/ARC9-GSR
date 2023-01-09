@@ -115,6 +115,9 @@ SWEP.RecoilMultSights = 1
 
 SWEP.RecoilPatternDrift = 25
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.02

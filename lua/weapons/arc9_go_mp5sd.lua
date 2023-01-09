@@ -116,15 +116,18 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.01
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -259,8 +262,8 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-		Mult = 0.7,
+        Source = {"shoot1_new"},
+		Mult = 1,
         EventTable = {
             {s = "CSGO.MP5.Fire.Beef", t = 0 / 30},
             {s = "CSGO.MP5.Fire.Beefdone", t = 5 / 30},

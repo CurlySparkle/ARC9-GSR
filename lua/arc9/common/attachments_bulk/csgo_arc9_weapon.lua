@@ -127,6 +127,9 @@ ATT.MovingAng = Angle(0,0,-35)
 ATT.CrouchPos = Vector(-3,-0.8,-3.3)
 ATT.CrouchAng = Angle(0,0,-35)
 
+ATT.ReloadPos = Vector(0,0,0)
+ATT.ReloadAng = Angle(0,0,0)
+
 ARC9.LoadAttachment(ATT, "csgo_pistols_view")
 
 ATT = {}
@@ -149,6 +152,9 @@ ATT.MovingAng = Angle(-5.5,-1.7,-35)
 ATT.CrouchPos = Vector(-3.5,-0.8,-3)
 ATT.CrouchAng = Angle(0,0,-35)
 
+ATT.ReloadPos = Vector(0,0,0)
+ATT.ReloadAng = Angle(0,0,0)
+
 ARC9.LoadAttachment(ATT, "csgo_pistols_view2")
 
 ATT = {}
@@ -170,5 +176,8 @@ ATT.MovingAng = Angle(0,0,-35)
 
 ATT.CrouchPos = Vector(-4,-0.8,-5)
 ATT.CrouchAng = Angle(0,0,-35)
+
+ATT.ReloadPos = Vector(0,0,0)
+ATT.ReloadAng = Angle(0,0,0)
 
 ARC9.LoadAttachment(ATT, "csgo_pistols_view3")

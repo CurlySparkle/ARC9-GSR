@@ -118,9 +118,8 @@ SWEP.RecoilMultCrouch = 0.8
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.ViewRecoil = true -- true
-SWEP.ViewRecoilUpMult = 10 -- 40-100
-SWEP.ViewRecoilUpMultSights = 20
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
 
 -------------------------- SPREAD
 

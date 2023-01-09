@@ -277,6 +277,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.4,
         EventTable = {
             {s = "ARC9_CSGO_HKP2000.Magout", t = 10 / 30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
@@ -336,6 +337,7 @@ SWEP.Animations = {
     },
     ["reload_longmag"] = {
         Source = "reload_short_alt",
+		MinProgress = 0.7,
         EventTable = {
             {s = "ARC9_CSGO_HKP2000.Magout", t = 10 / 30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
@@ -431,7 +433,6 @@ SWEP.Attachments = {
         Category = "go_ammo",
         Pos = Vector(0, 1, 0),
         Ang = Angle(0, 0, 0),
-        Category = "go_mag"
     },
     {
         PrintName = "Perk",
