@@ -118,13 +118,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.06
+SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.005
+SWEP.SpreadAddHipFire = 0.02
 SWEP.SpreadAddCrouch = -0.05
 
 -------------------------- HANDLING
@@ -243,6 +243,7 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/mp5/"
 
 SWEP.ShootSound = "CSGO.MP5.Fire"
+SWEP.FirstShootSound = "CSGO.MP5.FireFirst"
 SWEP.DistantShootSound = "CSGO.MP5.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -259,13 +260,22 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-		Mult = 0.5,
+		Mult = 0.7,
+        EventTable = {
+            {s = "CSGO.MP5.Fire.Beef", t = 0 / 30},
+            {s = "CSGO.MP5.Fire.Beefdone", t = 5 / 30},
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        EventTable = {
+            {s = "CSGO.MP5.Fire.BeefADS", t = 0 / 30},
+            {s = "CSGO.MP5.Fire.Beef", t = 3 / 30},
+        },
     },
     ["reload"] = {
         Source = "reload_short_alt",
+		Mult = 0.8,
         IKTimeLine = {
             {
                 t = 0,
@@ -289,12 +299,18 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp5_clipout.wav", t = 25 / 30},
-            {s = path .. "mp5_clipin.wav", t = 69 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 0 / 30},
+            {s = "ARC9_CSGO_MP5.Release", t = 13 / 30},
+            {s = "ARC9_CSGO_MP5.Magout", t = 15 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 48 / 30},
+            {s = "ARC9_CSGO_MP5.Position", t = 49 / 30},
+            {s = "ARC9_CSGO_MP5.Magin", t = 56 / 30},
+            {s = "ARC9_CSGO_MP5.End", t = 72 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_alt",
+		Mult = 0.8,
         IKTimeLine = {
             {
                 t = 0,
@@ -318,14 +334,19 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp5_slideback.wav", t = 5 / 30},
-            {s = path .. "mp5_clipout.wav", t = 27 / 30},
-            {s = path .. "mp5_clipin.wav", t = 64 / 30},
-            {s = path .. "mp5_slideforward.wav", t = 86 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 0 / 30},
+            {s = "ARC9_CSGO_MP5.Boltback", t = 7 / 30},
+            {s = "ARC9_CSGO_MP5.Release", t = 23 / 30},
+            {s = "ARC9_CSGO_MP5.Magout", t = 27 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 51 / 30},
+            {s = "ARC9_CSGO_MP5.Position", t = 64 / 30},
+            {s = "ARC9_CSGO_MP5.Magin", t = 68 / 30},
+            {s = "ARC9_CSGO_MP5.Boltforward", t = 85 / 30},
+            {s = path .. "mp5_reloadend.ogg", t = 86 / 30},
         },
     },
     ["ready"] = {
-        Source = {"draw", "draw2"},
+        Source = {"draw_alt", "draw_alt"},
         IKTimeLine = {
             {
                 t = 0,
@@ -349,12 +370,17 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp5_draw.wav", t = 7 / 30},
-            {s = path .. "mp5_slideforward.wav", t = 19 / 30},
+            {s = path .. "mp5_draw.wav", t = 0 / 30},
+            {s = "ARC9_CSGO_MP5.Boltforward", t = 16 / 30},
+            {s = path .. "mp5_reloadend.ogg", t = 20 / 30},
         },
     },
     ["draw"] = {
         Source = "draw_short",
+        EventTable = {
+            {s = path .. "mp5_reloadend.ogg", t = 5 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 12 / 30},
+        },
     },
     ["holster"] = {
         Source = "holster",
