@@ -14,6 +14,18 @@ sound.Add( {
 } )
 
 
+sound.Add( {
+    name = "ARC9_CSGO_Magazinefetch.Rifle",
+    channel = CHAN_ITEM,
+    volume = {0.3, 0.6},
+    level = 60,
+    pitch = {90, 110},
+    sound = {
+        "weapons/foley/rifle_fetch-1.wav",
+        "weapons/foley/rifle_fetch-2.wav",
+        "weapons/foley/rifle_fetch-3.wav",
+    }
+} )
 
 
 
@@ -88,5 +100,86 @@ sound.Add( {
     pitch = {95, 103},
     sound = {
         "weapons/csgo/hkp2000/hkp2000_forward_alt.wav",
+    }
+} )
+
+
+
+
+sound.Add( {
+    name = "ARC9_CSGO_MP5.Magout",
+    channel = CHAN_STATIC,
+    volume = {0.7, 0.9},
+    level = 75,
+    pitch = {95, 103},
+    sound = {
+        "weapons/csgo/mp5/mp5_out1.ogg",
+        "weapons/csgo/mp5/mp5_out2.ogg",
+        "weapons/csgo/mp5/mp5_out3.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5.Release",
+    channel = CHAN_STATIC,
+    volume = {0.7, 0.9},
+    level = 75,
+    pitch = {95, 103},
+    sound = {
+        "weapons/csgo/mp5/mp5_release1.ogg",
+        "weapons/csgo/mp5/mp5_release2.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5.Position",
+    channel = CHAN_STATIC,
+    volume = {0.7, 0.9},
+    level = 75,
+    pitch = {95, 103},
+    sound = {
+        "weapons/csgo/mp5/mp5_pos1.ogg",
+        "weapons/csgo/mp5/mp5_pos2.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5.Magin",
+    channel = CHAN_STATIC,
+    volume = {0.7, 0.9},
+    level = 75,
+    pitch = {95, 103},
+    sound = {
+        "^weapons/csgo/mp5/mp5_in-1.ogg",
+        "weapons/csgo/mp5/mp5_in-2.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5.Boltback",
+    channel = CHAN_STATIC,
+    volume = {0.7, 0.9},
+    level = 75,
+    pitch = {95, 103},
+    sound = {
+        "weapons/csgo/mp5/mp5_back1.ogg",
+        "weapons/csgo/mp5/mp5_back2.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5.Boltforward",
+    channel = CHAN_STATIC,
+    volume = 1,
+    level = 75,
+    pitch = {95, 105},
+    sound = {
+        "weapons/csgo/mp5/mp5_forward-1.ogg",
+        "weapons/csgo/mp5/mp5_forward-2.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5.End",
+    channel = CHAN_STATIC,
+    volume = 0.3,
+    level = 75,
+    pitch = {90, 110},
+    sound = {
+        "weapons/csgo/mp5/mp5_reloadend.ogg",
     }
 } )

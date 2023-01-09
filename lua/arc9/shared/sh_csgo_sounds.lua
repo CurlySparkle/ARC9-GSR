@@ -37,19 +37,6 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "ARC9_CSGO_Magazinefetch.Rifle",
-    channel = CHAN_ITEM,
-    volume = {0.3, 0.6},
-    level = 60,
-    pitch = {70, 100},
-    sound = {
-        "weapons/foley/rifle_fetch-1.wav",
-        "weapons/foley/rifle_fetch-2.wav",
-        "weapons/foley/rifle_fetch-3.wav",
-    }
-} )
-
-sound.Add( {
     name = "ARC9_CSGO_Pistol_Draw",
     channel = CHAN_ITEM,
     volume = 1.0,
@@ -639,24 +626,75 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5.Fire",
-    channel = CHAN_USERBASE,
-    volume = 1.0,
+    channel = CHAN_ITEM,
+    volume = 0.7,
     level = 90,
-    pitch = {97,103},
+    pitch = {117,120},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/mp5/mp5_01.ogg",
+        "weapons/csgo/mp5/mp5_01_main.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.FireFirst",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 90,
+    pitch = {105,110},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/csgo/mp5/mp5_02.ogg",
     }
 } )
 
 sound.Add( {
     name = "CSGO.MP5.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 0.3,
-    level = 100,
+    volume = 1,
+    level = 110,
     pitch = {97,103},
     sound = {
-        "weapons/csgo/mp5/mp5_01.ogg",
+        "^weapons/csgo/mp5/mp5_01_distant.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.Fire.Beefdone",
+    channel = CHAN_USERBASE,
+    volume = 0.3,
+    level = 50,
+    pitch = {130,130},
+    sound = {
+        "^weapons/csgo/mp5/mp5_beef1.ogg",
+        "^weapons/csgo/mp5/mp5_beef2.ogg",
+        "^weapons/csgo/mp5/mp5_beef3.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.Fire.Beef",
+    channel = CHAN_USERBASE,
+    volume = 0.5,
+    level = 50,
+    pitch = {130,130},
+    sound = {
+        "^weapons/csgo/mp5/mp5_beef1.ogg",
+        "^weapons/csgo/mp5/mp5_beef2.ogg",
+        "^weapons/csgo/mp5/mp5_beef3.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5.Fire.BeefADS",
+    channel = CHAN_USERBASE,
+    volume = 0.8,
+    level = 50,
+    pitch = {120,120},
+    sound = {
+        "^weapons/csgo/mp5/mp5_beef1.ogg",
+        "^weapons/csgo/mp5/mp5_beef2.ogg",
+        "^weapons/csgo/mp5/mp5_beef3.ogg",
     }
 } )
 
