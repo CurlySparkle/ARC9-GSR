@@ -1,6 +1,5 @@
 GSORParticleFiles = {}
-table.insert(GSORParticleFiles, #GSORParticleFiles, "grenade_fx")
-table.insert(GSORParticleFiles, #GSORParticleFiles, "inferno_fx")
+table.insert(GSORParticleFiles, #GSORParticleFiles, "csgo_inferno_fx")
 table.insert(GSORParticleFiles, #GSORParticleFiles, "arc9_gsr_nadefx")
 
 GSORParticleEffects = {}

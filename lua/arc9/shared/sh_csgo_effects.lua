@@ -1,5 +1,5 @@
-game.AddParticles( "particles/cs_weapon_fx.pcf" )
-game.AddParticles( "particles/explosions_fx.pcf" )
+game.AddParticles( "particles/csgo_weapon_fx.pcf" )
+game.AddParticles( "particles/csgo_explosions_fx.pcf" )
 
 -- FX
 PrecacheParticleSystem("weapon_muzzle_flash_attach_comp")
