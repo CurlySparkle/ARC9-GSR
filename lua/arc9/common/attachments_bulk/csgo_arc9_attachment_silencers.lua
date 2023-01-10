@@ -5,7 +5,7 @@ ATT = {}
 
 ATT.PrintName = [[Light Suppressor]]
 ATT.CompactName = [[Light Supp]]
-ATT.Description = [[Light tactical suppressor. Reduces audible report on average with a less penalty.]]
+ATT.Description = [[A suppressor designed to reduces audible report on average with a less penalty.]]
 ATT.Icon = Material("entities/attachs/silencer_233.png", "mips smooth")
 
 ATT.SortOrder = 0.5
@@ -31,7 +31,7 @@ ATT = {}
 
 ATT.PrintName = [[Heavy Suppressor]]
 ATT.CompactName = [[Heavy Supp]]
-ATT.Description = [[Heavy tactical suppressor. Reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_m4.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -56,7 +56,7 @@ ATT = {}
 
 ATT.PrintName = [[P90 Suppressor]]
 ATT.CompactName = [[P90 Supp]]
-ATT.Description = [[A tactical suppressor that reduces audible report by a lot with a penalty of significant bulk designed for the P90.
+ATT.Description = [[A tactical suppressor designed to reduces audible report by a lot with a penalty of significant bulk designed for the P90.
 May not be suitable for other weapons.]]
 ATT.Icon = Material("entities/attachs/silencer_p90.png", "mips smooth")
 
@@ -83,7 +83,7 @@ ATT = {}
 
 ATT.PrintName = [[PBS-1 Suppressor]]
 ATT.CompactName = [[PBS-1]]
-ATT.Description = [[The PBS-1 is a silencer designed for the 7.62x39mm AKM variant of Soviet AK-47 assault rifle in the Kalashnikov rifle family.]]
+ATT.Description = [[A suppressor designed for the 7.62x39mm AKM variant of Soviet AK-47 assault rifle in the Kalashnikov rifle family.]]
 ATT.Icon = Material("entities/attachs/silencer_PBS01.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -112,7 +112,7 @@ ATT = {}
 
 ATT.PrintName = [[SEC9mm Suppressor]]
 ATT.CompactName = [[SEC9mm]]
-ATT.Description = [[SEC9mm suppressor that reduces audible report by a lot with a penalty of significant bulk designed for small arms types.]]
+ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk designed for small arms types.]]
 ATT.Icon = Material("entities/attachs/silencer_SEC9mm.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -141,7 +141,7 @@ ATT = {}
 
 ATT.PrintName = [[Salvo-12 Suppressor]]
 ATT.CompactName = [[Salvo-12]]
-ATT.Description = [[Tactical shotgun heavy suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[A tactical shotgun heavy suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_salvo12.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -166,7 +166,7 @@ ATT = {}
 -- MASS26 et des autres, you can't just slap a UBGL prefix for everything cuz attachment on the main gun will also affect the ubgl in that case
 ATT.PrintName = [[Salvo-12 Suppressor]]
 ATT.CompactName = [[Salvo-12]]
-ATT.Description = [[Tactical shotgun heavy suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[A tactical shotgun heavy suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_salvo12.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -192,7 +192,7 @@ ATT = {}
 
 ATT.PrintName = [[Ti-Rant 45 Suppressor]]
 ATT.CompactName = [[Ti-Rant 45]]
-ATT.Description = [[Tactical suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[A Tactical suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_TiRant45.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -217,7 +217,7 @@ ATT = {}
 
 ATT.PrintName = [[Cloth Wrapped Suppressor]]
 ATT.CompactName = [[Cloth-Wrapped]]
-ATT.Description = [[Tactical Cloth Wrapped Suppressor that reduces audible report with a penalty of significant bulk.]]
+ATT.Description = [[A tactical suppressor wrapped in cloth. Designed to reduces audible report with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_clothwrapped.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -243,7 +243,7 @@ ATT = {}
 
 ATT.PrintName = [[M110 Suppressor]]
 ATT.CompactName = [[M110 S]]
-ATT.Description = [[The M110 Suppressor helps with reducing audible report by a lot with a penalty of significant bulk designed for small arms types.]]
+ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk, made for sidearms.]]
 ATT.Icon = Material("entities/attachs/silencer_m110.png", "mips smooth")
 
 ATT.SortOrder = 1

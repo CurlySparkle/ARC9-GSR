@@ -3,8 +3,8 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = [[Deagle Suppressor]]
-ATT.CompactName = [[DEagle Sil]]
-ATT.Description = [[DEagle suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.CompactName = [[DE Supp]]
+ATT.Description = [[A suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_deagle.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -111,7 +111,7 @@ ATT = {}
 
 ATT.PrintName = "DEagle Long Barrel"
 ATT.CompactName = "DEagle LB"
-ATT.Description = [[Longer Barrel. Good for long range engagements.]]
+ATT.Description = [[A long-barrel attachment. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_deagle_slide_long.png", "mips smooth")

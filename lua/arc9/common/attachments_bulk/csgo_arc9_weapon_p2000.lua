@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "120mm P2000L Slide"
 ATT.CompactName = "P2000L Slide"
-ATT.Description = [[Long P2000 slide that improves range but also adds weight.]]
+ATT.Description = [[A long P2000 slide that improves range but also adds weight.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_p2000_slide_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "80mm P2000SK Slide"
 ATT.CompactName = "P2000SK Slide"
-ATT.Description = [[Compact slide that improves weapon handling and trigger response.]]
+ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_p2000_slide_short.png", "mips smooth")

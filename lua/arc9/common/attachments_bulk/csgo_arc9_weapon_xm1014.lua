@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "750mm M1014 Barrel"
 ATT.CompactName = "750mm L"
-ATT.Description = [[Long tactical barrel that improves range/spread/capacity, but at the cost of handling.]]
+ATT.Description = [[A long tactical barrel that improves range/spread/capacity, but at the cost of handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m1014_barrel_long.png", "mips smooth")
@@ -30,7 +30,7 @@ ATT = {}
 
 ATT.PrintName = "350mm M1014 Barrel"
 ATT.CompactName = "350mm S"
-ATT.Description = [[Shorter barrel that improves handling, but at the cost of spread/capacity.]]
+ATT.Description = [[A shorter barrel that improves handling, but at the cost of spread/capacity.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_m1014_barrel_short.png", "mips smooth")
@@ -58,7 +58,7 @@ ATT = {}
 
 ATT.PrintName = "5 Round Magazine"
 ATT.CompactName = "Mag"
-ATT.Description = [[Ditch the tube system for a magazine conversion]]
+ATT.Description = [[Ditch the tube system for a magazine conversion.]]
 ATT.SortOrder = 1
 
 //ATT.Icon = Material("entities/attachs/go_m1014_barrel_short.png", "mips smooth")

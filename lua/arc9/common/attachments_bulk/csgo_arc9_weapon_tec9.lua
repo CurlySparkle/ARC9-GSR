@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "200mm JATI Barrel"
 ATT.CompactName = "200mm JATI"
-ATT.Description = [[Long shrouded barrel that improves range but also adds weight.]]
+ATT.Description = [[A long shrouded barrel that improves range but also adds weight.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_tec9_barrel_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "90mm AB-1 Barrel"
 ATT.CompactName = "90mm AB-1"
-ATT.Description = [[Short barrel developed to meet regulations of the 1994 Assault Weapons Ban. Improves handling and trigger fire, though reduces range.]]
+ATT.Description = [[A short barrel developed to meet regulations of the 1994 Assault Weapons Ban. Improves handling and trigger fire, though reduces range.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_tec9_barrel_short.png", "mips smooth")
@@ -56,7 +56,7 @@ ATT = {}
 ATT.PrintName = [[32-Round 9mm TEC-9]]
 ATT.CompactName = [[32-Round]]
 ATT.Icon = Material("entities/attachs/go_tec9_mag_32.png")
-ATT.Description = [[Extended magazine. Improves capacity, at the cost of handling.]]
+ATT.Description = [[An extended magazine. Improves capacity, at the cost of handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -78,7 +78,7 @@ ATT = {}
 ATT.PrintName = [[10-Round 9mm TEC-9]]
 ATT.CompactName = [[10-Round]]
 ATT.Icon = Material("entities/attachs/go_tec9_mag_10.png")
-ATT.Description = [[Small magazine with lighter load. Improves handling.]]
+ATT.Description = [[A small magazine with lighter load. Improves handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

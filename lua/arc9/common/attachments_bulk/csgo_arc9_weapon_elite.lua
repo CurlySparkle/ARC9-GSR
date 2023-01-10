@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "240mm L Slide"
 ATT.CompactName = "240mm L"
-ATT.Description = [[Long slide that improves range but also adds weight.]]
+ATT.Description = [[A long slide that improves range but also adds weight.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m9_slide_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "170mm G Slide"
 ATT.CompactName = "170mm G"
-ATT.Description = [[Compact slide that improves weapon handling and trigger response.]]
+ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
@@ -57,7 +57,7 @@ ATT = {}
 
 ATT.PrintName = "Officer Slide"
 ATT.CompactName = "Officer"
-ATT.Description = [[Compact model unsuspiciously resemble a certain different gun from a certain era.]]
+ATT.Description = [[A compact model conversion, unsuspiciously resemble a certain different gun from a certain era.]]
 ATT.SortOrder = 1
 
 // ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
@@ -81,7 +81,7 @@ ATT = {}
 
 ATT.PrintName = "Raffica Slide"
 ATT.CompactName = "Raffica"
-ATT.Description = [[Burst system completes with a foregrip allowing for quick firing sucession.]]
+ATT.Description = [[A burst system completes with a foregrip allowing for quick firing sucession.]]
 ATT.SortOrder = 1
 
 // ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")

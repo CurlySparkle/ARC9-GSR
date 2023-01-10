@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "620mm Tireur Barrel"
 ATT.CompactName = "350mm"
-ATT.Description = [[Long-range FAMAS sniper barrel. Improves weapon performance.]]
+ATT.Description = [[A long-range FAMAS sniper barrel. Improves weapon performance.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_famas_barrel_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "405mm Raider Barrel"
 ATT.CompactName = "405mm"
-ATT.Description = [[Short length FAMAS barrel for special forces. Offers superior handling at the cost of performance.]]
+ATT.Description = [[A short-length FAMAS barrel for special forces. Offers superior handling at the cost of performance.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_famas_barrel_short.png", "mips smooth")

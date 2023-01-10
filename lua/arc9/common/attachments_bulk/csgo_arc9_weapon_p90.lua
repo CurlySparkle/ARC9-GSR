@@ -121,7 +121,7 @@ ATT = {}
 
 ATT.PrintName = "Extended Barrel"
 ATT.CompactName = "Ext Barrel"
-ATT.Description = [[Extended barrel for the P90 for longer and better purposes. Adds support for grips.]]
+ATT.Description = [[An extended barrel for longer and better purposes. Adds support for grips.]]
 
 ATT.Icon = Material("entities/attachs/p90_extended_barrel.png", "mips smooth")
 
@@ -152,7 +152,7 @@ ATT = {}
 
 ATT.PrintName = "410mm PS90 Barrel"
 ATT.CompactName = "410mm PS90"
-ATT.Description = [[Medium-length barrel used on the PS90 carbine.]]
+ATT.Description = [[A medium-length barrel used on the PS90 carbine.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_p90_barrel_med.png", "mips smooth")

@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton Stock"
-ATT.Description = [[Lightweight stock for the M249. Improves ADS speed at the cost of recoil.]]
+ATT.Description = [[A lightweight stock for the Negev. Improves ADS speed at the cost of recoil.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_stock_skeleton.png", "mips smooth")
@@ -49,7 +49,7 @@ ATT = {}
 
 ATT.PrintName = "510mm Heavy Barrel"
 ATT.CompactName = "510mm Heavy"
-ATT.Description = [[Long Negev barrel with increased twist. Good for long range engagements.]]
+ATT.Description = [[A long Negev barrel with increased twist. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_negev_barrel_long.png", "mips smooth")
@@ -74,7 +74,7 @@ ATT = {}
 
 ATT.PrintName = "330mm SF Barrel"
 ATT.CompactName = "330mm SF"
-ATT.Description = [[Shortened barrel for commando use, improves sight and sprint time for the cost of more recoil.]]
+ATT.Description = [[A shortened barrel for commando use, improves sight and sprint time for the cost of more recoil.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_negev_barrel_short.png", "mips smooth")
@@ -101,7 +101,7 @@ ATT = {}
 ATT.PrintName = [[50-Round 7.62mm Bullet Type]]
 ATT.CompactName = [[50 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_negev_belt_100.png")
-ATT.Description = [[7.62mm conversion with 50 round magazine.
+ATT.Description = [[A 7.62mm conversion with 50 round magazine.
 Superior range and damage at the cost of recoil and inferior handling with less RPM.]]
 ATT.Pros = {}
 ATT.Cons = {}

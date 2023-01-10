@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "160mm Plus Slide"
 ATT.CompactName = "Slide L"
-ATT.Description = [[Long slide that improves range but also adds less handling control.]]
+ATT.Description = [[A long slide that can improves range, but also adds less handling control.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_fiveseven_slide_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "110mm FN Slide"
 ATT.CompactName = "Slide S"
-ATT.Description = [[Compact slide that improves weapon handling and trigger response.]]
+ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_fiveseven_slide_short.png", "mips smooth")

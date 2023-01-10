@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "Glock Long Slide"
 ATT.CompactName = "Glock L"
-ATT.Description = [[Longer barrel. Good for long range engagements.]]
+ATT.Description = [[A long barrel attachment. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_glock_slide_auto.png", "mips smooth")
@@ -30,7 +30,7 @@ ATT = {}
 
 ATT.PrintName = "Glock Auto Slide"
 ATT.CompactName = "Glock Auto"
-ATT.Description = [[Gang shit.]]
+ATT.Description = [[A slide attachment that can turn your Glock-18 into full auto.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_glock_slide_auto.png", "mips smooth")

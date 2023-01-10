@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "510mm A4 Barrel"
 ATT.CompactName = "510mm A4"
-ATT.Description = [[Long M16A4 barrel with RIS handguard. Good for long range engagements.]]
+ATT.Description = [[A long M16A4 barrel with RIS handguard. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
@@ -27,9 +27,9 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_barrel_m16a4")
 --------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "M16 Reciever"
-ATT.CompactName = "M16 Reciever"
-ATT.Description = [[Default M16 Reciever for the M4A1-S.]]
+ATT.PrintName = "M16 Receiver"
+ATT.CompactName = "M16 Receiver"
+ATT.Description = [[A default M16 receiver for the M4A1-S.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m4_reciever_default.png", "mips smooth")
@@ -68,8 +68,8 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_reciever_default")
 ATT = {}
 
 ATT.PrintName = "M16 Stock"
-ATT.CompactName = "Fullstock"
-ATT.Description = [[Change the stock to an M16 fullstock, provides great recoil for the cost of less handling speed.]]
+ATT.CompactName = "Full Stock"
+ATT.Description = [[Change the stock to an M16 full stock, provides great recoil for the cost of less handling speed.]]
 
 ATT.Icon = Material("entities/attachs/go_m4_stock_m16.png", "mips smooth")
 
@@ -90,7 +90,7 @@ ATT = {}
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[Increases the magazine capacity to 30.]]
+ATT.Description = [[Increases the magazine capacity to 30 rounds.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -107,7 +107,7 @@ ATT = {}
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_drum.png")
-ATT.Description = [[Increases the magazine capacity to 50, at the cost of increased reload time and less handling.]]
+ATT.Description = [[Increases the magazine capacity to 50 rounds, at the cost of increased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

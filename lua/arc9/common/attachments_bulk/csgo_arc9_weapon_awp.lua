@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "490mm Bull Barrel"
 ATT.CompactName = "450mm"
-ATT.Description = [[Bull barrel that significantly reduces recoil, though at the cost of handling.]]
+ATT.Description = [[A bull barrel that significantly reduces recoil, though at the cost of handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_awp_barrel_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "390mm Custom Barrel"
 ATT.CompactName = "390mm"
-ATT.Description = [[Short length custom barrel. Improves handling, though offers much worse range and accuracy.]]
+ATT.Description = [[A short-length custom barrel. Improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 2
 
 ATT.Icon = Material("entities/attachs/go_awp_barrel_short.png", "mips smooth")
@@ -54,7 +54,7 @@ ATT = {}
 
 ATT.PrintName = "430mm Factory Barrel"
 ATT.CompactName = "430mm"
-ATT.Description = [[Factory length barrel. Improves handling, though doesn't offers much range and accuracy.]]
+ATT.Description = [[A factory length barrel. Improves handling, though doesn't offers much range and accuracy.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_awp_barrel_long.png", "mips smooth")
@@ -79,7 +79,7 @@ ATT = {}
 
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = [[Folding]]
-ATT.Description = [[Folding Stock for the AWP. Improves recoil at the cost of handling.]]
+ATT.Description = [[A folded stock for the AWP. Improves recoil at the cost of handling.]]
 ATT.Icon = Material("entities/attachs/awp_stock_folding.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -122,7 +122,7 @@ ATT = {}
 ATT.PrintName = [[5-Round .338 AWM]]
 ATT.CompactName = [[5-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_5.png")
-ATT.Description = [[Reduced capacity by 50%. Gives an increased of reload speed, extra damage, and handling.]]
+ATT.Description = [[Reduced capacity by 50%, gives an increased of reload speed, extra damage, and handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -150,7 +150,7 @@ ATT = {}
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = [[Iron]]
 --ATT.Icon = Material("entities/attachs/go_optic_t1.png", "mips smooth")
-ATT.Description = [[Gives the AWP a standard iron sight. Good for close quarters but bad for long distances.]]
+ATT.Description = [[Gives the AWP a standard iron sight. Good for close-quarters but bad for long distances.]]
 
 ATT.Category = {"csgo_sights_awp"}
 ATT.ActivateElements = {"sight_iron"}
@@ -171,7 +171,7 @@ ATT = {}
 
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = [[Skeleton]]
-ATT.Description = [[Il est froid.]]
+ATT.Description = [[A lightweight stock for the AWP.]]
 ATT.Icon = Material("entities/attachs/go_awp_stock_skeleton.png", "mips smooth")
 ATT.Desc_Pros = {
 }

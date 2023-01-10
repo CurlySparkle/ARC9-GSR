@@ -3,7 +3,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = [[Nade Fuse]]
-ATT.Description = [[Makes your nade have a fuse of 3 seconds (Better plan your throws).]]
+ATT.Description = [[Makes your nade have a fuse for 3 seconds (Better plan your throws).]]
 ATT.Icon = Material("entities/attachs/go_nade_timer")
 
 ATT.SortOrder = 0

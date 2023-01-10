@@ -163,7 +163,7 @@ ATT = {}
 ATT.PrintName = [[M3 Default Barrel]]
 ATT.CompactName = [[Default]]
 --ATT.Icon = Material("entities/attachs/go_m3_cap_8.png")
-ATT.Description = [[Default Barrel.]]
+ATT.Description = [[A M3 default barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -210,7 +210,7 @@ ATT = {}
 
 ATT.PrintName = "M3 Short Barrel"
 ATT.CompactName = "Barrel S"
-ATT.Description = [[Shorter barrel that improves handling, but at the cost of spread/capacity.]]
+ATT.Description = [[A short barrel that improves handling, but at the cost of spread/capacity.]]
 ATT.SortOrder = 1.5
 
 ATT.Icon = Material("entities/attachs/go_m3_barrel_short.png", "mips smooth")
@@ -318,7 +318,7 @@ ATT = {}
 ATT.PrintName = [[Sawed-off Full-size Barrel]]
 ATT.CompactName = [[FULL]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[Uncut barrel with front sight post.
+ATT.Description = [[An uncut barrel with front sight post.
 Significantly increases range and precision.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -345,7 +345,7 @@ ATT = {}
 
 ATT.PrintName = "Factory Wooden Stock"
 ATT.CompactName = "FULL"
-ATT.Description = [[Full-sized wooden stock. Significantly reduces recoil.]]
+ATT.Description = [[A full-sized wooden stock. Significantly reduces recoil.]]
 
 ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")
 

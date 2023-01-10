@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "350mm Barrel"
 ATT.CompactName = "350mm"
-ATT.Description = [[Extended barrel, good for long range engagements.]]
+ATT.Description = [[An extended barrel, good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_mp9_barrel_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "210mm Plus Barrel"
 ATT.CompactName = "210mm"
-ATT.Description = [[Short-length barrel for the MP9.]]
+ATT.Description = [[A short-length barrel for the MP9.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_mp9_barrel_short.png", "mips smooth")

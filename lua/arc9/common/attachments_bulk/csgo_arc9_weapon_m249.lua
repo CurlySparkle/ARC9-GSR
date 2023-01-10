@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "510mm SAW Barrel"
 ATT.CompactName = "510mm SAW"
-ATT.Description = [[Heavy squad assault barrel. Good for long range engagements.]]
+ATT.Description = [[A heavy squad assault barrel. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m249_barrel_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "330mm Para Barrel"
 ATT.CompactName = "330mm Para"
-ATT.Description = [[Compact CQB barrel for commando forces. Gas system has been set to adverse, improving fire rate at the cost of severe overheating.
+ATT.Description = [[A compact CQB barrel for commando forces. Gas system has been set to adverse, improving fire rate at the cost of severe overheating.
 Also improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 1
 
@@ -55,7 +55,7 @@ ATT = {}
 
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton Stock"
-ATT.Description = [[Lightweight stock for the M249. Improves ADS speed at the cost of recoil.]]
+ATT.Description = [[A lightweight stock for the M249. Improves ADS speed at the cost of recoil.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_stock_skeleton.png", "mips smooth")
@@ -76,7 +76,7 @@ ATT = {}
 ATT.PrintName = [[200-Round 9mm Belt]]
 ATT.CompactName = [[200 9mm]]
 ATT.Icon = Material("entities/attachs/go_m249_mag_9_200.png")
-ATT.Description = [[9mm conversion, turning the LMG into a submachine gun with a massive capacity, similar to the SMG 08/18.]]
+ATT.Description = [[A 9mm conversion, turning the LMG into a submachine gun with a massive capacity, similar to the SMG 08/18.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
@@ -168,7 +168,7 @@ ATT = {}
 ATT.PrintName = [[20-Round 5.56]]
 ATT.CompactName = [[20 5.56]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
-ATT.Description = [[5.56 conversion with 20 round magazine.]]
+ATT.Description = [[A 5.56 conversion with 20 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6
@@ -208,7 +208,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.56]]
 ATT.CompactName = [[30 5.56]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[5.56 conversion with 30 round magazine.]]
+ATT.Description = [[A 5.56 conversion with 30 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 7
@@ -248,7 +248,7 @@ ATT = {}
 ATT.PrintName = [[60-Round 5.56]]
 ATT.CompactName = [[60 5.56]]
 ATT.Icon = Material("entities/attachs/go_scar17_mag_10_50.png")
-ATT.Description = [[5.56 conversion with 60 round magazine.]]
+ATT.Description = [[A 5.56 conversion with 60 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 8

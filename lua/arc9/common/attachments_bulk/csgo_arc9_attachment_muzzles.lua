@@ -66,7 +66,7 @@ ATT = {}
 
 ATT.PrintName = [[AR-15 Compensator]]
 ATT.CompactName = [[AR Comp]]
-ATT.Description = [[The AR-15 Compensator straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]
+ATT.Description = [[Straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]
 ATT.Icon = Material("entities/attachs/muzzle_ar15.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -95,7 +95,7 @@ ATT = {}
 
 ATT.PrintName = [[Carlson's Tactical Breacher Muzzle Brake]]
 ATT.CompactName = [[Door Breacher]]
-ATT.Description = [[Tactical Breacher Muzzle Brake provides a blast dispersion to reduce felt recoil and muzzle rise.]]
+ATT.Description = [[Provides a blast dispersion to reduce felt recoil and muzzle rise.]]
 ATT.Icon = Material("entities/attachs/muzzle_r870.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -119,7 +119,7 @@ ATT = {}
 
 ATT.PrintName = [[UZI Compensator]]
 ATT.CompactName = [[UZI Comp]]
-ATT.Description = [[The UZI Compensator straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]
+ATT.Description = [[Straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]
 ATT.Icon = Material("entities/attachs/muzzle_uzi.png", "mips smooth")
 
 ATT.SortOrder = 1

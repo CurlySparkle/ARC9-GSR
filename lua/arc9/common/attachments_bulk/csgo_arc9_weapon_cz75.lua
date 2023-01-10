@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "150mm CZ-L Slide"
 ATT.CompactName = "CZ-L"
-ATT.Description = [[Long slide that improves range and recoil but has an impact on handling.]]
+ATT.Description = [[A long slide, designed to improves range and recoil but has an impact on handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_cz75_slide_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "90mm CZ-C Slide"
 ATT.CompactName = "CZ-C"
-ATT.Description = [[Compact slide that improves weapon handling and trigger response.]]
+ATT.Description = [[A compact slide, designed to improves weapon handling and trigger response.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_cz75_slide_short.png", "mips smooth")
@@ -55,7 +55,7 @@ ATT = {}
 
 ATT.PrintName = "120mm CZ-A Slide"
 ATT.CompactName = "CZ-A"
-ATT.Description = [[Slide with integral compensator that improves recoil.]]
+ATT.Description = [[A slide with integral compensator that can improves recoil.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_cz75_slide_factory.png", "mips smooth")

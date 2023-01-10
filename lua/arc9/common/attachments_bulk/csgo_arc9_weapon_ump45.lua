@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "350mm USC Barrel"
 ATT.CompactName = "350mm USC"
-ATT.Description = [[USC civilian carbine barrel. Good for long range engagements.]]
+ATT.Description = [[An USC civilian carbine barrel. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ump_barrel_long.png", "mips smooth")
@@ -54,7 +54,7 @@ ATT = {}
 
 ATT.PrintName = "220mm HK Barrel"
 ATT.CompactName = "220mm HK"
-ATT.Description = [[Medium-length barrel for the UMP.]]
+ATT.Description = [[A medium-length barrel for the UMP.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ump_barrel_med.png", "mips smooth")
@@ -81,7 +81,7 @@ ATT = {}
 ATT.PrintName = [[12-Round .45 UMP]]
 ATT.CompactName = [[12-Round]]
 ATT.Icon = Material("entities/attachs/go_ump_mag_12.png")
-ATT.Description = [[Small magazine with lighter load. Improves handling and reload speed.]]
+ATT.Description = [[A small magazine with lighter load. Improves handling and reload speed.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -101,7 +101,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 9mm UMP-9]]
 ATT.CompactName = [[30-Round 9mm]]
 ATT.Icon = Material("entities/attachs/go_ump_mag_30_9mm.png")
-ATT.Description = [[9mm mag conversion from UMP9.]]
+ATT.Description = [[A 9mm mag conversion from UMP9.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1

@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "520mm Barrel"
 ATT.CompactName = "350mm L"
-ATT.Description = [[Long-range sniper barrel. Improves weapon performance.]]
+ATT.Description = [[A long-range sniper barrel. Improves weapon performance.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_galil_barrel_long.png", "mips smooth")
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "305mm Barrel"
 ATT.CompactName = "305mm S"
-ATT.Description = [[Short length barrel. Offers superior handling at the cost of performance.]]
+ATT.Description = [[A short-length barrel. Offers superior handling at the cost of performance.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_galil_barrel_short.png", "mips smooth")
@@ -91,7 +91,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 7.62mm Poly]]
 ATT.CompactName = [[30 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png")
-ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine. Superior range and damage at the cost of recoil.
+ATT.Description = [[A 7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine. Superior range and damage at the cost of recoil.
 Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -126,7 +126,7 @@ ATT = {}
 ATT.PrintName = [[40-Round 7.62mm Poly]]
 ATT.CompactName = [[40 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png")
-ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine. Superior range and damage at the cost of recoil.
+ATT.Description = [[A 7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine. Superior range and damage at the cost of recoil.
 Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}

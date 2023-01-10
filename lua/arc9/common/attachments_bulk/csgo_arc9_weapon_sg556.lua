@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "226mm Commando Barrel"
 ATT.CompactName = "CMDO"
-ATT.Description = [[Compact handguard configuration from the SG 552 Commando.
+ATT.Description = [[A compact handguard configuration from the SG 552 Commando.
 Good for close range engagements.]]
 ATT.SortOrder = 226
 
@@ -58,7 +58,7 @@ ATT = {}
 
 ATT.PrintName = "300mm Prototype Barrel"
 ATT.CompactName = "PROTO"
-ATT.Description = [[Light weight preproduction model from the SG 541 Prototype.
+ATT.Description = [[A lightweight preproduction model from the SG 541 Prototype.
 Increases fire rate and agility.]]
 ATT.SortOrder = 300
 
@@ -154,7 +154,7 @@ ATT = {}
 
 ATT.PrintName = "7.62 Magazine"
 ATT.CompactName = "AK"
-ATT.Description = [[The Swiss has joined the Warsaw pact.]]
+ATT.Description = [[A 7.62 conversion with 30 round magazine.]]
 
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
 
