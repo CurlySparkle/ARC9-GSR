@@ -129,6 +129,7 @@ SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -568,6 +569,18 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp5sd_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.65, 5, 2.6), -- offset that the attachment will be relative to the bone
         Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
+    },
+    {
+        PrintName = "View",
+        Category = "go_mp5sd_view"
     },
 }
 

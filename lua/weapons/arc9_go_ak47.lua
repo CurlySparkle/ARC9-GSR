@@ -116,9 +116,6 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.ViewRecoil = true -- true
-SWEP.ViewRecoilUpMult = -10 -- 40-100
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
@@ -775,6 +772,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.ak47_Parent",
         Pos = Vector(0.8, -3.3, 8.5),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 
