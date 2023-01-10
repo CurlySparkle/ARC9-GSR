@@ -123,16 +123,8 @@ SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
-
-SWEP.VisualRecoilCenter = Vector(2, 16, 2) 
-SWEP.VisualRecoilUp = 0.4
-SWEP.VisualRecoilSide = 0.06
+SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilRoll = 1
-SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilPunchMultSights = 0.5
-
-SWEP.VisualRecoilDampingConst = 70 -- How spring will be visual recoil, 120 is default
-SWEP.VisualRecoilSpringMagnitude = 0.6
 
 -------------------------- SPREAD
 

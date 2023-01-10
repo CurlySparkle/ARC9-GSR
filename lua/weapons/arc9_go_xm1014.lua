@@ -33,11 +33,11 @@ SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_xm1014.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_xm1014_tp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-9, 5.5, -4.5),
+    Pos = Vector(-10, 5.5, -4.5),
     Ang = Angle(-10, 0, 180),
-    TPIKPos = Vector(-9, 5, -4),
+    TPIKPos = Vector(-10, 5, -4),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -253,19 +253,10 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
-SWEP.HideBones = {
-}
-
-SWEP.HideBonesSilenced = {}
-
 SWEP.ReloadHideBoneTables = {
-}
-
-SWEP.StripperClipBones = {
-    [2] = "v_weapon.xm1014_Shell1",
-    [3] = "v_weapon.xm1014_Shell2",
-    [4] = "v_weapon.xm1014_Shell3",
-    [5] = "v_weapon.xm1014_Shell4",
+    [1] = {
+        "v_weapon.M3_SHELL",
+    },
 }
 
 SWEP.Animations = {
@@ -474,6 +465,13 @@ SWEP.Animations = {
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 -------------------------- ATTACHMENTS
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_1"] = {
+    ModelOffset = Vector(-1.5, -0.4, 0.5),
+	ModelAngleOffset = Angle(0, 0, 170)
+    },
+}
+
 SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.AttachmentElements = {

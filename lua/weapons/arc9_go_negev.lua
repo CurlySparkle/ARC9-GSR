@@ -38,8 +38,8 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_mach_negev.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-18, 8.5, -7.2),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-15, 10, 0),
-    TPIKAng = Angle(0, 0, 180),
+    TPIKPos = Vector(-20, 9, 4),
+    TPIKAng = Angle(-13, 0, 180),
     Scale = 1
 }
 
@@ -89,25 +89,23 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
-
-SWEP.RecoilSeed = 57966 -- CSGO Seed Input Test
+SWEP.Recoil = 1.4
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.4
+SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 1
 SWEP.RecoilKickSights = 1
 
 SWEP.RecoilMultCrouch = 0.6
@@ -117,17 +115,17 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.RecoilPatternDrift = 30
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.5
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.02
 SWEP.SpreadAddSights = -0.05
 
