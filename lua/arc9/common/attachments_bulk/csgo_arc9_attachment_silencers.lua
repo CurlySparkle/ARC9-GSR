@@ -112,7 +112,7 @@ ATT = {}
 
 ATT.PrintName = [[SEC9mm Suppressor]]
 ATT.CompactName = [[SEC9mm]]
-ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk designed for small arms types.]]
+ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_SEC9mm.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -192,7 +192,7 @@ ATT = {}
 
 ATT.PrintName = [[Ti-Rant 45 Suppressor]]
 ATT.CompactName = [[Ti-Rant 45]]
-ATT.Description = [[A Tactical suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[A tactical suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_TiRant45.png", "mips smooth")
 
 ATT.SortOrder = 1
