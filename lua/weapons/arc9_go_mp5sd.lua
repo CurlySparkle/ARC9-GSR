@@ -588,6 +588,11 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stats",
         Category = "killcounter",
         Bone = "v_weapon.stattrack",

@@ -1,11 +1,11 @@
 "VertexlitGeneric"
 {
 	"$basetexture"				"models/csgo/famas/rif_famas"
-	"$bumpmap"					"null-bumpmap"
+	"$bumpmap"					"models/csgo/famas/rif_famas_n"
 	"$phongexponenttexture"		"models/csgo/famas/rif_famas_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
-	"$basemapalphaphongmask" "1"
+	"$basemapalphaphongmask" "0"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"

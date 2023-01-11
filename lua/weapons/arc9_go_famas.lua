@@ -51,8 +51,8 @@ SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 4000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 15000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 11 -- Units of wood that can be penetrated by this gun.
 
@@ -61,6 +61,8 @@ SWEP.ImpactForce = 8
 -------------------------- PHYS BULLET BALLISTICS
 
 SWEP.PhysBulletMuzzleVelocity = 2212 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.15
 
 -------------------------- MAGAZINE
 
@@ -547,12 +549,18 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.famas_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.7, -6.5, -2), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
+
 }
 
 SWEP.GripPoseParam = 1
