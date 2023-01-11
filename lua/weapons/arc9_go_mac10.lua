@@ -132,8 +132,8 @@ SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.23 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
@@ -158,8 +158,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -5, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(0, -5, -1)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-1, -2.5, 0),

@@ -857,7 +857,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AWP.Fire",
-    channel = CHAN_USERBASE,
+    channel = 10,
     volume = 1.0,
     level = 115,
     pitch = {97,103},
@@ -881,7 +881,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Fire",
-    channel = CHAN_USERBASE,
+    channel = 10,
     volume = 1.0,
     level = 100,
     pitch = {97,103},
@@ -893,7 +893,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Silenced_Fire",
-    channel = CHAN_WEAPON,
+    channel = 10,
     volume = 1.0,
     level = 100,
     pitch = {97,103},

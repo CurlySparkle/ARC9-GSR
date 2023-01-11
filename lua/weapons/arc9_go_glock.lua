@@ -460,7 +460,7 @@ SWEP.Attachments = {
     {
         PrintName = "Sights",
         Bone = "v_weapon.glock_slide",
-        Pos = Vector(0, -0.5, 2),
+        Pos = Vector(0, -0.57, 2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0.7, 0.65, 0),
