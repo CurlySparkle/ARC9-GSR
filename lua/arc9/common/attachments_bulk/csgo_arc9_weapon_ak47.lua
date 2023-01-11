@@ -145,7 +145,7 @@ ATT = {}
 
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton Stock"
-ATT.Description = [[A lightweight stock for the AK-47. Improves ADS speed at the cost of recoil.]]
+ATT.Description = [[A lightweight stock that improves ADS speed at the cost of recoil.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_stock_skeleton.png", "mips smooth")
@@ -153,7 +153,7 @@ ATT.AutoStats = true
 
 ATT.Free = false
 
-ATT.Category = {"go_ak47_stock"}
+ATT.Category = {"go_ak47_stock","go_mac10_stock"}
 ATT.ActivateElements = {"stock_skeleton"}
 
 ATT.AimDownSightsTimeMult = 0.85

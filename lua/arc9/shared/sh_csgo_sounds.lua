@@ -1693,6 +1693,18 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Mac10.Silenced_Fire_First",
+    channel = 10,
+    volume = 1.0,
+    level = 90,
+    pitch = {95,105},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/mac10_suppressed_first.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Mac10.Silenced_Fire",
     channel = 10,
     volume = 1.0,
@@ -1700,7 +1712,9 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mac10_suppressed.wav",
+        "weapons/mac10_suppressed_loop.ogg",
+		"weapons/mac10_suppressed_loop2.ogg",
+		"weapons/mac10_suppressed_loop3.ogg",
     }
 } )
 

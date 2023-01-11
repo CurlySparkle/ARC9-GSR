@@ -576,11 +576,6 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 90),
     },
     {
-        PrintName = "Mag",
-		Bone = "v_weapon.clip",
-        Category = "go_mp7_mag"
-    },
-    {
         PrintName = "Stock",
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_extend"},
@@ -589,6 +584,11 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.7, -4.75),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.clip",
+        Category = "go_mp7_mag"
     },
     {
         PrintName = "Ammo",

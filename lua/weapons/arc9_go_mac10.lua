@@ -92,14 +92,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
-
-SWEP.RecoilSeed = 34079 -- CSGO Seed Input Test
+SWEP.Recoil = 1.1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -124,20 +122,15 @@ SWEP.VisualRecoilPunch = 1
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddsights = -0.02
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
@@ -245,6 +238,7 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/mac10/"
 
 SWEP.ShootSound = "CSGO.MAC10.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.MAC10.Silenced_Fire_First"
 SWEP.ShootSoundSilenced = "CSGO.MAC10.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.MAC10.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
@@ -265,12 +259,16 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
     if anim == "reload_empty" and attached["DefGrip"] then 
         return "reload_empty_optic"
     end
+    if anim == "reload" and attached["mag_16"] then
+        return "reload_small"
+    elseif anim == "reload_empty" and attached["mag_16"] then 
+        return "reload_empty_small"
+    end
 end
-
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1_new"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -306,6 +304,66 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mac10_clipout.wav", t = 9 / 30},
+            {s = path .. "mac10_clipin.wav", t = 30 / 30},
+            {s = path .. "mac10_boltback.wav", t = 50 / 30},
+            {s = path .. "mac10_boltforward.wav", t = 60 / 30},
+        },
+    },
+    ["reload_small"] = {
+        Source = "reload_short_small",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "mac10_clipout.wav", t = 9 / 30},
+            {s = path .. "mac10_clipin.wav", t = 30 / 30},
+        },
+    },
+    ["reload_empty_small"] = {
+        Source = "reload_small",
         IKTimeLine = {
             {
                 t = 0,
@@ -465,26 +523,75 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1,1}, {3,1},
         },
+    AttPosMods = { [2] = { Pos = Vector(-1.7, -2.9, 4.7), } }	
     },
     ["stock_extend"] = {
         Bodygroups = {
             {2,1},
         },
     },
-    ["stock_none"] = {
+    ["stock_skeleton"] = {
         Bodygroups = {
             {2,2},
+        },
+    },
+    ["stock_none"] = {
+        Bodygroups = {
+            {2,3},
+        },
+    },
+    ["barrel_med"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -2.92, 9), } }	
+    },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {4,2},
+        },
+    AttPosMods = { [3] = { Pos = Vector(0, -2.92, 14.7), } }	
+    },
+    ["mag_16"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
+    ["mag_50"] = {
+        Bodygroups = {
+            {5,2},
+        },
+    },
+    ["sight_mount"] = {
+        Bodygroups = {
+            {6,1},
         },
     },
 }
 
 SWEP.Attachments = {
     {
+        PrintName = "Barrel",
+        --Bone = "v_weapon.mac10_parent",
+        --Pos = Vector(-0.025, -2.15, 3),
+        --Ang = Angle(90, 0, -90),
+        Category = "go_mac10_barrels"
+    },
+    {
+        PrintName = "Optics",
+        Bone = "v_weapon.mac10_parent",
+        Pos = Vector(0, -5.15, -1.5),
+        Ang = Angle(90, 0, -90),
+        Category = {"csgo_optic"},
+        InstalledElements = {"sight_mount"},
+        CorrectiveAng = Angle(0.25, 0, 0),
+    },
+    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
         Bone = "v_weapon.mac10_parent",
-        Pos = Vector(0, -2.92, 7.4),
+        Pos = Vector(0, -2.92, 7.1),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -492,7 +599,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.mac10_parent",
-        Pos = Vector(-1.9, -3.05, 5.15),
+        Pos = Vector(-1, -2.15, 4),
         Ang = Angle(90, 0, 90),
     },
     {
@@ -509,12 +616,17 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_extend"},
+        Category = {"csgo_tube","stock_extend","go_mac10_stock"},
         Bone = "v_weapon.mac10_parent",
 		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -3.1, -3.7),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
+    },
+    {
+        PrintName = "Mag",
+		Bone = "v_weapon.mac10_clip",
+        Category = "go_mac10_mag"
     },
     {
         PrintName = "Ammo",
@@ -535,6 +647,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_mac10",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Sticker",
