@@ -309,6 +309,14 @@ SWEP.Animations = {
             {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},			
         },				
     },
+    ["fire_both"] = {
+        Source = "fire_both",
+		Mult = 0.75,
+        EventTable = {
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},	
+        },			
+    },
     ["reload_start"] = {
         Source = "reload_start",
 		EjectAt = 0.5,		
