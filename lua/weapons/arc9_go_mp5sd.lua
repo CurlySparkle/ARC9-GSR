@@ -248,6 +248,8 @@ local path = "weapons/csgo/mp5/"
 
 SWEP.ShootSound = "CSGO.MP5.Fire"
 SWEP.FirstShootSound = "CSGO.MP5.FireFirst"
+SWEP.ShootSoundSilenced = "CSGO.MP5.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.MP5.FireFirst"
 SWEP.DistantShootSound = "CSGO.MP5.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -474,6 +476,11 @@ SWEP.AttachmentElements = {
             {2,3},
         },
     },
+    ["silencer_none"] = {
+        Bodygroups = {
+            {3,1},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -485,6 +492,16 @@ SWEP.Attachments = {
         -- Pos = Vector(0, -3.4, 25.3),
         -- Ang = Angle(90, 0, -90),
     -- },
+    {
+        PrintName = "Suppressor",
+        DefaultAttName = "Default",
+        Category = {"silencers"},
+        Bone = "v_weapon.mp5sd_parent",
+		InstalledElements = {"silencer_none"},
+        Pos = Vector(0, 15, 3.65),
+        Ang = Angle(0, -90, 0),
+		Scale = 1.1,
+    },
     {
         PrintName = "Top",
         Bone = "v_weapon.mp5sd_parent",
