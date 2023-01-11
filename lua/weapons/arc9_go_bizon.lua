@@ -679,7 +679,7 @@ SWEP.Attachments = {
         PrintName = "Ammo",
         Bone = "v_weapon.bizon_clip",
         Category = {"go_ammo"},
-        Pos = Vector(5, 0, 1),
+        Pos = Vector(0, 1, 0),
         Ang = Angle(90, 0, -90),		
     },
     {

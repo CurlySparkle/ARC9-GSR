@@ -47,7 +47,7 @@ SWEP.WorldModelOffset = {
 SWEP.BottomlessClip = true
 SWEP.ClipSize = 3
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 0
+SWEP.SupplyLimit = 1
 SWEP.Crosshair = true
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
@@ -108,6 +108,8 @@ SWEP.CustomizePos = Vector(18, 20, 3)
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+
+SWEP.ShootPosOffset = Vector(1, 1, 0)
 
 -------------------------- HoldTypes
 

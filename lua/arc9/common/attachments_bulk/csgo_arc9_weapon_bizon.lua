@@ -123,9 +123,8 @@ ATT.Category = {"go_bizon_mag"}
 ATT.ActivateElements = {"mag_saiga", "saiga_b"}
 --ATT.ExcludeElements = {"barrel_mid"}
 ATT.ClipSizeOverride = 30
-ATT.ReloadTimeMult = 0.85
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_saiga"

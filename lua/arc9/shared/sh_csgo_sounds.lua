@@ -1054,6 +1054,8 @@ sound.Add( {
     sound = {
         "weapons/csgo/glock18/glock_01.ogg",
 		"weapons/csgo/glock18/glock_02.ogg",
+		"weapons/csgo/glock18/glock_03.ogg",
+		"weapons/csgo/glock18/glock_04.ogg",
     }
 } )
 
