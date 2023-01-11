@@ -108,3 +108,27 @@ ATT.SprintToFireTimeMult = 1.1
 ATT.ClipSizeOverride = 30
 
 ARC9.LoadAttachment(ATT, "csgo_scar20_mag_30")
+--------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View"
+ATT.CompactName = "Alt View"
+ATT.Description = [[Changes the view of the weapon for a more closer look.]]
+
+--ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "go_scar20_view"
+
+ATT.ActivePos = Vector(-1.5, -2, 0.5)
+ATT.ActiveAng = Angle(1, 0, 0)
+
+ATT.MovingPos = Vector(-1.5, -2.3, 0)
+ATT.MovingAng = Angle(1, 0, 0)
+
+ATT.CrouchPos = Vector(-1.5, -2.3, 0)
+ATT.CrouchAng = Angle(1, 0, 0)
+
+ATT.LaserCorrectionAngle = Angle(0.4, 0, 1),
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_view")

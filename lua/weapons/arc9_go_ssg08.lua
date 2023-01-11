@@ -53,7 +53,7 @@ SWEP.RangeMax = 18000 -- In Hammer units, how far bullets can travel before deal
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 25
+SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 

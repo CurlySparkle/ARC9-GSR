@@ -53,9 +53,9 @@ SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 =
 SWEP.RangeMin = 1250 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 5000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 11 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 15
+SWEP.ImpactForce = 8
 
 -------------------------- PHYS BULLET BALLISTICS
 
@@ -89,12 +89,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.3
+SWEP.Recoil = 1.2
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -111,9 +111,9 @@ SWEP.RecoilKick = 1
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
-SWEP.RecoilMultSights = 1
+SWEP.RecoilMultSights = 0.95
 
-SWEP.RecoilPatternDrift = 25
+SWEP.RecoilPatternDrift = 12
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
@@ -122,9 +122,9 @@ SWEP.VisualRecoilPunch = 1
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05

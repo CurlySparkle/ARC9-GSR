@@ -48,12 +48,12 @@ SWEP.DamageMin = 35 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 15000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 15
+SWEP.ImpactForce = 11
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
@@ -629,6 +629,10 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.71, -4.75, 5.6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "View",
+        Category = "go_scar20_view"
     },
 }
 

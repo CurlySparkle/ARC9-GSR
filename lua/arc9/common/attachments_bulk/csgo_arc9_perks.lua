@@ -52,7 +52,7 @@ ATT.ActivateElements = {"enforcer"}
 ARC9.LoadAttachment(ATT, "csgo_perk_enforcer")
 
 hook.Add("EntityTakeDamage", "ARC9_CSGO_PERK_ENFORCER", function(ent, dmg)
-    if !(ent:IsPlayer() or ent:IsNPC()) then return end
+    if !(ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
     local wep = ent:GetActiveWeapon()
     if !IsValid(wep) or !wep.ARC9 then return end
     local attached = wep:GetElements()
@@ -79,7 +79,7 @@ ATT.ActivateElements = {"acehole"}
 ATT.DamageMult = newdamage
 
 hook.Add("EntityTakeDamage", "ARC9_CSGO_PERK_ACEHOLE", function(ent, data)
-    if !(ent:IsPlayer() or ent:IsNPC()) then return end
+    if !(ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
     local wep = ent:GetActiveWeapon()
     if !IsValid(wep) or !wep.ARC9 then return end
     local attached = wep:GetElements()
@@ -124,13 +124,11 @@ ATT.Free = true
 ATT.Category = {"go_perk"}
 ATT.ActivateElements = {"perk_burst"}
 
-ATT.RPMMult = 1.15
-
 ATT.FiremodesOverride = {
     {
         Mode = 3,
         RunawayBurst = true,
-        PostBurstDelay = 0.2,
+        PostBurstDelay = 0.4,
     },
     {
         Mode = 1,
