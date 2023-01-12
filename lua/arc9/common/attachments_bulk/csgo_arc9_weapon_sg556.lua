@@ -179,3 +179,25 @@ ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
 ARC9.LoadAttachment(ATT, "csgo_sg556_mag_ak")
 
 --------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Alternative View"
+ATT.CompactName = "Alt View"
+ATT.Description = [[Changes the view of the weapon for a more closer look.]]
+
+--ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "go_sg552_view"
+
+ATT.ActivePos = Vector(-1.3, -2, 0.5)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+ATT.MovingPos = Vector(-1.3, -2.3, 0)
+ATT.MovingAng = Angle(0, 0, 0)
+
+ATT.CrouchPos = Vector(-1.3, -2.3, 0)
+ATT.CrouchAng = Angle(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_sg552_view")

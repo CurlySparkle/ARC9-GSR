@@ -227,8 +227,9 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.CaseEffectQCA = 2
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 3
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable

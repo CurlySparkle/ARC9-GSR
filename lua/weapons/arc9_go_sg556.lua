@@ -124,6 +124,9 @@ SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
@@ -138,20 +141,15 @@ SWEP.SpreadAddSights = -0.02
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0
-
-SWEP.AimDownSightsTime = 0.37 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.34 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
-SWEP.PostBashTime = 0.6
+SWEP.PreBashTime = 0.2
+SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
 
@@ -217,8 +215,9 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -257,7 +256,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -534,7 +533,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"grip"},
         Bone = "v_weapon.sg556_Parent",
-        Pos = Vector(0, -1.35, 14),
+        Pos = Vector(0, -1.35, 12.5),
         Ang = Angle(90, 0, 90),
     },
     {
@@ -595,10 +594,15 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_c.mdl",
         Category = "stickers",
     },
+    -- {
+        -- PrintName = "Stickers",
+        -- StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_d.mdl",
+        -- Category = "stickers",
+    -- },
     {
-        PrintName = "Stickers",
-        StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_d.mdl",
-        Category = "stickers",
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Charm",
@@ -606,6 +610,10 @@ SWEP.Attachments = {
         Bone = "v_weapon.sg556_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.65, -3.25, 6.5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -85),
+    },
+    {
+        PrintName = "View",
+        Category = "go_sg552_view"
     },
 }
 

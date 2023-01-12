@@ -52,7 +52,7 @@ ATT.ActivateElements = {"enforcer"}
 ARC9.LoadAttachment(ATT, "csgo_perk_enforcer")
 
 hook.Add("EntityTakeDamage", "ARC9_CSGO_PERK_ENFORCER", function(ent, dmg)
-    if !(ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
+    if !(ent:IsPlayer() or ent:IsNPC()) then return end
     local wep = ent:GetActiveWeapon()
     if !IsValid(wep) or !wep.ARC9 then return end
     local attached = wep:GetElements()
