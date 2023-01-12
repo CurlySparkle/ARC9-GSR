@@ -395,7 +395,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.GALIL.Fire_First",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 0.7,
     level = 100,
     -- pitch = {130,130},
@@ -410,7 +410,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.GALIL.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 0.7,
     level = 100,
     -- pitch = {140,145},
@@ -857,7 +857,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AWP.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 115,
     pitch = {97,103},
@@ -881,7 +881,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 100,
     pitch = {97,103},
@@ -893,7 +893,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Silenced_Fire",
-    channel = 10,
+    channel = CHAN_WEAPON,
     volume = 1.0,
     level = 100,
     pitch = {97,103},
@@ -993,7 +993,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 100,
     pitch = {95,97},
@@ -1054,8 +1054,6 @@ sound.Add( {
     sound = {
         "weapons/csgo/glock18/glock_01.ogg",
 		"weapons/csgo/glock18/glock_02.ogg",
-		"weapons/csgo/glock18/glock_03.ogg",
-		"weapons/csgo/glock18/glock_04.ogg",
     }
 } )
 
@@ -1340,25 +1338,71 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.MP5A2.Fire_First",
-    channel = 10,
-    volume = 1.0,
-    level = 100,
-    pitch = {95,105},
+    channel = CHAN_USERBASE,
+    volume = 0.5,
+    level = 90,
+    pitch = {115,120},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp5_unsuppressed_first.wav",
+        "weapons/csgo/mp5/a2variant/mp5a2_first01_start.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_first02_start.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_first03_start.ogg",
     }
 } )
 
 sound.Add( {
     name = "CSGO.MP5A2.Fire",
-    channel = 10,
-    volume = 1.0,
-    level = 100,
-    pitch = {90,105},
+    channel = CHAN_USERBASE,
+    volume = 0.65,
+    level = 90,
+    pitch = {105,108},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp5_unsuppressed_loop.wav",
+        "weapons/csgo/mp5/a2variant/mp5a2_fire-1.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_fire-2.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_fire-3.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_fire-4.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5A2.Fire.Distance",
+    channel = CHAN_WEAPON,
+    volume = 1,
+    level = 120,
+    pitch = {80,90},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "^weapons/csgo/mp5/a2variant/mp5a2_dist.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5A2.Fire.Beef",
+    channel = CHAN_USERBASE,
+    volume = 0.2,
+    level = 50,
+    -- pitch = {115,120},
+    pitch = 200,
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/csgo/mp5/a2variant/mp5a2_01.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_02.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.MP5A2.Fire.BeefADS",
+    channel = CHAN_USERBASE,
+    volume = {0.15,0.4},
+    level = 50,
+    pitch = {180,200},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/csgo/mp5/a2variant/mp5a2_01.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_02.ogg",
+        "weapons/csgo/mp5/a2variant/mp5a2_03.ogg",
     }
 } )
 
@@ -1646,7 +1690,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.GALILAR.Silenced_Fire_First",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 90,
     pitch = {95,105},
@@ -1658,7 +1702,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.GALILAR.Silenced_Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 90,
     pitch = {95,105},
@@ -1695,18 +1739,6 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.Mac10.Silenced_Fire_First",
-    channel = 10,
-    volume = 1.0,
-    level = 90,
-    pitch = {95,105},
-	soundlevel = SNDLVL_GUNFIRE,
-    sound = {
-        "weapons/mac10_suppressed_first.ogg",
-    }
-} )
-
-sound.Add( {
     name = "CSGO.Mac10.Silenced_Fire",
     channel = 10,
     volume = 1.0,
@@ -1714,9 +1746,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mac10_suppressed_loop.ogg",
-		"weapons/mac10_suppressed_loop2.ogg",
-		"weapons/mac10_suppressed_loop3.ogg",
+        "weapons/mac10_suppressed.wav",
     }
 } )
 

@@ -55,7 +55,7 @@ SWEP.RangeMax = 4000 -- In Hammer units, how far bullets can travel before deali
 
 SWEP.Penetration = 11 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 8
+SWEP.ImpactForce = 15
 
 -------------------------- PHYS BULLET BALLISTICS
 
@@ -247,14 +247,19 @@ SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
 
-local path = "weapons/csgo/mp9/"
+local path = "weapons/csgo/mp5/"
+
 
 SWEP.FirstShootSound = "CSGO.MP5A2.Fire_First"
 SWEP.ShootSound = "CSGO.MP5A2.Fire"
-SWEP.FirstShootSoundSilenced = "CSGO.MP5A2.Silenced_Fire_First"
+SWEP.FirstShootSoundSilenced = "CSGO.MP5.Silenced_Fire_First"
 SWEP.ShootSoundSilenced = "CSGO.MP5A2.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.MP7.Fire.Distance"
+SWEP.DistantShootSound = "CSGO.MP5A2.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
+
+SWEP.ShootSoundSilenced = "CSGO.MP5.Fire"
+SWEP.FirstShootSoundSilenced = "CSGO.MP5.FireFirst"
+SWEP.DistantShootSoundSilenced = "CSGO.MP5.Fire.Distance"
 
 SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
 
@@ -270,12 +275,21 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
 		Mult = 0.7,
+        EventTable = {
+            {s = "CSGO.MP5A2.Fire.Beef", t = 0 / 30},
+            {s = "CSGO.MP5.Fire.Beefdone", t = 5 / 30},
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        EventTable = {
+            {s = "CSGO.MP5A2.Fire.BeefADS", t = 0 / 30},
+            {s = "CSGO.MP5.Fire.Beef", t = 4 / 30},
+        },
     },
     ["reload"] = {
         Source = "reload_short",
+		Mult = 0.9,
         IKTimeLine = {
             {
                 t = 0,
@@ -299,12 +313,18 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp9_clipout.wav", t = 15 / 30},
-            {s = path .. "mp9_clipin.wav", t = 50 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 0 / 30},
+            {s = "ARC9_CSGO_MP5.Release", t = 12 / 30},
+            {s = "ARC9_CSGO_MP5.Magout", t = 15 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 33 / 30},
+            {s = "ARC9_CSGO_MP5.Position", t = 47 / 30},
+            {s = "ARC9_CSGO_MP5.Magin", t = 50 / 30},
+            {s = path .. "mp5_reloadend.ogg", t = 65 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
+		Mult = 0.9,
         IKTimeLine = {
             {
                 t = 0,
@@ -328,14 +348,20 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp9_clipout.wav", t = 15 / 30},
-            {s = path .. "mp9_clipin.wav", t = 50 / 30},
-            {s = path .. "mp9_boltback.wav", t = 75 / 30},
-            {s = path .. "mp9_boltforward.wav", t = 83 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 0 / 30},
+            {s = "ARC9_CSGO_MP5.Release", t = 12 / 30},
+            {s = "ARC9_CSGO_MP5.Magout", t = 15 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 32 / 30},
+            {s = "ARC9_CSGO_MP5.Position", t = 47 / 30},
+            {s = "ARC9_CSGO_MP5.Magin", t = 50 / 30},
+            {s = "ARC9_CSGO_MP5A2.Boltback", t = 72 / 30},
+            {s = "ARC9_CSGO_MP5A2.Boltforward", t = 82 / 30},
+            {s = path .. "mp5_reloadend.ogg", t = 88 / 30},
         },
     },
     ["ready"] = {
         Source = {"draw"},
+		Mult = 1.2,
         IKTimeLine = {
             {
                 t = 0,
@@ -359,9 +385,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp9_draw.wav", t = 0 / 30},
-            {s = path .. "mp9_boltback.wav", t = 13 / 30},
-            {s = path .. "mp9_boltforward.wav", t = 17 / 30},
+            {s = path .. "mp5_reloadend.ogg", t = 0 / 30},
+            {s = "ARC9_CSGO_MP5A2.Boltback", t = 5 / 30},
+            {s = path .. "mp5_draw.wav", t = 10 / 30},
+            {s = "ARC9_CSGO_MP5A2.Boltforward", t = 13 / 30},
         },
     },
     ["draw"] = {

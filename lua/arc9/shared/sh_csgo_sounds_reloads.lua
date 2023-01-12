@@ -174,6 +174,30 @@ sound.Add( {
     }
 } )
 sound.Add( {
+    name = "ARC9_CSGO_MP5A2.Boltback",
+    channel = CHAN_STATIC,
+    volume = {0.7, 0.9},
+    level = 75,
+    pitch = {95, 103},
+    sound = {
+        "weapons/csgo/mp5/mp5a4_back1.ogg",
+        "weapons/csgo/mp5/mp5a4_back2.ogg",
+        "weapons/csgo/mp5/mp5a4_back3.ogg",
+    }
+} )
+sound.Add( {
+    name = "ARC9_CSGO_MP5A2.Boltforward",
+    channel = CHAN_STATIC,
+    volume = 1,
+    level = 75,
+    pitch = {95, 105},
+    sound = {
+        "weapons/csgo/mp5/mp5a4_forward1.ogg",
+        "weapons/csgo/mp5/mp5a4_forward2.ogg",
+        "weapons/csgo/mp5/mp5a4_forward3.ogg",
+    }
+} )
+sound.Add( {
     name = "ARC9_CSGO_MP5.End",
     channel = CHAN_STATIC,
     volume = 0.3,
