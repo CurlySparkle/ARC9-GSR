@@ -139,7 +139,7 @@ SWEP.SprintToFireTime = 0.23 -- How long it takes to go from sprinting to being 
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
+SWEP.PreBashTime = 0.15
 SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
@@ -224,7 +224,7 @@ SWEP.ShouldDropMagEmpty = true
 SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
 SWEP.ShellSounds = ARC9.PistolShellSoundsTable
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.08
+SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = true
@@ -245,14 +245,6 @@ SWEP.DistantShootSound = "CSGO.MAC10.Distance_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
-
-SWEP.HideBones = {
-}
-
-SWEP.HideBonesSilenced = {}
-
-SWEP.ReloadHideBoneTables = {
-}
 
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
@@ -553,6 +545,9 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [3] = { Pos = Vector(0, -2.92, 14.7), } }	
     },
+    ["barrel_shroud"] = {
+    AttPosMods = { [3] = { Pos = Vector(0, -2.92, 13.5), } }	
+    },
     ["mag_16"] = {
         Bodygroups = {
             {5,1},
@@ -573,9 +568,9 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Barrel",
-        --Bone = "v_weapon.mac10_parent",
-        --Pos = Vector(-0.025, -2.15, 3),
-        --Ang = Angle(90, 0, -90),
+        Bone = "v_weapon.mac10_parent",
+        Pos = Vector(0, -2.92, 7.1),
+        Ang = Angle(90, 0, -90),
         Category = "go_mac10_barrels"
     },
     {

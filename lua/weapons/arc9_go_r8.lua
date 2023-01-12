@@ -33,7 +33,7 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_r8.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_r8_tp.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-12.5, 4, -3.7),
     Ang = Angle(-5, 0, 180),

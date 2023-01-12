@@ -112,3 +112,36 @@ ATT.RangeMinMult = 1.5
 ATT.PhysBulletMuzzleVelocityMult = 1.5
 
 ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_long")
+--------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Shroud Barrel"
+ATT.CompactName = "Shroud"
+ATT.Description = [[A long shrouded barrel that improves range but also adds weight.]]
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_tec9_barrel_long.png", "mips smooth")
+ATT.AutoStats = true
+
+ATT.Free = false
+
+ATT.Category = {"go_mac10_barrels"}
+ATT.ActivateElements = {"barrel_shroud"}
+
+ATT.Model = "models/weapons/csgo/atts/etc/tec9_barrel_shroud.mdl"
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
+ATT.ModelOffset = Vector(-3.8, 0, 0)
+ATT.Scale = 1.4
+
+ATT.MuzzleParticleOverride_Priority = 1
+ATT.MuzzleDevice = true
+
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.RecoilMult = 0.9
+
+ATT.RangeMaxMult = 1.25
+ATT.RangeMinMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.25
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_shroud")
