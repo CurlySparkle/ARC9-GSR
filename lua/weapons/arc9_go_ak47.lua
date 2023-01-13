@@ -781,6 +781,10 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "View",
+        Category = "go_m4a4_view"
+    },
 }
 
 SWEP.GripPoseParam = 4

@@ -62,8 +62,8 @@ SWEP.ImpactForce = 8
 -------------------------- PHYS BULLET BALLISTICS
 
 SWEP.PhysBulletMuzzleVelocity = 1410.76 * 12
-SWEP.PhysBulletGravity = 2
-SWEP.PhysBulletDrag = 3
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.5
 
 SWEP.RicochetChance = 0
 
@@ -96,8 +96,6 @@ SWEP.Firemodes = {
 -- General recoil multiplier
 SWEP.Recoil = 1
 
-SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
-
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
 
@@ -113,11 +111,14 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 3.5 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 2
+SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 2
 
 -------------------------- SPREAD
 
@@ -516,6 +517,12 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 
 -------------------------- ATTACHMENTS
 
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_8"] = {
+    ModelOffset = Vector(-0.3, -0.65, 0.3)
+    },
+}
+
 SWEP.AttachmentElements = {
     ["stock_none"] = {
         Bodygroups = {
@@ -620,6 +627,11 @@ SWEP.Attachments = {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/shot_mag7_decal_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Charm",

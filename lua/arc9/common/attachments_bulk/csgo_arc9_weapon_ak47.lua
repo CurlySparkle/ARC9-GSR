@@ -228,7 +228,7 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.45x39]]
 ATT.CompactName = [[30 5.45x39]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[A 5.45x39 conversion for the AK-47 with 30 round magazine. Less RPM with the benefit and cost of good damage for more recoil.]]
+ATT.Description = [[A 5.45x39 conversion for the AK-47 with 30 round magazine. Higher RPM with the cost of damage.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
@@ -238,11 +238,11 @@ ATT.Free = false
 ATT.Category = {"go_mag_ak"}
 ATT.ActivateElements = {"mag_545"}
 
-ATT.DamageMaxMult = 1.15
-ATT.DamageMinMult = 1.15
-ATT.RecoilMult = 1.2
+ATT.DamageMaxMult = 0.85
+ATT.DamageMinMult = 0.85
 
-ATT.RPM = 650
+ATT.RecoilMult = 0.9
+ATT.RPMMult = 1.15
 
 ATT.ClipSizeOverride = 30
 --ATT.ReloadTimeMult = 1.2
@@ -260,7 +260,7 @@ ATT = {}
 ATT.PrintName = [[40-Round 5.45x39]]
 ATT.CompactName = [[40 5.45x39]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[A 5.45x39 conversion for the AK-47 with 40 round magazine. Less RPM with the benefit and cost of good damage for more recoil.]]
+ATT.Description = [[A 5.45x39 conversion for the AK-47 with 40 round magazine. Higher RPM with the cost of damage.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6
@@ -270,13 +270,13 @@ ATT.Free = false
 ATT.Category = {"go_mag_ak"}
 ATT.ActivateElements = {"mag_545_ext"}
 
-ATT.DamageMaxMult = 1.15
-ATT.DamageMinMult = 1.15
-ATT.RecoilMult = 1.2
+ATT.DamageMaxMult = 0.85
+ATT.DamageMinMult = 0.85
 
-ATT.RPM = 650
+ATT.RecoilMult = 0.9
+ATT.RPMMult = 1.15
 
-ATT.ClipSizeOverride = 30
+ATT.ClipSizeOverride = 40
 ATT.ReloadTimeMult = 1.15
 
 ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/mag_ak74_30.mdl"
