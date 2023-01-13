@@ -12,11 +12,11 @@ SWEP.TrueName = "UMP-45"
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Caliber"] = ".45 ACP",
+    ["Weight (Loaded)"] = "3.02kg",
+    ["Projectile Weight"] = "15.2 Grams",
+    ["Muzzle Velocity"] = "853 Feet/Second",
+    ["Muzzle Energy"] = "513 Joules"
 }
 
 SWEP.Credits = {
