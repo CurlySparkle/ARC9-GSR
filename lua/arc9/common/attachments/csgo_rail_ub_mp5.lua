@@ -12,7 +12,7 @@ ATT.Model = "models/weapons/csgo/atts/mp5_fg_rail.mdl"
 ATT.Scale = 0.6
 ATT.ModelOffset = Vector(0, 0, 0.5)
 ATT.ModelAngleOffset = Angle(0,0,0)
-ATT.Folder = "RISERS"
+//ATT.Folder = "RISERS"
 ATT.IconOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {
