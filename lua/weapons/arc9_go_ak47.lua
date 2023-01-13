@@ -116,26 +116,24 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.1
+SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.05
 SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 -------------------------- MELEE
@@ -767,6 +765,11 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.ak47_Parent",
@@ -775,7 +778,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stats",
-        Category = "killcounter",
+        Category = {"killcounter","gunscreen"},
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),

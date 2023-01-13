@@ -79,7 +79,7 @@ ATT.ActivateElements = {"acehole"}
 ATT.DamageMult = newdamage
 
 hook.Add("EntityTakeDamage", "ARC9_CSGO_PERK_ACEHOLE", function(ent, data)
-    if !(ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
+    if !(ent:IsPlayer() or ent:IsNPC()) then return end
     local wep = ent:GetActiveWeapon()
     if !IsValid(wep) or !wep.ARC9 then return end
     local attached = wep:GetElements()
