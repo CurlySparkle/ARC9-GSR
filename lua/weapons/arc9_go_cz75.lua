@@ -122,9 +122,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddRecoil = 0.007 -- Applied per unit of recoil.
-
-SWEP.SpreadMultRecoil = 0.01
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
@@ -478,6 +476,13 @@ SWEP.Animations = {
 SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 -------------------------- ATTACHMENTS
+
+SWEP.AttachmentTableOverrides = {
+    ["go_muzzle_p226"] = {
+	ModelOffset = Vector(-0.15, -0.03, 0.1),
+	Scale = 0.45,
+    },
+}
 
 SWEP.AttachmentElements = {
     ["mag"] = {

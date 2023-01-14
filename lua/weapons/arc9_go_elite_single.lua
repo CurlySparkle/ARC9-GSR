@@ -112,17 +112,21 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilMultSights = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.02/2
 
-SWEP.SpreadAddRecoil = 0.003/2 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.025 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02/2
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.02/2
 SWEP.SpreadAddHipFire = 0.004/2
 SWEP.SpreadAddCrouch = -0.02/2 -- wait, if its add a negative, then should i be mutliplying?
-SWEP.SpreadAddSights = -0.02/2
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -138,7 +142,7 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.1
+SWEP.PreBashTime = 0.15
 SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
@@ -505,6 +509,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_elite",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",
