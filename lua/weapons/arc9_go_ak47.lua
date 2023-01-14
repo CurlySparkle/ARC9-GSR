@@ -117,7 +117,7 @@ SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.1
+SWEP.VisualRecoilPunch = 0.8
 
 -------------------------- SPREAD
 
@@ -140,7 +140,7 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
+SWEP.PreBashTime = 0.15
 SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
@@ -243,10 +243,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-    },
-    ["fire_alt"] = {
-        Source = {"shoot1_alt", "shoot2_alt"},
+        Source = {"shoot1"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",

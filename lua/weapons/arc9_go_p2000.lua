@@ -111,6 +111,9 @@ SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.02
@@ -121,6 +124,7 @@ SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -443,6 +447,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_p2000",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Sticker",

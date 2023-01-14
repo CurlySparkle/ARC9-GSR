@@ -457,6 +457,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_p250_a.mdl",
         Category = "stickers",

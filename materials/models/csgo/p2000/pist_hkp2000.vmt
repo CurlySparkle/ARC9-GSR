@@ -1,11 +1,10 @@
 "VertexlitGeneric"
 {
 	"$basetexture"				"models/csgo/p2000/pist_hkp2000"
-	"$bumpmap"					"null-bumpmap"
+	"$bumpmap"					"models/csgo/p2000/pist_hkp2000_n"
 	"$phongexponenttexture"		"models/csgo/p2000/pist_hkp2000_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
-	"$basemapalphaphongmask" "1"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
@@ -21,4 +20,15 @@
 	"$rimlightboost"			".2"
 	"$rimmask"					"1"
 	"$nocull"					"1"
+
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.8"
+
+	 Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
+	}
 }
