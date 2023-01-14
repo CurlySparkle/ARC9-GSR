@@ -423,6 +423,11 @@ SWEP.Attachments = {
         Category = "go_skins_r8",
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
     -- {
         -- PrintName = "Stickers",
         -- StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_a.mdl",
@@ -449,5 +454,13 @@ SWEP.Attachments = {
         Bone = "v_weapon.deagle_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.5, -3.4, 6.5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

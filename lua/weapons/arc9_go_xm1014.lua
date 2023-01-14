@@ -489,7 +489,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 27), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 29), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
@@ -587,6 +587,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/xm1014_a.mdl",
         Category = "stickers",
@@ -605,16 +610,19 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
-    },
-    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.m3_Parent", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(1, -1.7, 3), -- offset that the attachment will be relative to the bone
+        Pos = Vector(0.8, -1.5, 3), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(0.65, -0.3, 3.5),
+        Ang = Angle(90, 0, -90),
+		CosmeticOnly = true,
     },
 }
 

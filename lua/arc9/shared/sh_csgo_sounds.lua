@@ -1230,7 +1230,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.R8.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 0.5,
+    volume = 0.3,
     level = 120,
     pitch = {97,103},
     sound = {

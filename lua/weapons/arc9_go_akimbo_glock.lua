@@ -483,4 +483,12 @@ SWEP.Attachments = {
         Category = {"universal_camo"},
         CosmeticOnly = true,
     },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(3.7, -0.4, 0.25),
+        Ang = Angle(0, 0, 0),
+		CosmeticOnly = true,
+    },
 }

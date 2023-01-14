@@ -247,8 +247,9 @@ SWEP.AfterShotQCAEvenShot = 2
 
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamOffsetAng = Angle(0, 0, 0)
-SWEP.NoViewBob = false
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -494,5 +495,13 @@ SWEP.Attachments = {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_deagle_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(4, -0.4, 0),
+        Ang = Angle(0, 0, 0),
+		CosmeticOnly = true,
     },
 }

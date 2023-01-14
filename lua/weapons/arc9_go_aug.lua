@@ -506,7 +506,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(-0.7, -0.7, 0),
-        //Installed = "csgo_optic_acog_2",
+        Installed = "csgo_optic_acog_2",
         Integral = true,
     },
     {
@@ -543,10 +543,6 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 132.5),
     },
     {
-        PrintName = "Perk",
-        Category = "go_perk",
-    },
-    {
         PrintName = "Magazine",
         Category = {"go_mag_aug","go_mag"},
         Bone = "v_weapon.aug_Parent",
@@ -560,10 +556,19 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
+        PrintName = "Perk",
+        Category = "go_perk",
+    },
+    {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_aug",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",
@@ -586,16 +591,19 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
-    },
-    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(1.4, -3.1, 3), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

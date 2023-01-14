@@ -627,6 +627,14 @@ SWEP.Attachments = {
         Pos = Vector(0.75, -1.8, 6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.m3_Parent",
+        Ang = Angle(90, 0, -90),
+        Pos = Vector(0.5, -0.3, 5),
+		CosmeticOnly = true,
+    },
 }
 
 SWEP.GripPoseParam = 4

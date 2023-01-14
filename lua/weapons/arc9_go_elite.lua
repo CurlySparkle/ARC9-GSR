@@ -497,4 +497,12 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_d.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
+    },
 }

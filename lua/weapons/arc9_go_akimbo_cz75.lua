@@ -86,7 +86,7 @@ SWEP.Firemodes = {
     },
     {
         Mode = -1,
-		RPM = 1200
+		RPM = 600
     }
 }
 -------------------------- RECOIL
@@ -243,11 +243,11 @@ SWEP.AnimDraw = false
 
 SWEP.MuzzleParticle = "weapon_muzzle_flash_pistol"
 SWEP.AfterShotParticle = "muzzle_smoke_trace"
-SWEP.MuzzleEffectQCA = 1
-SWEP.MuzzleEffectQCAEvenShot = 2
+SWEP.MuzzleEffectQCA = 2
+SWEP.MuzzleEffectQCAEvenShot = 1
 
-SWEP.CaseEffectQCA = 4
-SWEP.CaseEffectQCAEvenShot = 3
+SWEP.CaseEffectQCA = 3
+SWEP.CaseEffectQCAEvenShot = 4
 
 SWEP.AfterShotQCA = 1
 SWEP.AfterShotQCAEvenShot = 2
@@ -499,5 +499,13 @@ SWEP.Attachments = {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_cz75_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(3, -0.3, 0.95),
+        Ang = Angle(0, 0, 0),
+		CosmeticOnly = true,
     },
 }

@@ -122,6 +122,7 @@ SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -375,6 +376,45 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 -------------------------- ATTACHMENTS
 
+SWEP.AttachmentTableOverrides = {
+    ["csgo_optic_trijicon_alt_nonrail"] = {
+    Scale = 0.35,
+    Sights = {
+    {
+        Pos = Vector(-0.05, 9, -0.55),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 56,
+        IgnoreExtra = false
+    },
+    }
+    },
+    ["csgo_optic_trijicon_nonrail"] = {
+    Scale = 0.35,
+    Sights = {
+    {
+        Pos = Vector(-0.05, 9, -0.55),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 56,
+        IgnoreExtra = false
+    },
+    }
+    },
+    ["csgo_optic_acog_rmr_alt_nonrail"] = {
+    Scale = 0.35,
+    Sights = {
+    {
+        Pos = Vector(-0.05, 9, -0.55),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 56,
+        IgnoreExtra = false
+    },
+    }
+    },
+}
+
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
@@ -440,8 +480,8 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.8, 2.2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt","eft_optic_small"},
-        CorrectiveAng = Angle(1, 0.4, 0),
-		Scale = 0.9,
+        CorrectiveAng = Angle(0.65, 0.4, 0),
+		Scale = 1.1,
     },
     {
         PrintName = "Tactical",
@@ -511,5 +551,13 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_pistols_view"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, -0.1, 0.4),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

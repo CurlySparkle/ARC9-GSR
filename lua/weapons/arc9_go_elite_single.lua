@@ -546,4 +546,12 @@ SWEP.Attachments = {
         PrintName = "View",
         Category = "go_pistols_view2"
     },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
+    },
 }

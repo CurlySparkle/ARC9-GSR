@@ -466,4 +466,12 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/akimbo_usp_d.mdl",
         Category = "stickers",
     },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(4, -0.4, 0.3),
+        Ang = Angle(0, 0, 0),
+		CosmeticOnly = true,
+    },
 }
