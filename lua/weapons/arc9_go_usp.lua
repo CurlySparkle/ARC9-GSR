@@ -618,7 +618,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Category = "go_perk"
+        Category = "go_perk",
+		RejectAttachments = {
+		["csgo_perk_burst"] = true
+		},
     },
     {
         PrintName = "Skins",

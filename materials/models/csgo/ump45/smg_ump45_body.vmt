@@ -4,7 +4,7 @@
 	"$bumpmap"					"models/csgo/ump45/smg_ump45_n"
 	"$phongexponenttexture"		"models/csgo/ump45/smg_ump45_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
-	"$blendTintByBaseAlpha"		"0"
+	"$blendTintByBaseAlpha"		"1"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
@@ -23,7 +23,7 @@
 	"$nocull"					"1"
 
 	"$detailblendmode" "4"
-	"$detailblendfactor" "0.8"
+	"$detailblendfactor" "1"
 
 	 Proxies {
 		CustomCamo {

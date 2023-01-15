@@ -24,7 +24,7 @@
 
 
 	$detailblendmode 4
-	$detailblendfactor 0.8
+	$detailblendfactor 1
 	Proxies {
 		CustomCamo {
 			camoTexture $detail

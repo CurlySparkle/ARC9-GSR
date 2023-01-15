@@ -22,7 +22,7 @@ ATT.RangeMinMult = 0.8
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_233")
@@ -48,7 +48,7 @@ ATT.RangeMinMult = 0.9
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_m4")
@@ -76,7 +76,7 @@ ATT.Scale = 0.5
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_p90")
@@ -106,7 +106,7 @@ ATT.DamageMult = 0.9
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_pbs01")
@@ -136,7 +136,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_shit9")
@@ -162,7 +162,7 @@ ATT.RangeMinMult = 0.9
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_shotgun_parent_silenced"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_shitvo")
@@ -214,7 +214,7 @@ ATT.RangeMinMult = 0.9
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_tirant45")
@@ -241,7 +241,7 @@ ATT.RangeMinMult = 1.15
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_clothwrapped")
@@ -272,7 +272,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
-ATT.Override_MuzzleEffectAttachment = 1
+--ATT.Override_MuzzleEffectAttachment = 1
 ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_m110")

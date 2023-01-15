@@ -1,4 +1,4 @@
-SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_molotov")
+SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_molotov")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
@@ -64,7 +64,7 @@ SWEP.ThrowAnimSpeed = 1
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
 SWEP.ThrowForceMin = 500 -- Minimum force that the grenade will be thrown with.
-SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
+SWEP.ThrowForceMax = 1500 -- Maximum force that the grenade will be thrown with.
 SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right clicked.
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
@@ -78,8 +78,8 @@ SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -1, -3)
-SWEP.SprintAng = Angle(3, -5, 0)
+SWEP.SprintPos = Vector(0, -1, -5)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1.5, -0.15),
