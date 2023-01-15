@@ -28,7 +28,7 @@ SWEP.Description = [[The misunderstood middle child of the SMG family, the UMP45
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_ump.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_ump45.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
 

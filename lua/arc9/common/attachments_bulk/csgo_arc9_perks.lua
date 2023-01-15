@@ -191,13 +191,13 @@ ATT = {}
 
 ATT.PrintName = [[Speed Melee]]
 ATT.Description = [[Increases the speed of swings by 35%.]]
---ATT.Icon = Material("entities/attachs/go_perk_lounge.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_perk_speed_melee.png", "mips smooth")
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
 
-ATT.Category = {"go_perk_melee"}
+ATT.Category = {"go_perk_melee","go_perk"}
 
 ATT.PostBashTime = 0.35
 
