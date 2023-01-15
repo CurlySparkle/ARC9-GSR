@@ -450,6 +450,13 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_1"] = {
+    ModelOffset = Vector(-0.5, -0.8, 1.5),
+	ModelAngleOffset = Angle(0, 0, 0)
+    },
+}
+
 SWEP.AttachmentElements = {
     ["stock_extend"] = {
         Bodygroups = {
@@ -522,7 +529,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = "csgo_rail_mp5",
+        Category = {"csgo_rail_mp5","grip_xm1014"},
         Bone = "v_weapon.mp5sd_parent",
         Pos = Vector(0, 11.5, 1.5),
         Ang = Angle(0, -90, 0),

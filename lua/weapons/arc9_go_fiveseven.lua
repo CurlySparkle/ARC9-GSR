@@ -477,7 +477,7 @@ SWEP.Attachments = {
         PrintName = "Stats",
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0.1, -0.15, 0.5),
         Ang = Angle(0, -90, 0),
 		CosmeticOnly = true,
     },
