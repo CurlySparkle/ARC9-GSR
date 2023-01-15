@@ -492,6 +492,18 @@ SWEP.AttachmentElements = {
             {3,1},
         },
     },
+    ["barrel_long"] = {
+        Bodygroups = {
+            {4,1},
+			{3,1},
+        },
+    },
+    ["barrel_short"] = {
+        Bodygroups = {
+            {4,2},
+			{3,2},
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -571,6 +583,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_nova",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Sticker",
