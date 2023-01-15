@@ -78,7 +78,7 @@ SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -1, -0.5)
+SWEP.SprintPos = Vector(0, -1, -3)
 SWEP.SprintAng = Angle(3, -5, 0)
 
 SWEP.SprintMidPoint = {
@@ -107,6 +107,8 @@ SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-13, 10, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+
+SWEP.ShootPosOffset = Vector(2, 0, 0)
 
 -------------------------- HoldTypes
 
@@ -141,25 +143,27 @@ SWEP.Animations = {
     },
     ["pullpin"] = {
         Source = "pullpin",
-        MinProgress = 0.666,
+        MinProgress = 0,
         FireASAP = true,
-        -- EventTable = {
-            -- { s = "weapons/csgo/molotov/pinpull_start.wav", t = 0 },
-            -- { s = "weapons/csgo/molotov/pinpull.wav", t = 10 / 30 },
-        -- },
+        EventTable = {
+            { s = "CSGO.Item.Movement", t = 1/30 },
+            { s = "weapons/csgo/molotov/lighter_open.wav", t = 3/30 },
+			--{ s = "", t = 15/30 },
+			{ s = "weapons/csgo/molotov/lighter_closed.wav", t = 22/30 },
+        },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
             { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.5
+        MinProgress = 0.1
     },
     ["toss"] = {
         Source = "underhand",
         EventTable = {
             { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.5
+        MinProgress = 0.1
     },
 }
