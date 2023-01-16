@@ -64,8 +64,8 @@ SWEP.ThrowAnimSpeed = 1
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
 SWEP.ThrowForceMin = 500 -- Minimum force that the grenade will be thrown with.
-SWEP.ThrowForceMax = 1500 -- Maximum force that the grenade will be thrown with.
-SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right clicked.
+SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
+SWEP.TossForce = 500 -- Force that the grenade will be thrown with when right clicked.
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
@@ -108,7 +108,7 @@ SWEP.CustomizeSnapshotPos = Vector(-13, 10, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
-SWEP.ShootPosOffset = Vector(2, 0, 0)
+SWEP.ShootPosOffset = Vector(2, 5, 0)
 
 -------------------------- HoldTypes
 
@@ -123,6 +123,9 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
+-- SWEP.CamQCA = 1
+-- SWEP.CamQCA_Mult = 1
+-- SWEP.CamCoolView = true
 
 SWEP.Animations = {
     ["idle"] = {
@@ -164,6 +167,6 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.1
+        MinProgress = 0
     },
 }

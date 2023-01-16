@@ -277,3 +277,32 @@ ATT.MuzzleDevice = true
 
 ARC9.LoadAttachment(ATT, "go_supp_m110")
 -------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = [[KRISS 4GSK Suppressor]]
+ATT.CompactName = [[4GSK]]
+ATT.Description = [[A heavy tactical suppressor. Designed to reduces audible report with a penalty of significant bulk.]]
+ATT.Icon = Material("entities/attachs/silencer_kriss.png", "mips smooth")
+
+ATT.SortOrder = 1
+ATT.AutoStats = true
+ATT.Category = {"muzzle","silencers"}
+ATT.Folder = "Suppresors"
+--ATT.Scale = 0.4
+
+ATT.Model = "models/weapons/csgo/atts/silencer_kriss.mdl"
+
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.RangeMaxMult = 1.35
+ATT.RangeMinMult = 1.2
+
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+--ATT.Override_MuzzleEffectAttachment = 1
+ATT.MuzzleDevice = true
+
+ARC9.LoadAttachment(ATT, "go_supp_kriss")
