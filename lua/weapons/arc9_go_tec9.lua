@@ -122,13 +122,14 @@ SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.004
 SWEP.SpreadAddCrouch = -0.01
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
-SWEP.SwayMultSights = 0.3
+SWEP.SwayMultSights = 0
 
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
@@ -137,7 +138,7 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
+SWEP.PreBashTime = 0.15
 SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
@@ -193,8 +194,6 @@ SWEP.BlindFireRightAng = Angle(-90, -20, 0)
 
 SWEP.BlindFireLeftPos = Vector(12, 25, 0)
 SWEP.BlindFireLeftAng = Angle(90, -20, 0)
-
-SWEP.SpeedMultMelee = 1
 
 -------------------------- HoldTypes
 
@@ -455,6 +454,11 @@ SWEP.AttachmentElements = {
             {4,1},
         },
     },
+    ["stock_adapter"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -479,7 +483,7 @@ SWEP.Attachments = {
         Pos = Vector(0.5, -4.35, 2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic"},
-        CorrectiveAng = Angle(0, 0, 0),
+        CorrectiveAng = Angle(0.25, 0, 0),
     },
     {
         PrintName = "Barrel",
@@ -520,6 +524,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_tube",
         Bone = "v_weapon.tec9_parent",
+		InstalledElements = {"stock_adapter"},
         Pos = Vector(0.5, -3.5, -2),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
@@ -566,7 +571,7 @@ SWEP.Attachments = {
         PrintName = "Stats",
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0.5, 0, 0),
         Ang = Angle(0, -90, 0),
 		CosmeticOnly = true,
     },

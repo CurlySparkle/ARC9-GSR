@@ -1932,7 +1932,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mac10_suppressed.wav", -- may need different sound, makes it sound like a bottle pop with the dist sound
+        "weapons/mac10_suppressed_first.ogg", -- may need different sound, makes it sound like a bottle pop with the dist sound
     }
 } )
 

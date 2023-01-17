@@ -162,7 +162,7 @@ SWEP.Animations = {
     },
     ["pullpin"] = {
         Source = "pullpin",
-        MinProgress = 0.666,
+        MinProgress = 0,
 		Mult = 1.4,
         FireASAP = true,
     },
@@ -171,14 +171,14 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.2
+        MinProgress = 0.1
     },
     ["toss"] = {
         Source = "underhand",
         EventTable = {
             { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.2
+        MinProgress = 0.1
     },
     ["bash"] = {
         Source = {"melee"}
@@ -196,6 +196,11 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = {"go_perk_melee"},
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",

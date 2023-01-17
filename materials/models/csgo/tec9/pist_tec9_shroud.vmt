@@ -2,7 +2,7 @@
 {
 	"$basetexture"				"models/csgo/tec9/pist_tec9_shroud_d"
 	"$bumpmap"					"models/csgo/tec9/pist_tec9_shroud_n"
-	"$phongexponenttexture"		"models/csgo/tec9/pist_tec9_shroud_s"
+	"$phongexponenttexture"		"models/csgo/tec9/pist_tec9_shroud_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
 

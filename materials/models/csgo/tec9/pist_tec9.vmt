@@ -1,11 +1,10 @@
 "VertexlitGeneric"
 {
 	"$basetexture"				"models/csgo/tec9/pist_tec9"
-	"$bumpmap"					"null-bumpmap"
+	"$bumpmap"					"models/csgo/tec9/pist_tec9_n"
 	"$phongexponenttexture"		"models/csgo/tec9/pist_tec9_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
-	"$basemapalphaphongmask" "1"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
@@ -14,22 +13,11 @@
 	"$phongboost"				"15"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
-	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
 	"$rimlight"					"1"
 	"$rimlightexponent"			"80"	
 	"$rimlightboost"			".2"
 	"$rimmask"					"1"
 	"$nocull"					"1"
-
-	"$detailblendmode" "2"
-	"$detailblendfactor" "0.4"
-
-	 Proxies {
-		CustomCamo {
-			camoTexture $detail
-			camoScale $detailscale
-            blend $detailblendfactor
-		}
-	}
 }

@@ -78,7 +78,7 @@ SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -1, -5)
+SWEP.SprintPos = Vector(0, -3.5, -5)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -94,7 +94,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -3, -3)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
@@ -164,6 +164,7 @@ SWEP.Animations = {
     },
     ["toss"] = {
         Source = "underhand",
+		Mult = 0.6,
         EventTable = {
             { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
         },

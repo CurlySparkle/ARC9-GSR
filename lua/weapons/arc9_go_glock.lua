@@ -136,6 +136,7 @@ SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
