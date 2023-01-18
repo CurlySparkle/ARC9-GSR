@@ -214,8 +214,9 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -254,11 +255,10 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1_new"},
     },
     ["fire_alt"] = {
-        Source = {"shoot1_alt", "shoot2_alt", "shoot3_alt"},
-		Mult = 0.7,
+        Source = {"shoot1_new"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -546,7 +546,7 @@ SWEP.Attachments = {
         PrintName = "Stats",
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0.1, -5.7, 2.7),
         Ang = Angle(0, -90, 0),
 		CosmeticOnly = true,
     },

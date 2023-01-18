@@ -527,6 +527,7 @@ SWEP.AttachmentElements = {
     ["stock_none"] = {
         Bodygroups = {
             {1,1},
+			{4,1},
         },
     },
     ["mag"] = {
@@ -569,9 +570,9 @@ SWEP.Attachments = {
         Category = {"csgo_tube"},
         Bone = "v_weapon.mag7_parent",
         InstalledElements = {"stock_none"},
-        Pos = Vector(-0.05, -4.2, -6.1),
+        Pos = Vector(-0.075, -4.35, -6),
         Ang = Angle(90, 0, -90),
-        Scale = 1.2,
+        Scale = 1,
     },
     {
         PrintName = "Bottom",

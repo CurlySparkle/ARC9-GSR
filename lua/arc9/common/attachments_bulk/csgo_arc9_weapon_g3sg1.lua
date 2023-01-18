@@ -906,7 +906,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_g4_mp9", "smg_g3", "mag_g4_barrel",}
-ATT.ClipSizeOverride = 30
+ATT.ClipSizeOverride = 40
 ATT.ReloadTimeMult = 0.9
 
 ATT.RPM = 750

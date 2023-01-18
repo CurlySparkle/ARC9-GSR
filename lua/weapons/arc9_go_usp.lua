@@ -233,8 +233,9 @@ SWEP.MuzzleEffectQCA = 3
 SWEP.CaseEffectQCA = 2
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 5
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
