@@ -496,6 +496,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,3) end
 end
 
+SWEP.AttachmentTableOverrides = {
+    ["arc9_stat_proscreen_main"] = {
+    ModelOffset = Vector(-2.5, -0.5, 0.9),
+	ModelAngleOffset = Angle(0, 0, 45),
+	Scale = 0.8,
+    },
+}
 
 SWEP.Attachments = {
     {
@@ -599,7 +606,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stats",
-        Category = "killcounter",
+        Category = {"killcounter","killcounter2"},
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),

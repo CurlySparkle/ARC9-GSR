@@ -445,7 +445,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.ump45_Parent",
         Pos = Vector(0, -6.2, 3.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic","eft_optic_medium","eft_optic_large","eft_backupmount"},
         CorrectiveAng = Angle(-0.1, 0, 0),
     },
     {

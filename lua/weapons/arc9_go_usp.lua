@@ -165,8 +165,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.84, -2, 1.5),
-    Ang = Angle(0, -0.5, 0),
+    Pos = Vector(-2.84, -2, 1.2),
+    Ang = Angle(0, 0.6, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
 		CrosshairInSights = false
@@ -575,7 +575,7 @@ SWEP.Attachments = {
         Category = {"silencers"},
         Bone = "v_weapon.silencer",
 		InstalledElements = {"silencer_none"},
-        Pos = Vector(0, -1, 0),
+        Pos = Vector(0, -0.8, 0),
         Ang = Angle(0, -90, 0),
         Scale = 0.9,
     },
