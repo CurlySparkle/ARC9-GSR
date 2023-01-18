@@ -649,6 +649,13 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.AttachmentTableOverrides = {
+    ["arc9_stat_proscreen_main"] = {
+    ModelOffset = Vector(4, -0.5, 0.9),
+	ModelAngleOffset = Angle(-3, 0, 0)
+    },
+}
+
 SWEP.Attachments = {
     {
         PrintName = "Barrel",
@@ -775,7 +782,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stats",
-        Category = {"killcounter","gunscreen"},
+        Category = {"killcounter","gunscreen","killcounter2"},
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),

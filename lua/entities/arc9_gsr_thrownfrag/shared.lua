@@ -53,6 +53,7 @@ function ENT:Detonate()
 		ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), Angle(0, 0, 0), nil)
 		ParticleEffect("smoke_plume_b", self:GetPos(), Angle(0, 0, 0), nil)
 		ParticleEffect("smoke_plume_c", self:GetPos(), Angle(0, 0, 0), nil)
+		ParticleEffect("HE_shockwave", self:GetPos(), Angle(0, 0, 0), nil)
 
 
         // Overpressure radius

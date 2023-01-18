@@ -157,7 +157,7 @@ SWEP.NoLastCycle = true
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.15
+SWEP.PreBashTime = 0.2
 SWEP.PostBashTime = 0.65
 
 -------------------------- TRACERS
@@ -433,8 +433,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee3", "melee4"},
-		Mult = 0.7,
+        Source = {"melee", "melee2","melee3"},
         IKTimeLine = {
             {
                 t = 0,
@@ -447,12 +446,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.6,
+                t = 0.4,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -623,7 +622,7 @@ SWEP.Attachments = {
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, -90, 0),
+        Ang = Angle(0, -90, -10),
 		CosmeticOnly = true,
     },
 }

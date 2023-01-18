@@ -27,6 +27,7 @@ table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_smoke_dispers
 table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_smokegrenade")
 table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_smokegrenade_fallback")
 table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_smokegrenade_CT")
+table.insert(GSORParticleEffects, #GSORParticleEffects, "HE_shockwave")
 //INFERNO FX
 table.insert(GSORParticleEffects, #GSORParticleEffects, "molotov_explosion")
 table.insert(GSORParticleEffects, #GSORParticleEffects, "molotov_fire01")
