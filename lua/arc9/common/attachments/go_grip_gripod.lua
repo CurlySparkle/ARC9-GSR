@@ -1,6 +1,7 @@
 ATT.PrintName = "Bipod Grip"
 ATT.CompactName = "Gripod"
-ATT.Description = [[Mounted foregrip with bipod functionality. Provides the most stable recoil control when crouched/mounted with a heavy penalty on handling.]]
+ATT.Description = [[A mounted foregrip with bipod functionality.
+Provides the most stable recoil control when crouched/mounted with a heavy penalty on handling.]]
 
 ATT.Icon = Material("entities/attachs/grip_gripod.png", "mips smooth")
 

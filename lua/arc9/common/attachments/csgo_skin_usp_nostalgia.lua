@@ -1,5 +1,5 @@
 ATT.PrintName = [[Nostalgia]]
-ATT.Description = [[Classic skin for the USP.]]
+ATT.Description = [[A classic skin for the USP.]]
 ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
 
 ATT.SortOrder = 0

@@ -1,7 +1,7 @@
 ATT.PrintName = [[Retracted Buffer Tube]]
 ATT.CompactName = [[R Buffer Tube]]
 ATT.Icon = Material("entities/attachs/go_stock_none.png")
-ATT.Description = [[Retracted version, allows for using custom stock options.]]
+ATT.Description = [[A retracted version of buffer tube, allows for using custom stock options.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false

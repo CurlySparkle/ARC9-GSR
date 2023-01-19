@@ -1,6 +1,6 @@
 ATT.PrintName = "Surefire X300U"
 ATT.CompactName = "Surefire"
-ATT.Description = [[High-power Surefire X300U. Improves spread, at the cost of less sights speed.]]
+ATT.Description = [[A high-power flashlight from SureFire WeaponLight series. Improves spread, at the cost of less sights speed.]]
 
 ATT.Icon = Material("entities/attachs/go_laser_surefire.png", "mips smooth")
 

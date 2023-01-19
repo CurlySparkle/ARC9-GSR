@@ -1,6 +1,7 @@
 ATT.PrintName = "Point Shooting Grip"
 ATT.CompactName = "PSG"
-ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip, includes a laser pointer.]]
+ATT.Description = [[A rail-mounted foregrip. Provides a stable, vertical surface to grip. 
+Bundled with a laser pointer.]]
 
 ATT.Icon = Material("entities/attachs/grip_laser.png", "mips smooth")
 

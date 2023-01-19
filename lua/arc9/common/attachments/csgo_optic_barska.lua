@@ -1,7 +1,7 @@
 ATT.PrintName = "Barska Red Dot (RDS)"
 ATT.CompactName = [[Barska]]
 ATT.Icon = Material("entities/attachs/go_optic_barska.png", "mips smooth")
-ATT.Description = [[Open red dot sight with a circular reticle.]]
+ATT.Description = [[An open red dot sight with a circular reticle.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

@@ -1,7 +1,7 @@
 ATT.PrintName = [[Underbarrel Picatinny Rail]]
 ATT.CompactName = [[Bottom Rail]]
 ATT.Icon = Material("entities/attachs/rail_foregrips.png")
-ATT.Description = [[Picatinny rail that allows attaching foregrips and other attachments.]]
+ATT.Description = [[A picatinny rail that allows attaching foregrips and other attachments.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false

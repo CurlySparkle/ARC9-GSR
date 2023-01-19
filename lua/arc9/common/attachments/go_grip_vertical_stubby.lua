@@ -1,6 +1,7 @@
 ATT.PrintName = "Vertical Large"
 ATT.CompactName = "Vertical L"
-ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip onto, improving recoil control and reducing recoil drift.]]
+ATT.Description = [[A rail-mounted foregrip. Provides a stable, vertical surface to grip onto.
+Also, improving recoil control and reducing recoil drift.]]
 
 ATT.Icon = Material("entities/attachs/go_grip_vertical_stubby.png", "mips smooth")
 
