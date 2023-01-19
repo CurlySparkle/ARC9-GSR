@@ -16,7 +16,7 @@
      "$normalmapalphaenvmapmask"              "1"
 	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
-	"$rimlight"					"1"
+	"$rimlight"					"0"
 	"$rimlightexponent"			"80"	
 	"$rimlightboost"			".2"
 	"$rimmask"					"1"

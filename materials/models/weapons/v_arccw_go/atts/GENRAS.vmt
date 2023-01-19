@@ -13,7 +13,7 @@
 	"$phongboost"				"1"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
 
-	"$rimlight"					"1"
+	"$rimlight"					"0"
 	"$rimlightexponent"			"80"	
 	"$rimlightboost"			".2"
 	"$rimmask"					"1"
