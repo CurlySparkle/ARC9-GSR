@@ -5,7 +5,7 @@ ATT = {}
 
 ATT.PrintName = "Armor Piercing Rounds"
 ATT.CompactName = "AP"
-ATT.Description = [[Bullets made of hard material designed to pierce armor.
+ATT.Description = [[An ammunition made of hard material designed to pierce armor.
 High penetrating capabilities, but wounding potential is reduced.]]
 ATT.SortOrder = 0
 
@@ -34,7 +34,7 @@ ATT = {}
 
 ATT.PrintName = "High Ricochet Rounds"
 ATT.CompactName = "HR"
-ATT.Description = [[Bullets made of soft material designed to ricochet of surfaces.
+ATT.Description = [[An ammunition made of soft material designed to ricochet of surfaces.
 High ricochet capabilities, but less damage output.]]
 ATT.SortOrder = 0
 
@@ -57,7 +57,7 @@ ATT = {}
 
 ATT.PrintName = "High Ricochet Seekers"
 ATT.CompactName = "HRS"
-ATT.Description = [[Bullets made of soft material and special tech designed to ricochet from surfaces to its targets.
+ATT.Description = [[An ammunition made of soft material and special tech designed to ricochet from surfaces to its targets.
 High ricochet capabilities with a seeking capability, but even less damage output.]]
 ATT.SortOrder = 0
 
@@ -87,7 +87,7 @@ ATT = {}
 ATT.PrintName = "Hollow Point Rounds"
 ATT.CompactName = "HP"
 ATT.Icon = Material("entities/attachs/go_ammo_jhp.png", "mips smooth")
-ATT.Description = [[Bullets with a hollow tip that expands when hitting its target, incapacitating them more easily.
+ATT.Description = [[An ammunition with a hollow tip that expands when hitting its target, incapacitating them more easily.
 Widely used in police and civilian markets due to its inability to penetrate and ricochet.]]
 ATT.SortOrder = 0
 
@@ -111,7 +111,7 @@ ATT = {}
 ATT.PrintName = "EXtreme ACcuracy Tasked Ordnance Rounds"
 ATT.CompactName = "EXA"
 ATT.Icon = Material("entities/attachs/go_ammo_match.png", "mips smooth")
-ATT.Description = [[Guided bullets that follow the shooter's aim. Ensures extreme precision against moving targets at long range.]]
+ATT.Description = [[A guided ammunition that follow the shooter's aim. Ensures extreme precision against moving targets at long range.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
@@ -132,7 +132,7 @@ ATT = {}
 ATT.PrintName = "Low Profile Rounds"
 ATT.CompactName = "LP"
 ATT.Icon = Material("entities/attachs/go_ammo_sub.png", "mips smooth")
-ATT.Description = [[Reduced powder load rounds made for easier weapon handling.
+ATT.Description = [[An ammunition that reduced powder load rounds made for easier weapon handling.
 Recoil and firing report is reduced at the cost of ballistics.]]
 ATT.SortOrder = 0
 
@@ -158,7 +158,7 @@ ATT = {}
 ATT.PrintName = "Weapon Color Tracer"
 ATT.CompactName = "TR-WCLR"
 ATT.Icon = Material("entities/attachs/go_ammo_color.png", "mips smooth")
-ATT.Description = [[Tracer rounds. Loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?).]]
+ATT.Description = [[An ammunition loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?).]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
@@ -188,7 +188,7 @@ ATT = {}
 ATT.PrintName = "High Explosive"
 ATT.CompactName = "HE"
 ATT.Icon = Material("entities/attachs/go_ammo_tr.png", "mips smooth")
-ATT.Description = [[Explosive rounds sacrifice direct damage in favor of dealing damage in a radius around the impact point.
+ATT.Description = [[An explosive ammunition that sacrifice direct damage in favor of dealing damage in a radius around the impact point.
 The effect is spectacular, but little explosive filler can be put inside most bullets.]]
 ATT.SortOrder = 0
 

@@ -3,7 +3,8 @@ local ATT = {}
 ATT.PrintName = "Stattrak™ Kill Counter"
 ATT.CompactName = [[Stattrak™]]
 ATT.Icon = Material("entities/attachs/arc9_stattrak.png", "mips smooth")
-ATT.Description = [[The Stattrak™ Kill Counter is a piece of technology that tracks the number of kills you've made with the weapon attached to it. There are two selectable modes, Global and Local. The former will track kills between sessions while the latter will only track kills for the current session.]]
+ATT.Description = [[A piece of technology that tracks the number of kills you've made with the weapon attached to it. There are two selectable modes, Global and Local.
+The former will track kills between sessions while the latter will only track kills for the current session.]]
 ATT.SortOrder = 1
 
 -- ATT.AddPrefix = "Stattrak™ "

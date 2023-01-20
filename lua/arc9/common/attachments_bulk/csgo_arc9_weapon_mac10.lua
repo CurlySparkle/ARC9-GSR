@@ -48,7 +48,7 @@ ATT = {}
 ATT.PrintName = [[50-Round .45 Grave]]
 ATT.CompactName = [[50-Round]]
 ATT.Icon = Material("entities/attachs/go_mac10_mag_48.png")
-ATT.Description = [[Extended magazine with 50-round capacity. Good capacity, but slows handling.]]
+ATT.Description = [[An extended magazine with 50-round capacity. Good capacity, but slows handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -67,7 +67,7 @@ ATT = {}
 
 ATT.PrintName = "200mm Patrol Barrel"
 ATT.CompactName = "200mm"
-ATT.Description = [[Medium-length barrel that moderately improves ballistic performance.]]
+ATT.Description = [[A medium-length barrel that moderately improves ballistic performance.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_mac10_barrel_med.png", "mips smooth")
@@ -92,7 +92,7 @@ ATT = {}
 
 ATT.PrintName = "350mm Carbine Barrel"
 ATT.CompactName = "350mm"
-ATT.Description = [[Long barrel that converts the M-10 into a carbine. Good for long range engagements.]]
+ATT.Description = [[A long barrel that converts the M-10 into a carbine. Good for long range engagements.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_mac10_barrel_long.png", "mips smooth")

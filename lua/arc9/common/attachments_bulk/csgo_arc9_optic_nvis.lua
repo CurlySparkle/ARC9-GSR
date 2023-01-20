@@ -3,7 +3,7 @@ local ATT = {}
 ATT.PrintName = "N-Vision Halo-LR Thermal Type"
 ATT.CompactName = "QTS (Thermal)"
 ATT.Icon = Material("entities/attachs/qts.png", "mips smooth")
-ATT.Description = [[Bulky thermal scope that highlights targets. Bulky electronics heavily weigh down the weapon.]]
+ATT.Description = [[A bulky thermal scope that highlights targets. Bulky electronics heavily weigh down the weapon.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/csgo/atts/scopes/QTS.mdl"

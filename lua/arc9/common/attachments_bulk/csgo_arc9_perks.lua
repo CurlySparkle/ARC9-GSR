@@ -66,7 +66,7 @@ end)
 ATT = {}
 
 ATT.PrintName = [[Ace In The Hole]]
-ATT.Description = [[Against NPCs, 33% chance for each hit to deal 200% damage.]]
+ATT.Description = [[Against NPCs, now there's 33% chance for each hit to deal 200% damage.]]
 ATT.Icon = Material("entities/attachs/go_perk_ace.png", "mips smooth")
 ATT.AutoStats = true
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
@@ -97,7 +97,7 @@ ARC9.LoadAttachment(ATT, "csgo_perk_ace")
 ATT = {}
 
 ATT.PrintName = [[Deft Hands]]
-ATT.Description = [[Cycling the weapon is 25% faster.]]
+ATT.Description = [[Cycling your weapon 25% faster than normal.]]
 ATT.Icon = Material("entities/attachs/go_perk_bolt.png", "mips smooth")
 ATT.AutoStats = true
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
@@ -140,7 +140,7 @@ ARC9.LoadAttachment(ATT, "csgo_perk_burst")
 ATT = {}
 
 ATT.PrintName = [[Gung Ho]]
-ATT.Description = [[Special technique allows for shooting while sprinting.]]
+ATT.Description = [[A special technique allows for shooting while sprinting.]]
 ATT.Icon = Material("entities/attachs/go_perk_cowboy.png", "mips smooth")
 ATT.AutoStats = true
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
@@ -174,7 +174,7 @@ ARC9.LoadAttachment(ATT, "csgo_perk_diver")
 ATT = {}
 
 ATT.PrintName = [[Lounger]]
-ATT.Description = [[Adds lounge range for more precise hits.]]
+ATT.Description = [[Adds a lounge range for more precise hits.]]
 ATT.Icon = Material("entities/attachs/go_perk_lounge.png", "mips smooth")
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.AutoStats = true

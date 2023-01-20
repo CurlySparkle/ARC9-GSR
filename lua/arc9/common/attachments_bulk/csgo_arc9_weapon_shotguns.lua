@@ -210,7 +210,7 @@ ATT = {}
 
 ATT.PrintName = "M3 Short Barrel"
 ATT.CompactName = "Barrel S"
-ATT.Description = [[A short barrel that improves handling, but at the cost of spread/capacity.]]
+ATT.Description = [[A shorter barrel that improves handling, but at the cost of spread/capacity.]]
 ATT.SortOrder = 1.5
 
 ATT.Icon = Material("entities/attachs/go_m3_barrel_short.png", "mips smooth")
@@ -370,7 +370,7 @@ ATT = {}
 
 ATT.PrintName = "Polymer Pistol Grip Stock"
 ATT.CompactName = "POLY"
-ATT.Description = [[A polymer pistol grip and stock assembly from the M3 Super 90 shotgun.
+ATT.Description = [[A stock assembly from the M3 Super 90 shotgun.
 Improves moving spread, but is slower to brace.]]
 
 ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
@@ -398,7 +398,7 @@ ATT = {}
 
 ATT.PrintName = "Polymer Pistol Grip Stock"
 ATT.CompactName = "POLY"
-ATT.Description = [[A polymer pistol grip and stock assembly from the M3 Super 90 shotgun.
+ATT.Description = [[A stock assembly from the M3 Super 90 shotgun.
 Does not improve recoil as much as a full stock, but retains some mobility.]]
 
 ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
@@ -430,7 +430,7 @@ ATT = {}
 
 ATT.PrintName = "Tactical Pistol Grip Stock"
 ATT.CompactName = "TAC"
-ATT.Description = [[A tactical pistol grip and stock assembly from the XM1014 shotgun.
+ATT.Description = [[A tactical pistol grip and stock assembly from the XM1014.
 Improves hipfire spread, but is less stable.]]
 
 ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")

@@ -33,7 +33,7 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_s")
 
 ATT = {}
 
-ATT.PrintName = [[DEagle Extender Slide]]
+ATT.PrintName = [[Deagle Extender Slide]]
 ATT.CompactName = [[DE Slide]]
 ATT.Description = [[A muzzle brake for reducing the recoil of the weapon with the cost of less handling (Gives a better shooting handling).]]
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
@@ -71,7 +71,7 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_c")
 
 ATT = {}
 
-ATT.PrintName = [[DEagle Extender Slide 2]]
+ATT.PrintName = [[Deagle Extender Slide 2]]
 ATT.CompactName = [[DE Slide 2]]
 ATT.Description = [[A muzzle brake for reducing even more recoil of the weapon with the cost of even less handling (Gives a better shooting handling).]]
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
@@ -109,8 +109,8 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_c_2")
 
 ATT = {}
 
-ATT.PrintName = "DEagle Long Barrel"
-ATT.CompactName = "DEagle LB"
+ATT.PrintName = "Deagle Long Barrel"
+ATT.CompactName = "DE Long Barrel"
 ATT.Description = [[A long-barrel attachment. Good for long range engagements.]]
 ATT.SortOrder = 0
 

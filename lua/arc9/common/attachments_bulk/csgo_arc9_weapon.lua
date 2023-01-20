@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "Short Barrel"
 ATT.CompactName = "SB"
-ATT.Description = [[Short barrel for more close combat use. Improves handling, though offers much worse recoil.]]
+ATT.Description = [[A shorter barrel for more close combat use. Improves handling, though offers much worse recoil.]]
 
 ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -32,7 +32,7 @@ ATT = {}
 
 ATT.PrintName = "R6"
 ATT.CompactName = "R"
-ATT.Description = [[6-round cylinder and slim barrel, increases trigger response.]]
+ATT.Description = [[A 6-round cylinder and slim barrel, increases trigger response.]]
 
 // ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -54,7 +54,7 @@ ATT = {}
 
 ATT.PrintName = "Kurz Configuration"
 ATT.CompactName = "Kurz"
-ATT.Description = [[Shortened handguard.]]
+ATT.Description = [[A shortened handguard.]]
 
 // ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -76,7 +76,7 @@ ATT = {}
 
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = "Folding"
-ATT.Description = [[PDW stock.]]
+ATT.Description = [[A PDW stock.]]
 
 ATT.Icon = Material("entities/attachs/go_mp5_stock_folding.png", "mips smooth")
 
@@ -94,7 +94,7 @@ ATT = {}
 -- note: 10mm or 45acp instead?
 ATT.PrintName = "Short Magazine" 
 ATT.CompactName = "20R"
-ATT.Description = [[Decreases capcity to 20 with an increase on reload speed and handling.]]
+ATT.Description = [[Decreases capacity to 20 round, with the benefit of decreased reload speed and better handling.]]
 
 ATT.Icon = Material("entities/attachs/go_mp5_mag_15.png", "mips smooth")
 

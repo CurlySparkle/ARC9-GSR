@@ -95,7 +95,7 @@ ATT = {}
 
 ATT.PrintName = [[Carlson's Tactical Breacher Muzzle Brake]]
 ATT.CompactName = [[Door Breacher]]
-ATT.Description = [[Provides a blast dispersion to reduce felt recoil and muzzle rise.]]
+ATT.Description = [[A muzzle brake that provides a blast dispersion to reduce felt recoil and muzzle rise.]]
 ATT.Icon = Material("entities/attachs/muzzle_r870.png", "mips smooth")
 
 ATT.SortOrder = 1

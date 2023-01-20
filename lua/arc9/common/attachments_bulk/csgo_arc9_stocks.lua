@@ -5,7 +5,7 @@ ATT = {}
 
 ATT.PrintName = "Basilisk Stock"
 ATT.CompactName = [[Basilisk]]
-ATT.Description = [[Modular crane stock. Improves moving accuracy and strafe performance at the cost of recoil.]]
+ATT.Description = [[A modular crane stock. Improves moving accuracy and strafe performance at the cost of recoil.]]
 ATT.Icon = Material("entities/attachs/go_stock_basilisk.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = "Contractor Stock"
 ATT.CompactName = [[Contractor]]
-ATT.Description = [[Adjustable modular stock. Improves hip fire accuracy and recoil, at the cost of aim speed.]]
+ATT.Description = [[An adjustable modular stock. Improves hip fire accuracy and recoil, at the cost of aim speed.]]
 ATT.Icon = Material("entities/attachs/go_stock_contractor.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -52,7 +52,7 @@ ATT = {}
 
 ATT.PrintName = "Ergonomic Stock"
 ATT.CompactName = [[Ergo]]
-ATT.Description = [[Lightweight modular stock. Improves ADS speed at the cost of recoil.]]
+ATT.Description = [[A lightweight modular stock. Improves ADS speed at the cost of recoil.]]
 ATT.Icon = Material("entities/attachs/go_stock_ergo.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -75,7 +75,7 @@ ATT = {}
 
 ATT.PrintName = "MOE Stock"
 ATT.CompactName = [[MOE]]
-ATT.Description = [[Modular stock produced by Magpul. Improves recoil at the cost of handling.]]
+ATT.Description = [[A modular stock produced by Magpul. Improves recoil at the cost of handling.]]
 ATT.Icon = Material("entities/attachs/go_stock_moe.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -99,7 +99,7 @@ ATT = {}
 
 ATT.PrintName = "XM10 Stock"
 ATT.CompactName = [[XM10]]
-ATT.Description = [[Modular XM10 stock used on the XM1014. Improves recoil at the cost of even more handling.]]
+ATT.Description = [[A modular stock used on the XM1014. Improves recoil at the cost of even more handling.]]
 ATT.Icon = Material("entities/attachs/go_stock_xm10.png", "mips smooth")
 ATT.Desc_Pros = {
 }
