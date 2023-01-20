@@ -10,7 +10,7 @@ ATT.Cons = {}
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC-9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "2X Optics"
+ATT.Folder = "SCOPE"
 
 ATT.Category = {"csgo_optic"}
 
