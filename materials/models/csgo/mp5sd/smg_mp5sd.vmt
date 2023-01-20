@@ -22,6 +22,8 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	$detailtexturetransform "center 0 0 scale 1 1 rotate 0 translate 0 0"
+
 	"$detailblendmode" "4"
 	"$detailblendfactor" "1"
 

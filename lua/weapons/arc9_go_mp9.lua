@@ -476,6 +476,13 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_10_mp9"] = {
+    ModelOffset = Vector(-0.2, -0.3, 0.5),
+	--ModelAngleOffset = Angle(0, 0, 170)
+    },
+}
+
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("stock_retract") then model:SetBodygroup(5,0) end
