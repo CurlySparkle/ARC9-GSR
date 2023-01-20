@@ -10,7 +10,14 @@
 	"$envmaptint"				"[ .13 .13 .13 ]"
 
 	"$phong"					"1"
-	"$phongboost"				"1"
+	"$phongboost"				"2"
+	"$phongalbedoboost"			"32"
+
+     "$envmapsaturation" "1.4"
+     "$envmapcontrast" ".6"     
+
+	"$phongalbedotint" "1"
+
 	"$phongexponent"			"80"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
