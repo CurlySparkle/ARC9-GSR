@@ -28,7 +28,7 @@ SWEP.Description = [[Manufactured in Switzerland, the cutting-edge MP9 SMG is an
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp9.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.Slot = 2
 
@@ -442,6 +442,11 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["grip_none"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
     ["stock_retract"] = {
         Bodygroups = {
             {3,1},
@@ -450,6 +455,11 @@ SWEP.AttachmentElements = {
     ["stock_none"] = {
         Bodygroups = {
             {3,2},
+        },
+    },
+    ["stock_adapter"] = {
+        Bodygroups = {
+            {5,1},
         },
     },
     ["barrel_long"] = {
@@ -465,6 +475,12 @@ SWEP.AttachmentElements = {
     AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6), } }	
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("stock_retract") then model:SetBodygroup(5,0) end
+    if wep:HasElement("grip_none") then model:SetBodygroup(2,2) end
+end
 
 SWEP.Attachments = {
     {
@@ -497,7 +513,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp9_parent",
         Pos = Vector(0, -1.2, 5.5),
         Ang = Angle(90, 0, 90),
-        InstalledElements = {"grip"},
+        --InstalledElements = {"grip"},
     },
     {
         PrintName = "Tactical",
@@ -512,8 +528,8 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract",},
         Bone = "v_weapon.mp9_parent",
-		--InstalledElements = {"stock_none"},
-        Pos = Vector(0, -2.4, -3.3),
+		InstalledElements = {"stock_adapter"},
+        Pos = Vector(0, -2.775, -3.3),
         Ang = Angle(90, 0, -90),
 		Scale = 0.8,
     },
