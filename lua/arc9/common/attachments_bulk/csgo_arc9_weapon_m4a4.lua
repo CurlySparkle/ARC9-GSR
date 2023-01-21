@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Long Barrel"
 ATT.CompactName = "LB"
 ATT.Description = [[A long barrel with RIS handguard. Good for long range engagements.]]
@@ -26,6 +27,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_barrel_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Sniper Stock"
 ATT.CompactName = "SP"
 ATT.Description = [[Change the stock to an M16 like stock, provides great recoil for the cost of less handling speed.]]
@@ -46,6 +48,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_stock_sniper")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Sniper Magazine]]
 ATT.CompactName = [[SP Mag]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
@@ -91,6 +94,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_mag_20")
 ------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20-Round 5.56 Magazine]]
 ATT.CompactName = [[20 5.56]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
@@ -116,6 +120,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_mag_20_5")
 ------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[25-Round 9mm Magazine]]
 ATT.CompactName = [[25 9mm]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_21_9mm.png")
@@ -158,6 +163,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_mag_25_9")
 ------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[32-Round 9mm Magazine]]
 ATT.CompactName = [[32 9mm]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_30_9mm.png")
@@ -200,6 +206,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_mag_32_9")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Sniper Barrel"
 ATT.CompactName = "SB"
 ATT.Description = [[A sniper long barrel. Good for long range engagements.]]
@@ -226,6 +233,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_barrel_sniper")
 ----------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -248,6 +256,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4a4_view")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Retracted Buffer Tube"
 ATT.CompactName = "Retract Tube"
 ATT.Description = [[Retracts the stocks, increases sight speed at the cost of more recoil.]]

@@ -356,6 +356,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stats",
         Category = "killcounter",
         Bone = "tag_pistol_attachments",

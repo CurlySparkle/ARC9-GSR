@@ -6,6 +6,8 @@ ATT.Icon = Material("entities/attachs/holdstyle.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/c_pist_glock.mdl"
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+
 ATT.SortOrder = 0
 ATT.Category = "go_grip_elite"
 

@@ -7,6 +7,7 @@ ATT.Icon = Material("entities/attachs/go_laser_peq.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
 ATT.Folder = "TACTICAL"
 

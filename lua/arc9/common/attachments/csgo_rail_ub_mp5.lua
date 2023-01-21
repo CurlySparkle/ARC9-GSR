@@ -4,7 +4,7 @@ ATT.Icon = Material("entities/attachs/mp5_fg_rail.png")
 ATT.Description = [[An underbarrel SD rail that allows attaching foregrips and other attachments.
 Designed for the MP5-SD.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"csgo_rail_mp5"}

@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "150mm CZ-L Slide"
 ATT.CompactName = "CZ-L"
 ATT.Description = [[A long slide. Designed to improves range and recoil, but has an impact on handling.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_cz_slide_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "90mm CZ-C Slide"
 ATT.CompactName = "CZ-C"
 ATT.Description = [[A compact slide. Designed to improves weapon handling and trigger response.]]
@@ -53,6 +55,7 @@ ARC9.LoadAttachment(ATT, "csgo_cz_slide_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "120mm CZ-A Slide"
 ATT.CompactName = "CZ-A"
 ATT.Description = [[A slide with integral compensator that can improves recoil.]]
@@ -77,6 +80,7 @@ ARC9.LoadAttachment(ATT, "csgo_cz_slide_factory")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Extended Magazine]]
 ATT.CompactName = [[Ext Mag]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
@@ -84,7 +88,7 @@ ATT.Description = [[Extended capacity by 50%, at the cost of increased reload ti
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_cz_mag"}

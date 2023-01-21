@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm A4 Barrel"
 ATT.CompactName = "510mm A4"
 ATT.Description = [[A long M16A4 barrel with RIS handguard. Good for long range engagements.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_barrel_m16a4")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "M16 Receiver"
 ATT.CompactName = "M16 Receiver"
 ATT.Description = [[A default M16 receiver for the M4A1-S.]]
@@ -67,6 +69,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_reciever_default")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "M16 Stock"
 ATT.CompactName = "Full Stock"
 ATT.Description = [[Change the stock to an M16 full stock, provides great recoil for the cost of less handling speed.]]
@@ -87,6 +90,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_stock_m16")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
@@ -104,6 +108,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4a1_mag_30")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_drum.png")

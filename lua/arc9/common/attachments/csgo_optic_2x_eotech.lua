@@ -8,7 +8,7 @@ ATT.Pros = {
 }
 ATT.Cons = {}
 ATT.SortOrder = 2
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "2X Optics"
 

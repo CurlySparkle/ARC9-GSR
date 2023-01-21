@@ -3,7 +3,7 @@ ATT.CompactName = [[Top Riser Alt]]
 ATT.Icon = Material("entities/attachs/rail_mount_ak.png")
 ATT.Description = [[A standard rail system that allows attachment of optics designed for AKs.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Ignore = false -- This thing literally doesn't fit on fucking anything < "Yes it does."
 

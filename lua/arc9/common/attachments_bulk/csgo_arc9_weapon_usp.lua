@@ -3,6 +3,7 @@ local ATT = {}
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "150mm Elite Slide"
 ATT.CompactName = "150mm L"
 ATT.Description = [[A long USP slide that improves range but also adds weight.]]
@@ -28,6 +29,7 @@ ARC9.LoadAttachment(ATT, "csgo_usp_slide_long")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "90mm USP-C Slide"
 ATT.CompactName = "90mm S"
 ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]

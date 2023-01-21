@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_angled.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.RecoilPatternDriftMult = 0.9
 ATT.RecoilAutoControlMult = 0.9

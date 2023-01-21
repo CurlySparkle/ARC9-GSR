@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_nova.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip_mag7"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.LHIK_Priority = 5
 ATT.LHIK = true

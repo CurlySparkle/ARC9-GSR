@@ -9,6 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_vertical_stubby.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.RecoilAutoControlMult = 1.2
 

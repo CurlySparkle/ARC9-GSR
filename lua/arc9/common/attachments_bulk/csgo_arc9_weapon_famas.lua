@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "620mm Tireur Barrel"
 ATT.CompactName = "350mm"
 ATT.Description = [[A long-range FAMAS sniper barrel. Improves weapon performance.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_famas_barrel_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "405mm Raider Barrel"
 ATT.CompactName = "405mm"
 ATT.Description = [[A short-length FAMAS barrel for special forces. Offers superior handling at the cost of performance.]]
@@ -52,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_famas_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
@@ -71,6 +74,7 @@ ARC9.LoadAttachment(ATT, "csgo_famas_mag_30")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[60 Mag]]
 ATT.CompactName = [[60 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
@@ -91,6 +95,7 @@ ARC9.LoadAttachment(ATT, "csgo_famas_mag_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Bipod Deployed"
 ATT.CompactName = "Deploy"
 ATT.Description = [[Deploys the bipod, gives extra recoil control while crouched/mounted.]]
@@ -113,6 +118,7 @@ ARC9.LoadAttachment(ATT, "csgo_famas_bipod_on")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

@@ -10,6 +10,7 @@ ATT.ModelBodygroups = "00000"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true

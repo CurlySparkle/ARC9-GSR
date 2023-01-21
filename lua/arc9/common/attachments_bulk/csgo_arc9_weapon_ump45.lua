@@ -3,6 +3,7 @@ local ATT = {}
 -------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_ump_view_alt")
 -------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "350mm USC Barrel"
 ATT.CompactName = "350mm USC"
 ATT.Description = [[An USC civilian carbine barrel. Good for long range engagements.]]
@@ -52,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_ump_barrel_long")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "220mm HK Barrel"
 ATT.CompactName = "220mm HK"
 ATT.Description = [[A medium-length barrel for the UMP.]]
@@ -78,6 +81,7 @@ ARC9.LoadAttachment(ATT, "csgo_ump_barrel_mid")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[12-Round .45 UMP]]
 ATT.CompactName = [[12-Round]]
 ATT.Icon = Material("entities/attachs/go_ump_mag_12.png")
@@ -98,6 +102,7 @@ ARC9.LoadAttachment(ATT, "csgo_ump_mag_15")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30-Round 9mm UMP-9]]
 ATT.CompactName = [[30-Round 9mm]]
 ATT.Icon = Material("entities/attachs/go_ump_mag_30_9mm.png")

@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm SAW Barrel"
 ATT.CompactName = "510mm SAW"
 ATT.Description = [[A heavy squad assault barrel. Good for long range engagements.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_m249_barrel_long")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "330mm Para Barrel"
 ATT.CompactName = "330mm Para"
 ATT.Description = [[A compact CQB barrel for commando forces. Gas system has been set to adverse, improving fire rate at the cost of severe overheating.
@@ -53,6 +55,7 @@ ARC9.LoadAttachment(ATT, "csgo_m249_barrel_short")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton Stock"
 ATT.Description = [[A lightweight stock for the M249. Improves ADS speed at the cost of recoil.]]
@@ -80,7 +83,7 @@ ATT.Description = [[A 9mm conversion, turning the LMG into a submachine gun with
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m249_mag"}
@@ -112,7 +115,7 @@ ATT.Description = [[Conversion for the M249, turning it into a 12 gauge automati
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m249_mag"}
@@ -143,6 +146,7 @@ ARC9.LoadAttachment(ATT, "csgo_m249_mag_12g")
 ----------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Bipod Deployed"
 ATT.CompactName = "Deploy"
 ATT.Description = [[Deploys the bipod, gives extra recoil control while crouched/mounted.]]
@@ -172,7 +176,7 @@ ATT.Description = [[A 5.56 conversion with 20 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m249_mag"}
@@ -212,7 +216,7 @@ ATT.Description = [[A 5.56 conversion with 30 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 7
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m249_mag"}
@@ -252,7 +256,7 @@ ATT.Description = [[A 5.56 conversion with 60 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 8
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m249_mag"}

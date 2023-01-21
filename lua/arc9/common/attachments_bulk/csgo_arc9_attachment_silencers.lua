@@ -3,6 +3,7 @@ local ATT = {}
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Light Suppressor]]
 ATT.CompactName = [[Light Supp]]
 ATT.Description = [[A suppressor designed to reduces audible report on average with a less penalty.]]
@@ -29,6 +30,7 @@ ARC9.LoadAttachment(ATT, "go_supp_233")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Heavy Suppressor]]
 ATT.CompactName = [[Heavy Supp]]
 ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
@@ -55,6 +57,7 @@ ARC9.LoadAttachment(ATT, "go_supp_m4")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[P90 Suppressor]]
 ATT.CompactName = [[P90 Supp]]
 ATT.Description = [[A tactical suppressor designed to reduces audible report by a lot with a penalty of significant bulk designed for the P90.
@@ -83,6 +86,7 @@ ARC9.LoadAttachment(ATT, "go_supp_p90")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[PBS-1 Suppressor]]
 ATT.CompactName = [[PBS-1]]
 ATT.Description = [[A suppressor designed for the 7.62x39mm AKM variant of Soviet AK-47 assault rifle in the Kalashnikov rifle family.]]
@@ -113,6 +117,7 @@ ARC9.LoadAttachment(ATT, "go_supp_pbs01")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[SEC9mm Suppressor]]
 ATT.CompactName = [[SEC9mm]]
 ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
@@ -143,6 +148,7 @@ ARC9.LoadAttachment(ATT, "go_supp_shit9")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Salvo-12 Suppressor]]
 ATT.CompactName = [[Salvo-12]]
 ATT.Description = [[A tactical shotgun heavy suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
@@ -168,6 +174,8 @@ ATT.MuzzleDevice = true
 ARC9.LoadAttachment(ATT, "go_supp_shitvo")
 -------------------------------------------------------------------------------
 ATT = {}
+
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 -- MASS26 et des autres, you can't just slap a UBGL prefix for everything cuz attachment on the main gun will also affect the ubgl in that case
 ATT.PrintName = [[Salvo-12 Suppressor]]
 ATT.CompactName = [[Salvo-12]]
@@ -195,6 +203,7 @@ ARC9.LoadAttachment(ATT, "go_supp_shitvo_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Ti-Rant 45 Suppressor]]
 ATT.CompactName = [[Ti-Rant 45]]
 ATT.Description = [[A tactical suppressor designed to reduces audible report by a lot with a penalty of significant bulk.]]
@@ -221,6 +230,7 @@ ARC9.LoadAttachment(ATT, "go_supp_tirant45")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Cloth Wrapped Suppressor]]
 ATT.CompactName = [[Cloth-Wrapped]]
 ATT.Description = [[A tactical suppressor wrapped in cloth. Designed to reduces audible report with a penalty of significant bulk.]]
@@ -248,6 +258,7 @@ ARC9.LoadAttachment(ATT, "go_supp_clothwrapped")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[M110 Suppressor]]
 ATT.CompactName = [[M110 S]]
 ATT.Description = [[A suppressor designed to reduces audible report by a lot with a penalty of significant bulk, made for sidearms.]]
@@ -279,6 +290,7 @@ ARC9.LoadAttachment(ATT, "go_supp_m110")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[KRISS 4GSK Suppressor]]
 ATT.CompactName = [[4GSK]]
 ATT.Description = [[A heavy tactical suppressor. Designed to reduces audible report with a penalty of significant bulk.]]

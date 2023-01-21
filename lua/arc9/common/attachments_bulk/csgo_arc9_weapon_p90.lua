@@ -3,6 +3,7 @@ local ATT = {}
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Sling"
 ATT.CompactName = "Sling"
 ATT.Description = [[Gives the P90 a sling that helps reduce a bit of recoil.]]
@@ -24,6 +25,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_sling")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Compact Frame"
 ATT.CompactName = "Compact"
 ATT.Description = [[Gives the P90 a more conventional grip and removes half of its stock.]]
@@ -45,6 +47,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_nosock")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alt Top Cover"
 ATT.CompactName = "Alt Top"
 ATT.Description = [[Changes the top cover of the P90 with an alternative type.]]
@@ -73,6 +76,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_top_2")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alt Hold"
 ATT.CompactName = "Alt Hold"
 ATT.Description = [[Changes the holding style of the weapon.]]
@@ -95,6 +99,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_hold")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -119,6 +124,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_view")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Extended Barrel"
 ATT.CompactName = "Ext Barrel"
 ATT.Description = [[An extended barrel for longer and better purposes. Adds support for grips.]]
@@ -150,6 +156,7 @@ ARC9.LoadAttachment(ATT, "go_p90_extendedbarrel")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "410mm PS90 Barrel"
 ATT.CompactName = "410mm PS90"
 ATT.Description = [[A medium-length barrel used on the PS90 carbine.]]
@@ -175,6 +182,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_barrel_med")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_p90_mag_30.png")
@@ -195,6 +203,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_mag_30")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30-round STANAG]]
 ATT.CompactName = [[30-STANAG]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
@@ -225,6 +234,7 @@ ARC9.LoadAttachment(ATT, "csgo_p90_mag_30_stanag")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20-round STANAG]]
 ATT.CompactName = [[20-STANAG]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")

@@ -3,6 +3,7 @@ local ATT = {}
 ----------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20-Round 4.6mm MP7 Mag]]
 ATT.CompactName = [[20-Round]]
 ATT.Icon = Material("entities/attachs/go_mp7_mag_20.png")
@@ -26,6 +27,7 @@ ARC9.LoadAttachment(ATT, "csgo_mp7_mag_short")
 ----------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[40-Round 4.6mm MP7 Mag]]
 ATT.CompactName = [[40-Round]]
 ATT.Icon = Material("entities/attachs/go_mp7_mag_40.png")
@@ -45,6 +47,7 @@ ARC9.LoadAttachment(ATT, "csgo_mp7_mag_long")
 ----------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -68,6 +71,7 @@ ARC9.LoadAttachment(ATT, "csgo_mp7_view_alt")
 ----------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alt Ironsight"
 ATT.CompactName = "ALT"
 ATT.Description = [[A short barrel for more close combat use. Improves handling, though offers much worse recoil.]]

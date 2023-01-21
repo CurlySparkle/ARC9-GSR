@@ -8,6 +8,7 @@ ATT.Icon = Material("entities/attachs/stock_extend.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "stock_extend"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.ActivateElements = {"stock_extend"}
 
 ATT.RecoilPatternDriftMult = 0.75

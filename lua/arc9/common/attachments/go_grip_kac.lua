@@ -9,6 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_kac.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true

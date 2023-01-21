@@ -27,6 +27,7 @@ local ATT = {}
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "330mm CQC Barrel"
 ATT.CompactName = "330mm CQC"
 ATT.Description = [[A compact barrel for carbine use. Improves handling, though offers much worse range and accuracy.]]
@@ -52,6 +53,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar20_barrel_short")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "250mm PDW Barrel"
 ATT.CompactName = "250mm PDW"
 ATT.Description = [[An extremely short barrel for use in the SCAR PDW. Very bad recoil, but improves handling significantly.]]
@@ -89,6 +91,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar20_barrel_stub")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "30-Round 7.62mm SCAR"
 ATT.CompactName = "30-Round"
 ATT.Description = [[An extended magazine that improves capacity, at the cost of handling.]]
@@ -111,6 +114,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar20_mag_30")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

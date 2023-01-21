@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[M203 Grenade Launcher]]
 ATT.CompactName = [[M203]]
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png")
@@ -156,6 +157,7 @@ ARC9.LoadAttachment(ATT, "go_ubgl_m203")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[M203 Sight]]
 ATT.CompactName = [[Sight]]
 //ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png")

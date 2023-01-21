@@ -3,6 +3,7 @@ local ATT = {}
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Basilisk Stock"
 ATT.CompactName = [[Basilisk]]
 ATT.Description = [[A modular crane stock. Improves moving accuracy and strafe performance at the cost of recoil.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "go_stock_basilisk")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Contractor Stock"
 ATT.CompactName = [[Contractor]]
 ATT.Description = [[An adjustable modular stock. Improves hip fire accuracy and recoil, at the cost of aim speed.]]
@@ -50,6 +52,7 @@ ARC9.LoadAttachment(ATT, "go_stock_contractor")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Ergonomic Stock"
 ATT.CompactName = [[Ergo]]
 ATT.Description = [[A lightweight modular stock. Improves ADS speed at the cost of recoil.]]
@@ -73,6 +76,7 @@ ARC9.LoadAttachment(ATT, "go_stock_ergo")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "MOE Stock"
 ATT.CompactName = [[MOE]]
 ATT.Description = [[A modular stock produced by Magpul. Improves recoil at the cost of handling.]]
@@ -97,6 +101,7 @@ ARC9.LoadAttachment(ATT, "go_stock_moe")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "XM10 Stock"
 ATT.CompactName = [[XM10]]
 ATT.Description = [[A modular stock used on the XM1014. Improves recoil at the cost of even more handling.]]
@@ -125,6 +130,7 @@ ARC9.LoadAttachment(ATT, "go_stock_xm10")
 -------------------------------------------------------------------------------
 -- ATT = {}
 
+-- ATT.MenuCategory = "ARC9 - CSGO Attachments"
 -- ATT.PrintName = "Heavy Stock"
 -- ATT.CompactName = [[Heavy]]
 -- ATT.Description = [[Most heaviest stock. Improves recoil by alot with the cost of handling.]]

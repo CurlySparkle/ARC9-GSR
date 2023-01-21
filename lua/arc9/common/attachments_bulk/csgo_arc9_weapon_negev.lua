@@ -3,6 +3,7 @@ local ATT = {}
 --------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_negev_view_alt")
 --------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton Stock"
 ATT.Description = [[A lightweight stock for the Negev. Improves ADS speed at the cost of recoil.]]
@@ -47,6 +49,7 @@ ARC9.LoadAttachment(ATT, "csgo_negev_stock_skeleton")
 --------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm Heavy Barrel"
 ATT.CompactName = "510mm Heavy"
 ATT.Description = [[A long Negev barrel with increased twist. Good for long range engagements.]]
@@ -72,6 +75,7 @@ ARC9.LoadAttachment(ATT, "csgo_negev_barrel_long")
 --------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "330mm SF Barrel"
 ATT.CompactName = "330mm SF"
 ATT.Description = [[A shortened barrel for commando use, improves sight and sprint time for the cost of more recoil.]]
@@ -106,7 +110,7 @@ Superior range and damage at the cost of recoil and inferior handling with less 
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_negev_mag"}
@@ -134,7 +138,7 @@ ATT.Description = [[He's so fast doe.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_negev_mag"}

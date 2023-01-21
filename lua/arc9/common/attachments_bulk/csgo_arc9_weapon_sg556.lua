@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "226mm Commando Barrel"
 ATT.CompactName = "CMDO"
 ATT.Description = [[A compact handguard configuration from the SG 552 Commando.
@@ -56,6 +57,7 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "300mm Prototype Barrel"
 ATT.CompactName = "PROTO"
 ATT.Description = [[A lightweight preproduction model from the SG 541 Prototype.
@@ -109,6 +111,7 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_proto")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = "FOLD"
 ATT.Description = [[A lightweight stock used on the SG 552 Commando.
@@ -131,6 +134,7 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_stock_folding")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Prototype Stock"
 ATT.CompactName = "PROTO"
 ATT.Description = [[A solid stock used on the SG 541 prototype.
@@ -152,6 +156,7 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_stock_proto")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "7.62 Magazine"
 ATT.CompactName = "AK"
 ATT.Description = [[A 7.62 conversion with 30 round magazine.]]
@@ -182,6 +187,7 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_mag_ak")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "490mm Bull Barrel"
 ATT.CompactName = "450mm"
 ATT.Description = [[A bull barrel that significantly reduces recoil, though at the cost of handling.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_bull")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "390mm Custom Barrel"
 ATT.CompactName = "390mm"
 ATT.Description = [[A short-length custom barrel. Improves handling, though offers much worse range and accuracy.]]
@@ -52,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "430mm Factory Barrel"
 ATT.CompactName = "430mm"
 ATT.Description = [[A factory length barrel. Improves handling, though doesn't offers much range and accuracy.]]
@@ -77,6 +80,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_factory")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = [[Folding]]
 ATT.Description = [[A folded stock for the AWP. Improves recoil at the cost of handling.]]
@@ -97,6 +101,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_stock_folding")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[15-Round .338 AWM]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_15.png")
@@ -119,6 +124,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_mag_15")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[5-Round .338 AWM]]
 ATT.CompactName = [[5-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_5.png")
@@ -147,6 +153,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_mag_5")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = [[Iron]]
 --ATT.Icon = Material("entities/attachs/go_optic_t1.png", "mips smooth")
@@ -169,6 +176,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_sight_iron")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = [[Skeleton]]
 ATT.Description = [[A lightweight stock for the AWP.]]

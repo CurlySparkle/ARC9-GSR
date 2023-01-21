@@ -1,5 +1,6 @@
 local ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[MASS-26 Breaching Shotgun]]
 ATT.CompactName = [[M26]]
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_mass.png")

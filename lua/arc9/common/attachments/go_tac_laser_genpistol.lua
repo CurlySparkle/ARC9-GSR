@@ -6,6 +6,7 @@ ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/GENLaserPISTOL.mdl"
 ATT.Folder = "TACTICAL"
 

@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Admin]]
 ATT.Description = [[]]
 ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")

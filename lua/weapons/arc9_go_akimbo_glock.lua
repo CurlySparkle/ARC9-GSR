@@ -459,6 +459,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_a.mdl",
         Category = "stickers",
@@ -477,11 +482,6 @@ SWEP.Attachments = {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_d.mdl",
         Category = "stickers",
-    },
-    {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
     },
     {
         PrintName = "Stats",

@@ -10,7 +10,7 @@ High penetrating capabilities, but wounding potential is reduced.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_tmj.png", "mips smooth")
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
@@ -39,7 +39,7 @@ High ricochet capabilities, but less damage output.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_ricochet.png", "mips smooth")
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
@@ -62,7 +62,7 @@ High ricochet capabilities with a seeking capability, but even less damage outpu
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_ricochetseeker.png", "mips smooth")
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
@@ -84,6 +84,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_hr_seeker")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Hollow Point Rounds"
 ATT.CompactName = "HP"
 ATT.Icon = Material("entities/attachs/go_ammo_jhp.png", "mips smooth")
@@ -108,6 +109,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_fra")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "EXtreme ACcuracy Tasked Ordnance Rounds"
 ATT.CompactName = "EXA"
 ATT.Icon = Material("entities/attachs/go_ammo_match.png", "mips smooth")
@@ -129,6 +131,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_exacto")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Low Profile Rounds"
 ATT.CompactName = "LP"
 ATT.Icon = Material("entities/attachs/go_ammo_sub.png", "mips smooth")
@@ -155,6 +158,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_subsonic")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Weapon Color Tracer"
 ATT.CompactName = "TR-WCLR"
 ATT.Icon = Material("entities/attachs/go_ammo_color.png", "mips smooth")
@@ -185,6 +189,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_tracer_col")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "High Explosive"
 ATT.CompactName = "HE"
 ATT.Icon = Material("entities/attachs/go_ammo_tr.png", "mips smooth")
@@ -217,6 +222,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_he")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "8.5mm Magnum Buckshot"
 ATT.CompactName = "MAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
@@ -243,6 +249,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "3.5mm Birdshot"
 ATT.CompactName = "BIRD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_scatter.png", "mips smooth")
@@ -263,6 +270,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Full-bore Slug"
 ATT.CompactName = "SLUG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
@@ -289,6 +297,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Triple Hit Slugs"
 ATT.CompactName = "TRI"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_triple.png", "mips smooth")
@@ -313,6 +322,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "25mm Flechettes"
 ATT.CompactName = "FLE"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
@@ -335,6 +345,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
 ATT.CompactName = "FRAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he.png", "mips smooth")
@@ -367,6 +378,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "10mm Rebounder Rounds"
 ATT.CompactName = "RBD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
@@ -396,6 +408,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_rebounder")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive X4"
 ATT.CompactName = "FRAG X4"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he_x4.png", "mips smooth")
@@ -433,6 +446,7 @@ ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")-------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "8.5mm Magnum Buckshot"
 ATT.CompactName = "MAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
@@ -459,6 +473,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "3.5mm Birdshot"
 ATT.CompactName = "BIRD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_scatter.png", "mips smooth")
@@ -479,6 +494,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Full-bore Slug"
 ATT.CompactName = "SLUG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
@@ -505,6 +521,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Triple Hit Slugs"
 ATT.CompactName = "TRI"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_triple.png", "mips smooth")
@@ -529,6 +546,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "25mm Flechettes"
 ATT.CompactName = "FLE"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
@@ -551,6 +569,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
 ATT.CompactName = "FRAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he.png", "mips smooth")
@@ -583,6 +602,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "10mm Rebounder Rounds"
 ATT.CompactName = "RBD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
@@ -612,6 +632,7 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_rebounder_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive X4"
 ATT.CompactName = "FRAG X4"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he_x4.png", "mips smooth")

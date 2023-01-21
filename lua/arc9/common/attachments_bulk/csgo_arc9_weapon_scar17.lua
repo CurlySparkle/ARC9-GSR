@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Long Sniper Barrel"
 ATT.CompactName = "Barrel L"
 ATT.Description = [[A long barrel that improves range but also adds less handling control.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar17_barrel_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Short Barrel"
 ATT.CompactName = "Barrel S"
 ATT.Description = [[A compact and short barrel that improves weapon handling and trigger response.]]
@@ -52,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar17_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Specialized Stock"
 ATT.CompactName = [[Specialized]]
 ATT.Description = [[A specialized stock produced for the MK 17. Improves recoil at the cost of handling.]]
@@ -77,6 +80,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar17_stock_specialized")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "5.56 Magazine"
 ATT.CompactName = "5.56"
 ATT.Description = [[A 5.56 conversion with 20 round magazine.]]
@@ -113,6 +117,7 @@ ARC9.LoadAttachment(ATT, "csgo_mk17_mag_1")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Extended 5.56 Magazine"
 ATT.CompactName = "5.56X"
 ATT.Description = [[A 5.56 conversion with 30 round extended magazine.]]
@@ -144,12 +149,11 @@ ATT.DropMagazineTime = 0.65
 
 ARC9.LoadAttachment(ATT, "csgo_mk17_mag_2")
 
-ATT = {}
-
 ------------------------------------------------------------------------
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "PDW Stock"
 ATT.CompactName = [[PDW]]
 ATT.Description = [[A lightweight cutdown stock, improves handling.]]
@@ -175,6 +179,7 @@ ARC9.LoadAttachment(ATT, "csgo_scar17_stock_pdw")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "SCARAB Stock"
 ATT.CompactName = [[SCARAB]]
 ATT.Description = [[An ultra lightweight bullpup PDW kit.]]

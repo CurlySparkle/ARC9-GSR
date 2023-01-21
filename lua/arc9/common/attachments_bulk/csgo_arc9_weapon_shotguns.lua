@@ -10,7 +10,7 @@ Extra frontal weight impacts weapon handling while on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_xm1014_mag"}
@@ -37,7 +37,7 @@ Makes the weapon significantly worse on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_xm1014_mag"}
@@ -64,7 +64,7 @@ Extra frontal weight impacts weapon handling while on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_nova_mag"}
@@ -90,7 +90,7 @@ Makes the weapon significantly worse on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_nova_mag"}
@@ -117,7 +117,7 @@ Extra frontal weight impacts weapon handling while on the move.
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m3_mag"}
@@ -143,7 +143,7 @@ Extra handling speed and less reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m3_mag"}
@@ -167,7 +167,7 @@ ATT.Description = [[A M3 default barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Hidden = true
 
@@ -188,7 +188,7 @@ Significantly increases range and precision.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_m3_barrel"}
@@ -212,6 +212,7 @@ ATT.PrintName = "M3 Short Barrel"
 ATT.CompactName = "Barrel S"
 ATT.Description = [[A shorter barrel that improves handling, but at the cost of spread/capacity.]]
 ATT.SortOrder = 1.5
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.Icon = Material("entities/attachs/go_m3_barrel_short.png", "mips smooth")
 ATT.AutoStats = true
@@ -244,7 +245,7 @@ Still short enough to fit under the short barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_sawedoff_mag"}
@@ -269,7 +270,7 @@ Can only be used with a full-sized barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_sawedoff_mag"}
@@ -296,7 +297,7 @@ Can only be used with a full-sized barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 7
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_sawedoff_mag"}
@@ -323,7 +324,7 @@ Significantly increases range and precision.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_sawedoff_barrel"}
@@ -349,6 +350,7 @@ ATT.Description = [[A full-sized wooden stock. Significantly reduces recoil.]]
 
 ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.SortOrder = 0
 ATT.Category = "go_sawedoff_stock"
 
@@ -377,6 +379,7 @@ ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/pistol_grips/grip_m3.mdl"
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.SortOrder = 1
 ATT.Category = "go_nova_stock"
 
@@ -405,6 +408,7 @@ ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/pistol_grips/grip_m3.mdl"
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.SortOrder = 1
 ATT.Category = "go_sawedoff_stock"
 
@@ -437,6 +441,7 @@ ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/pistol_grips/grip_xm1014.mdl"
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.SortOrder = 2
 ATT.Category = {"go_nova_stock", "go_m3_stock", "go_sawedoff_stock"}
 

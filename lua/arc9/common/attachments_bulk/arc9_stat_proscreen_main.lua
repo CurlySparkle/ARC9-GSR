@@ -1,5 +1,7 @@
 local ATT = {}
 
+
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Pro Screen (Main)"
 ATT.CompactName = [[Pro Screen 2]]
 ATT.Icon = Material("entities/attachs/arc9_proscreen.png", "mips")

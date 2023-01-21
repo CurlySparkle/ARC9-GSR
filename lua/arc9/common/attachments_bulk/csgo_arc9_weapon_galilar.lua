@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm SAW Barrel"
 ATT.CompactName = "510mm SAW"
 ATT.Description = [[A long barrel used for suppressive fire. Good for long range engagements.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "216mm Navy Barrel"
 ATT.CompactName = "216mm Navy"
 ATT.Description = [[A short-length barrel for special forces. Offers superior handling at the cost of performance.]]
@@ -52,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "409mm Carbine Barrel"
 ATT.CompactName = "409mm Carbine"
 ATT.Description = [[A medium-length barrel.]]
@@ -86,7 +89,7 @@ Superior range and damage at the cost of recoil. Large magazine has inferior han
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 --ATT.Scale = 0.45
 ATT.ModelOffset = Vector(1.8, 0, -2.5)
@@ -121,7 +124,7 @@ Superior range and damage at the cost of recoil. Large magazine has inferior han
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -150,7 +153,7 @@ ATT.Description = [[A 5.45mm conversion. An average magazine that can hold 30 ro
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4.5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -173,7 +176,7 @@ ATT.Description = [[A 5.45mm conversion. Almost a huge casket magazine that can 
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -196,7 +199,7 @@ ATT.Description = [[A 5.45mm conversion. A huge casket magazine that can hold 60
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5.5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -213,6 +216,7 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_mag_60")
 -------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

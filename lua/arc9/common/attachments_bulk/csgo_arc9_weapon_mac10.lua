@@ -3,6 +3,7 @@ local ATT = {}
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -25,6 +26,7 @@ ARC9.LoadAttachment(ATT, "csgo_mac10_view")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20-Round .45 Ingram]]
 ATT.CompactName = [[20-Round]]
 ATT.Icon = Material("entities/attachs/go_mac10_mag_16.png")
@@ -45,6 +47,7 @@ ARC9.LoadAttachment(ATT, "csgo_mac10_mag_16")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[50-Round .45 Grave]]
 ATT.CompactName = [[50-Round]]
 ATT.Icon = Material("entities/attachs/go_mac10_mag_48.png")
@@ -65,6 +68,7 @@ ARC9.LoadAttachment(ATT, "csgo_mac10_mag_50")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "200mm Patrol Barrel"
 ATT.CompactName = "200mm"
 ATT.Description = [[A medium-length barrel that moderately improves ballistic performance.]]
@@ -90,6 +94,7 @@ ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_med")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "350mm Carbine Barrel"
 ATT.CompactName = "350mm"
 ATT.Description = [[A long barrel that converts the M-10 into a carbine. Good for long range engagements.]]
@@ -115,6 +120,7 @@ ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_long")
 --------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Shroud Barrel"
 ATT.CompactName = "Shroud"
 ATT.Description = [[A long shrouded barrel that improves range but also adds weight.]]

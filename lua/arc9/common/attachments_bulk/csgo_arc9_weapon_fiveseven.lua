@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "160mm Plus Slide"
 ATT.CompactName = "Slide L"
 ATT.Description = [[A long slide that can improves range, but also adds less handling control.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_five_slide_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "110mm FN Slide"
 ATT.CompactName = "Slide S"
 ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]

@@ -1,5 +1,6 @@
 local ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "N-Vision Halo-LR Thermal Type"
 ATT.CompactName = "QTS (Thermal)"
 ATT.Icon = Material("entities/attachs/qts.png", "mips smooth")

@@ -6,6 +6,7 @@ ATT.Icon = Material("entities/attachs/GENFlashRAS.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/GENFlashRAS.mdl"
 ATT.Folder = "TACTICAL"
 

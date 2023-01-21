@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Deagle Suppressor]]
 ATT.CompactName = [[DE Supp]]
 ATT.Description = [[A suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
@@ -33,6 +34,7 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_s")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Deagle Extender Slide]]
 ATT.CompactName = [[DE Slide]]
 ATT.Description = [[A muzzle brake for reducing the recoil of the weapon with the cost of less handling (Gives a better shooting handling).]]
@@ -71,6 +73,7 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_c")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Deagle Extender Slide 2]]
 ATT.CompactName = [[DE Slide 2]]
 ATT.Description = [[A muzzle brake for reducing even more recoil of the weapon with the cost of even less handling (Gives a better shooting handling).]]
@@ -109,6 +112,7 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_c_2")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Deagle Long Barrel"
 ATT.CompactName = "DE Long Barrel"
 ATT.Description = [[A long-barrel attachment. Good for long range engagements.]]
@@ -133,6 +137,7 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_barrel")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Extended Magazine]]
 ATT.CompactName = [[Ext Mag]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
@@ -140,7 +145,7 @@ ATT.Description = [[Extended capacity by 50%, at the cost of increased reload ti
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_deagle_mag"}

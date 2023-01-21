@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "240mm L Slide"
 ATT.CompactName = "240mm L"
 ATT.Description = [[A long slide that improves range but also adds weight.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_elite_slide_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "170mm G Slide"
 ATT.CompactName = "170mm G"
 ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]
@@ -55,6 +57,7 @@ ARC9.LoadAttachment(ATT, "csgo_elite_slide_short")
 -----------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Officer Slide"
 ATT.CompactName = "Officer"
 ATT.Description = [[A compact model conversion, unsuspiciously resemble a certain different gun from a certain era.]]
@@ -79,6 +82,7 @@ ARC9.LoadAttachment(ATT, "csgo_elite_slide_p38")
 -----------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Raffica Slide"
 ATT.CompactName = "Raffica"
 ATT.Description = [[A burst system completes with a foregrip allowing for quick firing sucession.]]

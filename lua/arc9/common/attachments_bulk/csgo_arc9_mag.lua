@@ -7,7 +7,7 @@ ATT.Description = [[A longer tube that holds a few more shells. Extra frontal we
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_mag_sg"}

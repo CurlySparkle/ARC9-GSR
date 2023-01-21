@@ -1,5 +1,6 @@
 local ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Stattrak™ Kill Counter"
 ATT.CompactName = [[Stattrak™]]
 ATT.Icon = Material("entities/attachs/arc9_stattrak.png", "mips smooth")

@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "520mm Barrel"
 ATT.CompactName = "350mm L"
 ATT.Description = [[A long-range sniper barrel. Improves weapon performance.]]
@@ -27,6 +28,7 @@ ARC9.LoadAttachment(ATT, "csgo_galil_barrel_long")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "305mm Barrel"
 ATT.CompactName = "305mm S"
 ATT.Description = [[A short-length barrel. Offers superior handling at the cost of performance.]]
@@ -52,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_galil_barrel_short")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[35 Mag]]
 ATT.CompactName = [[35 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
@@ -70,6 +73,7 @@ ARC9.LoadAttachment(ATT, "csgo_galil_mag_35")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
@@ -97,7 +101,7 @@ ATT.Pros = {}
 ATT.Cons = {}
 ATT.Free = false
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ModelOffset = Vector(1.4, 0, -2.5)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -132,7 +136,7 @@ ATT.Pros = {}
 ATT.Cons = {}
 ATT.Free = false
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ModelOffset = Vector(1.55, 0, -2.5)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
