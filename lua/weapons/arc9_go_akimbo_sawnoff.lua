@@ -81,12 +81,21 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 85
+SWEP.RPM = 80
 
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PUMP"
+        PrintName = "SINGLE",
+    },
+    {
+        Mode = 1,
+        PrintName = "BOTH",
+        RPMMult = 50 / 80,
+        AkimboBoth = true,
+        RecoilMult = 2,
+        AmmoPerShot = 2,
+        NumMult = 2,
     },
 }
 -------------------------- RECOIL
@@ -186,7 +195,7 @@ SWEP.IronSights = {
         Ang = Angle(0, 0, -2.5),
     },
     Magnification = 1.1,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
     CrosshairInSights = true
 }
 
@@ -295,77 +304,77 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire_left"] = {
         Source = "fire_left",
-		Mult = 0.75,
+        Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},	
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+        },
     },
     ["fire_right"] = {
         Source = "fire_right",
-		Mult = 0.75,
+        Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},			
-        },				
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+        },
     },
     ["fire_both"] = {
         Source = "fire_both",
-		Mult = 0.75,
+        Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},	
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+        },
     },
     ["reload_start"] = {
         Source = "reload_start",
-		EjectAt = 0.5,		
+        EjectAt = 0.5,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+        },
     },
     ["reload_start_empty"] = {
         Source = "reload_start",
-		EjectAt = 0.5,
-        RestoreAmmo = 0,		
+        EjectAt = 0.5,
+        RestoreAmmo = 0,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-        },			
-    },	
+            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+        },
+    },
     ["reload_insert"] = {
         Source = "reload",
-		Time = 0.75,
-        RestoreAmmo = 1,			
+        Time = 0.75,
+        RestoreAmmo = 1,
         EventTable = {
             {s = "CSGO.sawedoff.Shell_Insert", t = 2 / 30},
-            {s = "CSGO.sawedoff.Shell_Insert", t = 9 / 30},			
+            {s = "CSGO.sawedoff.Shell_Insert", t = 9 / 30},
         },
     },
     ["reload_finish"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},	
-            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},					
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},
+        },
     },
     ["ready"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},	
-            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},				
-        },	
+            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},
+        },
     },
     ["draw"] = {
         Source = "draw",
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
-        },			
+        },
     },
     ["holster"] = {
         Source = "holster",
@@ -395,9 +404,9 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 55 / 30 },
-			{ s = "weapons/csgo/movement3.wav", t = 113 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 113 / 30 },
         },
-    },	
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -412,7 +421,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(6, 0, 1), } }	
+    AttPosMods = { [2] = { Pos = Vector(6, 0, 1), } }
     },
 }
 
@@ -443,7 +452,7 @@ SWEP.Attachments = {
                 -- Bone = "j_slide_l",
             -- }
         -- },
-		-- Scale = 0.9,
+        -- Scale = 0.9,
     -- },
     {
         PrintName = "Tactical",
@@ -457,11 +466,11 @@ SWEP.Attachments = {
                 Bone = "W_Pump_L",
             }
         },
-		Scale = 1,
+        Scale = 1,
     },
     -- {
         -- PrintName = "Mag",
-		-- Bone = "j_mag1_l",
+        -- Bone = "j_mag1_l",
         -- Category = "go_mag"
     -- },
     {
@@ -469,21 +478,21 @@ SWEP.Attachments = {
         Bone = "W_Main2_L",
         Category = "go_ammo_sg",
         Pos = Vector(0, -0.5, 5.5),
-        Ang = Angle(90, 0, 90),		
+        Ang = Angle(90, 0, 90),
         --Icon_Offset = Vector(0, 0.5, 2),
     },
     {
         PrintName = "Perk",
         Category = "go_perk",
-		RejectAttachments = {
-		["csgo_perk_burst"] = true
-		},
+        RejectAttachments = {
+        ["csgo_perk_burst"] = true
+        },
     },
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_sawnoff",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Cosmetic",
