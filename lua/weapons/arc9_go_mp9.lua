@@ -466,13 +466,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {4,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 7.85), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 8.55), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {4,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6.8), } }	
     },
 }
 
@@ -509,7 +509,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.mp9_parent",
-        Pos = Vector(0, -2.96, 6.5),
+        Pos = Vector(0, -2.96, 7),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
     },
