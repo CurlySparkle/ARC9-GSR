@@ -517,7 +517,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,1) end		
-	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,2) end
+	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,3) end
 	if wep:HasElement("barrel_stub") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
 	if wep:HasElement("barrel_factory") and wep.Attachments[1].Installed then model:SetBodygroup(5,7) end
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,4) end
