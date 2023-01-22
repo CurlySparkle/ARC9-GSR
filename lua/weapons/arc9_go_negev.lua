@@ -127,7 +127,7 @@ SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = -0.1
 
 -------------------------- HANDLING
 
@@ -139,7 +139,7 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SpeedMultSights = 0.5
+SWEP.SpeedMultSights = 0.1
 SWEP.SpeedMultShooting = 0.5
 
 -------------------------- MELEE

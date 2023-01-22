@@ -473,6 +473,11 @@ SWEP.AttachmentElements = {
             {1,3},
         },
     },
+    ["stock_none_alt"] = {
+        Bodygroups = {
+            {1,4},
+        },
+    },
     ["mag"] = {
         Bodygroups = {
             {2,2},
