@@ -5,7 +5,7 @@ ATT = {}
 ATT.PrintName = [[XM 4 Round Tube]]
 ATT.CompactName = [[4-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[A short tube that holds only a few shells.
+ATT.Description = [[Short tube that holds only a few shells.
 Extra frontal weight impacts weapon handling while on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -32,7 +32,7 @@ ATT = {}
 ATT.PrintName = [[XM 10 Round Tube]]
 ATT.CompactName = [[10-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[An extra long tube that holds twice as much shells.
+ATT.Description = [[Extra long tube that holds twice as much shells.
 Makes the weapon significantly worse on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -59,7 +59,7 @@ ATT = {}
 ATT.PrintName = [[Nova 6 Round Tube]]
 ATT.CompactName = [[6-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[A longer tube that holds a few more shells.
+ATT.Description = [[Longer tube that holds a few more shells.
 Extra frontal weight impacts weapon handling while on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -85,7 +85,7 @@ ATT = {}
 ATT.PrintName = [[Nova 8 Round Tube]]
 ATT.CompactName = [[8-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[An extra long tube that holds twice as much shells.
+ATT.Description = [[Extra long tube that holds twice as much shells.
 Makes the weapon significantly worse on the move.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -111,7 +111,7 @@ ATT = {}
 ATT.PrintName = [[M3 7 Round Tube]]
 ATT.CompactName = [[7-RND]]
 ATT.Icon = Material("entities/attachs/go_m3_cap_8.png")
-ATT.Description = [[A longer tube that holds a few more shells.
+ATT.Description = [[Longer tube that holds a few more shells.
 Extra frontal weight impacts weapon handling while on the move.
 (Requires a longer barrel).]]
 ATT.Pros = {}
@@ -138,7 +138,7 @@ ATT = {}
 ATT.PrintName = [[M3 4 Round Tube]]
 ATT.CompactName = [[4-RND]]
 ATT.Icon = Material("entities/attachs/go_m3_cap_4.png")
-ATT.Description = [[A shorter tube that holds only a few shells.
+ATT.Description = [[Shorter tube that holds only a few shells.
 Extra handling speed and less reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -163,7 +163,7 @@ ATT = {}
 ATT.PrintName = [[M3 Default Barrel]]
 ATT.CompactName = [[Default]]
 --ATT.Icon = Material("entities/attachs/go_m3_cap_8.png")
-ATT.Description = [[A M3 default barrel.]]
+ATT.Description = [[M3 default barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -210,7 +210,7 @@ ATT = {}
 
 ATT.PrintName = "M3 Short Barrel"
 ATT.CompactName = "Barrel S"
-ATT.Description = [[A shorter barrel that improves handling, but at the cost of spread/capacity.]]
+ATT.Description = [[Shorter barrel that improves handling, but at the cost of spread/capacity.]]
 ATT.SortOrder = 1.5
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
@@ -240,7 +240,7 @@ ATT = {}
 ATT.PrintName = [[Sawed-off 5 Round Tube]]
 ATT.CompactName = [[5-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[A slightly longer tube that holds one extra shell.
+ATT.Description = [[Slightly longer tube that holds one extra shell.
 Still short enough to fit under the short barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -265,7 +265,7 @@ ATT = {}
 ATT.PrintName = [[Sawed-off 6 Round Tube]]
 ATT.CompactName = [[6-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[A longer tube that holds two extra shells.
+ATT.Description = [[Longer tube that holds two extra shells.
 Can only be used with a full-sized barrel.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -291,7 +291,7 @@ ATT = {}
 ATT.PrintName = [[Sawed-off 7 Round Tube]]
 ATT.CompactName = [[7-RND]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[An extra long tube that holds three more shells.
+ATT.Description = [[Extra long tube that holds three more shells.
 Makes the weapon significantly worse on the move.
 Can only be used with a full-sized barrel.]]
 ATT.Pros = {}
@@ -319,7 +319,7 @@ ATT = {}
 ATT.PrintName = [[Sawed-off Full-size Barrel]]
 ATT.CompactName = [[FULL]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[An uncut barrel with front sight post.
+ATT.Description = [[Uncut barrel with front sight post.
 Significantly increases range and precision.]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -346,7 +346,7 @@ ATT = {}
 
 ATT.PrintName = "Factory Wooden Stock"
 ATT.CompactName = "FULL"
-ATT.Description = [[A full-sized wooden stock. Significantly reduces recoil.]]
+ATT.Description = [[Full-sized wooden stock. Significantly reduces recoil.]]
 
 ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")
 
@@ -372,7 +372,7 @@ ATT = {}
 
 ATT.PrintName = "Polymer Pistol Grip Stock"
 ATT.CompactName = "POLY"
-ATT.Description = [[A stock assembly from the M3 Super 90 shotgun.
+ATT.Description = [[Stock assembly from the M3 Super 90 shotgun.
 Improves moving spread, but is slower to brace.]]
 
 ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
@@ -401,7 +401,7 @@ ATT = {}
 
 ATT.PrintName = "Polymer Pistol Grip Stock"
 ATT.CompactName = "POLY"
-ATT.Description = [[A stock assembly from the M3 Super 90 shotgun.
+ATT.Description = [[Stock assembly from the M3 Super 90 shotgun.
 Does not improve recoil as much as a full stock, but retains some mobility.]]
 
 ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
@@ -434,7 +434,7 @@ ATT = {}
 
 ATT.PrintName = "Tactical Pistol Grip Stock"
 ATT.CompactName = "TAC"
-ATT.Description = [[A tactical pistol grip and stock assembly from the XM1014.
+ATT.Description = [[Tactical pistol grip and stock assembly from the XM1014.
 Improves hipfire spread, but is less stable.]]
 
 ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")

@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "9mm Magazine"
 ATT.CompactName = "9mm"
-ATT.Description = [[A 9mm conversion with 25 round magazine.]]
+ATT.Description = [[9mm conversion with 25 round magazine.]]
 
 ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
 ATT.ShootSound = "CSGO.MP9.Fire"
@@ -42,7 +42,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Extended 9mm Magazine"
 ATT.CompactName = "9mmX"
-ATT.Description = [[A 9mm conversion with 32 round extended magazine.]]
+ATT.Description = [[9mm conversion with 32 round extended magazine.]]
 
 ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm_extended.png", "mips smooth")
 ATT.ShootSound = "CSGO.MP9.Fire"
@@ -78,7 +78,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "620mm HBAR Barrel"
 ATT.CompactName = "620mm HBAR"
-ATT.Description = [[A long-range SAW barrel for the AUG. Improves range and recoil control, at the cost of handling.]]
+ATT.Description = [[Long-range SAW barrel for the AUG. Improves range and recoil control, at the cost of handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_aug_barrel_long.png", "mips smooth")
@@ -104,7 +104,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "420mm Para Barrel"
 ATT.CompactName = "Slide S"
-ATT.Description = [[A short-length AUG barrel for submachine gun or commando carbine use. Improves handling, though offers much worse range and accuracy.]]
+ATT.Description = [[Short-length AUG barrel for submachine gun or commando carbine use. Improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_aug_barrel_short.png", "mips smooth")

@@ -4,7 +4,7 @@ local ATT = {}
 
 -- ATT.PrintName = "410mm CQC Factory Barrel"
 -- ATT.CompactName = "410mm F"
--- ATT.Description = [[A factory SCAR-17 barrel, improves recoil with a cost of more recoil.]]
+-- ATT.Description = [[Factory SCAR-17 barrel, improves recoil with a cost of more recoil.]]
 -- ATT.SortOrder = 0
 
 -- ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
@@ -30,7 +30,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "330mm CQC Barrel"
 ATT.CompactName = "330mm CQC"
-ATT.Description = [[A compact barrel for carbine use. Improves handling, though offers much worse range and accuracy.]]
+ATT.Description = [[Compact barrel for carbine use. Improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
@@ -56,7 +56,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "250mm PDW Barrel"
 ATT.CompactName = "250mm PDW"
-ATT.Description = [[An extremely short barrel for use in the SCAR PDW. Very bad recoil, but improves handling significantly.]]
+ATT.Description = [[Extremely short barrel for use in the SCAR PDW. Very bad recoil, but improves handling significantly.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_scar_barrel_stub.png", "mips smooth")
@@ -94,7 +94,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "30-Round 7.62mm SCAR"
 ATT.CompactName = "30-Round"
-ATT.Description = [[An extended magazine that improves capacity, at the cost of handling.]]
+ATT.Description = [[Extended magazine that improves capacity, at the cost of handling.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_scar_mag_30.png", "mips smooth")

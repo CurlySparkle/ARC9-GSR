@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "620mm Tireur Barrel"
 ATT.CompactName = "350mm"
-ATT.Description = [[A long-range FAMAS sniper barrel. Improves weapon performance.]]
+ATT.Description = [[Long-range FAMAS sniper barrel. Improves weapon performance.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_famas_barrel_long.png", "mips smooth")
@@ -31,7 +31,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "405mm Raider Barrel"
 ATT.CompactName = "405mm"
-ATT.Description = [[A short-length FAMAS barrel for special forces. Offers superior handling at the cost of performance.]]
+ATT.Description = [[Short-length FAMAS barrel for special forces. Offers superior handling at the cost of performance.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_famas_barrel_short.png", "mips smooth")
@@ -78,7 +78,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[60 Mag]]
 ATT.CompactName = [[60 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[Increases capacity with a heavy mag of 60 round magazine, at the cost of less handling and reload speed.]]
+ATT.Description = [[Increases capacity with a heavy mag of 60 round magazine, at the cost of increased reload speed and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

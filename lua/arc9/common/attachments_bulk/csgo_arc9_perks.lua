@@ -140,7 +140,7 @@ ARC9.LoadAttachment(ATT, "csgo_perk_burst")
 ATT = {}
 
 ATT.PrintName = [[Gung Ho]]
-ATT.Description = [[A special technique allows for shooting while sprinting.]]
+ATT.Description = [[Special technique allows for shooting while sprinting.]]
 ATT.Icon = Material("entities/attachs/go_perk_cowboy.png", "mips smooth")
 ATT.AutoStats = true
 ATT.MenuCategory = "ARC9 - CSGO Attachments"

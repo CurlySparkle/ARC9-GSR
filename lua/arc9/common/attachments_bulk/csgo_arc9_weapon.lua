@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Short Barrel"
 ATT.CompactName = "SB"
-ATT.Description = [[A shorter barrel for more close combat use. Improves handling, though offers much worse recoil.]]
+ATT.Description = [[Shorter barrel for more close combat use. Improves handling, though offers much worse recoil.]]
 
 ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -34,7 +34,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "R6"
 ATT.CompactName = "R"
-ATT.Description = [[A 6-round cylinder and slim barrel, increases trigger response.]]
+ATT.Description = [[6-round cylinder and slim barrel, increases trigger response.]]
 
 // ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -57,7 +57,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Kurz Configuration"
 ATT.CompactName = "Kurz"
-ATT.Description = [[A shortened handguard.]]
+ATT.Description = [[Shortened handguard.]]
 
 // ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
 
@@ -80,7 +80,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = "Folding"
-ATT.Description = [[A PDW stock.]]
+ATT.Description = [[PDW stock.]]
 
 ATT.Icon = Material("entities/attachs/go_mp5_stock_folding.png", "mips smooth")
 
@@ -100,7 +100,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 -- note: 10mm or 45acp instead?
 ATT.PrintName = "Short Magazine" 
 ATT.CompactName = "20R"
-ATT.Description = [[Decreases capacity to 20 round, with the benefit of decreased reload speed and better handling.]]
+ATT.Description = [[Decreases capacity to 20 rounds, with the benefit of decreased reload speed and better handling.]]
 
 ATT.Icon = Material("entities/attachs/go_mp5_mag_15.png", "mips smooth")
 

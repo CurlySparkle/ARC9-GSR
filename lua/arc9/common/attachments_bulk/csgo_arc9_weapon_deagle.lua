@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Deagle Suppressor]]
 ATT.CompactName = [[DE Supp]]
-ATT.Description = [[A suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
+ATT.Description = [[Suppressor that reduces audible report by a lot with a penalty of significant bulk.]]
 ATT.Icon = Material("entities/attachs/silencer_deagle.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -37,7 +37,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Deagle Extender Slide]]
 ATT.CompactName = [[DE Slide]]
-ATT.Description = [[A muzzle brake for reducing the recoil of the weapon with the cost of less handling (Gives a better shooting handling).]]
+ATT.Description = [[Muzzle brake for reducing the recoil of the weapon with the cost of less handling (Gives a better shooting handling).]]
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -76,7 +76,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Deagle Extender Slide 2]]
 ATT.CompactName = [[DE Slide 2]]
-ATT.Description = [[A muzzle brake for reducing even more recoil of the weapon with the cost of even less handling (Gives a better shooting handling).]]
+ATT.Description = [[Muzzle brake for reducing even more recoil of the weapon with the cost of even less handling (Gives a better shooting handling).]]
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -115,7 +115,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Deagle Long Barrel"
 ATT.CompactName = "DE Long Barrel"
-ATT.Description = [[A long-barrel attachment. Good for long range engagements.]]
+ATT.Description = [[Long-barrel attachment. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_deagle_slide_long.png", "mips smooth")
@@ -141,7 +141,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Extended Magazine]]
 ATT.CompactName = [[Ext Mag]]
 ATT.Icon = Material("entities/attachs/ext_mag.png")
-ATT.Description = [[Extended capacity by 50%, at the cost of increased reload time.]]
+ATT.Description = [[Extends the mag capacity by 50%, at the cost of increased reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5

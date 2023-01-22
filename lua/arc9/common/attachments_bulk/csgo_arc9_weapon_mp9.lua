@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "350mm Barrel"
 ATT.CompactName = "350mm"
-ATT.Description = [[An extended barrel, good for long range engagements.]]
+ATT.Description = [[Extended barrel, good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_mp9_barrel_long.png", "mips smooth")
@@ -31,7 +31,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "210mm Plus Barrel"
 ATT.CompactName = "210mm"
-ATT.Description = [[A short-length barrel for the MP9.]]
+ATT.Description = [[Short-length barrel for the MP9.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_mp9_barrel_short.png", "mips smooth")
@@ -58,7 +58,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20 Mag]]
 ATT.CompactName = [[20 Mag]]
 ATT.Icon = Material("entities/attachs/go_mp9_mag_15.png")
-ATT.Description = [[Decreases capacity by 30%, with the benefit of decreased reload time and less handling.]]
+ATT.Description = [[Decreases the mag capacity by 30%, with the benefit of decreased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

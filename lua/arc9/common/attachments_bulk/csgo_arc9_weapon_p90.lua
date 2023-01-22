@@ -127,7 +127,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Extended Barrel"
 ATT.CompactName = "Ext Barrel"
-ATT.Description = [[An extended barrel for longer and better purposes. Adds support for grips.]]
+ATT.Description = [[Extended barrel for longer and better purposes. Adds support for grips.]]
 
 ATT.Icon = Material("entities/attachs/p90_extended_barrel.png", "mips smooth")
 
@@ -159,7 +159,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "410mm PS90 Barrel"
 ATT.CompactName = "410mm PS90"
-ATT.Description = [[A medium-length barrel used on the PS90 carbine.]]
+ATT.Description = [[Medium-length barrel used on the PS90 carbine.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_p90_barrel_med.png", "mips smooth")
@@ -186,7 +186,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_p90_mag_30.png")
-ATT.Description = [[Decreases the capacity to 30 rounds, with the benefit of decreased reload time and more handling.]]
+ATT.Description = [[Decreases the mag capacity to 30 rounds, with the benefit of decreased reload time and more handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2

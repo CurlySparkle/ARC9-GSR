@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm A4 Barrel"
 ATT.CompactName = "510mm A4"
-ATT.Description = [[A long M16A4 barrel with RIS handguard. Good for long range engagements.]]
+ATT.Description = [[Long M16A4 barrel with RIS handguard. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
@@ -31,7 +31,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "M16 Receiver"
 ATT.CompactName = "M16 Receiver"
-ATT.Description = [[A default M16 receiver for the M4A1-S.]]
+ATT.Description = [[Default M16 receiver for the M4A1-S.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_m4_reciever_default.png", "mips smooth")
