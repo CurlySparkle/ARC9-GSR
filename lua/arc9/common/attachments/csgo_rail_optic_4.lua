@@ -1,7 +1,7 @@
 ATT.PrintName = [[Custom Optic Riser]]
 ATT.CompactName = [[Top Riser]]
 ATT.Icon = Material("entities/attachs/rail_sight_2.png")
-ATT.Description = [[A standard rail system that allows attachment of optics, designed for firearms with top covers.]]
+ATT.Description = [[Standard rail system that allows attachment of optics, designed for firearms with top covers.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false

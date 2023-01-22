@@ -1,7 +1,7 @@
 ATT.PrintName = [[Custom Optic Riser AK]]
 ATT.CompactName = [[Top Riser Alt]]
 ATT.Icon = Material("entities/attachs/rail_mount_ak.png")
-ATT.Description = [[A standard rail system that allows attachment of optics designed for AKs.]]
+ATT.Description = [[Standard rail system that allows attachment of optics designed for AKs.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false

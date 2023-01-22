@@ -1,7 +1,7 @@
 ATT.PrintName = "Trijicon ACOG TA31 (4x)"
 ATT.CompactName = [[ACOG 1]]
 ATT.Icon = Material("entities/attachs/go_optic_acog.png", "mips smooth")
-ATT.Description = [[A medium-range combat scope. Provides an improved precision at longer ranges.]]
+ATT.Description = [[Medium-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 4x Zoom",
     "+ Clearer sight picture"

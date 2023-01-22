@@ -1,7 +1,7 @@
 ATT.PrintName = "M110 Scope"
 ATT.CompactName = [[M110]]
 ATT.Icon = Material("entities/attachs/scope_M110.png", "mips smooth")
-ATT.Description = [[A long-range combat scope. Provides an improved precision at longer ranges.]]
+ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",
     "+ Clearer sight picture",

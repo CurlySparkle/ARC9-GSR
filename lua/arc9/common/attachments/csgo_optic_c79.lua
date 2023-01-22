@@ -1,7 +1,7 @@
 ATT.PrintName = "C79 Scope"
 ATT.CompactName = [[C79]]
 ATT.Icon = Material("entities/attachs/c79.png", "mips smooth")
-ATT.Description = [[A 4x magnification scope for medium-range engagements.]]
+ATT.Description = [[4x magnification scope for medium-range engagements.]]
 ATT.Pros = {
     "+ 4x Zoom",
     "+ Clearer sight picture"

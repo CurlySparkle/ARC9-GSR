@@ -1,7 +1,7 @@
 ATT.PrintName = "Kobra + Magnifier"
 ATT.CompactName = [[2x Kobra]]
 ATT.Icon = Material("entities/attachs/2x_Kobra.png", "mips smooth")
-ATT.Description = [[A typical holographic sight which uses a holographic reticle for faster sight acquisition. Bundled with a 3x Magnifier.]]
+ATT.Description = [[Typical holographic sight which uses a holographic reticle for faster sight acquisition. Bundled with a 3x Magnifier.]]
 ATT.Pros = {
     "+ Clearer sight picture",
 	"+ 2x Zoom"

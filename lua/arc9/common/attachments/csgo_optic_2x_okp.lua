@@ -1,7 +1,7 @@
 ATT.PrintName = "OKP + Magnifier"
 ATT.CompactName = [[2x OKP]]
 ATT.Icon = Material("entities/attachs/2x_okp.png", "mips smooth")
-ATT.Description = [[A typical OKP sight which uses a reticle for faster sight acquisition. Bundled with a 2x Magnifier.]]
+ATT.Description = [[Typical OKP sight which uses a reticle for faster sight acquisition. Bundled with a 2x Magnifier.]]
 ATT.Pros = {
     "+ Clearer sight picture",
 	"+ 2x Zoom"

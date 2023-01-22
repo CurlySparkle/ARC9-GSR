@@ -1,7 +1,7 @@
 ATT.PrintName = [[Custom Tactical Rail]]
 ATT.CompactName = [[Side Riser]]
 ATT.Icon = Material("entities/attachs/rail_foregrips.png")
-ATT.Description = [[A standard rail system that allows attachment of tactical utilities such as flashlight or laser sights.]]
+ATT.Description = [[Standard rail system that allows attachment of tactical utilities such as flashlight or laser sights.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false

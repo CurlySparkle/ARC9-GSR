@@ -1,7 +1,7 @@
 ATT.PrintName = "Kobra EKP-8-18"
 ATT.CompactName = [[Kobra]]
 ATT.Icon = Material("entities/attachs/kobra.png", "mips smooth")
-ATT.Description = [[An open multipurpose red dot sight.]]
+ATT.Description = [[Open multipurpose red dot sight.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

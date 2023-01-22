@@ -1,6 +1,6 @@
 ATT.PrintName = "GenRas Laser"
 ATT.CompactName = "GenRas L"
-ATT.Description = [[A medium-power laser pointer. Improves hip fire and sight time.]]
+ATT.Description = [[Medium-power laser pointer. Improves hip fire and sight time.]]
 
 ATT.Icon = Material("entities/attachs/GENLaserRAS.png", "mips smooth")
 

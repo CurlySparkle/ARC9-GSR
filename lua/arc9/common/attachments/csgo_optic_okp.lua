@@ -1,7 +1,7 @@
 ATT.PrintName = "OKP-7"
 ATT.CompactName = [[OKP-7]]
 ATT.Icon = Material("entities/attachs/okp.png", "mips smooth")
-ATT.Description = [[A reflex sight that provides an effective aiming reticle.]]
+ATT.Description = [[Reflex sight that provides an effective aiming reticle.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }

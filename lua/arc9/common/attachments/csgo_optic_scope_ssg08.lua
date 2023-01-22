@@ -1,7 +1,7 @@
 ATT.PrintName = "Scope 8x"
 ATT.CompactName = [[SCOPE SSG08]]
 ATT.Icon = Material("entities/attachs/go_optic_hunter.png", "mips smooth")
-ATT.Description = [[A long-range combat scope. Provides an improved precision at longer ranges.]]
+ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",
     "+ Clearer sight picture"

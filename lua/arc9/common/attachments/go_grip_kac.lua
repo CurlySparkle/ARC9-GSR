@@ -1,6 +1,6 @@
 ATT.PrintName = "KAC Foregrip"
 ATT.CompactName = "KAC"
-ATT.Description = [[A rail-mounted foregrip from KAC. Provides a stable, vertical surface to grip onto. 
+ATT.Description = [[Rail-mounted foregrip from KAC. Provides a stable, vertical surface to grip onto. 
 Also, improving recoil control and reducing recoil drift.]]
 
 ATT.Icon = Material("entities/attachs/grip_kac.png", "mips smooth")

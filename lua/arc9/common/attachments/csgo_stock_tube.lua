@@ -1,7 +1,7 @@
 ATT.PrintName = [[Buffer Tube]]
 ATT.CompactName = [[Buffer Tube]]
 ATT.Icon = Material("entities/attachs/go_stock_none.png")
-ATT.Description = [[An aluminium mounting point, allows for using custom stock options.]]
+ATT.Description = [[Aluminium mounting point, allows for using custom stock options.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false

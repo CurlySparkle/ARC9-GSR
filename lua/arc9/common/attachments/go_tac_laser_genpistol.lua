@@ -1,6 +1,6 @@
 ATT.PrintName = "Gen Laser Sight"
 ATT.CompactName = "GEN"
-ATT.Description = [[A medium-power laser pointer. Improves hip-fire accuracy and gives a better sight view.]]
+ATT.Description = [[Medium-power laser pointer. Improves hip-fire accuracy and gives a better sight view.]]
 
 ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
 
