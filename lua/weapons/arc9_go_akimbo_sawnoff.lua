@@ -91,7 +91,7 @@ SWEP.Firemodes = {
     {
         Mode = 1,
         PrintName = "BOTH",
-        RPMMult = 50 / 80,
+        RPMMult = 60 / 80,
         AkimboBoth = true,
         RecoilMult = 2,
         AmmoPerShot = 2,
