@@ -282,6 +282,7 @@ ATT.SprintToFireTimeAdd = 0.1
 ATT.AimDownSightsTimeAdd = 0.1
 
 ATT.ActivateElements = {"mag2"}
+ATT.RequireElements = {"barrel_ext"}
 
 ARC9.LoadAttachment(ATT, "csgo_sawedoff_mag_6")
 
@@ -309,6 +310,7 @@ ATT.SprintToFireTimeAdd = 0.15
 ATT.AimDownSightsTimeAdd = 0.15
 
 ATT.ActivateElements = {"mag3"}
+ATT.RequireElements = {"barrel_ext"}
 
 ARC9.LoadAttachment(ATT, "csgo_sawedoff_mag_7")
 
@@ -329,7 +331,7 @@ ATT.Free = false
 
 ATT.Category = {"go_sawedoff_barrel"}
 
-ATT.RangeMaxMult = 2
+ATT.RangeMaxAdd = 1500
 ATT.SpreadAdd = -0.009
 ATT.RecoilMult = 0.85
 

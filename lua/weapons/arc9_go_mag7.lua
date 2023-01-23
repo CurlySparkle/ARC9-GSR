@@ -45,7 +45,7 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 50 -- Damage done at point blank range
+SWEP.DamageMax = 40 -- Damage done at point blank range
 SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.Num = 6
@@ -94,10 +94,10 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 2
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 2.5 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 3 -- Multiplier for vertical recoil
 
@@ -106,8 +106,8 @@ SWEP.RecoilSide = 3 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.75
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 3.5 -- Multiplier for automatic recoil control.
 

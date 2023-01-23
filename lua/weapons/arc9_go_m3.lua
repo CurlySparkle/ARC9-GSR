@@ -44,15 +44,15 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 14 -- Damage done at point blank range
+SWEP.DamageMax = 16 -- Damage done at point blank range
 SWEP.DamageMin = 5 -- Damage done at maximum range
 
 SWEP.Num = 10
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 3000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 700 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
@@ -93,7 +93,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 2
 
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
@@ -107,8 +107,8 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
 

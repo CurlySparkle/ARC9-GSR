@@ -45,15 +45,15 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 36 -- Damage done at point blank range
-SWEP.DamageMin = 6 -- Damage done at maximum range
+SWEP.DamageMax = 32 -- Damage done at point blank range
+SWEP.DamageMin = 8 -- Damage done at maximum range
 
 SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 1700 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 4200 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
@@ -94,7 +94,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 2.25
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
@@ -138,7 +138,7 @@ SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.035
 SWEP.SpreadMultHipFire = 1.2
-SWEP.SpreadMultSights = 2
+SWEP.SpreadMultSights = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
 
@@ -267,11 +267,11 @@ SWEP.Animations = {
     },
     -- ["fire_sights"] = {
         -- Source = {"shoot1_ads"},
-		-- Mult = 1.2,
+        -- Mult = 1.2,
     -- },
     ["cycle"] = {
         Source = {"pump"},
-		Mult = 0.7,
+        Mult = 0.7,
         EventTable = {
             {s = path .. "sawedoff_pump.wav", t = 3 / 30},
         },
@@ -523,7 +523,9 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Bone = "v_weapon.sawedoff_parent",
         Category = "go_sawedoff_barrel",
-        Icon_Offset = Vector(0, -2, 12),
+        Pos = Vector(0, -1.5, 12),
+        Ang = Angle(90, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = "Muzzle",
@@ -554,6 +556,7 @@ SWEP.Attachments = {
         PrintName = "Tube",
         Bone = "v_weapon.sawedoff_parent",
         Category = "go_sawedoff_mag",
+        Pos = Vector(0, 0, 0),
         Icon_Offset = Vector(0, -0.8, 22),
     },
     {
@@ -583,7 +586,7 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_sawnoff",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Cosmetic",
@@ -623,7 +626,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, -10),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }
 

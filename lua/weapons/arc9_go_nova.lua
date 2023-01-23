@@ -42,15 +42,15 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 15 -- Damage done at point blank range
-SWEP.DamageMin = 5 -- Damage done at maximum range
+SWEP.DamageMax = 18 -- Damage done at point blank range
+SWEP.DamageMin = 6 -- Damage done at maximum range
 
 SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 2950 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 3500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
@@ -91,7 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 5
+SWEP.Recoil = 2
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 2 -- Multiplier for vertical recoil

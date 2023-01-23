@@ -261,9 +261,7 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.NumMult = 2.5
 ATT.SpreadMult = 1.5
-
-ATT.DamageMaxMult = 1 / 2.5
-ATT.DamageMinMult = 1 / 2.5
+ATT.NormalizeNumDamage = true
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird")
 
@@ -282,14 +280,12 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.SpreadMult = 0.15
 ATT.SpreadMultHipFire = 0.75
-ATT.RangeMaxMult = 2
+ATT.RangeMaxMult = 1.5
 
 ATT.RicochetChanceOverride = 1
 
-ATT.DamageMaxOverride = 110
-ATT.DamageMinOverride = 40
-
 ATT.NumOverride = 1
+ATT.NormalizeNumDamage = true
 
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug")
@@ -312,10 +308,11 @@ ATT.SpreadMult = 0.35
 
 ATT.RicochetChanceOverride = 2
 
-ATT.DamageMaxOverride = 37
-ATT.DamageMinOverride = 15
+ATT.DamageMaxMult = 0.85
+ATT.DamageMinMult = 1.25
 
 ATT.NumOverride = 3
+ATT.NormalizeNumDamage = true
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple")
 
@@ -334,9 +331,13 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.SpreadMult = 0.25
 
-ATT.NumMult = 1.5
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 0.75
+
+ATT.Num = 12
+ATT.NormalizeNumDamage = true
+
 ATT.PenetrationOverride = 12
-ATT.DamageMaxMult = 1 / 1.5 * 0.85
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
 
@@ -383,19 +384,19 @@ ATT.PrintName = "10mm Rebounder Rounds"
 ATT.CompactName = "RBD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
 ATT.Description = [[Load containing specialized pellets with a high chance to ricochet.
-The pellet will bounce at any angle, and triples in damage as it ricochets.
+The pellet will bounce at any angle, and increases damage dramatically as it ricochets.
 However, it does minimal damage on direct impact.]]
 ATT.SortOrder = 8
 
 ATT.Category = {"go_ammo_sg"}
 
-ATT.DamageMinOverride = 10
-ATT.DamageMaxOverride = 10
+ATT.DamageMinOverride = 12
+ATT.DamageMaxOverride = 12
 ATT.NumOverride = 6
 
 ATT.RicochetChanceOverride = 2
 ATT.RicochetAngleMaxOverride = 180
-ATT.PenetrationDelta = 3
+ATT.PenetrationDelta = 4
 ATT.RicochetSeeking = true
 ATT.RicochetSeekingRange = 1024
 ATT.RicochetSeekingAngle = 45
@@ -437,13 +438,12 @@ ATT.ImpactDecal = "FadingScorch"
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
-
-
-
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")
 
 
 --- UBGL/Shotgun ---
-ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
 ATT = {}
 
 ATT.MenuCategory = "ARC9 - CSGO Attachments"

@@ -24,7 +24,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you'd better kill what you hit.]]
+SWEP.Description = [[If one shotgun isn't enough for the job, simply bring another. Fire two weapons alternatingly for faster follow up shots, or both at the same time to maximize lethality.
+Just take care not to be overwhelmed by its punishing recoil.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_sawnoff.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_akimbo_sawnoff.mdl"
@@ -46,17 +47,17 @@ SWEP.WorldModelOffset = {
 }
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 36 -- Damage done at point blank range
-SWEP.DamageMin = 6 -- Damage done at maximum range
+SWEP.DamageMax = 32 -- Damage done at point blank range
+SWEP.DamageMin = 8 -- Damage done at maximum range
 
 SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 750 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 1750 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 5 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 8
 
@@ -101,13 +102,13 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 2.5
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 3 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -116,9 +117,9 @@ SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilDissipationRateSights = 50
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
@@ -138,16 +139,15 @@ SWEP.Akimbo = true
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.05
+SWEP.Spread = 0.04
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.025
-SWEP.SpreadMultHipFire = 1
-SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadMultHipFire = 1.2
+SWEP.SpreadMultSights = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
 
