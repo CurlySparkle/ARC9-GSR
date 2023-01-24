@@ -300,6 +300,9 @@ SWEP.Animations = {
     ["fire_right"] = {
         Source = "shoot1_right",
     },
+    ["fire_both"] = {
+        Source = "shoot1_both",
+    },
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.8,
