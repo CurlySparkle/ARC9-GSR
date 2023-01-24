@@ -884,14 +884,14 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AWP.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 115,
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/awp/awp_01.ogg",
-		"weapons/csgo/awp/awp_02.ogg",
+        "#weapons/csgo/awp/awp_01.ogg",
+		"#weapons/csgo/awp/awp_02.ogg",
     }
 } )
 
@@ -908,13 +908,13 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 100,
-    pitch = {97,103},
+    pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/ssg08/ssg08-1.ogg",
+        "weapons/csgo/scout/scout_fire_1.ogg",
     }
 } )
 
@@ -932,11 +932,11 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.Scout.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.8,
     level = 125,
-    pitch = {97,103},
+    pitch = {92,95},
     sound = {
-        "weapons/csgo/ssg08/ssg08-1-distant.ogg",
+        "^weapons/csgo/scout/scout_fire_dist-1.ogg",
     }
 } )
 
@@ -1034,7 +1034,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Fire_Beef",
-    channel = CHAN_AUTO,
+    channel = CHAN_USERBASE,
     volume = 0.6,
     level = 80,
     pitch = {95,110},
@@ -1048,7 +1048,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Fire_Beef_ADS",
-    channel = CHAN_AUTO,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 80,
     pitch = {95,110},

@@ -243,7 +243,8 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 SWEP.EnterSightsSound = "weapons/csgo/aug/aug_zoom_in.wav"
 SWEP.ExitSightsSound = "weapons/csgo/aug/aug_zoom_out.wav"
 
-local path = "weapons/csgo/ssg08/"
+local path = "weapons/csgo/scout/"
+local path2 = "weapons/csgo/scout/"
 
 SWEP.HideBones = {
 }
@@ -256,9 +257,17 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
+        EventTable = {
+            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto},
+            {s = path .. "scout_fire_sub-1.ogg", t = 0 / 30},
+        },
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
+        EventTable = {
+            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto},
+            {s = path .. "scout_fire_sub-1.ogg", t = 0 / 30},
+        },
     },
     ["cycle"] = {
         Source = {"bolt"},
@@ -285,8 +294,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 8 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 18 / 30},
+            {s = path .. "scout_boltback.ogg", t = 8 / 30},
+            {s = path .. "scout_boltforward.ogg", t = 18 / 30},
         },
     },
     ["reload"] = {
@@ -313,10 +322,15 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
+        -- EventTable = {
+            -- {s = path .. "scout_clipout.ogg", t = 7 / 30},
+            -- {s = path .. "scout_clipin.ogg", t = 40 / 30},
+            -- {s = path .. "scout_cliphit.ogg", t = 60 / 30},
+        -- },
         EventTable = {
-            {s = path .. "ssg08_clipout.wav", t = 7 / 30},
-            {s = path .. "ssg08_clipin.wav", t = 40 / 30},
-            {s = path .. "ssg08_cliphit.wav", t = 60 / 30},
+            {s = path .. "scout_clipout.ogg", t = 7 / 30},
+            {s = path .. "scout_clipin.ogg", t = 40 / 30},
+            {s = path .. "scout_cliphit.ogg", t = 48 / 30},
         },
     },
     ["reload_empty"] = {
@@ -349,11 +363,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_clipout.wav", t = 7 / 30},
-            {s = path .. "ssg08_clipin.wav", t = 40 / 30},
-            {s = path .. "ssg08_cliphit.wav", t = 60 / 30},
-            {s = path .. "ssg08_boltback.wav", t = 77 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 89 / 30},
+            {s = path .. "scout_clipout.ogg", t = 7 / 30},
+            {s = path .. "scout_clipin.ogg", t = 40 / 30},
+            {s = path .. "scout_cliphit.ogg", t = 60 / 30},
+            {s = path .. "scout_boltback.ogg", t = 77 / 30},
+            {s = path .. "scout_boltforward_cock.ogg", t = 89 / 30, v = 0.6},
         },
     },
 	["reload_empty_long"] = {
@@ -391,11 +405,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 7 / 30},		
-            {s = path .. "ssg08_clipout.wav", t = 25 / 30},
-            {s = path .. "ssg08_clipin.wav", t = 59 / 30},
-            {s = path .. "ssg08_cliphit.wav", t = 79 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 95 / 30},
+            {s = path .. "scout_boltback.ogg", t = 7 / 30},	
+            {s = path .. "scout_clipin.ogg", t = 40 / 30},
+            {s = path .. "scout_cliphit.ogg", t = 60 / 30},
+            {s = path .. "scout_cliphit.ogg", t = 79 / 30},
+            {s = path .. "scout_boltforward.ogg", t = 95 / 30},
         },
     },
     ["ready"] = {
@@ -423,9 +437,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "ssg08_draw.wav", t = 0 / 30},
-            {s = path .. "ssg08_boltback.wav", t = 7 / 30},
-            {s = path .. "ssg08_boltforward.wav", t = 14 / 30},
+            {s = path .. "scout_draw.ogg", t = 0 / 30},
+            {s = path .. "scout_boltback.ogg", t = 7 / 30},
+            {s = path .. "scout_boltforward.ogg", t = 14 / 30},
         },
     },
     ["draw"] = {
