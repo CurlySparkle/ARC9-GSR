@@ -8,6 +8,7 @@ ATT.Icon = Material("entities/attachs/stock_retract.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "stock_retract"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.ActivateElements = {"stock_retract"}
 
 ATT.SprintToFireTimeMult = 0.90

@@ -2,9 +2,10 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "226mm Commando Barrel"
 ATT.CompactName = "CMDO"
-ATT.Description = [[A compact handguard configuration from the SG 552 Commando.
+ATT.Description = [[Compact handguard configuration from the SG 552 Commando.
 Good for close range engagements.]]
 ATT.SortOrder = 226
 
@@ -56,9 +57,10 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "300mm Prototype Barrel"
 ATT.CompactName = "PROTO"
-ATT.Description = [[A lightweight preproduction model from the SG 541 Prototype.
+ATT.Description = [[Lightweight preproduction model from the SG 541 Prototype.
 Increases fire rate and agility.]]
 ATT.SortOrder = 300
 
@@ -109,9 +111,10 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_proto")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = "FOLD"
-ATT.Description = [[A lightweight stock used on the SG 552 Commando.
+ATT.Description = [[Lightweight stock used on the SG 552 Commando.
 Improves agility, but recoil is less stable.]]
 
 ATT.Icon = Material("entities/attachs/go_sg556_stock_folding.png", "mips smooth")
@@ -131,9 +134,10 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_stock_folding")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Prototype Stock"
 ATT.CompactName = "PROTO"
-ATT.Description = [[A solid stock used on the SG 541 prototype.
+ATT.Description = [[Solid stock used on the SG 541 prototype.
 Provides better recoil control.]]
 
 ATT.Icon = Material("entities/attachs/go_sg556_stock_proto.png", "mips smooth")
@@ -152,9 +156,10 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_stock_proto")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "7.62 Magazine"
 ATT.CompactName = "AK"
-ATT.Description = [[A 7.62 conversion with 30 round magazine.]]
+ATT.Description = [[7.62 conversion with 30 round magazine.]]
 
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
 
@@ -182,6 +187,7 @@ ARC9.LoadAttachment(ATT, "csgo_sg556_mag_ak")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

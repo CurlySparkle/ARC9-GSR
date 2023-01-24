@@ -1,14 +1,14 @@
 ATT.PrintName = "CompM4 + Magnifier"
 ATT.CompactName = [[2x CompM4]]
 ATT.Icon = Material("entities/attachs/2x_aimpoint.png", "mips smooth")
-ATT.Description = [[Typical holographic sight which uses a holographic reticle for faster sight acquisition. Coupled with a 3x Magnifier.]]
+ATT.Description = [[Typical holographic sight which uses a holographic reticle for faster sight acquisition. Bundled with a 3x Magnifier.]]
 ATT.Pros = {
     "+ Clearer sight picture",
 	"+ 2x Zoom"
 }
 ATT.Cons = {}
 ATT.SortOrder = 2
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "2X Optics"
 

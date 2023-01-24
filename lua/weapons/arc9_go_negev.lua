@@ -127,7 +127,7 @@ SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = -0.1
 
 -------------------------- HANDLING
 
@@ -139,7 +139,7 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SpeedMultSights = 0.5
+SWEP.SpeedMultSights = 0.1
 SWEP.SpeedMultShooting = 0.5
 
 -------------------------- MELEE
@@ -224,8 +224,9 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -706,6 +707,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "View",
         Category = "go_negev_view"
     },
@@ -735,6 +741,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.negev_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(1, -4, 2), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

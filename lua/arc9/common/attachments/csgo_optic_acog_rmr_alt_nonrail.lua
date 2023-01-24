@@ -1,14 +1,14 @@
 ATT.PrintName = "Trijicon RMR (NR 2)"
 ATT.CompactName = [[T RMR (NR 2)]]
 ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
-ATT.Description = [[Alternative version of Trijicon RMR sight from Insurgency: Sandstorm, provides an effective aiming dot.
+ATT.Description = [[Alternative version of Trijicon RMR sight from Insurgency: Sandstorm.
 Designed only for sidearms, mounted on a low-profile rail.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SIGHTS"
 
@@ -32,6 +32,6 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
 ATT.HoloSightSize = 1024
 ATT.HoloSightColorable = true

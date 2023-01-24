@@ -5,12 +5,12 @@ ATT = {}
 
 ATT.PrintName = "Armor Piercing Rounds"
 ATT.CompactName = "AP"
-ATT.Description = [[Bullets made of hard material designed to pierce armor.
+ATT.Description = [[Ammunition made of hard material designed to pierce armor.
 High penetrating capabilities, but wounding potential is reduced.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_tmj.png", "mips smooth")
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
@@ -34,12 +34,12 @@ ATT = {}
 
 ATT.PrintName = "High Ricochet Rounds"
 ATT.CompactName = "HR"
-ATT.Description = [[Bullets made of soft material designed to ricochet of surfaces.
+ATT.Description = [[Ammunition made of soft material designed to ricochet of surfaces.
 High ricochet capabilities, but less damage output.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_ricochet.png", "mips smooth")
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
@@ -57,12 +57,12 @@ ATT = {}
 
 ATT.PrintName = "High Ricochet Seekers"
 ATT.CompactName = "HRS"
-ATT.Description = [[Bullets made of soft material and special tech designed to ricochet from surfaces to its targets.
+ATT.Description = [[Ammunition made of soft material and special tech designed to ricochet from surfaces to its targets.
 High ricochet capabilities with a seeking capability, but even less damage output.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ammo_ricochetseeker.png", "mips smooth")
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.AutoStats = true
 
 ATT.Free = true
@@ -84,10 +84,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_hr_seeker")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Hollow Point Rounds"
 ATT.CompactName = "HP"
 ATT.Icon = Material("entities/attachs/go_ammo_jhp.png", "mips smooth")
-ATT.Description = [[Bullets with a hollow tip that expands when hitting its target, incapacitating them more easily.
+ATT.Description = [[Ammunition with a hollow tip that expands when hitting its target, incapacitating them more easily.
 Widely used in police and civilian markets due to its inability to penetrate and ricochet.]]
 ATT.SortOrder = 0
 
@@ -108,10 +109,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_fra")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "EXtreme ACcuracy Tasked Ordnance Rounds"
 ATT.CompactName = "EXA"
 ATT.Icon = Material("entities/attachs/go_ammo_match.png", "mips smooth")
-ATT.Description = [[Guided bullets that follow the shooter's aim. Ensures extreme precision against moving targets at long range.]]
+ATT.Description = [[Guided ammunition that follow the shooter's aim. Ensures extreme precision against moving targets at long range.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
@@ -129,10 +131,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_exacto")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Low Profile Rounds"
 ATT.CompactName = "LP"
 ATT.Icon = Material("entities/attachs/go_ammo_sub.png", "mips smooth")
-ATT.Description = [[Reduced powder load rounds made for easier weapon handling.
+ATT.Description = [[Ammunition that reduced powder load rounds made for easier weapon handling.
 Recoil and firing report is reduced at the cost of ballistics.]]
 ATT.SortOrder = 0
 
@@ -155,10 +158,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_subsonic")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Weapon Color Tracer"
 ATT.CompactName = "TR-WCLR"
 ATT.Icon = Material("entities/attachs/go_ammo_color.png", "mips smooth")
-ATT.Description = [[Tracer rounds. Loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?).]]
+ATT.Description = [[Ammunition loaded with colors matching the user's weapon (physgun) color (Pretty cool, right?).]]
 ATT.SortOrder = 0
 
 ATT.Category = {"go_ammo"}
@@ -185,10 +189,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_tracer_col")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "High Explosive"
 ATT.CompactName = "HE"
 ATT.Icon = Material("entities/attachs/go_ammo_tr.png", "mips smooth")
-ATT.Description = [[Explosive rounds sacrifice direct damage in favor of dealing damage in a radius around the impact point.
+ATT.Description = [[Explosive ammunition that sacrifice direct damage in favor of dealing damage in a radius around the impact point.
 The effect is spectacular, but little explosive filler can be put inside most bullets.]]
 ATT.SortOrder = 0
 
@@ -217,10 +222,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_he")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "8.5mm Magnum Buckshot"
 ATT.CompactName = "MAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
-ATT.Description = [[A high-power buckshot load with fewer larger lead pellets.
+ATT.Description = [[High-power buckshot load with fewer larger lead pellets.
 Provides better close range power, but range and precision is worse.]]
 ATT.SortOrder = 6
 
@@ -243,10 +249,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "3.5mm Birdshot"
 ATT.CompactName = "BIRD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_scatter.png", "mips smooth")
-ATT.Description = [[A reduced diameter load containing more pellets.
+ATT.Description = [[Reduced diameter load containing more pellets.
 Spread is increased, making hitting targets more likely.]]
 ATT.SortOrder = 20
 
@@ -254,19 +261,18 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.NumMult = 2.5
 ATT.SpreadMult = 1.5
-
-ATT.DamageMaxMult = 1 / 2.5
-ATT.DamageMinMult = 1 / 2.5
+ATT.NormalizeNumDamage = true
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird")
 
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Full-bore Slug"
 ATT.CompactName = "SLUG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
-ATT.Description = [[A single large projectile loaded in the shotshell.
+ATT.Description = [[Single large projectile loaded in the shotshell.
 The aerodynamic pellet has much higher effective range.]]
 ATT.SortOrder = 1
 
@@ -274,14 +280,12 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.SpreadMult = 0.15
 ATT.SpreadMultHipFire = 0.75
-ATT.RangeMaxMult = 2
+ATT.RangeMaxMult = 1.5
 
 ATT.RicochetChanceOverride = 1
 
-ATT.DamageMaxOverride = 110
-ATT.DamageMinOverride = 40
-
 ATT.NumOverride = 1
+ATT.NormalizeNumDamage = true
 
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug")
@@ -289,10 +293,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Triple Hit Slugs"
 ATT.CompactName = "TRI"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_triple.png", "mips smooth")
-ATT.Description = [[A load containing 3 short, slug-sized pellets.
+ATT.Description = [[Load containing 3 short, slug-sized pellets.
 The slugs provide increased range and precision, but not as much as a full slug.]]
 ATT.SortOrder = 3
 
@@ -303,20 +308,22 @@ ATT.SpreadMult = 0.35
 
 ATT.RicochetChanceOverride = 2
 
-ATT.DamageMaxOverride = 37
-ATT.DamageMinOverride = 15
+ATT.DamageMaxMult = 0.85
+ATT.DamageMinMult = 1.25
 
 ATT.NumOverride = 3
+ATT.NormalizeNumDamage = true
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple")
 
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "25mm Flechettes"
 ATT.CompactName = "FLE"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
-ATT.Description = [[A load containing thin, dart-shaped projectiles.
+ATT.Description = [[Load containing thin, dart-shaped projectiles.
 Provides a tighter spread and better range as well as much higher penetration, but much lower stopping power.]]
 ATT.SortOrder = 12
 
@@ -324,9 +331,13 @@ ATT.Category = {"go_ammo_sg"}
 
 ATT.SpreadMult = 0.25
 
-ATT.NumMult = 1.5
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 0.75
+
+ATT.Num = 12
+ATT.NormalizeNumDamage = true
+
 ATT.PenetrationOverride = 12
-ATT.DamageMaxMult = 1 / 1.5 * 0.85
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
 
@@ -335,10 +346,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
 ATT.CompactName = "FRAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he.png", "mips smooth")
-ATT.Description = [[A load containing an explosive compound, dealing damage in a small radius.
+ATT.Description = [[Load containing an explosive compound, dealing damage in a small radius.
 Effectiveness is limited by the small caliber size.]]
 ATT.SortOrder = 1.5
 
@@ -367,23 +379,24 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "10mm Rebounder Rounds"
 ATT.CompactName = "RBD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
-ATT.Description = [[A load containing specialized pellets with a high chance to ricochet.
-The pellet will bounce at any angle, and triples in damage as it ricochets.
+ATT.Description = [[Load containing specialized pellets with a high chance to ricochet.
+The pellet will bounce at any angle, and increases damage dramatically as it ricochets.
 However, it does minimal damage on direct impact.]]
 ATT.SortOrder = 8
 
 ATT.Category = {"go_ammo_sg"}
 
-ATT.DamageMinOverride = 10
-ATT.DamageMaxOverride = 10
+ATT.DamageMinOverride = 12
+ATT.DamageMaxOverride = 12
 ATT.NumOverride = 6
 
 ATT.RicochetChanceOverride = 2
 ATT.RicochetAngleMaxOverride = 180
-ATT.PenetrationDelta = 3
+ATT.PenetrationDelta = 4
 ATT.RicochetSeeking = true
 ATT.RicochetSeekingRange = 1024
 ATT.RicochetSeekingAngle = 45
@@ -396,10 +409,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_rebounder")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive X4"
 ATT.CompactName = "FRAG X4"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he_x4.png", "mips smooth")
-ATT.Description = [[A load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.
+ATT.Description = [[Load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.
 Effectiveness is limited by the small caliber size.]]
 ATT.SortOrder = 1.6
 
@@ -424,19 +438,19 @@ ATT.ImpactDecal = "FadingScorch"
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
-
-
-
+ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")
 
 
 --- UBGL/Shotgun ---
-ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_x4")-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "8.5mm Magnum Buckshot"
 ATT.CompactName = "MAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
-ATT.Description = [[A high-power buckshot load with fewer larger lead pellets.
+ATT.Description = [[High-power buckshot load with fewer larger lead pellets.
 Provides better close range power, but range and precision is worse.]]
 ATT.SortOrder = 6
 
@@ -459,10 +473,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_magnum_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "3.5mm Birdshot"
 ATT.CompactName = "BIRD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_scatter.png", "mips smooth")
-ATT.Description = [[A reduced diameter load containing more pellets.
+ATT.Description = [[Reduced diameter load containing more pellets.
 Spread is increased, making hitting targets more likely.]]
 ATT.SortOrder = 20
 
@@ -479,10 +494,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_bird_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Full-bore Slug"
 ATT.CompactName = "SLUG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_slug.png", "mips smooth")
-ATT.Description = [[A single large projectile loaded in the shotshell.
+ATT.Description = [[Single large projectile loaded in the shotshell.
 The aerodynamic pellet has much higher effective range.]]
 ATT.SortOrder = 1
 
@@ -505,10 +521,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_slug_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm Triple Hit Slugs"
 ATT.CompactName = "TRI"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_triple.png", "mips smooth")
-ATT.Description = [[A load containing 3 short, slug-sized pellets.
+ATT.Description = [[Load containing 3 short, slug-sized pellets.
 The slugs provide increased range and precision, but not as much as a full slug.]]
 ATT.SortOrder = 3
 
@@ -529,10 +546,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_triple_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "25mm Flechettes"
 ATT.CompactName = "FLE"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_flechette.png", "mips smooth")
-ATT.Description = [[A load containing thin, dart-shaped projectiles.
+ATT.Description = [[Load containing thin, dart-shaped projectiles.
 Provides a tighter spread and better range as well as much higher penetration, but much lower stopping power.]]
 ATT.SortOrder = 12
 
@@ -551,10 +569,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_flechette_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive"
 ATT.CompactName = "FRAG"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he.png", "mips smooth")
-ATT.Description = [[A load containing an explosive compound, dealing damage in a small radius.
+ATT.Description = [[Load containing an explosive compound, dealing damage in a small radius.
 Effectiveness is limited by the small caliber size.]]
 ATT.SortOrder = 1.5
 
@@ -583,10 +602,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_frag_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "10mm Rebounder Rounds"
 ATT.CompactName = "RBD"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_magnum.png", "mips smooth")
-ATT.Description = [[A load containing specialized pellets with a high chance to ricochet.
+ATT.Description = [[Load containing specialized pellets with a high chance to ricochet.
 The pellet will bounce at any angle, and triples in damage as it ricochets.
 However, it does minimal damage on direct impact.]]
 ATT.SortOrder = 8
@@ -612,10 +632,11 @@ ARC9.LoadAttachment(ATT, "csgo_ammo_sg_rebounder_ubgl")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "70mm \"FRAG-12\" High Explosive X4"
 ATT.CompactName = "FRAG X4"
 ATT.Icon = Material("entities/attachs/go_ammo_sg_he_x4.png", "mips smooth")
-ATT.Description = [[A load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.
+ATT.Description = [[Load containing 4 explosive rounds, deals an mid amount of damage with small radius blast.
 Effectiveness is limited by the small caliber size.]]
 ATT.SortOrder = 1.6
 

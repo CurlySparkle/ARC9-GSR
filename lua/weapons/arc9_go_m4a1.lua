@@ -87,7 +87,7 @@ SWEP.Firemodes = {
         MuzzleEffectQCA = 1,
         IgnoreMuzzleDevice = true,
         MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle",
-        MuzzleParticleOverride_Priority = 100,
+        MuzzleParticleOverride_Priority = 5,
         Silencer = false,
         --ActivateElements = {"unsil"},
         Hook_TranslateAnimation = function(swep, anim)
@@ -887,7 +887,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Category = "go_perk"
+        Category = "go_perk",
+		RejectAttachments = {
+		["csgo_perk_burst"] = true
+		},
     },
     {
         PrintName = "View",
@@ -920,11 +923,24 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.M4A1_s_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.6, -5, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

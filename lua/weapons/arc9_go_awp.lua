@@ -132,7 +132,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0
 
-SWEP.SpeedMultSights = 0.65
+SWEP.SpeedMultSights = 0.5
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
@@ -453,6 +453,13 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_1"] = {
+    ModelOffset = Vector(-1.5, -0.4, 0),
+	ModelAngleOffset = Angle(0, 0, 180)
+    },
+}
+
 SWEP.AttachmentElements = {
     ["mag_15"] = {
         Bodygroups = {
@@ -547,7 +554,7 @@ SWEP.Attachments = {
     {
         PrintName = "Bottom",
         DefaultAttName = "Default",
-        Category = {"csgo_rail_ub","grip_awp"},
+        Category = {"csgo_rail_ub","grip_awp","grip_xm1014"},
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, -1.3, 13.6),
         Ang = Angle(90, 0, 90),
@@ -586,6 +593,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/snip_awp_decal_b.mdl",
         Category = "stickers",
@@ -596,16 +608,19 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
-    },
-    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.awp_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.75, -2.5, 6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

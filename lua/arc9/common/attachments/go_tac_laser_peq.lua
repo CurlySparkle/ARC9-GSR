@@ -1,11 +1,13 @@
 ATT.PrintName = "ATPIAL-C AN/PEQ-15"
 ATT.CompactName = "PEQ-15"
-ATT.Description = [[High-power laser pointer with extra flashlight function. Improves hip fire and spread, at the cost of less sights speed.]]
+ATT.Description = [[High-power laser pointer with extra flashlight function.
+Improves hip fire and spread, at the cost of less sights speed.]]
 
 ATT.Icon = Material("entities/attachs/go_laser_peq.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
 ATT.Folder = "TACTICAL"
 

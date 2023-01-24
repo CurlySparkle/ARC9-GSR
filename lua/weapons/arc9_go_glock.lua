@@ -136,6 +136,7 @@ SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -534,5 +535,13 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_pistols_view"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0.15, -0.1, 0.12),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

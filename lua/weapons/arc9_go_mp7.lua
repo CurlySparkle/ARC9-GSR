@@ -529,6 +529,11 @@ SWEP.AttachmentElements = {
             {4,2},
         },
     },
+    ["stock_adapter"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
 }
 
 // Forced Override Bodygroup
@@ -580,10 +585,10 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_extend"},
         Bone = "v_weapon.mp7_parent",
-		InstalledElements = {"stock_none"},
-        Pos = Vector(0, -2.7, -4.75),
+		InstalledElements = {"stock_adapter"},
+        Pos = Vector(-0.01, -2.55, -4.5),
         Ang = Angle(90, 0, -90),
-		Scale = 1,
+		Scale = 0.7,
     },
     {
         PrintName = "Mag",
@@ -605,6 +610,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_mp7",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "View",
@@ -637,6 +647,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp7_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.7, -2.8, 1), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

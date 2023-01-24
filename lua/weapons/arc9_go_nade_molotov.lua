@@ -1,4 +1,4 @@
-SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_molotov")
+SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_molotov")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
@@ -65,7 +65,7 @@ SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in y
 
 SWEP.ThrowForceMin = 500 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
-SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right clicked.
+SWEP.TossForce = 500 -- Force that the grenade will be thrown with when right clicked.
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
@@ -78,8 +78,8 @@ SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -1, -0.5)
-SWEP.SprintAng = Angle(3, -5, 0)
+SWEP.SprintPos = Vector(0, -3.5, -5)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1.5, -0.15),
@@ -94,7 +94,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -3, -3)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
@@ -107,6 +107,8 @@ SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-13, 10, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
+
+SWEP.ShootPosOffset = Vector(2, 5, 0)
 
 -------------------------- HoldTypes
 
@@ -121,6 +123,9 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
+-- SWEP.CamQCA = 1
+-- SWEP.CamQCA_Mult = 1
+-- SWEP.CamCoolView = true
 
 SWEP.Animations = {
     ["idle"] = {
@@ -141,25 +146,28 @@ SWEP.Animations = {
     },
     ["pullpin"] = {
         Source = "pullpin",
-        MinProgress = 0.666,
+        MinProgress = 0,
         FireASAP = true,
-        -- EventTable = {
-            -- { s = "weapons/csgo/molotov/pinpull_start.wav", t = 0 },
-            -- { s = "weapons/csgo/molotov/pinpull.wav", t = 10 / 30 },
-        -- },
+        EventTable = {
+            { s = "CSGO.Item.Movement", t = 1/30 },
+            { s = "weapons/csgo/molotov/lighter_open.wav", t = 3/30 },
+			--{ s = "", t = 15/30 },
+			{ s = "weapons/csgo/molotov/lighter_closed.wav", t = 22/30 },
+        },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
             { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.5
+        MinProgress = 0.1
     },
     ["toss"] = {
         Source = "underhand",
+		Mult = 0.6,
         EventTable = {
             { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
         },
-        MinProgress = 0.5
+        MinProgress = 0
     },
 }

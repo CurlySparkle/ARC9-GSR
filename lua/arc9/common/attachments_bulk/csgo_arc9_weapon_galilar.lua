@@ -2,9 +2,10 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm SAW Barrel"
 ATT.CompactName = "510mm SAW"
-ATT.Description = [[A long barrel used for suppressive fire. Good for long range engagements.]]
+ATT.Description = [[Long barrel used for suppressive fire. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ace_barrel_long.png", "mips smooth")
@@ -27,9 +28,10 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "216mm Navy Barrel"
 ATT.CompactName = "216mm Navy"
-ATT.Description = [[A short-length barrel for special forces. Offers superior handling at the cost of performance.]]
+ATT.Description = [[Short-length barrel for special forces. Offers superior handling at the cost of performance.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ace_barrel_short.png", "mips smooth")
@@ -52,9 +54,10 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "409mm Carbine Barrel"
 ATT.CompactName = "409mm Carbine"
-ATT.Description = [[A medium-length barrel.]]
+ATT.Description = [[Medium-length barrel.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ace_barrel_factory.png", "mips smooth")
@@ -81,12 +84,12 @@ ATT = {}
 ATT.PrintName = [[40-Round 7.62mm Poly]]
 ATT.CompactName = [[40 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png")
-ATT.Description = [[A 7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine.
+ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine.
 Superior range and damage at the cost of recoil. Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 --ATT.Scale = 0.45
 ATT.ModelOffset = Vector(1.8, 0, -2.5)
@@ -116,12 +119,12 @@ ATT = {}
 ATT.PrintName = [[30-Round 7.62mm Poly]]
 ATT.CompactName = [[30 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png")
-ATT.Description = [[A 7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine.
+ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine.
 Superior range and damage at the cost of recoil. Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -146,11 +149,11 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.45mm Poly]]
 ATT.CompactName = [[30 5.45mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[A 5.45mm conversion. Average magazine that can hold 30 rounds, though cumbersome.]]
+ATT.Description = [[5.45mm conversion. An average magazine that can hold 30 rounds, though cumbersome.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4.5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -169,11 +172,11 @@ ATT = {}
 ATT.PrintName = [[40-Round 5.45mm Poly]]
 ATT.CompactName = [[40 5.45mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[A 5.45mm conversion. Almost huge casket magazine that can hold 40 rounds, though cumbersome.]]
+ATT.Description = [[5.45mm conversion. Almost a huge casket magazine that can hold 40 rounds, though cumbersome.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -192,11 +195,11 @@ ATT = {}
 ATT.PrintName = [[60-Round 5.45mm Poly]]
 ATT.CompactName = [[60 5.45mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[A 5.45mm conversion. Huge casket magazine that can hold 60 rounds, though very cumbersome.]]
+ATT.Description = [[5.45mm conversion. A huge casket magazine that can hold 60 rounds, though very cumbersome.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5.5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_galilar_mag"}
@@ -213,6 +216,7 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_mag_60")
 -------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

@@ -1,14 +1,14 @@
 ATT.PrintName = "OKP + Magnifier"
 ATT.CompactName = [[2x OKP]]
 ATT.Icon = Material("entities/attachs/2x_okp.png", "mips smooth")
-ATT.Description = [[Typical OKP sight which uses a reticle for faster sight acquisition. Coupled with a 2x Magnifier.]]
+ATT.Description = [[Typical OKP sight which uses a reticle for faster sight acquisition. Bundled with a 2x Magnifier.]]
 ATT.Pros = {
     "+ Clearer sight picture",
 	"+ 2x Zoom"
 }
 ATT.Cons = {}
 ATT.SortOrder = 2
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "2X Optics"
 

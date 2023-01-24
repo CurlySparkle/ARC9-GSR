@@ -73,6 +73,7 @@ function ENT:PhysicsCollide( data,phys )
 			self:DrawShadow( false )
 			self:StopParticles()
 		end
+		self:EmitSound("CSGO.Molotov.Explode")
 		self:EmitSound( "weapons/csgo/molotov/fire_ignite_1.wav", 75, 100, 1, CHAN_AUTO )
 		self.IgniteEnd = 1
 		self.IgniteEndTimer = CurTime() + 7

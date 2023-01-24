@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_mp7.mdl"
 
 ATT.SortOrder = -1
 ATT.Category = "grip_mp7"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.ActivateElements = {"grip_folded"}
 
 ATT.LHIK_Priority = 5

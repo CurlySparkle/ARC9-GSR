@@ -1,14 +1,14 @@
 ATT.PrintName = "M110 Scope"
 ATT.CompactName = [[M110]]
 ATT.Icon = Material("entities/attachs/scope_M110.png", "mips smooth")
-ATT.Description = [[Long-range combat M110 scope for improved precision at longer ranges.]]
+ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",
     "+ Clearer sight picture",
 }
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SCOPE"
 

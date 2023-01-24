@@ -3,9 +3,11 @@ local ATT = {}
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "640mm Whisper Barrel"
 ATT.CompactName = "640mm SD"
-ATT.Description = [[A G3 integral silencer. Reduces weapon report and improves weapon characteristics. Superior handling compared to a standalone suppressor.]]
+ATT.Description = [[G3 integral silencer. Reduces weapon report and improves weapon characteristics.
+Superior handling compared to a standalone suppressor.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_g3_barrel_sd.png", "mips smooth")
@@ -35,7 +37,8 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_sd")
 -------------------------------------------------------------------------------------------------
 -- ATT.PrintName = "640mm Whisper Barrel"
 -- ATT.CompactName = "640mm SD"
--- ATT.Description = [[A G3 integral silencer. Reduces weapon report and improves weapon characteristics. Superior handling compared to a standalone suppressor.]]
+-- ATT.Description = [[G3 integral silencer. Reduces weapon report and improves weapon characteristics.
+-- Superior handling compared to a standalone suppressor.]]
 -- ATT.SortOrder = 1
 
 -- ATT.Icon = Material("entities/attachs/go_g3_barrel_sd.png", "mips smooth")
@@ -65,9 +68,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_sd")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "360mm A3"
 ATT.CompactName = "360mm A3"
-ATT.Description = [[A medium-length G3A3 barrel. Improves recoil, though offers much worse handling.]]
+ATT.Description = [[Medium-length G3A3 barrel. Improves recoil, though offers much worse handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_g3_barrel_med.png", "mips smooth")
@@ -90,9 +94,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "360mm A3"
 ATT.CompactName = "360mm A3"
-ATT.Description = [[A medium-length G3A3 barrel. Improves recoil, though offers much worse handling.]]
+ATT.Description = [[Medium-length G3A3 barrel. Improves recoil, though offers much worse handling.]]
 ATT.SortOrder = 0.5
 
 ATT.Icon = Material("entities/attachs/go_g3_barrel_med.png", "mips smooth")
@@ -115,9 +120,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3_smg")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "450mm Barrel"
 ATT.CompactName = "450mm"
-ATT.Description = [[A medium-length G3KA4 barrel. Improves recoil, though offers much worse handling.]]
+ATT.Description = [[Medium-length G3KA4 barrel. Improves recoil, though offers much worse handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_g3_barrel_med.png", "mips smooth")
@@ -140,9 +146,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_medium")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "400mm Barrel"
 ATT.CompactName = "400mm"
-ATT.Description = [[A long-length G3KA4 barrel. Improves recoil, though offers much worse handling.]]
+ATT.Description = [[Long-length G3KA4 barrel. Improves recoil, though offers much worse handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_g3_barrel_med.png", "mips smooth")
@@ -165,9 +172,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_medium_smg")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "315mm Kurz Barrel"
 ATT.CompactName = "315mm"
-ATT.Description = [[A short-length G3KA4 barrel. Improves handling, though offers much worse range and accuracy.]]
+ATT.Description = [[Short-length G3KA4 barrel. Improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_g3_barrel_short.png", "mips smooth")
@@ -192,7 +200,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_short")
 
 -- ATT.PrintName = "315mm Kurz Barrel"
 -- ATT.CompactName = "315mm"
--- ATT.Description = [[A short-length G3KA4 barrel. Improves handling, though offers much worse range and accuracy.]]
+-- ATT.Description = [[Short-length G3KA4 barrel. Improves handling, though offers much worse range and accuracy.]]
 -- ATT.SortOrder = 1
 
 -- ATT.Icon = Material("entities/attachs/go_g3_barrel_short.png", "mips smooth")
@@ -215,10 +223,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_barrel_short")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 Mag]]
 ATT.CompactName = [[30 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
-ATT.Description = [[Increases capacity by 30 round, gives an increased reload time and less handling.]]
+ATT.Description = [[Increases capacity to 30 rounds, at the cost of increased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
@@ -233,10 +242,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_30")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[10 Mag]]
 ATT.CompactName = [[10 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_10.png")
-ATT.Description = [[Decreases capacity by 10 round, with the benefit of decreased reload time and better handling.]]
+ATT.Description = [[Decreases capacity to 10 rounds, with the benefit of decreased reload time and better handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -251,6 +261,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_10")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 Mag Auto]]
 ATT.CompactName = [[30 Auto]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
@@ -304,6 +315,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_auto")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20 Mag Auto]]
 ATT.CompactName = [[20 Auto]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
@@ -361,6 +373,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_20_auto")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[10 Mag Auto]]
 ATT.CompactName = [[10 Auto]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_10.png")
@@ -416,9 +429,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_10_auto")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Collapsible Stock"
 ATT.CompactName = "Collapsible"
-ATT.Description = [[A retractable G3 stock. Improves moving accuracy and strafe performance at the cost of recoil.]]
+ATT.Description = [[Retractable G3 stock. Improves moving accuracy and strafe performance at the cost of recoil.]]
 
 ATT.Icon = Material("entities/attachs/go_g3_stock_collapsible.png", "mips smooth")
 
@@ -435,9 +449,10 @@ ARC9.LoadAttachment(ATT, "csgo_g3_stock_collapsed")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Padded Stock"
 ATT.CompactName = "Padded"
-ATT.Description = [[A G3 sniper-style stock. Improves recoil at the cost of handling.]]
+ATT.Description = [[G3 sniper-style stock. Improves recoil at the cost of handling.]]
 
 ATT.Icon = Material("entities/attachs/go_g3_stock_padded.png", "mips smooth")
 
@@ -452,6 +467,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_stock_padded")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "A2 Fixed Stock"
 ATT.CompactName = "A2 Fixed"
 ATT.Description = [[Improves recoil even more at the cost of more handling.]]
@@ -469,6 +485,7 @@ ARC9.LoadAttachment(ATT, "csgo_g3_stock_fixed")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]
@@ -491,10 +508,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_view_alt_1")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20 5.56 Mag]]
 ATT.CompactName = [[20 5.56]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
-ATT.Description = [[A 5.56 conversion with 20 round magazine.]]
+ATT.Description = [[5.56 conversion with 20 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 35
@@ -548,10 +566,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_20_556")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30 5.56 Mag]]
 ATT.CompactName = [[30 5.56]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
-ATT.Description = [[A 5.56 conversion with 30 round magazine.]]
+ATT.Description = [[5.56 conversion with 30 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 36
@@ -605,10 +624,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_556")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[60 5.56 Mag]]
 ATT.CompactName = [[60 5.56]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30.png")
-ATT.Description = [[A 5.56 conversion with 60 round magazine.]]
+ATT.Description = [[5.56 conversion with 60 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 36
@@ -661,10 +681,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_50_556")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[20-Round 5.56×45mm NATO]]
 ATT.CompactName = [[20 5.56×45]]
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png")
-ATT.Description = [[A HK G41 conversion type with 20 round magazine.]]
+ATT.Description = [[HK G41 conversion type with 20 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 37
@@ -719,10 +740,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_20_g41")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30-Round 5.56×45mm NATO]]
 ATT.CompactName = [[30 5.56×45]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[A HK G41 conversion type with 30 round magazine.]]
+ATT.Description = [[HK G41 conversion type with 30 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 38
@@ -777,10 +799,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_g41")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[60-Round 5.56×45mm NATO]]
 ATT.CompactName = [[60 5.56×45]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[A HK G41 conversion type with 60 round magazine.]]
+ATT.Description = [[HK G41 conversion type with 60 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 39
@@ -840,10 +863,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_60_g41")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30-Round .45 ACP]]
 ATT.CompactName = [[30 .45ACP]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[A submachine gun conversion of a battle rifle. Chambered in .45 ACP with 30 round magazine.]]
+ATT.Description = [[Submachine gun conversion of a battle rifle. Chambered in .45 ACP with 30 round magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 330
@@ -895,10 +919,11 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_30_waf")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[40-Round 9mm]]
 ATT.CompactName = [[40 9mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_60.png")
-ATT.Description = [[A submachine gun conversion of a battle rifle. Chambered in 9mm with 40 round extended magazine.]]
+ATT.Description = [[Submachine gun conversion of a battle rifle. Chambered in 9mm with 40 round extended magazine.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 340
@@ -906,7 +931,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_g4_mp9", "smg_g3", "mag_g4_barrel",}
-ATT.ClipSizeOverride = 30
+ATT.ClipSizeOverride = 40
 ATT.ReloadTimeMult = 0.9
 
 ATT.RPM = 750

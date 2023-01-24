@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_awp.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip_awp"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 --ATT.ActivateElements = {"grip"}
 
 ATT.LHIK_Priority = 5

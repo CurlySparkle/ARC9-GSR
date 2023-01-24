@@ -1,6 +1,6 @@
 ATT.PrintName = "Loading Grip"
 ATT.CompactName = "Loading"
-ATT.Description = [[Loading grip, improves reload speed by 15%.]]
+ATT.Description = [[Increases the speed of reloading the weapon by 15%.]]
 
 ATT.Icon = Material("entities/attachs/go_grip_Loading.png", "mips smooth")
 
@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_Loading.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ReloadTimeMult = 0.85
 

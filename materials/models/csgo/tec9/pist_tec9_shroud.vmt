@@ -2,7 +2,7 @@
 {
 	"$basetexture"				"models/csgo/tec9/pist_tec9_shroud_d"
 	"$bumpmap"					"models/csgo/tec9/pist_tec9_shroud_n"
-	"$phongexponenttexture"		"models/csgo/tec9/pist_tec9_shroud_s"
+	"$phongexponenttexture"		"models/csgo/tec9/pist_tec9_shroud_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
 
@@ -15,7 +15,7 @@
      "$normalmapalphaenvmapmask"              "1"
 	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
-	"$rimlight"					"1"
+	"$rimlight"					"0"
 	"$rimlightexponent"			"80"	
 	"$rimlightboost"			".2"
 	"$rimmask"					"1"

@@ -111,6 +111,9 @@ SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.02
@@ -121,6 +124,7 @@ SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.005
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -213,8 +217,9 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -445,6 +450,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_a.mdl",
         Category = "stickers",
@@ -474,5 +484,13 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_pistols_view"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

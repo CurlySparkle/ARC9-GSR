@@ -3,10 +3,11 @@ local ATT = {}
 ---------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_ak47_mag_drum.png")
-ATT.Description = [[Increases capacity to 50 round, at the cost of decreased reload time and less handling.]]
+ATT.Description = [[Increases capacity to 50 rounds, at the cost of increased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -28,9 +29,10 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_mag_50")
 ---------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "590mm RPK Barrel"
 ATT.CompactName = "590mm RPK"
-ATT.Description = [[An AKM SAW barrel, effectively converting it into an RPK.]]
+ATT.Description = [[AKM SAW barrel, effectively converting it into an RPK.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ak_barrel_long.png", "mips smooth")
@@ -53,9 +55,10 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_barrel_long")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "314mm Ukorochenniy Barrel"
 ATT.CompactName = "314mm U"
-ATT.Description = [[A compact barrel intended for close-range battle.]]
+ATT.Description = [[Compact barrel intended for close-range battle.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_barrel_short.png", "mips smooth")
@@ -78,9 +81,10 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_barrel_short")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "415mm Spetsnaz Barrel"
 ATT.CompactName = "415mm T"
-ATT.Description = [[A tactical handguard with attachment rails for additional coolness. Reduced weight compared to standard barrel.]]
+ATT.Description = [[Tactical handguard with attachment rails for additional coolness. Reduced weight compared to standard barrel.]]
 ATT.SortOrder = 2
 
 ATT.Icon = Material("entities/attachs/go_ak_barrel_alt.png", "mips smooth")
@@ -103,9 +107,10 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_barrel_tactical")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Tactical Grip"
 ATT.CompactName = "Tac Grip"
-ATT.Description = [[A rubberized grip for the AK-47. Improves recoil at the cost of aim time.]]
+ATT.Description = [[Rubberized grip for the AK-47. Improves recoil at the cost of aim time.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ak_grip_tactical.png", "mips smooth")
@@ -123,9 +128,10 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_grip_tactical")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "RPK Stock"
 ATT.CompactName = "RPK Stock"
-ATT.Description = [[A heavy SAW stock for the AK-47. Improves recoil.]]
+ATT.Description = [[Heavy SAW stock for the AK-47. Improves recoil.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ak_stock_heavy.png", "mips smooth")
@@ -143,9 +149,10 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_stock_rpk")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton Stock"
-ATT.Description = [[A lightweight stock that improves ADS speed at the cost of recoil.]]
+ATT.Description = [[Lightweight stock that improves ADS speed at the cost of recoil.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_stock_skeleton.png", "mips smooth")
@@ -166,11 +173,11 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.56mm Poly]]
 ATT.CompactName = [[30 5.56mm]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[A 5.56mm conversion for the AK-47 with 30 round magazine. Lighter weight and with better recoil, though at the cost of overall range and damage.]]
+ATT.Description = [[5.56mm conversion for the AK-47 with 30 round magazine. Lighter weight and with better recoil, though at the cost of overall range and damage.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_mag_ak"}
@@ -197,11 +204,11 @@ ATT = {}
 ATT.PrintName = [[50-Round 5.56mm Poly]]
 ATT.CompactName = [[50 5.56mm]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[A 5.56mm conversion for the AK-47. Huge casket magazine that can hold 50 rounds, though very cumbersome.]]
+ATT.Description = [[5.56mm conversion for the AK-47. Huge casket magazine that can hold 50 rounds, though very cumbersome.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_mag_ak"}
@@ -228,11 +235,11 @@ ATT = {}
 ATT.PrintName = [[30-Round 5.45x39]]
 ATT.CompactName = [[30 5.45x39]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[A 5.45x39 conversion for the AK-47 with 30 round magazine. Higher RPM with the cost of damage.]]
+ATT.Description = [[5.45x39 conversion for the AK-47 with 30 round magazine. Higher RPM with the cost of damage.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_mag_ak"}
@@ -260,11 +267,11 @@ ATT = {}
 ATT.PrintName = [[40-Round 5.45x39]]
 ATT.CompactName = [[40 5.45x39]]
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png")
-ATT.Description = [[A 5.45x39 conversion for the AK-47 with 40 round magazine. Higher RPM with the cost of damage.]]
+ATT.Description = [[5.45x39 conversion for the AK-47 with 40 round magazine. Higher RPM with the cost of damage.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_mag_ak"}

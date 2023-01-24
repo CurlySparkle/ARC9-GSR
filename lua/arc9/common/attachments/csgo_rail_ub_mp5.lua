@@ -1,9 +1,10 @@
 ATT.PrintName = [[Underbarrel Rail SD]]
 ATT.CompactName = [[Bottom Rail]]
 ATT.Icon = Material("entities/attachs/mp5_fg_rail.png")
-ATT.Description = [[Underbarrel SD rail that allows attaching foregrips and other attachments, designed for the MP5-SD.]]
+ATT.Description = [[Underbarrel SD rail that allows attaching foregrips and other attachments.
+Designed for the MP5-SD.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"csgo_rail_mp5"}
@@ -12,7 +13,7 @@ ATT.Model = "models/weapons/csgo/atts/mp5_fg_rail.mdl"
 ATT.Scale = 0.6
 ATT.ModelOffset = Vector(0, 0, 0.5)
 ATT.ModelAngleOffset = Angle(0,0,0)
-ATT.Folder = "RISERS"
+//ATT.Folder = "RISERS"
 ATT.IconOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {

@@ -1,9 +1,9 @@
 ATT.PrintName = [[Custom Optic Riser Alt]]
 ATT.CompactName = [[Optic Riser]]
 ATT.Icon = Material("entities/attachs/rail_sights.png")
-ATT.Description = [[A standard rail system that allows attachment of optics.]]
+ATT.Description = [[Standard rail system that allows attachment of optics.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"csgo_rail_lmg"}
@@ -12,7 +12,7 @@ ATT.Model = "models/weapons/csgo/atts/rail_sights.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(1.5, 0, 0.5)
 -- ATT.ModelAngleOffset = Angle(0,-90,0)
-ATT.Folder = "RISERS"
+//ATT.Folder = "RISERS"
 ATT.IconOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {

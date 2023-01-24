@@ -2,9 +2,10 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "520mm Barrel"
 ATT.CompactName = "350mm L"
-ATT.Description = [[A long-range sniper barrel. Improves weapon performance.]]
+ATT.Description = [[Long-range sniper barrel. Improves weapon performance.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_galil_barrel_long.png", "mips smooth")
@@ -27,9 +28,10 @@ ARC9.LoadAttachment(ATT, "csgo_galil_barrel_long")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "305mm Barrel"
 ATT.CompactName = "305mm S"
-ATT.Description = [[A short-length barrel. Offers superior handling at the cost of performance.]]
+ATT.Description = [[Short-length barrel. Offers superior handling at the cost of performance.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_galil_barrel_short.png", "mips smooth")
@@ -52,10 +54,11 @@ ARC9.LoadAttachment(ATT, "csgo_galil_barrel_short")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[35 Mag]]
 ATT.CompactName = [[35 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[Increases capacity to 35 round, at the cost of decreased reload time and less handling.]]
+ATT.Description = [[Increases capacity to 35 rounds, at the cost of increased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -70,10 +73,11 @@ ARC9.LoadAttachment(ATT, "csgo_galil_mag_35")
 -------------------------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[50 Mag]]
 ATT.CompactName = [[50 Mag]]
 ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png")
-ATT.Description = [[Increases capacity to 50 round, at the cost of decreased reload time and less handling.]]
+ATT.Description = [[Increases capacity to 50 rounds, at the cost of increased reload time and less handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -91,13 +95,13 @@ ATT = {}
 ATT.PrintName = [[30-Round 7.62mm Poly]]
 ATT.CompactName = [[30 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png")
-ATT.Description = [[A 7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine. Superior range and damage at the cost of recoil.
+ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 30 round magazine. Superior range and damage at the cost of recoil.
 Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.Free = false
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ModelOffset = Vector(1.4, 0, -2.5)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -126,13 +130,13 @@ ATT = {}
 ATT.PrintName = [[40-Round 7.62mm Poly]]
 ATT.CompactName = [[40 7.62mm]]
 ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png")
-ATT.Description = [[A 7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine. Superior range and damage at the cost of recoil.
+ATT.Description = [[7.62mm conversion turning rifle into Galil ACE 34 with 40 round magazine. Superior range and damage at the cost of recoil.
 Large magazine has inferior handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.Free = false
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ModelOffset = Vector(1.55, 0, -2.5)
 ATT.ModelAngleOffset = Angle(0, 0, 0)

@@ -3,6 +3,7 @@ local ATT = {}
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Primary Hold"
 ATT.CompactName = "Primary Hold"
 ATT.Description = [[You shouldn't see this.]]

@@ -7,6 +7,7 @@ ATT.Description = [[Changes the holding style of the weapon.]]
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_mp7.mdl"
 
 ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Category = {"grip_aug"}
 ATT.ActivateElements = {"grip_folded"}
 

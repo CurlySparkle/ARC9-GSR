@@ -24,7 +24,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you'd better kill what you hit.]]
+SWEP.Description = [[If one shotgun isn't enough for the job, simply bring another. Fire two weapons alternatingly for faster follow up shots, or both at the same time to maximize lethality.
+Just take care not to be overwhelmed by its punishing recoil.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_sawnoff.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_akimbo_sawnoff.mdl"
@@ -46,17 +47,17 @@ SWEP.WorldModelOffset = {
 }
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 36 -- Damage done at point blank range
-SWEP.DamageMin = 6 -- Damage done at maximum range
+SWEP.DamageMax = 32 -- Damage done at point blank range
+SWEP.DamageMin = 8 -- Damage done at maximum range
 
 SWEP.Num = 8
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 750 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 1750 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 5 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 8
 
@@ -81,24 +82,33 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 85
+SWEP.RPM = 80
 
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PUMP"
+        PrintName = "SINGLE",
+    },
+    {
+        Mode = 1,
+        PrintName = "BOTH",
+        RPMMult = 60 / 80,
+        AkimboBoth = true,
+        RecoilMult = 2,
+        AmmoPerShot = 2,
+        NumMult = 2,
     },
 }
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 2.5
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 3 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -107,9 +117,9 @@ SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilDissipationRateSights = 50
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
@@ -129,16 +139,15 @@ SWEP.Akimbo = true
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.05
+SWEP.Spread = 0.04
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.025
-SWEP.SpreadMultHipFire = 1
-SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadMultHipFire = 1.2
+SWEP.SpreadMultSights = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
 
@@ -186,7 +195,7 @@ SWEP.IronSights = {
         Ang = Angle(0, 0, -2.5),
     },
     Magnification = 1.1,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
     CrosshairInSights = true
 }
 
@@ -295,77 +304,77 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire_left"] = {
         Source = "fire_left",
-		Mult = 0.75,
+        Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},	
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+        },
     },
     ["fire_right"] = {
         Source = "fire_right",
-		Mult = 0.75,
+        Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},			
-        },				
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+        },
     },
     ["fire_both"] = {
         Source = "fire_both",
-		Mult = 0.75,
+        Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},	
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+        },
     },
     ["reload_start"] = {
         Source = "reload_start",
-		EjectAt = 0.5,		
+        EjectAt = 0.5,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+        },
     },
     ["reload_start_empty"] = {
         Source = "reload_start",
-		EjectAt = 0.5,
-        RestoreAmmo = 0,		
+        EjectAt = 0.5,
+        RestoreAmmo = 0,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},		
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},	
-        },			
-    },	
+            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+        },
+    },
     ["reload_insert"] = {
         Source = "reload",
-		Time = 0.75,
-        RestoreAmmo = 1,			
+        Time = 0.75,
+        RestoreAmmo = 1,
         EventTable = {
             {s = "CSGO.sawedoff.Shell_Insert", t = 2 / 30},
-            {s = "CSGO.sawedoff.Shell_Insert", t = 9 / 30},			
+            {s = "CSGO.sawedoff.Shell_Insert", t = 9 / 30},
         },
     },
     ["reload_finish"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},	
-            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},					
-        },			
+            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},
+        },
     },
     ["ready"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},	
-            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},	
-            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},				
-        },	
+            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},
+            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},
+        },
     },
     ["draw"] = {
         Source = "draw",
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0 / 30},
-        },			
+        },
     },
     ["holster"] = {
         Source = "holster",
@@ -395,9 +404,9 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 55 / 30 },
-			{ s = "weapons/csgo/movement3.wav", t = 113 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 113 / 30 },
         },
-    },	
+    },
 }
 
 -------------------------- ATTACHMENTS
@@ -412,7 +421,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(6, 0, 1), } }	
+    AttPosMods = { [2] = { Pos = Vector(6, 0, 1), } }
     },
 }
 
@@ -443,7 +452,7 @@ SWEP.Attachments = {
                 -- Bone = "j_slide_l",
             -- }
         -- },
-		-- Scale = 0.9,
+        -- Scale = 0.9,
     -- },
     {
         PrintName = "Tactical",
@@ -457,11 +466,11 @@ SWEP.Attachments = {
                 Bone = "W_Pump_L",
             }
         },
-		Scale = 1,
+        Scale = 1,
     },
     -- {
         -- PrintName = "Mag",
-		-- Bone = "j_mag1_l",
+        -- Bone = "j_mag1_l",
         -- Category = "go_mag"
     -- },
     {
@@ -469,21 +478,26 @@ SWEP.Attachments = {
         Bone = "W_Main2_L",
         Category = "go_ammo_sg",
         Pos = Vector(0, -0.5, 5.5),
-        Ang = Angle(90, 0, 90),		
+        Ang = Angle(90, 0, 90),
         --Icon_Offset = Vector(0, 0.5, 2),
     },
     {
         PrintName = "Perk",
         Category = "go_perk",
-		RejectAttachments = {
-		["csgo_perk_burst"] = true
-		},
+        RejectAttachments = {
+        ["csgo_perk_burst"] = true
+        },
     },
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_sawnoff",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Sticker",

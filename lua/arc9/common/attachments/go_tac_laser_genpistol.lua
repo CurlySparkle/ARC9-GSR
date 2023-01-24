@@ -1,11 +1,12 @@
 ATT.PrintName = "Gen Laser Sight"
 ATT.CompactName = "GEN"
-ATT.Description = [[Mid-power laser pointer. Improves hip-fire accuracy and gives a better sight view.]]
+ATT.Description = [[Medium-power laser pointer. Improves hip-fire accuracy and gives a better sight view.]]
 
 ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/GENLaserPISTOL.mdl"
 ATT.Folder = "TACTICAL"
 

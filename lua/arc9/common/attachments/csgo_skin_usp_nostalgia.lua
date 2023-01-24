@@ -1,6 +1,7 @@
 ATT.PrintName = [[Nostalgia]]
 ATT.Description = [[Classic skin for the USP.]]
 ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.SortOrder = 0
 ATT.Free = true

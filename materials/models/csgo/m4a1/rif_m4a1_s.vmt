@@ -1,26 +1,35 @@
-"VertexLitGeneric"
+"VertexlitGeneric"
 {
-	$basetexture "models/csgo/m4a1/rif_m4a1_s"
-	$bumpmap "null-bumpmap"
-	$phongexponenttexture "models/csgo/m4a1/rif_m4a1_s_exponent"
+	"$basetexture"				"models/csgo/m4a1/rif_m4a1_s"
+	"$bumpmap"					"models/csgo/m4a1/rif_m4a1_s_n"
+	"$phongexponenttexture"		"models/csgo/m4a1/rif_m4a1_s_exponent"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
 
-	"$phong" "1"
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
+
+	"$phong"					"1"
+	"$phongboost"				"15"
+	"$phongexponent"			"55"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+
+	"$rimlight"					"0"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 
 
-	"$phongboost" "5"
-	"$phongalbedoboost" "25"
-	"$phongfresnelranges" "[.83 .83 1]"
-
-	"$basemapalphaphongmask" "1"
-
-	"$phongalbedotint" "1"
-
-	"$phongdisablehalflambert" "1"
-
-	"$envmap" "env_cubemap"
-	"$envmapfresnel" "1"
-	"$envmaptint" 		"[.15 .15 .15]"
+	$detailblendmode 4
+	$detailblendfactor 1
+	Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
+	}
 }
-
-
-

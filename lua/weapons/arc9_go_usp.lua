@@ -165,8 +165,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.84, -2, 1.5),
-    Ang = Angle(0, -0.5, 0),
+    Pos = Vector(-2.84, -2, 1.2),
+    Ang = Angle(0, 0.6, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
 		CrosshairInSights = false
@@ -233,8 +233,9 @@ SWEP.MuzzleEffectQCA = 3
 SWEP.CaseEffectQCA = 2
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 5
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -574,7 +575,7 @@ SWEP.Attachments = {
         Category = {"silencers"},
         Bone = "v_weapon.silencer",
 		InstalledElements = {"silencer_none"},
-        Pos = Vector(0, -1, 0),
+        Pos = Vector(0, -0.8, 0),
         Ang = Angle(0, -90, 0),
         Scale = 0.9,
     },
@@ -618,7 +619,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Category = "go_perk"
+        Category = "go_perk",
+		RejectAttachments = {
+		["csgo_perk_burst"] = true
+		},
     },
     {
         PrintName = "Skins",
@@ -661,5 +665,13 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_pistols_view"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

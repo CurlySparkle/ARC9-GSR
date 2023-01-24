@@ -226,8 +226,12 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+-- SWEP.CamQCA = 4
+-- SWEP.CamQCA_Mult = 0.5
+
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -635,7 +639,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","go_m249_stock"},
         Bone = "v_weapon.m249_Parent",
-		InstalledElements = {"stock_none"},
+		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -4.7, -4.45),
         Ang = Angle(90, 0, -90),
 		Scale = 1.25,
@@ -664,6 +668,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/m249_a.mdl",
         Category = "stickers",
@@ -684,6 +693,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.m249_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(1, -4.6, 1), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

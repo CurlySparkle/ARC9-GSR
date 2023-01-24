@@ -1257,7 +1257,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.R8.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 0.5,
+    volume = 0.3,
     level = 120,
     pitch = {97,103},
     sound = {
@@ -1959,7 +1959,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mac10_suppressed.wav", -- may need different sound, makes it sound like a bottle pop with the dist sound
+        "weapons/mac10_suppressed_first.ogg", -- may need different sound, makes it sound like a bottle pop with the dist sound
     }
 } )
 

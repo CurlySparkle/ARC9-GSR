@@ -563,7 +563,18 @@ SWEP.AttachmentElements = {
             {6,1},
         },
     },
+    ["stock_adapter"] = {
+        Bodygroups = {
+            {7,1},
+        },
+    },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)  
+    local model = data.model
+	if wep:HasElement("stock_extend") then model:SetBodygroup(7,0) end	
+	if wep:HasElement("stock_skeleton") then model:SetBodygroup(7,0) end		
+end
 
 SWEP.Attachments = {
     {
@@ -614,8 +625,8 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_extend","go_mac10_stock"},
         Bone = "v_weapon.mac10_parent",
-		--InstalledElements = {"stock_none"},
-        Pos = Vector(0, -3.1, -3.7),
+		InstalledElements = {"stock_adapter"},
+        Pos = Vector(0, -2.95, -3.55),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
     },
@@ -675,6 +686,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.mac10_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(1, -4, -3), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

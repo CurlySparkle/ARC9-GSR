@@ -28,7 +28,7 @@ SWEP.Description = [[Manufactured in Switzerland, the cutting-edge MP9 SMG is an
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp9.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.Slot = 2
 
@@ -121,7 +121,7 @@ SWEP.RecoilMultMove = 1.5
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.5
 
 -------------------------- SPREAD
 
@@ -133,6 +133,7 @@ SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddSights = -0.05
 
 -------------------------- HANDLING
 
@@ -441,6 +442,11 @@ SWEP.AttachmentElements = {
             {2,1},
         },
     },
+    ["grip_none"] = {
+        Bodygroups = {
+            {2,2},
+        },
+    },
     ["stock_retract"] = {
         Bodygroups = {
             {3,1},
@@ -451,19 +457,37 @@ SWEP.AttachmentElements = {
             {3,2},
         },
     },
+    ["stock_adapter"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
     ["barrel_long"] = {
         Bodygroups = {
             {4,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 7.85), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 8.55), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {4,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6.8), } }	
     },
 }
+
+SWEP.AttachmentTableOverrides = {
+    ["go_holdstyle_10_mp9"] = {
+    ModelOffset = Vector(-0.2, -0.3, 0.5),
+	--ModelAngleOffset = Angle(0, 0, 170)
+    },
+}
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:HasElement("stock_retract") then model:SetBodygroup(5,0) end
+    if wep:HasElement("grip_none") then model:SetBodygroup(2,2) end
+end
 
 SWEP.Attachments = {
     {
@@ -485,7 +509,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.mp9_parent",
-        Pos = Vector(0, -2.96, 6.5),
+        Pos = Vector(0, -2.96, 7),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
     },
@@ -496,7 +520,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp9_parent",
         Pos = Vector(0, -1.2, 5.5),
         Ang = Angle(90, 0, 90),
-        InstalledElements = {"grip"},
+        --InstalledElements = {"grip"},
     },
     {
         PrintName = "Tactical",
@@ -511,8 +535,8 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract",},
         Bone = "v_weapon.mp9_parent",
-		--InstalledElements = {"stock_none"},
-        Pos = Vector(0, -2.4, -3.3),
+		InstalledElements = {"stock_adapter"},
+        Pos = Vector(0, -2.775, -3.3),
         Ang = Angle(90, 0, -90),
 		Scale = 0.8,
     },
@@ -536,6 +560,11 @@ SWEP.Attachments = {
         --Bone = "v_weapon.Clip",
         Category = "go_skins_mp9",
 		CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "View",
@@ -567,6 +596,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp9_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.75, -3.5, 3), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

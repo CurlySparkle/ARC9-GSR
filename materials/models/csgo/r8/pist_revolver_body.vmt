@@ -1,0 +1,29 @@
+"VertexLitGeneric"
+{
+	$basetexture "models/csgo/r8/pist_revolver"
+	$bumpmap "models/csgo/r8/pist_revolver_n"
+	$phongexponenttexture "models/csgo/r8/pist_revolver_exponent"
+	
+	$phong "1"
+	$phongfresnelranges "[0.15 0.65 1.00]"
+	$phongboost "64"
+	$basealphaenvmapmask "1"
+	$phongalbedotint "1"
+	$phongdisablehalflambert "1"
+
+	$envmap "env_cubemap"
+	$envmapfresnel "1"
+	$envmaptint 		"[.1 .1 .12]"
+	
+
+	"$detailblendmode" "4"
+	"$detailblendfactor" "1"
+
+	 Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
+	}
+}

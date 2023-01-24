@@ -28,7 +28,7 @@ SWEP.Description = [[The misunderstood middle child of the SMG family, the UMP45
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_ump.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_ump45.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
 
@@ -214,8 +214,9 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -254,11 +255,10 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1_new"},
     },
     ["fire_alt"] = {
-        Source = {"shoot1_alt", "shoot2_alt", "shoot3_alt"},
-		Mult = 0.7,
+        Source = {"shoot1_new"},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -445,7 +445,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.ump45_Parent",
         Pos = Vector(0, -6.2, 3.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic"},
+        Category = {"csgo_optic","eft_optic_medium","eft_optic_large","eft_backupmount"},
         CorrectiveAng = Angle(-0.1, 0, 0),
     },
     {
@@ -541,6 +541,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.ump45_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(1, -4, 3), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0.1, -5.7, 2.7),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

@@ -1,9 +1,9 @@
 ATT.PrintName = [[Custom Rail System]]
 ATT.CompactName = [[Custom Rail]]
 ATT.Icon = Material("entities/attachs/rail_mount_mac.png")
-ATT.Description = [[A customized rail system, designed for small arms such as the MAC-10.]]
+ATT.Description = [[Customized rail system, designed for small arms such as the MAC-10.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"csgo_rail_mac10"}
@@ -12,7 +12,7 @@ ATT.Model = "models/weapons/csgo/atts/rail_mount_mac.mdl"
 ATT.Scale = 0.5
 ATT.ModelOffset = Vector(0, 0, 1)
 -- ATT.ModelAngleOffset = Angle(0,-90,0)
-ATT.Folder = "RISERS"
+//ATT.Folder = "RISERS"
 ATT.IconOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {

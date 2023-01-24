@@ -408,6 +408,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_r8_a.mdl",
         Category = "stickers",
@@ -426,5 +431,13 @@ SWEP.Attachments = {
         PrintName = "Sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_r8_d.mdl",
         Category = "stickers",
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(4.9, -0.35, 0.3),
+        Ang = Angle(0, 0, -10),
+		CosmeticOnly = true,
     },
 }

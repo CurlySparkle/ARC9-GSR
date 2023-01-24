@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_m4.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip_m4_2"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.LHIK_Priority = 5
 ATT.LHIK = true

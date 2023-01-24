@@ -5,7 +5,7 @@ ATT.Description = [[Increased ammo capacity by 50%, at the cost of increased rel
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"go_mag"}

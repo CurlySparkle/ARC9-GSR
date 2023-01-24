@@ -231,8 +231,9 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
@@ -516,7 +517,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,1) end		
-	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,2) end
+	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,3) end
 	if wep:HasElement("barrel_stub") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
 	if wep:HasElement("barrel_factory") and wep.Attachments[1].Installed then model:SetBodygroup(5,7) end
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,4) end
@@ -633,6 +634,14 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_scar20_view"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

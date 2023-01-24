@@ -1,6 +1,7 @@
 ATT.PrintName = "Point Shooting Grip"
 ATT.CompactName = "PSG"
-ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip, includes a laser pointer.]]
+ATT.Description = [[Rail-mounted foregrip. Provides a stable, vertical surface to grip. 
+Bundled with a laser pointer.]]
 
 ATT.Icon = Material("entities/attachs/grip_laser.png", "mips smooth")
 
@@ -8,6 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_laser.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.RecoilAutoControlMult = 1.15
 

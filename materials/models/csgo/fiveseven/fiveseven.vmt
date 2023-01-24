@@ -1,25 +1,26 @@
-VertexLitGeneric
+"VertexlitGeneric"
 {
-	$basetexture  "models\csgo\fiveseven\fiveseven"
-	$bumpmap  "null-bumpmap"
+	"$basetexture"				"models/csgo/fiveseven/fiveseven"
+	"$bumpmap"					"models/csgo/fiveseven/fiveseven_n"
+	"$phongexponenttexture"		"models/csgo/fiveseven/fiveseven_exponent"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
 
-	$phong  "1"
-	$phongboost  "1.5"
-	$phongalbedoboost  "20"
-	$phongfresnelranges  "[.83 .83 1]"
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
 
-	$phongexponenttexture  "models\csgo\fiveseven\fiveseven_exponent"
+	"$phong"					"1"
+	"$phongboost"				"5"
+     //"$phongexponent"			"35"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
-	$basemapalphaphongmask  "1"
-	
-
-	$envmap  "env_cubemap"
-	$envmapfresnel  "1"
-	$envmapFresnelMinMaxExp  "[0 5 .4]"
-	$envmaptint  		"[.03 .03 .03]"
-
-	$phongalbedotint  "1"
-	$phongdisablehalflambert  "1"
+	"$rimlight"					"0"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
 }
 
 

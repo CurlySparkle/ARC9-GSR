@@ -1,13 +1,13 @@
 ATT.PrintName = "CompM4 (RDS)"
 ATT.CompactName = [[CompM4]]
 ATT.Icon = Material("entities/attachs/CompM4.png", "mips smooth")
-ATT.Description = [[Tube-based red dot sight for rifles.]]
+ATT.Description = [[Tube-based red dot sight for firearms.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SIGHTS"
 

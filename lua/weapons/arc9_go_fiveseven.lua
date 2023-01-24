@@ -438,6 +438,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/pist_fiveseven_decal_a.mdl",
         Category = "stickers",
@@ -467,5 +472,13 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_pistols_view"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0.1, -0.15, 0.5),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

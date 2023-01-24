@@ -87,11 +87,17 @@ SWEP.Firemodes = {
     {
         Mode = 3,
         RPM = 1000,
-		RecoilUp = 1,
-		RecoilKick = 1.5,
-		SpreadAddRecoil = 0.005,
-		RunawayBurst = true,
-		PostBurstDelay = 0.3
+        RunawayBurst = true,
+        PostBurstDelay = 0.3,
+
+        -- AkimboBoth = true,
+        -- AmmoPerShot = 2,
+        -- Num = 2,
+
+        RecoilUp = 1,
+        RecoilKick = 1.5,
+        SpreadAddRecoil = 0.005,
+
     }
 }
 -------------------------- RECOIL
@@ -179,7 +185,7 @@ SWEP.IronSights = {
         Ang = Angle(0, 0, -2.5),
     },
     Magnification = 1.1,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
     CrosshairInSights = true
 }
 
@@ -300,30 +306,33 @@ SWEP.Animations = {
     ["fire_right"] = {
         Source = "shoot1_right",
     },
+    ["fire_both"] = {
+        Source = "shoot1_both",
+    },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
+            {s = "weapons/csgo/movement1.wav", t = 0 / 30},
             {s = path .. "glock_clipout.wav", t = 5 / 30},
             {s = path .. "glock_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-			{s = path .. "glock_clipin.wav", t = 45 / 30},
-			{s = path .. "glock_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
+            {s = "weapons/csgo/movement2.wav", t = 19 / 30},
+            {s = path .. "glock_clipin.wav", t = 45 / 30},
+            {s = path .. "glock_clipin.wav", t = 55 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 65 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
+            {s = "weapons/csgo/movement1.wav", t = 0 / 30},
             {s = path .. "glock_clipout.wav", t = 7 / 30},
             {s = path .. "glock_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
+            {s = "weapons/csgo/movement2.wav", t = 19 / 30},
             {s = path .. "glock_clipin.wav", t = 50 / 30},
             {s = path .. "glock_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 65 / 30},
             {s = path .. "glock_sliderelease.wav", t = 75 / 30},
             {s = path .. "glock_sliderelease.wav", t = 77 / 30},
         },
@@ -366,7 +375,7 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            { s = "weapons/csgo/movement2.wav", t = 113 / 30 },
         },
     },
 }
@@ -379,22 +388,22 @@ SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
             {2,1},
-			{0,1},
+            {0,1},
         },
     },
     ["slide_long"] = {
         Bodygroups = {
             {1,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(5.88, 0, 1), } }	
+    AttPosMods = { [2] = { Pos = Vector(5.88, 0, 1), } }
     },
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Slide",
-		DefaultAttName = "Standard",
-		--Bone = "v_weapon.glock_magazine",
+        DefaultAttName = "Standard",
+        --Bone = "v_weapon.glock_magazine",
         Category = "go_glock_s2"
     },
     {
@@ -423,7 +432,7 @@ SWEP.Attachments = {
                 Bone = "j_slide_l",
             }
         },
-		Scale = 0.9,
+        Scale = 0.9,
     },
     {
         PrintName = "Tactical",
@@ -437,11 +446,11 @@ SWEP.Attachments = {
                 Bone = "tag_pistol_attachments_l",
             }
         },
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Mag",
-		Bone = "j_mag1_l",
+        Bone = "j_mag1_l",
         Category = "go_mag"
     },
     {
@@ -456,7 +465,12 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_glock",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Sticker",
@@ -479,8 +493,11 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "tag_pistol_attachments",
+        Pos = Vector(3.7, -0.4, 0.25),
+        Ang = Angle(0, 0, 0),
         CosmeticOnly = true,
     },
 }

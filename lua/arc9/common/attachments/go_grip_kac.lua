@@ -1,6 +1,7 @@
 ATT.PrintName = "KAC Foregrip"
 ATT.CompactName = "KAC"
-ATT.Description = [[Rail-mounted KAC foregrip. Provides a stable, vertical surface to grip onto, improving recoil control and reducing recoil drift.]]
+ATT.Description = [[Rail-mounted foregrip from KAC. Provides a stable, vertical surface to grip onto. 
+Also, improving recoil control and reducing recoil drift.]]
 
 ATT.Icon = Material("entities/attachs/grip_kac.png", "mips smooth")
 
@@ -8,6 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/grip_kac.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true

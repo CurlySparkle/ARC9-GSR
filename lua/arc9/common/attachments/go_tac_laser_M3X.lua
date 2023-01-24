@@ -1,11 +1,12 @@
 ATT.PrintName = "M3X Flashlight"
 ATT.CompactName = "M3X"
-ATT.Description = [[Rail-mounted flashlight type M3X.]]
+ATT.Description = [[Rail-mounted tactical flashlight.]]
 
 ATT.Icon = Material("entities/attachs/M3X.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/M3X.mdl"
 ATT.Folder = "TACTICAL"
 

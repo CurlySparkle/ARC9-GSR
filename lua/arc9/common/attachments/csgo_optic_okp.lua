@@ -1,13 +1,13 @@
 ATT.PrintName = "OKP-7"
 ATT.CompactName = [[OKP-7]]
 ATT.Icon = Material("entities/attachs/okp.png", "mips smooth")
-ATT.Description = [[OKP-7 sight that provides an effective aiming reticle.]]
+ATT.Description = [[Reflex sight that provides an effective aiming reticle.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SIGHTS"
 

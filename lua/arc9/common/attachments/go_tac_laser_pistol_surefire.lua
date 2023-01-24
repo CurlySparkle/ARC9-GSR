@@ -1,11 +1,12 @@
 ATT.PrintName = "Surefire X300U"
 ATT.CompactName = "Surefire"
-ATT.Description = [[High-power Surefire X300U. Improves spread, at the cost of less sights speed.]]
+ATT.Description = [[High-power flashlight from SureFire WeaponLight series. Improves spread, at the cost of less sights speed.]]
 
 ATT.Icon = Material("entities/attachs/go_laser_surefire.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/laser_sure3.mdl"
 ATT.Folder = "TACTICAL"
 

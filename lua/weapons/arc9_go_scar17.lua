@@ -212,8 +212,9 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -600,6 +601,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.65, -4.5, 5.5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -80),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.SCAR_Parent",
+        Pos = Vector(0.65, -4.5, 0),
+        Ang = Angle(90, -90, 0),
+		CosmeticOnly = true,
     },
 }
 

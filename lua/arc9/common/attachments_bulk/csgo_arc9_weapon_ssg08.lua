@@ -2,9 +2,10 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "510mm Factory Barrel"
 ATT.CompactName = "510mm"
-ATT.Description = [[A bull factory barrel that reduces recoil, though at the cost of handling.]]
+ATT.Description = [[Bull factory barrel that reduces recoil, though at the cost of handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_ssg08_barrel_long.png", "mips smooth")
@@ -27,9 +28,10 @@ ARC9.LoadAttachment(ATT, "csgo_ssg08_barrel_factory")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "310mm Custom Barrel"
 ATT.CompactName = "310mm"
-ATT.Description = [[A short-length custom barrel. Improves handling, though offers much worse range and accuracy.]]
+ATT.Description = [[Short-length custom barrel. Improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 2
 
 ATT.Icon = Material("entities/attachs/go_ssg08_barrel_short.png", "mips smooth")
@@ -52,10 +54,11 @@ ARC9.LoadAttachment(ATT, "csgo_ssg08_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[15-Round .308 SSG]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_ssg08_mag_10.png")
-ATT.Description = [[An extended magazine improves capacity at the cost of handling and reload time.]]
+ATT.Description = [[Extended magazine improves capacity at the cost of handling and reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -73,6 +76,7 @@ ARC9.LoadAttachment(ATT, "csgo_ssg08_mag_15")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[5-Round .338 SSG]]
 ATT.CompactName = [[5-Round]]
 ATT.Icon = Material("entities/attachs/go_ssg08_mag_5_338.png")
@@ -101,6 +105,7 @@ ARC9.LoadAttachment(ATT, "csgo_ssg08_mag_5")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = [[Iron]]
 --ATT.Icon = Material("entities/attachs/go_optic_t1.png", "mips smooth")

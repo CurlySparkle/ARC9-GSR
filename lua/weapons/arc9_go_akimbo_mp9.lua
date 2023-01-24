@@ -66,7 +66,7 @@ SWEP.PhysBulletMuzzleVelocity = 2900 * 12
 
 SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
+SWEP.ChamberSize = 2 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 60 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
@@ -83,7 +83,12 @@ SWEP.RPM = 857
 SWEP.Firemodes = {
     {
         Mode = -1,
-        -- add other attachment modifiers
+        AkimboBoth = true,
+        AmmoPerShot = 2,
+        Num = 2,
+    },
+    {
+        Mode = 1,
     }
 }
 -------------------------- RECOIL
@@ -94,7 +99,7 @@ SWEP.Recoil = 1.5
 SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 1.9 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -105,7 +110,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 20 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -117,15 +122,15 @@ SWEP.Akimbo = true
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.01
 
 SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.025
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.004
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddCrouch = -0.01
+SWEP.SpreadAddSights = 0
 
 -------------------------- HANDLING
 
@@ -171,7 +176,7 @@ SWEP.IronSights = {
         Ang = Angle(0, -0.5, 1.5),
     },
     Magnification = 1.1,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
     CrosshairInSights = true
 }
 
@@ -298,28 +303,28 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
+            {s = "weapons/csgo/movement1.wav", t = 0 / 30},
             {s = path .. "mp9_clipout.wav", t = 5 / 30},
             {s = path .. "mp9_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-			{s = path .. "mp9_clipin.wav", t = 45 / 30},
-			{s = path .. "mp9_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
+            {s = "weapons/csgo/movement2.wav", t = 19 / 30},
+            {s = path .. "mp9_clipin.wav", t = 45 / 30},
+            {s = path .. "mp9_clipin.wav", t = 55 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 65 / 30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
+            {s = "weapons/csgo/movement1.wav", t = 0 / 30},
             {s = path .. "mp9_clipout.wav", t = 7 / 30},
             {s = path .. "mp9_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
+            {s = "weapons/csgo/movement2.wav", t = 19 / 30},
             {s = path .. "mp9_clipin.wav", t = 50 / 30},
             {s = path .. "mp9_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
+            {s = "weapons/csgo/movement3.wav", t = 65 / 30},
             {s = path .. "mp9_boltforward.wav", t = 75 / 30},
             {s = path .. "mp9_boltforward.wav", t = 77 / 30},
         },
@@ -362,7 +367,7 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
             { s = "weapons/csgo/movement2.wav", t = 55 / 30 },
-			{ s = "weapons/csgo/movement3.wav", t = 113 / 30 },
+            { s = "weapons/csgo/movement3.wav", t = 113 / 30 },
         },
     },
 }
@@ -401,13 +406,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(8.5, 0, 1), } }	
+    AttPosMods = { [2] = { Pos = Vector(8.5, 0, 1), } }
     },
     ["barrel_short"] = {
         Bodygroups = {
             {2,2},
         },
-    AttPosMods = { [2] = { Pos = Vector(6.75, 0, 1), } }	
+    AttPosMods = { [2] = { Pos = Vector(6.75, 0, 1), } }
     },
 }
 
@@ -415,7 +420,7 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Barrel",
-		--Bone = "v_weapon.glock_magazine",
+        --Bone = "v_weapon.glock_magazine",
         Category = "go_mp9_barrel"
     },
     {
@@ -444,7 +449,7 @@ SWEP.Attachments = {
                 Bone = "tag_pistol_attachments_l",
             }
         },
-		Scale = 0.9,
+        Scale = 0.9,
     },
     {
         PrintName = "Tactical",
@@ -458,14 +463,14 @@ SWEP.Attachments = {
                 Bone = "tag_pistol_attachments_l",
             }
         },
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Stock",
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract",},
         Bone = "tag_pistol_attachments",
-		InstalledElements = {"stock_none"},
+        --InstalledElements = {"stock_none"},
         Pos = Vector(-4, 0, 0.3),
         Ang = Angle(0, 0, 0),
         DuplicateModels = {
@@ -473,10 +478,10 @@ SWEP.Attachments = {
                 Bone = "tag_pistol_attachments_l",
                 Pos = Vector(-4, 0, 0.5),
                 Ang = Angle(0, 0, 0),
-				Scale = 0.8,
+                Scale = 0.8,
             }
         },
-		Scale = 0.8,
+        Scale = 0.8,
     },
     {
         PrintName = "Ammo",
@@ -486,7 +491,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Mag",
-		Bone = "j_mag1_l",
+        Bone = "j_mag1_l",
         Category = {"go_mag","go_mag_mp9"},
     },
     {
@@ -497,7 +502,12 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_mp9",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
+    },
+    {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
     },
     {
         PrintName = "Sticker",

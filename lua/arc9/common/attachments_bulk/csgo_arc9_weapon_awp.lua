@@ -2,9 +2,10 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "490mm Bull Barrel"
 ATT.CompactName = "450mm"
-ATT.Description = [[A bull barrel that significantly reduces recoil, though at the cost of handling.]]
+ATT.Description = [[Bull barrel that significantly reduces recoil, though at the cost of handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_awp_barrel_long.png", "mips smooth")
@@ -27,9 +28,10 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_bull")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "390mm Custom Barrel"
 ATT.CompactName = "390mm"
-ATT.Description = [[A short-length custom barrel. Improves handling, though offers much worse range and accuracy.]]
+ATT.Description = [[Short-length custom barrel. Improves handling, though offers much worse range and accuracy.]]
 ATT.SortOrder = 2
 
 ATT.Icon = Material("entities/attachs/go_awp_barrel_short.png", "mips smooth")
@@ -52,9 +54,10 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "430mm Factory Barrel"
 ATT.CompactName = "430mm"
-ATT.Description = [[A factory length barrel. Improves handling, though doesn't offers much range and accuracy.]]
+ATT.Description = [[Factory length barrel. Improves handling, though doesn't offers much range and accuracy.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_awp_barrel_long.png", "mips smooth")
@@ -77,9 +80,10 @@ ARC9.LoadAttachment(ATT, "csgo_awp_barrel_factory")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = [[Folding]]
-ATT.Description = [[A folded stock for the AWP. Improves recoil at the cost of handling.]]
+ATT.Description = [[Folded stock for the AWP. Improves recoil at the cost of handling.]]
 ATT.Icon = Material("entities/attachs/awp_stock_folding.png", "mips smooth")
 ATT.Desc_Pros = {
 }
@@ -97,10 +101,11 @@ ARC9.LoadAttachment(ATT, "csgo_awp_stock_folding")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[15-Round .338 AWM]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_15.png")
-ATT.Description = [[Extended capacity by 50%, at the cost of increased reload time.]]
+ATT.Description = [[Extends the mag capacity by 50%, at the cost of increased reload time.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -119,10 +124,11 @@ ARC9.LoadAttachment(ATT, "csgo_awp_mag_15")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[5-Round .338 AWM]]
 ATT.CompactName = [[5-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_5.png")
-ATT.Description = [[Reduced capacity by 50%, gives an increased of reload speed, extra damage, and handling.]]
+ATT.Description = [[Reduced capacity by 50%, with the benefit of decreased reload speed, an extra damage, and better handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -147,6 +153,7 @@ ARC9.LoadAttachment(ATT, "csgo_awp_mag_5")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = [[Iron]]
 --ATT.Icon = Material("entities/attachs/go_optic_t1.png", "mips smooth")
@@ -169,9 +176,10 @@ ARC9.LoadAttachment(ATT, "csgo_awp_sight_iron")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = [[Skeleton]]
-ATT.Description = [[A lightweight stock for the AWP.]]
+ATT.Description = [[Lightweight stock for the AWP.]]
 ATT.Icon = Material("entities/attachs/go_awp_stock_skeleton.png", "mips smooth")
 ATT.Desc_Pros = {
 }

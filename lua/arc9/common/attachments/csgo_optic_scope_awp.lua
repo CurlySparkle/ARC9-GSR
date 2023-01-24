@@ -1,14 +1,14 @@
 ATT.PrintName = "Scope 8x"
 ATT.CompactName = [[SCOPE AWP]]
 ATT.Icon = Material("entities/attachs/go_optic_awp.png", "mips smooth")
-ATT.Description = [[Medium-range combat scope for improved precision at longer ranges.]]
+ATT.Description = [[Medium-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SCOPE"
 

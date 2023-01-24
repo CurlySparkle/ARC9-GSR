@@ -215,8 +215,9 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
@@ -486,6 +487,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_a.mdl",
         Category = "stickers",
@@ -506,11 +512,6 @@ SWEP.Attachments = {
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
-    },
-    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.deagle_slide", -- relevant bone any attachments will be mostly referring to
@@ -520,5 +521,13 @@ SWEP.Attachments = {
     {
         PrintName = "View",
         Category = "go_pistols_view3"
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.stattrack",
+        Pos = Vector(0.24, 0, 0.17),
+        Ang = Angle(0, -90, 0),
+		CosmeticOnly = true,
     },
 }

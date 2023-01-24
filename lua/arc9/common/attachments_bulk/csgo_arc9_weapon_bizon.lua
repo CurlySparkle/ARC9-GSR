@@ -3,9 +3,10 @@ local ATT = {}
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "290mm GRU Barrel"
 ATT.CompactName = "290mm GRU"
-ATT.Description = [[A long barrel with extended handguard. Good for long range engagements.]]
+ATT.Description = [[Long barrel with extended handguard. Good for long range engagements.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_bizon_barrel_long.png", "mips smooth")
@@ -28,9 +29,10 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_barrel_long")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "230mm FSB Barrel"
 ATT.CompactName = "230mm FSB"
-ATT.Description = [[A medium-length barrel for the PP-19-02.]]
+ATT.Description = [[Medium-length barrel for the PP-19-02.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_bizon_barrel_med.png", "mips smooth")
@@ -54,10 +56,11 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_barrel_mid")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[47-Round 9mm Bizon]]
 ATT.CompactName = [[47-Round]]
 ATT.Icon = Material("entities/attachs/go_bizon_mag_47.png")
-ATT.Description = [[A small magazine with lighter load. Improves handling.]]
+ATT.Description = [[Small magazine with lighter load. Improves handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -78,10 +81,11 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_mag_47")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[82-Round 9mm Helix]]
 ATT.CompactName = [[82-Round]]
 ATT.Icon = Material("entities/attachs/go_bizon_mag_82.png")
-ATT.Description = [[An extended magazine to improves capacity, at the cost of handling.]]
+ATT.Description = [[Extended magazine to improves capacity, at the cost of handling.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -103,10 +107,11 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_mag_82")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[30-Round 9mm Saiga]]
 ATT.CompactName = [[30-Round]]
 ATT.Icon = Material("entities/attachs/go_bizon_mag_82.png")
-ATT.Description = [[A small stick magazine. Improves handling, at the cost of capacity.]]
+ATT.Description = [[Small stick magazine. Improves handling, at the cost of capacity.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = -1
@@ -158,6 +163,7 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_mag_saiga")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alt Hold 2"
 ATT.CompactName = "Alt Hold 2"
 ATT.Description = [[Changes the holding style of the weapon 2.]]
@@ -180,6 +186,7 @@ ARC9.LoadAttachment(ATT, "csgo_bizon_hold_2")
 --------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Alternative View"
 ATT.CompactName = "Alt View"
 ATT.Description = [[Changes the view of the weapon for a more closer look.]]

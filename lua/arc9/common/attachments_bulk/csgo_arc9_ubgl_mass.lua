@@ -1,9 +1,10 @@
 local ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[MASS-26 Breaching Shotgun]]
 ATT.CompactName = [[M26]]
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_mass.png")
-ATT.Description = [[5-Round 12 gauge box magazine pumping shotgun for your handguard.]]
+ATT.Description = [[5 round, 12 gauge box magazine pumping shotgun for your handguard.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100

@@ -2,6 +2,7 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Kawaii Killer]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]
@@ -19,6 +20,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_kawai")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Baby Lore]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]
@@ -35,6 +37,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_baby_lore")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Baby Medusa]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]
@@ -51,6 +54,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_baby_medusa")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Kawaii CT]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]
@@ -67,6 +71,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_kawaii_ct_holo")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Nice Try]]
 ATT.Description = [[Nice try bozo.
 Sticker included in Gunsmith Reloaded.]]
@@ -83,6 +88,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_nice_try_holo")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Noble Steed]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]
@@ -99,6 +105,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_noble_steed")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Rush B]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]
@@ -115,6 +122,7 @@ ARC9.LoadAttachment(ATT, "csgo_sticker_rush_b_csgo10")
 ------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Zeusception]]
 ATT.Description = [[
 Sticker included in Gunsmith Reloaded.]]

@@ -1,0 +1,34 @@
+"VertexlitGeneric"
+{
+	"$basetexture"				"models/csgo/galil/GalilRail_FG_d"
+	"$bumpmap"					"models/csgo/galil/GalilRail_FG_n"
+	"$phongexponenttexture"		"models/csgo/galil/GalilRail_FG_s"
+	"$color2"					"[0.8 0.8 0.8]"
+	"$blendTintByBaseAlpha"		"1"
+
+	"$envmap"					"env_cubemap"
+	"$envmaptint"				"[ .13 .13 .13 ]"
+
+	"$phong"					"1"
+	"$phongboost"				"15"
+	"$phongfresnelranges"		"[0.25 0.5 1]"
+     "$normalmapalphaenvmapmask"              "1"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+
+	"$rimlight"					"0"
+	"$rimlightexponent"			"80"	
+	"$rimlightboost"			".2"
+	"$rimmask"					"1"
+	"$nocull"					"1"
+
+	$detailblendmode 4
+	$detailblendfactor 0.8
+	Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
+	}
+}
+

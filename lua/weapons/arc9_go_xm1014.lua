@@ -44,15 +44,15 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 20 -- Damage done at point blank range
+SWEP.DamageMax = 22 -- Damage done at point blank range
 SWEP.DamageMin = 5 -- Damage done at maximum range
 
 SWEP.Num = 6
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 1700 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 4200 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 400 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 2500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 1 -- Units of wood that can be penetrated by this gun.
 SWEP.RicochetChance = 0
@@ -225,8 +225,9 @@ SWEP.AfterShotParticleDelay = 0
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 3
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
 SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
@@ -489,7 +490,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {2,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 27), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 29), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
@@ -550,7 +551,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.m3_Parent",
-        InstalledElements = {"stock_none"},
+        --InstalledElements = {"stock_none"},
         Pos = Vector(0, -0.3, 1.5),
         Ang = Angle(90, 0, -90),
         Scale = 1.1,
@@ -587,6 +588,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/xm1014_a.mdl",
         Category = "stickers",
@@ -605,16 +611,19 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
-        Category = {"universal_camo"},
-        CosmeticOnly = true,
-    },
-    {
         PrintName = "Charm",
         Category = "charm",
         Bone = "v_weapon.m3_Parent", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(1, -1.7, 3), -- offset that the attachment will be relative to the bone
+        Pos = Vector(0.8, -1.5, 3), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.m3_Parent",
+        Pos = Vector(0.65, -0.3, 3.5),
+        Ang = Angle(90, 0, -90),
+		CosmeticOnly = true,
     },
 }
 

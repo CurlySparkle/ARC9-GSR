@@ -36,6 +36,18 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Molotov.Explode",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    sound = {
+        "^weapons/csgo/molotov/molotov_detonate_1.wav",
+		"^weapons/csgo/molotov/molotov_detonate_2.wav",
+		"^weapons/csgo/molotov/molotov_detonate_3.wav",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.HE.Throw",
     channel = CHAN_AUTO,
     volume = 1.0,

@@ -1,14 +1,14 @@
 ATT.PrintName = "SpecterDR (4x)"
 ATT.CompactName = [[SpecterDR]]
 ATT.Icon = Material("entities/attachs/specter.png", "mips smooth")
-ATT.Description = [[Long-range combat scope for improved precision at longer ranges.]]
+ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 4x Zoom",
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
 ATT.SortOrder = 4
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 ATT.Folder = "SCOPE"
 

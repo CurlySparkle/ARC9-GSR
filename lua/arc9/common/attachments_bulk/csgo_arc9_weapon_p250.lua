@@ -2,9 +2,10 @@ local ATT = {}
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "140mm Full Size Slide"
 ATT.CompactName = "P250 L"
-ATT.Description = [[A long P250 slide that improves range but also adds less handling.]]
+ATT.Description = [[Long P250 slide that improves range but also adds less handling.]]
 ATT.SortOrder = 0
 
 ATT.Icon = Material("entities/attachs/go_p250_slide_long.png", "mips smooth")
@@ -27,9 +28,10 @@ ARC9.LoadAttachment(ATT, "csgo_p250_slide_long")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "90mm Subcompact Slide"
 ATT.CompactName = "P250 S"
-ATT.Description = [[A compact slide that improves weapon handling and trigger response.]]
+ATT.Description = [[Compact slide that improves weapon handling and trigger response.]]
 ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_p250_slide_short.png", "mips smooth")
@@ -55,6 +57,7 @@ ARC9.LoadAttachment(ATT, "csgo_p250_slide_short")
 
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Flux Raider Frame"
 ATT.CompactName = "P250 FR"
 ATT.Description = [[Buttframe 2042.]]

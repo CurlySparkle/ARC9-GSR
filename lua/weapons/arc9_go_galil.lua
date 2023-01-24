@@ -640,6 +640,11 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = "Cosmetic",
+        Category = {"universal_camo"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = "Stickers",
         StickerModel = "models/weapons/stickers/v_models/galil_a.mdl",
         Category = "stickers",
@@ -665,6 +670,14 @@ SWEP.Attachments = {
         Bone = "v_weapon.ak47_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.7, -3.5, 4), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "Stats",
+        Category = "killcounter",
+        Bone = "v_weapon.ak47_parent",
+        Pos = Vector(0.6, -3, 3),
+        Ang = Angle(90, 0, -90),
+		CosmeticOnly = true,
     },
 }
 

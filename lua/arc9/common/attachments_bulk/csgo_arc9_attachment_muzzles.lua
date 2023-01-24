@@ -3,9 +3,10 @@ local ATT = {}
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[AK Compensator]]
 ATT.CompactName = [[AK Comp]]
-ATT.Description = [[A muzzle brake for reducing the vertical kick of a weapon, at the cost of increasing random recoil.]]
+ATT.Description = [[Muzzle brake for reducing the vertical kick of a weapon, at the cost of increasing random recoil.]]
 ATT.Icon = Material("entities/attachs/muzzle_AKM.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -32,9 +33,10 @@ ARC9.LoadAttachment(ATT, "go_muzzle_akm")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Compensator]]
 ATT.CompactName = [[Compensator]]
-ATT.Description = [[A muzzle brake for reducing the recoil of the weapon with the cost of less handling.]]
+ATT.Description = [[Muzzle brake for reducing the recoil of the weapon with the cost of less handling.]]
 ATT.Icon = Material("entities/attachs/muzzle_p226.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -64,6 +66,7 @@ ARC9.LoadAttachment(ATT, "go_muzzle_p226")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[AR-15 Compensator]]
 ATT.CompactName = [[AR Comp]]
 ATT.Description = [[Straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]
@@ -93,9 +96,10 @@ ARC9.LoadAttachment(ATT, "go_muzzle_ar15")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Carlson's Tactical Breacher Muzzle Brake]]
 ATT.CompactName = [[Door Breacher]]
-ATT.Description = [[Provides a blast dispersion to reduce felt recoil and muzzle rise.]]
+ATT.Description = [[Muzzle brake that provides a blast dispersion to reduce felt recoil and muzzle rise.]]
 ATT.Icon = Material("entities/attachs/muzzle_r870.png", "mips smooth")
 
 ATT.SortOrder = 1
@@ -117,6 +121,7 @@ ARC9.LoadAttachment(ATT, "go_muzzle_r870")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[UZI Compensator]]
 ATT.CompactName = [[UZI Comp]]
 ATT.Description = [[Straightens out the recoil pattern of a weapon, though at the cost of greater vertical kick.]]

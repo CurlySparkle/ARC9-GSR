@@ -1,9 +1,9 @@
 ATT.PrintName = [[Custom Pistol Optic Riser]]
 ATT.CompactName = [[Pistol Riser]]
 ATT.Icon = Material("entities/attachs/pistol_rail.png")
-ATT.Description = [[A standard rail system that allows attachment of optics, designed for sidearms.]]
+ATT.Description = [[Standard rail system that allows attachment of optics, designed for sidearms.]]
 ATT.SortOrder = 0
-ATT.MenuCategory = "ARC-9 - CSGO Attachments"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
 
 ATT.Category = {"csgo_rail_optic_pistols"}
@@ -12,7 +12,7 @@ ATT.Model = "models/weapons/csgo/atts/rail_pistol_mountslide.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(-0.5, 0.05, 2.9)
 -- ATT.ModelAngleOffset = Angle(0,-90,0)
-ATT.Folder = "RISERS"
+//ATT.Folder = "RISERS"
 ATT.IconOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {
