@@ -66,7 +66,7 @@ SWEP.Ammo = "sniperPenetratedRound" -- What ammo type this gun uses.
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 10 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
-SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
+SWEP.SecondarySupplyLimit = 6 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
@@ -259,14 +259,14 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
         EventTable = {
-            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto},
+            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto, v = 0.2},
             {s = path .. "scout_fire_sub-1.ogg", t = 0 / 30},
         },
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
         EventTable = {
-            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto},
+            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto, v = 0.2},
             {s = path .. "scout_fire_sub-1.ogg", t = 0 / 30},
         },
     },
@@ -300,7 +300,7 @@ SWEP.Animations = {
         },
     },
     ["reload"] = {
-        Source = "reload_short",
+        Source = "reload_short2",
         IKTimeLine = {
             {
                 t = 0,
@@ -331,7 +331,7 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "scout_clipout.ogg", t = 7 / 30},
             {s = path .. "scout_clipin.ogg", t = 40 / 30},
-            {s = path .. "scout_cliphit.ogg", t = 48 / 30},
+            {s = path .. "scout_cliphit.ogg", t = 45 / 30},
         },
     },
     ["reload_empty"] = {

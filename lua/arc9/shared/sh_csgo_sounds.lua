@@ -595,7 +595,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP7.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.2,
     level = 120,
     pitch = {97,103},
     sound = {
