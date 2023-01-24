@@ -150,7 +150,7 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 SWEP.PreBashTime = 0.2
-SWEP.PostBashTime = 0.65
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -418,7 +418,24 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee", "melee2", "melee3"}
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.7,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 
