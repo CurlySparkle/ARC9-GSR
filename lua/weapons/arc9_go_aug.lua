@@ -110,6 +110,9 @@ SWEP.RecoilKickCrouch = 1
 SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
@@ -149,13 +152,14 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.61, -6, 0.7),
-    Ang = Angle(0, -0.1, 0),
+    Pos = Vector(-3.61, -6, 0.5),
+    Ang = Angle(0, -0.4, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
+	CrosshairInSights = true
 }
 
-SWEP.ViewModelFOVBase = 56
+SWEP.ViewModelFOVBase = 70
 
 SWEP.SprintPos = Vector(0, 0, -0.3)
 SWEP.SprintAng = Angle(0, 0, 0)
@@ -173,7 +177,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(0, -1, -1)
+SWEP.MovingPos = Vector(0, -1, -0.3)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
@@ -513,8 +517,8 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(-0.7, -0.7, 0),
-        Installed = "csgo_optic_acog_2",
-        Integral = true,
+        --Installed = "csgo_optic_acog_2",
+        Integral = false,
     },
     {
         PrintName = "Barrel",
