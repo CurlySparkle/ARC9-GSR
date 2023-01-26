@@ -1,13 +1,3 @@
-hook.Add("ShouldCollide", "gsr_charges", function(ent1, ent2)
-	local ply = Entity(1)
-	local own = ent1:GetNWEntity("owner") or ent1
-	
-	if (IsValid(ent1) and IsValid(ent2) and ent1:GetClass() == "arc9_gsr_breach" and ent1:GetNWBool("Fused") != true and ent2 == own) then return false end
-	if ent1:GetClass() == "arc9_gsr_breach" and ent2:GetClass() == "arc9_gsr_breach" then return false end
-	
-	return true
-end)
-
 gsr_flashtime = 5
 gsr_flashfade = 2
 gsr_flashdistance = 1280
