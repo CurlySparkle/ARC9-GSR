@@ -25,7 +25,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts.]]
+SWEP.Description = [[A pair of Glocks means twice the capacity and a twice as lethal burst fire.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_glock.mdl"
 SWEP.WorldModel = "models/weapons/csgo/c_akimbo_usp.mdl"
@@ -90,9 +90,9 @@ SWEP.Firemodes = {
         RunawayBurst = true,
         PostBurstDelay = 0.3,
 
-        -- AkimboBoth = true,
-        -- AmmoPerShot = 2,
-        -- Num = 2,
+        AkimboBoth = true,
+        AmmoPerShot = 2,
+        Num = 2,
 
         RecoilUp = 1,
         RecoilKick = 1.5,

@@ -7,8 +7,8 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
-SWEP.PrintName = "Dual CZ75"
-SWEP.TrueName = "Dual CZ75"
+SWEP.PrintName = "Dual CZ75-Autos"
+SWEP.TrueName = "Dual CZ75-Autos"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
@@ -25,7 +25,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[A fully automatic variant of the CZ75, the CZ75-Auto is another inexpensive choice against armored opponents. But with very little ammo provided, strong trigger discipline is required.]]
+SWEP.Description = [[A pair of automatic pistols. Its low fire rate makes it a well rounded akimbo option.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_cz75.mdl"
 SWEP.WorldModel = "models/weapons/csgo/c_akimbo_usp.mdl"
@@ -81,12 +81,13 @@ SWEP.RPM = 600
 
 SWEP.Firemodes = {
     {
-        Mode = 1,
-        -- add other attachment modifiers
+        Mode = -1,
+        AkimboBoth = true,
+        AmmoPerShot = 2,
+        Num = 2,
     },
     {
-        Mode = -1,
-		RPM = 600
+        Mode = 1,
     }
 }
 -------------------------- RECOIL

@@ -24,7 +24,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms.]]
+SWEP.Description = [[A pair of automatic SMGs providing very impressive firepower.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_mp9.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
