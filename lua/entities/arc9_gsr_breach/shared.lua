@@ -149,7 +149,7 @@ if SERVER then
             prop:SetPhysicsAttacker(attacker, 2)
 
             -- This is necessary to set the render bounds of func doors
-            timer.Simple(0, function()
+            timer.Simple(0.01, function()
                 net.Start("gsr_doorbust")
                     net.WriteEntity(prop)
                 net.Broadcast()
@@ -210,10 +210,11 @@ end
 
 
 if CLIENT then
-    net.Receive("tacrp_doorbust", function()
+    net.Receive("gsr_doorbust", function()
         local door = net.ReadEntity()
         if IsValid(door) then
-            door:SetRenderBounds(door:GetModelBounds())
+            local mins, maxs = door:GetCollisionBounds()
+            door:SetRenderBounds(mins, maxs, Vector(4, 4, 4))
         end
     end)
 end
