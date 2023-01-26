@@ -515,26 +515,53 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.Bizon.Fire",
-    channel = 10,
+    name = "CSGO.Bizon.FireFirst",
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 100,
-    pitch = {97,103},
+    pitch = {105,110},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/bizon/bizon_01.ogg",
-		"weapons/csgo/bizon/bizon_02.ogg",
+        "weapons/csgo/bizon/bizon_fire_first-01.ogg",
+		"weapons/csgo/bizon/bizon_fire_first-02.ogg",
+		"weapons/csgo/bizon/bizon_fire_first-03.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Bizon.Fire",
+    channel = CHAN_USERBASE,
+    volume = 1.0,
+    level = 100,
+    pitch = {100,103},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/csgo/bizon/bizon_fire-01.ogg",
+		"weapons/csgo/bizon/bizon_fire-02.ogg",
     }
 } )
 
 sound.Add( {
     name = "CSGO.Bizon.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.5,
     level = 120,
-    pitch = {97,103},
+    pitch = {90,90},
     sound = {
-        "weapons/csgo/bizon/bizon-1-distant.ogg",
+        "^weapons/csgo/bizon/bizon_fire_distant-01.ogg",
+		"^weapons/csgo/bizon/bizon_fire_distant-02.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.Bizon.FireStereo",
+    channel = 13,
+    volume = 1,
+    level = 50,
+    pitch = {80,80},
+    sound = {
+        "weapons/csgo/bizon/bizon_fire_stereo-01.ogg",
+		"weapons/csgo/bizon/bizon_fire_stereo-02.ogg",
     }
 } )
 
@@ -568,7 +595,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP7.Fire.Distance",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.2,
     level = 120,
     pitch = {97,103},
     sound = {
@@ -857,14 +884,14 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.AWP.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 115,
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/awp/awp_01.ogg",
-		"weapons/csgo/awp/awp_02.ogg",
+        "#weapons/csgo/awp/awp_01.ogg",
+		"#weapons/csgo/awp/awp_02.ogg",
     }
 } )
 
@@ -881,13 +908,13 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Scout.Fire",
-    channel = 10,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 100,
-    pitch = {97,103},
+    pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/ssg08/ssg08-1.ogg",
+        "weapons/csgo/scout/scout_fire_1.ogg",
     }
 } )
 
@@ -905,11 +932,11 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.Scout.Distance_Fire",
     channel = CHAN_WEAPON,
-    volume = 0.3,
+    volume = 0.8,
     level = 125,
-    pitch = {97,103},
+    pitch = {92,95},
     sound = {
-        "weapons/csgo/ssg08/ssg08-1-distant.ogg",
+        "^weapons/csgo/scout/scout_fire_dist-1.ogg",
     }
 } )
 
@@ -1007,7 +1034,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Fire_Beef",
-    channel = CHAN_AUTO,
+    channel = CHAN_USERBASE,
     volume = 0.6,
     level = 80,
     pitch = {95,110},
@@ -1021,7 +1048,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.hkp2000.Fire_Beef_ADS",
-    channel = CHAN_AUTO,
+    channel = CHAN_USERBASE,
     volume = 1.0,
     level = 80,
     pitch = {95,110},
@@ -1341,7 +1368,7 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP5A2.Fire_First",
     channel = CHAN_USERBASE,
-    volume = 0.5,
+    volume = 0.9,
     level = 90,
     pitch = {115,120},
 	soundlevel = SNDLVL_GUNFIRE,
@@ -1355,9 +1382,9 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP5A2.Fire",
     channel = CHAN_USERBASE,
-    volume = 0.65,
+    volume = 0.7,
     level = 90,
-    pitch = {105,108},
+    pitch = {97,100},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "weapons/csgo/mp5/a2variant/mp5a2_fire-1.ogg",
@@ -1382,10 +1409,10 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP5A2.Fire.Beef",
     channel = CHAN_USERBASE,
-    volume = 0.2,
+    volume = 0.3,
     level = 50,
     -- pitch = {115,120},
-    pitch = 200,
+    pitch = 100,
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "weapons/csgo/mp5/a2variant/mp5a2_01.ogg",
@@ -1397,9 +1424,9 @@ sound.Add( {
 sound.Add( {
     name = "CSGO.MP5A2.Fire.BeefADS",
     channel = CHAN_USERBASE,
-    volume = {0.15,0.4},
+    volume = 0.5,
     level = 50,
-    pitch = {180,200},
+    pitch = {95,100},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
         "weapons/csgo/mp5/a2variant/mp5a2_01.ogg",
@@ -1568,7 +1595,7 @@ sound.Add( {
 
 sound.Add( {
     name = "CSGO.Bizon.Fire_Silenced",
-    channel = 10,
+    channel = CHANNEL_USERBASE,
     volume = 1.0,
     level = 90,
     pitch = {97,103},

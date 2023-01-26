@@ -70,7 +70,7 @@ SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 64 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
-SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
+SWEP.SecondarySupplyLimit = 6 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
@@ -245,7 +245,9 @@ SWEP.DropMagazineQCA = 3
 local path = "weapons/csgo/bizon/"
 
 SWEP.ShootSound = "CSGO.Bizon.Fire"
+SWEP.FirstShootSound = "CSGO.Bizon.FireFirst"
 SWEP.ShootSoundSilenced = "CSGO.Bizon.Fire_Silenced"
+SWEP.FirstShootSoundSilenced = "CSGO.Bizon.Fire_Silenced"
 SWEP.DistantShootSound = "CSGO.Bizon.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -276,13 +278,28 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot4"},
+        EventTable = {
+            -- {s = "CSGO.Bizon.FireStereo", t = 0 / 30},
+            -- {s = "CSGO.MP5.Fire.Beef", t = 0 / 30},
+            -- {s = "CSGO.MP5.Fire.Beefdone", t = 3 / 30},
+		},
     },
     ["fire_saiga"] = {
         Source = {"shoot4"},
 		Mult = 0.7,
+        EventTable = {
+            -- {s = "CSGO.Bizon.FireStereo", t = 0 / 30},
+            -- {s = "CSGO.MP5.Fire.Beef", t = 0 / 30},
+            -- {s = "CSGO.MP5.Fire.Beefdone", t = 3 / 30},
+		},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        EventTable = {
+            -- {s = "CSGO.Bizon.FireStereo", t = 0 / 30},
+            -- {s = "CSGO.MP5.Fire.BeefADS", t = 0 / 30},
+            {s = "CSGO.MP5.Fire.Beefdone", t = 3 / 30},
+		},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -310,7 +327,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20 / 30},
             {s = path .. "bizon_clipin.wav", t = 31 / 30},
+            {s = path .. "bizon_reloadend_short.ogg", t = 38 / 30},
         },
     },
     ["reload_empty"] = {
@@ -339,9 +358,11 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20 / 30},
             {s = path .. "bizon_clipin.wav", t = 31 / 30},
-            {s = path .. "bizon_boltback.wav", t = 48 / 30},
-            {s = path .. "bizon_boltforward.wav", t = 56 / 30},
+            {s = path .. "bizon_back.ogg", t = 48 / 30},
+            {s = path .. "bizon_forward.ogg", t = 53 / 30},
+            {s = path .. "bizon_reloadend.ogg", t = 58 / 30},
         },
     },
     ["reload_saiga"] = {
@@ -369,8 +390,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "bizon_clipout.wav", t = 10 / 30},
-            {s = path .. "bizon_clipin.wav", t = 31 / 30},
+            {s = path .. "bizon_clipout_stick.ogg", t = 10 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20 / 30},
+            {s = path .. "bizon_clipin_stick.ogg", t = 31 / 30},
+            {s = path .. "bizon_reloadend_short.ogg", t = 38 / 30},
         },
     },
     ["reload_empty_saiga"] = {
@@ -398,10 +421,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "bizon_clipout.wav", t = 10 / 30},
-            {s = path .. "bizon_clipin.wav", t = 31 / 30},
-            {s = path .. "bizon_boltback.wav", t = 48 / 30},
-            {s = path .. "bizon_boltforward.wav", t = 56 / 30},
+            {s = path .. "bizon_clipout_stick.ogg", t = 10 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20 / 30},
+            {s = path .. "bizon_clipin_stick.ogg", t = 31 / 30},
+            {s = path .. "bizon_back.ogg", t = 48 / 30},
+            {s = path .. "bizon_forward.ogg", t = 56 / 30},
+            {s = path .. "bizon_reloadend.ogg", t = 58 / 30},
         },
     },	
     ["reload_alt"] = {
@@ -430,7 +455,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20 / 30},
             {s = path .. "bizon_clipin.wav", t = 31 / 30},
+            {s = path .. "bizon_reloadend_short.ogg", t = 38 / 30},
         },
     },
     ["reload_empty_alt"] = {
@@ -459,9 +486,11 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10 / 30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20 / 30},
             {s = path .. "bizon_clipin.wav", t = 31 / 30},
-            {s = path .. "bizon_boltback.wav", t = 48 / 30},
-            {s = path .. "bizon_boltforward.wav", t = 56 / 30},
+            {s = path .. "bizon_back.ogg", t = 48 / 30},
+            {s = path .. "bizon_forward.ogg", t = 53 / 30},
+            {s = path .. "bizon_reloadend.ogg", t = 58 / 30},
         },
     },
     ["ready"] = {
@@ -492,6 +521,7 @@ SWEP.Animations = {
             {s = path .. "bizon_draw.wav", t = 0 / 30},
             {s = path .. "bizon_boltback.wav", t = 8 / 30},
             {s = path .. "bizon_boltforward.wav", t = 17 / 30},
+            {s = path .. "bizon_reloadend_short.ogg", t = 22 / 30},
         },
     },
     ["draw"] = {

@@ -1,0 +1,11 @@
+// Created by Crowbar 0.72
+version 1
+nodes
+  0 "v_weapon" -1
+  1 "v_weapon.mp7_parent" 0
+end
+skeleton
+  time 0
+    0 0.000000 0.000000 0.000000 1.570792 0.000003 -0.000003
+    1 0.000000 -0.993681 -1.636055 0.000000 0.000000 0.000000
+end

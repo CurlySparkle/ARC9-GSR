@@ -71,7 +71,7 @@ SWEP.Ammo = "SMG1" -- What ammo type this gun uses.
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 30 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
-SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
+SWEP.SecondarySupplyLimit = 6 -- Amount of reserve UBGL magazines you can take.
 
 SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
@@ -144,8 +144,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.15
-SWEP.PostBashTime = 0.7
+SWEP.PreBashTime = 0.2
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -163,8 +163,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -2, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(-1, -2, -0.5)
+SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -472,7 +472,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee"},
+        Source = {"melee", "melee2", "melee3"},
         IKTimeLine = {
             {
                 t = 0,
@@ -534,13 +534,18 @@ SWEP.AttachmentElements = {
             {5,1},
         },
     },
+    ["grip_rail"] = {
+        Bodygroups = {
+            {6,1},
+        },
+    },
 }
 
 // Forced Override Bodygroup
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("grip_folded") then model:SetBodygroup(2,2) end	
-	if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end		
+	if wep:HasElement("stock_extend") then model:SetBodygroup(5,0) end		
 end
 
 
@@ -548,7 +553,7 @@ SWEP.Attachments = {
     {
         PrintName = "Scope",
         Bone = "v_weapon.mp7_parent",
-        Pos = Vector(0, -4.1, 0.2),
+        Pos = Vector(0, -4.4, 0.2),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic", "go_optic_mp7"},
         InstalledElements = {"mount"},
@@ -559,7 +564,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.mp7_parent",
-        Pos = Vector(0, -2.3, 8.1),
+        Pos = Vector(0, -2.37, 9),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -567,8 +572,8 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"grip","grip_mp7"},
         Bone = "v_weapon.mp7_parent",
-		InstalledElements = {"grip"},
-        Pos = Vector(0, -1.6, 6),
+		InstalledElements = {"grip","grip_rail"},
+        Pos = Vector(0, -1.3, 6),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
     },
@@ -577,7 +582,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.mp7_parent",
-        Pos = Vector(-0.7, -2.2, 6),
+        Pos = Vector(-0.8, -2.25, 6),
         Ang = Angle(90, 90, 90),
     },
     {
@@ -586,9 +591,9 @@ SWEP.Attachments = {
         Category = {"csgo_tube","stock_extend"},
         Bone = "v_weapon.mp7_parent",
 		InstalledElements = {"stock_adapter"},
-        Pos = Vector(-0.01, -2.55, -4.5),
+        Pos = Vector(-0.01, -2.65, -5.2),
         Ang = Angle(90, 0, -90),
-		Scale = 0.7,
+		Scale = 0.8,
     },
     {
         PrintName = "Mag",
@@ -656,7 +661,17 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
 		CosmeticOnly = true,
     },
+    {
+        PrintName = "Pourquoi",
+        Bone = "v_weapon.mp7_parent",
+        Pos = Vector(-0.3, 0.2, 7),
+        Ang = Angle(90, 0, 90),
+        Category = {"grip_mp7_alt"},
+		Installed = "go_holdstyle_mp7_integral",
+        Integral = true,
+        Hidden = true,		
+    },	
 }
 
 SWEP.GripPoseParam = 4.5
-SWEP.GripPoseParam2 = 0.1
+SWEP.GripPoseParam2 = 0.5
