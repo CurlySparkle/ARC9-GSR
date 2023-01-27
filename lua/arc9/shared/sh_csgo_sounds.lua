@@ -1522,14 +1522,28 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.AUG.Fire_Silenced",
+    name = "CSGO.AUG.Fire_Silenced_First",
     channel = 10,
     volume = 1.0,
     level = 90,
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/aug_suppressed.wav",
+        "weapons/aug_suppressed_first.ogg",
+    }
+} )
+
+sound.Add( {
+    name = "CSGO.AUG.Fire_Silenced",
+    channel = 10,
+    volume = 1.0,
+    level = 90,
+    pitch = {90,110},
+	soundlevel = SNDLVL_GUNFIRE,
+    sound = {
+        "weapons/aug_suppressed_loop1.ogg",
+		"weapons/aug_suppressed_loop2.ogg",
+		"weapons/aug_suppressed_loop3.ogg",
     }
 } )
 
