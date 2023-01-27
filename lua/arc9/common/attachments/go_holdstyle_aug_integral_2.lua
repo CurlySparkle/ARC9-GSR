@@ -11,6 +11,7 @@ ATT.Category = "grip_aug_2"
 
 ATT.RHIK_Priority = 5
 ATT.RHIK = true
+-- ATT.IKAnimationAlsoPlayBase = true
 
 -- ATT.IKAnimationProxy = {
     -- ["idle"] = {

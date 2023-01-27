@@ -229,6 +229,7 @@ SWEP.DropMagazineQCA = 3
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/aug/"
+local path2 = "weapons/csgo/mp9/"
 
 SWEP.ShootSound = "CSGO.AUG.Fire"
 SWEP.FirstShootSoundSilenced = "CSGO.AUG.Fire_Silenced_First"
@@ -358,7 +359,7 @@ SWEP.Animations = {
         },
     },
     ["reload_9"] = {
-        Source = "reload_9mm_wet",
+        Source = "reload_short", --PlaceHolder
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
@@ -366,12 +367,14 @@ SWEP.Animations = {
             {t = 1, lhik = 1, rhik = 1 },
         },
         EventTable = {
-            {s = path .. "aug_clipout.wav", t = 15 / 30},
-            {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 44 / 30},
+            {s = path2 .. "mp9_clipout.wav", t = 21 / 30},
+			{s = "CSGO.Item.Movement", t = 40 / 30},
+            {s = path2 .. "mp9_clipin.wav", t = 73 / 30},
+			{s = "CSGO.Item.Movement", t = 76 / 30},
         },
     },
     ["reload_empty_9"] = {
-        Source = "reload_9mm",
+        Source = "reload2", --PlaceHolder
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
@@ -379,10 +382,13 @@ SWEP.Animations = {
             {t = 1, lhik = 1, rhik = 1 },
         },
         EventTable = {
-            {s = path .. "aug_clipout.wav", t = 15 / 30},
-            {s = "weapons/csgo/mp9/mp9_clipin.wav", t = 44 / 30},
-            {s = path .. "aug_boltpull.wav", t = 66 / 30},
-            {s = path .. "aug_boltrelease.wav", t = 72 / 30},
+            {s = path .. "aug_boltpull.wav", t = 11 / 30},
+            {s = path .. "mp9_clipout.wav", t = 43 / 30},
+			{s = "CSGO.Item.Movement", t = 67 / 30},
+            {s = path .. "mp9_clipin.wav", t = 88 / 30},
+			{s = "CSGO.Item.Movement", t = 99 / 30},
+            {s = path .. "aug_boltrelease.wav", t = 109 / 30},
+			{s = "CSGO.Item.Movement", t = 118 / 30},
         },
     },
     ["ready"] = {
@@ -524,8 +530,8 @@ SWEP.AttachmentElements = {
             {4,1},
         },
     },
-    ["mag_9mm"] = { Bodygroups = {{4,2},},},
-    ["mag_9mmx"] = { Bodygroups = {{4,3},},},
+    ["mag_9mm"] = { Bodygroups = {{4,3},},},
+    ["mag_9mmx"] = { Bodygroups = {{4,4},},},
     ["barrel_long"] = {
         Bodygroups = {
             {3,1},
@@ -562,7 +568,7 @@ SWEP.AttachmentTableOverrides = {
 SWEP.Attachments = {
     {
         PrintName = "Scope",
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 3, -3.77),
         Ang = Angle(0, -90, 180),
         Category = {"csgo_optic"},
@@ -573,7 +579,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Barrel",
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 12, -2.5),
         Ang = Angle(0, -90, 180),
         Category = "csgo_aug_barrel",
@@ -582,7 +588,7 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Category = "muzzle",
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 12.7, -2.45),
         Ang = Angle(0, -90, 180),
         Scale = 1,
@@ -591,7 +597,7 @@ SWEP.Attachments = {
         PrintName = "Grip",
         DefaultAttName = "Default",
         Category = {"grip","grip_aug"},
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         InstalledElements = {"grip","grip_extender"},
         Pos = Vector(0.1, 10, -0.55),
         Ang = Angle(0, -90, 0),
@@ -600,19 +606,19 @@ SWEP.Attachments = {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = "csgo_tac",
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(1.13, 4.1, -2.48),
         Ang = Angle(0, -90, 43),
     },
     {
         PrintName = "Magazine",
         Category = {"go_mag_aug","go_mag"},
-        Bone = "mag003",
+        Bone = "v_weapon.aug_Clip",
         Pos = Vector(0, 0 ,0),
     },
     {
         PrintName = "Ammo",
-        Bone = "mag003",
+        Bone = "v_weapon.aug_Clip",
         Category = "go_ammo",
         Pos = Vector(0, -1, -1.5),
     },
@@ -654,21 +660,21 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Category = "charm",
-        Bone = "aug", -- relevant bone any attachments will be mostly referring to
+        Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(-1, 0, -1.9), -- offset that the attachment will be relative to the bone
         Ang = Angle(180, 90, 0),
     },
     {
         PrintName = "Stats",
         Category = {"killcounter","killcounter2"},
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(-1, 2.5, -1.9),
         Ang = Angle(180, 90, 0),
 		CosmeticOnly = true,
     },
     {
         PrintName = "Pourquoi",
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.3, 8.4, 1.2),
         Ang = Angle(0, -90, 0),
         Category = {"grip_aug_lhik"},
@@ -678,7 +684,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Pourquoi2",
-        Bone = "aug",
+        Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.3, 0.8, 1),
         Ang = Angle(-7, -90, 0),
         Category = {"grip_aug_2"},

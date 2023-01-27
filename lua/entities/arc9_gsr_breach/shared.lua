@@ -73,6 +73,8 @@ if SERVER then
         --self:EmitSound("CSGO.Breacher.BreachSoundWarningBeep")
         local owner = self:GetNWEntity("Owner") or self
         util.BlastDamage(self, owner, self:GetPos(), 256, 300)
+        // Shrapnel radius
+        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 400, 25)
 
         local fx = EffectData()
         fx:SetOrigin(self:GetPos())
@@ -81,8 +83,18 @@ if SERVER then
         if self:WaterLevel() > 0 then
             util.Effect("WaterSurfaceExplosion", fx)
         else
+        ParticleEffect("explosion_hegrenade_brief", self:GetPos(), Angle(0, 0, 0), nil)
+		ParticleEffect("explosion_hegrenade_interior", self:GetPos(), Angle(0, 0, 0), nil)
             ParticleEffect("grenade_explosion_01", self:GetPos(), self:GetAngles(), nil)
-            util.Effect("HelicopterMegaBomb", fx)
+			ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), Angle(0, 0, 0), nil)
+		    ParticleEffect("smoke_plume_b", self:GetPos(), Angle(0, 0, 0), nil)
+		    ParticleEffect("smoke_plume_c", self:GetPos(), Angle(0, 0, 0), nil)
+		    ParticleEffect("HE_shockwave", self:GetPos(), Angle(0, 0, 0), nil)
+			
+            --util.Effect("HelicopterMegaBomb", fx)
+				local spos = self:GetPos()
+	local trs = util.TraceLine({start=spos + Vector(0,0,64), endpos=spos + Vector(0,0,-32), filter=self})
+	util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
         end
 
         self:EmitSound("CSGO.Frag.Explode")
