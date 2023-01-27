@@ -124,3 +124,29 @@ ATT.RangeMinMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_aug_barrel_short")
+
+ATT = {}
+
+ATT.PrintName = "No Grip"
+ATT.CompactName = "No Grip"
+ATT.Description = [[Removes the grip of the weapon, better handling but bad recoil control.]]
+
+ATT.Icon = Material("entities/attachs/holdstyle.png", "mips smooth")
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_aug_2.mdl"
+ATT.ActivateElements = {"no_grip"}
+
+ATT.SortOrder = 0
+ATT.Category = "grip_aug"
+
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 1.25
+
+ATT.LHIK_Priority = 2
+ATT.LHIK = true
+
+ATT.ModelOffset = Vector(-5, 1, -1.5)
+ATT.ModelAngleOffset = Angle(0, 15, 180)
+
+ARC9.LoadAttachment(ATT, "csgo_grip_no")

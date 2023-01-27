@@ -141,8 +141,8 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.15
-SWEP.PostBashTime = 0.65
+SWEP.PreBashTime = 0.2
+SWEP.PostBashTime = 0.6
 
 -------------------------- TRACERS
 
@@ -547,6 +547,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("grip_folded") then model:SetBodygroup(1,2) end
     if wep:HasElement("grip_folded") then model:SetBodygroup(2,0) end
+	if wep:HasElement("no_grip") then model:SetBodygroup(1,1) model:SetBodygroup(2,0) end
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,3) end
 end
 
@@ -670,7 +671,7 @@ SWEP.Attachments = {
         Bone = "aug",
         Pos = Vector(0.3, 8.4, 1.2),
         Ang = Angle(0, -90, 0),
-        Category = {"grip_aug"},
+        Category = {"grip_aug_lhik"},
 		Installed = "go_holdstyle_aug_integral",
         Integral = true,
         Hidden = true,		

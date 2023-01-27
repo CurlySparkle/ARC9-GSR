@@ -72,7 +72,7 @@ if SERVER then
         if not self:GetNWBool("Fused") then return end
         --self:EmitSound("CSGO.Breacher.BreachSoundWarningBeep")
         local owner = self:GetNWEntity("Owner") or self
-        util.BlastDamage(self, owner, self:GetPos(), 128, 300)
+        util.BlastDamage(self, owner, self:GetPos(), 256, 300)
 
         local fx = EffectData()
         fx:SetOrigin(self:GetPos())

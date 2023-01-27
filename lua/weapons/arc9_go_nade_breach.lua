@@ -110,6 +110,8 @@ SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
+SWEP.ShootPosOffset = Vector(0, 5, 0)
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "slam"
@@ -142,7 +144,7 @@ SWEP.Animations = {
       EventTable = {
           { s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0 },
       },
-      MinProgress = 0
+      MinProgress = 0.1
     },
     ["detonate"] = {
         Source = "detonate",
