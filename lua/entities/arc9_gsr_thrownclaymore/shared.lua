@@ -8,6 +8,7 @@ ENT.Information = ""
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 ENT.Model = "models/weapons/w_eq_claymore_dropped.mdl"
+ENT.RenderGroup = RENDERGROUP_BOTH
 
 ENT.ArmDelay = 3
 ENT.Armed = false
@@ -17,17 +18,21 @@ ENT.BeepPitch = 100
 
 ENT.DetectionRange = 750
 ENT.DetectionAngle = 45
+ENT.LaserOffset = Vector(1, 0, 8)
 
 function ENT:SetupDataTables()
     self:NetworkVar("Float", 0, "ArmTime")
+    self:NetworkVar("Angle", 0, "Adjustment")
+end
+
+function ENT:GetLaserPos()
+    return self:GetPos() + self:GetForward() * self.LaserOffset.x + self:GetRight() * self.LaserOffset.y + self:GetUp() * self.LaserOffset.z
 end
 
 function ENT:Initialize()
     if SERVER then
         self:SetModel(self.Model)
-        self:SetMoveType(MOVETYPE_VPHYSICS)
-        self:SetSolid(SOLID_VPHYSICS)
-        self:PhysicsInit(SOLID_VPHYSICS)
+        self:PhysicsInitBox(Vector(-2, -5, 0), Vector(2, 5, 8))
         self:DrawShadow(true)
         self:SetArmTime(-1)
 
@@ -70,7 +75,32 @@ function ENT:Plant(ent, pos, normal)
 
     self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
 
-    local angle = normal:Cross(Angle(0, self.SpawnAngle, 0):Right()):Angle()
+    local a = Angle(0, self.SpawnAngle, 0)
+    local f = a:Forward()
+
+    local na = normal:Angle()
+    na:RotateAroundAxis(na:Right(), -90)
+
+    local angle = Angle(na)
+    local dir = angle:Forward()
+    dir.z = 0
+    dir:Normalize()
+
+    local turn = angle:Forward():Cross(dir):GetNormalized()
+    local theta = math.deg(math.acos(angle:Forward():Dot(dir)))
+
+    angle:RotateAroundAxis(turn, theta)
+    angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
+    angle:RotateAroundAxis(turn, -theta)
+
+    if angle.p > 5 then
+        self:SetAdjustment(Angle(-math.Clamp(theta * 0.5, 0, 15), 0, 0))
+    end
+
+    -- debugoverlay.Line(pos, pos + angle:Forward() * 32, 5, Color(255, 0, 150), true)
+    -- debugoverlay.Line(pos, pos + f * 32, 3, Color(255, 0, 255), true)
+    -- debugoverlay.Line(pos, pos + na:Forward() * 32, 3, Color(255, 255, 0), true)
+    -- debugoverlay.Line(pos - Vector(0, 0, 16), pos + Vector(0, 0, 16), 3, Color(255, 255, 255), true)
 
     if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
         self:SetMoveType(MOVETYPE_NONE)
@@ -84,8 +114,7 @@ function ENT:Plant(ent, pos, normal)
     self:SetArmTime(CurTime())
 
     timer.Simple(math.max(0, self.ArmDelay - 1.2), function()
-        self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 100, 100)
-
+        if IsValid(self) then self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 100, 100) end
     end)
 end
 
@@ -103,6 +132,24 @@ function ENT:Use(act, call, calltype, integer)
     self:Remove()
 end
 
+-- basically checking if AABB intersects the plane represented by the entity's position and normal
+function ENT:CheckLaserIntersect(i)
+    local p = self:GetLaserPos()
+    local n = (self:GetAngles() + self:GetAdjustment()):Up()
+
+    local mins, maxs = i:WorldSpaceAABB()
+    local c = (mins + maxs) / 2 - p
+    local e = (maxs - p) - c -- positive extents
+
+    -- projection interval radius of box onto c + t * n
+    local r = math.abs(e.x * n.x) + math.abs(e.y * n.y) + math.abs(e.z * n.z)
+
+    -- distance of box center from plane
+    local s = n:Dot(c)
+
+    return s <= r
+end
+
 function ENT:Think()
     if self:GetArmed() then
         if CLIENT then
@@ -112,24 +159,32 @@ function ENT:Think()
                 self:SetRenderBounds(Vector(-8, -d * 0.5, -4), Vector(self.DetectionRange, d * 0.5, 32))
             elseif self.NextBeepTime <= CurTime() then
                 self:EmitSound("weapons/csgo/claymore/claymore_sensors_on.wav", 80, 100)
-                self.NextBeepTime = CurTime() + 5
+                self.NextBeepTime = CurTime() + 3
             end
         elseif SERVER then
-            local z = self:GetPos().z
-            for _, i in pairs(ents.FindInCone(self:GetPos(), self:GetAngles():Forward(), self.DetectionRange, math.cos(math.rad(self.DetectionAngle / 2)))) do
-                if IsValid(i) and i:GetPos().z - z <= 32 and
-                        (i:IsPlayer() or i:IsNPC() or i:IsNextBot())
-                        and i:GetPos():DistToSqr(self:GetPos()) <= self.DetectionRangeSqr then
+            local p = self:GetLaserPos()
+            for _, i in pairs(ents.FindInCone(p, (self:GetAngles() + self:GetAdjustment()):Forward(), self.DetectionRange, math.cos(math.rad(self.DetectionAngle / 2)))) do
+                if IsValid(i) and (i:IsPlayer() or i:IsNPC() or i:IsNextBot()) and i:GetPos():DistToSqr(p) <= self.DetectionRangeSqr and self:CheckLaserIntersect(i) then
+                    local mins, maxs = i:WorldSpaceAABB()
+                    local c = i:WorldSpaceCenter()
                     local tr = util.TraceLine({
-                        start = self:GetPos(),
-                        endpos = i:WorldSpaceCenter(),
+                        start = p,
+                        endpos = Vector(c.x, c.y, mins.z),
                         mask = MASK_SHOT,
                         filter = {self, i},
                     })
+                    if tr.Fraction < 1 then
+                        tr = util.TraceLine({
+                            start = p,
+                            endpos = Vector(c.x, c.y, maxs.z),
+                            mask = MASK_SHOT,
+                            filter = {self},
+                        })
+                    end
                     if tr.Fraction == 1 then
                         self:Detonate()
+                        break
                     end
-                    break
                 end
             end
 
@@ -150,24 +205,25 @@ end
 function ENT:Detonate()
     if SERVER then
         if not self:IsValid() then return end
+        local pos = self:GetPos()
         local effectdata = EffectData()
-        effectdata:SetOrigin(self:GetPos())
+        effectdata:SetOrigin(pos)
 
         if self:WaterLevel() >= 1 then
             util.Effect("WaterSurfaceExplosion", effectdata)
             self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
         else
-            ParticleEffect("explosion_hegrenade_brief", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("explosion_hegrenade_interior", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("grenade_explosion_01", self:GetPos(), self:GetAngles(), nil)
-            ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("smoke_plume_b", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("smoke_plume", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("smoke_plume_c", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("HE_shockwave", self:GetPos(), Angle(0, 0, 0), nil)
+            ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("grenade_explosion_01", pos, self:GetAngles(), nil)
+            ParticleEffect("weapon_decoy_ground_effect_shot", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("smoke_plume_b", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("smoke_plume", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("smoke_plume_c", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("HE_shockwave", pos, Angle(0, 0, 0), nil)
 
             --util.Effect("HelicopterMegaBomb", fx)
-            local spos = self:GetPos()
+            local spos = pos
 
             local trs = util.TraceLine({
                 start = spos + Vector(0, 0, 64),
@@ -186,7 +242,7 @@ function ENT:Detonate()
 
         self:SetOwner(NULL)
 
-        util.BlastDamage(oldowner, oldowner, self:GetPos(), 128, 100)
+        util.BlastDamage(oldowner, oldowner, pos, 128, 100)
         local btabl = {
             Attacker = oldowner,
             Damage = 25,
@@ -195,8 +251,8 @@ function ENT:Detonate()
             HullSize = 8,
             Tracer = 10,
             Force = 0,
-            Dir = (self:GetAngles() + Angle(-5, 0, 0)):Forward(),
-            Src = self:GetPos() + Vector(0, 0, 8),
+            Dir = (self:GetAngles() + Angle(-5, 0, 0) + self:GetAdjustment()):Forward(),
+            Src = self:WorldSpaceCenter() + Vector(0, 0, 4),
             Spread = Vector(math.rad(180), math.rad(30), 0),
             Callback = function(att, tr, dmg)
                 dmg:SetDamageType(DMG_BLAST)
@@ -247,10 +303,13 @@ if CLIENT then
 
     function ENT:Draw()
         self:DrawModel()
-        local pos = self:GetPos() + Vector(0, 0, 5)
+    end
+
+    function ENT:DrawTranslucent()
+        local pos = self:GetLaserPos()
 
         if self:GetArmed() then
-            local ang = self:GetAngles() + Angle(-1, 0, 0)
+            local ang = self:GetAngles() + self:GetAdjustment()
             ang:RotateAroundAxis(self:GetUp(), self.DetectionAngle * 0.5)
             laser(self, pos, ang)
 

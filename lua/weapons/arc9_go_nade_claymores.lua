@@ -8,9 +8,10 @@ SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
-SWEP.PrintName = "Claymores"
+SWEP.PrintName = "Claymore"
 SWEP.Class = "Directional Mine"
-SWEP.Description = [[Toss one of these on the ground and send your opponents flying (also can be set to explode). Hope you don't step on one.]]
+SWEP.Description = [[Anti-personnel proximity mine that fires lethal shrapnel in a large cone.
+While it has a large area of effect, its laser is quite easy to spot and can be jumped over by daring opponents.]]
 SWEP.Trivia = {
     Designer = "Norman Macleod et al.",
     Manufacturer = "Mohawk Electrical Systems Inc",
