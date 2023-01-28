@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "vgui/killicons/csgo_breachcharge"
+	"$basetexture" "vgui/killicons/csgo_claymore"
 	"$vertexcolor"	"1"
 	"$vertexalpha"	"1"
 	"$translucent"	"1"
