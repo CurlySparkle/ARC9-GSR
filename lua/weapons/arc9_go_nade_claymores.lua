@@ -11,7 +11,7 @@ SWEP.NotForNPCs = true
 SWEP.PrintName = "Claymore"
 SWEP.Class = "Directional Mine"
 SWEP.Description = [[Anti-personnel proximity mine that fires lethal shrapnel in a large cone.
-While it has a large area of effect, its laser is quite easy to spot and can be jumped over by daring opponents.]]
+While it has a wide area of effect, its laser is quite easy to spot and can be jumped over by daring opponents.]]
 SWEP.Trivia = {
     Designer = "Norman Macleod et al.",
     Manufacturer = "Mohawk Electrical Systems Inc",
@@ -175,8 +175,7 @@ SWEP.Animations = {
         Source = "throw",
         EventTable = {
             { s = "weapons/csgo/claymore/claymore_pullback.wav", t = 0 / 30},
-			{ s = "weapons/csgo/claymore/claymore_putdown.wav", t = 6 / 30},
-			{ s = "weapons/csgo/claymore/claymore_plant_03.wav", t = 10 / 30},
+            { s = "weapons/csgo/claymore/claymore_putdown.wav", t = 6 / 30},
         },
         MinProgress = 0.6
     },

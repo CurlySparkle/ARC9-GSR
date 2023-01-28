@@ -16,8 +16,8 @@ ENT.Armed = false
 ENT.NextBeepTime = 0
 ENT.BeepPitch = 100
 
-ENT.DetectionRange = 256
-ENT.DetectionAngle = 90
+ENT.DetectionRange = 400
+ENT.DetectionAngle = 45
 ENT.LaserOffset = Vector(1, 0, 8)
 
 function ENT:SetupDataTables()
@@ -43,8 +43,8 @@ function ENT:Initialize()
             phys:SetBuoyancyRatio(0)
         end
 
-        self:SetHealth(5)
-        self:SetMaxHealth(5)
+        self:SetHealth(10)
+        self:SetMaxHealth(10)
 
         self.SpawnAngle = self:GetAngles().y
 
@@ -111,8 +111,9 @@ function ENT:Plant(ent, pos, normal)
     self:SetAngles(angle)
     self:SetArmTime(CurTime())
 
+    self:EmitSound("weapons/csgo/claymore/claymore_plant_0" .. math.random(1, 3) .. ".wav", 80, 100)
     timer.Simple(math.max(0, self.ArmDelay - 1.2), function()
-        if IsValid(self) then self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 100, 100) end
+        if IsValid(self) then self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 80, 100) end
     end)
 end
 
@@ -156,13 +157,12 @@ function ENT:Think()
                 local d = math.tan(math.rad(self.DetectionAngle)) * self.DetectionRange
                 self:SetRenderBounds(Vector(-8, -d * 0.5, -4), Vector(self.DetectionRange, d * 0.5, 32))
             elseif self.NextBeepTime <= CurTime() then
-                --self:EmitSound("weapons/csgo/claymore/claymore_sensors_on.ogg", 80, 100)
-				self:EmitSound( "weapons/csgo/claymore/claymore_sensors_on.ogg", 75, 100, 1, CHAN_AUTO )
+                self:EmitSound( "weapons/csgo/claymore/claymore_sensors_on.ogg", 75, 100, 1, CHAN_AUTO )
                 self.NextBeepTime = CurTime() + 3
             end
         elseif SERVER then
             local p = self:GetLaserPos()
-            for _, i in pairs(ents.FindInCone(p, (self:GetAngles() + self:GetAdjustment()):Forward(), self.DetectionRange, math.cos(math.rad(self.DetectionAngle / 2)))) do
+            for _, i in ipairs(ents.FindInCone(p, (self:GetAngles() + self:GetAdjustment()):Forward(), self.DetectionRange, math.cos(math.rad(self.DetectionAngle / 2)))) do
                 if IsValid(i) and (i:IsPlayer() or i:IsNPC() or i:IsNextBot()) and i:GetPos():DistToSqr(p) <= self.DetectionRangeSqr and self:CheckLaserIntersect(i) then
                     local mins, maxs = i:WorldSpaceAABB()
                     local c = i:WorldSpaceCenter()
@@ -177,7 +177,7 @@ function ENT:Think()
                             start = p,
                             endpos = Vector(c.x, c.y, maxs.z),
                             mask = MASK_SHOT,
-                            filter = {self},
+                            filter = {self, i},
                         })
                     end
                     if tr.Fraction == 1 then
@@ -186,19 +186,27 @@ function ENT:Think()
                     end
                 end
             end
+            -- Fix deadzone right in front of the mine
+            for _, i in ipairs(ents.FindInSphere(p + (self:GetAngles() + self:GetAdjustment()):Forward() * 12, 24)) do
+                if IsValid(i) and (i:IsPlayer() or i:IsNPC() or i:IsNextBot()) then
+                    self:Detonate()
+                end
+            end
 
-            self:NextThink(CurTime() + 0.1)
+            self:NextThink(CurTime() + 0.15)
             return true
         end
     end
 end
 
-ENT.AntiRecurse = false
-
 function ENT:OnTakeDamage(dmg)
-    if self.AntiRecurse then return end
-    self.AntiRecurse = true
-    self:Detonate()
+    self:SetHealth(self:Health() - dmg:GetDamage())
+    if not self.BOOM and self:Health() <= 0 then
+        self.BOOM = true
+        self:Detonate()
+    end
+
+    return dmg:GetDamage()
 end
 
 function ENT:Detonate()
@@ -232,7 +240,7 @@ function ENT:Detonate()
 
             util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
             --self:EmitSound("weapons/csgo/claymore/claymore_expl_01.wav", 125, 100, 1, CHAN_AUTO)
-			self:EmitSound("CSGO.Claymore.Explode")
+            self:EmitSound("CSGO.Claymore.Explode")
         end
 
         local oldowner = self.Attacker or self:GetOwner()
@@ -242,21 +250,21 @@ function ENT:Detonate()
 
         self:SetOwner(NULL)
 
-        util.BlastDamage(oldowner, oldowner, pos, 128, 100)
+        util.BlastDamage(oldowner, oldowner, pos, 200, 150)
         local btabl = {
             Attacker = oldowner,
-            Damage = 25,
-            Distance = 750,
-            Num = 100,
-            HullSize = 8,
-            Tracer = 10,
+            Damage = 30,
+            Distance = self.DetectionRange,
+            Num = 50,
+            HullSize = 32,
+            Tracer = 1,
             Force = 0,
             Dir = (self:GetAngles() + Angle(-5, 0, 0) + self:GetAdjustment()):Forward(),
             Src = self:WorldSpaceCenter() + Vector(0, 0, 4),
             Spread = Vector(math.rad(180), math.rad(30), 0),
             Callback = function(att, tr, dmg)
                 dmg:SetDamageType(DMG_BLAST)
-                dmg:ScaleDamage(Lerp(tr.Fraction ^ 2, 1, 0.25))
+                dmg:ScaleDamage(Lerp(tr.Fraction ^ 2, 1, 0.5))
 
                 if IsValid(oldowner) then
                     dmg:SetAttacker(oldowner)
@@ -265,9 +273,9 @@ function ENT:Detonate()
         }
         self:FireBullets(btabl)
 
-        btabl.Distance = 1000
+        btabl.Distance = self.DetectionRange * 1.5
         btabl.Num = 50
-        btabl.Spread = Vector(math.rad(60), math.rad(10), 0)
+        btabl.Spread = Vector(math.rad(60), math.rad(15), 0)
         self:FireBullets(btabl)
 
         self:Remove()
@@ -309,12 +317,13 @@ if CLIENT then
         local pos = self:GetLaserPos()
 
         if self:GetArmed() then
+            local d = self.DetectionAngle - 5 -- make it so it's less likely you stand in the laser but isn't triggering it
             local ang = self:GetAngles() + self:GetAdjustment()
-            ang:RotateAroundAxis(self:GetUp(), self.DetectionAngle * 0.5)
+            ang:RotateAroundAxis(self:GetUp(), d * 0.5)
             laser(self, pos, ang)
 
             for i = 1, 4 do
-                ang:RotateAroundAxis(self:GetUp(), -self.DetectionAngle * 0.25)
+                ang:RotateAroundAxis(self:GetUp(), -d * 0.25)
                 laser(self, pos, ang)
             end
 
