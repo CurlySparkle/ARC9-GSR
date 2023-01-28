@@ -93,9 +93,7 @@ function ENT:Plant(ent, pos, normal)
     angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
     angle:RotateAroundAxis(turn, -theta)
 
-    if angle.p > 5 then
-        self:SetAdjustment(Angle(-math.Clamp(theta * 0.5, 0, 15), 0, 0))
-    end
+    self:SetAdjustment(Angle(-math.Clamp(theta * 0.5, 3, 15), 0, 0))
 
     -- debugoverlay.Line(pos, pos + angle:Forward() * 32, 5, Color(255, 0, 150), true)
     -- debugoverlay.Line(pos, pos + f * 32, 3, Color(255, 0, 255), true)
