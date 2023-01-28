@@ -231,8 +231,8 @@ if CLIENT then
             filter = self
         })
         render.SetMaterial(beam)
-        render.DrawBeam(tr.StartPos, tr.HitPos, 3, 0, tr.Fraction, beam_clr2)
-        render.DrawBeam(tr.StartPos, tr.HitPos, 8, 0, tr.Fraction, beam_clr)
+        render.DrawBeam(tr.StartPos, tr.HitPos, 3, 0, tr.Fraction - 0.01, beam_clr2)
+        render.DrawBeam(tr.StartPos, tr.HitPos, 8, 0, tr.Fraction - 0.01, beam_clr)
 
         if tr.Hit then
             local rad = math.Rand(16, 24)
