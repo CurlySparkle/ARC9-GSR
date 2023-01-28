@@ -24,6 +24,18 @@ sound.Add( {
 } )
 
 sound.Add( {
+    name = "CSGO.Claymore.Explode",
+    channel = CHAN_STATIC,
+    volume = 1.0,
+    level = 140,
+    pitch = {95, 115},
+    sound = {
+        "^weapons/csgo/claymore/claymore_expl_01.ogg",
+		"^weapons/csgo/claymore/claymore_expl_02.ogg",
+    }
+} )
+
+sound.Add( {
     name = "CSGO.Incendiary.Explode",
     channel = CHAN_STATIC,
     volume = 1.0,

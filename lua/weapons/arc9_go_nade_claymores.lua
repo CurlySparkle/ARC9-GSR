@@ -82,7 +82,7 @@ SWEP.ThrowOnGround = true
 SWEP.ThrowInstantly = true
 SWEP.ShootEntInheritPlayerVelocity = false
 
-SWEP.ShootPosOffset = Vector(0, 40, 0)
+SWEP.ShootPosOffset = Vector(0, 20, 0)
 
 -------------------------- POSITIONS
 
@@ -178,7 +178,7 @@ SWEP.Animations = {
 			{ s = "weapons/csgo/claymore/claymore_putdown.wav", t = 6 / 30},
 			{ s = "weapons/csgo/claymore/claymore_plant_03.wav", t = 10 / 30},
         },
-        MinProgress = 0.3
+        MinProgress = 0.6
     },
     ["bash"] = {
         Source = {"melee","melee2","melee3"}
