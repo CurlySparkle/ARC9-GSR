@@ -115,8 +115,11 @@ function ENT:Think()
                 self.NextBeepTime = CurTime() + 5
             end
         elseif SERVER then
+            local z = self:GetPos().z
             for _, i in pairs(ents.FindInCone(self:GetPos(), self:GetAngles():Forward(), self.DetectionRange, math.cos(math.rad(self.DetectionAngle / 2)))) do
-                if IsValid(i) and (i:IsPlayer() or i:IsNPC() or i:IsNextBot()) and i:GetPos():DistToSqr(self:GetPos()) <= self.DetectionRangeSqr then
+                if IsValid(i) and i:GetPos().z - z <= 32 and
+                        (i:IsPlayer() or i:IsNPC() or i:IsNextBot())
+                        and i:GetPos():DistToSqr(self:GetPos()) <= self.DetectionRangeSqr then
                     local tr = util.TraceLine({
                         start = self:GetPos(),
                         endpos = i:WorldSpaceCenter(),
@@ -130,7 +133,7 @@ function ENT:Think()
                 end
             end
 
-            self:NextThink(CurTime() + 0.25)
+            self:NextThink(CurTime() + 0.1)
             return true
         end
     end
