@@ -46,7 +46,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 3
+SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 0
 SWEP.Crosshair = true

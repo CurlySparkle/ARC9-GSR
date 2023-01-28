@@ -46,7 +46,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 3
+SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 0
 SWEP.Crosshair = true
@@ -70,7 +70,7 @@ SWEP.TossForce = 250 -- Force that the grenade will be thrown with when right cl
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
-SWEP.Disposable = true 
+SWEP.Disposable = true
 
 -------------------------- POSITIONS
 

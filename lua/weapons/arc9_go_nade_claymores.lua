@@ -50,11 +50,12 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 3
+SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 0
+SWEP.SupplyLimit = 3
 SWEP.Crosshair = true
 
+SWEP.Spread = 0
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
 
@@ -73,13 +74,14 @@ SWEP.TossForce = 0 -- Force that the grenade will be thrown with when right clic
 
 SWEP.ThrowChargeTime = 0 -- How long it takes to charge the grenade to its maximum throw force.
 
-SWEP.Disposable = true 
+SWEP.Disposable = true
 
 SWEP.ThrowTumble = false
-
+SWEP.ThrowOnGround = true
 SWEP.ThrowInstantly = true
+SWEP.ShootEntInheritPlayerVelocity = false
 
-SWEP.ShootPosOffset = Vector(0, 0, -15)
+SWEP.ShootPosOffset = Vector(0, 40, 0)
 
 -------------------------- POSITIONS
 
