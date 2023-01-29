@@ -284,9 +284,9 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "aug_clipout.wav", t = 21 / 30},
 			{s = "CSGO.Item.Movement", t = 40 / 30},
-            {s = path .. "aug_clipin.wav", t = 73 / 30},
-            {s = path .. "aug_cliphit.wav", t = 74 / 30},
-			{s = "CSGO.Item.Movement", t = 76 / 30},
+            {s = path .. "aug_clipin.wav", t = 67 / 30},
+            {s = path .. "aug_cliphit.wav", t = 69 / 30},
+			{s = "CSGO.Item.Movement", t = 71 / 30},
         },
     },
     ["reload_empty"] = {

@@ -113,7 +113,10 @@ function ENT:Plant(ent, pos, normal)
 
     self:EmitSound("weapons/csgo/claymore/claymore_plant_0" .. math.random(1, 3) .. ".wav", 80, 100)
     timer.Simple(math.max(0, self.ArmDelay - 1.2), function()
-        if IsValid(self) then self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 80, 100) end
+        if IsValid(self) then 
+		--self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 80, 100)
+		self:EmitSound( "weapons/csgo/breachcharges/breach_warning_beep_01.wav", 75, 100, 1, CHAN_AUTO )
+		end
     end)
 end
 
@@ -284,7 +287,7 @@ end
 
 
 if CLIENT then
-    local beam = Material("arc9/laser1")
+    local beam = Material("csgo/laser1")
     local beam_clr = Color(255, 0, 0)
     local beam_clr2 = Color(200, 200, 200)
     local dot = Material("arc9/laser_glow", "mips smooth")
