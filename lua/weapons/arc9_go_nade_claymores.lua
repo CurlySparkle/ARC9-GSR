@@ -112,8 +112,8 @@ SWEP.MovingAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 20, 3)
+SWEP.CustomizeAng = Angle(-33, -35, 0)
+SWEP.CustomizePos = Vector(-5, 25, 13)
 
 SWEP.CustomizeSnapshotAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(-13, 10, 3)
@@ -177,7 +177,7 @@ SWEP.Animations = {
             { s = "weapons/csgo/claymore/claymore_pullback.wav", t = 0 / 30},
             { s = "weapons/csgo/claymore/claymore_putdown.wav", t = 6 / 30},
         },
-        MinProgress = 0.6
+        MinProgress = 0.5
     },
     ["bash"] = {
         Source = {"melee","melee2","melee3"}

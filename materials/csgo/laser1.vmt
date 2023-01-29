@@ -1,6 +1,6 @@
 UnLitGeneric
 {
-	"$basetexture"	"csgo/laser1"
+	"$basetexture"	"csgo/laser2"
 	"$additive" 	"1"
 	"$translucent" "1"
 	"$vertexcolor" 	"1"

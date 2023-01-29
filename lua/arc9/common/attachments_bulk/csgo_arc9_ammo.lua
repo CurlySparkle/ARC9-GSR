@@ -206,11 +206,11 @@ ATT.SpreadMult = 0.3
 ATT.PhysBulletGravityMult = 3
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 
-ATT.DamageMaxOverride = 35
-ATT.DamageMinOverride = 10
+ATT.DamageMaxOverride = 100
+ATT.DamageMinOverride = 75
 
-ATT.ExplosionRadiusOverride = 75
-ATT.ExplosionDamageOverride = 80
+ATT.ExplosionRadiusOverride = 100
+ATT.ExplosionDamageOverride = 200
 ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
 ATT.ImpactDecal = "FadingScorch"
 

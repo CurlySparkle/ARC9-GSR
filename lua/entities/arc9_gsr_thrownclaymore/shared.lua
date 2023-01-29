@@ -223,8 +223,8 @@ function ENT:Detonate()
             util.Effect("WaterSurfaceExplosion", effectdata)
             self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
         else
-            ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
-            ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
+            --ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
+            --ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
             ParticleEffect("grenade_explosion_01", pos, self:GetAngles(), nil)
             ParticleEffect("weapon_decoy_ground_effect_shot", pos, Angle(0, 0, 0), nil)
             ParticleEffect("smoke_plume_b", pos, Angle(0, 0, 0), nil)
@@ -288,8 +288,8 @@ end
 
 if CLIENT then
     local beam = Material("csgo/laser1")
-    local beam_clr = Color(255, 0, 0)
-    local beam_clr2 = Color(200, 200, 200)
+    local beam_clr = Color(55, 0, 0)
+    local beam_clr2 = Color(0, 0, 0)
     local dot = Material("arc9/laser_glow", "mips smooth")
 
     local function laser(self, pos, ang)

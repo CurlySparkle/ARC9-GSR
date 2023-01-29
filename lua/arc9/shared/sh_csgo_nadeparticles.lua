@@ -39,6 +39,7 @@ table.insert(GSORParticleEffects, #GSORParticleEffects, "molotov_groundfire_00ME
 table.insert(GSORParticleEffects, #GSORParticleEffects, "extinguish_fire")
 table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_molotov_air")
 table.insert(GSORParticleEffects, #GSORParticleEffects, "incgrenade_thrown_trail")
+table.insert(GSORParticleEffects, #GSORParticleEffects, "weapon_molotov_held")
 //SMOKE FX
 table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_child_smoke03e")
 table.insert(GSORParticleEffects, #GSORParticleEffects, "explosion_child_core06b")
