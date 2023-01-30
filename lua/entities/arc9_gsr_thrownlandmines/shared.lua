@@ -12,9 +12,10 @@ ENT.ImpactFuse = false
 ENT.Armed = false
 ENT.NextBeepTime = 0
 ENT.BeepPitch = 100
+ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
 AddCSLuaFile()
 
-ENT.DetectionRange = 64
+ENT.DetectionRange = 96
 ENT.ArmDelay = 3
 
 function ENT:SetupDataTables()
@@ -36,6 +37,7 @@ function ENT:Initialize()
         if phys:IsValid() then
             phys:Wake()
             phys:SetBuoyancyRatio(0)
+            phys:SetDragCoefficient(10)
         end
 
         self:SetHealth(10)
@@ -59,9 +61,6 @@ local burytypes = {
 function ENT:Plant(ent, pos, normal)
     if self.Armed then return end
     if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
-
-    local dot = normal:Dot(Vector(0, 0, 1))
-    if dot <= 0.5 then return end -- don't stick to walls!
 
     self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
 
@@ -88,8 +87,8 @@ function ENT:Plant(ent, pos, normal)
         endpos = pos - normal,
         filter = {self},
     })
-    if burytypes[tr_mat.MatType] then
-        pos = pos - normal * 3
+    if burytypes[tr_mat.MatType] and normal:Dot(Vector(0, 0, 1)) >= 0.5 then
+        pos = pos - normal * 3.2
     end
 
     if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
@@ -112,11 +111,20 @@ function ENT:PhysicsCollide(data, physobj)
     self:Plant(data.HitEntity, data.HitPos, -data.HitNormal)
 end
 
+function ENT:Use(act, call, calltype, integer)
+    if IsValid(act) and act:IsPlayer() then
+        act:GiveAmmo(1, weapons.GetStored("arc9_go_nade_landmines").Ammo)
+        act:Give("arc9_go_nade_landmines", true)
+    end
+
+    self:EmitSound("weapons/csgo/bumpmines/bumpmine_pickup.wav", 75)
+    self:Remove()
+end
 
 function ENT:Think()
     if SERVER and self:GetArmed() then
         for _, i in ipairs(ents.FindInSphere(self:GetPos(), self.DetectionRange)) do
-            if IsValid(i) and ((i:IsPlayer() and not i:Crouching()) or i:IsNPC() or i:IsNextBot()) then
+            if IsValid(i) and ((i:IsPlayer() and i:GetVelocity():Length2DSqr() >= 22500) or i:IsNPC() or i:IsNextBot()) then
                 self:Detonate()
                 break
             end
@@ -148,7 +156,7 @@ end
 function ENT:Detonate()
     if SERVER then
         if not self:IsValid() then return end
-        local pos = self:GetPos() + self:GetUp() * 4
+        local pos = self:GetPos() + self:GetUp() * 6
         local effectdata = EffectData()
         effectdata:SetOrigin(pos)
 
@@ -183,9 +191,11 @@ function ENT:Detonate()
             oldowner = self
         end
 
+        local d = Lerp(self:GetUp():Dot(Vector(0, 0, 1)), 0.25, 1)
+
         self:SetOwner(NULL)
-        util.BlastDamage(oldowner, oldowner, pos, 128, 200)
-        util.BlastDamage(oldowner, oldowner, pos, 512, 100)
+        util.BlastDamage(oldowner, oldowner, pos, 128, 300 * d)
+        util.BlastDamage(oldowner, oldowner, pos, 256, 150 * d)
 
         self:Remove()
     end

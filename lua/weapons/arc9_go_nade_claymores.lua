@@ -9,7 +9,7 @@ SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
 SWEP.PrintName = "Claymore"
-SWEP.Class = "Directional Mine"
+SWEP.Class = "Proximity Explosive"
 SWEP.Description = [[Anti-personnel proximity mine that fires lethal shrapnel in a large cone.
 While it has a wide area of effect, its laser is quite easy to spot and can be jumped over by daring opponents.]]
 SWEP.Trivia = {

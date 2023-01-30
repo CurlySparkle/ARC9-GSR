@@ -9,8 +9,9 @@ SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
 SWEP.PrintName = "Landmine"
-SWEP.Class = "Directional Mine"
-SWEP.Description = [[A land mine is an explosive device concealed under or on the ground and designed to destroy or disable enemy targets, ranging from combatants to vehicles and tanks, as they pass over or near it.]]
+SWEP.Class = "Proximity Explosive"
+SWEP.Description = [[Anti-personnel proximity mine that sticks to any surface. Less effective on walls, and buries itself on soft ground.
+Difficult to spot, but its motion sensor cannot detect slowly moving targets.]]
 -- SWEP.Trivia = {
     -- Designer = "Norman Macleod et al.",
     -- Manufacturer = "Mohawk Electrical Systems Inc",
