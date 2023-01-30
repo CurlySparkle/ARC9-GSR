@@ -95,11 +95,6 @@ function ENT:Plant(ent, pos, normal)
 
     self:SetAdjustment(Angle(-math.Clamp(theta * 0.5, 3, 15), 0, 0))
 
-    -- debugoverlay.Line(pos, pos + angle:Forward() * 32, 5, Color(255, 0, 150), true)
-    -- debugoverlay.Line(pos, pos + f * 32, 3, Color(255, 0, 255), true)
-    -- debugoverlay.Line(pos, pos + na:Forward() * 32, 3, Color(255, 255, 0), true)
-    -- debugoverlay.Line(pos - Vector(0, 0, 16), pos + Vector(0, 0, 16), 3, Color(255, 255, 255), true)
-
     if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
         self:SetMoveType(MOVETYPE_NONE)
         self:SetPos(pos)
@@ -113,10 +108,10 @@ function ENT:Plant(ent, pos, normal)
 
     self:EmitSound("weapons/csgo/claymore/claymore_plant_0" .. math.random(1, 3) .. ".wav", 80, 100)
     timer.Simple(math.max(0, self.ArmDelay - 1.2), function()
-        if IsValid(self) then 
-		--self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 80, 100)
-		self:EmitSound( "weapons/csgo/breachcharges/breach_warning_beep_01.wav", 75, 100, 1, CHAN_AUTO )
-		end
+        if IsValid(self) then
+        --self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 80, 100)
+        self:EmitSound( "weapons/csgo/breachcharges/breach_warning_beep_01.wav", 75, 100, 1, CHAN_AUTO )
+        end
     end)
 end
 
@@ -288,8 +283,8 @@ end
 
 if CLIENT then
     local beam = Material("csgo/laser1")
-    local beam_clr = Color(55, 0, 0)
-    local beam_clr2 = Color(0, 0, 0)
+    local beam_clr = Color(150, 0, 0)
+    local beam_clr2 = Color(100, 100, 100)
     local dot = Material("arc9/laser_glow", "mips smooth")
 
     local function laser(self, pos, ang)
@@ -329,27 +324,6 @@ if CLIENT then
                 ang:RotateAroundAxis(self:GetUp(), -d * 0.25)
                 laser(self, pos, ang)
             end
-
-            -- local ang1 = Angle(ang)
-            -- ang1:RotateAroundAxis(self:GetUp(), self.DetectionAngle * 0.5)
-            -- laser(self, pos, ang1)
-
-            -- local ang2 = Angle(ang)
-            -- ang2:RotateAroundAxis(self:GetUp(), self.DetectionAngle * -0.5)
-            -- laser(self, pos, ang2)
-
-            -- local ang3 = Angle(ang)
-            -- ang3:RotateAroundAxis(self:GetUp(), self.DetectionAngle * math.sin(CurTime() * 1) * 0.5)
-            -- laser(self, pos, ang3)
-
         end
-
-        -- if self.NextBeepTime - 4.9 >= CurTime() and self.NextBeepTime - 5 <= CurTime() then
-        --     --self:EmitSound("weapons/csgo/claymore/claymore_sensors_on.wav", 75)
-        --     cam.Start3D() -- Start the 3D function so we can draw onto the screen.
-        --     render.SetMaterial(Material("effects/blueflare1")) -- Tell render what material we want, in this case the flash from the gravgun
-        --     render.DrawSprite(pos, 25, 25, Color(255, 0, 0)) -- Draw the sprite in the middle of the map, at 16x16 in it's original colour with full alpha.
-        --     cam.End3D()
-        -- end
     end
 end

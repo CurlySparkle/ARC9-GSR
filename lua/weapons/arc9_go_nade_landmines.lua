@@ -8,7 +8,7 @@ SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
-SWEP.PrintName = "Landmines"
+SWEP.PrintName = "Landmine"
 SWEP.Class = "Directional Mine"
 SWEP.Description = [[A land mine is an explosive device concealed under or on the ground and designed to destroy or disable enemy targets, ranging from combatants to vehicles and tanks, as they pass over or near it.]]
 -- SWEP.Trivia = {

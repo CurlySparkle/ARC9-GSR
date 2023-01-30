@@ -5,25 +5,32 @@ ENT.Author = ""
 ENT.Information = ""
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
-
 ENT.Model = "models/weapons/w_eq_landmines_dropped.mdl"
 ENT.FuseTime = 120
 ENT.ArmTime = 0
 ENT.ImpactFuse = false
-
 ENT.Armed = false
 ENT.NextBeepTime = 0
 ENT.BeepPitch = 100
-
 AddCSLuaFile()
+
+ENT.DetectionRange = 64
+ENT.ArmDelay = 3
+
+function ENT:SetupDataTables()
+    self:NetworkVar("Float", 0, "ArmTime")
+end
+
+function ENT:GetArmed()
+    return self:GetArmTime() > 0 and CurTime() > self:GetArmTime() + self.ArmDelay
+end
 
 function ENT:Initialize()
     if SERVER then
-        self:SetModel( self.Model )
-        self:SetMoveType( MOVETYPE_VPHYSICS )
-        self:SetSolid( SOLID_VPHYSICS )
-        self:PhysicsInit( SOLID_VPHYSICS )
-        self:DrawShadow( true )
+        self:SetModel(self.Model)
+        self:PhysicsInitBox(Vector(-2, -5, 0), Vector(2, 5, 8))
+        self:DrawShadow(true)
+        self:SetArmTime(-1)
 
         local phys = self:GetPhysicsObject()
         if phys:IsValid() then
@@ -31,146 +38,154 @@ function ENT:Initialize()
             phys:SetBuoyancyRatio(0)
         end
 
-        self:SetHealth(5)
-        self:SetMaxHealth(5)
+        self:SetHealth(10)
+        self:SetMaxHealth(10)
 
-        self.Owner = self:GetOwner()
+        self.Attacker = self:GetOwner()
         self:SetOwner(NULL)
-
-        self.SpawnTime = CurTime()
-        self.TheAngle = self:GetAngles()
-        self.FuseTime = 999999999
-
-        timer.Simple(0, function()
-            if !IsValid(self) then return end
-            self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-        end)
     end
+end
+
+local burytypes = {
+    [MAT_DIRT] = true,
+    [MAT_SAND] = true,
+    [MAT_GRASS] = true,
+    [MAT_FLESH] = true,
+    [MAT_BLOODYFLESH] = true,
+    [MAT_SNOW] = true,
+    [MAT_SLOSH] = true,
+}
+
+function ENT:Plant(ent, pos, normal)
+    if self.Armed then return end
+    if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
+
+    local dot = normal:Dot(Vector(0, 0, 1))
+    if dot <= 0.5 then return end -- don't stick to walls!
+
+    self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+
+    local a = Angle(0, self:GetAngles().y, 0)
+    local f = a:Forward()
+
+    local na = normal:Angle()
+    na:RotateAroundAxis(na:Right(), -90)
+
+    local angle = Angle(na)
+    local dir = angle:Forward()
+    dir.z = 0
+    dir:Normalize()
+
+    local turn = angle:Forward():Cross(dir):GetNormalized()
+    local theta = math.deg(math.acos(angle:Forward():Dot(dir)))
+
+    angle:RotateAroundAxis(turn, theta)
+    angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
+    angle:RotateAroundAxis(turn, -theta)
+
+    local tr_mat = util.TraceLine({
+        start = pos + normal,
+        endpos = pos - normal,
+        filter = {self},
+    })
+    if burytypes[tr_mat.MatType] then
+        pos = pos - normal * 3
+    end
+
+    if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
+        self:SetMoveType(MOVETYPE_NONE)
+        self:SetPos(pos)
+    else
+        self:SetPos(pos)
+        self:SetParent(ent)
+    end
+
+    self:SetAngles(angle)
+    self:SetArmTime(CurTime())
+
+    self:DrawShadow(false)
+
+    self:EmitSound( "weapons/csgo/mine/proxy_plant_01.wav", 75, 100, 1, CHAN_AUTO )
 end
 
 function ENT:PhysicsCollide(data, physobj)
-    if SERVER then
-        if data.HitEntity:IsWorld() then
-			self:EmitSound("weapons/csgo/mine/proxy_plant_01.wav", 75, 100, 1, CHAN_AUTO)
-
-            local ang = self:GetAngles()
-
-            if self.TheAngle then
-                ang = self.TheAngle
-            end
-
-            ang.p = 0
-            ang.r = 0
-
-            self:SetAngles(ang)
-
-            self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-            self:SetPos(data.HitPos)
-            self:SetMoveType(MOVETYPE_NONE)
-            self:SetPos(data.HitPos - (data.HitNormal * 2))
-
-            self.Armed = true
-        end
-
-    end
+    self:Plant(data.HitEntity, data.HitPos, -data.HitNormal)
 end
 
--- function ENT:Use(act, call, calltype, integer)
-    -- if act:IsPlayer() then
-        -- if weapons.GetStored("arccw_nade_claymore").Primary.Ammo ~= "" then
-            -- act:GiveAmmo(1, weapons.GetStored("arccw_nade_claymore").Primary.Ammo)
-        -- end
-        -- act:Give("arccw_nade_claymore", true)
-    -- end
-
-    -- self:EmitSound("weapons/arccw/c4/c4_disarm.wav", 75)
-    -- self:Remove()
--- end
 
 function ENT:Think()
-
-    if SERVER and self.FuseTime >= 0 and CurTime() - self.SpawnTime >= self.FuseTime then
-        self:Detonate()
-    end
-
-    if SERVER and self.Armed then
-        local e = ents.FindInCone(self:GetPos(), self:GetAngles():Forward(), 200, 0.8)
-
-        for _, i in pairs(e) do
-            if !IsValid(i) then continue end
-
-            if i:IsPlayer() or i:IsNPC() or i:IsNextBot() then
+    if SERVER and self:GetArmed() then
+        for _, i in ipairs(ents.FindInSphere(self:GetPos(), self.DetectionRange)) do
+            if IsValid(i) and ((i:IsPlayer() and not i:Crouching()) or i:IsNPC() or i:IsNextBot()) then
                 self:Detonate()
                 break
             end
         end
-    end
 
-    if CLIENT then
-        if self.NextBeepTime <= CurTime() then
-            self:EmitSound("weapons/csgo/claymore/claymore_sensors_on.wav", 75, 100, 1, CHAN_AUTO, self.BeepPitch)
-
-            self.NextBeepTime = CurTime() + 5
-        end
+        self:NextThink(CurTime() + 0.15)
+        return true
     end
 end
-
 ENT.AntiRecurse = false
 
 function ENT:OnTakeDamage(dmg)
     if self.AntiRecurse then return end
-
     self.AntiRecurse = true
     self:Detonate()
 end
 
+function ENT:OnTakeDamage(dmg)
+    if dmg:IsExplosionDamage() then dmg:ScaleDamage(0.01) end
+    self:SetHealth(self:Health() - dmg:GetDamage())
+    if not self.BOOM and self:Health() <= 0 then
+        self.BOOM = true
+        self:Detonate()
+    end
+
+    return dmg:GetDamage()
+end
+
 function ENT:Detonate()
     if SERVER then
-        if !self:IsValid() then return end
+        if not self:IsValid() then return end
+        local pos = self:GetPos() + self:GetUp() * 4
         local effectdata = EffectData()
-            effectdata:SetOrigin( self:GetPos() )
+        effectdata:SetOrigin(pos)
 
         if self:WaterLevel() >= 1 then
-            util.Effect( "WaterSurfaceExplosion", effectdata )
+            util.Effect("WaterSurfaceExplosion", effectdata)
             self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
         else
-        ParticleEffect("explosion_hegrenade_brief", self:GetPos(), Angle(0, 0, 0), nil)
-		ParticleEffect("explosion_hegrenade_interior", self:GetPos(), Angle(0, 0, 0), nil)
-        --ParticleEffect("bumpmine_detonate", self:GetPos(), Angle(0, 0, 0), nil)
-		ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), Angle(0, 0, 0), nil)
-		ParticleEffect("smoke_plume_b", self:GetPos(), Angle(0, 0, 0), nil)
-		ParticleEffect("smoke_plume_c", self:GetPos(), Angle(0, 0, 0), nil)
-		ParticleEffect("HE_shockwave", self:GetPos(), Angle(0, 0, 0), nil)
+            --ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
+            --ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("grenade_explosion_01", pos, self:GetAngles(), nil)
+            ParticleEffect("weapon_decoy_ground_effect_shot", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("smoke_plume_b", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("smoke_plume", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("smoke_plume_c", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("HE_shockwave", pos, Angle(0, 0, 0), nil)
+
+            --util.Effect("HelicopterMegaBomb", fx)
+            local spos = pos
+
+            local trs = util.TraceLine({
+                start = spos + Vector(0, 0, 64),
+                endpos = spos + Vector(0, 0, -32),
+                filter = self
+            })
+
+            util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
             self:EmitSound("CSGO.Claymore.Explode")
         end
 
-        local oldowner = self:GetOwner() or self.Owner
-
-        if !IsValid(oldowner) then
+        local oldowner = self.Attacker or self:GetOwner()
+        if not IsValid(oldowner) then
             oldowner = self
         end
 
-        self:SetOwner(nil)
-
-        util.BlastDamage(oldowner, oldowner, self:GetPos(), 200, 25)
-
-        -- local btabl = {
-            -- Attacker = oldowner,
-            -- Damage = 35,
-            -- Distance = 500,
-            -- Num = 40,
-            -- Dir = (self:GetAngles() + Angle(-5, 0, 0)):Forward(),
-            -- Src = self:GetPos() + Vector(0, 0, 3),
-            -- Spread = Vector(0.8, 0.17, 0),
-            -- Callback = function(att, tr, dmg)
-                -- dmg:SetDamageType(DMG_BLAST)
-                -- if IsValid(oldowner) then
-                    -- dmg:SetAttacker(oldowner)
-                -- end
-            -- end
-        -- }
-
-        -- self:FireBullets(btabl)
+        self:SetOwner(NULL)
+        util.BlastDamage(oldowner, oldowner, pos, 128, 200)
+        util.BlastDamage(oldowner, oldowner, pos, 512, 100)
 
         self:Remove()
     end
@@ -179,15 +194,12 @@ end
 function ENT:Draw()
     if CLIENT then
         self:DrawModel()
+        local pos = self:GetPos() + self:GetUp() * 5
 
-        local pos = self:GetPos()
-
-        pos = pos + Vector(0, 0, 6)
-
-        if self.NextBeepTime - 4.9 >= CurTime() and self.NextBeepTime - 5 <= CurTime() then
+        if self:GetArmed() and math.sin(CurTime() * 1) >= 0.75 then
             cam.Start3D() -- Start the 3D function so we can draw onto the screen.
-                render.SetMaterial( Material("effects/blueflare1") ) -- Tell render what material we want, in this case the flash from the gravgun
-                render.DrawSprite( pos, 25, 25, Color(255, 0, 0) ) -- Draw the sprite in the middle of the map, at 16x16 in it's original colour with full alpha.
+            render.SetMaterial(Material("effects/blueflare1")) -- Tell render what material we want, in this case the flash from the gravgun
+            render.DrawSprite(pos, 16, 16, Color(255, 0, 0)) -- Draw the sprite in the middle of the map, at 16x16 in it's original colour with full alpha.
             cam.End3D()
         end
     end
