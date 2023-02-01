@@ -200,7 +200,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/scar_unsuppressed.wav",
+        "weapons/scar_unsuppressed.ogg",
     }
 } )
 
