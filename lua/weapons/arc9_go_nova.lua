@@ -265,11 +265,11 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1"},
+        Source = "shoot1",
 		Mult = 0.8,
     },
     ["cycle"] = {
-        Source = {"pump"},
+        Source = "pump",
         EventTable = {
             {s = path .. "nova_pump.wav", t = 5 / 30},
         },
@@ -357,7 +357,7 @@ SWEP.Animations = {
         },
     },
     ["ready"] = {
-        Source = {"draw"},
+        Source = "draw",
         IKTimeLine = {
             {
                 t = 0,

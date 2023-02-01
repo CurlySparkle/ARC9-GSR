@@ -1445,7 +1445,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/g3_auto_supp_fire_first.wav",
+        "weapons/g3_auto_supp_fire_first.ogg",
     }
 } )
 
@@ -1457,7 +1457,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/g3_auto_supp_fire_loop.wav",
+        "weapons/g3_auto_supp_fire_loop.ogg",
     }
 } )
 
@@ -1469,7 +1469,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/svd_suppressed.wav",
+        "weapons/svd_suppressed.ogg",
     }
 } )
 
@@ -1481,7 +1481,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/svd_suppressed.wav",
+        "weapons/svd_suppressed.ogg",
     }
 } )
 
@@ -1505,7 +1505,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/ak47_suppressed_first.wav",
+        "weapons/ak47_suppressed_first.ogg",
     }
 } )
 
@@ -1517,7 +1517,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/ak47_suppressed_loop.wav",
+        "weapons/ak47_suppressed_loop.ogg",
     }
 } )
 
@@ -1555,7 +1555,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/awp_suppressed.wav",
+        "weapons/awp_suppressed.ogg",
     }
 } )
 
@@ -1567,7 +1567,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/scout_suppressed.wav",
+        "weapons/scout_suppressed.ogg",
     }
 } )
 
@@ -1591,7 +1591,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/deagle_suppressed.wav",
+        "weapons/deagle_suppressed.ogg",
     }
 } )
 
@@ -1603,7 +1603,7 @@ sound.Add( {
     pitch = {97,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/deagle_suppressed.wav",
+        "weapons/deagle_suppressed.ogg",
     }
 } )
 
@@ -1629,7 +1629,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/p90_suppresed_first.wav",
+        "weapons/p90_suppresed_first.ogg",
     }
 } )
 
@@ -1641,7 +1641,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/p90_suppresed_loop.wav",
+        "weapons/p90_suppresed_loop.ogg",
     }
 } )
 
@@ -1653,7 +1653,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/famas_suppressed.wav",
+        "weapons/famas_suppressed.ogg",
     }
 } )
 
@@ -1665,7 +1665,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/m9_suppressed.wav",
+        "weapons/m9_suppressed.ogg",
     }
 } )
 
@@ -1677,7 +1677,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/glock_suppressed.wav",
+        "weapons/glock_suppressed.ogg",
     }
 } )
 
@@ -1689,7 +1689,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/p225_suppressed.wav",
+        "weapons/p225_suppressed.ogg",
     }
 } )
 
@@ -1715,7 +1715,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/galil_sup_loop.wav",
+        "weapons/galil_sup_loop.ogg",
     }
 } )
 
@@ -1727,7 +1727,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/galil_sup_first.wav",
+        "weapons/galil_sup_first.ogg",
     }
 } )
 
@@ -1739,7 +1739,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/galil_sup-1.wav",
+        "weapons/galil_sup-1.ogg",
     }
 } )
 
@@ -1751,8 +1751,8 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/galil_supcont-1.wav",
-        "weapons/galil_supcont-2.wav",
+        "weapons/galil_supcont-1.ogg",
+        "weapons/galil_supcont-2.ogg",
     }
 } )
 
@@ -1764,7 +1764,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/m249_suppressed_first.wav",
+        "weapons/m249_suppressed_first.ogg",
     }
 } )
 
@@ -1776,8 +1776,8 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/m249_suppressed_loop.wav",
-		"weapons/m249_suppressed_loop2.wav",
+        "weapons/m249_suppressed_loop.ogg",
+		"weapons/m249_suppressed_loop2.ogg",
     }
 } )
 
@@ -1828,7 +1828,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp7_suppressed_first.wav",
+        "weapons/mp7_suppressed_first.ogg",
     }
 } )
 
@@ -1840,7 +1840,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp7_suppressed_loop.wav",
+        "weapons/mp7_suppressed_loop.ogg",
     }
 } )
 
@@ -1852,7 +1852,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp9_suppressed_first.wav",
+        "weapons/mp9_suppressed_first.ogg",
     }
 } )
 
@@ -1864,7 +1864,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp9_suppressed_loop.wav",
+        "weapons/mp9_suppressed_loop.ogg",
     }
 } )
 
@@ -1876,7 +1876,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/negev_suppresed_first.wav",
+        "weapons/negev_suppresed_first.ogg",
     }
 } )
 
@@ -1888,8 +1888,8 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/negev_suppresed_loop.wav",
-		"weapons/negev_suppresed_loop2.wav",
+        "weapons/negev_suppresed_loop.ogg",
+		"weapons/negev_suppresed_loop2.ogg",
     }
 } )
 
@@ -1901,7 +1901,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mk18_suppressed.wav",
+        "weapons/mk18_suppressed.ogg",
     }
 } )
 
@@ -1913,7 +1913,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/m4a1_suppressed.wav",
+        "weapons/m4a1_suppressed.ogg",
     }
 } )
 
@@ -1925,7 +1925,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/scar_suppressed.wav",
+        "weapons/scar_suppressed.ogg",
     }
 } )
 
@@ -1937,7 +1937,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/m3_suppressed.wav",
+        "weapons/m3_suppressed.ogg",
     }
 } )
 
@@ -1949,7 +1949,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/m3_suppressed.wav",
+        "weapons/m3_suppressed.ogg",
     }
 } )
 
@@ -1961,7 +1961,7 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/scar_suppressed.wav",
+        "weapons/scar_suppressed.ogg",
     }
 } )
 
@@ -1985,7 +1985,7 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp5_suppressed_first.wav",
+        "weapons/mp5_suppressed_first.ogg",
     }
 } )
 
@@ -1997,6 +1997,6 @@ sound.Add( {
     pitch = {95,105},
     soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/mp5_suppressed_loop.wav",
+        "weapons/mp5_suppressed_loop.ogg",
     }
 } )

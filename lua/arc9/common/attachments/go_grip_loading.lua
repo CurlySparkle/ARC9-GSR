@@ -11,6 +11,7 @@ ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ReloadTimeMult = 0.85
+ATT.RecoilMult = 0.95
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true

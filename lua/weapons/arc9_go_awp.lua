@@ -252,10 +252,10 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot4"},
+        Source = "shoot4",
     },
     ["fire_sights"] = {
-        Source = {"shoot4_ads"},
+        Source = "shoot4_ads",
     },
     -- ["fire_sights"] = {
         -- Source = {"shoot1_ads"},
@@ -265,7 +265,7 @@ SWEP.Animations = {
         -- },
     -- },
     ["cycle"] = {
-        Source = {"bolt"},
+        Source = "bolt",
         EventTable = {
             {s = path .. "awp_boltback.wav", t = 8 / 30},
             {s = path .. "awp_boltforward.wav", t = 18 / 30},

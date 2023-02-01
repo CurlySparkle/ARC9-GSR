@@ -2,14 +2,11 @@ ARC9.CSGO = {}
 
 ARC9.CSGO.BlendEmpty = function(wep)
     local vm = wep:GetOwner():GetViewModel()
-    local delta = wep:GetSightDelta()
-    local smooth = math.cos(delta * (math.pi / 2))
-    if wep:Clip1() == 0 --and !wep:GetReloading()-- This doesn't make it look well when reload due to the snappy instant pose set.
-	then
-        vm:SetPoseParameter( "empty", Lerp(smooth, 0, 1) )
-    else
-        vm:SetPoseParameter( "empty", Lerp(smooth, 0, 0) )
-    end
+    if wep:Clip1() == 0 then
+        vm:SetPoseParameter("empty", Lerp(0, 1) )
+	else
+        vm:SetPoseParameter("empty", Lerp(0, 0) )
+	end
 end
 
 ARC9.CSGO.BlendEmptyElite = function(wep)

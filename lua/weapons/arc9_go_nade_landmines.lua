@@ -69,11 +69,11 @@ SWEP.ThrowAnimSpeed = 1
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
-SWEP.ThrowForceMin = 750 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMin = 1000 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 1000 -- Maximum force that the grenade will be thrown with.
-SWEP.TossForce = 750 -- Force that the grenade will be thrown with when right clicked.
+SWEP.TossForce = 1000 -- Force that the grenade will be thrown with when right clicked.
 
-SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
+SWEP.ThrowChargeTime = 0 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.Disposable = true
 
