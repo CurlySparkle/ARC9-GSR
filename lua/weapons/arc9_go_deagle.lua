@@ -254,36 +254,36 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
-SWEP.Hook_TranslateAnimation = function (self, anim)
-    //local attached = self:GetElements()
-    local rng = math.Truncate(util.SharedRandom("ik hou van jij", 1,100)) -- nombre aleatoire, d'un a cent
+-- SWEP.Hook_TranslateAnimation = function (self, anim)
+    -- //local attached = self:GetElements()
+    -- local rng = math.Truncate(util.SharedRandom("ik hou van jij", 1,100)) -- nombre aleatoire, d'un a cent
 	
---	0 - 50 et 70 - 100 | 1/2 et 1/3
+-- --	0 - 50 et 70 - 100 | 1/2 et 1/3
  
-	if rng >= 70 then -- kill me
-		if anim == "reload" then		
-			return "reload_tacticool" 
-		end	
-		if anim == "reload_empty" then		
-			return "reload_tacticool_empty" 
-		end
-    end	
-	if rng <= 90 then -- lol?
-		if anim == "reload" then		
-			return "reload_alt" 
-		end	
-		if anim == "reload_empty" then		
-			return "reload_empty_alt" 
-		end
-    end
-end
+	-- if rng >= 70 then -- kill me
+		-- if anim == "reload" then		
+			-- return "reload_tacticool" 
+		-- end	
+		-- if anim == "reload_empty" then		
+			-- return "reload_tacticool_empty" 
+		-- end
+    -- end	
+	-- if rng <= 90 then -- lol?
+		-- if anim == "reload" then		
+			-- return "reload_alt" 
+		-- end	
+		-- if anim == "reload_empty" then		
+			-- return "reload_empty_alt" 
+		-- end
+    -- end
+-- end
 
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
     },
     ["fire_alt"] = {
-        Source = {"shoot_alt"},
+        Source = "shoot_alt",
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -295,7 +295,7 @@ SWEP.Animations = {
             {s = path .. "de_clipin.wav", t = 19 / 30},
         },
     },  
-	["reload_tacticool"] = {
+	["1_reload"] = {
         Source = "reload_short_tacticool",
         EventTable = {
             {s = path .. "de_clipout.wav", t = 15 / 30},
@@ -312,7 +312,7 @@ SWEP.Animations = {
             {s = path .. "de_slideforward.wav", t = 47 / 30},
         },
     },   
-	["reload_tacticool_empty"] = {
+	["1_reload_empty"] = {
         Source = "reload_tacticool",
 		MinProgress = 0.48,
         EventTable = {
@@ -322,14 +322,14 @@ SWEP.Animations = {
             {s = path .. "de_slideforward.wav", t = 58 / 30},
         },
     },
-    ["reload_alt"] = {
+    ["2_reload"] = {
         Source = "reload_short_alt",
         EventTable = {
             {s = path .. "de_clipout.wav", t = 10 / 30},
             {s = path .. "de_clipin.wav", t = 25 / 30},
         },
     },
-    ["reload_empty_alt"] = {
+    ["3_reload_empty"] = {
         Source = "reload_alt",
 		MinProgress = 0.42,
         EventTable = {
@@ -373,11 +373,23 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 38 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 43 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 131 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 137 / 30 },
+            { s = "CSGO.Item.Movement", t = 2 / 30 },
+            { s = "CSGO.Item.Movement", t = 38 / 30 },
+			{ s = "CSGO.Item.Movement", t = 43 / 30 },
+			{ s = "CSGO.Item.Movement", t = 131 / 30 },
+			{ s = "CSGO.Item.Movement", t = 137 / 30 },
+        },
+    },
+    ["1_inspect"] = {
+        Source = "lookat01_alt",
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = "CSGO.Item.Movement", t = 2 / 30 },
+            { s = "CSGO.Item.Movement", t = 38 / 30 },
+			{ s = "CSGO.Item.Movement", t = 43 / 30 },
+			{ s = "CSGO.Item.Movement", t = 131 / 30 },
+			{ s = "CSGO.Item.Movement", t = 137 / 30 },
         },
     },
     ["bash"] = {

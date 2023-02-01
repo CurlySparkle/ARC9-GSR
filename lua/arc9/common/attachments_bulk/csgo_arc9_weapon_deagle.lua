@@ -154,14 +154,14 @@ ATT.ReloadTimeMult = 1.1
 
 ATT.ActivateElements = {"mag"}
 
-ATT.Hook_TranslateAnimation = function (self, anim)
-    local attached = self:GetElements()
+-- ATT.Hook_TranslateAnimation = function (self, anim)
+    -- local attached = self:GetElements()
 
-    if anim == "reload" and attached["csgo_deagle_mag_extend"] then
-        return "reload_alt"
-    elseif anim == "reload_empty" then
-        return "reload_empty_alt"
-    end
-end
+    -- if anim == "reload" and attached["csgo_deagle_mag_extend"] then
+        -- return "reload_alt"
+    -- elseif anim == "reload_empty" then
+        -- return "reload_empty_alt"
+    -- end
+-- end
 
 ARC9.LoadAttachment(ATT, "csgo_deagle_mag_extend")
