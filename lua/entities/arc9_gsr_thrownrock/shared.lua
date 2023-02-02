@@ -36,6 +36,8 @@ function ENT:Initialize()
             self.Trail:SetRenderFX(kRenderFxNone)
         end
         self:SetPhysicsAttacker(self:GetOwner(), 10)
+
+        SafeRemoveEntityDelayed(self, 10)
     end
 end
 
