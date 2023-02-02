@@ -137,7 +137,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_aug_2.mdl"
 ATT.ActivateElements = {"no_grip"}
 
 ATT.SortOrder = 0
-ATT.Category = "grip_aug"
+ATT.Category = {"grip_aug","grip_aug_2_alt"}
 
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
