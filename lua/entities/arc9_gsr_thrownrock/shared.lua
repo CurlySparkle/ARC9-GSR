@@ -26,16 +26,16 @@ function ENT:Initialize()
         local phys = self:GetPhysicsObject()
         if phys:IsValid() then
             phys:SetMass(1)
-            phys:SetBuoyancyRatio(2)
-            phys:SetDragCoefficient(2)
+            phys:SetBuoyancyRatio(1)
+            phys:SetDragCoefficient(1)
             phys:Wake()
         end
 
         self.SpawnTime = CurTime()
-        if IsValid(self.Trail) then
-            self.Trail:SetRenderMode(RENDERMODE_TRANSADD)
-            self.Trail:SetRenderFX(kRenderFxNone)
-        end
+        -- if IsValid(self.Trail) then
+        --     self.Trail:SetRenderMode(RENDERMODE_TRANSADD)
+        --     self.Trail:SetRenderFX(kRenderFxNone)
+        -- end
         self:SetPhysicsAttacker(self:GetOwner(), 10)
     end
 end
@@ -87,7 +87,7 @@ function ENT:Draw()
 end
 
 hook.Add("OnEntityWaterLevelChanged", "arc9_csgo_rock", function(ent, old, new)
-    if ent:GetClass() == "arc9_gsr_thrownrock" and old == 0 and new > 0 then
+    if ent:GetClass() == "arc9_gsr_thrownrock" and old == 0 and new > 0 and ent.SpawnTime + 0.01 < CurTime() then
         local delta = Lerp(ent:GetVelocity():GetNormalized():Dot(Vector(0, 0, 1)) ^ 2, 1, 0.35)
         local v = ent:GetVelocity() - 2 * ent:GetVelocity():Dot(Vector(0, 0, 1)) * Vector(0, 0, 1) * math.Rand(0.9, 1.1) * delta
         ent:GetPhysicsObject():SetVelocityInstantaneous(v)
