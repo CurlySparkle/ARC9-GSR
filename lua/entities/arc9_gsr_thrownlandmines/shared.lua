@@ -44,7 +44,7 @@ function ENT:Initialize()
         self:SetMaxHealth(10)
 
         self.Attacker = self:GetOwner()
-        self:SetOwner(NULL)
+        -- self:SetOwner(NULL)
     end
 end
 
@@ -62,6 +62,7 @@ function ENT:Plant(ent, pos, normal)
     if self.Armed then return end
     if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
 
+    self:SetOwner(NULL)
     self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
 
     local a = Angle(0, self:GetAngles().y, 0)

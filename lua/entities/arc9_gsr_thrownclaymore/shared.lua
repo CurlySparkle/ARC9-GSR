@@ -49,7 +49,6 @@ function ENT:Initialize()
         self.SpawnAngle = self:GetAngles().y
 
         self.Attacker = self:GetOwner()
-        self:SetOwner(NULL)
 
         local tr = util.TraceLine({
             start = self:GetPos(),
@@ -73,6 +72,7 @@ function ENT:Plant(ent, pos, normal)
     if self:GetArmTime() > 0 then return end
     if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
 
+    self:SetOwner(NULL)
     self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
 
     local a = Angle(0, self.SpawnAngle, 0)
