@@ -383,9 +383,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "aug_boltpull.wav", t = 11 / 30},
-            {s = path .. "mp9_clipout.wav", t = 43 / 30},
+            {s = path2 .. "mp9_clipout.wav", t = 43 / 30},
 			{s = "CSGO.Item.Movement", t = 67 / 30},
-            {s = path .. "mp9_clipin.wav", t = 88 / 30},
+            {s = path2 .. "mp9_clipin.wav", t = 88 / 30},
 			{s = "CSGO.Item.Movement", t = 99 / 30},
             {s = path .. "aug_boltrelease.wav", t = 109 / 30},
 			{s = "CSGO.Item.Movement", t = 118 / 30},
