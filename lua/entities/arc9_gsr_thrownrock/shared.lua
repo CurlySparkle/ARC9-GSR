@@ -26,9 +26,9 @@ function ENT:Initialize()
         local phys = self:GetPhysicsObject()
         if phys:IsValid() then
             phys:SetMass(1)
-            phys:Wake()
-            phys:SetBuoyancyRatio(0)
+            phys:SetBuoyancyRatio(2)
             phys:SetDragCoefficient(2)
+            phys:Wake()
         end
 
         self.SpawnTime = CurTime()
@@ -85,3 +85,15 @@ end
 function ENT:Draw()
     self:DrawModel()
 end
+
+hook.Add("OnEntityWaterLevelChanged", "arc9_csgo_rock", function(ent, old, new)
+    if ent:GetClass() == "arc9_gsr_thrownrock" and old == 0 and new > 0 then
+        local delta = Lerp(ent:GetVelocity():GetNormalized():Dot(Vector(0, 0, 1)) ^ 2, 1, 0.35)
+        local v = ent:GetVelocity() - 2 * ent:GetVelocity():Dot(Vector(0, 0, 1)) * Vector(0, 0, 1) * math.Rand(0.9, 1.1) * delta
+        ent:GetPhysicsObject():SetVelocityInstantaneous(v)
+        local effectdata = EffectData()
+        effectdata:SetOrigin(ent:GetPos())
+        effectdata:SetScale(Lerp(ent:GetVelocity():Length2D() / 1000, 1, 10))
+        util.Effect("watersplash", effectdata)
+    end
+end)
