@@ -80,9 +80,9 @@ SWEP.Disposable = true
 SWEP.ThrowTumble = false
 SWEP.ThrowOnGround = false
 SWEP.ThrowInstantly = true
-SWEP.ShootEntInheritPlayerVelocity = false
+SWEP.ShootEntInheritPlayerVelocity = true
 
-SWEP.ShootPosOffset = Vector(0, 10, -6)
+SWEP.ShootPosOffset = Vector(0, 30, -7)
 
 -------------------------- POSITIONS
 
@@ -173,7 +173,7 @@ SWEP.Animations = {
         EventTable = {
             { s = "weapons/csgo/mine/proxy_throw.wav", t = 0 / 30},
         },
-        MinProgress = 0.5
+        MinProgress = 0.4
     },
     ["bash"] = {
         Source = {"melee","melee2","melee3"}
