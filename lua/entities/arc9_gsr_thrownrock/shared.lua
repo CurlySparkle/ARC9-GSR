@@ -55,6 +55,7 @@ function ENT:PhysicsCollide(data, physobj)
                 dmginfo:SetAttacker(self:GetOwner())
                 dmginfo:SetInflictor(self)
                 dmginfo:SetDamageForce(data.OurOldVelocity * 20)
+                dmginfo:SetDamagePosition(self:GetPos())
                 tgt:TakeDamageInfo(dmginfo)
                 if (IsValid(tgt) and (tgt:IsNPC() or tgt:IsPlayer() or tgt:IsNextBot()) and tgt:Health() <= 0) or (not tgt:IsWorld() and not IsValid(tgt)) or string.find(tgt:GetClass(), "breakable") then
                     local pos, ang, vel = self:GetPos(), self:GetAngles(), data.OurOldVelocity
