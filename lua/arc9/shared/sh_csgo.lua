@@ -29,6 +29,11 @@ ARC9.CSGO.BlendEmptyEliteSingle = function(wep)
     end
 end
 
+ARC9.CSGO.BlendCyl = function(wep)
+    local vm = wep:GetOwner():GetViewModel()
+    vm:SetPoseParameter("cyl",6-wep:Clip1())
+end
+
 ARC9.CSGO.BlendCylinder = function(wep)
     local vm = wep:GetOwner():GetViewModel()
     vm:SetPoseParameter("cyl",8-wep:Clip1())
