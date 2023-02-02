@@ -28,6 +28,7 @@ function ENT:Initialize()
             phys:SetMass(1)
             phys:Wake()
             phys:SetBuoyancyRatio(0)
+            phys:SetDragCoefficient(2)
         end
 
         self.SpawnTime = CurTime()
@@ -36,33 +37,8 @@ function ENT:Initialize()
             self.Trail:SetRenderFX(kRenderFxNone)
         end
         self:SetPhysicsAttacker(self:GetOwner(), 10)
-
-        SafeRemoveEntityDelayed(self, 10)
     end
 end
-
--- function ENT:Initialize()
-    -- if SERVER then
-        -- self:SetModel( self.Model )
-        -- self:SetMoveType( MOVETYPE_VPHYSICS )
-        -- self:SetSolid( SOLID_VPHYSICS )
-        -- self:PhysicsInit( SOLID_VPHYSICS )
-        -- self:DrawShadow( true )
-
-        -- local phys = self:GetPhysicsObject()
-        -- if phys:IsValid() then
-            -- phys:Wake()
-            -- phys:SetBuoyancyRatio(0)
-        -- end
-
-        -- self.dt = CurTime() + 15
-
-        -- timer.Simple(0, function()
-            -- if !IsValid(self) then return end
-            -- self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
-        -- end)
-    -- end
--- end
 
 function ENT:PhysicsCollide(data, physobj)
     if SERVER then
@@ -74,10 +50,11 @@ function ENT:PhysicsCollide(data, physobj)
                 self.NextHit = CurTime() + 0.2
                 local dmginfo = DamageInfo()
                 dmginfo:SetDamageType(DMG_CLUB)
-                dmginfo:SetDamage(35)
+                local d = Lerp(data.Speed / 1000, 10, 45)
+                dmginfo:SetDamage(d)
                 dmginfo:SetAttacker(self:GetOwner())
                 dmginfo:SetInflictor(self)
-                dmginfo:SetDamageForce(data.OurOldVelocity * 1)
+                dmginfo:SetDamageForce(data.OurOldVelocity * 20)
                 tgt:TakeDamageInfo(dmginfo)
                 if (IsValid(tgt) and (tgt:IsNPC() or tgt:IsPlayer() or tgt:IsNextBot()) and tgt:Health() <= 0) or (not tgt:IsWorld() and not IsValid(tgt)) or string.find(tgt:GetClass(), "breakable") then
                     local pos, ang, vel = self:GetPos(), self:GetAngles(), data.OurOldVelocity
@@ -93,7 +70,10 @@ function ENT:PhysicsCollide(data, physobj)
         elseif data.Speed > 25 then
             self:EmitSound(Sound("physics/concrete/rock_impact_soft" .. math.random(1,3) .. ".wav"))
         end
-
+        if not self.Hit then
+            self.Hit = true
+            SafeRemoveEntityDelayed(self, 3)
+        end
     end
 end
 
