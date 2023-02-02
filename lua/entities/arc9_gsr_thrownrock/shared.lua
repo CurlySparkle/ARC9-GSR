@@ -25,6 +25,7 @@ function ENT:Initialize()
 
         local phys = self:GetPhysicsObject()
         if phys:IsValid() then
+            phys:SetMass(1)
             phys:Wake()
             phys:SetBuoyancyRatio(0)
         end
@@ -67,14 +68,14 @@ function ENT:PhysicsCollide(data, physobj)
             self:EmitSound(Sound("physics/concrete/rock_impact_hard" .. math.random(1,6) .. ".wav"))
 
             local tgt = data.HitEntity
-            if IsValid(tgt) and not tgt:IsWorld() and (self.NextHit or 0) < CurTime() then
-                self.NextHit = CurTime() + 0.1
+            if IsValid(tgt) and (self.NextHit or 0) < CurTime() then
+                self.NextHit = CurTime() + 0.2
                 local dmginfo = DamageInfo()
-                dmginfo:SetDamageType(DMG_GENERIC)
+                dmginfo:SetDamageType(DMG_CLUB)
                 dmginfo:SetDamage(35)
                 dmginfo:SetAttacker(self:GetOwner())
                 dmginfo:SetInflictor(self)
-                dmginfo:SetDamageForce(data.OurOldVelocity * 0.5)
+                dmginfo:SetDamageForce(data.OurOldVelocity * 1)
                 tgt:TakeDamageInfo(dmginfo)
                 if (IsValid(tgt) and (tgt:IsNPC() or tgt:IsPlayer() or tgt:IsNextBot()) and tgt:Health() <= 0) or (not tgt:IsWorld() and not IsValid(tgt)) or string.find(tgt:GetClass(), "breakable") then
                     local pos, ang, vel = self:GetPos(), self:GetAngles(), data.OurOldVelocity
@@ -92,31 +93,6 @@ function ENT:PhysicsCollide(data, physobj)
         end
 
     end
-end
-
-function ENT:Think()
-    if SERVER then
-        timer.Simple(3, function()
-            if !IsValid(self) then return end
-            self:Remove()
-        end)
-    end
-end
-
--- function ENT:Touch(ply)
-    -- if !ply:IsPlayer() then
-
-    -- ply:Give("arc9_go_nade_rock", true)
-    -- ply:GiveAmmo(1, "arc9_go_nade_rock", false)
-    -- self:Remove()
-	-- end
--- end
-
-function ENT:Use(activator)
-	if activator:IsPlayer() then 
-		activator:GiveAmmo(1, "Grenade", true)
-		self:Remove()
-	end   
 end
 
 function ENT:DrawTranslucent()
