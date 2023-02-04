@@ -159,8 +159,8 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "draw",
-		Reverse = true,
-		Mult = 0.2,
+        Reverse = true,
+        Mult = 0.2,
     },
     ["bash"] = {
         Source = {
@@ -233,6 +233,6 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_knife_ct",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }
