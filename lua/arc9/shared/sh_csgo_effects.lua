@@ -2,6 +2,7 @@ game.AddParticles( "particles/csgo_weapon_fx.pcf" )
 game.AddParticles( "particles/csgo_explosions_fx.pcf" )
 
 -- FX
+PrecacheParticleSystem("pb_ins2_muzzleflash_tracer")
 PrecacheParticleSystem("weapon_muzzle_flash_attach_comp")
 PrecacheParticleSystem("weapon_muzzle_flash_assaultrifle")
 PrecacheParticleSystem("weapon_muzzle_flash_assaultrifle_comp")
