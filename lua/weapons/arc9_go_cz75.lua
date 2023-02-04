@@ -120,15 +120,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.015
 
 SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.015
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.005
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.02
+SWEP.SpreadAddHipFire = 0.01
 
 -------------------------- HANDLING
 
@@ -152,7 +150,7 @@ SWEP.IronSights = {
     Ang = Angle(-0.1, 0, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
-	CrosshairInSights = false
+    CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -301,7 +299,7 @@ SWEP.Animations = {
         MinProgress = 0.65,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 9 / 30},
-			{s = path .. "p250_clipout.wav", t = 23 / 30},
+            {s = path .. "p250_clipout.wav", t = 23 / 30},
             {s = path .. "p250_clipin.wav", t = 46 / 30},
             {s = path .. "p250_slideback.wav", t = 64 / 30},
             {s = path .. "p250_sliderelease.wav", t = 68 / 30},
@@ -312,7 +310,7 @@ SWEP.Animations = {
         MinProgress = 0.65,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 9 / 30},
-			{s = path .. "p250_clipout.wav", t = 23 / 30},
+            {s = path .. "p250_clipout.wav", t = 23 / 30},
             {s = path .. "p250_clipin.wav", t = 46 / 30},
             {s = path .. "p250_slideback.wav", t = 64 / 30},
             {s = path .. "p250_sliderelease.wav", t = 68 / 30},
@@ -479,15 +477,15 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 SWEP.AttachmentTableOverrides = {
     ["go_muzzle_p226"] = {
-	ModelOffset = Vector(-0.15, -0.03, 0.1),
-	Scale = 0.45,
+    ModelOffset = Vector(-0.15, -0.03, 0.1),
+    Scale = 0.45,
     },
 }
 
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
-		    {1,1},
+            {1,1},
             {2,1},
         },
     },
@@ -514,7 +512,7 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Slide",
-		--Bone = "v_weapon.glock_magazine",
+        --Bone = "v_weapon.glock_magazine",
         Category = "go_cz_slide"
     },
     {
@@ -533,7 +531,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
         --CorrectiveAng = Angle(0.8, 0.5, 0),
-		Scale = 0.9,
+        Scale = 0.9,
     },
     {
         PrintName = "Sights",
@@ -542,20 +540,20 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0, 0, 0),
-		Scale = 0.8,
+        Scale = 0.8,
     },
     {
         PrintName = "Mag",
-		Bone = "v_weapon.cz_magazine",
+        Bone = "v_weapon.cz_magazine",
         Category = "go_cz_mag",
-		Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Ammo",
         Bone = "v_weapon.cz_magazine",
         Category = "go_ammo",
-		Pos = Vector(0, 1, 0),
+        Pos = Vector(0, 1, 0),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -566,7 +564,7 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_cz75",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Cosmetic",
@@ -610,6 +608,6 @@ SWEP.Attachments = {
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }

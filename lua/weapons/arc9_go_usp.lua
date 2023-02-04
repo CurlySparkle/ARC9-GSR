@@ -24,7 +24,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-SWEP.Description = [[A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise.]]
+SWEP.Description = [[A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise.
+Can toggle the suppressor on and off. While unsuppressed, the weapon deals more damage but has higher spread.]]
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_usp.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
@@ -82,25 +83,32 @@ SWEP.RPM = 352
 SWEP.Firemodes = {
     {
         Mode = 1,
-		PrintName = "Sil",
-		Silencer = true,
+        PrintName = "SIL",
+        Silencer = true,
         -- add other attachment modifiers
     },
     {
         Mode = 1,
-        PrintName = "Unsil",
+        PrintName = "NO-SIL",
         Silencer = false,
-		AfterShotQCA = 1,
+        AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         --ActivateElements = {"unsil"},
-		IgnoreMuzzleDevice = true,
-		MuzzleParticleOverride = "weapon_muzzle_flash_pistol",
+        IgnoreMuzzleDevice = true,
+        MuzzleParticleOverride = "weapon_muzzle_flash_pistol",
         MuzzleParticleOverride_Priority = 100,
         Hook_TranslateAnimation = function(swep, anim)
             return anim .. "_silenced"
         end,
+
+        DamageMaxAdd = 3,
+        DamageMinAdd = 3,
+        SpreadAdd = 0.002,
+        SpreadAddHipFire = 0.005,
     }
 }
+SWEP.FiremodeAnimLock = true
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
@@ -130,15 +138,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.003
 
 SWEP.SpreadAddRecoil = 0.008 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddHipFire = 0.007
 
 -------------------------- HANDLING
 
@@ -169,7 +175,7 @@ SWEP.IronSights = {
     Ang = Angle(0, 0.6, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
-		CrosshairInSights = false
+        CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -275,12 +281,12 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)   --- pourquoi est-ce qu'il ne marche pas????
     if wep:GetUBGL() and wep:Clip2() == 0 then  -- il y a une probleme mais je ne sais pas quoi
-    		if anim == "idle" then  return "idle_ubgl_dry" end
-    		if anim == "idle_empty" then  return "idle_ubgl_dry" end	
-    		if anim == "idle_ubgl" then  return "idle_ubgl_dry" end
-    		if anim == "idle_ubgl_empty" then  return "idle_ubgl_dry" end	
-    		if anim == "enter_ubgl" then  return "idle_ubgl_dry" end
-    		if anim == "exit_ubgl" then  return "idle_ubgl_dry" end				
+            if anim == "idle" then  return "idle_ubgl_dry" end
+            if anim == "idle_empty" then  return "idle_ubgl_dry" end
+            if anim == "idle_ubgl" then  return "idle_ubgl_dry" end
+            if anim == "idle_ubgl_empty" then  return "idle_ubgl_dry" end
+            if anim == "enter_ubgl" then  return "idle_ubgl_dry" end
+            if anim == "exit_ubgl" then  return "idle_ubgl_dry" end
     end		
 end
 
@@ -298,7 +304,7 @@ SWEP.Animations = {
     },	
     ["enter_ubgl"] = {
         Source = "attach",
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},	
+        IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2 / 30},
             {s = path .. "usp_silencer_screw_on_start.wav", t = 32 / 30},
@@ -310,9 +316,9 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement3.wav", t = 112 / 30},
         },			
     },  
-	["exit_ubgl"] = {
+    ["exit_ubgl"] = {
         Source = "detach",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }},		
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }},
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 9 / 30},
             {s = path .. "usp_silencer_screw1.wav", t = 28 / 30},
@@ -324,9 +330,9 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement3.wav", t = 114 / 30},
         },			
     },  
-	["reload_ubgl"] = {
+    ["reload_ubgl"] = {
         Source = "attach",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2 / 30},
             {s = path .. "usp_silencer_screw_on_start.wav", t = 32 / 30},
@@ -338,15 +344,15 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement3.wav", t = 112 / 30},
         },				
     },  	
-	["idle_ubgl"] = {
+    ["idle_ubgl"] = {
         Source = "idle",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},
     },
     ["fire_ubgl"] = {
         Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},
     },
-	
+
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
@@ -356,7 +362,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+        MinProgress = 0.4,
         EventTable = {
             {s = path .. "usp_clipout.wav", t = 12 / 30},
             {s = path .. "usp_clipin.wav", t = 25 / 30},
@@ -461,7 +467,7 @@ SWEP.Animations = {
     ["reload_empty_silenced"] = {
         Source = "reload_silenced",
         HideBoneIndex = 1,
-		MinProgress = 0.4,
+        MinProgress = 0.4,
         EventTable = {
             {s = path .. "usp_clipout.wav", t = 12 / 30},
             {s = path .. "usp_clipin.wav", t = 25 / 30},
@@ -546,27 +552,27 @@ SWEP.AttachmentElements = {
     ["slide_short"] = {
         Bodygroups = {
             {3,2},
-			{0,1},
-			{1,2},
+            {0,1},
+            {1,2},
         },
     AttPosMods = { 
-	[2] = { Pos = Vector(0, -1.9, 0), },
-	[3] = { Pos = Vector(-0.02, -0.9, 5), } 
-	}	
+    [2] = { Pos = Vector(0, -1.9, 0), },
+    [3] = { Pos = Vector(-0.02, -0.9, 5), }
+    }
     },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("rocket_usb") then model:SetBodygroup(1,3) end
-	if wep:HasElement("silencer_none") then model:SetBodygroup(1,4) end		
+    if wep:HasElement("rocket_usb") then model:SetBodygroup(1,3) end
+    if wep:HasElement("silencer_none") then model:SetBodygroup(1,4) end
 end
 
 SWEP.Attachments = {
     {
         PrintName = "Slide",
-		--Bone = "v_weapon.glock_magazine",
-		InstalledElements = {"silencer"},
+        --Bone = "v_weapon.glock_magazine",
+        InstalledElements = {"silencer"},
         Category = {"go_usp_slide", "csgo_why_usp"}
     },
     {
@@ -574,7 +580,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"silencers"},
         Bone = "v_weapon.silencer",
-		InstalledElements = {"silencer_none"},
+        InstalledElements = {"silencer_none"},
         Pos = Vector(0, -0.8, 0),
         Ang = Angle(0, -90, 0),
         Scale = 0.9,
@@ -585,8 +591,8 @@ SWEP.Attachments = {
         Pos = Vector(-0.02, -0.9, 5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
-		Scale = 1,
-		CorrectiveAng = Angle(0.67, 0.65, 0),
+        Scale = 1,
+        CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
         PrintName = "Sights",
@@ -595,7 +601,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0.7, 0.65, 0),
-		Scale = 0.75,
+        Scale = 0.75,
     },
     {
         PrintName = "Tactical",
@@ -604,7 +610,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.223_parent",
         Pos = Vector(-0.02, -1.75, 5.6),
         Ang = Angle(90, 180, 90),
-		Scale = 1.15,
+        Scale = 1.15,
     },
     {
         PrintName = "Mag",
@@ -620,15 +626,15 @@ SWEP.Attachments = {
     {
         PrintName = "Perk",
         Category = "go_perk",
-		RejectAttachments = {
-		["csgo_perk_burst"] = true
-		},
+        RejectAttachments = {
+        ["csgo_perk_burst"] = true
+        },
     },
     {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_usp",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",
@@ -672,6 +678,6 @@ SWEP.Attachments = {
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }

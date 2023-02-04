@@ -88,15 +88,15 @@ SWEP.Firemodes = {
     {
         Mode = 3,
         RPM = 1000,
-		RecoilUp = 0.75,
-		SpreadAddRecoil = 0.01,
-		RunawayBurst = true,
-		PostBurstDelay = 0.3,
-		Hook_TranslateAnimation = function (self, anim)
-		if anim == "fire" then
-        return "fire_auto"
-		end
-		end
+        RecoilUp = 0.75,
+        SpreadAddRecoil = 0.01,
+        RunawayBurst = true,
+        PostBurstDelay = 0.3,
+        Hook_TranslateAnimation = function (self, anim)
+            if anim == "fire" then
+                return "fire_auto"
+            end
+        end
     }
 }
 -------------------------- RECOIL
@@ -128,15 +128,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.005
 
 SWEP.SpreadAddRecoil = 0.007 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.005
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddHipFire = 0.01
 
 -------------------------- HANDLING
 
@@ -289,7 +287,7 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
-		Mult = 0.75,
+        Mult = 0.75,
     },
     ["reload"] = {
         Source = "reload_short",
@@ -300,7 +298,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.45,
+        MinProgress = 0.45,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12 / 30},
             {s = path .. "glock_clipin.wav", t = 25 / 30},
@@ -316,7 +314,7 @@ SWEP.Animations = {
     },
     ["reload_empty_x"] = {
         Source = "reload_x",
-		MinProgress = 0.45,
+        MinProgress = 0.45,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12 / 30},
             {s = path .. "glock_clipin.wav", t = 25 / 30},
@@ -372,7 +370,7 @@ SWEP.Animations = {
     },
     ["reload_longmag_empty"] = {
         Source = "reload_alt",
-		MinProgress = 0.45,
+        MinProgress = 0.45,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12 / 30},
             {s = path .. "glock_clipin.wav", t = 25 / 30},
@@ -415,7 +413,7 @@ SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
             {0,1},
-			{1,1},
+            {1,1},
         },
     },
     ["slide_long"] = {
@@ -455,8 +453,8 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.7, 4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
-		Scale = 1.1,
-		CorrectiveAng = Angle(0.67, 0.65, 0),
+        Scale = 1.1,
+        CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
         PrintName = "Sights",
@@ -465,7 +463,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(0.7, 0.65, 0),
-		Scale = 0.8,
+        Scale = 0.8,
     },
     {
         PrintName = "Tactical",
@@ -474,11 +472,11 @@ SWEP.Attachments = {
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -1.35, 4.9),
         Ang = Angle(90, 180, 90),
-		Scale = 1.1,
+        Scale = 1.1,
     },
     {
         PrintName = "Mag",
-		Bone = "v_weapon.glock_magazine",
+        Bone = "v_weapon.glock_magazine",
         Category = "go_mag",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -498,7 +496,7 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_glock",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Stickers",
@@ -542,6 +540,6 @@ SWEP.Attachments = {
         Bone = "v_weapon.stattrack",
         Pos = Vector(0.15, -0.1, 0.12),
         Ang = Angle(0, -90, 0),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }

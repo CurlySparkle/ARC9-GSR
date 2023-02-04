@@ -44,13 +44,13 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 31 -- Damage done at point blank range
-SWEP.DamageMin = 7 -- Damage done at maximum range
+SWEP.DamageMax = 30 -- Damage done at point blank range
+SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 4000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 11 -- Units of wood that can be penetrated by this gun.
 
@@ -115,15 +115,13 @@ SWEP.VisualRecoilPunchMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.001
 
 SWEP.SpreadAddRecoil = 0.003 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.004
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddHipFire = 0.015
 
 -------------------------- HANDLING
 
@@ -269,7 +267,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.7,
+        MinProgress = 0.7,
         EventTable = {
             {s = path .. "fiveseven_clipout.wav", t = 12 / 30},
             {s = path .. "fiveseven_clipin.wav", t = 25 / 30},
@@ -356,14 +354,14 @@ SWEP.AttachmentElements = {
     },
     ["slide_short"] = {
         Bodygroups = {
-		    {0,1},
+            {0,1},
             {1,1},
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -2.2, 5.66), } }	
     },
     ["slide_long"] = {
         Bodygroups = {
-		    --{0,1},
+            --{0,1},
             {1,2},
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -2.2, 6.53), } }	
@@ -373,8 +371,8 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Slide",
-		DefaultAttName = "Standard",
-		--Bone = "v_weapon.glock_magazine",
+        DefaultAttName = "Standard",
+        --Bone = "v_weapon.glock_magazine",
         Category = "go_fiveseven_slide"
     },
     {
@@ -392,8 +390,8 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.3, 3.7),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
-		Scale = 1,
-		CorrectiveAng = Angle(1, 0.4, -0),
+        Scale = 1,
+        CorrectiveAng = Angle(1, 0.4, -0),
     },
     {
         PrintName = "Sights",
@@ -402,7 +400,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols_alt","eft_optic_small"},
         CorrectiveAng = Angle(1, 0.4, 0),
-		Scale = 0.8,
+        Scale = 0.8,
     },
     {
         PrintName = "Tactical",
@@ -411,11 +409,11 @@ SWEP.Attachments = {
         Bone = "v_weapon.fiveSeven_parent",
         Pos = Vector(0, -1.4, 4.5),
         Ang = Angle(90, 180, 90),
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Mag",
-		Bone = "v_weapon.fiveSeven_magazine",
+        Bone = "v_weapon.fiveSeven_magazine",
         Category = "go_mag",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -435,7 +433,7 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_fiveseven",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Cosmetic",
@@ -479,6 +477,6 @@ SWEP.Attachments = {
         Bone = "v_weapon.stattrack",
         Pos = Vector(0.1, -0.15, 0.5),
         Ang = Angle(0, -90, 0),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }

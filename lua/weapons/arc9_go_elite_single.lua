@@ -118,15 +118,13 @@ SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02/2
+SWEP.Spread = 0.004
 
 SWEP.SpreadAddRecoil = 0.025 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.03
-SWEP.SpreadAddMidAir = 0.02/2
-SWEP.SpreadAddHipFire = 0.004/2
-SWEP.SpreadAddCrouch = -0.02/2 -- wait, if its add a negative, then should i be mutliplying?
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMidAir = 0.02
+SWEP.SpreadAddHipFire = 0.01
 
 -------------------------- HANDLING
 
@@ -168,7 +166,7 @@ SWEP.IronSights = {
         Ang = Angle(0, 0, 0),
     },
     Magnification = 1.1,
-	ViewModelFOV = 56,
+    ViewModelFOV = 56,
     CrosshairInSights = false
 }
 
@@ -288,12 +286,12 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_single_wet",
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
             {t = 0.8, lhik = 0, rhik = 1 },
-			{t = 1, lhik = 1, rhik = 1},
+            {t = 1, lhik = 1, rhik = 1},
         },		
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5 / 30},
@@ -302,18 +300,18 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_single",
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
             {t = 0.75, lhik = 0, rhik = 1 },
             {t = 0.9, lhik = 1, rhik = 1 },
-			{t = 1, lhik = 1, rhik = 1},			
+            {t = 1, lhik = 1, rhik = 1},
         },		
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5 / 30},
             {s = path .. "elite_rightclipin.wav", t = 43 / 30},
-			{s = path .. "elite_sliderelease.wav", t = 60 / 30},
+            {s = path .. "elite_sliderelease.wav", t = 60 / 30},
         },
     },
     ["ready"] = {
@@ -368,15 +366,15 @@ SWEP.Animations = {
         FireASAP = true,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
-			{t = 0.1, lhik = 0, rhik = 0},
+            {t = 0.1, lhik = 0, rhik = 0},
             {t = 0.15, lhik = 0, rhik = 0},
             {t = 0.55, lhik = 0, rhik = 0},
             {t = 0.9, lhik = 0, rhik = 0},
-			{t = 1, lhik = 1, rhik = 1},
+            {t = 1, lhik = 1, rhik = 1},
         },	
         EventTable = {
             { s = "CSGO.Item.Movement", t = 2 / 30 },
-			{ s = "CSGO.Item.Movement", t = 25 / 30 },
+            { s = "CSGO.Item.Movement", t = 25 / 30 },
             { s = "CSGO.Item.Movement", t = 105 / 30 },
         },
     },
@@ -411,12 +409,12 @@ SWEP.AttachmentTableOverrides = {
 SWEP.AttachmentElements = {
     ["mag"] = {
         Bodygroups = {
-			{2,1},
+            {2,1},
         },
     },
     ["slide_long"] = {
         Bodygroups = {
-		    {0,1},
+            {0,1},
             {1,1},
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 9.1), } }	
@@ -427,15 +425,15 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
     },
-	
+
     ["slide_p38"] = { 
-	Bodygroups = { {0,2},{1,3}, },
+    Bodygroups = { {0,2},{1,3}, },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
-	},	
+    },
     ["slide_raffica"] = { 
-	Bodygroups = { {0,3},{1,4}, },
+    Bodygroups = { {0,3},{1,4}, },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 8.2), } }	
-	},	
+    },
 }
 
 SWEP.Attachments = {
@@ -473,22 +471,22 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.8, 6),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
-		Scale = 1,
-		CorrectiveAng = Angle(-8, 2.5, 0),		
+        Scale = 1,
+        CorrectiveAng = Angle(-8, 2.5, 0),
     },
     {
         PrintName = "Tactical",
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.m9a1_R_parent",
-		ExcludeElements = {"slide_raffica"},
+        ExcludeElements = {"slide_raffica"},
         Pos = Vector(0, -1.9, 5.5),
         Ang = Angle(90, 180, 90),
-		Scale = 1,
+        Scale = 1,
     },
     {
         PrintName = "Mag",
-		Bone = "v_weapon.m9a1_R_magazine",
+        Bone = "v_weapon.m9a1_R_magazine",
         Category = "go_mag",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -508,7 +506,7 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_elite",
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = "Cosmetic",
@@ -552,6 +550,6 @@ SWEP.Attachments = {
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 }
