@@ -46,7 +46,21 @@ function ENT:PhysicsCollide(data, physobj)
             self:EmitSound(Sound("physics/concrete/rock_impact_hard" .. math.random(1,6) .. ".wav"))
 
             local tgt = data.HitEntity
-            if IsValid(tgt) and (self.NextHit or 0) < CurTime() then
+            if IsValid(tgt) and tgt:GetClass() == "func_breakable_surf" then
+                self:FireBullets({
+                    Attacker = self:GetOwner(),
+                    Inflictor = self,
+                    Damage = 0,
+                    Distance = 32,
+                    Tracer = 0,
+                    Src = self:GetPos(),
+                    Dir = data.OurOldVelocity:GetNormalized(),
+                })
+                local pos, ang, vel = self:GetPos(), self:GetAngles(), data.OurOldVelocity
+                self:SetAngles(ang)
+                self:SetPos(pos)
+                self:GetPhysicsObject():SetVelocityInstantaneous(vel * 0.5)
+            elseif IsValid(tgt) and (self.NextHit or 0) < CurTime() then
                 self.NextHit = CurTime() + 0.2
                 local dmginfo = DamageInfo()
                 dmginfo:SetDamageType(DMG_CLUB)
@@ -57,17 +71,8 @@ function ENT:PhysicsCollide(data, physobj)
                 dmginfo:SetDamageForce(data.OurOldVelocity * 20)
                 dmginfo:SetDamagePosition(self:GetPos())
                 tgt:TakeDamageInfo(dmginfo)
-                if (IsValid(tgt) and (tgt:IsNPC() or tgt:IsPlayer() or tgt:IsNextBot()) and tgt:Health() <= 0) or (not tgt:IsWorld() and not IsValid(tgt)) or string.find(tgt:GetClass(), "breakable") then
-                    local pos, ang, vel = self:GetPos(), self:GetAngles(), data.OurOldVelocity
-                    timer.Simple(0, function()
-                        if IsValid(self) then
-                            self:SetAngles(ang)
-                            self:SetPos(pos)
-                            self:GetPhysicsObject():SetVelocityInstantaneous(vel)
-                        end
-                    end)
-                end
             end
+
         elseif data.Speed > 25 then
             self:EmitSound(Sound("physics/concrete/rock_impact_soft" .. math.random(1,3) .. ".wav"))
         end
