@@ -7,6 +7,7 @@ ENT.Author = ""
 ENT.Category = "Globaly Offensive"
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
+ENT.ArmDelay = 1
 
 if CLIENT then
     function ENT:Initialize()
@@ -39,7 +40,7 @@ if CLIENT then
         local randomnum4 = math.random(1, 2)
         local randomnum5 = math.random(1, 2)
 
-        if (self.NextRing == nil or self.NextRing < CurTime()) and self:GetNWBool("Stuck") then
+        if (self.NextRing == nil or self.NextRing < CurTime()) and self:GetArmed() then
             self.NextRing = CurTime() + 0.02
             local emitter = ParticleEmitter(attachment_pos, true)
             local particle = emitter:Add("particle/particle_ring_wave_12", attachment_pos)
@@ -112,6 +113,15 @@ if CLIENT then
     end
 end
 
+
+function ENT:SetupDataTables()
+    self:NetworkVar("Float", 0, "ArmTime")
+end
+
+function ENT:GetArmed()
+    return self:GetArmTime() > 0 and CurTime() > self:GetArmTime() + self.ArmDelay
+end
+
 if SERVER then
     function ENT:Initialize()
         self:SetModel("models/weapons/w_eq_bumpmine_dropped.mdl")
@@ -120,195 +130,142 @@ if SERVER then
         self.EmittedSound = false
         self.Fused = false
 
-        if self:GetNWBool("Stuck") == nil then
-            self:SetNWBool("Stuck", false)
-        end
+        self.Attacker = self:GetOwner()
 
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         local phys = self:GetPhysicsObject()
         phys:Wake()
         self:SetCollisionGroup(COLLISION_GROUP_DEBRIS_TRIGGER)
-        self.TimesUsed = 1
     end
 
-    function ENT:OnFloor()
-        local p = math.Round(self:GetAngles().p)
 
-        return p == 270 or p == -90
-    end
+    function ENT:Plant(ent, pos, normal)
+        if self:GetArmTime() > 0 then return end
+        if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
 
-    function ENT:PhysicsCollide(data, phys)
-        local ent = data.HitEntity
-        local phys = self:GetPhysicsObject()
-        if ent:IsNPC() or ent:IsPlayer() or ent:IsNextBot() then return false end
-        if not self:IsValid() then return end
+        self:SetNWBool("Stuck", true)
 
-        if self:GetNWBool("Stuck") ~= true then
-            self:SetNWBool("Stuck", true)
+        self:SetOwner(NULL)
+        self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+
+        local a = Angle(0, self:GetAngles().y, 0)
+        local f = a:Forward()
+
+        local na = normal:Angle()
+        na:RotateAroundAxis(na:Right(), -90)
+
+        local angle = Angle(na)
+        local dir = angle:Forward()
+        dir.z = 0
+        dir:Normalize()
+
+        local turn = angle:Forward():Cross(dir):GetNormalized()
+        local theta = math.deg(math.acos(angle:Forward():Dot(dir)))
+
+        angle:RotateAroundAxis(turn, theta)
+        angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
+        angle:RotateAroundAxis(turn, -theta)
+
+        if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
+            self:SetMoveType(MOVETYPE_NONE)
+            self:SetPos(pos)
+        else
+            self:SetPos(pos)
+            self:SetParent(ent)
         end
+
+        self:SetAngles(angle)
+        self:SetArmTime(CurTime())
 
         self:EmitSound("CSGO.Mine.Armed")
-        self:SetBodygroup(1, 1)
 
-        if ent:IsWorld() then
-            phys:EnableMotion(false)
-            orient_angles(phys, data)
-        else
-            constraint.Weld(self, ent, 0, 0, 0, true, true)
-            orient_angles(phys, data)
-        end
-
-        if self.ParticleCreated ~= true then
-            local pos = self:GetPos()
-            local ang = self:GetAngles()
-
-            if self:OnFloor() then
-                pos = pos - Vector(0, 0, 20)
+        timer.Simple(self.ArmDelay, function()
+            if IsValid(self) then
+                local attach = self:LookupAttachment("glow_start")
+                --local lbone = self:LookupBone("glow")
+                --local data = self:GetAttachment(attach)
+                --local attpos, attang = data.Pos, data.Ang
+                ParticleEffectAttach("bumpmine_active_glow2", PATTACH_POINT_FOLLOW, self, attach)
+                --ParticleEffect("bumpmine_active",bone,attang,self)
+                self:SetBodygroup(1, 1)
             end
+        end)
 
-            local attach = self:LookupAttachment("glow_start")
-            local lbone = self:LookupBone("glow")
-            local bone = self:GetBonePosition(lbone)
-            local data = self:GetAttachment(attach)
-            local attpos, attang
-            attpos = data.Pos
-            attang = data.Ang
-            ParticleEffectAttach("bumpmine_active_glow2", PATTACH_POINT_FOLLOW, self, attach)
-            --ParticleEffect("bumpmine_active",bone,attang,self)
-            self.idlesound = CreateSound(self, "CSGO.Mine.Idle")
-            self.idlesound:Play()
-            self.ParticleCreated = true
-        end
+        self:SetTrigger(true)
+        self:UseTriggerBounds(true, 2)
+
+        self.idlesound = CreateSound(self, "CSGO.Mine.Idle")
+        self.idlesound:Play()
     end
 
-    function ENT:Think()
-        local IsStuck = self:GetNWBool("Stuck")
-        if IsStuck ~= true then return false end
-
-        if self.Fused ~= false then
-            self:Destroy()
-        end
-
-        local entsph = ents.FindInSphere(self:GetPos(), 25)
-
-        for k, v in pairs(entsph) do
-            if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
-                if self.EmittedSound ~= true then
-                    self:EmitSound("CSGO.Mine.PreDetonate")
-                    self.EmittedSound = true
-                end
-
-                timer.Simple(0.12, function()
-                    self.Fused = true
-                end)
-            end
-        end
+    function ENT:PhysicsCollide(data, physobj)
+        self:Plant(data.HitEntity, data.HitPos, -data.HitNormal)
     end
 
     function ENT:Destroy()
         self:EmitSound("CSGO.Mine.Detonate")
         self:SetNoDraw(true)
-        local ownersearch = ents.FindInSphere(self:GetPos(), 100)
 
-        for k, v in pairs(ownersearch) do
-            if IsValid(v) and v:IsPlayer() then
-                if self:GetOwner() == v then
-                    print("OwnerShake")
-                    util.ScreenShake(self:GetPos(), 25.0, 150.0, 1.0, 750)
-                end
-            end
-        end
+        util.ScreenShake(self:GetPos(), 25.0, 150.0, 1.0, 750)
 
         local entsph2 = ents.FindInSphere(self:GetPos(), 100)
 
         for k, v in pairs(entsph2) do
             if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
-                v:SetVelocity(self:GetAngles():Up() * 1000)
+                v:SetVelocity(self:GetAngles():Up() * 700 + Vector(0, 0, 300))
 
-                if self.PlayerParticleCreated ~= true then
+                if v:IsPlayer() then
                     local trail = ents.Create("info_particle_system")
                     trail:SetKeyValue("effect_name", "bumpmine_player_trail")
-                    trail:SetPos(self:GetPos())
+                    trail:SetPos(v:GetPos())
                     trail:SetAngles(self:GetAngles())
                     trail:SetParent(v)
                     trail:Spawn()
                     trail:Activate()
                     trail:Fire("Start", "", 0)
                     trail:Fire("Kill", "", 8)
-                    self.PlayerParticleCreated = true
+                else
+                    local dmginfo = DamageInfo()
+                    dmginfo:SetDamagePosition(self:GetPos())
+                    dmginfo:SetDamageForce(self:GetAngles():Up() * 100000 + VectorRand() * 10000)
+                    dmginfo:SetDamageType(DMG_GENERIC)
+                    dmginfo:SetDamage(200)
+                    dmginfo:SetAttacker(self.Attacker or v)
+                    dmginfo:SetInflictor(self)
+                    v:TakeDamageInfo(dmginfo)
                 end
             end
         end
 
-        if self.ExplosionParticleCreated ~= true then
-            local explo = ents.Create("info_particle_system")
-            explo:SetKeyValue("effect_name", "bumpmine_detonate")
-            explo:SetPos(self:GetPos())
-            explo:SetAngles(self:GetAngles())
-            explo:SetParent(self)
-            explo:Spawn()
-            explo:Activate()
-            explo:Fire("Start", "", 0)
-            explo:Fire("Kill", "", 8)
-            self.ExplosionParticleCreated = true
-        end
+        local explo = ents.Create("info_particle_system")
+        explo:SetKeyValue("effect_name", "bumpmine_detonate")
+        explo:SetPos(self:GetPos())
+        explo:SetAngles(self:GetAngles())
+        explo:SetParent(self)
+        explo:Spawn()
+        explo:Activate()
+        explo:Fire("Start", "", 0)
+        explo:Fire("Kill", "", 8)
 
-        timer.Simple(0.001, function()
-            if self and self:IsValid() then
-                self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-            end
-        end)
-
-        timer.Simple(0.002, function()
-            if self and self:IsValid() then
-                self:Remove()
-            end
-        end)
+        SafeRemoveEntityDelayed(self, 0.02)
     end
+
+
+    function ENT:Touch(v)
+        if self:GetArmed() and IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
+            self:SetArmTime(-1)
+            self:EmitSound("CSGO.Mine.PreDetonate")
+            timer.Simple(0.12, function()
+                if IsValid(self) then self:Destroy() end
+            end)
+        end
+    end
+
 
     function ENT:OnRemove()
         if self.idlesound then
             self.idlesound:Stop()
-        end
-    end
-
-    --this function juts takes in the hitnormal of the collision and rotates the angles accordingly
-    function orient_angles(obj, data)
-        if data.HitNormal.z < -.5 then
-            obj:SetAngles((data.HitNormal + Vector(0, 90, 0)):Angle())
-
-            return
-        end
-
-        if data.HitNormal.z > .5 then
-            obj:SetAngles((data.HitNormal + Vector(90, 0, 0)):Angle())
-
-            return
-        end
-
-        if data.HitNormal.y < -.5 then
-            obj:SetAngles((data.HitNormal + Vector(0, 0, 90)):Angle())
-
-            return
-        end
-
-        if data.HitNormal.y > .5 then
-            obj:SetAngles((data.HitNormal + Vector(0, 0, 90)):Angle())
-
-            return
-        end
-
-        if data.HitNormal.x < -.5 then
-            obj:SetAngles((data.HitNormal + Vector(0, 0, 90)):Angle())
-
-            return
-        end
-
-        if data.HitNormal.x > .5 then
-            obj:SetAngles((data.HitNormal + Vector(0, 0, 90)):Angle())
-
-            return
         end
     end
 end
