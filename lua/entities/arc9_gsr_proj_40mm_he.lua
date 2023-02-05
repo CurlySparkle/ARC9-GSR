@@ -9,7 +9,7 @@ ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
 
 ENT.Model = "models/Items/AR2_Grenade.mdl"
 ENT.Ticks = 0
-ENT.FuseTime = 0
+ENT.FuseTime = 0.05
 ENT.Defused = false
 ENT.SphereSize = 1
 ENT.PhysMat = "grenade"

@@ -11,6 +11,7 @@ SWEP.MeleeHitSound = "CSGO.Melee.HitBody"
 SWEP.MeleeHitWallSound = "CSGO.Melee.HitWall"
 SWEP.MeleeSwingSound = "CSGO.Shield.Swing"
 
+SWEP.BashWhileSprint = true
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 SWEP.DefaultBodygroups = "0000000000"
