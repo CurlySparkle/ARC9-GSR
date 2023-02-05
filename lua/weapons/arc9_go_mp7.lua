@@ -85,6 +85,17 @@ SWEP.Firemodes = {
     {
         Mode = -1,
         -- add other attachment modifiers
+    },
+    {
+        Mode = 2,
+		RPM = 800,
+		RunawayBurst = true,
+		PostBurstDelay = 0.15
+        -- add other attachment modifiers
+    },
+    {
+        Mode = 1,
+        -- add other attachment modifiers
     }
 }
 -------------------------- RECOIL
@@ -92,7 +103,7 @@ SWEP.Firemodes = {
 -- General recoil multiplier
 SWEP.Recoil = 1
 
-SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
+SWEP.RecoilSeed = 65473 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
@@ -107,7 +118,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -116,13 +127,13 @@ SWEP.RecoilMultHipFire = 1.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilPunch = 0.7
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0.02
 
-SWEP.SpreadAddShooting = 0.0005 -- Applied per unit of recoil.
+SWEP.SpreadAddShooting = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
@@ -155,7 +166,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.27, -8, 0.94),
+    Pos = Vector(-5.27, -8, 0.6),
     Ang = Angle(0.15, -0.15, -1.25),
     Magnification = 1.25,
     ViewModelFOV = 56,
