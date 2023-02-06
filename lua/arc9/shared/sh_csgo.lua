@@ -1,5 +1,12 @@
 ARC9.CSGO = {}
 
+ARC9.CSGO.BlendSights = function(wep)
+    local vm = wep:GetOwner():GetViewModel()
+    local delta = wep:GetSightDelta()
+    local coolilove = math.cos(delta * (math.pi / 2))
+    vm:SetPoseParameter( "sights", Lerp(coolilove, 0, 1) ) -- thanks fesiug
+end
+
 ARC9.CSGO.BlendEmpty = function(wep)
     local vm = wep:GetOwner():GetViewModel()
     if wep:Clip1() == 0 then
@@ -37,13 +44,6 @@ end
 ARC9.CSGO.BlendCylinder = function(wep)
     local vm = wep:GetOwner():GetViewModel()
     vm:SetPoseParameter("cyl",8-wep:Clip1())
-end
-
-ARC9.CSGO.BlendSights = function(wep)
-    local vm = wep:GetOwner():GetViewModel()
-    local delta = wep:GetSightDelta()
-    local coolilove = math.cos(delta * (math.pi / 2))
-    vm:SetPoseParameter( "sights", Lerp(coolilove, 0, 1) ) -- thanks fesiug
 end
 
 game.AddAmmoType({name = "arc9_csgo_charge"})

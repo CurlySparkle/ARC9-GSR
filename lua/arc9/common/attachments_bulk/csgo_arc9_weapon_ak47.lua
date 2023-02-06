@@ -160,7 +160,7 @@ ATT.AutoStats = true
 
 ATT.Free = false
 
-ATT.Category = {"go_ak47_stock","go_mac10_stock"}
+ATT.Category = {"go_ak47_stock","go_mac10_stock","go_stock_alt"}
 ATT.ActivateElements = {"stock_skeleton"}
 
 ATT.AimDownSightsTimeMult = 0.85
