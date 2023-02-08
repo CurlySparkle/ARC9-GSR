@@ -1002,7 +1002,7 @@ sound.Add( {
     pitch = {85,110},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/g3_auto_fire_first.wav",
+        "weapons/g3_auto_fire_first.ogg",
     }
 } )
 
@@ -1014,7 +1014,7 @@ sound.Add( {
     pitch = {85,110},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/g3_auto_fire_loop.wav",
+        "weapons/g3_auto_fire_loop.ogg",
     }
 } )
 
