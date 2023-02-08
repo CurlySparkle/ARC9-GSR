@@ -48,7 +48,7 @@ function ENT:Think()
 					damage = DamageInfo()
 					damage:SetDamage( math.random( 3, 7 ) )
 					damage:SetAttacker( self:GetOwner() )
-					damage:SetInflictor( self:GetCreator() )
+					damage:SetInflictor( self )
 					damage:SetDamageType( DMG_BURN )
 					v:TakeDamageInfo( damage )
 				end
