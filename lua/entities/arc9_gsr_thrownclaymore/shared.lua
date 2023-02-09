@@ -249,15 +249,15 @@ function ENT:Detonate()
         self:SetOwner(NULL)
 
         local dir = Angle(self:GetAngles())
-        dir:RotateAroundAxis(-self:GetAngles():Forward(), -5 + self:GetAdjustment().p)
+        dir:RotateAroundAxis(self:GetAngles():Forward(), -5 + self:GetAdjustment().p)
 
-        util.BlastDamage(oldowner, oldowner, pos, 200, 150)
+        --util.BlastDamage(oldowner, oldowner, pos, 200, 150)
         local btabl = {
             Attacker = oldowner,
             Damage = 30,
             Distance = self.DetectionRange * 1.5,
             Num = 50,
-            HullSize = 32,
+            HullSize = 4,
             Tracer = 1,
             Force = 0,
             Dir = dir:Forward(),
@@ -269,13 +269,13 @@ function ENT:Detonate()
                         tr.Entity.GSR_ClaymoreLastHit = {CurTime(), 0}
                     end
 
-                    dmg:SetDamageType(DMG_BLAST)
-                    dmg:ScaleDamage(Lerp(tr.Fraction ^ 2, 1, 0.5))
                     if IsValid(oldowner) then
                         dmg:SetAttacker(oldowner)
                     end
 
-                    dmg:ScaleDamage(Lerp((tr.Entity.GSR_ClaymoreLastHit[2] - 50) / 150, 1, 0.25))
+                    dmg:SetDamageType(DMG_BLAST)
+                    dmg:ScaleDamage(Lerp(tr.Fraction ^ 2, 1, 0.5))
+                    dmg:ScaleDamage(Lerp(math.max(0, (tr.Entity.GSR_ClaymoreLastHit[2] - 100) / 400), 1, 0.25))
                     tr.Entity.GSR_ClaymoreLastHit[2] = tr.Entity.GSR_ClaymoreLastHit[2] + dmg:GetDamage()
                 end
             end
