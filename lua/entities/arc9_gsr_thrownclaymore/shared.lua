@@ -251,7 +251,7 @@ function ENT:Detonate()
         local dir = Angle(self:GetAngles())
         dir:RotateAroundAxis(self:GetAngles():Forward(), -5 + self:GetAdjustment().p)
 
-        --util.BlastDamage(oldowner, oldowner, pos, 200, 150)
+        util.BlastDamage(oldowner, oldowner, pos, 200, 150)
         local btabl = {
             Attacker = oldowner,
             Damage = 30,
