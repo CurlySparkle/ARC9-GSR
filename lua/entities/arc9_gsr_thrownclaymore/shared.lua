@@ -248,30 +248,41 @@ function ENT:Detonate()
 
         self:SetOwner(NULL)
 
+        local dir = Angle(self:GetAngles())
+        dir:RotateAroundAxis(-self:GetAngles():Forward(), -5 + self:GetAdjustment().p)
+
         util.BlastDamage(oldowner, oldowner, pos, 200, 150)
         local btabl = {
             Attacker = oldowner,
             Damage = 30,
-            Distance = self.DetectionRange,
+            Distance = self.DetectionRange * 1.5,
             Num = 50,
             HullSize = 32,
             Tracer = 1,
             Force = 0,
-            Dir = (self:GetAngles() + Angle(-5, 0, 0) + self:GetAdjustment()):Forward(),
+            Dir = dir:Forward(),
             Src = self:WorldSpaceCenter() + Vector(0, 0, 4),
             Spread = Vector(math.rad(180), math.rad(30), 0),
             Callback = function(att, tr, dmg)
-                dmg:SetDamageType(DMG_BLAST)
-                dmg:ScaleDamage(Lerp(tr.Fraction ^ 2, 1, 0.5))
+                if IsValid(tr.Entity) then
+                    if not tr.Entity.GSR_ClaymoreLastHit or tr.Entity.GSR_ClaymoreLastHit[1] ~= CurTime() then
+                        tr.Entity.GSR_ClaymoreLastHit = {CurTime(), 0}
+                    end
 
-                if IsValid(oldowner) then
-                    dmg:SetAttacker(oldowner)
+                    dmg:SetDamageType(DMG_BLAST)
+                    dmg:ScaleDamage(Lerp(tr.Fraction ^ 2, 1, 0.5))
+                    if IsValid(oldowner) then
+                        dmg:SetAttacker(oldowner)
+                    end
+
+                    dmg:ScaleDamage(Lerp((tr.Entity.GSR_ClaymoreLastHit[2] - 50) / 150, 1, 0.25))
+                    tr.Entity.GSR_ClaymoreLastHit[2] = tr.Entity.GSR_ClaymoreLastHit[2] + dmg:GetDamage()
                 end
             end
         }
         self:FireBullets(btabl)
 
-        btabl.Distance = self.DetectionRange * 1.5
+        btabl.Distance = self.DetectionRange * 2
         btabl.Num = 50
         btabl.Spread = Vector(math.rad(60), math.rad(15), 0)
         self:FireBullets(btabl)
