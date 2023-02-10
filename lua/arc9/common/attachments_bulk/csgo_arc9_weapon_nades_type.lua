@@ -5,7 +5,7 @@ ATT = {}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[Nade Fuse]]
 ATT.Description = [[Makes your nade have a fuse for 3 seconds (Better plan your throws).]]
-ATT.Icon = Material("entities/attachs/go_nade_timer")
+ATT.Icon = Material("entities/attachs/go_nade_timer.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Free = true
