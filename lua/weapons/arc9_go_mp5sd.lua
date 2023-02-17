@@ -15,8 +15,8 @@ SWEP.Trivia = {
     ["Caliber"] = "9x19mm Parabellum",
     ["Weight (Loaded)"] = "3.93kg",
     ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "900 Feet/Second",
-    ["Muzzle Energy"] = "301 Joules"
+    ["Muzzle Velocity"] = "1000 Feet/Second",
+    ["Muzzle Energy"] = "360 Joules"
 }
 
 SWEP.Credits = {
