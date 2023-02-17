@@ -1,27 +1,21 @@
 -- Made by Matsilagi
 AddCSLuaFile()
 ENT.Type = "anim"
-ENT.Base = "base_entity"
+ENT.Base = "arc9_gsr_plantable"
 ENT.PrintName = "Bump Mine"
 ENT.Author = ""
 ENT.Category = "Globaly Offensive"
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
+
+ENT.Model = "models/weapons/w_eq_bumpmine_dropped.mdl"
+ENT.WeaponClass = "arc9_go_nade_mines"
+ENT.MinS = Vector(-8, -8, -2)
+ENT.MaxS = Vector(8, 8, 6)
+
 ENT.ArmDelay = 1
 
 if CLIENT then
-    function ENT:Initialize()
-        self.ParticleCreated = false
-        self.ExplosionParticleCreated = false
-        self.PlayerParticleCreated = false
-        self.EmittedSound = false
-        self.Fused = false
-
-        if self:GetNWBool("Stuck") == nil then
-            self:SetNWBool("Stuck", false)
-        end
-    end
-
     function ENT:Draw()
         self:DrawModel()
         --Particles
@@ -113,71 +107,8 @@ if CLIENT then
     end
 end
 
-
-function ENT:SetupDataTables()
-    self:NetworkVar("Float", 0, "ArmTime")
-end
-
-function ENT:GetArmed()
-    return self:GetArmTime() > 0 and CurTime() > self:GetArmTime() + self.ArmDelay
-end
-
 if SERVER then
-    function ENT:Initialize()
-        self:SetModel("models/weapons/w_eq_bumpmine_dropped.mdl")
-        self.ParticleCreated = false
-        self.ExplosionParticleCreated = false
-        self.EmittedSound = false
-        self.Fused = false
-
-        self.Attacker = self:GetOwner()
-
-        self:PhysicsInit(SOLID_VPHYSICS)
-        self:SetMoveType(MOVETYPE_VPHYSICS)
-        local phys = self:GetPhysicsObject()
-        phys:Wake()
-        self:SetCollisionGroup(COLLISION_GROUP_DEBRIS_TRIGGER)
-    end
-
-
-    function ENT:Plant(ent, pos, normal)
-        if self:GetArmTime() > 0 then return end
-        if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
-
-        self:SetNWBool("Stuck", true)
-
-        self:SetOwner(NULL)
-        self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-
-        local a = Angle(0, self:GetAngles().y, 0)
-        local f = a:Forward()
-
-        local na = normal:Angle()
-        na:RotateAroundAxis(na:Right(), -90)
-
-        local angle = Angle(na)
-        local dir = angle:Forward()
-        dir.z = 0
-        dir:Normalize()
-
-        local turn = angle:Forward():Cross(dir):GetNormalized()
-        local theta = math.deg(math.acos(angle:Forward():Dot(dir)))
-
-        angle:RotateAroundAxis(turn, theta)
-        angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
-        angle:RotateAroundAxis(turn, -theta)
-
-        if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
-            self:SetMoveType(MOVETYPE_NONE)
-            self:SetPos(pos)
-        else
-            self:SetPos(pos)
-            self:SetParent(ent)
-        end
-
-        self:SetAngles(angle)
-        self:SetArmTime(CurTime())
-
+    function ENT:OnPlant()
         self:EmitSound("CSGO.Mine.Armed")
 
         timer.Simple(self.ArmDelay, function()
@@ -199,22 +130,23 @@ if SERVER then
         self.idlesound:Play()
     end
 
-    function ENT:PhysicsCollide(data, physobj)
-        self:Plant(data.HitEntity, data.HitPos, -data.HitNormal)
-    end
-
-    function ENT:Destroy()
+    function ENT:Detonate()
         self:EmitSound("CSGO.Mine.Detonate")
         self:SetNoDraw(true)
 
         util.ScreenShake(self:GetPos(), 25.0, 150.0, 1.0, 750)
 
-        local entsph2 = ents.FindInSphere(self:GetPos(), 100)
+        local eff = EffectData()
+        eff:SetOrigin(self:GetPos())
+        eff:SetEntity(self)
+        eff:SetScale(128)
+        util.Effect("ThumperDust", eff)
+        local entsph2 = ents.FindInSphere(self:GetPos(), 128)
+
+        local dir = self:GetAngles():Up()
 
         for k, v in pairs(entsph2) do
-            if IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
-                v:SetVelocity(self:GetAngles():Up() * 700 + Vector(0, 0, 300))
-
+            if IsValid(v) and v ~= self and v ~= self:GetParent() and IsValid(v:GetPhysicsObject()) then
                 if v:IsPlayer() then
                     local trail = ents.Create("info_particle_system")
                     trail:SetKeyValue("effect_name", "bumpmine_player_trail")
@@ -225,15 +157,22 @@ if SERVER then
                     trail:Activate()
                     trail:Fire("Start", "", 0)
                     trail:Fire("Kill", "", 8)
-                else
+
+                    v:SetVelocity((dir * 700 + Vector(0, 0, 300)) * (v:Crouching() and v:IsOnGround() and 1.5 or 1))
+                elseif v:IsNPC() or v:IsNextBot() then
                     local dmginfo = DamageInfo()
                     dmginfo:SetDamagePosition(self:GetPos())
-                    dmginfo:SetDamageForce(self:GetAngles():Up() * 100000 + VectorRand() * 10000)
+                    dmginfo:SetDamageForce(dir * 100000 + VectorRand() * 10000)
                     dmginfo:SetDamageType(DMG_GENERIC)
                     dmginfo:SetDamage(200)
                     dmginfo:SetAttacker(self.Attacker or v)
                     dmginfo:SetInflictor(self)
                     v:TakeDamageInfo(dmginfo)
+
+                    v:SetVelocity(dir * 700 + Vector(0, 0, 300))
+                else
+                    v:GetPhysicsObject():ApplyForceCenter((dir * 1500 + (v:GetPos() - Vector(0, 0, 200) - self:GetPos()):GetNormalized() * 500) * (v:GetPhysicsObject():GetMass() ^ 0.9))
+                    v:GetPhysicsObject():AddAngleVelocity(VectorRand() * Lerp(v:GetPhysicsObject():GetMass() / 500, 360, 5))
                 end
             end
         end
@@ -248,20 +187,26 @@ if SERVER then
         explo:Fire("Start", "", 0)
         explo:Fire("Kill", "", 8)
 
+        if IsValid(self:GetParent()) then
+            local phys = self:GetParent():GetPhysicsObject()
+            if IsValid(phys) then
+                phys:ApplyForceCenter(phys:GetMass() ^ 0.9 * dir * -2000)
+            end
+
+        end
+
         SafeRemoveEntityDelayed(self, 0.02)
     end
 
-
     function ENT:Touch(v)
-        if self:GetArmed() and IsValid(v) and v:IsPlayer() or v:IsNPC() or v:IsNextBot() then
+        if self:GetArmed() and IsValid(v) and (v:IsPlayer() or v:IsNPC() or v:IsNextBot()) then
             self:SetArmTime(-1)
             self:EmitSound("CSGO.Mine.PreDetonate")
             timer.Simple(0.12, function()
-                if IsValid(self) then self:Destroy() end
+                if IsValid(self) then self:Detonate() end
             end)
         end
     end
-
 
     function ENT:OnRemove()
         if self.idlesound then

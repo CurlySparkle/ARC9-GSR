@@ -1,125 +1,17 @@
-ENT.Type = "anim"
-ENT.Base = "base_entity"
-ENT.PrintName = "Landmines"
-ENT.Author = ""
-ENT.Information = ""
-ENT.Spawnable = false
-ENT.AdminSpawnable = false
-ENT.Model = "models/weapons/w_eq_landmines_dropped.mdl"
-ENT.FuseTime = 120
-ENT.ArmTime = 0
-ENT.ImpactFuse = false
-ENT.Armed = false
-ENT.NextBeepTime = 0
-ENT.BeepPitch = 100
-ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
 AddCSLuaFile()
+
+ENT.Base = "arc9_gsr_plantable"
+ENT.PrintName = "Landmine"
+
+ENT.Model = "models/weapons/w_eq_landmines_dropped.mdl"
+ENT.WeaponClass = "arc9_go_nade_landmines"
 
 ENT.DetectionRange = 96
 ENT.ArmDelay = 3
 
-function ENT:SetupDataTables()
-    self:NetworkVar("Float", 0, "ArmTime")
-end
 
-function ENT:GetArmed()
-    return self:GetArmTime() > 0 and CurTime() > self:GetArmTime() + self.ArmDelay
-end
-
-function ENT:Initialize()
-    if SERVER then
-        self:SetModel(self.Model)
-        self:PhysicsInitBox(Vector(-2, -5, 0), Vector(2, 5, 8))
-        self:DrawShadow(true)
-        self:SetArmTime(-1)
-
-        local phys = self:GetPhysicsObject()
-        if phys:IsValid() then
-            phys:Wake()
-            phys:SetBuoyancyRatio(0)
-            phys:SetDragCoefficient(10)
-        end
-
-        self:SetHealth(10)
-        self:SetMaxHealth(10)
-
-        self.Attacker = self:GetOwner()
-        -- self:SetOwner(NULL)
-    end
-end
-
-local burytypes = {
-    [MAT_DIRT] = true,
-    [MAT_SAND] = true,
-    [MAT_GRASS] = true,
-    [MAT_FLESH] = true,
-    [MAT_BLOODYFLESH] = true,
-    [MAT_SNOW] = true,
-    [MAT_SLOSH] = true,
-}
-
-function ENT:Plant(ent, pos, normal)
-    if self.Armed then return end
-    if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
-
-    self:SetOwner(NULL)
-    self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-
-    local a = Angle(0, self:GetAngles().y, 0)
-    local f = a:Forward()
-
-    local na = normal:Angle()
-    na:RotateAroundAxis(na:Right(), -90)
-
-    local angle = Angle(na)
-    local dir = angle:Forward()
-    dir.z = 0
-    dir:Normalize()
-
-    local turn = angle:Forward():Cross(dir):GetNormalized()
-    local theta = math.deg(math.acos(angle:Forward():Dot(dir)))
-
-    angle:RotateAroundAxis(turn, theta)
-    angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
-    angle:RotateAroundAxis(turn, -theta)
-
-    local tr_mat = util.TraceLine({
-        start = pos + normal,
-        endpos = pos - normal,
-        filter = {self},
-    })
-    if burytypes[tr_mat.MatType] and normal:Dot(Vector(0, 0, 1)) >= 0.5 then
-        pos = pos - normal * 3.2
-    end
-
-    if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
-        self:SetMoveType(MOVETYPE_NONE)
-        self:SetPos(pos)
-    else
-        self:SetPos(pos)
-        self:SetParent(ent)
-    end
-
-    self:SetAngles(angle)
-    self:SetArmTime(CurTime())
-
-    self:DrawShadow(false)
-
-    self:EmitSound( "weapons/csgo/mine/proxy_plant_01.wav", 75, 100, 1, CHAN_AUTO )
-end
-
-function ENT:PhysicsCollide(data, physobj)
-    self:Plant(data.HitEntity, data.HitPos, -data.HitNormal)
-end
-
-function ENT:Use(act, call, calltype, integer)
-    if IsValid(act) and act:IsPlayer() then
-        act:GiveAmmo(1, weapons.GetStored("arc9_go_nade_landmines").Ammo)
-        act:Give("arc9_go_nade_landmines", true)
-    end
-
-    self:EmitSound("weapons/csgo/bumpmines/bumpmine_pickup.wav", 75)
-    self:Remove()
+function ENT:OnPlant()
+    self:EmitSound("weapons/csgo/mine/proxy_plant_01.wav", 75, 100, 1, CHAN_AUTO)
 end
 
 function ENT:Think()
@@ -134,24 +26,6 @@ function ENT:Think()
         self:NextThink(CurTime() + 0.15)
         return true
     end
-end
-ENT.AntiRecurse = false
-
-function ENT:OnTakeDamage(dmg)
-    if self.AntiRecurse then return end
-    self.AntiRecurse = true
-    self:Detonate()
-end
-
-function ENT:OnTakeDamage(dmg)
-    if dmg:IsExplosionDamage() then dmg:ScaleDamage(0.01) end
-    self:SetHealth(self:Health() - dmg:GetDamage())
-    if not self.BOOM and self:Health() <= 0 then
-        self.BOOM = true
-        self:Detonate()
-    end
-
-    return dmg:GetDamage()
 end
 
 function ENT:Detonate()

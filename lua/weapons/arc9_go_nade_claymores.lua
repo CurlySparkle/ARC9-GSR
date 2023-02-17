@@ -82,7 +82,7 @@ SWEP.ThrowOnGround = true
 SWEP.ThrowInstantly = true
 SWEP.ShootEntInheritPlayerVelocity = false
 
-SWEP.ShootPosOffset = Vector(0, 20, 0)
+SWEP.ShootPosOffset = Vector(0, 24, 0)
 
 -------------------------- POSITIONS
 

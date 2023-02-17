@@ -1,55 +1,30 @@
 AddCSLuaFile()
 
-ENT.Type = "anim"
-ENT.Base = "base_entity"
+ENT.Base = "arc9_gsr_plantable"
 ENT.PrintName = "Claymore"
-ENT.Author = ""
-ENT.Information = ""
-ENT.Spawnable = false
-ENT.AdminSpawnable = false
+
 ENT.Model = "models/weapons/w_eq_claymore_dropped.mdl"
-ENT.RenderGroup = RENDERGROUP_BOTH
+ENT.WeaponClass = "arc9_go_nade_claymores"
+ENT.LockYaw = true
+ENT.AdjustPitch = true
+ENT.AdjustOffset = true
+ENT.MinS = Vector(-2, -5, 0)
+ENT.MaxS = Vector(2, 5, 8)
 
 ENT.ArmDelay = 3
-ENT.Armed = false
-
-ENT.NextBeepTime = 0
-ENT.BeepPitch = 100
-
 ENT.DetectionRange = 400
 ENT.DetectionAngle = 45
 ENT.LaserOffset = Vector(1, 0, 8)
 
-function ENT:SetupDataTables()
-    self:NetworkVar("Float", 0, "ArmTime")
-    self:NetworkVar("Angle", 0, "Adjustment")
-end
+ENT.NextBeepTime = 0
+ENT.DetectionRangeSqr = ENT.DetectionRange * ENT.DetectionRange
 
 function ENT:GetLaserPos()
     return self:GetPos() + self:GetForward() * self.LaserOffset.x + self:GetRight() * self.LaserOffset.y + self:GetUp() * self.LaserOffset.z
 end
 
-function ENT:Initialize()
+function ENT:OnInitialize()
     if SERVER then
-        self:SetModel(self.Model)
-        self:PhysicsInitBox(Vector(-2, -5, 0), Vector(2, 5, 8))
-        self:DrawShadow(true)
-        self:SetArmTime(-1)
-
-        local phys = self:GetPhysicsObject()
-
-        if phys:IsValid() then
-            phys:Wake()
-            phys:SetBuoyancyRatio(0)
-        end
-
-        self:SetHealth(10)
-        self:SetMaxHealth(10)
-
-        self.SpawnAngle = self:GetAngles().y
-
-        self.Attacker = self:GetOwner()
-
         local tr = util.TraceLine({
             start = self:GetPos(),
             endpos = self:GetPos() - Vector(0, 0, 4),
@@ -60,73 +35,15 @@ function ENT:Initialize()
             self:Plant(tr.Entity, tr.HitPos, tr.HitNormal)
         end
     end
-    self.SpawnTime = CurTime()
-    self.DetectionRangeSqr = self.DetectionRange * self.DetectionRange
 end
 
-function ENT:GetArmed()
-    return self:GetArmTime() > 0 and CurTime() > self:GetArmTime() + self.ArmDelay
-end
-
-function ENT:Plant(ent, pos, normal)
-    if self:GetArmTime() > 0 then return end
-    if IsValid(ent) and (ent:IsPlayer() or ent:IsNPC() or ent:IsNextBot()) then return end
-
-    self:SetOwner(NULL)
-    self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-
-    local a = Angle(0, self.SpawnAngle, 0)
-    local f = a:Forward()
-
-    local na = normal:Angle()
-    na:RotateAroundAxis(na:Right(), -90)
-
-    local angle = Angle(na)
-    local dir = angle:Forward()
-    dir.z = 0
-    dir:Normalize()
-
-    local turn = angle:Forward():Cross(dir):GetNormalized()
-    local theta = math.deg(math.acos(angle:Forward():Dot(dir)))
-
-    angle:RotateAroundAxis(turn, theta)
-    angle:RotateAroundAxis(dir:Cross(f):GetNormalized(), math.deg(math.acos(dir:Dot(f))))
-    angle:RotateAroundAxis(turn, -theta)
-
-    self:SetAdjustment(Angle(-math.Clamp(theta * 0.5, 3, 15), 0, 0))
-
-    if ent:IsWorld() or (IsValid(ent) and ent:GetSolid() == SOLID_BSP) then
-        self:SetMoveType(MOVETYPE_NONE)
-        self:SetPos(pos)
-    else
-        self:SetPos(pos)
-        self:SetParent(ent)
-    end
-
-    self:SetAngles(angle)
-    self:SetArmTime(CurTime())
-
+function ENT:OnPlant()
     self:EmitSound("weapons/csgo/claymore/claymore_plant_0" .. math.random(1, 3) .. ".wav", 80, 100)
     timer.Simple(math.max(0, self.ArmDelay - 1.2), function()
         if IsValid(self) then
-        --self:EmitSound("weapons/csgo/breachcharges/breach_warning_beep_01.wav", 80, 100)
-        self:EmitSound( "weapons/csgo/breachcharges/breach_warning_beep_01.wav", 75, 100, 1, CHAN_AUTO )
+            self:EmitSound( "weapons/csgo/breachcharges/breach_warning_beep_01.wav", 75, 100, 1, CHAN_AUTO )
         end
     end)
-end
-
-function ENT:PhysicsCollide(data, physobj)
-    self:Plant(data.HitEntity, data.HitPos, -data.HitNormal)
-end
-
-function ENT:Use(act, call, calltype, integer)
-    if IsValid(act) and act:IsPlayer() then
-        act:GiveAmmo(1, weapons.GetStored("arc9_go_nade_claymores").Ammo)
-        act:Give("arc9_go_nade_claymores", true)
-    end
-
-    self:EmitSound("weapons/csgo/bumpmines/bumpmine_pickup.wav", 75)
-    self:Remove()
 end
 
 -- basically checking if AABB intersects the plane represented by the entity's position and normal
@@ -195,16 +112,6 @@ function ENT:Think()
             return true
         end
     end
-end
-
-function ENT:OnTakeDamage(dmg)
-    self:SetHealth(self:Health() - dmg:GetDamage())
-    if not self.BOOM and self:Health() <= 0 then
-        self.BOOM = true
-        self:Detonate()
-    end
-
-    return dmg:GetDamage()
 end
 
 function ENT:Detonate()
@@ -290,7 +197,6 @@ function ENT:Detonate()
         self:Remove()
     end
 end
-
 
 if CLIENT then
     local beam = Material("csgo/laser1")
