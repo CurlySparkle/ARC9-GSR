@@ -11,12 +11,12 @@ SWEP.TrueName = "Dual MP9"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Switzerland",
+    ["Caliber"] = "9x19mm Parabellum",
+    ["Weight (Loaded)"] = "1.84kg",
+    ["Projectile Weight"] = "8 Grams",
+    ["Muzzle Velocity"] = "1300 Feet/Second",
+    ["Muzzle Energy"] = "643 Joules"
 }
 
 SWEP.Credits = {
