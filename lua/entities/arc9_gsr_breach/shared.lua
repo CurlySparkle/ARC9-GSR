@@ -1,107 +1,48 @@
 AddCSLuaFile()
-ENT.Type = "anim"
-ENT.Base = "base_anim"
-ENT.Spawnable = false
-ENT.SoundEmitted = false
+
+ENT.Base = "arc9_gsr_plantable"
+ENT.PrintName = "Breach Charge"
+
+ENT.Model = "models/weapons/w_eq_charge_dropped.mdl"
+ENT.WeaponClass = "arc9_go_nade_breach"
+ENT.MinS = Vector(-2, -2, 0)
+ENT.MaxS = Vector(2, 2, 4)
+
+ENT.ArmDelay = 0.4
 
 if SERVER then
     util.AddNetworkString("gsr_doorbust")
 
-    function ENT:Initialize()
-        if not self:GetNWBool("Fused") then
-            self:SetNWBool("Fused", false)
-        end
-
-        if not self:GetNWBool("Defused") then
-            self:SetNWBool("Defused", false)
-        end
-
-        self:SetModel("models/weapons/w_eq_charge_dropped.mdl")
-        self:PhysicsInit(SOLID_VPHYSICS)
-        self:SetMoveType(MOVETYPE_VPHYSICS)
-        self:SetSolid(SOLID_VPHYSICS)
-        self:SetUseType(SIMPLE_USE)
-        self:SetCollisionGroup(COLLISION_GROUP_PLAYER_MOVEMENT)
-
-        self:PhysWake()
+    function ENT:OnInitialize()
     end
 
-    function ENT:Detonate()
-        if self:GetNWBool("Defused") ~= false then
-            self:EmitSound("CSGO.Breacher.BreachDefused")
-            self:Remove()
-        else
-            self:Explode()
-        end
-    end
-
-    function ENT:PhysicsCollide(data, collider)
-
-        if self:GetNWBool("Fused") then return end
-
-        self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
-        self:SetPos(data.HitPos)
-
-        local angle = data.HitNormal:Angle()
-        angle:RotateAroundAxis(angle:Right(), 90)
-        --angle:RotateAroundAxis(angle:Up(), math.Rand(-180, 180))
-
-        self:SetAngles(angle)
-
-        if data.HitEntity:IsWorld() or data.HitEntity:GetSolid() == SOLID_BSP then
-            self:SetMoveType(MOVETYPE_NONE)
-            self:SetPos(data.HitPos)
-        else
-            self:SetPos(data.HitPos)
-            self:SetParent(data.HitEntity)
-        end
-
-        timer.Simple(0.4, function() if IsValid(self) then self:SetNWBool("Fused", true) end end)
-
-        -- If owner is set, it cannot be picked up
-        if IsValid(self:GetOwner()) then
-            self:SetNWEntity("Owner", self:GetOwner())
-            constraint.NoCollide(self, self:GetOwner(), 0, 0)
-            self:SetOwner(NULL)
-        end
-
+    function ENT:OnPlant()
         self:EmitSound("CSGO.Breacher.BreachChargeSetArmed")
     end
 
-    function ENT:Explode()
-        if not self:GetNWBool("Fused") then return end
-        --self:EmitSound("CSGO.Breacher.BreachSoundWarningBeep")
-        local owner = self:GetNWEntity("Owner") or self
-        util.BlastDamage(self, owner, self:GetPos(), 256, 300)
-        -- Shrapnel radius
-        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 400, 25)
-
-        local fx = EffectData()
-        fx:SetOrigin(self:GetPos())
-        fx:SetNormal(self:GetForward())
-
-        if self:WaterLevel() > 0 then
-            util.Effect("WaterSurfaceExplosion", fx)
-        else
-            ParticleEffect("explosion_hegrenade_brief", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("explosion_hegrenade_interior", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("grenade_explosion_01", self:GetPos(), self:GetAngles(), nil)
-            ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), Angle(0, 0, 0), nil)
-            --ParticleEffect("smoke_plume_b", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("smoke_plume_c", self:GetPos(), Angle(0, 0, 0), nil)
-            ParticleEffect("HE_shockwave", self:GetPos(), Angle(0, 0, 0), nil)
-
-            local spos = self:GetPos()
-            local trs = util.TraceLine({start=spos + Vector(0,0,64), endpos=spos + Vector(0,0,-32), filter=self})
-            util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
-        end
-
-        self:EmitSound("CSGO.Frag.Explode")
+    function ENT:Detonate()
+        if self.Det or self.SpawnTime + 0.75 > CurTime() then return end
+        self.Det = true
+        -- self:EmitSound("CSGO.Breacher.BreachSoundWarningBeep")
+        local mult = self:GetArmed() and 1 or 0.5
+        local owner = self.Attacker or self
 
         local door = self:GetParent()
         self:SetParent(NULL)
 
+        local pos = self:GetPos()
+
         if IsValid(door) and string.find(door:GetClass(), "door") then
+
+            -- move explosion behind door
+            local tr = util.TraceLine({
+                start = pos,
+                endpos = pos + self:GetUp() * -256,
+                filter = {self, door}
+            })
+            pos = pos + self:GetUp() * -128 * tr.Fraction
+            debugoverlay.Cross(pos, 8, 3, color_white, true)
+
             local vel = self:GetUp() * -20000 + VectorRand() * 5000
             for _, otherDoor in pairs(ents.FindInSphere(door:GetPos(), 72)) do
                 if door ~= otherDoor and otherDoor:GetClass() == door:GetClass() then
@@ -110,23 +51,47 @@ if SERVER then
                 end
             end
             self:DoorBust(door, vel, owner)
-
         end
 
-        self:Remove()
-    end
+        util.BlastDamage(self, owner, pos, 256 * mult, 300 * mult)
+        -- Shrapnel radius
+        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, pos, 400 * mult, 25)
 
-    function ENT:AcceptInput(input, activator, caller, data)
-        if string.lower(input) == "use" then
-            self:Use(activator, caller, SIMPLE_USE, 0)
+        local fx = EffectData()
+        fx:SetOrigin(pos)
+        fx:SetNormal(self:GetForward())
+
+        if self:WaterLevel() > 0 then
+            util.Effect("WaterSurfaceExplosion", fx)
+        else
+            ParticleEffect("grenade_explosion_01", pos, Angle(0, 0, 0), nil)
+
+            if self:GetArmed() then
+                ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
+                ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
+                ParticleEffect("weapon_decoy_ground_effect_shot", pos, Angle(0, 0, 0), nil)
+                --ParticleEffect("smoke_plume_b", pos, Angle(0, 0, 0), nil)
+                ParticleEffect("smoke_plume_c", pos, Angle(0, 0, 0), nil)
+                ParticleEffect("HE_shockwave", pos, Angle(0, 0, 0), nil)
+
+                local spos = pos
+                local trs = util.TraceLine({start = spos + Vector(0,0,64), endpos = spos + Vector(0,0,-32), filter = self})
+                util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
+            end
         end
+
+        self:EmitSound("CSGO.Frag.Explode")
+
+        self:SetNoDraw(true)
+        SafeRemoveEntityDelayed(self, 1)
     end
 
     -- Copied from TacRP. I wrote it too so no complaining!
     function ENT:DoorBust(ent, vel, attacker)
         if not string.find(ent:GetClass(), "door") then return end
-        local cvar = 1 --GetConVar("arc9_gsr_doorbust"):GetInt()
-        local t = 300 -- GetConVar("arc9_gsr_doorbust_time"):GetFloat()
+        if IsValid(ent:GetParent()) then return end -- seems to cause a crash
+        local cvar = 1
+        local t = 120
         if cvar == 0 or ent.GSR_DoorBusted then return end
         ent.GSR_DoorBusted = true
 
@@ -193,32 +158,7 @@ if SERVER then
             end)
         end
     end
-
-    local weaponclass = "arc9_go_nade_breach"
-    function ENT:Use(activator, caller, useType, value)
-        if activator:IsPlayer() and activator == self:GetNWEntity("Owner") and self:GetNWBool("Defused") ~= true then
-            if activator:GetWeapon(weaponclass) == NULL then
-                activator:Give(weaponclass, false)
-                activator:EmitSound("CSGO.Breacher.BreachUse")
-                self:Remove()
-            elseif activator:GetWeapon(weaponclass) ~= NULL then
-                activator:GiveAmmo(1, "arc9_csgo_charge", true)
-                --activator:SetAmmo(chargesamt+1, "csgo_charge")
-                activator:EmitSound("CSGO.Breacher.BreachUse")
-                self:Remove()
-            end
-        elseif activator:IsPlayer() and activator ~= self:GetNWEntity("Owner") then
-            self:EmitSound("CSGO.Breacher.BreachDefused")
-            self:SetNWBool("Defused", true)
-            self:SetColor(Color(127, 127, 127))
-        else
-            self:EmitSound("CSGO.Breacher.BreachDefused")
-            self:Remove()
-        end
-    end
 end
-
-
 
 if CLIENT then
     net.Receive("gsr_doorbust", function()

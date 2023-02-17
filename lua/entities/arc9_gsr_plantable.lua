@@ -178,8 +178,16 @@ if SERVER then
             act:GiveAmmo(1, weapons.GetStored(self.WeaponClass).Ammo, true)
             act:Give(self.WeaponClass, true)
 
-            self:EmitSound("weapons/csgo/bumpmines/bumpmine_pickup.wav", 75)
+            self:EmitSound("CSGO.Breacher.BreachUse", 75)
             self:Remove()
         end
+    end
+else
+    function ENT:DrawTranslucent()
+        self:Draw()
+    end
+
+    function ENT:Draw()
+        self:DrawModel()
     end
 end
