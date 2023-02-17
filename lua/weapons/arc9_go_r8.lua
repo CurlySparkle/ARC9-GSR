@@ -11,12 +11,12 @@ SWEP.TrueName = "R8 Revolver"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Israel",
-    ["Caliber"] = ".50 Action Express",
-    ["Weight (Loaded)"] = "1.8kg",
-    ["Projectile Weight"] = "19.4 Grams",
-    ["Muzzle Velocity"] = "1380 Feet/Second",
-    ["Muzzle Energy"] = "1650 Joules"
+    ["Country of Origin"] = "United States of America",
+    ["Caliber"] = ".357 Magnum",
+    ["Weight (Loaded)"] = "1.14kg",
+    ["Projectile Weight"] = "10.25 Grams",
+    ["Muzzle Velocity"] = "1450 Feet/Second",
+    ["Muzzle Energy"] = "1001 Joules"
 }
 
 SWEP.Credits = {
