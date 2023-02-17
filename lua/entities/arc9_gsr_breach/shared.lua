@@ -82,8 +82,10 @@ if SERVER then
 
         self:EmitSound("CSGO.Frag.Explode")
 
+        self:SetMoveType(MOVETYPE_NONE)
         self:SetNoDraw(true)
-        SafeRemoveEntityDelayed(self, 1)
+        self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+        SafeRemoveEntityDelayed(self, 0.5)
     end
 
     -- Copied from TacRP. I wrote it too so no complaining!
