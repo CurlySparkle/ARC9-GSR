@@ -11,12 +11,12 @@ SWEP.TrueName = "MP5-SD"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Germany",
+    ["Caliber"] = "9x19mm Parabellum",
+    ["Weight (Loaded)"] = "3.93kg",
+    ["Projectile Weight"] = "8 Grams",
+    ["Muzzle Velocity"] = "900 Feet/Second",
+    ["Muzzle Energy"] = "301 Joules"
 }
 
 SWEP.Credits = {
