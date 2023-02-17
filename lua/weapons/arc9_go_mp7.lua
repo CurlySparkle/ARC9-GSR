@@ -11,12 +11,12 @@ SWEP.TrueName = "MP7"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Germany",
+    ["Caliber"] = "4.6x30mm",
+    ["Weight (Loaded)"] = "2.15kg",
+    ["Projectile Weight"] = "2 Grams",
+    ["Muzzle Velocity"] = "2230 Feet/Second",
+    ["Muzzle Energy"] = "465 Joules"
 }
 
 SWEP.Credits = {
