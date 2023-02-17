@@ -5,7 +5,7 @@ ENT.PrintName = "Landmine"
 
 ENT.Model = "models/weapons/w_eq_landmines_dropped.mdl"
 ENT.WeaponClass = "arc9_go_nade_landmines"
-
+ENT.Bury = 3
 ENT.DetectionRange = 96
 ENT.ArmDelay = 3
 

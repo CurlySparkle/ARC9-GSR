@@ -136,8 +136,9 @@ if SERVER then
                 endpos = pos - normal,
                 filter = {self},
             })
-            if self.BuryTypes[tr_mat.MatType] and normal:Dot(Vector(0, 0, 1)) >= 0.5 then
+            if self.BurySurfaces[tr_mat.MatType] and normal:Dot(Vector(0, 0, 1)) >= 0.5 then
                 pos = pos - normal * self.Bury
+                self:DrawShadow(false)
             end
         end
 
