@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Assault Rifles"
 
 SWEP.PrintName = "Galil AR"
-SWEP.TrueName = "Galil AR"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Israel",
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "3.95 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "3,116.8 ft/s",
+    ["Muzzle Energy"] = "1,814 joules"
 }
 
 SWEP.Credits = {
@@ -24,17 +23,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
 
-
-if ARC9:UseTrueNames() then
-
-SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
-SWEP.PrintName = SWEP.TrueName
-
-else
-
 SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart, the Maverick is the full-auto assault rifle of choice for CTs.]]
-
-end
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_galilar.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"

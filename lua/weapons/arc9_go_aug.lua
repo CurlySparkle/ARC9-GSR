@@ -11,11 +11,11 @@ SWEP.PrintName = "AUG"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Austria",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "4.09kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "3.6 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "3,182 ft/s",
+    ["Muzzle Energy"] = "1,890 joules"
 }
 
 SWEP.Credits = {

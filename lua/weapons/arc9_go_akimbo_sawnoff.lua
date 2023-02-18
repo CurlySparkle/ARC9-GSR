@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual Sawed-Off"
-SWEP.TrueName = "Dual Sawed-Off"
 
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "12×70 Shotshell",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "United States",
+    ["Caliber"] = "12 gauge",
+    ["Weight (Loaded)"] = "900 g",
+    ["Projectile Weight"] = "493 gr",
+    ["Muzzle Velocity"] = "850 ft/s",
+    ["Muzzle Energy"] = "1,073 joules"
 }
 
 SWEP.Credits = {

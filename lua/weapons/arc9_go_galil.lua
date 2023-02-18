@@ -6,17 +6,16 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Assault Rifles"
 
-SWEP.PrintName = "Galil"
-SWEP.TrueName = "Galil"
+SWEP.PrintName = "Galil SAR"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Israel",
-    ["Caliber"] = ".223",
-    ["Weight (Loaded)"] = "4.35kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2013 Feet/Second",
-    ["Muzzle Energy"] = "1712 Joules"
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "3.75 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "2,953 ft/s",
+    ["Muzzle Energy"] = "1,628 joules"
 }
 
 SWEP.Credits = {

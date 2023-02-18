@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "MP7"
-SWEP.TrueName = "MP7"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Germany",
-    ["Caliber"] = "4.6x30mm",
-    ["Weight (Loaded)"] = "2.15kg",
-    ["Projectile Weight"] = "2 Grams",
-    ["Muzzle Velocity"] = "2230 Feet/Second",
-    ["Muzzle Energy"] = "465 Joules"
+    ["Caliber"] = "4.6x30mm HK",
+    ["Weight (Loaded)"] = "2.15 kg",
+    ["Projectile Weight"] = "31 gr",
+    ["Muzzle Velocity"] = "2,230 ft/s",
+    ["Muzzle Energy"] = "464 joules"
 }
 
 SWEP.Credits = {

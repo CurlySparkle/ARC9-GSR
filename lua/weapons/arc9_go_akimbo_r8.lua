@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual R8 Revolver"
-SWEP.TrueName = "Dual R8 Revolver"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
+    ["Country of Origin"] = "United States",
     ["Caliber"] = ".357 Magnum",
-    ["Weight (Loaded)"] = "1.14kg",
-    ["Projectile Weight"] = "10.25 Grams",
-    ["Muzzle Velocity"] = "1450 Feet/Second",
-    ["Muzzle Energy"] = "1001 Joules"
+    ["Weight (Loaded)"] = "2.28 kg",
+    ["Projectile Weight"] = "125 gr",
+    ["Muzzle Velocity"] = "1,450 ft/s",
+    ["Muzzle Energy"] = "791 joules"
 }
 
 SWEP.Credits = {

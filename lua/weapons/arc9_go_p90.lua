@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "P90"
-SWEP.TrueName = "P90"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Belgium",
-    ["Caliber"] = "5.7x28mm",
-    ["Weight (Loaded)"] = "3kg",
-    ["Projectile Weight"] = "2 Grams",
-    ["Muzzle Velocity"] = "2345 Feet/Second",
-    ["Muzzle Energy"] = "465 Joules"
+    ["Caliber"] = "5.7x28mm FN",
+    ["Weight (Loaded)"] = "2.6 kg",
+    ["Projectile Weight"] = "27 gr",
+    ["Muzzle Velocity"] = "2,350 ft/s",
+    ["Muzzle Energy"] = "449 joules"
 }
 
 SWEP.Credits = {

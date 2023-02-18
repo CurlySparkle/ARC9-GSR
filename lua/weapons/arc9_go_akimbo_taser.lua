@@ -7,7 +7,6 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual Zeus x27"
-SWEP.TrueName = "Dual Zeus x27"
 
 SWEP.Class = "Special"
 

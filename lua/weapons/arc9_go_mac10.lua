@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "MAC-10"
-SWEP.TrueName = "MAC-10"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "United States",
+    ["Caliber"] = "9×19mm Parabellum",
+    ["Weight (Loaded)"] = "3 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,201 ft/s",
+    ["Muzzle Energy"] = "499 joules"
 }
 
 SWEP.Credits = {

@@ -11,11 +11,11 @@ SWEP.PrintName = "SIG556"
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Switzerland",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.1kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "4.1 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "2,989 ft/s",
+    ["Muzzle Energy"] = "1,668 joules"
 }
 
 SWEP.Credits = {

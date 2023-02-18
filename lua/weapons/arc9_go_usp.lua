@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Pistols"
 
 SWEP.PrintName = "USP-S"
-SWEP.TrueName = "USP-S"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Germany",
     ["Caliber"] = ".45 ACP",
-    ["Weight (Loaded)"] = "1kg",
-    ["Projectile Weight"] = "15.2 Grams",
-    ["Muzzle Velocity"] = "886 Feet/Second",
-    ["Muzzle Energy"] = "553 Joules"
+    ["Weight (Loaded)"] = "1 kg",
+    ["Projectile Weight"] = "230 gr",
+    ["Muzzle Velocity"] = "1,148.29 ft/s",
+    ["Muzzle Energy"] = "913 joules"
 }
 
 SWEP.Credits = {

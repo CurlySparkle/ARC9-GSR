@@ -6,17 +6,16 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Assault Rifles"
 
-SWEP.PrintName = "Famas"
-SWEP.TrueName = "Famas"
+SWEP.PrintName = "FAMAS"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "France",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.40kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2212 Feet/Second",
-    ["Muzzle Energy"] = "1712 Joules"
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "3.61 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "3,100 ft/s",
+    ["Muzzle Energy"] = "1,794 joules"
 }
 
 SWEP.Credits = {

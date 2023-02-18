@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Assault Rifles"
 
 SWEP.PrintName = "AK-47"
-SWEP.TrueName = "AK-47"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Russia",
     ["Caliber"] = "7.62x39mm",
-    ["Weight (Loaded)"] = "4.79kg",
-    ["Projectile Weight"] = "7.9 Grams",
-    ["Muzzle Velocity"] = "2329 Feet/Second",
-    ["Muzzle Energy"] = "1992 Joules"
+    ["Weight (Loaded)"] = "4.79 kg",
+    ["Projectile Weight"] = "121.9 gr",
+    ["Muzzle Velocity"] = "2,350 ft/s",
+    ["Muzzle Energy"] = "2,027 joules"
 }
 
 SWEP.Credits = {

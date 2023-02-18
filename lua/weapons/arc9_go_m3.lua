@@ -12,11 +12,11 @@ SWEP.TrueName = "Benelli M3 Super 90"
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Italy",
-    ["Caliber"] = "12 Gauge",
-    ["Weight (Loaded)"] = "3.5kg",
-    ["Projectile Weight"] = "3.8 Grams",
-    ["Muzzle Velocity"] = "1250 Feet/Second",
-    ["Muzzle Energy"] = "2429 Joules"
+    ["Caliber"] = "12 gauge",
+    ["Weight (Loaded)"] = "3.27 kg",
+    ["Projectile Weight"] = "493 gr",
+    ["Muzzle Velocity"] = "1,250 ft/s",
+    ["Muzzle Energy"] = "2,319 joules"
 }
 
 SWEP.Credits = {

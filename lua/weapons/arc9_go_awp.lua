@@ -12,10 +12,10 @@ SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "United Kingdom",
     ["Caliber"] = ".338 Lapua Magnum",
-    ["Weight (Loaded)"] = "6kg",
-    ["Projectile Weight"] = "16.2 Grams",
-    ["Muzzle Velocity"] = "3000 Feet/Second",
-    ["Muzzle Energy"] = "7000 Joules"
+    ["Weight (Loaded)"] = "6.5 kg",
+    ["Projectile Weight"] = "250 gr",
+    ["Muzzle Velocity"] = "2,790 ft/s",
+    ["Muzzle Energy"] = "5,860 joules"
 }
 
 SWEP.Credits = {

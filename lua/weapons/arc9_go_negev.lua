@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "LMGs"
 
 SWEP.PrintName = "Negev"
-SWEP.TrueName = "Negev"
 
 SWEP.Class = "Light Machine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Israel",
     ["Caliber"] = "5.56×45mm NATO",
-    ["Weight (Loaded)"] = "7kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "3000 Feet/Second",
-    ["Muzzle Energy"] = "1600 Joules"
+    ["Weight (Loaded)"] = "7.6 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "2,789 ft/s",
+    ["Muzzle Energy"] = "1,452 joules"
 }
 
 SWEP.Credits = {

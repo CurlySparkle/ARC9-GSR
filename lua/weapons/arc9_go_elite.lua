@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual Berettas"
-SWEP.TrueName = "Dual Berettas"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Italy",
-    ["Caliber"] = ".40 S&W",
-    ["Weight (Loaded)"] = "1.15kg",
-    ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "1280 Feet/Second",
-    ["Muzzle Energy"] = "606 Joules"
+    ["Caliber"] = "9×19mm Parabellum",
+    ["Weight (Loaded)"] = "2.32 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,250 ft/s",
+    ["Muzzle Energy"] = "541 joules"
 }
 
 SWEP.Credits = {

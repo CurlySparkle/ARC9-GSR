@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "MP5-SD"
-SWEP.TrueName = "MP5-SD"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Germany",
     ["Caliber"] = "9x19mm Parabellum",
-    ["Weight (Loaded)"] = "3.93kg",
-    ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "1000 Feet/Second",
-    ["Muzzle Energy"] = "360 Joules"
+    ["Weight (Loaded)"] = "3.93 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,000 ft/s",
+    ["Muzzle Energy"] = "346 joules"
 }
 
 SWEP.Credits = {

@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "LMGs"
 
 SWEP.PrintName = "M249"
-SWEP.TrueName = "M249"
 
 SWEP.Class = "Light Machine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Belgium",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "6kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "3000 Feet/Second",
-    ["Muzzle Energy"] = "1600 Joules"
+    ["Country of Origin"] = "United States",
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "8,75 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "3,000 ft/s",
+    ["Muzzle Energy"] = "1,680 joules"
 }
 
 SWEP.Credits = {

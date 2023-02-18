@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "UMP-45"
-SWEP.TrueName = "UMP-45"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
+    ["Country of Origin"] = "Germany",
     ["Caliber"] = ".45 ACP",
-    ["Weight (Loaded)"] = "3.02kg",
-    ["Projectile Weight"] = "15.2 Grams",
-    ["Muzzle Velocity"] = "853 Feet/Second",
-    ["Muzzle Energy"] = "513 Joules"
+    ["Weight (Loaded)"] = "3 kg",
+    ["Projectile Weight"] = "230 gr",
+    ["Muzzle Velocity"] = "935 ft/s",
+    ["Muzzle Energy"] = "605 joules"
 }
 
 SWEP.Credits = {

@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Submachine Guns"
 
 SWEP.PrintName = "PP-Bizon"
-SWEP.TrueName = "PP-Bizon"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Russia",
-    ["Caliber"] = "9x18 mm",
+    ["Caliber"] = "9×19mm Parabellum",
     ["Weight (Loaded)"] = "2.1 kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "1,050 Feet/Second",
-    ["Muzzle Energy"] = "570 Joules"
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,246.7 ft/s",
+    ["Muzzle Energy"] = "538 joules"
 }
 
 SWEP.Credits = {

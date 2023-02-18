@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual MP9"
-SWEP.TrueName = "Dual MP9"
 
 SWEP.Class = "Submachine Gun"
 SWEP.Trivia = {
     ["Country of Origin"] = "Switzerland",
     ["Caliber"] = "9x19mm Parabellum",
-    ["Weight (Loaded)"] = "1.84kg",
-    ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "1300 Feet/Second",
-    ["Muzzle Energy"] = "643 Joules"
+    ["Weight (Loaded)"] = "3.68 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,300 ft/s",
+    ["Muzzle Energy"] = "585 joules"
 }
 
 SWEP.Credits = {

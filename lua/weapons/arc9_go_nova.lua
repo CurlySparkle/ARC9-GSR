@@ -7,13 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Shotguns"
 
 SWEP.PrintName = "Nova"
-SWEP.TrueName = "Nova"
 
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "12×70 Shotshell",
-    ["Weight (Loaded)"] = "3.63kg",
+    ["Country of Origin"] = "Italy",
+    ["Caliber"] = "12 gauge",
+    ["Weight (Loaded)"] = "3.63 kg",
+    ["Projectile Weight"] = "493 gr",
+    ["Muzzle Velocity"] = "1,255 ft/s",
+    ["Muzzle Energy"] = "2,338 joules"
 }
 
 SWEP.Credits = {

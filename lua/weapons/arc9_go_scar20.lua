@@ -10,12 +10,12 @@ SWEP.PrintName = "SCAR-20"
 
 SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Switzerland",
-    ["Caliber"] = "7.62x51mm",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2,989 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Belgium",
+    ["Caliber"] = "7.62×51mm NATO",
+    ["Weight (Loaded)"] = "3.58 kg",
+    ["Projectile Weight"] = "175 gr",
+    ["Muzzle Velocity"] = "2,342 ft/s",
+    ["Muzzle Energy"] = "2,890 joules"
 }
 
 SWEP.Credits = {

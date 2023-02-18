@@ -8,16 +8,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual P2000"
-SWEP.TrueName = "Dual P2000"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Germany",
     ["Caliber"] = "9x19mm Parabellum",
-    ["Weight (Loaded)"] = "0.87kg",
-    ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "1100 Feet/Second",
-    ["Muzzle Energy"] = "463 Joules"
+    ["Weight (Loaded)"] = "1.74 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,100 ft/s",
+    ["Muzzle Energy"] = "419 joules"
 }
 
 SWEP.Credits = {

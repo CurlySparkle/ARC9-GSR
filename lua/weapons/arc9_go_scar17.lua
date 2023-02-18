@@ -7,23 +7,21 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Assault Rifles"
 
 SWEP.PrintName = "SCAR-17"
-SWEP.TrueName = "SCAR-17"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Belgium",
-    ["Caliber"] = "7.62x51mm NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "3.29 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "2,870 ft/s",
+    ["Muzzle Energy"] = "1,538 joules"
 }
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
     Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
 }
-
 
 SWEP.Description = [[The SCAR-17 is a automatic with a burst-fire option that trades a high rate of fire and powerful mid-distance damage for sluggish movement speed and still with its counter-part, the SCAR-20, having a big price tag.]]
 

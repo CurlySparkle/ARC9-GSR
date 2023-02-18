@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual P250"
-SWEP.TrueName = "Dual P250"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Switzerland/Germany",
+    ["Country of Origin"] = "United States",
     ["Caliber"] = ".357 SIG",
-    ["Weight (Loaded)"] = "1.03kg",
-    ["Projectile Weight"] = "8.1 Grams",
-    ["Muzzle Velocity"] = "1400 Feet/Second",
-    ["Muzzle Energy"] = "600 Joules"
+    ["Weight (Loaded)"] = "1.44 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,425 ft/s",
+    ["Muzzle Energy"] = "703 joules"
 }
 
 SWEP.Credits = {

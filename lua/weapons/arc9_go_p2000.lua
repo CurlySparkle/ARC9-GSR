@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Pistols"
 
 SWEP.PrintName = "P2000"
-SWEP.TrueName = "P2000"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Germany",
     ["Caliber"] = "9x19mm Parabellum",
-    ["Weight (Loaded)"] = "0.87kg",
-    ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "1100 Feet/Second",
-    ["Muzzle Energy"] = "463 Joules"
+    ["Weight (Loaded)"] = "870 g",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,100 ft/s",
+    ["Muzzle Energy"] = "419 joules"
 }
 
 SWEP.Credits = {

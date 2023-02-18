@@ -6,17 +6,16 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Pistols"
 
-SWEP.PrintName = "Tec-9 "
-SWEP.TrueName = "Tec-9"
+SWEP.PrintName = "Tec-9"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Sweden",
+    ["Country of Origin"] = "Sweden/United States",
     ["Caliber"] = "9x19mm Parabellum",
-    ["Weight (Loaded)"] = "1.23-1.4 kg",
-    ["Projectile Weight"] = "1 Grams",
-    ["Muzzle Velocity"] = "1,181 Feet/Second",
-    ["Muzzle Energy"] = "465 Joules"
+    ["Weight (Loaded)"] = "1.3 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,181 ft/s",
+    ["Muzzle Energy"] = "483 joules"
 }
 
 SWEP.Credits = {

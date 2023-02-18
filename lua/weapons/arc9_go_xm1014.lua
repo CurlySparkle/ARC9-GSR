@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Shotguns"
 
 SWEP.PrintName = "XM1014"
-SWEP.TrueName = "XM1014"
 
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "Italy",
+    ["Caliber"] = "12 gauge",
+    ["Weight (Loaded)"] = "3.82 kg",
+    ["Projectile Weight"] = "493 gr",
+    ["Muzzle Velocity"] = "1,340 ft/s",
+    ["Muzzle Energy"] = "2,665 joules"
 }
 
 SWEP.Credits = {

@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual Five-SeveN"
-SWEP.TrueName = "Dual Five-SeveN"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Belgium",
-    ["Caliber"] = "5.7x28mm",
-    ["Weight (Loaded)"] = "0.618kg",
-    ["Projectile Weight"] = "2 Grams",
-    ["Muzzle Velocity"] = "2345 Feet/Second",
-    ["Muzzle Energy"] = "465 Joules"
+    ["Caliber"] = "5.7x28mm FN",
+    ["Weight (Loaded)"] = "1.48 kg",
+    ["Projectile Weight"] = "27 gr",
+    ["Muzzle Velocity"] = "2,550 ft/s",
+    ["Muzzle Energy"] = "529 joules"
 }
 
 SWEP.Credits = {

@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Shotguns"
 
 SWEP.PrintName = "MAG-7"
-SWEP.TrueName = "MAG-7"
 
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "South Africa",
+    ["Caliber"] = "12 gauge",
+    ["Weight (Loaded)"] = "4 kg",
+    ["Projectile Weight"] = "493 gr",
+    ["Muzzle Velocity"] = "1,236 ft/s",
+    ["Muzzle Energy"] = "2,268 joules"
 }
 
 SWEP.Credits = {

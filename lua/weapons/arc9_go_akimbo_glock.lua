@@ -8,16 +8,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual Glock-18"
-SWEP.TrueName = "Dual Glock-18"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Austria",
-    ["Caliber"] = "9x19mm Parabellum",
-    ["Weight (Loaded)"] = "0.9kg",
-    ["Projectile Weight"] = "8 Grams",
-    ["Muzzle Velocity"] = "1132 Feet/Second",
-    ["Muzzle Energy"] = "475 Joules"
+    ["Caliber"] = "9×19mm Parabellum",
+    ["Weight (Loaded)"] = "560 g",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,230 ft/s",
+    ["Muzzle Energy"] = "524 joules"
 }
 
 SWEP.Credits = {

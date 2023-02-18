@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Pistols"
 
 SWEP.PrintName = "R8 Revolver"
-SWEP.TrueName = "R8 Revolver"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
+    ["Country of Origin"] = "United States",
     ["Caliber"] = ".357 Magnum",
-    ["Weight (Loaded)"] = "1.14kg",
-    ["Projectile Weight"] = "10.25 Grams",
-    ["Muzzle Velocity"] = "1450 Feet/Second",
-    ["Muzzle Energy"] = "1001 Joules"
+    ["Weight (Loaded)"] = "1.14 kg",
+    ["Projectile Weight"] = "125 gr",
+    ["Muzzle Velocity"] = "1,450 ft/s",
+    ["Muzzle Energy"] = "791 joules"
 }
 
 SWEP.Credits = {

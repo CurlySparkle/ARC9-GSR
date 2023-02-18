@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Assault Rifles"
 
 SWEP.PrintName = "M4A1-S"
-SWEP.TrueName = "M4A1-S"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "United States",
+    ["Caliber"] = "5.56×45mm NATO",
+    ["Weight (Loaded)"] = "3.45 kg",
+    ["Projectile Weight"] = "62 gr",
+    ["Muzzle Velocity"] = "2,986 ft/s",
+    ["Muzzle Energy"] = "1,665 joules"
 }
 
 SWEP.Credits = {

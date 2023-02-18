@@ -10,12 +10,12 @@ SWEP.PrintName = "G3SG1"
 
 SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Switzerland",
-    ["Caliber"] = "5.56×45 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2,989 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Country of Origin"] = "West Germany",
+    ["Caliber"] = "7.62×51mm NATO",
+    ["Weight (Loaded)"] = "4.5 kg",
+    ["Projectile Weight"] = "175 gr",
+    ["Muzzle Velocity"] = "2,600 ft/s",
+    ["Muzzle Energy"] = "3,562 joules"
 }
 
 SWEP.Credits = {

@@ -7,16 +7,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Pistols"
 
 SWEP.PrintName = "Desert Eagle"
-SWEP.TrueName = "Desert Eagle"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Israel",
+    ["Country of Origin"] = "Israel/United States",
     ["Caliber"] = ".50 Action Express",
-    ["Weight (Loaded)"] = "1.8kg",
-    ["Projectile Weight"] = "19.4 Grams",
-    ["Muzzle Velocity"] = "1380 Feet/Second",
-    ["Muzzle Energy"] = "1650 Joules"
+    ["Weight (Loaded)"] = "2 kg",
+    ["Projectile Weight"] = "300 gr",
+    ["Muzzle Velocity"] = "1,542 ft/s",
+    ["Muzzle Energy"] = "2,148 joules"
 }
 
 SWEP.Credits = {

@@ -8,16 +8,15 @@ SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
 SWEP.PrintName = "Dual CZ75-Autos"
-SWEP.TrueName = "Dual CZ75-Autos"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Czechoslovak",
+    ["Country of Origin"] = "Czech Republic",
     ["Caliber"] = "9×19mm Parabellum",
-    ["Weight (Loaded)"] = "1.12 kg",
-    ["Projectile Weight"] = "2 Grams",
-    ["Muzzle Velocity"] = "1132 Feet/Second",
-    ["Muzzle Energy"] = "475 Joules"
+    ["Weight (Loaded)"] = "2.24 kg",
+    ["Projectile Weight"] = "115 gr",
+    ["Muzzle Velocity"] = "1,181.1 ft/s",
+    ["Muzzle Energy"] = "438 joules"
 }
 
 SWEP.Credits = {

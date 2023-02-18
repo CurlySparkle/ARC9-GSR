@@ -12,10 +12,10 @@ SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "Austria",
     ["Caliber"] = "7.62×51mm NATO",
-    ["Weight (Loaded)"] = "3kg",
-    ["Projectile Weight"] = "11.2 Grams",
-    ["Muzzle Velocity"] = "3000 Feet/Second",
-    ["Muzzle Energy"] = "7000 Joules"
+    ["Weight (Loaded)"] = "3 kg",
+    ["Projectile Weight"] = "175 gr",
+    ["Muzzle Velocity"] = "2,950 ft/s",
+    ["Muzzle Energy"] = "4,586 joules"
 }
 
 SWEP.Credits = {
