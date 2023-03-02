@@ -255,7 +255,7 @@ ATT.Free = false
 ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_10"}
 ATT.ClipSizeOverride = 10
-ATT.ReloadTimeMult = 1.15
+ATT.ReloadTimeMult = 0.85
 
 ARC9.LoadAttachment(ATT, "csgo_g3_mag_10")
 -------------------------------------------------------------------------------------------------

@@ -64,6 +64,5 @@ PrecacheParticleSystem("explosion_child_smoke07b")
 PrecacheParticleSystem("explosion_child_smoke07c")
 PrecacheParticleSystem("explosion_child_distort01c")
 
-PrecacheParticleSystem("smoke_plume")
-PrecacheParticleSystem("smoke_plume_b")
-PrecacheParticleSystem("smoke_plume_c")
+PrecacheParticleSystem("muzzle_weapon_smoke_v2_direction")
+PrecacheParticleSystem("muzzle_weapon_smoke_v2")

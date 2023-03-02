@@ -132,7 +132,7 @@ ATT.Description = [[Extended barrel for longer and better purposes. Adds support
 ATT.Icon = Material("entities/attachs/p90_extended_barrel.png", "mips smooth")
 
 ATT.SortOrder = 0
-ATT.Category = "go_p90_barrel"
+ATT.Category = {"go_p90_barrel","cod2019_p90_barrel"}
 ATT.Model = "models/weapons/csgo/atts/p90_extended_barrel.mdl"
 ATT.ActivateElements = {"ext_barrel"}
 
