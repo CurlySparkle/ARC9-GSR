@@ -16,13 +16,13 @@ ATT.Category = {"csgo_optic","csgo_sights"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/trijicon_mro.mdl"
-ATT.Scale = 0.55
+ATT.Scale = 0.45
 ATT.ModelOffset = Vector(0, 0, 0.08)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -1.8),
+        Pos = Vector(0, 8, -1.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 35,
