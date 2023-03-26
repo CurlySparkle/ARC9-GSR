@@ -255,7 +255,7 @@ SWEP.Animations = {
         Source = "holster",
 		Mult = 0.5,
         EventTable = {
-            {s = "weapons/csgo/taser/taser_draw.ogg", t = 0 / 30},
+            {s = "weapons/csgo/taser/taser_draw.ogg", t = 0/30},
         },
     },
     ["idle"] = {
@@ -266,11 +266,11 @@ SWEP.Animations = {
 		MinProgress = 0.75,
 		Mult = 0.8,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 9 / 30 },
-			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 20 / 30 },
-			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 60 / 30 },
-			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 65 / 30 },
-            { s = "weapons/csgo/taser/taser_draw.ogg", t = 77 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 9/30},
+			{s = "weapons/csgo/taser/taser_clipout.ogg", t = 20/30},
+			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 60/30},
+			{s = "weapons/csgo/taser/taser_clipin.ogg", t = 65/30},
+            {s = "weapons/csgo/taser/taser_draw.ogg", t = 77/30},
         },
     },
     ["idle_sprint"] = {
@@ -289,8 +289,8 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 175/30},
         },
     },
     ["bash"] = {

@@ -286,8 +286,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "sg556_clipout.wav", t = 9 / 30},
-            {s = path .. "sg556_clipin.wav", t = 29 / 30},
+            {s = path .. "sg556_clipout.wav", t = 9/30},
+            {s = path .. "sg556_clipin.wav", t = 29/30},
         },
     },
     ["reload_empty"] = {
@@ -315,11 +315,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "sg556_clipout.wav", t = 9 / 30},
-            {s = path .. "sg556_clipin.wav", t = 29 / 30},
-            --{s = path .. "sg556_cliphit.wav", t = 60 / 30},
-            {s = path .. "sg556_boltback.wav", t = 58 / 30},
-            {s = path .. "sg556_boltforward.wav", t = 66 / 30},
+            {s = path .. "sg556_clipout.wav", t = 9/30},
+            {s = path .. "sg556_clipin.wav", t = 29/30},
+            --{s = path .. "sg556_cliphit.wav", t = 60/30},
+            {s = path .. "sg556_boltback.wav", t = 58/30},
+            {s = path .. "sg556_boltforward.wav", t = 66/30},
         },
     },
     ["reload_ak"] = {
@@ -347,8 +347,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "sg556_clipout.wav", t = 9 / 30},
-            {s = path .. "sg556_clipin.wav", t = 29 / 30},
+            {s = path .. "sg556_clipout.wav", t = 9/30},
+            {s = path .. "sg556_clipin.wav", t = 29/30},
         },
     },
     ["reload_empty_ak"] = {
@@ -376,19 +376,19 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "sg556_clipout.wav", t = 9 / 30},
-            {s = path .. "sg556_clipin.wav", t = 29 / 30},
-            --{s = path .. "sg556_cliphit.wav", t = 60 / 30},
-            {s = path .. "sg556_boltback.wav", t = 58 / 30},
-            {s = path .. "sg556_boltforward.wav", t = 66 / 30},
+            {s = path .. "sg556_clipout.wav", t = 9/30},
+            {s = path .. "sg556_clipin.wav", t = 29/30},
+            --{s = path .. "sg556_cliphit.wav", t = 60/30},
+            {s = path .. "sg556_boltback.wav", t = 58/30},
+            {s = path .. "sg556_boltforward.wav", t = 66/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "sg556_draw.wav", t = 0 / 30},
-            {s = path .. "sg556_boltback.wav", t = 9 / 30},
-            {s = path .. "sg556_boltforward.wav", t = 17 / 30},
+            {s = path .. "sg556_draw.wav", t = 0/30},
+            {s = path .. "sg556_boltback.wav", t = 9/30},
+            {s = path .. "sg556_boltforward.wav", t = 17/30},
         },
     },
     ["draw"] = {
@@ -397,7 +397,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -439,9 +439,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash"] = {

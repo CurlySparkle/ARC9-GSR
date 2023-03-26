@@ -1019,7 +1019,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.hkp2000.Fire",
+    name = "CSGO.HKP2000.Fire",
     channel = 10,
     volume = 1.0,
     level = 100,
@@ -1033,7 +1033,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.hkp2000.Fire_Beef",
+    name = "CSGO.HKP2000.Fire_Beef",
     channel = CHAN_USERBASE,
     volume = 0.6,
     level = 80,
@@ -1047,7 +1047,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.hkp2000.Fire_Beef_ADS",
+    name = "CSGO.HKP2000.Fire_Beef_ADS",
     channel = CHAN_USERBASE,
     volume = 1.0,
     level = 80,
@@ -1061,7 +1061,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.hkp2000.Fire.Distance",
+    name = "CSGO.HKP2000.Fire.Distance",
     channel = CHAN_WEAPON,
     volume = 0.3,
     level = 120,
@@ -1133,7 +1133,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.fiveseven.Fire.Distance",
+    name = "CSGO.Fiveseven.Fire.Distance",
     channel = CHAN_WEAPON,
     volume = 0.2,
     level = 120,
@@ -1144,7 +1144,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.cz75a.Fire",
+    name = "CSGO.CZ75a.Fire",
     channel = 10,
     volume = 1.0,
     level = 100,
@@ -1158,7 +1158,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.cz75a.Distance_Fire",
+    name = "CSGO.CZ75a.Distance_Fire",
     channel = CHAN_WEAPON,
     volume = 0.3,
     level = 120,
@@ -1694,7 +1694,7 @@ sound.Add( {
 } )
 
 sound.Add( {
-    name = "CSGO.hkp2000.Silenced_Fire",
+    name = "CSGO.HKP2000.Silenced_Fire",
     channel = 10,
     volume = 1.0,
     level = 90,

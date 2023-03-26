@@ -264,14 +264,14 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 0 },
+            {t = 0,	lhik = 1, rhik = 0},
             {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.7, lhik = 0, rhik = 0 },
-            {t = 0.9, lhik = 1, rhik = 1 },
+            {t = 0.7, lhik = 0, rhik = 0},
+            {t = 0.9, lhik = 1, rhik = 1},
         },			
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
+            {s = path .. "p250_clipout.wav", t = 12/30},
+            {s = path .. "p250_clipin.wav", t = 25/30},
         },
     },
     ["reload_empty"] = {
@@ -284,10 +284,10 @@ SWEP.Animations = {
             {t = 0.875, lhik = 1, rhik = 1 },
         },			
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
-            --{s = path .. "p250_slideback.wav", t = 44 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 45 / 30},
+            {s = path .. "p250_clipout.wav", t = 12/30},
+            {s = path .. "p250_clipin.wav", t = 25/30},
+            --{s = path .. "p250_slideback.wav", t = 44/30},
+            {s = path .. "p250_sliderelease.wav", t = 45/30},
         },
     },
     ["ready"] = {
@@ -299,9 +299,9 @@ SWEP.Animations = {
             {t = 0.8, lhik = 1, rhik = 1 },
         },				
         EventTable = {
-            {s = path .. "p250_draw.wav", t = 0 / 30},
-            {s = path .. "p250_slideback.wav", t = 8 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 14 / 30},
+            {s = path .. "p250_draw.wav", t = 0/30},
+            {s = path .. "p250_slideback.wav", t = 8/30},
+            {s = path .. "p250_sliderelease.wav", t = 14/30},
         },
     },
     ["draw"] = {
@@ -310,7 +310,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -334,13 +334,13 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 0 },
             {t = 0.1, lhik = 0, rhik = 0},
-            {t = 0.825, lhik = 0, rhik = 0 },
-            {t = 1.1, lhik = 1, rhik = 1 },
+            {t = 0.825, lhik = 0, rhik = 0},
+            {t = 1.1, lhik = 1, rhik = 1},
         },	
         EventTable = {
-            { s = "CSGO.Item.Movement", t = 2 / 30 },
-            { s = "CSGO.Item.Movement", t = 175 / 30 },
-			{ s = "CSGO.Item.Movement", t = 175 / 30 },
+            {s = "CSGO.Item.Movement", t = 2/30},
+            {s = "CSGO.Item.Movement", t = 175/30},
+			{s = "CSGO.Item.Movement", t = 175/30},
         },
     },
     ["bash"] = {

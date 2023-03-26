@@ -150,20 +150,20 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["throw"] = {
         Source = "pressbutton",
         EventTable = {
-            { s = "weapons/csgo/c4/c4_initiate.wav", t = 3/30 },
-			{ s = "weapons/csgo/c4/key_press1.wav", t = 20/30 },
-			{ s = "weapons/csgo/c4/key_press2.wav", t = 29/30 },
-			{ s = "weapons/csgo/c4/key_press3.wav", t = 37/30 },
-			{ s = "weapons/csgo/c4/key_press4.wav", t = 44/30 },
-			{ s = "weapons/csgo/c4/key_press5.wav", t = 50/30 },
-			{ s = "weapons/csgo/c4/key_press6.wav", t = 59/30 },
-			{ s = "weapons/csgo/c4/key_press7.wav", t = 65/30 },
+            {s = "weapons/csgo/c4/c4_initiate.wav", t = 3/30},
+			{s = "weapons/csgo/c4/key_press1.wav", t = 20/30},
+			{s = "weapons/csgo/c4/key_press2.wav", t = 29/30},
+			{s = "weapons/csgo/c4/key_press3.wav", t = 37/30},
+			{s = "weapons/csgo/c4/key_press4.wav", t = 44/30},
+			{s = "weapons/csgo/c4/key_press5.wav", t = 50/30},
+			{s = "weapons/csgo/c4/key_press6.wav", t = 59/30},
+			{s = "weapons/csgo/c4/key_press7.wav", t = 65/30},
         },
         MinProgress = 1
     },

@@ -329,11 +329,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "negev_coverup.wav", t = 18 / 30},
-            {s = path .. "negev_boxout.wav", t = 39 / 30},
-            {s = path .. "negev_boxin.wav", t = 79 / 30},
-            {s = path .. "negev_chain.wav", t = 90 / 30},
-			{s = path .. "negev_coverdown.wav", t = 114 / 30},
+            {s = path .. "negev_coverup.wav", t = 18/30},
+            {s = path .. "negev_boxout.wav", t = 39/30},
+            {s = path .. "negev_boxin.wav", t = 79/30},
+            {s = path .. "negev_chain.wav", t = 90/30},
+			{s = path .. "negev_coverdown.wav", t = 114/30},
         },
     },
     ["reload_empty"] = {
@@ -363,12 +363,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "negev_coverup.wav", t = 18 / 30},
-            {s = path .. "negev_boxout.wav", t = 39 / 30},
-            {s = path .. "negev_boxin.wav", t = 79 / 30},
-            {s = path .. "negev_chain.wav", t = 90 / 30},
-			{s = path .. "negev_coverdown.wav", t = 114 / 30},
-			{s = path .. "negev_pump.wav", t = 135 / 30},
+            {s = path .. "negev_coverup.wav", t = 18/30},
+            {s = path .. "negev_boxout.wav", t = 39/30},
+            {s = path .. "negev_boxin.wav", t = 79/30},
+            {s = path .. "negev_chain.wav", t = 90/30},
+			{s = path .. "negev_coverdown.wav", t = 114/30},
+			{s = path .. "negev_pump.wav", t = 135/30},
         },
     },	
     ["reload_empty_mag"] = {
@@ -397,9 +397,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "negev_boxout.wav", t = 11 / 30},
-            {s = path .. "negev_boxin.wav", t = 51 / 30},
-			{s = path .. "negev_pump.wav", t = 78 / 30},
+            {s = path .. "negev_boxout.wav", t = 11/30},
+            {s = path .. "negev_boxin.wav", t = 51/30},
+			{s = path .. "negev_pump.wav", t = 78/30},
         },
     },
     ["reload_mag"] = {
@@ -428,8 +428,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "negev_boxout.wav", t = 11 / 30},
-            {s = path .. "negev_boxin.wav", t = 51 / 30},
+            {s = path .. "negev_boxout.wav", t = 11/30},
+            {s = path .. "negev_boxin.wav", t = 51/30},
         },
     },	
     ["ready"] = {
@@ -457,8 +457,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "negev_draw.wav", t = 0 / 30},
-            {s = path .. "negev_pump.wav", t = 7 / 30},
+            {s = path .. "negev_draw.wav", t = 0/30},
+            {s = path .. "negev_pump.wav", t = 7/30},
         },
     },
     ["draw"] = {
@@ -467,7 +467,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {

@@ -292,41 +292,41 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 16 / 30},
-            {s = path .. "glock_clipin.wav", t = 28 / 30},
+            {s = path .. "glock_clipout.wav", t = 16/30},
+            {s = path .. "glock_clipin.wav", t = 28/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
         MinProgress = 0.45,
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12 / 30},
-            {s = path .. "glock_clipin.wav", t = 25 / 30},
-            {s = path .. "glock_sliderelease.wav", t = 43 / 30},
+            {s = path .. "glock_clipout.wav", t = 12/30},
+            {s = path .. "glock_clipin.wav", t = 25/30},
+            {s = path .. "glock_sliderelease.wav", t = 43/30},
         },
     },
     ["reload_x"] = {
         Source = "reload_short_x",
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 16 / 30},
-            {s = path .. "glock_clipin.wav", t = 28 / 30},
+            {s = path .. "glock_clipout.wav", t = 16/30},
+            {s = path .. "glock_clipin.wav", t = 28/30},
         },
     },
     ["reload_empty_x"] = {
         Source = "reload_x",
         MinProgress = 0.45,
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12 / 30},
-            {s = path .. "glock_clipin.wav", t = 25 / 30},
-            {s = path .. "glock_sliderelease.wav", t = 43 / 30},
+            {s = path .. "glock_clipout.wav", t = 12/30},
+            {s = path .. "glock_clipin.wav", t = 25/30},
+            {s = path .. "glock_sliderelease.wav", t = 43/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "glock_draw.wav", t = 0 / 30},
-            {s = path .. "glock_slideback.wav", t = 8 / 30},
-            {s = path .. "glock_sliderelease.wav", t = 14 / 30},
+            {s = path .. "glock_draw.wav", t = 0/30},
+            {s = path .. "glock_slideback.wav", t = 8/30},
+            {s = path .. "glock_sliderelease.wav", t = 14/30},
         },
     },
     ["draw"] = {
@@ -335,7 +335,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -357,25 +357,25 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 175/30},
         },
     },
     ["reload_longmag"] = {
         Source = "reload_short_alt",
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12 / 30},
-            {s = path .. "glock_clipin.wav", t = 25 / 30},
+            {s = path .. "glock_clipout.wav", t = 12/30},
+            {s = path .. "glock_clipin.wav", t = 25/30},
         },
     },
     ["reload_longmag_empty"] = {
         Source = "reload_alt",
         MinProgress = 0.45,
         EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12 / 30},
-            {s = path .. "glock_clipin.wav", t = 25 / 30},
-            {s = path .. "glock_slideback.wav", t = 44 / 30},
-            {s = path .. "glock_sliderelease.wav", t = 50 / 30},
+            {s = path .. "glock_clipout.wav", t = 12/30},
+            {s = path .. "glock_clipin.wav", t = 25/30},
+            {s = path .. "glock_slideback.wav", t = 44/30},
+            {s = path .. "glock_sliderelease.wav", t = 50/30},
         },
     },
     ["bash"] = {

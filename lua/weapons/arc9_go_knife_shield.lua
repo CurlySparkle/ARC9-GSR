@@ -169,7 +169,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = "melee/shield_equip_01.wav", t = 0 / 30 },
+            {s = "melee/shield_equip_01.wav", t = 0/30},
         },
     },
     ["bash"] = {
@@ -190,9 +190,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
 }

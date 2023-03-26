@@ -271,7 +271,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = {"pump"},
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 0 / 30},
+            {s = path .. "nova_pump.wav", t = 0/30},
         },
     },
     ["reload_start"] = {
@@ -304,7 +304,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "CSGO.Nova.Shell_Insert", t = 5 / 30},
+            {s = "CSGO.Nova.Shell_Insert", t = 5/30},
         },
     },
     ["reload_finish"] = {
@@ -347,7 +347,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 15 / 30},
+            {s = path .. "nova_pump.wav", t = 15/30},
         },
     },
     ["ready"] = {
@@ -375,8 +375,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "nova_draw.wav", t = 0 / 30},
-            {s = path .. "nova_pump.wav", t = 19 / 30},
+            {s = path .. "nova_draw.wav", t = 0/30},
+            {s = path .. "nova_pump.wav", t = 19/30},
         },
     },
     ["draw"] = {
@@ -385,7 +385,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -427,9 +427,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 44 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 117 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 44/30},
+            {s = "weapons/csgo/movement3.wav", t = 117/30},
         },
     },
     ["bash"] = {

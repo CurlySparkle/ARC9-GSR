@@ -306,10 +306,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
-            {s = path .. "p90_clipout.wav", t = 12 / 30},
-            {s = path .. "p90_clipin.wav", t = 41 / 30},
-            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_cliprelease.wav", t = 10/30},
+            {s = path .. "p90_clipout.wav", t = 12/30},
+            {s = path .. "p90_clipin.wav", t = 41/30},
+            {s = path .. "p90_cliphit.wav", t = 58/30},
         },
     },
     ["reload_empty"] = {
@@ -339,12 +339,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
-            {s = path .. "p90_clipout.wav", t = 12 / 30},
-            {s = path .. "p90_clipin.wav", t = 41 / 30},
-            {s = path .. "p90_cliphit.wav", t = 58 / 30},
-            {s = path .. "p90_boltback.wav", t = 82 / 30},
-            {s = path .. "p90_boltforward.wav", t = 89 / 30},
+            {s = path .. "p90_cliprelease.wav", t = 10/30},
+            {s = path .. "p90_clipout.wav", t = 12/30},
+            {s = path .. "p90_clipin.wav", t = 41/30},
+            {s = path .. "p90_cliphit.wav", t = 58/30},
+            {s = path .. "p90_boltback.wav", t = 82/30},
+            {s = path .. "p90_boltforward.wav", t = 89/30},
         },
     },
     ["reload_stanag30"] = {
@@ -372,10 +372,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
-            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
-            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
-            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_cliprelease.wav", t = 10/30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12/30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41/30},
+            {s = path .. "p90_cliphit.wav", t = 58/30},
         },
     },
     ["reload_empty_stanag30"] = {
@@ -403,12 +403,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
-            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
-            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
-            {s = path .. "p90_cliphit.wav", t = 58 / 30},
-            {s = path .. "p90_boltback.wav", t = 82 / 30},
-            {s = path .. "p90_boltforward.wav", t = 89 / 30},
+            {s = path .. "p90_cliprelease.wav", t = 10/30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12/30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41/30},
+            {s = path .. "p90_cliphit.wav", t = 58/30},
+            {s = path .. "p90_boltback.wav", t = 82/30},
+            {s = path .. "p90_boltforward.wav", t = 89/30},
         },
     },
     ["reload_stanag20"] = {
@@ -436,10 +436,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
-            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
-            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
-            {s = path .. "p90_cliphit.wav", t = 58 / 30},
+            {s = path .. "p90_cliprelease.wav", t = 10/30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12/30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41/30},
+            {s = path .. "p90_cliphit.wav", t = 58/30},
         },
     },
     ["reload_empty_stanag20"] = {
@@ -467,12 +467,12 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_cliprelease.wav", t = 10 / 30},
-            {s = path2 .. "m4a1_clipout.wav", t = 12 / 30},
-            {s = path2 .. "m4a1_clipin.wav", t = 41 / 30},
-            {s = path .. "p90_cliphit.wav", t = 58 / 30},
-            {s = path .. "p90_boltback.wav", t = 82 / 30},
-            {s = path .. "p90_boltforward.wav", t = 89 / 30},
+            {s = path .. "p90_cliprelease.wav", t = 10/30},
+            {s = path2 .. "m4a1_clipout.wav", t = 12/30},
+            {s = path2 .. "m4a1_clipin.wav", t = 41/30},
+            {s = path .. "p90_cliphit.wav", t = 58/30},
+            {s = path .. "p90_boltback.wav", t = 82/30},
+            {s = path .. "p90_boltforward.wav", t = 89/30},
         },
     },
     ["ready"] = {
@@ -500,9 +500,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "p90_draw.wav", t = 0 / 30},
-            {s = path .. "p90_boltback.wav", t = 11 / 30},
-            {s = path .. "p90_boltforward.wav", t = 17 / 30},
+            {s = path .. "p90_draw.wav", t = 0/30},
+            {s = path .. "p90_boltback.wav", t = 11/30},
+            {s = path .. "p90_boltforward.wav", t = 17/30},
         },
     },
     ["draw"] = {
@@ -511,7 +511,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -555,10 +555,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 88 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 94 / 30 },
-            { s = "weapons/csgo/movement1.wav", t = 130 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 88/30},
+            {s = "weapons/csgo/movement3.wav", t = 94/30},
+            {s = "weapons/csgo/movement1.wav", t = 130/30},
         },
     },
     ["bash"] = {

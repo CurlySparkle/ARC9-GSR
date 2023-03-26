@@ -253,16 +253,16 @@ SWEP.Animations = {
         Source = {"shoot2"},
 		InstantIdle = true,
         -- EventTable = {
-            -- {s = path .. "ssg08_boltback.wav", t = 18 / 50},
-            -- {s = path .. "ssg08_boltforward.wav", t = 28 / 50},
+            -- {s = path .. "ssg08_boltback.wav", t = 18/50},
+            -- {s = path .. "ssg08_boltforward.wav", t = 28/50},
         -- },
     },
     ["fire_sights"] = {
         Source = {"shoot2_ads"},
 		InstantIdle = true,
         -- EventTable = {
-            -- {s = path .. "ssg08_boltback.wav", t = 20 / 50},
-            -- {s = path .. "ssg08_boltforward.wav", t = 39 / 50},
+            -- {s = path .. "ssg08_boltback.wav", t = 20/50},
+            -- {s = path .. "ssg08_boltforward.wav", t = 39/50},
         -- },
     },
     ["cycle"] = {
@@ -270,8 +270,8 @@ SWEP.Animations = {
 		InstantIdle = true,
 		Mult = 0.8,
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 10 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 25 / 50},
+            {s = path .. "ssg08_boltback.wav", t = 10/50},
+            {s = path .. "ssg08_boltforward.wav", t = 25/50},
         },
     },
     ["cycle_sights"] = {
@@ -279,25 +279,25 @@ SWEP.Animations = {
 		InstantIdle = true,
 		Mult = 0.8,
         EventTable = {
-            {s = path .. "ssg08_boltback.wav", t = 10 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 25 / 50},
+            {s = path .. "ssg08_boltback.wav", t = 10/50},
+            {s = path .. "ssg08_boltforward.wav", t = 25/50},
         },
     },
     ["reload"] = {
         Source = "reload_short",
         IKTimeLine = {
-            { t = 0, lhik = 1, rhik = 0 },
-            { t = 0.1, lhik = 1, rhik = 0 },			
-            { t = 0.2, lhik = 0, rhik = 0 },
-            { t = 0.75, lhik = 0, rhik = 0 },
-            { t = 0.85,lhik = 1, rhik = 1 },
+            {t = 0, lhik = 1, rhik = 0},
+            {t = 0.1, lhik = 1, rhik = 0},			
+            {t = 0.2, lhik = 0, rhik = 0},
+            {t = 0.75, lhik = 0, rhik = 0},
+            {t = 0.85,lhik = 1, rhik = 1},
         },
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 60 },
-            {s = path .. "ssg08_clipout.wav", t = 14 / 60},
-            {s = path .. "ssg08_clipin.wav", t = 65 / 60},
-            {s = path .. "ssg08_cliphit.wav", t = 70 / 60},
-			{s = "weapons/csgo/movement1.wav", t = 80 / 60 },
+		    {s = "weapons/csgo/movement1.wav", t = 0/60},
+            {s = path .. "ssg08_clipout.wav", t = 14/60},
+            {s = path .. "ssg08_clipin.wav", t = 65/60},
+            {s = path .. "ssg08_cliphit.wav", t = 70/60},
+			{s = "weapons/csgo/movement1.wav", t = 80/60},
         },
     },
     ["reload_empty"] = {
@@ -310,21 +310,21 @@ SWEP.Animations = {
             { t = 0.9,lhik = 1, rhik = 1 },
         },
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 60 },
-            {s = path .. "ssg08_clipout.wav", t = 53 / 60},
-            {s = path .. "ssg08_clipin.wav", t = 110 / 60},
-            {s = path .. "ssg08_cliphit.wav", t = 105 / 60},
-            {s = path .. "ssg08_boltback.wav", t = 23 / 60},
-			{s = "weapons/csgo/movement1.wav", t = 130 / 60 },
-            {s = path .. "ssg08_boltforward.wav", t = 145 / 60},
+		    {s = "weapons/csgo/movement1.wav", t = 0/60},
+            {s = path .. "ssg08_clipout.wav", t = 53/60},
+            {s = path .. "ssg08_clipin.wav", t = 110/60},
+            {s = path .. "ssg08_cliphit.wav", t = 105/60},
+            {s = path .. "ssg08_boltback.wav", t = 23/60},
+			{s = "weapons/csgo/movement1.wav", t = 130/60},
+            {s = path .. "ssg08_boltforward.wav", t = 145/60},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "ssg08_draw.wav", t = 0 / 50},
-            {s = path .. "ssg08_boltback.wav", t = 6 / 50},
-            {s = path .. "ssg08_boltforward.wav", t = 13 / 50},
+            {s = path .. "ssg08_draw.wav", t = 0/50},
+            {s = path .. "ssg08_boltback.wav", t = 6/50},
+            {s = path .. "ssg08_boltforward.wav", t = 13/50},
         },
     },
     ["draw"] = {
@@ -333,7 +333,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -376,9 +376,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 120 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 225 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 120/30},
+            {s = "weapons/csgo/movement3.wav", t = 225/30},
         },
     },
     ["bash"] = {

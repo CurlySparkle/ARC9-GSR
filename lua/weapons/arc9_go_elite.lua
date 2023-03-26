@@ -284,30 +284,30 @@ SWEP.Animations = {
         Source = "reload_short",
 		MinProgress = 0.95,
         EventTable = {
-            {s = path .. "elite_clipout.wav", t = 5 / 30},
-            {s = path .. "elite_clipout.wav", t = 7 / 30},
-            {s = path .. "elite_leftclipin.wav", t = 49 / 30},
-            {s = path .. "elite_rightclipin.wav", t = 84 / 30},
+            {s = path .. "elite_clipout.wav", t = 5/30},
+            {s = path .. "elite_clipout.wav", t = 7/30},
+            {s = path .. "elite_leftclipin.wav", t = 49/30},
+            {s = path .. "elite_rightclipin.wav", t = 84/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.95,
         EventTable = {
-            {s = path .. "elite_clipout.wav", t = 5 / 30},
-            {s = path .. "elite_clipout.wav", t = 7 / 30},
-            {s = path .. "elite_leftclipin.wav", t = 49 / 30},
-            {s = path .. "elite_rightclipin.wav", t = 84 / 30},
-			{s = path .. "elite_sliderelease.wav", t = 102 / 30},
-			{s = path .. "elite_sliderelease.wav", t = 107 / 30},
+            {s = path .. "elite_clipout.wav", t = 5/30},
+            {s = path .. "elite_clipout.wav", t = 7/30},
+            {s = path .. "elite_leftclipin.wav", t = 49/30},
+            {s = path .. "elite_rightclipin.wav", t = 84/30},
+			{s = path .. "elite_sliderelease.wav", t = 102/30},
+			{s = path .. "elite_sliderelease.wav", t = 107/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "elite_draw.wav", t = 0 / 30},
-            {s = path .. "elite_sliderelease.wav", t = 15 / 30},
-            {s = path .. "elite_sliderelease.wav", t = 18 / 30},
+            {s = path .. "elite_draw.wav", t = 0/30},
+            {s = path .. "elite_sliderelease.wav", t = 15/30},
+            {s = path .. "elite_sliderelease.wav", t = 18/30},
         },
     },
     ["draw"] = {
@@ -316,7 +316,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -338,11 +338,11 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 88 / 30 },
-			{ s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 93 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 25/30},
+			{s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 88/30},
+			{s = "weapons/csgo/elite/elite_taunt_tap.wav", t = 93/30},
+			{s = "weapons/csgo/movement2.wav", t = 113/30},
         },
     },
     ["enter_sights"] = {

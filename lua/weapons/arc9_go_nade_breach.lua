@@ -136,20 +136,20 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["throw"] = {
       Source = "throw_empty",
       EventTable = {
-          { s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0 },
+          {s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0},
       },
       MinProgress = 0.1
     },
     ["detonate"] = {
         Source = "detonate",
         EventTable = {
-            { s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0 },
+            {s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0},
         },
     },
     -- ["idle_sprint"] = {
@@ -171,20 +171,20 @@ SWEP.Animations = {
     ["holster_detonator"] = {
         Source = "holster_empty",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["throw_detonator"] = {
       Source = "throw_empty",
       EventTable = {
-          { s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0 },
+          {s = "weapons/csgo/breachcharges/breach_throw_01.wav", t = 0},
       },
       MinProgress = 0
     },
     ["detonate_detonator"] = {
         Source = "detonate_empty",
         EventTable = {
-            { s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0 },
+            {s = "weapons/csgo/breachcharges/breach_activate_01.wav", t = 0},
         },
     },
     -- ["idle_sprint_detonator"] = {

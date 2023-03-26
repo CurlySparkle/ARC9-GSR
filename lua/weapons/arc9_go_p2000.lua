@@ -238,9 +238,9 @@ SWEP.DropMagazineQCA = 3
 
 local path = "weapons/csgo/hkp2000/"
 
-SWEP.ShootSound = "CSGO.hkp2000.Fire"
-SWEP.ShootSoundSilenced = "CSGO.hkp2000.Silenced_Fire"
-SWEP.DistantShootSound = "CSGO.hkp2000.Fire.Distance"
+SWEP.ShootSound = "CSGO.HKP2000.Fire"
+SWEP.ShootSoundSilenced = "CSGO.HKP2000.Silenced_Fire"
+SWEP.DistantShootSound = "CSGO.HKP2000.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
@@ -268,41 +268,41 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
         EventTable = {
-            {s = "CSGO.hkp2000.Fire_Beef", t = 0 / 30},
+            {s = "CSGO.hkp2000.Fire_Beef", t = 0/30},
         },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
         EventTable = {
-            {s = "CSGO.hkp2000.Fire_Beef_ADS", t = 0 / 30},
+            {s = "CSGO.hkp2000.Fire_Beef_ADS", t = 0/30},
         },
     },
     ["reload"] = {
         Source = "reload_short",
 		MinProgress = 0.4,
         EventTable = {
-            {s = "ARC9_CSGO_HKP2000.Magout", t = 10 / 30},
-            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
-            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 37 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 10/30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 37/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.4,
         EventTable = {
-            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10 / 30},
-            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
-            {s = "ARC9_CSGO_HKP2000.Slideback", t = 44 / 30},
-            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 50 / 30},
-            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55 / 30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10/30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 44/30},
+            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 50/30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "hkp2000_draw.wav", t = 0 / 30},
-            {s = "ARC9_CSGO_HKP2000.Slideback", t = 6 / 30},
-            {s = "ARC9_CSGO_HKP2000.SlideforwardAlt", t = 12 / 30},
+            {s = path .. "hkp2000_draw.wav", t = 0/30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 6/30},
+            {s = "ARC9_CSGO_HKP2000.SlideforwardAlt", t = 12/30},
         },
     },
     ["draw"] = {
@@ -311,7 +311,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -333,28 +333,28 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 175/30},
         },
     },
     ["reload_longmag"] = {
         Source = "reload_short_alt",
 		MinProgress = 0.7,
         EventTable = {
-            {s = "ARC9_CSGO_HKP2000.Magout", t = 10 / 30},
-            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
-            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 37 / 30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 10/30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 37/30},
         },
     },
     ["reload_longmag_empty"] = {
         Source = "reload_alt",
 		MinProgress = 0.4,
         EventTable = {
-            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10 / 30},
-            {s = "ARC9_CSGO_HKP2000.Magin", t = 23 / 30},
-            {s = "ARC9_CSGO_HKP2000.Slideback", t = 41 / 30},
-            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 48 / 30},
-            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55 / 30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10/30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 41/30},
+            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 48/30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55/30},
         },
     },
     ["bash"] = {

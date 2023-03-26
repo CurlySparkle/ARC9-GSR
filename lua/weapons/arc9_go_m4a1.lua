@@ -317,8 +317,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
-            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11/30},
+            {s = path .. "m4a1_clipin.wav", t = 35/30},
         },
     },
     ["reload_empty"] = {
@@ -346,9 +346,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
-            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
-            {s = path .. "m4a1_silencer_boltforward.wav", t = 57 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11/30},
+            {s = path .. "m4a1_clipin.wav", t = 35/30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 57/30},
         },
     },
     ["ready"] = {
@@ -376,9 +376,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "m4a1_draw.wav", t = 0 / 30},
-            {s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
-            {s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
+            {s = path .. "m4a1_draw.wav", t = 0/30},
+            {s = path .. "m4a1_silencer_boltback.wav", t = 10/30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 17/30},
         },
     },
     ["draw"] = {
@@ -387,7 +387,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle_sprint"] = {
@@ -426,9 +426,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["firemode_2"] = {
@@ -458,14 +458,14 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/movement1.wav", t = 3 / 30},
-            {s = path .. "m4a1_silencer_screw_on_start.wav", t = 33 / 30},
-            {s = path .. "m4a1_silencer_screw_1.wav", t = 47 / 30},
-            {s = path .. "m4a1_silencer_screw_2.wav", t = 65 / 30},
-            {s = path .. "m4a1_silencer_screw_3.wav", t = 77 / 30},
-            {s = path .. "m4a1_silencer_screw_4.wav", t = 89 / 30},
-            {s = path .. "m4a1_silencer_screw_5.wav", t = 98 / 30},
-            {s = "weapons/csgo/movement3.wav", t = 120 / 30},
+            {s = "weapons/csgo/movement1.wav", t = 3/30},
+            {s = path .. "m4a1_silencer_screw_on_start.wav", t = 33/30},
+            {s = path .. "m4a1_silencer_screw_1.wav", t = 47/30},
+            {s = path .. "m4a1_silencer_screw_2.wav", t = 65/30},
+            {s = path .. "m4a1_silencer_screw_3.wav", t = 77/30},
+            {s = path .. "m4a1_silencer_screw_4.wav", t = 89/30},
+            {s = path .. "m4a1_silencer_screw_5.wav", t = 98/30},
+            {s = "weapons/csgo/movement3.wav", t = 120/30},
         },
     },
     ["firemode_1"] = {
@@ -496,15 +496,15 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/movement1.wav", t = 3 / 30},
-            {s = path .. "m4a1_silencer_screw_1.wav", t = 24 / 30},
-            {s = path .. "m4a1_silencer_screw_2.wav", t = 43 / 30},
-            {s = path .. "m4a1_silencer_screw_3.wav", t = 54 / 30},
-            {s = path .. "m4a1_silencer_screw_4.wav", t = 66 / 30},
-            {s = path .. "m4a1_silencer_screw_5.wav", t = 76 / 30},
-            {s = path .. "m4a1_silencer_screw_off_end.wav", t = 88 / 30},
-            {s = "weapons/csgo/movement3.wav", t = 91 / 30},
-            {s = "weapons/csgo/movement3.wav", t = 105 / 30},
+            {s = "weapons/csgo/movement1.wav", t = 3/30},
+            {s = path .. "m4a1_silencer_screw_1.wav", t = 24/30},
+            {s = path .. "m4a1_silencer_screw_2.wav", t = 43/30},
+            {s = path .. "m4a1_silencer_screw_3.wav", t = 54/30},
+            {s = path .. "m4a1_silencer_screw_4.wav", t = 66/30},
+            {s = path .. "m4a1_silencer_screw_5.wav", t = 76/30},
+            {s = path .. "m4a1_silencer_screw_off_end.wav", t = 88/30},
+            {s = "weapons/csgo/movement3.wav", t = 91/30},
+            {s = "weapons/csgo/movement3.wav", t = 105/30},
         },
     },
     ["bash"] = {
@@ -570,8 +570,8 @@ SWEP.Animations = {
         },
         HideBoneIndex = 1,
         EventTable = {
-            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
-            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11/30},
+            {s = path .. "m4a1_clipin.wav", t = 35/30},
         },
     },
     ["reload_empty_silenced"] = {
@@ -600,9 +600,9 @@ SWEP.Animations = {
         },
         HideBoneIndex = 1,
         EventTable = {
-            {s = path .. "m4a1_clipout.wav", t = 11 / 30},
-            {s = path .. "m4a1_clipin.wav", t = 35 / 30},
-            {s = path .. "m4a1_silencer_boltforward.wav", t = 57 / 30},
+            {s = path .. "m4a1_clipout.wav", t = 11/30},
+            {s = path .. "m4a1_clipin.wav", t = 35/30},
+            {s = path .. "m4a1_silencer_boltforward.wav", t = 57/30},
         },
     },
     ["ready_silenced"] = {
@@ -631,9 +631,9 @@ SWEP.Animations = {
         },
         HideBoneIndex = 1,
         EventTable = {
-            {c = CHAN_STATIC, s = path .. "m4a1_draw.wav", t = 0 / 30},
-            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltback.wav", t = 10 / 30},
-            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltforward.wav", t = 17 / 30},
+            {c = CHAN_STATIC, s = path .. "m4a1_draw.wav", t = 0/30},
+            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltback.wav", t = 10/30},
+            {c = CHAN_STATIC, s = path .. "m4a1_silencer_boltforward.wav", t = 17/30},
         },
     },
     ["draw_silenced"] = {
@@ -644,7 +644,7 @@ SWEP.Animations = {
         Source = "holster_silenced",
         HideBoneIndex = 1,
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle_sprint_silenced"] = {
@@ -687,9 +687,9 @@ SWEP.Animations = {
         },
         HideBoneIndex = 1,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash_silenced"] = {

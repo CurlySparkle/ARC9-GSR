@@ -150,21 +150,21 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
         EventTable = {
-            { s = "weapons/csgo/bumpmines/bumpmine_pickup.wav", t = 0 },
+            {s = "weapons/csgo/bumpmines/bumpmine_pickup.wav", t = 0},
         },
     },
     ["holster"] = {
         Source = "holster",
 		Mult = 0.6,
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["throw"] = {
         Source = "throw",
 		Mult = 0.8,
         EventTable = {
-            { s = "weapons/csgo/bumpmines/grenade_throw.wav", t = 0 },
+            {s = "weapons/csgo/bumpmines/grenade_throw.wav", t = 0},
         },
         MinProgress = 0
     },

@@ -283,36 +283,36 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.7,
         EventTable = {
-            {s = path .. "revolver_siderelease.wav", t = 3 / 30},
-			{s = path .. "revolver_prepare.wav", t = 3 / 30},
-            {s = path .. "revolver_siderelease.wav", t = 13 / 30},
-			{s = path .. "revolver_clipout.wav", t = 15 / 30},
-			{s = path .. "revolver_clipin.wav", t = 32 / 30},
-			{s = path .. "revolver_sideback.wav", t = 47 / 30},
-			{s = path .. "revolver_prepare.wav", t = 45 / 30},
+            {s = path .. "revolver_siderelease.wav", t = 3/30},
+			{s = path .. "revolver_prepare.wav", t = 3/30},
+            {s = path .. "revolver_siderelease.wav", t = 13/30},
+			{s = path .. "revolver_clipout.wav", t = 15/30},
+			{s = path .. "revolver_clipin.wav", t = 32/30},
+			{s = path .. "revolver_sideback.wav", t = 47/30},
+			{s = path .. "revolver_prepare.wav", t = 45/30},
 
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "revolver_draw.wav", t = 4 / 30},
-			{s = path .. "revolver_clipin.wav", t = 20 / 30},
-			{s = path .. "revolver_sideback.wav", t = 22 / 30},
+            {s = path .. "revolver_draw.wav", t = 4/30},
+			{s = path .. "revolver_clipin.wav", t = 20/30},
+			{s = path .. "revolver_sideback.wav", t = 22/30},
         },
     },
     ["draw"] = {
         Source = "draw2",
         EventTable = {
-            {s = path .. "revolver_draw.wav", t = 4 / 30},
-			{s = path .. "revolver_clipin.wav", t = 20 / 30},
-			{s = path .. "revolver_sideback.wav", t = 22 / 30},
+            {s = path .. "revolver_draw.wav", t = 4/30},
+			{s = path .. "revolver_clipin.wav", t = 20/30},
+			{s = path .. "revolver_sideback.wav", t = 22/30},
         },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -336,15 +336,15 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 5 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 155 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 5/30},
+            {s = "weapons/csgo/movement2.wav", t = 155/30},
         },
     },
     ["trigger_sights"] = {
         Source = {"trigger"},
 		MinProgress = 0.8,
         EventTable = {
-            {s = path .. "revolver_prepare.wav", t = 0 / 30},
+            {s = path .. "revolver_prepare.wav", t = 0/30},
         },
     },
     ["fire_sights"] = {
@@ -354,7 +354,7 @@ SWEP.Animations = {
         Source = {"untrigger"},
 		MinProgress = 0.8,
         EventTable = {
-            {s = path .. "revolver_prepare.wav", t = 0 / 30},
+            {s = path .. "revolver_prepare.wav", t = 0/30},
         },
     },
     ["bash"] = {

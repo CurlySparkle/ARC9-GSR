@@ -136,7 +136,7 @@ SWEP.Animations = {
         Source = "holster",
 		Mult = 0.5,
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["pullpin"] = {
@@ -144,21 +144,21 @@ SWEP.Animations = {
         MinProgress = 0.666,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/hegrenade/pinpull_start.wav", t = 0 },
-            { s = "weapons/csgo/hegrenade/pinpull.wav", t = 10 / 30 },
+            {s = "weapons/csgo/hegrenade/pinpull_start.wav", t = 0},
+            {s = "weapons/csgo/hegrenade/pinpull.wav", t = 10/30},
         },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
-            { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
+            {s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0},
         },
         MinProgress = 0.3
     },
     ["toss"] = {
         Source = "underhand",
         EventTable = {
-            { s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0 },
+            {s = "weapons/csgo/hegrenade/grenade_throw.wav", t = 0},
         },
         MinProgress = 0.3
     },

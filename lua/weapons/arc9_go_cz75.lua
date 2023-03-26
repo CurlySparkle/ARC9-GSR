@@ -289,39 +289,39 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
+            {s = path .. "p250_clipout.wav", t = 12/30},
+            {s = path .. "p250_clipin.wav", t = 25/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.65,
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 9 / 30},
-            {s = path .. "p250_clipout.wav", t = 23 / 30},
-            {s = path .. "p250_clipin.wav", t = 46 / 30},
-            {s = path .. "p250_slideback.wav", t = 64 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 68 / 30},
+            {s = path .. "p250_clipout.wav", t = 9/30},
+            {s = path .. "p250_clipout.wav", t = 23/30},
+            {s = path .. "p250_clipin.wav", t = 46/30},
+            {s = path .. "p250_slideback.wav", t = 64/30},
+            {s = path .. "p250_sliderelease.wav", t = 68/30},
         },
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
         MinProgress = 0.65,
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 9 / 30},
-            {s = path .. "p250_clipout.wav", t = 23 / 30},
-            {s = path .. "p250_clipin.wav", t = 46 / 30},
-            {s = path .. "p250_slideback.wav", t = 64 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 68 / 30},
+            {s = path .. "p250_clipout.wav", t = 9/30},
+            {s = path .. "p250_clipout.wav", t = 23/30},
+            {s = path .. "p250_clipin.wav", t = 46/30},
+            {s = path .. "p250_slideback.wav", t = 64/30},
+            {s = path .. "p250_sliderelease.wav", t = 68/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "p250_draw.wav", t = 1 / 30},
-            {s = path .. "p250_clipin.wav", t = 20 / 30},
-            {s = path .. "p250_slideback.wav", t = 30 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 36 / 30},
+            {s = path .. "p250_draw.wav", t = 1/30},
+            {s = path .. "p250_clipin.wav", t = 20/30},
+            {s = path .. "p250_slideback.wav", t = 30/30},
+            {s = path .. "p250_sliderelease.wav", t = 36/30},
         },
     },
     ["draw"] = {
@@ -330,7 +330,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle_sprint"] = {
@@ -349,8 +349,8 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 175/30},
         },
     },
     ["bash"] = {
@@ -391,27 +391,27 @@ SWEP.Animations = {
     ["reload_alt"] = {
         Source = "reload_short_alt",
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
+            {s = path .. "p250_clipout.wav", t = 12/30},
+            {s = path .. "p250_clipin.wav", t = 25/30},
         },
     },
     ["reload_empty_alt"] = {
         Source = "reload_empty_alt",
         MinProgress = 0.45,
         EventTable = {
-            {s = path .. "p250_clipout.wav", t = 12 / 30},
-            {s = path .. "p250_clipin.wav", t = 25 / 30},
-            {s = path .. "p250_slideback.wav", t = 44 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 50 / 30},
+            {s = path .. "p250_clipout.wav", t = 12/30},
+            {s = path .. "p250_clipin.wav", t = 25/30},
+            {s = path .. "p250_slideback.wav", t = 44/30},
+            {s = path .. "p250_sliderelease.wav", t = 50/30},
         },
     },
     ["ready_alt"] = {
         Source = "draw_alt",
         EventTable = {
-            {s = path .. "p250_draw.wav", t = 1 / 30},
-            {s = path .. "p250_clipin.wav", t = 20 / 30},
-            {s = path .. "p250_slideback.wav", t = 30 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 36 / 30},
+            {s = path .. "p250_draw.wav", t = 1/30},
+            {s = path .. "p250_clipin.wav", t = 20/30},
+            {s = path .. "p250_slideback.wav", t = 30/30},
+            {s = path .. "p250_sliderelease.wav", t = 36/30},
         },
     },
     ["draw_alt"] = {
@@ -420,7 +420,7 @@ SWEP.Animations = {
     ["holster_alt"] = {
         Source = "holster_alt",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle_sprint_alt"] = {
@@ -439,8 +439,8 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 175 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 175/30},
         },
     },
     ["bash_alt"] = {

@@ -257,15 +257,15 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
         EventTable = {
-            {s = "CSGO.GALIL.Fire_Beef", t = 0 / 30},
-            {s = "CSGO.GALILAR.Fire_Mech", t = 0 / 30},
+            {s = "CSGO.GALIL.Fire_Beef", t = 0/30},
+            {s = "CSGO.GALILAR.Fire_Mech", t = 0/30},
         },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
         EventTable = {
-            {s = "CSGO.GALIL.Fire_Beef_ADS", t = 0 / 30},
-            {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0 / 30},
+            {s = "CSGO.GALIL.Fire_Beef_ADS", t = 0/30},
+            {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0/30},
         },
     },
     ["reload"] = {
@@ -293,8 +293,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_clipout.wav", t = 13 / 30},
-            {s = path .. "galil_clipin.wav", t = 38 / 30},
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 38/30},
         },
     },
     ["reload_empty"] = {
@@ -322,10 +322,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_clipout.wav", t = 13 / 30},
-            {s = path .. "galil_clipin.wav", t = 38 / 30},
-            {s = path .. "galil_boltback.wav", t = 54 / 30},
-            {s = path .. "galil_boltforward.wav", t = 57 / 30},
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 38/30},
+            {s = path .. "galil_boltback.wav", t = 54/30},
+            {s = path .. "galil_boltforward.wav", t = 57/30},
         },
     },
     ["ready"] = {
@@ -353,9 +353,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_draw.wav", t = 0 / 30},
-            {s = path .. "galil_boltback.wav", t = 11 / 30},
-            {s = path .. "galil_boltforward.wav", t = 15 / 30},
+            {s = path .. "galil_draw.wav", t = 0/30},
+            {s = path .. "galil_boltback.wav", t = 11/30},
+            {s = path .. "galil_boltforward.wav", t = 15/30},
         },
     },
     ["draw"] = {
@@ -364,7 +364,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -384,9 +384,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30 },
+            {s = "weapons/csgo/movement2.wav", t = 92/30 },
+            {s = "weapons/csgo/movement3.wav", t = 116/30 },
         },
     },
     ["reload_2"] = {
@@ -414,8 +414,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13 / 30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
         },
     },
     ["reload_empty_2"] = {
@@ -443,10 +443,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13 / 30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38 / 30},
-            {s = path .. "galil_boltback.wav", t = 54 / 30},
-            {s = path .. "galil_boltforward.wav", t = 57 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
+            {s = path .. "galil_boltback.wav", t = 54/30},
+            {s = path .. "galil_boltforward.wav", t = 57/30},
         },
     },
     ["bash"] = {

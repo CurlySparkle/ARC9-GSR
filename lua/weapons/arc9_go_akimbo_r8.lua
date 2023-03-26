@@ -270,18 +270,18 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.95,
         EventTable = {
-			{s = path .. "revolver_prepare.wav", t = 11 / 30},
-            {s = path .. "revolver_siderelease.wav", t = 13 / 30},      {s = path .. "revolver_siderelease.wav", t = 17 / 30},
-			{s = path .. "revolver_clipout.wav", t = 29 / 30},			{s = path .. "revolver_clipout.wav", t = 36 / 30},
-			{s = path .. "revolver_clipin.wav", t = 50 / 30},			{s = path .. "revolver_clipin.wav", t = 65 / 30},
-			{s = path .. "revolver_sideback.wav", t = 82 / 30},			{s = path .. "revolver_sideback.wav", t = 80 / 30},
+			{s = path .. "revolver_prepare.wav", t = 11/30},
+            {s = path .. "revolver_siderelease.wav", t = 13/30},        {s = path .. "revolver_siderelease.wav", t = 17/30},
+			{s = path .. "revolver_clipout.wav", t = 29/30},		    {s = path .. "revolver_clipout.wav", t = 36/30},
+			{s = path .. "revolver_clipin.wav", t = 50/30},			    {s = path .. "revolver_clipin.wav", t = 65/30},
+			{s = path .. "revolver_sideback.wav", t = 82/30},		    {s = path .. "revolver_sideback.wav", t = 80/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "revolver_draw.wav", t = 0 / 30},
-			{s = path .. "revolver_sideback.wav", t = 11 / 30},			{s = path .. "revolver_sideback.wav", t = 15 / 30},
+            {s = path .. "revolver_draw.wav", t = 0/30},
+			{s = path .. "revolver_sideback.wav", t = 11/30},           {s = path .. "revolver_sideback.wav", t = 15/30},
         },
     },
     ["draw"] = {
@@ -290,7 +290,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -312,9 +312,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 25/30},
+			{s = "weapons/csgo/movement2.wav", t = 113/30},
         },
     },
     ["bash"] = {

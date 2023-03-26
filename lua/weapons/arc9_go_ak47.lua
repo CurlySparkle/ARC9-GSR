@@ -273,8 +273,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30/30},
         },
     },
     ["reload_empty"] = {
@@ -302,9 +302,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
-            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30/30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50/30},
         },
     },
     ["reload_alt"] = {
@@ -332,8 +332,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30/30},
         },
     },
     ["reload_empty_alt"] = {
@@ -361,9 +361,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9 / 30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30 / 30},
-            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30/30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50/30},
         },
     },
     ["reload_drum"] = {
@@ -391,9 +391,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/global_drummag_mag_out.wav", t = 9 / 30},
-            {s = "weapons/csgo/global_drummag_mag_in.wav", t = 25 / 30},
-			{s = "weapons/csgo/global_drummag_mag_hit.wav", t = 34 / 30},
+            {s = "weapons/csgo/global_drummag_mag_out.wav", t = 9/30},
+            {s = "weapons/csgo/global_drummag_mag_in.wav", t = 25/30},
+			{s = "weapons/csgo/global_drummag_mag_hit.wav", t = 34/30},
         },
     },
     ["reload_empty_drum"] = {
@@ -421,10 +421,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/global_drummag_mag_out.wav", t = 9 / 30},
-            {s = "weapons/csgo/global_drummag_mag_in.wav", t = 25 / 30},
-			{s = "weapons/csgo/global_drummag_mag_hit.wav", t = 34 / 30},
-            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50 / 30},
+            {s = "weapons/csgo/global_drummag_mag_out.wav", t = 9/30},
+            {s = "weapons/csgo/global_drummag_mag_in.wav", t = 25/30},
+			{s = "weapons/csgo/global_drummag_mag_hit.wav", t = 34/30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50/30},
         },
     },
     ["ready"] = {
@@ -452,8 +452,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0 / 30},
-            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11 / 30},
+            {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0/30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11/30},
         },
     },
     ["ready_alt"] = {
@@ -481,8 +481,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0 / 30},
-            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11 / 30},
+            {s = "weapons/csgo/ak47/ak47_draw.wav", t = 0/30},
+            {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 11/30},
         },
     },
     ["draw"] = {
@@ -494,7 +494,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -536,9 +536,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash"] = {

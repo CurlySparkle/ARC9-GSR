@@ -91,7 +91,7 @@ SWEP.Firemodes = {
     {
         Mode = 1,
         PrintName = "BOTH",
-        RPMMult = 60 / 80,
+        RPMMult = 60/80,
         AkimboBoth = true,
         RecoilMult = 2,
         AmmoPerShot = 2,
@@ -305,32 +305,32 @@ SWEP.Animations = {
         Source = "fire_left",
         Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28/30},
         },
     },
     ["fire_right"] = {
         Source = "fire_right",
         Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28/30},
         },
     },
     ["fire_both"] = {
         Source = "fire_both",
         Mult = 0.75,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 28 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 28/30},
         },
     },
     ["reload_start"] = {
         Source = "reload_start",
         EjectAt = 0.5,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 8/30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15/30},
         },
     },
     ["reload_start_empty"] = {
@@ -338,8 +338,8 @@ SWEP.Animations = {
         EjectAt = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 8 / 30},
-            {s = path .. "sawedoff_pump1.ogg", t = 15 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 8/30},
+            {s = path .. "sawedoff_pump1.ogg", t = 15/30},
         },
     },
     ["reload_insert"] = {
@@ -347,38 +347,38 @@ SWEP.Animations = {
         Time = 0.75,
         RestoreAmmo = 1,
         EventTable = {
-            {s = "CSGO.sawedoff.Shell_Insert", t = 2 / 30},
-            {s = "CSGO.sawedoff.Shell_Insert", t = 9 / 30},
+            {s = "CSGO.sawedoff.Shell_Insert", t = 2/30},
+            {s = "CSGO.sawedoff.Shell_Insert", t = 9/30},
         },
     },
     ["reload_finish"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},
-            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 6/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 18/30},
+            {s = path .. "sawedoff_pump1.ogg", t = 11/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 23/30},
         },
     },
     ["ready"] = {
         Source = "reload_end",
         EventTable = {
-            {s = path .. "sawedoff_pump1.ogg", t = 6 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 18 / 30},
-            {s = path .. "sawedoff_pump1.ogg", t = 11 / 30},
-            {s = path .. "sawedoff_pump2.ogg", t = 23 / 30},
+            {s = path .. "sawedoff_pump1.ogg", t = 6/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 18/30},
+            {s = path .. "sawedoff_pump1.ogg", t = 11/30},
+            {s = path .. "sawedoff_pump2.ogg", t = 23/30},
         },
     },
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -393,7 +393,7 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["inspect"] = {
@@ -401,9 +401,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 55 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 113 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 55/30},
+            {s = "weapons/csgo/movement3.wav", t = 113/30},
         },
     },
 }

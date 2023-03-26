@@ -162,20 +162,20 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
-            { s = "weapons/csgo/claymore/claymore_pullback.wav", t = 0 / 30},
-            { s = "weapons/csgo/claymore/claymore_putdown.wav", t = 6 / 30},
+            {s = "weapons/csgo/claymore/claymore_pullback.wav", t = 0/30},
+            {s = "weapons/csgo/claymore/claymore_putdown.wav", t = 6/30},
         },
         MinProgress = 0.5
     },

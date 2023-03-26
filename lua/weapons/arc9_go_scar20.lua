@@ -302,8 +302,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scar20_clipout.wav", t = 13 / 30},
-            {s = path .. "scar20_clipin.wav", t = 38 / 30},
+            {s = path .. "scar20_clipout.wav", t = 13/30},
+            {s = path .. "scar20_clipin.wav", t = 38/30},
         },
     },
     ["reload_empty"] = {
@@ -331,9 +331,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scar20_clipout.wav", t = 13 / 30},
-            {s = path .. "scar20_clipin.wav", t = 38 / 30},
-            {s = path .. "scar20_boltback.wav", t = 58 / 30},
+            {s = path .. "scar20_clipout.wav", t = 13/30},
+            {s = path .. "scar20_clipin.wav", t = 38/30},
+            {s = path .. "scar20_boltback.wav", t = 58/30},
         },
     },
     ["ready"] = {
@@ -361,9 +361,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scar20_draw.wav", t = 0 / 30},
-            {s = path .. "scar20_boltback.wav", t = 14 / 30},
-            {s = path .. "scar20_boltforward.wav", t = 18 / 30},
+            {s = path .. "scar20_draw.wav", t = 0/30},
+            {s = path .. "scar20_boltback.wav", t = 14/30},
+            {s = path .. "scar20_boltforward.wav", t = 18/30},
         },
     },
     ["draw"] = {
@@ -372,7 +372,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -414,9 +414,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 94 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 128 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 94/30},
+            {s = "weapons/csgo/movement3.wav", t = 128/30},
         },
     },
     ["bash"] = {

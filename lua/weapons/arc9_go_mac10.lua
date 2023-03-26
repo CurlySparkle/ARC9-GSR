@@ -290,8 +290,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mac10_clipout.wav", t = 9 / 30},
-            {s = path .. "mac10_clipin.wav", t = 30 / 30},
+            {s = path .. "mac10_clipout.wav", t = 9/30},
+            {s = path .. "mac10_clipin.wav", t = 30/30},
         },
     },
     ["reload_empty"] = {
@@ -319,10 +319,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mac10_clipout.wav", t = 9 / 30},
-            {s = path .. "mac10_clipin.wav", t = 30 / 30},
-            {s = path .. "mac10_boltback.wav", t = 50 / 30},
-            {s = path .. "mac10_boltforward.wav", t = 60 / 30},
+            {s = path .. "mac10_clipout.wav", t = 9/30},
+            {s = path .. "mac10_clipin.wav", t = 30/30},
+            {s = path .. "mac10_boltback.wav", t = 50/30},
+            {s = path .. "mac10_boltforward.wav", t = 60/30},
         },
     },
     ["reload_small"] = {
@@ -350,8 +350,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mac10_clipout.wav", t = 9 / 30},
-            {s = path .. "mac10_clipin.wav", t = 30 / 30},
+            {s = path .. "mac10_clipout.wav", t = 9/30},
+            {s = path .. "mac10_clipin.wav", t = 30/30},
         },
     },
     ["reload_empty_small"] = {
@@ -379,10 +379,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mac10_clipout.wav", t = 9 / 30},
-            {s = path .. "mac10_clipin.wav", t = 30 / 30},
-            {s = path .. "mac10_boltback.wav", t = 50 / 30},
-            {s = path .. "mac10_boltforward.wav", t = 60 / 30},
+            {s = path .. "mac10_clipout.wav", t = 9/30},
+            {s = path .. "mac10_clipin.wav", t = 30/30},
+            {s = path .. "mac10_boltback.wav", t = 50/30},
+            {s = path .. "mac10_boltforward.wav", t = 60/30},
         },
     },  
 	["reload_empty_optic"] = {
@@ -410,10 +410,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mac10_clipout.wav", t = 9 / 30},
-            {s = path .. "mac10_clipin.wav", t = 30 / 30},
-            {s = path .. "mac10_boltback.wav", t = 50 / 30},
-            {s = path .. "mac10_boltforward.wav", t = 60 / 30},
+            {s = path .. "mac10_clipout.wav", t = 9/30},
+            {s = path .. "mac10_clipin.wav", t = 30/30},
+            {s = path .. "mac10_boltback.wav", t = 50/30},
+            {s = path .. "mac10_boltforward.wav", t = 60/30},
         },
     },
     ["ready"] = {
@@ -441,9 +441,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mac10_draw.wav", t = 0 / 30},
-            {s = path .. "mac10_boltback.wav", t = 10 / 30},
-            {s = path .. "mac10_boltforward.wav", t = 16 / 30},
+            {s = path .. "mac10_draw.wav", t = 0/30},
+            {s = path .. "mac10_boltback.wav", t = 10/30},
+            {s = path .. "mac10_boltforward.wav", t = 16/30},
         },
     },
     ["draw"] = {
@@ -452,7 +452,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -474,9 +474,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash"] = {

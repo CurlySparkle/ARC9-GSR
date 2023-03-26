@@ -285,9 +285,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
-            {s = "weapons/csgo/famas/famas_clipin.wav", t = 42 / 30},
-            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
+            {s = "weapons/csgo/famas/famas_clipout.wav", t = 15/30},
+            {s = "weapons/csgo/famas/famas_clipin.wav", t = 42/30},
+            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 57/30},
         },
     },
     ["reload_empty"] = {
@@ -315,11 +315,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/famas/famas_clipout.wav", t = 15 / 30},
-            {s = "weapons/csgo/famas/famas_clipin.wav", t = 49 / 30},
-            --{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57 / 30},
-            {s = "weapons/csgo/famas/famas_boltback.wav", t = 71 / 30},
-            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 77 / 30},
+            {s = "weapons/csgo/famas/famas_clipout.wav", t = 15/30},
+            {s = "weapons/csgo/famas/famas_clipin.wav", t = 49/30},
+            --{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57/30},
+            {s = "weapons/csgo/famas/famas_boltback.wav", t = 71/30},
+            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 77/30},
         },
     },
     ["ready"] = {
@@ -347,9 +347,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/famas/famas_draw.wav", t = 0 / 30},
-            {s = "weapons/csgo/famas/famas_boltback.wav", t = 9 / 30},
-            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 12 / 30},
+            {s = "weapons/csgo/famas/famas_draw.wav", t = 0/30},
+            {s = "weapons/csgo/famas/famas_boltback.wav", t = 9/30},
+            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 12/30},
         },
     },
     ["draw"] = {
@@ -358,7 +358,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -378,9 +378,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash"] = {

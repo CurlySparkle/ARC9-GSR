@@ -270,21 +270,21 @@ SWEP.Animations = {
         Source = "reload_zeus",
 		MinProgress = 0.8,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 10 / 30 },
-			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 20 / 30 },
-			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 35 / 30 },
-			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 15 / 30 },
-			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 40 / 30 },			
-            { s = "weapons/csgo/taser/taser_draw.ogg", t = 50 / 30 },
+            { s = "weapons/csgo/movement1.wav", t = 2/30 },
+			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 10/30 },
+			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 20/30 },
+			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 35/30 },
+			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 15/30 },
+			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 25/30 },
+			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 40/30 },			
+            { s = "weapons/csgo/taser/taser_draw.ogg", t = 50/30 },
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 0 / 30 },
-            { s = "weapons/csgo/taser/taser_draw.ogg", t = 2 / 30 },
+            { s = "weapons/csgo/movement1.wav", t = 0/30 },
+            { s = "weapons/csgo/taser/taser_draw.ogg", t = 2/30 },
         },
     },
     ["draw"] = {
@@ -293,8 +293,8 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 0 / 30 },
-            { s = "weapons/csgo/taser/taser_draw.ogg", t = 2 / 30 },
+            { s = "weapons/csgo/movement1.wav", t = 0/30 },
+            { s = "weapons/csgo/taser/taser_draw.ogg", t = 2/30 },
         },
     },
     ["idle"] = {
@@ -316,9 +316,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 25/30},
+			{s = "weapons/csgo/movement2.wav", t = 113/30},
         },
     },
     ["bash"] = {

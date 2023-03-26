@@ -279,15 +279,15 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
         EventTable = {
-            {s = path .. "mag7_pump_back.wav", t = 1 / 30},
-            {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
+            {s = path .. "mag7_pump_back.wav", t = 1/30},
+            {s = path .. "mag7_pump_forward.wav", t = 4/30},
         },
     },
     -- ["fire_sights"] = {
         -- Source = "shoot1_ads",
         -- EventTable = {
-            -- {s = path .. "mag7_pump_back.wav", t = 1 / 30},
-            -- {s = path .. "mag7_pump_forward.wav", t = 4 / 30},
+            -- {s = path .. "mag7_pump_back.wav", t = 1/30},
+            -- {s = path .. "mag7_pump_forward.wav", t = 4/30},
         -- },
     -- },
     ["reload"] = {
@@ -315,8 +315,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mag7_clipout.wav", t = 7 / 30},
-            {s = path .. "mag7_clipin.wav", t = 26 / 30},
+            {s = path .. "mag7_clipout.wav", t = 7/30},
+            {s = path .. "mag7_clipin.wav", t = 26/30},
         },
     },
     ["reload_empty"] = {
@@ -344,10 +344,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mag7_clipout.wav", t = 7 / 30},
-            {s = path .. "mag7_clipin.wav", t = 26 / 30},
-            {s = path .. "mag7_pump_back.wav", t = 54 / 30},
-            {s = path .. "mag7_pump_forward.wav", t = 60 / 30},
+            {s = path .. "mag7_clipout.wav", t = 7/30},
+            {s = path .. "mag7_clipin.wav", t = 26/30},
+            {s = path .. "mag7_pump_back.wav", t = 54/30},
+            {s = path .. "mag7_pump_forward.wav", t = 60/30},
         },
     },
     ["ready"] = {
@@ -365,9 +365,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mag7_draw.wav", t = 0 / 30},
-            {s = path .. "mag7_pump_back.wav", t = 11 / 30},
-            {s = path .. "mag7_pump_forward.wav", t = 14 / 30},
+            {s = path .. "mag7_draw.wav", t = 0/30},
+            {s = path .. "mag7_pump_back.wav", t = 11/30},
+            {s = path .. "mag7_pump_forward.wav", t = 14/30},
         },
     },
     ["draw"] = {
@@ -376,7 +376,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -420,9 +420,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 52 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 79 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 52/30},
+            {s = "weapons/csgo/movement3.wav", t = 79/30},
         },
     },
     ["reload_longmag"] = {
@@ -450,8 +450,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mag7_clipout.wav", t = 7 / 30},
-            {s = path .. "mag7_clipin.wav", t = 26 / 30},
+            {s = path .. "mag7_clipout.wav", t = 7/30},
+            {s = path .. "mag7_clipin.wav", t = 26/30},
         },
     },
     ["reload_longmag_empty"] = {
@@ -479,10 +479,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mag7_clipout.wav", t = 7 / 30},
-            {s = path .. "mag7_clipin.wav", t = 26 / 30},
-            {s = path .. "mag7_pump_back.wav", t = 54 / 30},
-            {s = path .. "mag7_pump_forward.wav", t = 60 / 30},
+            {s = path .. "mag7_clipout.wav", t = 7/30},
+            {s = path .. "mag7_clipin.wav", t = 26/30},
+            {s = path .. "mag7_pump_back.wav", t = 54/30},
+            {s = path .. "mag7_pump_forward.wav", t = 60/30},
         },
     },
     ["bash"] = {

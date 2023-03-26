@@ -278,8 +278,8 @@ SWEP.DropMagazineQCAEvenShot = 6
 
 local path = "weapons/csgo/p250/"
 
-SWEP.ShootSound = "CSGO.cz75a.Fire"
-SWEP.DistantShootSound = "CSGO.cz75a.Distance_Fire"
+SWEP.ShootSound = "CSGO.CZ75a.Fire"
+SWEP.DistantShootSound = "CSGO.CZ75a.Distance_Fire"
 SWEP.ShootSoundSilenced = "CSGO.P250.Silenced_Fire"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -307,36 +307,36 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.8,
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
-            {s = path .. "p250_clipout.wav", t = 5 / 30},
-            {s = path .. "p250_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-			{s = path .. "p250_clipin.wav", t = 45 / 30},
-			{s = path .. "p250_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
+		    {s = "weapons/csgo/movement1.wav", t = 0/30},
+            {s = path .. "p250_clipout.wav", t = 5/30},
+            {s = path .. "p250_clipout.wav", t = 8/30},
+			{s = "weapons/csgo/movement2.wav", t = 19/30},
+			{s = path .. "p250_clipin.wav", t = 45/30},
+			{s = path .. "p250_clipin.wav", t = 55/30},
+			{s = "weapons/csgo/movement3.wav", t = 65/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.8,
         EventTable = {
-		    {s = "weapons/csgo/movement1.wav", t = 0 / 30},
-            {s = path .. "p250_clipout.wav", t = 7 / 30},
-            {s = path .. "p250_clipout.wav", t = 8 / 30},
-			{s = "weapons/csgo/movement2.wav", t = 19 / 30},
-            {s = path .. "p250_clipin.wav", t = 50 / 30},
-            {s = path .. "p250_clipin.wav", t = 55 / 30},
-			{s = "weapons/csgo/movement3.wav", t = 65 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 75 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 77 / 30},
+		    {s = "weapons/csgo/movement1.wav", t = 0/30},
+            {s = path .. "p250_clipout.wav", t = 7/30},
+            {s = path .. "p250_clipout.wav", t = 8/30},
+			{s = "weapons/csgo/movement2.wav", t = 19/30},
+            {s = path .. "p250_clipin.wav", t = 50/30},
+            {s = path .. "p250_clipin.wav", t = 55/30},
+			{s = "weapons/csgo/movement3.wav", t = 65/30},
+            {s = path .. "p250_sliderelease.wav", t = 75/30},
+            {s = path .. "p250_sliderelease.wav", t = 77/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "p250_draw.wav", t = 0 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 11 / 30},
-            {s = path .. "p250_sliderelease.wav", t = 14 / 30},
+            {s = path .. "p250_draw.wav", t = 0/30},
+            {s = path .. "p250_sliderelease.wav", t = 11/30},
+            {s = path .. "p250_sliderelease.wav", t = 14/30},
         },
     },
     ["draw"] = {
@@ -345,7 +345,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -367,9 +367,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 25 / 30 },
-			{ s = "weapons/csgo/movement2.wav", t = 113 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 25/30},
+			{s = "weapons/csgo/movement2.wav", t = 113/30},
         },
     },
 }

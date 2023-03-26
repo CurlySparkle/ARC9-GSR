@@ -276,15 +276,15 @@ SWEP.Animations = {
         Source = {"shoot1", "shoot2", "shoot3"},
 		Mult = 0.7,
         EventTable = {
-            {s = "CSGO.MP5A2.Fire.Beef", t = 0 / 30},
-            {s = "CSGO.MP5.Fire.Beefdone", t = 5 / 30},
+            {s = "CSGO.MP5A2.Fire.Beef", t = 0/30},
+            {s = "CSGO.MP5.Fire.Beefdone", t = 5/30},
         },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
         EventTable = {
-            {s = "CSGO.MP5A2.Fire.BeefADS", t = 0 / 30},
-            {s = "CSGO.MP5.Fire.Beef", t = 4 / 30},
+            {s = "CSGO.MP5A2.Fire.BeefADS", t = 0/30},
+            {s = "CSGO.MP5.Fire.Beef", t = 4/30},
         },
     },
     ["reload"] = {
@@ -313,13 +313,13 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp5_reloadstart.ogg", t = 0 / 30},
-            {s = "ARC9_CSGO_MP5.Release", t = 12 / 30},
-            {s = "ARC9_CSGO_MP5.Magout", t = 15 / 30},
-            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 33 / 30},
-            {s = "ARC9_CSGO_MP5.Position", t = 47 / 30},
-            {s = "ARC9_CSGO_MP5.Magin", t = 50 / 30},
-            {s = path .. "mp5_reloadend.ogg", t = 65 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 0/30},
+            {s = "ARC9_CSGO_MP5.Release", t = 12/30},
+            {s = "ARC9_CSGO_MP5.Magout", t = 15/30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 33/30},
+            {s = "ARC9_CSGO_MP5.Position", t = 47/30},
+            {s = "ARC9_CSGO_MP5.Magin", t = 50/30},
+            {s = path .. "mp5_reloadend.ogg", t = 65/30},
         },
     },
     ["reload_empty"] = {
@@ -348,15 +348,15 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp5_reloadstart.ogg", t = 0 / 30},
-            {s = "ARC9_CSGO_MP5.Release", t = 12 / 30},
-            {s = "ARC9_CSGO_MP5.Magout", t = 15 / 30},
-            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 32 / 30},
-            {s = "ARC9_CSGO_MP5.Position", t = 47 / 30},
-            {s = "ARC9_CSGO_MP5.Magin", t = 50 / 30},
-            {s = "ARC9_CSGO_MP5A2.Boltback", t = 72 / 30},
-            {s = "ARC9_CSGO_MP5A2.Boltforward", t = 82 / 30},
-            {s = path .. "mp5_reloadend.ogg", t = 88 / 30},
+            {s = path .. "mp5_reloadstart.ogg", t = 0/30},
+            {s = "ARC9_CSGO_MP5.Release", t = 12/30},
+            {s = "ARC9_CSGO_MP5.Magout", t = 15/30},
+            {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 32/30},
+            {s = "ARC9_CSGO_MP5.Position", t = 47/30},
+            {s = "ARC9_CSGO_MP5.Magin", t = 50/30},
+            {s = "ARC9_CSGO_MP5A2.Boltback", t = 72/30},
+            {s = "ARC9_CSGO_MP5A2.Boltforward", t = 82/30},
+            {s = path .. "mp5_reloadend.ogg", t = 88/30},
         },
     },
     ["ready"] = {
@@ -385,10 +385,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp5_reloadend.ogg", t = 0 / 30},
-            {s = "ARC9_CSGO_MP5A2.Boltback", t = 5 / 30},
-            {s = path .. "mp5_draw.wav", t = 10 / 30},
-            {s = "ARC9_CSGO_MP5A2.Boltforward", t = 13 / 30},
+            {s = path .. "mp5_reloadend.ogg", t = 0/30},
+            {s = "ARC9_CSGO_MP5A2.Boltback", t = 5/30},
+            {s = path .. "mp5_draw.wav", t = 10/30},
+            {s = "ARC9_CSGO_MP5A2.Boltforward", t = 13/30},
         },
     },
     ["draw"] = {
@@ -397,7 +397,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -441,11 +441,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement2.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement1.wav", t = 125 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 130 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 163 / 30 },
-            { s = "weapons/csgo/movement1.wav", t = 210 / 30 },
+            {s = "weapons/csgo/movement2.wav", t = 2/30},
+            {s = "weapons/csgo/movement1.wav", t = 125/30},
+            {s = "weapons/csgo/movement2.wav", t = 130/30},
+            {s = "weapons/csgo/movement3.wav", t = 163/30},
+            {s = "weapons/csgo/movement1.wav", t = 210/30},
         },
     },
     ["bash"] = {

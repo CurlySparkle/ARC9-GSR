@@ -290,58 +290,58 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
-            {s = path .. "de_clipout.wav", t = 8 / 30},
-            {s = path .. "de_clipin.wav", t = 19 / 30},
+            {s = path .. "de_clipout.wav", t = 8/30},
+            {s = path .. "de_clipin.wav", t = 19/30},
         },
     },  
 	["1_reload"] = {
         Source = "reload_short_tacticool",
         EventTable = {
-            {s = path .. "de_clipout.wav", t = 15 / 30},
-            {s = path .. "de_clipin.wav", t = 32 / 30},
+            {s = path .. "de_clipout.wav", t = 15/30},
+            {s = path .. "de_clipin.wav", t = 32/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
 		MinProgress = 0.42,
         EventTable = {
-            {s = path .. "de_clipout.wav", t = 8 / 30},
-            {s = path .. "de_clipin.wav", t = 19 / 30},
-            {s = path .. "de_slideback.wav", t = 41 / 30},
-            {s = path .. "de_slideforward.wav", t = 47 / 30},
+            {s = path .. "de_clipout.wav", t = 8/30},
+            {s = path .. "de_clipin.wav", t = 19/30},
+            {s = path .. "de_slideback.wav", t = 41/30},
+            {s = path .. "de_slideforward.wav", t = 47/30},
         },
     },   
 	["1_reload_empty"] = {
         Source = "reload_tacticool",
 		MinProgress = 0.48,
         EventTable = {
-            {s = path .. "de_clipout.wav", t = 15 / 30},
-            {s = path .. "de_clipin.wav", t = 32 / 30},
-            {s = path .. "de_slideback.wav", t = 52 / 30},
-            {s = path .. "de_slideforward.wav", t = 58 / 30},
+            {s = path .. "de_clipout.wav", t = 15/30},
+            {s = path .. "de_clipin.wav", t = 32/30},
+            {s = path .. "de_slideback.wav", t = 52/30},
+            {s = path .. "de_slideforward.wav", t = 58/30},
         },
     },
     ["2_reload"] = {
         Source = "reload_short_alt",
         EventTable = {
-            {s = path .. "de_clipout.wav", t = 10 / 30},
-            {s = path .. "de_clipin.wav", t = 25 / 30},
+            {s = path .. "de_clipout.wav", t = 10/30},
+            {s = path .. "de_clipin.wav", t = 25/30},
         },
     },
     ["3_reload_empty"] = {
         Source = "reload_alt",
 		MinProgress = 0.42,
         EventTable = {
-            {s = path .. "de_clipout.wav", t = 10 / 30},
-            {s = path .. "de_clipin.wav", t = 25 / 30},
-            //{s = path .. "de_slideback.wav", t = 41 / 30},
-            {s = path .. "de_slideforward.wav", t = 47 / 30},
+            {s = path .. "de_clipout.wav", t = 10/30},
+            {s = path .. "de_clipin.wav", t = 25/30},
+            //{s = path .. "de_slideback.wav", t = 41/30},
+            {s = path .. "de_slideforward.wav", t = 47/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         EventTable = {
-            {s = path .. "de_draw.wav", t = 0 / 30},
+            {s = path .. "de_draw.wav", t = 0/30},
         },
     },
     ["draw"] = {
@@ -350,7 +350,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -372,11 +372,11 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "CSGO.Item.Movement", t = 2 / 30 },
-            { s = "CSGO.Item.Movement", t = 38 / 30 },
-			{ s = "CSGO.Item.Movement", t = 43 / 30 },
-			{ s = "CSGO.Item.Movement", t = 131 / 30 },
-			{ s = "CSGO.Item.Movement", t = 137 / 30 },
+            {s = "CSGO.Item.Movement", t = 2/30},
+            {s = "CSGO.Item.Movement", t = 38/30},
+			{s = "CSGO.Item.Movement", t = 43/30},
+			{s = "CSGO.Item.Movement", t = 131/30},
+			{s = "CSGO.Item.Movement", t = 137/30},
         },
     },
     ["1_inspect"] = {
@@ -384,11 +384,11 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "CSGO.Item.Movement", t = 2 / 30 },
-            { s = "CSGO.Item.Movement", t = 38 / 30 },
-			{ s = "CSGO.Item.Movement", t = 43 / 30 },
-			{ s = "CSGO.Item.Movement", t = 131 / 30 },
-			{ s = "CSGO.Item.Movement", t = 137 / 30 },
+            {s = "CSGO.Item.Movement", t = 2/30},
+            {s = "CSGO.Item.Movement", t = 38/30},
+			{s = "CSGO.Item.Movement", t = 43/30},
+			{s = "CSGO.Item.Movement", t = 131/30},
+			{s = "CSGO.Item.Movement", t = 137/30},
         },
     },
     ["bash"] = {

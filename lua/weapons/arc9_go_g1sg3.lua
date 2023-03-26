@@ -327,8 +327,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_clipout.wav", t = 16 / 30},
-            {s = path .. "g3sg1_clipin.wav", t = 65 / 30},
+            {s = path .. "g3sg1_clipout.wav", t = 16/30},
+            {s = path .. "g3sg1_clipin.wav", t = 65/30},
         },
     },
     ["reload_empty"] = {
@@ -356,10 +356,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_clipout.wav", t = 16 / 30},
-            {s = path .. "g3sg1_clipin.wav", t = 65 / 30},
-            {s = path .. "g3sg1_slideback.wav", t = 97 / 30},
-			{s = path .. "g3sg1_slideforward.wav", t = 104 / 30},
+            {s = path .. "g3sg1_clipout.wav", t = 16/30},
+            {s = path .. "g3sg1_clipin.wav", t = 65/30},
+            {s = path .. "g3sg1_slideback.wav", t = 97/30},
+			{s = path .. "g3sg1_slideforward.wav", t = 104/30},
         },
     },
     ["ready"] = {
@@ -382,9 +382,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_draw.wav", t = 0 / 30},
-            {s = path .. "g3sg1_slideback.wav", t = 6 / 30},
-            {s = path .. "g3sg1_slideforward.wav", t = 12 / 30},
+            {s = path .. "g3sg1_draw.wav", t = 0/30},
+            {s = path .. "g3sg1_slideback.wav", t = 6/30},
+            {s = path .. "g3sg1_slideforward.wav", t = 12/30},
         },
     },
     ["reload_alt"] = {
@@ -412,8 +412,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
-            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
+            {s = path .. "g3sg1_mag_out.wav", t = 16/30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73/30},
         },
     },
     ["reload_empty_alt"] = {
@@ -441,10 +441,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
-            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
-            {s = path .. "g3sg1_charging_handle_pull.wav", t = 97 / 30},
-			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104 / 30},
+            {s = path .. "g3sg1_mag_out.wav", t = 16/30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73/30},
+            {s = path .. "g3sg1_charging_handle_pull.wav", t = 97/30},
+			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104/30},
         },
     },  
 	["reload_smg"] = {
@@ -472,8 +472,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
-            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
+            {s = path .. "g3sg1_mag_out.wav", t = 16/30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73/30},
         },
     },
     ["reload_empty_smg"] = {
@@ -501,10 +501,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_mag_out.wav", t = 16 / 30},
-            {s = path .. "g3sg1_mag_in.wav", t = 73 / 30},
-            {s = path .. "g3sg1_charging_handle_pull.wav", t = 97 / 30},
-			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104 / 30},
+            {s = path .. "g3sg1_mag_out.wav", t = 16/30},
+            {s = path .. "g3sg1_mag_in.wav", t = 73/30},
+            {s = path .. "g3sg1_charging_handle_pull.wav", t = 97/30},
+			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104/30},
         },
     },
     ["ready_alt"] = {
@@ -527,9 +527,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "g3sg1_draw.wav", t = 0 / 30},
-            {s = path .. "g3sg1_charging_handle_pull.wav", t = 6 / 30},
-            {s = path .. "g3sg1_charging_handle_lock.wav", t = 12 / 30},
+            {s = path .. "g3sg1_draw.wav", t = 0/30},
+            {s = path .. "g3sg1_charging_handle_pull.wav", t = 6/30},
+            {s = path .. "g3sg1_charging_handle_lock.wav", t = 12/30},
         },
     },
     ["draw"] = {
@@ -538,7 +538,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -580,9 +580,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 5 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 74 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 111 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 5/30},
+            {s = "weapons/csgo/movement2.wav", t = 74/30},
+            {s = "weapons/csgo/movement3.wav", t = 111/30},
         },
     },
     ["bash"] = {

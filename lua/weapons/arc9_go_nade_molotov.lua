@@ -141,7 +141,7 @@ SWEP.Animations = {
         Source = "holster",
 		Mult = 0.6,
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["pullpin"] = {
@@ -149,16 +149,16 @@ SWEP.Animations = {
         MinProgress = 0,
         FireASAP = true,
         EventTable = {
-            { s = "CSGO.Item.Movement", t = 1/30 },
-            { s = "weapons/csgo/molotov/lighter_open.wav", t = 3/30 },
-			--{ s = "", t = 15/30 },
-			{ s = "weapons/csgo/molotov/lighter_closed.wav", t = 22/30 },
+            {s = "CSGO.Item.Movement", t = 1/30},
+            {s = "weapons/csgo/molotov/lighter_open.wav", t = 3/30 },
+			--{s = "", t = 15/30},
+			{s = "weapons/csgo/molotov/lighter_closed.wav", t = 22/30},
         },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
-            { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
+            {s = "weapons/csgo/molotov/grenade_throw.wav", t = 0},
         },
         MinProgress = 0.1
     },
@@ -166,7 +166,7 @@ SWEP.Animations = {
         Source = "underhand",
 		Mult = 0.6,
         EventTable = {
-            { s = "weapons/csgo/molotov/grenade_throw.wav", t = 0 },
+            {s = "weapons/csgo/molotov/grenade_throw.wav", t = 0},
         },
         MinProgress = 0
     },

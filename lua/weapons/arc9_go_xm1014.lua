@@ -291,7 +291,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "CSGO.xm1014.Shell_Insert", t = 5 / 30},
+            {s = "CSGO.xm1014.Shell_Insert", t = 5/30},
         },
     },
     ["reload_finish"] = {
@@ -334,7 +334,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "xm1014_pump.wav", t = 19 / 30},
+            {s = path .. "xm1014_pump.wav", t = 19/30},
         },
     },
     ["ready"] = {
@@ -362,7 +362,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "xm1014_draw.wav", t = 0 / 30},
+            {s = path .. "xm1014_draw.wav", t = 0/30},
         },
     }, 
 	["reload_empty"] = {
@@ -390,9 +390,9 @@ SWEP.Animations = {
             },
 },
         EventTable = {
-            {s = path2 .. "mag7_clipout.wav", t = 5 / 30},
-            {s = path2 .. "mag7_clipin.wav", t = 24 / 30},
-            {s = path .. "xm1014_pump.wav", t = 51 / 30},			
+            {s = path2 .. "mag7_clipout.wav", t = 5/30},
+            {s = path2 .. "mag7_clipin.wav", t = 24/30},
+            {s = path .. "xm1014_pump.wav", t = 51/30},			
         },
     },
 	["reload"] = {
@@ -420,8 +420,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path2 .. "mag7_clipout.wav", t = 5 / 30},
-            {s = path2 .. "mag7_clipin.wav", t = 24 / 30},
+            {s = path2 .. "mag7_clipout.wav", t = 5/30},
+            {s = path2 .. "mag7_clipin.wav", t = 24/30},
         },
     },
     ["draw"] = {
@@ -430,7 +430,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -452,9 +452,9 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 44 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 117 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 44/30},
+            {s = "weapons/csgo/movement3.wav", t = 117/30},
         },
     },
     ["bash"] = {

@@ -301,8 +301,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp7_clipout.wav", t = 9 / 30},
-            {s = path .. "mp7_clipin.wav", t = 41 / 30},
+            {s = path .. "mp7_clipout.wav", t = 9/30},
+            {s = path .. "mp7_clipin.wav", t = 41/30},
         },
     },
     ["reload_empty"] = {
@@ -330,10 +330,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp7_clipout.wav", t = 9 / 30},
-            {s = path .. "mp7_clipin.wav", t = 41 / 30},
-            {s = path .. "mp7_slideback.wav", t = 63 / 30},
-            {s = path .. "mp7_slideforward.wav", t = 70 / 30},
+            {s = path .. "mp7_clipout.wav", t = 9/30},
+            {s = path .. "mp7_clipin.wav", t = 41/30},
+            {s = path .. "mp7_slideback.wav", t = 63/30},
+            {s = path .. "mp7_slideforward.wav", t = 70/30},
         },
     },
     ["reload_smallmag"] = {
@@ -361,8 +361,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp7_clipout.wav", t = 9 / 30},
-            {s = path .. "mp7_clipin.wav", t = 41 / 30},
+            {s = path .. "mp7_clipout.wav", t = 9/30},
+            {s = path .. "mp7_clipin.wav", t = 41/30},
         },
     },
     ["reload_empty_smallmag"] = {
@@ -390,10 +390,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp7_clipout.wav", t = 9 / 30},
-            {s = path .. "mp7_clipin.wav", t = 41 / 30},
-            {s = path .. "mp7_slideback.wav", t = 63 / 30},
-            {s = path .. "mp7_slideforward.wav", t = 70 / 30},
+            {s = path .. "mp7_clipout.wav", t = 9/30},
+            {s = path .. "mp7_clipin.wav", t = 41/30},
+            {s = path .. "mp7_slideback.wav", t = 63/30},
+            {s = path .. "mp7_slideforward.wav", t = 70/30},
         },
     },
     ["ready"] = {
@@ -421,9 +421,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "mp7_draw.wav", t = 0 / 30},
-            {s = path .. "mp7_slideback.wav", t = 8 / 30},
-            {s = path .. "mp7_slideforward.wav", t = 13 / 30},
+            {s = path .. "mp7_draw.wav", t = 0/30},
+            {s = path .. "mp7_slideback.wav", t = 8/30},
+            {s = path .. "mp7_slideforward.wav", t = 13/30},
         },
     },
     ["draw"] = {
@@ -432,7 +432,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -476,9 +476,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 2 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 92 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 2/30},
+            {s = "weapons/csgo/movement2.wav", t = 92/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash"] = {

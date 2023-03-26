@@ -277,11 +277,11 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1_right",
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },			
     },
     ["fire_sights"] = {
         Source = "shoot1_right_ads",
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },			
     },
     ["reload"] = {
         Source = "reload_single_wet",
@@ -289,12 +289,12 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
-            {t = 0.8, lhik = 0, rhik = 1 },
+            {t = 0.8, lhik = 0, rhik = 1},
             {t = 1, lhik = 1, rhik = 1},
         },		
         EventTable = {
-            {s = path .. "elite_clipout.wav", t = 5 / 30},
-            {s = path .. "elite_rightclipin.wav", t = 43 / 30},
+            {s = path .. "elite_clipout.wav", t = 5/30},
+            {s = path .. "elite_rightclipin.wav", t = 43/30},
         },
     },
     ["reload_empty"] = {
@@ -303,40 +303,40 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
-            {t = 0.75, lhik = 0, rhik = 1 },
-            {t = 0.9, lhik = 1, rhik = 1 },
+            {t = 0.75, lhik = 0, rhik = 1},
+            {t = 0.9, lhik = 1, rhik = 1},
             {t = 1, lhik = 1, rhik = 1},
         },		
         EventTable = {
-            {s = path .. "elite_clipout.wav", t = 5 / 30},
-            {s = path .. "elite_rightclipin.wav", t = 43 / 30},
-            {s = path .. "elite_sliderelease.wav", t = 60 / 30},
+            {s = path .. "elite_clipout.wav", t = 5/30},
+            {s = path .. "elite_rightclipin.wav", t = 43/30},
+            {s = path .. "elite_sliderelease.wav", t = 60/30},
         },
     },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 1 },
+            {t = 0,	lhik = 1, rhik = 1},
             {t = 0.3, lhik = 0, rhik = 0},
-            {t = 0.65, lhik = 0, rhik = 0 },
-            {t = 0.9, lhik = 1, rhik = 1 },
-            {t = 1, lhik = 1, rhik = 1 },
+            {t = 0.65, lhik = 0, rhik = 0},
+            {t = 0.9, lhik = 1, rhik = 1},
+            {t = 1, lhik = 1, rhik = 1},
         },			
         EventTable = {
-            {s = path .. "elite_draw.wav", t = 0 / 30},
-            {s = path .. "elite_sliderelease.wav", t = 15 / 30},
+            {s = path .. "elite_draw.wav", t = 0/30},
+            {s = path .. "elite_sliderelease.wav", t = 15/30},
         },
     },
     ["draw"] = {
         Source = "draw_short",
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },				
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },				
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1 }, },			
     },
     ["idle"] = {
         Source = "idle",		
@@ -344,20 +344,20 @@ SWEP.Animations = {
     ["idle_sprint"] = {
         Source = "sprint",
         IKTimeLine = {
-            {t = 0,	lhik = 0, rhik = 1 }, {t = 1, lhik = 0, rhik = 1 },
+            {t = 0,	lhik = 0, rhik = 1}, {t = 1, lhik = 0, rhik = 1},
         },		
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
         Time = 1,
         IKTimeLine = {
-            {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 },
+            {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1},
         },		
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,	
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1 }, {t = 1, lhik = 1, rhik = 1 }, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },			
     },
     ["inspect"] = {
         Source = "lookat01_single",
@@ -372,9 +372,9 @@ SWEP.Animations = {
             {t = 1, lhik = 1, rhik = 1},
         },	
         EventTable = {
-            { s = "CSGO.Item.Movement", t = 2 / 30 },
-            { s = "CSGO.Item.Movement", t = 25 / 30 },
-            { s = "CSGO.Item.Movement", t = 105 / 30 },
+            {s = "CSGO.Item.Movement", t = 2/30},
+            {s = "CSGO.Item.Movement", t = 25/30},
+            {s = "CSGO.Item.Movement", t = 105/30},
         },
     },
     ["bash"] = {
@@ -382,7 +382,7 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.1, lhik = 0, rhik = 1},
-            {t = 0.75, lhik = 1, rhik = 1 },
+            {t = 0.75, lhik = 1, rhik = 1},
         },	
     },
 }

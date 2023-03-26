@@ -159,19 +159,19 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
         EventTable = {
-            { s = "weapons/csgo/mine/proxy_pull_out.wav", t = 0 / 30},
+            {s = "weapons/csgo/mine/proxy_pull_out.wav", t = 0/30},
         },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
-            { s = "weapons/csgo/mine/proxy_throw.wav", t = 0 / 30},
+            {s = "weapons/csgo/mine/proxy_throw.wav", t = 0/30},
         },
         MinProgress = 0.4
     },

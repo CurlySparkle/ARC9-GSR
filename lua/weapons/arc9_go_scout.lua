@@ -259,15 +259,15 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
         EventTable = {
-            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto, v = 0.2},
-            {s = path .. "scout_fire_sub-1.ogg", t = 0 / 30},
+            {s = path .. "scout_fire_noise-1.ogg", t = 0/30, p = 130, c = chan_auto, v = 0.2},
+            {s = path .. "scout_fire_sub-1.ogg", t = 0/30},
         },
     },
     ["fire_sights"] = {
         Source = {"shoot1_ads"},
         EventTable = {
-            {s = path .. "scout_fire_noise-1.ogg", t = 0 / 30, p = 130, c = chan_auto, v = 0.2},
-            {s = path .. "scout_fire_sub-1.ogg", t = 0 / 30},
+            {s = path .. "scout_fire_noise-1.ogg", t = 0/30, p = 130, c = chan_auto, v = 0.2},
+            {s = path .. "scout_fire_sub-1.ogg", t = 0/30},
         },
     },
     ["cycle"] = {
@@ -295,8 +295,8 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scout_boltback.ogg", t = 8 / 30},
-            {s = path .. "scout_boltforward.ogg", t = 18 / 30},
+            {s = path .. "scout_boltback.ogg", t = 8/30},
+            {s = path .. "scout_boltforward.ogg", t = 18/30},
         },
     },
     ["reload"] = {
@@ -324,14 +324,14 @@ SWEP.Animations = {
             },
         },
         -- EventTable = {
-            -- {s = path .. "scout_clipout.ogg", t = 7 / 30},
-            -- {s = path .. "scout_clipin.ogg", t = 40 / 30},
-            -- {s = path .. "scout_cliphit.ogg", t = 60 / 30},
+            -- {s = path .. "scout_clipout.ogg", t = 7/30},
+            -- {s = path .. "scout_clipin.ogg", t = 40/30},
+            -- {s = path .. "scout_cliphit.ogg", t = 60/30},
         -- },
         EventTable = {
-            {s = path .. "scout_clipout.ogg", t = 7 / 30},
-            {s = path .. "scout_clipin.ogg", t = 40 / 30},
-            {s = path .. "scout_cliphit.ogg", t = 45 / 30},
+            {s = path .. "scout_clipout.ogg", t = 7/30},
+            {s = path .. "scout_clipin.ogg", t = 40/30},
+            {s = path .. "scout_cliphit.ogg", t = 45/30},
         },
     },
     ["reload_empty"] = {
@@ -364,11 +364,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scout_clipout.ogg", t = 7 / 30},
-            {s = path .. "scout_clipin.ogg", t = 40 / 30},
-            {s = path .. "scout_cliphit.ogg", t = 60 / 30},
-            {s = path .. "scout_boltback.ogg", t = 77 / 30},
-            {s = path .. "scout_boltforward_cock.ogg", t = 89 / 30, v = 0.6},
+            {s = path .. "scout_clipout.ogg", t = 7/30},
+            {s = path .. "scout_clipin.ogg", t = 40/30},
+            {s = path .. "scout_cliphit.ogg", t = 60/30},
+            {s = path .. "scout_boltback.ogg", t = 77/30},
+            {s = path .. "scout_boltforward_cock.ogg", t = 89/30, v = 0.6},
         },
     },
 	["reload_empty_long"] = {
@@ -406,11 +406,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scout_boltback.ogg", t = 7 / 30},	
-            {s = path .. "scout_clipin.ogg", t = 40 / 30},
-            {s = path .. "scout_cliphit.ogg", t = 60 / 30},
-            {s = path .. "scout_cliphit.ogg", t = 79 / 30},
-            {s = path .. "scout_boltforward.ogg", t = 95 / 30},
+            {s = path .. "scout_boltback.ogg", t = 7/30},	
+            {s = path .. "scout_clipin.ogg", t = 40/30},
+            {s = path .. "scout_cliphit.ogg", t = 60/30},
+            {s = path .. "scout_cliphit.ogg", t = 79/30},
+            {s = path .. "scout_boltforward.ogg", t = 95/30},
         },
     },
     ["ready"] = {
@@ -438,9 +438,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "scout_draw.ogg", t = 0 / 30},
-            {s = path .. "scout_boltback.ogg", t = 7 / 30},
-            {s = path .. "scout_boltforward.ogg", t = 14 / 30},
+            {s = path .. "scout_draw.ogg", t = 0/30},
+            {s = path .. "scout_boltback.ogg", t = 7/30},
+            {s = path .. "scout_boltforward.ogg", t = 14/30},
         },
     },
     ["draw"] = {
@@ -449,7 +449,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -469,9 +469,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         EventTable = {
-            { s = "weapons/csgo/movement1.wav", t = 5 / 30 },
-            { s = "weapons/csgo/movement2.wav", t = 91 / 30 },
-            { s = "weapons/csgo/movement3.wav", t = 116 / 30 },
+            {s = "weapons/csgo/movement1.wav", t = 5/30},
+            {s = "weapons/csgo/movement2.wav", t = 91/30},
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
         },
     },
     ["bash"] = {

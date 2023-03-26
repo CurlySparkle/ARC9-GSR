@@ -285,9 +285,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "tec9_clipout.wav", t = 10 / 50},
-            {s = path .. "tec9_clipin.wav", t = 62 / 50},
-            {s = "CSGO.Item.Movement", t = 39 / 50},
+            {s = path .. "tec9_clipout.wav", t = 10/50},
+            {s = path .. "tec9_clipin.wav", t = 62/50},
+            {s = "CSGO.Item.Movement", t = 39/50},
         },
     },
     ["reload_empty"] = {
@@ -316,11 +316,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "tec9_clipout.wav", t = 10 / 50},
-            {s = path .. "tec9_clipin.wav", t = 62 / 50},
-            {s = "CSGO.Item.Movement", t = 39 / 50},
-            {s = path .. "tec9_boltpull.wav", t = 98 / 50},
-            {s = path .. "tec9_boltrelease.wav", t = 105 / 50},
+            {s = path .. "tec9_clipout.wav", t = 10/50},
+            {s = path .. "tec9_clipin.wav", t = 62/50},
+            {s = "CSGO.Item.Movement", t = 39/50},
+            {s = path .. "tec9_boltpull.wav", t = 98/50},
+            {s = path .. "tec9_boltrelease.wav", t = 105/50},
         },
     },
     ["ready"] = {
@@ -348,9 +348,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "tec9_draw.wav", t = 0 / 38},
-            {s = path .. "tec9_boltpull.wav", t = 12 / 38},
-            {s = path .. "tec9_boltrelease.wav", t = 22 / 38},
+            {s = path .. "tec9_draw.wav", t = 0/38},
+            {s = path .. "tec9_boltpull.wav", t = 12/38},
+            {s = path .. "tec9_boltrelease.wav", t = 22/38},
         },
     },
     ["draw"] = {
@@ -359,7 +359,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0 / 30},
+            {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
@@ -403,10 +403,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            { s = "CSGO.Item.Movement", t = 7 / 40 },
-            { s = "CSGO.Item.Movement", t = 59 / 40 },
-            { s = "CSGO.Item.Movement", t = 135 / 40 },
-            { s = "CSGO.Item.Movement", t = 166 / 40 },
+            {s = "CSGO.Item.Movement", t = 7/40},
+            {s = "CSGO.Item.Movement", t = 59/40},
+            {s = "CSGO.Item.Movement", t = 135/40},
+            {s = "CSGO.Item.Movement", t = 166/40},
         },
     },
     ["bash"] = {
