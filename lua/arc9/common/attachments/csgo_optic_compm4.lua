@@ -16,15 +16,15 @@ ATT.Category = {"csgo_optic"}
 
 ATT.Model = "models/weapons/csgo/atts/sights/CompM4.mdl"
 ATT.Scale = 0.5
-ATT.ModelOffset = Vector(0, 0, 0.1)
+ATT.ModelOffset = Vector(0, 0, 0.05)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 15, -1.75),
+        Pos = Vector(0, 11, -1.75),
         Ang = Angle(0, 0, 0),
         ViewModelFOV = 35,
-        Magnification = 1.15,
+        Magnification = 1.5,
         IgnoreExtra = false
     },
 }
@@ -32,5 +32,5 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 512
+ATT.HoloSightSize = 1024
 ATT.HoloSightColorable = false

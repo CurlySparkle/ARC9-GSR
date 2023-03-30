@@ -15,13 +15,13 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/kobra.mdl"
-ATT.Scale = 0.5
+ATT.Scale = 0.45
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -1.9),
+        Pos = Vector(0, 6, -1.73),
         Ang = Angle(0, 0, 0),
         ViewModelFOV = 56,
         Magnification = 1.1,

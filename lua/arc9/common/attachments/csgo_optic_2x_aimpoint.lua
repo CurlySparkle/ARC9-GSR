@@ -16,7 +16,7 @@ ATT.Category = {"csgo_optic", "csgo_sights"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/2x_aimpoint.mdl"
-ATT.Scale = 0.5
+ATT.Scale = 0.45
 ATT.ModelOffset = Vector(-1.5, 0, 0.1)
 ATT.ModelBodygroups = "11"
 
@@ -32,14 +32,14 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.85),
+        Pos = Vector(0, 6, -1.6),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ViewModelFOV = 56,
         IgnoreExtra = true,
     },
     {
-        Pos = Vector(0, 5.5, -1.75),
+        Pos = Vector(0, 6, -1.6),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 40,

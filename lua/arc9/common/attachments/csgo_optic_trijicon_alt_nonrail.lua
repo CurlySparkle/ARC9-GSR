@@ -17,12 +17,12 @@ ATT.Category = {"csgo_optics_pistols_alt"}
 
 ATT.Model = "models/weapons/csgo/atts/sights/trijicon_alt_nonrail.mdl"
 ATT.Scale = 0.45
-ATT.ModelOffset = Vector(0, -0.04, 0.1)
+ATT.ModelOffset = Vector(0, -0.04, 0.05)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.05, 8, -0.8),
+        Pos = Vector(-0.05, 20, -0.7),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 56,
@@ -31,6 +31,6 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleDot.png", "mips smooth")
-ATT.HoloSightSize = 1024
-ATT.HoloSightColorable = true
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
+ATT.HoloSightSize = 1512
+ATT.HoloSightColorable = false

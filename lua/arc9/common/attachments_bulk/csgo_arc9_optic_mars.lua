@@ -18,7 +18,7 @@ ATT.Category = {"csgo_optic"}
 
 ATT.Model = "models/weapons/csgo/atts/sights/mars.mdl"
 ATT.Scale = 0.4
-ATT.ModelOffset = Vector(0, 0.09, 0.04)
+ATT.ModelOffset = Vector(0, 0, 0.05)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {

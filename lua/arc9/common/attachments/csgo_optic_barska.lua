@@ -15,16 +15,16 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/barska.mdl"
-ATT.Scale = 1.3
+ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -1.55),
+        Pos = Vector(0, 7, -1.5),
         Ang = Angle(0, 0, 0),
         ViewModelFOV = 56,
-        Magnification = 1.1,
+        Magnification = 1.25,
         IgnoreExtra = false
     },
 }

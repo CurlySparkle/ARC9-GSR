@@ -15,13 +15,13 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/okp.mdl"
-ATT.Scale = 0.5
-ATT.ModelOffset = Vector(0, 0, 0.1)
+ATT.Scale = 0.45
+ATT.ModelOffset = Vector(0, 0, 0.05)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0.25, 6, -1.3),
+        Pos = Vector(0.25, 6, -1.2),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,

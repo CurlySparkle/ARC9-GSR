@@ -15,16 +15,16 @@ ATT.Category = {"csgo_optic"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/cmore.mdl"
-ATT.Scale = 1.25
+ATT.Scale = 1.1
 ATT.ModelOffset = Vector(0, 0, 0.05)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.01, 6, -1.5),
+        Pos = Vector(-0.01, 6, -1.3),
         Ang = Angle(0, 0, 0),
         ViewModelFOV = 56,
-        Magnification = 1.1,
+        Magnification = 1.15,
         IgnoreExtra = false
     },
 }

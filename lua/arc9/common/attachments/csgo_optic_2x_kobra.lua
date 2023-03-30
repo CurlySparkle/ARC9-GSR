@@ -16,8 +16,8 @@ ATT.Category = {"csgo_optic", "csgo_sights"}
 
 
 ATT.Model = "models/weapons/csgo/atts/sights/2x_Kobra.mdl"
-ATT.Scale = 0.5
-ATT.ModelOffset = Vector(-1.5, 0, 0)
+ATT.Scale = 0.45
+ATT.ModelOffset = Vector(-1.5, 0, 0.05)
 ATT.ModelBodygroups = "11"
 
 ATT.DrawFunc = function(swep, model, wm)
@@ -32,14 +32,14 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6.7, -1.9),
+        Pos = Vector(0, 6.7, -1.7),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ViewModelFOV = 56,
         IgnoreExtra = true,
     },
     {
-        Pos = Vector(0, 6, -1.95),
+        Pos = Vector(0, 6, -1.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 45,
@@ -62,7 +62,7 @@ ATT.RTScopeFOV = 15
 ATT.RTScopeRes = 1024
 ATT.RTScopeSurface = Material("models/weapons/v_arccw_go/atts/aimpoint_lense")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/2x_kobra.png", "mips")
-ATT.RTScopeReticleScale = 0.9
+ATT.RTScopeReticleScale = 1
 ATT.RTScopeShadowIntensity = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
