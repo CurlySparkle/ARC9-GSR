@@ -1,3 +1,5 @@
+local ATT = {}
+
 ATT.PrintName = "ATPIAL-C AN/PEQ-15"
 ATT.CompactName = "PEQ-15"
 ATT.Description = [[High-power laser pointer with extra flashlight function.
@@ -63,7 +65,21 @@ ATT.ToggleStats = {
     }
 }
 
+-- Broken ass shit that won't work so graying this out sadly.
+-- ATT.Sights = {
+    -- {
+        -- Pos = Vector(-2.5, 22, 2),
+        -- Ang = Angle(0, 0, 135),
+        -- ViewModelFOV = 56,
+        -- Magnification = 1.25,
+        -- IgnoreExtra = false,
+		-- KeepBaseIrons = true,
+    -- },
+-- }
+
 
 ATT.Scale = 1
 
 ATT.ModelOffset = Vector(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "go_tac_laser_peq")

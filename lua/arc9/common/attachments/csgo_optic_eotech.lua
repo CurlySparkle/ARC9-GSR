@@ -20,7 +20,7 @@ ATT.ModelOffset = Vector(0, 0, 0.05)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6.3, -1.65),
+        Pos = Vector(0, 7.5, -1.65),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,
@@ -32,5 +32,5 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/ReticleEOTech.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 512
-ATT.HoloSightColorable = true
-ATT.HoloSightColor = Color(255, 55, 0)
+ATT.HoloSightColorable = false
+--ATT.HoloSightColor = Color(255, 55, 0)
