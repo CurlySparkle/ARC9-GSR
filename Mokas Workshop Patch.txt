@@ -1,0 +1,378 @@
+A gigantic update that fixes problems, adds localization support, rebalances a ton of attachments and so much more.
+Here's an abbrevriated version:
+[b][u][/u][/b]
+[table][tr]
+	[th][list]
+	[*]A ton of small and big weapon tuning (Too many to mention here!)
+	[*]Localization support! All attachment names and descriptions are now localized!
+		> Available in English, Swedish and Spanish!
+
+	[*]Changed almost all attachment names and all descriptions
+	[*]Fixed broken attachments with either incorrect or illogical stats
+	[*]Rebalanced several attachments
+	
+	And more!
+	[/list][/th]
+[/tr][/table]
+
+And here's the long, more detailed version:
+[b][u]Weapon changes[/u][/b]
+Weapons not listed did not have anything changed.
+
+[b][u]Akimbo[/u][/b]
+[table][tr]
+	[th]Dual Eagles[/th]
+	[th]Changed name to 'Dual Deagles'
+	Increased RPM
+	Decreased damage[/th]
+[/tr][tr]
+	[th]Dual Five-SeveN[/th]
+	[th]Increased RPM[/th]
+[/tr][tr]
+	[th]Dual Glock-18[/th]
+	[th]Increased RPM (semi-automatic only)
+	Decreased damage[/th]
+[/tr][tr]
+	[th]Dual MP9[/th]
+	[th]Decreased recoil[/th]
+[/tr][tr]
+	[th]Dual P250[/th]
+	[th]Increased RPM
+	Removed unnecessary custom firing modes[/th]
+[/tr][tr]
+	[th]Dual Sawed-Off[/th]
+	[th]Changed name to 'Dual Sawed-Offs'
+	Decreased view kick[/th]
+[/tr][tr]
+	[th]Dual USP[/th]
+	[th]Increased RPM[/th]
+[/tr][/table]
+
+[b][u]Assault Rifles[/u][/b]
+[table][tr]
+	[th]AK-47[/th]
+	[th]Fixed aim positions when using other barrels
+	Added various alternative display names depending on attachment choice[/th]
+[/tr][tr]
+	[th]AUG[/th]
+	[th]Added various alternative display names depending on attachment choice
+	Fixed various sound and IK errors[/th]
+[/tr][tr]
+	[th]Galil[/th]
+	[th]Changed display name to 'Galil SAR'[/th]
+[/tr][tr]
+	[th]M4A1-S[/th]
+	[th]Added various alternative display names depending on attachment choice[/th]
+[/tr][tr]
+	[th]M4A4[/th]
+	[th]Added various alternative display names depending on attachment choice[/th]
+[/tr][tr]
+	[th]SCAR-17[/th]
+	[th]Added various alternative display names depending on attachment choice[/th]
+[/tr][/table]
+
+[b][u]LMGs[/u][/b]
+[table][tr]
+	[th]M249[/th]
+	[th]Added an alternative display depending on attachment choice[/th]
+[/tr][/table]
+
+[b][u]Pistols[/u][/b]
+[table][tr]
+	[th]Beretta[/th]
+	[th]Added various alternative display names depending on attachment choice[/th]
+[/tr][tr]
+	[th]Glock-18[/th]
+	[th]Added an alternative display name depending on attachment choice[/th]
+[/tr][tr]
+	[th]R8 Revolver[/th]
+	[th]Added an alternative display name depending on attachment choice
+	Removed ability to equip scopes with the 6-Shot attachment installed[/th]
+[/tr][/table]
+
+[b][u]Shotguns[/u][/b]
+[table][tr]
+	[th]MAG-7[/th]
+	[th]Removed bugged top attachment[/th]
+[/tr][tr]
+	[th]Sawed-Off[/th]
+	[th]Decreased view kick[/th]
+[/tr][/table]
+
+[b][u]Submachine Guns[/u][/b]
+[table][tr]
+	[th]MAC-10[/th]
+	[th]Fixed the aim position when using the RIS attachment
+	Fixed the side rail position when using the RIS attachment
+	Removed regular optics category when using the RIS attachment[/th]
+[/tr][tr]
+	[th]MP5[/th]
+	[th]Added an alternative display name depending on attachment choice[/th]
+[/tr][tr]
+	[th]P90[/th]
+	[th]Added an alternative display name depending on attachment choice[/th]
+[/tr][tr]
+	[th]PP-Bizon[/th]
+	[th]Added an alternative display name depending on attachment choice[/th]
+[/tr][tr]
+	[th]UMP-45[/th]
+	[th]Added various alternative display names depending on attachment choice[/th]
+[/tr][/table]
+
+[b][u]Attachment Fixes[/u][/b]
+A few attachments had fixes applied to them.
+[table][tr]
+	[th]Attachment[/th]
+	[th]Fixes[/th]
+[/tr][tr]
+	[th]Universal
+	Magnifier with Aimpoint CompM4[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	Magnifier with EOTech Sight[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	Magnifier with Kobra EKP-8-18[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	Magnifier with OKP-7[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Galil SAR
+	30-Round 7.62mm Mag[/th]
+	[th]No longer has a 40 magazine capacity benefit
+	Removed the 10% reload speed penalty[/th]
+[/tr][tr]
+	[th]Galil AR
+	40-Round 7.62mm Mag[/th]
+	[th]Reduced magazine capacity benefit from 45 to 40
+	Decreased damage penalty from 25% to 15%
+	Decreased recoil and reload speed penalties from 20% to 15%
+	[/th]
+[/tr][tr]
+	[th]Benelli M3 Super 90
+	7-Round Tube[/th]
+	[th]Now requires the Extended Barrel attachment
+	[/th]
+[/tr][tr]
+	[th]M4A1-S
+	50-Round Drum Mag[/th]
+	[th]Fixed a missing 20% reload speed penalty
+	[/th]
+[/tr][tr]
+	[th]M4A1-S
+	30-Round Mag[/th]
+	[th]Added a 5% reload speed penalty
+	[/th]
+[/tr][tr]
+	[th]M4A4
+	32-Round 9x19mm Mag[/th]
+	[th]Fixed the 0% reload speed benefit to 5%
+	[/th]
+[/tr][tr]
+	[th]M4A4
+	20-Round Magazine - Sniper[/th]
+	[th]Lowered RPM penalty from 160 to 325 RPM
+	[/th]
+[/tr][tr]
+	[th]MP7
+	40-Round Magazine[/th]
+	[th]Removed the -15% reload speed benefit
+	Added a +10% reload speed penalty
+	[/th]
+[/tr][tr]
+	[th]XM1014
+	10-Round Tube[/th]
+	[th]Now requires the 750mm Barrel attachment
+	[/th]
+[/tr][/table]
+
+[b][u]Attachments Overhauled[/u][/b]
+A few attachments got completely overhauled.
+Positives first followed by negatives under dotted line.
+[table][tr]
+	[th]Attachment[/th]
+	[th]Before[/th]
+	[th]After[/th]
+[/tr][tr]
+	[th]
+	
+	
+	AWP
+	430mm Bull Barrel[/th]
+	[th]
+	Muzzle Velocity +15%
+	Recoil -50%
+	---
+	Max Range -10%
+	Sprint to Fire Time +35%
+	ADS Time -35%
+	Min Range -10%
+	[/th]
+	[th]
+	Recoil -10%
+	Sprint to Fire Time +10%
+	ADS Time +5%
+	---
+	Max Range -10%
+	Min Range -20%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	
+	AWP
+	450mm Factory Barrel[/th]
+	[th]
+	Max Range +10%
+	Sprint to Fire time -10%
+	ADS Time -10%
+	Min Range +10
+	---
+	Muzzle Velocity -5%
+	Recoil +15%
+	[/th]
+	[th]
+	Sprint to Fire Time -5%
+	ADS Time -10%
+	---
+	Muzzle Velocity -5%
+	Max Range -5%
+	Min Range -10%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	
+	G3SG1
+	450mm G3A3 Barrel
+	[/th]
+	[th]
+	Muzzle Velocity +25%
+	Maximum Range +25%
+	Recoil -10%
+	Minimum Range +25%
+	---
+	Sprint to Fire Time +10%
+	ADS Time +10%
+	[/th]
+	[th]
+	Sprint to Fire Time -5%
+	ADS Time -5%
+	---
+	Muzzle Velocity -5%
+	Maximum Range -5%
+	Minimum Range -10%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	
+	G3SG1
+	400mm G3KA4 Barrel
+	[/th]
+	[th]
+	Muzzle Velocity +25%
+	Maximum Range +25%
+	Recoil -10%
+	Minimum Range +25%
+	---
+	Sprint to Fire Time +10%
+	ADS Time +10%
+	[/th]
+	[th]
+	Sprint to Fire Time -5%
+	ADS Time -5%
+	---
+	Muzzle Velocity -5%
+	Maximum Range -5%
+	Minimum Range -10%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	
+	G3SG1
+	350mm Kurz Barrel
+	[/th]
+	[th]
+	Muzzle Velocity +25%
+	Maximum Range +25%
+	Recoil -10%
+	Minimum Range +25%
+	---
+	Sprint to Fire Time +10%
+	ADS Time +10%
+	[/th]
+	[th]
+	Sprint-to-Fire Time -12%
+	ADS Time -12%
+	---
+	Muzzle Velocity -15%
+	Max Range -12%
+	Recoil +5%
+	Min Range -18%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	
+	G3SG1
+	450mm Whisper Barrel
+	[/th]
+	[th]
+	Muzzle Velocity +10%
+	Maximum Range +15%
+	Minimum Range +15%
+	---
+	Sprint to Fire Time +15%
+	ADS Time +15%
+	Recoil +10%
+	[/th]
+	[th]
+	Recoil -15%
+	---
+	Muzzle Velocity -15%
+	Maximum Range -25%
+	Sprint to Fire Time +5%
+	ADS Time +5%
+	Minimum Range -20%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	G3SG1
+	Collapsible Stock
+	[/th]
+	[th]
+	ADS Time -15%
+	Spread -90%
+	Sprint to Fire Time +10%
+	---
+	Recoil +15%
+	[/th]
+	[th]
+	ADS Time +10%
+	Sprint to Fire Time +10%
+	---
+	Recoil -5%
+	[/th]
+[/tr][tr]
+	[th]
+	G3SG1
+	Cheek Riser
+	[/th]
+	[th]
+	Recoil -10%
+	---
+	ADS Time +10%
+	[/th]
+	[th]
+	ADS Time -5%
+	---
+	None
+	[/th]
+[/tr][/table]

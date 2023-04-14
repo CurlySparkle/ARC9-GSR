@@ -103,6 +103,7 @@ ATT.Free = false
 ATT.Category = {"go_m4a1_mag"}
 ATT.ActivateElements = {"mag_30"}
 ATT.ClipSizeOverride = 30
+ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "csgo_m4a1_mag_30")
 --------------------------------------------------------------------
@@ -123,6 +124,6 @@ ATT.ActivateElements = {"mag_50"}
 ATT.ClipSizeOverride = 50
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
-ATT.ReloadMult = 1.15
+ATT.ReloadTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "csgo_m4a1_mag_50")

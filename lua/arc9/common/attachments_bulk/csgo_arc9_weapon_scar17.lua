@@ -200,10 +200,11 @@ ATT.RecoilMultHipFire = 1.05
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.7
 
-ATT.RHIK = true
 ATT.RHIK_Priority = 100
+ATT.RHIK = true
+
+ATT.LHIK_Priority = 100
 ATT.LHIK = true
-ATT.LHIK_Priority = -100
 
 ATT.Model = "models/weapons/csgo/c_rif_scar17_ikbodge.mdl"
 ATT.ModelOffset = Vector(-10, -3.6, 3.5)

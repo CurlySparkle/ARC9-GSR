@@ -199,7 +199,7 @@ SWEP.RestPos = Vector(0, 5, 0)
 SWEP.RestAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 20, 2)
+SWEP.CustomizePos = Vector(14, 25, 2)
 SWEP.CustomizeSnapshotPos = Vector(-3, 5, 3)
 SWEP.CustomizeNoRotate = false
 
@@ -643,6 +643,16 @@ SWEP.AttachmentElements = {
     ["mag_20_stanag"] = { Bodygroups = { {7,3}, }, }, 
 	["no_stock"] = { Bodygroups = { {0,1}, }, },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_p90_mag_30_stanag"] or att["csgo_p90_mag_20_stanag"] then
+		name = "Frankenstein-90"
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

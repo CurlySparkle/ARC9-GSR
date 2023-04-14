@@ -370,11 +370,22 @@ SWEP.AttachmentElements = {
     ["r6"] = { Bodygroups = {{0,1},},},
 }
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_r8_model"] then
+		name = ".357 Revolver"
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Model",
         DefaultAttName = "R8",
         Category = "go_r8",
+        InstalledElements = {"6shot"},
 --        Bone = "v_weapon.deagle_parent",
     }, 
 	{
@@ -392,6 +403,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -4.1, 4.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optics_pistols","eft_optic_small"},
+        ExcludeElements = {"6shot"},
         CorrectiveAng = Angle(-0.4, 0.8, 0),
 		Scale = 1,
     },

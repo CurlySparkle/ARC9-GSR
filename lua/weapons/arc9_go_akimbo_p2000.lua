@@ -79,17 +79,21 @@ SWEP.Crosshair = true
 SWEP.RPM = 750
 
 SWEP.Firemodes = {
-    {
+    -- {
+        -- Mode = 1,
+		-- PrintName = "Single",
+        -- -- add other attachment modifiers
+    -- },
+    -- {
+        -- Mode = 2,
+        -- PostBurstDelay = 0.12,
+		-- PrintName = "Double",
+        -- -- add other attachment modifiers
+    -- }
+	{
         Mode = 1,
-		PrintName = "Single",
         -- add other attachment modifiers
-    },
-    {
-        Mode = 2,
-        PostBurstDelay = 0.12,
-		PrintName = "Double",
-        -- add other attachment modifiers
-    }
+	}
 }
 -------------------------- RECOIL
 
@@ -116,6 +120,7 @@ SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultSights = 1.4
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true

@@ -39,7 +39,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mp7_mag"}
 ATT.ClipSizeOverride = 40
-ATT.ReloadTimeMult = 0.85
+ATT.ReloadTimeMult = 1.1
 
 ATT.ActivateElements = {"mag_40"}
 

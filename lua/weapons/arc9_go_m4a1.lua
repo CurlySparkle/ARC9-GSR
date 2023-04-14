@@ -203,7 +203,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 40, 5)
+SWEP.CustomizePos = Vector(22, 33, 5)
 
 SWEP.CustomizeSnapshotPos = Vector(-2, 0, 2)
 SWEP.CustomizeSnapshotFOV = 90
@@ -798,6 +798,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("reciever_m16") and wep.Attachments[1].Installed then model:SetBodygroup(5,4) end
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_m4a1_barrel_m16a4"] and att["csgo_m4a1_stock_m16"] then
+		name = "M16A3-S"
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

@@ -185,7 +185,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 25, 3)
+SWEP.CustomizePos = Vector(17, 30, 3)
 SWEP.CustomizeSnapshotPos = Vector(-3, 20, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
@@ -502,6 +502,22 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,3) end
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+	local name = "SCAR"
+
+	if att["csgo_scar17_stock_bullpup"] then
+		name = name .. "-BP"
+	end
+
+	if att["csgo_mk17_mag_1"] or att["csgo_mk17_mag_2"] then
+		name = name .. "-16"
+	else
+		name = name .. "-17"
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

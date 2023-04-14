@@ -75,7 +75,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 452
+SWEP.RPM = 600
 
 SWEP.Firemodes = {
     {
@@ -108,6 +108,7 @@ SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultSights = 1.4
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true

@@ -195,7 +195,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 3)
+SWEP.CustomizePos = Vector(17.5, 25, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -429,6 +429,16 @@ SWEP.AttachmentElements = {
     AttPosMods = { [2] = { Pos = Vector(-0.025, -2.375, 6.6), } }	
     },	
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_glock_slide_auto"] then
+		name = "Glock-18C"
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

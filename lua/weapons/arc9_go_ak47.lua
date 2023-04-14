@@ -10,7 +10,7 @@ SWEP.PrintName = "AK-47"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Russia",
+    ["Country of Origin"] = "Soviet Union",
     ["Caliber"] = "7.62x39mm",
     ["Weight (Loaded)"] = "4.79 kg",
     ["Projectile Weight"] = "121.9 gr",
@@ -151,11 +151,36 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5, -10, 0.45),
+    Pos = Vector(-5, -7.5, 0.45),
     Ang = Angle(0.1, 1.25, -2.75),
     Magnification = 1.25,
     ViewModelFOV = 56,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["csgo_ak47_barrel_long"] then
+        return {
+            Pos = Vector(-4.985, -7.5, 1),
+            Ang = Angle(0.15, 0.1, -1.5),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
+	
+     if attached["csgo_ak47_barrel_short"] then
+        return {
+            Pos = Vector(-4.95, -7.5, 1.375),
+            Ang = Angle(0.3, -1, -1.5),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
+end
+
+SWEP.IronSightsPos = Vector(-4.989, -10, 1.118)
+SWEP.IronSightsAng = Vector(0.1, 1.25, -2.75)
 
 SWEP.ViewModelFOVBase = 56
 
@@ -182,7 +207,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 40, 2)
+SWEP.CustomizePos = Vector(19, 32.5, 3.5)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 5)
 SWEP.CustomizeSnapshotFOV = 90
@@ -655,6 +680,28 @@ SWEP.AttachmentTableOverrides = {
 	ModelAngleOffset = Angle(-3, 0, 0)
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] and att["csgo_ak47_mag_50"] then
+		name = "RPK"
+	end
+
+	if (att["csgo_ak47_mag_545"] or att["csgo_ak47_mag_545_ext"]) then
+		name = "AK-74"
+		
+		if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] then
+			name = "RPK-74"
+		end
+		if att["csgo_ak47_barrel_short"] and att["csgo_ak47_stock_skeleton"] then
+			name = "AKS-74U"
+		end
+		
+	end
+	
+    return name
+end
 
 SWEP.Attachments = {
     {

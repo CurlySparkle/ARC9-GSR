@@ -188,7 +188,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(25, 25, 5)
+SWEP.CustomizePos = Vector(22.5, 30, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 SWEP.CustomizeSnapshotPos = Vector(-2, 10, 3)
@@ -437,6 +437,23 @@ SWEP.AttachmentElements = {
     AttPosMods = { [3] = { Pos = Vector(0, -3.95, 20.4), } }
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+	local name = "UMP"
+
+	if att["csgo_ump_barrel_long"] then
+		name = "USC"
+	end
+
+	if att["csgo_ump_mag_30_9"] then
+		name = name .. "-9"
+	else
+		name = name .. "-45"
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

@@ -184,7 +184,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17, 35, 4)
+SWEP.CustomizePos = Vector(12.5, 30, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(-1, 5, 2)
 SWEP.CustomizeNoRotate = false
@@ -284,8 +284,8 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "aug_clipout.wav", t = 21/30},
 			{s = "CSGO.Item.Movement", t = 40/30},
-            {s = path .. "aug_clipin.wav", t = 67/30},
-            {s = path .. "aug_cliphit.wav", t = 69/30},
+            {s = path .. "aug_clipin.wav", t = 62/30},
+            {s = path .. "aug_cliphit.wav", t = 64/30},
 			{s = "CSGO.Item.Movement", t = 71/30},
         },
     },
@@ -369,8 +369,8 @@ SWEP.Animations = {
         EventTable = {
             {s = path2 .. "mp9_clipout.wav", t = 21/30},
 			{s = "CSGO.Item.Movement", t = 40/30},
-            {s = path2 .. "mp9_clipin.wav", t = 73/30},
-			{s = "CSGO.Item.Movement", t = 76/30},
+            {s = path2 .. "mp9_clipin.wav", t = 62.5/30},
+			{s = "CSGO.Item.Movement", t = 71/30},
         },
     },
     ["reload_empty_9"] = {
@@ -379,7 +379,7 @@ SWEP.Animations = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
             {t = 0.675, lhik = 0, rhik = 1 },
-            {t = 1, lhik = 1, rhik = 1 },
+            {t = 1.2, lhik = 1, rhik = 1 },
         },
         EventTable = {
             {s = path .. "aug_boltpull.wav", t = 11/30},
@@ -564,6 +564,20 @@ SWEP.AttachmentTableOverrides = {
 	Scale = 0.8,
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if (att["csgo_aug_mag_1"] or att["csgo_aug_mag_2"]) then
+		name = "AUG Para"
+	end
+	
+	if att["csgo_aug_barrel_long"] and att["go_mag_extended"] then
+		name = "AUG HBAR"
+	end
+	
+    return name
+end
 
 SWEP.Attachments = {
     {

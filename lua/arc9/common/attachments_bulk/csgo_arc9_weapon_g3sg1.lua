@@ -19,13 +19,13 @@ ATT.Category = {"go_g3_barrel","go_g3_barrel_smg2"}
 ATT.ActivateElements = {"barrel_sd"}
 ATT.ExcludeElements = {"barrel_muzzle"}
 
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.15
-ATT.RecoilMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.RecoilMult = 0.85
 
-ATT.RangeMaxMult = 1.15
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RangeMaxMult = 0.75
+ATT.RangeMinMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.85
 
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
@@ -82,13 +82,13 @@ ATT.Free = false
 ATT.Category = {"go_g3_barrel", "go_g3_barrel_smg"}
 ATT.ActivateElements = {"barrel_g3a3"}
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
-ATT.RecoilMult = 0.9
+-- ATT.RecoilMult = 1.1
+ATT.RangeMaxMult = 0.95
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
 
-ATT.RangeMaxMult = 1.25
-ATT.RangeMinMult = 1.25
-ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3")
 -------------------------------------------------------------------------------------------------
@@ -108,13 +108,13 @@ ATT.Free = false
 ATT.Category = {"go_g3_barrel_smg2"}
 ATT.ActivateElements = {"barrel_g3a3_alt"}
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
-ATT.RecoilMult = 0.9
+-- ATT.RecoilMult = 1.1
+ATT.RangeMaxMult = 0.95
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
 
-ATT.RangeMaxMult = 1.25
-ATT.RangeMinMult = 1.25
-ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_g3a3_smg")
 -------------------------------------------------------------------------------------------------
@@ -134,13 +134,13 @@ ATT.Free = false
 ATT.Category = {"go_g3_barrel"}
 ATT.ActivateElements = {"barrel_med"}
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
-ATT.RecoilMult = 0.9
+-- ATT.RecoilMult = 1.1
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.85
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
-ATT.RangeMaxMult = 1.25
-ATT.RangeMinMult = 1.25
-ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_medium")
 -------------------------------------------------------------------------------------------------
@@ -186,13 +186,13 @@ ATT.Free = false
 ATT.Category = {"go_g3_barrel"}
 ATT.ActivateElements = {"barrel_short"}
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
-ATT.RecoilMult = 1.15
+ATT.AimDownSightsTimeMult = 0.88
+ATT.SprintToFireTimeMult = 0.88
+ATT.RecoilMult = 1.05
 
-ATT.RangeMaxMult = 0.85
-ATT.RangeMinMult = 0.85
-ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RangeMaxMult = 0.88
+ATT.RangeMinMult = 0.82
+ATT.PhysBulletMuzzleVelocityMult = 0.85
 
 ARC9.LoadAttachment(ATT, "csgo_g3_barrel_short")
 -------------------------------------------------------------------------------------------------
@@ -440,10 +440,9 @@ ATT.SortOrder = 2
 ATT.Category = "go_g3_stock"
 ATT.ActivateElements = {"stock_collapsed"}
 
-ATT.RecoilMult = 1.15
-ATT.SprintToFireTimeMult = 0.85
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SpreadMult = 0.1
+ATT.RecoilMult = 1.05
+ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_g3_stock_collapsed")
 -------------------------------------------------------------------------------------------------
@@ -460,8 +459,8 @@ ATT.SortOrder = 2.5
 ATT.Category = "go_g3_stock"
 ATT.ActivateElements = {"stock_padded"}
 
-ATT.RecoilMult = 0.9
-ATT.AimDownSightsTimeMult = 1.1
+-- ATT.RecoilMult = 0.9
+ATT.AimDownSightsTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_g3_stock_padded")
 -------------------------------------------------------------------------------------------------

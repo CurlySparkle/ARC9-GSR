@@ -641,6 +641,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("mag_saiga") and wep:HasElement("barrel_long") then model:SetBodygroup(5,2) end	
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_bizon_mag_saiga"] then
+		name = "PP-Vityaz"
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

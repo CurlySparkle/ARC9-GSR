@@ -16,13 +16,13 @@ ATT.Free = false
 ATT.Category = {"go_awp_barrel"}
 ATT.ActivateElements = {"barrel_bull"}
 
-ATT.AimDownSightsTimeMult = 1.35
-ATT.SprintToFireTimeMult = 1.35
-ATT.RecoilMult = 0.5
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.9
+ATT.RecoilMult = 0.8
 
 ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.9
-ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.RangeMinMult = 0.8
+-- ATT.PhysBulletMuzzleVelocityMult = 1.25
 
 ARC9.LoadAttachment(ATT, "csgo_awp_barrel_bull")
 
@@ -69,11 +69,11 @@ ATT.Category = {"go_awp_barrel"}
 ATT.ActivateElements = {"barrel_factory"}
 
 ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
-ATT.RecoilMult = 1.15
+ATT.SprintToFireTimeMult = 0.95
+-- ATT.RecoilMult = 1.15
 
-ATT.RangeMaxMult = 1.1
-ATT.RangeMinMult = 1.1
+ATT.RangeMaxMult = 0.95
+ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 
 ARC9.LoadAttachment(ATT, "csgo_awp_barrel_factory")

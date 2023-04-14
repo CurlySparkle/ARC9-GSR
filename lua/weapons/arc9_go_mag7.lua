@@ -189,7 +189,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(25, 35, 5)
+SWEP.CustomizePos = Vector(26, 30, 6)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(4, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -551,7 +551,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mag7_parent",
         Pos = Vector(-0.058, -4.6, 2.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic","go_optic_mp7"},
+        Category = {"csgo_rail_optic"},
         CorrectiveAng = Angle(0, 0, 0),
 		Scale = 1.1,
     },

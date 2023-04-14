@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
-SWEP.PrintName = "Dual Sawed-Off"
+SWEP.PrintName = "Dual Sawed-Offs"
 
 SWEP.Class = "Shotgun"
 SWEP.Trivia = {
@@ -93,7 +93,7 @@ SWEP.Firemodes = {
         PrintName = "BOTH",
         RPMMult = 60/80,
         AkimboBoth = true,
-        RecoilMult = 2,
+        RecoilMult = 1.25,
         AmmoPerShot = 2,
         NumMult = 2,
     },
@@ -124,10 +124,11 @@ SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultSights = 0.25
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.ViewRecoil = true
-SWEP.ViewRecoilUpMult = 7
+SWEP.ViewRecoilUpMult = 4
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoil = 2

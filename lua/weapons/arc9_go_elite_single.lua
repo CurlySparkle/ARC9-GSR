@@ -196,7 +196,7 @@ SWEP.CrouchPos = Vector(-2.2, 2, 0)
 SWEP.CrouchAng = Angle(-5, -2.75, -3)
 
 SWEP.CustomizeAng = Angle(90, 0, -4)
-SWEP.CustomizePos = Vector(18, 30, 4)
+SWEP.CustomizePos = Vector(18, 25, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -434,6 +434,20 @@ SWEP.AttachmentElements = {
     AttPosMods = { [2] = { Pos = Vector(-0.025, -3.325, 8.2), } }	
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_elite_slide_p38"] then
+		name = "B-38"
+	end
+	
+	if att["csgo_elite_slide_raffica"] then
+		name = "Beretta Raffica"
+	end
+	
+    return name
+end
 
 SWEP.Attachments = {
     {

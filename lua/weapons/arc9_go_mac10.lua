@@ -155,6 +155,19 @@ SWEP.IronSights = {
     ViewModelFOV = 56,
 }
 
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["csgo_rail_optic_mac"] then
+        return {
+			Pos = Vector(-6.18, -8, 1.65),
+			Ang = Angle(0.15, -0.3, -2),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
+end
+
 SWEP.ViewModelFOVBase = 56
 
 SWEP.SprintPos = Vector(0, -5, -1)
@@ -180,7 +193,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(23, 30, 5)
+SWEP.CustomizePos = Vector(22, 25, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -515,7 +528,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1,1}, {3,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(-1.7, -2.9, 4.7), } }	
+    AttPosMods = { [4] = { Pos = Vector(-1.7, -2.9, 4.7), } }	
     },
     ["stock_extend"] = {
         Bodygroups = {
@@ -590,6 +603,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"sight_mount"},
+        ExcludeElements = {"DefGrip"},
         CorrectiveAng = Angle(0.25, 0, 0),
     },
     {

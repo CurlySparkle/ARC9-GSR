@@ -14,7 +14,7 @@ SWEP.Class = "Melee"
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Counter-Strike: Global Offensive"
 }
 
 SWEP.Description = [[Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill.]]
@@ -128,8 +128,8 @@ SWEP.MovingMidPoint = {
 SWEP.MovingPos = Vector(0, -3, -1)
 SWEP.MovingAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(0, 90, 90)
-SWEP.CustomizePos = Vector(-20, 15, -17)
+SWEP.CustomizeAng = Angle(0, 45, -25)
+SWEP.CustomizePos = Vector(3, 20, -13)
 SWEP.CustomizeSnapshotFOV = 56
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)

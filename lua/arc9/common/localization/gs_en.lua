@@ -589,7 +589,7 @@ L["go_supp_tirant45.compactname"] = "Ti-Rant 45"
 L["go_supp_tirant45.description"] = "Tactical suppressor designed to reduce the decibel level from gunshots."
 
 L["go_supp_clothwrapped.printname"] = "Cloth-Wrapped Suppressor"
-L["go_supp_clothwrapped.compactname"] = "Cloth-Wrapped"
+L["go_supp_clothwrapped.compactname"] = "Wrapped"
 L["go_supp_clothwrapped.description"] = "Tactical suppressor wrapped in cloth.\nDesigned to reduce the decibel level from gunshots."
 
 L["go_supp_m110.printname"] = "M110 Suppressor"
@@ -794,7 +794,7 @@ L["csgo_grip_no.description"] = "Removes the front grip, improving weapon handli
 -- AWP
 L["csgo_awp_barrel_bull.printname"] = "430mm Bull Barrel"
 L["csgo_awp_barrel_bull.compactname"] = "430mm Bull"
-L["csgo_awp_barrel_bull.description"] = "Bull barrel that improves recoil control at the cost of weapon handling and range."
+L["csgo_awp_barrel_bull.description"] = "Bull barrel that improves recoil control and weapon handling at the cost of range."
 
 L["csgo_awp_barrel_short.printname"] = "390mm Short Barrel"
 L["csgo_awp_barrel_short.compactname"] = "390mm Short"
@@ -802,7 +802,7 @@ L["csgo_awp_barrel_short.description"] = "Shortened custom barrel that improves 
 
 L["csgo_awp_barrel_factory.printname"] = "450mm Factory Barrel"
 L["csgo_awp_barrel_factory.compactname"] = "450mm Factory"
-L["csgo_awp_barrel_factory.description"] = "Factory length barrel that improves weapon handling and range at the cost of recoil control and muzzle velocity."
+L["csgo_awp_barrel_factory.description"] = "Factory length barrel that improves weapon handling at the cost of muzzle velocity and range."
 
 L["csgo_awp_stock_folding.printname"] = "Adjustable Stock"
 L["csgo_awp_stock_folding.compactname"] = "Adjustable"
@@ -947,33 +947,33 @@ L["csgo_five_slide_short.compactname"] = "110mm FN"
 L["csgo_five_slide_short.description"] = "Compact slide and barrel that improves weapon handling and firing speed at the cost of recoil control and range."
 
 -- G3SG1
-L["csgo_g3_barrel_sd.printname"] = "640mm Whisper Barrel"
-L["csgo_g3_barrel_sd.compactname"] = "640mm SD"
-L["csgo_g3_barrel_sd.description"] = "Shortened barrel with integrated suppressor.\nReduces the decibel level from gunshots and improves range at the cost of recoil control and weapon handling."
+L["csgo_g3_barrel_sd.printname"] = "450mm Whisper Barrel"
+L["csgo_g3_barrel_sd.compactname"] = "450mm SD"
+L["csgo_g3_barrel_sd.description"] = "Medium-length barrel with integrated suppressor.\nReduces the decibel level from gunshots and improves recoil control at the cost of muzzle velocity, range and weapon handling."
 
-L["csgo_g3_barrel_g3a3.printname"] = "360mm G3A3 Barrel"
-L["csgo_g3_barrel_g3a3.compactname"] = "360mm A3"
-L["csgo_g3_barrel_g3a3.description"] = "Medium-length barrel from the G3A3 that improves recoil control and range at the cost of weapon handling."
+L["csgo_g3_barrel_g3a3.printname"] = "450mm G3A3 Barrel"
+L["csgo_g3_barrel_g3a3.compactname"] = "450mm A3"
+L["csgo_g3_barrel_g3a3.description"] = "Medium-length barrel from the G3A3 that improves weapon handling at the cost of range."
 
-L["csgo_g3_barrel_g3a3_smg.printname"] = "360mm G3A3 Barrel"
-L["csgo_g3_barrel_g3a3_smg.compactname"] = "360mm A3"
-L["csgo_g3_barrel_g3a3_smg.description"] = "Medium-length barrel from the G3A3 that improves recoil control and range at the cost of weapon handling."
+L["csgo_g3_barrel_g3a3_smg.printname"] = "450mm G3A3 Barrel"
+L["csgo_g3_barrel_g3a3_smg.compactname"] = "450mm A3"
+L["csgo_g3_barrel_g3a3_smg.description"] = "Medium-length barrel from the G3A3 that improves weapon handling at the cost of range."
 
-L["csgo_g3_barrel_medium.printname"] = "450mm G3KA4 Barrel"
-L["csgo_g3_barrel_medium.compactname"] = "450mm KA4"
-L["csgo_g3_barrel_medium.description"] = "Medium-length barrel from the G3KA4 that improves recoil control and range at the cost of weapon handling."
+L["csgo_g3_barrel_medium.printname"] = "400mm G3KA4 Barrel"
+L["csgo_g3_barrel_medium.compactname"] = "400mm KA4"
+L["csgo_g3_barrel_medium.description"] = "Medium-length barrel from the G3KA4 that improves weapon handling at the cost of range."
 
 L["csgo_g3_barrel_medium_smg.printname"] = "400mm G3KA4 Barrel"
 L["csgo_g3_barrel_medium_smg.compactname"] = "400mm KA4"
-L["csgo_g3_barrel_medium_smg.description"] = "Long barrel from the G3KA4.\nImproves recoil control and range at the cost of weapon handling."
+L["csgo_g3_barrel_medium_smg.description"] = "Long barrel from the G3KA4 that improves recoil and range at the cost of weapon handling."
 
-L["csgo_g3_barrel_short.printname"] = "315mm Kurz Barrel"
-L["csgo_g3_barrel_short.compactname"] = "315mm Kurz"
-L["csgo_g3_barrel_short.description"] = "Short G3KA4 barrel that improves weapon handling at the cost of recoil control and range."
+L["csgo_g3_barrel_short.printname"] = "350mm Kurz Barrel"
+L["csgo_g3_barrel_short.compactname"] = "350mm Kurz"
+L["csgo_g3_barrel_short.description"] = "Shortened G3KA4 barrel that improves weapon handling further at the cost of range and recoil control."
 
-L["csgo_g3_barrel_short_smg.printname"] = "315mm Kurz Barrel"
-L["csgo_g3_barrel_short_smg.compactname"] = "315mm Kurz"
-L["csgo_g3_barrel_short_smg.description"] = "Short G3KA4 barrel that improves weapon handling at the cost of recoil control and range."
+L["csgo_g3_barrel_short_smg.printname"] = "350mm Kurz Barrel"
+L["csgo_g3_barrel_short_smg.compactname"] = "350mm Kurz"
+L["csgo_g3_barrel_short_smg.description"] = "Shortened G3KA4 barrel that improves weapon handling further at the cost of range and recoil control."
 
 L["csgo_g3_mag_30.printname"] = "30-Round Magazine"
 L["csgo_g3_mag_30.compactname"] = "30R"
@@ -1001,7 +1001,7 @@ L["csgo_g3_stock_collapsed.description"] = "Retractable G3 stock that improves w
 
 L["csgo_g3_stock_padded.printname"] = "Cheek Riser"
 L["csgo_g3_stock_padded.compactname"] = "Cheek R."
-L["csgo_g3_stock_padded.description"] = "Standard stock with attached cheek riser.\nDecreases recoil at the cost of aiming speed."
+L["csgo_g3_stock_padded.description"] = "Standard stock with attached cheek riser.\nImproves aiming speed."
 
 L["csgo_g3_stock_fixed.printname"] = "Fixed A2 Stock"
 L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
@@ -1185,8 +1185,8 @@ L["csgo_m4_mag_20_5.printname"] = "20-Round Magazine"
 L["csgo_m4_mag_20_5.compactname"] = "20R"
 L["csgo_m4_mag_20_5.description"] = "Improves reload speed at the cost of magazine capacity."
 
-L["csgo_m4_mag_25_9.printname"] = "20-Round 9x19mm Magazine and Adapter"
-L["csgo_m4_mag_25_9.compactname"] = "20R 9x19mm"
+L["csgo_m4_mag_25_9.printname"] = "25-Round 9x19mm Magazine and Adapter"
+L["csgo_m4_mag_25_9.compactname"] = "25R 9x19mm"
 L["csgo_m4_mag_25_9.description"] = "Installs a 9x19mm magazine adapter.\nImproves reload speed and recoil control at the cost of reduced magazine capacity, damage and spread."
 
 L["csgo_m4_mag_32_9.printname"] = "32-Round 9x19mm Magazine and Adapter"
@@ -1251,7 +1251,7 @@ L["csgo_mp7_mag_short.description"] = "Decreases the magazine capacity with the 
 
 L["csgo_mp7_mag_long.printname"] = "40-Round Magazine"
 L["csgo_mp7_mag_long.compactname"] = "40R"
-L["csgo_mp7_mag_long.description"] = "Increases the magazine capacity."
+L["csgo_mp7_mag_long.description"] = "Increases the magazine capacity at the cost of reload speed."
 
 L["csgo_mp7_view_alt.printname"] = "Alternative View"
 L["csgo_mp7_view_alt.compactname"] = "Alt. View"
@@ -1463,7 +1463,7 @@ L["csgo_xm1014_mag_6.description"] = "Shortened tube that reduces the tube capac
 
 L["csgo_xm1014_mag_8.printname"] = "10-Round Tube"
 L["csgo_xm1014_mag_8.compactname"] = "10R"
-L["csgo_xm1014_mag_8.description"] = "Longer tube that increases the tube capacity at the cost of weapon handling and spread."
+L["csgo_xm1014_mag_8.description"] = "REQUIRES <750mm Barrel>\nLonger tube that increases the tube capacity at the cost of weapon handling and spread."
 
 L["csgo_nova_mag_6.printname"] = "6-Round Tube"
 L["csgo_nova_mag_6.compactname"] = "6R"
@@ -1475,7 +1475,7 @@ L["csgo_nova_mag_8.description"] = "Longer tube that increases the tube capacity
 
 L["csgo_m3_mag_7.printname"] = "7-Round Tube"
 L["csgo_m3_mag_7.compactname"] = "7R"
-L["csgo_m3_mag_7.description"] = "Longer tube that increases the tube capacity at the cost of weapon handling and spread."
+L["csgo_m3_mag_7.description"] = "REQUIRES <Extended Barrel>\nLonger tube that increases the tube capacity at the cost of weapon handling and spread."
 
 L["csgo_m3_mag_4.printname"] = "4-Round Tube"
 L["csgo_m3_mag_4.compactname"] = "4R"
@@ -1487,7 +1487,7 @@ L["csgo_m3_barrel_default.description"] = "The barrel the Benelli M3 Super 90 ca
 
 L["csgo_m3_barrel_long.printname"] = "Extended Barrel"
 L["csgo_m3_barrel_long.compactname"] = "Extended"
-L["csgo_m3_barrel_long.description"] = "Extended barrel that improves recoil control, spread and range at the cost of weapon handling and hip-fire spread."
+L["csgo_m3_barrel_long.description"] = "Extended barrel that improves recoil control, spread and range at the cost of weapon handling and hip-fire spread.\nRequired for the <7-Round Tube> attachment."
 
 L["csgo_m3_barrel_short.printname"] = "Shortened Barrel"
 L["csgo_m3_barrel_short.compactname"] = "Short"

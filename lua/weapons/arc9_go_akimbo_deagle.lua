@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = "Akimbos"
 
-SWEP.PrintName = "Dual Eagles"
+SWEP.PrintName = "Dual Deagles"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
@@ -45,7 +45,7 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 53 -- Damage done at point blank range
+SWEP.DamageMax = 45 -- Damage done at point blank range
 SWEP.DamageMin = 13 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -76,7 +76,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 334
+SWEP.RPM = 267 * 2
 
 SWEP.Firemodes = {
     {
@@ -111,7 +111,7 @@ SWEP.Akimbo = true
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilMultSights = 0.7
+SWEP.RecoilMultSights = 1.4
 SWEP.RecoilAutoControlMultSights = 1.5
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
@@ -202,7 +202,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 30, 2.5)
+SWEP.CustomizePos = Vector(18, 32, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)

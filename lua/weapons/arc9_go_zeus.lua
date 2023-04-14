@@ -9,6 +9,10 @@ SWEP.SubCategory = "Extras"
 SWEP.PrintName = "Zeus x27"
 
 SWEP.Class = "Special"
+SWEP.Trivia = {
+    ["Country of Origin"] = "United States",
+    ["Weight"] = "~500 g",
+}
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",

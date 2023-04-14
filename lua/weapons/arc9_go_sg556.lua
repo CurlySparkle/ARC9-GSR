@@ -190,7 +190,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(23, 37, 4)
+SWEP.CustomizePos = Vector(21, 30, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(-0, 5, 3)
 SWEP.CustomizeNoRotate = false
@@ -498,7 +498,6 @@ SWEP.HookP_NameChange = function(wep, name)
     end
     return name
 end
-
 
 SWEP.Attachments = {
     {

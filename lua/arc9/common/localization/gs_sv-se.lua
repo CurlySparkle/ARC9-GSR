@@ -2,7 +2,7 @@ L = {}
 -- These are in in-game code name order and categorised manually.
 
 -- 2X Optics
-L["csgo_optic_2x_aimpoint.printname"] = "Förstoringsglas med CompM4 (RPS)"
+L["csgo_optic_2x_aimpoint.printname"] = "Förstoringsglas med Aimpoint CompM4"
 L["csgo_optic_2x_aimpoint.compactname"] = "CompM4 2x"
 L["csgo_optic_2x_aimpoint.description"] = "Rörbaserat rödpunktsikte för skjutvapen.\nKommer med ett växelbart 2x förstoringsglas."
 
@@ -764,14 +764,13 @@ L["csgo_ak47_mag_556_ext.printname"] = "50-Skott Polymer 5.56x45mm Skrinmagasin"
 L["csgo_ak47_mag_556_ext.compactname"] = "50S 5.56mm"
 L["csgo_ak47_mag_556_ext.description"] = "Konverterar AK-47:an att använda 5.56x45mm magasin och ammunition.\nImproves the magazine capacity, recoil control and rate of fire at the cost of range, damage and reload speed."
 
-L["csgo_ak47_mag_545.printname"] = "30-Round 5.45x39mm Magazine"
+L["csgo_ak47_mag_545.printname"] = "30-Skott 5.45x39mm Magasin"
 L["csgo_ak47_mag_545.compactname"] = "30S 5.45x39mm"
 L["csgo_ak47_mag_545.description"] = "Konverterar AK-47:an att använda 5.45x39mm magasin och ammunition.\nFörbättrar rekylkontrollen och eldhastigheten med kostnad på skada."
 
-L["csgo_ak47_mag_545_ext.printname"] = "40-Round 5.45x39mm Magazine"
+L["csgo_ak47_mag_545_ext.printname"] = "40-Skott 5.45x39mm Magasin"
 L["csgo_ak47_mag_545_ext.compactname"] = "40S 5.45x39mm"
-L["csgo_ak47_mag_545_ext.description"] = "Konverterar AK-47:an att använda 5.45x39mm magasin och ammunition.\nImproves the magazine capacity, recoil control and rate of fire at the cost of damage and reload speed."
-L["csgo_ak47_mag_545_ext.description"] = "Konverterar AK-47:an att använda 5.45x39mm magasin och ammunition.\nFörbättrar magasinkapaciteten, rekylkontrollen och eldhastigheten med kostnad på skada och omladdning hastigheten."
+L["csgo_ak47_mag_545_ext.description"] = "Konverterar AK-47:an att använda 5.45x39mm magasin och ammunition.\nFörbättrar magasinkapaciteten, rekylkontrollen och eldhastigheten med kostnad på skada och omladdning hastighet."
 
 -- AUG
 L["csgo_aug_mag_1.printname"] = "9x19mm Magasin"
@@ -798,7 +797,7 @@ L["csgo_grip_no.description"] = "Tar bort framgreppet som förbättrar vapenhant
 -- AWP
 L["csgo_awp_barrel_bull.printname"] = "430mm Tjurpipa"
 L["csgo_awp_barrel_bull.compactname"] = "430mm Tjur"
-L["csgo_awp_barrel_bull.description"] = "Tjurpipa som förbättrar rekylkontrollen med kostnad på vapenhantering och räckvidd."
+L["csgo_awp_barrel_bull.description"] = "Tjurpipa som förbättrar rekylkontrollen och vapenhantering med kostnad på räckvidd."
 
 L["csgo_awp_barrel_short.printname"] = "390mm Kort Pipa"
 L["csgo_awp_barrel_short.compactname"] = "390mm Kort"
@@ -806,7 +805,7 @@ L["csgo_awp_barrel_short.description"] = "Förkortad anpassad pipa som förbätt
 
 L["csgo_awp_barrel_factory.printname"] = "450mm Fabrik Pipa"
 L["csgo_awp_barrel_factory.compactname"] = "450mm Fabrik"
-L["csgo_awp_barrel_factory.description"] = "Fabrikslängd pipa som förbättrar vapenhantering och räckvidd med kostnad på rekylkontroll och mynningshastighet."
+L["csgo_awp_barrel_factory.description"] = "Fabrikslängd pipa som förbättrar vapenhantering med kostnad på mynningshastighet och räckvidd."
 
 L["csgo_awp_stock_folding.printname"] = "Justerbar Kolv"
 L["csgo_awp_stock_folding.compactname"] = "Justerbar"
@@ -952,32 +951,32 @@ L["csgo_five_slide_short.compactname"] = "110mm FN"
 L["csgo_five_slide_short.description"] = "Kompakt slutstycke och pipa som förbättrar vapenhantering och eldhastighet med kostnad på rekylkontroll och räckvidd."
 
 -- G3SG1
-L["csgo_g3_barrel_sd.printname"] = "640mm Viskare Pipa"
-L["csgo_g3_barrel_sd.compactname"] = "640mm SD"
-L["csgo_g3_barrel_sd.description"] = "Förkortad pipa med inbyggd ljuddämpare.\nSänker decibelnivån på skottljud och förbättrar räckvidden med kostnad på rekylkontroll och vapenhantering."
+L["csgo_g3_barrel_sd.printname"] = "450mm Viskare Pipa"
+L["csgo_g3_barrel_sd.compactname"] = "450mm SD"
+L["csgo_g3_barrel_sd.description"] = "Medellängd pipa med inbyggd ljuddämpare.\nSänker decibelnivån på skottljud och förbättrar rekylkontrollen med kostnad på mynningshastighet, räckvidd och vapenhantering."
 
-L["csgo_g3_barrel_g3a3.printname"] = "360mm G3A3 Pipa"
-L["csgo_g3_barrel_g3a3.compactname"] = "360mm A3"
-L["csgo_g3_barrel_g3a3.description"] = "Medellängd pipa från G3A3:n som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
+L["csgo_g3_barrel_g3a3.printname"] = "450mm G3A3 Pipa"
+L["csgo_g3_barrel_g3a3.compactname"] = "450mm A3"
+L["csgo_g3_barrel_g3a3.description"] = "Medellängd pipa från G3A3:n som förbättrar vapenhantering med kostnad på räckvidd."
 
-L["csgo_g3_barrel_g3a3_smg.printname"] = "360mm G3A3 Pipa"
-L["csgo_g3_barrel_g3a3_smg.compactname"] = "360mm A3"
-L["csgo_g3_barrel_g3a3_smg.description"] = "Medellängd pipa från G3A3:n som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
+L["csgo_g3_barrel_g3a3_smg.printname"] = "450mm G3A3 Pipa"
+L["csgo_g3_barrel_g3a3_smg.compactname"] = "450mm A3"
+L["csgo_g3_barrel_g3a3_smg.description"] = "Medellängd pipa från G3A3:n som förbättrar vapenhantering med kostnad på räckvidd."
 
-L["csgo_g3_barrel_medium.printname"] = "450mm G3KA4 Pipa"
-L["csgo_g3_barrel_medium.compactname"] = "450mm KA4"
-L["csgo_g3_barrel_medium.description"] = "Medellängd pipa från G3KA4:an som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
+L["csgo_g3_barrel_medium.printname"] = "400mm G3KA4 Pipa"
+L["csgo_g3_barrel_medium.compactname"] = "400mm KA4"
+L["csgo_g3_barrel_medium.description"] = "Medellängd pipa från G3KA4:an som förbättrar vapenhantering med kostnad på räckvidd."
 
 L["csgo_g3_barrel_medium_smg.printname"] = "400mm G3KA4 Pipa"
 L["csgo_g3_barrel_medium_smg.compactname"] = "400mm KA4"
-L["csgo_g3_barrel_medium_smg.description"] = "Lång pipa från G3KA4:an.\nFörbättrar rekylkontrollen och räckvidden med kostnad på vapenhantering."
+L["csgo_g3_barrel_medium_smg.description"] = "Lång pipa från G3KA4:an som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
 
-L["csgo_g3_barrel_short.printname"] = "315mm Kurz-Pipa"
-L["csgo_g3_barrel_short.compactname"] = "315mm Kurz"
-L["csgo_g3_barrel_short.description"] = "Kort G3KA4 pipa som förbättrar vapenhantering med kostnad på rekylkontroll och räckvidd."
+L["csgo_g3_barrel_short.printname"] = "350mm Kurz-Pipa"
+L["csgo_g3_barrel_short.compactname"] = "350mm Kurz"
+L["csgo_g3_barrel_short.description"] = "Förkortad G3KA4-pipa som ytterligare förbättrar vapenhantering med kostnad på räckvidd och rekylkontroll."
 
-L["csgo_g3_barrel_short_smg.printname"] = "315mm Kurz-Pipa"
-L["csgo_g3_barrel_short_smg.compactname"] = "315mm Kurz"
+L["csgo_g3_barrel_short_smg.printname"] = "350mm Kurz-Pipa"
+L["csgo_g3_barrel_short_smg.compactname"] = "350mm Kurz"
 L["csgo_g3_barrel_short_smg.description"] = "Kort G3KA4 pipa som förbättrar vapenhantering med kostnad på rekylkontroll och räckvidd."
 
 L["csgo_g3_mag_30.printname"] = "30-Skottsmagasin"
@@ -1006,7 +1005,7 @@ L["csgo_g3_stock_collapsed.description"] = "Hopfällbar G3-kolv som förbättrar
 
 L["csgo_g3_stock_padded.printname"] = "Kindskydd"
 L["csgo_g3_stock_padded.compactname"] = "Kindstöd"
-L["csgo_g3_stock_padded.description"] = "Standard kolv med installerat kindstöd.\nSänker rekylen med kostnad på siktehastighet."
+L["csgo_g3_stock_padded.description"] = "Standard kolv med installerat kindstöd.\nFörbättrar siktehastigheten."
 
 L["csgo_g3_stock_fixed.printname"] = "Fast A2-kolv"
 L["csgo_g3_stock_fixed.compactname"] = "Fast A2"
@@ -1193,8 +1192,8 @@ L["csgo_m4_mag_20_5.printname"] = "20-Skottsmagasin"
 L["csgo_m4_mag_20_5.compactname"] = "20S"
 L["csgo_m4_mag_20_5.description"] = "Förbättrar omladdning hastighet med kostnad på magasinkapacitet."
 
-L["csgo_m4_mag_25_9.printname"] = "20-Skott 9x19mm Magasin och Adapter"
-L["csgo_m4_mag_25_9.compactname"] = "20S 9x19mm"
+L["csgo_m4_mag_25_9.printname"] = "25-Skott 9x19mm Magasin och Adapter"
+L["csgo_m4_mag_25_9.compactname"] = "25S 9x19mm"
 L["csgo_m4_mag_25_9.description"] = "Installerar en 9x19mm magasin adapter.\nFörbättrar omladdning hastighet och rekylkontroll med kostnad på sänkt magasinkapacitet, skada och spridning."
 
 L["csgo_m4_mag_32_9.printname"] = "32-Skott 9x19mm Magasin och Adapter"
@@ -1259,7 +1258,7 @@ L["csgo_mp7_mag_short.description"] = "Sänker magasinkapaciteten med förmån a
 
 L["csgo_mp7_mag_long.printname"] = "40-Skottsmagasin"
 L["csgo_mp7_mag_long.compactname"] = "40S"
-L["csgo_mp7_mag_long.description"] = "Ökar magasinkapaciteten."
+L["csgo_mp7_mag_long.description"] = "Ökar magasinkapaciteten med kostnad på omladdning hastighet."
 
 L["csgo_mp7_view_alt.printname"] = "Alternativ Vy"
 L["csgo_mp7_view_alt.compactname"] = "Alt. Vy"
@@ -1474,7 +1473,7 @@ L["csgo_xm1014_mag_6.description"] = "Förkortat rör som sänker rörkapacitete
 
 L["csgo_xm1014_mag_8.printname"] = "10-Skottrör"
 L["csgo_xm1014_mag_8.compactname"] = "10S"
-L["csgo_xm1014_mag_8.description"] = "Längre rör som ökad rörkapaciteten med kostnad på vapenhantering och spridning."
+L["csgo_xm1014_mag_8.description"] = "KRÄVER <750mm Pipa>\nLängre rör som ökad rörkapaciteten med kostnad på vapenhantering och spridning."
 
 L["csgo_nova_mag_6.printname"] = "6-Skottrör"
 L["csgo_nova_mag_6.compactname"] = "6S"
@@ -1486,7 +1485,7 @@ L["csgo_nova_mag_8.description"] = "Längre rör som ökar rörkapaciteten med k
 
 L["csgo_m3_mag_7.printname"] = "7-Skottrör"
 L["csgo_m3_mag_7.compactname"] = "7S"
-L["csgo_m3_mag_7.description"] = "Längre rör som ökar rörkapaciteten med kostnad på vapenhantering och spridning."
+L["csgo_m3_mag_7.description"] = "KRÄVER <Förlängd Pipa>\nLängre rör som ökar rörkapaciteten med kostnad på vapenhantering och spridning."
 
 L["csgo_m3_mag_4.printname"] = "4-Skottrör"
 L["csgo_m3_mag_4.compactname"] = "4R"
@@ -1498,7 +1497,7 @@ L["csgo_m3_barrel_default.description"] = "Pipan som Benelli M3 Super 90:n kom u
 
 L["csgo_m3_barrel_long.printname"] = "Förlängd Pipa"
 L["csgo_m3_barrel_long.compactname"] = "Förlängd"
-L["csgo_m3_barrel_long.description"] = "Förlängd pipa som förbättrar rekylkontroll, spridning och räckvidd med kostnad på vapenhantering och spridning från höften."
+L["csgo_m3_barrel_long.description"] = "Förlängd pipa som förbättrar rekylkontroll, spridning och räckvidd med kostnad på vapenhantering och spridning från höften.\nKrävs för <7-Skottrör> tillbehöret."
 
 L["csgo_m3_barrel_short.printname"] = "Förkortad Pipa"
 L["csgo_m3_barrel_short.compactname"] = "Förkortad"

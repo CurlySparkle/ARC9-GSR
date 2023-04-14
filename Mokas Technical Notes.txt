@@ -1,0 +1,351 @@
+[Weapons]
+> Dual Eagles
+	- Changed display name to 'Dual Deagles'
+	- Increased RPM from 334 to 534
+	- Increased RecoilMultSights from 0.7 to 1.4
+	- Decreased damage from 53 to 45
+	- Changed the CustomizePos value from (18, 30, 2.5) to (18, 32, 2.5)
+
+> Dual Five-SeveN
+	- Increased RPM from 400 to 500
+	- Added RecoilMultSights set to value 1.4
+	- Changed the CustomizePos value from (18, 35, 2.5) to (18, 30, 2.5)
+
+> Dual Glock-18
+	- Added RecoilMultSights set to value 1.25
+	- Increased RPM from 452 to 800 (in semi-automatic)
+	- Decreased damage from 30 to 26
+	- Changed the CustomizePos value from (18, 35, 2.5) to (18, 32, 2.5)
+	
+> Dual MP9
+	- Decreased the Recoil from 1.5 to 1.1
+	- On the 'Semi' firemode, added a Recoil value of 0.55
+	- Added RecoilMultSights set to value 1.15
+	- Changed the CustomizePos value from (18, 40, 2) to (16, 40, 3)
+
+> Dual P2000
+	- Added RecoilMultSights set to value 1.4
+
+> Dual P250
+	- Added RecoilMultSights set to value 1.4
+	- Increased RPM from 452 to 800
+	- Removed the custom firing modes and replaced it with a traditional one
+
+> Dual Sawed-Off
+	- Changed display name to 'Dual Sawed-Offs'
+	- On the 'Both' firemode, decreased RecoilMult from 2 to 1.25
+	- Decreased ViewRecoilUpMult from 7 to 4
+	- Added RecoilMultSights set to value 0.25
+
+> Dual USP
+	- Added RecoilMultSights set to value 1.4
+	- Increased RPM from 452 to 600
+
+> AK-47
+	- Changed the CustomizePos value from (22, 40, 2) to (19, 32.5, 3.5)
+	- Added weapon display name changes depending on attachment choices:
+		> RPK - RPK Barrel, RPK Stock and 50-Round Drum
+		> AK-74 - 30 or 40-round 5.45x39mm magazines
+			> RPK-74 - RPK Barrel and RPK Stock
+			> AKS-74U - Ukorochenniy Barrel and Skeleton Stock
+	- Changed IronSights Pos value from (-5, -10, 0.45) to (-5, -7.5, 0.45)
+	- Added custom IronSights positions when using the RPK and Ukorochenniy Barrels
+	
+> AUG
+	- Changed the CustomizePos value from (17, 35, 4) to (12.5, 30, 4)
+	- Added weapon display name changes depending on attachment choices:
+		> AUG Para - Normal or extended 9x19mm Magazine
+		> AUG HBAR - HBAR Barrel and Extended Magazine
+	- On the 'reload_9' animation, changed the 3rd and 4th EventTable time value from 73/30 and 76/30 to 62.5/30 and 71/30 respectively to fix incorrect timing.
+	- On the 'reload' animation, changed the 3rd and 4th EventTable time value from 67/30 and 69/30 to 62/30 and 64/30 respectively to fix incorrect timing.
+	- On the 'reload_empty_9' animation, changed the 4th IKTimeLine value from 1 to 1.2 to fix an IK error.
+
+> Beretta
+	- Changed the CustomizePos value from (18, 30, 4) to (12.5, 30, 4)
+	- Added weapon display name changes depending on attachment choices:
+		> B-38 - RPK Barrel, Officer Slide
+		> Beretta Raffica - Raffica Conversion
+
+> G3SG1
+	- Added weapon display name changes depending on attachment choices:
+		> G3SG1SD - 450mm Whisper Barrel
+		> G3A3 - 450mm G3A3 Barrel
+		> G3KA4 - 400mm G3KA4 Barrel or 350mm Kurz Barrel
+
+> PP-Bizon
+	- Added weapon display name changes depending on attachment choices:
+		> PP-Vityaz - 30-Shot Saiga Box Magazine
+
+> Galil
+	- Changed display name to 'Galil SAR'
+	- Changed the CustomizePos value from (21, 35, 4) to (18.5, 32.5, 4)
+
+> Galil AR
+	- Changed the CustomizePos value from (21, 35, 4) to (18.5, 32.5, 4)
+
+> Glock-18C
+	- Changed the CustomizePos value from (19, 25, 3) to (17.5, 25, 3)
+	- Added weapon display name changes depending on attachment choices:
+		> Glock-18C - Automatic Conversion
+
+> CT Knife
+	- Changed the CustomizePos value from (-20, 15, -17) to (3, 20, -13)
+	- Changed the CustomizeAng value from (0, 90, 90) to (0, 45, -25)
+	- Changed the 'Assets' text to not include Insurgency: Sandstorm.
+
+> T Knife
+	- Changed the CustomizePos value from (-20, 15, -17) to (3, 20, -13)
+	- Changed the CustomizeAng value from (0, 90, 90) to (0, 45, -25)
+	- Changed the 'Assets' text to not include Insurgency: Sandstorm.
+
+> Benelli M3 Super 90
+	- Changed the CustomizePos value from (23, 40, 3) to (18, 30, 3)
+
+> M4A1-S
+	- Changed the CustomizePos value from (22, 40, 5) to (22, 33, 5)
+	- Added weapon display name changes depending on attachment choices:
+		> M16A3-S - 510mm A4 Barrel and Fixed Stock
+
+> M4A4
+	- Changed the CustomizePos value from (18, 35, 4) to (17.5, 30, 4.5)
+	- Added weapon display name changes depending on attachment choices:
+		> M16A3 - 510mm A4 Barrel and Fixed Stock
+		> SR-25 - 600mm Sniper Barrel and 20-Round Magazine - Sniper
+		> M4A4/M16A3 9mm SMG - 20 or 32-Round 9x19mm Mag (Added as a suffix)
+
+> M249
+	- Changed the CustomizePos value from (24, 45, 5) to (23, 35, 5)
+	- Added weapon display name changes depending on attachment choices:
+		> M249 Para - 330mm Paratrooper Barrel and Skeleton Stock
+
+> MAC-10
+	- Changed the CustomizePos value from (23, 30, 5) to (22, 25, 5)
+	- Added custom IronSights positions when using the Modified RIS System
+	- Fixed that the Modified RIS System moved the Optics position rather than the Side position
+	- Removed the ability to equip regular sights when the Modified RIS System is equipped (have to equip sights through the one included with the RIS)
+
+> MAG-7
+	- Changed the CustomizePos value from (25, 35, 5) to (26, 30, 6)
+	- Removed the Flipped Down Sights attachment
+
+> MP5
+	- Changed the CustomizePos value from (18, 36, 4) to (18, 30, 4)
+	- Added weapon display name changes depending on attachment choices:
+		> MP5K - Kurz Barrel and Handguard
+
+> MP5-SD
+	- Changed the CustomizePos value from (23, 35, 5) to (23, 30, 5)
+
+> MP7
+	- Changed the CustomizePos value from (19, 32, 5) to (18, 25, 3.5)
+
+> MP9
+	- Changed the CustomizePos value from (16, 32, 3.5) to (16, 26, 3.5)
+
+> Negev
+	- Changed the CustomizePos value from (27, 40, 4) to (27, 27.5, 4)
+
+> Nova
+	- Changed the CustomizePos value from (25, 40, 4) to (22.5, 30, 4)
+
+> P90
+	- Changed the CustomizePos value from (18, 20, 2) to (14, 25, 2)
+	- Added weapon display name changes depending on attachment choices:
+		> Frankenstein-90 - 20 or 30-Round NATO Mags
+
+> P250
+	- Changed the CustomizePos value from (19, 25, 3) to (16, 25, 3)
+
+> P2000
+	- Changed the CustomizePos value from (19, 25, 3) to (17.5, 23, 2)
+
+> R8 Revolver
+	- Moved the sight position further forward and made them incompatible when using the 6-Shot Cylinder
+	- Added weapon display name changes depending on attachment choices:
+		> .357 Revolver - 6-Shot Cylinder
+
+> Sawed-Off
+	- Changed the CustomizePos value from (26, 30, 3) to (23, 30, 3)
+	- Decreased ViewRecoilUpMult from 7 to 4
+	- Added RecoilMultSights set to value 0.25
+
+> SCAR-17
+	- Changed the CustomizePos value from (22, 25, 3) to (17, 30, 3)
+	- Added weapon display name changes depending on attachment choices:
+		> SCAR-16 - 20 or 30-Round 5.56mm Mags
+		> SCAR-BP-17/SCAR-BP-16 - Bullpup kit
+	- Fixed an LHIK issue with the Bullpup Kit
+
+> SCAR-20
+	- Changed the CustomizePos value from (20, 35, 1) to (23, 30, 4)
+
+> Scout
+	- Changed the CustomizePos value from (20, 35, 1) to (20, 35, 3)
+
+> SIG556
+	- Changed the CustomizePos value from (23, 37, 4) to (21, 30, 4)
+
+> SSG 08
+	- Changed the CustomizePos value from (24, 30, 3) to (22, 35, 3)
+
+> UMP-45
+	- Changed the CustomizePos value from (25, 25, 5) to (22.5, 30, 5)
+	- Added weapon display name changes depending on attachment choices:
+		> USC-45 - 350mm USC Barrel
+		> UMP-9 / USC-9 - 30-Shot 9x19mm Mag
+
+> USP-S
+	- Changed the CustomizePos value from (20, 20, 2.5) to (21.5, 25, 2.5)
+
+> XM1014
+	- Changed the CustomizePos value from (22, 25, 2) to (20, 30, 3)
+
+> Zeus x27
+	- Added short trivia
+
+[Attachments]
+> Universal
+	> Magnifier with Aimpoint CompM4
+		- Changed the Sights.Pos values:
+			- When flipped up - (0, 6, -1.6) to (0, 7, -1.57)
+			- When flipped down - (0, 6, -1.6) to (0, 7.5, -1.6)
+
+	> Magnifier with EOTech Sight
+		- Changed the Sights.Pos value when flipped up from (0, 6, -1.7) to (0, 7, -1.665)
+
+	> Magnifier with Kobra EKP-8-18
+		- Changed the Sights.Pos values:
+			- When flipped up - (0, 6.7, -1.7) to (0, 7, -1.65)
+			- When flipped down - (0, 6, -1.8) to (0, 6, -1.73)
+
+	> Magnifier with Aimpoint CompM4
+		- Changed the Sights.Pos values when flipped up from (0.18, 6, -1.15) to (0.165, 7, -1.15)
+
+> AWP
+	> 430mm Bull Barrel
+		- Rebalanced all of the stats:
+		From:
+			+ Muzzle Velocity +25% / Recoil -50%
+			- Max Range -10% / Sprint to Fire Time +35% / ADS Time -35% / Min Range -10%
+		To:
+			+ Recoil -10% / Sprint to Fire Time +10% / ADS Time +5%
+			- Max Range -10% / Min Range -20%
+
+	> 450mm Factory Barrel
+		- Rebalanced all of the stats:
+		From:
+			+ Max Range +10% / Sprint to Fire time -10% / ADS Time -10% / Min Range +10
+			- Muzzle Velocity -5% / Recoil +15%
+		To:
+			+ Sprint to Fire Time -5% / ADS Time -10%
+			- Muzzle Velocity -5% / Max Range -5% / Min Range -10%
+
+> PP-Bizon
+	> 30-Round Saiga Box Magazine
+		- Changed the display icon
+
+> G3SG1
+	> 450mm Whisper Barrel
+		- Rebalanced all of the stats:
+		From:
+			+ Muzzle Velocity +10% / Max Range +15% / Min Range +15%
+			- Sprint-to-Fire Time +15% / ADS Time +15% / Recoil +10%
+		To:
+			+ Recoil -15%
+			- Muzzle Velocity -15% / Max Range -25% / Sprint to Fire Time +5% / ADS Time +5% / Min Range -20%
+			
+	> 450mm G3A3 Barrel
+		- Rebalanced all of the stats:
+		From:
+			+ Muzzle Velocity +25% / Max Range +25% / Recoil -10% / Min Range +25%
+			- Sprint-to-Fire Time +10% / ADS Time +10%
+		To:
+			+ Sprint-to-Fire Time -5% / ADS Time -5%
+			- Muzzle Velocity -5% / Max Range -5% / Min Range -10%
+			
+	> 400mm G3KA4 Barrel
+		- Rebalanced all of the stats:
+		From:
+			+ Muzzle Velocity +25% / Max Range +25% / Recoil -10% / Min Range +25%
+			- Sprint-to-Fire Time +10% / ADS Time +10%
+		To:
+			+ Sprint-to-Fire Time -10% / ADS Time -10%
+			- Muzzle Velocity -10% / Max Range -10% / Min Range -15%
+			
+	> 350mm Kurz Barrel
+		- Rebalanced all of the stats:
+		From:
+			+ Muzzle Velocity +25% / Max Range +25% / Recoil -10% / Min Range +25%
+			- Sprint-to-Fire Time +10% / ADS Time +10%
+		To:
+			+ Sprint-to-Fire Time -12% / ADS Time -12%
+			- Muzzle Velocity -15% / Max Range -12% / Range +5% / Min Range -18%
+			
+	> Collapsible Stock
+		- Rebalanced all of the stats:
+		From:
+			+ ADS Time -15% / Spread -90% / Sprint to Fire Time +15%
+			- Recoil +15%
+		To:
+			+ ADS Time +10% / Sprint to Fire Time +10%
+			- Recoil -5%
+			
+	> Cheek Riser
+		- Rebalanced all of the stats:
+		From:
+			+ Recoil -10%
+			-ADS Time +10%
+		To:
+			+ ADS Time +5%
+
+> Galil SAR
+	> 30-Round 7.62mm Polymer Magazine
+		- Removed the magazine capacity increase and reload speed downside
+
+> Galil AR
+	> 40-Round 7.62mm Polymer Magazine
+		- Lowered magazine capacity increase from 45 to 40
+		- Decreased damage bonus from 25% to 15% to match the 30-Round variant
+		- Decreased reload speed and recoil nerfs from 20% to 15%
+
+> Benelli M3 Super 90
+	> 7-Round Tube
+		- Fixed that it now requires Extended Barrel in order to be used
+
+> M4A1-S
+	> 30-Round Magazine
+		- Added a 5% reload speed penalty
+		
+	> 50-Round Drum Magazine
+		- Fixed the missing 20% reload speed penalty
+
+> M4A4
+	> 32-Round 9x19mm Magazine and Adapter
+		- Fixed and changed the 0% reload speed buff to 5%
+
+	> 20-Round Magazine - Sniper
+		- Reduced the RPM penalty from 160RPM to 325RPM
+
+> MP7
+	> 40-Round Magazine
+		- Fixed the -15% reload speed benefit into a +10% penalty
+
+[Comments]
+> Dual weapons in general
+	- When it comes to the dual wielded weapons, I believe that they should have either a small or large boost in rate of fire, depending on the weapon.
+	- Additionally, I also believe that they shouldn't get a very big recoil reduction when "aiming". Sure, it should be noticable, but not heavily - you don't exactly have a stock or a good grip on the guns, after all.
+
+> Dual Deagles
+	- The damage was lowered due to the increase in rate of fire. Can still 1-shot at 84m ranges, so not too big of a deal.
+
+> Dual Glock-18
+	- The damage was lowered to be on-par with the non-dual wielded Glock-18.
+
+> Dual P250
+	- While sure, custom firing modes that is either semi-auto or a glorified 2-round burst is cool, it serves no purpose what so ever. Could also just be old code.
+
+> Dual Sawed-Offs & Sawed-Off
+	- I lowered the viewmodel kick due to it being rather insane. Sure, it's a sawed-off shotgun, but come the fuck on.
+
+> G3SG1 Attachments
+	- I believe that a ton of attachments can use rebalancing, but seeing that a shorter barrel on the G3SG1 increased range just made me say "Fuck it, I'll start here". So I rebalanced all of its barrel and stock attachments. Might move on with the magazines later on, who knows.

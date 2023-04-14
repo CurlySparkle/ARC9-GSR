@@ -97,15 +97,15 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Category = {"go_galilar_mag"}
 
-ATT.DamageMaxMult = 1.25
-ATT.DamageMinMult = 1.25
+ATT.DamageMaxMult = 1.15
+ATT.DamageMinMult = 1.15
 
 ATT.RPM = 600
 
-ATT.ClipSizeOverride = 45
-ATT.ReloadTimeMult = 1.2
-ATT.RecoilMult = 1.2
-ATT.RecoilKickMult = 1.2
+ATT.ClipSizeOverride = 40
+ATT.ReloadTimeMult = 1.15
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 1.15
 
 ATT.ActivateElements = {"mag_none"}
 ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"

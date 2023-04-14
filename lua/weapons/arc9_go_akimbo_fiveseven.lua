@@ -76,7 +76,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 452
+SWEP.RPM = 500
 
 SWEP.Firemodes = {
     {
@@ -109,6 +109,7 @@ SWEP.RecoilKick = 1.25
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultSights = 1.3
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true
@@ -200,7 +201,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 35, 2.5)
+SWEP.CustomizePos = Vector(18, 30, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)

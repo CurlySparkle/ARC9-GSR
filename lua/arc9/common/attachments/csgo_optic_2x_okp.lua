@@ -32,7 +32,7 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(0.18, 6, -1.15),
+        Pos = Vector(0.165, 7, -1.15),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ViewModelFOV = 56,

@@ -184,7 +184,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 35, 4)
+SWEP.CustomizePos = Vector(17.5, 30, 4.5)
 SWEP.CustomizeSnapshotPos = Vector(2, 5, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
@@ -654,6 +654,25 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("m4_barrel_long") and wep.Attachments[1].Installed then model:SetBodygroup(2,3) end
     if wep:HasElement("m4_barrel_sniper") then model:SetBodygroup(2,4) end
+end
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+	local name = "M4A4"
+
+	if att["csgo_m4_barrel_long"] and att["csgo_m4_stock_sniper"] then
+		name = "M16A3"
+	end
+
+	if att["csgo_m4_barrel_sniper"] and att["csgo_m4_mag_20"] then
+		name = "SR-25"
+	end
+
+	if att["csgo_m4_mag_25_9"] or att["csgo_m4_mag_32_9"] then
+		name = name .. " 9mm SMG"
+	end
+
+    return name
 end
 
 SWEP.Attachments = {

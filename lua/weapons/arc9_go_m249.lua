@@ -190,7 +190,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 45, 5)
+SWEP.CustomizePos = Vector(23, 35, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 6)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -589,6 +589,16 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("bipod_deployed") then model:SetBodygroup(3,1) end
+end
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_m249_barrel_short"] and att["csgo_m249_stock_skeleton"] then
+		name = "M249 Para"
+	end
+
+    return name
 end
 
 SWEP.Attachments = {

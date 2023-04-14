@@ -49,7 +49,8 @@ ATT.SprintToFireTimeAdd = 0.15
 ATT.AimDownSightsTimeAdd = 0.15
 
 ATT.ActivateElements = {"mag_long"}
-ATT.ExcludeElements = {"barrel_short"}
+ATT.RequireElements = {"barrel_long"}
+-- ATT.ExcludeElements = {"barrel_short"}
 
 ARC9.LoadAttachment(ATT, "csgo_xm1014_mag_8")
 
@@ -129,7 +130,8 @@ ATT.SprintToFireTimeAdd = 0.075
 ATT.AimDownSightsTimeAdd = 0.075
 
 ATT.ActivateElements = {"mag_long"}
-ATT.ExcludeElements = {"barrel_short","barrel_default"}
+ATT.RequireElements = {"barrel_long"}
+-- ATT.ExcludeElements = {"barrel_short","barrel_default"}
 
 ARC9.LoadAttachment(ATT, "csgo_m3_mag_7")
 -------------------------------------------------------------------------------

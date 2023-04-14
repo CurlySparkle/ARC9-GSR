@@ -61,7 +61,7 @@ ATT.Free = false
 ATT.Category = {"go_mag_m4"}
 ATT.ClipSizeOverride = 20
 ATT.DamageMult = 1.25
-ATT.RPM = 160
+ATT.RPM = 325
 ATT.DamageMaxMult = 1.35
 ATT.DamageMinMult = 1.35
 ATT.RecoilMult = 1.55
@@ -175,7 +175,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mag_m4"}
 ATT.ClipSizeOverride = 32
-ATT.ReloadTimeMult = 1
+ATT.ReloadTimeMult = 0.95
 
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10

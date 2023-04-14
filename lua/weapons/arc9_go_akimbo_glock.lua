@@ -45,7 +45,7 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 30 -- Damage done at point blank range
+SWEP.DamageMax = 26 -- Damage done at point blank range
 SWEP.DamageMin = 10 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
@@ -76,11 +76,10 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 452
-
 SWEP.Firemodes = {
     {
         Mode = 1,
+		RPM = 800,
         -- add other attachment modifiers
     },
     {
@@ -124,6 +123,7 @@ SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultSights = 1.2
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true
@@ -215,7 +215,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 35, 2.5)
+SWEP.CustomizePos = Vector(18, 32, 2.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)

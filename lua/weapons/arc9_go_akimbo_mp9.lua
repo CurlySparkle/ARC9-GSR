@@ -88,12 +88,13 @@ SWEP.Firemodes = {
     },
     {
         Mode = 1,
+		Recoil = 0.55,
     }
 }
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.5
+SWEP.Recoil = 1.1
 
 SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
 
@@ -115,6 +116,7 @@ SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultSights = 1.15
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true
@@ -206,7 +208,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 40, 2)
+SWEP.CustomizePos = Vector(16, 40, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)

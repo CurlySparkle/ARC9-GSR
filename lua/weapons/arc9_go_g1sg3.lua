@@ -785,6 +785,24 @@ end
   -- return data
 -- end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+	
+	if att["csgo_g3_barrel_sd"] then
+		name = "G3SG1SD"
+	end
+	
+	if att["csgo_g3_barrel_g3a3"] or att["csgo_g3_barrel_g3a3_smg"] then
+		name = "G3A3"
+	end
+
+	if att["csgo_g3_barrel_medium"] or att["csgo_g3_barrel_medium_smg"] or att["csgo_g3_barrel_short"] or att["csgo_g3_barrel_short_smg"] then
+		name = "G3KA4"
+	end
+	
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Top",
