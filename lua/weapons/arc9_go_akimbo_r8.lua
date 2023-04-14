@@ -335,6 +335,16 @@ SWEP.AttachmentElements = {
   },
 }
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_r8_model"] then
+		name = "Dual .357 Revolvers"
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Model",

@@ -104,7 +104,8 @@ Weapons not listed did not have anything changed.
 	[th]MAC-10[/th]
 	[th]Fixed the aim position when using the RIS attachment
 	Fixed the side rail position when using the RIS attachment
-	Removed regular optics category when using the RIS attachment[/th]
+	Removed regular optics category when using the RIS attachment
+	Fixed that it could chamber an extra round[/th]
 [/tr][tr]
 	[th]MP5[/th]
 	[th]Added an alternative display name depending on attachment choice[/th]

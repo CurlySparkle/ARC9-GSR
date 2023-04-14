@@ -31,6 +31,10 @@
 	- Increased RPM from 452 to 800
 	- Removed the custom firing modes and replaced it with a traditional one
 
+> Dual R8 Revolvers
+	- Added weapon display name changes depending on attachment choices:
+		> Dual .357 Revolvers - 6-Shot Cylinder
+
 > Dual Sawed-Off
 	- Changed display name to 'Dual Sawed-Offs'
 	- On the 'Both' firemode, decreased RecoilMult from 2 to 1.25
@@ -123,6 +127,7 @@
 	- Added custom IronSights positions when using the Modified RIS System
 	- Fixed that the Modified RIS System moved the Optics position rather than the Side position
 	- Removed the ability to equip regular sights when the Modified RIS System is equipped (have to equip sights through the one included with the RIS)
+	- Fixed that a +1 round could be chambered
 
 > MAG-7
 	- Changed the CustomizePos value from (25, 35, 5) to (26, 30, 6)
