@@ -20,7 +20,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Valve/New World Interactive"
 }
 
 SWEP.Description = [[As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range.]]

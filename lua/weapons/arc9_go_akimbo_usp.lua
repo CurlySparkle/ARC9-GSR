@@ -20,7 +20,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Valve/New World Interactive"
 }
 
 SWEP.Description = [[A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise.]]

@@ -14,7 +14,7 @@ SWEP.Class = "Melee"
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive"
+    Assets = "Valve"
 }
 
 SWEP.Description = [[Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill.]]

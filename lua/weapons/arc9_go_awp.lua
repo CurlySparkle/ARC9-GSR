@@ -20,7 +20,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Valve/New World Interactive"
 }
 
 SWEP.Description = [[High risk and high reward, the infamous AWP is recognizable by its signature report and one-shot, one-kill policy.]]

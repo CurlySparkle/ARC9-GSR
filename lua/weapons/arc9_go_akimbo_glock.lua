@@ -21,7 +21,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Valve/New World Interactive"
 }
 
 SWEP.Description = [[A pair of Glocks means twice the capacity and a twice as lethal burst fire.]]

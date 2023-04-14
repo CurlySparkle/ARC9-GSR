@@ -20,7 +20,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Valve/New World Interactive"
 }
 
 SWEP.Description = [[Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire.]]

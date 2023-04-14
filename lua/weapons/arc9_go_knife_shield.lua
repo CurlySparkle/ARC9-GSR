@@ -12,7 +12,7 @@ SWEP.Class = "Melee"
 
 SWEP.Credits = {
     Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Counter-Strike: Global Offensive/Insurgency: Sandstorm"
+    Assets = "Valve"
 }
 
 SWEP.Description = [[A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers.]]
