@@ -69,6 +69,7 @@
 	- Added weapon display name changes depending on attachment choices:
 		> B-38 - RPK Barrel, Officer Slide
 		> Beretta Raffica - Raffica Conversion
+	- Blocks the Enhanced Burst feature when the Raffica Conversion is equipped
 
 > G3SG1
 	- Added weapon display name changes depending on attachment choices:

@@ -909,7 +909,7 @@ L["csgo_elite_slide_p38.description"] = "Kompakt ersatt slutstycke och pipa som 
 
 L["csgo_elite_slide_raffica.printname"] = "Raffica-Konvertering"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Konverterar Beretta:n att skjuta i 3-skottsalva.\nInstallerar också ett framgrepp och kompensator som förbättrar räckvidden och rekylkontrollen med kostnad på vapenhantering."
+L["csgo_elite_slide_raffica.description"] = "Konverterar Beretta:n att skjuta i 3-skottsalva.\nInstallerar också ett framgrepp och kompensator som förbättrar räckvidden och rekylkontrollen med kostnad på vapenhantering.\nInte kompatibel med <Förbättrad Salvo> färdigheten."
 
 -- L["csgo_elite_ik_bodge.printname"] = "Alt. Hållstil"
 -- L["csgo_elite_ik_bodge.compactname"] = "Alt. Håll."

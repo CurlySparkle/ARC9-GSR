@@ -906,7 +906,7 @@ L["csgo_elite_slide_p38.description"] = "Compact slide and barrel replacement th
 
 L["csgo_elite_slide_raffica.printname"] = "Raffica Conversion"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Converts the Beretta to fire in 3-round burst.\nAlso adds a foregrip and compensator that improves range and recoil control at the cost of weapon handling."
+L["csgo_elite_slide_raffica.description"] = "Converts the Beretta to fire in 3-round burst.\nAlso adds a foregrip and compensator that improves range and recoil control at the cost of weapon handling.\nNot compatible with the <Enhanced Burst> perk."
 
 -- L["csgo_elite_ik_bodge.printname"] = "Alt. Hold Style"
 -- L["csgo_elite_ik_bodge.compactname"] = "Alt. Hold"

@@ -123,6 +123,7 @@ ATT.Free = true
 
 ATT.Category = {"go_perk"}
 ATT.ActivateElements = {"perk_burst"}
+ATT.ExcludeElements = {"slide_raffica"}
 
 ATT.FiremodesOverride = {
     {

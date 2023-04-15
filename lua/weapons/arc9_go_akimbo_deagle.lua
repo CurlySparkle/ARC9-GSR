@@ -412,6 +412,7 @@ SWEP.HookP_NameChange = function(self, name)
 	{
 		-- Antiqued
 		etched = "Heirloom",
+		handcannon = "Hand Cannon",
 		constable = "Directive",
 		corinthian = "Corinthian",
 		naga = "Naga",

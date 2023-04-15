@@ -80,7 +80,8 @@ Weapons not listed did not have anything changed.
 [b][u]Pistols[/u][/b]
 [table][tr]
 	[th]Beretta[/th]
-	[th]Added various alternative display names depending on attachment choice[/th]
+	[th]Added various alternative display names depending on attachment choice
+	Can no longer equip the Enhanced Burst perk when Raffica Conversion is equipped[/th]
 [/tr][tr]
 	[th]Glock-18[/th]
 	[th]Added an alternative display name depending on attachment choice[/th]
