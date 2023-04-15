@@ -465,6 +465,10 @@ SWEP.HookP_NameChange = function(self, name)
 		mecha = "Mecha Industries",
 	})
 
+	if att["csgo_skin_deagle_admin"] then
+		name = name .. " | Administrator"
+	end
+
 	if att["arc9_stat_stattrak"] then
 		name = "StatTrak™ " .. name
 	end

@@ -192,14 +192,27 @@ L["csgo_rail_ub_1.description"] = "En picatinnyskena som tillåter installation 
 -- Skins
 L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssey"
+L["csgo_skin_galilar_odyssy.description"] = [[Gunsmith Reloaded-Kollektionen
+
+Den har fått en stark orange och svart hexagonal omdesign.
+
+"Bordell är bannlyst" - Någon dum fågel, jag vet inte]]
 
 L["csgo_skin_usp_nostalgia.printname"] = "USP-S | Nostalgia"
 L["csgo_skin_usp_nostalgia.compactname"] = "Nostalgia"
-L["csgo_skin_usp_nostalgia.description"] = "Gammaldags utseende till USP-S."
+L["csgo_skin_usp_nostalgia.description"] = [[Gunsmith Reloaded-Kollektionen
 
-L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Administratör"
+K&M tog med ett klassiskt, taktiskt CT-vapen, nu tillbaka för modern användning.
+
+"Ljuddämpare inkluderad som standard ännu en gång"]]
+
+L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Administrator"
 L["csgo_skin_deagle_admin.compactname"] = "Admin"
-L["csgo_skin_deagle_admin.description"] = "Admin-vapen gå pang pang."
+L["csgo_skin_deagle_admin.description"] = [[Gunsmith Reloaded-Kollektionen
+
+Ett eldmonster har förtärt denna handkanon.
+
+"Han twerkar inte i alla fall" - Någon dum fågel, jag vet inte]]
 
 -- Stock
 L["csgo_stock_tube.printname"] = "Buffer Tube - Lång"

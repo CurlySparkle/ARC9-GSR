@@ -190,16 +190,30 @@ L["csgo_rail_ub_1.compactname"] = "UB Rail"
 L["csgo_rail_ub_1.description"] = "A picatinny rail that allows attaching various foregrips and underbarrel weaponry."
 
 -- Skins
+-- For these, try to have the descriptions resemble CS:GO.
 L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssey"
+L["csgo_skin_galilar_odyssy.description"] = [[The Gunsmith Reloaded Collection
+
+It has been given a bright orange and black hexagonal design overhaul.
+
+"Brothel is banned" - Some dumb bird, Idk]]
 
 L["csgo_skin_usp_nostalgia.printname"] = "USP-S | Nostalgia"
 L["csgo_skin_usp_nostalgia.compactname"] = "Nostalgia"
-L["csgo_skin_usp_nostalgia.description"] = "Old-school skin for the USP-S."
+L["csgo_skin_usp_nostalgia.description"] = [[The Gunsmith Reloaded Collection
+
+K&M brought us a classic tactical CT weapon, now brought back for modern use.
+
+"Suppressor included by default once again"]]
 
 L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Administrator"
 L["csgo_skin_deagle_admin.compactname"] = "Admin"
-L["csgo_skin_deagle_admin.description"] = "Admin gun go bang bang."
+L["csgo_skin_deagle_admin.description"] = [[The Gunsmith Reloaded Collection
+
+A fire monster has consumed this hand cannon.
+
+"At least he isn't twerking" - Some dumb bird, Idk]]
 
 -- Stock
 L["csgo_stock_tube.printname"] = "Buffer Tube - Long"

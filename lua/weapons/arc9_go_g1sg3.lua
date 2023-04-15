@@ -799,7 +799,41 @@ SWEP.HookP_NameChange = function(self, name)
 	if att["csgo_g3_barrel_medium"] or att["csgo_g3_barrel_medium_smg"] or att["csgo_g3_barrel_short"] or att["csgo_g3_barrel_short_smg"] then
 		name = "G3KA4"
 	end
-	
+
+-- For Skins
+	local skin = "moka_csgo_skin_g3sg1_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		chronos = "Chronos",
+		blacksand = "Black Sand",
+		executioner = "The Executioner",
+		glade = "Dream Glade",
+		tacticalmap = "Keeping Tabs",
+		
+		-- Gunsmith
+		buccaneer = "High Seas",
+		cetme_redux = "Hunter",
+		disrupt = "Digital Mesh",
+		flux_purple = "Flux",
+		savage = "Scavenger",
+		ventilator = "Ventilator",
+		viper_yellow = "Stinger",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 

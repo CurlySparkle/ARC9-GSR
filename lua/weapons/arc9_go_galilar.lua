@@ -490,6 +490,50 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep.Attachments[3].Installed then model:SetBodygroup(4,4) end
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_galilar_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		cerbrus = "Cerberus",
+		abrasion = "Chatterbox",
+		camo = "Black Sand",
+		candychaos = "Sugar Rush",
+		chroma_pink = "Chromatic Aberration",
+		destroyer = "Destroyer",
+		eco = "Eco",
+		particles = "Rocket Pop",
+		
+		-- Gunsmith
+		incinerator = "Firefight",
+		nightwing = "Stone Cold",
+		phoenix = "Connexion",
+		vandal = "Vandal",
+	})
+
+	if att["csgo_skin_galilar_odyssy"] then
+		name = name .. " | Odyssey"
+	end
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Scope",
