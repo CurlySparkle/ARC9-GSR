@@ -648,6 +648,39 @@ SWEP.HookP_NameChange = function(self, name)
 		name = "PP-Vityaz"
 	end
 
+-- For Skins
+	local skin = "moka_csgo_skin_bizon_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		antique = "Antique",
+		all_in = "High Roller",
+		citizen = "Photic Zone",
+		curse = "Judgement of Anubis",
+		noxious = "Fuel Rod",
+		riot = "Night Riot",
+		road_warrior = "Embargo",
+		spacecat = "Space Cat",
+		
+		-- Gunsmith
+		flasher = "Lumen",
+		hellraider = "Runic",
+		harvester = "Harvester",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 

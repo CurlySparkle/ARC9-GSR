@@ -551,6 +551,7 @@ SWEP.HookP_NameChange = function(self, name)
 		viper = "Atheris",
 		virus = "Containment Breach",
 		wildfire = "Wildfire",
+		zone9 = "Asiimov",
 		
 		-- Gunsmith
 		enamel = "The Prince",

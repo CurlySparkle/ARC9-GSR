@@ -718,6 +718,10 @@ SWEP.HookP_NameChange = function(self, name)
 		-- Custom
 		wildlotus = "Wild Lotus",
 		xray = "X-Ray",
+		fireserpent = "Fire Serpent",
+		jaguar = "Panthera onca",
+		panther = "Jaguar",
+		pinstripe = "Emerald Pinstripe",
 		headshot = "Head Shot",
 		neonrider = "Neon Rider",
 		anubis = "Legion of Anubis",
@@ -731,6 +735,8 @@ SWEP.HookP_NameChange = function(self, name)
 		point_disarray = "Point Disarray",
 		winter_sport = "Frontside Misty",
 		anarchy = "Neon Revolution",
+		rubber = "Vulcan",
+		tribute = "Wasteland Rebel",
 		
 		-- Gunsmith
 		gold_arabesque = "Gold Arabesque",
