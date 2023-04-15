@@ -576,6 +576,8 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_sg556",
+		InstalledElements = {"skins"},
+		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
     },
     {
@@ -601,6 +603,8 @@ SWEP.Attachments = {
     {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
+		InstalledElements = {"camos"},
+		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
