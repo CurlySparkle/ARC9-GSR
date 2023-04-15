@@ -518,6 +518,57 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("stock_lc10") then model:SetBodygroup(4,2) end
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_awp_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		medusa = "Medusa",
+		twine = "Worm God",
+		
+		-- Custom
+		dragon = "Dragon Lore",
+		favela = "Corticera",
+		chroma_pink = "Chromatic Aberration",
+		hannya = "Oni Taiji",
+		hyper_beast = "Hyper Beast",
+		mastery = "Elite Build",
+		neonoir = "Neo-Noir",
+		psychopath = "Fever Dream",
+		vein = "Capillary",
+		viper = "Atheris",
+		virus = "Containment Breach",
+		wildfire = "Wildfire",
+		
+		-- Gunsmith
+		enamel = "The Prince",
+		gungnir = "Gungnir",
+		hydra = "Desert Hydra",
+		death = "Mortis",
+		exoskeleton = "Exoskeleton",
+		limbo_snake = "Duality",
+		phobos = "Phobos"
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Scope",
@@ -590,11 +641,15 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_awp",
+		InstalledElements = {"skins"},
+		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
     },
     {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
+		InstalledElements = {"camos"},
+		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {

@@ -697,9 +697,56 @@ SWEP.HookP_NameChange = function(self, name)
 		if att["csgo_ak47_barrel_short"] and att["csgo_ak47_stock_skeleton"] then
 			name = "AKS-74U"
 		end
-		
 	end
-	
+
+-- For Skins
+	local skin = "moka_csgo_skin_ak47_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		cartel = "Cartel",
+		
+		-- Custom
+		wildlotus = "Wild Lotus",
+		xray = "X-Ray",
+		headshot = "Head Shot",
+		neonrider = "Neon Rider",
+		anubis = "Legion of Anubis",
+		asiimov = "Asiimov",
+		aztec = "Uncharted",
+		cogthings = "Ice Coaled",
+		courage = "Aquamarine Revenge",
+		mastery = "Elite Build",
+		nightwish = "Nightwish",
+		phantom_disruptor = "Phantom Disruptor",
+		point_disarray = "Point Disarray",
+		winter_sport = "Frontside Misty",
+		anarchy = "Neon Revolution",
+		
+		-- Gunsmith
+		gold_arabesque = "Gold Arabesque",
+		colony01_red = "Orbit Mk01",
+		abstract = "Leet Museo",
+		bloodsport = "Bloodsport",
+		empress = "The Empress",
+		nibbler = "Rat Rod",
+		professional = "Slate",
+		supercharged = "Fuel Injector"
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 
@@ -798,6 +845,8 @@ SWEP.Attachments = {
         PrintName = "Skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_ak47",
+		InstalledElements = {"skins"},
+		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
     },
     {
@@ -818,6 +867,8 @@ SWEP.Attachments = {
     {
         PrintName = "Cosmetic",
         Category = {"universal_camo"},
+		InstalledElements = {"camos"},
+		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
