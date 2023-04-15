@@ -735,6 +735,7 @@ SWEP.HookP_NameChange = function(self, name)
 		point_disarray = "Point Disarray",
 		winter_sport = "Frontside Misty",
 		anarchy = "Neon Revolution",
+		elegantred = "Redline",
 		rubber = "Vulcan",
 		tribute = "Wasteland Rebel",
 		
