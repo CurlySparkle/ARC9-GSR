@@ -722,6 +722,7 @@ SWEP.HookP_NameChange = function(self, name)
 		jaguar = "Panthera onca",
 		panther = "Jaguar",
 		pinstripe = "Emerald Pinstripe",
+		well_travelled = "Jet Set",
 		headshot = "Head Shot",
 		neonrider = "Neon Rider",
 		anubis = "Legion of Anubis",

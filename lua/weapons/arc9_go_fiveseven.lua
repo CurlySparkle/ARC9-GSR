@@ -384,6 +384,7 @@ SWEP.HookP_NameChange = function(self, name)
     GetSkinNames( 
 	{
 		-- Antiqued
+		feathers = "Fowl Play",
 		scumbria2 = "Scumbria",
 		
 		-- Custom

@@ -432,12 +432,16 @@ SWEP.HookP_NameChange = function(self, name)
 		cartel = "Cartel",
 		
 		-- Custom
+		season = "Black Limba",
 		rally = "Twin Turbo",
 		evil_flora = "Flora Carnivora",
 		dragons = "Dualing Dragons",
 		beware = "Melondrama",
+		urbanstorm = "Urban Shock",
+		retribution = "Retribution",
 		
 		-- Gunsmith
+		mother_of_pearl = "Duelist",
 		golden_venice = "Royal Consorts",
 		tread = "Tread",
 		classic = "Elite 1.6",

@@ -670,6 +670,7 @@ SWEP.HookP_NameChange = function(self, name)
 		riot = "Night Riot",
 		road_warrior = "Embargo",
 		spacecat = "Space Cat",
+		osiris = "Osiris",
 		
 		-- Gunsmith
 		flasher = "Lumen",
