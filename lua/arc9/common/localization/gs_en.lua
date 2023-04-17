@@ -215,6 +215,14 @@ A fire monster has consumed this hand cannon.
 
 "At least he isn't twerking" - Some dumb bird, Idk]]
 
+L["csgo_skin_knife_ct_gold.printname"] = "Golden CT Knife"
+L["csgo_skin_knife_ct_gold.compactname"] = "Gold"
+L["csgo_skin_knife_ct_gold.description"] = "Bling bling."
+
+L["csgo_skin_knife_t_gold.printname"] = "Golden T Knife"
+L["csgo_skin_knife_t_gold.compactname"] = "Gold"
+L["csgo_skin_knife_t_gold.description"] = "Bling bling."
+
 -- Stock
 L["csgo_stock_tube.printname"] = "Buffer Tube - Long"
 L["csgo_stock_tube.compactname"] = "B. Tube (L)"

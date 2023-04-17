@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/csgo\knife_ct\gg\knife_ct"
+	"$phongexponenttexture" "models/csgo\knife_ct\gg\knife_ct_exponent"
+
+	"$phong" "1"
+
+	"$phongboost" ".3"
+	"$phongalbedoboost" "30"
+	"$phongfresnelranges" "[.8 .8 1]"
+
+	"$basemapalphaphongmask" "1"
+
+	"$phongalbedotint" "1"
+
+	"$phongdisablehalflambert" "1"
+
+	"$envmap" "env_cubemap"
+	"$baseAlphaEnvMapMask" "1" 
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.4 .3 .15]"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "3"
+	"$rimlightboost" "3.0"
+
+}
+
+
+

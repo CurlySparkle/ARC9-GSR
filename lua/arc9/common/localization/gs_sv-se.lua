@@ -190,6 +190,7 @@ L["csgo_rail_ub_1.compactname"] = "UM Skena"
 L["csgo_rail_ub_1.description"] = "En picatinnyskena som tillåter installation av diverse framgrepp och undermonterade vapen."
 
 -- Skins
+-- For these, try to have the descriptions resemble CS:GO.
 L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.description"] = [[Gunsmith Reloaded-Kollektionen
@@ -213,6 +214,14 @@ L["csgo_skin_deagle_admin.description"] = [[Gunsmith Reloaded-Kollektionen
 Ett eldmonster har förtärt denna handkanon.
 
 "Han twerkar inte i alla fall" - Någon dum fågel, jag vet inte]]
+
+L["csgo_skin_knife_ct_gold.printname"] = "Gyllene CT-Kniv"
+L["csgo_skin_knife_ct_gold.compactname"] = "Guld"
+L["csgo_skin_knife_ct_gold.description"] = "Bling bling."
+
+L["csgo_skin_knife_t_gold.printname"] = "Gyllene T-Kniv"
+L["csgo_skin_knife_t_gold.compactname"] = "Guld"
+L["csgo_skin_knife_t_gold.description"] = "Bling bling."
 
 -- Stock
 L["csgo_stock_tube.printname"] = "Buffer Tube - Lång"

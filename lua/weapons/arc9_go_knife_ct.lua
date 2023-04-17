@@ -222,6 +222,16 @@ SWEP.Animations = {
     },
 }
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_skin_knife_ct_gold"] then
+		name = "Golden " .. name
+	end
+
+    return name
+end
+
 -------------------------- ATTACHMENTS
 
 SWEP.Attachments = {
