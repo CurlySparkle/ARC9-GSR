@@ -398,6 +398,59 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_glock_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		dark_fall = "Ironwork",
+		flames_blue_green = "Bunsen Burner",
+		
+		-- Custom
+		eyecontact = "Vogue",
+		hero = "Sacrifice",
+		indigo = "Off World",
+		lastrike2 = "Last Strike",
+		moon_rabbit = "Umbral Rabbit",
+		noir = "Neo-Noir",
+		snackattack = "Snack Attack",
+		wasteland_rebel = "Wasteland Rebel",
+		corroden = "Oxide Blaze",
+		warmaiden = "Bullet Queen",
+		weasel1j = "Weasel",
+		liquescent = "Water Elemental",
+		
+		-- Gunsmith
+		elite_camo = "Winterized",
+		polymer = "Clear Polymer",
+		thunder_dust = "Warhawk",
+		award = "Royal Legion",
+		wrathys = "Wraiths",
+	})
+
+	if att["csgo_skin_deagle_admin"] then
+		name = name .. " | Administrator"
+	end
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Slide",

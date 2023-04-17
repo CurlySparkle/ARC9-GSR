@@ -465,6 +465,7 @@ SWEP.HookP_NameChange = function(self, name)
 	{
 		-- Antiqued
 		contour = "Valence",
+		jinn = "Djinn",
 		staffsgt = "Sergeant",
 		
 		-- Custom
