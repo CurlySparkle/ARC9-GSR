@@ -179,7 +179,7 @@ L["csgo_rail_optic_m249.description"] = "Skena monterat skensystem som tillåter
 
 L["csgo_rail_optic_mac.printname"] = "Anpassat RIS-System"
 L["csgo_rail_optic_mac.compactname"] = "RIS"
-L["csgo_rail_optic_mac.description"] = "Anpassat RIS-system gjort till MAC-10:an. Tillåter installation av sikten längre fram.\nErsätter manöverhandtaget med en vinklad en."
+L["csgo_rail_optic_mac.description"] = "Anpassat RIS-system gjort till MAC-10:an. Tillåter installation av sikten längre fram.\nErsätter manöverhandtaget med en vinklad."
 
 L["csgo_rail_tactical.printname"] = "Anpassad Taktisk Skena"
 L["csgo_rail_tactical.compactname"] = "Sidoskena"

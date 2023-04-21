@@ -716,7 +716,7 @@ SWEP.HookP_NameChange = function(self, name)
 		cartel = "Cartel",
 		
 		-- Custom
-		wildlotus = "Wild Lotus",
+		island_floral = "Wild Lotus",
 		xray = "X-Ray",
 		fireserpent = "Fire Serpent",
 		jaguar = "Panthera onca",

@@ -598,6 +598,38 @@ SWEP.HookP_NameChange = function(self, name)
 		name = "M249 Para"
 	end
 
+-- For Skins
+	local skin = "moka_csgo_skin_m249_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skinname in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. (skinname or "")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		aztec = "Aztec",
+		
+		-- Custom
+		deep_relief = "Deep Relief",
+		downvote = "Downtown",
+		sektor = "System Lock",
+		spectre = "Spectre",
+		
+		-- Gunsmith
+		combine = "O.S.I.P.R.",
+		nebula_crusader = "Nebula Crusader",
+		warbird_veteran = "Warbird",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 
