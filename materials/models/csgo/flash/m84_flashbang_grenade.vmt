@@ -20,4 +20,13 @@
 	"$envmaptint" 		"[.01 .01 .01]"
 
 	"$GRADIENTTEXTURE" "models/csgo/flash/m84_flashbang_gradiant"
+
+	 Proxies {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.5"
+            "min" "0"
+            "max" "0.3"
+        }
+	}
 }

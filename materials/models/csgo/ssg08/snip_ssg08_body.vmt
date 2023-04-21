@@ -14,7 +14,7 @@
 	//"$phongexponent"			"55"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
-	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
 	"$rimlight"					"0"
 	"$rimlightexponent"			"80"	
@@ -31,6 +31,12 @@
 			camoScale $detailscale
             blend $detailblendfactor
 		}
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.5"
+            "min" "0"
+            "max" "0.3"
+        }
 	}
 }
 

@@ -19,4 +19,13 @@
 	"$baseAlphaEnvMapMask" "1" 
 	"$envmapfresnel" "1"
 	"$envmaptint" 		"[.01 .01 .01]"
+
+	 Proxies {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.5"
+            "min" "0"
+            "max" "0.3"
+        }
+	}
 }

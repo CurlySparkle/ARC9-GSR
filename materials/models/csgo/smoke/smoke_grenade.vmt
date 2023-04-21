@@ -18,4 +18,13 @@
 	"$envmapfresnel" "1"
 	"$envmaptint" 		"[.3 .3 .4]"
 
+
+	 Proxies {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.5"
+            "min" "0"
+            "max" "0.3"
+        }
+	}
 }
