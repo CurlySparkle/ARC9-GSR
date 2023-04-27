@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "LMGs"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_lmg")
 
-SWEP.PrintName = "Negev"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_negev")
 
-SWEP.Class = "Light Machine Gun"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_lmg")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Israel",
-    ["Caliber"] = "5.56×45mm NATO",
-    ["Weight (Loaded)"] = "7.6 kg",
-    ["Projectile Weight"] = "62 gr",
-    ["Muzzle Velocity"] = "2,789 ft/s",
-    ["Muzzle Energy"] = "1,452 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_israel"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "5.56×45mm NATO",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "7.6 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "62 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "2,789 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,452 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_negev")
 
 SWEP.ViewModel = "models/weapons/csgo/c_mach_negev.mdl"
 SWEP.WorldModel = "models/weapons/w_mach_m249para.mdl"
@@ -621,16 +621,16 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = ARC9:GetPhrase("csgo_category_muzzle"),
         Bone = "v_weapon.negev_parent",
         Pos = Vector(0, -5.15, 24.2),
         Ang = Angle(90, 0, -90),
 		Scale = 1.2,
     },
     {
-        PrintName = "Scope",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.negev_parent",
         Pos = Vector(0, -6.4, 1.2),
         Ang = Angle(90, 0, -90),
@@ -640,7 +640,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     -- {
-        -- PrintName = "Top",
+        -- PrintName = ARC9:GetPhrase("csgo_category_top"),
         -- Bone = "v_weapon.negev_parent",
         -- Pos = Vector(0, -5.7, 2.5),
         -- Ang = Angle(90, 0, -90),
@@ -649,7 +649,7 @@ SWEP.Attachments = {
         -- CorrectiveAng = Angle(-0.85, 0, 0),
     -- },
     {
-        PrintName = "Side",
+        PrintName = ARC9:GetPhrase("csgo_category_side"),
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.negev_parent",
@@ -657,7 +657,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract","go_negev_stock"},
         Bone = "v_weapon.negev_parent",
@@ -667,7 +667,7 @@ SWEP.Attachments = {
 		Scale = 1.2,
     },
     -- {
-        -- PrintName = "Bottom",
+        -- PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         -- DefaultAttName = "Default",
         -- Category = "csgo_rail_ub",
         -- Bone = "v_weapon.negev_parent",
@@ -677,7 +677,7 @@ SWEP.Attachments = {
 		-- Scale = 1,
     -- },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip"},
         Bone = "v_weapon.negev_parent",
@@ -686,21 +686,21 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         --Bone = "v_weapon.AK47_clip",
         Category = "go_ammo",
         --Icon_Offset = Vector(0, 1, 1),
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Category = "go_negev_mag",
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_negev",
 		InstalledElements = {"skins"},
@@ -708,45 +708,45 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_negev_view"
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_b.mdl",
         Category = "stickers",
     },
     -- {
-        -- PrintName = "Sticker",
+        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         -- StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_c.mdl",
         -- Category = "stickers",
     -- },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.negev_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(1, -4, 2), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

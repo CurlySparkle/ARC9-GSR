@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Akimbos"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_akimbo")
 
-SWEP.PrintName = "Dual Deagles"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_akimbo_deagle")
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistols")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Israel/United States",
-    ["Caliber"] = ".50 Action Express",
-    ["Weight (Loaded)"] = "4 kg",
-    ["Projectile Weight"] = "300 gr",
-    ["Muzzle Velocity"] = "1,542 ft/s",
-    ["Muzzle Energy"] = "2,148 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_israel_and_usa"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".50 Action Express",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "4 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "300 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,542 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "2,148 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_akimbo_deagle")
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_deagle.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
@@ -447,7 +447,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Slide",
+        PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		Bone = "v_weapon.deagle_parent",
         Category = "go_deagle_long_slide",
         Bone = "tag_pistol_attachments_l",
@@ -461,7 +461,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
         Bone = "tag_pistol_attachments_l",
@@ -475,7 +475,7 @@ SWEP.Attachments = {
         Scale = 0.8,
     },
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "tag_pistol_attachments",
         Pos = Vector(4.2, -0.05, 1.95),
         Ang = Angle(0, 0, 0),
@@ -489,7 +489,7 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "tag_pistol_attachments",
@@ -503,20 +503,20 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
         Category = "go_mag"
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Category = "go_ammo",
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_deagle",
 		InstalledElements = {"skins"},
@@ -524,34 +524,34 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_deagle_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_deagle_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_deagle_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_deagle_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "tag_pistol_attachments",
         Pos = Vector(4, -0.4, 0),

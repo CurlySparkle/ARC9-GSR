@@ -4,27 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Pistols"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_pistol")
 
-SWEP.PrintName = "USP-S"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_usp")
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistol")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Germany",
-    ["Caliber"] = ".45 ACP",
-    ["Weight (Loaded)"] = "1 kg",
-    ["Projectile Weight"] = "230 gr",
-    ["Muzzle Velocity"] = "1,148.29 ft/s",
-    ["Muzzle Energy"] = "913 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_germany"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".45 ACP",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "1 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "230 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,148.29 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "913 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise.
-Can toggle the suppressor on and off. While unsuppressed, the weapon deals more damage but has higher spread.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_usp")
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_usp.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
@@ -82,13 +81,13 @@ SWEP.RPM = 352
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "SIL",
+        PrintName = ARC9:GetPhrase("csgo_firemode_sil"),
         Silencer = true,
         -- add other attachment modifiers
     },
     {
         Mode = 1,
-        PrintName = "NO-SIL",
+        PrintName = ARC9:GetPhrase("csgo_firemode_nosil"),
         Silencer = false,
         AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
@@ -569,13 +568,13 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Slide",
+        PrintName = ARC9:GetPhrase("csgo_category_slide"),
         --Bone = "v_weapon.glock_magazine",
         InstalledElements = {"silencer"},
         Category = {"go_usp_slide", "csgo_why_usp"}
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Default",
         Category = {"silencers"},
         Bone = "v_weapon.silencer",
@@ -585,7 +584,7 @@ SWEP.Attachments = {
         Scale = 0.9,
     },
     {
-        PrintName = "Top",
+        PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.223_parent",
         Pos = Vector(-0.02, -0.9, 5),
         Ang = Angle(90, 0, -90),
@@ -594,7 +593,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.Slide",
         Pos = Vector(0, -0.9, 1),
         Ang = Angle(90, 0, -90),
@@ -603,7 +602,7 @@ SWEP.Attachments = {
         Scale = 0.75,
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.223_parent",
@@ -612,25 +611,25 @@ SWEP.Attachments = {
         Scale = 1.15,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.Clip",
         Category = "go_mag"
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.Clip",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
         RejectAttachments = {
         ["csgo_perk_burst"] = true
         },
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_usp",
 		InstalledElements = {"skins"},
@@ -638,45 +637,45 @@ SWEP.Attachments = {
         CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.slide", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.6, -0.4, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -85),
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_pistols_view"
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

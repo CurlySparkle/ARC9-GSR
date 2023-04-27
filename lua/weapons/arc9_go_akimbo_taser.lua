@@ -4,18 +4,23 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Akimbos"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_akimbo")
 
-SWEP.PrintName = "Dual Zeus x27"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_akimbo_taser")
 
-SWEP.Class = "Special"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_special")
 
-SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+SWEP.Trivia = {
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_weight")] = "~1 kg",
 }
 
-SWEP.Description = [[Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit.]]
+SWEP.Credits = {
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
+}
+
+SWEP.Description = ARC9:GetPhrase("csgo_description_akimbo_taser")
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_taser.mdl"
 SWEP.WorldModel = "models/weapons/csgo/c_akimbo_taser.mdl"
@@ -330,7 +335,7 @@ SWEP.Animations = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "tag_pistol_attachments",
         Pos = Vector(-0.5, -0.05, 1.6),
         Ang = Angle(0, 0, 0),
@@ -345,11 +350,11 @@ SWEP.Attachments = {
 		Scale = 0.9,
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_taser",
 		InstalledElements = {"skins"},
@@ -357,14 +362,14 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "tag_pistol_attachments",
         Pos = Vector(-0.6, -0.8, 1),

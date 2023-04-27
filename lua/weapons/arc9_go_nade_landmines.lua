@@ -2,16 +2,15 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_landmines")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Extras"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_extra")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
-SWEP.PrintName = "Landmine"
-SWEP.Class = "Proximity Explosive"
-SWEP.Description = [[Anti-personnel proximity mine that sticks to any surface. Less effective on walls, and buries itself on soft ground.
-Difficult to spot, but its motion sensor cannot detect slowly moving targets.]]
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_landmines")
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_proximity")
+SWEP.Description = ARC9:GetPhrase("csgo_description_nade_landmines")
 -- SWEP.Trivia = {
     -- Designer = "Norman Macleod et al.",
     -- Manufacturer = "Mohawk Electrical Systems Inc",
@@ -22,8 +21,8 @@ Difficult to spot, but its motion sensor cannot detect slowly moving targets.]]
 -- }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/Infinity Ward"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/Infinity Ward"
 }
 
 SWEP.Slot = 4
@@ -31,7 +30,7 @@ SWEP.Slot = 4
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PLANT"
+        PrintName = ARC9:GetPhrase("csgo_firemode_plantable")
         -- add other attachment modifiers
     },
 }

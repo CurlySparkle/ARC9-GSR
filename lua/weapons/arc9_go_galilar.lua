@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Assault Rifles"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_ar")
 
-SWEP.PrintName = "Galil AR"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_galilar")
 
-SWEP.Class = "Assault Rifle"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_ar")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Israel",
-    ["Caliber"] = "5.56×45mm NATO",
-    ["Weight (Loaded)"] = "3.95 kg",
-    ["Projectile Weight"] = "62 gr",
-    ["Muzzle Velocity"] = "3,116.8 ft/s",
-    ["Muzzle Energy"] = "1,814 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_israel"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "5.56×45mm NATO",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "3.95 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "62 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "3,116.8 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,814 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart, the Maverick is the full-auto assault rifle of choice for CTs.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_galilar")
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_galilar.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -536,7 +536,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Scope",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.galilar_parent",
         Pos = Vector(0, -4.9, 3),
         Ang = Angle(90, 0, -90),
@@ -544,20 +544,20 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.13, 0, 0.),
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
 		--Bone = "v_weapon.glock_magazine",
         Category = "go_galilar_barrel"
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = ARC9:GetPhrase("csgo_category_muzzle"),
         Bone = "v_weapon.galilar_parent",
         Pos = Vector(0, -3.22, 21),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Side",
+        PrintName = ARC9:GetPhrase("csgo_category_side"),
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.galilar_parent",
@@ -565,7 +565,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_galil"},
         Bone = "v_weapon.galilar_parent",
@@ -574,7 +574,7 @@ SWEP.Attachments = {
         Scale = 1,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.magazine",
         Category = "go_galilar_mag",
 		--InstalledElements = {"mag"},
@@ -583,7 +583,7 @@ SWEP.Attachments = {
         Scale = 1,
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
         Category = {"csgo_tube"},
         Bone = "v_weapon.galilar_parent",
@@ -593,17 +593,17 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.magazine",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 0, -0.25),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_galilar",
 		InstalledElements = {"skins"},
@@ -611,45 +611,45 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_galilar_view"
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_c.mdl",
         Category = "stickers",
     },
     -- {
-        -- PrintName = "Stickers",
+        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         -- StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_d.mdl",
         -- Category = "stickers",
     -- },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.galilar_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.75, -2.5, 7), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

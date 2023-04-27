@@ -6,18 +6,18 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Melee"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_melee")
 
-SWEP.PrintName = "T Knife"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_knife_t")
 
-SWEP.Class = "Melee"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_melee")
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve"
 }
 
-SWEP.Description = [[Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_knife_t")
 
 SWEP.ViewModel = "models/weapons/csgo/knifes/v_knife_default_t.mdl"
 SWEP.WorldModel = "models/weapons/w_knife_ct.mdl"
@@ -51,7 +51,7 @@ SWEP.SecondarySupplyLimit = 0 -- Amount of reserve UBGL magazines you can take.
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "MELEE"
+        PrintName = ARC9:GetPhrase("csgo_firemode_melee")
         -- add other attachment modifiers
     },
 }
@@ -227,7 +227,7 @@ SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
 	if att["csgo_skin_knife_t_gold"] then
-		name = "Golden " .. name
+		name = ARC9:GetPhrase("csgo_weapon_knife_t_gold")
 	end
 
     return name
@@ -237,11 +237,11 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = {"go_perk_melee"},
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_knife_t",
 		CosmeticOnly = true,

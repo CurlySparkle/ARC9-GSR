@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Shotguns"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_shotgun")
 
-SWEP.PrintName = "Sawed-Off"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_sawedoff")
 
-SWEP.Class = "Shotgun"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_shotgun")
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States",
-    ["Caliber"] = "12 gauge",
-    ["Weight (Loaded)"] = "450 g",
-    ["Projectile Weight"] = "493 gr",
-    ["Muzzle Velocity"] = "850 ft/s",
-    ["Muzzle Energy"] = "1,073 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "12 gauge",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "450 g",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "493 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "850 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,073 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you'd better kill what you hit.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_sawedoff")
 
 SWEP.ViewModel = "models/weapons/csgo/c_shot_sawedoff.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
@@ -86,7 +86,7 @@ SWEP.RPM = 220
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PUMP"
+        PrintName = ARC9:GetPhrase("csgo_firemode_pump")
     },
 }
 
@@ -500,7 +500,7 @@ SWEP.AttachmentElements = {
 
 SWEP.HookP_NameChange = function(wep, name)
     if wep:HasElement("barrel_ext") then
-        name = "Remington 870"
+        name = ARC9:GetPhrase("csgo_weapon_sawedoff_r870")
     end
     return name
 end
@@ -512,7 +512,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Top",
+        PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.sawedoff_parent",
         Pos = Vector(0, -1.9, 7),
         Ang = Angle(90, 0, -90),
@@ -520,7 +520,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0),
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         Bone = "v_weapon.sawedoff_parent",
         Category = "go_sawedoff_barrel",
         Pos = Vector(0, -1.5, 12),
@@ -528,7 +528,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle_shotgun","muzzle"},
         Bone = "v_weapon.sawedoff_parent",
@@ -536,7 +536,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Side",
+        PrintName = ARC9:GetPhrase("csgo_category_side"),
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.sawedoff_parent",
@@ -544,7 +544,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = "csgo_rail_ub",
         Bone = "v_weapon.sawedoff_pump",
@@ -553,21 +553,21 @@ SWEP.Attachments = {
         Scale = 1,
     },
     {
-        PrintName = "Tube",
+        PrintName = ARC9:GetPhrase("csgo_category_tube"),
         Bone = "v_weapon.sawedoff_parent",
         Category = "go_sawedoff_mag",
         Pos = Vector(0, 0, 0),
         Icon_Offset = Vector(0, -0.8, 22),
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         DefaultAttName = "BUCK",
         Bone = "v_weapon.sawedoff_parent",
         Icon_Offset = Vector(0, 0, 8.25),
         Category = "go_ammo_sg",
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         Bone = "v_weapon.sawedoff_parent",
         Category = "go_sawedoff_stock",
         InstalledElements = {"pistolgrip"},
@@ -575,15 +575,15 @@ SWEP.Attachments = {
         Pos = Vector(0, 1, 2.1),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_sawedoff_view"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_sawnoff",
 		InstalledElements = {"skins"},
@@ -591,41 +591,41 @@ SWEP.Attachments = {
         CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_sawedoff_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.sawedoff_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.65, -2.1, 6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

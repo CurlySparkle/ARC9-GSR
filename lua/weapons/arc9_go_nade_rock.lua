@@ -2,23 +2,23 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_rock")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Extras"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_extra")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
-SWEP.PrintName = "Rock"
-SWEP.Class = "Throwable"
-SWEP.Description = [[The experimental rock, very deadly and quite a "Stoner" upon hitting enemies.]]
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_rock")
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_throwable")
+SWEP.Description = ARC9:GetPhrase("csgo_description_nade_rock")
 SWEP.Trivia = {
-    ["Country"] = "Nova Pangea",
-    ["Year"] = "-3300000",
+    [ARC9:GetPhrase("csgo_trivia_country")] = "Nova Pangea",
+    [ARC9:GetPhrase("csgo_trivia_year")] = "-3300000",
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/Infinity Ward"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/Infinity Ward"
 }
 
 SWEP.Slot = 4
@@ -26,7 +26,7 @@ SWEP.Slot = 4
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "Throwable"
+        PrintName = ARC9:GetPhrase("csgo_firemode_throwable")
         -- add other attachment modifiers
     },
 }
@@ -194,16 +194,16 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = {"go_perk_melee"},
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rock_a.mdl",
         Category = "stickers",
     },

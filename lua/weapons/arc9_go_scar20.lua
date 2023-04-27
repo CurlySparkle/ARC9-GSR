@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Sniper Rifles"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_sniper")
 
-SWEP.PrintName = "SCAR-20"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_scar20")
 
-SWEP.Class = "Sniper Rifle"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_sniper")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Belgium",
-    ["Caliber"] = "7.62×51mm NATO",
-    ["Weight (Loaded)"] = "3.58 kg",
-    ["Projectile Weight"] = "175 gr",
-    ["Muzzle Velocity"] = "2,342 ft/s",
-    ["Muzzle Energy"] = "2,890 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_belgium"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "7.62×51mm NATO",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "3.58 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "175 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "2,342 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "2,890 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_scar20")
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_scar20.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
@@ -525,7 +525,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Scope",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -6.4, 3.4),
         Ang = Angle(90, 0, -90),
@@ -536,14 +536,14 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.35, -1.25, 0),
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
 		Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -4.52, 21),
         Ang = Angle(90, 0, -90),
         Category = "go_scar20_barrel"
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.SCAR_Parent",
@@ -552,7 +552,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip","grip_scar20"},
         Bone = "v_weapon.SCAR_Parent",
@@ -560,7 +560,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.SCAR_Parent",
@@ -570,7 +570,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.SCAR_Parent",
@@ -579,22 +579,22 @@ SWEP.Attachments = {
 		LaserCorrectionAngle = Angle(0.4, 0, 1),
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.SCAR_Clip",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 1.5, 0),
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.SCAR_Clip",
         Category = "go_scar20_mag"
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_scar20",
 		InstalledElements = {"skins"},
@@ -602,45 +602,45 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     -- {
-        -- PrintName = "Stickers",
+        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         -- StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_a.mdl",
         -- Category = "stickers",
     -- },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.SCAR_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.71, -4.75, 5.6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_scar20_view"
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

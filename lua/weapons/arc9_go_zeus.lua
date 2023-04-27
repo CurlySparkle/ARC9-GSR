@@ -4,22 +4,22 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Extras"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_extra")
 
-SWEP.PrintName = "Zeus x27"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_zeus")
 
-SWEP.Class = "Special"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_special")
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States",
-    ["Weight"] = "~500 g",
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_weight")] = "~500 g",
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_zeus")
 
 SWEP.ViewModel = "models/weapons/csgo/c_eq_taser.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_usp.mdl"
@@ -322,7 +322,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.parent",
         Pos = Vector(0, -1.3, -0.2),
         Ang = Angle(90, 0, -90),
@@ -331,11 +331,11 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_taser",
 		InstalledElements = {"skins"},
@@ -343,36 +343,36 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/taser_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/taser_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/taser_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.9, -0.3, 4), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -80),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.parent",
         Pos = Vector(0.85, -0.5, -0.15),

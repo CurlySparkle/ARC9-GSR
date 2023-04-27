@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Pistols"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_pistol")
 
-SWEP.PrintName = "R8 Revolver"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_r8")
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistol")
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States",
-    ["Caliber"] = ".357 Magnum",
-    ["Weight (Loaded)"] = "1.14 kg",
-    ["Projectile Weight"] = "125 gr",
-    ["Muzzle Velocity"] = "1,450 ft/s",
-    ["Muzzle Energy"] = "791 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".357 Magnum",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "1.14 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "125 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,450 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "791 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[The R8 Revolver delivers a highly accurate and powerful round at the expense of a lengthy trigger-pull. Firing rapidly by fanning the hammer may be the best option when point-blank stopping power is required.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_r8")
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_r8.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
@@ -82,7 +82,7 @@ SWEP.RPM = 85
 SWEP.Firemodes = {
     {
         Mode = 1,
-		PrintName = "Hammering",
+		PrintName = ARC9:GetPhrase("hud.firemode.single"),
 		SpreadAddHipFire = 0.01,
 		SpreadAddMove = 0.03,
 		SpreadAddRecoil = 0.05,
@@ -374,7 +374,7 @@ SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
 	if att["csgo_r8_model"] then
-		name = ".357 Revolver"
+		name = ARC9:GetPhrase("csgo_weapon_r8_357")
 	end
 
     return name
@@ -382,23 +382,23 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Model",
+        PrintName = ARC9:GetPhrase("csgo_category_model"),
         DefaultAttName = "R8",
         Category = "go_r8",
         InstalledElements = {"6shot"},
 --        Bone = "v_weapon.deagle_parent",
     }, 
 	{
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(-0.025, -3.35, 10),
         Ang = Angle(90, 0, -90),
 		Scale = 0.8,
     },
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(0, -4.1, 4.5),
         Ang = Angle(90, 0, -90),
@@ -408,7 +408,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.deagle_parent",
@@ -418,18 +418,18 @@ SWEP.Attachments = {
 		LaserCorrectionAngle = Angle(-0.3, 0, 0),
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.deagle_parent",
         Category = "go_ammo",
         Pos = Vector(0, -2.8, 3.3),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_r8",
 		InstalledElements = {"skins"},
@@ -437,41 +437,41 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     -- {
-        -- PrintName = "Stickers",
+        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         -- StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_a.mdl",
         -- Category = "stickers",
     -- },
     -- {
-        -- PrintName = "Stickers",
+        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         -- StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_b.mdl",
         -- Category = "stickers",
     -- },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.deagle_parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.5, -3.4, 6.5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

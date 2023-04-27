@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Sniper Rifles"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_sniper")
 
-SWEP.PrintName = "SSG 08"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_ssg08")
 
-SWEP.Class = "Sniper Rifle"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_sniper")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Austria",
-    ["Caliber"] = ".308 Winchester",
-    ["Weight (Loaded)"] = "5.5 kg",
-    ["Projectile Weight"] = "150 gr",
-    ["Muzzle Velocity"] = "2,820 ft/s",
-    ["Muzzle Energy"] = "3,592 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_austria"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".308 Winchester",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "5.5 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "150 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "2,820 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "3,592 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[The SSG 08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_ssg08")
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_ssg08.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_scout.mdl"
@@ -431,7 +431,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Scope",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.ssg08_Parent",
         Pos = Vector(0.2, -3.5, 9.5),
         Ang = Angle(90, 0, -90),
@@ -442,12 +442,12 @@ SWEP.Attachments = {
 		Scale = 1.1,
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
 		--Bone = "v_weapon.glock_magazine",
         Category = "go_ssg08_barrel"
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.ssg08_Parent",
@@ -456,7 +456,7 @@ SWEP.Attachments = {
 		Scale = 1.1,
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.ssg08_Parent",
@@ -464,7 +464,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_ssg08"},
         Bone = "v_weapon.ssg08_Parent",
@@ -473,7 +473,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         --DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract",},
         Bone = "v_weapon.ssg08_Parent",
@@ -482,7 +482,7 @@ SWEP.Attachments = {
 		Scale = 1.1,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.weapon_Clip",
         Category = "go_ssg08_mag",
         --Pos = Vector(0, 0, 0),
@@ -490,17 +490,17 @@ SWEP.Attachments = {
 		--Scale = 1,
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.weapon_Clip",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 1, 1),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_ssg08",
 		InstalledElements = {"skins"},
@@ -508,41 +508,41 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/ssg08_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/ssg08_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/ssg08_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/ssg08_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.ssg08_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.71, -3, 6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -70),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

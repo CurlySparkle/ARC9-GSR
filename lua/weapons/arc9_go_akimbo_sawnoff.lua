@@ -4,27 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Akimbos"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_akimbo")
 
-SWEP.PrintName = "Dual Sawed-Offs"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_akimbo_sawnoff")
 
-SWEP.Class = "Shotgun"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_shotguns")
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States",
-    ["Caliber"] = "12 gauge",
-    ["Weight (Loaded)"] = "900 g",
-    ["Projectile Weight"] = "493 gr",
-    ["Muzzle Velocity"] = "850 ft/s",
-    ["Muzzle Energy"] = "1,073 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "12 gauge",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "900 g",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "493 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "850 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,073 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[If one shotgun isn't enough for the job, simply bring another. Fire two weapons alternatingly for faster follow up shots, or both at the same time to maximize lethality.
-Just take care not to be overwhelmed by its punishing recoil.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_akimbo_sawnoff")
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_sawnoff.mdl"
 SWEP.WorldModel = "models/weapons/csgo/w_akimbo_sawnoff.mdl"
@@ -86,11 +85,11 @@ SWEP.RPM = 80
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "SINGLE",
+        PrintName = ARC9:GetPhrase("hud.firemode.single"),
     },
     {
         Mode = 1,
-        PrintName = "BOTH",
+        PrintName = ARC9:GetPhrase("csgo_firemode_both"),
         RPMMult = 60/80,
         AkimboBoth = true,
         RecoilMult = 1.25,
@@ -427,7 +426,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle_shotgun","muzzle"},
         Bone = "W_Main2_L",
@@ -441,7 +440,7 @@ SWEP.Attachments = {
         Scale = 1,
     },
     -- {
-        -- PrintName = "Sights",
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
         -- Bone = "j_slide",
         -- Pos = Vector(-2.5, 0, 0.2),
         -- Ang = Angle(0, 0, 0),
@@ -455,7 +454,7 @@ SWEP.Attachments = {
         -- Scale = 0.9,
     -- },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_tac"},
         Bone = "W_Pump_R",
@@ -469,12 +468,12 @@ SWEP.Attachments = {
         Scale = 1,
     },
     -- {
-        -- PrintName = "Mag",
+        -- PrintName = ARC9:GetPhrase("csgo_category_mag"),
         -- Bone = "j_mag1_l",
         -- Category = "go_mag"
     -- },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "W_Main2_L",
         Category = "go_ammo_sg",
         Pos = Vector(0, -0.5, 5.5),
@@ -482,14 +481,14 @@ SWEP.Attachments = {
         --Icon_Offset = Vector(0, 0.5, 2),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
         RejectAttachments = {
         ["csgo_perk_burst"] = true
         },
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_sawnoff",
 		InstalledElements = {"skins"},
@@ -497,29 +496,29 @@ SWEP.Attachments = {
         CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_sawed_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_sawed_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_sawed_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_sawed_d.mdl",
         Category = "stickers",
     },

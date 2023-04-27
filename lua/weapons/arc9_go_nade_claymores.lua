@@ -2,28 +2,27 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_claymore")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Extras"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_extra")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
-SWEP.PrintName = "Claymore"
-SWEP.Class = "Proximity Explosive"
-SWEP.Description = [[Anti-personnel proximity mine that fires lethal shrapnel in a large cone.
-While it has a wide area of effect, its laser is quite easy to spot and can be jumped over by daring opponents.]]
-SWEP.Trivia = {
-    Designer = "Norman Macleod et al.",
-    Manufacturer = "Mohawk Electrical Systems Inc",
-    Mechanism = "Detonation by Radius",
-    Origin = "United States of America",
-    ["Explosive Mass"] = "680g",
-    ["Explosive Type"] = "C4"
-}
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_claymores")
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_proximity")
+SWEP.Description = ARC9:GetPhrase("csgo_description_nade_claymores")
+-- SWEP.Trivia = {
+    -- Designer = "Norman Macleod et al.",
+    -- Manufacturer = "Mohawk Electrical Systems Inc",
+    -- Mechanism = "Detonation by Radius",
+    -- Origin = "United States of America",
+    -- ["Explosive Mass"] = "680g",
+    -- ["Explosive Type"] = "C4"
+-- }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/Infinity Ward"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/Infinity Ward"
 }
 
 SWEP.Slot = 4
@@ -31,7 +30,7 @@ SWEP.Slot = 4
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "PLANT"
+        PrintName = ARC9:GetPhrase("csgo_firemode_plantable")
         -- add other attachment modifiers
     },
 }

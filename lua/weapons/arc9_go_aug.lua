@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Assault Rifles"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_ar")
 
-SWEP.PrintName = "AUG"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_aug")
 
-SWEP.Class = "Assault Rifle"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_ar")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Austria",
-    ["Caliber"] = "5.56×45mm NATO",
-    ["Weight (Loaded)"] = "3.6 kg",
-    ["Projectile Weight"] = "62 gr",
-    ["Muzzle Velocity"] = "3,182 ft/s",
-    ["Muzzle Energy"] = "1,890 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_austria"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "5.56×45mm NATO",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "3.6 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "62 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "3,182 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,890 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_aug")
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_aug.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
@@ -569,11 +569,11 @@ SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
 	if (att["csgo_aug_mag_1"] or att["csgo_aug_mag_2"]) then
-		name = "AUG Para"
+		name = ARC9:GetPhrase("csgo_weapon_aug_para")
 	end
 	
 	if att["csgo_aug_barrel_long"] and att["go_mag_extended"] then
-		name = "AUG HBAR"
+		name = ARC9:GetPhrase("csgo_weapon_aug_hbar")
 	end
 	
     return name
@@ -581,7 +581,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Scope",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 3, -3.77),
         Ang = Angle(0, -90, 180),
@@ -592,23 +592,23 @@ SWEP.Attachments = {
         Integral = "csgo_optic_acog_2",
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 12, -2.5),
         Ang = Angle(0, -90, 180),
         Category = "csgo_aug_barrel",
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = "muzzle",
+        Category = ARC9:GetPhrase("csgo_category_muzzle"),
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 12.7, -2.45),
         Ang = Angle(0, -90, 180),
         Scale = 1,
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip","grip_aug"},
         Bone = "v_weapon.aug_Parent",
@@ -617,7 +617,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.aug_Parent",
@@ -625,23 +625,23 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 43),
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Category = {"go_mag_aug","go_mag"},
         Bone = "v_weapon.aug_Clip",
         Pos = Vector(0, 0 ,0),
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.aug_Clip",
         Category = "go_ammo",
         Pos = Vector(0, -1, -1.5),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_aug",
 		InstalledElements = {"skins"},
@@ -649,41 +649,41 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(-1, 0, -1.9), -- offset that the attachment will be relative to the bone
         Ang = Angle(180, 90, 0),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = {"killcounter","killcounter2"},
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(-1, 2.5, -1.9),

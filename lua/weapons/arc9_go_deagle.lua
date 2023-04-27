@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Pistols"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_pistol")
 
-SWEP.PrintName = "Desert Eagle"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_deagle")
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistol")
 SWEP.Trivia = {
-    ["Country of Origin"] = "Israel/United States",
-    ["Caliber"] = ".50 Action Express",
-    ["Weight (Loaded)"] = "2 kg",
-    ["Projectile Weight"] = "300 gr",
-    ["Muzzle Velocity"] = "1,542 ft/s",
-    ["Muzzle Energy"] = "2,148 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_israel_and_us"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".50 Action Express",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "2 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "300 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,542 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "2,148 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_deagle")
 
 SWEP.ViewModel = "models/weapons/csgo/c_pist_deagle.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
@@ -479,7 +479,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Slide",
+        PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		Bone = "v_weapon.deagle_parent",
         Category = "go_deagle_long_slide",
         Bone = "v_weapon.deagle_parent",
@@ -488,7 +488,7 @@ SWEP.Attachments = {
 		Scale = 0.8,
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
         Bone = "v_weapon.deagle_parent",
@@ -497,7 +497,7 @@ SWEP.Attachments = {
 		Scale = 0.8,
     },
     {
-        PrintName = "Top",
+        PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(0, -0.9, 5),
         Ang = Angle(90, 0, -90),
@@ -506,7 +506,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(0, -3.4, 5),
         Ang = Angle(90, 0, -90),
@@ -516,7 +516,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.deagle_parent",
@@ -525,25 +525,25 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.deagle_clip",
         Category = "go_deagle_mag",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.deagle_clip",
         Category = "go_ammo",
         Pos = Vector(0, 1, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_deagle",
 		InstalledElements = {"skins"},
@@ -551,45 +551,45 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.deagle_slide", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.5, 0, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_pistols_view3"
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0.24, 0, 0.17),

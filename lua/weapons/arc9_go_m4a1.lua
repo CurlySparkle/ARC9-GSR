@@ -4,27 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Assault Rifles"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_ar")
 
-SWEP.PrintName = "M4A1-S"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_m4a1")
 
-SWEP.Class = "Assault Rifle"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_ar")
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States",
-    ["Caliber"] = "5.56×45mm NATO",
-    ["Weight (Loaded)"] = "3.45 kg",
-    ["Projectile Weight"] = "62 gr",
-    ["Muzzle Velocity"] = "2,986 ft/s",
-    ["Muzzle Energy"] = "1,665 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = "5.56×45mm NATO",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "3.45 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "62 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "2,986 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,665 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy.
-Can toggle the suppressor on and off. While unsuppressed, the weapon fires faster but has higher spread.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_m4a1")
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -76,13 +75,13 @@ SWEP.RPM = 600
 SWEP.Firemodes = {
     {
         Mode = -1,
-        PrintName = "SIL",
+        PrintName = ARC9:GetPhrase("csgo_firemode_sil"),
         Silencer = true,
         -- add other attachment modifiers
     },
     {
         Mode = -1,
-        PrintName = "NO-SIL",
+        PrintName = ARC9:GetPhrase("csgo_firemode_nosil"),
         AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         IgnoreMuzzleDevice = true,
@@ -854,7 +853,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Scope",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.M4A1_s_Parent",
         Pos = Vector(-0.25, -6.37, 2),
         Ang = Angle(90, 0, -90),
@@ -865,7 +864,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         DefaultAttName = "Default",
         Category = {"go_m4a1_barrel"},
         Bone = "v_weapon.M4A1_Parent",
@@ -873,7 +872,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"silencers"},
         Bone = "v_weapon.M4A1_Silencer",
@@ -883,7 +882,7 @@ SWEP.Attachments = {
 		Scale = 1.1,
     },
     {
-        PrintName = "Side",
+        PrintName = ARC9:GetPhrase("csgo_category_side"),
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.M4A1_s_Parent",
@@ -892,7 +891,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.M4A1_s_Parent",
@@ -902,7 +901,7 @@ SWEP.Attachments = {
 		LaserCorrectionAngle = Angle(-0.4, 0, 0.2),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip","grip_mk18","grip_m4"},
         Bone = "v_weapon.M4A1_s_Parent",
@@ -913,7 +912,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, 90),
     },
     {
-        PrintName = "Bottom",
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_mk18_alt","grip_m4_2"},
         Bone = "v_weapon.M4A1_s_Parent",
@@ -924,7 +923,7 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract","stock_m4a1"},
         Bone = "v_weapon.M4A1_s_Parent",
@@ -934,29 +933,29 @@ SWEP.Attachments = {
 		Scale = 1.1,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.M4A1_Clip",
         Category = "go_m4a1_mag"
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.M4A1_Clip",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 0.3, -2),
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
 		RejectAttachments = {
 		["csgo_perk_burst"] = true
 		},
     },
     {
-        PrintName = "View",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_m4a4_view"
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_m4a1",
 		InstalledElements = {"skins"},
@@ -964,41 +963,41 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stickers",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.M4A1_s_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.6, -5, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

@@ -2,23 +2,23 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_c4")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Extras"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_extra")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
 
-SWEP.PrintName = "C4 Explosive"
-SWEP.Class = "Explosive"
-SWEP.Description = [[Stable and resistant to most physical shocks, this improvised plastic explosive has a detonation velocity of over 8,000 meters per second when ignited.]]
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_c4")
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_explosive")
+SWEP.Description = ARC9:GetPhrase("csgo_description_nade_c4")
 SWEP.Trivia = {
-    ["Country"] = "USA",
-    ["Year"] = "1968",
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_year")] = "1968",
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve"
 }
 
 SWEP.Slot = 4

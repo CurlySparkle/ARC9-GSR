@@ -4,26 +4,26 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "Akimbos"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_akimbo")
 
-SWEP.PrintName = "Dual P250"
+SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_akimbo_p250")
 
-SWEP.Class = "Pistol"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistols")
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States",
-    ["Caliber"] = ".357 SIG",
-    ["Weight (Loaded)"] = "1.44 kg",
-    ["Projectile Weight"] = "115 gr",
-    ["Muzzle Velocity"] = "1,425 ft/s",
-    ["Muzzle Energy"] = "703 joules"
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".357 SIG",
+    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "1.44 kg",
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "115 gr",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,425 ft/s",
+    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "703 joules"
 }
 
 SWEP.Credits = {
-    Author = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    Assets = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = [[A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents.]]
+SWEP.Description = ARC9:GetPhrase("csgo_description_akimbo_p250")
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_p250.mdl"
 SWEP.WorldModel = "models/weapons/csgo/c_akimbo_usp.mdl"
@@ -390,13 +390,13 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Slide",
+        PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		DefaultAttName = "Standard",
 		--Bone = "v_weapon.glock_magazine",
         Category = "go_p250_slide2"
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "tag_pistol_attachments_l",
@@ -410,7 +410,7 @@ SWEP.Attachments = {
         Scale = 0.8,
     },
     {
-        PrintName = "Sights",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "j_slide",
         Pos = Vector(-2, 0, 0.2),
         Ang = Angle(0, 0, 0),
@@ -424,7 +424,7 @@ SWEP.Attachments = {
 		Scale = 0.9,
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "tag_pistol_attachments",
@@ -438,20 +438,20 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "Mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
         Category = "go_mag"
     },
     {
-        PrintName = "Ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Category = "go_ammo",
     },
     {
-        PrintName = "Perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
     },
     {
-        PrintName = "Skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_p250",
 		InstalledElements = {"skins"},
@@ -459,34 +459,34 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = "Cosmetic",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_p250_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_p250_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_p250_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_p250_d.mdl",
         Category = "stickers",
     },
     {
-        PrintName = "Stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "tag_pistol_attachments",
         Pos = Vector(4.4, -0.35, 0),
