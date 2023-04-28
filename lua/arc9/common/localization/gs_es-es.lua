@@ -125,8 +125,8 @@ L["csgo_weapon_galilar"] = "Galil AR"
 L["csgo_weapon_glock"] = "Glock-18"
 L["csgo_weapon_glock_18c"] = "Glock-18C"
 
-L["csgo_weapon_knife_ct"] = "CT Knife"
-L["csgo_weapon_knife_ct_gold"] = "Golden CT Knife"
+L["csgo_weapon_knife_ct"] = "Cuchillo CT"
+L["csgo_weapon_knife_ct_gold"] = "Cuchillo CT Dorado"
 
 L["csgo_weapon_knife_shield"] = "Escudo Antidisturbios"
 
