@@ -689,9 +689,9 @@ SWEP.HookP_NameChange = function(self, name)
 	local skin = "moka_csgo_skin_m4a4_"
 
     local function GetSkinNames( skintable, skinname )
-		for activeskin,skinname in pairs(skintable) do
+		for activeskin,skintable in pairs(skintable) do
 			if att[skin .. activeskin] then
-				name = name .. " | " .. (skinname or "")
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
 			end
 		end
     end
@@ -718,6 +718,7 @@ SWEP.HookP_NameChange = function(self, name)
 		
 		-- Gunsmith
 		coalition = "The Coalition",
+		ra = "Eye of Horus",
 		chopper_ghost = "Magnesium",
 		emperor = "The Emperor",
 		pioneer = "The Battlestar",

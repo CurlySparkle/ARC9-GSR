@@ -808,9 +808,9 @@ SWEP.HookP_NameChange = function(self, name)
 	local skin = "moka_csgo_skin_m4a1_"
 
     local function GetSkinNames( skintable, skinname )
-		for activeskin,skinname in pairs(skintable) do
+		for activeskin,skintable in pairs(skintable) do
 			if att[skin .. activeskin] then
-				name = name .. " | " .. (skinname or "")
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
 			end
 		end
     end
@@ -835,8 +835,9 @@ SWEP.HookP_NameChange = function(self, name)
 		soultaker = "Chantico's Fire",
 		
 		-- Gunsmith
-		operator = "Control Panel",
 		vertigo = "Imminent Danger",
+		milspec = "Mud-Spec",
+		operator = "Control Panel",
 		decimator = "Decimator",
 		shatter = "Leaded Glass",
 		insomnia = "Night Terror",
