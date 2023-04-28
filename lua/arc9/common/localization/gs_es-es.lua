@@ -1,46 +1,46 @@
 L = {}
 
 -- [[ Trivia ]]
-L["csgo_trivia_country"] = "Country of Origin"
+L["csgo_trivia_country"] = "País de origen"
 
 L["csgo_trivia_country_austria"] = "Austria"
-L["csgo_trivia_country_belgium"] = "Belgium"
-L["csgo_trivia_country_czech_republic"] = "Czech Republic"
-L["csgo_trivia_country_france"] = "France"
-L["csgo_trivia_country_germany"] = "Germany"
+L["csgo_trivia_country_belgium"] = "Bélgica"
+L["csgo_trivia_country_czech_republic"] = "República Checa"
+L["csgo_trivia_country_france"] = "Francia"
+L["csgo_trivia_country_germany"] = "Alemania"
 L["csgo_trivia_country_israel"] = "Israel"
-L["csgo_trivia_country_israel_and_usa"] = "Israel / United States"
-L["csgo_trivia_country_italy"] = "Italy"
-L["csgo_trivia_country_russia"] = "Russia"
-L["csgo_trivia_country_south_africa"] = "South Africa"
-L["csgo_trivia_country_soviet_union"] = "Soviet Union"
-L["csgo_trivia_country_sweden_and_us"] = "Sweden / United States"
-L["csgo_trivia_country_switzerland"] = "Switzerland"
-L["csgo_trivia_country_uk"] = "United Kingdom"
-L["csgo_trivia_country_usa"] = "United States"
+L["csgo_trivia_country_israel_and_usa"] = "Israel / Estados Unidos"
+L["csgo_trivia_country_italy"] = "Italia"
+L["csgo_trivia_country_russia"] = "Rusia"
+L["csgo_trivia_country_south_africa"] = "Sudáfrica"
+L["csgo_trivia_country_soviet_union"] = "Unión Soviética"
+L["csgo_trivia_country_sweden_and_us"] = "Suecia / Estados Unidos"
+L["csgo_trivia_country_switzerland"] = "Suiza"
+L["csgo_trivia_country_uk"] = "Reino Unido"
+L["csgo_trivia_country_usa"] = "Estados Unidos"
 
-L["csgo_trivia_caliber"] = "Caliber"
-L["csgo_trivia_weight"] = "Weight"
-L["csgo_trivia_weight_loaded"] = "Weight (Loaded)"
-L["csgo_trivia_weight_projectile"] = "Projectile Weight"
-L["csgo_trivia_muzzle_velocity"] = "Muzzle Velocity"
-L["csgo_trivia_muzzle_energy"] = "Muzzle Energy"
-L["csgo_trivia_year"] = "Year"
+L["csgo_trivia_caliber"] = "Calibre"
+L["csgo_trivia_weight"] = "Peso"
+L["csgo_trivia_weight_loaded"] = "Peso (Cargado)"
+L["csgo_trivia_weight_projectile"] = "Peso del proyectil"
+L["csgo_trivia_muzzle_velocity"] = "Velocidad de salida"
+L["csgo_trivia_muzzle_energy"] = "Energía de salida"
+L["csgo_trivia_year"] = "Año"
 
-L["csgo_trivia_authors"] = "Authors"
+L["csgo_trivia_authors"] = "Autores"
 L["csgo_trivia_assets"] = "Assets"
 
-L["csgo_trivia_designer"] = "Designer"
-L["csgo_trivia_manufacturer"] = "Manufacturer"
-L["csgo_trivia_mechanism"] = "Mechanism"
-L["csgo_trivia_explosive_mass"] = "Explosive Mass"
-L["csgo_trivia_explosive_type"] = "Explosive Type"
+L["csgo_trivia_designer"] = "Diseñador"
+L["csgo_trivia_manufacturer"] = "Fabricante"
+L["csgo_trivia_mechanism"] = "Mecanismo"
+L["csgo_trivia_explosive_mass"] = "Masa explosiva"
+L["csgo_trivia_explosive_type"] = "Tipo de explosivo"
 
 -- [[ Weapon Firemodes ]]
-L["csgo_firemode_both"] = "BOTH"
+L["csgo_firemode_both"] = "AMBOS"
 L["csgo_firemode_melee"] = "MELEE"
-L["csgo_firemode_pump"] = "PUMP"
-L["csgo_firemode_throwable"] = "THROWABLE"
+L["csgo_firemode_pump"] = "BOMBEO"
+L["csgo_firemode_throwable"] = "ARROJADIZO"
 L["csgo_firemode_plantable"] = "PLANTABLE"
 
 -- Shortened from "Suppressed"
@@ -49,32 +49,32 @@ L["csgo_firemode_nosil"] = "OFF"
 
 -- [[ Weapon Categories ]]
 L["csgo_category_weapon_akimbo"] = "Akimbos"
-L["csgo_category_weapon_ar"] = "Assault Rifles"
+L["csgo_category_weapon_ar"] = "Rifles de Asalto"
 L["csgo_category_weapon_extra"] = "Extras"
 L["csgo_category_weapon_lmg"] = "LMGs"
 L["csgo_category_weapon_melee"] = "Melees"
-L["csgo_category_weapon_pistol"] = "Pistols"
-L["csgo_category_weapon_shotgun"] = "Shotguns"
-L["csgo_category_weapon_sniper"] = "Sniper Rifles"
+L["csgo_category_weapon_pistol"] = "Pistolas"
+L["csgo_category_weapon_shotgun"] = "Escopetas"
+L["csgo_category_weapon_sniper"] = "Rifles de Francotirador"
 L["csgo_category_weapon_smg"] = "SMGs"
 
 -- [[ Weapon Classes ]]
-L["csgo_class_weapon_ar"] = "Assault Rifle"
-L["csgo_class_weapon_lmg"] = "Light Machine Gun"
+L["csgo_class_weapon_ar"] = "Rifle de Asalto"
+L["csgo_class_weapon_lmg"] = "Ametralladora Ligera"
 L["csgo_class_weapon_melee"] = "Melee"
-L["csgo_class_weapon_pistol"] = "Pistol"
-L["csgo_class_weapon_pistols"] = "Pistols"
-L["csgo_class_weapon_shotgun"] = "Shotgun"
-L["csgo_class_weapon_shotguns"] = "Shotguns"
-L["csgo_class_weapon_sniper"] = "Sniper Rifle"
-L["csgo_class_weapon_smg"] = "Submachine Gun"
-L["csgo_class_weapon_smgs"] = "Submachine Guns"
-L["csgo_class_weapon_explosive"] = "Explosive"
-L["csgo_class_weapon_special_exp"] = "Special Explosives"
-L["csgo_class_weapon_proximity"] = "Proximity Explosive"
-L["csgo_class_weapon_throwable"] = "Throwable"
-L["csgo_class_weapon_grenade"] = "Grenade"
-L["csgo_class_weapon_special"] = "Special"
+L["csgo_class_weapon_pistol"] = "Pistola"
+L["csgo_class_weapon_pistols"] = "Pistolas"
+L["csgo_class_weapon_shotgun"] = "Escopeta"
+L["csgo_class_weapon_shotguns"] = "Escopetas"
+L["csgo_class_weapon_sniper"] = "Rifles de Francotirador"
+L["csgo_class_weapon_smg"] = "Subfusil"
+L["csgo_class_weapon_smgs"] = "Subfusiles"
+L["csgo_class_weapon_explosive"] = "Explosivo"
+L["csgo_class_weapon_special_exp"] = "Explosivos Especiales"
+L["csgo_class_weapon_proximity"] = "Explosivo de Proximidad"
+L["csgo_class_weapon_throwable"] = "Arrojadizo"
+L["csgo_class_weapon_grenade"] = "Granada"
+L["csgo_class_weapon_special"] = "Especial"
 
 -- [[ Weapon Display Names ]]
 L["csgo_weapon_ak47"] = "AK-47"
@@ -128,10 +128,10 @@ L["csgo_weapon_glock_18c"] = "Glock-18C"
 L["csgo_weapon_knife_ct"] = "CT Knife"
 L["csgo_weapon_knife_ct_gold"] = "Golden CT Knife"
 
-L["csgo_weapon_knife_shield"] = "Riot Shield"
+L["csgo_weapon_knife_shield"] = "Escudo Antidisturbios"
 
-L["csgo_weapon_knife_t"] = "T Knife"
-L["csgo_weapon_knife_t_gold"] = "Golden T Knife"
+L["csgo_weapon_knife_t"] = "Cuchillo T"
+L["csgo_weapon_knife_t_gold"] = "Cuchillo T Dorado"
 
 L["csgo_weapon_m3"] = "Benelli M3 Super 90"
 
@@ -152,18 +152,18 @@ L["csgo_weapon_mp5sd"] = "MP5-SD"
 L["csgo_weapon_mp7"] = "MP7"
 L["csgo_weapon_mp9"] = "MP9"
 
-L["csgo_weapon_nade_breach"] = "Breach Charge"
-L["csgo_weapon_nade_c4"] = "C4 Explosive"
+L["csgo_weapon_nade_breach"] = "Carga Explosiva"
+L["csgo_weapon_nade_c4"] = "Explosivo C4"
 L["csgo_weapon_nade_claymores"] = "Claymore"
-L["csgo_weapon_nade_decoy"] = "Decoy Grenade"
-L["csgo_weapon_nade_flashbang"] = "Flashbang"
-L["csgo_weapon_nade_frag"] = "Frag Grenade"
-L["csgo_weapon_nade_incendiary"] = "Incendiary Grenade"
-L["csgo_weapon_nade_landmines"] = "Landmine"
+L["csgo_weapon_nade_decoy"] = "Granada de Señuelo"
+L["csgo_weapon_nade_flashbang"] = "Granada Aturdidora"
+L["csgo_weapon_nade_frag"] = "Granada de Frag."
+L["csgo_weapon_nade_incendiary"] = "Granada Inciendiaria"
+L["csgo_weapon_nade_landmines"] = "Mina Terrestre"
 L["csgo_weapon_nade_mines"] = "Bump Mines"
 L["csgo_weapon_nade_molotov"] = "Molotov"
-L["csgo_weapon_nade_rock"] = "Rock"
-L["csgo_weapon_nade_smoke"] = "Smoke Grenade"
+L["csgo_weapon_nade_rock"] = "Roca"
+L["csgo_weapon_nade_smoke"] = "Granada de Humo"
 L["csgo_weapon_nade_sonar"] = "Sonar Nade"
 
 L["csgo_weapon_negev"] = "Negev"
@@ -203,172 +203,172 @@ L["csgo_weapon_xm1014"] = "XM1014"
 L["csgo_weapon_zeus"] = "Zeus x27"
 
 -- [[ Weapon Descriptions ]]
-L["csgo_description_ak47"] = "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire."
+L["csgo_description_ak47"] = "Potente y fiable, el AK-47 es uno de los rifles de asalto más famosos del mundo. Es sumamente letal en ráfagas cortas y controladas."
 
-L["csgo_description_akimbo_cz75"] = "A pair of automatic pistols. Its low fire rate makes it a well rounded akimbo option."
+L["csgo_description_akimbo_cz75"] = "Un par de pistolas automáticas. Su baja cadencia de fuego la convierte en una opción akimbo bien redondeada."
 
-L["csgo_description_akimbo_deagle"] = "Two very expensive but powerful Desert Eagles, one in each hand, allowing the user to break not only their wrists when firing, but also put a large hole in whatever they are aimed at."
+L["csgo_description_akimbo_deagle"] = "Dos carísimas pero potentes Desert Eagles, una en cada mano, que permiten al usuario no sólo romperse las muñecas al disparar, sino también hacer un gran agujero en aquello a lo que apunten."
 
-L["csgo_description_akimbo_fiveseven"] = "Highly accurate and armor-piercing, the pricy Five-Seven is a slow-loader that compensates with a generous 20-round magazine and forgiving recoil."
+L["csgo_description_akimbo_fiveseven"] = "Altamente preciso y perforante, el caro Five-Seven es un cargador lento que compensa con un generoso cargador de 20 balas y un retroceso indulgente."
 
-L["csgo_description_akimbo_glock"] = "A pair of Glocks means twice the capacity and a twice as lethal burst fire."
+L["csgo_description_akimbo_glock"] = "Un par de Glocks significa el doble de capacidad y una ráfaga de disparos dos veces más letal."
 
-L["csgo_description_akimbo_mp9"] = "A pair of automatic SMGs providing very impressive firepower."
+L["csgo_description_akimbo_mp9"] = "Un par de SMG automáticas que proporcionan una potencia de fuego impresionante."
 
-L["csgo_description_akimbo_p250"] = "A pair of low-recoil handguns with a high rate of fire and low cost."
+L["csgo_description_akimbo_p250"] = "Un par de pistolas de bajo retroceso, gran cadencia de tiro y bajo coste."
 
-L["csgo_description_akimbo_p2000"] = "A pair of accurate and controllable German-made P2000s. Serviceable first-round pistols that work best against unarmored opponents."
+L["csgo_description_akimbo_p2000"] = "Un par de precisas y controlables P2000 de fabricación alemana. Pistolas útiles de primer disparo que funcionan mejor contra oponentes sin armadura."
 
-L["csgo_description_akimbo_r8"] = "A pair of R8 Revolvers that deliver highly accurate and powerful rounds at the expense of lengthy trigger-pulls."
+L["csgo_description_akimbo_r8"] = "Un par de revólveres R8 que ofrecen disparos muy precisos y potentes a costa de largas pulsaciones del gatillo."
 
-L["csgo_description_akimbo_sawnoff"] = "If one shotgun isn't enough for the job, simply bring another. Fire two weapons alternatingly for faster follow up shots, or both at the same time to maximize lethality."
+L["csgo_description_akimbo_sawnoff"] = "Si una escopeta no es suficiente para el trabajo, simplemente lleva otra. Dispara dos armas alternativamente para realizar disparos de seguimiento más rápidos, o ambas a la vez para maximizar la letalidad."
 
-L["csgo_description_akimbo_taser"] = "A pair of Zeus x27 single-shot tasers capable of incapacitating an enemy in a single hit.\n\nTwice the power, twice the police brutality!"
+L["csgo_description_akimbo_taser"] = "Un par de tasers Zeus x27 de un solo disparo capaces de incapacitar a un enemigo de un solo impacto.\n\n¡Doble poder, doble brutalidad policial!"
 
-L["csgo_description_akimbo_usp"] = "A pair of the fan favorite handgun from older Counter-Strikes, the USP offers low recoil, yet reliable damage output."
+L["csgo_description_akimbo_usp"] = "La USP, un par de las pistolas favoritas de los fans de Counter-Strikes más antiguos, ofrece un bajo retroceso, pero una producción de daño fiable."
 
-L["csgo_description_aug"] = "Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire."
+L["csgo_description_aug"] = "Poderoso y preciso, el rifle de asalto con mira telescópica AUG compensa sus largos tiempos de recarga con su baja dispersión y una alta cadencia de fuego."
 
-L["csgo_description_awp"] = "High risk and high reward, the infamous AWP is recognizable by its signature report and one-shot, one-kill policy."
+L["csgo_description_awp"] = "Alto riesgo y alta recompensa, el infame AWP es reconocible por su característico sonido y su política de «un tiro, una muerte»."
 
-L["csgo_description_bizon"] = "The Bizon SMG is low-damage, but offers a uniquely designed high-capacity drum magazine that reloads quickly."
+L["csgo_description_bizon"] = "El subfusil PP-Bizon no causa mucho daño, pero ofrece un cargador cilíndrico de alta capacidad y diseño único que se recarga rápidamente."
 
-L["csgo_description_cz75"] = "A fully automatic variant of the CZ75, the CZ75-Auto is another inexpensive choice against armored opponents. But with very little ammo provided, strong trigger discipline is required."
+L["csgo_description_cz75"] = "La CZ75-Auto, variante totalmente automática de la CZ75, es la opción ideal a corto plazo para darle la vuelta a la tortilla y apropiarte del arma de tu oponente. Aunque con tan poca munición en el cargador, requiere una excelente disciplina de gatillo."
 
-L["csgo_description_deagle"] = "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range."
+L["csgo_description_deagle"] = "Tan cara como potente, la Desert Eagle es una emblemática pistola difícil de dominar pero sorprendentemente precisa a larga distancia."
 
-L["csgo_description_elite"] = "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once."
+L["csgo_description_elite"] = "Disparar dos Berettas a la vez disminuirá la precisión y aumentará los tiempos de recarga. El lado positivo es que podrás disparar dos Berettas a la vez."
 
-L["csgo_description_elite_single"] = "Losing one large-mag Beretta will increase accuracy and decrease load times. On the bright side, you'll get to fire one large-mag Beretta instead."
+L["csgo_description_elite_single"] = "Perder una Beretta de gran calibre aumentará la precisión y reducirá los tiempos de carga. Por otro lado, podrás disparar una Beretta de gran calibre en su lugar."
 
-L["csgo_description_famas"] = "A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs."
+L["csgo_description_famas"] = "Una opción económica para los jugadores con poco dinero, el FAMAS cubre con efectividad el vacío que hay entre el más caro de los rifles y el subfusil menos efectivo."
 
-L["csgo_description_fiveseven"] = "Highly accurate and armor-piercing, the pricy Five-Seven is a slow-loader that compensates with a generous 20-round magazine and forgiving recoil."
+L["csgo_description_fiveseven"] = "Muy precisa y perforante, la cara Five-seveN es lenta de recargar, pero lo compensa con un generoso cargador de 20 balas y un bajo retroceso."
 
-L["csgo_description_g1sg3"] = "The pricy G3SG1 lowers movement speed considerably but compensates with a higher rate of fire than other sniper rifles."
+L["csgo_description_g1sg3"] = "El costoso G3SG1 reduce considerablemente la velocidad de movimiento, pero lo compensa con una cadencia de disparo superior a la de otros rifles de francotirador."
 
-L["csgo_description_galil"] = "A less expensive option among the terrorist-exclusive assault rifles, the Galil is a serviceable weapon in medium to long-range combat."
+L["csgo_description_galil"] = "El Galil, una opción menos costosa entre los fusiles de asalto exclusivos para terroristas, es un arma útil en combates de medio a largo alcance."
 
-L["csgo_description_galilar"] = "Modern variant of the Galil, the AR variant brings the terrorist-exclusive balanced assault rifle to the modern era. Effective in medium to long-range combat."
+L["csgo_description_galilar"] = "Una opción más barata entre los rifles de asalto exclusivos de los terroristas es el Galil AR, un arma útil en combate a media y larga distancia."
 
-L["csgo_description_glock"] = "The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts."
+L["csgo_description_glock"] = "La Glock 18 es una práctica pistola de primera ronda que funciona mejor contra oponentes sin protección y cuenta con un modo ráfaga de tres balas."
 
-L["csgo_description_knife_ct"] = "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
+L["csgo_description_knife_ct"] = "El cuchillo, silencioso y siempre disponible, tiene un ataque principal rápido y de daño reducido y un ataque secundario lento y de daño elevado. Una puñalada por la espalda con el ataque secundario permite asesinar de manera instantánea y discreta."
 
 L["csgo_description_knife_shield"] = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers."
 
-L["csgo_description_knife_t"] = "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
+L["csgo_description_knife_t"] = "El cuchillo, silencioso y siempre disponible, tiene un ataque principal rápido y de daño reducido y un ataque secundario lento y de daño elevado. Una puñalada por la espalda con el ataque secundario permite asesinar de manera instantánea y discreta."
 
-L["csgo_description_m3"] = "The M3 is a well-rounded shotgun that retains effectiveness at medium ranges without giving up on close range power."
+L["csgo_description_m3"] = "La M3 es una escopeta muy completa que mantiene la eficacia a media distancia sin renunciar a la potencia a corta distancia."
 
-L["csgo_description_m4a1"] = "With a smaller magazine than its unmuffled counterpart, the suppressed M4A1 provides quieter shots with less recoil and better accuracy.\nCan toggle the suppressor on and off.\nWhile unsuppressed, the weapon fires faster but has higher spread."
+L["csgo_description_m4a1"] = "El M4A1 con silenciador tiene un cargador más pequeño que su homólogo no silenciado, pero proporciona disparos menos audibles con menor retroceso y mayor precisión.\nPuede activar y desactivar el supresor.\nSin supresión, el arma dispara más rápido pero tiene mayor dispersión."
 
-L["csgo_description_m4a4"] = "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs."
+L["csgo_description_m4a4"] = "Más precisa pero menos potente que su equivalente, el AK-47, la M4A4 es el rifle de asalto automático disponible para los antiterroristas."
 
-L["csgo_description_m249"] = "A strong open-area LMG, the M249 is the perfect choice for players willing to trade a slow fire rate for increased accuracy and a high ammo capacity."
+L["csgo_description_m249"] = "La M249, una potente ametralladora ligera de espacio abierto, es la elección perfecta para los jugadores dispuestos a sacrificar cadencia de disparo a cambio de mayor precisión y un cargador de gran capacidad."
 
-L["csgo_description_mac10"] = "Essentially a box that bullets come out of, the MAC-10 SMG boasts a high rate of fire, with poor spread accuracy and high recoil as trade-offs."
+L["csgo_description_mac10"] = "Básicamente es una caja de la que salen balas, el subfusil MAC-10 cuenta con una gran cadencia de disparo, pero su precisión no es muy buena y su retroceso es muy elevado."
 
-L["csgo_description_mag7"] = "The MAG-7 excels as a mobile, close range ambush weapon. Its magazine reload makes it a great tactical choice as well."
+L["csgo_description_mag7"] = "La Mag-7 exclusiva de los antiterroristas es un arma con una devastadora potencia de daño a corta distancia. Su cargador es fácil de recargar y ello lo hace una gran elección táctica."
 
-L["csgo_description_mp5"] = "Deadly at close, but not so good at mid- to long range distances, the MP5, just like its SD variant, is the most versatile and popular SMG in the world, if you can manage to control its recoil."
+L["csgo_description_mp5"] = "Mortal a corta distancia, pero no tan buena a distancias medias y largas, la MP5, al igual que su variante SD, es la SMG más versátil y popular del mundo, si se consigue controlar su retroceso."
 
-L["csgo_description_mp5sd"] = "Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant comes equipped with an integrated silencer, making an already formidable weapon whisper-quiet."
+L["csgo_description_mp5sd"] = "A menudo imitado pero nunca igualado, el emblemático MP5 es quizá el subfusil más versátil y popular del mundo. Esta variante SD viene equipada con un silenciador integrado, lo que convierte a un arma ya de por sí formidable en silenciosa."
 
-L["csgo_description_mp7"] = "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat."
+L["csgo_description_mp7"] = "Versátil pero caro, el subfusil alemán MP7 es la mejor elección para combates a corta distancia."
 
-L["csgo_description_mp9"] = "Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms."
+L["csgo_description_mp9"] = "Fabricado en Suiza, el innovador subfusil MP9 es el arma ergonómica de polímero favorita de las empresas de seguridad privada."
 
 L["csgo_description_nade_breach"] = "The Breach Charge is an explosive equipment which allows to breaching doors and areas. You can only hold a maximum 3 breach charges at a time."
 
-L["csgo_description_nade_c4"] = "Stable and resistant to most physical shocks, this improvised plastic explosive has a detonation velocity of over 8,000 meters per second when ignited."
+L["csgo_description_nade_c4"] = "Estable y resistente a la mayoría de los impactos físicos, este explosivo plástico improvisado tiene una velocidad de detonación de más de 8000 metros por segundo cuando se enciende."
 
-L["csgo_description_nade_claymores"] = "Anti-personnel proximity mine that fires lethal shrapnel in a large cone.\nWhile it has a wide area of effect, its laser is quite easy to spot and can be jumped over by daring opponents."
+L["csgo_description_nade_claymores"] = "Mina antipersonal de proximidad que dispara metralla letal en un gran cono.\nAunque tiene una amplia área de efecto, su láser es bastante fácil de detectar y puede ser saltado por oponentes atrevidos."
 
-L["csgo_description_nade_decoy"] = "When thrown, the decoy grenade emulates the sound of the most powerful weapon you are carrying, creating the illusion of additional supporting forces."
+L["csgo_description_nade_decoy"] = "Al lanzarla, la granada señuelo emula el sonido del arma más poderosa que lleves en ese momento, provocando una ilusión que hará pensar al enemigo que hay fuerzas de apoyo adicionales."
 
-L["csgo_description_nade_flashbang"] = "The non-lethal flashbang grenade temporarily blinds anybody within its concussive blast, making it perfect for flushing out closed-in areas. Its loud explosion also temporarily masks the sound of footsteps."
+L["csgo_description_nade_flashbang"] = "La granada aturdidora no es letal y ciega temporalmente a todos los que miren directamente al foco de su explosión, haciéndola perfecta para asaltar zonas poco fiables. Su ruidosa explosión también ensordece temporalmente, haciendo imposible oír el ruido de disparos o pasos."
 
-L["csgo_description_nade_frag"] = "The high explosive fragmentation grenade administers high damage through a wide area, making it ideal for clearing out hostile rooms."
+L["csgo_description_nade_frag"] = "Esta granada de fragmentación altamente explosiva causa una alta cantidad de daño en una amplia área a su alrededor, haciéndola ideal para despejar salas hostiles."
 
-L["csgo_description_nade_incendiary"] = "When thrown, the incendiary grenade releases a high-temperature chemical reaction capable of burning anyone within its wide blast radius."
+L["csgo_description_nade_incendiary"] = "Al lanzarla, la granada incendiaria libera una reacción química a alta temperatura que causará quemaduras a cualquiera que pase sobre el área de la explosión."
 
-L["csgo_description_nade_landmines"] = "Anti-personnel proximity mine that sticks to any surface. Less effective on walls, and buries itself on soft ground. Difficult to spot, but its motion sensor cannot detect slowly moving targets."
+L["csgo_description_nade_landmines"] = "Mina de proximidad antipersona que se adhiere a cualquier superficie. Es menos eficaz en muros y se entierra en terrenos blandos. Difícil de detectar, pero su sensor de movimiento no puede detectar objetivos que se mueven lentamente."
 
-L["csgo_description_nade_mines"] = "Toss one of these on the ground and send your opponents flying (also can be set to explode). Hope you don't step on one."
+L["csgo_description_nade_mines"] = "Lanza uno de estos al suelo y lanza a tus oponentes por los aires (también se puede configurar para que explote). Espero que no pises ninguno."
 
-L["csgo_description_nade_molotov"] = "The Molotov is a powerful and unpredictable area denial weapon that bursts into flames when thrown on the ground, injuring any player in its radius."
+L["csgo_description_nade_molotov"] = "El molotov es un arma poderosa, impredecible y bastante útil para cortar el paso a los enemigos. Cuando impacta contra el suelo se esparce cubriéndolo de llamas y causando quemaduras a los jugadores que pasan sobre él."
 
-L["csgo_description_nade_rock"] = "The experimental rock, very deadly and quite a \"Stoner\" upon hitting enemies."
+L["csgo_description_nade_rock"] = "La roca experimental, muy mortal y todo un \"Stoner\" al golpear a los enemigos."
 
-L["csgo_description_nade_smoke"] = "The smoke grenade creates a medium-area smoke screen. It can effectively hide your team from snipers, or even just create a useful distraction."
+L["csgo_description_nade_smoke"] = "La granada de humo crea una cortina de humo de medio área. Es útil cuando quieres provocar distracciones al enemigo o simplemente esconderte de un francotirador."
 
-L["csgo_description_nade_sonar"] = "Tactical Awareness Grenade is an utility grenade that helps by sticking on surfaces upon throw and detonates with a function in which can detect enemies from around 200 meters."
+L["csgo_description_nade_sonar"] = "Tactical Awareness Grenade es una granada de utilidad que ayuda pegándose en superficies al lanzarla y detona con una función en la que puede detectar enemigos desde unos 200 metros."
 
-L["csgo_description_negev"] = "The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it."
+L["csgo_description_negev"] = "La Negev es una bestia que puede mantener a raya al enemigo con su preciso fuego de supresión, siempre y cuando dispongas del tiempo necesario para hacerte con su control."
 
-L["csgo_description_nova"] = "The Nova's high sighted precision makes it a great ambush weapon, though it is not as effective while on the move."
+L["csgo_description_nova"] = "El bajísimo precio de la Nova la convierte en una escopeta excelente para los equipos con poco dinero."
 
-L["csgo_description_p90"] = "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil."
+L["csgo_description_p90"] = "Fácil de reconocer por su diseño bullpup único, el P90 es un arma ideal para disparar en movimiento debido a su cargador de gran capacidad y su bajo retroceso."
 
-L["csgo_description_p250"] = "A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents."
+L["csgo_description_p250"] = "Una pistola con poco retroceso y una gran cadencia de disparo, la P250 es una elección relativamente económica contra enemigos con protección."
 
-L["csgo_description_p2000"] = "Accurate and controllable, the German-made P2000 is a serviceable first-round pistol that works best against unarmored opponents."
+L["csgo_description_p2000"] = "Precisa y controlable, la P2000 de fabricación alemana es una práctica pistola de primera ronda que funciona mejor contra oponentes sin protección."
 
-L["csgo_description_r8"] = "The R8 Revolver delivers a highly accurate and powerful round at the expense of a lengthy trigger-pull. Firing rapidly by fanning the hammer may be the best option when point-blank stopping power is required."
+L["csgo_description_r8"] = "El revólver R8 ofrece una ronda de alta precisión y potencia a expensas de una pulsación de gatillo más larga. Disparar rápidamente 'abanicando' el percutor podría ser la mejor opción cuando se necesita poder de parada a quemarropa."
 
-L["csgo_description_sawedoff"] = "The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you'd better kill what you hit."
+L["csgo_description_sawedoff"] = "La clásica recortada hace mucho daño a corta distancia, pero dada su poca precisión, alta dispersión de las balas y baja cadencia de disparo, será mejor que si disparas a alguien no lo dejes con vida."
 
-L["csgo_description_scar17"] = "The SCAR-17 is a automatic with a burst-fire option that trades a high rate of fire and powerful mid-distance damage for sluggish movement speed and still with its counter-part, the SCAR-20, having a big price tag."
+L["csgo_description_scar17"] = "La SCAR-17 es una automática con opción de disparo en ráfaga que cambia una alta cadencia de fuego y un potente daño a media distancia por una lenta velocidad de movimiento y, aún así, su contraparte, la SCAR-20, tiene un precio elevado."
 
-L["csgo_description_scar20"] = "The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag."
+L["csgo_description_scar20"] = "El SCAR-20 es un rifle de francotirador semiautomático que ofrece una alta cadencia de disparo y un potente daño a larga distancia a cambio de una velocidad de movimiento lenta y un precio elevado."
 
-L["csgo_description_scout"] = "Compensating for its recoil and accuracy, the Steyr Scout makes it a great weapon for mid-large distances."
+L["csgo_description_scout"] = "Compensando su retroceso y precisión, el Steyr Scout lo convierte en una gran arma para distancias medias-grandes."
 
-L["csgo_description_sg556"] = "The SG 556 is a premium scoped alternative to the AK-47 for effective long-range engagement.\nOriginally a civilian rifle, it has been illegally converted for automatic fire."
+L["csgo_description_sg556"] = "El SG 556 es una alternativa al AK-47 con visor de alta calidad para un combate eficaz a larga distancia.\nOriginalmente un rifle civil, ha sido convertido ilegalmente para el fuego automático."
 
-L["csgo_description_ssg08"] = "The SSG 08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship."
+L["csgo_description_ssg08"] = "El SSG08 de cerrojo es un rifle de francotirador que no causa mucho daño pero es bastante rentable, considerándose una sabia elección para los enfrentamientos a larga distancia durante las primeras rondas."
 
-L["csgo_description_tec9"] = "An ideal pistol for the Terrorist on the move, the Tec-9 is lethal in close quarters and features a high magazine capacity but a terrible recoil."
+L["csgo_description_tec9"] = "Como pistola ideal para el terrorista en movimiento, la Tec-9 es letal en espacios cerrados y cuenta con una generosa capacidad en el cargador."
 
-L["csgo_description_ump"] = "The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic."
+L["csgo_description_ump"] = "El UMP-45 es el hijo mediano incomprendido de la familia de los subfusiles. Su reducido cargador es el único inconveniente de esta versátil arma automática para distancias cortas."
 
-L["csgo_description_usp"] = "A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise.\nCan toggle the suppressor on and off. While unsuppressed, the weapon deals more damage but has higher spread."
+L["csgo_description_usp"] = "La favorita de los fans de Counter-Strike: Source, la pistola USP con silenciador de quita y pon tiene menos retroceso y menos ruido para no llamar la atención."
 
-L["csgo_description_xm1014"] = "The XM1014 is a powerful automatic shotgun with the ability to paint a room with lead fast."
+L["csgo_description_xm1014"] = "La XM1014 es una poderosa escopeta automática que, aunque es muy cara, cuenta con la habilidad de rociar una sala de plomo rápidamente."
 
-L["csgo_description_zeus"] = "Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit."
+L["csgo_description_zeus"] = "Perfecta para emboscadas a corta distancia y combate en espacios cerrados, la Zeus x27 puede incapacitar a un enemigo de un solo disparo."
 
 -- [[ Attachments ]]
 -- Attachment category slots
-L["csgo_category_ammo"] = "Ammo"
-L["csgo_category_barrel"] = "Barrel"
-L["csgo_category_bipod"] = "Bipod"
-L["csgo_category_camo"] = "Camos"
-L["csgo_category_capacity"] = "Capacity"
-L["csgo_category_charm"] = "Charm"
-L["csgo_category_functions"] = "Functions"
+L["csgo_category_ammo"] = "Munición"
+L["csgo_category_barrel"] = "Cañon"
+L["csgo_category_bipod"] = "Bípode"
+L["csgo_category_camo"] = "Camuflajes"
+L["csgo_category_capacity"] = "Capacidad"
+L["csgo_category_charm"] = "Amuleto"
+L["csgo_category_functions"] = "Funciones"
 L["csgo_category_grip"] = "Grip"
-L["csgo_category_gripping"] = "Gripping"
-L["csgo_category_mag"] = "Magazine"
-L["csgo_category_model"] = "Model"
-L["csgo_category_muzzle"] = "Muzzle"
-L["csgo_category_optics"] = "Optics"
+L["csgo_category_gripping"] = "Agarre"
+L["csgo_category_mag"] = "Cargador"
+L["csgo_category_model"] = "Modelo"
+L["csgo_category_muzzle"] = "Boca"
+L["csgo_category_optics"] = "Visores"
 L["csgo_category_perk"] = "Perk"
-L["csgo_category_pistolgrip"] = "Pistol Grip"
-L["csgo_category_rail"] = "Rail"
-L["csgo_category_side"] = "Side"
+L["csgo_category_pistolgrip"] = "Grip de pistola"
+L["csgo_category_rail"] = "Riel"
+L["csgo_category_side"] = "Lateral"
 L["csgo_category_skins"] = "Skins"
 L["csgo_category_slide"] = "Slide"
-L["csgo_category_stats"] = "Stats"
+L["csgo_category_stats"] = "Estadisticas"
 L["csgo_category_sticker"] = "Sticker"
-L["csgo_category_stock"] = "Stock"
-L["csgo_category_suppressor"] = "Suppressor"
-L["csgo_category_tactical"] = "Tactical"
-L["csgo_category_top"] = "Top"
-L["csgo_category_tube"] = "Tube"
-L["csgo_category_underbarrel"] = "Underbarrel"
-L["csgo_category_view"] = "View"
+L["csgo_category_stock"] = "Culata"
+L["csgo_category_suppressor"] = "Supresor"
+L["csgo_category_tactical"] = "Tactico"
+L["csgo_category_top"] = "Superior"
+L["csgo_category_tube"] = "Tubo"
+L["csgo_category_underbarrel"] = "Bajo Cañón"
+L["csgo_category_view"] = "Vista"
 
 -- These are via file name order with "bulk" attachments afterwards. Categorized manually.
 -- 2X Optics
@@ -857,7 +857,7 @@ L["csgo_ammo_tracer_col.printname"] = "Rastreadores de color del jugador"
 L["csgo_ammo_tracer_col.compactname"] = "PCT"
 L["csgo_ammo_tracer_col.description"] = "Rondas trazadoras que utilizan el mismo color que la Physics Gun del jugador.\n(bastante genial, ¿verdad?)"
 
-L["csgo_ammo_he.printname"] = "Alto Explosivo"
+L["csgo_ammo_he.printname"] = "Explosivo de Alta Potencia"
 L["csgo_ammo_he.compactname"] = "HE"
 L["csgo_ammo_he.description"] = "Munición explosiva que causa una pequeña explosión al impactar, infligiendo daño de área de efecto."
 
@@ -881,7 +881,7 @@ L["csgo_ammo_sg_flechette.printname"] = "Flechettes"
 L["csgo_ammo_sg_flechette.compactname"] = "Flechette"
 L["csgo_ammo_sg_flechette.description"] = "Sustituye los perdigones pequeños por proyectiles finos en forma de dardo.\nMejora el alcance, la dispersión y la penetración a costa del daño."
 
-L["csgo_ammo_sg_frag.printname"] = "\"FRAG-12\" Alto Explosivo"
+L["csgo_ammo_sg_frag.printname"] = "\"FRAG-12\" Explosivo de Alta Potencia"
 L["csgo_ammo_sg_frag.compactname"] = "FRAG-12"
 L["csgo_ammo_sg_frag.description"] = "Sustituye los perdigones pequeños por un único proyectil que explota al contacto. Inflige daño de área de efecto.\nMejora la dispersión a costa de la velocidad de salida y la caída de la bala."
 
@@ -889,7 +889,7 @@ L["csgo_ammo_sg_rebounder.printname"] = "Rondas Rebotadoras"
 L["csgo_ammo_sg_rebounder.compactname"] = "Reboteador"
 L["csgo_ammo_sg_rebounder.description"] = "Sustituye los perdigones por otros especializados diseñados para rebotar al contacto.\nIncrementa la probabilidad de rebote y el daño a larga distancia a costa del daño a corta distancia."
 
-L["csgo_ammo_sg_frag_x4.printname"] = "\"FRAG-12\" Alto Explosivo x4"
+L["csgo_ammo_sg_frag_x4.printname"] = "\"FRAG-12\" Explosivo de Alta Potencia x4"
 L["csgo_ammo_sg_frag_x4.compactname"] = "FRAG-12 x4"
 L["csgo_ammo_sg_frag_x4.description"] = "Sustituye los perdigones pequeños por cuatro proyectiles que explotan al contacto. Inflige daño de área de efecto.\nMejora la dispersión a costa de la velocidad de salida y la caída de proyectiles."
 
@@ -914,7 +914,7 @@ L["csgo_ammo_sg_flechette_ubgl.printname"] = "Flechettes"
 L["csgo_ammo_sg_flechette_ubgl.compactname"] = "Flechette"
 L["csgo_ammo_sg_flechette_ubgl.description"] = "Sustituye los perdigones pequeños por proyectiles finos en forma de dardo.\nMejora el alcance, la dispersión y la penetración a costa del daño."
 
-L["csgo_ammo_sg_frag_ubgl.printname"] = "\"FRAG-12\" Alto Explosivo"
+L["csgo_ammo_sg_frag_ubgl.printname"] = "\"FRAG-12\" Explosivo de Alta Potencia"
 L["csgo_ammo_sg_frag_ubgl.compactname"] = "FRAG-12"
 L["csgo_ammo_sg_frag_ubgl.description"] = "Sustituye los perdigones pequeños por un único proyectil que explota al contacto. Inflige daño de área de efecto.\nMejora la dispersión a costa de la velocidad de salida y la caída de la bala."
 
@@ -922,7 +922,7 @@ L["csgo_ammo_sg_rebounder_ubgl.printname"] = "Rondas Rebotadoras"
 L["csgo_ammo_sg_rebounder_ubgl.compactname"] = "Reboteador"
 L["csgo_ammo_sg_rebounder_ubgl.description"] = "Sustituye los perdigones por otros especializados diseñados para rebotar al contacto.\nIncrementa la probabilidad de rebote y el daño a larga distancia a costa del daño a corta distancia."
 
-L["csgo_ammo_sg_frag_x4_ubgl.printname"] = "\"FRAG-12\" Alto Explosivo x4"
+L["csgo_ammo_sg_frag_x4_ubgl.printname"] = "\"FRAG-12\" Explosivo de Alta Potencia x4"
 L["csgo_ammo_sg_frag_x4_ubgl.compactname"] = "FRAG-12 x4"
 L["csgo_ammo_sg_frag_x4_ubgl.description"] = "Sustituye los perdigones pequeños por cuatro proyectiles que explotan al contacto. Inflige daño de área de efecto.\nMejora la dispersión a costa de la velocidad de salida y la caída de proyectiles."
 
