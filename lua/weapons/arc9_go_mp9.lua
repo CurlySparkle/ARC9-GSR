@@ -505,6 +505,46 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("grip_none") then model:SetBodygroup(2,2) end
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_mp9_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		island_floral = "",
+		black_sand = "",
+		chevron = "",
+		deadly_poison = "",
+		food_chain = "",
+		goo = "",
+		hydra = "",
+		narcis = "",
+		superlight = "",
+		vein = "",
+		
+		-- Gunsmith
+		colony01 = "",
+		starlight = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),

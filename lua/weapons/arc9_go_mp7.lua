@@ -558,6 +558,47 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("stock_extend") then model:SetBodygroup(5,0) end		
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_mp7_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		um06 = "",
+		
+		-- Custom
+		classified = "",
+		fear = "",
+		khaki = "",
+		racketeer = "",
+		replica = "",
+		commander = "",
+		nemesis = "",
+		
+		-- Gunsmith
+		strone = "",
+		bloodsport = "",
+		pooldead = "",
+		powercore = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {
