@@ -559,6 +559,10 @@ L["csgo_rail_ub_1.printname"] = "Undermonterad Picatinnyskena"
 L["csgo_rail_ub_1.compactname"] = "UM Skena"
 L["csgo_rail_ub_1.description"] = "En picatinnyskena som tillåter installation av diverse framgrepp och undermonterade vapen."
 
+L["csgo_rail_ub_mp5.printname"] = "Undermonterad Picatinnyskena"
+L["csgo_rail_ub_mp5.compactname"] = "UM Skena"
+L["csgo_rail_ub_mp5.description"] = "En picatinnyskena som tillåter installation av diverse framgrepp och undermonterade vapen."
+
 -- Skins
 -- For these, try to have the descriptions resemble CS:GO.
 L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"

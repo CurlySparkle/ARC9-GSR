@@ -4,25 +4,29 @@ Here's an abbrevriated version:
 [table][tr]
 	[th][list]
 	[*]A ton of small and big weapon tuning (Too many to mention here!)
-	[*]Localization support! All attachment names and descriptions are now localized!
+	[*]Localization support!
+		> For weapons - Translates display names, descriptions, trivia, spawnmenu category names and attachment slot names!
+		> For attachments - Translates display names, short names and descriptions!
 		> Available in English, Swedish and Spanish!
 
 	[*]Changed almost all attachment names and all descriptions
 	[*]Fixed broken attachments with either incorrect or illogical stats
 	[*]Rebalanced several attachments
+	[*]Added integrated support for the brand-new Gunsmith Reloaded Appearance Expansion
 	
 	And more!
 	[/list][/th]
 [/tr][/table]
 
 And here's the long, more detailed version:
+
 [b][u]Weapon changes[/u][/b]
 Weapons not listed did not have anything changed.
 
 [b][u]Akimbo[/u][/b]
 [table][tr]
 	[th]Dual Eagles[/th]
-	[th]Changed name to 'Dual Deagles'
+	[th]Changed name to 'Dual Desert Eagle'
 	Increased RPM
 	Decreased damage[/th]
 [/tr][tr]

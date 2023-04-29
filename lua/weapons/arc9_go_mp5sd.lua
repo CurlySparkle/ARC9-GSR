@@ -221,6 +221,7 @@ SWEP.MuzzleParticle = "weapon_muzzle_flash_assaultrifle_silenced"
 SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
+SWEP.Silencer = true
 
 SWEP.CamQCA = 4
 SWEP.CamQCA_Mult = 0.5
@@ -493,6 +494,44 @@ SWEP.AttachmentElements = {
         },
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_mp5sd_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		desert_strike = "",
+		quick_liquidation = "",
+		
+		-- Gunsmith
+		neon_flektarn = "",
+		conditionzero = "",
+		etch = "",
+		fbi = "",
+		festival_drip = "",
+		kid_necronomicon = "",
+		astromatic = "",
+		wasteland_legacy = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     -- {

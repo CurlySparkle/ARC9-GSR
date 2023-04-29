@@ -722,6 +722,7 @@ SWEP.HookP_NameChange = function(self, name)
 		island_floral = "Wild Lotus",
 		xray = "X-Ray",
 		fireserpent = "Fire Serpent",
+		green_leather = "",
 		jaguar = "Panthera onca",
 		panther = "Jaguar",
 		pinstripe = "Emerald Pinstripe",

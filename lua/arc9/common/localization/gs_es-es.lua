@@ -559,6 +559,10 @@ L["csgo_rail_ub_1.printname"] = "Riel Picatinny bajo el cañón"
 L["csgo_rail_ub_1.compactname"] = "Riel UB"
 L["csgo_rail_ub_1.description"] = "Un riel Picatinny que permite acoplar varios foregrips y armamento bajo el cañón."
 
+L["csgo_rail_ub_mp5.printname"] = "Riel Picatinny bajo el cañón"
+L["csgo_rail_ub_mp5.compactname"] = "Riel UB"
+L["csgo_rail_ub_mp5.description"] = "Un riel Picatinny que permite acoplar varios foregrips y armamento bajo el cañón."
+
 -- Skins
 -- For these, try to have the descriptions resemble CS:GO.
 L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"
