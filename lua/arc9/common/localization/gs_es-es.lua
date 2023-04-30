@@ -133,6 +133,26 @@ L["csgo_weapon_knife_shield"] = "Escudo Antidisturbios"
 L["csgo_weapon_knife_t"] = "Cuchillo T"
 L["csgo_weapon_knife_t_gold"] = "Cuchillo T Dorado"
 
+L["csgo_weapon_knife_bayonet"] = "Bayoneta"
+L["csgo_weapon_knife_flip"] = "Cuchillo plegable"
+L["csgo_weapon_knife_gut"] = "Cuchillo Destripador"
+L["csgo_weapon_knife_css"] = "Cuchillo clásico"
+L["csgo_weapon_knife_m9"] = "Bayoneta M9"
+L["csgo_weapon_knife_karam"] = "Karambit"
+L["csgo_weapon_knife_tactical"] = "Cuchillo del Cazador"
+L["csgo_weapon_knife_butterfly"] = "Cuchillo Mariposa"
+L["csgo_weapon_knife_falchion"] = "Cuchillo Alfanje"
+L["csgo_weapon_knife_push"] = "Dagas Sombrías"
+L["csgo_weapon_knife_bowie"] = "Cuchillo Bowie"
+L["csgo_weapon_knife_cord"] = "Cuchillo encordado"
+L["csgo_weapon_knife_canis"] = "Cuchillo de supervivencia"
+L["csgo_weapon_knife_ursus"] = "Cuchillo ursus"
+L["csgo_weapon_knife_gypsy"] = "Navaja"
+L["csgo_weapon_knife_outdoor"] = "Cuchillo nómada"
+L["csgo_weapon_knife_widowmaker"] = "Cuchillo talón"
+L["csgo_weapon_knife_stiletto"] = "Estilete"
+L["csgo_weapon_knife_skeleton"] = "Cuchillo esqueletizado"
+
 L["csgo_weapon_m3"] = "Benelli M3 Super 90"
 
 L["csgo_weapon_m4a1"] = "M4A1-S"
@@ -255,9 +275,47 @@ L["csgo_description_glock"] = "La Glock 18 es una práctica pistola de primera r
 
 L["csgo_description_knife_ct"] = "El cuchillo, silencioso y siempre disponible, tiene un ataque principal rápido y de daño reducido y un ataque secundario lento y de daño elevado. Una puñalada por la espalda con el ataque secundario permite asesinar de manera instantánea y discreta."
 
-L["csgo_description_knife_shield"] = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers."
+L["csgo_description_knife_shield"] = "Un dispositivo de protección diseñado para desviar o absorber el daño balístico y ayudar a proteger al usuario de las balas de varios calibres."
 
 L["csgo_description_knife_t"] = "El cuchillo, silencioso y siempre disponible, tiene un ataque principal rápido y de daño reducido y un ataque secundario lento y de daño elevado. Una puñalada por la espalda con el ataque secundario permite asesinar de manera instantánea y discreta."
+
+L["csgo_description_knife_bayonet"] = "Relativamente idéntica al diseño de la Segunda Guerra Mundial, la bayoneta aún conserva su lugar en la estrategia militar moderna. El uso de la bayoneta ha seguido siendo efectivo en conflictos actuales como la Guerra del Golfo y la de Afganistán."
+
+L["csgo_description_knife_flip"] = "Los cuchillos plegables tienen una hoja curvada de estilo persa con una punta afilada. Aunque la punta pueda ser frágil, el diseño general del cuchillo es sorprendentemente duradero."
+
+L["csgo_description_knife_gut"] = "La característica más notable de un cuchillo destripador es el gancho destripador que tiene al final de la hoja. Originalmente popularizado como una ayuda para los vendajes, el cuchillo destripador es también efectivo cortando materiales fibrosos como cuerdas, cinchas o cinturones de seguridad con bastante facilidad."
+
+L["csgo_description_knife_css"] = "Un clásico de la serie de Counter-Strike, el filo de este cuchillo es de Stellite y estás encajado a presión y mantenido perfectamente en su sitio por su ajuste preciso con el titanio del filo y del lomo de la hoja. El mango es de marfil de mastodonte fosilizado, envuelto en un revestimiento de fibra de carbono."
+
+L["csgo_description_knife_m9"] = "Esta es la bayoneta M-9. Pensada originalmente para ir acoplada a un rifle, también resulta muy adecuada para el combate en espacios cerrados."
+
+L["csgo_description_knife_karam"] = "Con su hoja curvada emulando la garra de un tigre, el karambit fue desarrollado como parte de la disciplina marcial surasiática del silat. El cuchillo se usa normalmente con un agarre opuesto al de la hoja introduciendo el dedo índice en el aro."
+
+L["csgo_description_knife_tactical"] = "Un cuchillo diseñado para usos tácticos modernos y cuya hoja está adaptada para el uso tanto de combate como de necesidades utilitarias. Ese estilo tantō exclusivo le proporciona una penetración máxima incluso a través de las superficies más gruesas."
+
+L["csgo_description_knife_butterfly"] = "Esto es una navaja de diseño personalizado, comúnmente conocida como cuchillo mariposa. La característica que define a esta arma es la apertura de abanico de la hoja que pivota libremente, que permite abrirla rápidamente o a escondidas. Debido a esto, las mariposas son ilegales en algunos países."
+
+L["csgo_description_knife_falchion"] = "Como homenaje moderno a una espada alfanje, esta hoja de punta cóncava tiene un filo curvado."
+
+L["csgo_description_knife_push"] = "Diseñada para proporcionar un brutalidad eficiente, usar una daga es tan simple como lanzar un puñetazo o dos."
+
+L["csgo_description_knife_bowie"] = "Este afilado cuchillo Bowie de espiga completa está diseñado para utilizarse en situaciones de supervivencia extremas."
+
+L["csgo_description_knife_cord"] = "Este cuchillo de supervivencia de hoja fija está diseñado para usarse bien como un arma bien como una herramienta, por ejemplo: para poner trampas, para cazar animales o para cortar ramas. El mango está envuelto en un cordón paracaidista multiuso."
+
+L["csgo_description_knife_canis"] = "Este cuchillo táctico multiuso incluye un filo de sierra, para desgarrar materiales toscos como hueso o fibra, además de un gancho afilado para eviscerar. El mango de material compuesto está sujeto a la hoja con tornillos hexagonales."
+
+L["csgo_description_knife_ursus"] = "Este cuchillo de supervivencia de estilo tantō cuenta con una hoja facetada y una espiga enteriza con talón percutor. Sin complicaciones, sin piezas móviles; solo una hoja fiable lista para hacer su trabajo."
+
+L["csgo_description_knife_gypsy"] = "Esta navaja con mango de mármol esmaltado esconde una pequeña pero increíblemente afilada cuchilla."
+
+L["csgo_description_knife_outdoor"] = "Esta navaja táctica ergonómica de hoja plegable incluye incrustaciones en un mango compuesto y una hoja ancha y sólida, útil para cortar y rebanar materiales."
+
+L["csgo_description_knife_widowmaker"] = "Este karambit con mango de marfil posee remaches de latón y dientes de sierra, por lo que corta al entrar y desgarra al salir."
+
+L["csgo_description_knife_stiletto"] = "Este delgado cuchillo de estilo italiano, foco de controversia e incluso regulación a lo largo de la historia, cuenta con una hoja accionada por resorte que se puede desplegar casi instantáneamente con tan solo pulsar un botón."
+
+L["csgo_description_knife_skeleton"] = "Se ha encintado el puñal de este cuchillo afilado esqueletizado para mejorar su agarre. El agujero permite introducir un dedo para mayor estabilidad y seguridad."
 
 L["csgo_description_m3"] = "La M3 es una escopeta muy completa que mantiene la eficacia a media distancia sin renunciar a la potencia a corta distancia."
 

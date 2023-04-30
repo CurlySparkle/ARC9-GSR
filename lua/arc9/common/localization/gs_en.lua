@@ -133,6 +133,26 @@ L["csgo_weapon_knife_shield"] = "Riot Shield"
 L["csgo_weapon_knife_t"] = "T Knife"
 L["csgo_weapon_knife_t_gold"] = "Golden T Knife"
 
+L["csgo_weapon_knife_bayonet"] = "Bayonet"
+L["csgo_weapon_knife_flip"] = "Flip Knife"
+L["csgo_weapon_knife_gut"] = "Gut Knife"
+L["csgo_weapon_knife_css"] = "Classic Knife"
+L["csgo_weapon_knife_m9"] = "M9 Bayonet"
+L["csgo_weapon_knife_karam"] = "Karambit"
+L["csgo_weapon_knife_tactical"] = "Huntsman Knife"
+L["csgo_weapon_knife_butterfly"] = "Butterfly Knife"
+L["csgo_weapon_knife_falchion"] = "Falchion Knife"
+L["csgo_weapon_knife_push"] = "Shadow Daggers"
+L["csgo_weapon_knife_bowie"] = "Bowie Knife"
+L["csgo_weapon_knife_cord"] = "Paracord Knife"
+L["csgo_weapon_knife_canis"] = "Survival Knife"
+L["csgo_weapon_knife_ursus"] = "Ursus Knife"
+L["csgo_weapon_knife_gypsy"] = "Navaja Knife"
+L["csgo_weapon_knife_outdoor"] = "Nomad Knife"
+L["csgo_weapon_knife_widowmaker"] = "Talon Knife"
+L["csgo_weapon_knife_stiletto"] = "Stiletto Knife"
+L["csgo_weapon_knife_skeleton"] = "Skeleton Knife"
+
 L["csgo_weapon_m3"] = "Benelli M3 Super 90"
 
 L["csgo_weapon_m4a1"] = "M4A1-S"
@@ -258,6 +278,44 @@ L["csgo_description_knife_ct"] = "Quiet and always available, the knife has a fa
 L["csgo_description_knife_shield"] = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers."
 
 L["csgo_description_knife_t"] = "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
+
+L["csgo_description_knife_bayonet"] = "Relatively unchanged in its design since World War II, the bayonet still retains a place in modern military strategy. Bayonet charges have continued to be effective as recently as the second Gulf War and the war in Afghanistan."
+
+L["csgo_description_knife_flip"] = "Flip knives sport a Persian-style back-swept blade with an acute point.  While the point itself may be fragile, the overall design of the flip knife's design is surprisingly durable."
+
+L["csgo_description_knife_gut"] = "The most notable feature of a gut knife is the gut hook on the spine of the blade.  Originally popularized as an aid for field dressing game, the gut hook is also effective at  cutting through fibrous materials like rope, webbing, or safety belts with ease."
+
+L["csgo_description_knife_css"] = "A classic of the Counter-Strike series, the edge of this knife is press-fit Stellite perfectly held in place due to its precise fit with the titanium on the blade's cheek and spine. The handle is fossilized mastodon ivory held in a carbon fibre pocket."
+
+L["csgo_description_knife_m9"] = "This is the M-9 bayonet.  Originally intended to be mounted on a rifle, it is also well suited to close-quarters combat."
+
+L["csgo_description_knife_karam"] = "With its curved blade mimicking a tiger's claw, the karambit was developed as part of the southeast Asian martial discipline of silat. The knife is typically used with a reverse grip, with the finger ring on the index finger."
+
+L["csgo_description_knife_tactical"] = "A knife designed for modern tactical uses, the blade is well suited for a range of both combat and utilitarian needs.  The unique Tanto point allows for maximum penetration through even the toughest of surfaces."
+
+L["csgo_description_knife_butterfly"] = "This is a custom-designed balisong, commonly known as a butterfly knife. The defining characteristic of this weapon is the fan-like opening of a freely pivoting blade, allowing rapid deployment or concealment. As a result, butterfly knives are outlawed in many countries."
+
+L["csgo_description_knife_falchion"] = "A modern homage to a falchion sword, this clip point blade has a curved edge."
+
+L["csgo_description_knife_push"] = "Designed for efficient brutality, using a push dagger is as simple as throwing a punch or two."
+
+L["csgo_description_knife_bowie"] = "This full-tang sawback Bowie knife is designed for heavy use in brutal survival situations."
+
+L["csgo_description_knife_cord"] = "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord."
+
+L["csgo_description_knife_canis"] = "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts."
+
+L["csgo_description_knife_ursus"] = "This tanto-style survival knife features a faceted blade and full tang, complete with impact pommel. No fuss, no moving parts - just a reliable blade that's ready to work."
+
+L["csgo_description_knife_gypsy"] = "This marble-enamel-handled flip knife conceals a small but viciously tapered blade."
+
+L["csgo_description_knife_outdoor"] = "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material."
+
+L["csgo_description_knife_widowmaker"] = "This ivory-handled karambit features brass rivets and saw-tooth ridges, so it cuts on the way in, and tears on the way out."
+
+L["csgo_description_knife_stiletto"] = "Historically a focal point of contention and even regulation, this Italian-style stiletto switchblade knife features a spring-loaded blade that can be deployed almost instantly with the push of a release catch."
+
+L["csgo_description_knife_skeleton"] = "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety."
 
 L["csgo_description_m3"] = "The M3 is a well-rounded shotgun that retains effectiveness at medium ranges without giving up on close range power."
 

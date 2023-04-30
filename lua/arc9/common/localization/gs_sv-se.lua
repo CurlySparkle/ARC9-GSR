@@ -133,6 +133,26 @@ L["csgo_weapon_knife_shield"] = "Kravallsköld"
 L["csgo_weapon_knife_t"] = "T-Kniv"
 L["csgo_weapon_knife_t_gold"] = "Gyllene T-Kniv"
 
+L["csgo_weapon_knife_bayonet"] = "Bajonett"
+L["csgo_weapon_knife_flip"] = "Fällkniv"
+L["csgo_weapon_knife_gut"] = "Buköppnare"
+L["csgo_weapon_knife_css"] = "Klassisk kniv"
+L["csgo_weapon_knife_m9"] = "M9-bajonett"
+L["csgo_weapon_knife_karam"] = "Karambit"
+L["csgo_weapon_knife_tactical"] = "Huntsmankniv"
+L["csgo_weapon_knife_butterfly"] = "Butterflykniv"
+L["csgo_weapon_knife_falchion"] = "Falchionkniv"
+L["csgo_weapon_knife_push"] = "Skuggdolkar"
+L["csgo_weapon_knife_bowie"] = "Bowiekniv"
+L["csgo_weapon_knife_cord"] = "Paracordkniv"
+L["csgo_weapon_knife_canis"] = "Överlevnadskniv"
+L["csgo_weapon_knife_ursus"] = "Ursuskniv"
+L["csgo_weapon_knife_gypsy"] = "Navajakniv"
+L["csgo_weapon_knife_outdoor"] = "Nomad-kniv"
+L["csgo_weapon_knife_widowmaker"] = "Talonkniv"
+L["csgo_weapon_knife_stiletto"] = "Stilettkniv"
+L["csgo_weapon_knife_skeleton"] = "Skeleton-kniv"
+
 L["csgo_weapon_m3"] = "Benelli M3 Super 90"
 
 L["csgo_weapon_m4a1"] = "M4A1-S"
@@ -258,6 +278,44 @@ L["csgo_description_knife_ct"] = "Kniven är tyst och alltid tillgänglig. Den h
 L["csgo_description_knife_shield"] = "En skyddsanordning utformad för att avleda eller absorbera ballistisk skada och skydda bäraren från en rad projektilkalibrer."
 
 L["csgo_description_knife_t"] = "Kniven är tyst och alltid tillgänglig. Den har en snabb primär attack som gör lite skada och en långsam sekundär attack som gör hög skada. Rygghugg gör att tysta spelare kan döda sina fiender i ett enda slag."
+
+L["csgo_description_knife_bayonet"] = "Bajonettens design har förändrats relativt lite sedan andra världskriget, och har fortfarande en plats i modern militärstrategi. Bajonettanfall har fortsatt varit effektiva så sent som i Kuwaitkriget och kriget i Afghanistan."
+
+L["csgo_description_knife_flip"] = "Fällkniven ståtar med en bakåtsvept klinga i persisk stil med en spetsig udd. Medan udden i sig må vara ömtålig, är den allmänna utformningen av fällknivens design förvånansvärt hållbar."
+
+L["csgo_description_knife_gut"] = "Det mest märkbara kännetecknet på en magkniv är magkroken på klingans rygg. Magkniven blev populär som ett hjälpmedel för att tömma villebråd, men är även effektiv på att enkelt skära igenom fibrigt material såsom rep, vävband eller säkerhetsbälten."
+
+L["csgo_description_knife_css"] = "En klassiker i Counter-Strike-serien. Eggen på denna kniv har friktionssvetsat Stellite som hålls på plats tack vare dess precisa passform med titanet på bladets rygg och sida. Handtaget är gjort av fossilerat mastodontelfenben som hålls i ett kolfiberhölje."
+
+L["csgo_description_knife_m9"] = "Det här är M-9-bajonetten. Ursprungligen avsedd för att sättas fast på ett gevär, men är också väl anpassad för närstrid."
+
+L["csgo_description_knife_karam"] = "Med sin böjda klinga som härmar en tigers klo, utvecklades karambiten som en del av den sydostasiatiska kampsportsdisciplinen silat. Kniven används oftast med ett omvänt grepp, med fingerringen på pekfingret."
+
+L["csgo_description_knife_tactical"] = "En kniv designad för moderna taktiska syften vars blad är väl lämpat för ett urval av både stridsmässiga och praktiska behov. Den unika Tanto-spetsen tillåter maximal penetrering genom till och med den tuffaste av ytor."
+
+L["csgo_description_knife_butterfly"] = "Det är är en egendesignad balisong, vanligen benämnd butterflykniv. Detta vapens definierande karaktärsdrag är den solfjäderlika öpnningen av ett fritt roterande blad, som tillåter snabb användning eller döljande. Som resultat av detta är butterflyknivar olagliga i många länder."
+
+L["csgo_description_knife_falchion"] = "Detta blad har en böjd kant, och är en modern hyllning till falchionsvärdet."
+
+L["csgo_description_knife_push"] = "En knogdolk som designats för effektiv brutalitet är lika lätt att använda som att slåss för hand."
+
+L["csgo_description_knife_bowie"] = "Denna Bowiekniv är utformad för hårt bruk i brutala överlevnadssituationer."
+
+L["csgo_description_knife_cord"] = "Denna överlevnadskniv med ett fast blad är designad för att kunna användas som både ett vapen och ett verktyg, och kan användas till att göra fällor, jakt, eller att ta dig igenom snårig terräng. Skaftet är inlindat i en flerfunktionell paracord."
+
+L["csgo_description_knife_canis"] = "Denna flerfunktionella taktiska kniv har en sågtandad egg för att såga igenom material som ben eller fiber, samt en buköppnare. Skaftet, som är gjort av ett kompositmaterial, har bultats fast med sexkantsmuttrar."
+
+L["csgo_description_knife_ursus"] = "Denna tanto-liknande överlevnadskniv har ett fasetterat blad och full tånge, samt en pommel. Inget krångel, inga rörliga delar - endast ett pålitligt blad som är redo att arbeta."
+
+L["csgo_description_knife_gypsy"] = "Denna fällkniv med ett emaljerat marmorhandtag döljer ett litet men illvilligt avsmalnande blad."
+
+L["csgo_description_knife_outdoor"] = "Denna ergonomiska taktiska jaktkniv har ett brett och stadigt blad som kan låsas fast i dess kompositskaft, och är användbar till att skära och bryta isär material."
+
+L["csgo_description_knife_widowmaker"] = "Denna karambit med ett elfenbenshandtag har mässingnitar och en sågtandad rygg, så den skär på vägen in, och sliter på vägen ut."
+
+L["csgo_description_knife_stiletto"] = "Historiskt har stiletten varit omtvistad och reglerad, denna italienska stilettkniv har ett fjäderladdat blad som kan tas fram nästan omedelbart genom ett tryck på en spärr."
+
+L["csgo_description_knife_skeleton"] = "Denna avskalade kniv med full tang har ett tejpinlindat skaft för att förbättra greppvänligheten. Ett finger kan träs igenom hålet för att göra kniven säkrare och stabilare."
 
 L["csgo_description_m3"] = "M3:an är ett välbalanserat hagelgevär som behåller sin effektivitet på medeldistanser utan att ge upp närdistanskraft."
 
