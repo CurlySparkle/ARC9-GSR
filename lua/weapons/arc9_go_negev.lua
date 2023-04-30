@@ -619,6 +619,43 @@ SWEP.AttachmentElements = {
     },	
 }
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_negev_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		bratatat = "",
+		titanstorm = "",
+		annihilator = "",
+		clear_sky = "",
+		devtexture = "",
+		impact = "",
+		prototype = "",
+		ultralight = "",
+		
+		-- Gunsmith
+		thor = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
