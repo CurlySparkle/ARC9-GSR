@@ -651,6 +651,49 @@ SWEP.HookP_NameChange = function(self, name)
 		name = "Frankenstein-90"
 	end
 
+-- For Skins
+	local skin = "moka_csgo_skin_p90_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		royalbleed = "",
+		
+		-- Custom
+		brown_leather = "",
+		dragon = "",
+		jaguar_leather = "",
+		scarab_of_wisdom = "",
+		faceit = "",
+		grimm = "",
+		mastery = "",
+		nostalgia = "",
+		offworld = "",
+		shapewood = "",
+		scorpius_reborn = "",
+		zone9 = "",
+		
+		-- Gunsmith
+		container = "",
+		fullthrottle = "",
+		neoqueen = "",
+		shallow_grave = "",
+		tangled = "",
+		tread = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 
