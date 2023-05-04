@@ -177,7 +177,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(16, 25, 3)
+SWEP.CustomizePos = Vector(17.5, 25, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -442,6 +442,53 @@ SWEP.AttachmentElements = {
     AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 6.8), }, [5] = { Pos = Vector(0, -1.1, 6.5), } }		
     },	
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_p250_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		contour = "",
+		verdigris = "",
+		cartel = "",
+		
+		-- Custom
+		xray = "",
+		asiimov = "",
+		axiom = "",
+		casette = "",
+		cybercroc = "",
+		infect = "",
+		mandala = "",
+		orange_gun_refined = "",
+		rebuilt = "",
+		
+		-- Gunsmith
+		apep = "",
+		checker = "",
+		cybershell = "",
+		inferno = "",
+		visions = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
 
 SWEP.Attachments = {
     {

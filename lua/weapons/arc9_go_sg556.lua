@@ -488,13 +488,43 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(1,2) end
 end
 
-SWEP.HookP_NameChange = function(wep, name)
-    if wep:HasElement("552") then
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["csgo_sg556_barrel_short"] then
         name = ARC9:GetPhrase("csgo_weapon_sg556_sg552")
     end
-    if wep:HasElement("proto") then
+	if att["csgo_sg556_barrel_proto"] then
         name = ARC9:GetPhrase("csgo_weapon_sg556_sg541")
     end
+
+-- For Skins
+	local skin = "moka_csgo_skin_sg556_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		contour = "",
+		
+		-- Custom
+		xray = "",
+		
+		-- Gunsmith
+		apep = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 

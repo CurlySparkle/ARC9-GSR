@@ -160,7 +160,7 @@
 		> Frankenstein-90 - 20 or 30-Round NATO Mags
 
 > P250
-	- Changed the CustomizePos value from (19, 25, 3) to (16, 25, 3)
+	- Changed the CustomizePos value from (19, 25, 3) to (17.5, 25, 3)
 
 > P2000
 	- Changed the CustomizePos value from (19, 25, 3) to (17.5, 23, 2)

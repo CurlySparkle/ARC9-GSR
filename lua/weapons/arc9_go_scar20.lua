@@ -523,6 +523,39 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,4) end
 end
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+-- For Skins
+	local skin = "moka_csgo_skin_scar20_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		contour = "",
+		
+		-- Custom
+		xray = "",
+		
+		-- Gunsmith
+		apep = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),

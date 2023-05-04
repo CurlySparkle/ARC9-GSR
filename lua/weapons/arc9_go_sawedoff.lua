@@ -497,11 +497,40 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
 
-SWEP.HookP_NameChange = function(wep, name)
-    if wep:HasElement("barrel_ext") then
+	if att["csgo_sawedoff_barrel_ext"] then
         name = ARC9:GetPhrase("csgo_weapon_sawedoff_r870")
     end
+	
+-- For Skins
+	local skin = "moka_csgo_skin_sawedoff_"
+
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		contour = "",
+		
+		-- Custom
+		xray = "",
+		
+		-- Gunsmith
+		apep = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
     return name
 end
 
