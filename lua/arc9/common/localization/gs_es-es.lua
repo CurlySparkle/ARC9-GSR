@@ -481,11 +481,11 @@ L["csgo_optic_scope_g3sg1.description"] = "Visor de francotirador de largo alcan
 
 L["csgo_optic_scope_scar20.printname"] = "Visor SCAR-20 (8x)"
 L["csgo_optic_scope_scar20.compactname"] = "SCAR-20 8X"
-L["csgo_optic_scope_scar20.description"] = "Long-range sniper scope intended for the SCAR-20.\nProporciona una retícula limpia para una rápida adquisición del objetivo."
+L["csgo_optic_scope_scar20.description"] = "Visor de francotirador de largo alcance destinado al SCAR-20\nProporciona una retícula limpia para una rápida adquisición del objetivo."
 
-L["csgo_optic_scope_scout.printname"] = "Scout Scope (6x)"
+L["csgo_optic_scope_scout.printname"] = "Visor Scout (6x)"
 L["csgo_optic_scope_scout.compactname"] = "Scout 6X"
-L["csgo_optic_scope_scout.description"] = "Visor de francotirador de largo alcance destinado al SCAR-20.\nProporciona una retícula limpia para una rápida adquisición del objetivo."
+L["csgo_optic_scope_scout.description"] = "Visor de francotirador de largo alcance destinado al Scout.\nProporciona una retícula limpia para una rápida adquisición del objetivo."
 
 L["csgo_optic_scope_ssg08.printname"] = "Visor SSG 08 (8x)"
 L["csgo_optic_scope_ssg08.compactname"] = "SSG 08 8X"
