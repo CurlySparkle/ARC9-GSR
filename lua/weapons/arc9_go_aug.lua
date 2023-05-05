@@ -601,7 +601,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = ARC9:GetPhrase("csgo_category_muzzle"),
+        Category = {"muzzle"},
         Bone = "v_weapon.aug_Parent",
         Pos = Vector(0.1, 12.7, -2.45),
         Ang = Angle(0, -90, 180),

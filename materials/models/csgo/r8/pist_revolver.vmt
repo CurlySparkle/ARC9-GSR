@@ -7,7 +7,7 @@
 	$phong "1"
 	$phongfresnelranges "[0.15 0.65 1.00]"
 	$phongboost "64"
-	$basealphaenvmapmask "1"
+	// $basealphaenvmapmask "1"
 	$phongalbedotint "1"
 	$phongdisablehalflambert "1"
 

@@ -138,7 +138,7 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SpeedMultSights = 0.1
+SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
 
 -------------------------- MELEE
@@ -561,6 +561,36 @@ SWEP.Hook_HideBones = function(self, bones)
     end
 end
 
+-- SWEP.HideBones = {
+-- }
+
+-- SWEP.BulletBones = {
+    -- [1] = "v_weapon.bullet18",
+    -- [2] = "v_weapon.bullet17",
+    -- [3] = "v_weapon.bullet16",
+    -- [4] = "v_weapon.bullet15",
+    -- [5] = "v_weapon.bullet14",
+    -- [6] = "v_weapon.bullet13",
+    -- [7] = "v_weapon.bullet12",
+    -- [8] = "v_weapon.bullet11",
+    -- [9] = "v_weapon.bullet10",
+    -- [10] = "v_weapon.bullet09",
+    -- [11] = "v_weapon.bullet08",
+    -- [12] = "v_weapon.bullet07",
+    -- [13] = "v_weapon.bullet06",
+    -- [14] = "v_weapon.bullet05",
+    -- [15] = "v_weapon.bullet04",
+    -- [16] = "v_weapon.bullet03",
+    -- [17] = "v_weapon.bullet02",
+    -- [18] = "v_weapon.bullet01",
+    -- [19] = "v_weapon.bullet00",
+-- }
+
+-- SWEP.HideBonesSilenced = {}
+
+-- SWEP.ReloadHideBoneTables = {
+-- }
+
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
@@ -660,7 +690,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = ARC9:GetPhrase("csgo_category_muzzle"),
+        Category = {"muzzle"},
         Bone = "v_weapon.negev_parent",
         Pos = Vector(0, -5.15, 24.2),
         Ang = Angle(90, 0, -90),
