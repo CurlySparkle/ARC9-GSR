@@ -1,3 +1,5 @@
+Note - Stopped updating around May. Still contains the major changes during initial localization work.
+
 [Weapons]
 > Dual Eagles
 	- Changed display name to 'Dual Deagles'

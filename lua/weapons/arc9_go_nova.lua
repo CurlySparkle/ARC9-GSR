@@ -324,7 +324,7 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.4,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -367,17 +367,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.2,
+                t = 0.25,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.7,
-                lhik = 0,
-                rhik = 1
-            },
-            {
-                t = 1,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -421,17 +416,17 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.7,
+                t = 0.9,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 1.15,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -506,6 +501,9 @@ SWEP.AttachmentElements = {
 			{3,2},
         },
     },
+    ["csgo_rail_optic"] = {
+    AttPosMods = {[1] = { Pos = Vector(0, -1.9, 8), } }
+    },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -555,18 +553,19 @@ SWEP.Attachments = {
         Bone = "v_weapon.NOVA_PARENT",
         Pos = Vector(0, -1.5, 8),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_custom"},
+        Category = {"csgo_rail_optic", "csgo_rail_optic_custom"},
         CorrectiveAng = Angle(0, 0, 0),
-		MergeSlots = {2},
-		Hidden = true,
+		-- MergeSlots = {2},
+		-- Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.NOVA_PARENT",
         Pos = Vector(0, -1.9, 8),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic",},
+        Category = {},
         CorrectiveAng = Angle(0, 0, 0),
+		Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),

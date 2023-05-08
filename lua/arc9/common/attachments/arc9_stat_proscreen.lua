@@ -1,18 +1,14 @@
---[[
-local ATT = {}
-
+-- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.PrintName = "Stattrak™ Kill Counter"
-ATT.CompactName = "Stattrak™"
-ATT.Icon = Material("entities/attachs/arc9_stattrak.png", "mips smooth")
-ATT.Description = "A piece of technology that tracks the number of kills you've made with the weapon attached to it. There are two selectable modes, Global and Local.\nThe former will track kills between sessions while the latter will only track kills for the current session."
-ATT.SortOrder = 1
+ATT.PrintName = "Pro Screen"
+ATT.CompactName = [[Pro Screen]]
+ATT.Icon = Material("entities/attachs/arc9_proscreen.png", "mips")
+ATT.Description = [[Adds a small screen (Pistol size) to the side of the weapon, showing how many player kills you have achieved with this weapon.]]
+ATT.SortOrder = 1.05
 
--- ATT.AddPrefix = "Stattrak™ "
-
-ATT.Model = "models/weapons/arc9/stattrack.mdl"
+ATT.Model = "models/weapons/arc9/pro_screen_2.mdl"
 ATT.ModelScale = Vector(1, 1, 1)
-ATT.ModelOffset  = Vector(0, 0, 0)
+ATT.ModelOffset  = Vector(0, -0.1, 0)
 ATT.Category = {"killcounter"}
 ATT.Killcounter = true
 
@@ -28,11 +24,6 @@ ATT.ToggleStats = {
         ST_GLOBAL = false
     },
 }
-
--- ATT.HookP_NameChange = function(self, name)
-	-- name = "StatTrak™ " .. name
-	-- return name
--- end
 
 ATT.Hook_Think = function(wep) 
     if SERVER or !wep:GetOwner():IsPlayer() then return end
@@ -69,8 +60,3 @@ ATT.Hook_Holster = function(wep)
     net.WriteEntity(wep)
     net.Send(wep:GetOwner())
 end
-
-
-ARC9.LoadAttachment(ATT, "arc9_stat_stattrak")
-
-]]--

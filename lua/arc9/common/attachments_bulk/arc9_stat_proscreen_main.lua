@@ -1,11 +1,12 @@
+--[[
 local ATT = {}
 
 
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Pro Screen (Main)"
-ATT.CompactName = [[Pro Screen 2]]
+ATT.CompactName = "Pro Screen 2"
 ATT.Icon = Material("entities/attachs/arc9_proscreen.png", "mips")
-ATT.Description = [[Adds a screen to the side of the weapon, showing how many player kills you have achieved with this weapon.]]
+ATT.Description = "Adds a screen to the side of the weapon, showing how many player kills you have achieved with this weapon."
 ATT.SortOrder = 1.05
 
 ATT.Model = "models/weapons/arc9/pro_screen.mdl"
@@ -16,12 +17,12 @@ ATT.Killcounter = true
 
 ATT.ToggleStats = {
     {
-        PrintName = "Global weapon",
+        PrintName = ARC9:GetPhrase("csgo_stat_global"),
         AutoStatName = "Global weapon",
         ST_GLOBAL = true
     },
     {
-        PrintName = "Local weapon",
+        PrintName = ARC9:GetPhrase("csgo_stat_curlife"),
         AutoStatName = "Local",
         ST_GLOBAL = false
     },
@@ -64,3 +65,5 @@ ATT.Hook_Holster = function(wep)
 end
 
 ARC9.LoadAttachment(ATT, "arc9_stat_proscreen_main")
+
+]]--

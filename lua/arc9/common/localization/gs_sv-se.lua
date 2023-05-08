@@ -428,6 +428,27 @@ L["csgo_category_tube"] = "Rör"
 L["csgo_category_underbarrel"] = "Under Pipan"
 L["csgo_category_view"] = "Vy"
 
+L["csgo_category_optics_m203"] = "Sikte (M203)"
+
+L["csgo_category_muzzle_mass"] = "Mynning (MASS)"
+L["csgo_category_ammo_mass"] = "Ammo (MASS)"
+
+L["csgo_category_muzzle_xm1014"] = "Mynning (XM1014)"
+L["csgo_category_ammo_xm1014"] = "Ammo (XM1014)"
+
+-- Attachment toggle stat texts
+L["csgo_stat_on"] = "PÅ"
+L["csgo_stat_off"] = "AV"
+
+L["csgo_stat_laser_light"] = "Laser & Lampa"
+
+L["csgo_stat_laser"] = "Laser"
+L["csgo_stat_laser_r"] = "Laser - Röd"
+L["csgo_stat_laser_g"] = "Laser - Grön"
+L["csgo_stat_laser_b"] = "Laser - Blå"
+
+L["csgo_stat_light"] = "Lampa"
+
 -- These are via file name order with "bulk" attachments afterwards. Categorized manually.
 -- 2X Optics
 L["csgo_optic_2x_aimpoint.printname"] = "Förstoringsglas med Aimpoint CompM4"
@@ -1133,7 +1154,7 @@ L["go_ubgl_m203.printname"] = "M203 Granattillsats"
 L["go_ubgl_m203.compactname"] = "M203"
 L["go_ubgl_m203.description"] = "Explosiv hjälpenhet utrustad på en undermonterad skena.\n\nBoom, boom, boom, boom!"
 
-L["go_ubgl_m203_sight.printname"] = "M203 Sikte"
+L["go_ubgl_m203_sight.printname"] = "M203-Sikte"
 L["go_ubgl_m203_sight.compactname"] = "Sikte"
 L["go_ubgl_m203_sight.description"] = "Installera ett sikte för att hjälpa att sikta med M203:an."
 
@@ -1291,15 +1312,15 @@ L["csgo_bizon_barrel_mid.compactname"] = "230mm FSB"
 L["csgo_bizon_barrel_mid.description"] = "Längre pipa som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
 
 L["csgo_bizon_mag_47.printname"] = "47-Skott Spiral Magasin"
-L["csgo_bizon_mag_47.compactname"] = "47R Spiral"
+L["csgo_bizon_mag_47.compactname"] = "47S Spiral"
 L["csgo_bizon_mag_47.description"] = "Mindre spiral magasin med sänkt magasinkapacitet. Förbättrar omladdning hastighet och vapenhantering."
 
 L["csgo_bizon_mag_82.printname"] = "82-Skott Spiral Magasin"
-L["csgo_bizon_mag_82.compactname"] = "82R Spiral"
+L["csgo_bizon_mag_82.compactname"] = "82S Spiral"
 L["csgo_bizon_mag_82.description"] = "Längre spiral magasin som ökar magasinkapaciteten med kostnad på vapenhantering och omladdning hastighet."
 
 L["csgo_bizon_mag_saiga.printname"] = "30-Skott Saiga Lådmagasin"
-L["csgo_bizon_mag_saiga.compactname"] = "30R Saiga"
+L["csgo_bizon_mag_saiga.compactname"] = "30S Saiga"
 L["csgo_bizon_mag_saiga.description"] = "Ersätter det spirala magasinet med ett traditionellt lådmagasin och lägger till en standard laddningscykel.\nSänker magasinkapaciteten med kostnad på förbättrad vapenhantering."
 
 L["csgo_bizon_hold_2.printname"] = "Alt. Hållstil 2"
@@ -1380,7 +1401,6 @@ L["csgo_famas_barrel_short.description"] = "Förkortad pipa som förbättrar vap
 
 L["csgo_famas_mag_30.printname"] = "30-Skott Kurvat Magasin"
 L["csgo_famas_mag_30.compactname"] = "30S"
-L["csgo_famas_mag_30.description"] = "Curved 30-round magazine. Decreases aiming speed."
 L["csgo_famas_mag_30.description"] = "Kurvat 30-skottsmagasin. Sänker siktehastigheten."
 
 L["csgo_famas_mag_long.printname"] = "60-Skott Kurvat Skrinmagasin"

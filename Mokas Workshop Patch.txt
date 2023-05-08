@@ -4,10 +4,11 @@ Here's an abbrevriated version:
 [table][tr]
 	[th][list]
 	[*]A ton of small and big weapon tuning (Too many to mention here!)
-	[*]Localization support!
-		> For weapons - Translates display names, descriptions, trivia, spawnmenu category names and attachment slot names!
-		> For attachments - Translates display names, short names and descriptions!
-		> Available in English, Swedish and Spanish!
+	[*]Localization support![list]
+		[*]For weapons - Translates display names, descriptions, trivia, spawnmenu category names and attachment slot names!
+		[*]For attachments - Translates display names, short names, descriptions and stat displays!
+		[*]Available in English, Swedish and Spanish on update release!
+	[/list]
 
 	[*]Changed almost all attachment names and all descriptions
 	[*]Fixed broken attachments with either incorrect or illogical stats

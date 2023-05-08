@@ -20,7 +20,7 @@ ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Attachments = {
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         Pos = Vector(-2.5, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-7, 0, 0),

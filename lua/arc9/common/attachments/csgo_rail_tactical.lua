@@ -17,7 +17,7 @@ ATT.IconOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         Pos = Vector(0, -0.05, 0.05),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(0, 0, 1.5),

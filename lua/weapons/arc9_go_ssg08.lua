@@ -285,13 +285,13 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-        IKTimeLine = {
-            {t = 0, lhik = 1, rhik = 0},
-            {t = 0.1, lhik = 1, rhik = 0},			
-            {t = 0.2, lhik = 0, rhik = 0},
-            {t = 0.75, lhik = 0, rhik = 0},
-            {t = 0.85,lhik = 1, rhik = 1},
-        },
+        -- IKTimeLine = {
+            -- {t = 0, lhik = 1, rhik = 0},
+            -- {t = 0.1, lhik = 1, rhik = 0},			
+            -- {t = 0.2, lhik = 0, rhik = 0},
+            -- {t = 0.75, lhik = 0, rhik = 0},
+            -- {t = 0.85,lhik = 1, rhik = 1},
+        -- },
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/60},
             {s = path .. "ssg08_clipout.wav", t = 14/60},
@@ -302,13 +302,13 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-        IKTimeLine = {
-            { t = 0, lhik = 1, rhik = 0 },
-            { t = 0.2, lhik = 1, rhik = 0 },
-            { t = 0.3, lhik = 0, rhik = 0 },			
-            { t = 0.8, lhik = 0, rhik = 0 },
-            { t = 0.9,lhik = 1, rhik = 1 },
-        },
+        -- IKTimeLine = {
+            -- { t = 0, lhik = 1, rhik = 0 },
+            -- { t = 0.2, lhik = 1, rhik = 0 },
+            -- { t = 0.3, lhik = 0, rhik = 0 },			
+            -- { t = 0.8, lhik = 0, rhik = 0 },
+            -- { t = 0.9,lhik = 1, rhik = 1 },
+        -- },
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/60},
             {s = path .. "ssg08_clipout.wav", t = 53/60},
@@ -445,14 +445,23 @@ SWEP.HookP_NameChange = function(self, name)
 
     GetSkinNames( 
 	{
-		-- Antiqued
-		contour = "",
-		
 		-- Custom
-		xray = "",
+		bloodinthewater = "",
+		scorpion = "",
+		overtake = "",
+		chromatic = "",
+		deathshead = "",
+		dragonfire = "",
+		fever_dream = "",
+		mainframe = "",
+		necropos = "",
+		technicality = "",
+		tickler = "",
 		
 		-- Gunsmith
-		apep = "",
+		anubis = "",
+		checker = "",
+		armacore = "",
 	})
 
 	if att["arc9_stat_stattrak"] then

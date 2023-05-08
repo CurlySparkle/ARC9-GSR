@@ -564,7 +564,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
-        Category = "csgo_tac",
+        Category = {"csgo_tac"},
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.85, -4.5, 11),
         Ang = Angle(90, 90, 90),

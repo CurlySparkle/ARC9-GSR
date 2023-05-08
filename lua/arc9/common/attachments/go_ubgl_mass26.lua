@@ -1,11 +1,9 @@
---[[
-local ATT = {}
-
+-- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.PrintName = "MASS-26 Breaching Shotgun"
-ATT.CompactName = "M26"
+ATT.PrintName = [[MASS-26 Breaching Shotgun]]
+ATT.CompactName = [[M26]]
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_mass.png")
-ATT.Description = "5 round, 12 gauge box magazine pumping shotgun for your handguard."
+ATT.Description = [[5 round, 12 gauge box magazine pumping shotgun for your handguard.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
@@ -180,7 +178,3 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 }
-
-ARC9.LoadAttachment(ATT, "go_ubgl_mass26")
-
-]]--

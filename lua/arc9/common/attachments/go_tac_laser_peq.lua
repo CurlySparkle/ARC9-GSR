@@ -1,9 +1,8 @@
---[[
-local ATT = {}
-
+-- Originally a "bulk" attachment
 ATT.PrintName = "ATPIAL-C AN/PEQ-15"
 ATT.CompactName = "PEQ-15"
-ATT.Description = "High-power laser pointer with extra flashlight function.\nImproves hip fire and spread, at the cost of less sights speed."
+ATT.Description = [[High-power laser pointer with extra flashlight function.
+Improves hip fire and spread, at the cost of less sights speed.]]
 
 ATT.Icon = Material("entities/attachs/go_laser_peq.png", "mips smooth")
 
@@ -81,7 +80,3 @@ ATT.ToggleStats = {
 ATT.Scale = 1
 
 ATT.ModelOffset = Vector(0, 0, 0)
-
-ARC9.LoadAttachment(ATT, "go_tac_laser_peq")
-
-]]--

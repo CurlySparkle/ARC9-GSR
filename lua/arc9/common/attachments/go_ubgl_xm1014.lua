@@ -1,50 +1,68 @@
---[[
-local ATT = {}
-
+-- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.PrintName = "MASS-26 Breaching Shotgun"
-ATT.CompactName = "M26"
-ATT.Icon = Material("entities/attachs/go_attach_ubgl_mass.png")
-ATT.Description = "5 round, 12 gauge box magazine pumping shotgun for your handguard."
+ATT.PrintName = [[XM1014 Breaching Shotgun]]
+ATT.CompactName = [[XM1014]]
+ATT.Icon = Material("entities/attachs/go_attach_ubgl_xm1014.png")
+ATT.Description = [[Super cutdowned XM1014 for your handguard.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
 ATT.Folder = "UBGL"
 
-ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
+ATT.Model = "models/weapons/csgo/atts/ubgl_xm1014.mdl"
 ATT.ModelBodygroups = "00000000"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
 
-ATT.ShotgunReloadUBGL = false
+ATT.ShotgunReloadUBGL = true
 ATT.MuzzleDeviceUBGL = true
 
-ATT.ModelOffset = Vector(-2.75, 0, -2.75)
+ATT.ModelOffset = Vector(2, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
+
+ATT.ActivePosUBGL = Vector(-1.35, -0.5, 1.25)
+ATT.ActiveAngUBGL = Angle(0, 0, 0)
+
+ATT.MovingPosUBGL = Vector(-1.5, -1, 1.25)
+ATT.MovingAngUBGL = Angle(0, 0, 0)
+
+ATT.CrouchPosUBGL = Vector(-1.35, -1, 1.25)
+ATT.CrouchAngUBGL = Angle(0, 0, 0)
+
+local path = "weapons/csgo/xm1014/"
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
-        Source = "fire",
-        EventTable = {
-            {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 14 / 40},
-        },		
+        Source = "fire",	
     },
-    ["fire_empty_ubgl"] = {
+    ["fire_ubgl_empty"] = {
         Source = "fire_empty",
     },
-    ["reload_ubgl"] = {
-        Source = "ubgl_reload_short",
+    ["reload_ubgl_start"] = {
+        Source = "ubgl_start",
         EventTable = {		
-            {s =  "weapons/csgo/m4a1/m4a1_clipout.wav" ,   t = 8 / 40},
-            {s =  "weapons/csgo/m4a1/m4a1_clipin.wav" ,    t = 54 / 40},			
+            {s = "CSGO.Item.Movement", t = 0 / 40},		
         },
     },
-    ["reload_ubgl_empty"] = {
+    ["reload_ubgl_finish"] = {
+        Source = "ubgl_end",
+        EventTable = {		
+            {s = "CSGO.Item.Movement", t = 0 / 40},		
+        },
+    },
+    ["reload_ubgl_insert"] = {
         Source = "ubgl_reload",
         EventTable = {		
-            {s =  "weapons/csgo/m4a1/m4a1_clipout.wav" ,   t = 8 / 40},
-            {s =  "weapons/csgo/m4a1/m4a1_clipin.wav" ,    t = 54 / 40},	
-            {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 80 / 40},			
+            {s = "CSGO.xm1014.Shell_Insert", t = 4 / 40},		
+        },
+    },
+    ["reload_ubgl_start_empty"] = {
+        Source = "ubgl_dry",
+        RestoreAmmo = 1,			
+        EventTable = {		
+            {s = "CSGO.Item.Movement", t = 0 / 40},				
+            {s = "CSGO.xm1014.Shell_Insert", t = 20 / 40},
+            {s = "weapons/csgo/sawedoff/sawedoff_pump2.ogg", t = 39 / 40},					
         },
     },	
     ["enter_ubgl"] = {
@@ -56,8 +74,8 @@ ATT.IKAnimationProxy = {
     ["idle_ubgl"] = {
         Source = "ubgl"
     },
-    ["idle_ubgl_empty"] = {
-        Source = "ubgl"
+    ["idle_ubgl_empty"] = { -- DOES THIS WORK?
+        Source = "ubgl_empty"
     },
     ["exit_ubgl"] = {
         Source = "from_ubgl",
@@ -76,8 +94,8 @@ ATT.IKAnimationProxy = {
     },
 } -- When an animation event plays, override it with one based on this LHIK model.
 ATT.IKGunMotionQCA = 2
-ATT.IKGunMotionMult = 0.5
-ATT.IKGunMotionAngleMult = 0.5
+ATT.IKGunMotionMult = -1
+ATT.IKGunMotionAngleMult = -1
 
 -- ATT.IKGunMotionOffset = Vector(0, 0, 0)
 -- ATT.IKGunMotionAngleOffset = Angle(0, 0, 90)  -- WHICH ONE IS IT?
@@ -93,18 +111,14 @@ ATT.Category = {"ubgl", "grip"}  -- maybe its own category?
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
-
--- note to Miss Brony: this shit works exactly like a normal weapon lua but with a UBGL suffix at the end
--- might want to change this cuz this is the exact stats from the xm1014
-
 ATT.UBGL = true
 ATT.UBGLAmmo = "buckshot"
-ATT.UBGLClipSize = 5
+ATT.UBGLClipSize = 4
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "Pump-Action"
+//ATT.UBGLFiremodeName = "Pump-Action"
 ATT.UBGLChamberSize = 1
 ATT.ShootVolumeUBGL = 110
-ATT.RPMUBGL = 60
+ATT.RPMUBGL = 180
 
 ATT.SpreadUBGL = 0.035
 
@@ -160,27 +174,23 @@ ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before de
 ATT.PenetrationUBGL = 5 -- Units of wood that can be penetrated by this gun.
 
 ATT.DrawFunc = function(swep, model, wm)
-    if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
+    //if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
 end
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_muzzle_mass"),
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle_xm1014"),
         DefaultName = "None",
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
-        Pos = Vector(-15.4, 0.2, -0.75),
+        Pos = Vector(-14.1, 0.2, -0.25),
         Ang = Angle(0, 0, 180),
 	},   
     {
-        PrintName = ARC9:GetPhrase("csgo_category_ammo_mass"),
+        PrintName = ARC9:GetPhrase("csgo_category_ammo_xm1014"),
         DefaultName = "None",
         Category = "go_ammo_sg_ubgl",
-        Pos = Vector(-5, 0.2, -5),
+        Pos = Vector(-3, 0.2, -2),
         Ang = Angle(0, 0, 0),		
     },
 }
-
-ARC9.LoadAttachment(ATT, "go_ubgl_mass26")
-
-]]--

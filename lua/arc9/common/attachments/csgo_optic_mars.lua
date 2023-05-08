@@ -1,10 +1,8 @@
---[[
-local ATT = {}
-
+-- Originally a "bulk" attachment
 ATT.PrintName = "ITL MARS"
-ATT.CompactName = "MARS"
+ATT.CompactName = [[MARS]]
 ATT.Icon = Material("entities/attachs/mars.png", "mips smooth")
-ATT.Description = "MARS (Multi-purpose Aiming Reflex Sight) is a gun sight that combines two sighting devices, a reflex sight and a laser sight."
+ATT.Description = [[MARS (Multi-purpose Aiming Reflex Sight) is a gun sight that combines two sighting devices, a reflex sight and a laser sight.]]
 ATT.Pros = {
     "+ Clearer sight picture"
 }
@@ -56,7 +54,3 @@ ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1024
 ATT.HoloSightColorable = false
-
-ARC9.LoadAttachment(ATT, "csgo_optic_mars")
-
-]]--

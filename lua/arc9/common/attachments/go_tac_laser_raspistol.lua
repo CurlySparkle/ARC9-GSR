@@ -13,7 +13,7 @@ ATT.Folder = "TACTICAL"
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = "Laser",
+        PrintName = ARC9:GetPhrase("csgo_stat_on"),
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
@@ -26,7 +26,7 @@ ATT.ToggleStats = {
         SpreadMultHipFire = 0.95
     },
     {
-        PrintName = "None",
+        PrintName = ARC9:GetPhrase("csgo_stat_off"),
     }
 }
 

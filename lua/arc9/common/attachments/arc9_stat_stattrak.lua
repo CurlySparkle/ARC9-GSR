@@ -1,11 +1,10 @@
---[[
-local ATT = {}
-
+-- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Stattrak™ Kill Counter"
-ATT.CompactName = "Stattrak™"
+ATT.CompactName = [[Stattrak™]]
 ATT.Icon = Material("entities/attachs/arc9_stattrak.png", "mips smooth")
-ATT.Description = "A piece of technology that tracks the number of kills you've made with the weapon attached to it. There are two selectable modes, Global and Local.\nThe former will track kills between sessions while the latter will only track kills for the current session."
+ATT.Description = [[A piece of technology that tracks the number of kills you've made with the weapon attached to it. There are two selectable modes, Global and Local.
+The former will track kills between sessions while the latter will only track kills for the current session.]]
 ATT.SortOrder = 1
 
 -- ATT.AddPrefix = "Stattrak™ "
@@ -69,8 +68,3 @@ ATT.Hook_Holster = function(wep)
     net.WriteEntity(wep)
     net.Send(wep:GetOwner())
 end
-
-
-ARC9.LoadAttachment(ATT, "arc9_stat_stattrak")
-
-]]--

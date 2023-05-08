@@ -428,6 +428,27 @@ L["csgo_category_tube"] = "Tubo"
 L["csgo_category_underbarrel"] = "Bajo Cañón"
 L["csgo_category_view"] = "Vista"
 
+L["csgo_category_optics_m203"] = "Optic (M203)"
+
+L["csgo_category_muzzle_mass"] = "Boca (MASS)"
+L["csgo_category_ammo_mass"] = "Munición (MASS)"
+
+L["csgo_category_muzzle_xm1014"] = "Boca (XM1014)"
+L["csgo_category_ammo_xm1014"] = "Munición (XM1014)"
+
+-- Attachment toggle stat texts
+L["csgo_stat_on"] = "ON"
+L["csgo_stat_off"] = "OFF"
+
+L["csgo_stat_laser_light"] = "Láser & Linterna"
+
+L["csgo_stat_laser"] = "Láser"
+L["csgo_stat_laser_r"] = "Láser - Roja"
+L["csgo_stat_laser_g"] = "Láser - Verde"
+L["csgo_stat_laser_b"] = "Láser - Azul"
+
+L["csgo_stat_light"] = "Linterna"
+
 -- These are via file name order with "bulk" attachments afterwards. Categorized manually.
 -- 2X Optics
 L["csgo_optic_2x_aimpoint.printname"] = "Amplificador con Aimpoint CompM4"

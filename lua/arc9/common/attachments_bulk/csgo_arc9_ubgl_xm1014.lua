@@ -1,10 +1,11 @@
+--[[
 local ATT = {}
  
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.PrintName = [[XM1014 Breaching Shotgun]]
-ATT.CompactName = [[XM1014]]
+ATT.PrintName = "XM1014 Breaching Shotgun"
+ATT.CompactName = "XM1014"
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_xm1014.png")
-ATT.Description = [[Super cutdowned XM1014 for your handguard.]]
+ATT.Description = "Super cutdowned XM1014 for your handguard."
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
@@ -180,7 +181,7 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = [[Muzzle]],
+        PrintName = "Muzzle",
         DefaultName = "None",
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
@@ -197,3 +198,5 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "go_ubgl_xm1014")
+
+]]--
