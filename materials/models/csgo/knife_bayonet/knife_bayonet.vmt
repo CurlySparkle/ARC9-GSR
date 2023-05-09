@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\csgo\knife_bayonet\knife_bayonet"
+	"$phongalbedotint" "1"
+	"$phongdisablehalflambert" "1"
+	"$phongexponenttexture" "models\csgo\knife_bayonet\knife_bayonet_exponent"
+	"$phong" "1"
+	"$phongboost" "8"
+	"$phongfresnelranges" "[.8 0.5 1]"
+	"$basemapalphaphongmask" "1"
+	"$envmap" "env_cubemap"
+	"$envmapfresnel" "1"
+}

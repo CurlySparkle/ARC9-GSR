@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\csgo\knife_flip\ghost\knife_flip_ghost"
+	"$translucent" "1"
+	"$selfillum"	"1"
+	$additive 1
+}
+
+
+
