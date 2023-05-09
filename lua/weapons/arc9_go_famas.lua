@@ -86,9 +86,9 @@ SWEP.Firemodes = {
     {
         Mode = 3,
         RPM = 800,
-		SpreadAddRecoil = 0.0002,
+		-- SpreadAddRecoil = 0.0002,
 		SpreadAddHipFire = 0.02,
-		SpreadAddMove = 0.05,
+		-- SpreadAddMove = 0.05,
 		--ActivePos = Vector(-0.3, 0, -0.3)
         -- add other attachment modifiers
     }
@@ -100,7 +100,7 @@ SWEP.PostBurstDelay = 0.15
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 0.75
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
@@ -118,45 +118,46 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilRoll = 1
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 0.5
+-- SWEP.VisualRecoilRoll = 1
 
---[[ Moka's testing area - do not touch nor uncomment
+-- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = .35
-SWEP.RecoilMultSights = 2
+SWEP.RecoilMultSights = 1.5
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilUp = 1.75
+SWEP.VisualRecoilSide = .65
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = .35
 SWEP.VisualRecoilPositionBumpUp = .35
 SWEP.VisualRecoilMultCrouch = .45
-SWEP.VisualRecoilMultSights = .05
+SWEP.VisualRecoilMultSights = .01
 
-SWEP.VisualRecoilDampingConst = 120 -- Leave be
-SWEP.VisualRecoilSpringPunchDamping = 8
+-- SWEP.VisualRecoilDampingConst = 60 -- Leave be
+SWEP.VisualRecoilSpringPunchDamping = 9
 
-]]--
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.0002
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.015 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.075
 SWEP.SpreadAddMidAir = 0.025
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 SWEP.SpreadAddSights = -0.05
 
