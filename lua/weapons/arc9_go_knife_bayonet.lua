@@ -222,15 +222,36 @@ SWEP.Animations = {
     },
 }
 
--- SWEP.HookP_NameChange = function(self, name)
-	-- local att = self:GetElements()
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
 
-	-- if att["csgo_skin_knife_ct_gold"] then
-		-- name = ARC9:GetPhrase("csgo_weapon_knife_ct_gold")
-	-- end
+-- For Skins
+	local skin = "moka_csgo_skin_knife_bayonet_"
 
-    -- return name
--- end
+    local function GetSkinNames( skintable, skinname )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		lore = "",
+		
+		-- Gunsmith
+		future = "",
+		black_laminate = "",
+	})
+
+	if att["arc9_stat_stattrak"] then
+		name = "StatTrak™ " .. name
+	end
+
+    return name
+end
 
 -------------------------- ATTACHMENTS
 

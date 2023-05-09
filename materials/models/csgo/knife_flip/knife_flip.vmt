@@ -1,16 +1,31 @@
 "VertexLitGeneric"
 {
 	"$baseTexture" "models\csgo\knife_flip\knife_flip"
-	"$phongalbedotint" "1"
-	"$phongdisablehalflambert" "1"
 	"$phongexponenttexture" "models\csgo\knife_flip\knife_flip_exponent"
+
 	"$phong" "1"
-	"$phongboost" "8"
-	"$phongfresnelranges" "[.8 0.5 1]"
+
+	"$phongboost" ".3"
+	"$phongalbedoboost" "12"
+	"$phongfresnelranges" "[.7 .7 1]"
+
 	"$basemapalphaphongmask" "1"
+
+	"$phongalbedotint" "1"
+
+	"$phongdisablehalflambert" "1"
+
 	"$envmap" "env_cubemap"
-	"$envmapfresnel" "1"	
+	"$baseAlphaEnvMapMask" "1" 
+	"$envmapfresnel" "1"
+	"$envmaptint" 		"[.01 .01 .01]"
+
+	 Proxies {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.5"
+            "min" "0"
+            "max" "0.3"
+        }
+	}
 }
-
-
-
