@@ -467,13 +467,24 @@ SWEP.HookP_NameChange = function(self, name)
     GetSkinNames( 
 	{
 		-- Antiqued
-		contour = "",
+		flameflower = "",
 		
 		-- Custom
-		xray = "",
+		crimescene = "",
+		corporal = "",
+		arrows = "",
+		bomb = "",
+		clutch_kick = "",
+		metritera = "",
+		primalsaber = "",
+		uproar = "",
+		white_fang = "",
+		xray_machine = "",
 		
 		-- Gunsmith
-		apep = "",
+		abyss = "",
+		gold_bismuth = "",
+		roadblock = "",
 	})
 
 	if att["arc9_stat_stattrak"] then

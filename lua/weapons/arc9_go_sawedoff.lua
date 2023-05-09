@@ -172,7 +172,7 @@ SWEP.IronSights = {
     Ang = Angle(0, 0.5, 1),
     Magnification = 1.1,
     ViewModelFOV = 56,
-    CrosshairInSights = false
+    CrosshairInSights = true
 }
 
 SWEP.ViewModelFOVBase = 56

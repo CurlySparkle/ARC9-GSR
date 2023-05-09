@@ -126,13 +126,14 @@ L["csgo_weapon_glock"] = "Glock-18"
 L["csgo_weapon_glock_18c"] = "Glock-18C"
 
 L["csgo_weapon_knife_ct"] = "CT Knife"
-L["csgo_weapon_knife_bayonet"] = "Bayonet"
 L["csgo_weapon_knife_ct_gold"] = "Golden CT Knife"
 
 L["csgo_weapon_knife_shield"] = "Riot Shield"
 
 L["csgo_weapon_knife_t"] = "T Knife"
 L["csgo_weapon_knife_t_gold"] = "Golden T Knife"
+
+L["csgo_weapon_knife_ghost"] = "Spectral Shiv"
 
 L["csgo_weapon_knife_bayonet"] = "Bayonet"
 L["csgo_weapon_knife_flip"] = "Flip Knife"
@@ -679,6 +680,10 @@ L["csgo_skin_knife_ct_gold.description"] = "Bling bling."
 L["csgo_skin_knife_t_gold.printname"] = "Golden T Knife"
 L["csgo_skin_knife_t_gold.compactname"] = "Gold"
 L["csgo_skin_knife_t_gold.description"] = "Bling bling."
+
+L["csgo_skin_knife_ghost.printname"] = "Spectral Shiv"
+L["csgo_skin_knife_ghost.compactname"] = "Ghost"
+L["csgo_skin_knife_ghost.description"] = "Boo!"
 
 -- Stock
 L["csgo_stock_tube.printname"] = "Buffer Tube - Long"

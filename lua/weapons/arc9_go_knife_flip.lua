@@ -222,15 +222,15 @@ SWEP.Animations = {
     },
 }
 
--- SWEP.HookP_NameChange = function(self, name)
-	-- local att = self:GetElements()
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
 
-	-- if att["csgo_skin_knife_ct_gold"] then
-		-- name = ARC9:GetPhrase("csgo_weapon_knife_ct_gold")
-	-- end
+	if att["csgo_skin_knife_ghost"] then
+		name = ARC9:GetPhrase("csgo_weapon_knife_ghost")
+	end
 
-    -- return name
--- end
+    return name
+end
 
 -------------------------- ATTACHMENTS
 
@@ -242,7 +242,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_knife_bayonet",
+        Category = "go_skins_knife_flip",
         CosmeticOnly = true,
     },
 }

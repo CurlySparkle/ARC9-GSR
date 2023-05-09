@@ -133,6 +133,8 @@ L["csgo_weapon_knife_shield"] = "Escudo Antidisturbios"
 L["csgo_weapon_knife_t"] = "Cuchillo T"
 L["csgo_weapon_knife_t_gold"] = "Cuchillo T Dorado"
 
+L["csgo_weapon_knife_ghost"] = "Pincho espectral"
+
 L["csgo_weapon_knife_bayonet"] = "Bayoneta"
 L["csgo_weapon_knife_flip"] = "Cuchillo plegable"
 L["csgo_weapon_knife_gut"] = "Cuchillo Destripador"
@@ -675,6 +677,10 @@ L["csgo_skin_knife_ct_gold.description"] = "Bling bling."
 L["csgo_skin_knife_t_gold.printname"] = "Cuchillo T dorado"
 L["csgo_skin_knife_t_gold.compactname"] = "Dorado"
 L["csgo_skin_knife_t_gold.description"] = "Bling bling."
+
+L["csgo_skin_knife_ghost.printname"] = "Pincho espectral"
+L["csgo_skin_knife_ghost.compactname"] = "Fantasma"
+L["csgo_skin_knife_ghost.description"] = "¡Boo!"
 
 -- Stock
 L["csgo_stock_tube.printname"] = "Tubo Buffer - Largo"

@@ -126,6 +126,28 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilRoll = 1
 
+--[[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultHipFire = .35
+SWEP.RecoilMultSights = 2
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = .35
+SWEP.VisualRecoilPositionBumpUp = .35
+SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultSights = .05
+
+SWEP.VisualRecoilDampingConst = 120 -- Leave be
+SWEP.VisualRecoilSpringPunchDamping = 8
+
+]]--
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.0002

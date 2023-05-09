@@ -56,3 +56,18 @@ ATT.Material = "models/csgo/knife_t/gg/knife_t"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_knife_t_gold")
 ------------------------------------------------------------------
+ATT = {}
+
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.PrintName = [[Ghost]]
+ATT.Description = [[]]
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Free = true
+
+ATT.Category = {"go_skins_knife_flip"}
+ATT.Material = "models/csgo/knife_flip/ghost/knife_flip_ghost"
+
+ARC9.LoadAttachment(ATT, "csgo_skin_knife_ghost")
+------------------------------------------------------------------

@@ -20,6 +20,9 @@
 	"$envmapfresnel" "1"
 	"$envmaptint" 		"[.01 .01 .01]"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.8"
+
 	 Proxies {
         "Arc9EnvMapTint"
         {

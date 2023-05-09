@@ -133,6 +133,8 @@ L["csgo_weapon_knife_shield"] = "Kravallsköld"
 L["csgo_weapon_knife_t"] = "T-Kniv"
 L["csgo_weapon_knife_t_gold"] = "Gyllene T-Kniv"
 
+L["csgo_weapon_knife_ghost"] = "Spökkniv"
+
 L["csgo_weapon_knife_bayonet"] = "Bajonett"
 L["csgo_weapon_knife_flip"] = "Fällkniv"
 L["csgo_weapon_knife_gut"] = "Buköppnare"
@@ -675,6 +677,10 @@ L["csgo_skin_knife_ct_gold.description"] = "Bling bling."
 L["csgo_skin_knife_t_gold.printname"] = "Gyllene T-Kniv"
 L["csgo_skin_knife_t_gold.compactname"] = "Guld"
 L["csgo_skin_knife_t_gold.description"] = "Bling bling."
+
+L["csgo_skin_knife_ghost.printname"] = "Spökkniv"
+L["csgo_skin_knife_ghost.compactname"] = "Spöke"
+L["csgo_skin_knife_ghost.description"] = "Boo!"
 
 -- Stock
 L["csgo_stock_tube.printname"] = "Buffer Tube - Lång"
