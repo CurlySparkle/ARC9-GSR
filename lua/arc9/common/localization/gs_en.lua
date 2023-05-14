@@ -1125,6 +1125,42 @@ L["csgo_perk_melee_speed.printname"] = "Stabber"
 L["csgo_perk_melee_speed.compactname"] = "Stabber"
 L["csgo_perk_melee_speed.description"] = "Increases melee speed."
 
+L["csgo_perk_defiant.printname"] = "Defiant"
+L["csgo_perk_defiant.compactname"] = "Defiant"
+L["csgo_perk_defiant.description"] = "Against NPC's: Last shot in the magazine deals x2 damage.\nAgainst Players: Last shot deals 25% more damage."
+
+L["csgo_perk_furious.printname"] = "Furious"
+L["csgo_perk_furious.compactname"] = "Furious"
+L["csgo_perk_furious.description"] = "Increases damage by 15% for each consecutive hit on the same target.\nAgainst NPC's: Stacks up to 300%.\nAgainst Players: Stacks up to 60%.\nResets when another target is hit."
+
+L["csgo_perk_hitman.printname"] = "Hitman"
+L["csgo_perk_hitman.compactname"] = "Hitman"
+L["csgo_perk_hitman.description"] = "Increases damage by 10% when aiming."
+
+L["csgo_perk_instigating.printname"] = "Instigating"
+L["csgo_perk_instigating.compactname"] = "Instigating"
+L["csgo_perk_instigating.description"] = "Deals more damage if target is at full health.\nAgainst NPC's: x2 damage.\nAgainst Players: 30% more damage."
+
+L["csgo_perk_neverending.printname"] = "Never Ending"
+L["csgo_perk_neverending.compactname"] = "Never Ending"
+L["csgo_perk_neverending.description"] = "Enables bottomless magazine."
+
+L["csgo_perk_resilient.printname"] = "Resilient"
+L["csgo_perk_resilient.compactname"] = "Resilient"
+L["csgo_perk_resilient.description"] = "Take 30% less damage while reloading."
+
+L["csgo_perk_twoshot.printname"] = "Two Shot"
+L["csgo_perk_twoshot.compactname"] = "Two Shot"
+L["csgo_perk_twoshot.description"] = "Fires an additional projectile at the cost of higher recoil."
+
+L["csgo_perk_violent.printname"] = "Violent"
+L["csgo_perk_violent.compactname"] = "Violent"
+L["csgo_perk_violent.description"] = "Increases damage by 20% at the cost of significantly higher recoil."
+
+L["csgo_perk_wounding.printname"] = "Wounding"
+L["csgo_perk_wounding.compactname"] = "Wounding"
+L["csgo_perk_wounding.description"] = "Targets hit bleed for 5 seconds.\nAgainst NPC's: 5 HP/s\nAgainst Players: 2 HP/s"
+
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"
 L["csgo_sticker_kawai.compactname"] = "Kawaii Killer"

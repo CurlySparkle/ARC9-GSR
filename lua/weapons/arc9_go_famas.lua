@@ -114,7 +114,7 @@ SWEP.RecoilRandomSide = 0.6
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.85 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -153,13 +153,13 @@ SWEP.VisualRecoilSpringPunchDamping = 9
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.015 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.075
 SWEP.SpreadAddMidAir = 0.025
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = 0.015
 
 -------------------------- HANDLING
 
@@ -284,6 +284,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.75,
+		MagSwapTime = 1,
+		Mult = 0.9,
         IKTimeLine = {
             {
                 t = 0,
@@ -314,6 +317,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.85,
+		MagSwapTime = 1,
+		Mult = 0.9,
         IKTimeLine = {
             {
                 t = 0,
