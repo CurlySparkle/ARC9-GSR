@@ -286,7 +286,7 @@ SWEP.Animations = {
         Source = "reload_short",
 		MinProgress = 0.75,
 		MagSwapTime = 1,
-		Mult = 0.9,
+		Mult = 0.95,
         IKTimeLine = {
             {
                 t = 0,
@@ -319,7 +319,7 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.85,
 		MagSwapTime = 1,
-		Mult = 0.9,
+		Mult = 0.95,
         IKTimeLine = {
             {
                 t = 0,
@@ -392,6 +392,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -405,6 +408,8 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
             {s = "weapons/csgo/movement2.wav", t = 92/30},

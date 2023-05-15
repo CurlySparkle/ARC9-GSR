@@ -94,10 +94,10 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = .95
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.65 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -112,25 +112,48 @@ SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 0.9
+-- SWEP.VisualRecoilUp = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = .1
+SWEP.RecoilMultSights = 1.1
+SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.9
-SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilSide = 4.5
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = .35
+SWEP.VisualRecoilPositionBumpUp = .35
+SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultSights = .01
+
+SWEP.VisualRecoilDampingConst = 90 -- Leave be
+SWEP.VisualRecoilSpringPunchDamping = 9
+
+-- ]]--
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.01
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddCrouch = 0
+SWEP.SpreadAddSights = 0.0125
 
 -------------------------- HANDLING
 
@@ -276,6 +299,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.7,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -305,6 +331,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.8,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -335,6 +364,9 @@ SWEP.Animations = {
     },
     ["reload_alt"] = {
         Source = "reload_short_alt",
+		MinProgress = 0.65,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -363,6 +395,9 @@ SWEP.Animations = {
         },
     },
     ["reload_empty_alt"] = {
+		MinProgress = 0.75,
+		MagSwapTime = 1,
+		Mult = 1,
         Source = "reload_alt",
         IKTimeLine = {
             {
@@ -394,6 +429,9 @@ SWEP.Animations = {
     },
     ["reload_drum"] = {
         Source = "reload_short_drum",
+		MinProgress = 0.7,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -424,6 +462,9 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "reload_drum",
+		MinProgress = 0.85,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -526,6 +567,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -548,17 +592,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.45,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.65,
                 lhik = 1,
                 rhik = 1
             },

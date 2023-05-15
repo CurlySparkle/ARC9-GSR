@@ -22,6 +22,7 @@ ATT.AimDownSightsTimeMult = 1.30
 ATT.SprintToFireTimeMult = 1.30
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.RecoilMultCrouch = 0.75
 ATT.RecoilPatternDriftMult = 0.75
 ATT.RecoilAutoControlMult = 1.15

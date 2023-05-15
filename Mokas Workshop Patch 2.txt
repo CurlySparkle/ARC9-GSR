@@ -18,7 +18,7 @@ Weapons not listed did not have anything changed.
 [b][u]Assault Rifles[/u][/b]
 [table][tr]
 	[th]FAMAS[/th]
-	[th]Increased reload speed by 10%[/th]
+	[th]Increased reload speed by 5%[/th]
 [/tr][/table]
 
 [b][u]Attachment Fixes[/u][/b]

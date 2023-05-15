@@ -132,6 +132,7 @@ ATT.Model = "models/weapons/csgo/atts/silencer_SEC9mm.mdl"
 
 ATT.RecoilMult = 0.975
 ATT.RecoilUpMult = 0.975
+ATT.VisualRecoilMult = 0.975
 ATT.AimDownSightsTimeMult = 1.025
 ATT.SprintToFireTimeMult = 1.05
 ATT.RangeMaxMult = 1.1
@@ -274,6 +275,7 @@ ATT.Scale = 0.5
 
 ATT.RecoilMult = 0.95
 ATT.RecoilUpMult = 0.95
+ATT.VisualRecoilMult = 0.95
 ATT.AimDownSightsTimeMult = 1.025
 ATT.SprintToFireTimeMult = 1.05
 ATT.RangeMaxMult = 1.2

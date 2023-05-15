@@ -18,6 +18,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.15
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1

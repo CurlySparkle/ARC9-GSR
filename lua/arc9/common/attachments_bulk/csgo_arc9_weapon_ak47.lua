@@ -46,6 +46,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -72,6 +73,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -98,6 +100,7 @@ ATT.ActivateElements = {"barrel_tactical"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 
 ATT.RangeMaxMult = 1.15
 ATT.RangeMinMult = 1.15
@@ -123,6 +126,7 @@ ATT.ActivateElements = {"grip_poly"}
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_ak47_grip_tactical")
 -------------------------------------------------------------------------------------------------
@@ -144,6 +148,7 @@ ATT.ActivateElements = {"stock_rpk"}
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 
 ARC9.LoadAttachment(ATT, "csgo_ak47_stock_rpk")
 -------------------------------------------------------------------------------------------------
@@ -165,6 +170,7 @@ ATT.ActivateElements = {"stock_skeleton"}
 
 ATT.AimDownSightsTimeMult = 0.85
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ARC9.LoadAttachment(ATT, "csgo_ak47_stock_skeleton")
 -------------------------------------------------------------------------------------------------
@@ -249,6 +255,7 @@ ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.RPMMult = 1.15
 
 ATT.ClipSizeOverride = 30
@@ -281,6 +288,7 @@ ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.RPMMult = 1.15
 
 ATT.ClipSizeOverride = 40

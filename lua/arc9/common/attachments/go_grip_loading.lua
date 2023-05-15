@@ -12,6 +12,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.ReloadTimeMult = 0.85
 ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.075
