@@ -17,8 +17,13 @@ Weapons not listed did not have anything changed.
 
 [b][u]Assault Rifles[/u][/b]
 [table][tr]
+	[th]AUG[/th]
+	[th]Increased reload speed by 10%
+	[i](Not when using the 9mm magazines)[/i][/th]
+[/tr][tr]
 	[th]FAMAS[/th]
 	[th]Increased reload speed by 5%[/th]
+[/tr][tr]
 [/tr][/table]
 
 [b][u]Attachment Fixes[/u][/b]

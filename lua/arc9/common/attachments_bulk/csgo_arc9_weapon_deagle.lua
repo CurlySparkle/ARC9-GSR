@@ -13,7 +13,7 @@ ATT.AutoStats = true
 ATT.Category = {"muzzle_sil_pist"}
 ATT.Scale = 0.5
 ATT.ModelOffset = Vector(-0.03, 0, 0)
-ATT.Folder = "Suppresors"
+ATT.Folder = "Suppressors"
 
 ATT.Model = "models/weapons/csgo/atts/silencer_deagle.mdl"
 

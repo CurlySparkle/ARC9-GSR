@@ -22,6 +22,7 @@ ATT.DamageMinMult = 8/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.5
 ATT.RecoilKickMult = 0.85
 ATT.Ammo = "SMG1"
 
@@ -58,6 +59,7 @@ ATT.DamageMinMult = 8/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.5
 ATT.RecoilKickMult = 0.85
 ATT.Ammo = "SMG1"
 
@@ -92,6 +94,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -118,6 +121,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -142,6 +146,7 @@ ATT.Category = {"grip_aug","grip_aug_2_alt"}
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 1.25
+ATT.VisualRecoilMult = 1.25
 
 ATT.LHIK_Priority = 2
 ATT.LHIK = true

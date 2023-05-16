@@ -102,28 +102,51 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+-- SWEP.RecoilKick = 1.5
+
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilKickCrouch = 1
+
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilKickCrouch = 1
-
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = .1
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilSide = 2.5
+SWEP.VisualRecoilRoll = 1
 
+SWEP.VisualRecoilPositionBump = .4
+SWEP.VisualRecoilPositionBumpUp = .3
+SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultSights = .01
+
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringPunchDamping = 10
+
+-- ]]--
+	
 -------------------------- SPREAD
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddCrouch = 0
+SWEP.SpreadAddSights = 0.0125
 
 -------------------------- HANDLING
 
@@ -259,6 +282,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.725,
+		MagSwapTime = 1,
+		Mult = .9,
         IKTimeLine = {
             {
                 t = 0,
@@ -291,6 +317,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.85,
+		MagSwapTime = 1,
+		Mult = .9,
         IKTimeLine = {
             {
                 t = 0,
@@ -325,6 +354,9 @@ SWEP.Animations = {
     },
     ["1_reload_empty"] = {
         Source = "reload2",
+		MinProgress = 0.85,
+		MagSwapTime = 1,
+		Mult = .9,
         IKTimeLine = {
             {
                 t = 0,
@@ -360,6 +392,9 @@ SWEP.Animations = {
     },
     ["reload_9"] = {
         Source = "reload_short", --PlaceHolder
+		MinProgress = 0.75,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
@@ -375,6 +410,9 @@ SWEP.Animations = {
     },
     ["reload_empty_9"] = {
         Source = "reload2", --PlaceHolder
+		MinProgress = 0.9,
+		MagSwapTime = 1,
+		Mult = 1,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
@@ -464,6 +502,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -477,6 +518,8 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
