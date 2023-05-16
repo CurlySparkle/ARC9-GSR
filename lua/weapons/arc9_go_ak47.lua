@@ -124,22 +124,22 @@ SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = .1
-SWEP.RecoilMultSights = 1.1
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 3
-SWEP.VisualRecoilSide = 4.5
+SWEP.VisualRecoilSide = 2.5
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = .35
-SWEP.VisualRecoilPositionBumpUp = .35
+SWEP.VisualRecoilPositionBump = .9
+SWEP.VisualRecoilPositionBumpUp = .3
 SWEP.VisualRecoilMultCrouch = .45
 SWEP.VisualRecoilMultSights = .01
 
-SWEP.VisualRecoilDampingConst = 90 -- Leave be
-SWEP.VisualRecoilSpringPunchDamping = 9
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 12
 
 -- ]]--
 
