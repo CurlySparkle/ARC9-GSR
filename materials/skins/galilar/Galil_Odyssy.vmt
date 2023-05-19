@@ -1,31 +1,11 @@
-"VertexlitGeneric"
+Patch
 {
-	"$basetexture"				"skins/galilar/Galil_Odyssy"
-	"$bumpmap"					"null-bumpmap"
-	"$phongexponenttexture"		"models/csgo/galil/rif_galilar_exponent"
-	"$color2"					"[.8 .8 .8]"
-	// "$blendTintByBaseAlpha"		"1"
-
-	"$envmap"					"env_cubemap"
-	"$envmaptint"				"[ .025 .025 .025 ]"
-
-	"$phong"					"1"
-	"$phongboost"				"1"
-	"$phongexponent"				"55"
-	"$phongfresnelranges"		"[0.25 0.5 1]"
-     "$normalmapalphaenvmapmask"              "1"
-	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
-
-	"$rimlight"					"1"
-	"$rimlightexponent"			"80"	
-	"$rimlightboost"			".2"
-	"$rimmask"					"1"
-	"$nocull"					"1"
+	include materials\models\csgo\galil\rif_galilar.vmt
+	insert
+	{
+		"$detail"				"skins/galilar/Galil_Odyssy"
+		"$detailscale" "1"
+		"$detailblendmode" "4"
+		"$detailblendfactor" ".25"
+	}
 }
-
-
-
-
-
-
-
