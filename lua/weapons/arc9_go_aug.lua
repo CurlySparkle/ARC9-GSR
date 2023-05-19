@@ -116,14 +116,14 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .1
+SWEP.RecoilMultHipFire = .45
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 3
-SWEP.VisualRecoilSide = 2.5
+SWEP.VisualRecoilSide = .8
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = .4

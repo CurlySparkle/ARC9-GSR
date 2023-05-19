@@ -129,7 +129,7 @@ SWEP.RecoilKick = 1
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .35
+SWEP.RecoilMultHipFire = .55
 SWEP.RecoilMultSights = 1.5
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
