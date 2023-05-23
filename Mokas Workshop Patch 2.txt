@@ -26,6 +26,17 @@ Weapons not listed did not have anything changed.
 [/tr][tr]
 [/tr][/table]
 
+[b][u]SMGs[/u][/b]
+[table][tr]
+	[th]MAC-10[/th]
+	[th]EDIT THIS[/i][/th]
+[/tr][tr]
+	[th]PP-Bizon[/th]
+	[th]Adjusted the recoil
+	[/th]
+[/tr][tr]
+[/tr][/table]
+
 [b][u]Attachment Fixes[/u][/b]
 A few attachments had fixes applied to them.
 [table][tr]
@@ -33,19 +44,47 @@ A few attachments had fixes applied to them.
 	[th]Fixes[/th]
 [/tr][tr]
 	[th]Universal
-	Magnifier with Aimpoint CompM4[/th]
-	[th]Adjusted aim positions[/th]
-[/tr][tr]
-	[th]Universal
-	Magnifier with EOTech Sight[/th]
-	[th]Adjusted aim positions[/th]
-[/tr][tr]
-	[th]Universal
 	Magnifier with Kobra EKP-8-18[/th]
 	[th]Adjusted aim positions[/th]
 [/tr][tr]
 	[th]Universal
-	Magnifier with OKP-7[/th]
+	N-Vision Halo-LR Thermal[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	SIG556 Scope[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	AUG Scope[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	C79 Scope[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	M110 Scope[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	AWP Scope (8x)[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	SCAR-20 Scope (8x)[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	Scout Scope (6x)[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	Elcan SpecterDR (4x)[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]G3SG1
+	G3SG1 Scope (8x)[/th]
 	[th]Adjusted aim positions[/th]
 [/tr][tr]
 	[th]Galil SAR
@@ -58,42 +97,6 @@ A few attachments had fixes applied to them.
 	[th]Reduced magazine capacity benefit from 45 to 40
 	Decreased damage penalty from 25% to 15%
 	Decreased recoil and reload speed penalties from 20% to 15%
-	[/th]
-[/tr][tr]
-	[th]Benelli M3 Super 90
-	7-Round Tube[/th]
-	[th]Now requires the Extended Barrel attachment
-	[/th]
-[/tr][tr]
-	[th]M4A1-S
-	50-Round Drum Mag[/th]
-	[th]Fixed a missing 20% reload speed penalty
-	[/th]
-[/tr][tr]
-	[th]M4A1-S
-	30-Round Mag[/th]
-	[th]Added a 5% reload speed penalty
-	[/th]
-[/tr][tr]
-	[th]M4A4
-	32-Round 9x19mm Mag[/th]
-	[th]Fixed the 0% reload speed benefit to 5%
-	[/th]
-[/tr][tr]
-	[th]M4A4
-	20-Round Magazine - Sniper[/th]
-	[th]Lowered RPM penalty from 160 to 325 RPM
-	[/th]
-[/tr][tr]
-	[th]MP7
-	40-Round Magazine[/th]
-	[th]Removed the -15% reload speed benefit
-	Added a +10% reload speed penalty
-	[/th]
-[/tr][tr]
-	[th]XM1014
-	10-Round Tube[/th]
-	[th]Now requires the 750mm Barrel attachment
 	[/th]
 [/tr][/table]
 

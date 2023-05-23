@@ -917,6 +917,13 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
+        Category = {"universal_camo"},
+		InstalledElements = {"camos"},
+		ExcludeElements = {"skins"},
+        CosmeticOnly = true,
+    },
+    {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_g3_view"
     },

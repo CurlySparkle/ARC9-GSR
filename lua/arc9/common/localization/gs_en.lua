@@ -473,7 +473,7 @@ L["csgo_optic_2x_okp.compactname"] = "OKP-7 2x"
 L["csgo_optic_2x_okp.description"] = "Reflex sight that provides an effective aiming reticle.\nBundled with a toggleable 2x Magnifier."
 
 -- Scopes
-L["csgo_optic_acog.printname"] = "M110 Scope"
+L["csgo_optic_acog.printname"] = "M110 Scope (8x-12x)"
 L["csgo_optic_acog.compactname"] = "M110"
 L["csgo_optic_acog.description"] = "Long-range combat scope. Provides improved precision at longer ranges."
 

@@ -473,7 +473,7 @@ L["csgo_optic_2x_okp.compactname"] = "OKP-7 2x"
 L["csgo_optic_2x_okp.description"] = "Reflexvisier, das ein effektives Fadenkreuz bietet.\nGebündelt mit einer umschaltbaren 2x-Visier."
 
 -- Scopes
-L["csgo_optic_acog.printname"] = "M110-Zielfernlauf"
+L["csgo_optic_acog.printname"] = "M110-Zielfernlauf (8x-12x)"
 L["csgo_optic_acog.compactname"] = "M110"
 L["csgo_optic_acog.description"] = "Langstrecken-Kampffernlauf. Bietet verbesserte Präzision auf größere Entfernungen."
 

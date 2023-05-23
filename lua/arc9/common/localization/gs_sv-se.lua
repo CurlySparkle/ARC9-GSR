@@ -470,9 +470,9 @@ L["csgo_optic_2x_okp.compactname"] = "OKP-7 2x"
 L["csgo_optic_2x_okp.description"] = "Reflexsikte som erbjuder ett effektivt sikte hårkors.\nKommer med ett växelbart 2x förstoringsglas."
 
 -- Scopes
-L["csgo_optic_acog.printname"] = "M110-Kikarsikte"
+L["csgo_optic_acog.printname"] = "M110-Kikarsikte (8x-12x)"
 L["csgo_optic_acog.compactname"] = "M110"
-L["csgo_optic_acog.description"] = "Lång räckvidd stridssikte. Ger förbättrat träffsäkerhet vid längre distanser."
+L["csgo_optic_acog.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser."
 
 L["csgo_optic_acog_1.printname"] = "SIG556-Sikte"
 L["csgo_optic_acog_1.compactname"] = "SIG556"

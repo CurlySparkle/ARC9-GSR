@@ -19,6 +19,7 @@ ATT.ActivateElements = {"barrel_bull"}
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.8
 
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.8
@@ -45,6 +46,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -94,6 +96,7 @@ ATT.Category = "go_stock_awp"
 ATT.ActivateElements = {"stock_folding"}
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
@@ -193,6 +196,7 @@ ATT.ModelOffset = Vector(0.7, 0, 1)
 ATT.ActivateElements = {"stock_lc10"}
 
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 ATT.RecoilKickMult = 1.15
 ATT.RecoilMultCrouch = 1.15
 ATT.RecoilMultHipFire = 1.15

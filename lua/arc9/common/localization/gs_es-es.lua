@@ -470,7 +470,7 @@ L["csgo_optic_2x_okp.compactname"] = "OKP-7 2x"
 L["csgo_optic_2x_okp.description"] = "Mira reflex que proporciona una retícula de puntería eficaz.\nIncluye un amplificador 2x conmutable."
 
 -- Scopes
-L["csgo_optic_acog.printname"] = "Visor M110"
+L["csgo_optic_acog.printname"] = "Visor M110 (8x-12x)"
 L["csgo_optic_acog.compactname"] = "M110"
 L["csgo_optic_acog.description"] = "Visor de combate de largo alcance. Proporciona una mayor precisión a distancias más largas."
 
