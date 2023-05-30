@@ -11,6 +11,7 @@ ATT.AutoStats = true
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 
 ATT.ReloadTimeMult = 0.80
 
@@ -27,6 +28,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 ATT.HeadshotDamageMult = 3
 
 ARC9.LoadAttachment(ATT, "csgo_perk_headshot")
@@ -74,6 +76,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 ATT.ActivateElements = {"acehole"}
 
 ATT.DamageMult = newdamage
@@ -105,6 +108,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_bolt"}
 
 ATT.CycleTimeMult = 0.75
@@ -122,6 +126,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_burst"}
 ATT.ExcludeElements = {"slide_raffica"}
 
@@ -149,6 +154,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_cowboy"}
 
 ATT.ShootWhileSprint = true
@@ -166,6 +172,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
+ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_diver"}
 
 ATT.CanFireUnderwater = true

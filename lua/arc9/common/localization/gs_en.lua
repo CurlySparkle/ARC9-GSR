@@ -1085,81 +1085,45 @@ L["go_supp_kriss.compactname"] = "4GSK"
 L["go_supp_kriss.description"] = "Heavy tactical suppressor designed to reduce the decibel level from gunshots."
 
 -- Perks
-L["csgo_perk_fastreload.printname"] = "Rapid Reload"
-L["csgo_perk_fastreload.compactname"] = "Reload"
-L["csgo_perk_fastreload.description"] = "Increases reloading speed by 20%."
+L["fo4_perk_fastreload.printname"] = "Rapid Reload"
+L["fo4_perk_fastreload.compactname"] = "Reload"
+L["fo4_perk_fastreload.description"] = "Increases reloading speed by 20%."
 
-L["csgo_perk_headshot.printname"] = "Surgical Shot"
-L["csgo_perk_headshot.compactname"] = "Surgical"
-L["csgo_perk_headshot.description"] = "Triples the damage on headshots."
+L["fo4_perk_headshot.printname"] = "Surgical Shot"
+L["fo4_perk_headshot.compactname"] = "Surgical"
+L["fo4_perk_headshot.description"] = "Triples the damage on headshots."
 
-L["csgo_perk_enforcer.printname"] = "Enforcer"
-L["csgo_perk_enforcer.compactname"] = "Enforcer"
-L["csgo_perk_enforcer.description"] = "Reduces overall damage taken by 30%."
+L["fo4_perk_enforcer.printname"] = "Enforcer"
+L["fo4_perk_enforcer.compactname"] = "Enforcer"
+L["fo4_perk_enforcer.description"] = "Reduces overall damage taken by 30%."
 
-L["csgo_perk_ace.printname"] = "Ace In The Hole"
-L["csgo_perk_ace.compactname"] = "Ace"
-L["csgo_perk_ace.description"] = "Against NPC's: 33% chance to deal 200% damage on hit."
+L["fo4_perk_ace.printname"] = "Ace In The Hole"
+L["fo4_perk_ace.compactname"] = "Ace"
+L["fo4_perk_ace.description"] = "Against NPC's: 33% chance to deal 200% damage on hit."
 
-L["csgo_perk_bolt.printname"] = "Deft Hands"
-L["csgo_perk_bolt.compactname"] = "Deft Hands"
-L["csgo_perk_bolt.description"] = "Increases weapon rechamber speed by 25%."
+L["fo4_perk_bolt.printname"] = "Deft Hands"
+L["fo4_perk_bolt.compactname"] = "Deft Hands"
+L["fo4_perk_bolt.description"] = "Increases weapon rechamber speed by 25%."
 
-L["csgo_perk_burst.printname"] = "Enhanced Burst"
-L["csgo_perk_burst.compactname"] = "Burst"
-L["csgo_perk_burst.description"] = "Changes the weapon firing modes to 3-round burst and semi-automatic."
+L["fo4_perk_burst.printname"] = "Enhanced Burst"
+L["fo4_perk_burst.compactname"] = "Burst"
+L["fo4_perk_burst.description"] = "Changes the weapon firing modes to 3-round burst and semi-automatic."
 
-L["csgo_perk_cowboy.printname"] = "Gung-Ho"
-L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
-L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting."
+L["fo4_perk_cowboy.printname"] = "Gung-Ho"
+L["fo4_perk_cowboy.compactname"] = "Gung-Ho"
+L["fo4_perk_cowboy.description"] = "Enables the ability to shoot while sprinting."
 
-L["csgo_perk_diver.printname"] = "Deep Sea"
-L["csgo_perk_diver.compactname"] = "Deep Sea"
-L["csgo_perk_diver.description"] = "Enables the ability to shoot while underwater."
+L["fo4_perk_diver.printname"] = "Deep Sea"
+L["fo4_perk_diver.compactname"] = "Deep Sea"
+L["fo4_perk_diver.description"] = "Enables the ability to shoot while underwater."
 
-L["csgo_perk_melee_lounge.printname"] = "Lunger"
-L["csgo_perk_melee_lounge.compactname"] = "Lunger"
-L["csgo_perk_melee_lounge.description"] = "Adds a lunge mechanic - aim at an enemy and lunge towards them if in range!"
+L["fo4_perk_melee_lounge.printname"] = "Lunger"
+L["fo4_perk_melee_lounge.compactname"] = "Lunger"
+L["fo4_perk_melee_lounge.description"] = "Adds a lunge mechanic - aim at an enemy and lunge towards them if in range!"
 
-L["csgo_perk_melee_speed.printname"] = "Stabber"
-L["csgo_perk_melee_speed.compactname"] = "Stabber"
-L["csgo_perk_melee_speed.description"] = "Increases melee speed."
-
-L["csgo_perk_defiant.printname"] = "Defiant"
-L["csgo_perk_defiant.compactname"] = "Defiant"
-L["csgo_perk_defiant.description"] = "Against NPC's: Last shot in the magazine deals x2 damage.\nAgainst Players: Last shot deals 25% more damage."
-
-L["csgo_perk_furious.printname"] = "Furious"
-L["csgo_perk_furious.compactname"] = "Furious"
-L["csgo_perk_furious.description"] = "Increases damage by 15% for each consecutive hit on the same target.\nAgainst NPC's: Stacks up to 300%.\nAgainst Players: Stacks up to 60%.\nResets when another target is hit."
-
-L["csgo_perk_hitman.printname"] = "Hitman"
-L["csgo_perk_hitman.compactname"] = "Hitman"
-L["csgo_perk_hitman.description"] = "Increases damage by 10% when aiming."
-
-L["csgo_perk_instigating.printname"] = "Instigating"
-L["csgo_perk_instigating.compactname"] = "Instigating"
-L["csgo_perk_instigating.description"] = "Deals more damage if target is at full health.\nAgainst NPC's: x2 damage.\nAgainst Players: 30% more damage."
-
-L["csgo_perk_neverending.printname"] = "Never Ending"
-L["csgo_perk_neverending.compactname"] = "Never Ending"
-L["csgo_perk_neverending.description"] = "Enables bottomless magazine."
-
-L["csgo_perk_resilient.printname"] = "Resilient"
-L["csgo_perk_resilient.compactname"] = "Resilient"
-L["csgo_perk_resilient.description"] = "Take 30% less damage while reloading."
-
-L["csgo_perk_twoshot.printname"] = "Two Shot"
-L["csgo_perk_twoshot.compactname"] = "Two Shot"
-L["csgo_perk_twoshot.description"] = "Fires an additional projectile at the cost of higher recoil."
-
-L["csgo_perk_violent.printname"] = "Violent"
-L["csgo_perk_violent.compactname"] = "Violent"
-L["csgo_perk_violent.description"] = "Increases damage by 20% at the cost of significantly higher recoil."
-
-L["csgo_perk_wounding.printname"] = "Wounding"
-L["csgo_perk_wounding.compactname"] = "Wounding"
-L["csgo_perk_wounding.description"] = "Targets hit bleed for 5 seconds.\nAgainst NPC's: 5 HP/s\nAgainst Players: 2 HP/s"
+L["fo4_perk_melee_speed.printname"] = "Stabber"
+L["fo4_perk_melee_speed.compactname"] = "Stabber"
+L["fo4_perk_melee_speed.description"] = "Increases melee speed."
 
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"
@@ -2125,3 +2089,46 @@ L["csgo_xm1014_barrel_short.description"] = "Shortened barrel that improves weap
 L["csgo_xm1014_mag_fed.printname"] = "5-Round Box Magazine"
 L["csgo_xm1014_mag_fed.compactname"] = "5S Box"
 L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine.\nCan no longer single load.\nSlightly decreases the magazine capacity and weapon handling."
+
+-- [[ Fallout 4 Perks ]]
+L["fo4_perk_defiant.printname"] = "Defiant"
+L["fo4_perk_defiant.compactname"] = "Defiant"
+L["fo4_perk_defiant.description"] = "Against NPC's: Last shot in the magazine deals x2 damage.\nAgainst Players: Last shot deals 25% more damage."
+
+L["fo4_perk_furious.printname"] = "Furious"
+L["fo4_perk_furious.compactname"] = "Furious"
+L["fo4_perk_furious.description"] = "Increases damage by 15% for each consecutive hit on the same target.\nAgainst NPC's: Stacks up to 300%.\nAgainst Players: Stacks up to 60%.\nResets when another target is hit."
+
+L["fo4_perk_hitman.printname"] = "Hitman"
+L["fo4_perk_hitman.compactname"] = "Hitman"
+L["fo4_perk_hitman.description"] = "Increases damage by 10% when aiming."
+
+L["fo4_perk_instigating.printname"] = "Instigating"
+L["fo4_perk_instigating.compactname"] = "Instigating"
+L["fo4_perk_instigating.description"] = "Deals more damage if target is at full health.\nAgainst NPC's: x2 damage.\nAgainst Players: 30% more damage."
+
+L["fo4_perk_neverending.printname"] = "Never Ending"
+L["fo4_perk_neverending.compactname"] = "Never Ending"
+L["fo4_perk_neverending.description"] = "Enables bottomless magazine."
+
+L["fo4_perk_resilient.printname"] = "Resilient"
+L["fo4_perk_resilient.compactname"] = "Resilient"
+L["fo4_perk_resilient.description"] = "Take 30% less damage while reloading."
+
+L["fo4_perk_twoshot.printname"] = "Two Shot"
+L["fo4_perk_twoshot.compactname"] = "Two Shot"
+L["fo4_perk_twoshot.description"] = "Fires an additional projectile at the cost of higher recoil."
+
+L["fo4_perk_violent.printname"] = "Violent"
+L["fo4_perk_violent.compactname"] = "Violent"
+L["fo4_perk_violent.description"] = "Increases damage by 20% at the cost of significantly higher recoil."
+
+L["fo4_perk_wounding.printname"] = "Wounding"
+L["fo4_perk_wounding.compactname"] = "Wounding"
+L["fo4_perk_wounding.description"] = "Targets hit bleed for 5 seconds.\nAgainst NPC's: 5 HP/s\nAgainst Players: 2 HP/s"
+
+-- [[ Destiny 2 Perks ]]
+
+L["d2_perk_alloy_magazine.printname"] = "Alloy Magazine"
+L["d2_perk_alloy_magazine.compactname"] = "Alloy M."
+L["d2_perk_alloy_magazine.description"] = "Faster reloads when the magazine is empty."
