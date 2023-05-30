@@ -141,8 +141,9 @@ SWEP.VisualRecoilMultSights = .01
 SWEP.VisualRecoilDampingConst = 120
 SWEP.VisualRecoilSpringPunchDamping = 12
 
-SWEP.ViewRecoil = true -- true
-SWEP.ViewRecoilUpMult = 20 -- 40-100
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = 10
+-- SWEP.ViewRecoilSideMult = -5
 
 -- ]]--
 

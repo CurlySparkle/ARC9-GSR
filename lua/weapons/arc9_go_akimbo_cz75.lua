@@ -84,15 +84,19 @@ SWEP.Firemodes = {
         AkimboBoth = true,
         AmmoPerShot = 2,
         Num = 2,
+		SpreadAddRecoil = 0.1,
+		VisualRecoilMultSights = 1
     },
     {
         Mode = 1,
+		SpreadAddRecoil = 0.05,
+		VisualRecoilMultSights = .25
     }
 }
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.1
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 4324 -- CSGO Seed Input Test
 
@@ -108,7 +112,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilRandomUpSights = 0.5
 SWEP.RecoilRandomSideSights = 0.5
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilDissipationRateSights = 40
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
@@ -117,23 +121,52 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1
 SWEP.RecoilKickSights = 1.5
 
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true
 
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultHipFire = .45
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 0.9
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 2.5
+SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 0.5
+SWEP.VisualRecoilMultCrouch = 1
+-- SWEP.VisualRecoilMultSights = .25
+
+SWEP.VisualRecoilDampingConst = 240
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+SWEP.ViewRecoil = false
+SWEP.ViewRecoilUpMult = 10
+SWEP.ViewRecoilSideMult = 2.5
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
+
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+-- SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.004
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddCrouch = -0.005
+SWEP.SpreadAddSights = 0.0025
 
 -------------------------- HANDLING
 
@@ -349,6 +382,9 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
+        Source = "idle",
+    },
+    ["enter_sights"] = {
         Source = "idle",
     },
     ["idle_sprint"] = {
