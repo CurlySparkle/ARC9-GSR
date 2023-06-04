@@ -80,6 +80,8 @@ SWEP.Firemodes = {
     {
         Mode = 1,
 		RPM = 800,
+		SpreadAddRecoil = 0.05,
+		VisualRecoilMultSights = .25
         -- add other attachment modifiers
     },
     {
@@ -94,7 +96,8 @@ SWEP.Firemodes = {
 
         RecoilUp = 1,
         RecoilKick = 1.5,
-        SpreadAddRecoil = 0.005,
+		SpreadAddRecoil = 0.1,
+		VisualRecoilMultSights = 1
 
     }
 }
@@ -115,30 +118,59 @@ SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.6
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilMultSights = 1.2
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilMultSights = 1.2
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.Akimbo = true
 
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.6
+SWEP.RecoilMultHipFire = .35
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 2.5
+SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 0.5
+SWEP.VisualRecoilMultCrouch = 1
+-- SWEP.VisualRecoilMultSights = .25
+
+SWEP.VisualRecoilDampingConst = 240
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+SWEP.ViewRecoil = false
+SWEP.ViewRecoilUpMult = 10
+SWEP.ViewRecoilSideMult = 2.5
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
+
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+-- SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.004
 SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = 0.0025
 
 -------------------------- HANDLING
 
@@ -354,6 +386,9 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
+        Source = "idle",
+    },
+    ["enter_sights"] = {
         Source = "idle",
     },
     ["idle_sprint"] = {

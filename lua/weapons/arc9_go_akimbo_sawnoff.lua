@@ -92,7 +92,7 @@ SWEP.Firemodes = {
         PrintName = ARC9:GetPhrase("csgo_firemode_both"),
         RPMMult = 60/80,
         AkimboBoth = true,
-        RecoilMult = 1.25,
+        RecoilMult = 3,
         AmmoPerShot = 2,
         NumMult = 2,
     },
@@ -100,12 +100,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2.5
+SWEP.Recoil = 1
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 3 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -119,36 +119,43 @@ SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern
 
 SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilMultSights = 0.25
+SWEP.RecoilMultSights = 2.5
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.ViewRecoil = true
-SWEP.ViewRecoilUpMult = 4
+SWEP.ViewRecoil = false
+SWEP.ViewRecoilUpMult = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoil = 2
+SWEP.VisualRecoil = 1
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 10
+SWEP.VisualRecoilSide = .25
+SWEP.VisualRecoilRoll = 1
 SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilMultSights = 1
+
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Akimbo = true
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.04
+SWEP.Spread = 0.1
 
 SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.04
-SWEP.SpreadMultHipFire = 1.2
+SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddSights = 0.0025
+SWEP.SpreadMultHipFire = 1
 SWEP.SpreadMultSights = 1
 SWEP.SpreadAddCrouch = -0.004
-SWEP.SpreadAddSightsMove = -0.1
 
 -------------------------- HANDLING
 
@@ -382,6 +389,9 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
+        Source = "idle",
+    },
+    ["enter_sights"] = {
         Source = "idle",
     },
     ["idle_sprint"] = {

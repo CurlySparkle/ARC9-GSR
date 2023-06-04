@@ -130,7 +130,7 @@ SWEP.Akimbo = true
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .45
+SWEP.RecoilMultHipFire = .65
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.9
 

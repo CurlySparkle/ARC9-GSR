@@ -3,8 +3,8 @@ Here's an abbrevriated version:
 [b][u][/u][/b]
 [table][tr]
 	[th][list]
-	[*]All weapons now use visual recoil when hip firing
-	[*]Adjusted quite a lot of attachment stats
+	[*]All weapons now use visual recoil
+	[*]Adjusted a few attachment stats
 	
 	And quite a bit more.
 	[/list][/th]
@@ -13,7 +13,22 @@ Here's an abbrevriated version:
 And here's the long, more detailed version:
 
 [b][u]Weapon changes[/u][/b]
+All weapons have gotten visual recoil added to them. This applies to [i]all[/i] weapons. This will not be repeated for the list below.
+
+This means that all weapons will have the following things added and adjusted:
+[list]
+[*]Added visual recoil, especially when hip-firing
+[*]Adjusted recoil patterns
+[*]Adjusted accuracy and spread values
+[/list]
+
 Weapons not listed did not have anything changed.
+
+[b][u]Akimbos[/u][/b]
+[table][tr]
+	[th]Dual MP9[/th]
+	[th]Removed the ability to equip scopes (This might break presets)[/i][/th]
+[/tr][/table]
 
 [b][u]Assault Rifles[/u][/b]
 [table][tr]
