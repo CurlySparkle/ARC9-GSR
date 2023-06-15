@@ -112,61 +112,84 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
 
-SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultCrouch = 0.6
 
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.UseVisualRecoil = true
+-- SWEP.UseVisualRecoil = true
 
-SWEP.PhysicalVisualRecoil = true
+-- SWEP.PhysicalVisualRecoil = true
 
-SWEP.VisualRecoilUp = 2 -- Vertical tilt for visual recoil.F
-SWEP.VisualRecoilSide = 0.15 -- Horizontal tilt for visual recoil.
-SWEP.VisualRecoilRoll = 15 -- Roll tilt for visual recoil.
-SWEP.VisualRecoilPunch = 0.25
+-- SWEP.VisualRecoilUp = 2 -- Vertical tilt for visual recoil.F
+-- SWEP.VisualRecoilSide = 0.15 -- Horizontal tilt for visual recoil.
+-- SWEP.VisualRecoilRoll = 15 -- Roll tilt for visual recoil.
+-- SWEP.VisualRecoilPunch = 0.25
 
-SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultSights = 1
-SWEP.VisualRecoilPositionBump = 1.5
+-- SWEP.VisualRecoil = 1
+-- SWEP.VisualRecoilMultSights = 1
+-- SWEP.VisualRecoilPositionBump = 1.5
 
-SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilSideMultHipFire = 2
+-- SWEP.VisualRecoilMultHipFire = 1
+-- SWEP.VisualRecoilSideMultHipFire = 2
 
-SWEP.VisualRecoilDampingConst = 40
-SWEP.VisualRecoilSpringMagnitude = 1
+-- SWEP.VisualRecoilDampingConst = 40
+-- SWEP.VisualRecoilSpringMagnitude = 1
 
-SWEP.VisualRecoilCenter = Vector(4, 4, 1)
+-- SWEP.VisualRecoilCenter = Vector(4, 4, 1)
 
 -------------------------- VISUAL RECOIL
 
-SWEP.RecoilKick = 1
+-- SWEP.RecoilKick = 1
+
+-- SWEP.UseVisualRecoil = true
+
+-- SWEP.VisualRecoilUp = 0 -- Vertical tilt for visual recoil.
+-- SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
+-- SWEP.VisualRecoilRoll = 0 -- Roll tilt for visual recoil.
+
+-- SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
+
+-- SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
+
+-- SWEP.VisualRecoilMult = 1
+
+-- SWEP.VisualRecoilHipFire = false
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultHipFire = .65
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 2
+SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilSide = 1
+SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilUp = 0 -- Vertical tilt for visual recoil.
-SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
-SWEP.VisualRecoilRoll = 0 -- Roll tilt for visual recoil.
+SWEP.VisualRecoilPositionBump = .15
+SWEP.VisualRecoilPositionBumpUp = .75
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = .05
 
-SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
+SWEP.VisualRecoilDampingConst = 180
+SWEP.VisualRecoilSpringPunchDamping = 12
 
-SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
-
-SWEP.VisualRecoilMult = 1
-
-SWEP.VisualRecoilHipFire = false
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.1
 SWEP.SpreadAddCrouch = -0.04
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = 0.015
 
 -------------------------- HANDLING
 
@@ -544,6 +567,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -557,6 +583,8 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,

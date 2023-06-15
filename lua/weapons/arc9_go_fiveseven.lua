@@ -105,12 +105,37 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.25
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunchMultSights = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultHipFire = .6
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunchMultSights = 1
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 4
+SWEP.VisualRecoilSide = 1.15
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = .1
+
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
@@ -292,6 +317,9 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
+        Source = "idle",
+    },
+    ["enter_sights"] = {
         Source = "idle",
     },
     ["idle_sprint"] = {

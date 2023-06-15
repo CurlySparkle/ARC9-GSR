@@ -52,7 +52,7 @@ Weapons not listed did not have anything changed.
 [/tr][tr]
 [/tr][/table]
 
-[b][u]Attachment Fixes[/u][/b]
+[b][u]Attachment Fixes and Adjustments[/u][/b]
 A few attachments had fixes applied to them.
 [table][tr]
 	[th]Attachment[/th]
@@ -102,10 +102,24 @@ A few attachments had fixes applied to them.
 	G3SG1 Scope (8x)[/th]
 	[th]Adjusted aim positions[/th]
 [/tr][tr]
-	[th]Galil SAR
-	30-Round 7.62mm Mag[/th]
-	[th]No longer has a 40 magazine capacity benefit
-	Removed the 10% reload speed penalty[/th]
+	[th]G3SG1
+	30, 20 & 10-Round Magazine - Automatic
+	30 & 20-Round 5.56x45mm Magazine
+	60-Round 5.56x45mm Casket Mag.
+	60, 30 & 20-Round 5.56x45mm NATO Mag.
+	30-Round .45 ACP Conversion
+	40-Round 9x19mm Conversion
+	[/th]
+	[th]
+
+
+
+	Now decreases spread and range[/th]
+[/tr][tr]
+	[th]G3SG1
+	60-Round 5.56x45mm NATO Casket Mag. and Adapter
+	[/th]
+	[th]Fixed that it did not increase mag. size to 60[/th]
 [/tr][tr]
 	[th]Galil AR
 	40-Round 7.62mm Mag[/th]
