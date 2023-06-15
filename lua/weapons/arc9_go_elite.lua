@@ -108,20 +108,46 @@ SWEP.RecoilKick = 1.5
 
 SWEP.Akimbo = true
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultHipFire = .6
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 4
+SWEP.VisualRecoilSide = 1.5
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = .25
+
+SWEP.VisualRecoilDampingConst = 360
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.003 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.004
 SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = 0.0025
 
 -------------------------- HANDLING
 

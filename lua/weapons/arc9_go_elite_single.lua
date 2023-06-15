@@ -107,13 +107,38 @@ SWEP.RecoilKick = 0.5
 
 SWEP.Akimbo = false
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 1
+-- SWEP.VisualRecoilMultSights = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultHipFire = .6
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilMultSights = 1
+SWEP.VisualRecoilUp = 2.5
+SWEP.VisualRecoilSide = 1
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = .1
+
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
