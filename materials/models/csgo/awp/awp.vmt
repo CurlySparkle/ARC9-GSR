@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/awp/awp"
+	"$basetexture"				"models/csgo/awp/awp2"
 	"$bumpmap"					"models/csgo/awp/awp_n"
 	"$phongexponenttexture"		"models/csgo/awp/awp_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
@@ -25,7 +25,15 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "1"
+
 	 Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"

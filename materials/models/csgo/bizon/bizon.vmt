@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/bizon/bizon"
+	"$basetexture"				"models/csgo/bizon/bizon2"
 	"$bumpmap"					"models/csgo/bizon/bizon_n"
 	"$phongexponenttexture"		"models/csgo/bizon/bizon_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
