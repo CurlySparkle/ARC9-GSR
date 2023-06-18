@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/glock/pist_glock18"
+	"$basetexture"				"models/csgo/glock/pist_glock182"
 	"$bumpmap"					"models/csgo/glock/pist_glock18_n"
 	"$phongexponenttexture"		"models/csgo/glock/pist_glock18_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
@@ -22,12 +22,20 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.8"
+
 	 Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.3"
+            "max" "0.2"
         }
 	}
 }

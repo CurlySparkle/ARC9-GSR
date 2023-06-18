@@ -1,18 +1,18 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/ssg08/snip_ssg08_scope"
+	"$basetexture"				"models/csgo/ssg08/snip_ssg08_scope2"
 	"$bumpmap"					"models/csgo/ssg08/snip_ssg08_scope_n"
 	"$phongexponenttexture"		"models/csgo/ssg08/snip_ssg08_scope_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
-	"$basemapalphaphongmask" "1"
+	// "$basemapalphaphongmask" "1"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
 
 	"$phong"					"1"
-	"$phongboost"				"15"
-	"$phongexponent"			"55"
+	"$phongboost"				"1"
+	// "$phongexponent"			"55"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
 	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
@@ -23,12 +23,20 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "1"
+
 	 Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.3"
+            "max" "0.01"
         }
 	}
 }

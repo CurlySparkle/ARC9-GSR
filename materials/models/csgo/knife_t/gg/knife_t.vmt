@@ -1,15 +1,16 @@
 VertexLitGeneric
 {
 	"$basetexture"	"models/csgo/knife_t\gg\knife_t"
-	
 	"$phongexponenttexture" "models/csgo/knife_t\gg\knife_t_exponent"
-
+	"$color2"					"[1 1 1]"
 
 	"$phong" "1"
-
-	"$phongboost" ".3"
+	"$phongboost"				"5"
+	"$phongexponent"			"15"
 	"$phongalbedoboost" "30"
 	"$phongfresnelranges" "[.8 .8 1]"
+    "$normalmapalphaenvmapmask"              "1"
+	// "$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
 	"$basemapalphaphongmask" "1"
 
@@ -20,11 +21,10 @@ VertexLitGeneric
 	"$envmap" "env_cubemap"
 	"$baseAlphaEnvMapMask" "1" 
 	"$envmapfresnel" "1"
-	"$envmaptint" 		"[.4 .3 .15]"
+	"$envmaptint" 		"[ .4 .3 .15 ]"
 
 	"$rimlight" "1"
 	"$rimlightexponent" "3"
 	"$rimlightboost" "3.0"
-
 
 }

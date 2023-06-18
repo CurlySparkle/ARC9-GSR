@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/scar20/snip_scar20"
+	"$basetexture"				"models/csgo/scar20/snip_scar202"
 	"$bumpmap"					"models/csgo/scar20/snip_scar20_n"
 	"$phongexponenttexture"		"models/csgo/scar20/snip_scar20_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

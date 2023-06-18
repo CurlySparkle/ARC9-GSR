@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/sg556/sg556"
+	"$basetexture"				"models/csgo/sg556/sg5562"
 	"$bumpmap"					"models/csgo/sg556/sg556_n"
 	"$phongexponenttexture"		"models/csgo/sg556/sg556_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
@@ -22,12 +22,20 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.5"
+
 	 Proxies {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.2"
+            "max" "1"
         }
 	}
 }

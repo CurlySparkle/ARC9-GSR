@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/ump45/smg_ump45"
+	"$basetexture"				"models/csgo/ump45/smg_ump452"
 	"$bumpmap"					"models/csgo/ump45/smg_ump45_n"
 	"$phongexponenttexture"		"models/csgo/ump45/smg_ump45_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
@@ -42,7 +42,3 @@
         }
 	}
 }
-
-
-
-

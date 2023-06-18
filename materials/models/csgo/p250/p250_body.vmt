@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/p250/p250"
+	"$basetexture"				"models/csgo/p250/p2502"
 	"$bumpmap"					"models/csgo/p250/p250_n"
 	"$phongexponenttexture"		"models/csgo/p250/p250_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

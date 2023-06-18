@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/galil/rif_galilar"
+	"$basetexture"				"models/csgo/galil/rif_galilar2"
 	"$bumpmap"					"models/csgo/galil/rif_galilar_n"
 	"$phongexponenttexture"		"models/csgo/galil/rif_galilar_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

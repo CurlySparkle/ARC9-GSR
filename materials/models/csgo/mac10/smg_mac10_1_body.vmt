@@ -1,11 +1,11 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/mac10/smg_mac10_1"
-	"$bumpmap"					"null-bumpmap"
+	"$basetexture"				"models/csgo/mac10/smg_mac10_2"
+	"$bumpmap"					"models/csgo/mac10/smg_mac10_1_n"
 	"$phongexponenttexture"		"models/csgo/mac10/smg_mac10_1_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
-	"$basemapalphaphongmask" "1"
+	// "$basemapalphaphongmask" "0"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
@@ -22,7 +22,7 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
-	"$detailblendmode" "2"
+	"$detailblendmode" "4"
 	"$detailblendfactor" "0.8"
 
 	 Proxies {

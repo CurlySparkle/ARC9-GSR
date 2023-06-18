@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/famas/rif_famas"
+	"$basetexture"				"models/csgo/famas/rif_famas2"
 	"$bumpmap"					"models/csgo/famas/rif_famas_n"
 	"$phongexponenttexture"		"models/csgo/famas/rif_famas_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
@@ -12,10 +12,10 @@
 
 	"$phong"					"1"
 	"$phongboost"				"15"
-	//"$phongexponent"			"15"
+	"$phongexponent"			"15"
 	"$phongfresnelranges"		"[0.25 0.5 1]"
      "$normalmapalphaenvmapmask"              "1"
-	//"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
+	"$phongwarptexture"                 "models\weapons\v_arccw_go\atts\steelwarp"
 
 	"$rimlight"					"0"
 	"$rimlightexponent"			"80"	

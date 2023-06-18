@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/deagle/pist_deagle"
+	"$basetexture"				"models/csgo/deagle/pist_deagle2"
 	"$bumpmap"					"models/csgo/deagle/pist_deagle_n"
 	"$phongexponenttexture"		"models/csgo/deagle/pist_deagle_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

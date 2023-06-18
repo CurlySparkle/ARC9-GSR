@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/mp9/smg_mp9"
+	"$basetexture"				"models/csgo/mp9/smg_mp92"
 	"$bumpmap"					"models/csgo/mp9/smg_mp9_n"
 	"$phongexponenttexture"		"models/csgo/mp9/smg_mp9_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
@@ -39,7 +39,3 @@
         }
 	}
 }
-
-
-
-

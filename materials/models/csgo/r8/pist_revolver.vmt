@@ -1,19 +1,19 @@
 "VertexLitGeneric"
 {
-	$basetexture "models/csgo/r8/pist_revolver"
+	$basetexture "models/csgo/r8/pist_revolver2"
 	$bumpmap "models/csgo/r8/pist_revolver_n"
 	$phongexponenttexture "models/csgo/r8/pist_revolver_exponent"
 	
 	$phong "1"
 	$phongfresnelranges "[0.15 0.65 1.00]"
-	$phongboost "64"
+	$phongboost "1"
 	// $basealphaenvmapmask "1"
 	$phongalbedotint "1"
 	$phongdisablehalflambert "1"
 
 	$envmap "env_cubemap"
 	$envmapfresnel "1"
-	$envmaptint 		"[.1 .1 .12]"
+	$envmaptint 		"[.05 .05 .1]"
 	
 
 	 Proxies {
@@ -21,7 +21,7 @@
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.3"
+            "max" "0.1"
         }
 	}
 }

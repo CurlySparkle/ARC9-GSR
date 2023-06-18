@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/nova/shot_nova"
+	"$basetexture"				"models/csgo/nova/shot_nova2"
 	"$bumpmap"					"models/csgo/nova/shot_nova_n"
 	"$phongexponenttexture"		"models/csgo/nova/shot_nova_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/sawedoff/shot_sawedoff_01"
+	"$basetexture"				"models/csgo/sawedoff/shot_sawedoff_02"
 	"$bumpmap"					"models/csgo/sawedoff/shot_sawedoff_01_n"
 	"$phongexponenttexture"		"models/csgo/sawedoff/shot_sawedoff_01_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

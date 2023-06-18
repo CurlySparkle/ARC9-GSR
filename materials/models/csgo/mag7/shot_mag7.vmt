@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/mag7/shot_mag7"
+	"$basetexture"				"models/csgo/mag7/shot_mag72"
 	"$bumpmap"					"models/csgo/mag7/shot_mag7_n"
 	"$phongexponenttexture"		"models/csgo/mag7/shot_mag7_exponent"
 	"$color2"					"[0.8 0.8 0.8]"

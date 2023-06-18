@@ -1,6 +1,6 @@
 "VertexLitGeneric"
 {
-	$basetexture "models/csgo/r8/pist_revolver"
+	$basetexture "models/csgo/r8/pist_revolver2"
 	$bumpmap "models/csgo/r8/pist_revolver_n"
 	$phongexponenttexture "models/csgo/r8/pist_revolver_exponent"
 	
@@ -29,7 +29,7 @@
         {
             "specularity" "0.5"
             "min" "0"
-            "max" "0.3"
+            "max" "0.45"
         }
 	}
 }

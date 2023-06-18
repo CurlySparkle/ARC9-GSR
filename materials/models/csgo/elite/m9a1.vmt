@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/elite/m9a1"
+	"$basetexture"				"models/csgo/elite/m9a12"
 	"$bumpmap"					"models/csgo/elite/m9a1_n"
 	"$phongexponenttexture"		"models/csgo/elite/m9a1_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
