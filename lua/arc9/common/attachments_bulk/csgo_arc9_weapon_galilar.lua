@@ -19,6 +19,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -45,6 +46,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -72,6 +74,7 @@ ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
@@ -105,6 +108,7 @@ ATT.RPM = 600
 ATT.ClipSizeOverride = 40
 ATT.ReloadTimeMult = 1.15
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 ATT.RecoilKickMult = 1.15
 
 ATT.ActivateElements = {"mag_none"}
@@ -137,6 +141,7 @@ ATT.RPM = 600
 ATT.ClipSizeOverride = 30
 ATT.ReloadTimeMult = 1.1
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 ATT.RecoilKickMult = 1.15
 
 ATT.ActivateElements = {"mag_ak47"}
@@ -161,6 +166,7 @@ ATT.Category = {"go_galilar_mag"}
 ATT.ClipSizeOverride = 30
 ATT.ReloadTimeMult = 1.05
 ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
 ATT.RecoilKickMult = 1.1
 
 ATT.ActivateElements = {"mag_30"}
@@ -184,6 +190,7 @@ ATT.Category = {"go_galilar_mag"}
 ATT.ClipSizeOverride = 40
 ATT.ReloadTimeMult = 1.15
 ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
 ATT.RecoilKickMult = 1.2
 
 ATT.ActivateElements = {"mag_40"}
@@ -207,6 +214,7 @@ ATT.Category = {"go_galilar_mag"}
 ATT.ClipSizeOverride = 60
 ATT.ReloadTimeMult = 1.35
 ATT.RecoilMult = 1.3
+ATT.VisualRecoilMult = 1.3
 ATT.RecoilKickMult = 1.3
 
 ATT.ActivateElements = {"mag_60"}

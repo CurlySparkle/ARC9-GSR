@@ -198,6 +198,7 @@ ATT.Category = {"go_m3_barrel"}
 ATT.RangeMaxMult = 2
 ATT.SpreadAdd = -0.009
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 
 ATT.SpreadAddHipFire = 0.025
 ATT.SprintToFireTimeAdd = 0.1
@@ -230,6 +231,7 @@ ATT.SprintToFireTimeMult = 0.85
 
 ATT.SpreadMultHipFire = 0.5
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -336,6 +338,7 @@ ATT.Category = {"go_sawedoff_barrel"}
 ATT.RangeMaxAdd = 1500
 ATT.SpreadAdd = -0.009
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 
 ATT.SpreadAddHipFire = 0.025
 ATT.SprintToFireTimeAdd = 0.1
@@ -361,6 +364,7 @@ ATT.Category = "go_sawedoff_stock"
 ATT.ActivateElements = {"stock_extend"}
 
 ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
 ATT.RecoilAutoControlMult = 1.5
 
 ATT.SpreadAddMove = 0.02
@@ -423,6 +427,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.RecoilMult = 0.65
+ATT.VisualRecoilMult = 0.65
 ATT.RecoilAutoControlMult = 1.25
 
 ATT.SpreadAddMove = 0.012

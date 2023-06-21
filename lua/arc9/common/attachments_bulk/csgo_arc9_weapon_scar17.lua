@@ -19,6 +19,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -45,6 +46,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -68,6 +70,7 @@ ATT.Category = "go_scar17_stock"
 ATT.ActivateElements = {"stock_specialized"}
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.RecoilKickMult = 0.9
 ATT.RecoilMultCrouch = 0.85
 ATT.RecoilMultHipFire = 0.85
@@ -99,6 +102,7 @@ ATT.DamageMinMult = 9/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
 
 ATT.SortOrder = 0
@@ -135,6 +139,7 @@ ATT.DamageMinMult = 9/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
 
 ATT.SortOrder = 0
@@ -167,6 +172,7 @@ ATT.Category = "go_scar17_stock"
 ATT.ActivateElements = {"stock_pdw"}
 
 ATT.RecoilMult = 1.05
+ATT.VisualRecoilMult = 1.05
 ATT.RecoilKickMult = 1.1
 ATT.RecoilMultCrouch = 1.05
 ATT.RecoilMultHipFire = 1.1
@@ -194,6 +200,7 @@ ATT.Category = "go_scar17_stock"
 ATT.ActivateElements = {"stock_scarab"}
 
 ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
 ATT.RecoilKickMult = 1.2
 ATT.RecoilMultCrouch = 0.9
 ATT.RecoilMultHipFire = 1.05

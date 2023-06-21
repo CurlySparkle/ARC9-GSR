@@ -11,8 +11,8 @@ ATT.Free = false
 ATT.Category = {"go_mag_m4"}
 ATT.ClipSizeMult = 1.5
 ATT.ReloadTimeMult = 1.25
-ATT.RecoilMult = 1.1
-ATT.RecoilKickMult = 1.1
+-- ATT.RecoilMult = 1.1
+-- ATT.RecoilKickMult = 1.1
 
 ATT.ActivateElements = {"mag"}
 ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"

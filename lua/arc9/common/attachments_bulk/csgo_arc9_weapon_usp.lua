@@ -20,6 +20,7 @@ ATT.ActivateElements = {"slide_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -46,6 +47,7 @@ ATT.ActivateElements = {"slide_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85

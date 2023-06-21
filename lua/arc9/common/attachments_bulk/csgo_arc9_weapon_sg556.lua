@@ -147,6 +147,7 @@ ATT.Category = "go_sg556_stock"
 ATT.ActivateElements = {"stock_proto"}
 
 ATT.RecoilMult = 0.75
+ATT.VisualRecoilMult = 0.75
 ATT.SprintToFireTimeAdd = 0.08
 ATT.AimDownSightsTimeAdd = 0.05
 
@@ -174,6 +175,7 @@ ATT.DamageMinMult = 18/10
 ATT.SpreadMultSights = 0.8
 ATT.SpreadMult = 0.8
 ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
 ATT.RecoilKickMult = 1.1
 
 ATT.Hook_TranslateAnimation = function(wep, anim)

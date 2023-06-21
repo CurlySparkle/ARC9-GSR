@@ -19,6 +19,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -45,6 +46,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -113,6 +115,7 @@ ATT.DamageMaxMult = 1.2
 ATT.DamageMinMult = 1.2
 
 ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
 ATT.RecoilKickMult = 1.2
 
 ATT.RPM = 600
@@ -148,6 +151,7 @@ ATT.DamageMinMult = 1.2
 
 ATT.ReloadTimeMult = 1.1
 ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
 ATT.RecoilKickMult = 1.2
 
 ATT.RPM = 600

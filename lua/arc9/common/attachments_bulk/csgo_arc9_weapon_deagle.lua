@@ -18,6 +18,7 @@ ATT.Folder = "Suppressors"
 ATT.Model = "models/weapons/csgo/atts/silencer_deagle.mdl"
 
 ATT.RecoilMult = 0.975
+ATT.VisualRecoilMult = 0.975
 ATT.RecoilUpMult = 0.975
 ATT.AimDownSightsTimeMult = 1.025
 ATT.SprintToFireTimeMult = 1.05

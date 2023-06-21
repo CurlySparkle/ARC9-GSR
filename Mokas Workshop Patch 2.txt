@@ -98,6 +98,14 @@ A few attachments had fixes applied to them.
 	Elcan SpecterDR (4x)[/th]
 	[th]Adjusted aim positions[/th]
 [/tr][tr]
+	[th]Universal
+	MOE Stock[/th]
+	[th]Reduced recoil benefit from 20% to 10%[/th]
+[/tr][tr]
+	[th]Universal
+	XM1014 Stock[/th]
+	[th]Reduced recoil benefit from 25% to 15%[/th]
+[/tr][tr]
 	[th]G3SG1
 	G3SG1 Scope (8x)[/th]
 	[th]Adjusted aim positions[/th]

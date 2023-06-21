@@ -152,6 +152,7 @@ ATT.ShootVolumeMult = 0.9
 ATT.TracerNum = 0
 
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ARC9.LoadAttachment(ATT, "csgo_ammo_subsonic")
 

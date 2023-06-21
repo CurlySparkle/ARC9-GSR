@@ -15,7 +15,8 @@ ATT.Folder = "Tube"
 ATT.IconOffset = Vector(0, 0, 0)
 ATT.ActivateElements = {"stock_none"}
 
-ATT.RecoilUpMult = 0.95
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
 
 ATT.Attachments = {
     {

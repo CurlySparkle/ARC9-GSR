@@ -16,6 +16,7 @@ ATT.IconOffset = Vector(0, 0, 0)
 ATT.ActivateElements = {"stock_none"}
 
 ATT.RecoilUpMult = 1.05
+ATT.VisualRecoilUpMult = 1.05
 ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Attachments = {

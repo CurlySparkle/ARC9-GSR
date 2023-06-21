@@ -19,6 +19,7 @@ ATT.ActivateElements = {"barrel_factory"}
 ATT.AimDownSightsTimeMult = 1.35
 ATT.SprintToFireTimeMult = 1.35
 ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
 
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
@@ -45,6 +46,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85

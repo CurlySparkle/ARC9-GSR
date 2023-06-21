@@ -19,6 +19,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -46,6 +47,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -71,6 +73,7 @@ ATT.ActivateElements = {"stock_skeleton"}
 
 ATT.AimDownSightsTimeMult = 0.85
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ARC9.LoadAttachment(ATT, "csgo_m249_stock_skeleton")
 ----------------------------------------------------------------------------
@@ -161,6 +164,7 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
 
 ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
 ATT.RecoilMultCrouch = 0.85
 ATT.RecoilPatternDriftMult = 0.85
 ATT.RecoilAutoControlMult = 1.15
@@ -185,6 +189,7 @@ ATT.ActivateElements = {"go_m249_mag_556_20"}
 ATT.DamageMaxMult = 1.1
 ATT.DamageMinMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 ATT.ReloadTimeMult = 0.95
 ATT.ClipSizeOverride = 20
 
@@ -225,6 +230,7 @@ ATT.ActivateElements = {"go_m249_mag_556_30"}
 ATT.DamageMaxMult = 1.1
 ATT.DamageMinMult = 1.1
 ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
 ATT.ReloadTimeMult = 0.9
 ATT.ClipSizeOverride = 30
 
@@ -265,6 +271,7 @@ ATT.ActivateElements = {"go_m249_mag_556_60"}
 ATT.DamageMaxMult = 1.1
 ATT.DamageMinMult = 1.1
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 ATT.ReloadTimeMult = 0.9
 ATT.ClipSizeOverride = 60
 

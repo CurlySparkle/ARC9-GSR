@@ -20,6 +20,7 @@ ATT.ActivateElements = {"sling"}
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
 
 ARC9.LoadAttachment(ATT, "csgo_p90_sling")
 --------------------------------------------------------------------
@@ -42,6 +43,7 @@ ATT.ActivateElements = {"no_stock"}
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.2
 ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
 
 ARC9.LoadAttachment(ATT, "csgo_p90_nosock")
 --------------------------------------------------------------------
@@ -173,6 +175,7 @@ ATT.ActivateElements = {"barrel_mid"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25

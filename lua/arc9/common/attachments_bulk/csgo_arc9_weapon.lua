@@ -18,6 +18,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.SprintToFireTimeMult = 0.85
 ATT.AimDownSightsTimeMult = 0.75
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 ATT.RecoilKickMult = 1.15
 
 ATT.RecoilAutoControlMult = 0.85
@@ -89,6 +90,7 @@ ATT.Category = {"go_mp5_stock2"}
 ATT.ActivateElements = {"stock_k"}
 
 ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.8
 ATT.AimDownSightsTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "csgo_mp5_stock_k")

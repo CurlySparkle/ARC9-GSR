@@ -37,6 +37,7 @@ ATT.Category = {"go_mp5_stock"}
 ATT.ActivateElements = {"stock_none_alt"}
 
 ATT.RecoilMult = 1.3
+ATT.VisualRecoilMult = 1.3
 ATT.RecoilKickMult = 1.1
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.8

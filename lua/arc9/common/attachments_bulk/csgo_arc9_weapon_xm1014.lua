@@ -22,6 +22,8 @@ ATT.SprintToFireTimeMult = 1.1
 
 ATT.SpreadMultHipFire = 0.8
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -50,6 +52,7 @@ ATT.SprintToFireTimeMult = 0.8
 
 ATT.SpreadMultHipFire = 1.5
 ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
 ATT.ClipSizeOverride = 5
 
 ATT.RangeMaxMult = 0.85

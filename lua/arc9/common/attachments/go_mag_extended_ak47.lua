@@ -14,8 +14,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Category = {"go_mag_ak"}
 ATT.ClipSizeMult = 1.5
 ATT.ReloadTimeMult = 1.2
-ATT.RecoilMult = 1.1
-ATT.RecoilKickMult = 1.1
+-- ATT.RecoilMult = 1.1
+-- ATT.VisualRecoilMult = 1.1
+-- ATT.RecoilKickMult = 1.1
 
 ATT.ActivateElements = {"mag","mag_none"}
 ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"

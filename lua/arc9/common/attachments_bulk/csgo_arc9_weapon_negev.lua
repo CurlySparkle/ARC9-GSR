@@ -44,6 +44,7 @@ ATT.ActivateElements = {"stock_skeleton"}
 
 ATT.AimDownSightsTimeMult = 0.85
 ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
 
 ARC9.LoadAttachment(ATT, "csgo_negev_stock_skeleton")
 --------------------------------------------------------------------------------------
@@ -66,6 +67,7 @@ ATT.ActivateElements = {"barrel_long"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -92,6 +94,7 @@ ATT.ActivateElements = {"barrel_short"}
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ATT.RangeMaxMult = 0.85
 ATT.RangeMinMult = 0.85
@@ -123,6 +126,7 @@ ATT.RPM = 706
 
 ATT.ClipSizeOverride = 50
 ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
 
 ATT.ShellScale = 0.1
 

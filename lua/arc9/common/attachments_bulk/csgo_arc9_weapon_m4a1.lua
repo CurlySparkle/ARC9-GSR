@@ -19,6 +19,7 @@ ATT.ActivateElements = {"foregrip_m16a4"}
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
 
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.25
@@ -84,6 +85,7 @@ ATT.Category = "stock_m4a1"
 ATT.ActivateElements = {"stock_m16"}
 
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 ATT.SprintToFireTimeMult = 1.15
 ATT.AimDownSightsTimeMult = 1.15
 

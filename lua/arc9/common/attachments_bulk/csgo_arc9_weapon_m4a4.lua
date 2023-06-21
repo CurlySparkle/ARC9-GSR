@@ -41,6 +41,7 @@ ATT.Category = "stock_m4"
 ATT.ActivateElements = {"stock_sniper"}
 
 ATT.RecoilMult = 0.75
+ATT.VisualRecoilMult = 0.75
 ATT.SprintToFireTimeMult = 1.3
 ATT.AimDownSightsTimeMult = 1.05
 
@@ -65,6 +66,7 @@ ATT.RPM = 325
 ATT.DamageMaxMult = 1.35
 ATT.DamageMinMult = 1.35
 ATT.RecoilMult = 1.55
+ATT.VisualRecoilMult = 1.55
 
 ATT.ActivateElements = {"mag_20"}
 --ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
@@ -139,6 +141,7 @@ ATT.DamageMinMult = 8/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
 ATT.Ammo = "pistol"
 
@@ -182,6 +185,7 @@ ATT.DamageMinMult = 8/10
 ATT.SpreadMultSights = 1.1
 ATT.SpreadMult = 1.15
 ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
 ATT.RecoilKickMult = 0.85
 ATT.Ammo = "pistol"
 
@@ -273,5 +277,6 @@ ATT.ActivateElements = {"stock_none_m4"}
 ATT.AimDownSightsTimeMult = 0.85
 
 ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
 
 ARC9.LoadAttachment(ATT, "csgo_m4_tube_retract")
