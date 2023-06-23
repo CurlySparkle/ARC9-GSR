@@ -17,12 +17,17 @@ ATT.Category = "csgo_stock"
 
 ATT.Model = "models/weapons/csgo/atts/stocks/stock_basilisk.mdl"
 
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.RecoilKickMult = 1.1
-ATT.RecoilAutoControlMult = 0.95
-ATT.SpreadMultHipFire = 0.9
-ATT.SpreadMultMove = 0.85
+-- ATT.RecoilMult = 1.1
+-- ATT.VisualRecoilMult = 1.1
+-- ATT.RecoilKickMult = 1.1
+-- ATT.RecoilAutoControlMult = 0.95
+-- ATT.SpreadMultHipFire = 0.9
+-- ATT.SpreadMultMove = 0.85
+
+ATT.SpreadMultMove = 0.8
+
+ATT.RecoilMult = 1.05
+ATT.VisualRecoilMult = 1.05
 
 ARC9.LoadAttachment(ATT, "go_stock_basilisk")
 
@@ -43,11 +48,18 @@ ATT.Category = "csgo_stock"
 
 ATT.Model = "models/weapons/csgo/atts/stocks/stock_contractor.mdl"
 
+-- ATT.RecoilMult = 0.95
+-- ATT.VisualRecoilMult = 0.95
+-- ATT.RecoilKickMult = 0.9
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SpreadMultHipFire = 0.95
+
+ATT.SpreadMultHipFire = 0.85
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
-ATT.RecoilKickMult = 0.9
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpreadMultHipFire = 0.95
+ATT.RecoilKickMult = 0.85
+
+ATT.AimDownSightsTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "go_stock_contractor")
 
@@ -68,11 +80,17 @@ ATT.Category = "csgo_stock"
 
 ATT.Model = "models/weapons/csgo/atts/stocks/stock_ergo.mdl"
 
-ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
-ATT.RecoilKickMult = 1.05
-ATT.AimDownSightsTimeMult = 0.8
-ATT.RecoilAutoControlMult = 0.95
+-- ATT.RecoilMult = 1.1
+-- ATT.VisualRecoilMult = 1.1
+-- ATT.RecoilKickMult = 1.05
+-- ATT.AimDownSightsTimeMult = 0.8
+-- ATT.RecoilAutoControlMult = 0.95
+
+ATT.AimDownSightsTimeMult = 0.75
+
+ATT.RecoilMult = 1.05
+ATT.VisualRecoilMult = 1.05
+ATT.RecoilKickMult = 1.3
 
 ARC9.LoadAttachment(ATT, "go_stock_ergo")
 
@@ -93,12 +111,20 @@ ATT.Category = "csgo_stock"
 
 ATT.Model = "models/weapons/csgo/atts/stocks/stock_moe.mdl"
 
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
-ATT.RecoilKickMult = 0.8
-ATT.RecoilMultCrouch = 0.9
-ATT.RecoilMultHipFire = 0.85
-ATT.AimDownSightsTimeMult = 1.25
+-- ATT.RecoilMult = 0.9
+-- ATT.VisualRecoilMult = 0.9
+-- ATT.RecoilKickMult = 0.8
+-- ATT.RecoilMultCrouch = 0.9
+-- ATT.RecoilMultHipFire = 0.85
+-- ATT.AimDownSightsTimeMult = 1.25
+
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+ATT.RecoilKickMult = 0.75
+
+ATT.SpeedMultSights = 0.75
+ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "go_stock_moe")
 
@@ -123,12 +149,18 @@ ATT.Scale = 1.1
 ATT.ModelOffset = Vector(0.7, 0, 1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilKickMult = 0.85
-ATT.RecoilMultCrouch = 0.95
-ATT.RecoilMultHipFire = 0.95
-ATT.AimDownSightsTimeMult = 1.35
+-- ATT.RecoilMult = 0.85
+-- ATT.VisualRecoilMult = 0.85
+-- ATT.RecoilKickMult = 0.85
+-- ATT.RecoilMultCrouch = 0.95
+-- ATT.RecoilMultHipFire = 0.95
+-- ATT.AimDownSightsTimeMult = 1.35
+
+ATT.SpreadMultMove = 0.6
+
+ATT.SpeedMultSights = 0.8
+ATT.SprintToFireTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "go_stock_xm10")
 

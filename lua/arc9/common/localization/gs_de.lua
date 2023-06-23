@@ -872,7 +872,7 @@ L["go_stock_moe.description"] = "Modularer Schaft, der den Rückstoß auf Kosten
 
 L["go_stock_xm10.printname"] = "XM1014 Schaft"
 L["go_stock_xm10.compactname"] = "XM1014"
-L["go_stock_xm10.description"] = "Modularer Schaft des XM1014.\nVerbessert den Rückstoß auf Kosten der Waffenhandhabung."
+L["go_stock_xm10.description"] = "Modularer Schaft des XM1014.\nVerbessert die Streuung während der Bewegung auf Kosten der Waffenhandhabung."
 
 L["go_stock_heavy.printname"] = "Schwerer Schaft"
 L["go_stock_heavy.compactname"] = "Schwer"

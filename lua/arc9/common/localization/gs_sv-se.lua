@@ -869,7 +869,7 @@ L["go_stock_moe.description"] = "Modulär kolv som förbättrar rekylen med kost
 
 L["go_stock_xm10.printname"] = "XM1014-Kolv"
 L["go_stock_xm10.compactname"] = "XM1014"
-L["go_stock_xm10.description"] = "Modulär kolv som används på XM1014.\nFörbättrar rekylen med kostnad på vapenhantering."
+L["go_stock_xm10.description"] = "Modulär kolv som används på XM1014.\nFörbättrar spridning under rörelse med kostnad på vapenhantering."
 
 L["go_stock_heavy.printname"] = "Tung Kolv"
 L["go_stock_heavy.compactname"] = "Tung"

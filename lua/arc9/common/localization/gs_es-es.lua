@@ -869,7 +869,7 @@ L["go_stock_moe.description"] = "Culata modular que mejora el retroceso a costa 
 
 L["go_stock_xm10.printname"] = "Stock para XM1014"
 L["go_stock_xm10.compactname"] = "XM1014"
-L["go_stock_xm10.description"] = "Culata modular utilizada en el XM1014.\nMejora el retroceso a costa del manejo del arma."
+L["go_stock_xm10.description"] = "Culata modular utilizada en el XM1014.\nMejora la dispersión en movimiento a costa del manejo del arma."
 
 L["go_stock_heavy.printname"] = "Stock Pesado"
 L["go_stock_heavy.compactname"] = "Pesado"

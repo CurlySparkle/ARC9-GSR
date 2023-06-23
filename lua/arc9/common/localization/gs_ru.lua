@@ -872,7 +872,7 @@ L["go_stock_moe.description"] = "Модульный приклад, улучша
 
 L["go_stock_xm10.printname"] = "Приклад XM1014"
 L["go_stock_xm10.compactname"] = "XM1014"
-L["go_stock_xm10.description"] = "Модульный приклад, используемый на XM1014.\nУлучшает отдачу за счёт ухудшения эргономичности оружия."
+L["go_stock_xm10.description"] = "Модульный приклад, используемый на XM1014.\nУлучшает разброс при движении за счёт ухудшения эргономичности оружия."
 
 L["go_stock_heavy.printname"] = "Тяжёлый приклад"
 L["go_stock_heavy.compactname"] = "Тяжёлый"

@@ -98,14 +98,6 @@ A few attachments had fixes applied to them.
 	Elcan SpecterDR (4x)[/th]
 	[th]Adjusted aim positions[/th]
 [/tr][tr]
-	[th]Universal
-	MOE Stock[/th]
-	[th]Reduced recoil benefit from 20% to 10%[/th]
-[/tr][tr]
-	[th]Universal
-	XM1014 Stock[/th]
-	[th]Reduced recoil benefit from 25% to 15%[/th]
-[/tr][tr]
 	[th]G3SG1
 	G3SG1 Scope (8x)[/th]
 	[th]Adjusted aim positions[/th]
@@ -148,115 +140,105 @@ Positives first followed by negatives under dotted line.
 	[th]
 	
 	
-	AWP
-	430mm Bull Barrel[/th]
+	Universal
+	Basilisk Stock[/th]
 	[th]
-	Muzzle Velocity +15%
-	Recoil -50%
+	Spread while moving -15%
+	Spread hipfire -10%
 	---
-	Max Range -10%
-	Sprint to Fire Time +35%
-	ADS Time -35%
-	Min Range -10%
+	Recoil control -5%
+	Felt recoil +10%
+	Recoil +10%
 	[/th]
 	[th]
-	Recoil -10%
-	Sprint to Fire Time +10%
-	ADS Time +5%
+	Spread while moving -20%
 	---
-	Max Range -10%
-	Min Range -20%
+	Recoil +5%
+	Visual recoil +5%
 	[/th]
 [/tr][tr]
 	[th]
 	
 	
-	AWP
-	450mm Factory Barrel[/th]
+	Universal
+	Contractor Stock[/th]
 	[th]
-	Max Range +10%
-	Sprint to Fire time -10%
-	ADS Time -10%
-	Min Range +10
+	Visual recoil -5%
+	Felt recoil -10%
+	Recoil -5%
+	Spread hipfire -5%
 	---
-	Muzzle Velocity -5%
-	Recoil +15%
+	ADS time +10%
 	[/th]
 	[th]
-	Sprint to Fire Time -5%
-	ADS Time -10%
+	Spread hipfire -15%
+	Visual recoil -5%
+	Felt recoil -15%
+	Recoil -5%
 	---
-	Muzzle Velocity -5%
-	Max Range -5%
-	Min Range -10%
+	ADS time +25%
 	[/th]
 [/tr][tr]
 	[th]
 	
 	
-	G3SG1
-	450mm G3A3 Barrel
+	Universal
+	Ergonomic Stock
 	[/th]
 	[th]
-	Muzzle Velocity +25%
-	Maximum Range +25%
-	Recoil -10%
-	Minimum Range +25%
+	ADS time -20%
 	---
-	Sprint to Fire Time +10%
-	ADS Time +10%
+	Visual recoil +10%
+	Felt recoil +5%
+	Recoil +10%
+	Recoil control -5%
 	[/th]
 	[th]
-	Sprint to Fire Time -5%
-	ADS Time -5%
+	ADS time -25%
 	---
-	Muzzle Velocity -5%
-	Maximum Range -5%
-	Minimum Range -10%
+	Visual recoil +5%
+	Felt recoil +30%
+	Recoil +5%
 	[/th]
 [/tr][tr]
 	[th]
 	
 	
-	G3SG1
-	400mm G3KA4 Barrel
+	Universal
+	MOE Stock
 	[/th]
 	[th]
-	Muzzle Velocity +25%
-	Maximum Range +25%
+	Recoil crouch -10%
+	Recoil hipfire -15%
+	Felt recoil -20%
 	Recoil -10%
-	Minimum Range +25%
 	---
-	Sprint to Fire Time +10%
-	ADS Time +10%
+	ADS time +25%
 	[/th]
 	[th]
-	Sprint to Fire Time -5%
-	ADS Time -5%
+	Visual recoil -5%
+	Felt recoil -25%
+	Recoil -5%
 	---
-	Muzzle Velocity -5%
-	Maximum Range -5%
-	Minimum Range -10%
+	Move speed in sights -25%
+	Sprint-to-fire time +15%
+	ADS time +15%
 	[/th]
 [/tr][tr]
 	[th]
 	
 	
-	G3SG1
-	350mm Kurz Barrel
+	Universal
+	XM1014 Stock
 	[/th]
 	[th]
-	Muzzle Velocity +25%
-	Maximum Range +25%
-	Recoil -10%
-	Minimum Range +25%
-	---
-	Sprint to Fire Time +10%
-	ADS Time +10%
+	Recoil crouched -5%
+	Recoil hipfire -5%
+	Felt recoil -25%
+	Recoil -25%
 	[/th]
 	[th]
-	Sprint-to-Fire Time -12%
-	ADS Time -12%
+	ADS time +35%
 	---
 	Muzzle Velocity -15%
 	Max Range -12%

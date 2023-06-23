@@ -872,7 +872,7 @@ L["go_stock_moe.description"] = "Modular stock that improves recoil at the cost 
 
 L["go_stock_xm10.printname"] = "XM1014 Stock"
 L["go_stock_xm10.compactname"] = "XM1014"
-L["go_stock_xm10.description"] = "Modular stock used on the XM1014.\nImproves recoil at the cost of weapon handling."
+L["go_stock_xm10.description"] = "Modular stock used on the XM1014.\nImproves spread while moving at the cost of weapon handling."
 
 L["go_stock_heavy.printname"] = "Heavy Stock"
 L["go_stock_heavy.compactname"] = "Heavy"
