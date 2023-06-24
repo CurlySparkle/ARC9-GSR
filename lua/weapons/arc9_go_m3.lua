@@ -97,7 +97,7 @@ SWEP.Recoil = 2
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
 
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
@@ -113,26 +113,51 @@ SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
-SWEP.RecoilMultSights = 1.5
-SWEP.RecoilKickSights = 2
-SWEP.RecoilUpSights = 1
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultSights = 1.5
+-- SWEP.RecoilKickSights = 2
+-- SWEP.RecoilUpSights = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.85
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 0.9
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 10
+SWEP.VisualRecoilSide = .15
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 3
+SWEP.VisualRecoilPositionBumpUp = .25
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = .65
+
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = 10
+-- SWEP.ViewRecoilSideMult = -5
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.035
+SWEP.Spread = 0.1
 
-SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = 0
+SWEP.SpreadAddSights = -0.005
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.065
-SWEP.SpreadMultHipFire = 1
-SWEP.SpreadAddCrouch = -0.004
-SWEP.SpreadAddSightsMove = -0.1
+SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
@@ -266,6 +291,13 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["cycle"] = {
         Source = {"pump"},
@@ -358,17 +390,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.2,
+                t = 0.25,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.7,
-                lhik = 0,
-                rhik = 1
-            },
-            {
-                t = 1,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -386,6 +413,13 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle"] = {
         Source = "idle",
@@ -398,6 +432,13 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -410,17 +451,17 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.7,
+                t = 0.9,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 1.15,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -436,21 +477,6 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -518,19 +544,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.M3_PARENT",
-        Pos = Vector(0, -1.5, 8),
+        Pos = Vector(0, -1.35, 8.35),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_custom"},
-        CorrectiveAng = Angle(0, 0, 0),
-        MergeSlots = {2},
-        Hidden = true,
-    },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_top"),
-        Bone = "v_weapon.M3_PARENT",
-        Pos = Vector(0, -1.9, 8),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic"},
+        Category = {"csgo_rail_optic_alt"},
         CorrectiveAng = Angle(0, 0, 0),
     },
     {

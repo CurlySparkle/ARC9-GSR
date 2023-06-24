@@ -65,6 +65,17 @@ Weapons not listed did not have anything changed.
 [/tr][tr]
 [/tr][/table]
 
+[b][u]Shotguns[/u][/b]
+[table][tr]
+	[th]Benelli M3 Super 90[/th]
+	[th]Can no longer equip the AK-styled scope riser[/i][/th]
+[/tr][tr]
+	[th]PP-Bizon[/th]
+	[th]Adjusted the recoil
+	[/th]
+[/tr][tr]
+[/tr][/table]
+
 [b][u]Attachment Fixes and Adjustments[/u][/b]
 A few attachments had fixes applied to them.
 [table][tr]

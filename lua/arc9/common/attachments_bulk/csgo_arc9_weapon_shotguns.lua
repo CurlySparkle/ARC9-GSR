@@ -160,25 +160,25 @@ ATT.ActivateElements = {"mag_none"}
 
 ARC9.LoadAttachment(ATT, "csgo_m3_mag_4")
 -------------------------------------------------------------------------------
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = [[M3 Default Barrel]]
-ATT.CompactName = [[Default]]
+-- ATT.PrintName = [[M3 Default Barrel]]
+-- ATT.CompactName = [[Default]]
 --ATT.Icon = Material("entities/attachs/go_m3_cap_8.png")
-ATT.Description = [[M3 default barrel.]]
-ATT.Pros = {}
-ATT.Cons = {}
-ATT.SortOrder = 1
-ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.Free = false
-ATT.Hidden = true
+-- ATT.Description = [[M3 default barrel.]]
+-- ATT.Pros = {}
+-- ATT.Cons = {}
+-- ATT.SortOrder = 1
+-- ATT.MenuCategory = "ARC9 - CSGO Attachments"
+-- ATT.Free = false
+-- ATT.Hidden = true
 
-ATT.Category = {"go_m3_barrel"}
+-- ATT.Category = {"go_m3_barrel"}
 
-ATT.ActivateElements = {"barrel_default"}
-ATT.ExcludeElements = {"mag_long"}
+-- ATT.ActivateElements = {"barrel_default"}
+-- ATT.ExcludeElements = {"mag_long"}
 
-ARC9.LoadAttachment(ATT, "csgo_m3_barrel_default")
+-- ARC9.LoadAttachment(ATT, "csgo_m3_barrel_default")
 -------------------------------------------------------------------------------
 ATT = {}
 

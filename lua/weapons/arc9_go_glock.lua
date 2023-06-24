@@ -88,7 +88,8 @@ SWEP.Firemodes = {
         Mode = 3,
         RPM = 1000,
         RecoilUp = 0.75,
-        SpreadAddRecoil = 0.01,
+		RecoilMultSights = 1.5,
+        SpreadAddRecoil = 0.015,
         RunawayBurst = true,
         PostBurstDelay = 0.3,
         Hook_TranslateAnimation = function (self, anim)
@@ -121,19 +122,49 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
+-- SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.6
-SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultHipFire = .35
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilSide = -0.5
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = .3
+SWEP.VisualRecoilMultCrouch = 1
+SWEP.VisualRecoilMultSights = 0.1
+
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 6
+
+SWEP.ViewRecoil = false
+SWEP.ViewRecoilUpMult = 2.5
+SWEP.ViewRecoilSideMult = 2.5
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.007 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.015 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddSights = 0.0025
 
 -------------------------- HANDLING
 
@@ -338,6 +369,9 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
+        Source = "idle",
+    },
+    ["enter_sights"] = {
         Source = "idle",
     },
     ["idle_sprint"] = {
