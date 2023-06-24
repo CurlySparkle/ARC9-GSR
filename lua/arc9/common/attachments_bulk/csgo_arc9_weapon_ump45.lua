@@ -95,7 +95,7 @@ ATT.Free = false
 
 ATT.Category = {"go_ump_mag"}
 ATT.ActivateElements = {"mag_15"}
-ATT.ClipSizeOverride = 15
+ATT.ClipSizeOverride = 12
 ATT.ReloadTimeMult = 0.8
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85

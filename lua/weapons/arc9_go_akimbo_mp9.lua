@@ -511,20 +511,20 @@ SWEP.Attachments = {
         },
         Scale = 1,
     },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "tag_pistol_attachments",
-        Pos = Vector(0, 0, 2),
-        Ang = Angle(0, 0, 0),
-        Category = {"csgo_optic",},
-        CorrectiveAng = Angle(0.03, 0.1, 0.5),
-        DuplicateModels = {
-            {
-                Bone = "tag_pistol_attachments_l",
-            }
-        },
-        Scale = 0.9,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Bone = "tag_pistol_attachments",
+        -- Pos = Vector(0, 0, 2),
+        -- Ang = Angle(0, 0, 0),
+        -- Category = {"csgo_optic",},
+        -- CorrectiveAng = Angle(0.03, 0.1, 0.5),
+        -- DuplicateModels = {
+            -- {
+                -- Bone = "tag_pistol_attachments_l",
+            -- }
+        -- },
+        -- Scale = 0.9,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",

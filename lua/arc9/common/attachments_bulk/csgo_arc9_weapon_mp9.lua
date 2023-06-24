@@ -67,7 +67,8 @@ ATT.SortOrder = 2
 ATT.Free = false
 
 ATT.Category = {"go_mag_mp9"}
-ATT.ClipSizeMult = 0.7
+-- ATT.ClipSizeMult = 0.7
+ATT.ClipSizeOverride = 20
 ATT.ReloadTimeMult = 0.85
 
 ATT.ActivateElements = {"mag_decreased"}
