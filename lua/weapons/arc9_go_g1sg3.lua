@@ -98,7 +98,7 @@ SWEP.Recoil = 1.3
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.35 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -187,9 +187,11 @@ SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.1
+SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.04
 SWEP.SpreadAddSights = 0.015
+
+SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
@@ -317,13 +319,34 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_alt"] = {
         Source = {"shoot1_alt"},
-		Mult = 1.5,
+		Mult = 1.25,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -563,12 +586,26 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle"] = {
         Source = "idle",
     },
     ["enter_sights"] = {
         Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -580,6 +617,13 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -618,21 +662,6 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },

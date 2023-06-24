@@ -103,16 +103,43 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.8
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.8
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.85
+SWEP.RecoilMultHipFire = .65
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilSide = -.15
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = .9
+SWEP.VisualRecoilPositionBumpUp = .3
+SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultSights = .01
+
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = 10
+-- SWEP.ViewRecoilSideMult = -5
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0
 
 SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
@@ -120,7 +147,9 @@ SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = 0.0125
+
+SWEP.RecoilModifierCapSights = 0.35
 
 -------------------------- HANDLING
 
@@ -381,6 +410,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -394,6 +426,8 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
             {s = "weapons/csgo/movement2.wav", t = 66/30},

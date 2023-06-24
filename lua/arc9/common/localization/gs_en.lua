@@ -1557,9 +1557,9 @@ L["csgo_galilar_barrel_short.printname"] = "216mm Navy Barrel"
 L["csgo_galilar_barrel_short.compactname"] = "216mm Navy"
 L["csgo_galilar_barrel_short.description"] = "Shortened barrel that improves weapon handling at the cost of range and recoil control."
 
-L["csgo_galilar_barrel_short.printname"] = "409mm Carbine Barrel"
-L["csgo_galilar_barrel_short.compactname"] = "409mm C"
-L["csgo_galilar_barrel_short.description"] = "Shortened barrel that improves weapon handling and recoil control at the cost of range."
+L["csgo_galilar_barrel_factory.printname"] = "409mm Carbine Barrel"
+L["csgo_galilar_barrel_factory.compactname"] = "409mm C"
+L["csgo_galilar_barrel_factory.description"] = "Shortened barrel that improves weapon handling and recoil control at the cost of range."
 
 L["csgo_galilar_mag_ak_45.printname"] = "40-Round 7.62mm Polymer Magazine"
 L["csgo_galilar_mag_ak_45.compactname"] = "40R 7.62mm"

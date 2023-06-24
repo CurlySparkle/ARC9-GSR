@@ -100,7 +100,7 @@ SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.5
 SWEP.RecoilRandomSide = 1
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
@@ -148,13 +148,15 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 SWEP.SpreadAddSights = 0.01
+
+SWEP.RecoilModifierCapSights = 0.45
 
 -------------------------- HANDLING
 
@@ -309,6 +311,13 @@ SWEP.Animations = {
             -- {s = "CSGO.MP5.Fire.Beef", t = 0/30},
             -- {s = "CSGO.MP5.Fire.Beefdone", t = 3/30},
 		},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_saiga"] = {
         Source = {"shoot4"},
@@ -318,6 +327,13 @@ SWEP.Animations = {
             -- {s = "CSGO.MP5.Fire.Beef", t = 0/30},
             -- {s = "CSGO.MP5.Fire.Beefdone", t = 3/30},
 		},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -326,6 +342,13 @@ SWEP.Animations = {
             -- {s = "CSGO.MP5.Fire.BeefADS", t = 0/30},
             {s = "CSGO.MP5.Fire.Beefdone", t = 3/30},
 		},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -558,12 +581,40 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle"] = {
         Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["enter_sights"] = {
         Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -587,17 +638,22 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.25,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.3,
+                t = 0.85,
+                lhik = 0.8,
+                rhik = 0
+            },
+            {
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -611,6 +667,13 @@ SWEP.Animations = {
     ["bash"] = {
 	    Mult = 0.8,
         Source = {"melee", "melee2", "melee3", "melee4"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 

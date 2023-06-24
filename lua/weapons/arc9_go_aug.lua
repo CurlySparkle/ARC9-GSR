@@ -117,13 +117,13 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = .45
-SWEP.RecoilMultSights = 1
+SWEP.RecoilMultSights = 0.8
 SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 3
-SWEP.VisualRecoilSide = .8
+SWEP.VisualRecoilUp = 1.5
+SWEP.VisualRecoilSide = .45
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = .4
@@ -131,7 +131,7 @@ SWEP.VisualRecoilPositionBumpUp = .3
 SWEP.VisualRecoilMultCrouch = .45
 SWEP.VisualRecoilMultSights = .01
 
-SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilDampingConst = 120
 SWEP.VisualRecoilSpringPunchDamping = 10
 
 -- ]]--
@@ -140,13 +140,15 @@ SWEP.VisualRecoilSpringPunchDamping = 10
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = 0
 SWEP.SpreadAddSights = 0.0125
+
+SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
@@ -276,9 +278,23 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -498,12 +514,26 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle"] = {
         Source = "idle",
     },
     ["enter_sights"] = {
         Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -515,6 +545,13 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -550,6 +587,13 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 

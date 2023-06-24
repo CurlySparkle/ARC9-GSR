@@ -4,11 +4,23 @@ Here's an abbrevriated version:
 [table][tr]
 	[th][list]
 	[*]All weapons now use visual recoil
+	[*]All weapons now have altered camouflage coverage*
 	[*]Adjusted a few attachment stats
 	
 	And quite a bit more.
 	[/list][/th]
 [/tr][/table]
+
+[i]*Does not include:
+[list]
+[*]Galil SAR
+[*]SCAR-17
+[*]Benelli M3 Super 90
+[*]MP5
+[*]Scout
+[*]Shield
+[*]All 'extra' weapons
+[/list][/i]
 
 And here's the long, more detailed version:
 
@@ -27,7 +39,8 @@ Weapons not listed did not have anything changed.
 [b][u]Akimbos[/u][/b]
 [table][tr]
 	[th]Dual MP9[/th]
-	[th]Removed the ability to equip scopes (This might break presets)[/i][/th]
+	[th]Removed the ability to equip scopes
+	[i](This might break presets)[/i][/th]
 [/tr][/table]
 
 [b][u]Assault Rifles[/u][/b]
@@ -113,11 +126,13 @@ A few attachments had fixes applied to them.
 	[th]
 
 
-
-	Now decreases spread and range[/th]
+	Now decreases spread and range
+	Also increased the damage penalty
+	Added a reload speed penalty for 30 and 60 round mags[/th]
 [/tr][tr]
 	[th]G3SG1
-	60-Round 5.56x45mm NATO Casket Mag. and Adapter
+	60-Round 5.56x45mm NATO-
+	Casket Mag. and Adapter
 	[/th]
 	[th]Fixed that it did not increase mag. size to 60[/th]
 [/tr][tr]
@@ -244,64 +259,5 @@ Positives first followed by negatives under dotted line.
 	Max Range -12%
 	Recoil +5%
 	Min Range -18%
-	[/th]
-[/tr][tr]
-	[th]
-	
-	
-	G3SG1
-	450mm Whisper Barrel
-	[/th]
-	[th]
-	Muzzle Velocity +10%
-	Maximum Range +15%
-	Minimum Range +15%
-	---
-	Sprint to Fire Time +15%
-	ADS Time +15%
-	Recoil +10%
-	[/th]
-	[th]
-	Recoil -15%
-	---
-	Muzzle Velocity -15%
-	Maximum Range -25%
-	Sprint to Fire Time +5%
-	ADS Time +5%
-	Minimum Range -20%
-	[/th]
-[/tr][tr]
-	[th]
-	
-	G3SG1
-	Collapsible Stock
-	[/th]
-	[th]
-	ADS Time -15%
-	Spread -90%
-	Sprint to Fire Time +10%
-	---
-	Recoil +15%
-	[/th]
-	[th]
-	ADS Time +10%
-	Sprint to Fire Time +10%
-	---
-	Recoil -5%
-	[/th]
-[/tr][tr]
-	[th]
-	G3SG1
-	Cheek Riser
-	[/th]
-	[th]
-	Recoil -10%
-	---
-	ADS Time +10%
-	[/th]
-	[th]
-	ADS Time -5%
-	---
-	None
 	[/th]
 [/tr][/table]

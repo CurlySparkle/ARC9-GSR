@@ -283,7 +283,9 @@ ATT.RPM = 500
 ATT.DamageMaxMult = 0.3
 ATT.DamageMinMult = 0.3
 
-ATT.SpreadMultRecoil = 0.025
+ATT.ReloadTimeMult = 1.05
+
+ATT.SpreadMultRecoil = 0.6
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -339,14 +341,14 @@ ATT.Free = false
 ATT.Category = {"go_mag_g3"}
 --ATT.ActivateElements = {"mag_10"}
 ATT.ClipSizeOverride = 20
-ATT.ReloadTimeMult = 0.95
+-- ATT.ReloadTimeMult = 0.95
 
 ATT.RPM = 500
 
 ATT.DamageMaxMult = 0.5
 ATT.DamageMinMult = 0.5
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.6
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -402,14 +404,14 @@ ATT.Free = false
 ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_10"}
 ATT.ClipSizeOverride = 10
-ATT.ReloadTimeMult = 0.8
+ATT.ReloadTimeMult = 0.85
 
 ATT.RPM = 500
 
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.6
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -549,10 +551,12 @@ ATT.ReloadTimeMult = 0.9
 
 ATT.RPM = 750 
 
-ATT.DamageMaxMult = 19/28
-ATT.DamageMinMult = 8/10
+ATT.DamageMaxMult = .45
+ATT.DamageMinMult = .75
+ATT.RangeMaxMult = .75
+ATT.RangeMinMult = .5
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -611,10 +615,14 @@ ATT.ClipSizeOverride = 30
 
 ATT.RPM = 750 
 
-ATT.DamageMaxMult = 19/28
-ATT.DamageMinMult = 8/10
+ATT.DamageMaxMult = .45
+ATT.DamageMinMult = .75
+ATT.RangeMaxMult = .75
+ATT.RangeMinMult = .5
 
-ATT.SpreadMultRecoil = 0.025
+ATT.ReloadTimeMult = 1.05
+
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -674,10 +682,14 @@ ATT.ClipSizeOverride = 60
 
 ATT.RPM = 750 
 
-ATT.DamageMaxMult = 19/28
-ATT.DamageMinMult = 8/10
+ATT.DamageMaxMult = .45
+ATT.DamageMinMult = .75
+ATT.RangeMaxMult = .75
+ATT.RangeMinMult = .5
 
-ATT.SpreadMultRecoil = 0.025
+ATT.ReloadTimeMult = 1.15
+
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -740,7 +752,7 @@ ATT.RPM = 700
 ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -803,7 +815,7 @@ ATT.RPM = 700
 ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -866,7 +878,7 @@ ATT.RPM = 700
 ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -936,7 +948,7 @@ ATT.DamageMinMult = 0.7
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
@@ -998,7 +1010,7 @@ ATT.DamageMinMult = 0.5
 ATT.RecoilMult = 0.65
 ATT.VisualRecoilMult = 0.65
 
-ATT.SpreadMultRecoil = 0.025
+ATT.SpreadMultRecoil = 0.45
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3

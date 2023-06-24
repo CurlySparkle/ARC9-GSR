@@ -151,16 +151,16 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = 0
+SWEP.SpreadAddCrouch = -0.005
 
 SWEP.SpreadSights = 0
 SWEP.SpreadAddSights = 0
-SWEP.RecoilModifierCapSights = 0
+SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
@@ -300,9 +300,23 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -570,12 +584,26 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle"] = {
         Source = "idle",
     },
     ["enter_sights"] = {
         Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -583,6 +611,13 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -628,23 +663,8 @@ SWEP.Animations = {
                 lhik = 1,
                 rhik = 1
             },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
-                lhik = 1,
-                rhik = 1
-            },
         },
-    },
+	},
 }
 
 -------------------------- ATTACHMENTS

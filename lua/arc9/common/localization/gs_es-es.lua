@@ -1554,9 +1554,9 @@ L["csgo_galilar_barrel_short.printname"] = "Cañón Navy de 216mm"
 L["csgo_galilar_barrel_short.compactname"] = "216mm Navy"
 L["csgo_galilar_barrel_short.description"] = "Cañón acortado para mejorar el manejo del arma a expensas del alcance y el control del retroceso."
 
-L["csgo_galilar_barrel_short.printname"] = "Cañón de carabina de 409mm"
-L["csgo_galilar_barrel_short.compactname"] = "409mm C"
-L["csgo_galilar_barrel_short.description"] = "Cañón más corto para mejorar el manejo del arma y el control del retroceso a expensas del alcance."
+L["csgo_galilar_barrel_factory.printname"] = "Cañón de carabina de 409mm"
+L["csgo_galilar_barrel_factory.compactname"] = "409mm C"
+L["csgo_galilar_barrel_factory.description"] = "Cañón más corto para mejorar el manejo del arma y el control del retroceso a expensas del alcance."
 
 L["csgo_galilar_mag_ak_45.printname"] = "Cargador de polímero de 7,62 mm de 40 cartuchos"
 L["csgo_galilar_mag_ak_45.compactname"] = "40R 7.62mm"

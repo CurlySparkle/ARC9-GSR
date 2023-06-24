@@ -1557,9 +1557,9 @@ L["csgo_galilar_barrel_short.printname"] = "216-mm-Navy-Lauf"
 L["csgo_galilar_barrel_short.compactname"] = "216mm Navy"
 L["csgo_galilar_barrel_short.description"] = "Verkürzter Lauf, der die Waffenhandhabung auf Kosten von Reichweite und Rückstoßkontrolle verbessert."
 
-L["csgo_galilar_barrel_short.printname"] = "409-mm-Karabinerlauf"
-L["csgo_galilar_barrel_short.compactname"] = "409 mm C"
-L["csgo_galilar_barrel_short.description"] = "Verkürzter Lauf, der das Waffenhandling und die Rückstoßkontrolle auf Kosten der Reichweite verbessert."
+L["csgo_galilar_barrel_factory.printname"] = "409-mm-Karabinerlauf"
+L["csgo_galilar_barrel_factory.compactname"] = "409 mm C"
+L["csgo_galilar_barrel_factory.description"] = "Verkürzter Lauf, der das Waffenhandling und die Rückstoßkontrolle auf Kosten der Reichweite verbessert."
 
 L["csgo_galilar_mag_ak_45.printname"] = "40-Runden 7,62 mm Polymermagazin"
 L["csgo_galilar_mag_ak_45.compactname"] = "40R 7,62 mm"

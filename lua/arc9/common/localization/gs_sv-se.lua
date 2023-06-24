@@ -1558,9 +1558,9 @@ L["csgo_galilar_barrel_short.printname"] = "216mm Marinpipa"
 L["csgo_galilar_barrel_short.compactname"] = "216mm Marin"
 L["csgo_galilar_barrel_short.description"] = "Förkortad pipa som förbättrar vapenhantering med kostnad på räckvidd och rekylkontroll."
 
-L["csgo_galilar_barrel_short.printname"] = "409mm Karbin Pipa"
-L["csgo_galilar_barrel_short.compactname"] = "409mm K"
-L["csgo_galilar_barrel_short.description"] = "Förkortad pipa som förbättrar vapenhantering och rekylkontroll med kostnad på räckvidd."
+L["csgo_galilar_barrel_factory.printname"] = "409mm Karbin Pipa"
+L["csgo_galilar_barrel_factory.compactname"] = "409mm K"
+L["csgo_galilar_barrel_factory.description"] = "Förkortad pipa som förbättrar vapenhantering och rekylkontroll med kostnad på räckvidd."
 
 L["csgo_galilar_mag_ak_45.printname"] = "40-Round 7.62mm Polymer Magazine"
 L["csgo_galilar_mag_ak_45.compactname"] = "40R 7.62mm"

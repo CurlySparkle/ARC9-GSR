@@ -1557,9 +1557,9 @@ L["csgo_galilar_barrel_short.printname"] = "216-мм ствол Navy"
 L["csgo_galilar_barrel_short.compactname"] = "216-мм Navy"
 L["csgo_galilar_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия ценой снижения дальности стрельбы и отдачи."
 
-L["csgo_galilar_barrel_short.printname"] = "409-мм ствол карабина"
-L["csgo_galilar_barrel_short.compactname"] = "409-мм К"
-L["csgo_galilar_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия и контроль отдачи ценой снижения дальности стрельбы."
+L["csgo_galilar_barrel_factory.printname"] = "409-мм ствол карабина"
+L["csgo_galilar_barrel_factory.compactname"] = "409-мм К"
+L["csgo_galilar_barrel_factory.description"] = "Укороченный ствол, улучшающий эргономичность оружия и контроль отдачи ценой снижения дальности стрельбы."
 
 L["csgo_galilar_mag_ak_45.printname"] = "40-зарядный полимерный магазин 7,62-мм"
 L["csgo_galilar_mag_ak_45.compactname"] = "40-патр. 7,62-мм"
