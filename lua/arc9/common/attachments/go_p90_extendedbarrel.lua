@@ -19,7 +19,7 @@ ATT.ModelOffset = Vector(-10, 0, -1)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
+        PrintName = "Underbarrel",
         Category = {"grip","cod2019_grip"},
         Pos = Vector(-2.5, 0, 1.1),
         Ang = Angle(0, 0, 180),

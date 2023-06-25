@@ -33,7 +33,7 @@ ATT.Sights = {
 ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser"),
+        PrintName = "Laser",
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
@@ -45,7 +45,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "OFF",
     }
 }
 

@@ -262,8 +262,9 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+SWEP.CamQCA = 1
+SWEP.CamQCA_Mult = 1
+SWEP.CamCoolView = true
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_9mm_hr.mdl"
 SWEP.ShellSounds = ARC9.PistolShellSoundsTable
@@ -336,14 +337,14 @@ SWEP.Animations = {
         },
     },
     ["reload_x"] = {
-        Source = "reload_short_x",
+        Source = "reload_short",
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 16/30},
             {s = path .. "glock_clipin.wav", t = 28/30},
         },
     },
     ["reload_empty_x"] = {
-        Source = "reload_x",
+        Source = "reload",
         MinProgress = 0.45,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12/30},
@@ -412,7 +413,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee", "melee2", "melee3"},
+        Source = "melee",
         IKTimeLine = {
             {
                 t = 0,

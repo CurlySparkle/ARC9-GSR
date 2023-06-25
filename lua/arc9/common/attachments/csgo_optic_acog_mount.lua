@@ -55,7 +55,7 @@ ATT.RTScopeColorable = false
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "Optic",
         DefaultName = "None",
 		InstalledElements = {"acog_mount_rail"},	
 		

@@ -179,7 +179,7 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_muzzle_xm1014"),
+        PrintName = "Muzzle (XM1014)",
         DefaultName = "None",
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
@@ -187,7 +187,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 180),
 	},   
     {
-        PrintName = ARC9:GetPhrase("csgo_category_ammo_xm1014"),
+        PrintName = "Ammo (XM1014)",
         DefaultName = "None",
         Category = "go_ammo_sg_ubgl",
         Pos = Vector(-3, 0.2, -2),

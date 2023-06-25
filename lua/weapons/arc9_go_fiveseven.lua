@@ -277,7 +277,7 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = "shoot1",
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -343,7 +343,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee"},
+        Source = "melee",
         IKTimeLine = {
             {
                 t = 0,

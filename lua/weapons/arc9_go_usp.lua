@@ -290,7 +290,7 @@ end
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = "shoot1",
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -440,7 +440,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee", "melee2"},
+        Source = "melee",
     },
 -- SILENCED
     ["idle_silenced"] = {
@@ -448,7 +448,7 @@ SWEP.Animations = {
         HideBoneIndex = 1,
     },
     ["fire_silenced"] = {
-        Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
+        Source = "shoot1_silenced",
         HideBoneIndex = 1,
     },
     ["fire_sights_silenced"] = {
@@ -516,7 +516,7 @@ SWEP.Animations = {
         },
     },
     ["bash_silenced"] = {
-        Source = {"melee_alt", "melee2_alt"},
+        Source = "melee_silenced",
     },
 }
 

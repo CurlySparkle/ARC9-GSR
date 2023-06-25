@@ -148,7 +148,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.82, -3, 0.8),
+    Pos = Vector(-2.82, 5, 0.8),
     Ang = Angle(0, 1, 0),
     Magnification = 1.15,
     ViewModelFOV = 46,
@@ -231,7 +231,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_p2000_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.45
+SWEP.DropMagazineTime = 0.5
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -358,7 +358,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee", "melee2", "melee3"},
+        Source = "melee",
     },
 }
 

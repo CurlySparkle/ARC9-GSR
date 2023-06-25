@@ -17,10 +17,11 @@ ATT.ActivateElements = {"stock_none"}
 
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
+--ATT.RecoilUpMult = 0.95
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_stock"),
+        PrintName = "Stock",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-3, 0, 0),

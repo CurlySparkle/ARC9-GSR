@@ -163,15 +163,15 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_muzzle_mass"),
+        PrintName = "Muzzle (MASS)",
         DefaultName = "None",
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
         Pos = Vector(-15.4, 0.2, -0.75),
         Ang = Angle(0, 0, 180),
-	},   
+	},
     {
-        PrintName = ARC9:GetPhrase("csgo_category_ammo_mass"),
+        PrintName = "Ammo (MASS)",
         DefaultName = "None",
         Category = "go_ammo_sg_ubgl",
         Pos = Vector(-5, 0.2, -5),

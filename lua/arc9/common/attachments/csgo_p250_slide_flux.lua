@@ -23,7 +23,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "Optics",
         DefaultName = "None",
 		
         Category = {"csgo_optics_pistols"},

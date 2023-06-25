@@ -18,7 +18,7 @@ ATT.SpreadMult = 0.9
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser_light"),
+        PrintName = "Laser & Light",
         Laser = true,
         LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
@@ -35,7 +35,7 @@ ATT.ToggleStats = {
         FlareAttachment = 1
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_light"),
+        PrintName = "Light",
         Flashlight = true,
         FlashlightColor = Color(55, 55, 55),
         FlashlightMaterial = "effects/flashlight001",
@@ -48,7 +48,7 @@ ATT.ToggleStats = {
         FlareAttachment = 1
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser"),
+        PrintName = "Laser",
         Laser = true,
         LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
@@ -60,7 +60,7 @@ ATT.ToggleStats = {
         FlareFocus = true
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "OFF",
     }
 }
 

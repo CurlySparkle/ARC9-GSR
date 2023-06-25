@@ -131,7 +131,7 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics_m203"),
+        PrintName = "M203 Sight",
         DefaultName = "None",
         Category = {"sight_m203_ubgl"},		
         Pos = Vector(-15.4, 0.2, -0.75),

@@ -17,12 +17,12 @@ ATT.Killcounter = true
 
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_global"),
+        PrintName = "Global",
         AutoStatName = "Global weapon",
         ST_GLOBAL = true
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_curlife"),
+        PrintName = "Current Life",
         AutoStatName = "Local",
         ST_GLOBAL = false
     },

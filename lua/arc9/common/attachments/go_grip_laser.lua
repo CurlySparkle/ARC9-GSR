@@ -13,7 +13,6 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.RecoilAutoControlMult = 1.15
 ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
 
 ATT.LHIK_Priority = 10
 ATT.LHIK = true
@@ -24,7 +23,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser"),
+        PrintName = "Laser",
         Laser = true,
         LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
@@ -37,7 +36,7 @@ ATT.ToggleStats = {
         SpreadMultHipFire = 0.95
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "OFF",
     }
 }
 
