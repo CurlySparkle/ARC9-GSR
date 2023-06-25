@@ -149,14 +149,14 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.1
+SWEP.Spread = 0.08
 
 SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddSights = -0.005
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
@@ -530,13 +530,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
-    AttPosMods = { [4] = { Pos = Vector(0, -1.85, 28.3), } }
+    AttPosMods = { [3] = { Pos = Vector(0, -1.85, 28.3), } }
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
         },
-    AttPosMods = { [4] = { Pos = Vector(0, -1.8, 23.2), } }
+    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 23.2), } }
     },
 }
 
