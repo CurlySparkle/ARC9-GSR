@@ -417,6 +417,28 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.55,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.75,
+                lhik = 1,
+                rhik = 1
+            },
+		},
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30 },
             {s = "weapons/csgo/movement2.wav", t = 92/30 },

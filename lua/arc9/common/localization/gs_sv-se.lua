@@ -1562,9 +1562,9 @@ L["csgo_galilar_barrel_factory.printname"] = "409mm Karbin Pipa"
 L["csgo_galilar_barrel_factory.compactname"] = "409mm K"
 L["csgo_galilar_barrel_factory.description"] = "Förkortad pipa som förbättrar vapenhantering och rekylkontroll med kostnad på räckvidd."
 
-L["csgo_galilar_mag_ak_45.printname"] = "40-Round 7.62mm Polymer Magazine"
-L["csgo_galilar_mag_ak_45.compactname"] = "40R 7.62mm"
-L["csgo_galilar_mag_ak_45.description"] = "Converts the Galil AR to accept AK magazines.\nIncreases the magazine capacity and damage at the cost of recoil, firing speed and reload speed."
+L["csgo_galilar_mag_ak_45.printname"] = "40-Skott Polymer 7.62mm Magasin"
+L["csgo_galilar_mag_ak_45.compactname"] = "40S 7.62mm"
+L["csgo_galilar_mag_ak_45.description"] = "Konverterar Galil AR:n att acceptera AK-magasin.\nÖkar magasinkapacitet och skada med kostnad på rekyl, eldhastighet och omladdning hastighet."
 
 L["csgo_galilar_mag_ak_30.printname"] = "30-Skott Polymer 7.62mm Magasin"
 L["csgo_galilar_mag_ak_30.compactname"] = "30S 7.62mm"

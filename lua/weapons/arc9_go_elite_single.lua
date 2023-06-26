@@ -310,7 +310,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_single_wet",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
@@ -324,7 +324,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_single",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},

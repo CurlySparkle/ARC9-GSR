@@ -324,6 +324,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.65,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12/30},
             {s = path .. "p250_clipin.wav", t = 25/30},
@@ -331,7 +332,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.65,
+        MinProgress = 0.85,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 9/30},
             {s = path .. "p250_clipout.wav", t = 23/30},
@@ -342,7 +343,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.65,
+        MinProgress = 0.85,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 9/30},
             {s = path .. "p250_clipout.wav", t = 23/30},
@@ -426,6 +427,7 @@ SWEP.Animations = {
     },
     ["reload_alt"] = {
         Source = "reload_short_alt",
+		MinProgress = 0.75,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12/30},
             {s = path .. "p250_clipin.wav", t = 25/30},
@@ -433,7 +435,7 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload_empty_alt",
-        MinProgress = 0.45,
+        MinProgress = 0.8,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 12/30},
             {s = path .. "p250_clipin.wav", t = 25/30},

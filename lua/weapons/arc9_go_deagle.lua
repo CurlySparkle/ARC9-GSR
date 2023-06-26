@@ -314,6 +314,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.75,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8/30},
             {s = path .. "de_clipin.wav", t = 19/30},
@@ -321,6 +322,7 @@ SWEP.Animations = {
     },  
 	["1_reload"] = {
         Source = "reload_short_tacticool",
+		MinProgress = 0.75,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 15/30},
             {s = path .. "de_clipin.wav", t = 32/30},
@@ -328,7 +330,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.42,
+		MinProgress = 0.8,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8/30},
             {s = path .. "de_clipin.wav", t = 19/30},
@@ -338,7 +340,7 @@ SWEP.Animations = {
     },   
 	["1_reload_empty"] = {
         Source = "reload_tacticool",
-		MinProgress = 0.48,
+		MinProgress = 0.8,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 15/30},
             {s = path .. "de_clipin.wav", t = 32/30},
@@ -348,6 +350,7 @@ SWEP.Animations = {
     },
     ["2_reload"] = {
         Source = "reload_short_alt",
+		MinProgress = 0.65,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 10/30},
             {s = path .. "de_clipin.wav", t = 25/30},

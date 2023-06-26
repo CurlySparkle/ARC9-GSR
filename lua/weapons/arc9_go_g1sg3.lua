@@ -350,6 +350,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,
@@ -379,6 +380,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+        MinProgress = 0.8,
         IKTimeLine = {
             {
                 t = 0,
@@ -435,6 +437,7 @@ SWEP.Animations = {
     },
     ["reload_alt"] = {
         Source = "reload_short",
+        MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,
@@ -464,6 +467,7 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload",
+        MinProgress = 0.8,
         IKTimeLine = {
             {
                 t = 0,
@@ -495,6 +499,7 @@ SWEP.Animations = {
     },  
 	["reload_smg"] = {
         Source = "reload_short_smg",
+        MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,
@@ -524,6 +529,7 @@ SWEP.Animations = {
     },
     ["reload_empty_smg"] = {
         Source = "reload_smg",
+        MinProgress = 0.8,
         IKTimeLine = {
             {
                 t = 0,

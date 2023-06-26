@@ -302,11 +302,15 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
 
-    if anim == "reload" and attached["go_mag_extended"] then
-       return "reload_x"
-    elseif anim == "reload_empty" then
-        return "reload_empty_x"
-    end
+    -- if anim == "reload" and attached["go_mag_extended"] then
+       -- return "reload_x"
+    -- elseif anim == "reload_empty" then
+        -- return "reload_empty_x"
+    -- end
+	
+	if attached["go_mag_extended"] then
+		return anim .. "_x"
+	end
 end
 
 SWEP.Animations = {
@@ -322,6 +326,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.6,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 16/30},
             {s = path .. "glock_clipin.wav", t = 28/30},
@@ -329,7 +334,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-        MinProgress = 0.45,
+        MinProgress = 0.8,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12/30},
             {s = path .. "glock_clipin.wav", t = 25/30},
@@ -337,15 +342,16 @@ SWEP.Animations = {
         },
     },
     ["reload_x"] = {
-        Source = "reload_short",
+        Source = "reload_short_x",
+		MinProgress = 0.6,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 16/30},
             {s = path .. "glock_clipin.wav", t = 28/30},
         },
     },
     ["reload_empty_x"] = {
-        Source = "reload",
-        MinProgress = 0.45,
+        Source = "reload_x",
+        MinProgress = 0.8,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12/30},
             {s = path .. "glock_clipin.wav", t = 25/30},
@@ -395,23 +401,23 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement2.wav", t = 175/30},
         },
     },
-    ["reload_longmag"] = {
-        Source = "reload_short_alt",
-        EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12/30},
-            {s = path .. "glock_clipin.wav", t = 25/30},
-        },
-    },
-    ["reload_longmag_empty"] = {
-        Source = "reload_alt",
-        MinProgress = 0.45,
-        EventTable = {
-            {s = path .. "glock_clipout.wav", t = 12/30},
-            {s = path .. "glock_clipin.wav", t = 25/30},
-            {s = path .. "glock_slideback.wav", t = 44/30},
-            {s = path .. "glock_sliderelease.wav", t = 50/30},
-        },
-    },
+    -- ["reload_longmag"] = {
+        -- Source = "reload_short_alt",
+        -- EventTable = {
+            -- {s = path .. "glock_clipout.wav", t = 12/30},
+            -- {s = path .. "glock_clipin.wav", t = 25/30},
+        -- },
+    -- },
+    -- ["reload_longmag_empty"] = {
+        -- Source = "reload_alt",
+        -- MinProgress = 0.45,
+        -- EventTable = {
+            -- {s = path .. "glock_clipout.wav", t = 12/30},
+            -- {s = path .. "glock_clipin.wav", t = 25/30},
+            -- {s = path .. "glock_slideback.wav", t = 44/30},
+            -- {s = path .. "glock_sliderelease.wav", t = 50/30},
+        -- },
+    -- },
     ["bash"] = {
         Source = "melee",
         IKTimeLine = {
