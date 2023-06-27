@@ -690,7 +690,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic",},
         InstalledElements = {"sight_mount"},
-        CorrectiveAng = Angle(0.75, 0.7, 0),
+        -- CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
