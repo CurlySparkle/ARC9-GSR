@@ -384,9 +384,10 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_draw.wav", t = 0/30},
-            {s = path .. "galil_boltback.wav", t = 11/30},
-            {s = path .. "galil_boltforward.wav", t = 15/30},
+            -- {s = path .. "galil_draw.wav", t = 0/30},
+            {s = "CSGO.Item.Movement", t = 0/30},
+            {s = path .. "galil_boltback.wav", t = 0.5},
+            {s = path .. "galil_boltforward.wav", t = 0.7},
         },
     },
     ["draw"] = {
