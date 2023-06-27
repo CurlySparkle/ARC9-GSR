@@ -686,7 +686,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "weapon",
-        Pos = Vector(0, -2.825, 0),
+        Pos = Vector(-0.065, -2.825, 0),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic",},
         InstalledElements = {"sight_mount"},
