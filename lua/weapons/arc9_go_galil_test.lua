@@ -32,12 +32,12 @@ SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_galil.mdl"
+SWEP.WorldModelMirror = "models/weapons/csgo/test/c_rif_galil.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-9.5, 5.2, -5.5),
-    Ang = Angle(-7, 0, 180),
+    Pos = Vector(-4, 4.25, -5.5),
+    Ang = Angle(-4, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-10, 4, 0),
+    TPIKPos = Vector(-4, 4, 0),
     TPIKAng = Angle(0, 0, 175)
 }
 
@@ -178,14 +178,14 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.27, -0.504, 0.619),
+    Pos = Vector(-3.27, -3, 0.619),
     Ang = Angle(0, 0, 0),
     Magnification = 1.25,
-    ViewModelFOV = 40,
+    ViewModelFOV = 50,
     CrosshairInSights = false
 }
 
-SWEP.ViewModelFOVBase = 56
+SWEP.ViewModelFOVBase = 70
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
@@ -210,7 +210,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(12, 32.5, 4)
+SWEP.CustomizePos = Vector(12, 30, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(4, 10, 3)
