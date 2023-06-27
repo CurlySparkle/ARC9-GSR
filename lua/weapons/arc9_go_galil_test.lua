@@ -283,6 +283,10 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
     -- elseif anim == "reload_empty" and attached["go_mag_extended_ak47"] then 
         -- return "reload_empty_2"
     -- end
+	
+	if attached["csgo_galil_mag_50"] then
+		return anim .. "_drum"
+	end
 end
 
 SWEP.Animations = {
@@ -315,7 +319,9 @@ SWEP.Animations = {
         },
     },
     ["reload"] = {
-        Source = "reload",
+        Source = "reload_short",
+		Mult = 0.8,
+		MinProgress = 0.65,
         IKTimeLine = {
             {
                 t = 0,
@@ -340,40 +346,106 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 45/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
         },
     },
-    -- ["reload_empty"] = {
-        -- Source = "reload",
-        -- IKTimeLine = {
-            -- {
-                -- t = 0,
-                -- lhik = 1,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.2,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.7,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 1.2,
-                -- lhik = 1,
-                -- rhik = 1
-            -- },
-        -- },
-        -- EventTable = {
-            -- {s = path .. "galil_clipout.wav", t = 13/30},
-            -- {s = path .. "galil_clipin.wav", t = 38/30},
-            -- {s = path .. "galil_boltback.wav", t = 54/30},
-            -- {s = path .. "galil_boltforward.wav", t = 57/30},
-        -- },
-    -- },
+    ["reload_empty"] = {
+        Source = "reload",
+		Mult = 0.8,
+		MinProgress = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.15,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.525,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+            {s = path .. "galil_boltback.wav", t = 92/30},
+            {s = path .. "galil_boltforward.wav", t = 100/30},
+        },
+    },
+    ["reload_drum"] = {
+        Source = "reload_short_drum",
+		Mult = 0.9,
+		MinProgress = 0.65,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.65,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+        },
+    },
+    ["reload_empty_drum"] = {
+        Source = "reload_drum",
+		Mult = 0.9,
+		MinProgress = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.15,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.525,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+            {s = path .. "galil_boltback.wav", t = 92/30},
+            {s = path .. "galil_boltforward.wav", t = 100/30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -392,6 +464,9 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw_short",
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0/30},
+        },
     },
     ["holster"] = {
         Source = "holster",
