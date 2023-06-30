@@ -34,10 +34,10 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_galil.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-9.5, 5.2, -5.5),
-    Ang = Angle(-7, 0, 180),
+    Pos = Vector(-4, 4.25, -5.5),
+    Ang = Angle(-4, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-10, 4, 0),
+    TPIKPos = Vector(-4, 4, 0),
     TPIKAng = Angle(0, 0, 175)
 }
 
@@ -126,7 +126,7 @@ SWEP.VisualRecoilUp = 1
 SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = .9
+SWEP.VisualRecoilPositionBump = .4
 SWEP.VisualRecoilPositionBumpUp = .3
 SWEP.VisualRecoilMultCrouch = .45
 SWEP.VisualRecoilMultSights = .01
@@ -178,16 +178,16 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.12, -5, 0.9),
-    Ang = Angle(0, 0.6, -2),
+    Pos = Vector(-3.27, -3, 0.619),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.25,
-    ViewModelFOV = 40,
+    ViewModelFOV = 50,
     CrosshairInSights = false
 }
 
-SWEP.ViewModelFOVBase = 56
+SWEP.ViewModelFOVBase = 70
 
-SWEP.SprintPos = Vector(3, -3, -1)
+SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -210,7 +210,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18.5, 32.5, 4)
+SWEP.CustomizePos = Vector(12, 30, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(4, 10, 3)
@@ -236,13 +236,16 @@ SWEP.AfterShotParticle = "weapon_muzzle_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
-SWEP.CamQCA = 4
-SWEP.CamQCA_Mult = 0.5
+-- SWEP.CamQCA = 4
+-- SWEP.CamQCA_Mult = 0.5
 
 SWEP.ShellModel = "models/models/weapons/shared/shell_762_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.08
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
+
+SWEP.CaseEffectQCA = 2
+
 
 SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_rif_galil_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
@@ -275,16 +278,27 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
 
-    if anim == "reload" and attached["go_mag_extended_ak47"] then
-        return "reload_2"
-    elseif anim == "reload_empty" and attached["go_mag_extended_ak47"] then 
-        return "reload_empty_2"
-    end
+    -- if anim == "reload" and attached["go_mag_extended_ak47"] then
+        -- return "reload_2"
+    -- elseif anim == "reload_empty" and attached["go_mag_extended_ak47"] then 
+        -- return "reload_empty_2"
+    -- end
+	
+	if attached["csgo_galil_mag_50"] then
+		return anim .. "_drum"
+	end
 end
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
+        Source = {"shoot1"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.GALIL.Fire_Beef", t = 0/30},
             {s = "CSGO.GALILAR.Fire_Mech", t = 0/30},
@@ -292,6 +306,13 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.GALIL.Fire_Beef_ADS", t = 0/30},
             {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0/30},
@@ -299,79 +320,21 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		Mult = 0.8,
+		MinProgress = 0.65,
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.15,
                 lhik = 1,
                 rhik = 1
             },
-        },
-        EventTable = {
-            {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 38/30},
-        },
-    },
-    ["reload_empty"] = {
-        Source = "reload",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
             {
                 t = 0.2,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.2,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 38/30},
-            {s = path .. "galil_boltback.wav", t = 54/30},
-            {s = path .. "galil_boltforward.wav", t = 57/30},
-        },
-    },
-    ["ready"] = {
-        Source = "draw",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
@@ -382,16 +345,138 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "galil_draw.wav", t = 0/30},
-            {s = path .. "galil_boltback.wav", t = 11/30},
-            {s = path .. "galil_boltforward.wav", t = 15/30},
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+        },
+    },
+    ["reload_empty"] = {
+        Source = "reload",
+		Mult = 0.8,
+		MinProgress = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.15,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.525,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+            {s = path .. "galil_boltback.wav", t = 92/30},
+            {s = path .. "galil_boltforward.wav", t = 100/30},
+        },
+    },
+    ["reload_drum"] = {
+        Source = "reload_short_drum",
+		Mult = 0.9,
+		MinProgress = 0.65,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.65,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 1,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+        },
+    },
+    ["reload_empty_drum"] = {
+        Source = "reload_drum",
+		Mult = 0.9,
+		MinProgress = 0.8,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.15,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.525,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "galil_clipout.wav", t = 13/30},
+            {s = path .. "galil_clipin.wav", t = 50/30},
+            {s = path .. "galil_boltback.wav", t = 92/30},
+            {s = path .. "galil_boltforward.wav", t = 100/30},
+        },
+    },
+    ["ready"] = {
+        Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            -- {s = path .. "galil_draw.wav", t = 0/30},
+            {s = "CSGO.Item.Movement", t = 0/30},
+            {s = path .. "galil_boltback.wav", t = 0.5},
+            {s = path .. "galil_boltforward.wav", t = 0.7},
         },
     },
     ["draw"] = {
         Source = "draw_short",
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 0/30},
+        },
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
@@ -401,17 +486,32 @@ SWEP.Animations = {
     },
     ["enter_sights"] = {
         Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
+		Time = 0.6,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 1,
+        Time = 1.25,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        Time = 0.85,
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -421,110 +521,95 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
             {
                 t = 0.2,
                 lhik = 0,
-                rhik = 0
+                rhik = 1
             },
             {
-                t = 0.55,
+                t = 0.8,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.75,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
 		},
         EventTable = {
-            {s = "weapons/csgo/movement1.wav", t = 2/30 },
-            {s = "weapons/csgo/movement2.wav", t = 92/30 },
-            {s = "weapons/csgo/movement3.wav", t = 116/30 },
+            {s = "weapons/csgo/movement1.wav", t = 0.5 },
+            {s = "weapons/csgo/movement2.wav", t = 2.5 },
+            {s = "weapons/csgo/movement3.wav", t = 4.5 },
         },
     },
-    ["reload_2"] = {
-        Source = "reload_short",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.15,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
-        },
-    },
-    ["reload_empty_2"] = {
-        Source = "reload",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.2,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
-            {s = path .. "galil_boltback.wav", t = 54/30},
-            {s = path .. "galil_boltforward.wav", t = 57/30},
-        },
-    },
+    -- ["reload_2"] = {
+        -- Source = "reload_short",
+        -- IKTimeLine = {
+            -- {
+                -- t = 0,
+                -- lhik = 1,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.2,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.7,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 1.15,
+                -- lhik = 1,
+                -- rhik = 1
+            -- },
+        -- },
+        -- EventTable = {
+            -- {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
+            -- {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
+        -- },
+    -- },
+    -- ["reload_empty_2"] = {
+        -- Source = "reload",
+        -- IKTimeLine = {
+            -- {
+                -- t = 0,
+                -- lhik = 1,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.2,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.7,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 1.2,
+                -- lhik = 1,
+                -- rhik = 1
+            -- },
+        -- },
+        -- EventTable = {
+            -- {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
+            -- {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
+            -- {s = path .. "galil_boltback.wav", t = 54/30},
+            -- {s = path .. "galil_boltforward.wav", t = 57/30},
+        -- },
+    -- },
     ["bash"] = {
-        Source = {"melee", "melee2", "melee3"},
+        Source = {"melee"},
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -557,13 +642,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.39, 25.5), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -0.7, 22), } }	
     },
     ["barrel_short"] = {
         Bodygroups = {
             {3,2},
         },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.39, 21.4), } }	
+    AttPosMods = { [3] = { Pos = Vector(0, -0.7, 18), } }	
     },
     ["mag_35"] = {
         Bodygroups = {
@@ -598,54 +683,37 @@ SWEP.Attachments = {
         --Bone = "v_weapon.glock_magazine",
         Category = "go_galil_barrel"
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_top"),
-        -- Bone = "v_weapon.ak47_parent",
-        -- Pos = Vector(0, -4, 5),
-        -- Ang = Angle(90, 0, -90),
-        -- Category = {"csgo_rail_optic_custom"},
-        -- CorrectiveAng = Angle(0.6, 0.5, 0),
-        -- MergeSlots = {3},
-        -- Hidden = true,
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_top"),
-        -- Bone = "v_weapon.ak47_parent",
-        -- Pos = Vector(0, -4.2, 4.5),
-        -- Ang = Angle(90, 0, -90),
-        -- Category = {"csgo_rail_optic"},
-        -- CorrectiveAng = Angle(0.6, 0.5, 0),
-    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(0, -5.5, 3.6),
+        Bone = "weapon",
+        Pos = Vector(-0.065, -2.825, 0),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic",},
         InstalledElements = {"sight_mount"},
-        CorrectiveAng = Angle(0.75, 0.7, 0),
+        -- CorrectiveAng = Angle(0.75, 0.7, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0, -3.39, 22.4),
+        Bone = "weapon",
+        Pos = Vector(0, -0.7, 19),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_side"),
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
-        Category = "csgo_rail_tac",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(-1.1, -3.5, 12.5),
-        Ang = Angle(90, 0, 90),
+        Category = "csgo_tac",
+		InstalledElements = {"foregrip"},
+        Bone = "weapon",
+        Pos = Vector(-0.95, -1.3, 10),
+        Ang = Angle(90, 0, 180),
     },
     -- {
         -- PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         -- DefaultAttName = "Default",
         -- Category = {"csgo_rail_ub","grip_galil"},
-        -- Bone = "v_weapon.ak47_parent",
+        -- Bone = "weapon",
         -- Pos = Vector(0, -2.1, 12.5),
         -- Ang = Angle(90, 0, 90),
         -- Scale = 1,
@@ -654,33 +722,32 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip"},
-        Bone = "v_weapon.ak47_Parent",
+        Bone = "weapon",
         InstalledElements = {"foregrip"},
-        Pos = Vector(-0.05, -1.95, 12.5),
+        Pos = Vector(0, 0.7, 8.5),
         Ang = Angle(90, 0, 90),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
-        Bone = "v_weapon.ak47_parent",
-        --InstalledElements = {"stock_none"},
-        Pos = Vector(-0.1, -2.9, -0.8),
+        Bone = "weapon",
+        Pos = Vector(0, -0.25, -4.25),
         Ang = Angle(90, 0, -90),
         Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
-        Bone = "v_weapon.AK47_clip",
+        Bone = "weapon.mag",
         Category = {"go_mag_galil"},
-        Pos = Vector(0, -2.7, -1.1),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(0.6, -1.1, 0),
+        Ang = Angle(180, 0, 90),
         Scale = 1.05,
         Icon_Offset = Vector(0.5, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
-        Bone = "v_weapon.AK47_clip",
+        Bone = "weapon.mag",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 0, -0.25),
     },
@@ -707,6 +774,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/galil_a.mdl",
         Category = "stickers",
+        -- Bone = "weapon",
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
@@ -726,15 +794,15 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
-        Bone = "v_weapon.ak47_parent", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(0.7, -3.5, 4), -- offset that the attachment will be relative to the bone
+        Bone = "weapon", -- relevant bone any attachments will be mostly referring to
+        Pos = Vector(0.7, -1, 4), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
-        Bone = "v_weapon.ak47_parent",
-        Pos = Vector(0.6, -3, 3),
+        Bone = "weapon",
+        Pos = Vector(0.6, 0, 0),
         Ang = Angle(90, 0, -90),
 		CosmeticOnly = true,
     },
