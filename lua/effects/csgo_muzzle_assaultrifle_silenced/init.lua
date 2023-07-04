@@ -2,7 +2,6 @@ local ang
 
 EFFECT.WeaponEnt = nil
 
-local lighconvar = GetConVar("arc9_muzzle_light")
 local otherconvar = GetConVar("arc9_muzzle_others")
 
 EFFECT.ParticleName = "weapon_muzzle_flash_assaultrifle_silenced"
@@ -39,20 +38,6 @@ function EFFECT:Init(data)
 
 	self.Forward = self.Forward or data:GetNormal()
 	self.Angle = self.Forward:Angle()
-	
-	if !self.WeaponEnt:GetProcessedValue("Silencer") and !self.WeaponEnt:GetProcessedValue("NoFlash", true) and lighconvar:GetBool() then
-		local dlight = DynamicLight(self.WeaponEnt:EntIndex())
-		if (dlight) then
-			dlight.pos = self.Position + self.Angle:Up() * 3 + self.Angle:Right() * -2
-			dlight.r = 255
-			dlight.g = 192
-			dlight.b = 64
-			dlight.brightness = 5
-			dlight.Size = math.Rand(32, 64)
-			dlight.Decay = math.Rand(32, 64) / 0.05
-			dlight.DieTime = CurTime() + 0.05
-		end
-	end
 
 	local pcf = CreateParticleSystem(self.WeaponEnt, self.ParticleName, PATTACH_POINT_FOLLOW, self.Attachment)
 	if IsValid(pcf) then
