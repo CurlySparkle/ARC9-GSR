@@ -104,41 +104,70 @@ SWEP.FiremodeAnimLock = true
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.75
 
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1.4 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.4
+SWEP.RecoilRandomUp = 0.8
+SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultHipFire = .35
+SWEP.RecoilMultSights = .65
 SWEP.RecoilAutoControlMultHipFire = 0.5
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilSide = .75
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = .9
+SWEP.VisualRecoilPositionBumpUp = .3
+SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultSights = .01
+
+SWEP.VisualRecoilDampingConst = 90
+SWEP.VisualRecoilSpringPunchDamping = 6
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = .25
+-- SWEP.ViewRecoilSideMult = 1
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.015 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.13
 SWEP.SpreadAddMidAir = 0.1
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.06
+SWEP.SpreadAddSights = 0.0125
+
+SWEP.RecoilModifierCapSights = 0.5
 
 -------------------------- HANDLING
 
@@ -285,11 +314,35 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -388,6 +441,13 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -399,9 +459,18 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -508,40 +577,65 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3", "melee4", "melee5"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        -- IKTimeLine = {
+            -- {
+                -- t = 0,
+                -- lhik = 1,
+                -- rhik = 1
+            -- },
+            -- {
+                -- t = 0.1,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.2,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.7,
+                -- lhik = 1,
+                -- rhik = 1
+            -- },
+        -- },
     },
 -- SILENCED
     ["idle_silenced"] = {
         Source = "idle_silenced",
         HideBoneIndex = 1,
     },
+    ["enter_sights_silenced"] = {
+        Source = "idle_silenced",
+        HideBoneIndex = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
     ["fire_silenced"] = {
         Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
         HideBoneIndex = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights_silenced"] = {
         Source = "shoot1_silenced_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
@@ -645,6 +739,13 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint_silenced"] = {
         Source = "sprint_silenced",
@@ -659,9 +760,18 @@ SWEP.Animations = {
         Source = "sprint_in_silenced",
         Time = 1,
         HideBoneIndex = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect_silenced"] = {
         Source = "lookat01_silenced",
+        MinProgress = 0.1,
+        FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -693,28 +803,28 @@ SWEP.Animations = {
     },
     ["bash_silenced"] = {
         Source = {"melee_silenced", "melee2_silenced"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        -- IKTimeLine = {
+            -- {
+                -- t = 0,
+                -- lhik = 1,
+                -- rhik = 1
+            -- },
+            -- {
+                -- t = 0.1,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.2,
+                -- lhik = 0,
+                -- rhik = 0
+            -- },
+            -- {
+                -- t = 0.7,
+                -- lhik = 1,
+                -- rhik = 1
+            -- },
+        -- },
     },
 }
 

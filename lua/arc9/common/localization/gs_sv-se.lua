@@ -510,7 +510,7 @@ L["csgo_optic_scope_scout.printname"] = "Scout-Kikarsikte (6x)"
 L["csgo_optic_scope_scout.compactname"] = "Scout 6X"
 L["csgo_optic_scope_scout.description"] = "Medelräckvidd kikarsikte gjord till Scout:en.\nGer ett rent hårkors för snabb målförvärv."
 
-L["csgo_optic_scope_ssg08.printname"] = "SSG 08-Sikte (8x)"
+L["csgo_optic_scope_ssg08.printname"] = "SSG 08-Kikarsikte (8x)"
 L["csgo_optic_scope_ssg08.compactname"] = "SSG 08 8X"
 L["csgo_optic_scope_ssg08.description"] = "Lång räckvidd kikarsikte gjord till SSG 08:an.\nGer ett rent hårkors för snabb målförvärv."
 
