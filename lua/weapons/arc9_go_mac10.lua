@@ -110,24 +110,53 @@ SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
+SWEP.RecoilMultHipFire = .5
+SWEP.RecoilMultSights = 1.75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1.5
+SWEP.VisualRecoilPositionBumpUp = .25
+-- SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = .01
+
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 9
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = .25
+-- SWEP.ViewRecoilSideMult = 1
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.01 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.075 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddSights = 0.0125
+
+SWEP.RecoilModifierCapSights = 0.45
 
 -------------------------- HANDLING
 
@@ -274,9 +303,23 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1_new"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -464,12 +507,29 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
         Source = "idle",
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -481,6 +541,13 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -528,12 +595,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },

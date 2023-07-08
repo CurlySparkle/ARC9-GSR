@@ -49,6 +49,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk","go_perk_melee"}
+ATT.Folder = "GSR"
 ATT.ActivateElements = {"enforcer"}
 
 ARC9.LoadAttachment(ATT, "csgo_perk_enforcer")
@@ -190,6 +191,7 @@ ATT.AutoStats = true
 ATT.Free = true
 
 ATT.Category = {"go_perk_melee"}
+ATT.Folder = "GSR"
 
 ATT.BashLungeRange = 74
 
@@ -206,6 +208,7 @@ ATT.AutoStats = true
 ATT.Free = true
 
 ATT.Category = {"go_perk_melee","go_perk"}
+ATT.Folder = "GSR"
 
 ATT.PostBashTime = 0.2
 

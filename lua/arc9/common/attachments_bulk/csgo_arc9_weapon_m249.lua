@@ -133,6 +133,7 @@ ATT.NumOverride = 8
 
 ATT.SpreadAddHipFire = 0.1
 ATT.SpreadAddSights = 0.1
+ATT.SpreadAddSighted = 0.0875
 
 ATT.ClipSizeOverride = 45
 ATT.ReloadTimeMult = 1.1
