@@ -30,7 +30,7 @@ All weapons have gotten visual recoil added to them. This applies to [i]all[/i] 
 This means that all weapons will have the following things added and adjusted:
 [list]
 [*]Added visual recoil, especially when hip-firing
-[*]Adjusted recoil patterns
+[*]Adjusted recoil patterns and values
 [*]Adjusted accuracy and spread values
 [/list]
 
@@ -51,6 +51,9 @@ Weapons not listed did not have anything changed.
 [/tr][tr]
 	[th]FAMAS[/th]
 	[th]Increased reload speed by 5%[/th]
+[/tr][tr]
+	[th]Galil SAR[/th]
+	[th]Has received a completely new set of animations[/th]
 [/tr][tr]
 [/tr][/table]
 
