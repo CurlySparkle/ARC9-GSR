@@ -1,10 +1,20 @@
 local ang
 
+EFFECT.WeaponEnt = nil
+
+local otherconvar = GetConVar("arc9_muzzle_others")
+
 EFFECT.ParticleName = "weapon_muzzle_flash_assaultrifle_silenced"
 
 function EFFECT:Init(data)
 	self.WeaponEnt = data:GetEntity()
 	if not IsValid(self.WeaponEnt) then return end
+	
+    if !otherconvar:GetBool() and LocalPlayer() != self.WeaponEnt:GetOwner() then
+        self:Remove()
+        return
+    end	
+
 	self.Attachment = data:GetAttachment()
 	self.Position = self:GetTracerShootPos(data:GetOrigin(), self.WeaponEnt, self.Attachment)
 
