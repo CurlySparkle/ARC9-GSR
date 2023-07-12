@@ -128,7 +128,7 @@ SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = .4
 SWEP.VisualRecoilPositionBumpUp = .3
-SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultCrouch = .9
 SWEP.VisualRecoilMultSights = .01
 
 SWEP.VisualRecoilDampingConst = 120
@@ -529,12 +529,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.9,
+                t = 0.925,
                 lhik = 1,
                 rhik = 1
             },
@@ -545,66 +545,6 @@ SWEP.Animations = {
             {s = "weapons/csgo/movement3.wav", t = 4.5 },
         },
     },
-    -- ["reload_2"] = {
-        -- Source = "reload_short",
-        -- IKTimeLine = {
-            -- {
-                -- t = 0,
-                -- lhik = 1,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.2,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.7,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 1.15,
-                -- lhik = 1,
-                -- rhik = 1
-            -- },
-        -- },
-        -- EventTable = {
-            -- {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
-            -- {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
-        -- },
-    -- },
-    -- ["reload_empty_2"] = {
-        -- Source = "reload",
-        -- IKTimeLine = {
-            -- {
-                -- t = 0,
-                -- lhik = 1,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.2,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.7,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 1.2,
-                -- lhik = 1,
-                -- rhik = 1
-            -- },
-        -- },
-        -- EventTable = {
-            -- {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 13/30},
-            -- {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 38/30},
-            -- {s = path .. "galil_boltback.wav", t = 54/30},
-            -- {s = path .. "galil_boltforward.wav", t = 57/30},
-        -- },
-    -- },
     ["bash"] = {
         Source = {"melee"},
         IKTimeLine = {

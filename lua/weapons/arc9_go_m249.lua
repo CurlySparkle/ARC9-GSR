@@ -120,7 +120,7 @@ SWEP.RecoilPatternDrift = 50
 
 -- [[ Moka's testing area - do not touch nor uncomment
 
-SWEP.RecoilMultCrouch = 0.5
+SWEP.RecoilMultCrouch = 0.9
 SWEP.RecoilMultHipFire = .35
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
@@ -133,7 +133,7 @@ SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = .9
 SWEP.VisualRecoilPositionBumpUp = .3
-SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilMultCrouch = .75
 SWEP.VisualRecoilMultSights = .01
 
 SWEP.VisualRecoilDampingConst = 90

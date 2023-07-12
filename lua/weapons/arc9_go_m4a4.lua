@@ -129,9 +129,9 @@ SWEP.VisualRecoilUp = 2
 SWEP.VisualRecoilSide = 1.25
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = .9
-SWEP.VisualRecoilPositionBumpUp = .3
-SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = .2
+SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = .01
 
 SWEP.VisualRecoilDampingConst = 90
@@ -152,10 +152,10 @@ SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.35
+SWEP.RecoilModifierCapSights = 0.4
 
 -------------------------- HANDLING
 
@@ -321,6 +321,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.6,
         IKTimeLine = {
             {
                 t = 0,
@@ -350,6 +351,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,
@@ -380,6 +382,7 @@ SWEP.Animations = {
     }, 
 	["reload_alt"] = {
         Source = "reload_short_alt",
+		MinProgress = 0.75,
         IKTimeLine = {
             {
                 t = 0,
@@ -410,6 +413,7 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload_alt",
+		MinProgress = 0.85,
         IKTimeLine = {
             {
                 t = 0,
@@ -442,6 +446,7 @@ SWEP.Animations = {
     }, 
 	["reload_empty_alt_2"] = {
         Source = "reload_alt_2",
+		MinProgress = 0.75,
         IKTimeLine = {
             {
                 t = 0,
@@ -572,6 +577,7 @@ SWEP.Animations = {
     },
     ["reload_sniper"] = {
         Source = "reload_short_sniper",
+		MinProgress = 0.55,
         IKTimeLine = {
             {
                 t = 0,
@@ -601,6 +607,7 @@ SWEP.Animations = {
     },
     ["reload_empty_sniper"] = {
         Source = "reload_sniper",
+		MinProgress = 0.8,
         IKTimeLine = {
             {
                 t = 0,

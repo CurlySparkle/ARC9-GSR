@@ -141,9 +141,9 @@ SWEP.VisualRecoilUp = 2
 SWEP.VisualRecoilSide = .75
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = .9
-SWEP.VisualRecoilPositionBumpUp = .3
-SWEP.VisualRecoilMultCrouch = .45
+SWEP.VisualRecoilPositionBump = 1.25
+SWEP.VisualRecoilPositionBumpUp = .15
+SWEP.VisualRecoilMultCrouch = .9
 SWEP.VisualRecoilMultSights = .01
 
 SWEP.VisualRecoilDampingConst = 90
@@ -159,12 +159,12 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.13
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
+SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.0125
 
 SWEP.RecoilModifierCapSights = 0.5
@@ -346,6 +346,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.6,
         IKTimeLine = {
             {
                 t = 0,
@@ -375,6 +376,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,
