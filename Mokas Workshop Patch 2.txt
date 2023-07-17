@@ -60,22 +60,20 @@ Weapons not listed did not have anything changed.
 [b][u]SMGs[/u][/b]
 [table][tr]
 	[th]MAC-10[/th]
-	[th]EDIT THIS[/i][/th]
+	[th]EDIT THIS[/th]
 [/tr][tr]
 	[th]PP-Bizon[/th]
-	[th]Adjusted the recoil
-	[/th]
+	[th]Adjusted the recoil[/th]
 [/tr][tr]
 [/tr][/table]
 
 [b][u]Shotguns[/u][/b]
 [table][tr]
 	[th]Benelli M3 Super 90[/th]
-	[th]Can no longer equip the AK-styled scope riser[/i][/th]
+	[th]Can no longer equip the AK-styled scope riser[/th]
 [/tr][tr]
-	[th]PP-Bizon[/th]
-	[th]Adjusted the recoil
-	[/th]
+	[th]MAG-7[/th]
+	[th]Fixed that the reload empty animation for extended mag was used even when extended mags was not equipped[/th]
 [/tr][tr]
 [/tr][/table]
 

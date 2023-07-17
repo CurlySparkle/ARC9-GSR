@@ -105,19 +105,46 @@ SWEP.RecoilSide = 3 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.75
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 3.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 2
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.9
+SWEP.RecoilMultHipFire = .25
+SWEP.RecoilMultSights = 1
+SWEP.RecoilAutoControlMultHipFire = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 2
+SWEP.VisualRecoilPunch = 3
+SWEP.VisualRecoilUp = 10
+SWEP.VisualRecoilSide = .25
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 2.5
+SWEP.VisualRecoilPositionBumpUp = .1
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = 1
+
+SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = 10
+-- SWEP.ViewRecoilSideMult = -5
+
+-- ]]--
 
 -------------------------- SPREAD
 
@@ -128,7 +155,7 @@ SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.025
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddHipFire = 0.015
 SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
@@ -268,16 +295,27 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
 
-    if anim == "reload" and attached["go_mag_extended"] then
-        return "reload_longmag"
-    elseif anim == "reload_empty" then
-        return "reload_longmag_empty"
-    end
+	if attached["go_mag_extended"] then
+		if anim == "reload" then
+			return "reload_longmag"
+		end
+		
+		if anim == "reload_empty" then
+			return "reload_longmag_empty"
+		end
+	end
 end
 
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = path .. "mag7_pump_back.wav", t = 1/30},
             {s = path .. "mag7_pump_forward.wav", t = 4/30},
@@ -304,12 +342,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -333,12 +371,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.5,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -355,13 +393,8 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.2,
                 lhik = 1,
-                rhik = 0
+                rhik = 1
             },
         },
         EventTable = {
@@ -375,6 +408,13 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
@@ -382,16 +422,33 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 0.1,
+        Time = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        Time = 0.1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -401,10 +458,15 @@ SWEP.Animations = {
             {
                 t = 0,
                 lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.4,
+                lhik = 1,
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
@@ -414,7 +476,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -439,12 +501,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -468,12 +530,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.5,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -490,21 +552,6 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
