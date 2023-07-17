@@ -296,6 +296,13 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1_new"},
 		Mult = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.MP5.Fire.Beef", t = 0/30},
             {s = "CSGO.MP5.Fire.Beefdone", t = 5/30},
@@ -303,6 +310,13 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.MP5.Fire.BeefADS", t = 0/30},
             {s = "CSGO.MP5.Fire.Beef", t = 3/30},
@@ -381,7 +395,7 @@ SWEP.Animations = {
         },
     },
     ["ready"] = {
-        Source = {"draw_alt", "draw_alt"},
+        Source = {"draw_alt"},
         IKTimeLine = {
             {
                 t = 0,
@@ -419,12 +433,29 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
         Source = "idle",
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -436,9 +467,17 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
         FireASAP = true,
         IKTimeLine = {
             {
@@ -471,7 +510,14 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-        Source = {"melee", "melee2", "melee3"}
+        Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
     },
 }
 
