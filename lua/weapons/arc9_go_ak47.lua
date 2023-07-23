@@ -103,7 +103,7 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.5
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
@@ -112,55 +112,55 @@ SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 0.9
--- SWEP.VisualRecoilUp = 1
-
--- [[ Moka's testing area - do not touch nor uncomment
-
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .45
-SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.9
+SWEP.RecoilMultCrouch = 0.85
+-- SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1.35
+SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 3
-SWEP.VisualRecoilSide = 1
-SWEP.VisualRecoilRoll = 1
+SWEP.VisualRecoilPunch = 2
+SWEP.VisualRecoilUp = .85
+SWEP.VisualRecoilSide = -.05
 
-SWEP.VisualRecoilPositionBump = .9
-SWEP.VisualRecoilPositionBumpUp = .3
+-- Moka's testing area - do not touch nor uncomment
+
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = .45
+-- SWEP.RecoilMultSights = 1
+-- SWEP.RecoilAutoControlMultHipFire = 0.9
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 0.5
+-- SWEP.VisualRecoilUp = 3
+-- SWEP.VisualRecoilSide = 1
+-- SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 3
+SWEP.VisualRecoilPositionBumpUp = .5
 SWEP.VisualRecoilMultCrouch = .45
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .05
 
-SWEP.VisualRecoilDampingConst = 120
-SWEP.VisualRecoilSpringPunchDamping = 12
+-- SWEP.VisualRecoilDampingConst = 60
+-- SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.ViewRecoil = false
--- SWEP.ViewRecoilUpMult = 10
--- SWEP.ViewRecoilSideMult = -5
-
--- ]]--
+-- -- SWEP.ViewRecoil = false
+-- -- SWEP.ViewRecoilUpMult = 10
+-- -- SWEP.ViewRecoilSideMult = -5
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.065 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.005
+SWEP.SpreadAddCrouch = -0.01
 
 SWEP.SpreadSights = 0
 SWEP.SpreadAddSights = 0
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 
