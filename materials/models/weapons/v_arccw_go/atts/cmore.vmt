@@ -3,6 +3,7 @@
 	"$basetexture"				"models\weapons\v_arccw_go\atts\cmore_d"
 	"$bumpmap"					"models\weapons\v_arccw_go\atts\cmore_n"
 	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\cmore_s"
+	"$normalmapalphaenvmapmask" "1"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
 
@@ -19,8 +20,16 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.4"
+
      "Proxies"
      {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
