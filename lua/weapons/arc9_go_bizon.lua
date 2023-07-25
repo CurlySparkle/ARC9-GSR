@@ -107,42 +107,42 @@ SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
--- SWEP.RecoilMultSights = 0.95
-
--- SWEP.RecoilPatternDrift = 12
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 1
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .35
-SWEP.RecoilMultSights = 1
-
-SWEP.RecoilAutoControl = 0.85 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlMultHipFire = 0.9
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultSights = 1.25
 
 SWEP.RecoilPatternDrift = 12
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 2
-SWEP.VisualRecoilUp = 1
-SWEP.VisualRecoilSide = .5
-SWEP.VisualRecoilRoll = 1
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = .75
+SWEP.VisualRecoilSide = .05
 
-SWEP.VisualRecoilPositionBump = .45
-SWEP.VisualRecoilPositionBumpUp = .65
+-- Moka's testing area - do not touch nor uncomment
+
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = .35
+-- SWEP.RecoilMultSights = 1
+
+-- SWEP.RecoilAutoControl = 0.85 -- Multiplier for automatic recoil control.
+-- SWEP.RecoilAutoControlMultHipFire = 0.9
+
+-- SWEP.RecoilPatternDrift = 12
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 2
+-- SWEP.VisualRecoilUp = 1.75
+-- SWEP.VisualRecoilSide = .25
+-- SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1.5
+SWEP.VisualRecoilPositionBumpUp = .75
 SWEP.VisualRecoilMultCrouch = .9
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .1
 
-SWEP.VisualRecoilDampingConst = 240
-SWEP.VisualRecoilSpringPunchDamping = 12
-
--- ]]--
+-- SWEP.VisualRecoilDampingConst = 60
+-- SWEP.VisualRecoilSpringPunchDamping = 12
 
 -------------------------- SPREAD
 
@@ -156,7 +156,7 @@ SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.01
 
-SWEP.RecoilModifierCapSights = 0.45
+SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
@@ -173,7 +173,7 @@ SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being a
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 SWEP.PreBashTime = 0.13
-SWEP.PostBashTime = 0.6
+SWEP.PostBashTime = 0.9
 
 -------------------------- TRACERS
 
@@ -431,12 +431,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -463,12 +463,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.75,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.1,
+                t = 0.95,
                 lhik = 1,
                 rhik = 1
             },
@@ -671,7 +671,7 @@ SWEP.Animations = {
         },
     },
     ["bash"] = {
-	    Mult = 0.8,
+	    Mult = 1,
         Source = {"melee", "melee2", "melee3", "melee4"},
         IKTimeLine = {
             {

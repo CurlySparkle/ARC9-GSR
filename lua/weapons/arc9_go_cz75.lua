@@ -79,14 +79,16 @@ SWEP.RPM = 600
 SWEP.Firemodes = {
     {
         Mode = -1,
-		SpreadAddRecoil = 0.025,
-		VisualRecoilMultSights = 1
+		SpreadAddRecoil = 0.065,
+		VisualRecoilMultSights = 1,
+		RecoilModifierCapSights = 0.65
         -- add other attachment modifiers
     },
     {
         Mode = 1,
 		SpreadAddRecoil = 0.05,
-		VisualRecoilMultSights = .25
+		VisualRecoilMultSights = .25,
+		RecoilModifierCapSights = 0.4
     }
 }
 -------------------------- RECOIL
@@ -124,22 +126,22 @@ SWEP.RecoilKickSights = 1.5
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .65
+SWEP.RecoilMultHipFire = .45
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 2.5
-SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilSide = .35
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilPositionBumpUp = 1
 SWEP.VisualRecoilMultCrouch = 1
--- SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = .05
 
-SWEP.VisualRecoilDampingConst = 120
+SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.ViewRecoil = false

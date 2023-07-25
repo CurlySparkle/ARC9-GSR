@@ -719,6 +719,10 @@ L["go_grip_vertical_stubby.printname"] = "Вертикальная рукоят�
 L["go_grip_vertical_stubby.compactname"] = "Вертикальная"
 L["go_grip_vertical_stubby.description"] = "Обеспечивает улучшенный контроль отдачи и снижение дрейфа отдачи ценой ухудшения эргономики оружия."
 
+L["go_grip_assault.printname"] = "Assault Grip"
+L["go_grip_assault.compactname"] = "Assault"
+L["go_grip_assault.description"] = "Обеспечивает улучшенный контроль отдачи за счёт ухудшения эргономики оружия."
+
 -- Alternative Grip Styles (Fucking kill me)
 L["go_holdstyle_1.printname"] = "Альт. стиль держания"
 L["go_holdstyle_1.compactname"] = "Альт. держание"

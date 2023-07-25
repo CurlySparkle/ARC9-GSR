@@ -210,7 +210,7 @@ ATT.SprintToFireTimeMult = 0.7
 ATT.RHIK_Priority = 100
 ATT.RHIK = true
 
-ATT.LHIK_Priority = 100
+ATT.LHIK_Priority = 5
 ATT.LHIK = true
 
 ATT.Model = "models/weapons/csgo/c_rif_scar17_ikbodge.mdl"

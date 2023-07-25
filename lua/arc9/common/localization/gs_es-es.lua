@@ -716,6 +716,10 @@ L["go_grip_vertical_stubby.printname"] = "Grip Vertical"
 L["go_grip_vertical_stubby.compactname"] = "Vertical"
 L["go_grip_vertical_stubby.description"] = "Proporciona un mejor control del retroceso y reduce la deriva del retroceso a costa del manejo del arma."
 
+L["go_grip_assault.printname"] = "Grip Assault"
+L["go_grip_assault.compactname"] = "Assault"
+L["go_grip_assault.description"] = "Proporciona un mejor control del retroceso a costa del manejo del arma."
+
 -- Alternative Grip Styles (Fucking kill me)
 L["go_holdstyle_1.printname"] = "Estilo de agarre Alt."
 L["go_holdstyle_1.compactname"] = "Agarre Alt."

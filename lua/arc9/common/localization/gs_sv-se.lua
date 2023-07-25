@@ -716,6 +716,10 @@ L["go_grip_vertical_stubby.printname"] = "Vertikalt Grepp"
 L["go_grip_vertical_stubby.compactname"] = "Vertikal"
 L["go_grip_vertical_stubby.description"] = "Erbjuder förbättrad rekylkontroll och sänkt rekyldrift med kostnad på vapenhantering."
 
+L["go_grip_assault.printname"] = "Assault-Grepp"
+L["go_grip_assault.compactname"] = "Assault"
+L["go_grip_assault.description"] = "Erbjuder förbättrad rekylkontroll med kostnad på vapenhantering."
+
 -- Alternative Grip Styles (Fucking kill me)
 L["go_holdstyle_1.printname"] = "Alt. Hållstil"
 L["go_holdstyle_1.compactname"] = "Alt. Håll."

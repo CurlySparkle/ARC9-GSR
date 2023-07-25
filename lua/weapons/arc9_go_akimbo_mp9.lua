@@ -126,25 +126,25 @@ SWEP.Akimbo = true
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 0.75
-SWEP.RecoilMultSights = 1
+SWEP.RecoilMultHipFire = .55
+SWEP.RecoilMultSights = .75
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 2.5
-SWEP.VisualRecoilSide = 0.6
+SWEP.VisualRecoilSide = 1
 SWEP.VisualRecoilRoll = 0.25
 
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0
+SWEP.VisualRecoilPositionBumpUp = -.15
 SWEP.VisualRecoilMultCrouch = 1
-SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = .5
 
-SWEP.VisualRecoilDampingConst = 240
-SWEP.VisualRecoilSpringPunchDamping = 12
+SWEP.VisualRecoilDampingConst = 60
+SWEP.VisualRecoilSpringPunchDamping = 6
 
-SWEP.ViewRecoil = true
+SWEP.ViewRecoil = false
 SWEP.ViewRecoilUpMult = 10
 SWEP.ViewRecoilSideMult = 2.5
 

@@ -102,53 +102,54 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
--- SWEP.RecoilKick = 1.5
-
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilKickCrouch = 1
-
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 1
-
--- [[ Moka's testing area - do not touch nor uncomment
+SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .45
-SWEP.RecoilMultSights = 0.8
-SWEP.RecoilAutoControlMultHipFire = 0.9
+SWEP.RecoilKickCrouch = 1
+
+-- SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1.35
+SWEP.RecoilAutoControlMultHipFire = 0.25
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 1.5
-SWEP.VisualRecoilSide = .45
-SWEP.VisualRecoilRoll = 1
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = .85
+SWEP.VisualRecoilSide = -.05
 
-SWEP.VisualRecoilPositionBump = .4
-SWEP.VisualRecoilPositionBumpUp = .3
+-- Moka's testing area - do not touch nor uncomment
+
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = .45
+-- SWEP.RecoilMultSights = 0.8
+-- SWEP.RecoilAutoControlMultHipFire = 0.9
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 0.5
+-- SWEP.VisualRecoilUp = 1.5
+-- SWEP.VisualRecoilSide = .45
+-- SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1.5
+SWEP.VisualRecoilPositionBumpUp = .75
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .1
 
-SWEP.VisualRecoilDampingConst = 120
-SWEP.VisualRecoilSpringPunchDamping = 10
+-- SWEP.VisualRecoilDampingConst = 60
+-- SWEP.VisualRecoilSpringPunchDamping = 20
 
--- ]]--
-	
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
 SWEP.SpreadAddRecoil = 0.07 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = 0
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 
