@@ -2,7 +2,7 @@ ATT.PrintName = "Assault Grip"
 ATT.CompactName = "Assault"
 ATT.Description = [[Angled grip from the N-Word machine gun that improves recoil control at the cost of ADS speed and sprint-to-fire speed.]]
 
-ATT.Icon = Material("entities/attachs/go_grip_angled.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/grip_assault.png", "mips smooth")
 
 ATT.Model = "models/weapons/csgo/atts/grip_assault.mdl"
 

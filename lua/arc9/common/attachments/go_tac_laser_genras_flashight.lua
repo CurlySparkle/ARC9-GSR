@@ -18,10 +18,10 @@ ATT.ToggleStats = {
         FlashlightColor = Color(55, 55, 55),
         FlashlightMaterial = "effects/flashlight001",
         FlashlightDistance = 2048,
-        FlashlightFOV = 80,
+        FlashlightFOV = 30,
         FlashlightAttachment = 1,
         Flare = true,
-        FlareColor = Color(55, 55, 55),
+        FlareColor = Color(255, 255, 255),
         FlareSize = 300,
         FlareAttachment = 1
     },
