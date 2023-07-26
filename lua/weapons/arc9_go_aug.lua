@@ -113,7 +113,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.25
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = .85
+SWEP.VisualRecoilUp = 1.5
 SWEP.VisualRecoilSide = -.05
 
 -- Moka's testing area - do not touch nor uncomment

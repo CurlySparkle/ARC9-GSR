@@ -98,7 +98,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.8
+SWEP.Recoil = 2
 
 SWEP.RecoilSeed = 59299 -- CSGO Seed Input Test
 
@@ -112,7 +112,7 @@ SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 25 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
@@ -128,20 +128,20 @@ SWEP.Akimbo = true
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .6
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 4
-SWEP.VisualRecoilSide = 1.5
+SWEP.VisualRecoilSide = .5
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilPositionBumpUp = 0.65
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 12
@@ -154,9 +154,9 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.085 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.09
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0.004
 SWEP.SpreadAddCrouch = -0.02

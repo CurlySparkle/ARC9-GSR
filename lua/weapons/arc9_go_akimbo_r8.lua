@@ -86,7 +86,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2
+SWEP.Recoil = 4
 
 SWEP.RecoilSeed = 1454 -- CSGO Seed Input Test
 
@@ -115,20 +115,20 @@ SWEP.Akimbo = true
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .65
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 20
-SWEP.VisualRecoilSide = 1.5
+SWEP.VisualRecoilSide = .75
 SWEP.VisualRecoilRoll = .5
 
-SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilPositionBump = 3
+SWEP.VisualRecoilPositionBumpUp = .25
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 12
@@ -143,7 +143,7 @@ SWEP.Spread = 0
 
 SWEP.SpreadAddRecoil = 0.125 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.03
 SWEP.SpreadAddCrouch = -0.02

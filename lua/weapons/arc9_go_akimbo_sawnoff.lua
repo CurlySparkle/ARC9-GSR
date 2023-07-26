@@ -92,7 +92,7 @@ SWEP.Firemodes = {
         PrintName = ARC9:GetPhrase("csgo_firemode_both"),
         RPMMult = 60/80,
         AkimboBoth = true,
-        RecoilMult = 3,
+        RecoilMult = 1.5,
         AmmoPerShot = 2,
         NumMult = 2,
     },
@@ -100,7 +100,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 4
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
@@ -122,8 +122,8 @@ SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilMultSights = 2.5
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.ViewRecoil = false
