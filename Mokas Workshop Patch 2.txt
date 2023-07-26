@@ -78,6 +78,25 @@ Weapons not listed did not have anything changed.
 [/tr][/table]
 
 [b][u]Attachment Fixes and Adjustments[/u][/b]
+[i]Added camo support to the following attachments:[/i]
+[table][tr]
+	[th]Slot[/th]
+	[th]Attachment[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]Barska[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]C-More Railway Red Dot[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]Aimpoint CompM4*[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]EOTech Sight*[/th]
+[/tr][/table]
+[b]*Also accounts for Magnifier variants
+
 A few attachments had fixes applied to them.
 [table][tr]
 	[th]Attachment[/th]

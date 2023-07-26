@@ -22,8 +22,16 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.8"
+
      "Proxies"
      {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"

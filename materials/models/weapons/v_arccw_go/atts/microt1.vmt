@@ -18,8 +18,16 @@
 	"$normalmapalphaenvmapmask"	"1"
 	"$envmaptint"                   "[0.04 0.04 0.04]"
 
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.8"
+
      "Proxies"
      {
+		CustomCamo {
+			camoTexture $detail
+			camoScale $detailscale
+            blend $detailblendfactor
+		}
         "Arc9EnvMapTint"
         {
             "specularity" "0.5"
