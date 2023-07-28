@@ -93,13 +93,13 @@ SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.3
+SWEP.RecoilRandomUp = 0.6
 SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.35 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -113,23 +113,24 @@ SWEP.RecoilKick = 1
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.85
-SWEP.RecoilMultHipFire = .65
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilUpSights = .25
 SWEP.VisualRecoilSide = -.15
+SWEP.VisualRecoilSideSights = -.015
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = .9
-SWEP.VisualRecoilPositionBumpUp = .3
+SWEP.VisualRecoilPositionBump = 3
+SWEP.VisualRecoilPositionBumpUp = .5
 SWEP.VisualRecoilMultCrouch = .9
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .25
 
-SWEP.VisualRecoilDampingConst = 120
-SWEP.VisualRecoilSpringPunchDamping = 12
+-- SWEP.VisualRecoilDampingConst = 120
+-- SWEP.VisualRecoilSpringPunchDamping = 12
 
 -- SWEP.ViewRecoil = false
 -- SWEP.ViewRecoilUpMult = 10
@@ -141,7 +142,7 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.075 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.15
 SWEP.SpreadAddMidAir = 0.1
@@ -149,7 +150,7 @@ SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.35
+SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 

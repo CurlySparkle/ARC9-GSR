@@ -285,10 +285,12 @@ ATT.DamageMinMult = 0.3
 
 ATT.ReloadTimeMult = 1.05
 
-ATT.SpreadMultRecoil = 0.6
+-- ATT.SpreadMultRecoil = 0.6
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
+
+ATT.VisualRecoilSideMult = .5
 
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.75
@@ -340,7 +342,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
 --ATT.ActivateElements = {"mag_10"}
-ATT.ClipSizeOverride = 20
+-- ATT.ClipSizeOverride = 20
 -- ATT.ReloadTimeMult = 0.95
 
 ATT.RPM = 500
@@ -348,10 +350,12 @@ ATT.RPM = 500
 ATT.DamageMaxMult = 0.5
 ATT.DamageMinMult = 0.5
 
-ATT.SpreadMultRecoil = 0.6
+-- ATT.SpreadMultRecoil = 0.6
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
+
+ATT.VisualRecoilSideMult = .5
 
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.8
@@ -411,10 +415,12 @@ ATT.RPM = 500
 ATT.DamageMaxMult = 19/28
 ATT.DamageMinMult = 8/10
 
-ATT.SpreadMultRecoil = 0.6
+-- ATT.SpreadMultRecoil = 0.6
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
+
+ATT.VisualRecoilSideMult = .5
 
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
@@ -546,7 +552,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_556_20"}
-ATT.ClipSizeOverride = 20
+-- ATT.ClipSizeOverride = 20
 ATT.ReloadTimeMult = 0.9
 
 ATT.RPM = 750 
@@ -556,13 +562,14 @@ ATT.DamageMinMult = .75
 ATT.RangeMaxMult = .75
 ATT.RangeMinMult = .5
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.SG556.Fire"
 //ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -622,13 +629,14 @@ ATT.RangeMinMult = .5
 
 ATT.ReloadTimeMult = 1.05
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.SG556.Fire"
 //ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -689,13 +697,14 @@ ATT.RangeMinMult = .5
 
 ATT.ReloadTimeMult = 1.15
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.SG556.Fire"
 //ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -744,7 +753,7 @@ ATT.Free = false
 
 ATT.Category = {"go_mag_g3"}
 ATT.ActivateElements = {"mag_g41_20"}
-ATT.ClipSizeOverride = 20
+-- ATT.ClipSizeOverride = 20
 ATT.ReloadTimeMult = 0.9
 
 ATT.RPM = 700
@@ -752,13 +761,14 @@ ATT.RPM = 700
 ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.SG556.Fire"
 //ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -815,13 +825,14 @@ ATT.RPM = 700
 ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.SG556.Fire"
 //ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -878,13 +889,14 @@ ATT.RPM = 700
 ATT.DamageMaxMult = 0.85
 ATT.DamageMinMult = 0.85
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.SG556.Fire"
 //ATT.FirstShootSound = "CSGO.G3SG1.Fire_Auto_First"
@@ -948,13 +960,14 @@ ATT.DamageMinMult = 0.7
 ATT.RecoilMult = 0.75
 ATT.VisualRecoilMult = 0.75
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.UMP.Fire"
 ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
@@ -1010,13 +1023,14 @@ ATT.DamageMinMult = 0.5
 ATT.RecoilMult = 0.65
 ATT.VisualRecoilMult = 0.65
 
-ATT.SpreadMultRecoil = 0.45
+ATT.SpreadMultRecoil = 0.9
 ATT.SpreadMultHipFire = 0
 ATT.SpreadMultMove = 0.7
 ATT.SpreadMultSights = 0.3
 
 ATT.VisualRecoilMultHipFire = .8
 ATT.VisualRecoilMultSights = .25
+ATT.VisualRecoilSideMult = .5
 
 ATT.ShootSound = "CSGO.MP9.Fire"
 ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 

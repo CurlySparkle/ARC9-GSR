@@ -46,7 +46,8 @@ ATT.Sights = {
         Ang = Angle(0.5, -1.4, 35),
         ViewModelFOV = 56,
         Magnification = 1.1,
-        IgnoreExtra = false
+        IgnoreExtra = false,
+		CrosshairInSights = true,
     },
 }
 

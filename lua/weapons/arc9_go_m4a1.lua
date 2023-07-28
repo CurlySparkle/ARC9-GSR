@@ -94,8 +94,7 @@ SWEP.Firemodes = {
         end,
 
         RPM = 700,
-        SpreadAdd = 0.003,
-        SpreadAddHipFire = 0.005,
+        SpreadMultRecoil = 1.2,
     }
 }
 
@@ -104,7 +103,7 @@ SWEP.FiremodeAnimLock = true
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.75
+SWEP.Recoil = 0.65
 
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
@@ -120,7 +119,7 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.25 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.2 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -131,20 +130,23 @@ SWEP.RecoilKick = 1
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .35
-SWEP.RecoilMultSights = .65
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilSide = .75
+SWEP.VisualRecoilPunch = .75
+SWEP.VisualRecoilPunchSights = 1
+SWEP.VisualRecoilUp = 0
+SWEP.VisualRecoilUpSights = -.1
+SWEP.VisualRecoilSide = .2
+SWEP.VisualRecoilSideSights = -.01
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1.25
-SWEP.VisualRecoilPositionBumpUp = .15
+SWEP.VisualRecoilPositionBumpUp = 0
+SWEP.VisualRecoilPositionBumpUpSights = 1
 SWEP.VisualRecoilMultCrouch = .9
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .5
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -159,15 +161,15 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.13
+SWEP.SpreadAddMove = 0.075
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.5
+SWEP.RecoilModifierCapSights = 0.35
 
 -------------------------- HANDLING
 
@@ -419,12 +421,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -517,7 +519,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.85,
                 lhik = 0,
                 rhik = 0
             },
@@ -714,12 +716,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -853,17 +855,17 @@ SWEP.AttachmentElements = {
             {2,3},
         },
     },
-    ["foregrip_long"] = {
-        Bodygroups = {
-            {3,1},
-			{5,2},
-        },
-    },
+    -- ["foregrip_long"] = {
+        -- Bodygroups = {
+            -- {3,1},
+			-- {5,2},
+        -- },
+    -- },
     ["foregrip_m16a4"] = {
         Bodygroups = {
             {3,2},
-			{5,4},
-			{7,1},
+			-- {5,4},
+			-- {7,1},
         },
     AttPosMods = {
 	[4] = { Pos = Vector(-1.35, -5.2, 15), },
@@ -880,33 +882,56 @@ SWEP.AttachmentElements = {
             {4,3},
         },
     },
-    ["reciever_m16a4"] = {
-        Bodygroups = {
-            {6,1},
-        },
-    },
     ["reciever_m16"] = {
         Bodygroups = {
             {6,1},
         },
-        Override_IronSights = {
-			Pos = Vector(-5.42, -2, -0.2),
-			Ang = Angle(-0.1, 1.25, -1.5),
-        },
     },
-    ["reciever_m16a2"] = {
-        Bodygroups = {
-            {6,1},
-			
-        },
-    },
+    -- ["reciever_m16a4"] = {
+        -- Bodygroups = {
+            -- {6,1},
+        -- },
+    -- },
+    -- ["reciever_m16a2"] = {
+        -- Bodygroups = {
+            -- {6,1},
+        -- },
+    -- },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("foregrip_m16a4") and wep.Attachments[3].Installed then model:SetBodygroup(7,0) end
-	if wep:HasElement("foregrip_m16a4") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
-	if wep:HasElement("reciever_m16") and wep.Attachments[1].Installed then model:SetBodygroup(5,4) end
+	
+	-- If standard barrel
+	-- If scope
+	if wep.Attachments[1].Installed then
+		-- If carry handle or not
+		if wep:HasElement("reciever_m16") then
+			model:SetBodygroup(5,0)
+		else
+			model:SetBodygroup(5,1)
+		end
+	end
+
+	-- If A4 barrel
+	if wep:HasElement("foregrip_m16a4") then
+		-- If muzzle or not
+		if wep.Attachments[3].Installed then
+			model:SetBodygroup(7,0)
+		else
+			model:SetBodygroup(7,1)
+		end
+		-- If scope
+		if wep.Attachments[1].Installed then
+			-- If carry handle or not
+			if wep:HasElement("reciever_m16") then
+				model:SetBodygroup(5,4)
+			else
+				model:SetBodygroup(5,5)
+			end
+		end
+	end
+
 end
 
 SWEP.HookP_NameChange = function(self, name)

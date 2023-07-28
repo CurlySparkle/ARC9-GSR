@@ -92,13 +92,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2
+SWEP.Recoil = 5
 
 SWEP.RecoilSeed = 7763 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
-
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -130,16 +129,18 @@ SWEP.RecoilAutoControlMultHipFire = 0.9
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 10
-SWEP.VisualRecoilSide = .15
+SWEP.VisualRecoilSide = 1
+SWEP.VisualRecoilSideSights = .15
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 3
-SWEP.VisualRecoilPositionBumpUp = .25
+SWEP.VisualRecoilPositionBump = 1.5
+SWEP.VisualRecoilPositionBumpUp = .15
+SWEP.VisualRecoilPositionBumpUpSights = 1
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .65
+SWEP.VisualRecoilMultSights = 1
 
-SWEP.VisualRecoilDampingConst = 120
-SWEP.VisualRecoilSpringPunchDamping = 12
+SWEP.VisualRecoilDampingConst = 60
+SWEP.VisualRecoilSpringPunchDamping = 8
 
 -- SWEP.ViewRecoil = false
 -- SWEP.ViewRecoilUpMult = 10
@@ -424,6 +425,16 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -451,7 +462,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.1,
+                t = 0.25,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.5,
                 lhik = 0,
                 rhik = 1
             },
