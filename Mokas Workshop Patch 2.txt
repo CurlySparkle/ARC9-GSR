@@ -57,6 +57,17 @@ Weapons not listed did not have anything changed.
 [/tr][tr]
 [/tr][/table]
 
+[b][u]Pistols[/u][/b]
+[table][tr]
+	[th]Five-SeveN[/th]
+	[th]Removed the "optics" category
+	[i](This might break presets)[/i][/th]
+[/tr][tr]
+	[th]PP-Bizon[/th]
+	[th]Adjusted the recoil[/th]
+[/tr][tr]
+[/tr][/table]
+
 [b][u]SMGs[/u][/b]
 [table][tr]
 	[th]MAC-10[/th]
@@ -188,6 +199,10 @@ A few attachments had fixes applied to them.
 	Decreased damage penalty from 25% to 15%
 	Decreased recoil and reload speed penalties from 20% to 15%
 	[/th]
+[/tr][tr]
+	[th]Beretta
+	Raffica Conversion[/th]
+	[th]Now increases spread when firing by 25%[/th]
 [/tr][/table]
 
 [b][u]Attachments Overhauled[/u][/b]

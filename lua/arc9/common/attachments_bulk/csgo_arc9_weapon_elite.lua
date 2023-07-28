@@ -112,6 +112,9 @@ ATT.Firemodes = { { Mode = 3, }	}
 ATT.RunawayBurst = true
 ATT.PostBurstDelay = 0.2
 
+ATT.SpreadAddRecoil = .025
+-- ATT.RecoilModifierCapSights = 0.5
+
 ATT.Model = "models/weapons/csgo/atts/grip_kac.mdl"
 ATT.ModelBodygroups = "1"
 ATT.LHIK_Priority = 10

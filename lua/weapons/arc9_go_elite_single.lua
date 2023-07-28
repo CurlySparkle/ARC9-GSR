@@ -118,20 +118,20 @@ SWEP.Akimbo = false
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .6
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 2.5
-SWEP.VisualRecoilSide = 1
+SWEP.VisualRecoilSide = .5
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilPositionBumpUp = 0.7
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .1
+SWEP.VisualRecoilMultSights = .35
 
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringPunchDamping = 12
@@ -142,13 +142,15 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.004
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.025 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.055
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0
+
+SWEP.RecoilModifierCapSights = 0.5
 
 -------------------------- HANDLING
 
@@ -302,11 +304,11 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1_right",
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },
     },
     ["fire_sights"] = {
         Source = "shoot1_right_ads",
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },
     },
     ["reload"] = {
         Source = "reload_single_wet",
@@ -354,7 +356,7 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw_short",
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },				
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },	
     },
     ["holster"] = {
         Source = "holster",
@@ -365,6 +367,10 @@ SWEP.Animations = {
     },
     ["idle"] = {
         Source = "idle",		
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -382,7 +388,7 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,	
-        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1}, {t = 1, lhik = 1, rhik = 1}, },			
+        IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },
     },
     ["inspect"] = {
         Source = "lookat01_single",
@@ -407,7 +413,8 @@ SWEP.Animations = {
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1},
             {t = 0.1, lhik = 0, rhik = 1},
-            {t = 0.75, lhik = 1, rhik = 1},
+            {t = 0.4, lhik = 0, rhik = 1},
+            {t = 0.9, lhik = 1, rhik = 1},
         },	
     },
 }

@@ -87,13 +87,13 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.9
+SWEP.Recoil = 2.25
 
 SWEP.RecoilSeed = 1454 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -114,20 +114,20 @@ SWEP.RecoilKick = 2
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .25
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = .75
-SWEP.RecoilAutoControlMultHipFire = 0.01
+SWEP.RecoilAutoControlMultHipFire = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 10
-SWEP.VisualRecoilSide = 1.5
+SWEP.VisualRecoilSide = .75
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 0.25
-SWEP.VisualRecoilPositionBumpUp = 0.4
+SWEP.VisualRecoilPositionBump = .5
+SWEP.VisualRecoilPositionBumpUp = .75
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .15
+SWEP.VisualRecoilMultSights = .5
 
 SWEP.VisualRecoilDampingConst = 120
 SWEP.VisualRecoilSpringPunchDamping = 8
@@ -142,7 +142,7 @@ SWEP.Spread = 0
 
 SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.03
+SWEP.SpreadAddMove = 0.065
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.02
@@ -516,7 +516,7 @@ SWEP.Attachments = {
 		Bone = "v_weapon.deagle_parent",
         Category = "go_deagle_long_slide",
         Bone = "v_weapon.deagle_parent",
-        Pos = Vector(-0.025, -3.1, 8.74),
+        Pos = Vector(-0.025, -3.1, 7.5),
         Ang = Angle(90, 0, -90),
 		Scale = 0.8,
     },

@@ -85,7 +85,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -115,20 +115,20 @@ SWEP.RecoilKick = 1.25
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .6
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 4
-SWEP.VisualRecoilSide = 1.15
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = 0.25
+SWEP.VisualRecoilPositionBumpUp = 1
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .1
+SWEP.VisualRecoilMultSights = .15
 
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringPunchDamping = 12
@@ -139,13 +139,15 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.001
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.003 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.015
+SWEP.SpreadAddHipFire = 0
+
+SWEP.RecoilModifierCapSights = 0.45
 
 -------------------------- HANDLING
 
@@ -467,15 +469,15 @@ SWEP.Attachments = {
         Scale = 1,
         CorrectiveAng = Angle(1, 0.4, -0),
     },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "v_weapon.fiveSeven_parent",
-        Pos = Vector(0, -2.6, 0.8),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
-        CorrectiveAng = Angle(1, 0.4, 0),
-        Scale = 0.8,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Bone = "v_weapon.fiveSeven_parent",
+        -- Pos = Vector(0, -2.6, 0.8),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_optics_pistols", "eft_optic_small"},
+        -- CorrectiveAng = Angle(1, 0.4, 0),
+        -- Scale = 0.8,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
