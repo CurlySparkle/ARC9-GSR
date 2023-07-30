@@ -9,7 +9,7 @@ ATT.Free = false
 ATT.Category = {"csgo_rail_optic_ak"}
 ATT.ActivateElements = {"csgo_optic_riser1"}
 ATT.Model = "models/weapons/csgo/atts/rail_mount_ak2.mdl"
-ATT.Scale = 0.5
+ATT.Scale = 0.4
 ATT.ModelOffset = Vector(0, 0, 1)
 -- ATT.ModelAngleOffset = Angle(0,-90,0)
 //ATT.Folder = "RISERS"
@@ -18,7 +18,7 @@ ATT.IconOffset = Vector(0, 0, 0)
 ATT.Attachments = {
     {
         PrintName = "Optics",
-        Pos = Vector(0, -0.05, -1.45),
+        Pos = Vector(0, -0.05, -1.2),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
         Category = {"csgo_optic"},

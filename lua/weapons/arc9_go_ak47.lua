@@ -238,7 +238,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 32.5, 3.5)
+SWEP.CustomizePos = Vector(19, 30, 4)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 5)
 SWEP.CustomizeSnapshotFOV = 90
@@ -746,6 +746,9 @@ SWEP.AttachmentElements = {
             {1,2},
         },
     },
+    ["csgo_rail_optic_2_alt"] = {
+    AttPosMods = { [4] = { Pos = Vector(0.05, -4, 4.3), } }
+    },
 }
 
 SWEP.AttachmentTableOverrides = {
@@ -842,7 +845,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         --Bone = "v_weapon.glock_magazine",
-        Category = "go_ak47_barrel"
+        Category = "go_ak47_barrel",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -4.5, 16),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -865,7 +870,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(-0.2, -4.45, 4.4),
+        Pos = Vector(-0, -4.45, 4.4),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_ak",},
         ExcludeElements = {"topcover"},
@@ -918,16 +923,20 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_pistolgrip"),
         Category = "go_ak47_grip",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -0.5, 0.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.AK47_clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 1, 1),
+        Pos = Vector(0, -1, -0.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, 1, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -936,21 +945,29 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, 1, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -3.75, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -3.5, 4.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_ak47_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, -5, 8.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -958,6 +975,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, 1, 2.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
@@ -976,7 +995,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_m4a4_view"
+        Category = "go_m4a4_view",
+        Bone = "v_weapon.ak47_Parent",
+        Pos = Vector(0, 1, 2.75),
     },
 }
 

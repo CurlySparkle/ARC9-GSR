@@ -39,7 +39,7 @@ Weapons not listed did not have anything changed.
 
 [b][u]Akimbos[/u][/b]
 [table][tr]
-	[th]Dual MP9[/th]
+	[th]All weapons[/th]
 	[th]Removed the ability to equip scopes
 	[i](This might break presets)[/i][/th]
 [/tr][/table]

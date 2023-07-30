@@ -107,26 +107,56 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1
 SWEP.RecoilKickSights = 1
 
-SWEP.RecoilMultCrouch = 0.6
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultHipFire = 1
 
-SWEP.RecoilPatternDrift = 30
+SWEP.RecoilPatternDrift = 75
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.85
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilUpSights = -.25
+SWEP.VisualRecoilSide = -.35
+SWEP.VisualRecoilSideSights = .05
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1.75
+SWEP.VisualRecoilPositionBumpUp = 1
+SWEP.VisualRecoilPositionBumpUpSights = .5
+SWEP.VisualRecoilMultCrouch = .75
+SWEP.VisualRecoilMultSights = .25
+
+SWEP.VisualRecoilDampingConst = 90
+SWEP.VisualRecoilSpringPunchDamping = 6
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = .25
+-- SWEP.ViewRecoilSideMult = 1
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.08 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.02
 SWEP.SpreadAddSights = -0.1
+
+SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
@@ -257,7 +287,7 @@ SWEP.ExtraShellModels = {
 local path = "weapons/csgo/negev/"
 
 SWEP.ShootSound = "CSGO.NEGEV.Fire"
-SWEP.FirstShootSoundSilenced = "CSGO.NEGEV.Silenced_Fire_First" 
+-- SWEP.FirstShootSoundSilenced = "CSGO.NEGEV.Silenced_Fire_First" 
 SWEP.ShootSoundSilenced = "CSGO.NEGEV.Silenced_Fire"
 SWEP.DistantShootSound = "CSGO.NEGEV.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
@@ -297,10 +327,12 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-		Mult = 0.6,
+		Mult = 1,
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -347,17 +379,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.15,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -381,7 +413,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
@@ -466,12 +498,17 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
         Source = "idle",
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -482,59 +519,18 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 1.15,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 
@@ -623,6 +619,7 @@ SWEP.AttachmentElements = {
     ["foregrip"] = {
         Bodygroups = {
             {5,1},
+			{3,1},
         },
     },
     ["barrel_long"] = {
