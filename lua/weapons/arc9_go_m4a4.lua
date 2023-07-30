@@ -91,7 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.65
+SWEP.Recoil = 1.2
 
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
@@ -119,20 +119,20 @@ SWEP.RecoilKick = 1
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .35
-SWEP.RecoilMultSights = 1.5
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilUp = .5
+SWEP.VisualRecoilUpSights = -.25
+SWEP.VisualRecoilSide = .15
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = .2
+SWEP.VisualRecoilPositionBumpUp = -1
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .2
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -147,15 +147,15 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.045 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.1
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.4
+SWEP.RecoilModifierCapSights = 0.3
 
 -------------------------- HANDLING
 
@@ -334,12 +334,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -369,7 +369,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -395,12 +395,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.75,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.9,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -426,7 +426,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
@@ -459,7 +459,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.75,
                 lhik = 0,
                 rhik = 0
             },
@@ -559,12 +559,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.95,
                 lhik = 1,
                 rhik = 1
             },
@@ -590,7 +590,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.65,
                 lhik = 0,
                 rhik = 0
             },
@@ -620,7 +620,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.75,
                 lhik = 0,
                 rhik = 0
             },

@@ -122,7 +122,7 @@ SWEP.RecoilKick = 1.5
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.9
-SWEP.RecoilMultHipFire = .25
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 1
 
@@ -133,7 +133,8 @@ SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 2.5
-SWEP.VisualRecoilPositionBumpUp = .1
+SWEP.VisualRecoilPositionBumpUp = 0.5
+SWEP.VisualRecoilPositionBumpUpSights = 1.5
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = 1
 
@@ -148,7 +149,7 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.05
+SWEP.Spread = 0.07
 
 SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 

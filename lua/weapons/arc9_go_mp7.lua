@@ -100,7 +100,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.45
 
 SWEP.RecoilSeed = 65473 -- CSGO Seed Input Test
 
@@ -117,7 +117,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = .65 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -131,20 +131,22 @@ SWEP.RecoilKick = 1
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .45
-SWEP.RecoilMultSights = 2
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 4
 SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilUpSights = -.25
 SWEP.VisualRecoilSide = .55
-SWEP.VisualRecoilRoll = 1
+SWEP.VisualRecoilSideSights = .15
+SWEP.VisualRecoilRoll = 10
 
-SWEP.VisualRecoilPositionBump = 1.75
-SWEP.VisualRecoilPositionBumpUp = .15
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = .75
+SWEP.VisualRecoilPositionBumpUpSights = .25
 -- SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .15
 
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 25
@@ -167,7 +169,7 @@ SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.05
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.4
+SWEP.RecoilModifierCapSights = 0.3
 
 -------------------------- HANDLING
 
@@ -194,10 +196,10 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-5.27, -8, 0.6),
-    Ang = Angle(0.15, -0.15, -1.25),
-    Magnification = 1.25,
-    ViewModelFOV = 56,
+    Pos = Vector(-5.25, -9.886, 0.65),
+    Ang = Angle(0.2, -0.1, -1),
+    Magnification = 1.1,
+    ViewModelFOV = 70,
 }
 
 SWEP.ViewModelFOVBase = 56

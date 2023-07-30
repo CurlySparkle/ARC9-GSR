@@ -100,13 +100,13 @@ SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.2
+SWEP.RecoilRandomUp = 0.4
 SWEP.RecoilRandomSide = 0.3
 
 SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -120,20 +120,22 @@ SWEP.RecoilKick = 1
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = .5
-SWEP.RecoilMultSights = 1.75
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = -3
 SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilUpSights = .5
+SWEP.VisualRecoilSide = .5
+SWEP.VisualRecoilSideSights = .05
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 1.5
-SWEP.VisualRecoilPositionBumpUp = .25
--- SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilPositionBump = -1
+SWEP.VisualRecoilPositionBumpUp = -1
+SWEP.VisualRecoilPositionBumpUpSights = .5
+-- SWEP.VisualRecoilMultCrouch = .75
+SWEP.VisualRecoilMultSights = .25
 
 SWEP.VisualRecoilDampingConst = 120
 SWEP.VisualRecoilSpringPunchDamping = 9
@@ -148,15 +150,15 @@ SWEP.VisualRecoilSpringPunchDamping = 9
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.075 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.015
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.35
+SWEP.RecoilModifierCapSights = 0.4
 
 -------------------------- HANDLING
 
@@ -744,7 +746,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic"},
         InstalledElements = {"sight_mount"},
         ExcludeElements = {"DefGrip"},
-        CorrectiveAng = Angle(0.25, 0, 0),
+        CorrectiveAng = Angle(0.15, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -770,7 +772,7 @@ SWEP.Attachments = {
 		InstalledElements = {"DefGrip"},
         Pos = Vector(0, -5.5, 4.5),
         Ang = Angle(90, 0, 90),
-		CorrectiveAng = Angle(0, 0, 0),
+		CorrectiveAng = Angle(0.15, 0, 0),
 		Scale = 1.05,
     },
     {

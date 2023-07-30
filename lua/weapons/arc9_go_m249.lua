@@ -104,7 +104,7 @@ SWEP.RecoilRandomSide = 0.25
 SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = .35 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.75 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 SWEP.RecoilKickSights = 1
@@ -113,7 +113,7 @@ SWEP.RecoilKickSights = 1
 -- SWEP.RecoilMultHipFire = 1
 -- SWEP.RecoilAutoControlMultHipFire = 0.5
 
-SWEP.RecoilPatternDrift = 50
+SWEP.RecoilPatternDrift = 15
 
 -- SWEP.UseVisualRecoil = true
 -- SWEP.VisualRecoilPunch = 1
@@ -121,20 +121,21 @@ SWEP.RecoilPatternDrift = 50
 -- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.9
-SWEP.RecoilMultHipFire = .35
+SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilSide = 1.25
+SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilUpSights = .15
+SWEP.VisualRecoilSide = -.35
+SWEP.VisualRecoilSideSights = -.05
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = .9
-SWEP.VisualRecoilPositionBumpUp = .3
+SWEP.VisualRecoilPositionBump = 1.75
+SWEP.VisualRecoilPositionBumpUp = .5
 SWEP.VisualRecoilMultCrouch = .75
-SWEP.VisualRecoilMultSights = .01
+SWEP.VisualRecoilMultSights = .25
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -149,16 +150,16 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddSighted = 0
 SWEP.SpreadAddCrouch = -0.005
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.45
+SWEP.RecoilModifierCapSights = 0.35
 
 -------------------------- HANDLING
 
@@ -172,6 +173,8 @@ SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being a
 
 SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
+
+SWEP.Bipod = true
 
 -------------------------- MELEE
 
@@ -573,12 +576,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,2},
         },
+		Bipod = false
     },
-    ["bipod_deployed"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
+    -- ["bipod_deployed"] = {
+        -- Bodygroups = {
+            -- {3,1},
+        -- },
+    -- },
     ["go_m249_mag_9_200"] = {
         Bodygroups = {
             {0,1},
@@ -606,7 +610,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("bipod_deployed") then model:SetBodygroup(3,1) end
+    if wep:GetBipod() then model:SetBodygroup(3,1) end
 end
 
 SWEP.HookP_NameChange = function(self, name)
@@ -688,7 +692,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
-        Category = {"grip","go_m249_bipod"},
+        -- Category = {"grip","go_m249_bipod"},
+        Category = {"grip"},
         Bone = "v_weapon.m249_Parent",
 		InstalledElements = {"foregrip"},
         Pos = Vector(0, -0.73, 14.4),

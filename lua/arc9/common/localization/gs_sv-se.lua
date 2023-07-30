@@ -687,8 +687,8 @@ L["csgo_stock_tube.printname"] = "Buffer Tube - Lång"
 L["csgo_stock_tube.compactname"] = "B. Tube (L)"
 L["csgo_stock_tube.description"] = "Aluminium monteringspunkt som tillåter användningen av anpassade kolvalternativ.\nInstallerar kolvar vid deras längst utdragna punkt som förbättrar rekylkontroll."
 
-L["csgo_stock_tube_retracted.printname"] = "Buffer Tube - Short"
-L["csgo_stock_tube_retracted.compactname"] = "B. Tube (S)"
+L["csgo_stock_tube_retracted.printname"] = "Buffer Tube - Kort"
+L["csgo_stock_tube_retracted.compactname"] = "B. Tube (K)"
 L["csgo_stock_tube_retracted.description"] = "Aluminium monteringspunkt som tillåter användningen av anpassade kolvalternativ.\nInstallerar kolvar vid deras kortaste punkt som förbättrar siktehastigheten med kostnad av rekylkontroll."
 
 -- Grips

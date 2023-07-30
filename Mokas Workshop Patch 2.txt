@@ -6,6 +6,7 @@ Here's an abbrevriated version:
 	[*]All weapons now use visual recoil
 	[*]All weapons now have altered camouflage coverage*
 	[*]Adjusted a few attachment stats
+	[*]Русский язык (Russian language)
 	
 	And quite a bit more.
 	[/list][/th]
@@ -54,6 +55,19 @@ Weapons not listed did not have anything changed.
 [/tr][tr]
 	[th]Galil SAR[/th]
 	[th]Has received a completely new set of animations[/th]
+[/tr][tr]
+	[th]M4A1-S[/th]
+	[th]Fixed the front sight being incorrect on occasion[/th]
+[/tr][tr]
+[/tr][/table]
+
+[b][u]LMGs[/u][/b]
+[table][tr]
+	[th]M249[/th]
+	[th]The bipod now properly works instead of being an attachment[/th]
+[/tr][tr]
+	[th]MAG-7[/th]
+	[th]Fixed that the reload empty animation for extended mag was used even when extended mags was not equipped[/th]
 [/tr][tr]
 [/tr][/table]
 
