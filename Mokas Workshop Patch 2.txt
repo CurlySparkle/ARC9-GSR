@@ -52,10 +52,14 @@ Weapons not listed below did not have any additional changes.
 
 [b][u]Assault Rifles[/u][/b]
 [table][tr]
+	[th]AK-47[/th]
+	[th]Has received 4 default presets[/th]
+[/tr][tr]
 	[th]AUG[/th]
 	[th]Increased reload speed by 10%
-	[i](Not when using the 9mm magazines)
-	Can also unequip scopes in order to use iron sights[/i][/th]
+	[i](Not when using the 9mm magazines)[/i]
+	Can now unequip scopes in order to use iron sights
+	Has received 2 default presets[/th]
 [/tr][tr]
 	[th]FAMAS[/th]
 	[th]Increased reload speed by 5%[/th]

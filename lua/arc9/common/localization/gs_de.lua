@@ -1112,7 +1112,7 @@ L["csgo_perk_bolt.description"] = "Erhöht die Waffenladegeschwindigkeit um 25 %
 L["csgo_perk_burst.printname"] = "Verbesserter Burst"
 L["csgo_perk_burst.compactname"] = "Burst"
 -- L["csgo_perk_burst.description"] = "Ändert die Feuermodi der Waffe auf 3-Runden-Salve und halbautomatisch."
-L["csgo_perk_burst.description"] = "Changes the weapon firing mode to 3-round burst." -- TRANSLATE, THEN REMOVE THIS AND THE ABOVE LINE
+L["csgo_perk_burst.description"] = "Ändert den Schussmodus zu 3er-Salve." -- TRANSLATE, THEN REMOVE THIS AND THE ABOVE LINE
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"

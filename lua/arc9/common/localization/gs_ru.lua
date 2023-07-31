@@ -1111,8 +1111,7 @@ L["csgo_perk_bolt.description"] = "Увеличивает скорость пе�
 
 L["csgo_perk_burst.printname"] = "Улучшенная очередь"
 L["csgo_perk_burst.compactname"] = "Очередь"
--- L["csgo_perk_burst.description"] = "Изменяет режимы стрельбы оружия на очередями по 3 и полуавтоматический."
-L["csgo_perk_burst.description"] = "Changes the weapon firing mode to 3-round burst." -- TRANSLATE, THEN REMOVE THIS AND THE ABOVE LINE
+L["csgo_perk_burst.description"] = "Заменяет режим стрельбы на очереди по 3 патрона." 
 
 L["csgo_perk_cowboy.printname"] = "Ганг-Хо"
 L["csgo_perk_cowboy.compactname"] = "Ганг-Хо"

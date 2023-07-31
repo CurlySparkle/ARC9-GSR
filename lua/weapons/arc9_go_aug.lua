@@ -113,7 +113,7 @@ SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilKickCrouch = 1
 
 -- SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1.35
+SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.25
 
 SWEP.UseVisualRecoil = true
@@ -739,14 +739,14 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/stickers/v_models/aug_c.mdl",
         Category = "stickers",
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(0, -5.25, -2),
+        Pos = Vector(0, 0, -4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_d.mdl",
         Category = "stickers",
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(0, 0, -4),
+        Pos = Vector(0, 5.5, -2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
