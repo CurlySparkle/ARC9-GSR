@@ -231,7 +231,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 40, 2.5)
+SWEP.CustomizePos = Vector(22, 35, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(7, 8, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -514,12 +514,12 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_tac"},
-        Bone = "W_Pump_R",
-        Pos = Vector(-1, -0.75, 1),
-        Ang = Angle(90, 0, 90),
+        Bone = "W_Pump_L",
+        Pos = Vector(0, 0.25, 1.5),
+        Ang = Angle(90, 0, 180),
         DuplicateModels = {
             {
-                Bone = "W_Pump_L",
+                Bone = "W_Pump_R",
             }
         },
         Scale = 1,
@@ -543,6 +543,8 @@ SWEP.Attachments = {
         RejectAttachments = {
         ["csgo_perk_burst"] = true
         },
+        Bone = "W_Main2_L",
+        Pos = Vector(0, 3, 6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),

@@ -1108,7 +1108,8 @@ L["csgo_perk_bolt.description"] = "Aumenta un 25% la velocidad de recarga del ar
 
 L["csgo_perk_burst.printname"] = "Ráfaga mejorada"
 L["csgo_perk_burst.compactname"] = "Ráfaga"
-L["csgo_perk_burst.description"] = "Cambia los modos de disparo del arma a ráfaga de 3 disparos y semiautomático."
+-- L["csgo_perk_burst.description"] = "Cambia los modos de disparo del arma a ráfaga de 3 disparos y semiautomático."
+L["csgo_perk_burst.description"] = "Changes the weapon firing mode to 3-round burst." -- TRANSLATE, THEN REMOVE THIS AND THE ABOVE LINE
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"

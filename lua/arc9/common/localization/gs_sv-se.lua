@@ -1108,7 +1108,7 @@ L["csgo_perk_bolt.description"] = "Ökar vapnets cykelhastighet med 25%."
 
 L["csgo_perk_burst.printname"] = "Förbättrad Salvo"
 L["csgo_perk_burst.compactname"] = "Salvo"
-L["csgo_perk_burst.description"] = "Byter vapnets skjutlägen till 3-skottsalva och halvautomat."
+L["csgo_perk_burst.description"] = "Byter vapnets skjutläge till 3-skottsalva."
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"

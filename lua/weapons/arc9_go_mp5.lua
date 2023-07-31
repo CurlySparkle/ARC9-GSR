@@ -87,11 +87,11 @@ SWEP.Firemodes = {
     {
         Mode = 1,
     },
-    {
-        Mode = 3,
-		RunawayBurst = true,
-		PostBurstDelay = 0.2,
-    },
+    -- {
+        -- Mode = 3,
+		-- RunawayBurst = true,
+		-- PostBurstDelay = 0.2,
+    -- },
 }
 -------------------------- RECOIL
 
@@ -625,7 +625,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = {"go_perk", "go_perk_burst"}
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),

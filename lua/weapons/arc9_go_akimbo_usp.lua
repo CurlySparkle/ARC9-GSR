@@ -145,7 +145,7 @@ SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.075
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.004
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.02
 SWEP.SpreadAddSights = 0.0025
 
@@ -224,7 +224,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 35, 2.5)
+SWEP.CustomizePos = Vector(18, 35, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -410,7 +410,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		--Bone = "v_weapon.glock_magazine",
-        Category = "go_usp_slide"
+        Category = "go_usp_slide",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0, 1.65),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -426,30 +428,30 @@ SWEP.Attachments = {
         },
         Scale = 0.9,
     },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "j_slide",
-        Pos = Vector(-3.5, 0, 1.4),
-        Ang = Angle(0, 0, 0),
-        Category = {"csgo_optics_pistols",},
-        CorrectiveAng = Angle(0.25, 0.25, 0),
-        DuplicateModels = {
-            {
-                Bone = "j_slide_l",
-            }
-        },
-		Scale = 0.9,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Bone = "j_slide",
+        -- Pos = Vector(-3.5, 0, 1.4),
+        -- Ang = Angle(0, 0, 0),
+        -- Category = {"csgo_optics_pistols",},
+        -- CorrectiveAng = Angle(0.25, 0.25, 0),
+        -- DuplicateModels = {
+            -- {
+                -- Bone = "j_slide_l",
+            -- }
+        -- },
+		-- Scale = 0.9,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
-        Bone = "tag_pistol_attachments",
+        Bone = "tag_pistol_attachments_l",
         Pos = Vector(5.4, 0, 0.5),
         Ang = Angle(0, 0, 0),
         DuplicateModels = {
             {
-                Bone = "tag_pistol_attachments_l",
+                Bone = "tag_pistol_attachments",
             }
         },
 		Scale = 1,
@@ -457,15 +459,20 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
-        Category = "go_mag"
+        Category = "go_mag",
+        Pos = Vector(0, 0, -1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Category = "go_ammo",
+		Bone = "j_mag1_l",
+        Pos = Vector(0, 0, -2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0, -3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -474,6 +481,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0, -3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -481,26 +490,36 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(1.5, 0, -3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_usp_a.mdl",
         Category = "stickers",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(7, 0, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_usp_b.mdl",
         Category = "stickers",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(5, 0, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_usp_c.mdl",
         Category = "stickers",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/akimbo_usp_d.mdl",
         Category = "stickers",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(1, 0, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),

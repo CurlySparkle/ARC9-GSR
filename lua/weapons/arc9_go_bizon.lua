@@ -214,7 +214,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21, 32, 3)
+SWEP.CustomizePos = Vector(21, 30, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -646,6 +646,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["stock_none"] = {
+		AttPosMods = { [17] = { Pos = Vector(0.75, 13.25, 0.5), } },
         Bodygroups = {
             {1,2},
         },
@@ -684,6 +685,9 @@ SWEP.AttachmentElements = {
             {4,3},
 			{5,1},
         },
+    },
+    ["csgo_rail_optic_2_alt"] = {
+    AttPosMods = { [3] = { Pos = Vector(0.02, -4, 3.5), } }
     },
 }
 
@@ -756,7 +760,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.bizon_Parent",
-        Pos = Vector(0, -4.5, 3.5),
+        Pos = Vector(-0.025, -4.25, 3.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_ak",},
         CorrectiveAng = Angle(0.05, 0, 0),
@@ -785,7 +789,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.bizon_Parent",
-		--InstalledElements = {"stock_none"},
+		InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.8, -1.3),
         Ang = Angle(90, 0, -90),
 		Scale = 1.1,
@@ -808,10 +812,14 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, 2, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_bizon_view"
+        Category = "go_bizon_view",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, 2, 5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -820,6 +828,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, 2, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -827,21 +837,29 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, 2, 5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_bizon_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, -3.5, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_bizon_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, -3.5, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_bizon_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.bizon_Parent",
+        Pos = Vector(0, -3.5, 7.5),
     },
     -- {
         -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),

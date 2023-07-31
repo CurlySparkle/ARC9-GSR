@@ -54,7 +54,8 @@ Weapons not listed below did not have any additional changes.
 [table][tr]
 	[th]AUG[/th]
 	[th]Increased reload speed by 10%
-	[i](Not when using the 9mm magazines)[/i][/th]
+	[i](Not when using the 9mm magazines)
+	Can also unequip scopes in order to use iron sights[/i][/th]
 [/tr][tr]
 	[th]FAMAS[/th]
 	[th]Increased reload speed by 5%[/th]
@@ -143,10 +144,22 @@ Weapons not listed below did not have any additional changes.
 [/tr][/table]
 [b]*Also accounts for Magnifier variants
 
-A few attachments had fixes applied to them.
+[i]A few attachments has had changes applied to them:[/i]
 [table][tr]
 	[th]Attachment[/th]
-	[th]Fixes[/th]
+	[th]Changes[/th]
+[/tr][tr]
+	[th]Perk
+	Enhanced Burst[/th]
+	[th]Can now only be equipped onto a few weapons rather than all
+	Now locks the firing mode to only 3-round burst
+	Also improves rate of fire by 25%
+	Also reduced the post-shot delay from 0.4 to 0.15
+	[/th]
+	[th]Can now only be applied to:
+	M4A4
+	MP5
+	[/th]
 [/tr][tr]
 	[th]Universal
 	Magnifier with Kobra EKP-8-18[/th]

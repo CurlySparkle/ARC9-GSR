@@ -336,24 +336,26 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "tag_pistol_attachments",
-        Pos = Vector(-0.5, -0.05, 1.6),
-        Ang = Angle(0, 0, 0),
-        Category = {"csgo_optics_pistols",},
-        CorrectiveAng = Angle(0.25, 0.25, 0),
-        DuplicateModels = {
-            {
-                Bone = "tag_pistol_attachments_l",
-				Pos = Vector(-0.5, -0.05, 1.7),
-            }
-        },
-		Scale = 0.9,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Bone = "tag_pistol_attachments",
+        -- Pos = Vector(-0.5, -0.05, 1.6),
+        -- Ang = Angle(0, 0, 0),
+        -- Category = {"csgo_optics_pistols",},
+        -- CorrectiveAng = Angle(0.25, 0.25, 0),
+        -- DuplicateModels = {
+            -- {
+                -- Bone = "tag_pistol_attachments_l",
+				-- Pos = Vector(-0.5, -0.05, 1.7),
+            -- }
+        -- },
+		-- Scale = 0.9,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -362,6 +364,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(3, 0, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -369,6 +373,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "tag_pistol_attachments_l",
+        Pos = Vector(1.5, 0, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),

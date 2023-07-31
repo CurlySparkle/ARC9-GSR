@@ -126,20 +126,22 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.Free = true
 
-ATT.Category = {"go_perk"}
+ATT.Category = {"go_perk_burst"}
 ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_burst"}
 ATT.ExcludeElements = {"slide_raffica"}
 
+ATT.RunawayBurst = true
+ATT.PostBurstDelay = 0.15
+ATT.RPMMult = 1.25
+
 ATT.FiremodesOverride = {
     {
         Mode = 3,
-        RunawayBurst = true,
-        PostBurstDelay = 0.4,
     },
-    {
-        Mode = 1,
-    },
+    -- {
+        -- Mode = 1,
+    -- },
 }
 
 ARC9.LoadAttachment(ATT, "csgo_perk_burst")

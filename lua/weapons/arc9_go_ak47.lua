@@ -26,6 +26,13 @@ SWEP.Credits = {
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_ak47")
 
+SWEP.StandardPresets = {
+"[AK-74]XQAAAQDaAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3fgLCHZ9RouTKhJ52tBnmFyAGPwAE1G4LUvSEk4RMXdXubg/T3hJWicpw3ZPoezVzcr9XMKkClUpiBenzl0Y+u73FvNC8MmKhsa4/Mw",
+"[AKS-74U]XQAAAQAWAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJPRnFZ0LLc9ILxLj52ynM0mhIB3mBRal+3cWFr/QECYf3V3/oveoFm2uI+PI957FNvaBx9sfNT9k5ClD1vrQxE3B4YLBjOny4OHHgbm8UGKAtgX03/niSytaK2zbN0vX2B8BQA",
+"[RPK]XQAAAQAPAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJOxq1MYf+hahM6Quu5um7wA6ihWf7yfSLjXUKId+AQmoHcbWtMG+UNWPoObosYHg/0LYWHfyO2+p7FYPpZ4+EERoKaL/MDx4MYutkEOIms84fKmmGY2CsBMjkVrqQ=",
+"[RPK-74]XQAAAQAUAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJOxq1MYf+hahM6Quu5um7wA6ihWf7yfSLjXUKId+AQmoHcbWtMG+UNWPoObosYHg/0LYWP44cDap+CtQ9LaSIGJXdEz/43xm6nizr6uiiC+JlDUUw9onAaksV6xBCyT7NmPg==",
+}
+
 SWEP.ViewModel = "models/weapons/csgo/c_rif_ak47.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 SWEP.DefaultBodygroups = "000000"
@@ -711,7 +718,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["csgo_rail_optic_2_alt"] = {
-    AttPosMods = { [4] = { Pos = Vector(0.05, -4, 4.3), } }
+    AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3), } }
     },
 }
 

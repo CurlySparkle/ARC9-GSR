@@ -25,6 +25,11 @@ SWEP.Credits = {
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_aug")
 
+SWEP.StandardPresets = {
+"[AUG HBAR]XQAAAQAtAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkddyNyXCSVCSzz5wOz4oxDCobHaa91pKGyU7SMYjzzGAy9fg7Dj6Xh4c5sFobVuNvOa1oxcZu1gDSZ/6cgk9q76kxGbarI6+HAeTH2H+TFSjYV7uqSrZHoTbEQ53v40Hgk2DCAD8YW1acMad6nBMKxl4XEPwRMjZs9j/E+x1+9nQA",
+"[AUG Para]XQAAAQA0AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkddyNyXCSVCSzz5wOz4oxDCobHaa91pKGyacZ2rUiTXT3YpQo7ImanqtBs5oMBH4QpnYC29g13UntTA+EaBGjpO/3wf64d5GxzylNZCeZCyI6tXA+ipGTZa/xelPEiuwUDVFNuEdvfe3q5/PDJU6O4H2VU/EKNvikj4AtqcHAAA==",
+}
+
 SWEP.ViewModel = "models/weapons/csgo/c_rif_aug.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_aug.mdl"
 SWEP.DefaultBodygroups = "0000000000"
@@ -113,7 +118,8 @@ SWEP.RecoilAutoControlMultHipFire = 0.25
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 1.5
+SWEP.VisualRecoilUp = -1
+SWEP.VisualRecoilUpSights = 0.5
 SWEP.VisualRecoilSide = -.05
 
 -- Moka's testing area - do not touch nor uncomment
@@ -131,6 +137,7 @@ SWEP.VisualRecoilSide = -.05
 
 SWEP.VisualRecoilPositionBump = 1.5
 SWEP.VisualRecoilPositionBumpUp = .75
+SWEP.VisualRecoilPositionBumpUpSights = .25
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = .1
 
@@ -178,11 +185,11 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.61, -6, 0.5),
-    Ang = Angle(0, -0.4, 0),
+    Pos = Vector(-3.69, -6.188, 0.325),
+    Ang = Angle(0, 0.18, 0),
     Magnification = 1.25,
     ViewModelFOV = 56,
-	CrosshairInSights = true
+	-- CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 70
@@ -210,7 +217,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(12.5, 30, 4)
+SWEP.CustomizePos = Vector(12.5, 30, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(-1, 5, 2)
 SWEP.CustomizeNoRotate = false
@@ -641,12 +648,12 @@ SWEP.Attachments = {
         InstalledElements = {"mount"},
         CorrectiveAng = Angle(0.1, 0, 0),
         Installed = "csgo_optic_acog_2",
-        Integral = "csgo_optic_acog_2",
+        -- Integral = "csgo_optic_acog_2",
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         Bone = "v_weapon.aug_Parent",
-        Pos = Vector(0.1, 12, -2.5),
+        Pos = Vector(0.1, 9.5, -2.5),
         Ang = Angle(0, -90, 180),
         Category = "csgo_aug_barrel",
     },
@@ -680,17 +687,19 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Category = {"go_mag_aug","go_mag"},
         Bone = "v_weapon.aug_Clip",
-        Pos = Vector(0, 0 ,0),
+        Pos = Vector(0, 0 , 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.aug_Clip",
         Category = "go_ammo",
-        Pos = Vector(0, -1, -1.5),
+        Pos = Vector(0, 0, -0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, 4, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -699,6 +708,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, 4, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -706,26 +717,36 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, 2, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, -9.5, -1.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, -5.25, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, -5.25, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/aug_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.aug_Parent",
+        Pos = Vector(0, 0, -4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
