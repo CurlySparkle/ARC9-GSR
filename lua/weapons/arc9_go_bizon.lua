@@ -311,13 +311,7 @@ SWEP.Animations = {
             -- {s = "CSGO.MP5.Fire.Beef", t = 0/30},
             -- {s = "CSGO.MP5.Fire.Beefdone", t = 3/30},
 		},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_saiga"] = {
         Source = {"shoot4"},
@@ -327,13 +321,7 @@ SWEP.Animations = {
             -- {s = "CSGO.MP5.Fire.Beef", t = 0/30},
             -- {s = "CSGO.MP5.Fire.Beefdone", t = 3/30},
 		},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
@@ -342,13 +330,7 @@ SWEP.Animations = {
             -- {s = "CSGO.MP5.Fire.BeefADS", t = 0/30},
             {s = "CSGO.MP5.Fire.Beefdone", t = 3/30},
 		},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -587,40 +569,16 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -673,13 +631,7 @@ SWEP.Animations = {
     ["bash"] = {
 	    Mult = 1,
         Source = {"melee", "melee2", "melee3", "melee4"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 

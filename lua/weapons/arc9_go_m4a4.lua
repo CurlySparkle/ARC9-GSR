@@ -291,33 +291,15 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -511,13 +493,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
@@ -535,13 +511,7 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["inspect"] = {
         Source = "lookat01",

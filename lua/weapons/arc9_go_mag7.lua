@@ -310,13 +310,7 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = path .. "mag7_pump_back.wav", t = 1/30},
             {s = path .. "mag7_pump_forward.wav", t = 4/30},
@@ -391,13 +385,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = {"draw"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = path .. "mag7_draw.wav", t = 0/30},
             {s = path .. "mag7_pump_back.wav", t = 11/30},
@@ -409,13 +397,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
@@ -425,13 +407,7 @@ SWEP.Animations = {
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -442,13 +418,7 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         Time = 1,
     },
     ["inspect"] = {
@@ -550,13 +520,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3", "melee4"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 

@@ -28,6 +28,8 @@ And here's the long, more detailed version:
 [b][u]Weapon changes[/u][/b]
 All weapons have gotten visual recoil added to them. This applies to [i]all[/i] weapons. This will not be repeated for the list below.
 
+All weapons have gotten spread and recoil adjustments. This applies to [b]ALL[/b] firearms in the pack (not counting grenades, melees, etc.) and will not be listed below.
+
 This means that all weapons will have the following things added and adjusted:
 [list]
 [*]Added visual recoil, especially when hip-firing
@@ -35,12 +37,16 @@ This means that all weapons will have the following things added and adjusted:
 [*]Adjusted accuracy and spread values
 [/list]
 
-Weapons not listed did not have anything changed.
+Weapons not listed below did not have any additional changes.
 
 [b][u]Akimbos[/u][/b]
 [table][tr]
-	[th]All weapons[/th]
+	[th][i]All[/i][/th]
 	[th]Removed the ability to equip scopes
+	[i](This might break presets)[/i][/th]
+[/tr][tr]
+	[th]Dual MP9[/th]
+	[th]Removed the ability to equip the Buffer Tube stock options
 	[i](This might break presets)[/i][/th]
 [/tr][/table]
 
@@ -66,8 +72,8 @@ Weapons not listed did not have anything changed.
 	[th]M249[/th]
 	[th]The bipod now properly works instead of being an attachment[/th]
 [/tr][tr]
-	[th]MAG-7[/th]
-	[th]Fixed that the reload empty animation for extended mag was used even when extended mags was not equipped[/th]
+	[th]Negev[/th]
+	[th]Fixed that the front grip was not removed when foregrips were equipped[/th]
 [/tr][tr]
 [/tr][/table]
 

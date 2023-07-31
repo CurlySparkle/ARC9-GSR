@@ -117,7 +117,6 @@ SWEP.Akimbo = true
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -227,6 +226,9 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekPos = Vector(0, -6, -2)
+SWEP.PeekAng = Angle(0, 2.5, -2.5)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -341,8 +343,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = "weapons/csgo/movement2.wav", t = 25/30},
-			{s = "weapons/csgo/movement2.wav", t = 113/30},
+            {s = "weapons/csgo/movement2.wav", t = 60/30},
+			{s = "weapons/csgo/movement3.wav", t = 113/30},
         },
     },
     ["bash"] = {

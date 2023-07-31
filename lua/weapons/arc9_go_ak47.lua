@@ -300,23 +300,11 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -584,26 +572,14 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle"] = {
         Source = "idle",
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -611,13 +587,7 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -651,19 +621,13 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = "weapons/csgo/movement2.wav", t = 92/30},
-            {s = "weapons/csgo/movement3.wav", t = 116/30},
+            {s = "weapons/csgo/movement2.wav", t = 70/30},
+            {s = "weapons/csgo/movement3.wav", t = 110/30},
         },
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
 	},
 }
 

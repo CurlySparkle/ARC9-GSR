@@ -292,13 +292,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["cycle"] = {
         Source = {"pump"},
@@ -414,26 +408,14 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle"] = {
         Source = "idle",
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -443,13 +425,7 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -490,13 +466,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3", "melee4"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 

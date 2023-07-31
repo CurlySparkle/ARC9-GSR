@@ -105,31 +105,59 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0.75 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 15 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.75 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
-SWEP.RecoilMultSights = 0.5
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultSights = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilUp = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.85
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilSide = -.5
+SWEP.VisualRecoilSideSights = .15
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1.5
+SWEP.VisualRecoilPositionBumpUp = .15
+SWEP.VisualRecoilPositionBumpUpSights = 1
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = 1
+
+SWEP.VisualRecoilDampingConst = 60
+SWEP.VisualRecoilSpringPunchDamping = 8
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = 10
+-- SWEP.ViewRecoilSideMult = -5
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.03
+SWEP.Spread = 0.05
 
 SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 SWEP.SpreadAddSights = 0
-SWEP.SpreadAddMove = 0.07
+SWEP.SpreadAddMove = 0.04
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.075
+SWEP.SpreadAddHipFire = 0.015
 SWEP.SpreadMultHipFire = 1
 SWEP.SpreadAddCrouch = -0.004
 SWEP.SpreadAddSightsMove = -0.1
@@ -168,6 +196,19 @@ SWEP.IronSights = {
     ViewModelFOV = 56,
 }
 
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["csgo_rail_optic_4"] then
+        return {
+			Pos = Vector(-4.28, -7, 2.4),
+			Ang = Angle(0, 0, 0),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
+end
+
 SWEP.ViewModelFOVBase = 56
 
 SWEP.SprintPos = Vector(0, -1, 0)
@@ -193,7 +234,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22.5, 30, 4)
+SWEP.CustomizePos = Vector(22.5, 30, 6)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(1, 8, 3)
 
@@ -269,19 +310,15 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "shoot1",
 		Mult = 0.8,
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["cycle"] = {
         Source = "pump",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = path .. "nova_pump.wav", t = 5/30},
         },
     },
-    -- ["fire_sights"] = {
-        -- Source = "shoot1_ads",
-        -- EventTable = {
-            -- {s = path .. "nova_pump.wav", t = 8/30},
-        -- },
-    -- },
     ["reload_start"] = {
         Source = "reload_start",
         IKTimeLine = {
@@ -387,12 +424,17 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
         Source = "idle",
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -433,8 +475,8 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = "weapons/csgo/movement2.wav", t = 44/30},
-            {s = "weapons/csgo/movement3.wav", t = 117/30},
+            {s = "weapons/csgo/movement2.wav", t = 55/30},
+            {s = "weapons/csgo/movement3.wav", t = 150/30},
         },
     },
     ["bash"] = {
@@ -551,9 +593,10 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.NOVA_PARENT",
-        Pos = Vector(0, -1.5, 8),
+        Pos = Vector(0, -1.75, 7.8),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic", "csgo_rail_optic_custom"},
+        Category = {"csgo_rail_optic_alt"},
+        -- Category = {"csgo_rail_optic_custom"},
         CorrectiveAng = Angle(0, 0, 0),
 		-- MergeSlots = {2},
 		-- Hidden = true,
@@ -596,13 +639,13 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_tube"),
         Bone = "v_weapon.NOVA_PARENT",
         Category = "go_nova_mag",
-        Icon_Offset = Vector(0, -0.5, 24),
+        Pos = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.NOVA_LOADER",
         Category = "go_ammo_sg",
-        Icon_Offset = Vector(0, 0.5, 2),
+        Pos = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
@@ -614,11 +657,15 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, 2.5, 9),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_nova_view"
+        Category = "go_nova_view",
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, 2.5, 7.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -627,6 +674,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, 2.5, 7.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -634,26 +683,36 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, 2.5, 9),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, -2, 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, 1, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, -1, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/shot_nova_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.NOVA_PARENT",
+        Pos = Vector(0, -1, 10),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),

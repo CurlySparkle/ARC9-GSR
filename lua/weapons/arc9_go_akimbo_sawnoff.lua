@@ -124,7 +124,6 @@ SWEP.RecoilKick = 1
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.ViewRecoil = false
 SWEP.ViewRecoilUpMult = 1
@@ -237,6 +236,9 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(7, 8, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekPos = Vector(0, -6, -2)
+SWEP.PeekAng = Angle(0, 2.5, -2.5)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)

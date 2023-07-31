@@ -299,13 +299,7 @@ end
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.GALIL.Fire_Beef", t = 0/30},
             {s = "CSGO.GALILAR.Fire_Mech", t = 0/30},
@@ -313,13 +307,7 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.GALIL.Fire_Beef_ADS", t = 0/30},
             {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0/30},
@@ -455,13 +443,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             -- {s = path .. "galil_draw.wav", t = 0/30},
             {s = "CSGO.Item.Movement", t = 0/30},
@@ -477,13 +459,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
@@ -493,13 +469,7 @@ SWEP.Animations = {
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -511,13 +481,7 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         Time = 0.85,
     },
     ["inspect"] = {
@@ -554,13 +518,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 

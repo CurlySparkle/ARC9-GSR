@@ -318,33 +318,15 @@ SWEP.Animations = {
     },
     ["enter_sights"] = {
         Source = "idle",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -445,13 +427,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -463,13 +439,7 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
         Time = 1,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -612,34 +582,16 @@ SWEP.Animations = {
     ["enter_sights_silenced"] = {
         Source = "idle_silenced",
         HideBoneIndex = 1,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_silenced"] = {
         Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
         HideBoneIndex = 1,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights_silenced"] = {
         Source = "shoot1_silenced_ads",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
@@ -743,13 +695,7 @@ SWEP.Animations = {
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint_silenced"] = {
         Source = "sprint_silenced",
@@ -764,13 +710,7 @@ SWEP.Animations = {
         Source = "sprint_in_silenced",
         Time = 1,
         HideBoneIndex = 1,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["inspect_silenced"] = {
         Source = "lookat01_silenced",
