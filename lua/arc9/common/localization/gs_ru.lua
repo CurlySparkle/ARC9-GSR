@@ -118,6 +118,7 @@ L["csgo_weapon_g1sg3"] = "G3SG1"
 L["csgo_weapon_g1sg3_g3sg1sd"] = "G3SG1SD"
 L["csgo_weapon_g1sg3_g3a3"] = "G3A3"
 L["csgo_weapon_g1sg3_g3ka4"] = "G3KA4"
+L["csgo_weapon_g1sg3_smg"] = "MP3"
 
 L["csgo_weapon_galil"] = "Лёгкий автомат «Галиль»"
 L["csgo_weapon_galilar"] = "Автомат «Галиль»"
@@ -1472,15 +1473,15 @@ L["csgo_g3_mag_10.compactname"] = "10-патр."
 L["csgo_g3_mag_10.description"] = "Уменьшает ёмкость магазина и улучшает скорость перезарядки."
 
 L["csgo_g3_mag_30_auto.printname"] = "30-зарядный магазин - Автоматический"
-L["csgo_g3_mag_30_auto.compactname"] = "[А] 30-патр."
+L["csgo_g3_mag_30_auto.compactname"] = "30-патр. [А]"
 L["csgo_g3_mag_30_auto.description"] = "Изменяет режим стрельбы на полностью автоматический.\nУвеличивает ёмкость магазина и скорость стрельбы ценой резкого снижения урона."
 
 L["csgo_g3_mag_20_auto.printname"] = "20-зарядный магазин - Автоматический"
-L["csgo_g3_mag_20_auto.compactname"] = "[А] 20-патр."
+L["csgo_g3_mag_20_auto.compactname"] = "20-патр. [А]"
 L["csgo_g3_mag_20_auto.description"] = "Изменяет режим стрельбы на полностью автоматический.\nУвеличивает скорость стрельбы ценой урона."
 
 L["csgo_g3_mag_10_auto.printname"] = "10-зарядный магазин - Автоматический"
-L["csgo_g3_mag_10_auto.compactname"] = "[А] 10-патр."
+L["csgo_g3_mag_10_auto.compactname"] = "10-патр. [А]"
 L["csgo_g3_mag_10_auto.description"] = "Изменяет режим стрельбы на полностью автоматический.\nУменьшает ёмкость магазина и повышая скорость перезарядки."
 
 L["csgo_g3_stock_collapsed.printname"] = "Складной приклад"

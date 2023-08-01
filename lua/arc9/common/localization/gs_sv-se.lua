@@ -118,6 +118,7 @@ L["csgo_weapon_g1sg3"] = "G3SG1"
 L["csgo_weapon_g1sg3_g3sg1sd"] = "G3SG1SD"
 L["csgo_weapon_g1sg3_g3a3"] = "G3A3"
 L["csgo_weapon_g1sg3_g3ka4"] = "G3KA4"
+L["csgo_weapon_g1sg3_smg"] = "MP3"
 
 L["csgo_weapon_galil"] = "Galil SAR"
 L["csgo_weapon_galilar"] = "Galil AR"
@@ -1472,15 +1473,15 @@ L["csgo_g3_mag_10.compactname"] = "10S"
 L["csgo_g3_mag_10.description"] = "Sänker magasinkapaciteten med förmån av förbättrad omladdning hastighet."
 
 L["csgo_g3_mag_30_auto.printname"] = "30-Skottsmagasin - Automateld"
-L["csgo_g3_mag_30_auto.compactname"] = "[A] 30S"
+L["csgo_g3_mag_30_auto.compactname"] = "30S [A]"
 L["csgo_g3_mag_30_auto.description"] = "Växlar skjutläget till helautomatisk.\nÖkar magasinkapaciteten och eldhastigheten med kostnad på drastiskt sänkt skada."
 
 L["csgo_g3_mag_20_auto.printname"] = "20-Skottsmagasin - Automateld"
-L["csgo_g3_mag_20_auto.compactname"] = "[A] 20R"
+L["csgo_g3_mag_20_auto.compactname"] = "20S [A]"
 L["csgo_g3_mag_20_auto.description"] = "Växlar skjutläget till helautomatisk.\nÖkar eldhastigheten med kostnad på skada."
 
 L["csgo_g3_mag_10_auto.printname"] = "10-Skottsmagasin - Automateld"
-L["csgo_g3_mag_10_auto.compactname"] = "[A] 10R"
+L["csgo_g3_mag_10_auto.compactname"] = "10S [A]"
 L["csgo_g3_mag_10_auto.description"] = "Växlar skjutläget till helautomatisk.\nSänker magasinkapaciteten med förmån av förbättrad omladdning hastighet."
 
 L["csgo_g3_stock_collapsed.printname"] = "Hopfällbar Kolv"

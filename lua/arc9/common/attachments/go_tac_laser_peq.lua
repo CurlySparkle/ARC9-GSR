@@ -11,6 +11,7 @@ ATT.Category = {"csgo_tac"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
 ATT.Folder = "TACTICAL"
+ATT.ActivateElements = {"laser_peq"}
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpreadMult = 0.9

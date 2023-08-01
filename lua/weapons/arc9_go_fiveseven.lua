@@ -122,11 +122,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilUpSights = 1
 SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
 SWEP.VisualRecoilPositionBumpUp = 1
+SWEP.VisualRecoilPositionBumpUpSights = -0.75
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = .15
 
@@ -205,7 +207,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 3)
+SWEP.CustomizePos = Vector(18, 25, 3.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -396,6 +398,12 @@ SWEP.AttachmentElements = {
         },
     AttPosMods = { [2] = { Pos = Vector(-0.025, -2.2, 6.53), } }	
     },
+    ["laser_peq"] = {
+    AttPosMods = { [16] = { Pos = Vector(1, -0, 0), } }	
+    },
+    ["top_rail"] = {
+    AttPosMods = { [16] = { Pos = Vector(0.4, -0.6, 1), } }	
+    },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -448,8 +456,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
         DefaultAttName = "Standard",
-        --Bone = "v_weapon.glock_magazine",
-        Category = "go_fiveseven_slide"
+        Category = "go_fiveseven_slide",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, -2.3, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -466,6 +475,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.3, 3.7),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic_pistols",},
+		InstalledElements = {"top_rail"},
         Scale = 1,
         CorrectiveAng = Angle(1, 0.4, -0),
     },
@@ -491,19 +501,21 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.fiveSeven_magazine",
         Category = "go_mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, -3, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.fiveSeven_magazine",
         Category = "go_ammo",
-        Pos = Vector(0, 1, 0),
+        Pos = Vector(0, -1.5, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, 2.5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -512,6 +524,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
         CosmeticOnly = true,
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, 2.5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -519,37 +533,49 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, 2.5, 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_fiveseven_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, -1.75, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_fiveseven_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, -1.9, 2.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_fiveseven_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, -2.5, 5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_fiveseven_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, 1, -0.6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.fiveSeven_slide", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(0.6, 0, 5), -- offset that the attachment will be relative to the bone
+        Pos = Vector(0.6, 0, 4.5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_pistols_view"
+        Category = "go_pistols_view",
+        Bone = "v_weapon.fiveSeven_parent",
+        Pos = Vector(0, 2.5, 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),

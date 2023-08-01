@@ -42,12 +42,10 @@ Weapons not listed below did not have any additional changes.
 [b][u]Akimbos[/u][/b]
 [table][tr]
 	[th][i]All[/i][/th]
-	[th]Removed the ability to equip scopes
-	[i](This might break presets)[/i][/th]
+	[th]Removed the ability to equip scopes*[/th]
 [/tr][tr]
 	[th]Dual MP9[/th]
-	[th]Removed the ability to equip the Buffer Tube stock options
-	[i](This might break presets)[/i][/th]
+	[th]Removed the ability to equip the Buffer Tube stock options*[/th]
 [/tr][/table]
 
 [b][u]Assault Rifles[/u][/b]
@@ -57,7 +55,7 @@ Weapons not listed below did not have any additional changes.
 [/tr][tr]
 	[th]AUG[/th]
 	[th]Increased reload speed by 10%
-	[i](Not when using the 9mm magazines)[/i]
+	[i]∟Not when using the 9mm magazines[/i]
 	Can now unequip scopes in order to use iron sights
 	Has received 2 default presets[/th]
 [/tr][tr]
@@ -84,9 +82,12 @@ Weapons not listed below did not have any additional changes.
 
 [b][u]Pistols[/u][/b]
 [table][tr]
+	[th]Desert Eagle[/th]
+	[th]Removed the "top" category*
+	Can also no longer equip muzzle attachments if either Compensator is equipped[/th]
+[/tr][tr]
 	[th]Five-SeveN[/th]
-	[th]Removed the "optics" category
-	[i](This might break presets)[/i][/th]
+	[th]Removed the "optics" category*[/th]
 [/tr][tr]
 	[th]PP-Bizon[/th]
 	[th]Adjusted the recoil[/th]
@@ -112,6 +113,8 @@ Weapons not listed below did not have any additional changes.
 	[th]Fixed that the reload empty animation for extended mag was used even when extended mags was not equipped[/th]
 [/tr][tr]
 [/tr][/table]
+
+[b]*[i]This might break presets[/i][/b]
 
 [b][u]Attachment Fixes and Adjustments[/u][/b]
 [i]Added camo support to the following attachments:[/i]

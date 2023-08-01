@@ -193,7 +193,7 @@ SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.04
 SWEP.SpreadAddSights = 0.015
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.RecoilModifierCapSights = 0.4
 
 -------------------------- HANDLING
 
@@ -254,7 +254,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 35, 4)
+SWEP.CustomizePos = Vector(24, 35, 6)
 
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, 7, 2)
@@ -651,9 +651,9 @@ SWEP.AttachmentElements = {
 			{7,2},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.315, 17.8), },
-	[5] = { Pos = Vector(-0.8, -3.5, 13), },
-	[4] = { Pos = Vector(0, -2, 11), },
+	[4] = { Pos = Vector(0.17, -3.315, 17.8), },
+	[6] = { Pos = Vector(-0.8, -3.5, 13), },
+	[5] = { Pos = Vector(0, -2, 11), },
 	}
     },
     ["barrel_med"] = {
@@ -663,8 +663,8 @@ SWEP.AttachmentElements = {
 			{7,1},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.3, 20.85), },
-	[5] = { Pos = Vector(-0.8, -3.5, 15), },
+	[4] = { Pos = Vector(0.17, -3.3, 20.85), },
+	[6] = { Pos = Vector(-0.8, -3.5, 15), },
 	}	
     },
     ["barrel_med_alt"] = {
@@ -675,9 +675,9 @@ SWEP.AttachmentElements = {
 			{8,1},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.3, 21), },
-	[4] = { Pos = Vector(0, -2, 12), },
-	[5] = { Pos = Vector(-0.8, -3.5, 15), },
+	[4] = { Pos = Vector(0.17, -3.3, 21), },
+	[5] = { Pos = Vector(0, -2, 12), },
+	[6] = { Pos = Vector(-0.8, -3.5, 15), },
 	}	
     },
     ["barrel_short"] = {
@@ -686,8 +686,8 @@ SWEP.AttachmentElements = {
 			{6,2},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.3, 19), },
-	[5] = { Pos = Vector(-0.8, -3.5, 15), },
+	[4] = { Pos = Vector(0.17, -3.3, 19), },
+	[6] = { Pos = Vector(-0.8, -3.5, 15), },
 	}
     },
     ["barrel_short_alt"] = {
@@ -696,8 +696,8 @@ SWEP.AttachmentElements = {
 			{6,7},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.32, 17.1), },
-	[5] = { Pos = Vector(-0.8, -3.5, 13), },
+	[4] = { Pos = Vector(0.17, -3.32, 17.1), },
+	[6] = { Pos = Vector(-0.8, -3.5, 13), },
 	}
     },
     ["barrel_sd"] = {
@@ -720,7 +720,7 @@ SWEP.AttachmentElements = {
 			{6,4},
 			{7,1},
         },
-    AttPosMods = { [3] = { Pos = Vector(0.17, -3.3, 22.1), } }	
+    AttPosMods = { [4] = { Pos = Vector(0.17, -3.3, 22.1), } }	
     },
     ["barrel_g3a3_alt"] = {
         Bodygroups = {
@@ -729,8 +729,8 @@ SWEP.AttachmentElements = {
 			{7,1},
         },
 	AttPosMods = { 
-	[3] = { Pos = Vector(0.17, -3.3, 16.3), },
-	[5] = { Pos = Vector(-0.8, -3.5, 12), },
+	[4] = { Pos = Vector(0.17, -3.3, 16.3), },
+	[6] = { Pos = Vector(-0.8, -3.5, 12), },
 	}
     },
     ["rearsight"] = {
@@ -797,7 +797,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,5) end	
-	if wep.Attachments[3].Installed then model:SetBodygroup(6,9) end
+	if wep.Attachments[4].Installed then model:SetBodygroup(6,9) end
 end
 
 -- SWEP.Hook_GetAttPos = function(self, data, wep)
@@ -815,12 +815,16 @@ SWEP.HookP_NameChange = function(self, name)
 		name = ARC9:GetPhrase("csgo_weapon_g1sg3_g3sg1sd")
 	end
 	
-	if att["csgo_g3_barrel_g3a3"] or att["csgo_g3_barrel_g3a3_smg"] then
+	if att["csgo_g3_barrel_g3a3"] then
 		name = ARC9:GetPhrase("csgo_weapon_g1sg3_g3a3")
 	end
 
-	if att["csgo_g3_barrel_medium"] or att["csgo_g3_barrel_medium_smg"] or att["csgo_g3_barrel_short"] or att["csgo_g3_barrel_short_smg"] then
+	if att["csgo_g3_barrel_medium"] or att["csgo_g3_barrel_short"] then
 		name = ARC9:GetPhrase("csgo_weapon_g1sg3_g3ka4")
+	end
+
+	if att["csgo_g3_mag_30_waf"] or att["csgo_g3_mag_40_mp9"] then
+		name = ARC9:GetPhrase("csgo_weapon_g1sg3_smg")
 	end
 
 -- For Skins
@@ -874,11 +878,21 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
-		--Bone = "v_weapon.glock_magazine",
 		InstalledElements = {"barrel_1"},
 		ExcludeElements = {"mag_g4_barrel"},
-        Category = "go_g3_barrel"	
-    },  
+        Category = {"go_g3_barrel"},
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -4.5, 9),
+    },
+    {
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
+		InstalledElements = {"barrel_2","mag_g4_barrel"},
+		ExcludeElements = {"barrel_1"},
+		RequireElements = {"mag_g4_barrel"},
+        Category = "go_g3_barrel_smg2",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -4.5, 9),
+    },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
@@ -919,17 +933,21 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.g3sg1_Clip",
-        Category = "go_mag_g3"
+        Category = "go_mag_g3",
+        Pos = Vector(0, -2, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.g3sg1_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 1, 1),
+        Icon_Offset = Vector(0, 0, 0),
+        Pos = Vector(0, 0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, 3, 4.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -938,6 +956,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, 3, 4.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -945,38 +965,42 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, 3, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_g3_view"
-    },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
-		--Bone = "v_weapon.glock_magazine",
-		InstalledElements = {"barrel_2","mag_g4_barrel"},
-		ExcludeElements = {"barrel_1"},
-		RequireElements = {"mag_g4_barrel"},
-        Category = "go_g3_barrel_smg2"	
+        Category = "go_g3_view",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, 3, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/g3sg1_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -1.5, 0.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/g3sg1_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -1.85, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/g3sg1_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -4.5, 5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/g3sg1_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.g3sg1_Parent",
+        Pos = Vector(0, -4.5, 7),
     },	
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),

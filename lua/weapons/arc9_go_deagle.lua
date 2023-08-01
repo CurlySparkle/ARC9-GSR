@@ -205,7 +205,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 3)
+SWEP.CustomizePos = Vector(19, 25, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -524,26 +524,28 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
+		ExcludeElements = {"deagle_slide_long", "deagle_slide_long_long"},
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(-0.025, -3.1, 8.74),
         Ang = Angle(90, 0, -90),
 		Scale = 0.8,
     },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_top"),
-        Bone = "v_weapon.deagle_parent",
-        Pos = Vector(0, -0.9, 5),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic_pistols",},
-        CorrectiveAng = Angle(1, 0.4, 0),
-		Scale = 1,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_top"),
+        -- Bone = "v_weapon.deagle_parent",
+        -- Pos = Vector(0, -0.9, 5),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_rail_optic_pistols",},
+        -- CorrectiveAng = Angle(1, 0.4, 0),
+		-- Scale = 1,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(0, -3.4, 5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols","eft_optic_small"},
+        Category = {"csgo_optics_pistols"},
+        -- Category = {"csgo_optics_pistols","eft_optic_small"},
 		ExcludeElements = {"csgo_rail_optic_pistols"},
         CorrectiveAng = Angle(1, 0.4, 0),
 		Scale = 1,
@@ -561,19 +563,21 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.deagle_clip",
         Category = "go_deagle_mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, -2.5, 0.25),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.deagle_clip",
         Category = "go_ammo",
-        Pos = Vector(0, 1, 0),
+        Pos = Vector(0, -1, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 2.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -582,6 +586,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 2.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -589,26 +595,36 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 2.5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -0.75, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -2.8, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -2.8, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_deagle_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -2.8, 6.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
@@ -619,14 +635,18 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_pistols_view3"
+        Category = "go_pistols_view3",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 2.5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
-        Bone = "v_weapon.stattrack",
-        Pos = Vector(0.24, 0, 0.17),
-        Ang = Angle(0, -90, 0),
+        -- Bone = "v_weapon.stattrack",
+        Bone = "v_weapon.deagle_slide",
+        -- Pos = Vector(0.24, 0, 0.17),
+        Pos = Vector(0.55, 0.3, 3),
+        Ang = Angle(90, -90, 0),
 		CosmeticOnly = true,
     },
 }

@@ -118,6 +118,7 @@ L["csgo_weapon_g1sg3"] = "G3SG1"
 L["csgo_weapon_g1sg3_g3sg1sd"] = "G3SG1SD"
 L["csgo_weapon_g1sg3_g3a3"] = "G3A3"
 L["csgo_weapon_g1sg3_g3ka4"] = "G3KA4"
+L["csgo_weapon_g1sg3_smg"] = "MP3"
 
 L["csgo_weapon_galil"] = "Galil SAR"
 L["csgo_weapon_galilar"] = "Galil AR"
@@ -1108,8 +1109,7 @@ L["csgo_perk_bolt.description"] = "Aumenta un 25% la velocidad de recarga del ar
 
 L["csgo_perk_burst.printname"] = "Ráfaga mejorada"
 L["csgo_perk_burst.compactname"] = "Ráfaga"
--- L["csgo_perk_burst.description"] = "Cambia los modos de disparo del arma a ráfaga de 3 disparos y semiautomático."
-L["csgo_perk_burst.description"] = "Changes the weapon firing mode to 3-round burst." -- TRANSLATE, THEN REMOVE THIS AND THE ABOVE LINE
+L["csgo_perk_burst.description"] = "Cambia el modo de disparo del arma a ráfaga de 3 disparos." 
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
@@ -1470,15 +1470,15 @@ L["csgo_g3_mag_10.compactname"] = "10R"
 L["csgo_g3_mag_10.description"] = "Disminuye la capacidad del cargador con el beneficio de una mayor velocidad de recarga."
 
 L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos - Automático"
-L["csgo_g3_mag_30_auto.compactname"] = "[A] 30R"
+L["csgo_g3_mag_30_auto.compactname"] = "30R [A]"
 L["csgo_g3_mag_30_auto.description"] = "Cambia el modo de disparo a totalmente automático.\nAumenta la capacidad del cargador y la velocidad de disparo a costa de reducir drásticamente el daño.."
 
 L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos - Automático"
-L["csgo_g3_mag_20_auto.compactname"] = "[A] 20R"
+L["csgo_g3_mag_20_auto.compactname"] = "20R [A]"
 L["csgo_g3_mag_20_auto.description"] = "Cambia el modo de disparo a totalmente automático.\nAumenta la capacidad del cargador y la velocidad de disparo a costa de reducir drásticamente el daño."
 
 L["csgo_g3_mag_10_auto.printname"] = "10-Round Magazine - Automático"
-L["csgo_g3_mag_10_auto.compactname"] = "[A] 10R"
+L["csgo_g3_mag_10_auto.compactname"] = "10R [A]"
 L["csgo_g3_mag_10_auto.description"] = "Cambia el modo de disparo a totalmente automático.\nDisminuye la capacidad del cargador con el beneficio de mejorar la velocidad de recarga."
 
 L["csgo_g3_stock_collapsed.printname"] = "Culata plegable"

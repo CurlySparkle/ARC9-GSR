@@ -96,7 +96,7 @@ ATT.AutoStats = true
 
 ATT.Category = {"go_elite_s"}
 ATT.ActivateElements = {"slide_raffica"}
-ATT.ExcludeElements = {"perk_burst"}
+-- ATT.ExcludeElements = {"muzzle"}
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1

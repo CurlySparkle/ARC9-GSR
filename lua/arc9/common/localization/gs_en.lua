@@ -118,6 +118,7 @@ L["csgo_weapon_g1sg3"] = "G3SG1"
 L["csgo_weapon_g1sg3_g3sg1sd"] = "G3SG1SD"
 L["csgo_weapon_g1sg3_g3a3"] = "G3A3"
 L["csgo_weapon_g1sg3_g3ka4"] = "G3KA4"
+L["csgo_weapon_g1sg3_smg"] = "MP3"
 
 L["csgo_weapon_galil"] = "Galil SAR"
 L["csgo_weapon_galilar"] = "Galil AR"
@@ -1472,15 +1473,15 @@ L["csgo_g3_mag_10.compactname"] = "10R"
 L["csgo_g3_mag_10.description"] = "Decreases the magazine capacity with the benefit of improved reload speed."
 
 L["csgo_g3_mag_30_auto.printname"] = "30-Round Magazine - Automatic"
-L["csgo_g3_mag_30_auto.compactname"] = "[A] 30R"
+L["csgo_g3_mag_30_auto.compactname"] = "30R [A]"
 L["csgo_g3_mag_30_auto.description"] = "Changes the firing mode to fully automatic.\nIncreases the magazine capacity and firing speed at the cost of drastically reduced damage."
 
 L["csgo_g3_mag_20_auto.printname"] = "20-Round Magazine - Automatic"
-L["csgo_g3_mag_20_auto.compactname"] = "[A] 20R"
+L["csgo_g3_mag_20_auto.compactname"] = "20R [A]"
 L["csgo_g3_mag_20_auto.description"] = "Changes the firing mode to fully automatic.\nIncreases the firing speed at the cost of damage."
 
 L["csgo_g3_mag_10_auto.printname"] = "10-Round Magazine - Automatic"
-L["csgo_g3_mag_10_auto.compactname"] = "[A] 10R"
+L["csgo_g3_mag_10_auto.compactname"] = "10R [A]"
 L["csgo_g3_mag_10_auto.description"] = "Changes the firing mode to fully automatic.\nDecreases the magazine capacity with the benefit of improved reload speed."
 
 L["csgo_g3_stock_collapsed.printname"] = "Collapsible Stock"

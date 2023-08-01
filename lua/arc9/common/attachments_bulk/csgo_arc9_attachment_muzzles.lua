@@ -15,6 +15,8 @@ ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
 ATT.Folder = "Muzzles"
 
+-- ATT.ExcludeElements = {"slide_raffica"}
+
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AKM.mdl"
 
 ATT.ShootVolumeMult = 1.15

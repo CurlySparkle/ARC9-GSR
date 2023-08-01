@@ -220,11 +220,14 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 30, 2.5)
+SWEP.CustomizePos = Vector(18, 32.5, 4.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, -5, 3)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekPos = Vector(0, -6, -2)
+SWEP.PeekAng = Angle(0, 2.5, -2.5)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)
@@ -501,7 +504,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
-        Category = "go_elite_slide"
+        Category = "go_elite_slide",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(-0.025, -3.325, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
@@ -521,7 +526,8 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
-		Bone = "v_weapon.m9a1_L_parent",
+		Bone = "v_weapon.m9a1_L_magazine",
+        Pos = Vector(0, -3, -0.5),
         DuplicateModels = {
             {
                 Bone = "v_weapon.m9a1_R_parent",
@@ -532,10 +538,14 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Category = "go_ammo",
+		Bone = "v_weapon.m9a1_L_magazine",
+        Pos = Vector(0, -1.5, -0.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, 2.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -544,6 +554,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, 2.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -551,26 +563,36 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, 2.5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, -5, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, -5, 5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, -5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_elite_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m9a1_L_parent",
+        Pos = Vector(0, -5, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
