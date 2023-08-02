@@ -25,6 +25,12 @@ SWEP.Credits = {
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_g1sg3")
 
+SWEP.StandardPresets = {
+"[G3A3]XQAAAQDvAAAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs5EtmNLxnvtA6rZ6ivSJrQpQmLXFcLWoGVlnCIzOkUXrmJvHTuLbPNU9iHqAsMX7+hByWioxqQ/UQg+bSmAxK84wYGZxw+tjw5O0p/KmGDdrvWhDwNK/V/i566wg69ugo4E/vE3b/4=",
+"[G3KA4]XQAAAQAVAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAjLdjsPoVJtsmd5N6AUrBb0Q8T82dA5mdeiR5As4LRnZWGLUYxv/2sj/HOK6P6uuKhlmzHK06newGgiUUKku7siUcx8s5c2Bh8lgqNxw3VNxDV8B0Ox9CMcdpUwUki++edVJONH2XcapV4v0TiScConhRTgA=",
+"[MP3]XQAAAQA6AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsZg6Dr12trs3UfUOXZ1ica+IjHobLLcJ1sLmGCPXasYsGkAiKqrnpnM7pILDjezqWbqovs6EuMKJHbSWqIyLT7PnbPaGt4ssD8cuA53DnfXGidNAxxEsTvyC9pArYQ+R+wFN5THHgbYm1gTrkCWPd1NQVBQLs5wA=",
+}
+
 SWEP.ViewModel = "models/weapons/csgo/c_snip_g3sg1.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
 

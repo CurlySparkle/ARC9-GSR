@@ -10,7 +10,7 @@ SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_bizon")
 
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_smg")
 SWEP.Trivia = {
-    [ARC9:GetPhrase("csgo_trivia_country")] = "Russia",
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_russia"),
     [ARC9:GetPhrase("csgo_trivia_caliber")] = "9×19mm Parabellum",
     [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "2.1 kg",
     [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "115 gr",
@@ -24,6 +24,11 @@ SWEP.Credits = {
 }
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_bizon")
+
+
+SWEP.StandardPresets = {
+"[PP-Vityaz]XQAAAQDBAAAAAAAAAAA9iIIiM7hMNz0dhJSTKnDUq3JVfKHGuiPykw4wgYkPbV/WnM9paUkwTqRxf0J9NRYz4nX6IMNcyMOmZH7ZlFIMIOJLCxDhfFySY5InxG+bPS8v5iSFE5xTPjojIHJTGzH39UPfza5dVnw="
+}
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"

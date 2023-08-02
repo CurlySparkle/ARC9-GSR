@@ -25,6 +25,10 @@ SWEP.Credits = {
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_m4a1")
 
+SWEP.StandardPresets = {
+"[M16A3-S]XQAAAQBJAQAAAAAAAAA9iIIiM7tuo1AtTzSXc4Q7kJbbroIO277uyQmEI67ILtca1TVkzEb44jPGxUCxiqrIuKFDejdqszIPqpPqO0V16d5B9WG0CERu5ptz07LpRvaGHR9B6IeULU6vAVxqqk1+vOYliABH1L6xQawaXuquj7KBoxdbhn4Vsx5FiSZRYym9dLTOjO4fWE1K91kSTlZIDoYxSvdUvlTxhSczQc8A",
+}
+
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1_s.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 SWEP.DefaultBodygroups = "000000000"
@@ -233,7 +237,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 33, 5)
+SWEP.CustomizePos = Vector(22, 33, 7)
 
 SWEP.CustomizeSnapshotPos = Vector(-2, 0, 2)
 SWEP.CustomizeSnapshotFOV = 90
@@ -945,9 +949,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         DefaultAttName = "Default",
         Category = {"go_m4a1_barrel"},
-        Bone = "v_weapon.M4A1_Parent",
-        Pos = Vector(0, -5, 10.5),
-        Ang = Angle(90, 0, -90),
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, -5.25, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -958,6 +961,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.8, 0),
         Ang = Angle(0, -90, 0),
 		Scale = 1.1,
+		RejectAttachments = {["go_supp_m4"] = true}
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_side"),
@@ -1013,24 +1017,26 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.M4A1_Clip",
-        Category = "go_m4a1_mag"
+        Category = "go_m4a1_mag",
+        Pos = Vector(0, 0.25, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.M4A1_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 0.3, -2),
+        Pos = Vector(0, 0.75, -2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk",
-		RejectAttachments = {
-		["csgo_perk_burst"] = true
-		},
+        Category = {"go_perk"},
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, 2, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_m4a4_view"
+        Category = "go_m4a4_view",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, 2, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -1039,26 +1045,37 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, 2, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, -5, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, -3.25, 4.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, -3, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_s_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, -5.65, 9),
+		ExcludeElements = {"foregrip_m16a4"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -1066,6 +1083,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.M4A1_s_Parent",
+        Pos = Vector(0, 2, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),

@@ -25,6 +25,12 @@ SWEP.Credits = {
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_m4a4")
 
+SWEP.StandardPresets = {
+"[M16A3]XQAAAQD3AAAAAAAAAAA9iIIiM7hMNz0dhJSTKmZ7v+v6JvsiMe7L46vKJuDQ/LDM3ttzMiCSb1BLh3Sm+uGIoNbpMSsX+fcMIzXssArFUz+67Wjxd5I8jZ62+TOmka0YQqB+DzlV3d7V8eYP5NJLo6W3Qb9iosEVLgHAK6oA7SCTC4kwM4fVjChnTIA=",
+"[SR-25]XQAAAQBLAQAAAAAAAAA9iIIiM7tuo1AtTzSXc4Q7kdTrf1LappxVvJTmqZ/gepLUDWIrnjYK4qkOOKeLPN/VWddEQWJv4ne0BgCd3LUCnoDuX8aqpVvMEC/huknapz9+55dVnRJXiNUoHokayJwW9TVcpDuc631k7GnlJx1mnCwBdmxHu4HL7Zf2Cxsyi79l+7AT0Rx66fYG9UMUtXcSm7t2SqodkvDa",
+"[M4A4 9mm SMG]XQAAAQA3AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsZP7TbQvXZ08cgU6RM2Zp+TdzwKjuYpbPJl9wNxPrERXztj1I2x5gEQ5wYfXgdRDjymfhS46R73CO2i2iL0pPYFE0faV8jsy8Gb5uJDtqKR1fHdAhpglZnmSGHDV3Au4pINV0E5j8d+JCkrEXNcI649RGnrTmZ1ycXuwi0Nsu5wQ="
+}
+
 SWEP.ViewModel = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 SWEP.DefaultBodygroups = "000000000000"
@@ -780,7 +786,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"go_m4_barrel"},
         Bone = "v_weapon.M4A1_Parent",
-        Pos = Vector(0, -5, 10.5),
+        Pos = Vector(0, -5, 6),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -806,6 +812,7 @@ SWEP.Attachments = {
         Category = {"go_m4_tube"},
         Bone = "v_weapon.M4A1_Parent",
 		--InstalledElements = {"stock_none"},
+		ExcludeElements = {"stock_sniper"},
         Pos = Vector(0, -5.05, -2.95),
         Ang = Angle(90, 0, -90),
 		Scale = 1,

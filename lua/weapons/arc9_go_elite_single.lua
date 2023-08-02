@@ -25,6 +25,11 @@ SWEP.Credits = {
 
 SWEP.Description = ARC9:GetPhrase("csgo_description_elite_single")
 
+SWEP.StandardPresets = {
+"[B-38]XQAAAQDLAAAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6REhmKFCqPWZ/RRSeeMzz9BCDng0ErcmHXA0dvXrIBAhMuOSdie9zAKXO3vG7YGruGaV145CdoL2F51gYfoMJ4NxOvCF7n7ELpa04ts8SuLxJRX62ItR/LoNWL0ngHQA==",
+"[Beretta Raffica]XQAAAQDsAAAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6REhmKFCqPWZ/RRSe3U46NlrkikNrxdpQpOhOoy+jkf4/GPql2pVLzE1gYOVueVMTPud49EjtiL+Z9Bf5r4Qw0lg1xHF8RwxCOc1sGFNysE4B+/rHxOHuc7riefNjo9kR7eeKuyIu7iGPNEKX7uw/XagA="
+}
+
 SWEP.ViewModel = "models/weapons/csgo/c_pist_elite_single.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
 SWEP.DefaultBodygroups = "0000000"
