@@ -142,15 +142,15 @@ SWEP.VisualRecoilMultSights = .25
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.075 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.15
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.15
+SWEP.RecoilModifierCapSights = 0.25
 
 -------------------------- HANDLING
 
@@ -209,7 +209,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18.5, 32.5, 4)
+SWEP.CustomizePos = Vector(20, 30, 5.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, 0, 0)
 SWEP.CustomizeNoRotate = false
@@ -439,17 +439,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.45,
+                t = 0.55,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.65,
+                t = 0.6,
                 lhik = 1,
                 rhik = 1
             },
@@ -578,13 +578,16 @@ SWEP.Attachments = {
         Bone = "v_weapon.galilar_parent",
         Pos = Vector(0, -4.9, 3),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optic","eft_optic_medium"},
+        Category = {"csgo_optic"},
+        -- Category = {"csgo_optic","eft_optic_medium"},
         CorrectiveAng = Angle(0.13, 0, 0.),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
 		--Bone = "v_weapon.glock_magazine",
-        Category = "go_galilar_barrel"
+        Category = "go_galilar_barrel",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -3.22, 14.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -615,9 +618,9 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.magazine",
         Category = "go_galilar_mag",
-		--InstalledElements = {"mag"},
         Pos = Vector(0, -2.7, -1.1),
         Ang = Angle(90, 0, -90),
+        Icon_Offset = Vector(1, 0, -1),
         Scale = 1,
     },
     {
@@ -635,10 +638,15 @@ SWEP.Attachments = {
         Bone = "v_weapon.magazine",
         Category = "go_ammo",
         Icon_Offset = Vector(0, 0, -0.25),
+        Pos = Vector(0, 0.25, 0.35),
+        Ang = Angle(90, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, 2.5, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -647,25 +655,35 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, 2.5, 7),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_galilar_view"
+        Category = "go_galilar_view",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, 2.5, 5.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -3.5, 1.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -3.5, 4.4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_galilar_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, -3.5, 9.75),
     },
     -- {
         -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
@@ -678,6 +696,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.galilar_parent",
+        Pos = Vector(0, 2.5, 5.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),

@@ -14,9 +14,7 @@ Here's an abbrevriated version:
 
 [i]*Does not include:
 [list]
-[*]Galil SAR
 [*]SCAR-17
-[*]Benelli M3 Super 90
 [*]MP5
 [*]Scout
 [*]Shield
