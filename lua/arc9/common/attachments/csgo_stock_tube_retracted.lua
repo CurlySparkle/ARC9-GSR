@@ -24,7 +24,7 @@ ATT.Attachments = {
         PrintName = "Stock",
         Pos = Vector(-2.5, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-7, 0, 0),
+        Icon_Offset = Vector(-5.5, 0, 0),
         Category = {"csgo_stock"},
 		Scale = 1
     }

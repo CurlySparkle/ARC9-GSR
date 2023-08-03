@@ -2094,3 +2094,26 @@ L["csgo_xm1014_barrel_short.description"] = "Shortened barrel that improves weap
 L["csgo_xm1014_mag_fed.printname"] = "5-Round Box Magazine"
 L["csgo_xm1014_mag_fed.compactname"] = "5S Box"
 L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine.\nCan no longer single load.\nSlightly decreases the magazine capacity and weapon handling."
+
+-- Escape from Tarkov Integration
+eftdesc = "Enables the ability to equip attachments from the EFT packs.\n\nNote: Not optimised for GSR - may cause visual glitches."
+
+L["go_eft_scopes.printname"] = "Escape from Tarkov - Optics"
+L["go_eft_scopes.compactname"] = "EFT"
+L["go_eft_scopes.description"] = eftdesc
+
+L["go_eft_scopes_pistol.printname"] = "Escape from Tarkov - Optics"
+L["go_eft_scopes_pistol.compactname"] = "EFT"
+L["go_eft_scopes_pistol.description"] = eftdesc
+
+L["go_eft_stocks.printname"] = "Escape from Tarkov - Stocks"
+L["go_eft_stocks.compactname"] = "EFT"
+L["go_eft_stocks.description"] = eftdesc
+
+L["go_eft_grips.printname"] = "Escape from Tarkov - Foregrips"
+L["go_eft_grips.compactname"] = "EFT"
+L["go_eft_grips.description"] = eftdesc
+
+L["go_eft_muzzle.printname"] = "Escape from Tarkov - Muzzle"
+L["go_eft_muzzle.compactname"] = "EFT"
+L["go_eft_muzzle.description"] = eftdesc

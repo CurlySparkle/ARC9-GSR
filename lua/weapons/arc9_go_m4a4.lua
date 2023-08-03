@@ -826,7 +826,7 @@ SWEP.Attachments = {
 		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -5.05, -2.95),
         Ang = Angle(90, 0, -90),
-        Icon_Offset = Vector(-3, 0, 0),
+        Icon_Offset = Vector(-6, 0, 0),
 		Scale = 1.06,
     },
     {

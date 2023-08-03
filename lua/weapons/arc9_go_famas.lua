@@ -565,7 +565,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         CorrectiveAng = Angle(-0.15, 0.2, 0),
-		KeepBaseIrons = true,
+		-- KeepBaseIrons = false,
 		InstalledElements = {"sight_mount"},
     },
     -- {

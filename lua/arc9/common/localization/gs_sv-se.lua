@@ -2100,3 +2100,26 @@ L["csgo_xm1014_barrel_short.description"] = "Förkortad pipa som förbättrar va
 L["csgo_xm1014_mag_fed.printname"] = "5-Skott Lådmagasin"
 L["csgo_xm1014_mag_fed.compactname"] = "5S Låda"
 L["csgo_xm1014_mag_fed.description"] = "Ersätter rörmagasinet med ett traditionellt lådmagasin.\nKan inte längre ladda individuellt.\nSänker lätt magasinkapaciteten och vapenhanteringen."
+
+-- Escape from Tarkov Integration
+eftdesc = "Aktiverar förmågan att utrusta tillbehör från EFT-tilläggen.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar."
+
+L["go_eft_scopes.printname"] = "Escape from Tarkov - Sikten"
+L["go_eft_scopes.compactname"] = "EFT"
+L["go_eft_scopes.description"] = eftdesc
+
+L["go_eft_scopes_pistol.printname"] = "Escape from Tarkov - Sikten"
+L["go_eft_scopes_pistol.compactname"] = "EFT"
+L["go_eft_scopes_pistol.description"] = eftdesc
+
+L["go_eft_stocks.printname"] = "Escape from Tarkov - Kolvar"
+L["go_eft_stocks.compactname"] = "EFT"
+L["go_eft_stocks.description"] = eftdesc
+
+L["go_eft_grips.printname"] = "Escape from Tarkov - Framgrepp"
+L["go_eft_grips.compactname"] = "EFT"
+L["go_eft_grips.description"] = eftdesc
+
+L["go_eft_muzzle.printname"] = "Escape from Tarkov - Mynningstillbehör"
+L["go_eft_muzzle.compactname"] = "EFT"
+L["go_eft_muzzle.description"] = eftdesc
