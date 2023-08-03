@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_nova.mdl"
 ATT.SortOrder = 0
 ATT.Category = "grip_xm1014"
 
-ATT.LHIK_Priority = 5
+ATT.LHIK_Priority = 0.1
 ATT.LHIK = true
 
 ATT.ModelOffset = Vector(-1, -0.6, 0.4)

@@ -16,7 +16,7 @@ ATT.SortOrder = 0
 ATT.Category = "grip_scout_r"
 --ATT.ActivateElements = {"grip"}
 
-ATT.LHIK_Priority = 5
+ATT.LHIK_Priority = 1
 ATT.LHIK = true
 
 ATT.ModelOffset = Vector(1, -0.55, -0.3)

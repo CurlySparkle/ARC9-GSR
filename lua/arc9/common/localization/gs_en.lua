@@ -2096,7 +2096,7 @@ L["csgo_xm1014_mag_fed.compactname"] = "5S Box"
 L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine.\nCan no longer single load.\nSlightly decreases the magazine capacity and weapon handling."
 
 -- Escape from Tarkov Integration
-eftdesc = "Enables the ability to equip attachments from the EFT packs.\n\nNote: Not optimised for GSR - may cause visual glitches."
+eftdesc = "Enables the ability to equip attachments from the EFT packs.\n\nNote: Not optimised for GSR - may cause visual glitches.\n\"Ergonomics\" have no effect."
 
 L["go_eft_scopes.printname"] = "Escape from Tarkov - Optics"
 L["go_eft_scopes.compactname"] = "EFT"

@@ -2094,3 +2094,26 @@ L["csgo_xm1014_barrel_short.description"] = "Укороченный ствол, 
 L["csgo_xm1014_mag_fed.printname"] = "5-зарядный коробчатый магазин"
 L["csgo_xm1014_mag_fed.compactname"] = "5-патр. короб."
 L["csgo_xm1014_mag_fed.description"] = "Заменяет трубчатый магазин на традиционный коробчатый.\nНельзя использовать одиночный заряд.\nНезначительно уменьшает ёмкость магазина и эргономичность оружия."
+
+-- Escape from Tarkov Integration
+eftdesc = "Включает возможность установки обвесов из EFT паков.\n\nНе оптимизированно для GSR, может выглядеть нелепо.\nСистема эргономики не будет работать."
+
+L["go_eft_scopes.printname"] = "Escape from Tarkov - Оптика"
+L["go_eft_scopes.compactname"] = "EFT"
+L["go_eft_scopes.description"] = eftdesc
+
+L["go_eft_scopes_pistol.printname"] = "Escape from Tarkov - Оптика"
+L["go_eft_scopes_pistol.compactname"] = "EFT"
+L["go_eft_scopes_pistol.description"] = eftdesc
+
+L["go_eft_stocks.printname"] = "Escape from Tarkov - Приклад"
+L["go_eft_stocks.compactname"] = "EFT"
+L["go_eft_stocks.description"] = eftdesc
+
+L["go_eft_grips.printname"] = "Escape from Tarkov - Рукоять"
+L["go_eft_grips.compactname"] = "EFT"
+L["go_eft_grips.description"] = eftdesc
+
+L["go_eft_muzzle.printname"] = "Escape from Tarkov - Дуло"
+L["go_eft_muzzle.compactname"] = "EFT"
+L["go_eft_muzzle.description"] = eftdesc

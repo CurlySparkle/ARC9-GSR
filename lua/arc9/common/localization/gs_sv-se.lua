@@ -2102,7 +2102,7 @@ L["csgo_xm1014_mag_fed.compactname"] = "5S Låda"
 L["csgo_xm1014_mag_fed.description"] = "Ersätter rörmagasinet med ett traditionellt lådmagasin.\nKan inte längre ladda individuellt.\nSänker lätt magasinkapaciteten och vapenhanteringen."
 
 -- Escape from Tarkov Integration
-eftdesc = "Aktiverar förmågan att utrusta tillbehör från EFT-tilläggen.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar."
+eftdesc = "Aktiverar förmågan att utrusta tillbehör från EFT-tilläggen.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar.\n\"Ergonomics\" har ingen effekt."
 
 L["go_eft_scopes.printname"] = "Escape from Tarkov - Sikten"
 L["go_eft_scopes.compactname"] = "EFT"

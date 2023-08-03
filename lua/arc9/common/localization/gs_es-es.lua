@@ -2091,3 +2091,26 @@ L["csgo_xm1014_barrel_short.description"] = "Cañón acortado que mejora el mane
 L["csgo_xm1014_mag_fed.printname"] = "Cargador de caja de 5 cartuchos"
 L["csgo_xm1014_mag_fed.compactname"] = "5S Box"
 L["csgo_xm1014_mag_fed.description"] = "Sustituye el cargador de tubo por un cargador de caja tradicional.\nYa no puede cargarse una sola vez.\nDisminuye ligeramente la capacidad del cargador y el manejo del arma."
+
+-- Escape from Tarkov Integration
+eftdesc = "Permite equipar accesorios de los packs de EFT.\n\nNota: No optimizado para GSR - puede causar fallos visuales.\n\"Ergonomía\" no tiene ningún efecto."
+
+L["go_eft_scopes.printname"] = "Escape from Tarkov - Visores"
+L["go_eft_scopes.compactname"] = "EFT"
+L["go_eft_scopes.description"] = eftdesc
+
+L["go_eft_scopes_pistol.printname"] = "Escape from Tarkov - Visores"
+L["go_eft_scopes_pistol.compactname"] = "EFT"
+L["go_eft_scopes_pistol.description"] = eftdesc
+
+L["go_eft_stocks.printname"] = "Escape from Tarkov - Culata"
+L["go_eft_stocks.compactname"] = "EFT"
+L["go_eft_stocks.description"] = eftdesc
+
+L["go_eft_grips.printname"] = "Escape from Tarkov - Grip"
+L["go_eft_grips.compactname"] = "EFT"
+L["go_eft_grips.description"] = eftdesc
+
+L["go_eft_muzzle.printname"] = "Escape from Tarkov - Boca"
+L["go_eft_muzzle.compactname"] = "EFT"
+L["go_eft_muzzle.description"] = eftdesc
