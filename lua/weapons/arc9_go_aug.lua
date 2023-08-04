@@ -309,7 +309,7 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.7,
+                t = 0.75,
                 lhik = 0,
                 rhik = 1
             },
@@ -344,12 +344,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.7,
+                t = 0.8,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
@@ -381,12 +381,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.7,
+                t = 0.9,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 1.15,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -455,12 +455,12 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.6,
+                t = 0.4,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.8,
+                t = 1,
                 lhik = 1,
                 rhik = 1
             },
@@ -486,7 +486,7 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.6,
+                t = 0.5,
                 lhik = 0,
                 rhik = 1
             },
@@ -621,6 +621,14 @@ SWEP.AttachmentTableOverrides = {
     ModelOffset = Vector(-1.7, -0.2, 0.8),
 	ModelAngleOffset = Angle(0, 0, 35),
 	Scale = 0.8,
+    },
+    ["eft_gp25"] = {
+	ModelOffset = Vector(-5, 0, -0.5),
+	ModelAngleOffset = Angle(0, 0, 180),
+    },
+    ["eft_m203"] = {
+	-- ModelOffset = Vector(-2, 0, 2),
+	ModelAngleOffset = Angle(0, 0, 180),
     },
 }
 

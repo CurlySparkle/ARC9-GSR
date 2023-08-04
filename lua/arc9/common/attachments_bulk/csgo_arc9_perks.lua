@@ -212,6 +212,7 @@ ATT.Free = true
 ATT.Category = {"go_perk_melee","go_perk"}
 ATT.Folder = "GSR"
 
-ATT.PostBashTime = 0.2
+-- ATT.PostBashTimeMult = 0.8
+ATT.BashSpeedMult = 1.4
 
 ARC9.LoadAttachment(ATT, "csgo_perk_melee_speed")

@@ -223,7 +223,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(23, 35, 5)
+SWEP.CustomizePos = Vector(23, 35, 7.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 6)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -654,6 +654,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         Category = "go_m249_barrel",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, -4.4, 22.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -708,17 +710,20 @@ SWEP.Attachments = {
         Category = "go_m249_mag",
         Bone = "v_weapon.m249_Parent",
         Pos = Vector(0, -1, 6),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
-        --Bone = "v_weapon.AK47_clip",
+        Bone = "v_weapon.m249_Parent",
         Category = "go_ammo",
-        --Icon_Offset = Vector(0, 1, 1),
+        -- Icon_Offset = Vector(0, 1, 1),
+        Pos = Vector(0, 1.5, 6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, 1.5, 10),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -727,6 +732,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, 1.5, 10),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -734,21 +741,29 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, 1.5, 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/m249_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, -4.25, -1.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/m249_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, -6.5, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/m249_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.m249_Parent",
+        Pos = Vector(0, -3, 14),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),

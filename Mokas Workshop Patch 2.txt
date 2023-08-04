@@ -6,6 +6,7 @@ Here's an abbrevriated version:
 	[*]All weapons now use visual recoil
 	[*]All weapons now have altered camouflage coverage*
 	[*]Adjusted a few attachment stats
+	[*]Integration with Escape from Tarkov attachments
 	[*]Русский язык (Russian language)
 	
 	And quite a bit more.
@@ -22,6 +23,12 @@ Here's an abbrevriated version:
 [/list][/i]
 
 And here's the long, more detailed version:
+
+[b][u]Integration with Escape from Tarkov attachments[/u][/b]
+All weapons can now equip so-called Integration attachments that allows you to equip scopes, muzzles, grips, GLs, stocks and laser sights from the [i][url=https://steamcommunity.com/workshop/filedetails/?id=2952911209]Escape from Tarkov packs[/url][/i].
+
+[i]Note[/i]: These attachments are not made for GSR and can therefore cause visual glitches to occur.
+Additionally, the [b]Ergonomics[/b] stat does nothing to the GSR weapons.
 
 [b][u]Weapon changes[/u][/b]
 All weapons have gotten visual recoil added to them. This applies to [i]all[/i] weapons. This will not be repeated for the list below.

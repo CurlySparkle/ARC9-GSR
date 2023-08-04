@@ -577,6 +577,8 @@ SWEP.Animations = {
                 -- rhik = 1
             -- },
         -- },
+        MinProgress = 1,
+        FireASAP = false,
     },
 -- SILENCED
     ["idle_silenced"] = {

@@ -219,7 +219,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17.5, 30, 4.5)
+SWEP.CustomizePos = Vector(17.5, 30, 6.5)
 SWEP.CustomizeSnapshotPos = Vector(2, 5, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
@@ -478,12 +478,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.85,
                 lhik = 1,
                 rhik = 1
             },
@@ -832,21 +832,26 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.M4A1_Clip",
-        Category = "go_mag_m4"
+        Category = "go_mag_m4",
+        Pos = Vector(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.M4A1_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 0, -2),
+        Pos = Vector(0, 0, -2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = {"go_perk", "go_perk_burst"}
+        Category = {"go_perk", "go_perk_burst"},
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, 2, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_m4a4_view"
+        Category = "go_m4a4_view",
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, 2, 1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -855,21 +860,29 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, 2, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -4, -0.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -5.25, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_m4a1_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, -3, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -877,6 +890,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0, 2, 1),
     },
     -- {
         -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
@@ -886,8 +901,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
-        Bone = "v_weapon.M4A1_Parent", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(0.75, -5, 5), -- offset that the attachment will be relative to the bone
+        Bone = "v_weapon.M4A1_Parent",
+        Pos = Vector(0.725, -5, -1),
         Ang = Angle(90, 0, -90),
     },
     {
