@@ -27,7 +27,7 @@ And here's the long, more detailed version:
 [b][u]Integration with Escape from Tarkov attachments[/u][/b]
 All weapons can now equip so-called Integration attachments that allows you to equip scopes, muzzles, grips, GLs, stocks and laser sights from the [i][url=https://steamcommunity.com/workshop/filedetails/?id=2952911209]Escape from Tarkov packs[/url][/i].
 
-[i]Note[/i]: These attachments are not made for GSR and can therefore cause visual glitches to occur.
+[i]Note[/i]: These attachments are not made for GSR and can therefore cause visual glitches to occur. They will not be a priority to fix unless absolutely hideous.
 Additionally, the [b]Ergonomics[/b] stat does nothing to the GSR weapons.
 
 [b][u]Weapon changes[/u][/b]
@@ -56,7 +56,8 @@ Weapons not listed below did not have any additional changes.
 [b][u]Assault Rifles[/u][/b]
 [table][tr]
 	[th]AK-47[/th]
-	[th]Has received 4 default presets[/th]
+	[th]Has received 4 default presets
+	Has also received two new name alterations[/th]
 [/tr][tr]
 	[th]AUG[/th]
 	[th]Increased reload speed by 10%
@@ -66,6 +67,9 @@ Weapons not listed below did not have any additional changes.
 [/tr][tr]
 	[th]FAMAS[/th]
 	[th]Increased reload speed by 5%[/th]
+[/tr][tr]
+	[th]Galil AR[/th]
+	[th]Increased reload speed by 15%[/th]
 [/tr][tr]
 	[th]Galil SAR[/th]
 	[th]Has received a completely new set of animations[/th]
@@ -173,6 +177,10 @@ Weapons not listed below did not have any additional changes.
 	MP5
 	[/th]
 [/tr][tr]
+	[th]Perk
+	Stabber[/th]
+	[th]Now has a 40% melee speed bonus[/th]
+[/tr][tr]
 	[th]Universal
 	Magnifier with Kobra EKP-8-18[/th]
 	[th]Adjusted aim positions[/th]
@@ -242,7 +250,13 @@ Weapons not listed below did not have any additional changes.
 	40-Round 7.62mm Mag[/th]
 	[th]Reduced magazine capacity benefit from 45 to 40
 	Decreased damage penalty from 25% to 15%
-	Decreased recoil and reload speed penalties from 20% to 15%
+	Decreased recoil penalty from 20% to 15%
+	Increased reload speed penalty from 20% to 30%
+	[/th]
+[/tr][tr]
+	[th]Galil AR
+	30-Round 7.62mm Mag[/th]
+	[th]Increased reload speed penalty from 10% to 20%
 	[/th]
 [/tr][tr]
 	[th]Beretta

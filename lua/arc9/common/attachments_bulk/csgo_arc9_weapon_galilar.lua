@@ -106,7 +106,7 @@ ATT.DamageMinMult = 1.15
 ATT.RPM = 600
 
 ATT.ClipSizeOverride = 40
-ATT.ReloadTimeMult = 1.15
+ATT.ReloadTimeMult = 1.3
 ATT.RecoilMult = 1.15
 ATT.VisualRecoilMult = 1.15
 ATT.RecoilKickMult = 1.15
@@ -139,7 +139,7 @@ ATT.DamageMinMult = 1.15
 ATT.RPM = 600
 
 ATT.ClipSizeOverride = 30
-ATT.ReloadTimeMult = 1.1
+ATT.ReloadTimeMult = 1.2
 ATT.RecoilMult = 1.15
 ATT.VisualRecoilMult = 1.15
 ATT.RecoilKickMult = 1.15

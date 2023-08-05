@@ -288,6 +288,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		Mult = 0.85,
         IKTimeLine = {
             {
                 t = 0,
@@ -323,6 +324,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		Mult = 0.85,
         IKTimeLine = {
             {
                 t = 0,

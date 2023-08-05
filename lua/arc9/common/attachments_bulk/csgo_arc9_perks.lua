@@ -11,7 +11,7 @@ ATT.AutoStats = true
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 
 ATT.ReloadTimeMult = 0.80
 
@@ -28,7 +28,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.HeadshotDamageMult = 3
 
 ARC9.LoadAttachment(ATT, "csgo_perk_headshot")
@@ -49,7 +49,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk","go_perk_melee"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.ActivateElements = {"enforcer"}
 
 ARC9.LoadAttachment(ATT, "csgo_perk_enforcer")
@@ -77,7 +77,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.ActivateElements = {"acehole"}
 
 ATT.DamageMult = newdamage
@@ -109,7 +109,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_bolt"}
 
 ATT.CycleTimeMult = 0.75
@@ -127,7 +127,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk_burst"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_burst"}
 ATT.ExcludeElements = {"slide_raffica"}
 
@@ -157,7 +157,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_cowboy"}
 
 ATT.ShootWhileSprint = true
@@ -175,7 +175,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = true
 
 ATT.Category = {"go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_diver"}
 
 ATT.CanFireUnderwater = true
@@ -193,7 +193,7 @@ ATT.AutoStats = true
 ATT.Free = true
 
 ATT.Category = {"go_perk_melee"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 
 ATT.BashLungeRange = 74
 
@@ -210,7 +210,7 @@ ATT.AutoStats = true
 ATT.Free = true
 
 ATT.Category = {"go_perk_melee","go_perk"}
-ATT.Folder = "GSR"
+-- ATT.Folder = "GSR"
 
 -- ATT.PostBashTimeMult = 0.8
 ATT.BashSpeedMult = 1.4

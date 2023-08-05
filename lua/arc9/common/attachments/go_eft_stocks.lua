@@ -11,6 +11,6 @@ ATT.Attachments = {
         Category = {"eft_ar_stock"},
         Pos = Vector(5, 0, 0.85),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(1.5, 0, 0.85),
+        Icon_Offset = Vector(-1, 0, -0.75),
     },
 }
