@@ -82,6 +82,8 @@ L["csgo_weapon_ak47_rpk"] = "РПК"
 L["csgo_weapon_ak47_ak74"] = "АК-74"
 L["csgo_weapon_ak47_rpk74"] = "РПК-74"
 L["csgo_weapon_ak47_aks74u"] = "АКС-74У"
+L["csgo_weapon_ak47_ak101"] = "АК-101"
+L["csgo_weapon_ak47_rpk201"] = "РПК-201"
 
 L["csgo_weapon_akimbo_cz75"] = "Два CZ75-Auto"
 L["csgo_weapon_akimbo_deagle"] = "Два Desert Eagle"

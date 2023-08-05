@@ -28,9 +28,11 @@ SWEP.Description = ARC9:GetPhrase("csgo_description_ak47")
 
 SWEP.StandardPresets = {
 "[AK-74]XQAAAQDaAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3fgLCHZ9RouTKhJ52tBnmFyAGPwAE1G4LUvSEk4RMXdXubg/T3hJWicpw3ZPoezVzcr9XMKkClUpiBenzl0Y+u73FvNC8MmKhsa4/Mw",
+"[AK-101]XQAAAQAEAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsZg6F2gmIhpD3Q6OhBZksPh5yoDL90aDyMZDtwwgmdzowx3sNaS6oO/lRlMNNqpz86I/KvlRoQNde6fZ5GdYAcM0eOzRhWm7+gcfrCbudQgA=",
 "[AKS-74U]XQAAAQAWAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJPRnFZ0LLc9ILxLj52ynM0mhIB3mBRal+3cWFr/QECYf3V3/oveoFm2uI+PI957FNvaBx9sfNT9k5ClD1vrQxE3B4YLBjOny4OHHgbm8UGKAtgX03/niSytaK2zbN0vX2B8BQA",
 "[RPK]XQAAAQAPAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJOxq1MYf+hahM6Quu5um7wA6ihWf7yfSLjXUKId+AQmoHcbWtMG+UNWPoObosYHg/0LYWHfyO2+p7FYPpZ4+EERoKaL/MDx4MYutkEOIms84fKmmGY2CsBMjkVrqQ=",
 "[RPK-74]XQAAAQAUAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJOxq1MYf+hahM6Quu5um7wA6ihWf7yfSLjXUKId+AQmoHcbWtMG+UNWPoObosYHg/0LYWP44cDap+CtQ9LaSIGJXdEz/43xm6nizr6uiiC+JlDUUw9onAaksV6xBCyT7NmPg==",
+"[RPK-201]XQAAAQA+AQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6Qsgm+qDXVIEub1RJOxq1MYf+hahM0aUaMwqrJ3VV8R/UgzGyX0NTAkv0KZ99CeRMXLhaGjLz7ag3dHWZkqB8F8Tfe/2eJhb3Y1yF51oLgjRHHPG763y52bxwDc2X5iQGac2sl9Bbl8G+JWSTFoXy7AA=="
 }
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_ak47.mdl"
@@ -731,8 +733,8 @@ SWEP.AttachmentTableOverrides = {
 
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
-
-	if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] and att["csgo_ak47_mag_50"] then
+	
+	if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] then
 		name = ARC9:GetPhrase("csgo_weapon_ak47_rpk")
 	end
 
@@ -746,7 +748,13 @@ SWEP.HookP_NameChange = function(self, name)
 			name = ARC9:GetPhrase("csgo_weapon_ak47_aks74u")
 		end
 	end
-
+	
+	if (att["mag_556"] or att["mag_556_ext"]) then
+		name = ARC9:GetPhrase("csgo_weapon_ak47_ak101")
+		if att["csgo_ak47_barrel_long"] and att["csgo_ak47_stock_rpk"] then
+			name = ARC9:GetPhrase("csgo_weapon_ak47_rpk201")
+		end
+	end
 -- For Skins
 	local skin = "moka_csgo_skin_ak47_"
 
