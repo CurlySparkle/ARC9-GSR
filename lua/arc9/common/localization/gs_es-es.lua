@@ -454,6 +454,9 @@ L["csgo_stat_laser_b"] = "Láser - Azul"
 
 L["csgo_stat_light"] = "Linterna"
 
+L["csgo_stat_global"] = "Globally"
+L["csgo_stat_curlife"] = "Current Life"
+
 -- These are via file name order with "bulk" attachments afterwards. Categorized manually.
 -- 2X Optics
 L["csgo_optic_2x_aimpoint.printname"] = "Amplificador con Aimpoint CompM4"
@@ -649,7 +652,7 @@ L["csgo_rail_ub_mp5.description"] = "Un riel Picatinny que permite acoplar vario
 
 -- Skins
 -- For these, try to have the descriptions resemble CS:GO.
-L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"
+L["csgo_skin_galilar_odyssy.printname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.description"] = [[La colección Gunsmith Reloaded
 
@@ -657,7 +660,7 @@ Se le ha dado una revisión de diseño hexagonal en naranja brillante y negro.
 
 "El burdel está prohibido" - Algún pájaro tonto, no lo se]]
 
-L["csgo_skin_usp_nostalgia.printname"] = "USP-S | Nostalgia"
+L["csgo_skin_usp_nostalgia.printname"] = "Nostalgia"
 L["csgo_skin_usp_nostalgia.compactname"] = "Nostalgia"
 L["csgo_skin_usp_nostalgia.description"] = [[La colección Gunsmith Reloaded
 
@@ -665,7 +668,7 @@ K&M nos trajo una clásica arma táctica CT, ahora recuperada para su uso modern
 
 "Supresor incluido por defecto una vez más"]]
 
-L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Administrator"
+L["csgo_skin_deagle_admin.printname"] = "Administrator"
 L["csgo_skin_deagle_admin.compactname"] = "Admin"
 L["csgo_skin_deagle_admin.description"] = [[La colección Gunsmith Reloaded
 

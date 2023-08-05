@@ -7,7 +7,7 @@ ATT.Category = "csgo_stock"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Attachments = {
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         Category = {"eft_ar_stock"},
         Pos = Vector(5, 0, 0.85),
         Ang = Angle(0, 0, 0),

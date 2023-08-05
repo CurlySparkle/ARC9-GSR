@@ -1,9 +1,9 @@
 -- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Pro Screen"
-ATT.CompactName = [[Pro Screen]]
+ATT.CompactName = "Pro Screen"
 ATT.Icon = Material("entities/attachs/arc9_proscreen.png", "mips")
-ATT.Description = [[Adds a small screen (Pistol size) to the side of the weapon, showing how many player kills you have achieved with this weapon.]]
+ATT.Description = "Adds a small screen (Pistol size) to the side of the weapon, showing how many player kills you have achieved with this weapon."
 ATT.SortOrder = 1.05
 
 ATT.Model = "models/weapons/arc9/pro_screen_2.mdl"
@@ -14,12 +14,12 @@ ATT.Killcounter = true
 
 ATT.ToggleStats = {
     {
-        PrintName = "Global",
+        PrintName = ARC9:GetPhrase("csgo_stat_global"),
         AutoStatName = "Global weapon",
         ST_GLOBAL = true
     },
     {
-        PrintName = "Current Life",
+        PrintName = ARC9:GetPhrase("csgo_stat_curlife"),
         AutoStatName = "Local",
         ST_GLOBAL = false
     },

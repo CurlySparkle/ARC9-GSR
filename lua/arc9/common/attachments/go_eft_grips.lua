@@ -7,7 +7,7 @@ ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Attachments = {
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         Category = {"eft_foregrip_small", "eft_foregrip_large"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 180),

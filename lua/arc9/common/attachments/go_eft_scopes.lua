@@ -7,7 +7,7 @@ ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Attachments = {
     {
-        PrintName = "Optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),

@@ -652,7 +652,7 @@ L["csgo_rail_ub_mp5.description"] = "A picatinny rail that allows attaching vari
 
 -- Skins
 -- For these, try to have the descriptions resemble CS:GO.
-L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssey"
+L["csgo_skin_galilar_odyssy.printname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.description"] = [[The Gunsmith Reloaded Collection
 
@@ -660,7 +660,7 @@ It has been given a bright orange and black hexagonal design overhaul.
 
 "Brothel is banned" - Some dumb bird, Idk]]
 
-L["csgo_skin_usp_nostalgia.printname"] = "USP-S | Nostalgia"
+L["csgo_skin_usp_nostalgia.printname"] = "Nostalgia"
 L["csgo_skin_usp_nostalgia.compactname"] = "Nostalgia"
 L["csgo_skin_usp_nostalgia.description"] = [[The Gunsmith Reloaded Collection
 
@@ -668,7 +668,7 @@ K&M brought us a classic tactical CT weapon, now brought back for modern use.
 
 "Suppressor included by default once again"]]
 
-L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Administrator"
+L["csgo_skin_deagle_admin.printname"] = "Administrator"
 L["csgo_skin_deagle_admin.compactname"] = "Admin"
 L["csgo_skin_deagle_admin.description"] = [[The Gunsmith Reloaded Collection
 

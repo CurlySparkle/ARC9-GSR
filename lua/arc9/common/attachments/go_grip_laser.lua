@@ -23,7 +23,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = "Laser",
+        PrintName = ARC9:GetPhrase("csgo_stat_laser"),
         Laser = true,
         LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
@@ -36,7 +36,7 @@ ATT.ToggleStats = {
         SpreadMultHipFire = 0.95
     },
     {
-        PrintName = "OFF",
+        PrintName = ARC9:GetPhrase("csgo_stat_off"),
     }
 }
 

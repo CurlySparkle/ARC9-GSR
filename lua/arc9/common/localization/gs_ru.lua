@@ -652,7 +652,7 @@ L["csgo_rail_ub_mp5.description"] = "Планка пикатинни, позво
 
 -- Skins
 -- For these, try to have the descriptions resemble CS:GO.
-L["csgo_skin_galilar_odyssy.printname"] = "Автомат «Галиль» | Одиссея"
+L["csgo_skin_galilar_odyssy.printname"] = "Одиссея"
 L["csgo_skin_galilar_odyssy.compactname"] = "Одиссея"
 L["csgo_skin_galilar_odyssy.description"] = [[Коллекция «Gunsmith Reloaded»
 
@@ -660,7 +660,7 @@ L["csgo_skin_galilar_odyssy.description"] = [[Коллекция «Gunsmith Relo
 
 «Бордель запрещён» - Какая-то тупая птица, хз]]
 
-L["csgo_skin_usp_nostalgia.printname"] = "USP-S | Ностальгия"
+L["csgo_skin_usp_nostalgia.printname"] = "Ностальгия"
 L["csgo_skin_usp_nostalgia.compactname"] = "Ностальгия"
 L["csgo_skin_usp_nostalgia.description"] = [[Коллекция «Gunsmith Reloaded»
 
@@ -668,7 +668,7 @@ L["csgo_skin_usp_nostalgia.description"] = [[Коллекция «Gunsmith Reloa
 
 «Глушитель снова включён по умолчанию»]]
 
-L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Администратор"
+L["csgo_skin_deagle_admin.printname"] = "Администратор"
 L["csgo_skin_deagle_admin.compactname"] = "Админ"
 L["csgo_skin_deagle_admin.description"] = [[Коллекция «Gunsmith Reloaded»
 

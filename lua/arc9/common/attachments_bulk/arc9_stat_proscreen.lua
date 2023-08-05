@@ -64,5 +64,4 @@ ATT.Hook_Holster = function(wep)
 end
 
 ARC9.LoadAttachment(ATT, "arc9_stat_proscreen")
-
 ]]--

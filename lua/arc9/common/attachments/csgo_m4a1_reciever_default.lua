@@ -15,7 +15,7 @@ ATT.ActivateElements = {"reciever_m16","reciever_m16a2"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         DefaultName = "None",
 		
         Category = {"csgo_rail_optic_alt"},

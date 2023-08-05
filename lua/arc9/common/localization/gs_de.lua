@@ -652,7 +652,7 @@ L["csgo_rail_ub_mp5.description"] = "Eine Picatinny-Schiene, die das Anbringen v
 
 -- Skins
 -- For these, try to have the descriptions resemble CS:GO.
-L["csgo_skin_galilar_odyssy.printname"] = "Galil AR | Odyssee"
+L["csgo_skin_galilar_odyssy.printname"] = "Odyssee"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssee"
 L["csgo_skin_galilar_odyssy.description"] = [[Die Gunsmith Reloaded-Collection
 
@@ -660,7 +660,7 @@ Das sechseckige Design in leuchtendem Orange und Schwarz wurde überarbeitet.
 
 "Bordell ist verboten" - Irgendein dummer Vogel, Idk]]
 
-L["csgo_skin_usp_nostalgia.printname"] = "USP-S | Nostalgie"
+L["csgo_skin_usp_nostalgia.printname"] = "Nostalgie"
 L["csgo_skin_usp_nostalgia.compactname"] = "Nostalgie"
 L["csgo_skin_usp_nostalgia.description"] = [[Die Gunsmith Reloaded-Collection
 
@@ -668,7 +668,7 @@ K&M brachte uns eine klassische taktische CT-Waffe, die jetzt für den modernen 
 
 "Suppressor wieder standardmäßig enthalten"]]
 
-L["csgo_skin_deagle_admin.printname"] = "Desert Eagle | Administrator"
+L["csgo_skin_deagle_admin.printname"] = "Administrator"
 L["csgo_skin_deagle_admin.compactname"] = "Admin"
 L["csgo_skin_deagle_admin.description"] = [[Die Gunsmith Reloaded-Collection
 

@@ -29,7 +29,7 @@ ATT.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp5sd_mag.mdl"
 
 ATT.Attachments = {
     {
-        PrintName = "Underbarrel",
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultName = "None",
 		
         Category = {"csgo_rail_ub", "grip_bizon"},
