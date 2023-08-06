@@ -403,6 +403,14 @@ L["csgo_description_xm1014"] = "La XM1014 es una poderosa escopeta automática q
 L["csgo_description_zeus"] = "Perfecta para emboscadas a corta distancia y combate en espacios cerrados, la Zeus x27 puede incapacitar a un enemigo de un solo disparo."
 
 -- [[ Attachments ]]
+-- Attachment folder names
+L["csgo_folder_thermal"] = "Térmico"
+L["csgo_folder_magnifier"] = "Amplificador"
+L["csgo_folder_muzzlebrake"] = "Freno de boca"
+L["csgo_folder_suppressor"] = "Supresor"
+L["csgo_folder_ubgl"] = "Arma"
+L["csgo_folder_tube"] = "Tubo"
+
 -- Attachment category slots
 L["csgo_category_ammo"] = "Munición"
 L["csgo_category_barrel"] = "Cañon"
@@ -454,8 +462,8 @@ L["csgo_stat_laser_b"] = "Láser - Azul"
 
 L["csgo_stat_light"] = "Linterna"
 
-L["csgo_stat_global"] = "Globally"
-L["csgo_stat_curlife"] = "Current Life"
+L["csgo_stat_global"] = "Globalmente"
+L["csgo_stat_curlife"] = "Vida actual"
 
 -- These are via file name order with "bulk" attachments afterwards. Categorized manually.
 -- 2X Optics

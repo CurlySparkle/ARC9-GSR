@@ -16,7 +16,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/GENLaserPISTOL.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -31,7 +31,7 @@ ATT.ToggleStats = {
         FlareSize = 50,
         FlareAttachment = 1,
         FlareFocus = true,
-        SpreadMultHipFire = 0.90
+        SpreadAddRecoil = -0.005
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -72,7 +72,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/GENFlashRAS.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -118,7 +118,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/GENLaserRAS.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -135,7 +135,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
         AimDownSightsTimeMult = 0.95,
         SprintToFireTimeMult = 0.95,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser_g"),
@@ -150,7 +150,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
         AimDownSightsTimeMult = 0.95,
         SprintToFireTimeMult = 0.95,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser_b"),
@@ -165,7 +165,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
         AimDownSightsTimeMult = 0.95,
         SprintToFireTimeMult = 0.95,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -196,7 +196,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/M3X.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -232,7 +232,6 @@ ARC9.LoadAttachment(ATT, "go_tac_laser_m3x")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.PrintName = "ATPIAL-C AN/PEQ-15"
 ATT.CompactName = "PEQ-15"
 ATT.Description = [[High-power laser pointer with extra flashlight function.
@@ -244,7 +243,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/PEQ15.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 ATT.ActivateElements = {"laser_peq"}
 
 ATT.AimDownSightsTimeMult = 1.05
@@ -267,7 +266,8 @@ ATT.ToggleStats = {
         Flare = true,
         FlareColor = Color(255, 255, 255),
         FlareSize = 300,
-        FlareAttachment = 1
+        FlareAttachment = 1,
+		SpreadAddRecoil = -0.01,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_light"),
@@ -280,7 +280,7 @@ ATT.ToggleStats = {
         Flare = true,
         FlareColor = Color(255, 255, 255),
         FlareSize = 300,
-        FlareAttachment = 1
+        FlareAttachment = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser"),
@@ -292,7 +292,8 @@ ATT.ToggleStats = {
         FlareColor = Color(0, 255, 0),
         FlareSize = 50,
         FlareAttachment = 2,
-        FlareFocus = true
+        FlareFocus = true,
+		SpreadAddRecoil = -0.01,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -335,7 +336,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/laser_sure3.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpreadMult = 0.9
@@ -413,7 +414,7 @@ ATT.SortOrder = 0
 ATT.Category = {"csgo_tac_pistols"}
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Model = "models/weapons/csgo/atts/tactical/genras.mdl"
-ATT.Folder = "TACTICAL"
+-- ATT.Folder = "TACTICAL"
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -428,7 +429,7 @@ ATT.ToggleStats = {
         FlareSize = 50,
         FlareAttachment = 1,
         FlareFocus = true,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),

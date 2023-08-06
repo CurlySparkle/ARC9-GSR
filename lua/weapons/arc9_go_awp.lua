@@ -534,6 +534,11 @@ SWEP.AttachmentElements = {
             {4,4},
         },
     },
+    ["bipod_up"] = {
+        Bodygroups = {
+            {5,1},
+        },
+    },
 }
 
 // Forced Override Bodygroup
@@ -635,10 +640,12 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_awp","grip_xm1014"},
+		InstalledElements = {"bipod_up"},
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, -1.3, 13.6),
         Ang = Angle(90, 0, 90),
         Scale = 1,
+        CorrectiveAng = Angle(-0.65, -0.8, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

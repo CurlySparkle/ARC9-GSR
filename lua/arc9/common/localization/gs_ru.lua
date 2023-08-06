@@ -403,6 +403,14 @@ L["csgo_description_xm1014"] = "XM1014 — это мощный автомати�
 L["csgo_description_zeus"] = "Однозарядный Zeus x27 идеален для засад и стычек в закрытом пространстве, также он способен нейтрализовать врага всего с одного выстрела."
 
 -- [[ Attachments ]]
+-- Attachment folder names
+L["csgo_folder_thermal"] = "Thermal"
+L["csgo_folder_magnifier"] = "Увеличитель"
+L["csgo_folder_muzzlebrake"] = "Дульный тормоз"
+L["csgo_folder_suppressor"] = "Глушитель"
+L["csgo_folder_ubgl"] = "Оружие"
+L["csgo_folder_tube"] = "Ствол"
+
 -- Attachment category slots
 L["csgo_category_ammo"] = "Боеприпасы"
 L["csgo_category_barrel"] = "Ствол"

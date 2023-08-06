@@ -790,12 +790,13 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_grip"),
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"grip","grip_mk18","grip_m4","fas_ubgl"},
         Bone = "v_weapon.M4A1_Parent",
         Pos = Vector(0, -3.9, 10),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-1, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),

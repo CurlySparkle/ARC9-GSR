@@ -168,7 +168,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.6 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMultSights = 0.5
@@ -593,7 +593,7 @@ SWEP.AttachmentElements = {
     },
     ["rearsight"] = {
         Bodygroups = {
-            {6,1},
+            {6,2},
 			{7,1},
         },
     },
@@ -686,7 +686,7 @@ SWEP.Attachments = {
 		Scale = 1.2,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_grip"),
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         -- Category = {"grip","go_m249_bipod"},
         Category = {"grip"},
@@ -694,6 +694,7 @@ SWEP.Attachments = {
 		InstalledElements = {"foregrip"},
         Pos = Vector(0, -0.73, 14.4),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-1, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
@@ -718,6 +719,7 @@ SWEP.Attachments = {
         Category = "go_ammo",
         -- Icon_Offset = Vector(0, 1, 1),
         Pos = Vector(0, 1.5, 6),
+		ExcludeElements = {"go_m249_mag_12g_45"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),

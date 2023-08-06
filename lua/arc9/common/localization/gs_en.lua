@@ -403,6 +403,14 @@ L["csgo_description_xm1014"] = "The XM1014 is a powerful automatic shotgun with 
 L["csgo_description_zeus"] = "Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit."
 
 -- [[ Attachments ]]
+-- Attachment folder names
+L["csgo_folder_thermal"] = "Thermal"
+L["csgo_folder_magnifier"] = "Magnifier"
+L["csgo_folder_muzzlebrake"] = "Muzzle Brake"
+L["csgo_folder_suppressor"] = "Suppressor"
+L["csgo_folder_ubgl"] = "Weapon"
+L["csgo_folder_tube"] = "Tube"
+
 -- Attachment category slots
 L["csgo_category_ammo"] = "Ammo"
 L["csgo_category_barrel"] = "Barrel"

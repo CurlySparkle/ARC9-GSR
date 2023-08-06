@@ -217,7 +217,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(23, 30, 5)
+SWEP.CustomizePos = Vector(24.5, 30, 6.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -592,6 +592,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 15, 3.65),
         Ang = Angle(0, -90, 0),
 		Scale = 1.1,
+		Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
@@ -618,6 +619,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 11.5, 1.5),
         Ang = Angle(0, -90, 0),
 		Scale = 1,
+        CorrectiveAng = Angle(-0.8, -0.8, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
@@ -633,17 +635,19 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.mag",
         Category = "go_mag",
-        Icon_Offset = Vector(0, 0, 0),
+        Pos = Vector(0, -1.3, 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.mag",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, -1, 2),
+        Pos = Vector(0, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 5, -2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -652,33 +656,43 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 5, -2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 14, 3.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 9.5, 3.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 6, 3.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/smg_mp5sd_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 3, 3.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.mp5sd_parent", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(0.65, 5, 2.6), -- offset that the attachment will be relative to the bone
-        Ang = Angle(0, -90, 0),
+        Pos = Vector(0.75, 1, 4.2), -- offset that the attachment will be relative to the bone
+        Ang = Angle(0, -90, 40),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -686,6 +700,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 3.5, -2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
@@ -697,7 +713,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_mp5sd_view"
+        Category = "go_mp5sd_view",
+        Bone = "v_weapon.mp5sd_parent",
+        Pos = Vector(0, 3.5, -2.5),
     },
 }
 

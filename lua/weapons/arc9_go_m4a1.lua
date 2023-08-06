@@ -140,14 +140,14 @@ SWEP.RecoilMultSights = 1
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = .75
 SWEP.VisualRecoilPunchSights = 1
-SWEP.VisualRecoilUp = 0
-SWEP.VisualRecoilUpSights = -.1
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilUpSights = 0
 SWEP.VisualRecoilSide = .2
 SWEP.VisualRecoilSideSights = -.01
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1.25
-SWEP.VisualRecoilPositionBumpUp = 0
+SWEP.VisualRecoilPositionBumpUp = 0.5
 SWEP.VisualRecoilPositionBumpUpSights = 1
 SWEP.VisualRecoilMultCrouch = .9
 SWEP.VisualRecoilMultSights = .5
@@ -1005,6 +1005,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+        CorrectiveAng = Angle(-1, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

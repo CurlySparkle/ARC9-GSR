@@ -532,6 +532,14 @@ SWEP.AttachmentTableOverrides = {
     ["go_holdstyle_8"] = {
     ModelOffset = Vector(-0.3, -0.65, 0.3)
     },
+    ["eft_gp25"] = {
+	ModelOffset = Vector(-2.5, 0, -0.55),
+	ModelAngleOffset = Angle(0, 0, 180),
+    },
+    ["eft_m203"] = {
+	-- ModelOffset = Vector(-2, 0, 2),
+	ModelAngleOffset = Angle(0, 0, 180),
+    },
 }
 
 SWEP.AttachmentElements = {
@@ -635,6 +643,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.pump",
         Pos = Vector(0, -2.5, -0.6),
         Ang = Angle(-5, -90, 180),
+        CorrectiveAng = Angle(-3.5, -3, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),

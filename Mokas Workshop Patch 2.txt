@@ -5,7 +5,7 @@ Here's an abbrevriated version:
 	[th][list]
 	[*]All weapons now use visual recoil
 	[*]All weapons now have altered camouflage coverage*
-	[*]Adjusted a few attachment stats
+	[*]Tons of adjustments to attachments and weapons
 	[*]Integration with Escape from Tarkov attachments
 	[*]Русский язык (Russian language)
 	
@@ -43,7 +43,6 @@ This means that all weapons will have the following things added and adjusted:
 [/list]
 
 Weapons not listed below did not have any additional changes.
-
 [b][u]Akimbos[/u][/b]
 [table][tr]
 	[th][i]All[/i][/th]
@@ -75,7 +74,8 @@ Weapons not listed below did not have any additional changes.
 	[th]Has received a completely new set of animations[/th]
 [/tr][tr]
 	[th]M4A1-S[/th]
-	[th]Fixed the front sight being incorrect on occasion[/th]
+	[th]Fixed the front sight being incorrect on occasion
+	Can no longer equip the Heavy Suppressor[/th]
 [/tr][tr]
 [/tr][/table]
 
@@ -105,8 +105,8 @@ Weapons not listed below did not have any additional changes.
 
 [b][u]SMGs[/u][/b]
 [table][tr]
-	[th]MAC-10[/th]
-	[th]EDIT THIS[/th]
+	[th]MP5[/th]
+	[th]Added support for Stats attachments[/th]
 [/tr][tr]
 	[th]PP-Bizon[/th]
 	[th]Adjusted the recoil[/th]
@@ -122,7 +122,6 @@ Weapons not listed below did not have any additional changes.
 	[th]Fixed that the reload empty animation for extended mag was used even when extended mags was not equipped[/th]
 [/tr][tr]
 [/tr][/table]
-
 [b]*[i]This might break presets[/i][/b]
 
 [b][u]Attachment Fixes and Adjustments[/u][/b]
@@ -220,6 +219,16 @@ Weapons not listed below did not have any additional changes.
 	[th]Universal
 	Elcan SpecterDR (4x)[/th]
 	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	Point Shoot Grip[/th]
+	[th]Adjusted aim positions[/th]
+[/tr][tr]
+	[th]Universal
+	M203 Grenade Launcher
+	∟M203 Sight[/th]
+	[th]Fixed aim positions on all supported weapons
+	[i]Note: Non-GSR weapons using this might have incorrect aim positions still[/i][/th]
 [/tr][tr]
 	[th]G3SG1
 	G3SG1 Scope (8x)[/th]

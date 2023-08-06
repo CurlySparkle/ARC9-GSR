@@ -917,6 +917,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.g3sg1_Parent",
         Pos = Vector(0, -2, 12),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-0.7, -0.8, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_side"),

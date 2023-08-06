@@ -629,8 +629,8 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = "weapons/csgo/movement2.wav", t = 92/30},
-            {s = "weapons/csgo/movement3.wav", t = 116/30},
+            {s = "weapons/csgo/movement2.wav", t = 82/30},
+            {s = "weapons/csgo/movement3.wav", t = 110/30},
         },
     },
     ["bash"] = {
@@ -806,6 +806,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.1, -1.5, 5),
         Ang = Angle(90, 0, -90),		
         Icon_Offset = Vector(0, 0, 0),
+        CorrectiveAng = Angle(-0.55, -0.7, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
