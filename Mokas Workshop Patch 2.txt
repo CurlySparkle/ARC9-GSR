@@ -105,8 +105,8 @@ Weapons not listed below did not have any additional changes.
 
 [b][u]SMGs[/u][/b]
 [table][tr]
-	[th]MAC-10[/th]
-	[th]EDIT THIS[/th]
+	[th]MP5[/th]
+	[th]Added support for Stats attachments[/th]
 [/tr][tr]
 	[th]PP-Bizon[/th]
 	[th]Adjusted the recoil[/th]
