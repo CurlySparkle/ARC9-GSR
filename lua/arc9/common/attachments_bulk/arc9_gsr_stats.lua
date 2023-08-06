@@ -6,7 +6,6 @@ local ATT = {}
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Pro Screen"
 ATT.CompactName = "Pro Screen"
@@ -78,7 +77,6 @@ ARC9.LoadAttachment(ATT, "arc9_stat_proscreen")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Pro Screen (Main)"
 ATT.CompactName = [[Pro Screen 2]]
@@ -150,7 +148,6 @@ ARC9.LoadAttachment(ATT, "arc9_stat_proscreen_main")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = "Stattrak™ Kill Counter"
 ATT.CompactName = [[Stattrak™]]

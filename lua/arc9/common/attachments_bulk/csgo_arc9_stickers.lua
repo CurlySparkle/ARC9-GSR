@@ -11,7 +11,7 @@ ATT.Icon = Material("stickers/kawai")
 ATT.SortOrder = 0
 ATT.Free = true
 
-ATT.Folder = "CS:GO" -- Change this to point what part of the weapon it goes, only use this if you want ti give your stickers their own folder
+ATT.Folder = "GSR" -- Change this to point what part of the weapon it goes, only use this if you want ti give your stickers their own folder
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/kawai" -- Add a custom sticker image here.
@@ -28,7 +28,7 @@ ATT.Icon = Material("stickers/baby_lore_paper")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/baby_lore_paper" -- Add a custom sticker image here.
@@ -45,7 +45,7 @@ ATT.Icon = Material("stickers/baby_medusa_paper")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/baby_medusa_paper" -- Add a custom sticker image here.
@@ -62,7 +62,7 @@ ATT.Icon = Material("stickers/kawaii_ct_holo_base")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/kawaii_ct_holo_base" -- Add a custom sticker image here.
@@ -79,7 +79,7 @@ ATT.Icon = Material("stickers/nice_try_holo_base")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/nice_try_holo_base" -- Add a custom sticker image here.
@@ -96,7 +96,7 @@ ATT.Icon = Material("stickers/noble_steed_paper")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/noble_steed_paper" -- Add a custom sticker image here.
@@ -113,7 +113,7 @@ ATT.Icon = Material("stickers/rush_b_csgo10_paper")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/rush_b_csgo10_paper" -- Add a custom sticker image here.
@@ -130,7 +130,7 @@ ATT.Icon = Material("stickers/zeusception_holo_base")
 
 ATT.SortOrder = 0
 ATT.Free = true
-ATT.Folder = "CS:GO"
+ATT.Folder = "GSR"
 
 ATT.Category = {"stickers"} -- Change this to point what weapon it is for.
 ATT.StickerMaterial = "stickers/zeusception_holo_base" -- Add a custom sticker image here.

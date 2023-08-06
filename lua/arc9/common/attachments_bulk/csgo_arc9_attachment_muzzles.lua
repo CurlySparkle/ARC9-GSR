@@ -13,7 +13,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
-ATT.Folder = "Muzzles"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
 -- ATT.ExcludeElements = {"slide_raffica"}
 
@@ -46,7 +46,7 @@ ATT.AutoStats = true
 ATT.Category = {"muzzle_pistols"}
 ATT.Scale = 0.5
 ATT.ModelOffset = Vector(0.1, 0, 0)
-ATT.Folder = "Muzzles"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_p226.mdl"
 
@@ -78,7 +78,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
-ATT.Folder = "Muzzles"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_ar15.mdl"
 
@@ -108,7 +108,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle_shotgun"}
 ATT.Scale = 0.45
-ATT.Folder = "Muzzles"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_r870.mdl"
 
@@ -133,7 +133,7 @@ ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
-ATT.Folder = "Muzzles"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_uzi.mdl"
 

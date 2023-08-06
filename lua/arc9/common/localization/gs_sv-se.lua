@@ -403,6 +403,14 @@ L["csgo_description_xm1014"] = "XM1014 är ett kraftfullt helautomatiskt hagelge
 L["csgo_description_zeus"] = "Perfekt på nära håll för bakhåll och möten i slutna utrymmen. x27 Zeus med enkelskott är kapabel till att oskadliggöra en fiende med en enda träff."
 
 -- [[ Attachments ]]
+-- Attachment folder names
+L["csgo_folder_thermal"] = "Värmesikte"
+L["csgo_folder_magnifier"] = "Förstoringsglas"
+L["csgo_folder_muzzlebrake"] = "Mynningsbroms"
+L["csgo_folder_suppressor"] = "Ljuddämpare"
+L["csgo_folder_ubgl"] = "Vapen"
+L["csgo_folder_tube"] = "Rör"
+
 -- Attachment category slots
 L["csgo_category_ammo"] = "Ammo"
 L["csgo_category_barrel"] = "Pipa"

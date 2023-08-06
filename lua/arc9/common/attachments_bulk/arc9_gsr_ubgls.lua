@@ -6,7 +6,6 @@ local ATT = {}
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[M203 Grenade Launcher]]
 ATT.CompactName = [[M203]]
@@ -15,7 +14,7 @@ ATT.Description = [[Explosive auxiliary device right in the comfort of your hand
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
-ATT.Folder = "UBGL"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_ubgl")
 
 ATT.Model = "models/weapons/csgo/atts/ubgl_m203.mdl"
 ATT.ModelBodygroups = "00000000"
@@ -106,7 +105,7 @@ ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "M203"
+ATT.UBGLFiremodeName = ARC9:GetPhrase("go_ubgl_m203.compactname")
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 130
 
@@ -163,7 +162,6 @@ ARC9.LoadAttachment(ATT, "go_ubgl_m203")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[M203 Sight]]
 ATT.CompactName = [[Sight]]
@@ -197,7 +195,6 @@ ARC9.LoadAttachment(ATT, "go_ubgl_m203_sight")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[MASS-26 Breaching Shotgun]]
 ATT.CompactName = [[M26]]
@@ -206,7 +203,7 @@ ATT.Description = [[5 round, 12 gauge box magazine pumping shotgun for your hand
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
-ATT.Folder = "UBGL"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_ubgl")
 
 ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
 ATT.ModelBodygroups = "00000000"
@@ -298,7 +295,7 @@ ATT.UBGL = true
 ATT.UBGLAmmo = "buckshot"
 ATT.UBGLClipSize = 5
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "Pump-Action"
+ATT.UBGLFiremodeName = ARC9:GetPhrase("go_ubgl_mass26.compactname")
 ATT.UBGLChamberSize = 1
 ATT.ShootVolumeUBGL = 110
 ATT.RPMUBGL = 60
@@ -387,7 +384,6 @@ ARC9.LoadAttachment(ATT, "go_ubgl_mass26")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[XM1014 Breaching Shotgun]]
 ATT.CompactName = [[XM1014]]
@@ -396,7 +392,7 @@ ATT.Description = [[Super cutdowned XM1014 for your handguard.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 100
-ATT.Folder = "UBGL"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_ubgl")
 
 ATT.Model = "models/weapons/csgo/atts/ubgl_xm1014.mdl"
 ATT.ModelBodygroups = "00000000"
@@ -504,7 +500,7 @@ ATT.UBGL = true
 ATT.UBGLAmmo = "buckshot"
 ATT.UBGLClipSize = 4
 ATT.UBGLFiremode = 1
-//ATT.UBGLFiremodeName = "Pump-Action"
+ATT.UBGLFiremodeName = ARC9:GetPhrase("go_ubgl_xm1014.compactname")
 ATT.UBGLChamberSize = 1
 ATT.ShootVolumeUBGL = 110
 ATT.RPMUBGL = 180

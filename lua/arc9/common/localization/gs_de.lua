@@ -403,6 +403,14 @@ L["csgo_description_xm1014"] = "Die XM1014 ist eine leistungsstarke automatische
 L["csgo_description_zeus"] = "Perfekt für Hinterhalte aus nächster Nähe und Begegnungen in geschlossenen Gebieten, der Einzelschuss x27 Zeus ist in der Lage, einen Feind mit einem einzigen Treffer außer Gefecht zu setzen."
 
 -- [[ Attachments ]]
+-- Attachment folder names
+L["csgo_folder_thermal"] = "Thermal"
+L["csgo_folder_magnifier"] = "Visier"
+L["csgo_folder_muzzlebrake"] = "Mündungsbremse"
+L["csgo_folder_suppressor"] = "Schalldämpfer"
+L["csgo_folder_ubgl"] = "Waffe"
+L["csgo_folder_tube"] = "Rohr"
+
 -- Attachment category slots
 L["csgo_category_ammo"] = "Munition"
 L["csgo_category_barrel"] = "Fass"

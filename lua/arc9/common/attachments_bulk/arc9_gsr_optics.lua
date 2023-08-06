@@ -1,3 +1,5 @@
+local loadorder = 0
+
 local ATT = {}
 
 
@@ -15,10 +17,10 @@ ATT.Pros = {
 	"+ 2x Zoom"
 }
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "2X Optics"
+ATT.Folder = "GSR 1-2X/" .. ARC9:GetPhrase("csgo_folder_magnifier")
 
 ATT.Category = {"csgo_optic", "csgo_sights"}
 
@@ -94,10 +96,10 @@ ATT.Pros = {
 	"+ 2x Zoom"
 }
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "2X Optics"
+ATT.Folder = "GSR 1-2X/" .. ARC9:GetPhrase("csgo_folder_magnifier")
 
 ATT.Category = {"csgo_optic", "csgo_sights"}
 
@@ -173,10 +175,10 @@ ATT.Pros = {
 	"+ 2x Zoom"
 }
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "2X Optics"
+ATT.Folder = "GSR 1-2X/" .. ARC9:GetPhrase("csgo_folder_magnifier")
 
 ATT.Category = {"csgo_optic", "csgo_sights"}
 
@@ -253,10 +255,10 @@ ATT.Pros = {
 	"+ 2x Zoom"
 }
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "2X Optics"
+ATT.Folder = "GSR 1-2X/" .. ARC9:GetPhrase("csgo_folder_magnifier")
 
 ATT.Category = {"csgo_optic", "csgo_sights"}
 
@@ -334,10 +336,10 @@ ATT.Pros = {
     "+ Clearer sight picture",
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic"}
 
@@ -405,10 +407,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 2-4X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -466,10 +468,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 2-4X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -520,10 +522,10 @@ ATT.Pros = {
     "+ Second Mountable Top Sight",
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 2-4X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -598,10 +600,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optics_pistols"}
 
@@ -645,10 +647,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optics_pistols_alt"}
 
@@ -691,10 +693,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 1
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -739,10 +741,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 2-4X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -799,10 +801,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -846,10 +848,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -892,10 +894,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -938,10 +940,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -986,10 +988,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic","csgo_sights"}
 
@@ -1024,7 +1026,6 @@ ARC9.LoadAttachment(ATT, "csgo_optic_m21")
 
 ATT = {}
 
--- Originally a "bulk" attachment
 ATT.PrintName = "ITL MARS"
 ATT.CompactName = [[MARS]]
 ATT.Icon = Material("entities/attachs/mars.png", "mips smooth")
@@ -1033,10 +1034,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1098,10 +1099,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1146,10 +1147,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1199,10 +1200,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1246,10 +1247,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1293,10 +1294,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1340,10 +1341,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1392,10 +1393,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic_g3sg1"}
 ATT.ActivateElements = {"rearsight2"}
@@ -1445,10 +1446,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1497,10 +1498,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1549,10 +1550,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1601,10 +1602,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 2-4X"
 
 ATT.Category = {"csgo_optic"}
 
@@ -1662,10 +1663,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic","csgo_sights"}
 
@@ -1709,10 +1710,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic","csgo_optics_pistols"}
 
@@ -1742,6 +1743,96 @@ ATT.HoloSightColorable = false
 ARC9.LoadAttachment(ATT, "csgo_optic_t1_lp")
 
 
+///////////////////////////////////////      csgo_optic_trijicon
+
+
+ATT = {}
+
+ATT.PrintName = "Trijicon RMR (R)"
+ATT.CompactName = [[T RMR (R)]]
+ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
+ATT.Description = [[RMR (Ruggedized Miniature Reflex) sight from Insurgency: Sandstorm, provides an effective aiming dot.
+Designed only for sidearms, mounted on a low-profile rail.]]
+ATT.Pros = {
+    "+ Clearer sight picture"
+}
+ATT.Cons = {}
+ATT.SortOrder = loadorder + 1
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Free = false
+ATT.Folder = "GSR 1-2X"
+
+ATT.Category = {"csgo_optics_pistols","csgo_optic"}
+
+
+ATT.Model = "models/weapons/csgo/atts/sights/trijicon.mdl"
+ATT.Scale = 0.45
+ATT.ModelOffset = Vector(0, 0, 0.05)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.05, 7, -1),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 56,
+        IgnoreExtra = false
+    },
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
+ATT.HoloSightSize = 1512
+ATT.HoloSightColorable = false
+
+ARC9.LoadAttachment(ATT, "csgo_optic_trijicon")
+
+
+///////////////////////////////////////      csgo_optic_trijicon_alt
+
+
+ATT = {}
+
+ATT.PrintName = "Trijicon SRO (R)"
+ATT.CompactName = [[T SRO (R)]]
+ATT.Icon = Material("entities/attachs/trijicon.png", "mips smooth")
+ATT.Description = [[SRO (Specialized Reflex Optic) from Insurgency: Sandstorm, provides an effective aiming dot.
+Designed only for sidearms, mounted on a low-profile rail.]]
+ATT.Pros = {
+    "+ Clearer sight picture"
+}
+ATT.Cons = {}
+ATT.SortOrder = loadorder + 1
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Free = false
+ATT.Folder = "GSR 1-2X"
+
+ATT.Category = {"csgo_optics_pistols","csgo_optic"}
+
+
+ATT.Model = "models/weapons/csgo/atts/sights/trijicon_alt.mdl"
+ATT.Scale = 0.45
+ATT.ModelOffset = Vector(0, 0, 0.05)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.05, 7, -1),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 56,
+        IgnoreExtra = false
+    },
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
+ATT.HoloSightSize = 1512
+ATT.HoloSightColorable = false
+
+ARC9.LoadAttachment(ATT, "csgo_optic_trijicon_alt")
+
+
 ///////////////////////////////////////      csgo_optic_trijicon_alt_nonrail
 
 
@@ -1756,10 +1847,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optics_pistols_alt"}
 
@@ -1802,10 +1893,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic","csgo_sights"}
 
@@ -1848,10 +1939,10 @@ ATT.Pros = {
     "+ Clearer sight picture"
 }
 ATT.Cons = {}
-ATT.SortOrder = 4
+ATT.SortOrder = loadorder + 1
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Free = false
-ATT.Folder = "SIGHTS"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optics_pistols_alt"}
 
@@ -1890,12 +1981,12 @@ ATT.PrintName = "N-Vision Halo-LR Thermal Type"
 ATT.CompactName = "QTS (Thermal)"
 ATT.Icon = Material("entities/attachs/qts.png", "mips smooth")
 ATT.Description = [[Bulky thermal scope that highlights targets. Bulky electronics heavily weigh down the weapon.]]
-ATT.SortOrder = 1
+ATT.SortOrder = loadorder + 100
 
 ATT.Model = "models/weapons/csgo/atts/scopes/QTS.mdl"
 
 ATT.Category = {"csgo_optic"}
-ATT.Folder = "SCOPE"
+ATT.Folder = "GSR 1-2X"
 
 ATT.Sights = {
     {
