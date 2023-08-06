@@ -31,7 +31,7 @@ ATT.ToggleStats = {
         FlareSize = 50,
         FlareAttachment = 1,
         FlareFocus = true,
-        SpreadMultHipFire = 0.90
+        SpreadAddRecoil = -0.005
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -135,7 +135,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
         AimDownSightsTimeMult = 0.95,
         SprintToFireTimeMult = 0.95,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser_g"),
@@ -150,7 +150,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
         AimDownSightsTimeMult = 0.95,
         SprintToFireTimeMult = 0.95,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser_b"),
@@ -165,7 +165,7 @@ ATT.ToggleStats = {
         FlareFocus = true,
         AimDownSightsTimeMult = 0.95,
         SprintToFireTimeMult = 0.95,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -266,7 +266,8 @@ ATT.ToggleStats = {
         Flare = true,
         FlareColor = Color(255, 255, 255),
         FlareSize = 300,
-        FlareAttachment = 1
+        FlareAttachment = 1,
+		SpreadAddRecoil = -0.01,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_light"),
@@ -279,7 +280,7 @@ ATT.ToggleStats = {
         Flare = true,
         FlareColor = Color(255, 255, 255),
         FlareSize = 300,
-        FlareAttachment = 1
+        FlareAttachment = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser"),
@@ -291,7 +292,8 @@ ATT.ToggleStats = {
         FlareColor = Color(0, 255, 0),
         FlareSize = 50,
         FlareAttachment = 2,
-        FlareFocus = true
+        FlareFocus = true,
+		SpreadAddRecoil = -0.01,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -427,7 +429,7 @@ ATT.ToggleStats = {
         FlareSize = 50,
         FlareAttachment = 1,
         FlareFocus = true,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),

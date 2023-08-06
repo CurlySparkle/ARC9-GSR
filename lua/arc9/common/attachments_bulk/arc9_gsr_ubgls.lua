@@ -44,21 +44,24 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl"] = {
         Source = "ubgl_reload",
         EventTable = {		
-            {s =  "weapons/csgo/mag7/mag7_pump_back.wav" ,   t = 15 / 40},
-			{s =  "weapons/csgo/mp9/mp9_clipout2.wav" ,   t = 16 / 40},
-			{s =  "CSGO.Item.Movement" ,   t = 38 / 40},
-			{s =  "weapons/csgo/mp9/mp9_clipin2.wav" ,   t = 44 / 40},
-			{s =  "weapons/csgo/tec9/tec9_boltpull.wav" ,   t = 51 / 40},
-            {s =  "weapons/csgo/mag7/mag7_pump_forward.wav" ,    t = 70 / 40},			
+            {s = "weapons/csgo/mag7/mag7_pump_back.wav", t = 15 / 40},
+			{s = "weapons/csgo/mp9/mp9_clipout2.wav", t = 16 / 40},
+			{s = "CSGO.Item.Movement", t = 38 / 40},
+			{s = "weapons/csgo/mp9/mp9_clipin2.wav", t = 44 / 40},
+			{s = "weapons/csgo/tec9/tec9_boltpull.wav", t = 51 / 40},
+            {s = "weapons/csgo/mag7/mag7_pump_forward.wav",  t = 70 / 40},			
         },
     },
     ["enter_ubgl"] = {
         Source = "to_ubgl",
         EventTable = {		
-			{s =  "CSGO.Item.Movement" ,   t = 0 / 40},	
+			{s = "CSGO.Item.Movement", t = 0 / 40},	
         },
     },
     ["idle_ubgl"] = {
+        Source = "ubgl"
+    },
+    ["enter_sights_ubgl"] = {
         Source = "ubgl"
     },
     ["idle_ubgl_empty"] = {
@@ -67,7 +70,7 @@ ATT.IKAnimationProxy = {
     ["exit_ubgl"] = {
         Source = "from_ubgl",
         EventTable = {		
-			{s =  "CSGO.Item.Movement" ,   t = 0 / 40},	
+			{s = "CSGO.Item.Movement", t = 0 / 40},	
         },
     },
     ["idle_sprint_ubgl"] = {
@@ -143,6 +146,7 @@ ATT.Attachments = {
         Category = {"sight_m203_ubgl"},		
         Pos = Vector(-15.4, 0.2, -0.75),
         Ang = Angle(0, 0, 180),
+		Icon_Offset = Vector(-13, 0, -0.75),
 	},   
    -- {
         -- PrintName = "Ammo",
@@ -175,14 +179,19 @@ ATT.Category = {"sight_m203_ubgl"}
 ATT.ActivateElements = {"ubgl_viseur_du_lanceur"}
 ATT.HasSightsUBGL = true
 
+ATT.UBGLExclusiveSightsUBGL = true
+
 ATT.Sights = {
     {
         Pos = Vector(0.2, 30, -3.5),
-        Ang = Angle(-5.5, 1.5, 30),
+        Ang = Angle(-3.8, 3.65, 28),
+        Magnification = 1.1,
+        ViewModelFOV = 50,
         Reticle = nil, 
-
+        CrosshairInSights = false,
         Blur = true,
         UBGLOnly = true,
+        Disassociate = true,
     },		
 }
 
@@ -220,7 +229,9 @@ ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
         EventTable = {
-            {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 14 / 40},
+            -- {s = "weapons/csgo/nova/nova_pump.wav", t = 14 / 40},
+            {s = "weapons/csgo/aug/aug_boltpull.wav", t = 17 / 40},
+            {s = "weapons/csgo/aug/aug_boltrelease.wav", t = 27 / 40},
         },		
     },
     ["fire_empty_ubgl"] = {
@@ -228,23 +239,27 @@ ATT.IKAnimationProxy = {
     },
     ["reload_ubgl"] = {
         Source = "ubgl_reload_short",
-        EventTable = {		
-            {s =  "weapons/csgo/m4a1/m4a1_clipout.wav" ,   t = 8 / 40},
-            {s =  "weapons/csgo/m4a1/m4a1_clipin.wav" ,    t = 54 / 40},			
+		MinProgress = 0.725,
+        EventTable = {
+            {s = "weapons/csgo/aug/aug_clipout.wav", t = 8 / 40},
+            {s = "weapons/csgo/aug/aug_clipin.wav",  t = 57 / 40},	
         },
     },
     ["reload_ubgl_empty"] = {
         Source = "ubgl_reload",
-        EventTable = {		
-            {s =  "weapons/csgo/m4a1/m4a1_clipout.wav" ,   t = 8 / 40},
-            {s =  "weapons/csgo/m4a1/m4a1_clipin.wav" ,    t = 54 / 40},	
-            {s =  "weapons/csgo/nova/nova_pump.wav" ,   t = 80 / 40},			
+		MinProgress = 0.8,
+        EventTable = {
+            {s = "weapons/csgo/aug/aug_clipout.wav", t = 8 / 40},
+            {s = "weapons/csgo/aug/aug_clipin.wav",  t = 57 / 40},	
+            {s = "weapons/csgo/aug/aug_boltpull.wav", t = 80 / 40},
+            {s = "weapons/csgo/aug/aug_boltrelease.wav", t = 90 / 40},
         },
     },	
     ["enter_ubgl"] = {
         Source = "to_ubgl",
+		Mult = 1.2,
         EventTable = {		
-            {s =  "ARC9_CSGO_Rifle_Draw" ,   t = 0 / 40},		
+            {s = "ARC9_CSGO_Rifle_Draw", t = 0 / 40},		
         },		
     },
     ["idle_ubgl"] = {
@@ -255,8 +270,9 @@ ATT.IKAnimationProxy = {
     },
     ["exit_ubgl"] = {
         Source = "from_ubgl",
+		Mult = 1.2,
         EventTable = {		
-            {s =  "ARC9_CSGO_SMG_Draw", t = 0 / 40},	
+            {s = "ARC9_CSGO_SMG_Draw", t = 0 / 40},	
         },			
     },
     ["idle_sprint_ubgl"] = {
@@ -300,8 +316,6 @@ ATT.UBGLChamberSize = 1
 ATT.ShootVolumeUBGL = 110
 ATT.RPMUBGL = 60
 
-ATT.SpreadUBGL = 0.035
-
 ATT.FirstShootSoundUBGL = false
 ATT.ShootSoundUBGL = "CSGO.xm1014.Fire"
 ATT.ShootSoundSilencedUBGL = "CSGO.xm1014.Fire_Silenced"  -- M'AIDEZ CE NE MARCHE PAS
@@ -316,6 +330,15 @@ ATT.SprintAngUBGL = Angle(30, -15, 0)
 ATT.SprintPosUBGL = Vector(2, 4, 2)
 
 ATT.NumUBGL = 6
+
+-------------------------- SPREAD
+
+ATT.SpreadUBGL = 0.065
+
+ATT.SpreadAddRecoilUBGL = 0.1 -- Applied per unit of recoil.
+
+-------------------------- RECOIL
+
 -- General recoil multiplier
 ATT.RecoilUBGL = 1.5
 ATT.RecoilSeedUBGL = 24862
@@ -329,19 +352,21 @@ ATT.RecoilSideUBGL = 2 -- Multiplier for vertical recoil
 ATT.RecoilRandomUpUBGL = 0.3
 ATT.RecoilRandomSideUBGL = 0.5
 
-ATT.RecoilDissipationRateUBGL = 30 -- How much recoil dissipates per second.
+ATT.RecoilDissipationRateUBGL = 5 -- How much recoil dissipates per second.
 ATT.RecoilResetTimeUBGL = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 ATT.RecoilAutoControlUBGL = 2 -- Multiplier for automatic recoil control.
 
 ATT.RecoilKickUBGL = 1.5
 ATT.RecoilMultCrouchUBGL = 0.7
-ATT.RecoilMultSightsUBGL = 0.6
-ATT.RecoilMultHipFireUBGL = 1.25
-ATT.RecoilAutoControlMultHipFireUBGL = 0.5
+ATT.RecoilMultHipFireUBGL = 1
+ATT.RecoilAutoControlMultHipFireUBGL = 1
 
 ATT.ViewRecoilUBGL = true
 ATT.ViewRecoilUpMultUBGL = 5
+
+ATT.VisualRecoilPositionBumpUBGL = 1.5
+ATT.VisualRecoilPositionBumpUpUBGL = .15
 
 ATT.DamageMaxUBGL = 20 -- Damage done at point blank range
 ATT.DamageMinUBGL = 5 -- Damage done at maximum range
@@ -453,7 +478,7 @@ ATT.IKAnimationProxy = {
     ["enter_ubgl"] = {
         Source = "to_ubgl",
         EventTable = {		
-            {s =  "ARC9_CSGO_Rifle_Draw" ,   t = 0 / 40},		
+            {s = "ARC9_CSGO_Rifle_Draw", t = 0 / 40},		
         },		
     },
     ["idle_ubgl"] = {
@@ -465,7 +490,7 @@ ATT.IKAnimationProxy = {
     ["exit_ubgl"] = {
         Source = "from_ubgl",
         EventTable = {		
-            {s =  "ARC9_CSGO_SMG_Draw", t = 0 / 40},	
+            {s = "ARC9_CSGO_SMG_Draw", t = 0 / 40},	
         },			
     },
     ["idle_sprint_ubgl"] = {

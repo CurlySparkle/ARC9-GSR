@@ -686,7 +686,7 @@ SWEP.Attachments = {
 		Scale = 1.2,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_grip"),
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         -- Category = {"grip","go_m249_bipod"},
         Category = {"grip"},
@@ -694,6 +694,7 @@ SWEP.Attachments = {
 		InstalledElements = {"foregrip"},
         Pos = Vector(0, -0.73, 14.4),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-1, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

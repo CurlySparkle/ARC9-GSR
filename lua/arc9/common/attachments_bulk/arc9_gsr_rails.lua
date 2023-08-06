@@ -259,6 +259,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
         Category = {"grip"},
+        CorrectiveAng = Angle(-1, -50, 0),
     }
 }
 

@@ -806,6 +806,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.1, -1.5, 5),
         Ang = Angle(90, 0, -90),		
         Icon_Offset = Vector(0, 0, 0),
+        CorrectiveAng = Angle(-0.55, -0.7, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),

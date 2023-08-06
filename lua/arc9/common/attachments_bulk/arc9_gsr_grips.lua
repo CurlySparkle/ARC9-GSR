@@ -183,7 +183,7 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
-ATT.ToggleOnF = false -- This attachment is toggleable with the flashlight key.
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("csgo_stat_laser"),
@@ -196,24 +196,22 @@ ATT.ToggleStats = {
         FlareSize = 50,
         FlareAttachment = 1,
         FlareFocus = true,
-        SpreadMultHipFire = 0.95
+        SpreadAddRecoil = -0.01,
+		Sights = {
+			{
+				Pos = Vector(4, 20, -4),
+				Ang = Angle(0.25, -0.5, -20),
+				ViewModelFOV = 56,
+				Magnification = 1.1,
+				IgnoreExtra = false,
+				CrosshairInSights = true,
+			},
+		},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
     }
 }
-
-ATT.Sights = {
-    {
-        Pos = Vector(-2, 17, -4),
-        Ang = Angle(0.5, -1.4, 35),
-        ViewModelFOV = 56,
-        Magnification = 1.1,
-        IgnoreExtra = false,
-		CrosshairInSights = true,
-    },
-}
-
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.08

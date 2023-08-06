@@ -1005,6 +1005,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -3.9, 10.5),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+        CorrectiveAng = Angle(-1, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

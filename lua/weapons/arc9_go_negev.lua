@@ -125,7 +125,7 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 1
 SWEP.VisualRecoilUpSights = -.25
-SWEP.VisualRecoilSide = -.35
+SWEP.VisualRecoilSide = -.15
 SWEP.VisualRecoilSideSights = .05
 SWEP.VisualRecoilRoll = 1
 
@@ -748,6 +748,7 @@ SWEP.Attachments = {
 		InstalledElements = {"foregrip"},
         Pos = Vector(0, -2.15, 12.5),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-1.75, -1, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),

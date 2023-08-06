@@ -682,6 +682,7 @@ SWEP.Attachments = {
         InstalledElements = {"grip","grip_extender"},
         Pos = Vector(0.1, 10, -0.55),
         Ang = Angle(0, -90, 0),
+        CorrectiveAng = Angle(-0.6, -0.4, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),

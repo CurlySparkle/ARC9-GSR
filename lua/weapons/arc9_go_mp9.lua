@@ -619,6 +619,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.mp9_parent",
         Pos = Vector(0, -1.2, 5.5),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-0.65, -0.5, 0),
         --InstalledElements = {"grip"},
     },
     {
