@@ -697,12 +697,12 @@ L["csgo_skin_knife_ghost.compactname"] = "Spöke"
 L["csgo_skin_knife_ghost.description"] = "Boo!"
 
 -- Stock
-L["csgo_stock_tube.printname"] = "Buffer Tube - Lång"
-L["csgo_stock_tube.compactname"] = "B. Tube (L)"
+L["csgo_stock_tube.printname"] = "Buffertrör - Lång"
+L["csgo_stock_tube.compactname"] = "Buffert. (L)"
 L["csgo_stock_tube.description"] = "Aluminium monteringspunkt som tillåter användningen av anpassade kolvalternativ.\nInstallerar kolvar vid deras längst utdragna punkt som förbättrar rekylkontroll."
 
-L["csgo_stock_tube_retracted.printname"] = "Buffer Tube - Kort"
-L["csgo_stock_tube_retracted.compactname"] = "B. Tube (K)"
+L["csgo_stock_tube_retracted.printname"] = "Buffertrör - Kort"
+L["csgo_stock_tube_retracted.compactname"] = "Buffert. (K)"
 L["csgo_stock_tube_retracted.description"] = "Aluminium monteringspunkt som tillåter användningen av anpassade kolvalternativ.\nInstallerar kolvar vid deras kortaste punkt som förbättrar siktehastigheten med kostnad av rekylkontroll."
 
 -- Grips
@@ -1706,8 +1706,8 @@ L["csgo_m4a4_view.printname"] = "Alternativ Vy"
 L["csgo_m4a4_view.compactname"] = "Alt. Vy"
 L["csgo_m4a4_view.description"] = "Ändrar positionen på vapnet i vy."
 
-L["csgo_m4_tube_retract.printname"] = "Buffer Tube - Kort"
-L["csgo_m4_tube_retract.compactname"] = "B. Tube (K)"
+L["csgo_m4_tube_retract.printname"] = "Buffertrör - Kort"
+L["csgo_m4_tube_retract.compactname"] = "Buffert. (K)"
 L["csgo_m4_tube_retract.description"] = "Kollapsar kolven till dess kortaste punkt som förbättrar siktehastigheten med kostnad på rekylkontroll."
 
 -- MAC-10
