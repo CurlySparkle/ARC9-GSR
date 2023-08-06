@@ -118,8 +118,8 @@ SWEP.RecoilAutoControlMultHipFire = 0.25
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = -1
-SWEP.VisualRecoilUpSights = 0.5
+SWEP.VisualRecoilUp = -0.5
+SWEP.VisualRecoilUpSights = 0.25
 SWEP.VisualRecoilSide = -.05
 
 -- Moka's testing area - do not touch nor uncomment
@@ -559,8 +559,8 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = "weapons/csgo/movement2.wav", t = 92/30},
-            {s = "weapons/csgo/movement3.wav", t = 116/30},
+            {s = "weapons/csgo/movement2.wav", t = 80/30},
+            {s = "weapons/csgo/movement3.wav", t = 110/30},
         },
     },
     ["bash"] = {
@@ -654,7 +654,7 @@ SWEP.Attachments = {
         Ang = Angle(0, -90, 180),
         Category = {"csgo_optic"},
         InstalledElements = {"mount"},
-        CorrectiveAng = Angle(0.1, 0, 0),
+        CorrectiveAng = Angle(0.1, 0.1, 0),
         Installed = "csgo_optic_acog_2",
         -- Integral = "csgo_optic_acog_2",
     },

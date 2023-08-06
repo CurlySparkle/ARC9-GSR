@@ -264,6 +264,7 @@ SWEP.DropMagazineQCA = 3
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/deagle/"
+local speclook = "deagle_special_lookat_f"
 
 SWEP.ShootSound = "CSGO.Deagle.Fire"
 SWEP.ShootSoundSilenced = "CSGO.Deagle.Fire_Silenced"
@@ -417,11 +418,19 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 2/30},
-            {s = "CSGO.Item.Movement", t = 38/30},
-			{s = "CSGO.Item.Movement", t = 43/30},
-			{s = "CSGO.Item.Movement", t = 131/30},
-			{s = "CSGO.Item.Movement", t = 137/30},
+            -- {s = "CSGO.Item.Movement", t = 2/30},
+            {s = path .. speclook .. "009.wav", t = 09/30},
+            {s = path .. speclook .. "036.wav", t = 36/30},
+            {s = path .. speclook .. "057.wav", t = 57/30},
+            {s = path .. speclook .. "081.wav", t = 81/30},
+            {s = path .. speclook .. "111.wav", t = 111/30},
+            {s = path .. speclook .. "133.wav", t = 133/30},
+            {s = path .. speclook .. "166.wav", t = 166/30},
+            {s = path .. speclook .. "193.wav", t = 193/30},
+            {s = path .. speclook .. "228.wav", t = 228/30},
+			-- {s = "CSGO.Item.Movement", t = 43/30},
+			-- {s = "CSGO.Item.Movement", t = 131/30},
+			-- {s = "CSGO.Item.Movement", t = 137/30},
         },
     },
     ["bash"] = {

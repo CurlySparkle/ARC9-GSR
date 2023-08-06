@@ -349,26 +349,26 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0.005, 9.5, -1.515),
+        Pos = Vector(0, 15, -1.5075),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 46,
+        ViewModelFOV = 20,
         Magnification = 1.25,
         IgnoreExtra = true,
 		CrosshairInSights = false
     },
+    -- {
+        -- Pos = Vector(0.005, 9.5, -1.515),
+        -- Ang = Angle(0, 0, 0),
+        -- ViewModelFOV = 46,
+        -- Magnification = 1.25,
+		-- RTScopeFOV = 5,
+        -- IgnoreExtra = true,
+		-- CrosshairInSights = false
+    -- },
     {
-        Pos = Vector(0.005, 9.5, -1.515),
+        Pos = Vector(0, 15, -1.5075),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 46,
-        Magnification = 1.25,
-		RTScopeFOV = 5,
-        IgnoreExtra = true,
-		CrosshairInSights = false
-    },
-    {
-        Pos = Vector(0.005, 9.5, -1.515),
-        Ang = Angle(0, 0, 0),
-        ViewModelFOV = 46,
+        ViewModelFOV = 20,
         Magnification = 1.25,
 		RTScopeFOV = 3,
         IgnoreExtra = true,
@@ -397,7 +397,7 @@ ARC9.LoadAttachment(ATT, "csgo_optic_acog")
 ATT = {}
 
 ATT.PrintName = "Trijicon ACOG TA31 (4x)"
-ATT.CompactName = [[ACOG 1]]
+ATT.CompactName = [[ACOG 1 - SIG556 Scope]]
 ATT.Icon = Material("entities/attachs/go_optic_acog.png", "mips smooth")
 ATT.Description = [[Medium-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
@@ -420,9 +420,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.045, 7, -1.3175),
+        Pos = Vector(-0.04, 12, -1.3175),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 56,
+        ViewModelFOV = 25,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -438,7 +438,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
-ATT.RTScopeFOV = 8
+ATT.RTScopeFOV = 12
 ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/acog_alt.png", "mips smooth")
@@ -458,7 +458,7 @@ ARC9.LoadAttachment(ATT, "csgo_optic_acog_1")
 ATT = {}
 
 ATT.PrintName = "Trijicon ACOG TA31 (4x)"
-ATT.CompactName = [[ACOG 2]]
+ATT.CompactName = [[ACOG 2 - AUG Scope]]
 ATT.Icon = Material("entities/attachs/go_optic_acog2.png", "mips smooth")
 ATT.Description = [[Medium-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
@@ -481,9 +481,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0.023, 6.5, -1.4475),
+        Pos = Vector(0.023, 11, -1.4475),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 46,
+        ViewModelFOV = 20,
         Magnification = 1.15,
         IgnoreExtra = true
     },
@@ -491,7 +491,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
-ATT.RTScopeFOV = 8
+ATT.RTScopeFOV = 12
 ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/acog_alt.png", "mips smooth")
@@ -543,9 +543,9 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.013, 7.5, -1.55),
+        Pos = Vector(-0.013, 13, -1.55),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 46,
+        ViewModelFOV = 20,
         Magnification = 1.25,
         IgnoreExtra = true
     },
@@ -554,7 +554,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 0
-ATT.RTScopeFOV = 10
+ATT.RTScopeFOV = 12
 ATT.RTScopeRes = 1024
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/acog_overlay.png", "mips smooth")
@@ -574,7 +574,7 @@ ATT.Attachments = {
         Category = {"csgo_optics_pistols_alt",},
         Pos = Vector(4.2, 0, -3.15),
         Ang = Angle(0, 0, 0),
-        ExtraSightDistance = -4,
+        ExtraSightDistance = -10,
 		Scale = 0.8,
     },		
 }
@@ -661,7 +661,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.05, 12, -0.8),
+        Pos = Vector(-0.05, 20, -0.8),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,
@@ -754,9 +754,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0.0075, 7.5, -1.62),
-        Ang = Angle(0.1, 0.1, 0),
-        ViewModelFOV = 60,
+        Pos = Vector(0.0075, 12, -1.62),
+        Ang = Angle(0, 0, 0),
+        ViewModelFOV = 25,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -1161,9 +1161,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -2.23),
+        Pos = Vector(0, 7, -2.23),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 56,
+        ViewModelFOV = 45,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -1171,11 +1171,11 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 14
+ATT.RTScopeFOV = 20
 ATT.RTScopeRes = 1024
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/pkas_overlay.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.95
+ATT.RTScopeReticleScale = 1
 ATT.RTScopeShadowIntensity = 1
 ATT.RTScopeColor = Color(255, 255, 255)
 ATT.RTScopeNoPP = false
@@ -1355,9 +1355,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.1075, 9.5, -1.56),
-        Ang = Angle(-2, 0.3, 0),
-        ViewModelFOV = 60,
+        Pos = Vector(0.02, 17, -1.575),
+        Ang = Angle(0, 0, 0),
+        ViewModelFOV = 20,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -1460,9 +1460,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.003, 9, -2.14),
+        Pos = Vector(0.015, 16, -2.1425),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 56,
+        ViewModelFOV = 20,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -1512,9 +1512,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.005, 11, -1.55),
-        Ang = Angle(-1.15, 0, 0),
-        ViewModelFOV = 56,
+        Pos = Vector(0.055, 17, -1.5325),
+        Ang = Angle(0, 0, 0),
+        ViewModelFOV = 20,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -1522,7 +1522,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 8
+ATT.RTScopeFOV = 10
 ATT.RTScopeRes = 512
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/scope_overlay.png", "mips smooth")
@@ -1542,7 +1542,7 @@ ATT = {}
 
 ATT.PrintName = "Scope 8x"
 ATT.CompactName = [[SCOPE SSG08]]
-ATT.Icon = Material("entities/attachs/go_optic_hunter.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_optic_schmidt.png", "mips smooth")
 ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",
@@ -1564,9 +1564,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0.023, 10, -1.53),
+        Pos = Vector(0.034, 17, -1.53),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 56,
+        ViewModelFOV = 20,
         Magnification = 1,
         IgnoreExtra = true
     },
@@ -1616,9 +1616,9 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.02, 8, -1.57),
+        Pos = Vector(-0.015, 12, -1.57),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 42,
+        ViewModelFOV = 25,
         Magnification = 1.15,
         IgnoreExtra = true
     },
@@ -1634,11 +1634,11 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10
+ATT.RTScopeFOV = 12
 ATT.RTScopeRes = 1024
 -- ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/specter_overlay.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 1.25
 ATT.RTScopeShadowIntensity = 1
 ATT.RTScopeColor = Color(100, 255, 100)
 ATT.RTScopeNoPP = false
@@ -1899,25 +1899,25 @@ ATT.Folder = "SCOPE"
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7.5, -1.3),
+        Pos = Vector(-0.0115, 12, -1.285),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
-        ViewModelFOV = 40
+        ViewModelFOV = 20
     },
-    {
-        Pos = Vector(0, 7.5, -1.3),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-		RTScopeFOV = 15,
-        ViewModelFOV = 40
-    },
-    {
-        Pos = Vector(0, 7.5, -1.3),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-		RTScopeFOV = 10,
-        ViewModelFOV = 40
-    },
+    -- {
+        -- Pos = Vector(0, 7.5, -1.3),
+        -- Ang = Angle(0, 0, 0),
+        -- Magnification = 1.15,
+		-- RTScopeFOV = 15,
+        -- ViewModelFOV = 40
+    -- },
+    -- {
+        -- Pos = Vector(0, 7.5, -1.3),
+        -- Ang = Angle(0, 0, 0),
+        -- Magnification = 1.15,
+		-- RTScopeFOV = 10,
+        -- ViewModelFOV = 40
+    -- },
 }
 
 ATT.RTScope = true
