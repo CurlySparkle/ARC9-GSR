@@ -316,7 +316,7 @@ SWEP.Animations = {
         Source = "pump",
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 5/30},
+            {s = path .. "nova_pump.wav", t = 2/30},
         },
     },
     ["reload_start"] = {

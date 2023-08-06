@@ -165,7 +165,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.9 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMultSights = 0.5
@@ -217,10 +217,10 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(27, 27.5, 4)
+SWEP.CustomizePos = Vector(27, 27.5, 7)
 SWEP.CustomizeSnapshotFOV = 90
 
-SWEP.CustomizeSnapshotPos = Vector(0, 0, 4)
+SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -298,25 +298,25 @@ SWEP.HideBones = {
 }
 
 SWEP.BulletBones = {
-    [1] = "v_weapon.bullet_18",
-    [2] = "v_weapon.bullet_17",
-    [3] = "v_weapon.bullet_16",
-    [4] = "v_weapon.bullet_15",
-    [5] = "v_weapon.bullet_14",
-    [6] = "v_weapon.bullet_13",
-    [7] = "v_weapon.bullet_12",
-    [8] = "v_weapon.bullet_11",
-    [9] = "v_weapon.bullet_10",
-    [10] = "v_weapon.bullet_09",
-    [11] = "v_weapon.bullet_08",
-	[12] = "v_weapon.bullet_07",
-	[13] = "v_weapon.bullet_06",
-	[14] = "v_weapon.bullet_05",
-	[15] = "v_weapon.bullet_04",
-	[16] = "v_weapon.bullet_03",
-	[17] = "v_weapon.bullet_02",
-	[18] = "v_weapon.bullet_01",
-	[19] = "v_weapon.bullet_00",
+    [1] = "v_weapon.bullet__18",
+    [2] = "v_weapon.bullet__17",
+    [3] = "v_weapon.bullet__16",
+    [4] = "v_weapon.bullet__15",
+    [5] = "v_weapon.bullet__14",
+    [6] = "v_weapon.bullet__13",
+    [7] = "v_weapon.bullet__12",
+    [8] = "v_weapon.bullet__11",
+    [9] = "v_weapon.bullet__10",
+    [10] = "v_weapon.bullet__09",
+    [11] = "v_weapon.bullet__08",
+	[12] = "v_weapon.bullet__07",
+	[13] = "v_weapon.bullet__06",
+	[14] = "v_weapon.bullet__05",
+	[15] = "v_weapon.bullet__04",
+	[16] = "v_weapon.bullet__03",
+	[17] = "v_weapon.bullet__02",
+	[18] = "v_weapon.bullet__01",
+	[19] = "v_weapon.bullet__00",
 }
 
 SWEP.HideBonesSilenced = {}
@@ -526,6 +526,12 @@ SWEP.Animations = {
         Source = "lookat01",
         MinProgress = 0.1,
         FireASAP = true,
+        EventTable = {
+		    {s = "CSGO.Item.Movement", t = 10/40},
+			{s = "CSGO.Item.Movement", t = 170/40},
+			{s = "CSGO.Item.Movement", t = 235/40},
+			{s = "CSGO.Item.Movement", t = 255/40},
+        },
 		IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["bash"] = {
@@ -546,46 +552,46 @@ SWEP.Animations = {
     -- end
 -- end
 
-SWEP.Hook_HideBones = function(self, bones)
-    if self:GetLoadedRounds() < self:GetCapacity() then
-	    bones["v_weapon.bullet_15"] = true
-	    bones["v_weapon.bullet_16"] = true
-        bones["v_weapon.bullet_17"] = true
-        bones["v_weapon.bullet_18"] = true
+-- SWEP.Hook_HideBones = function(self, bones)
+    -- if self:GetLoadedRounds() < self:GetCapacity() then
+	    -- bones["v_weapon.bullet__15"] = true
+	    -- bones["v_weapon.bullet__16"] = true
+        -- bones["v_weapon.bullet__17"] = true
+        -- bones["v_weapon.bullet__18"] = true
 
-        return bones
-    end
-end
+        -- return bones
+    -- end
+-- end
 
--- SWEP.HideBones = {
--- }
+SWEP.HideBones = {
+}
 
--- SWEP.BulletBones = {
-    -- [1] = "v_weapon.bullet18",
-    -- [2] = "v_weapon.bullet17",
-    -- [3] = "v_weapon.bullet16",
-    -- [4] = "v_weapon.bullet15",
-    -- [5] = "v_weapon.bullet14",
-    -- [6] = "v_weapon.bullet13",
-    -- [7] = "v_weapon.bullet12",
-    -- [8] = "v_weapon.bullet11",
-    -- [9] = "v_weapon.bullet10",
-    -- [10] = "v_weapon.bullet09",
-    -- [11] = "v_weapon.bullet08",
-    -- [12] = "v_weapon.bullet07",
-    -- [13] = "v_weapon.bullet06",
-    -- [14] = "v_weapon.bullet05",
-    -- [15] = "v_weapon.bullet04",
-    -- [16] = "v_weapon.bullet03",
-    -- [17] = "v_weapon.bullet02",
-    -- [18] = "v_weapon.bullet01",
-    -- [19] = "v_weapon.bullet00",
--- }
+SWEP.BulletBones = {
+    [1] = "v_weapon.bullet_18",
+    [2] = "v_weapon.bullet_17",
+    [3] = "v_weapon.bullet_16",
+    [4] = "v_weapon.bullet_15",
+    [5] = "v_weapon.bullet_14",
+    [6] = "v_weapon.bullet_13",
+    [7] = "v_weapon.bullet_12",
+    [8] = "v_weapon.bullet_11",
+    [9] = "v_weapon.bullet_10",
+    [10] = "v_weapon.bullet_09",
+    [11] = "v_weapon.bullet_08",
+    [12] = "v_weapon.bullet_07",
+    [13] = "v_weapon.bullet_06",
+    [14] = "v_weapon.bullet_05",
+    [15] = "v_weapon.bullet_04",
+    [16] = "v_weapon.bullet_03",
+    [17] = "v_weapon.bullet_02",
+    [18] = "v_weapon.bullet_01",
+    [19] = "v_weapon.bullet_00",
+}
 
--- SWEP.HideBonesSilenced = {}
+SWEP.HideBonesSilenced = {}
 
--- SWEP.ReloadHideBoneTables = {
--- }
+SWEP.ReloadHideBoneTables = {
+}
 
 -------------------------- ATTACHMENTS
 
@@ -752,17 +758,22 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
-        --Bone = "v_weapon.AK47_clip",
         Category = "go_ammo",
-        --Icon_Offset = Vector(0, 1, 1),
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -1, 6.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Category = "go_negev_mag",
+        Bone = "v_weapon.negev_parent",
+		InstalledElements = {"negevmag"},
+        Pos = Vector(0, -3, 6.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, 1, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -771,6 +782,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, 1, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -778,30 +791,43 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, 1, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_negev_view"
+        Category = "go_negev_view",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, 1, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -4.5, -1.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -6.5, 1.5),
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
-        -- StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_c.mdl",
-        -- Category = "stickers",
-    -- },
+    {
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_c.mdl",
+        Category = "stickers",
+		ExcludeElements = {"negevmag"},
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, 0, 6.75),
+    },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/mach_negev_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.negev_parent",
+        Pos = Vector(0, -4.5, 10.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),

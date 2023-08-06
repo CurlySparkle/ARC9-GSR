@@ -168,7 +168,7 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.6 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMultSights = 0.5
@@ -593,7 +593,7 @@ SWEP.AttachmentElements = {
     },
     ["rearsight"] = {
         Bodygroups = {
-            {6,1},
+            {6,2},
 			{7,1},
         },
     },
