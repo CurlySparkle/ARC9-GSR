@@ -454,8 +454,8 @@ L["csgo_stat_laser_b"] = "Láser - Azul"
 
 L["csgo_stat_light"] = "Linterna"
 
-L["csgo_stat_global"] = "Globally"
-L["csgo_stat_curlife"] = "Current Life"
+L["csgo_stat_global"] = "Globalmente"
+L["csgo_stat_curlife"] = "Vida actual"
 
 -- These are via file name order with "bulk" attachments afterwards. Categorized manually.
 -- 2X Optics

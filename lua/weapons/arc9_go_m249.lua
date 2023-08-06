@@ -718,6 +718,7 @@ SWEP.Attachments = {
         Category = "go_ammo",
         -- Icon_Offset = Vector(0, 1, 1),
         Pos = Vector(0, 1.5, 6),
+		ExcludeElements = {"go_m249_mag_12g_45"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),

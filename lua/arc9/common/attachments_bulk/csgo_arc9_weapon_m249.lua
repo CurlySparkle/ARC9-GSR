@@ -131,13 +131,23 @@ ATT.RPM = 250
 
 ATT.NumOverride = 8
 
-ATT.SpreadAddHipFire = 0.1
-ATT.SpreadAddSights = 0.1
-ATT.SpreadAddSighted = 0.0875
+ATT.Spread = 0.1
+-- ATT.SpreadAddHipFire = 0.1
+-- ATT.SpreadAddSights = 0.1
+-- ATT.SpreadAddSighted = 0.05
 
 ATT.ClipSizeOverride = 45
 ATT.ReloadTimeMult = 1.1
 ATT.Ammo = "Buckshot"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
+        Category = "go_ammo_sg",
+        Pos = Vector(0, 0, 2.5),
+        Ang = Angle(0, 0, 0),		
+    },
+}
 
 ATT.ShootSound = "CSGO.xm1014.Fire"
 ATT.FirstShootSoundSilenced = "CSGO.xm1014.Fire_Silenced" 
