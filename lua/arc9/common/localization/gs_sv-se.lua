@@ -1282,7 +1282,6 @@ L["csgo_aug_mag_2.description"] = "Konverterar AUG:n till en AUG Para med en 9x1
 
 L["csgo_aug_barrel_long.printname"] = "620mm HBAR-Pipa"
 L["csgo_aug_barrel_long.compactname"] = "620mm HBAR"
-L["csgo_aug_barrel_long.description"] = "Longer barrel used on the AUG HBAR.\nImproves range and recoil control at the cost of weapon handling."
 L["csgo_aug_barrel_long.description"] = "Längre pipa som används på AUG HBAR.\nFörbättrar räckvidd och rekylkontroll med kostnad på vapenhantering."
 
 L["csgo_aug_barrel_short.printname"] = "420mm Para-Pipa"
@@ -1839,7 +1838,6 @@ L["csgo_p250_slide_short.description"] = "Förkortar slutstycket, pipan och pist
 
 L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW-Ram"
 L["csgo_p250_slide_flux.compactname"] = "FR-Ram"
-L["csgo_p250_slide_flux.description"] = "Longer Slutstycke och Pipa that improve recoil control and range at the cost of weapon handling.\nAlso attaches a PDW frame around the weapon."
 L["csgo_p250_slide_flux.description"] = "Längre slutstycke och pipa som förbättrar rekylkontrollen och räckvidden med kostnad på vapenhantering.\nInstallerar också en PDW-ram runt vapnet."
 
 -- P90
@@ -1863,10 +1861,9 @@ L["csgo_p90_view.printname"] = "Alternativ Vy"
 L["csgo_p90_view.compactname"] = "Alt. Vy"
 L["csgo_p90_view.description"] = "Ändrar positionen på vapnet i vy."
 
-L["go_p90_extendedbarrel.printname"] = "500mm Extended Barrel and RIS Handguard"
 L["go_p90_extendedbarrel.printname"] = "500mm Förlängd Pipa och RIS-Handgrepp"
 L["go_p90_extendedbarrel.compactname"] = "500mm RIS"
-L["go_p90_extendedbarrel.description"] = "Väldigt lång pipa med installerad RIS-handgrepp som tillåter fler tillbehör.\nSänker vapenhantering och rekylkontroll."
+L["go_p90_extendedbarrel.description"] = "Väldigt lång pipa med installerad RIS-handgrepp som tillåter fler tillbehör.\nFörbättrar räckvidd och rekylkontroll med kostnad på vapenhantering."
 
 L["csgo_p90_barrel_med.printname"] = "410mm PS90-Pipa"
 L["csgo_p90_barrel_med.compactname"] = "410mm PS90"

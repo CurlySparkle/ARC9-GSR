@@ -180,8 +180,9 @@ SWEP.Bipod = true
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
+SWEP.PreBashTime = 0.18
 SWEP.PostBashTime = 0.65
+SWEP.BashSpeed = 0.75
 
 -------------------------- TRACERS
 
@@ -536,6 +537,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 

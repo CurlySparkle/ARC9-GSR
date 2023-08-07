@@ -15,7 +15,7 @@ ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
 ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
--- ATT.ExcludeElements = {"slide_raffica"}
+ATT.ExcludeElements = {"p90_ris"}
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AKM.mdl"
 
@@ -80,6 +80,8 @@ ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
 ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
+ATT.ExcludeElements = {"p90_ris"}
+
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_ar15.mdl"
 
 ATT.ShootVolumeMult = 1.15
@@ -134,6 +136,8 @@ ATT.AutoStats = true
 ATT.Category = {"muzzle"}
 ATT.Scale = 0.45
 ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
+
+ATT.ExcludeElements = {"p90_ris"}
 
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_uzi.mdl"
 

@@ -55,14 +55,14 @@ Weapons not listed below did not have any additional changes.
 [b][u]Assault Rifles[/u][/b]
 [table][tr]
 	[th]AK-47[/th]
-	[th]Has received 4 default presets
-	Has also received two new name alterations[/th]
+	[th]Added 6 default presets
+	Added two new name alterations[/th]
 [/tr][tr]
 	[th]AUG[/th]
 	[th]Increased reload speed by 10%
 	[i]∟Not when using the 9mm magazines[/i]
 	Can now unequip scopes in order to use iron sights
-	Has received 2 default presets[/th]
+	Added 2 default presets[/th]
 [/tr][tr]
 	[th]FAMAS[/th]
 	[th]Increased reload speed by 5%[/th]
@@ -82,10 +82,13 @@ Weapons not listed below did not have any additional changes.
 [b][u]LMGs[/u][/b]
 [table][tr]
 	[th]M249[/th]
-	[th]The bipod now properly works instead of being an attachment[/th]
+	[th]The bipod now properly works instead of being an attachment
+	Reduced aiming and melee speed[/th]
 [/tr][tr]
 	[th]Negev[/th]
-	[th]Fixed that the front grip was not removed when foregrips were equipped[/th]
+	[th]Fixed the belt not working properly
+	Fixed that the front grip was not removed when foregrips were equipped
+	Reduced aiming and melee speed[/th]
 [/tr][tr]
 [/tr][/table]
 
@@ -93,13 +96,13 @@ Weapons not listed below did not have any additional changes.
 [table][tr]
 	[th]Desert Eagle[/th]
 	[th]Removed the "top" category*
-	Can also no longer equip muzzle attachments if either Compensator is equipped[/th]
+	Can no longer equip muzzle attachments if either Compensator is equipped[/th]
 [/tr][tr]
 	[th]Five-SeveN[/th]
 	[th]Removed the "optics" category*[/th]
 [/tr][tr]
-	[th]PP-Bizon[/th]
-	[th]Adjusted the recoil[/th]
+	[th]P250[/th]
+	[th]Removed the "optics" category*[/th]
 [/tr][tr]
 [/tr][/table]
 
@@ -388,5 +391,28 @@ Positives first followed by negatives under dotted line.
 	Max Range -12%
 	Recoil +5%
 	Min Range -18%
+	[/th]
+[/tr][tr]
+	[th]
+	
+	
+	P90
+	500mm Extended Barrel
+	and RIS Handguard
+	[/th]
+	[th]
+	ADS time -2%
+	Sprint-to-fire time -2%
+	Automatic recoil control -5%
+	[/th]
+	[th]
+	Min. Damage Range +20%
+	Muzzle velocity +30%
+	Visual recoil -15%
+	Recoil -20%
+	Max. Range +25%
+	---
+	Sprint-to-fire time +25%
+	ADS time +20%
 	[/th]
 [/tr][/table]

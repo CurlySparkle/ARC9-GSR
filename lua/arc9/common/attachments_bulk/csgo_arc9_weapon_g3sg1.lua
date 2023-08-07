@@ -996,11 +996,12 @@ ATT.Firemodes = {
 }
 
 ATT.Hook_TranslateAnimation = function (self, anim)
-    if anim == "reload" then
-        return "reload_smg"
-    elseif anim == "reload_empty" then 
-        return "reload_empty_smg"
-    elseif anim == "fire" then 
+    -- if anim == "reload" then
+        -- return "reload_smg"
+    -- elseif anim == "reload_empty" then 
+        -- return "reload_empty_smg"
+    -- elseif anim == "fire" then 
+    if anim == "fire" then 
         return "fire_alt"
     elseif anim == "ready" then 
         return "ready_alt"
@@ -1060,11 +1061,12 @@ ATT.Firemodes = {
 }
 
 ATT.Hook_TranslateAnimation = function (self, anim)
-    if anim == "reload" then
-        return "reload_smg"
-    elseif anim == "reload_empty" then 
-        return "reload_empty_smg"
-    elseif anim == "fire" then 
+    -- if anim == "reload" then
+        -- return "reload_smg"
+    -- elseif anim == "reload_empty" then 
+        -- return "reload_empty_smg"
+    -- elseif anim == "fire" then 
+    if anim == "fire" then 
         return "fire_alt"
     elseif anim == "ready" then 
         return "ready_alt"

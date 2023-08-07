@@ -175,8 +175,9 @@ SWEP.SpeedMultShooting = 0.5
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
-SWEP.PreBashTime = 0.13
+SWEP.PreBashTime = 0.18
 SWEP.PostBashTime = 0.6
+SWEP.BashSpeed = 0.75
 
 -------------------------- TRACERS
 
@@ -643,6 +644,19 @@ SWEP.AttachmentElements = {
             {0,1},
 			{6,1},
         },
+		BulletBones = {
+		[1] = "v_weapon.bullet_18",
+		[2] = "v_weapon.bullet_16",
+		[3] = "v_weapon.bullet_14",
+		[4] = "v_weapon.bullet_12",
+		[5] = "v_weapon.bullet_10",
+		[6] = "v_weapon.bullet_08",
+		[7] = "v_weapon.bullet_06",
+		[8] = "v_weapon.bullet_04",
+		[9] = "v_weapon.bullet_02",
+		[10] = "v_weapon.bullet_01",
+		[11] = "v_weapon.bullet_00",
+		},
     },
     ["mag_556m"] = {
         Bodygroups = {

@@ -616,7 +616,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.05, 12, -1),
+        Pos = Vector(-0.05, 7, -1.1),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 56,
@@ -626,8 +626,8 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
-ATT.HoloSightSize = 1024
-ATT.HoloSightColorable = true
+ATT.HoloSightSize = 1512
+ATT.HoloSightColorable = false
 
 
 ARC9.LoadAttachment(ATT, "csgo_optic_acog_rmr_alt")
@@ -673,8 +673,8 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("hud/arc9_csgo/reticles/aimpoint_dot.png", "mips smooth")
-ATT.HoloSightSize = 1024
-ATT.HoloSightColorable = true
+ATT.HoloSightSize = 1512
+ATT.HoloSightColorable = false
 
 
 ARC9.LoadAttachment(ATT, "csgo_optic_acog_rmr_alt_nonrail")

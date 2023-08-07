@@ -1857,7 +1857,7 @@ L["csgo_p90_view.description"] = "Alters the position of the weapon in view."
 
 L["go_p90_extendedbarrel.printname"] = "500mm Extended Barrel and RIS Handguard"
 L["go_p90_extendedbarrel.compactname"] = "500mm RIS"
-L["go_p90_extendedbarrel.description"] = "Very long barrel with attached RIS handguard allowing for more attachments.\nDecreases weapon handling and recoil control."
+L["go_p90_extendedbarrel.description"] = "Very long barrel with attached RIS handguard allowing for more attachments.\nImproves range and recoil control at the cost of weapon handling."
 
 L["csgo_p90_barrel_med.printname"] = "410mm PS90 Barrel"
 L["csgo_p90_barrel_med.compactname"] = "410mm PS90"

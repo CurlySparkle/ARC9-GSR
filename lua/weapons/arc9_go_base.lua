@@ -54,4 +54,4 @@ SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
-SWEP.AimDownSightsTimeMultShooting = 2
+SWEP.AimDownSightsTimeMultShooting = 1.5

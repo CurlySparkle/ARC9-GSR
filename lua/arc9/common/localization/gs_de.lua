@@ -1858,7 +1858,7 @@ L["csgo_p90_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
 L["go_p90_extendedbarrel.printname"] = "500 mm verlängerter Lauf und RIS-Handschutz"
 L["go_p90_extendedbarrel.compactname"] = "500mm RIS"
-L["go_p90_extendedbarrel.description"] = "Sehr langer Lauf mit angebrachtem RIS-Handschutz, der mehr Zubehör ermöglicht.\nVerringert die Waffenhandhabung und Rückstoßkontrolle."
+L["go_p90_extendedbarrel.description"] = "Sehr langer Lauf mit angebrachtem RIS-Handschutz, der mehr Zubehör ermöglicht.\nVerbessert Reichweite und Rückstoßkontrolle auf Kosten der Waffenhandhabung."
 
 L["csgo_p90_barrel_med.printname"] = "410-mm-PS90-Lauf"
 L["csgo_p90_barrel_med.compactname"] = "410 mm PS90"

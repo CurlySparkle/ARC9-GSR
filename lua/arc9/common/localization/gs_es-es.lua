@@ -1857,7 +1857,7 @@ L["csgo_p90_view.description"] = "Altera la posición del arma a la vista."
 
 L["go_p90_extendedbarrel.printname"] = "Cañón extendido de 500 mm y guardamanos RIS"
 L["go_p90_extendedbarrel.compactname"] = "500mm RIS"
-L["go_p90_extendedbarrel.description"] = "Cañón muy largo con guardamanos RIS acoplado que permite más accesorios.\nDisminuye el manejo del arma y el control del retroceso."
+L["go_p90_extendedbarrel.description"] = "Cañón muy largo con guardamanos RIS acoplado que permite más accesorios.\nMejora el alcance y el control del retroceso a costa del manejo del arma."
 
 L["csgo_p90_barrel_med.printname"] = "Cañón PS90 de 410 mm"
 L["csgo_p90_barrel_med.compactname"] = "410mm PS90"

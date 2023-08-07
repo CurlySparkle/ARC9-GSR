@@ -555,30 +555,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3", "melee4", "melee5"},
-        -- IKTimeLine = {
-            -- {
-                -- t = 0,
-                -- lhik = 1,
-                -- rhik = 1
-            -- },
-            -- {
-                -- t = 0.1,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.2,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.7,
-                -- lhik = 1,
-                -- rhik = 1
-            -- },
-        -- },
-        MinProgress = 1,
-        FireASAP = false,
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 -- SILENCED
     ["idle_silenced"] = {

@@ -29,7 +29,7 @@ ATT.Attachments = {
         Category = {"csgo_optics_pistols"},
         Pos = Vector(5, -0.075, -1.3),
         Ang = Angle(0, 0, 0),
-        ExtraSightDistance = -2,
+        ExtraSightDistance = 0,
 		Scale = 0.9,
 		CorrectiveAng = Angle(0.67, 0.65, 0),	
         -- KeepBaseIrons = true, -- troll
@@ -39,6 +39,8 @@ ATT.Attachments = {
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.05
 ATT.RecoilMult = 0.75
+
+ATT.VisualRecoilMult = 0.2
 
 ATT.RangeMaxMult = 1.35
 ATT.RangeMinMult = 1.35

@@ -451,6 +451,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 
