@@ -931,8 +931,8 @@ L["arc9_stat_proscreen_main.printname"] = "Pro-Bildschirm - Groß"
 L["arc9_stat_proscreen_main.compactname"] = "Pro S. (L)"
 L["arc9_stat_proscreen_main.description"] = "Befestigt einen Monitor an Ihrer Waffe, der die Anzahl der mit dieser Waffe erzielten Kills verfolgt und anzeigt."
 
-L["arc9_stat_stattrak.printname"] = "Stattrak™"
-L["arc9_stat_stattrak.compactname"] = "Stattrak™"
+L["arc9_stat_stattrak.printname"] = "StatTrak™"
+L["arc9_stat_stattrak.compactname"] = "StatTrak™"
 L["arc9_stat_stattrak.description"] = "Befestigt einen Monitor an Ihrer Waffe, der die Anzahl der mit dieser Waffe erzielten Kills verfolgt und anzeigt."
 
 -- Ammo

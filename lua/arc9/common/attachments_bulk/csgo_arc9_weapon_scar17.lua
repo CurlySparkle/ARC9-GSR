@@ -207,10 +207,10 @@ ATT.RecoilMultHipFire = 1.05
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.7
 
-ATT.RHIK_Priority = 100
+ATT.RHIK_Priority = 1
 ATT.RHIK = true
 
-ATT.LHIK_Priority = 5
+ATT.LHIK_Priority = 1
 ATT.LHIK = true
 
 ATT.Hook_TranslateAnimation = function (self, anim)

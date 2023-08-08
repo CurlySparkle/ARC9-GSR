@@ -931,8 +931,8 @@ L["arc9_stat_proscreen_main.printname"] = "Pro-Skärm - Stor"
 L["arc9_stat_proscreen_main.compactname"] = "Pro (S)"
 L["arc9_stat_proscreen_main.description"] = "Installerar en skärm på ditt vapen som spårar och visar antalet dråp gjorde med det vapnet."
 
-L["arc9_stat_stattrak.printname"] = "Stattrak™"
-L["arc9_stat_stattrak.compactname"] = "Stattrak™"
+L["arc9_stat_stattrak.printname"] = "StatTrak™"
+L["arc9_stat_stattrak.compactname"] = "StatTrak™"
 L["arc9_stat_stattrak.description"] = "Installerar en skärm på ditt vapen som spårar och visar antalet dråp gjorde med det vapnet."
 
 -- Ammo

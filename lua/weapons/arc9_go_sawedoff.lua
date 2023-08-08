@@ -536,6 +536,17 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end
 end
 
+SWEP.AttachmentTableOverrides = {
+    ["eft_gp25"] = {
+	ModelOffset = Vector(-5, 0, -0.5),
+	ModelAngleOffset = Angle(0, 0, 180),
+    },
+    ["eft_m203"] = {
+	-- ModelOffset = Vector(-2, 0, 2),
+	ModelAngleOffset = Angle(0, 0, 180),
+    },
+}
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),

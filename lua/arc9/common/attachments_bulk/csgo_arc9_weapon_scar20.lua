@@ -78,17 +78,17 @@ ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.75
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 
-ATT.Sights = {
-    {
-        Pos = Vector(0.075, 29, -2.95),
-        Ang = Angle(0.5, 4.5, -1.5),
-        ViewModelFOV = 56,
-        Magnification = 1.15,
-        IsIronSight  = true,
-		KeepBaseIrons = false,
-		CrosshairInSights = false
-    },
-}
+-- ATT.Sights = {
+    -- {
+        -- Pos = Vector(0.075, 29, -2.95),
+        -- Ang = Angle(0.5, 4.5, -1.5),
+        -- ViewModelFOV = 56,
+        -- Magnification = 1.15,
+        -- IsIronSight  = true,
+		-- KeepBaseIrons = false,
+		-- CrosshairInSights = false
+    -- },
+-- }
 
 ARC9.LoadAttachment(ATT, "csgo_scar20_barrel_stub")
 --------------------------------------------------------------------

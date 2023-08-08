@@ -288,6 +288,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,
@@ -321,6 +322,7 @@ SWEP.Animations = {
     },
     ["reload_empty_556"] = {
         Source = "reload2",
+		MinProgress = 0.7,
         IKTimeLine = {
             {t = 0, lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
@@ -339,6 +341,7 @@ SWEP.Animations = {
     },
     ["reload_556"] = {
         Source = "reload_short2",
+		MinProgress = 0.7,
         IKTimeLine = {
             {t = 0, lhik = 1, rhik = 1},
             {t = 0.2, lhik = 0, rhik = 1},
@@ -356,6 +359,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.75,
         IKTimeLine = {
             {
                 t = 0,

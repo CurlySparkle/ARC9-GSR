@@ -931,8 +931,8 @@ L["arc9_stat_proscreen_main.printname"] = "Экран профи - Большо�
 L["arc9_stat_proscreen_main.compactname"] = "Экран п. (Бол.)"
 L["arc9_stat_proscreen_main.description"] = "Прикрепляет к оружию монитор, который отслеживает и отображает количество убийств, совершённых с помощью этого оружия."
 
-L["arc9_stat_stattrak.printname"] = "Stattrak™"
-L["arc9_stat_stattrak.compactname"] = "Stattrak™"
+L["arc9_stat_stattrak.printname"] = "StatTrak™"
+L["arc9_stat_stattrak.compactname"] = "StatTrak™"
 L["arc9_stat_stattrak.description"] = "Прикрепляет к оружию монитор, который отслеживает и отображает количество убийств, совершённых с помощью этого оружия."
 
 -- Ammo

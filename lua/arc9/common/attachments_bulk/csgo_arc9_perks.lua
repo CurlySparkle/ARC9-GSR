@@ -168,7 +168,7 @@ ATT = {}
 
 ATT.PrintName = [[Deep Sea]]
 ATT.Description = [[Enables the weapon to keep firing while underwater with specially sealed internal parts.]]
-ATT.Icon = Material("entities/attachs/go_perk_cowboy.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_perk_diver.png", "mips smooth")
 ATT.AutoStats = true
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
