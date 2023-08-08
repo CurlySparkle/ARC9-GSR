@@ -526,7 +526,7 @@ SWEP.AttachmentElements = {
 			{4,3},
         },
     AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.2), } }	
-    }
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
