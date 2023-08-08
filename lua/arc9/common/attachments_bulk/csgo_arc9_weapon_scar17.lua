@@ -200,7 +200,7 @@ ATT.Category = "go_scar17_stock"
 ATT.ActivateElements = {"stock_scarab"}
 
 ATT.RecoilMult = 1.1
-ATT.VisualRecoilMult = 1.1
+ATT.VisualRecoilMult = 0.75
 ATT.RecoilKickMult = 1.2
 ATT.RecoilMultCrouch = 0.9
 ATT.RecoilMultHipFire = 1.05
@@ -212,6 +212,12 @@ ATT.RHIK = true
 
 ATT.LHIK_Priority = 5
 ATT.LHIK = true
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    if anim == "bash" then 
+        return "bash_bullpup"
+	end
+end
 
 ATT.Model = "models/weapons/csgo/c_rif_scar17_ikbodge.mdl"
 ATT.ModelOffset = Vector(-10, -3.6, 3.5)

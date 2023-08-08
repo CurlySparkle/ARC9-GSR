@@ -142,7 +142,7 @@ SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 4
 SWEP.VisualRecoilPositionBumpUp = .5
-SWEP.VisualRecoilPositionBumpUpSights = 1
+SWEP.VisualRecoilPositionBumpUpSights = .35
 SWEP.VisualRecoilMultCrouch = .85
 SWEP.VisualRecoilMultSights = .25
 

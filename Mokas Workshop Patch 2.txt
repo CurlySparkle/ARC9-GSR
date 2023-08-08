@@ -77,6 +77,10 @@ Weapons not listed below did not have any additional changes.
 	[th]Fixed the front sight being incorrect on occasion
 	Can no longer equip the Heavy Suppressor[/th]
 [/tr][tr]
+	[th]SCAR-17[/th]
+	[th]Fixed that the Caliber said it used 5.56x45mm NATO
+	(now says 7.62x51mm NATO)[/th]
+[/tr][tr]
 [/tr][/table]
 
 [b][u]LMGs[/u][/b]

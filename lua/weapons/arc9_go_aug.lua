@@ -93,6 +93,9 @@ SWEP.Firemodes = {
 -- General recoil multiplier
 SWEP.Recoil = 1
 
+-- SWEP.RecoilPerShot = 0.25
+-- SWEP.RecoilMax = 1
+
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
