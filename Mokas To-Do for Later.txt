@@ -1,0 +1,7 @@
+1. Add more perks
+∟ [perk_last] "Last One Out" - Increased damage on last round in magazine.
+∟ [perk_light] "Lightweight Frame" - Increased movement speed when aiming.
+∟ [perk_quickdraw] "Quickdraw" - Increased aiming speed.
+∟ [perk_rapidfire] "Greased Bolt" - Increased firing speed.
+∟ [perk_refund] "Head Hunt" - Reloads one bullet from reserves on headshot.
+∟ [perk_slow] "Full Stop" - Slows down enemies on hit.

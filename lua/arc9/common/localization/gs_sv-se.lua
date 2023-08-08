@@ -1140,6 +1140,31 @@ L["csgo_perk_melee_speed.printname"] = "Knivhuggare"
 L["csgo_perk_melee_speed.compactname"] = "Knivhuggare"
 L["csgo_perk_melee_speed.description"] = "Ökar närstridshastigheten."
 
+-- Perks, added later
+L["csgo_perk_.printname"] = "Sista Ut"
+L["csgo_perk_.compactname"] = "Sista Ut"
+L["csgo_perk_.description"] = "Ökar skadan med 25% på sista skottet i magasinet."
+
+L["csgo_perk_light.printname"] = "Lättvikt Ram"
+L["csgo_perk_light.compactname"] = "Lättvikt"
+L["csgo_perk_light.description"] = "Ökar rörelsehastigheten i siktet."
+
+L["csgo_perk_quickdraw.printname"] = "Snabbdrag"
+L["csgo_perk_quickdraw.compactname"] = "Snabbdrag"
+L["csgo_perk_quickdraw.description"] = "Ökar siktehastigheten."
+
+L["csgo_perk_rapidfire.printname"] = "Greased Bolt"
+L["csgo_perk_rapidfire.compactname"] = "Greased"
+L["csgo_perk_rapidfire.description"] = "Ökar eldhastigheten."
+
+L["csgo_perk_refund.printname"] = "Head Hunt"
+L["csgo_perk_refund.compactname"] = "Head Hunt"
+L["csgo_perk_refund.description"] = "Laddar ett skott från reserver när ett huvudskott görs."
+
+L["csgo_perk_slow.printname"] = "Helstopp"
+L["csgo_perk_slow.compactname"] = "Helstopp"
+L["csgo_perk_slow.description"] = "Tillämpar en omedelbar slow-down-effekt på träff."
+
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"
 L["csgo_sticker_kawai.compactname"] = "Kawaii Killer"

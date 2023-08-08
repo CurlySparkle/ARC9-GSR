@@ -126,7 +126,7 @@ ATT.RecoilUBGL = 2
 -- ATT.ExitUBGLSound = "CSGO.Item.Movement"
 
 ATT.ShootEntUBGL = "arc9_gsr_proj_40mm_he"
-ATT.ShootEntForceUBGL = 2500
+ATT.ShootEntForceUBGL = 5000
 
 ATT.MuzzleParticleUBGL = "weapon_muzzle_flash_assaultrifle_silenced2"
 

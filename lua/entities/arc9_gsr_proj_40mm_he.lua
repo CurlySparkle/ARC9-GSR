@@ -126,7 +126,7 @@ function ENT:Detonate(impact)
         // Shrapnel radius
         util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 312, 50)
 
-        self:EmitSound("weapons/csgo/hegrenade/explode3.wav", 130)
+        self:EmitSound("weapons/csgo/hegrenade/explode3.wav", 100)
     end
 
     if SERVER then

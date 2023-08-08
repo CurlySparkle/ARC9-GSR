@@ -588,6 +588,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 3.5, -0.4),
         Ang = Angle(0, -90, 180),
         Scale = 1,
+        CorrectiveAng = Angle(-0.8, -0.8, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tube"),

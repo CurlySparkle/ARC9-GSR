@@ -418,7 +418,6 @@ SWEP.Animations = {
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            -- {s = "CSGO.Item.Movement", t = 2/30},
             {s = path .. speclook .. "009.wav", t = 09/30},
             {s = path .. speclook .. "036.wav", t = 36/30},
             {s = path .. speclook .. "057.wav", t = 57/30},
@@ -428,9 +427,6 @@ SWEP.Animations = {
             {s = path .. speclook .. "166.wav", t = 166/30},
             {s = path .. speclook .. "193.wav", t = 193/30},
             {s = path .. speclook .. "228.wav", t = 228/30},
-			-- {s = "CSGO.Item.Movement", t = 43/30},
-			-- {s = "CSGO.Item.Movement", t = 131/30},
-			-- {s = "CSGO.Item.Movement", t = 137/30},
         },
     },
     ["bash"] = {

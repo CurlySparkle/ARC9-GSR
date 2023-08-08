@@ -1140,6 +1140,31 @@ L["csgo_perk_melee_speed.printname"] = "Stabber"
 L["csgo_perk_melee_speed.compactname"] = "Stabber"
 L["csgo_perk_melee_speed.description"] = "Increases melee speed."
 
+-- Perks, added later
+L["csgo_perk_.printname"] = "Last One Out"
+L["csgo_perk_.compactname"] = "Last Out"
+L["csgo_perk_.description"] = "Increases the damage by 25% for the last round in the magazine."
+
+L["csgo_perk_light.printname"] = "Lightweight Frame"
+L["csgo_perk_light.compactname"] = "Lightweight"
+L["csgo_perk_light.description"] = "Improves movement speed when aiming."
+
+L["csgo_perk_quickdraw.printname"] = "Quickdraw"
+L["csgo_perk_quickdraw.compactname"] = "Quickdraw"
+L["csgo_perk_quickdraw.description"] = "Increases aiming speed."
+
+L["csgo_perk_rapidfire.printname"] = "Greased Bolt"
+L["csgo_perk_rapidfire.compactname"] = "Greased"
+L["csgo_perk_rapidfire.description"] = "Increases firing speed."
+
+L["csgo_perk_refund.printname"] = "Head Hunt"
+L["csgo_perk_refund.compactname"] = "Head Hunt"
+L["csgo_perk_refund.description"] = "Reloads one bullet from reserves when hitting a headshot."
+
+L["csgo_perk_slow.printname"] = "Full Stop"
+L["csgo_perk_slow.compactname"] = "Full Stop"
+L["csgo_perk_slow.description"] = "Applies an immediate slow-down effect on hit."
+
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"
 L["csgo_sticker_kawai.compactname"] = "Kawaii Killer"

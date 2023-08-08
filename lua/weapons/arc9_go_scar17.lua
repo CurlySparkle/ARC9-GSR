@@ -575,12 +575,13 @@ SWEP.Attachments = {
 		Icon_Offset = Vector(1, 0, 0)
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_grip"),
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"grip","grip_scar"},
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.1, -3.5, 10),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-1.5, -1, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
