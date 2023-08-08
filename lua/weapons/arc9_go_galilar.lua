@@ -473,6 +473,9 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "0000000"
 
 SWEP.AttachmentElements = {
+	["sight_galil"] = {
+    AttPosMods = { [1] = { Pos = Vector(0, -4.9, 10.5), } }	
+	},
     ["stock_none"] = {
         Bodygroups = {
             {1,1},
@@ -523,10 +526,7 @@ SWEP.AttachmentElements = {
 			{4,3},
         },
     AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.2), } }	
-    },
-	["sight_galil"] = {
-    AttPosMods = { [1] = { Pos = Vector(0, -4.9, 10.5), } }	
-	}
+    }
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
