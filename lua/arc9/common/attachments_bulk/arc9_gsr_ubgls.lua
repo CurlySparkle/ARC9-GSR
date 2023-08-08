@@ -1,3 +1,5 @@
+local rejectatts = {"barrel_stub"} -- add elements that are rejected by all three
+
 local ATT = {}
 
 
@@ -20,6 +22,8 @@ ATT.Model = "models/weapons/csgo/atts/ubgl_m203.mdl"
 ATT.ModelBodygroups = "00000000"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
+
+ATT.ExcludeElements = rejectatts
 
 ATT.ShotgunReloadUBGL = false
 ATT.MuzzleDeviceUBGL = true
@@ -218,6 +222,8 @@ ATT.Model = "models/weapons/csgo/atts/ubgl_mass26.mdl"
 ATT.ModelBodygroups = "00000000"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
+
+ATT.ExcludeElements = rejectatts
 
 ATT.ShotgunReloadUBGL = false
 ATT.MuzzleDeviceUBGL = true
@@ -423,6 +429,8 @@ ATT.Model = "models/weapons/csgo/atts/ubgl_xm1014.mdl"
 ATT.ModelBodygroups = "00000000"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
+
+ATT.ExcludeElements = rejectatts
 
 ATT.ShotgunReloadUBGL = true
 ATT.MuzzleDeviceUBGL = true

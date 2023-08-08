@@ -67,7 +67,9 @@ ATT.AutoStats = true
 ATT.Free = false
 
 ATT.Category = {"go_scar20_barrel"}
-ATT.ActivateElements = {"barrel_stub"}
+ATT.ActivateElements = {"barrel_stub", "no_ubgl"}
+
+ATT.ExcludeElements = {"ubgl"}
 
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.8
@@ -77,6 +79,19 @@ ATT.VisualRecoilMult = 1.2
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.75
 ATT.PhysBulletMuzzleVelocityMult = 0.8
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
+        Category = {"grip_mk18"},
+        Pos = Vector(-4, 0, 0),
+        Ang = Angle(0, 180, 0),
+        Icon_Offset = Vector(1.5, 0, -1),
+		ExcludeElements = {"scar20_grip"},
+		Hidden = true,
+        Integral = true,
+    },
+}
 
 -- ATT.Sights = {
     -- {

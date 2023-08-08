@@ -536,7 +536,7 @@ SWEP.AttachmentElements = {
     },
     AttPosMods = { 
 	[6] = { Pos = Vector(-0.8, -4.6, 11), },
-	[4] = { Pos = Vector(0, -3.6, 9), },
+	-- [4] = { Pos = Vector(0, -3.6, 9), },
 	[3] = { Pos = Vector(0.05, -4.52, 15.55), }
 	}
     },
@@ -645,12 +645,14 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_grip"),
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"grip","grip_scar20"},
+		InstalledElements = {"scar20_grip"},
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -3.6, 10),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-0.5, -2, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
