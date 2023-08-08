@@ -36,7 +36,7 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_r8_tp.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-12.5, 4, -3.7),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-18, 1, -2),
+    TPIKPos = Vector(-16, 1, -2),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1,
 }
@@ -83,7 +83,7 @@ SWEP.Firemodes = {
     {
         Mode = 1,
 		PrintName = ARC9:GetPhrase("hud.firemode.single"),
-		SpreadAddHipFire = 0.01,
+		SpreadAddHipFire = 0.05,
 		SpreadAddMove = 0.03,
 		SpreadAddRecoil = 0.05,
 		TriggerDelay = 0,
@@ -111,29 +111,49 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 2.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 2
 
+-- SWEP.RecoilMultCrouch = 0.7
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultHipFire = 1.75
+SWEP.RecoilMultSights = 1
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 5
+SWEP.VisualRecoilSide = .5
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 1
+SWEP.VisualRecoilPositionBumpUpSights = 5
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = 1
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0
 
-SWEP.SpreadAddShooting = 0.02 -- Applied per unit of recoil.
+-- SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.02
-
-SWEP.SpreadAddRecoilSight = 0
 
 -------------------------- HANDLING
 
@@ -200,7 +220,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 25, 1.5)
+SWEP.CustomizePos = Vector(19, 25, 3.5)
 SWEP.CustomizeSnapshotFOV = 90
 
 SWEP.CustomizeSnapshotPos = Vector(2, -5, 3)
@@ -229,7 +249,7 @@ SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
@@ -318,6 +338,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["enter_sights"] = {
+        Source = "idle",
+    },
     ["idle_sprint"] = {
         Source = "sprint",
     },
@@ -332,7 +355,7 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
 		RareSource = {"lookat02","lookat03"},
-		RareSourceChance = 0.3,
+		RareSourceChance = 0.01,
         MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
@@ -419,12 +442,14 @@ SWEP.Attachments = {
         DefaultAttName = "R8",
         Category = "go_r8",
         InstalledElements = {"6shot"},
---        Bone = "v_weapon.deagle_parent",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -4, 6.5),
     }, 
 	{
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
+		ExcludeElements = {"6shot"},
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(-0.025, -3.35, 10),
         Ang = Angle(90, 0, -90),
@@ -435,10 +460,11 @@ SWEP.Attachments = {
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(0, -4.1, 4.5),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols","eft_optic_small"},
+        Category = {"csgo_optics_pistols"},
         ExcludeElements = {"6shot"},
         CorrectiveAng = Angle(-0.4, 0.8, 0),
 		Scale = 1,
+		ExtraSightDistance = 8,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
@@ -459,7 +485,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 1, 6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -468,6 +496,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 1, 6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -475,32 +505,44 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, 1, 5),
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
-        -- StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_a.mdl",
-        -- Category = "stickers",
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
-        -- StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_b.mdl",
-        -- Category = "stickers",
-    -- },
+    {
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_a.mdl",
+        Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -3, 9),
+		ExcludeElements = {"6shot"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_b.mdl",
+        Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -3, 6.5),
+		ExcludeElements = {"6shot"},
+    },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -2.75, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_revolver_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.deagle_parent",
+        Pos = Vector(0, -1.15, 0.75),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.deagle_parent", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(0.5, -3.4, 6.5), -- offset that the attachment will be relative to the bone
+        Pos = Vector(0.5, -3.4, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {

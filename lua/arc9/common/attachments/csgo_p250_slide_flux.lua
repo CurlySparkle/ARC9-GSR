@@ -36,11 +36,18 @@ ATT.Attachments = {
     },		
 }
 
+ATT.Hook_TranslateAnimation = function (self, anim)
+    if anim == "fire" then 
+        return "fire_alt"
+	end
+end
+
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.05
 ATT.RecoilMult = 0.75
 
-ATT.VisualRecoilMult = 0.2
+ATT.RecoilMult = 0.65
+ATT.VisualRecoilMultSights = 0.2
 
 ATT.RangeMaxMult = 1.35
 ATT.RangeMinMult = 1.35
