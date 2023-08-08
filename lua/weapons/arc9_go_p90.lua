@@ -742,6 +742,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -3.2, 7.45),
         Ang = Angle(90, 0, -90),
 		Icon_Offset = Vector(-1.25, 0, -0.15),
+        CorrectiveAng = Angle(-0.65, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),

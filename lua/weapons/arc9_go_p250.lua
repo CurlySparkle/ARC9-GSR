@@ -87,7 +87,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.7
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -286,6 +286,10 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
+    },
+    ["fire_alt"] = {
+        Source = {"shoot1_ads"},
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {

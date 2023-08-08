@@ -86,7 +86,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.8
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 59299 -- CSGO Seed Input Test
 
@@ -106,22 +106,51 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.6
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 1
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilUpSights = -0.5
+SWEP.VisualRecoilSide = .5
+SWEP.VisualRecoilSideSights = .15
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 1
+SWEP.VisualRecoilPositionBumpUpSights = -.25
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = 1
+
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.005
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.025
+SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0
+
+SWEP.RecoilModifierCapSights = 0.3
 
 -------------------------- HANDLING
 
@@ -148,10 +177,10 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.82, 5, 0.8),
+    Pos = Vector(-2.82, -4, 0.8),
     Ang = Angle(0, 1, 0),
     Magnification = 1.15,
-    ViewModelFOV = 46,
+    ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -179,7 +208,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17.5, 23, 2)
+SWEP.CustomizePos = Vector(17.5, 23, 3.5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
@@ -427,8 +456,10 @@ end
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
-		--Bone = "v_weapon.glock_magazine",
-        Category = "go_p2000_slide"
+        Category = "go_p2000_slide",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, -2.5, 5),
+		InstalledElements = {"no_stickers"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -447,16 +478,17 @@ SWEP.Attachments = {
         Category = {"csgo_rail_optic_pistols",},
 		Scale = 1,
 		CorrectiveAng = Angle(0.67, 0.65, 0),
+		InstalledElements = {"no_stickers"},
     },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "v_weapon.HKP2000_Slide",
-        Pos = Vector(0, -0.1, 1),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
-        CorrectiveAng = Angle(0.7, 0.6, 0),
-		Scale = 0.8,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Bone = "v_weapon.HKP2000_Slide",
+        -- Pos = Vector(0, -0.1, 1),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_optics_pistols_alt","eft_optic_small"},
+        -- CorrectiveAng = Angle(0.7, 0.6, 0),
+		-- Scale = 0.8,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
@@ -470,19 +502,21 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.HKP2000_Clip",
         Category = "go_mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, -1.5, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.HKP2000_Clip",
         Category = "go_ammo",
-        Pos = Vector(0, 1, 0),
+        Pos = Vector(0, -0.5, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, 2, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -491,6 +525,8 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, 2, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -498,26 +534,40 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, 2, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, -2, 0.5),
+		ExcludeElements = {"no_stickers"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, -2.25, 2.65),
+		ExcludeElements = {"no_stickers"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, -2.25, 4.5),
+		ExcludeElements = {"no_stickers"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_hkp2000_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.HKP2000_Parent",
+        Pos = Vector(0, 0.5, 0),
+		ExcludeElements = {"no_stickers"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
@@ -528,7 +578,10 @@ SWEP.Attachments = {
 	},
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_pistols_view"
+        Category = "go_pistols_view",
+        Bone = "v_weapon.HKP2000_Parent",
+		CosmeticOnly = false,
+        Pos = Vector(0, 2, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
