@@ -994,7 +994,7 @@ ATT.Free = false
 ATT.Folder = "GSR 1-2X"
 
 ATT.Category = {"csgo_optic","csgo_sights"}
-
+ATT.ActivateElements = {"sight_galil"}
 
 ATT.Model = "models/weapons/csgo/atts/sights/sight_galil.mdl"
 ATT.Scale = 1.1
