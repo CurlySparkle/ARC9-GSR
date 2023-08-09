@@ -1141,9 +1141,9 @@ L["csgo_perk_melee_speed.compactname"] = "Knivhuggare"
 L["csgo_perk_melee_speed.description"] = "Ökar närstridshastigheten."
 
 -- Perks, added later
-L["csgo_perk_.printname"] = "Sista Ut"
-L["csgo_perk_.compactname"] = "Sista Ut"
-L["csgo_perk_.description"] = "Ökar skadan med 25% på sista skottet i magasinet."
+L["csgo_perk_last.printname"] = "Sista Ut"
+L["csgo_perk_last.compactname"] = "Sista Ut"
+L["csgo_perk_last.description"] = "Ökar skadan med 25% på sista skottet i magasinet."
 
 L["csgo_perk_light.printname"] = "Lättvikt Ram"
 L["csgo_perk_light.compactname"] = "Lättvikt"

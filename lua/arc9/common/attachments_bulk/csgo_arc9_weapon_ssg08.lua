@@ -118,10 +118,10 @@ ATT.ActivateElements = {"sight_iron"}
 
 ATT.Sights = {
     {
-        Pos = Vector(-0, 15, -1),
-        Ang = Angle(0, -0.5, 0),
+        Pos = Vector(-0, 9, -0.75),
+        Ang = Angle(0, -0, 0),
         Magnification = 1.15,
-        ViewModelFOV = 36,
+        ViewModelFOV = 56,
         IgnoreExtra = false
     },
 }

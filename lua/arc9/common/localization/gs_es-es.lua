@@ -1140,6 +1140,31 @@ L["csgo_perk_melee_speed.printname"] = "Apuñalador"
 L["csgo_perk_melee_speed.compactname"] = "Apuñalador"
 L["csgo_perk_melee_speed.description"] = "Aumenta la velocidad cuerpo a cuerpo."
 
+-- Perks, added later
+L["csgo_perk_last.printname"] = "El último en salir"
+L["csgo_perk_last.compactname"] = "Último en salir"
+L["csgo_perk_last.description"] = "Aumenta el daño en un 25% para el último cartucho del cargador."
+
+L["csgo_perk_light.printname"] = "Armazón ligero"
+L["csgo_perk_light.compactname"] = "Ligero"
+L["csgo_perk_light.description"] = "Mejora la velocidad de movimiento al apuntar."
+
+L["csgo_perk_quickdraw.printname"] = "Quickdraw"
+L["csgo_perk_quickdraw.compactname"] = "Quickdraw"
+L["csgo_perk_quickdraw.description"] = "Aumenta la velocidad de puntería."
+
+L["csgo_perk_rapidfire.printname"] = "Fuego rápido"
+L["csgo_perk_rapidfire.compactname"] = "Rápido"
+L["csgo_perk_rapidfire.description"] = "Aumenta la velocidad de disparo."
+
+L["csgo_perk_refund.printname"] = "Caza Cabezas"
+L["csgo_perk_refund.compactname"] = "Caza Cabezas"
+L["csgo_perk_refund.description"] = "Recarga una bala de las reservas al acertar un tiro en la cabeza."
+
+L["csgo_perk_slow.printname"] = "Punto Final"
+L["csgo_perk_slow.compactname"] = "Punto Final"
+L["csgo_perk_slow.description"] = "Aplica un efecto de ralentización inmediata al golpear"
+
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"
 L["csgo_sticker_kawai.compactname"] = "Kawaii Killer"
@@ -1931,13 +1956,13 @@ L["csgo_scar20_view.compactname"] = "Vista Alt."
 L["csgo_scar20_view.description"] = "Altera la posición del arma a la vista."
 
 -- Scout
-L["csgo_scout_barrel_long.printname"] = "570mm Elite Barrel"
-L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
-L["csgo_scout_barrel_long.description"] = "Long heavy barrel that improves muzzle velocity and range at the cost of weapon handling."
+L["csgo_scout_barrel_long.printname"] = "Cañón Elite de 570mm"
+L["csgo_scout_barrel_long.compactname"] = "Elite 570mm"
+L["csgo_scout_barrel_long.description"] = "Cañón largo y pesado que mejora la velocidad de salida y el alcance a costa del manejo del arma."
 
-L["csgo_scout_barrel_short.printname"] = "400mm Survival Barrel"
-L["csgo_scout_barrel_short.compactname"] = "400mm Survival"
-L["csgo_scout_barrel_short.description"] = "Compact barrel that improves weapon handling at the cost of muzzle velocity, range and damage."
+L["csgo_scout_barrel_short.printname"] = "Cañón de supervivencia de 400mm"
+L["csgo_scout_barrel_short.compactname"] = "Survival 400mm"
+L["csgo_scout_barrel_short.description"] = "Cañón compacto que mejora el manejo del arma a costa de la velocidad de salida, el alcance y el daño."
 
 -- SIG556
 L["csgo_sg556_barrel_short.printname"] = "Cañón y Guardamanos SG 552 300mm Commando"
