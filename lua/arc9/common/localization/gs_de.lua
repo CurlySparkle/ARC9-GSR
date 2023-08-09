@@ -1931,6 +1931,15 @@ L["csgo_scar20_view.printname"] = "Alternative Ansicht"
 L["csgo_scar20_view.compactname"] = "Alternative Ansicht"
 L["csgo_scar20_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
+-- Scout
+L["csgo_scout_barrel_long.printname"] = "570mm Elite Barrel"
+L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
+L["csgo_scout_barrel_long.description"] = "Long heavy barrel that improves muzzle velocity and range at the cost of weapon handling."
+
+L["csgo_scout_barrel_short.printname"] = "400mm Survival Barrel"
+L["csgo_scout_barrel_short.compactname"] = "400mm Survival"
+L["csgo_scout_barrel_short.description"] = "Compact barrel that improves weapon handling at the cost of muzzle velocity, range and damage."
+
 -- SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 300 mm Kommandolauf und Handschutz"
 L["csgo_sg556_barrel_short.compactname"] = "Befehl"

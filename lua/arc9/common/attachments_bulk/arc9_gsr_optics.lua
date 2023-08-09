@@ -1505,6 +1505,7 @@ ATT.Folder = "GSR 4X+"
 
 ATT.Category = {"csgo_optic"}
 
+ATT.ActiveElements = {"scout_scope"}
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_scout.mdl"
 ATT.Scale = 1

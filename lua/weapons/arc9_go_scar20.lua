@@ -323,7 +323,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.4,
+		MinProgress = 0.55,
         IKTimeLine = {
             {
                 t = 0,
@@ -353,6 +353,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		MinProgress = 0.7,
         IKTimeLine = {
             {
                 t = 0,

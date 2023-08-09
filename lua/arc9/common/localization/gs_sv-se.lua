@@ -1153,12 +1153,12 @@ L["csgo_perk_quickdraw.printname"] = "Snabbdrag"
 L["csgo_perk_quickdraw.compactname"] = "Snabbdrag"
 L["csgo_perk_quickdraw.description"] = "Ökar siktehastigheten."
 
-L["csgo_perk_rapidfire.printname"] = "Greased Bolt"
-L["csgo_perk_rapidfire.compactname"] = "Greased"
+L["csgo_perk_rapidfire.printname"] = "Snabbeld"
+L["csgo_perk_rapidfire.compactname"] = "Snabbeld"
 L["csgo_perk_rapidfire.description"] = "Ökar eldhastigheten."
 
-L["csgo_perk_refund.printname"] = "Head Hunt"
-L["csgo_perk_refund.compactname"] = "Head Hunt"
+L["csgo_perk_refund.printname"] = "Huvudjakt"
+L["csgo_perk_refund.compactname"] = "Huvudjakt"
 L["csgo_perk_refund.description"] = "Laddar ett skott från reserver när ett huvudskott görs."
 
 L["csgo_perk_slow.printname"] = "Helstopp"
@@ -1960,6 +1960,15 @@ L["csgo_scar20_mag_30.description"] = "Ökar magasinkapaciteten med kostnad på 
 L["csgo_scar20_view.printname"] = "Alternativ Vy"
 L["csgo_scar20_view.compactname"] = "Alt. Vy"
 L["csgo_scar20_view.description"] = "Ändrar positionen på vapnet i vy."
+
+-- Scout
+L["csgo_scout_barrel_long.printname"] = "570mm Elite-Pipa"
+L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
+L["csgo_scout_barrel_long.description"] = "Lång, tung pipa som förbättrar mynningshastigheten och räckvidden med kostnad på vapenhantering."
+
+L["csgo_scout_barrel_short.printname"] = "400mm Överlevnadspipa"
+L["csgo_scout_barrel_short.compactname"] = "400mm Överl."
+L["csgo_scout_barrel_short.description"] = "Kompakt pipa som förbättrar vapenhantering med kostnad på mynninghastighet, räckvidd och skada."
 
 -- SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 300mm Commando-Pipa och Handgrepp"
