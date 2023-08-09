@@ -81,6 +81,10 @@ Weapons not listed below did not have any additional changes.
 	[th]Fixed that the Caliber said it used 5.56x45mm NATO
 	(now says 7.62x51mm NATO)[/th]
 [/tr][tr]
+	[th]SIG556[/th]
+	[th]Fixed the aiming positions when using either the
+	Commando or Prototype Barrels[/th]
+[/tr][tr]
 [/tr][/table]
 
 [b][u]LMGs[/u][/b]
@@ -167,7 +171,7 @@ Weapons not listed below did not have any additional changes.
 	[th]Scope[/th]
 	[th]C79 Scope[/th]
 [/tr][/table]
-[b]*Also accounts for Magnifier variants
+[b]*Also accounts for Magnifier variants[/b]
 
 [i]A few attachments has had changes applied to them:[/i]
 [table][tr]
@@ -196,15 +200,18 @@ Weapons not listed below did not have any additional changes.
 [/tr][tr]
 	[th]Universal
 	N-Vision Halo-LR Thermal[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	SIG556 Scope[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	AUG Scope[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	C79 Scope[/th]
@@ -216,19 +223,23 @@ Weapons not listed below did not have any additional changes.
 [/tr][tr]
 	[th]Universal
 	AWP Scope (8x)[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	SCAR-20 Scope (8x)[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	Scout Scope (6x)[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	Elcan SpecterDR (4x)[/th]
-	[th]Adjusted aim positions[/th]
+	[th]Adjusted aim positions
+	Adjusted magnification levels[/th]
 [/tr][tr]
 	[th]Universal
 	Point Shoot Grip[/th]
@@ -238,7 +249,8 @@ Weapons not listed below did not have any additional changes.
 	M203 Grenade Launcher
 	∟M203 Sight[/th]
 	[th]Fixed aim positions on all supported weapons
-	[i]Note: Non-GSR weapons using this might have incorrect aim positions still[/i][/th]
+	[i]Note: Non-GSR weapons using this might have incorrect aim positions still[/i]
+	[i]Note: Equipping attachments that alter the position of the M203 will break the aim pos.[/i][/th]
 [/tr][tr]
 	[th]G3SG1
 	G3SG1 Scope (8x)[/th]
@@ -423,3 +435,5 @@ Positives first followed by negatives under dotted line.
 	ADS time +20%
 	[/th]
 [/tr][/table]
+
+[b][i]There may be undocumented changes to certain weapons or attachments.[/i][/b]

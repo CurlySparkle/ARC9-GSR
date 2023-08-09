@@ -154,8 +154,8 @@ SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddSights = 0.0125
 
 SWEP.RecoilModifierCapSights = 0.2
 

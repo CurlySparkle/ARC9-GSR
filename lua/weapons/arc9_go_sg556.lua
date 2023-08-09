@@ -119,24 +119,53 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
 
-SWEP.RecoilMultCrouch = 0.6
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultHipFire = 1
+-- SWEP.RecoilAutoControlMultHipFire = 1
+
+-- SWEP.UseVisualRecoil = true
+-- SWEP.VisualRecoilPunch = 1.2
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.65
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1.2
+SWEP.VisualRecoilPunch = 2
+SWEP.VisualRecoilUp = -1
+SWEP.VisualRecoilUpSights = 0.1
+SWEP.VisualRecoilSide = .4
+SWEP.VisualRecoilSideSights = -.005
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = -0.5
+SWEP.VisualRecoilPositionBumpUpSights = 0.15
+
+SWEP.VisualRecoilMultCrouch = .8
+SWEP.VisualRecoilMultSights = 1
+
+-- SWEP.ViewRecoil = false
+-- SWEP.ViewRecoilUpMult = .25
+-- SWEP.ViewRecoilSideMult = 1
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.002
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.07 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.2
+SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.02
+SWEP.SpreadAddCrouch = -0.015
+SWEP.SpreadAddSights = 0.0125
+
+SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
@@ -159,10 +188,32 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 
 SWEP.IronSights = {
     Pos = Vector(-5.16, -10, 1.15),
-    Ang = Angle(0.025, -0.2, 0),
+    Ang = Angle(0, -0.2, 0),
     Magnification = 1.15,
     ViewModelFOV = 56,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["csgo_sg556_barrel_short"] then
+        return {
+            Pos = Vector(-5.16, -9, 1.725),
+            Ang = Angle(0, -0.1, 0),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
+	
+     if attached["csgo_sg556_barrel_proto"] then
+        return {
+            Pos = Vector(-5.16, -9, 1.725),
+            Ang = Angle(0, -0.1, 0),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
+end
 
 SWEP.ViewModelFOVBase = 56
 
@@ -189,7 +240,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21, 30, 4)
+SWEP.CustomizePos = Vector(21, 30, 7)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(-0, 5, 3)
 SWEP.CustomizeNoRotate = false
@@ -256,9 +307,11 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1"},
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
@@ -395,12 +448,17 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
     },
     ["idle"] = {
         Source = "idle",
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -411,10 +469,13 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         Time = 1,
     },
     ["inspect"] = {
         Source = "lookat01",
+        MinProgress = 0.1,
+        FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -427,12 +488,12 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.7,
+                t = 0.6,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1.3,
+                t = 0.75,
                 lhik = 1,
                 rhik = 1
             },
@@ -445,6 +506,7 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee","melee2","melee3"},
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
 }
 
@@ -573,9 +635,11 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip"},
+		ExcludeElements = {"proto"},
         Bone = "v_weapon.sg556_Parent",
         Pos = Vector(0, -1.35, 12.5),
         Ang = Angle(90, 0, 90),
+        CorrectiveAng = Angle(-1.5, -1.25, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
@@ -598,21 +662,23 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
-        Bone = "v_weapon.sg556_Parent",
+        Bone = "v_weapon.sg556_Clip",
         Category = "go_mag_sg556",
-        Pos = Vector(0, 1, 6),
+        Pos = Vector(0, -1, 0),
         Ang = Angle(90, 0, -90),
         Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
-        Bone = "v_weapon.Clip",
+        Bone = "v_weapon.sg556_Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 1, 0),
+        Pos = Vector(0, 1, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, 3.5, 9),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -621,21 +687,29 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, 3.5, 9),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, -2, 0.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, -3, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/rif_sg556_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, -1.5, 6),
     },
     -- {
         -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
@@ -648,6 +722,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, 3.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
@@ -658,7 +734,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_sg552_view"
+        Category = "go_sg552_view",
+        Bone = "v_weapon.sg556_Parent",
+        Pos = Vector(0, 3.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),

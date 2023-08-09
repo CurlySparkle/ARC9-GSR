@@ -22,13 +22,14 @@ ATT.RPMMult = 700 / 545
 ATT.AimDownSightsTimeAdd = -0.12
 ATT.SprintToFireTimeAdd = -0.09
 
-ATT.SpreadAdd = 0.01
-ATT.SpreadAddMove = -0.08
+ATT.SpreadAddRecoil = -0.015
+ATT.SpreadAddMove = -0.015
 
 ATT.RangeMaxMult = 0.5
 ATT.RangeMinMult = 0.5
 
 ATT.RecoilKickMult = 1.5
+ATT.VisualRecoilMult = 0.75
 
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_ump.mdl"
 
@@ -38,18 +39,15 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(2, 0.2, -0.4)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.Sights = {
-    {
-        Pos = Vector(0.1, 16, -2.9),
-        Ang = Angle(-0.5, 0, 0),
-        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
-
-
-        Magnification = 1.05,
-        IsIronSight = true,
-        KeepBaseIrons = false
-    }
-}
+-- ATT.Sights = {
+    -- {
+        -- Pos = Vector(0.1, 16, -2.9),
+        -- Ang = Angle(-0.5, 0, 0),
+        -- Magnification = 1.05,
+        -- IsIronSight = true,
+        -- KeepBaseIrons = false
+    -- }
+-- }
 
 ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_short")
 
@@ -76,13 +74,15 @@ ATT.RPMMult = 620 / 545
 ATT.AimDownSightsTimeAdd = -0.08
 ATT.SprintToFireTimeAdd = -0.06
 
-ATT.SpreadAdd = 0.005
-ATT.SpreadAddMove = -0.04
+ATT.SpreadAddRecoil = -0.01
+ATT.SpreadAddMove = -0.03
 
 ATT.RangeMaxMult = 0.7
 ATT.RangeMinMult = 0.7
 
 ATT.RecoilKickMult = 1.15
+
+ATT.VisualRecoilMult = 0.7
 
 ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_m4.mdl"
 
@@ -92,18 +92,15 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(1.25, -0.3, -0.55)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.Sights = {
-    {
-        Pos = Vector(-0.4, 16, -3.05),
-        Ang = Angle(-0.5, 0, 0),
-        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
-
-
-        Magnification = 1.05,
-        IsIronSight = true,
-        KeepBaseIrons = false
-    }
-}
+-- ATT.Sights = {
+    -- {
+        -- Pos = Vector(-0.4, 16, -3.05),
+        -- Ang = Angle(-0.5, 0, 0),
+        -- Magnification = 1.05,
+        -- IsIronSight = true,
+        -- KeepBaseIrons = false
+    -- }
+-- }
 
 ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_proto")
 
@@ -140,7 +137,8 @@ ATT.CompactName = "PROTO"
 ATT.Description = [[Solid stock used on the SG 541 prototype.
 Provides better recoil control.]]
 
-ATT.Icon = Material("entities/attachs/go_sg556_stock_proto.png", "mips smooth")
+-- ATT.Icon = Material("entities/attachs/go_sg556_stock_proto.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_g3_stock_padded.png", "mips smooth")
 
 ATT.SortOrder = 2
 ATT.Category = "go_sg556_stock"
@@ -177,6 +175,7 @@ ATT.SpreadMult = 0.8
 ATT.RecoilMult = 1.2
 ATT.VisualRecoilMult = 1.2
 ATT.RecoilKickMult = 1.1
+ATT.ReloadTimeMult = 1.15
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ak"
