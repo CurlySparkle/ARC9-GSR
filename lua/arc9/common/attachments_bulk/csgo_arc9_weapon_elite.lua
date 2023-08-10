@@ -91,7 +91,7 @@ ATT.CompactName = "Raffica"
 ATT.Description = [[Burst system completes with a foregrip allowing for quick firing sucession.]]
 ATT.SortOrder = 1
 
-// ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_m9_slide_auto.png", "mips smooth")
 ATT.AutoStats = true
 
 ATT.Category = {"go_elite_s"}

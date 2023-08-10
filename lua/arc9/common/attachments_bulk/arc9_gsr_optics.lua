@@ -1386,7 +1386,7 @@ ATT = {}
 
 ATT.PrintName = "Scope 8x"
 ATT.CompactName = [[SCOPE G3]]
-ATT.Icon = Material("entities/attachs/go_optic_schmidt.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_optic_sg1.png", "mips smooth")
 ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",
@@ -1439,7 +1439,7 @@ ATT = {}
 
 ATT.PrintName = "Scope 8x"
 ATT.CompactName = [[SCOPE SCAR]]
-ATT.Icon = Material("entities/attachs/go_optic_schmidt.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_optic_ssr.png", "mips smooth")
 ATT.Description = [[Long-range combat scope. Provides an improved precision at longer ranges.]]
 ATT.Pros = {
     "+ 8x Zoom",

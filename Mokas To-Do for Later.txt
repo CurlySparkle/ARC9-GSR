@@ -9,3 +9,8 @@
 2. Add two barrel options to the Scout
 ∟ [scout_barrel_long] "570mm Elite Barrel" - Improves muzzle velocity and range at cost of aiming and cycle speeds.
 ∟ [scout_barrel_short] "400mm Survival Barrel" - Improves aiming, cycle and weapon draw speeds at the cost of muzzle velocity, range and damage.
+
+3. Fix or add attachments for certain weapons
+∟ AK-47 - Fix the "415mm Tactical Spetsnaz Barrel" using incorrect bodygroup; also fix the bodygroup for when using foregrips and laser sights
+∟ AWP - Add new stock attachment, "LC10"
+∟ MP5 and MP5-SD - Add new 40-Round magazine attachment

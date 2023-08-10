@@ -246,6 +246,10 @@ Weapons not listed below did not have any additional changes.
 	[th]Adjusted aim positions[/th]
 [/tr][tr]
 	[th]Universal
+	M203 Grenade Launcher[/th]
+	[th]Increased the velocity of the grenade[/th]
+[/tr][tr]
+	[th]Universal
 	M203 Grenade Launcher
 	∟M203 Sight[/th]
 	[th]Fixed aim positions on all supported weapons

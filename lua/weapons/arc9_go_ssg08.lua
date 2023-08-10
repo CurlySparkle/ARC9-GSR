@@ -156,6 +156,8 @@ SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being 
 SWEP.ManualAction = true
 SWEP.NoLastCycle = true
 
+SWEP.Bipod = true
+
 -------------------------- MELEE
 
 SWEP.Bash = true
@@ -409,7 +411,18 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep:GetBipod() then model:SetBodygroup(5,1) end
+end
+
 SWEP.AttachmentElements = {
+    ["grip"] = {
+	Bipod = false,
+	Bodygroups = {
+		{5,2},
+		},
+	},
     ["mag_15"] = {
         Bodygroups = {
             {2,1},
@@ -531,10 +544,12 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         DefaultAttName = "Default",
         Category = {"csgo_rail_ub","grip_ssg08"},
+		InstalledElements = {"grip"},
         Bone = "v_weapon.ssg08_Parent",
         Pos = Vector(0.17, -0.3, 17),
         Ang = Angle(90, 0, 90),
 		Scale = 1,
+        CorrectiveAng = Angle(-0.75, -1, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

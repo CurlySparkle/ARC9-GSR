@@ -184,7 +184,7 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -- SWEP.IronSights = {
     -- Pos = Vector(0, 8, 0),
     -- Ang = Angle(0, 0, 0),
-    -- Magnification = 1.15,
+    -- Magnification = 1.1,
     -- ViewModelFOV = 56,
     -- CrosshairInSights = false
 -- }
@@ -435,7 +435,7 @@ SWEP.AttachmentTableOverrides = {
         Pos = Vector(-2, 17, -4),
         Ang = Angle(-8, -2.5, 35),
         ViewModelFOV = 56,
-        Magnification = 1.15,
+        Magnification = 1.1,
         IgnoreExtra = false
     }
     }

@@ -324,10 +324,11 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.9,
+		MinProgress = 0.85,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -364,7 +365,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.9,
+		MinProgress = 0.85,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -402,7 +403,7 @@ SWEP.Animations = {
     },
     ["reload_stag"] = {
         Source = "reload_stag_short",
-		MinProgress = 0.9,
+		MinProgress = 0.8,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -470,28 +471,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "draw",
-        -- IKTimeLine = {
-            -- {
-                -- t = 0,
-                -- lhik = 1,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.2,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 0.7,
-                -- lhik = 0,
-                -- rhik = 0
-            -- },
-            -- {
-                -- t = 1,
-                -- lhik = 1,
-                -- rhik = 1
-            -- },
-        -- },
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = path .. "m249_draw.wav", t = 0/40},
             {s = path .. "m249_pump.wav", t = 7/40},
@@ -503,6 +483,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = "CSGO.Item.Movement", t = 0/30},
         },
@@ -512,6 +493,7 @@ SWEP.Animations = {
     },
     ["enter_sights"] = {
         Source = "idle",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",
@@ -522,6 +504,7 @@ SWEP.Animations = {
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
+        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         Time = 1,
     },
     ["inspect"] = {
