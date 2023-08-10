@@ -1,8 +1,8 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models\weapons\v_arccw_go\atts\muzzles\MB_R870_d"
-	"$bumpmap"					"models\weapons\v_arccw_go\atts\MI_1P_AK74_n"
-	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\MI_1P_AK74_s"
+	"$basetexture"				"models\weapons\v_arccw_go\atts\MB_AK74"
+	"$bumpmap"					"models\weapons\v_arccw_go\atts\MB_AK74_n"
+	"$phongexponenttexture"		"models\weapons\v_arccw_go\atts\MB_AK74_s"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
 
