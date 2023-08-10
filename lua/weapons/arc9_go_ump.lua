@@ -538,7 +538,6 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.ump45_Parent",
-		InstalledElements = {"stock_none"},
         Pos = Vector(0, -5.05, -1.8),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
