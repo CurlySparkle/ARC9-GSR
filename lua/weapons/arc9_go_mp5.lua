@@ -520,6 +520,11 @@ SWEP.AttachmentElements = {
             {4,3},
         },
     },
+	["mag2"] = {
+        Bodygroups = {
+            {4,1},
+        },
+    },
     ["stock_retract"] = {
         Bodygroups = {
             {5,1},
@@ -544,7 +549,10 @@ SWEP.AttachmentElements = {
 	["mag_k"] = { Bodygroups = { {4,2}, }, },
     ["hg_k"] = {
 		Bodygroups = { {0,1}, },
-		AttPosMods = { [1] = { Pos = Vector(0, -3.91, 14), } }	
+		AttPosMods = { 
+		[1] = { Pos = Vector(0, -3.91, 14), }, 
+		[4] = { Pos = Vector(-1, -3.95, 8), } 
+		}		
 	},	
 }
 
@@ -577,9 +585,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.MP5_Parent",
-        Pos = Vector(0, -5.2, 3.15),
+        Pos = Vector(0, -5.2, 3.75),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_rail_optic",},
+        Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
         InstalledElements = {"rearsight"},
         CorrectiveAng = Angle(-0.05, -0.03, 0),
     },

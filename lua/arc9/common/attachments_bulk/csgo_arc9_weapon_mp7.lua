@@ -88,8 +88,8 @@ ATT.ActivateElements = {"mount"}
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -0.4),
-        Ang = Angle(0, 1.5, 0),
+        Pos = Vector(0, 9, -0.35),
+        Ang = Angle(0, 1.25, 0),
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
 
