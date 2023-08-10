@@ -9,7 +9,7 @@ ATT.Icon = Material("entities/attachs/p90_extended_barrel.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = {"go_p90_barrel","cod2019_p90_barrel"}
 ATT.Model = "models/weapons/csgo/atts/p90_extended_barrel.mdl"
-ATT.ActivateElements = {"ext_barrel", "p90_ris"}
+ATT.ActivateElements = {"ext_barrel", "p90_ris","gsr_p90_extbarrel"}
 
 -- ATT.RejectAttachments = {
 -- ["go_muzzle_akm"] = true,
@@ -41,5 +41,6 @@ ATT.Attachments = {
         Pos = Vector(-2.5, 0, 1.1),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0),
+		ExcludeElements = {"cod2019_p90_b"},
     },
 }
