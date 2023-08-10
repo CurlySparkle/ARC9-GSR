@@ -1333,6 +1333,10 @@ L["csgo_awp_stock_folding.printname"] = "Anpassbares Material"
 L["csgo_awp_stock_folding.compactname"] = "Einstellbar"
 L["csgo_awp_stock_folding.description"] = "Anpassbarer Schaft für das AWP.\nVerbessert die Rückstoßkontrolle auf Kosten der Waffenhandhabung."
 
+L["csgo_awp_stock_obrez.printname"] = "Obrez Shaft"
+L["csgo_awp_stock_obrez.compactname"] = "Obrez"
+L["csgo_awp_stock_obrez.description"] = "Entfernt den Schaft für eine verbesserte Waffenhandhabung auf Kosten der Rückstoßkontrolle."
+
 L["csgo_awp_mag_15.printname"] = "15-Runde .338 AWM"
 L["csgo_awp_mag_15.compactname"] = "15R .338"
 L["csgo_awp_mag_15.description"] = "Erweitert die Magazinkapazität auf Kosten der Nachladegeschwindigkeit."
