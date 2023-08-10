@@ -524,6 +524,11 @@ SWEP.AttachmentElements = {
             {2,2},
         },
     },
+	["mag2"] = {
+        Bodygroups = {
+            {2,1},
+        },
+    },
     ["mag_none"] = {
         Bodygroups = {
             {2,3},
@@ -597,9 +602,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.mp5sd_parent",
-        Pos = Vector(0, 3.7, 5),
+        Pos = Vector(0, 4.25, 5),
         Ang = Angle(0, -90, 0),
-        Category = {"csgo_rail_optic",},
+        Category = {"csgo_rail_optic","csgo_optic_g3sg1"},
         CorrectiveAng = Angle(0.2, 0.15, 0),
     },
     {

@@ -429,6 +429,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {1,1},
         },
+    AttPosMods = { [3] = { Pos = Vector(0, -3.95, 17.5), } }
     },
     ["barrel_long"] = {
         Bodygroups = {

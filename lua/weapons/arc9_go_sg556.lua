@@ -556,7 +556,7 @@ SWEP.HookP_NameChange = function(self, name)
 	if att["csgo_sg556_barrel_short"] then
         name = ARC9:GetPhrase("csgo_weapon_sg556_sg552")
     end
-	if att["csgo_sg556_barrel_proto"] then
+	if att["csgo_sg556_barrel_proto"] and att["csgo_sg556_stock_proto"] then
         name = ARC9:GetPhrase("csgo_weapon_sg556_sg541")
     end
 

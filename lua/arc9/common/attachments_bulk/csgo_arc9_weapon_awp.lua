@@ -8,7 +8,7 @@ ATT.CompactName = "450mm"
 ATT.Description = [[Bull barrel that significantly reduces recoil, though at the cost of handling.]]
 ATT.SortOrder = 0
 
-ATT.Icon = Material("entities/attachs/go_awp_barrel_long.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_awp_barrel_bull.png", "mips smooth")
 ATT.AutoStats = true
 
 ATT.Free = false
@@ -105,6 +105,33 @@ ARC9.LoadAttachment(ATT, "csgo_awp_stock_folding")
 ATT = {}
 
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.PrintName = "Obrez stock"
+ATT.CompactName = "Obrez"
+ATT.Description = [[Removes the stock of the weapon.
+Lightweight stock that improves handling at the cost of recoil control.]]
+
+ATT.Icon = Material("entities/attachs/go_awp_stock_obrez.png", "mips smooth")
+
+--ATT.Model = "models/weapons/csgo/atts/grip_vertical.mdl"
+
+ATT.SortOrder = 0
+ATT.Category = "go_stock_awp"
+ATT.ActivateElements = {"stock_none"}
+
+ATT.SprintToFireTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.85
+
+ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.15
+ATT.RecoilKickMult = 1.15
+
+ATT.RecoilAutoControlMult = 0.8
+
+ARC9.LoadAttachment(ATT, "csgo_awp_stock_obrez")
+
+ATT = {}
+
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.PrintName = [[15-Round .338 AWM]]
 ATT.CompactName = [[15-Round]]
 ATT.Icon = Material("entities/attachs/go_awp_mag_15.png")
@@ -167,10 +194,10 @@ ATT.ActivateElements = {"sight_iron"}
 
 ATT.Sights = {
     {
-        Pos = Vector(-0, 15, -1),
-        Ang = Angle(0, -0.5, 0),
+        Pos = Vector(0.025, 9, -0.85),
+        Ang = Angle(0, -0, 0),
         Magnification = 1.15,
-        ViewModelFOV = 40,
+        ViewModelFOV = 60,
         IgnoreExtra = false
     },
 }
