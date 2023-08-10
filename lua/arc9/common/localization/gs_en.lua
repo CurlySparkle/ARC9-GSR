@@ -1332,6 +1332,10 @@ L["csgo_awp_stock_folding.printname"] = "Adjustable Stock"
 L["csgo_awp_stock_folding.compactname"] = "Adjustable"
 L["csgo_awp_stock_folding.description"] = "Adjustable stock for the AWP.\nImproves recoil control at the cost of weapon handling."
 
+L["csgo_awp_stock_obrez.printname"] = "Obrez Stock"
+L["csgo_awp_stock_obrez.compactname"] = "Obrez"
+L["csgo_awp_stock_obrez.description"] = "Removes the stock for improved weapon handling at the cost of recoil control."
+
 L["csgo_awp_mag_15.printname"] = "15-Round .338 AWM"
 L["csgo_awp_mag_15.compactname"] = "15R .338"
 L["csgo_awp_mag_15.description"] = "Extends the magazine capacity at the cost of reload speed."

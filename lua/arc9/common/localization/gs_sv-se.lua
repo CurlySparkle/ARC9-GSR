@@ -1334,6 +1334,10 @@ L["csgo_awp_stock_folding.printname"] = "Justerbar Kolv"
 L["csgo_awp_stock_folding.compactname"] = "Justerbar"
 L["csgo_awp_stock_folding.description"] = "Justerbar kolv till AWP:en.\nFörbättrar rekylkontroll med kostnad på vapenhantering."
 
+L["csgo_awp_stock_obrez.printname"] = "Obrez-Kolv"
+L["csgo_awp_stock_obrez.compactname"] = "Obrez"
+L["csgo_awp_stock_obrez.description"] = "Plockar bort kolven för förbättrad vapenhantering med kostnad på rekylkontroll."
+
 L["csgo_awp_mag_15.printname"] = "15-Skott .338 AWM"
 L["csgo_awp_mag_15.compactname"] = "15S .338"
 L["csgo_awp_mag_15.description"] = "Förlänger magasinkapaciteten med kostnad på omladdning hastighet."

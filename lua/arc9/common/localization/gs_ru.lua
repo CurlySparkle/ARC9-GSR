@@ -1141,29 +1141,29 @@ L["csgo_perk_melee_speed.compactname"] = "Вонзатель"
 L["csgo_perk_melee_speed.description"] = "Увеличивает скорость атаки ближнего боя."
 
 -- Perks, added later
-L["csgo_perk_last.printname"] = "Last One Out"
-L["csgo_perk_last.compactname"] = "Last Out"
-L["csgo_perk_last.description"] = "Increases the damage by 25% for the last round in the magazine."
+L["csgo_perk_last.printname"] = "Последний выход"
+L["csgo_perk_last.compactname"] = "Последний"
+L["csgo_perk_last.description"] = "Увеличивает урон на 25% для последнего патрона в магазине."
 
-L["csgo_perk_light.printname"] = "Lightweight Frame"
-L["csgo_perk_light.compactname"] = "Lightweight"
-L["csgo_perk_light.description"] = "Improves movement speed when aiming."
+L["csgo_perk_light.printname"] = "Легкая рамка"
+L["csgo_perk_light.compactname"] = "Легкая рамка"
+L["csgo_perk_light.description"] = "Улучшает скорость движения при нацеливании."
 
-L["csgo_perk_quickdraw.printname"] = "Quickdraw"
-L["csgo_perk_quickdraw.compactname"] = "Quickdraw"
-L["csgo_perk_quickdraw.description"] = "Increases aiming speed."
+L["csgo_perk_quickdraw.printname"] = "Быстрый прицел"
+L["csgo_perk_quickdraw.compactname"] = "Быстрый"
+L["csgo_perk_quickdraw.description"] = "Увеличивает скорость прицеливания."
 
-L["csgo_perk_rapidfire.printname"] = "Rapid Fire"
-L["csgo_perk_rapidfire.compactname"] = "Rapid"
-L["csgo_perk_rapidfire.description"] = "Increases firing speed."
+L["csgo_perk_rapidfire.printname"] = "Быстрый огонь"
+L["csgo_perk_rapidfire.compactname"] = "Быстрый"
+L["csgo_perk_rapidfire.description"] = "Увеличивает скоростельность."
 
-L["csgo_perk_refund.printname"] = "Head Hunt"
-L["csgo_perk_refund.compactname"] = "Head Hunt"
-L["csgo_perk_refund.description"] = "Reloads one bullet from reserves when hitting a headshot."
+L["csgo_perk_refund.printname"] = "Охота за головами"
+L["csgo_perk_refund.compactname"] = "Охота за головами"
+L["csgo_perk_refund.description"] = "Перезаряжает одну пулю из боезапаса при попадании в голову."
 
-L["csgo_perk_slow.printname"] = "Full Stop"
-L["csgo_perk_slow.compactname"] = "Full Stop"
-L["csgo_perk_slow.description"] = "Applies an immediate slow-down effect on hit."
+L["csgo_perk_slow.printname"] = "Полная остановка"
+L["csgo_perk_slow.compactname"] = "Полная остановка"
+L["csgo_perk_slow.description"] = "Применяет эффект мгновенного замедления при попадании в цель."
 
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Кавайный убийца"
@@ -1331,6 +1331,10 @@ L["csgo_awp_barrel_factory.description"] = "Ствол заводской дли
 L["csgo_awp_stock_folding.printname"] = "Регулируемый приклад"
 L["csgo_awp_stock_folding.compactname"] = "Регулируемый"
 L["csgo_awp_stock_folding.description"] = "Регулируемый приклад для AWP.\nУлучшение контроля отдачи за счёт ухудшения эргономичности оружия."
+
+L["csgo_awp_stock_obrez.printname"] = "Приклад Обрез"
+L["csgo_awp_stock_obrez.compactname"] = "Обрез"
+L["csgo_awp_stock_obrez.description"] = "Удаление приклада для улучшения эргономичности оружия за счёт снижения отдачи."
 
 L["csgo_awp_mag_15.printname"] = "15-зарядный .338 AWM"
 L["csgo_awp_mag_15.compactname"] = "15-патр. .338"
@@ -1956,13 +1960,13 @@ L["csgo_scar20_view.compactname"] = "Альт. вид"
 L["csgo_scar20_view.description"] = "Меняет положение оружия в поле зрения."
 
 -- Scout
-L["csgo_scout_barrel_long.printname"] = "570mm Elite Barrel"
-L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
-L["csgo_scout_barrel_long.description"] = "Long heavy barrel that improves muzzle velocity and range at the cost of weapon handling."
+L["csgo_scout_barrel_long.printname"] = "570mm Элитный ствол"
+L["csgo_scout_barrel_long.compactname"] = "570mm Элитный"
+L["csgo_scout_barrel_long.description"] = "Длинный ствол, повышающий дульную скорость и дальность стрельбы за счет ухудшения управляемости оружия."
 
-L["csgo_scout_barrel_short.printname"] = "400mm Survival Barrel"
-L["csgo_scout_barrel_short.compactname"] = "400mm Survival"
-L["csgo_scout_barrel_short.description"] = "Compact barrel that improves weapon handling at the cost of muzzle velocity, range and damage."
+L["csgo_scout_barrel_short.printname"] = "400mm Выживания ствол"
+L["csgo_scout_barrel_short.compactname"] = "400mm Выживания"
+L["csgo_scout_barrel_short.description"] = "Компактный ствол, улучшающий управляемость оружия за счет снижения дульной скорости, дальности и урона."
 
 -- SIG556
 L["csgo_sg556_barrel_short.printname"] = "300-мм ствол и рукоять SG 552 Commando"

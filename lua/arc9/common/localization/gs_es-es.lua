@@ -1332,6 +1332,10 @@ L["csgo_awp_stock_folding.printname"] = "Culata Ajustable"
 L["csgo_awp_stock_folding.compactname"] = "Ajustable"
 L["csgo_awp_stock_folding.description"] = "Culata ajustable para la AWP.\nMejora el control del retroceso a costa del manejo del arma."
 
+L["csgo_awp_stock_obrez.printname"] = "Culata Obrez"
+L["csgo_awp_stock_obrez.compactname"] = "Obrez"
+L["csgo_awp_stock_obrez.description"] = "Quita la culata para mejorar el manejo del arma a costa del control del retroceso."
+
 L["csgo_awp_mag_15.printname"] = ".338 AWM de 15-Cartuchos"
 L["csgo_awp_mag_15.compactname"] = "15R .338"
 L["csgo_awp_mag_15.description"] = "Amplía la capacidad del cargador a costa de la velocidad de recarga."
