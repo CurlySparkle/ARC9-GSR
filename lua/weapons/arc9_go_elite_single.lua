@@ -472,6 +472,11 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data) 
+	local model = data.model
+	if wep:HasElement("muzzle") and wep:HasElement("slide_raffica") then model:SetBodygroup(1,0) end	
+end
+
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
