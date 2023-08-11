@@ -19,7 +19,7 @@ Here's an abbrevriated version:
 [*]MP5
 [*]Scout
 [*]Shield
-[*]All 'extra' weapons
+[*]All 'extra' weapons excluding the Zeus x27
 [/list][/i]
 
 And here's the long, more detailed version:

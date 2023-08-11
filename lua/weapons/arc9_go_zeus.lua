@@ -139,8 +139,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-1, -5, 1.6),
-    Ang = Angle(0, 1, 20),
+    Pos = Vector(-0.85, -1, 1.9),
+    Ang = Angle(0.175, 0.3, 20),
     Magnification = 1.15,
     ViewModelFOV = 46,
 }
@@ -170,7 +170,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, -20, 0)
-SWEP.CustomizePos = Vector(20, 25, -3)
+SWEP.CustomizePos = Vector(20, 25, 4.5)
 SWEP.CustomizeSnapshotFOV = 90
 
 SWEP.CustomizeSnapshotPos = Vector(0, -8, 8.5)
@@ -265,6 +265,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = {"idle"},
     },
+    ["enter_sights"] = {
+        Source = {"idle"},
+    },
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.75,
@@ -326,13 +329,15 @@ SWEP.Attachments = {
         Bone = "v_weapon.parent",
         Pos = Vector(0, -1.3, -0.2),
         Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
+        Category = {"csgo_optics_pistols"},
         CorrectiveAng = Angle(0.15, 0.2, 0),
 		Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk"
+        Category = "go_perk",
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, 3, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -341,21 +346,29 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
 		CosmeticOnly = true,
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, 3, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/taser_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, -0.5, -0.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/taser_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, -0.25, 3.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/taser_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, 1.5, 3.4),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -363,6 +376,8 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.parent",
+        Pos = Vector(0, 3, 2),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
@@ -375,7 +390,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.parent",
-        Pos = Vector(0.85, -0.5, -0.15),
+        Pos = Vector(0.85, -0.5, 2),
         Ang = Angle(90, 0, -90),
 		CosmeticOnly = true,
     },

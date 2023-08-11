@@ -1,11 +1,11 @@
 "VertexlitGeneric"
 {
-	"$basetexture"				"models/csgo/taser/taser"
-	"$bumpmap"					"null-bumpmap"
+	"$basetexture"				"models/csgo/taser/taser2"
+	"$bumpmap"					"models/csgo/taser/taser_n"
 	"$phongexponenttexture"		"models/csgo/taser/taser_exponent"
 	"$color2"					"[0.8 0.8 0.8]"
 	"$blendTintByBaseAlpha"		"1"
-	"$basemapalphaphongmask" "1"
+	// "$basemapalphaphongmask" "1"
 
 	"$envmap"					"env_cubemap"
 	"$envmaptint"				"[ .13 .13 .13 ]"
@@ -23,8 +23,8 @@
 	"$rimmask"					"1"
 	"$nocull"					"1"
 
-	"$detailblendmode" "2"
-	"$detailblendfactor" "0.4"
+	"$detailblendmode" "4"
+	"$detailblendfactor" "0.8"
 
 	 Proxies {
 		CustomCamo {
