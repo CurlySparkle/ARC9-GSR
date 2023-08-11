@@ -114,7 +114,8 @@ Weapons not listed below did not have any additional changes.
 	[th]Removed the "optics" category*[/th]
 [/tr][tr]
 	[th]USP-S[/th]
-	[th]Removed the "optics" category*[/th]
+	[th]Removed the "optics" category*
+	Can no longer equip the Lightweight Suppressor[/th]
 [/tr][tr]
 [/tr][/table]
 
