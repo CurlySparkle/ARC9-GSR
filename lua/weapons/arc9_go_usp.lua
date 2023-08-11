@@ -235,7 +235,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(21.5, 25, 4)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(3, 5, 3)
+SWEP.CustomizeSnapshotPos = Vector(0, 0, 3)
 SWEP.CustomizeNoRotate = false
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
@@ -329,6 +329,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+        MinProgress = 0.65,
         EventTable = {
             {s = path .. "usp_clipout.wav", t = 12/30},
             {s = path .. "usp_clipin.wav", t = 25/30},
@@ -336,7 +337,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-        MinProgress = 0.4,
+        MinProgress = 0.75,
         EventTable = {
             {s = path .. "usp_clipout.wav", t = 12/30},
             {s = path .. "usp_clipin.wav", t = 25/30},
@@ -440,6 +441,7 @@ SWEP.Animations = {
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
         HideBoneIndex = 1,
+        MinProgress = 0.65,
         EventTable = {
             {s = path .. "usp_clipout.wav", t = 12/30},
             {s = path .. "usp_clipin.wav", t = 25/30},
@@ -448,7 +450,7 @@ SWEP.Animations = {
     ["reload_empty_silenced"] = {
         Source = "reload_silenced",
         HideBoneIndex = 1,
-        MinProgress = 0.4,
+        MinProgress = 0.75,
         EventTable = {
             {s = path .. "usp_clipout.wav", t = 12/30},
             {s = path .. "usp_clipin.wav", t = 25/30},

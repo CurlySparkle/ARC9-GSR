@@ -93,7 +93,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 5
+SWEP.Recoil = 2.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 2 -- Multiplier for vertical recoil
@@ -236,7 +236,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(22.5, 30, 6)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(1, 8, 3)
+SWEP.CustomizeSnapshotPos = Vector(0, 15, 3)
 
 SWEP.CustomizeNoRotate = false
 
@@ -640,7 +640,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_tube"),
         Bone = "v_weapon.NOVA_PARENT",
         Category = "go_nova_mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, -0.5, 22),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
