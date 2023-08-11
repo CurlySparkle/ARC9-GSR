@@ -128,15 +128,15 @@ SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = -0.5
-SWEP.VisualRecoilUpSights = 0.15
+SWEP.VisualRecoilUp = -0.75
+SWEP.VisualRecoilUpSights = 0.05
 SWEP.VisualRecoilSide = -0.15
 SWEP.VisualRecoilSideSights = 0.01
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = -3
-SWEP.VisualRecoilPositionBumpUpSights = 0.5
+SWEP.VisualRecoilPositionBump = 1.25
+SWEP.VisualRecoilPositionBumpUp = -1.5
+SWEP.VisualRecoilPositionBumpUpSights = 1.5
 SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 240
@@ -284,7 +284,8 @@ SWEP.ReloadHideBoneTables = {
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1","shoot2","shoot3"},
+        -- Source = {"shoot1","shoot2","shoot3"},
+        Source = {"shoot1_ads"},
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
 		Mult = 0.4,
     },
