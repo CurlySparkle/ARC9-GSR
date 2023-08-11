@@ -101,8 +101,7 @@ SWEP.Firemodes = {
 
         DamageMaxAdd = 3,
         DamageMinAdd = 3,
-        SpreadAdd = 0.002,
-        SpreadAddHipFire = 0.005,
+        SpreadAddRecoil = 0.005,
     }
 }
 SWEP.FiremodeAnimLock = true
@@ -110,7 +109,7 @@ SWEP.FiremodeAnimLock = true
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 1.45
 
 SWEP.RecoilSeed = 5426 -- CSGO Seed Input Test
 
@@ -130,19 +129,52 @@ SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
-SWEP.RecoilMultCrouch = 0.6
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+-- SWEP.RecoilMultCrouch = 0.6
+-- SWEP.RecoilMultHipFire = 1.25
+-- SWEP.RecoilAutoControlMultHipFire = 0.5
+
+-- [[ Moka's testing area - do not touch nor uncomment
+
+SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultSights = 1
+
+SWEP.UseVisualRecoil = true
+SWEP.VisualRecoilPunch = 0.5
+SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilSide = .5
+SWEP.VisualRecoilRoll = 1
+
+SWEP.VisualRecoilPositionBump = 1
+SWEP.VisualRecoilPositionBumpUp = 1
+SWEP.VisualRecoilPositionBumpUpSights = 0
+SWEP.VisualRecoilMultCrouch = .8
+
+
+SWEP.VisualRecoilUpSights = 0
+SWEP.VisualRecoilSideSights = 0
+SWEP.VisualRecoilPositionBumpUpSights = 0
+
+SWEP.VisualRecoilMultSights = 1
+
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringPunchDamping = 12
+
+-- SWEP.BottomlessClip = true
+
+-- ]]--
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.008 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.045 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.007
+SWEP.SpreadAddHipFire = 0
+
+SWEP.RecoilModifierCapSights = 0.3
 
 -------------------------- HANDLING
 
@@ -201,7 +233,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21.5, 25, 2.5)
+SWEP.CustomizePos = Vector(21.5, 25, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeSnapshotPos = Vector(3, 5, 3)
 SWEP.CustomizeNoRotate = false
@@ -277,16 +309,16 @@ SWEP.ReloadHideBoneTables = {
 }
 
 
-SWEP.Hook_TranslateAnimation = function(wep, anim)   --- pourquoi est-ce qu'il ne marche pas????
-    if wep:GetUBGL() and wep:Clip2() == 0 then  -- il y a une probleme mais je ne sais pas quoi
-            if anim == "idle" then  return "idle_ubgl_dry" end
-            if anim == "idle_empty" then  return "idle_ubgl_dry" end
-            if anim == "idle_ubgl" then  return "idle_ubgl_dry" end
-            if anim == "idle_ubgl_empty" then  return "idle_ubgl_dry" end
-            if anim == "enter_ubgl" then  return "idle_ubgl_dry" end
-            if anim == "exit_ubgl" then  return "idle_ubgl_dry" end
-    end		
-end
+-- SWEP.Hook_TranslateAnimation = function(wep, anim)   --- pourquoi est-ce qu'il ne marche pas????
+    -- if wep:GetUBGL() and wep:Clip2() == 0 then  -- il y a une probleme mais je ne sais pas quoi
+            -- if anim == "idle" then  return "idle_ubgl_dry" end
+            -- if anim == "idle_empty" then  return "idle_ubgl_dry" end
+            -- if anim == "idle_ubgl" then  return "idle_ubgl_dry" end
+            -- if anim == "idle_ubgl_empty" then  return "idle_ubgl_dry" end
+            -- if anim == "enter_ubgl" then  return "idle_ubgl_dry" end
+            -- if anim == "exit_ubgl" then  return "idle_ubgl_dry" end
+    -- end		
+-- end
 
 SWEP.Animations = {
     ["fire"] = {
@@ -295,62 +327,6 @@ SWEP.Animations = {
     ["fire_sights"] = {
         Source = "shoot1_ads",
     },
-
-    ["idle_ubgl_dry"] = {
-        Source = "idle_silenced",
-        HideBoneIndex = 1,	
-    },	
-    ["enter_ubgl"] = {
-        Source = "attach",
-        IKTimeLine = { {t = 0, lhik = 1, rhik = 1,}, {t = 0.8, lhik = 0, rhik = 1,}},
-        EventTable = {
-            {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = path .. "usp_silencer_screw_on_start.wav", t = 32/30},
-            {s = path .. "usp_silencer_screw1.wav", t = 55/30},
-            {s = path .. "usp_silencer_screw2.wav", t = 69/30},
-            {s = path .. "usp_silencer_screw3.wav", t = 80/30},
-            {s = path .. "usp_silencer_screw4.wav", t = 91/30},
-            {s = path .. "usp_silencer_screw5.wav", t = 99/30},
-            {s = "weapons/csgo/movement3.wav", t = 112/30},
-        },			
-    },  
-    ["exit_ubgl"] = {
-        Source = "detach",
-        IKTimeLine = { {t = 0, lhik = 0, rhik = 1, }, {t = 0.8, lhik = 1, rhik = 1,}},
-        EventTable = {
-            {s = "weapons/csgo/movement1.wav", t = 9/30},
-            {s = path .. "usp_silencer_screw1.wav", t = 28/30},
-            {s = path .. "usp_silencer_screw2.wav", t = 48/30},
-            {s = path .. "usp_silencer_screw3.wav", t = 60/30},
-            {s = path .. "usp_silencer_screw4.wav", t = 70/30},
-            {s = path .. "usp_silencer_screw5.wav", t = 80/30},
-            {s = path .. "usp_silencer_screw_off_end.wav", t = 93/30},
-            {s = "weapons/csgo/movement3.wav", t = 114/30},
-        },			
-    },  
-    ["reload_ubgl"] = {
-        Source = "attach",
-        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},
-        EventTable = {
-            {s = "weapons/csgo/movement1.wav", t = 2/30},
-            {s = path .. "usp_silencer_screw_on_start.wav", t = 32/30},
-            {s = path .. "usp_silencer_screw1.wav", t = 55/30},
-            {s = path .. "usp_silencer_screw2.wav", t = 69/30},
-            {s = path .. "usp_silencer_screw3.wav", t = 80/30},
-            {s = path .. "usp_silencer_screw4.wav", t = 91/30},
-            {s = path .. "usp_silencer_screw5.wav", t = 99/30},
-            {s = "weapons/csgo/movement3.wav", t = 112/30},
-        },				
-    },  	
-    ["idle_ubgl"] = {
-        Source = "idle",
-        IKTimeLine = { {t = 0, lhik = 0, rhik = 1,}},
-    },
-    ["fire_ubgl"] = {
-        Source = {"shoot1_silenced", "shoot2_silenced", "shoot3_silenced"},
-        IKTimeLine = { {t = 0, lhik = 0, rhik = 1,}},
-    },
-
     ["reload"] = {
         Source = "reload_short",
         EventTable = {
@@ -386,6 +362,9 @@ SWEP.Animations = {
         },
     },
     ["idle"] = {
+        Source = "idle",
+    },
+    ["enter_sights"] = {
         Source = "idle",
     },
     ["idle_sprint"] = {
@@ -444,6 +423,10 @@ SWEP.Animations = {
     },
 -- SILENCED
     ["idle_silenced"] = {
+        Source = "idle_silenced",
+        HideBoneIndex = 1,
+    },
+    ["enter_sights_silenced"] = {
         Source = "idle_silenced",
         HideBoneIndex = 1,
     },
@@ -510,6 +493,8 @@ SWEP.Animations = {
     ["inspect_silenced"] = {
         Source = "lookat01_silenced",
         HideBoneIndex = 1,
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
             {s = "weapons/csgo/movement2.wav", t = 175/30},
@@ -619,9 +604,10 @@ end
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
-        --Bone = "v_weapon.glock_magazine",
         InstalledElements = {"silencer"},
-        Category = {"go_usp_slide", "csgo_why_usp"}
+        Category = {"go_usp_slide", "csgo_why_usp"},
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, -2.75, 3.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -629,6 +615,7 @@ SWEP.Attachments = {
         Category = {"silencers"},
         Bone = "v_weapon.silencer",
         InstalledElements = {"silencer_none"},
+		RejectAttachments = {["go_supp_233"] = true},
         Pos = Vector(0, -0.8, 0),
         Ang = Angle(0, -90, 0),
         Scale = 0.9,
@@ -642,15 +629,15 @@ SWEP.Attachments = {
         Scale = 1,
         CorrectiveAng = Angle(0.67, 0.65, 0),
     },
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Bone = "v_weapon.Slide",
-        Pos = Vector(0, -0.9, 1),
-        Ang = Angle(90, 0, -90),
-        Category = {"csgo_optics_pistols_alt","eft_optic_small"},
-        CorrectiveAng = Angle(0.7, 0.65, 0),
-        Scale = 0.75,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Bone = "v_weapon.Slide",
+        -- Pos = Vector(0, -0.9, 1),
+        -- Ang = Angle(90, 0, -90),
+        -- Category = {"csgo_optics_pistols_alt","eft_optic_small"},
+        -- CorrectiveAng = Angle(0.7, 0.65, 0),
+        -- Scale = 0.75,
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         DefaultAttName = "Default",
@@ -663,20 +650,20 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.Clip",
-        Category = "go_mag"
+        Category = "go_mag",
+        Pos = Vector(0, -1.5, -0.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.Clip",
         Category = "go_ammo",
-        Icon_Offset = Vector(0, 0, 0),
+        Pos = Vector(0, -0.25, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
-        RejectAttachments = {
-        ["csgo_perk_burst"] = true
-        },
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, 2, 6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
@@ -685,26 +672,36 @@ SWEP.Attachments = {
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
         CosmeticOnly = true,
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, 2, 6),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_a.mdl",
         Category = "stickers",
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, 0.75, -0.25),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_b.mdl",
         Category = "stickers",
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, -2.75, 0.1),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_c.mdl",
         Category = "stickers",
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, -2.75, 2.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/pist_223_decal_d.mdl",
         Category = "stickers",
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, -3.25, 5.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_camo"),
@@ -712,17 +709,22 @@ SWEP.Attachments = {
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
         CosmeticOnly = true,
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, 2, 5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.slide", -- relevant bone any attachments will be mostly referring to
-        Pos = Vector(0.6, -0.4, 5), -- offset that the attachment will be relative to the bone
+        Pos = Vector(0.6, 0, 1.75), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -85),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_view"),
-        Category = "go_pistols_view"
+        Category = "go_pistols_view",
+        Bone = "v_weapon.223_parent",
+        Pos = Vector(0, 2, 5),
+		CosmeticOnly = false,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),
