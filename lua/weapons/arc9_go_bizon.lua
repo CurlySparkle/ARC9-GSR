@@ -223,7 +223,7 @@ SWEP.CustomizePos = Vector(21, 30, 5)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeSnapshotPos = Vector(2, 3, 3)
+SWEP.CustomizeSnapshotPos = Vector(-2.5, 3, 2)
 
 SWEP.BlindFirePos = Vector(-3, -1, 2)
 SWEP.BlindFireAng = Angle(0, 0, -50)

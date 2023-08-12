@@ -138,7 +138,7 @@ SWEP.SpreadAddRecoil = 0.065 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.0425
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.05
-SWEP.SpreadAddCrouch = -0.035
+SWEP.SpreadAddCrouch = -0.01
 SWEP.SpreadAddSights = 0.025
 
 -------------------------- HANDLING
@@ -205,7 +205,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(22, 35, 6)
-SWEP.CustomizeSnapshotPos = Vector(3, 25, 5)
+SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 

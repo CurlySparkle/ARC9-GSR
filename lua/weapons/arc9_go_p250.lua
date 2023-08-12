@@ -208,7 +208,7 @@ SWEP.CrouchAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(17.5, 25, 4.5)
 SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
+SWEP.CustomizeSnapshotPos = Vector(0, -10, 1)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -663,6 +663,7 @@ SWEP.Attachments = {
         Category = "go_pistols_view",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, 2.5, 2.5),
+		ExcludeElements = {"slide_flux"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_stats"),

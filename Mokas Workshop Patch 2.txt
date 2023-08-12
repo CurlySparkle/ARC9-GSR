@@ -3,7 +3,7 @@ Here's an abbrevriated version:
 [b][u][/u][/b]
 [table][tr]
 	[th][list]
-	[*]All weapons now use visual recoil
+	[*]All weapons has had their accuracy and spread adjusted
 	[*]All weapons now have altered camouflage coverage*
 	[*]Tons of adjustments to attachments and weapons
 	[*]Integration with Escape from Tarkov attachments
@@ -19,7 +19,7 @@ Here's an abbrevriated version:
 [*]MP5
 [*]Scout
 [*]Shield
-[*]All 'extra' weapons
+[*]All 'extra' weapons excluding the Zeus x27
 [/list][/i]
 
 And here's the long, more detailed version:
@@ -31,11 +31,9 @@ All weapons can now equip so-called Integration attachments that allows you to e
 Additionally, the [b]Ergonomics[/b] stat does nothing to the GSR weapons.
 
 [b][u]Weapon changes[/u][/b]
-All weapons have gotten visual recoil added to them. This applies to [i]all[/i] weapons. This will not be repeated for the list below.
+All weapons have gotten spread and recoil adjustments. This applies to [b]ALL[/b] firearms in the pack (not counting grenades, melees, etc.) and will not be listed below. Long story short, this will mean that all weapons are much more accurate than before.
 
-All weapons have gotten spread and recoil adjustments. This applies to [b]ALL[/b] firearms in the pack (not counting grenades, melees, etc.) and will not be listed below.
-
-This means that all weapons will have the following things added and adjusted:
+All weapons will have the following things added and adjusted:
 [list]
 [*]Added visual recoil, especially when hip-firing
 [*]Adjusted recoil patterns and values
@@ -114,6 +112,10 @@ Weapons not listed below did not have any additional changes.
 [/tr][tr]
 	[th]P250[/th]
 	[th]Removed the "optics" category*[/th]
+[/tr][tr]
+	[th]USP-S[/th]
+	[th]Removed the "optics" category*
+	Can no longer equip the Lightweight Suppressor[/th]
 [/tr][tr]
 [/tr][/table]
 
