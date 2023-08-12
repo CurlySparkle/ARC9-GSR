@@ -395,6 +395,7 @@ SWEP.Animations = {
     }, 
 	["reload_empty"] = {
         Source = {"reload"},
+		MinProgress = 0.85,
         IKTimeLine = {
             {
                 t = 0,
@@ -425,6 +426,7 @@ SWEP.Animations = {
     },
 	["reload"] = {
         Source = {"reload_short"},
+		MinProgress = 0.55,
         IKTimeLine = {
             {
                 t = 0,
@@ -644,6 +646,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0.15, 13.6),
         Ang = Angle(90, 0, 90),
         Scale = 1,
+        CorrectiveAng = Angle(-0.8, -.75, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_capacity"),

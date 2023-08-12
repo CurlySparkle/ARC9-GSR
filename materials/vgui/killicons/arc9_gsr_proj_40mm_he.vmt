@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/killicons/arc9_gsr_proj_40mm_he"
+	"$vertexcolor"	"1"
+	"$vertexalpha"	"1"
+	"$translucent"	"1"
+	"$additive"		"1"
+}
