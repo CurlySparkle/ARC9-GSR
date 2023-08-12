@@ -57,3 +57,7 @@ SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 SWEP.AimDownSightsTimeMultShooting = 1.5
 
 SWEP.ShotgunReloadIncludesChamber = false
+
+if CLIENT then
+	killicon.Add("arc9_gsr_proj_40mm_he", "vgui/killicons/arc9_gsr_proj_40mm_he", Color(255, 255, 255, 191))
+end

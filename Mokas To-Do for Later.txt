@@ -13,3 +13,5 @@
 3. Fix or add attachments for certain weapons
 ∟ AK-47 - Fix the "415mm Tactical Spetsnaz Barrel" using incorrect bodygroup; also fix the bodygroup for when using foregrips and laser sights
 ∟ MP5 and MP5-SD - Add new 40-Round magazine attachment
+
+4. Add RecoilMax and RecoilPerShot values to all weapons to further balance them
