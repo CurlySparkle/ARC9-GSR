@@ -190,6 +190,7 @@ Weapons not listed below did not have any additional changes.
 	[th]Can now only be applied to:
 	M4A4
 	MP5
+	SCAR-17
 	[/th]
 [/tr][tr]
 	[th]Perk
