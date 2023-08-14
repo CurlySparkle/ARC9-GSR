@@ -1303,8 +1303,8 @@ L["csgo_aug_mag_2.printname"] = "9x19mm Extended Magazine"
 L["csgo_aug_mag_2.compactname"] = "9x19mm+"
 L["csgo_aug_mag_2.description"] = "Converts the AUG into the AUG Para using a 9x19mm magazine adapter.\nImproves the magazine capacity, firing speed, recoil control and reload speed at the cost of damage and spread."
 
-L["csgo_aug_barrel_long.printname"] = "620mm HBAR Barrel"
-L["csgo_aug_barrel_long.compactname"] = "620mm HBAR"
+L["csgo_aug_barrel_long.printname"] = "620mm Heavy Barrel"
+L["csgo_aug_barrel_long.compactname"] = "620mm Heavy"
 L["csgo_aug_barrel_long.description"] = "Longer barrel used on the AUG HBAR.\nImproves range and recoil control at the cost of weapon handling."
 
 L["csgo_aug_barrel_short.printname"] = "420mm Para Barrel"

@@ -1305,8 +1305,8 @@ L["csgo_aug_mag_2.printname"] = "9x19mm Förlängt Magasin"
 L["csgo_aug_mag_2.compactname"] = "9x19mm+"
 L["csgo_aug_mag_2.description"] = "Konverterar AUG:n till en AUG Para med en 9x19mm magasinsadapter.\nFörbättrar magasinkapaciteten, eldhastigheten, rekylkontrollen och omladdning hastigheten med kostnad på skada och spridning."
 
-L["csgo_aug_barrel_long.printname"] = "620mm HBAR-Pipa"
-L["csgo_aug_barrel_long.compactname"] = "620mm HBAR"
+L["csgo_aug_barrel_long.printname"] = "620mm Tung Pipa"
+L["csgo_aug_barrel_long.compactname"] = "620mm Tung"
 L["csgo_aug_barrel_long.description"] = "Längre pipa som används på AUG HBAR.\nFörbättrar räckvidd och rekylkontroll med kostnad på vapenhantering."
 
 L["csgo_aug_barrel_short.printname"] = "420mm Para-Pipa"

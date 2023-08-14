@@ -1303,8 +1303,8 @@ L["csgo_aug_mag_2.printname"] = "Cargador extendido 9x19mm"
 L["csgo_aug_mag_2.compactname"] = "9x19mm+"
 L["csgo_aug_mag_2.description"] = "Convierte la AUG en la AUG Para utilizando un adaptador de cargador de 9x19mm.\nMejora la capacidad del cargador, la velocidad de disparo, el control del retroceso y la velocidad de recarga a costa del daño y la dispersión."
 
-L["csgo_aug_barrel_long.printname"] = "Cañón HBAR de 620mm"
-L["csgo_aug_barrel_long.compactname"] = "620mm HBAR"
+L["csgo_aug_barrel_long.printname"] = "Cañón pesado de 620mm"
+L["csgo_aug_barrel_long.compactname"] = "620mm Pesado"
 L["csgo_aug_barrel_long.description"] = "Cañón más largo utilizado en la AUG HBAR.\nMejora el alcance y el control del retroceso a costa del manejo del arma."
 
 L["csgo_aug_barrel_short.printname"] = "Cañón 420mm Para"

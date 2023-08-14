@@ -1303,8 +1303,8 @@ L["csgo_aug_mag_2.printname"] = "Расширенный магазин 9x19-мм
 L["csgo_aug_mag_2.compactname"] = "9x19-мм+"
 L["csgo_aug_mag_2.description"] = "Преобразует AUG в AUG Para с помощью адаптера магазина 9х19-мм.\nУлучшает ёмкость магазина, скорость стрельбы, контроль отдачи и скорость перезарядки ценой урона и разброса."
 
-L["csgo_aug_barrel_long.printname"] = "620-мм ствол HBAR"
-L["csgo_aug_barrel_long.compactname"] = "620-мм HBAR"
+L["csgo_aug_barrel_long.printname"] = "620-мм тяжёлый ствол"
+L["csgo_aug_barrel_long.compactname"] = "620-мм тяжёлый"
 L["csgo_aug_barrel_long.description"] = "Удлинённый ствол используется на AUG HBAR.\nУлучшение дальности стрельбы и контроля отдачи за счёт ухудшения эргономичности оружия."
 
 L["csgo_aug_barrel_short.printname"] = "420-мм ствол Para"
