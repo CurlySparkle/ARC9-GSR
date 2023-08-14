@@ -522,7 +522,7 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 SWEP.AttachmentTableOverrides = {
     ["go_muzzle_p226"] = {
-    ModelOffset = Vector(-0.15, -0.03, 0.1),
+    ModelOffset = Vector(-0, -0, 0.1),
     Scale = 0.45,
     },
 }
@@ -538,7 +538,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {3,1},
         },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 7.3), } }
+    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 7.15), } }
     },
     ["slide_short"] = {
         Bodygroups = {
@@ -556,6 +556,11 @@ SWEP.AttachmentElements = {
     AttPosMods = { [15] = { Pos = Vector(0.25, -5, 0) } },
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data) 
+	local model = data.model
+	if (wep:HasElement("muzzle") or wep:HasElement("muzzle_pistols"))and not wep:HasElement("slide") then model:SetBodygroup(3,3) end	
+end
 
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
@@ -606,7 +611,7 @@ SWEP.Attachments = {
         --Bone = "v_weapon.glock_magazine",
         Category = "go_cz_slide",
         Bone = "v_weapon.cz_parent",
-		InstalledElements = {"movekilltrack"},
+		InstalledElements = {"movekilltrack","slide"},
         Pos = Vector(0, -2.5, 4),
     },
     {
@@ -615,7 +620,7 @@ SWEP.Attachments = {
         Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.cz_parent",
 		InstalledElements = {"movekilltrack"},
-        Pos = Vector(-0.025, -2.45, 6.9),
+        Pos = Vector(-0.025, -2.45, 6.5),
         Ang = Angle(90, 0, -90),
         Scale = 0.8,
     },

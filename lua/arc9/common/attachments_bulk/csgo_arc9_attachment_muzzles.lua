@@ -44,7 +44,7 @@ ATT.Icon = Material("entities/attachs/muzzle_AK74.png", "mips smooth")
 ATT.SortOrder = 1
 ATT.AutoStats = true
 ATT.Category = {"muzzle"}
-ATT.Scale = 0.35
+ATT.Scale = 0.5
 ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
 
 ATT.ExcludeElements = {"p90_ris"}
