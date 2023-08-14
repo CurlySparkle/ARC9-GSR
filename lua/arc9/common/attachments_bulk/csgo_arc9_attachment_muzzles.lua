@@ -32,6 +32,38 @@ ATT.RecoilKickMult = 0.96
 ATT.VisualRecoilMult = 0.9
 
 ARC9.LoadAttachment(ATT, "go_muzzle_akm")
+
+ATT = {}
+
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.PrintName = [[AK74 Compensator]]
+ATT.CompactName = [[AK Comp]]
+ATT.Description = [[Muzzle brake for reducing the vertical kick of a weapon, at the cost of increasing random recoil.]]
+ATT.Icon = Material("entities/attachs/muzzle_AK74.png", "mips smooth")
+
+ATT.SortOrder = 1
+ATT.AutoStats = true
+ATT.Category = {"muzzle"}
+ATT.Scale = 0.5
+ATT.Folder = ARC9:GetPhrase("csgo_folder_muzzlebrake")
+
+ATT.ExcludeElements = {"p90_ris"}
+
+ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AK74.mdl"
+
+ATT.ShootVolumeMult = 1.15
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilUpMult = 0.75
+ATT.RecoilSideMult = 1.15
+ATT.RecoilRandomMult = 1.5
+
+ATT.RecoilKickMult = 0.96
+ATT.VisualRecoilMult = 0.9
+
+ARC9.LoadAttachment(ATT, "go_muzzle_ak74")
 -------------------------------------------------------------------------------
 ATT = {}
 
