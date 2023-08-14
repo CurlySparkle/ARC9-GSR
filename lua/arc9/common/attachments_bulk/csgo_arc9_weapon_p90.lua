@@ -65,8 +65,8 @@ ATT.ActivateElements = {"top_rail"}
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.045, 7, -2.1),
-        Ang = Angle(0.4, 0.5, 0),
+		Pos = Vector(-0.025,8,-3.1),
+		Ang = Angle(0.39, 0.1, -0),
         ViewModelFOV = 56,
         Magnification = 1.15,
         IsIronSight  = true,
