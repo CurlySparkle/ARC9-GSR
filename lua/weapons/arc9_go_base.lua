@@ -61,3 +61,5 @@ SWEP.ShotgunReloadIncludesChamber = false
 if CLIENT then
 	killicon.Add("arc9_gsr_proj_40mm_he", "vgui/killicons/arc9_gsr_proj_40mm_he", Color(255, 255, 255, 191))
 end
+
+SWEP.SpeedMultSights = 0.75

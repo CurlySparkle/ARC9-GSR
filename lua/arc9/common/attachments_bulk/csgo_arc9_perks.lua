@@ -216,3 +216,100 @@ ATT.Category = {"go_perk_melee","go_perk"}
 ATT.BashSpeedMult = 1.4
 
 ARC9.LoadAttachment(ATT, "csgo_perk_melee_speed")
+
+///////////////////////////////// New Perks
+ATT = {}
+
+ATT.PrintName = "Last One Out"
+ATT.Description = "Increases the damage by 25% for the last round in the magazine"
+ATT.Icon = Material("entities/attachs/go_perk_last.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+-- ATT.Folder = "GSR"
+
+ARC9.LoadAttachment(ATT, "csgo_perk_last")
+
+ATT = {}
+
+ATT.PrintName = "Lightweight Frame"
+ATT.Description = "Improves movement speed when aiming"
+ATT.Icon = Material("entities/attachs/go_perk_light.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+-- ATT.Folder = "GSR"
+
+ATT.SpeedMultSights = 1.33
+
+ARC9.LoadAttachment(ATT, "csgo_perk_light")
+
+ATT = {}
+
+ATT.PrintName = "Quickdraw"
+ATT.Description = "Increases aiming speed"
+ATT.Icon = Material("entities/attachs/go_perk_quickdraw.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+-- ATT.Folder = "GSR"
+
+ATT.AimDownSightsTimeMult = 0.5
+
+ARC9.LoadAttachment(ATT, "csgo_perk_quickdraw")
+
+ATT = {}
+
+ATT.PrintName = "Rapid Fire"
+ATT.Description = "Increases firing speed"
+ATT.Icon = Material("entities/attachs/go_perk_rapidfire.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+-- ATT.Folder = "GSR"
+
+ATT.RPMMult = 1.33
+
+ARC9.LoadAttachment(ATT, "csgo_perk_rapidfire")
+
+ATT = {}
+
+ATT.PrintName = "Head Hunt"
+ATT.Description = "Reloads one bullet from reserves when hitting a headshot"
+ATT.Icon = Material("entities/attachs/go_perk_refund.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+-- ATT.Folder = "GSR"
+
+ARC9.LoadAttachment(ATT, "csgo_perk_refund")
+
+ATT = {}
+
+ATT.PrintName = "Full Stop"
+ATT.Description = "Applies an immediate slow-down effect on hit"
+ATT.Icon = Material("entities/attachs/go_perk_slow.png", "mips smooth")
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.AutoStats = true
+
+ATT.Free = true
+
+ATT.Category = {"go_perk"}
+-- ATT.Folder = "GSR"
+
+ARC9.LoadAttachment(ATT, "csgo_perk_slow")

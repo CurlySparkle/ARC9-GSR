@@ -1142,29 +1142,29 @@ L["csgo_perk_melee_speed.compactname"] = "Stabber"
 L["csgo_perk_melee_speed.description"] = "Erhöht die Nahkampfgeschwindigkeit."
 
 -- Perks, added later
-L["csgo_perk_last.printname"] = "Last One Out"
-L["csgo_perk_last.compactname"] = "Last Out"
-L["csgo_perk_last.description"] = "Increases the damage by 25% for the last round in the magazine."
+L["csgo_perk_last.printname"] = "Zuallerletzt"
+L["csgo_perk_last.compactname"] = "Letzt"
+L["csgo_perk_last.description"] = "Erhöht den Schaden für die letzte Patrone im Magazin um 25%."
 
-L["csgo_perk_light.printname"] = "Lightweight Frame"
-L["csgo_perk_light.compactname"] = "Lightweight"
-L["csgo_perk_light.description"] = "Improves movement speed when aiming."
+L["csgo_perk_light.printname"] = "Leichter Rahmen"
+L["csgo_perk_light.compactname"] = "Leicht"
+L["csgo_perk_light.description"] = "Verbessert Bewegungsgeschwindigkeit beim Zielen."
 
 L["csgo_perk_quickdraw.printname"] = "Quickdraw"
 L["csgo_perk_quickdraw.compactname"] = "Quickdraw"
-L["csgo_perk_quickdraw.description"] = "Increases aiming speed."
+L["csgo_perk_quickdraw.description"] = "Erhöht Zielgeschwindigkeit."
 
-L["csgo_perk_rapidfire.printname"] = "Rapid Fire"
-L["csgo_perk_rapidfire.compactname"] = "Rapid"
-L["csgo_perk_rapidfire.description"] = "Increases firing speed."
+L["csgo_perk_rapidfire.printname"] = "Schnellfeuer"
+L["csgo_perk_rapidfire.compactname"] = "Schnell"
+L["csgo_perk_rapidfire.description"] = "Erhöht Schussgeschwindigkeit."
 
-L["csgo_perk_refund.printname"] = "Head Hunt"
-L["csgo_perk_refund.compactname"] = "Head Hunt"
-L["csgo_perk_refund.description"] = "Reloads one bullet from reserves when hitting a headshot."
+L["csgo_perk_refund.printname"] = "Kopfjagd"
+L["csgo_perk_refund.compactname"] = "Kopfjagd"
+L["csgo_perk_refund.description"] = "Füllt eine Patrone nach, wenn ein Kopfschuss getroffen wird."
 
-L["csgo_perk_slow.printname"] = "Full Stop"
-L["csgo_perk_slow.compactname"] = "Full Stop"
-L["csgo_perk_slow.description"] = "Applies an immediate slow-down effect on hit."
+L["csgo_perk_slow.printname"] = "Keine Bewegung!"
+L["csgo_perk_slow.compactname"] = "Stopp!"
+L["csgo_perk_slow.description"] = "Verlangsamt das Ziel bei einem Treffer sofort."
 
 -- Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii-Killer"
@@ -1961,13 +1961,13 @@ L["csgo_scar20_view.compactname"] = "Alternative Ansicht"
 L["csgo_scar20_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
 -- Scout
-L["csgo_scout_barrel_long.printname"] = "570mm Elite Barrel"
+L["csgo_scout_barrel_long.printname"] = "570mm Elite-Lauf"
 L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
-L["csgo_scout_barrel_long.description"] = "Long heavy barrel that improves muzzle velocity and range at the cost of weapon handling."
+L["csgo_scout_barrel_long.description"] = "Langer und schwerer Lauf, der Mündungsgeschwindigkeit und -reichweite auf Kosten von Beweglichkeit verbessert."
 
-L["csgo_scout_barrel_short.printname"] = "400mm Survival Barrel"
+L["csgo_scout_barrel_short.printname"] = "400mm Survival-Lauf"
 L["csgo_scout_barrel_short.compactname"] = "400mm Survival"
-L["csgo_scout_barrel_short.description"] = "Compact barrel that improves weapon handling at the cost of muzzle velocity, range and damage."
+L["csgo_scout_barrel_short.description"] = "Kompakter Lauf, der Waffenagilität auf Kosten von Mündungsgeschwindigkeit, -reichweite und Schaden verbessert."
 
 -- SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 300 mm Kommandolauf und Handschutz"
