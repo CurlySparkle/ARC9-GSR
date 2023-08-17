@@ -6,7 +6,7 @@
 ∟ [perk_refund] "Head Hunt" - Reloads one bullet from reserves on headshot.
 ∟ [perk_slow] "Full Stop" - Slows down enemies on hit.
 
-2. Add two barrel options to the Scout
+2. Add two barrel options to the Scout [DONE]
 ∟ [scout_barrel_long] "570mm Elite Barrel" - Improves muzzle velocity and range at cost of aiming and cycle speeds.
 ∟ [scout_barrel_short] "400mm Survival Barrel" - Improves aiming, cycle and weapon draw speeds at the cost of muzzle velocity, range and damage.
 

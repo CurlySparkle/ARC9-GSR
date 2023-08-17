@@ -1,0 +1,127 @@
+A smaller quality of life improvement update is now available.
+
+Here's an abbrevriated version:
+[b][u][/u][/b]
+[table][tr]
+	[th][list]
+	[*]All weapons now have improved spread and recoil values
+	[*]Added new barrels to the Scout
+	[*]Added 6 new perks from GSO
+	[/list][/th]
+[/tr][/table]
+
+And here's the longer, more detailed version:
+
+[b][u]Weapon changes[/u][/b]
+All weapons now use a "Recoil per Shot" and "Recoil Max" value that adjusts weapon spread every shot and maximum amount of "Recoil" a gun can have at one time. Additionally, all guns have much shorter recoil depreciation values, meaning they go back to neutral more naturally after firing.
+
+This applies to [b]ALL*[/b] guns, including rifles, SMGs, LMGs, shotguns and snipers.
+
+[i]*Does not however apply to the AWP, Scout or SSG 08[/i]
+
+Weapons not listed below did not have any additional changes.
+[b][u]Assault Rifles[/u][/b]
+[table][tr]
+	[th]AK-47[/th]
+	[th]Added 6 default presets
+	Added two new name alterations[/th]
+[/tr][tr]
+[/tr][/table]
+
+[b][u]LMGs[/u][/b]
+[table][tr]
+	[th]M249[/th]
+	[th]The bipod now properly works instead of being an attachment
+	Reduced aiming and melee speed[/th]
+[/tr][tr]
+[/tr][/table]
+
+[b][u]Pistols[/u][/b]
+[table][tr]
+	[th]Desert Eagle[/th]
+	[th]Removed the "top" category*
+	Can no longer equip muzzle attachments if either Compensator is equipped[/th]
+[/tr][tr]
+[/tr][/table]
+
+[b][u]SMGs[/u][/b]
+[table][tr]
+	[th]MP5[/th]
+	[th]Added support for Stats attachments[/th]
+[/tr][tr]
+[/tr][/table]
+
+[b][u]Shotguns[/u][/b]
+[table][tr]
+	[th]Benelli M3 Super 90[/th]
+	[th]Can no longer equip the AK-styled scope riser[/th]
+[/tr][tr]
+[/tr][/table]
+[b]*[i]This might break presets[/i][/b]
+
+[b][u]New Perks[/u][/b]
+Added 6 brand new perks ported over from Gunsmith Offensive:
+[table][tr]
+	[th]Attachment[/th]
+	[th]Changes[/th]
+[/tr][tr]
+	[th]Perk
+	Full Stop[/th]
+	[th]Applies an immediate slow-down effect on hit.[/th]
+[/tr][tr]
+	[th]Perk
+	Head Hunt[/th]
+	[th]Reloads one bullet from reserves when hitting a headshot.[/th]
+[/tr][tr]
+	[th]Perk
+	Last One Out[/th]
+	[th]Increases damage by 25% for the last round in the magazine.
+	Cannot be equipped on single-shot weapons.[/th]
+[/tr][tr]
+	[th]Perk
+	Lightweight[/th]
+	[th]Improves movement speed when aiming.[/th]
+[/tr][tr]
+	[th]Perk
+	Quickdraw[/th]
+	[th]Increases aiming speed.[/th]
+[/tr][tr]
+	[th]Perk
+	Rapid Fire[/th]
+	[th]Increases firing speed.[/th]
+[/tr][tr]
+[/tr][/table]
+
+[b][u]Attachment Fixes and Adjustments[/u][/b]
+[i]Added camo support to the following attachments:[/i]
+[table][tr]
+	[th]Slot[/th]
+	[th]Attachment[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]Barska[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]C-More Railway Red Dot[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]Aimpoint CompM4*[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]EOTech Sight*[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]Kobra EKP-8-18*[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]ITL MARS[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]Micro T1[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]OKP-7*[/th]
+[/tr][tr]
+	[th]Scope[/th]
+	[th]C79 Scope[/th]
+[/tr][/table]

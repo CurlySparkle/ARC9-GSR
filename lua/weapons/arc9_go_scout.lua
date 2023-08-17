@@ -555,14 +555,12 @@ SWEP.AttachmentElements = {
         },
     },
     ["barrel_long"] = {
-        Bodygroups = {
-            {1,1},
-        },
+        Bodygroups = { {1,1} },
+        AttPosMods = { [3] = { Pos = Vector(0.15, -3.3, 30.5), } }
     },
     ["barrel_short"] = {
-        Bodygroups = {
-            {1,2},
-        },
+        Bodygroups = { {1,2} },
+        AttPosMods = { [3] = { Pos = Vector(0.15, -3.25, 22.75), } }
     },
     ["scout_scope"] = {
         AttPosMods = { [1] = { Pos = Vector(5, 0, 0), } }
@@ -582,11 +580,18 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
+        DefaultAttName = "Standard Barrel",
+        Category = {"go_scout_barrel"},
+        Bone = "v_weapon.awp_parent",
+        Pos = Vector(0.15, -3, 21),
+    },
+    {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle"},
         Bone = "v_weapon.awp_parent",
-        Pos = Vector(0.15, -3.35, 29),
+        Pos = Vector(0.15, -3.3, 29),
         Ang = Angle(90, 0, -90),
 		Scale = 0.85,
     },
