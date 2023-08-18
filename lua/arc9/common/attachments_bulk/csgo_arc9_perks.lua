@@ -108,7 +108,7 @@ ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.Free = true
 
-ATT.Category = {"go_perk"}
+ATT.Category = {"go_perk_bolt"}
 -- ATT.Folder = "GSR"
 ATT.ActivateElements = {"perk_bolt"}
 

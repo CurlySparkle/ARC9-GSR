@@ -671,7 +671,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk",
+        Category = {"go_perk","go_perk_bolt"},
         Bone = "v_weapon.awp_Parent",
         Pos = Vector(0, 2, 14),
     },
