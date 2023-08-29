@@ -367,20 +367,23 @@ ATT.Sights = {
         -- IgnoreExtra = true,
 		-- CrosshairInSights = false
     -- },
-    {
-        Pos = Vector(0, 15, -1.5075),
-        Ang = Angle(0, 0, 0),
-        ViewModelFOV = 20,
-        Magnification = 1.25,
-		RTScopeFOV = 3,
-        IgnoreExtra = true,
-		CrosshairInSights = false
-    }
+    -- {
+        -- Pos = Vector(0, 15, -1.5075),
+        -- Ang = Angle(0, 0, 0),
+        -- ViewModelFOV = 20,
+        -- Magnification = 1.25,
+		-- RTScopeFOV = 3,
+        -- IgnoreExtra = true,
+		-- CrosshairInSights = false
+    -- }
 }
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 3
+ATT.RTScopeFOVMin = 10
+ATT.RTScopeFOVMax = 3.5
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("hud/arc9_csgo/scopes/dot_overlay.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
