@@ -143,6 +143,7 @@ ATT.Free = false
 
 ATT.Category = {"go_awp_mag"}
 ATT.ClipSizeMult = 1.5
+ATT.ReloadTimeMult = 1.15
 
 ATT.ActivateElements = {"mag_15"}
 
@@ -166,6 +167,7 @@ ATT.Free = false
 
 ATT.Category = {"go_awp_mag"}
 ATT.ClipSizeMult = 0.5
+ATT.ReloadTimeMult = 0.85
 
 ATT.DamageMaxMult = 1.10
 ATT.DamageMinMult = 1.20
