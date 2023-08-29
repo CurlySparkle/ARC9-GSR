@@ -63,3 +63,5 @@ if CLIENT then
 end
 
 SWEP.SpeedMultSights = 0.75
+
+SWEP.RecoilMax = 1
