@@ -2171,3 +2171,41 @@ L["go_eft_grips.description"] = eftdesc
 L["go_eft_muzzle.printname"] = "Escape from Tarkov - Mynningstillbehör"
 L["go_eft_muzzle.compactname"] = "EFT"
 L["go_eft_muzzle.description"] = eftdesc
+
+-- Gunsmith Arms: Source integration
+gasdesc = "Aktiverar förmågan att utrusta tillbehör från Gunsmith Arms: Source-tillägget.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar."
+
+L["go_gas_scopes.printname"] = "Gunsmith Arms: Source - Sikten"
+L["go_gas_scopes.compactname"] = "GAS"
+L["go_gas_scopes.description"] = gasdesc
+
+L["go_gas_scopes_pistol.printname"] = "Gunsmith Arms: Source - Sikten"
+L["go_gas_scopes_pistol.compactname"] = "GAS"
+L["go_gas_scopes_pistol.description"] = gasdesc
+
+L["go_gas_muzzle.printname"] = "Gunsmith Arms: Source - Mynningstillbehör"
+L["go_gas_muzzle.compactname"] = "GAS"
+L["go_gas_muzzle.description"] = gasdesc
+
+-- cod Packs Integration
+coddesc = "Aktiverar förmågan att utrusta tillbehör från Black Ops Classic / Modern Warfare Classic-tilläggen.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar."
+
+L["go_cod_scopes.printname"] = "Black Ops Classic | Modern Warfare Classic - Sikten"
+L["go_cod_scopes.compactname"] = "BOC/MWC"
+L["go_cod_scopes.description"] = coddesc
+
+L["go_cod_scopes_pistol.printname"] = "Black Ops Classic | Modern Warfare Classic - Sikten"
+L["go_cod_scopes_pistol.compactname"] = "BOC/MWC"
+L["go_cod_scopes_pistol.description"] = coddesc
+
+L["go_cod_rail.printname"] = "Black Ops Classic | Modern Warfare Classic - Skena"
+L["go_cod_rail.compactname"] = "BOC/MWC"
+L["go_cod_rail.description"] = coddesc
+
+L["go_cod_grips.printname"] = "Black Ops Classic | Modern Warfare Classic - Framgrepp"
+L["go_cod_grips.compactname"] = "BOC/MWC"
+L["go_cod_grips.description"] = coddesc
+
+L["go_cod_muzzle.printname"] = "Black Ops Classic | Modern Warfare Classic - Mynningstillbehör"
+L["go_cod_muzzle.compactname"] = "BOC/MWC"
+L["go_cod_muzzle.description"] = coddesc

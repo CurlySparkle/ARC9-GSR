@@ -2165,3 +2165,41 @@ L["go_eft_grips.description"] = eftdesc
 L["go_eft_muzzle.printname"] = "Escape from Tarkov - Дуло"
 L["go_eft_muzzle.compactname"] = "EFT"
 L["go_eft_muzzle.description"] = eftdesc
+
+-- Gunsmith Arms: Source integration
+gasdesc = "Включает возможность установки обвесов из Gunsmith Arms: Source паков.\n\nНе оптимизированно для GSR, может выглядеть нелепо."
+
+L["go_gas_scopes.printname"] = "Gunsmith Arms: Source - Оптика"
+L["go_gas_scopes.compactname"] = "GAS"
+L["go_gas_scopes.description"] = gasdesc
+
+L["go_gas_scopes_pistol.printname"] = "Gunsmith Arms: Source - Оптика"
+L["go_gas_scopes_pistol.compactname"] = "GAS"
+L["go_gas_scopes_pistol.description"] = gasdesc
+
+L["go_gas_muzzle.printname"] = "Gunsmith Arms: Source - Дуло"
+L["go_gas_muzzle.compactname"] = "GAS"
+L["go_gas_muzzle.description"] = gasdesc
+
+-- cod Packs Integration
+coddesc = "Включает возможность установки обвесов из Black Ops Classic / Modern Warfare Classic паков.\n\nНе оптимизированно для GSR, может выглядеть нелепо."
+
+L["go_cod_scopes.printname"] = "Black Ops Classic | Modern Warfare Classic - Оптика"
+L["go_cod_scopes.compactname"] = "BOC/MWC"
+L["go_cod_scopes.description"] = coddesc
+
+L["go_cod_scopes_pistol.printname"] = "Black Ops Classic | Modern Warfare Classic - Оптика"
+L["go_cod_scopes_pistol.compactname"] = "BOC/MWC"
+L["go_cod_scopes_pistol.description"] = coddesc
+
+L["go_cod_rail.printname"] = "Black Ops Classic | Modern Warfare Classic - Планка"
+L["go_cod_rail.compactname"] = "BOC/MWC"
+L["go_cod_rail.description"] = coddesc
+
+L["go_cod_grips.printname"] = "Black Ops Classic | Modern Warfare Classic - Рукоять"
+L["go_cod_grips.compactname"] = "BOC/MWC"
+L["go_cod_grips.description"] = coddesc
+
+L["go_cod_muzzle.printname"] = "Black Ops Classic | Modern Warfare Classic - Дуло"
+L["go_cod_muzzle.compactname"] = "BOC/MWC"
+L["go_cod_muzzle.description"] = coddesc
