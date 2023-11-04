@@ -440,7 +440,7 @@ SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
 -- For Skins
-	local skin = "moka_csgo_skin_sawedoff_"
+	local skin = "moka_csgo_skin_sawedoff_dual_"
 
     local function GetSkinNames( skintable, skinname )
 		for activeskin,skintable in pairs(skintable) do
