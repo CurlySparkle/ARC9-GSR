@@ -9,4 +9,6 @@ ATT.Free = true
 --ATT.Folder = "Stickers" -- Change this to point what folder you want the skin to be on.
 
 ATT.Category = {"go_skins_usp"} -- Change this to point what weapon it is for.
-ATT.Material = "skins/usp/usp_nostalgia" -- Change this to point where the custom skin is.
+
+ATT.SubMaterial0 = "skins/usp/usp_nostalgia"
+ATT.SubMaterial1 = "skins/usp/usp_nostalgia"

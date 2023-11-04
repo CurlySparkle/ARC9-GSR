@@ -19,10 +19,11 @@ ATT.DamageMinMult = 5
 
 ATT.RPMMult = 2
 
---ATT.Folder = "Stickers" -- Change this to point what folder you want the skin to be on.
-
 ATT.Category = {"go_skins_deagle"} -- Change this to point what weapon it is for.
-ATT.Material = "skins/deagle/deagle_admin" -- Change this to point where the custom skin is.
+
+ATT.SubMaterial0 = "skins/deagle/deagle_admin"
+ATT.SubMaterial1 = "skins/deagle/deagle_admin"
+ATT.SubMaterial2 = "skins/deagle/deagle_admin"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_deagle_admin") -- Change this to give the skin attach a name so the weapon loads it.
 ------------------------------------------------------------------
@@ -37,7 +38,8 @@ ATT.SortOrder = 0
 ATT.Free = true
 
 ATT.Category = {"go_skins_knife_ct"}
-ATT.Material = "models/csgo/knife_ct/gg/knife_ct"
+
+ATT.SubMaterial0 = "models/csgo/knife_ct/gg/knife_ct"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_knife_ct_gold")
 ------------------------------------------------------------------
@@ -52,7 +54,8 @@ ATT.SortOrder = 0
 ATT.Free = true
 
 ATT.Category = {"go_skins_knife_t"}
-ATT.Material = "models/csgo/knife_t/gg/knife_t"
+
+ATT.SubMaterial0 = "models/csgo/knife_t/gg/knife_t"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_knife_t_gold")
 ------------------------------------------------------------------
@@ -67,7 +70,8 @@ ATT.SortOrder = 0
 ATT.Free = true
 
 ATT.Category = {"go_skins_knife_flip"}
-ATT.Material = "models/csgo/knife_flip/ghost/knife_flip_ghost"
+
+ATT.SubMaterial0 = "models/csgo/knife_flip/ghost/knife_flip_ghost"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_knife_ghost")
 ------------------------------------------------------------------

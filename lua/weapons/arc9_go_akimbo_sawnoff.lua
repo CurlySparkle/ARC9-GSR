@@ -549,7 +549,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
-        Category = "go_skins_sawnoff",
+        Category = "go_skins_sawnoff_dual",
 		InstalledElements = {"skins"},
 		ExcludeElements = {"camos"},
         CosmeticOnly = true,

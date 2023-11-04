@@ -1378,6 +1378,53 @@ ATT.RTScopeShadowIntensity = 1
 ATT.RTScopeNoPP = false
 ATT.RTScopeColorable = false
 
+ATT.DrawFunc = function(self, model, wm) 
+	local att = self:GetElements()
+	local skin = "moka_csgo_skin_awp_"
+
+	-- for activeskin,skintable in pairs(skintable) do
+		-- if att[skin .. activeskin] then
+			-- name = name .. " | " .. ARC9:GetPhrase(skin .. activeskin .. ".printname")
+		-- end
+	-- end
+	
+	--[[
+	local GetSkinNames( 
+	{
+		-- Antiqued
+		medusa = "Medusa",
+		twine = "Worm God",
+		
+		-- Custom
+		dragon = "Dragon Lore",
+		favela = "Corticera",
+		chroma_pink = "Chromatic Aberration",
+		hannya = "Oni Taiji",
+		hyper_beast = "Hyper Beast",
+		mastery = "Elite Build",
+		neonoir = "Neo-Noir",
+		psychopath = "Fever Dream",
+		vein = "Capillary",
+		viper = "Atheris",
+		virus = "Containment Breach",
+		wildfire = "Wildfire",
+		elegantred = "Redline",
+		zone9 = "Asiimov",
+		
+		-- Gunsmith
+		enamel = "The Prince",
+		gungnir = "Gungnir",
+		hydra = "Desert Hydra",
+		strone = "Black Nile",
+		death = "Mortis",
+		exoskeleton = "Exoskeleton",
+		limbo_snake = "Duality",
+		phobos = "Phobos",
+		}
+	)
+	--]]
+	
+end
 
 ARC9.LoadAttachment(ATT, "csgo_optic_scope_awp")
 

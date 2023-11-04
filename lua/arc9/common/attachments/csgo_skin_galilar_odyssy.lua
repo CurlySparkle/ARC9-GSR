@@ -9,4 +9,6 @@ ATT.Free = true
 --ATT.Folder = "Stickers" -- Change this to point what folder you want the skin to be on.
 
 ATT.Category = {"go_skins_galilar"} -- Change this to point what weapon it is for.
-ATT.Material = "skins/galilar/Galil_Odyssy" -- Change this to point where the custom skin is.
+
+ATT.SubMaterial0 = "skins/galilar/Galil_Odyssy"
+ATT.SubMaterial1 = "skins/galilar/Galil_Odyssy"
