@@ -130,11 +130,11 @@ ATT.Category = "go_pistols_view"
 ATT.ActivePos = Vector(-3,0,-3)
 ATT.ActiveAng = Angle(0,0,-35)
 
-ATT.MovingPos = Vector(-3,-0.7,-3.3)
-ATT.MovingAng = Angle(0,0,-35)
+ATT.MovingPos = Vector(-0.5,-0.7,-1.3)
+ATT.MovingAng = Angle(0,0,-5)
 
-ATT.CrouchPos = Vector(-3,-0.8,-3.3)
-ATT.CrouchAng = Angle(0,0,-35)
+ATT.CrouchPos = Vector(-1,-0.8,-1.3)
+ATT.CrouchAng = Angle(0,0,-5)
 
 ATT.ReloadPos = Vector(0,0,0)
 ATT.ReloadAng = Angle(0,0,0)
@@ -182,11 +182,11 @@ ATT.Category = "go_pistols_view3"
 ATT.ActivePos = Vector(-4,0,-4.5)
 ATT.ActiveAng = Angle(0,1.2,-35)
 
-ATT.MovingPos = Vector(-4,-0.7,-5)
-ATT.MovingAng = Angle(0,0,-35)
+ATT.MovingPos = Vector(-0.5,-0.7,-1.5)
+ATT.MovingAng = Angle(0,0,-5)
 
-ATT.CrouchPos = Vector(-4,-0.8,-5)
-ATT.CrouchAng = Angle(0,0,-35)
+ATT.CrouchPos = Vector(-0.5,-0.8,-1.5)
+ATT.CrouchAng = Angle(0,0,-5)
 
 ATT.ReloadPos = Vector(0,0,0)
 ATT.ReloadAng = Angle(0,0,0)
