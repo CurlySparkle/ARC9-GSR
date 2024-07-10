@@ -115,10 +115,6 @@ function ENT:Detonate(impact)
         else
             ParticleEffect("explosion_hegrenade_brief", self:GetPos(), (-self.LastHitNormal):Angle(), nil)
             ParticleEffect("explosion_hegrenade_interior", self:GetPos(), (-self.LastHitNormal):Angle(), nil)
-            ParticleEffect("weapon_decoy_ground_effect_shot", self:GetPos(), (-self.LastHitNormal):Angle(), nil)
-            --ParticleEffect("smoke_plume_b", self:GetPos(), (-self.LastHitNormal):Angle(), nil)
-            ParticleEffect("smoke_plume_c", self:GetPos(), (-self.LastHitNormal):Angle(), nil)
-            ParticleEffect("grenade_explosion_01", self:GetPos(), (-self.LastHitNormal):Angle(), nil)
         end
 
         // Overpressure radius

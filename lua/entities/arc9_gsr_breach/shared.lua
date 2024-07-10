@@ -64,16 +64,12 @@ if SERVER then
         if self:WaterLevel() > 0 then
             util.Effect("WaterSurfaceExplosion", fx)
         else
-            ParticleEffect("grenade_explosion_01", pos, Angle(0, 0, 0), nil)
+            ParticleEffect("explosion_grenade", pos, Angle(0, 0, 0), nil)
 
             if self:GetArmed() then
                 ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
                 ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
                 ParticleEffect("weapon_decoy_ground_effect_shot", pos, Angle(0, 0, 0), nil)
-                --ParticleEffect("smoke_plume_b", pos, Angle(0, 0, 0), nil)
-                ParticleEffect("smoke_plume_c", pos, Angle(0, 0, 0), nil)
-                ParticleEffect("HE_shockwave", pos, Angle(0, 0, 0), nil)
-
                 local spos = pos
                 local trs = util.TraceLine({start = spos + Vector(0,0,64), endpos = spos + Vector(0,0,-32), filter = self})
                 util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)

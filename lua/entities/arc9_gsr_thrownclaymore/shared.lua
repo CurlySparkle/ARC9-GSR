@@ -125,16 +125,6 @@ function ENT:Detonate()
             util.Effect("WaterSurfaceExplosion", effectdata)
             self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
         else
-            --ParticleEffect("explosion_hegrenade_brief", pos, Angle(0, 0, 0), nil)
-            --ParticleEffect("explosion_hegrenade_interior", pos, Angle(0, 0, 0), nil)
-            ParticleEffect("grenade_explosion_01", pos, self:GetAngles(), nil)
-            ParticleEffect("weapon_decoy_ground_effect_shot", pos, self:GetAngles(), nil)
-            --ParticleEffect("smoke_plume_b", pos, Angle(0, 0, 0), nil)
-            ParticleEffect("smoke_plume", pos, Angle(0, 0, 0), nil)
-            ParticleEffect("smoke_plume_c", pos, Angle(0, 0, 0), nil)
-            ParticleEffect("HE_shockwave", pos, self:GetAngles(), nil)
-
-            --util.Effect("HelicopterMegaBomb", fx)
             local spos = pos
 
             local trs = util.TraceLine({
@@ -142,10 +132,6 @@ function ENT:Detonate()
                 endpos = spos + Vector(0, 0, -32),
                 filter = self
             })
-
-            util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
-            --self:EmitSound("weapons/csgo/claymore/claymore_expl_01.wav", 125, 100, 1, CHAN_AUTO)
-            self:EmitSound("CSGO.Claymore.Explode")
         end
 
         local oldowner = self.Attacker or self:GetOwner()
@@ -159,6 +145,7 @@ function ENT:Detonate()
         dir:RotateAroundAxis(self:GetAngles():Forward(), -5 + self:GetAdjustment().p)
 
         util.BlastDamage(oldowner, oldowner, pos, 200, 150)
+		util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.Radius * 4)
         local btabl = {
             Attacker = oldowner,
             Damage = 30,
@@ -188,12 +175,13 @@ function ENT:Detonate()
             end
         }
         self:FireBullets(btabl)
-
         btabl.Distance = self.DetectionRange * 2
         btabl.Num = 50
         btabl.Spread = Vector(math.rad(60), math.rad(15), 0)
         self:FireBullets(btabl)
-
+        self:EmitSound("COD2019.Claymore.Explode")
+        ParticleEffect("explosion_grenade", self:GetPos(), Angle(0, 0, 0), nil)
+        util.Decal("Scorch", self:GetPos(), self:GetPos() + self:GetUp() * -100, {self})
         self:Remove()
     end
 end
