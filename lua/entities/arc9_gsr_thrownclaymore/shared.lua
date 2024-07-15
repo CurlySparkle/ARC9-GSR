@@ -125,6 +125,7 @@ function ENT:Detonate()
             util.Effect("WaterSurfaceExplosion", effectdata)
             self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
         else
+            --ParticleEffect("explosion_grenade", pos, self:GetAngles(), nil)
             local spos = pos
 
             local trs = util.TraceLine({
@@ -132,6 +133,9 @@ function ENT:Detonate()
                 endpos = spos + Vector(0, 0, -32),
                 filter = self
             })
+
+            --util.Decal("Scorch", trs.HitPos + trs.HitNormal, trs.HitPos - trs.HitNormal)
+            --self:EmitSound("CSGO.Claymore.Explode")
         end
 
         local oldowner = self.Attacker or self:GetOwner()
@@ -145,7 +149,6 @@ function ENT:Detonate()
         dir:RotateAroundAxis(self:GetAngles():Forward(), -5 + self:GetAdjustment().p)
 
         util.BlastDamage(oldowner, oldowner, pos, 200, 150)
-		util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.Radius * 4)
         local btabl = {
             Attacker = oldowner,
             Damage = 30,
@@ -175,13 +178,16 @@ function ENT:Detonate()
             end
         }
         self:FireBullets(btabl)
+
         btabl.Distance = self.DetectionRange * 2
         btabl.Num = 50
         btabl.Spread = Vector(math.rad(60), math.rad(15), 0)
         self:FireBullets(btabl)
-        self:EmitSound("COD2019.Claymore.Explode")
+
+        self:EmitSound("CSGO.Claymore.Explode")
         ParticleEffect("explosion_grenade", self:GetPos(), Angle(0, 0, 0), nil)
         util.Decal("Scorch", self:GetPos(), self:GetPos() + self:GetUp() * -100, {self})
+
         self:Remove()
     end
 end
