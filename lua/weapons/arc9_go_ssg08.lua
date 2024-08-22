@@ -372,7 +372,7 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
 		Mult = 0.5,
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = {
             {

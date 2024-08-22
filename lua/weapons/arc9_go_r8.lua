@@ -356,7 +356,7 @@ SWEP.Animations = {
         Source = "lookat01",
 		RareSource = {"lookat02","lookat03"},
 		RareSourceChance = 0.01,
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 5/30},

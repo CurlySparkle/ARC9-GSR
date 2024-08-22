@@ -103,7 +103,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = .95
+SWEP.Recoil = 1.66
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.65 -- Multiplier for vertical recoil
@@ -114,56 +114,31 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.6
 
-SWEP.RecoilPerShot = 0.25
+SWEP.RecoilPerShot = 0.5
 SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.85
 -- SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1.35
+SWEP.RecoilMultSights = 0.95
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 2
+SWEP.VisualRecoilPunch = 5
 SWEP.VisualRecoilUp = 1
 SWEP.VisualRecoilUpSights = .35
 SWEP.VisualRecoilSide = -.05
-
--- Moka's testing area - do not touch nor uncomment
-
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = .45
--- SWEP.RecoilMultSights = 1
--- SWEP.RecoilAutoControlMultHipFire = 0.9
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 0.5
--- SWEP.VisualRecoilUp = 3
--- SWEP.VisualRecoilSide = 1
--- SWEP.VisualRecoilRoll = 1
-
-SWEP.VisualRecoilPositionBump = 3
-SWEP.VisualRecoilPositionBumpUp = .5
-SWEP.VisualRecoilMultCrouch = .45
-SWEP.VisualRecoilMultSights = .25
-
--- SWEP.VisualRecoilDampingConst = 60
--- SWEP.VisualRecoilSpringPunchDamping = 12
-
--- -- SWEP.ViewRecoil = false
--- -- SWEP.ViewRecoilUpMult = 10
--- -- SWEP.ViewRecoilSideMult = -5
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
@@ -172,12 +147,16 @@ SWEP.SpreadAddCrouch = -0.01
 
 SWEP.SpreadSights = 0
 SWEP.SpreadAddSights = 0
-SWEP.RecoilModifierCapSights = 0.075
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
 SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -250,11 +229,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 30, 4)
+SWEP.CustomizePos = Vector(19, 45, 4)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 3.5)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeRotateAnchor = Vector(19, -5, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 3.5)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, -2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -412,7 +398,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9/30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 35/30},
         },
     },
     ["reload_empty_alt"] = {
@@ -444,7 +430,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = "weapons/csgo/ak47/ak47_clipout.wav", t = 9/30},
-            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 30/30},
+            {s = "weapons/csgo/ak47/ak47_clipin.wav", t = 35/30},
             {s = "weapons/csgo/ak47/ak47_boltpull.wav", t = 50/30},
         },
     },
@@ -595,6 +581,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
@@ -607,7 +594,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = {
             {
@@ -835,7 +822,7 @@ SWEP.Attachments = {
         --Bone = "v_weapon.glock_magazine",
         Category = "go_ak47_barrel",
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(0, -4.5, 16),
+        Pos = Vector(0, -3.5, 15),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -871,6 +858,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.ak47_Parent",
         Pos = Vector(-0.9, -3.9, 14),
         Ang = Angle(90, 0, 90),
+		Icon_Offset = Vector(0, 0, -0.5),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),

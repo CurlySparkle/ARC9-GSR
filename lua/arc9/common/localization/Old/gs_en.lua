@@ -577,12 +577,12 @@ L["csgo_optic_rmr_rifle.printname"] = "Trijicon RMR"
 L["csgo_optic_rmr_rifle.compactname"] = "RMR"
 L["csgo_optic_rmr_rifle.description"] = "RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a high-profile rail."
 
-L["csgo_optic_rmr2_rifle.printname"] = "Trijicon RMR II"
-L["csgo_optic_rmr2_rifle.compactname"] = "RMR II"
+L["csgo_optic_rmr2_rifle.printname"] = "Trijicon RMR (2)"
+L["csgo_optic_rmr2_rifle.compactname"] = "RMR (2)"
 L["csgo_optic_rmr2_rifle.description"] = "Alternative look for the RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a high-profile rail."
 
-L["csgo_optic_rmr3_rifle.printname"] = "Trijicon RMR III"
-L["csgo_optic_rmr3_rifle.compactname"] = "RMR III"
+L["csgo_optic_rmr3_rifle.printname"] = "Trijicon RMR (3)"
+L["csgo_optic_rmr3_rifle.compactname"] = "RMR (3)"
 L["csgo_optic_rmr3_rifle.description"] = "Alternative look for the RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a high-profile rail."
 
 L["csgo_optic_t1.printname"] = "Micro T1"

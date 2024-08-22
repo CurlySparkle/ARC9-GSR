@@ -1,0 +1,83 @@
+A gigantic overhaul update is now available for Gunsmith Reloaded.
+
+Here's an abbrevriated version:
+[list]
+	[*] Added support for recent ARC9 base features on all weapons.
+	[*] All weapons have altered spread values and has their visual recoil either removed or adjusted
+	[*] All attachments are remade from scratch, including names, descriptions and stats
+	[*] Localizations have been redone almost from scratch, including new attachment names and descriptions
+	And more!
+[/list]
+
+And here's the long, more detailed version:
+
+[b][u]Weapon changes[/u][/b]
+[u]All weapons[/u]
+[list]
+	[*] Reduced the overall spread and spread penalties when both moving and when mid-air.
+	[*] Heavily reduced or removed visual recoil to improve visual clarity when shooting in ADS.
+	[*] Added very slight aim sway to all weapons, tuned depending on the weapon weight.
+	[*] Adjusted the customize position on all weapons.
+[/list]
+
+[u]Assault Rifles[/u]
+[b]AK-47[/b]: Increased overall recoil, but reduced recoil modifier when ADS.
+[b]AUG[/b]: Increased overall recoil, but increased recoil centering; Also fixed that the camera "jumped" when reloading.
+[b]FAMAS[/b]: 
+[b]Galil AR[/b]: 
+[b]Galil SAR[/b]: 
+[b]M4A1-S[/b]: 
+[b]M4A4[/b]: 
+[b]SCAR-17[/b]: 
+[b]SIG556[/b]: 
+
+[u]SMGs[/u]
+[b]MAC-10[/b]: 
+[b]MP5[/b]: 
+[b]MP5-SD[/b]: 
+[b]MP7[/b]: 
+[b]MP9 (& Dual version)[/b]: 
+[b]P90[/b]: 
+[b]PP-Bizon[/b]: 
+[b]UMP-45[/b]: 
+
+
+[u]Shotguns[/u]
+[b]Benelli M3 Super 90[/b]: Shortened name to just "M3".
+[b]MAG-7[/b]: 
+[b]Nova[/b]: 
+[b]Sawed-Off[/b]: 
+[b]XM1014[/b]: 
+
+[u]Snipers[/u]
+[b]AWP[/b]:
+[b]G3SG1[/b]: 
+[b]SCAR-20[/b]: 
+[b]Scout[/b]: 
+[b]SSG 08[/b]: 
+
+[u]LMGs[/u]
+[b]M249[/b]:
+[b]Negev[/b]: 
+
+[u]Pistols (& Dual versions)[/u]
+[b]Beretta[/b]:
+[b]CZ75-Auto[/b]: 
+[b]Desert Eagle[/b]: 
+[b]Five-SeveN[/b]: 
+[b]Glock-18[/b]: 
+[b]P2000[/b]: 
+[b]P250[/b]: 
+[b]R8 Revolver[/b]: 
+[b]Tec-9[/b]: 
+[b]USP-S[/b]: 
+
+[u]Knives[/u]
+[b]CT Knife[/b]:
+[b]T Knife[/b]: 
+[b]Riot Shield[/b]: 
+[b]Bayonet[/b]: 
+[b]Flip Knife[/b]: 
+
+[u]Extras[/u]
+[b]All (except Zeus x27)[/b]: Can now be thrown or planted using Quickthrow (+grenade1).

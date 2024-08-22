@@ -403,7 +403,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         EventTable = {
             {s = "CSGO.Item.Movement", t = 2/30},
@@ -415,7 +415,7 @@ SWEP.Animations = {
     },
     ["1_inspect"] = {
         Source = "lookat01_alt",
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         EventTable = {
             {s = path .. speclook .. "009.wav", t = 09/30},
