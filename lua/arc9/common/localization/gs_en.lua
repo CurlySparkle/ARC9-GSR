@@ -1,6 +1,6 @@
 L = {}
 
--- [[ Trivia ]]
+////////////////////////////////////// Trivia
 L["csgo_trivia_country"] = "Country of Origin"
 
 L["csgo_trivia_country_austria"] = "Austria"
@@ -36,18 +36,17 @@ L["csgo_trivia_mechanism"] = "Mechanism"
 L["csgo_trivia_explosive_mass"] = "Explosive Mass"
 L["csgo_trivia_explosive_type"] = "Explosive Type"
 
--- [[ Weapon Firemodes ]]
+/////////////////// Firing Modes
 L["csgo_firemode_both"] = "BOTH"
 L["csgo_firemode_melee"] = "MELEE"
 L["csgo_firemode_pump"] = "PUMP"
 L["csgo_firemode_throwable"] = "THROWABLE"
 L["csgo_firemode_plantable"] = "PLANTABLE"
 
--- Shortened from "Suppressed"
 L["csgo_firemode_sil"] = "ON"
 L["csgo_firemode_nosil"] = "OFF"
 
--- [[ Weapon Categories ]]
+/////////////////// Weapon Categories
 L["csgo_category_weapon_akimbo"] = "Akimbos"
 L["csgo_category_weapon_ar"] = "Assault Rifles"
 L["csgo_category_weapon_extra"] = "Extras"
@@ -58,7 +57,7 @@ L["csgo_category_weapon_shotgun"] = "Shotguns"
 L["csgo_category_weapon_sniper"] = "Sniper Rifles"
 L["csgo_category_weapon_smg"] = "SMGs"
 
--- [[ Weapon Classes ]]
+/////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Assault Rifle"
 L["csgo_class_weapon_lmg"] = "Light Machine Gun"
 L["csgo_class_weapon_melee"] = "Melee"
@@ -76,7 +75,8 @@ L["csgo_class_weapon_throwable"] = "Throwable"
 L["csgo_class_weapon_grenade"] = "Grenade"
 L["csgo_class_weapon_special"] = "Special"
 
--- [[ Weapon Display Names ]]
+////////////////////////////////////// Weapons
+/////////////////// Weapon Display Names
 L["csgo_weapon_ak47"] = "AK-47"
 L["csgo_weapon_ak47_rpk"] = "RPK"
 L["csgo_weapon_ak47_ak74"] = "AK-74"
@@ -227,7 +227,7 @@ L["csgo_weapon_usp"] = "USP-S"
 L["csgo_weapon_xm1014"] = "XM1014"
 L["csgo_weapon_zeus"] = "Zeus x27"
 
--- [[ Weapon Descriptions ]]
+/////////////////// Weapon Descriptions
 L["csgo_description_ak47"] = "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire."
 
 L["csgo_description_akimbo_cz75"] = "A pair of automatic pistols. Its low fire rate makes it a well rounded akimbo option."
@@ -402,8 +402,8 @@ L["csgo_description_xm1014"] = "The XM1014 is a powerful automatic shotgun with 
 
 L["csgo_description_zeus"] = "Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit."
 
--- [[ Attachments ]]
--- Attachment folder names
+////////////////////////////////////// Attachments
+/////////////////// Attachment Folders
 L["csgo_folder_thermal"] = "Thermal"
 L["csgo_folder_magnifier"] = "Magnifier"
 L["csgo_folder_muzzlebrake"] = "Muzzle Brake"
@@ -411,7 +411,7 @@ L["csgo_folder_suppressor"] = "Suppressor"
 L["csgo_folder_ubgl"] = "Weapon"
 L["csgo_folder_tube"] = "Tube"
 
--- Attachment category slots
+/////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Ammo"
 L["csgo_category_barrel"] = "Barrel"
 L["csgo_category_bipod"] = "Bipod"
@@ -449,7 +449,7 @@ L["csgo_category_ammo_mass"] = "Ammo (MASS)"
 L["csgo_category_muzzle_xm1014"] = "Muzzle (XM1014)"
 L["csgo_category_ammo_xm1014"] = "Ammo (XM1014)"
 
--- Attachment toggle stat texts
+/////////////////// Attachment Toggle Stats
 L["csgo_stat_on"] = "ON"
 L["csgo_stat_off"] = "OFF"
 
@@ -465,182 +465,154 @@ L["csgo_stat_light"] = "Light"
 L["csgo_stat_global"] = "Globally"
 L["csgo_stat_curlife"] = "Current Life"
 
--- These are via file name order with "bulk" attachments afterwards. Categorized manually.
--- 2X Optics
-L["csgo_optic_2x_aimpoint.printname"] = "Magnifier with Aimpoint CompM4"
+/////////////////// Optics with Magnifiers
+L["csgo_optic_2x_aimpoint.printname"] = "Aimpoint CompM4 with 2x Magnifier"
 L["csgo_optic_2x_aimpoint.compactname"] = "CompM4 2x"
-L["csgo_optic_2x_aimpoint.description"] = "Tube-based red dot sight for firearms.\nBundled with a toggleable 2x Magnifier."
+L["csgo_optic_2x_aimpoint.description"] = "Large, tube-based red dot sight.\nBundled with a <color=100,255,100>2x Magnifier</color>."
 
-L["csgo_optic_2x_eotech.printname"] = "Magnifier with EOTech Sight"
+L["csgo_optic_2x_eotech.printname"] = "EOTech with 2x Magnifier"
 L["csgo_optic_2x_eotech.compactname"] = "EOTech 2x"
-L["csgo_optic_2x_eotech.description"] = "Medium-range sight for improved precision.\nBundled with a toggleable 2x Magnifier."
+L["csgo_optic_2x_eotech.description"] = "Classic holographic sight.\nBundled with a <color=100,255,100>2x Magnifier</color>."
 
-L["csgo_optic_2x_kobra.printname"] = "Magnifier with Kobra EKP-8-18"
+L["csgo_optic_2x_kobra.printname"] = "Kobra EKP-8-18 with 2x Magnifier"
 L["csgo_optic_2x_kobra.compactname"] = "Kobra 2x"
-L["csgo_optic_2x_kobra.description"] = "Open multipurpose red dot sight.\nBundled with a toggleable 2x Magnifier."
+L["csgo_optic_2x_kobra.description"] = "Russian-made kollimator sight with a T-shaped reticle.\nBundled with a <color=100,255,100>2x Magnifier</color>."
 
-L["csgo_optic_2x_okp.printname"] = "Magnifier with OKP-7"
+L["csgo_optic_2x_okp.printname"] = "OKP-7 with 2x Magnifier"
 L["csgo_optic_2x_okp.compactname"] = "OKP-7 2x"
-L["csgo_optic_2x_okp.description"] = "Reflex sight that provides an effective aiming reticle.\nBundled with a toggleable 2x Magnifier."
+L["csgo_optic_2x_okp.description"] = "Russian-made kollimator sight with a green chevron reticle.\nBundled with a <color=100,255,100>2x Magnifier</color>."
 
--- Scopes
-L["csgo_optic_acog.printname"] = "M110 Scope (8x-12x)"
+/////////////////// Scopes
+L["csgo_optic_acog.printname"] = "M110 Scope"
 L["csgo_optic_acog.compactname"] = "M110"
-L["csgo_optic_acog.description"] = "Long-range combat scope. Provides improved precision at longer ranges."
+L["csgo_optic_acog.description"] = "Long-range sniper scope with <color=100,255,100>8-12x magnification</color>."
 
 L["csgo_optic_acog_1.printname"] = "SIG556 Scope"
 L["csgo_optic_acog_1.compactname"] = "SIG556"
-L["csgo_optic_acog_1.description"] = "Long-range combat scope. Provides improved precision at longer ranges."
+L["csgo_optic_acog_1.description"] = "Medium-range combat optic with <color=100,255,100>3x magnification</color>.\nIntended for use on the SIG556.\nComes with backup iron sights."
 
 L["csgo_optic_acog_2.printname"] = "AUG Scope"
 L["csgo_optic_acog_2.compactname"] = "AUG"
-L["csgo_optic_acog_2.description"] = "Long-range combat scope. Provides improved precision at longer ranges."
+L["csgo_optic_acog_2.description"] = "Medium-range combat optic with <color=100,255,100>2.75x magnification</color>.\nIntended for use on the AUG."
 
-L["csgo_optic_acog_mount.printname"] = "Trijicon ACOG B"
-L["csgo_optic_acog_mount.compactname"] = "ACOG B"
-L["csgo_optic_acog_mount.description"] = "Long-range combat scope. Provides improved precision at longer ranges.\nCan equip a small red dot on top for use as a backup optic."
+L["csgo_optic_acog_mount.printname"] = "Trijicon ACOG"
+L["csgo_optic_acog_mount.compactname"] = "ACOG"
+L["csgo_optic_acog_mount.description"] = "Medium-range combat optic with <color=100,255,100>4x magnification</color>.\nCan equip a backup optic."
 
-L["csgo_optic_c79.printname"] = "C79 Scope"
+L["csgo_optic_c79.printname"] = "C79"
 L["csgo_optic_c79.compactname"] = "C79"
-L["csgo_optic_c79.description"] = "Long-range combat scope. Provides improved precision at longer ranges."
+L["csgo_optic_c79.description"] = "Medium-range combat optic with <color=100,255,100>3x magnification</color>.\nComes with backup iron sights."
 
 L["csgo_optic_pkas.printname"] = "PK-AS"
 L["csgo_optic_pkas.compactname"] = "PK-AS"
-L["csgo_optic_pkas.description"] = "Russian-made medium range combat scope. Provides an improved precision at longer ranges."
+L["csgo_optic_pkas.description"] = "Russian-made combat optic with <color=100,255,100>1.5x magnification</color>."
 
-L["csgo_optic_scope_awp.printname"] = "AWP Scope (8x)"
-L["csgo_optic_scope_awp.compactname"] = "AWP 8X"
-L["csgo_optic_scope_awp.description"] = "Long-range sniper scope intended for the AWP.\nProvides a clean reticle for quick target acquisition."
+L["csgo_optic_scope_awp.printname"] = "AWP Scope"
+L["csgo_optic_scope_awp.compactname"] = "AWP"
+L["csgo_optic_scope_awp.description"] = "Long-range sniper scope with <color=100,255,100>8x magnification</color>.\nIntended for use on the AWP."
 
-L["csgo_optic_scope_g3sg1.printname"] = "G3SG1 Scope (8x)"
-L["csgo_optic_scope_g3sg1.compactname"] = "G3SG1 8X"
-L["csgo_optic_scope_g3sg1.description"] = "Long-range sniper scope intended for the G3.\nProvides a clean reticle for quick target acquisition."
+L["csgo_optic_scope_g3sg1.printname"] = "G3SG1 Scope"
+L["csgo_optic_scope_g3sg1.compactname"] = "G3SG1"
+L["csgo_optic_scope_g3sg1.description"] = "Long-range sniper scope with <color=100,255,100>8x magnification</color>.\nIntended for use on the G3SG1."
 
-L["csgo_optic_scope_scar20.printname"] = "SCAR-20 Scope (8x)"
-L["csgo_optic_scope_scar20.compactname"] = "SCAR-20 8X"
-L["csgo_optic_scope_scar20.description"] = "Long-range sniper scope intended for the SCAR-20.\nProvides a clean reticle for quick target acquisition."
+L["csgo_optic_scope_scar20.printname"] = "SCAR-20 Scope"
+L["csgo_optic_scope_scar20.compactname"] = "SCAR-20"
+L["csgo_optic_scope_scar20.description"] = "Long-range sniper scope with <color=100,255,100>8x magnification</color>.\nIntended for use on the SCAR-20."
 
-L["csgo_optic_scope_scout.printname"] = "Scout Scope (6x)"
-L["csgo_optic_scope_scout.compactname"] = "Scout 6X"
-L["csgo_optic_scope_scout.description"] = "Medium-range sniper scope intended for the Scout.\nProvides a clean reticle for quick target acquisition."
+L["csgo_optic_scope_scout.printname"] = "Scout Scope"
+L["csgo_optic_scope_scout.compactname"] = "Scout"
+L["csgo_optic_scope_scout.description"] = "Long-range sniper scope with <color=100,255,100>6x magnification</color>.\nIntended for use on the Scout."
 
-L["csgo_optic_scope_ssg08.printname"] = "SSG 08 Scope (8x)"
-L["csgo_optic_scope_ssg08.compactname"] = "SSG 08 8X"
-L["csgo_optic_scope_ssg08.description"] = "Long-range sniper scope intended for the SSG 08.\nProvides a clean reticle for quick target acquisition."
+L["csgo_optic_scope_ssg08.printname"] = "SSG 08 Scope"
+L["csgo_optic_scope_ssg08.compactname"] = "SSG 08"
+L["csgo_optic_scope_ssg08.description"] = "Long-range sniper scope with <color=100,255,100>6x magnification</color>.\nIntended for use on the SSG 08."
 
-L["csgo_optic_specter.printname"] = "Elcan SpecterDR (4x)"
+L["csgo_optic_specter.printname"] = "Elcan SpecterDR"
 L["csgo_optic_specter.compactname"] = "SpecterDR"
-L["csgo_optic_specter.description"] = "Long-range combat scope. Provides improved precision at longer ranges."
+L["csgo_optic_specter.description"] = "Medium-range combat optic with <color=100,255,100>3.5x magnification</color>.\nComes with backup iron sights."
 
 L["csgo_optic_nvis.printname"] = "N-Vision Halo-LR Thermal Type"
-L["csgo_optic_nvis.compactname"] = "QTS Thermal"
-L["csgo_optic_nvis.description"] = "Bulky thermal scope that highlights targets.\nIts heavy weight reduces weapon handling."
+L["csgo_optic_nvis.compactname"] = "Halo-LR"
+L["csgo_optic_nvis.description"] = "Heavy thermal optic with <color=100,255,100>1.5-3x magnification</color>. <color=100,255,100>Highlights targets</color> when aiming."
 
--- Sights
+/////////////////// Optics
 L["csgo_optic_acog_rmr_alt.printname"] = "Trijicon RMR"
 L["csgo_optic_acog_rmr_alt.compactname"] = "RMR"
-L["csgo_optic_acog_rmr_alt.description"] = "Alternative version of the Trijicon RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nDesigned for use on sidearms, mounted on a low-profile rail."
-
-L["csgo_optic_acog_rmr_alt_nonrail.printname"] = "Trijicon RMR"
-L["csgo_optic_acog_rmr_alt_nonrail.compactname"] = "RMR"
-L["csgo_optic_acog_rmr_alt_nonrail.description"] = "Alternative version of the Trijicon RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nDesigned for use on sidearms, mounted on a low-profile rail."
+L["csgo_optic_acog_rmr_alt.description"] = "Compact reflex optic."
 
 L["csgo_optic_barska.printname"] = "Barska"
 L["csgo_optic_barska.compactname"] = "Barska"
-L["csgo_optic_barska.description"] = "Open red dot sight with a circular reticle."
+L["csgo_optic_barska.description"] = "Traditional reflex sight with a circular reticle."
 
-L["csgo_optic_cmore.printname"] = "C-More Railway Red Dot"
+L["csgo_optic_cmore.printname"] = "C-More Railway"
 L["csgo_optic_cmore.compactname"] = "C-More"
-L["csgo_optic_cmore.description"] = "Open multipurpose red dot sight."
+L["csgo_optic_cmore.description"] = "Slim, multi-purpose reflex sight with a circular reticle."
 
 L["csgo_optic_compm4.printname"] = "Aimpoint CompM4"
 L["csgo_optic_compm4.compactname"] = "CompM4"
-L["csgo_optic_compm4.description"] = "Tube-based red dot sight for firearms."
+L["csgo_optic_compm4.description"] = "Large, tube-based red dot sight."
 
-L["csgo_optic_eotech.printname"] = "EOTech Sight"
+L["csgo_optic_eotech.printname"] = "EOTech"
 L["csgo_optic_eotech.compactname"] = "EOTech"
-L["csgo_optic_eotech.description"] = "Medium-range sight for improved precision."
+L["csgo_optic_eotech.description"] = "Classic holographic sight."
 
 L["csgo_optic_kobra.printname"] = "Kobra EKP-8-18"
 L["csgo_optic_kobra.compactname"] = "Kobra"
-L["csgo_optic_kobra.description"] = "Open multipurpose red dot sight."
+L["csgo_optic_kobra.description"] = "Russian-made kollimator sight with a T-shaped reticle."
 
 L["csgo_optic_m21.printname"] = "Mepro M21"
 L["csgo_optic_m21.compactname"] = "Mepro"
-L["csgo_optic_m21.description"] = "Red dot sight from Meprolight, provides an effective aiming dot."
+L["csgo_optic_m21.description"] = "Israeli-made reflex sight."
 
 L["csgo_optic_okp.printname"] = "OKP-7"
 L["csgo_optic_okp.compactname"] = "OKP-7"
-L["csgo_optic_okp.description"] = "Reflex sight that provides an effective aiming reticle."
+L["csgo_optic_okp.description"] = "Russian-made kollimator sight with a green chevron reticle."
 
-L["csgo_optic_rmr_rifle.printname"] = "Trijicon RMR"
-L["csgo_optic_rmr_rifle.compactname"] = "RMR"
-L["csgo_optic_rmr_rifle.description"] = "RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a high-profile rail."
+L["csgo_optic_rmr_rifle.printname"] = "Trijicon RMR, High Profile"
+L["csgo_optic_rmr_rifle.compactname"] = "RMR HP"
+L["csgo_optic_rmr_rifle.description"] = "Compact reflex sight mounted on a high-profile rail."
 
-L["csgo_optic_rmr2_rifle.printname"] = "Trijicon RMR II"
-L["csgo_optic_rmr2_rifle.compactname"] = "RMR II"
-L["csgo_optic_rmr2_rifle.description"] = "Alternative look for the RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a high-profile rail."
+L["csgo_optic_rmr3_rifle.printname"] = "Trijicon SRO, High Profile"
+L["csgo_optic_rmr3_rifle.compactname"] = "SRO HP"
 
-L["csgo_optic_rmr3_rifle.printname"] = "Trijicon RMR III"
-L["csgo_optic_rmr3_rifle.compactname"] = "RMR III"
-L["csgo_optic_rmr3_rifle.description"] = "Alternative look for the RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a high-profile rail."
-
-L["csgo_optic_t1.printname"] = "Micro T1"
-L["csgo_optic_t1.compactname"] = "Micro T1"
-L["csgo_optic_t1.description"] = "Low-profile red dot sight providing an effective aiming dot.\nMounted on a high-profile rail."
+L["csgo_optic_t1.printname"] = "Micro T1, High Profile"
+L["csgo_optic_t1.compactname"] = "T1 HP"
+L["csgo_optic_t1.description"] = "Compact reflex optic mounted on a high-profile rail."
 
 L["csgo_optic_t1_lp.printname"] = "Micro T1, Low Profile"
-L["csgo_optic_t1_lp.compactname"] = "Micro T1 (LP)"
-L["csgo_optic_t1_lp.description"] = "Low-profile red dot sight providing an effective aiming dot.\nMounted on a low-profile rail."
+L["csgo_optic_t1_lp.compactname"] = "T1 LP"
 
-L["csgo_optic_trijicon.printname"] = "Trijicon RMR"
-L["csgo_optic_trijicon.compactname"] = "RMR"
-L["csgo_optic_trijicon.description"] = "RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nDesigned for use on sidearms, mounted on a low-profile rail."
+L["csgo_optic_trijicon.printname"] = "Trijicon RMR, Low Profile"
+L["csgo_optic_trijicon.compactname"] = "RMR LP"
 
 L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO"
 L["csgo_optic_trijicon_alt.compactname"] = "SRO"
-L["csgo_optic_trijicon_alt.description"] = "SRO sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nDesigned for use on sidearms, mounted on a low-profile rail."
-
-L["csgo_optic_trijicon_alt_nonrail.printname"] = "Trijicon SRO"
-L["csgo_optic_trijicon_alt_nonrail.compactname"] = "SRO"
-L["csgo_optic_trijicon_alt_nonrail.description"] = "SRO sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nDesigned for use on sidearms, mounted on a low-profile rail."
 
 L["csgo_optic_trijicon_mro.printname"] = "Trijicon MRO"
 L["csgo_optic_trijicon_mro.compactname"] = "MRO"
-L["csgo_optic_trijicon_mro.description"] = "MRO sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nMounted on a riser to improve sight picture."
-
-L["csgo_optic_trijicon_nonrail.printname"] = "Trijicon RMR"
-L["csgo_optic_trijicon_nonrail.compactname"] = "RMR"
-L["csgo_optic_trijicon_nonrail.description"] = "RMR sight from Insurgency: Sandstorm.\nProvides an effective aiming dot.\nDesigned for use on sidearms, mounted on a low-profile rail."
 
 L["csgo_optic_mars.printname"] = "ITL MARS"
 L["csgo_optic_mars.compactname"] = "MARS"
-L["csgo_optic_mars.description"] = "The MARS (Multi-purpose Aiming Reflex Sight) combines a reflex and laser sight into one."
+L["csgo_optic_mars.description"] = "Israeli-made reflex optic with built-in laser."
 
--- Rail
-L["csgo_rail_optic_1.printname"] = "Rail Riser"
-L["csgo_rail_optic_1.compactname"] = "Riser"
-L["csgo_rail_optic_1.description"] = "Rail-attached rail system that allows a raised sight picture with optics."
+/////////////////// Rails
+L["csgo_rail_optic_1.printname"] = "Custom Optics Rail"
+L["csgo_rail_optic_1.compactname"] = "Sight Rail"
+L["csgo_rail_optic_1.description"] = "Weapon-mounted rail, allowing installation of RIS optics on weapons that usually can't equip them."
 
-L["csgo_rail_optic_2.printname"] = "Rail Riser - AK-Style"
-L["csgo_rail_optic_2.compactname"] = "Riser"
-L["csgo_rail_optic_2.description"] = "Rail-attached rail system that allows a raised sight picture with optics.\nDesigned for use on AK-style weapons."
+L["csgo_rail_optic_2.printname"] = "Dovetail Rail"
+L["csgo_rail_optic_2.compactname"] = "Dovetail"
+L["csgo_rail_optic_2.description"] = "Installs an RIS rail via the dovetail, allowing installation of custom optics."
 
-L["csgo_rail_optic_2_alt.printname"] = "Rail Riser - AK-Style"
-L["csgo_rail_optic_2_alt.compactname"] = "Riser"
-L["csgo_rail_optic_2_alt.description"] = "Rail-attached rail system that allows a raised sight picture with optics.\nDesigned for use on AK-style weapons."
+L["csgo_rail_optic_3.printname"] = "Pistol Optics Rail"
+L["csgo_rail_optic_3.compactname"] = "Sight Rail"
+L["csgo_rail_optic_3.description"] = "Installs an RIS rail via the undermounted rail, allowing installation of custom optics."
 
-L["csgo_rail_optic_3.printname"] = "Rail Riser - Sidearms"
-L["csgo_rail_optic_3.compactname"] = "Riser"
-L["csgo_rail_optic_3.description"] = "Rail-attached rail system that allows a raised sight picture with optics.\nDesigned for use on sidearms."
-
-L["csgo_rail_optic_4.printname"] = "Rail Riser - Top Cover"
-L["csgo_rail_optic_4.compactname"] = "Riser"
-L["csgo_rail_optic_4.description"] = "Rail-attached rail system that allows a raised sight picture with optics.\nDesigned for use on weapons with a top cover, such as machine guns."
+L["csgo_rail_optic_4.description"] = "Weapon-mounted rail, allowing installation of RIS optics on weapons that usually can't equip them.\nDesigned for use on weapons with a top cover, such as machine guns."
 
 L["csgo_rail_optic_m249.printname"] = "Custom Rail Riser"
 L["csgo_rail_optic_m249.compactname"] = "Riser"
-L["csgo_rail_optic_m249.description"] = "Rail-attached rail system that allows a raised sight picture with optics.\nDesigned for the M249."
+L["csgo_rail_optic_m249.description"] = "Weapon-mounted rail, allowing installation of RIS optics on weapons that usually can't equip them.\nDesigned for the M249."
 
 L["csgo_rail_optic_mac.printname"] = "Custom RIS System"
 L["csgo_rail_optic_mac.compactname"] = "RIS"
@@ -648,18 +620,14 @@ L["csgo_rail_optic_mac.description"] = "Custom RIS system made for the MAC-10. A
 
 L["csgo_rail_tactical.printname"] = "Custom Tactical Rail"
 L["csgo_rail_tactical.compactname"] = "Side Rail"
-L["csgo_rail_tactical.description"] = "Side rails that allows the attaching of tactical accessories, such as laser sights or flashlights."
+L["csgo_rail_tactical.description"] = "Installs a rail that allows mounting of tactical accessories, such as laser sights or flashlights."
 
 L["csgo_rail_ub_1.printname"] = "Underbarrel Picatinny Rail"
 L["csgo_rail_ub_1.compactname"] = "UB Rail"
-L["csgo_rail_ub_1.description"] = "A picatinny rail that allows attaching various foregrips and underbarrel weaponry."
+L["csgo_rail_ub_1.description"] = "Installs a picatinny rail that allows mounting of foregrips and underbarrel weaponry."
 
-L["csgo_rail_ub_mp5.printname"] = "Underbarrel Picatinny Rail"
-L["csgo_rail_ub_mp5.compactname"] = "UB Rail"
-L["csgo_rail_ub_mp5.description"] = "A picatinny rail that allows attaching various foregrips and underbarrel weaponry."
-
--- Skins
--- For these, try to have the descriptions resemble CS:GO.
+/////////////////// Weapon Skins
+////////// For these, try to have the descriptions resemble CS:GO.
 L["csgo_skin_galilar_odyssy.printname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.compactname"] = "Odyssey"
 L["csgo_skin_galilar_odyssy.description"] = [[The Gunsmith Reloaded Collection
@@ -696,215 +664,111 @@ L["csgo_skin_knife_ghost.printname"] = "Spectral Shiv"
 L["csgo_skin_knife_ghost.compactname"] = "Ghost"
 L["csgo_skin_knife_ghost.description"] = "Boo!"
 
--- Stock
+/////////////////// Buffer Tubes
 L["csgo_stock_tube.printname"] = "Buffer Tube - Long"
-L["csgo_stock_tube.compactname"] = "B. Tube (L)"
-L["csgo_stock_tube.description"] = "Aluminium mounting point, allows the use of custom stock options.\nAttaches stocks at their furthest point which improves recoil control."
+L["csgo_stock_tube.compactname"] = "Buffer (L)"
+L["csgo_stock_tube.description"] = "Aluminium buffer tube that allows installation of custom stocks.\nAttaches the stocks further back on the tube."
 
 L["csgo_stock_tube_retracted.printname"] = "Buffer Tube - Short"
-L["csgo_stock_tube_retracted.compactname"] = "B. Tube (S)"
-L["csgo_stock_tube_retracted.description"] = "Aluminium mounting point, allows the use of custom stock options.\nAttaches stocks at their shortest point which improves aiming speed at the cost of recoil control."
+L["csgo_stock_tube_retracted.compactname"] = "Buffer (S)"
+L["csgo_stock_tube_retracted.description"] = "Aluminium buffer tube that allows installation of custom stocks.\nAttaches the stocks closer to the mount."
 
--- Grips
-L["go_grip_angled.printname"] = "Angled Grip"
+/////////////////// Foregrips
+L["go_grip_angled.printname"] = "Angled Foregrip"
 L["go_grip_angled.compactname"] = "Angled"
-L["go_grip_angled.description"] = "Provides improved weapon handling at the cost of recoil control."
+L["go_grip_angled.description"] = "Lightweight angled foregrip."
 
 L["go_grip_gripod.printname"] = "Grip Pod"
 L["go_grip_gripod.compactname"] = "Grip Pod"
-L["go_grip_gripod.description"] = "Provides improved recoil control when crouched and/or mounted at a heavy cost of weapon handling.\nComes with a built-in bipod."
+L["go_grip_gripod.description"] = "Custom foregrip with built-in bipod."
 
-L["go_grip_kac.printname"] = "KAC Grip"
-L["go_grip_kac.compactname"] = "KAC"
-L["go_grip_kac.description"] = "Provides improved recoil control and reduced recoil drift at the cost of weapon handling."
+L["go_grip_kac.printname"] = "Mr. Stumpy Foregrip"
+L["go_grip_kac.compactname"] = "Stumpy"
+L["go_grip_kac.description"] = "Lightweight foregrip intended to weigh as little as possible."
 
-L["go_grip_laser.printname"] = "Point Shooting Grip"
-L["go_grip_laser.compactname"] = "PSG"
-L["go_grip_laser.description"] = "Provides improved recoil control at the cost of weapon handling.\nComes with a built-in laser."
+L["go_grip_laser.printname"] = "Point Shooting Foregrip"
+L["go_grip_laser.compactname"] = "P.S.F."
+L["go_grip_laser.description"] = "Tactical foregrip with built-in laser."
 
-L["go_grip_loading.printname"] = "Loading Grip"
-L["go_grip_loading.compactname"] = "Loading"
-L["go_grip_loading.description"] = "Provides a faster reloading speed and slight recoil reduction at the cost of weapon handling."
+L["go_grip_loading.printname"] = "Rapid Foregrip"
+L["go_grip_loading.compactname"] = "Rapid"
+L["go_grip_loading.description"] = "Lightweight foregrip made for operators who rapidly go from engagement to engagement."
 
-L["go_grip_vertical_stubby.printname"] = "Vertical Grip"
+L["go_grip_vertical_stubby.printname"] = "Vertical Foregrip"
 L["go_grip_vertical_stubby.compactname"] = "Vertical"
-L["go_grip_vertical_stubby.description"] = "Provides improved recoil control and reduced recoil drift at the cost of weapon handling."
+L["go_grip_vertical_stubby.description"] = "Standard-issue foregrip."
 
 L["go_grip_assault.printname"] = "Assault Grip"
 L["go_grip_assault.compactname"] = "Assault"
-L["go_grip_assault.description"] = "Provides improved recoil control at the cost of weapon handling."
+L["go_grip_assault.description"] = "Custom-made foregrip angled 45 degrees to the left."
 
--- Alternative Grip Styles (Fucking kill me)
+/////////////////// Alt. Holding Styles
 L["go_holdstyle_1.printname"] = "Alt. Hold Style"
 L["go_holdstyle_1.compactname"] = "Alt. Hold"
 L["go_holdstyle_1.description"] = "Alters the holding style of the weapon."
 
-L["go_holdstyle_2.printname"] = "Alt. Hold Style"
-L["go_holdstyle_2.compactname"] = "Alt. Hold"
-L["go_holdstyle_2.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_3.printname"] = "Alt. Hold Style"
-L["go_holdstyle_3.compactname"] = "Alt. Hold"
-L["go_holdstyle_3.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_4.printname"] = "Alt. Hold Style"
-L["go_holdstyle_4.compactname"] = "Alt. Hold"
-L["go_holdstyle_4.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_5.printname"] = "Alt. Hold Style"
-L["go_holdstyle_5.compactname"] = "Alt. Hold"
-L["go_holdstyle_5.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_6.printname"] = "Alt. Hold Style"
-L["go_holdstyle_6.compactname"] = "Alt. Hold"
-L["go_holdstyle_6.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_7.printname"] = "Alt. Hold Style"
-L["go_holdstyle_7.compactname"] = "Alt. Hold"
-L["go_holdstyle_7.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_8.printname"] = "Alt. Hold Style"
-L["go_holdstyle_8.compactname"] = "Alt. Hold"
-L["go_holdstyle_8.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_9.printname"] = "Alt. Hold Style"
-L["go_holdstyle_9.compactname"] = "Alt. Hold"
-L["go_holdstyle_9.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_10_mp9.printname"] = "Alt. Hold Style"
-L["go_holdstyle_10_mp9.compactname"] = "Alt. Hold"
-L["go_holdstyle_10_mp9.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_11_m4.printname"] = "Alt. Hold Style"
-L["go_holdstyle_11_m4.compactname"] = "Alt. Hold"
-L["go_holdstyle_11_m4.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_12.printname"] = "Alt. Hold Style"
-L["go_holdstyle_12.compactname"] = "Alt. Hold"
-L["go_holdstyle_12.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_13.printname"] = "Alt. Hold Style"
-L["go_holdstyle_13.compactname"] = "Alt. Hold"
-L["go_holdstyle_13.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_14.printname"] = "Alt. Hold Style"
-L["go_holdstyle_14.compactname"] = "Alt. Hold"
-L["go_holdstyle_14.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_15.printname"] = "Alt. Hold Style"
-L["go_holdstyle_15.compactname"] = "Alt. Hold"
-L["go_holdstyle_15.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_16_ump.printname"] = "Alt. Hold Style"
-L["go_holdstyle_16_ump.compactname"] = "Alt. Hold"
-L["go_holdstyle_16_ump.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_17_awp.printname"] = "Alt. Hold Style"
-L["go_holdstyle_17_awp.compactname"] = "Alt. Hold"
-L["go_holdstyle_17_awp.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_18_nova.printname"] = "Alt. Hold Style"
-L["go_holdstyle_18_nova.compactname"] = "Alt. Hold"
-L["go_holdstyle_18_nova.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_19.printname"] = "Alt. Hold Style"
-L["go_holdstyle_19.compactname"] = "Alt. Hold"
-L["go_holdstyle_19.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_20.printname"] = "Alt. Hold Style"
-L["go_holdstyle_20.compactname"] = "Alt. Hold"
-L["go_holdstyle_20.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_aug_integral.printname"] = "Alt. Hold Style"
-L["go_holdstyle_aug_integral.compactname"] = "Alt. Hold"
-L["go_holdstyle_aug_integral.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_aug_integral_2.printname"] = "Alt. Hold Style"
-L["go_holdstyle_aug_integral_2.compactname"] = "Alt. Hold"
-L["go_holdstyle_aug_integral_2.description"] = "Alters the holding style of the weapon."
-
 L["go_holdstyle_augf.printname"] = "Folded Grip"
 L["go_holdstyle_augf.compactname"] = "Folded"
-L["go_holdstyle_augf.description"] = "Cosmetically folds the front grip up, altering the holding style of the weapon."
+L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon.\nPurely <color=175,175,255>cosmetic</color>."
 
-L["go_holdstyle_elite_integral.printname"] = "Alt. Hold Style"
-L["go_holdstyle_elite_integral.compactname"] = "Alt. Hold"
-L["go_holdstyle_elite_integral.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_mp7_integral.printname"] = "Alt. Hold Style"
-L["go_holdstyle_mp7_integral.compactname"] = "Alt. Hold"
-L["go_holdstyle_mp7_integral.description"] = "Alters the holding style of the weapon."
-
-L["go_holdstyle_mp7f.printname"] = "Folded Grip"
-L["go_holdstyle_mp7f.compactname"] = "Folded"
-L["go_holdstyle_mp7f.description"] = "Cosmetically folds the front grip up, altering the holding style of the weapon."
-
-L["go_holdstyle_scout_integral.printname"] = "Alt. Hold Style"
-L["go_holdstyle_scout_integral.compactname"] = "Alt. Hold"
-L["go_holdstyle_scout_integral.description"] = "Alters the holding style of the weapon."
-
--- Mags
+/////////////////// Magazines
 L["go_mag_extended.printname"] = "Extended Magazines"
 L["go_mag_extended.compactname"] = "Ext. Mag"
-L["go_mag_extended.description"] = "Increases the magazine capacity at the cost of reload speed."
+L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color> by a slight bit."
 
 L["go_mag_extended_ak47.printname"] = "Extended Magazines"
 L["go_mag_extended_ak47.compactname"] = "Ext. Mag"
-L["go_mag_extended_ak47.description"] = "Increases the magazine capacity at the cost of reload speed."
+L["go_mag_extended_ak47.description"] = "High-capacity <color=100,255,100>45-round</color> magazine."
 
 L["go_mag_extended_m4.printname"] = "50-Round Drum Mag"
 L["go_mag_extended_m4.compactname"] = "50R Drum"
-L["go_mag_extended_m4.description"] = "Increases the magazine capacity at the cost of reload speed."
+L["go_mag_extended_m4.description"] = "High-capacity <color=100,255,100>50-round</color> drum magazine."
 
 L["csgo_mag_sg_ext.printname"] = "Extended Tube"
 L["csgo_mag_sg_ext.compactname"] = "Ext. Tube"
-L["csgo_mag_sg_ext.description"] = "Extends the tube capacity at the cost of weapon handling."
+L["csgo_mag_sg_ext.description"] = "Installs a longer magazine tube that <color=100,255,100>increases magazine capacity</color>."
 
--- Stocks
+/////////////////// Stocks
 L["go_stock_extended.printname"] = "Extended Stock"
 L["go_stock_extended.compactname"] = "Extended"
-L["go_stock_extended.description"] = "Extend the stock for improved recoil control at the cost of weapon handling."
+L["go_stock_extended.description"] = "Extend the stock."
 
 L["go_stock_retract.printname"] = "Collapsed Stock"
 L["go_stock_retract.compactname"] = "Collapsed"
-L["go_stock_retract.description"] = "Collapses/Removes the stock for improved weapon handling at the cost of recoil control."
+L["go_stock_retract.description"] = "Collapses the stock."
 
 L["go_stock_basilisk.printname"] = "Basilisk Stock"
 L["go_stock_basilisk.compactname"] = "Basilisk"
-L["go_stock_basilisk.description"] = "Modular crane stock. Improves accuracy while moving at the cost of recoil control."
+L["go_stock_basilisk.description"] = "Extremely lightweight crane stock."
 
 L["go_stock_contractor.printname"] = "Contractor Stock"
 L["go_stock_contractor.compactname"] = "Contractor"
-L["go_stock_contractor.description"] = "Adjustable and modular stock. Improves hip-fire accuracy and recoil control at the cost of aiming speed."
+L["go_stock_contractor.description"] = "Adjustable and modular stock from the M4A4."
 
 L["go_stock_ergo.printname"] = "Ergonomic Stock"
 L["go_stock_ergo.compactname"] = "Ergonomic"
-L["go_stock_ergo.description"] = "Lightweight stock that improves aiming speed at the cost of recoil control."
+L["go_stock_ergo.description"] = "Lightweight and ergonomic stock from the SIG556."
 
 L["go_stock_moe.printname"] = "MOE Stock"
 L["go_stock_moe.compactname"] = "MOE"
-L["go_stock_moe.description"] = "Modular stock that improves recoil at the cost of weapon handling."
+L["go_stock_moe.description"] = "Modular aftermarket stock."
 
-L["go_stock_xm10.printname"] = "XM1014 Stock"
-L["go_stock_xm10.compactname"] = "XM1014"
-L["go_stock_xm10.description"] = "Modular stock used on the XM1014.\nImproves spread while moving at the cost of weapon handling."
+L["go_stock_xm10.printname"] = "XM Stock"
+L["go_stock_xm10.compactname"] = "XM"
+L["go_stock_xm10.description"] = "Modular stock from the XM1014."
 
-L["go_stock_heavy.printname"] = "Heavy Stock"
-L["go_stock_heavy.compactname"] = "Heavy"
-L["go_stock_heavy.description"] = "Heavy stock that greatly improves recoil at the heavy cost of weapon handling."
-
--- Tactical
+/////////////////// Tacticals
 L["go_tac_laser_genpistol.printname"] = "Gen Laser Sight"
-L["go_tac_laser_genpistol.compactname"] = "GEN"
-L["go_tac_laser_genpistol.description"] = "Medium-powered laser pointer.\nImproves hip-fire accuracy."
+L["go_tac_laser_genpistol.compactname"] = "Gen"
+L["go_tac_laser_genpistol.description"] = "Medium-powered laser pointer."
 
 L["go_tac_laser_genras_flashight.printname"] = "GenRas Flashlight"
-L["go_tac_laser_genras_flashight.compactname"] = "GenRas (F)"
+L["go_tac_laser_genras_flashight.compactname"] = "GenRas F"
 L["go_tac_laser_genras_flashight.description"] = "Rail-mounted flashlight."
 
 L["go_tac_laser_genras_laser.printname"] = "GenRas Laser Sight"
-L["go_tac_laser_genras_laser.compactname"] = "GenRas (L)"
-L["go_tac_laser_genras_laser.description"] = "Rail-mounted, medium-power laser pointer.\nImproves hip-fire accuracy and aiming speed."
+L["go_tac_laser_genras_laser.compactname"] = "GenRas L"
+L["go_tac_laser_genras_laser.description"] = "Rail-mounted, medium-power laser pointer."
 
 L["go_tac_laser_m3x.printname"] = "M3X Flashlight"
 L["go_tac_laser_m3x.compactname"] = "M3X"
@@ -912,17 +776,17 @@ L["go_tac_laser_m3x.description"] = "Rail-mounted tactical flashlight."
 
 L["go_tac_laser_peq.printname"] = "ATPIAL-C AN/PEQ-15"
 L["go_tac_laser_peq.compactname"] = "PEQ-15"
-L["go_tac_laser_peq.description"] = "Rail-mounted, high-powered laser pointer with built-in flashlight functionality.\nImproves hip-fire accuracy and spread at the cost of reduced aiming speed."
+L["go_tac_laser_peq.description"] = "Rail-mounted, high-powered laser pointer with built-in flashlight functionality."
 
 L["go_tac_laser_pistol_surefire.printname"] = "Surefire X300U"
 L["go_tac_laser_pistol_surefire.compactname"] = "X300U"
-L["go_tac_laser_pistol_surefire.description"] = "Rail-mounted, high-powered flashlight.\nImproves spread at the cost of aiming speed."
+L["go_tac_laser_pistol_surefire.description"] = "Rail-mounted, high-powered flashlight."
 
 L["go_tac_laser_raspistol.printname"] = "Ras Laser Sight"
 L["go_tac_laser_raspistol.compactname"] = "RAS"
 L["go_tac_laser_raspistol.description"] = "Low-powered laser pointer."
 
--- Stats
+/////////////////// Stat Trackers
 L["arc9_stat_proscreen.printname"] = "Pro Screen - Small"
 L["arc9_stat_proscreen.compactname"] = "Pro S. (S)"
 L["arc9_stat_proscreen.description"] = "Attaches a small, pistol sized monitor onto your weapon that tracks and displays the amount of kills achieved with said weapon."
@@ -935,18 +799,18 @@ L["arc9_stat_stattrak.printname"] = "StatTrak™"
 L["arc9_stat_stattrak.compactname"] = "StatTrak™"
 L["arc9_stat_stattrak.description"] = "Attaches a monitor onto your weapon that tracks and displays the amount of kills achieved with said weapon."
 
--- Ammo
+/////////////////// Ammunition
 L["csgo_ammo_ap.printname"] = "Armor Piercing"
 L["csgo_ammo_ap.compactname"] = "AP"
-L["csgo_ammo_ap.description"] = "Ammunition made out of hard materials designed to pierce body armor.\nIncreases penetration at the cost of damage."
+L["csgo_ammo_ap.description"] = "Ammunition made out of hard materials designed to pierce body armor."
 
 L["csgo_ammo_hr.printname"] = "High Ricochet"
 L["csgo_ammo_hr.compactname"] = "HR"
-L["csgo_ammo_hr.description"] = "Ammunition made out of soft material designed to ricochet off of surfaces.\nIncreases chance of ricochet at the cost of damage."
+L["csgo_ammo_hr.description"] = "Ammunition made out of soft material designed to ricochet off of surfaces."
 
 L["csgo_ammo_hr_seeker.printname"] = "High Ricochet Seeker"
 L["csgo_ammo_hr_seeker.compactname"] = "HRS"
-L["csgo_ammo_hr_seeker.description"] = "Ammunition made out of soft material designed to ricochet off of surfaces.\nGreatly increases chance of ricochet at the high cost of damage.\nHas seeking capability - the rounds that ricochet will guide themselves towards your target."
+L["csgo_ammo_hr_seeker.description"] = "Ammunition made out of soft material designed to ricochet off of surfaces.\nHas seeking capability - the rounds that ricochet will guide themselves towards your target."
 
 L["csgo_ammo_fra.printname"] = "Hollow Point"
 L["csgo_ammo_fra.compactname"] = "HP"
@@ -958,7 +822,7 @@ L["csgo_ammo_exacto.description"] = "Special ammunition that provides no bullet 
 
 L["csgo_ammo_subsonic.printname"] = "Low Profile"
 L["csgo_ammo_subsonic.compactname"] = "LP"
-L["csgo_ammo_subsonic.description"] = "Ammunition with reduced powder loads for easier weapon handling.\nImproves recoil control at the cost of muzzle velocity, range and penetration."
+L["csgo_ammo_subsonic.description"] = "Ammunition with reduced powder loads for easier weapon handling."
 
 L["csgo_ammo_tracer_col.printname"] = "Player Color Tracers"
 L["csgo_ammo_tracer_col.compactname"] = "PCT"
@@ -970,118 +834,81 @@ L["csgo_ammo_he.description"] = "Explosive ammunition that cause a small explosi
 
 L["csgo_ammo_sg_magnum.printname"] = "Magnum Buckshot"
 L["csgo_ammo_sg_magnum.compactname"] = "Magnum"
-L["csgo_ammo_sg_magnum.description"] = "High-powered buckshot loaded with fewer but larger pellets.\nImproves damage at the cost of recoil control and spread."
+L["csgo_ammo_sg_magnum.description"] = "High-powered buckshot loaded with larger pellets in reduced quantity."
 
 L["csgo_ammo_sg_bird.printname"] = "Birdshot"
 L["csgo_ammo_sg_bird.compactname"] = "Birdshot"
-L["csgo_ammo_sg_bird.description"] = "Rounds loaded with smaller, but a lot more pellets.\nIncreases pellet count at the cost of spread."
+L["csgo_ammo_sg_bird.description"] = "Rounds loaded with smaller pellets in higher quantity."
 
 L["csgo_ammo_sg_slug.printname"] = "Full-bore Slug"
 L["csgo_ammo_sg_slug.compactname"] = "Slug"
-L["csgo_ammo_sg_slug.description"] = "Replaces the small pellets with one full-sized slug.\nImproves spread, range and ricochet chance."
+L["csgo_ammo_sg_slug.description"] = "Replaces the small pellets with one full-sized slug."
 
 L["csgo_ammo_sg_triple.printname"] = "Triple Hit Slugs"
 L["csgo_ammo_sg_triple.compactname"] = "Slug x3"
-L["csgo_ammo_sg_triple.description"] = "Replaces the small pellets with three slug-sized pellets.\nImproves long-range damage, range, spread and ricochet chance at the cost of close-range damage."
+L["csgo_ammo_sg_triple.description"] = "Replaces the small pellets with three slug-sized pellets."
 
 L["csgo_ammo_sg_flechette.printname"] = "Flechettes"
 L["csgo_ammo_sg_flechette.compactname"] = "Flechette"
-L["csgo_ammo_sg_flechette.description"] = "Replaces the small pellets with thin, dart-shaped projectiles.\nImproves range, spread and penetration at the cost of damage."
+L["csgo_ammo_sg_flechette.description"] = "Replaces the small pellets with thin, dart-shaped projectiles."
 
 L["csgo_ammo_sg_frag.printname"] = "\"FRAG-12\" High Explosive"
 L["csgo_ammo_sg_frag.compactname"] = "FRAG-12"
-L["csgo_ammo_sg_frag.description"] = "Replaces the small pellets with a single slug that explodes on contact. Deals area of effect damage.\nImproves spread at the cost of muzzle velocity and bullet drop-off."
+L["csgo_ammo_sg_frag.description"] = "Replaces the small pellets with a single slug that explodes on contact."
 
 L["csgo_ammo_sg_rebounder.printname"] = "Rebounder Rounds"
 L["csgo_ammo_sg_rebounder.compactname"] = "Rebounder"
-L["csgo_ammo_sg_rebounder.description"] = "Replaces the pellets with specialized ones designed to bounce on contact.\nIncreases ricochet chance and long-distance damage at the cost of close-range damage."
+L["csgo_ammo_sg_rebounder.description"] = "Replaces the pellets with specialized ones designed to bounce on contact."
 
 L["csgo_ammo_sg_frag_x4.printname"] = "\"FRAG-12\" High Explosive x4"
 L["csgo_ammo_sg_frag_x4.compactname"] = "FRAG-12 x4"
-L["csgo_ammo_sg_frag_x4.description"] = "Replaces the small pellets with four projectiles that explode on contact. Deals area of effect damage.\nImproves spread at the cost of muzzle velocity and bullet drop-off."
+L["csgo_ammo_sg_frag_x4.description"] = "Replaces the small pellets with four projectiles that explode on contact."
 
--- Underbarrel Shotgun Ammo
-L["csgo_ammo_sg_magnum_ubgl.printname"] = "Magnum Buckshot"
-L["csgo_ammo_sg_magnum_ubgl.compactname"] = "Magnum"
-L["csgo_ammo_sg_magnum_ubgl.description"] = "High-powered buckshot loaded with fewer but larger pellets.\nImproves damage at the cost of recoil control and spread."
-
-L["csgo_ammo_sg_bird_ubgl.printname"] = "Birdshot"
-L["csgo_ammo_sg_bird_ubgl.compactname"] = "Birdshot"
-L["csgo_ammo_sg_bird_ubgl.description"] = "Rounds loaded with smaller, but a lot more pellets.\nIncreases pellet count at the cost of spread."
-
-L["csgo_ammo_sg_slug_ubgl.printname"] = "Full-bore Slug"
-L["csgo_ammo_sg_slug_ubgl.compactname"] = "Slug"
-L["csgo_ammo_sg_slug_ubgl.description"] = "Replaces the small pellets with one full-sized slug.\nImproves spread, range and ricochet chance."
-
-L["csgo_ammo_sg_triple_ubgl.printname"] = "Triple Hit Slugs"
-L["csgo_ammo_sg_triple_ubgl.compactname"] = "Slug x3"
-L["csgo_ammo_sg_triple_ubgl.description"] = "Replaces the small pellets with three slug-sized pellets.\nImproves long-range damage, range, spread and ricochet chance at the cost of close-range damage."
-
-L["csgo_ammo_sg_flechette_ubgl.printname"] = "Flechettes"
-L["csgo_ammo_sg_flechette_ubgl.compactname"] = "Flechette"
-L["csgo_ammo_sg_flechette_ubgl.description"] = "Replaces the small pellets with thin, dart-shaped projectiles.\nImproves range, spread and penetration at the cost of damage."
-
-L["csgo_ammo_sg_frag_ubgl.printname"] = "\"FRAG-12\" High Explosive"
-L["csgo_ammo_sg_frag_ubgl.compactname"] = "FRAG-12"
-L["csgo_ammo_sg_frag_ubgl.description"] = "Replaces the small pellets with a single slug that explodes on contact. Deals area of effect damage.\nImproves spread at the cost of muzzle velocity and bullet drop-off."
-
-L["csgo_ammo_sg_rebounder_ubgl.printname"] = "Rebounder Rounds"
-L["csgo_ammo_sg_rebounder_ubgl.compactname"] = "Rebounder"
-L["csgo_ammo_sg_rebounder_ubgl.description"] = "Replaces the pellets with specialized ones designed to bounce on contact.\nIncreases ricochet chance and long-distance damage at the cost of close-range damage."
-
-L["csgo_ammo_sg_frag_x4_ubgl.printname"] = "\"FRAG-12\" High Explosive x4"
-L["csgo_ammo_sg_frag_x4_ubgl.compactname"] = "FRAG-12 x4"
-L["csgo_ammo_sg_frag_x4_ubgl.description"] = "Replaces the small pellets with four projectiles that explode on contact. Deals area of effect damage.\nImproves spread at the cost of muzzle velocity and bullet drop-off."
-
--- Muzzles
+/////////////////// Muzzles
 L["go_muzzle_akm.printname"] = "AK Muzzle Brake"
 L["go_muzzle_akm.compactname"] = "AK MB"
-L["go_muzzle_akm.description"] = "Muzzle brake that reduces the vertical recoil at the cost of increased random recoil."
+L["go_muzzle_akm.description"] = "Muzzle brake that reduces side-to-side recoil alongside increase melee efficiency."
 
-L["go_muzzle_p226.printname"] = "P226 Muzzle Brake"
-L["go_muzzle_p226.compactname"] = "P226 MB"
-L["go_muzzle_p226.description"] = "Muzzle brake that reduces recoil at the cost of weapon handling."
+L["go_muzzle_p226.printname"] = "Pistol Muzzle Brake"
+L["go_muzzle_p226.compactname"] = "Pistol MB"
+L["go_muzzle_p226.description"] = "Muzzle brake that reduces side-to-side recoil intended for handguns."
 
-L["go_muzzle_ar15.printname"] = "AR-15 Muzzle Brake"
-L["go_muzzle_ar15.compactname"] = "AR-15 MB"
-L["go_muzzle_ar15.description"] = "Muzzle brake that straightens out the recoil pattern at the cost of increased vertical recoil."
+L["go_muzzle_ar15.printname"] = "AR Muzzle Brake"
+L["go_muzzle_ar15.compactname"] = "AR MB"
+L["go_muzzle_ar15.description"] = "Muzzle brake that reduces side-to-side recoil."
 
 L["go_muzzle_r870.printname"] = "Carlson's Tactical Breacher Muzzle Brake"
-L["go_muzzle_r870.compactname"] = "Door Breacher"
+L["go_muzzle_r870.compactname"] = "Breacher"
 L["go_muzzle_r870.description"] = "Muzzle device that greatly increases spread.\nPerfect for clearing a large horde of zombies!"
 
-L["go_muzzle_uzi.printname"] = "UZI Muzzle Brake"
-L["go_muzzle_uzi.compactname"] = "UZI MB"
-L["go_muzzle_uzi.description"] = "Muzzle brake that straightens out the recoil pattern at the cost of increased vertical recoil."
+L["go_muzzle_uzi.printname"] = "SMG Muzzle Brake"
+L["go_muzzle_uzi.compactname"] = "SMG MB"
+L["go_muzzle_uzi.description"] = "Muzzle brake that reduces side-to-side recoil intended for small caliber firearms."
 
--- Suppressors
+/////////////////// Suppressors
 L["go_supp_233.printname"] = "Lightweight Suppressor"
 L["go_supp_233.compactname"] = "Lightweight"
-L["go_supp_233.description"] = "A lightweight suppressor designed to reduce the decibel level from gunshots."
+L["go_supp_233.description"] = "Lightweight suppressor that reduces the decibel level from gunshots."
 
-L["go_supp_m4.printname"] = "Heavy Suppressor"
-L["go_supp_m4.compactname"] = "Heavy"
-L["go_supp_m4.description"] = "A heavy suppressor designed to reduce the decibel level from gunshots."
+L["go_supp_m4.printname"] = "A1-S Suppressor"
+L["go_supp_m4.compactname"] = "A1-S"
+L["go_supp_m4.description"] = "Custom suppressor that reduces the decibel level from gunshots.\nOriginally made for the M4A1-S."
 
 L["go_supp_p90.printname"] = "FN P90 Attenuator"
 L["go_supp_p90.compactname"] = "P90 Supp."
-L["go_supp_p90.description"] = "A tactical suppressor designed specifically for the P90 to reduce the decibel level from gunshots."
+L["go_supp_p90.description"] = "A tactical suppressor designed specifically for the P90 that reduces the decibel level from gunshots."
 
 L["go_supp_pbs01.printname"] = "PBS-1 Suppressor"
 L["go_supp_pbs01.compactname"] = "PBS-1"
-L["go_supp_pbs01.description"] = "Soviet-made suppressor designed for the 7.62x39mm Kalashnikov family of rifles.\nReduces the decibel level from gunshots."
+L["go_supp_pbs01.description"] = "Soviet-made suppressor that reduces the decibel level from gunshots."
 
 L["go_supp_shit9.printname"] = "SEC9mm Suppressor"
 L["go_supp_shit9.compactname"] = "SEC9mm"
-L["go_supp_shit9.description"] = "A heavy suppressor designed to reduce the decibel level from gunshots.\nAlso slightly reduces recoil at the cost of weapon mobility."
+L["go_supp_shit9.description"] = "Heavy suppressor designed to reduce the decibel level from gunshots."
 
 L["go_supp_shitvo.printname"] = "Salvo-12 Suppressor"
 L["go_supp_shitvo.compactname"] = "Salvo-12"
-L["go_supp_shitvo.description"] = "Large and bulky suppressor designed for shotguns.\nReduces the decibel level from gunshots."
-
-L["go_supp_shitvo_ubgl.printname"] = "Salvo-12 Suppressor"
-L["go_supp_shitvo_ubgl.compactname"] = "Salvo-12"
-L["go_supp_shitvo_ubgl.description"] = "Large and bulky suppressor designed for shotguns.\nReduces the decibel level from gunshots."
+L["go_supp_shitvo.description"] = "Large and bulky suppressor designed for shotguns that reduces the decibel level from gunshots."
 
 L["go_supp_tirant45.printname"] = "Ti-Rant 45 Suppressor"
 L["go_supp_tirant45.compactname"] = "Ti-Rant 45"
@@ -1089,36 +916,36 @@ L["go_supp_tirant45.description"] = "Tactical suppressor designed to reduce the 
 
 L["go_supp_clothwrapped.printname"] = "Cloth-Wrapped Suppressor"
 L["go_supp_clothwrapped.compactname"] = "Wrapped"
-L["go_supp_clothwrapped.description"] = "Tactical suppressor wrapped in cloth.\nDesigned to reduce the decibel level from gunshots."
+L["go_supp_clothwrapped.description"] = "Tactical suppressor wrapped in cloth designed to reduce the decibel level from gunshots."
 
 L["go_supp_m110.printname"] = "M110 Suppressor"
 L["go_supp_m110.compactname"] = "M110"
-L["go_supp_m110.description"] = "Very long suppressor made specifically for the M110.\nReduces the decibel level from gunshots.\nAlso increases recoil control and muzzle velocity."
+L["go_supp_m110.description"] = "Very long suppressor that reduces the decibel level from gunshots.\nOriginally made for the M110."
 
 L["go_supp_kriss.printname"] = "KRISS 4GSK Suppressor"
 L["go_supp_kriss.compactname"] = "4GSK"
 L["go_supp_kriss.description"] = "Heavy tactical suppressor designed to reduce the decibel level from gunshots."
 
--- Perks
+/////////////////// Perks
 L["csgo_perk_fastreload.printname"] = "Rapid Reload"
 L["csgo_perk_fastreload.compactname"] = "Reload"
-L["csgo_perk_fastreload.description"] = "Increases reloading speed by 20%."
+L["csgo_perk_fastreload.description"] = "Improves reloading speed."
 
 L["csgo_perk_headshot.printname"] = "Surgical Shot"
 L["csgo_perk_headshot.compactname"] = "Surgical"
-L["csgo_perk_headshot.description"] = "Triples the damage on headshots."
+L["csgo_perk_headshot.description"] = "Increases headshot damage."
 
 L["csgo_perk_enforcer.printname"] = "Enforcer"
 L["csgo_perk_enforcer.compactname"] = "Enforcer"
-L["csgo_perk_enforcer.description"] = "Reduces overall damage taken by 30%."
+L["csgo_perk_enforcer.description"] = "Reduces damage taken."
 
 L["csgo_perk_ace.printname"] = "Ace In The Hole"
 L["csgo_perk_ace.compactname"] = "Ace"
-L["csgo_perk_ace.description"] = "Against NPC's: 33% chance to deal 200% damage on hit."
+L["csgo_perk_ace.description"] = "33% chance to deal double damage to NPC's.\n<color=255,100,100>Does nothing to players</color>."
 
-L["csgo_perk_bolt.printname"] = "Deft Hands"
-L["csgo_perk_bolt.compactname"] = "Deft Hands"
-L["csgo_perk_bolt.description"] = "Increases weapon rechamber speed by 25%."
+L["csgo_perk_bolt.printname"] = "Dexterity"
+L["csgo_perk_bolt.compactname"] = "Dexterity"
+L["csgo_perk_bolt.description"] = "Improves weapon rechamber speed."
 
 L["csgo_perk_burst.printname"] = "Enhanced Burst"
 L["csgo_perk_burst.compactname"] = "Burst"
@@ -1134,20 +961,20 @@ L["csgo_perk_diver.description"] = "Enables the ability to shoot while underwate
 
 L["csgo_perk_melee_lounge.printname"] = "Lunger"
 L["csgo_perk_melee_lounge.compactname"] = "Lunger"
-L["csgo_perk_melee_lounge.description"] = "Adds a lunge mechanic - aim at an enemy and lunge towards them if in range!"
+L["csgo_perk_melee_lounge.description"] = "Enables the ability to lunge towards an enemy when meleeing."
 
 L["csgo_perk_melee_speed.printname"] = "Stabber"
 L["csgo_perk_melee_speed.compactname"] = "Stabber"
 L["csgo_perk_melee_speed.description"] = "Increases melee speed."
 
--- Perks, added later
+/////////////////// Perks, added later
 L["csgo_perk_last.printname"] = "Last One Out"
 L["csgo_perk_last.compactname"] = "Last Out"
-L["csgo_perk_last.description"] = "Increases the damage by 25% for the last round in the magazine."
+L["csgo_perk_last.description"] = "Increases damage on the final round in the magazine."
 
 L["csgo_perk_light.printname"] = "Lightweight Frame"
 L["csgo_perk_light.compactname"] = "Lightweight"
-L["csgo_perk_light.description"] = "Improves movement speed when aiming."
+L["csgo_perk_light.description"] = "Increases movement speed when aiming."
 
 L["csgo_perk_quickdraw.printname"] = "Quickdraw"
 L["csgo_perk_quickdraw.compactname"] = "Quickdraw"
@@ -1165,57 +992,57 @@ L["csgo_perk_slow.printname"] = "Full Stop"
 L["csgo_perk_slow.compactname"] = "Full Stop"
 L["csgo_perk_slow.description"] = "Applies an immediate slow-down effect on hit."
 
--- Stickers
+/////////////////// Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"
 L["csgo_sticker_kawai.compactname"] = "Kawaii Killer"
-L["csgo_sticker_kawai.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_kawai.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
 L["csgo_sticker_baby_lore.printname"] = "Baby Lore"
 L["csgo_sticker_baby_lore.compactname"] = "Baby Lore"
-L["csgo_sticker_baby_lore.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_baby_lore.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
 L["csgo_sticker_baby_medusa.printname"] = "Baby Medusa"
 L["csgo_sticker_baby_medusa.compactname"] = "Baby Medusa"
-L["csgo_sticker_baby_medusa.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_baby_medusa.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
 L["csgo_sticker_kawaii_ct_holo.printname"] = "Kawaii CT"
 L["csgo_sticker_kawaii_ct_holo.compactname"] = "Kawaii CT"
-L["csgo_sticker_kawaii_ct_holo.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_kawaii_ct_holo.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
 L["csgo_sticker_nice_try_holo.printname"] = "Nice Try"
 L["csgo_sticker_nice_try_holo.compactname"] = "Nice Try"
-L["csgo_sticker_nice_try_holo.description"] = "Sticker included in Gunsmith Reloaded.\nNice try, bozo."
+L["csgo_sticker_nice_try_holo.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>.\nNice try, bozo."
 
 L["csgo_sticker_noble_steed.printname"] = "Noble Steed"
 L["csgo_sticker_noble_steed.compactname"] = "Noble Steed"
-L["csgo_sticker_noble_steed.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_noble_steed.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
 L["csgo_sticker_rush_b_csgo10.printname"] = "Rush B"
 L["csgo_sticker_rush_b_csgo10.compactname"] = "Rush B"
-L["csgo_sticker_rush_b_csgo10.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_rush_b_csgo10.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
 L["csgo_sticker_zeusception_holo.printname"] = "Zeusception"
 L["csgo_sticker_zeusception_holo.compactname"] = "Zeusception"
-L["csgo_sticker_zeusception_holo.description"] = "Sticker included in Gunsmith Reloaded."
+L["csgo_sticker_zeusception_holo.description"] = "Sticker included in <color=255,150,50>Gunsmith Reloaded</color>."
 
--- Underbarrel Weapons
+/////////////////// Underbarrel Weapons
 L["go_ubgl_m203.printname"] = "M203 Grenade Launcher"
 L["go_ubgl_m203.compactname"] = "M203"
-L["go_ubgl_m203.description"] = "Explosive auxiliary device attached onto an underbarrel rail.\n\nBoom, boom, boom, boom!"
+L["go_ubgl_m203.description"] = "Installs an undermounted grenade launcher.\n\nBoom, baby, boom!"
 
 L["go_ubgl_m203_sight.printname"] = "M203 Sight"
 L["go_ubgl_m203_sight.compactname"] = "Sight"
-L["go_ubgl_m203_sight.description"] = "Attach a sight to aid in aiming the M203."
+L["go_ubgl_m203_sight.description"] = "Installs a side-mounted sight, allowing aiming with the M203 Grenade Launcher."
 
-L["go_ubgl_mass26.printname"] = "MASS-26 Breaching Shotgun"
+L["go_ubgl_mass26.printname"] = "MASS-26 Shotgun"
 L["go_ubgl_mass26.compactname"] = "MASS"
-L["go_ubgl_mass26.description"] = "Attaches a pump-action, 5 round, magfed 12-gauge shotgun under your barrel."
+L["go_ubgl_mass26.description"] = "Installs an undermounted pump-action shotgun."
 
-L["go_ubgl_xm1014.printname"] = "XM1014 Breaching Shotgun"
+L["go_ubgl_xm1014.printname"] = "XM1014 Shotgun"
 L["go_ubgl_xm1014.compactname"] = "XM1014"
-L["go_ubgl_xm1014.description"] = "Attaches a 4-shot, semi-automatic shotgun under your barrel."
+L["go_ubgl_xm1014.description"] = "Installs an undermounted semi-automatic shotgun."
 
--- Weapon Specific
+/////////////////// Weapon Specific
 -- "Universal"
 L["csgo_barrel_short.printname"] = "Short Barrel"
 L["csgo_barrel_short.compactname"] = "Short"
@@ -1373,9 +1200,8 @@ L["csgo_bizon_mag_saiga.printname"] = "30-Round Saiga Box Magazine"
 L["csgo_bizon_mag_saiga.compactname"] = "30R Saiga"
 L["csgo_bizon_mag_saiga.description"] = "Replaces the helical magazine with a traditional box magazine, and adds a standard magwell.\nReduces the magazine capacity at the cost of improved weapon handling."
 
-L["csgo_bizon_hold_2.printname"] = "Alt. Hold Style 2"
-L["csgo_bizon_hold_2.compactname"] = "Alt. Hold 2"
-L["csgo_bizon_hold_2.description"] = "Alters the holding style of the weapon."
+L["csgo_bizon_hold_2.printname"] = "Alt. Hold Style II"
+L["csgo_bizon_hold_2.compactname"] = "Alt. Hold II"
 
 L["csgo_bizon_view.printname"] = "Alternative View"
 L["csgo_bizon_view.compactname"] = "Alt. View"
@@ -1435,10 +1261,6 @@ L["csgo_elite_slide_p38.description"] = "Compact slide and barrel replacement th
 L["csgo_elite_slide_raffica.printname"] = "Raffica Conversion"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
 L["csgo_elite_slide_raffica.description"] = "Converts the Beretta to fire in 3-round burst.\nAlso adds a foregrip and compensator that improves range and recoil control at the cost of weapon handling.\nNot compatible with the <Enhanced Burst> perk."
-
--- L["csgo_elite_ik_bodge.printname"] = "Alt. Hold Style"
--- L["csgo_elite_ik_bodge.compactname"] = "Alt. Hold"
--- L["csgo_elite_ik_bodge.description"] = ""
 
 -- FAMAS
 L["csgo_famas_barrel_long.printname"] = "620mm Tireur Barrel"
@@ -1876,10 +1698,6 @@ L["csgo_p90_top_2.printname"] = "Alternative Top Cover"
 L["csgo_p90_top_2.compactname"] = "Alt. Cover"
 L["csgo_p90_top_2.description"] = "Replaces the top cover of the P90 to a more modern one."
 
-L["csgo_p90_hold.printname"] = "Alt. Hold Style"
-L["csgo_p90_hold.compactname"] = "Alt. Hold"
-L["csgo_p90_hold.description"] = "Alters the holding style of the weapon."
-
 L["csgo_p90_view.printname"] = "Alternative View"
 L["csgo_p90_view.compactname"] = "Alt. View"
 L["csgo_p90_view.description"] = "Alters the position of the weapon in view."
@@ -2203,3 +2021,184 @@ L["go_cod_grips.description"] = coddesc
 L["go_cod_muzzle.printname"] = "Black Ops Classic | Modern Warfare Classic - Muzzle"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
+
+
+///////////////////  GetPhrase Stuff - If other language, remove everything below here!
+L["go_holdstyle_2.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_3.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_3.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_3.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_4.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_4.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_4.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_5.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_5.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_5.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_6.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_6.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_6.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_7.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_7.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_7.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_8.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_8.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_8.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_9.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_9.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_9.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_10_mp9.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_10_mp9.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_10_mp9.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_11_m4.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_11_m4.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_11_m4.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_12.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_12.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_12.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_13.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_13.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_13.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_14.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_14.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_14.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_15.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_15.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_15.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_16_ump.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_16_ump.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_16_ump.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_17_awp.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_17_awp.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_17_awp.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_18_nova.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_18_nova.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_18_nova.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_19.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_19.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_19.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_20.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_20.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_20.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_aug_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_aug_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_aug_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_aug_integral_2.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_aug_integral_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_aug_integral_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_elite_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_elite_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_elite_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_mp7_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_mp7_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_mp7_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_scout_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["go_holdstyle_scout_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["go_holdstyle_scout_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["csgo_bizon_hold_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["csgo_p90_hold.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alternative Hold Style"
+L["csgo_p90_hold.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
+L["csgo_p90_hold.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
+
+L["go_holdstyle_mp7f.printname"] = ARC9:GetPhrase("go_holdstyle_augf.printname") or "Folded Grip"
+L["go_holdstyle_mp7f.compactname"] = ARC9:GetPhrase("go_holdstyle_augf.compactname") or "Folded"
+L["go_holdstyle_mp7f.description"] = ARC9:GetPhrase("go_holdstyle_augf.description") or "Folds the front grip upwards, altering the way you hold the weapon.\nPurely <color=175,175,255>cosmetic</color>."
+
+L["csgo_rail_optic_2_alt.printname"] = ARC9:GetPhrase("csgo_rail_optic_2.printname") or "Dovetail Rail"
+L["csgo_rail_optic_2_alt.compactname"] = ARC9:GetPhrase("csgo_rail_optic_2.compactname") or "Dovetail"
+L["csgo_rail_optic_2_alt.description"] = ARC9:GetPhrase("csgo_rail_optic_2.description") or "Installs an RIS rail via the dovetail, allowing installation of custom optics."
+
+L["csgo_rail_optic_4.printname"] = ARC9:GetPhrase("csgo_rail_optic_1.printname") or "Custom Optics Rail"
+L["csgo_rail_optic_4.compactname"] = ARC9:GetPhrase("csgo_rail_optic_1.printname") or "Sight Rail"
+
+L["csgo_rail_ub_mp5.printname"] = ARC9:GetPhrase("csgo_rail_ub_1.printname") or "Underbarrel Picatinny Rail"
+L["csgo_rail_ub_mp5.compactname"] = ARC9:GetPhrase("csgo_rail_ub_1.compactname") or "UB Rail"
+L["csgo_rail_ub_mp5.description"] = ARC9:GetPhrase("csgo_rail_ub_1.description") or "Installs a picatinny rail that allows mounting of foregrips and underbarrel weaponry."
+
+L["csgo_ammo_sg_magnum_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_magnum.printname") or "Magnum Buckshot"
+L["csgo_ammo_sg_magnum_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_magnum.compactname") or "Magnum"
+L["csgo_ammo_sg_magnum_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_magnum.description") or "High-powered buckshot loaded with larger pellets in reduced quantity."
+
+L["csgo_ammo_sg_bird_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_bird.printname") or "Birdshot"
+L["csgo_ammo_sg_bird_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_bird.compactname") or "Birdshot"
+L["csgo_ammo_sg_bird_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_bird.description") or "Rounds loaded with smaller pellets in higher quantity."
+
+L["csgo_ammo_sg_slug_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_slug.printname") or "Full-bore Slug"
+L["csgo_ammo_sg_slug_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_slug.compactname") or "Slug"
+L["csgo_ammo_sg_slug_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_slug.description") or "Replaces the small pellets with one full-sized slug."
+
+L["csgo_ammo_sg_triple_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_triple.printname") or "Triple Hit Slugs"
+L["csgo_ammo_sg_triple_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_triple.compactname") or "Slug x3"
+L["csgo_ammo_sg_triple_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_triple.description") or "Replaces the small pellets with three slug-sized pellets."
+
+L["csgo_ammo_sg_flechette_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_flechette.printname") or "Flechettes"
+L["csgo_ammo_sg_flechette_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_flechette.compactname") or "Flechette"
+L["csgo_ammo_sg_flechette_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_flechette.description") or "Replaces the small pellets with thin, dart-shaped projectiles."
+
+L["csgo_ammo_sg_frag_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_frag.printname") or "\"FRAG-12\" High Explosive"
+L["csgo_ammo_sg_frag_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_frag.compactname") or "FRAG-12"
+L["csgo_ammo_sg_frag_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_frag.description") or "Replaces the small pellets with a single slug that explodes on contact."
+
+L["csgo_ammo_sg_rebounder_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_rebounder.printname") or "Rebounder Rounds"
+L["csgo_ammo_sg_rebounder_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_rebounder.compactname") or "Rebounder"
+L["csgo_ammo_sg_rebounder_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_rebounder.description") or "Replaces the pellets with specialized ones designed to bounce on contact."
+
+L["csgo_ammo_sg_frag_x4_ubgl.printname"] = ARC9:GetPhrase("csgo_ammo_sg_frag_x4.printname") or "\"FRAG-12\" High Explosive x4"
+L["csgo_ammo_sg_frag_x4_ubgl.compactname"] = ARC9:GetPhrase("csgo_ammo_sg_frag_x4.compactname") or "FRAG-12 x4"
+L["csgo_ammo_sg_frag_x4_ubgl.description"] = ARC9:GetPhrase("csgo_ammo_sg_frag_x4.description") or "Replaces the small pellets with four projectiles that explode on contact."
+
+L["go_supp_shitvo_ubgl.printname"] = ARC9:GetPhrase("go_supp_shitvo.printname") or "Salvo-12 Suppressor"
+L["go_supp_shitvo_ubgl.compactname"] = ARC9:GetPhrase("go_supp_shitvo.compactname") or "Salvo-12"
+L["go_supp_shitvo_ubgl.description"] = ARC9:GetPhrase("go_supp_shitvo.description") or "Large and bulky suppressor designed for shotguns that reduces the decibel level from gunshots."
+
+L["csgo_optic_acog_rmr_alt_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.printname") or "Trijicon RMR"
+L["csgo_optic_acog_rmr_alt_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.compactname") or "RMR"
+L["csgo_optic_acog_rmr_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_rmr2_rifle.printname"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.printname") or "Trijicon RMR, High Profile"
+L["csgo_optic_rmr2_rifle.compactname"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.compactname") or "RMR HP"
+L["csgo_optic_rmr2_rifle.description"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.description") or "Compact reflex sight mounted on a high-profile rail."
+
+L["csgo_optic_rmr3_rifle.description"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.description") or "Compact reflex sight mounted on a high-profile rail."
+
+L["csgo_optic_t1_lp.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_trijicon_alt_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.printname") or "Trijicon SRO"
+L["csgo_optic_trijicon_alt_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.compactname") or "SRO"
+L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_trijicon_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.printname") or "Trijicon RMR"
+L["csgo_optic_trijicon_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.compactname") or "RMR"
+L["csgo_optic_trijicon_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_trijicon_mro.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_trijicon.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_trijicon_alt.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
