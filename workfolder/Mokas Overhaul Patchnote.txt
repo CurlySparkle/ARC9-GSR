@@ -11,6 +11,37 @@ Here's an abbrevriated version:
 
 And here's the long, more detailed version:
 
+[b][u]Attachment Changes[/u][/b]
+[u]Notes[/u]
+All attachments have altered behaviour and brand new stats which alter the weapon stats depending on which slot they belong to. Here's a list of what some slots alter, in no particular order:
+[list]
+	[*] Ammo: Damage, Range, Spread, Recoil
+	[*] Barrel: Range, Spread, Recoil, Handling
+	[*] Grip: Recoil, Handling
+	[*] Mag: Mag Size, Handling
+	[*] Muzzle: Spread, Recoil
+	[*] Optic: Handling
+	[*] Pistol Grip: Handling
+	[*] Stock: Recoil, Handling
+	[*] Tactical: Spread, Handling
+	[*] Tube: Nothing
+[/list]
+
+Other changes:
+[list]
+	[*] Various attachments that come from specific weapons now alter their appearance depending on the skin they have applied.
+		[list]
+			[*] M4A1-S: [b]A1-S Suppressor[/b]
+			[*] M4A1: [b]Contractor Stock[/b]
+			[*] SIG556: [b]SIG556 Scope[/b]
+			[*] AWP: [b]AWP Scope[/b]
+			[*] G3SG1: [b]G3SG1 Scope[/b]
+			[*] SCAR-20: [b]SCAR-20 Scope[/b]
+		[/list]
+		[b]Requires Appearance Expansion [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]Part 1[/url] & [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]Part 2[/url]![/b]
+	[*] Optics: Magnified optics are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
+[/list]
+
 [b][u]Weapon changes[/u][/b]
 [u]All weapons[/u]
 [list]

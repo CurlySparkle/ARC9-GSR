@@ -65,6 +65,50 @@ ATT.Category = "csgo_stock"
 
 ATT.Model = "models/weapons/csgo/atts/stocks/stock_contractor.mdl"
 
+ATT.DrawFunc = function(self, model, wm) 
+	local att = self:GetElements()
+	local skin = "moka_csgo_skin_m4a4_"
+
+    local function GetSkinNames( skintable, skinpath )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				model:SetSubMaterial(0, skintable)
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Custom
+		bullet_rain = "csgoskins/custom/m4a4_bullet_rain",
+		poseidon = "csgoskins/custom/m4a4_poseidon",
+		xray = "csgoskins/custom/m4a4_xray",
+		howling = "csgoskins/custom/m4a4_howling",
+		ancestral = "csgoskins/custom/m4a4_ancestral",
+		cyberpunk = "csgoskins/custom/m4a4_cyberpunk",
+		desolatespace2 = "csgoskins/custom/m4a4_desolatespace2",
+		elite_tactical = "csgoskins/custom/m4a4_elite_tactical",
+		griffin = "csgoskins/custom/m4a4_griffin",
+		hellfire = "csgoskins/custom/m4a4_hellfire",
+		love = "csgoskins/custom/m4a4_love",
+		neo_noir = "csgoskins/custom/m4a4_neo_noir",
+		queenfairy = "csgoskins/custom/m4a4_queenfairy",
+		temukau = "csgoskins/custom/m4a4_temukau",
+		titanstorm = "csgoskins/custom/m4a4_titanstorm",
+		zone9 = "csgoskins/custom/m4a4_zone9",
+		
+		-- Gunsmith
+		coalition = "csgoskins/gunsmith/m4a4_coalition",
+		ra = "csgoskins/gunsmith/m4a4_ra",
+		chopper_ghost = "csgoskins/gunsmith/m4a4_chopper_ghost",
+		emperor = "csgoskins/gunsmith/m4a4_emperor",
+		pioneer = "csgoskins/gunsmith/m4a4_pioneer",
+		royal_squire = "csgoskins/gunsmith/m4a4_royal_squire",
+		sector = "csgoskins/gunsmith/m4a4_sector",
+	})
+
+end
+
 ARC9.LoadAttachment(ATT, "go_stock_contractor")
 ------------------------------------------------------------------------
 ATT = {}

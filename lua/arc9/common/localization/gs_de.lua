@@ -158,7 +158,7 @@ L["csgo_weapon_knife_widowmaker"] = "Klauenmesser"
 L["csgo_weapon_knife_stiletto"] = "Stiletto-Messer"
 L["csgo_weapon_knife_skeleton"] = "Skelettmesser"
 
-L["csgo_weapon_m3"] = "Benelli M3 Super 90"
+L["csgo_weapon_m3"] = "M3"
 
 L["csgo_weapon_m4a1"] = "M4A1-S"
 L["csgo_weapon_m4a1_m16a3"] = "M16A3-S"
@@ -410,6 +410,7 @@ L["csgo_folder_muzzlebrake"] = "Mündungsbremse"
 L["csgo_folder_suppressor"] = "Schalldämpfer"
 L["csgo_folder_ubgl"] = "Waffe"
 L["csgo_folder_tube"] = "Rohr"
+L["csgo_folder_special"] = "Spezial"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Munition"
@@ -465,6 +466,9 @@ L["csgo_stat_light"] = "Licht"
 L["csgo_stat_global"] = "Global"
 L["csgo_stat_curlife"] = "Aktuelles Leben"
 
+/////////////////// Optic Stats
+-- L["gsr_zoomlevel"] = "Zoom Level"
+
 /////////////////// Optics with Magnifiers
 L["csgo_optic_2x_aimpoint.printname"] = "Aimpoint CompM4 mit Visier"
 L["csgo_optic_2x_aimpoint.compactname"] = "CompM4 2x"
@@ -505,7 +509,7 @@ L["csgo_optic_c79.compactname"] = "C79"
 
 L["csgo_optic_pkas.printname"] = "PK-AS"
 L["csgo_optic_pkas.compactname"] = "PK-AS"
--- L["csgo_optic_pkas.description"] = "Russian-made combat optic with <color=100,255,100>1.5x magnification</color>."
+-- L["csgo_optic_pkas.description"] = "Russian-made combat optic."
 
 L["csgo_optic_scope_awp.printname"] = "AWP-Zielfernrohr"
 L["csgo_optic_scope_awp.compactname"] = "AWP"
@@ -582,11 +586,14 @@ L["csgo_optic_okp.compactname"] = "OKP-7"
 L["csgo_optic_t1_lp.printname"] = "Micro T1, niedriges Profil"
 L["csgo_optic_t1_lp.compactname"] = "T1 NP"
 
--- L["csgo_optic_trijicon.printname"] = "Trijicon RMR, Low Profile"
--- L["csgo_optic_trijicon.compactname"] = "RMR LP"
+L["csgo_optic_trijicon.printname"] = "Trijicon RMR, niedriges Profil"
+L["csgo_optic_trijicon.compactname"] = "RMR NP"
 
-L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO"
-L["csgo_optic_trijicon_alt.compactname"] = "SRO"
+L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO, niedriges Profil"
+L["csgo_optic_trijicon_alt.compactname"] = "SRO NP"
+
+L["csgo_optic_trijicon_alt_nonrail.printname"] = "Trijicon SRO"
+L["csgo_optic_trijicon_alt_nonrail.compactname"] = "SRO"
 
 L["csgo_optic_trijicon_mro.printname"] = "Trijicon MRO"
 L["csgo_optic_trijicon_mro.compactname"] = "MRO"
@@ -881,9 +888,9 @@ L["go_muzzle_r870.printname"] = "Carlson's Tactical Breacher Mündungsbremse"
 L["go_muzzle_r870.compactname"] = "Türbrecher"
 L["go_muzzle_r870.description"] = "Mündungsgerät, das die Ausbreitung stark erhöht.\nPerfekt, um eine große Horde Zombies zu beseitigen!"
 
-L["go_muzzle_uzi.printname"] = "UZI Mündungsbremse"
-L["go_muzzle_uzi.compactname"] = "UZI MB"
-L["go_muzzle_uzi.description"] = "Mündungsbremse, die das Rückstoßmuster auf Kosten eines erhöhten vertikalen Rückstoßes glättet."
+L["go_muzzle_uzi.printname"] = "MP-Mündungsbremse"
+L["go_muzzle_uzi.compactname"] = "MP-MB"
+-- L["go_muzzle_uzi.description"] = "Muzzle brake that reduces side-to-side recoil intended for small caliber firearms."
 
 /////////////////// Suppressors
 L["go_supp_233.printname"] = "Leichter Schalldämpfer"
@@ -1971,7 +1978,7 @@ L["csgo_xm1014_mag_fed.compactname"] = "5S-Box"
 L["csgo_xm1014_mag_fed.description"] = "Ersetzt das Röhrenmagazin durch ein traditionelles Kastenmagazin.\nKann nicht mehr einzeln geladen werden.\nVerringert leicht die Magazinkapazität und Waffenhandhabung."
 
 -- Escape from Tarkov Integration
-eftdesc = "Enables the ability to equip attachments from the EFT packs.\n\nNote: Not optimised for GSR - may cause visual glitches.\n\"Ergonomics\" have no effect."
+eftdesc = "Enables the ability to equip attachments from the <color=255,255,100>Escape from Tarkov</color> packs.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches.\n<color=175,175,255>Ergonomics</color> have no effect."
 
 L["go_eft_scopes.printname"] = "Escape from Tarkov - Optik"
 L["go_eft_scopes.compactname"] = "EFT"
@@ -1994,7 +2001,7 @@ L["go_eft_muzzle.compactname"] = "EFT"
 L["go_eft_muzzle.description"] = eftdesc
 
 -- Gunsmith Arms: Source integration
-gasdesc = "Enables the ability to equip attachments from the Gunsmith Arms: Source pack.\n\nNote: Not optimised for GSR - may cause visual glitches."
+gasdesc = "Enables the ability to equip attachments from the <color=255,255,100>Gunsmith Arms: Source</color> addon.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
 
 L["go_gas_scopes.printname"] = "Gunsmith Arms: Source - Optik"
 L["go_gas_scopes.compactname"] = "GAS"
@@ -2011,22 +2018,22 @@ L["go_gas_muzzle.description"] = gasdesc
 -- cod Packs Integration
 coddesc = "Enables the ability to equip attachments from the Black Ops Classic / Modern Warfare Classic packs.\n\nNote: Not optimised for GSR - may cause visual glitches."
 
-L["go_cod_scopes.printname"] = "Black Ops Classic | Modern Warfare Classic - Optik"
+L["go_cod_scopes.printname"] = "Black Ops & Modern Warfare Classic - Optik"
 L["go_cod_scopes.compactname"] = "BOC/MWC"
 L["go_cod_scopes.description"] = coddesc
 
-L["go_cod_scopes_pistol.printname"] = "Black Ops Classic | Modern Warfare Classic - Optik"
+L["go_cod_scopes_pistol.printname"] = "Black Ops & Modern Warfare Classic - Optik"
 L["go_cod_scopes_pistol.compactname"] = "BOC/MWC"
 L["go_cod_scopes_pistol.description"] = coddesc
 
-L["go_cod_rail.printname"] = "Black Ops Classic | Modern Warfare Classic - Schiene"
+L["go_cod_rail.printname"] = "Black Ops & Modern Warfare Classic - Schiene"
 L["go_cod_rail.compactname"] = "BOC/MWC"
 L["go_cod_rail.description"] = coddesc
 
-L["go_cod_grips.printname"] = "Black Ops Classic | Modern Warfare Classic - Griff"
+L["go_cod_grips.printname"] = "Black Ops & Modern Warfare Classic - Griff"
 L["go_cod_grips.compactname"] = "BOC/MWC"
 L["go_cod_grips.description"] = coddesc
 
-L["go_cod_muzzle.printname"] = "Black Ops Classic | Modern Warfare Classic - Maulkorb"
+L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Maulkorb"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc

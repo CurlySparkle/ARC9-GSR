@@ -16,6 +16,7 @@ ATT.Description = "Enables the ability to equip muzzles from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -36,6 +37,7 @@ ATT.Description = "Enables the ability to equip scopes from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -56,6 +58,7 @@ ATT.Description = "Enables the ability to equip scopes from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -78,6 +81,7 @@ ATT.Description = "Enables the ability to equip muzzles from the CoD packs."
 ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -98,6 +102,7 @@ ATT.Description = "Enables the ability to equip scopes from the CoD packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -118,6 +123,7 @@ ATT.Description = "Enables the ability to equip scopes from the CoD packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -138,6 +144,7 @@ ATT.Description = "Enables the ability to equip rail attachments from the CoD pa
 ATT.SortOrder = 10000
 ATT.Category = "csgo_tac"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_rail"),
@@ -158,6 +165,7 @@ ATT.Description = "Enables the ability to equip grips from the CoD packs."
 ATT.SortOrder = 10000
 ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
@@ -181,6 +189,7 @@ ATT.Description = "Enables the ability to equip grips from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
@@ -226,6 +235,7 @@ ATT.Description = "Enables the ability to equip muzzles from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -246,6 +256,7 @@ ATT.Description = "Enables the ability to equip scopes from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -266,6 +277,7 @@ ATT.Description = "Enables the ability to equip scopes from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -286,6 +298,7 @@ ATT.Description = "Enables the ability to equip stocks from the EFT packs."
 ATT.SortOrder = 10000
 ATT.Category = "csgo_stock"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
+ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

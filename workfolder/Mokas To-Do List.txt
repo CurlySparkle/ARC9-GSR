@@ -1,0 +1,79 @@
+[Weapons]
+ak47 DONE
+akimbo_cz75
+akimbo_deagle
+akimbo_fiveseven
+akimbo_glock
+akimbo_mp9
+akimbo_p250
+akimbo_p2000
+akimbo_r8
+akimbo_sawnoff
+akimbo_taser
+akimbo_usp
+aug DONE
+awp
+bizon
+cz75
+deagle
+elite
+elite_single
+famas
+fiveseven
+g1sg3
+galil
+galilar
+glock
+knife_bayonet
+knife_ct
+knife_flip
+knife_shield
+knife_t
+m3
+m4a1
+m4a4
+m249
+mac10
+mag7
+mp5
+mp5sd
+mp7
+mp9
+negev
+nova
+p90
+p250
+p2000
+r8
+sawedoff
+scar17
+scar20
+scout
+sg556
+ssg08
+tec9
+ump
+usp
+xm1014
+zeus
+
+[Attachments (Categories)]
+Universal - Supports DONE
+Universal - Foregrips & UBGLs DONE
+Universal - Optics DONE
+Universal - Rails
+Universal - Tacticals
+Universal - Ammo
+Universal - Magazines
+Universal - Muzzles
+Universal - Perks
+Universal - Skins
+Universal - Stickers
+Universal - Stocks DONE
+
+Weapon-Specific - Assault Rifles
+Weapon-Specific - SMGs
+Weapon-Specific - Shotguns
+Weapon-Specific - Sniper Rifles
+Weapon-Specific - Machine Guns
+Weapon-Specific - Pistols

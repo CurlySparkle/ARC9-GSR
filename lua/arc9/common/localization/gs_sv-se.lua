@@ -158,7 +158,7 @@ L["csgo_weapon_knife_widowmaker"] = "Talonkniv"
 L["csgo_weapon_knife_stiletto"] = "Stilettkniv"
 L["csgo_weapon_knife_skeleton"] = "Skeleton-kniv"
 
-L["csgo_weapon_m3"] = "Benelli M3 Super 90"
+L["csgo_weapon_m3"] = "M3"
 
 L["csgo_weapon_m4a1"] = "M4A1-S"
 L["csgo_weapon_m4a1_m16a3"] = "M16A3-S"
@@ -410,6 +410,7 @@ L["csgo_folder_muzzlebrake"] = "Mynningsbroms"
 L["csgo_folder_suppressor"] = "Ljuddämpare"
 L["csgo_folder_ubgl"] = "Vapen"
 L["csgo_folder_tube"] = "Rör"
+L["csgo_folder_special"] = "Special"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Ammo"
@@ -424,7 +425,7 @@ L["csgo_category_gripping"] = "Greppande"
 L["csgo_category_mag"] = "Magasin"
 L["csgo_category_model"] = "Modell"
 L["csgo_category_muzzle"] = "Mynning"
-L["csgo_category_optics"] = "Sikten"
+L["csgo_category_optics"] = "Sikte"
 L["csgo_category_perk"] = "Skicklighet"
 L["csgo_category_pistolgrip"] = "Pistolgrepp"
 L["csgo_category_rail"] = "Skena"
@@ -465,154 +466,160 @@ L["csgo_stat_light"] = "Lampa"
 L["csgo_stat_global"] = "Globalt"
 L["csgo_stat_curlife"] = "Nuvarande Liv"
 
+/////////////////// Optic Stats
+L["gsr_zoomlevel"] = "Zoom-Nivå"
+
 /////////////////// Optics with Magnifiers
-L["csgo_optic_2x_aimpoint.printname"] = "Förstoringsglas med Aimpoint CompM4"
+L["csgo_optic_2x_aimpoint.printname"] = "Aimpoint CompM4 med Förstoringsglas"
 L["csgo_optic_2x_aimpoint.compactname"] = "CompM4 2x"
--- L["csgo_optic_2x_aimpoint.description"] = "Large, tube-based red dot sight.\nBundled with a <color=100,255,100>2x Magnifier</color>."
+L["csgo_optic_2x_aimpoint.description"] = "Stort rörbaserat rödpunktsikte.\nKommer med ett <color=100,255,100>förstoringsglas med 2x magnifiering</color>."
 
-L["csgo_optic_2x_eotech.printname"] = "Förstoringsglas med EOTech-Sikte"
+L["csgo_optic_2x_eotech.printname"] = "EOTech med Förstoringsglas"
 L["csgo_optic_2x_eotech.compactname"] = "EOTech 2x"
--- L["csgo_optic_2x_eotech.description"] = "Classic holographic sight.\nBundled with a <color=100,255,100>2x Magnifier</color>."
+L["csgo_optic_2x_eotech.description"] = "Klassiskt holografiskt sikte.\nKommer med ett <color=100,255,100>förstoringsglas med 2x magnifiering</color>."
 
-L["csgo_optic_2x_kobra.printname"] = "Förstoringsglas med Kobra EKP-8-18"
+L["csgo_optic_2x_kobra.printname"] = "Kobra EKP-8-18 med Förstoringsglas"
 L["csgo_optic_2x_kobra.compactname"] = "Kobra 2x"
--- L["csgo_optic_2x_kobra.description"] = "Russian-made kollimator sight with a T-shaped reticle.\nBundled with a <color=100,255,100>2x Magnifier</color>."
+L["csgo_optic_2x_kobra.description"] = "Ryskt kollimatorsikte med ett hårkors format som ett T.\nKommer med ett <color=100,255,100>förstoringsglas med 2x magnifiering</color>."
 
-L["csgo_optic_2x_okp.printname"] = "Förstoringsglas med OKP-7"
+L["csgo_optic_2x_okp.printname"] = "OKP-7 med Förstoringsglas"
 L["csgo_optic_2x_okp.compactname"] = "OKP-7 2x"
--- L["csgo_optic_2x_okp.description"] = "Russian-made kollimator sight with a green chevron reticle.\nBundled with a <color=100,255,100>2x Magnifier</color>."
+L["csgo_optic_2x_okp.description"] = "Ryskt kollimatorsikte med en grön sparre hårkors.\nKommer med ett <color=100,255,100>förstoringsglas med 2x magnifiering</color>."
 
 /////////////////// Scopes
 L["csgo_optic_acog.printname"] = "M110-Kikarsikte"
 L["csgo_optic_acog.compactname"] = "M110"
-L["csgo_optic_acog.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser."
+L["csgo_optic_acog.description"] = "Långdistans kikarsikte med <color=100,255,100>8 till 12x magnifiering</color>."
 
 L["csgo_optic_acog_1.printname"] = "SIG556-Sikte"
 L["csgo_optic_acog_1.compactname"] = "SIG556"
-L["csgo_optic_acog_1.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser."
+L["csgo_optic_acog_1.description"] = "Medelräckvidd stridssikte med <color=100,255,100>3x magnifiering</color>.\nGjord till SIG556.\nKommer med reservsikten."
 
 L["csgo_optic_acog_2.printname"] = "AUG-Sikte"
 L["csgo_optic_acog_2.compactname"] = "AUG"
-L["csgo_optic_acog_2.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser."
+L["csgo_optic_acog_2.description"] = "Medelräckvidd stridssikte med <color=100,255,100>2,75x magnifiering</color>.\nGjord till AUG:en."
 
-L["csgo_optic_acog_mount.printname"] = "Trijicon ACOG B"
-L["csgo_optic_acog_mount.compactname"] = "ACOG B"
-L["csgo_optic_acog_mount.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser.\nKan utrusta ett litet rödpunktsikte på toppen som används som nödsikte."
+L["csgo_optic_acog_mount.printname"] = "Trijicon ACOG"
+L["csgo_optic_acog_mount.compactname"] = "ACOG"
+L["csgo_optic_acog_mount.description"] = "Medelräckvidd stridssikte med <color=100,255,100>4x magnifiering</color>.\nKan utrusta reservsikten."
 
-L["csgo_optic_c79.printname"] = "C79-Sikte"
+L["csgo_optic_c79.printname"] = "C79"
 L["csgo_optic_c79.compactname"] = "C79"
-L["csgo_optic_c79.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser."
+L["csgo_optic_c79.description"] = "Medelräckvidd stridssikte med <color=100,255,100>3x magnifiering</color>.\nKommer med reservsikten."
 
 L["csgo_optic_pkas.printname"] = "PK-AS"
 L["csgo_optic_pkas.compactname"] = "PK-AS"
-L["csgo_optic_pkas.description"] = "Rysktillverkat medelräckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser"
+L["csgo_optic_pkas.description"] = "Ryskt stridssikte."
 
 L["csgo_optic_scope_awp.printname"] = "AWP-Kikarsikte"
-L["csgo_optic_scope_awp.compactname"] = "AWP 8X"
-L["csgo_optic_scope_awp.description"] = "Lång räckvidd kikarsikte gjord till AWP:en.\nGer ett rent hårkors för snabb målförvärv."
+L["csgo_optic_scope_awp.compactname"] = "AWP"
+L["csgo_optic_scope_awp.description"] = "Långdistans kikarsikte med <color=100,255,100>8x magnifiering</color>.\nGjord till AWP."
 
 L["csgo_optic_scope_g3sg1.printname"] = "G3SG1-Kikarsikte"
-L["csgo_optic_scope_g3sg1.compactname"] = "G3SG1 8X"
-L["csgo_optic_scope_g3sg1.description"] = "Lång räckvidd kikarsikte gjord till G3:an.\nGer ett rent hårkors för snabb målförvärv."
+L["csgo_optic_scope_g3sg1.compactname"] = "G3SG1"
+L["csgo_optic_scope_g3sg1.description"] = "Långdistans kikarsikte med <color=100,255,100>8x magnifiering</color>.\nGjord till G3SG1."
 
 L["csgo_optic_scope_scar20.printname"] = "SCAR-20-Kikarsikte"
-L["csgo_optic_scope_scar20.compactname"] = "SCAR-20 8X"
-L["csgo_optic_scope_scar20.description"] = "Lång räckvidd kikarsikte gjord till SCAR-20:an.\nGer ett rent hårkors för snabb målförvärv."
+L["csgo_optic_scope_scar20.compactname"] = "SCAR-20"
+L["csgo_optic_scope_scar20.description"] = "Långdistans kikarsikte med <color=100,255,100>8x magnifiering</color>.\nGjord till SCAR-20."
 
 L["csgo_optic_scope_scout.printname"] = "Scout-Kikarsikte"
-L["csgo_optic_scope_scout.compactname"] = "Scout 6X"
-L["csgo_optic_scope_scout.description"] = "Medelräckvidd kikarsikte gjord till Scout:en.\nGer ett rent hårkors för snabb målförvärv."
+L["csgo_optic_scope_scout.compactname"] = "Scout"
+L["csgo_optic_scope_scout.description"] = "Långdistans kikarsikte med <color=100,255,100>6x magnifiering</color>.\nGjord till Scout."
 
 L["csgo_optic_scope_ssg08.printname"] = "SSG 08-Kikarsikte"
-L["csgo_optic_scope_ssg08.compactname"] = "SSG 08 8X"
-L["csgo_optic_scope_ssg08.description"] = "Lång räckvidd kikarsikte gjord till SSG 08:an.\nGer ett rent hårkors för snabb målförvärv."
+L["csgo_optic_scope_ssg08.compactname"] = "SSG 08"
+L["csgo_optic_scope_ssg08.description"] = "Långdistans kikarsikte med <color=100,255,100>6x magnifiering</color>.\nGjord till SSG 08."
 
 L["csgo_optic_specter.printname"] = "Elcan SpecterDR"
 L["csgo_optic_specter.compactname"] = "SpecterDR"
-L["csgo_optic_specter.description"] = "Lång räckvidd stridssikte. Ger förbättrad träffsäkerhet vid längre distanser."
+L["csgo_optic_specter.description"] = "Medelräckvidd stridssikte med <color=100,255,100>3,5x magnifiering</color>.\nKommer med reservsikten."
 
-L["csgo_optic_nvis.printname"] = "N-Vision Halo-LR Värmesikte"
+L["csgo_optic_nvis.printname"] = "N-Vision Halo-LR Thermal Type"
 L["csgo_optic_nvis.compactname"] = "Halo-LR"
-L["csgo_optic_nvis.description"] = "Stort värmesikte som markerar mål.\nDess tunga vikt sänker vapenhanteringen."
+L["csgo_optic_nvis.description"] = "Heavy thermal optic with <color=100,255,100>1,5-3x magnifiering</color>. <color=100,255,100>Highlights targets</color> when aiming."
 
 /////////////////// Optics
 L["csgo_optic_acog_rmr_alt.printname"] = "Trijicon RMR"
 L["csgo_optic_acog_rmr_alt.compactname"] = "RMR"
--- L["csgo_optic_acog_rmr_alt.description"] = "Compact reflex optic."
+L["csgo_optic_acog_rmr_alt.description"] = "Kompakt reflexsikte."
 
 L["csgo_optic_barska.printname"] = "Barska"
 L["csgo_optic_barska.compactname"] = "Barska"
--- L["csgo_optic_barska.description"] = "Traditional reflex sight with a circular reticle."
+L["csgo_optic_barska.description"] = "Traditionellt reflexsikte med ett cirkulärt hårkors."
 
 L["csgo_optic_cmore.printname"] = "C-More Railway"
 L["csgo_optic_cmore.compactname"] = "C-More"
--- L["csgo_optic_cmore.description"] = "Slim, multi-purpose reflex sight with a circular reticle."
+L["csgo_optic_cmore.description"] = "Slät, mångsidigt reflexsikte med ett cirkulärt hårkors.."
 
 L["csgo_optic_compm4.printname"] = "Aimpoint CompM4"
 L["csgo_optic_compm4.compactname"] = "CompM4"
--- L["csgo_optic_compm4.description"] = "Large, tube-based red dot sight."
+L["csgo_optic_compm4.description"] = "Stort rörbaserat rödpunktsikte."
 
 L["csgo_optic_eotech.printname"] = "EOTech"
 L["csgo_optic_eotech.compactname"] = "EOTech"
--- L["csgo_optic_eotech.description"] = "Classic holographic sight."
+L["csgo_optic_eotech.description"] = "Klassiskt holografiskt sikte."
 
 L["csgo_optic_kobra.printname"] = "Kobra EKP-8-18"
 L["csgo_optic_kobra.compactname"] = "Kobra"
--- L["csgo_optic_kobra.description"] = "Russian-made kollimator sight with a T-shaped reticle."
+L["csgo_optic_kobra.description"] = "Ryskt kollimatorsikte med ett hårkors format som ett T."
 
 L["csgo_optic_m21.printname"] = "Mepro M21"
 L["csgo_optic_m21.compactname"] = "Mepro"
--- L["csgo_optic_m21.description"] = "Israeli-made reflex sight."
+L["csgo_optic_m21.description"] = "Reflexsikte från Israel."
 
 L["csgo_optic_okp.printname"] = "OKP-7"
 L["csgo_optic_okp.compactname"] = "OKP-7"
--- L["csgo_optic_okp.description"] = "Russian-made kollimator sight with a green chevron reticle."
+L["csgo_optic_okp.description"] = "Ryskt kollimatorsikte med en grön sparre hårkors."
 
--- L["csgo_optic_rmr_rifle.printname"] = "Trijicon RMR, High Profile"
--- L["csgo_optic_rmr_rifle.compactname"] = "RMR HP"
--- L["csgo_optic_rmr_rifle.description"] = "Compact reflex sight mounted on a high-profile rail."
+L["csgo_optic_rmr_rifle.printname"] = "Trijicon RMR, Hög Profil"
+L["csgo_optic_rmr_rifle.compactname"] = "RMR HP"
+L["csgo_optic_rmr_rifle.description"] = "Kompakt reflexsikte monterad på en skena med hög profil."
 
--- L["csgo_optic_rmr3_rifle.printname"] = "Trijicon SRO, High Profile"
--- L["csgo_optic_rmr3_rifle.compactname"] = "SRO HP"
+L["csgo_optic_rmr3_rifle.printname"] = "Trijicon SRO, Hög Profil"
+L["csgo_optic_rmr3_rifle.compactname"] = "SRO HP"
 
--- L["csgo_optic_t1.printname"] = "Micro T1, High Profile"
--- L["csgo_optic_t1.compactname"] = "T1 HP"
--- L["csgo_optic_t1.description"] = "Compact reflex optic mounted on a high-profile rail."
+L["csgo_optic_t1.printname"] = "Micro T1, Hög Profil"
+L["csgo_optic_t1.compactname"] = "T1 HP"
+L["csgo_optic_t1.description"] = "Kompakt reflexsikte monterad på en skena med hög profil."
 
 L["csgo_optic_t1_lp.printname"] = "Micro T1, Låg Profil"
-L["csgo_optic_t1_lp.compactname"] = "Micro T1 (LP)"
+L["csgo_optic_t1_lp.compactname"] = "T1 LP"
 
--- L["csgo_optic_trijicon.printname"] = "Trijicon RMR, Low Profile"
--- L["csgo_optic_trijicon.compactname"] = "RMR LP"
+L["csgo_optic_trijicon.printname"] = "Trijicon RMR, Låg Profil"
+L["csgo_optic_trijicon.compactname"] = "RMR LP"
 
-L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO"
-L["csgo_optic_trijicon_alt.compactname"] = "SRO"
+L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO, Låg Profil"
+L["csgo_optic_trijicon_alt.compactname"] = "SRO LP"
+
+L["csgo_optic_trijicon_alt_nonrail.printname"] = "Trijicon SRO"
+L["csgo_optic_trijicon_alt_nonrail.compactname"] = "SRO"
 
 L["csgo_optic_trijicon_mro.printname"] = "Trijicon MRO"
 L["csgo_optic_trijicon_mro.compactname"] = "MRO"
 
 L["csgo_optic_mars.printname"] = "ITL MARS"
 L["csgo_optic_mars.compactname"] = "MARS"
--- L["csgo_optic_mars.description"] = "Israeli-made reflex optic with built-in laser."
+L["csgo_optic_mars.description"] = "Reflexsikte från Israel med inbyggd laser."
 
 /////////////////// Rails
--- L["csgo_rail_optic_1.printname"] = "Custom Optics Rail"
--- L["csgo_rail_optic_1.compactname"] = "Sight Rail"
--- L["csgo_rail_optic_1.description"] = "Weapon-mounted rail, allowing installation of RIS optics on weapons that usually can't equip them."
+L["csgo_rail_optic_1.printname"] = "Anpassad Skena till Riktmedel"
+L["csgo_rail_optic_1.compactname"] = "Skena"
+L["csgo_rail_optic_1.description"] = "Vapenmonterad skena som tillåter installation av RIS-riktmedel på vapen som normalt sätt inte kan utrusta dem."
 
--- L["csgo_rail_optic_2.printname"] = "Dovetail Rail"
--- L["csgo_rail_optic_2.compactname"] = "Dovetail"
--- L["csgo_rail_optic_2.description"] = "Installs an RIS rail via the dovetail, allowing installation of custom optics."
+L["csgo_rail_optic_2.printname"] = "Laxstjärt Skena"
+L["csgo_rail_optic_2.compactname"] = "Laxstjärt"
+L["csgo_rail_optic_2.description"] = "Sätter på en RIS-skena via laxstjärten, vilket tillåter installation av anpassade riktmedel."
 
--- L["csgo_rail_optic_3.printname"] = "Pistol Optics Rail"
--- L["csgo_rail_optic_3.compactname"] = "Sight Rail"
--- L["csgo_rail_optic_3.description"] = "Installs an RIS rail via the undermounted rail, allowing installation of custom optics."
+L["csgo_rail_optic_3.printname"] = "Skena till Pistolsikten"
+L["csgo_rail_optic_3.compactname"] = "Skena"
+L["csgo_rail_optic_3.description"] = "Sätter på en RIS-skena via den undermonterade skenan, vilket tillåter installation av anpassade sikten."
 
--- L["csgo_rail_optic_4.description"] = "Weapon-mounted rail, allowing installation of RIS optics on weapons that usually can't equip them.\nDesigned for use on weapons with a top cover, such as machine guns."
+L["csgo_rail_optic_4.description"] = "Vapenmonterad skena som tillåter installation av RIS-riktmedel på vapen som normalt sätt inte kan utrusta dem.\nDesignad för användning på vapen med en övre låda, exempelvis kulsprutor."
 
--- L["csgo_rail_optic_m249.printname"] = "Custom Rail Riser"
--- L["csgo_rail_optic_m249.compactname"] = "Riser"
--- L["csgo_rail_optic_m249.description"] = "Weapon-mounted rail, allowing installation of RIS optics on weapons that usually can't equip them.\nDesigned for the M249."
+L["csgo_rail_optic_m249.printname"] = "Anpassad Skena till Riktmedel"
+L["csgo_rail_optic_m249.compactname"] = "Skena"
+L["csgo_rail_optic_m249.description"] = "Vapenmonterad skena som tillåter installation av RIS-riktmedel på vapen som normalt sätt inte kan utrusta dem.\nDesignad till M249:an."
 
 L["csgo_rail_optic_mac.printname"] = "Anpassat RIS-System"
 L["csgo_rail_optic_mac.compactname"] = "RIS"
@@ -620,11 +627,11 @@ L["csgo_rail_optic_mac.description"] = "Anpassat RIS-system gjort till MAC-10:an
 
 L["csgo_rail_tactical.printname"] = "Anpassad Taktisk Skena"
 L["csgo_rail_tactical.compactname"] = "Sidoskena"
--- L["csgo_rail_tactical.description"] = "Installs a rail that allows mounting of tactical accessories, such as laser sights or flashlights."
+L["csgo_rail_tactical.description"] = "Sätter på en skena som tillåter montering av taktiska tillbehör, exempelvis lasersikten eller ficklampor."
 
 L["csgo_rail_ub_1.printname"] = "Undermonterad Picatinnyskena"
 L["csgo_rail_ub_1.compactname"] = "UM Skena"
--- L["csgo_rail_ub_1.description"] = "Installs a picatinny rail that allows mounting of foregrips and underbarrel weaponry."
+L["csgo_rail_ub_1.description"] = "Sätter på en picatinnyskena som tillåter montering av framgrepp och undermonterade vapen."
 
 /////////////////// Weapon Skins
 ////////// For these, try to have the descriptions resemble CS:GO.
@@ -665,42 +672,42 @@ L["csgo_skin_knife_ghost.compactname"] = "Spöke"
 L["csgo_skin_knife_ghost.description"] = "Boo!"
 
 /////////////////// Buffer Tubes
-L["csgo_stock_tube.printname"] = "Buffertrör - Lång"
-L["csgo_stock_tube.compactname"] = "Buffert. (L)"
--- L["csgo_stock_tube.description"] = "Aluminium buffer tube that allows installation of custom stocks.\nAttaches the stocks further back on the tube."
+L["csgo_stock_tube.printname"] = "Bufferrör - Lång"
+L["csgo_stock_tube.compactname"] = "Buffer. (L)"
+L["csgo_stock_tube.description"] = "Aluminium bufferrör som tillåter montering av anpassade kolvar.\nSätter kolven längre bak på röret."
 
-L["csgo_stock_tube_retracted.printname"] = "Buffertrör - Kort"
-L["csgo_stock_tube_retracted.compactname"] = "Buffert. (K)"
--- L["csgo_stock_tube_retracted.description"] = "Aluminium buffer tube that allows installation of custom stocks.\nAttaches the stocks closer to the mount."
+L["csgo_stock_tube_retracted.printname"] = "Bufferrör - Kort"
+L["csgo_stock_tube_retracted.compactname"] = "Buffer. (K)"
+L["csgo_stock_tube_retracted.description"] = "Aluminium bufferrör som tillåter montering av anpassade kolvar.\nSätter kolven närmare monteringen."
 
 /////////////////// Foregrips
 L["go_grip_angled.printname"] = "Vinklat Grepp"
 L["go_grip_angled.compactname"] = "Vinklat"
--- L["go_grip_angled.description"] = "Lightweight angled foregrip."
+L["go_grip_angled.description"] = "Lätt vinklat framgrepp."
 
--- L["go_grip_gripod.printname"] = "Grip Pod"
--- L["go_grip_gripod.compactname"] = "Grip Pod"
--- L["go_grip_gripod.description"] = "Custom foregrip with built-in bipod."
+L["go_grip_gripod.printname"] = "Grip Pod"
+L["go_grip_gripod.compactname"] = "Grip Pod"
+L["go_grip_gripod.description"] = "Anpassat framgrepp med inbyggt skjutstöd."
 
--- L["go_grip_kac.printname"] = "Mr. Stumpy Foregrip"
--- L["go_grip_kac.compactname"] = "Stumpy"
--- L["go_grip_kac.description"] = "Lightweight foregrip intended to weigh as little as possible."
+L["go_grip_kac.printname"] = "\"Mr. Stumpy\"-Framgrepp"
+L["go_grip_kac.compactname"] = "Stumpy"
+L["go_grip_kac.description"] = "Lätt framgrepp gjord för att väga så lite som möjligt."
 
 L["go_grip_laser.printname"] = "Punktskyttegrepp"
 L["go_grip_laser.compactname"] = "P.S.G."
--- L["go_grip_laser.description"] = "Tactical foregrip with built-in laser."
+L["go_grip_laser.description"] = "Taktiskt framgrepp med inbyggd laser."
 
--- L["go_grip_loading.printname"] = "Rapid Foregrip"
--- L["go_grip_loading.compactname"] = "Rapid"
--- L["go_grip_loading.description"] = "Lightweight foregrip made for operators who rapidly go from engagement to engagement."
+L["go_grip_loading.printname"] = "Snabbt Framgrepp"
+L["go_grip_loading.compactname"] = "Snabb"
+L["go_grip_loading.description"] = "Lätt framgrepp gjord för operatörer som snabbt vill gå från strid till strid."
 
-L["go_grip_vertical_stubby.printname"] = "Vertical Foregrip"
-L["go_grip_vertical_stubby.compactname"] = "Vertical"
--- L["go_grip_vertical_stubby.description"] = "Standard-issue foregrip."
+L["go_grip_vertical_stubby.printname"] = "Vertikalt Framgrepp"
+L["go_grip_vertical_stubby.compactname"] = "Vertikalt"
+L["go_grip_vertical_stubby.description"] = "Standard framgrepp."
 
 L["go_grip_assault.printname"] = "Assault-Grepp"
 L["go_grip_assault.compactname"] = "Assault"
--- L["go_grip_assault.description"] = "Custom-made foregrip angled 45 degrees to the left."
+L["go_grip_assault.description"] = "Anpassat framgrepp vinklat 45 grader vänster."
 
 /////////////////// Alt. Holding Styles
 L["go_holdstyle_1.printname"] = "Alt. Hållstil"
@@ -709,53 +716,53 @@ L["go_holdstyle_1.description"] = "Ändrar vapnets hållstil."
 
 L["go_holdstyle_augf.printname"] = "Hopfällt Grepp"
 L["go_holdstyle_augf.compactname"] = "Hopfällt"
--- L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon.\nPurely <color=175,175,255>cosmetic</color>."
+L["go_holdstyle_augf.description"] = "Viker framgreppet uppåt vilket ändrar hur du håller vapnet.\nEnbart <color=175,175,255>kosmetiskt</color>."
 
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Förlängda Magasin"
 L["go_mag_extended.compactname"] = "Förl. Mag."
--- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color> by a slight bit."
+L["go_mag_extended.description"] = "<color=100,255,100>Ökar magasinkapaciteten</color> universalt en liten bit."
 
 L["go_mag_extended_ak47.printname"] = "Förlängda Magasin"
 L["go_mag_extended_ak47.compactname"] = "Förl. Mag."
--- L["go_mag_extended_ak47.description"] = "High-capacity <color=100,255,100>45-round</color> magazine."
+L["go_mag_extended_ak47.description"] = "Hög kapacitets <color=100,255,100>45-patronersmagasin</color>."
 
 L["go_mag_extended_m4.printname"] = "50-Skott Trummagasin"
 L["go_mag_extended_m4.compactname"] = "50R-Trum"
--- L["go_mag_extended_m4.description"] = "High-capacity <color=100,255,100>50-round</color> drum magazine."
+L["go_mag_extended_m4.description"] = "Hög kapacitet <color=100,255,100>50-patroners</color> trummagasin."
 
 L["csgo_mag_sg_ext.printname"] = "Förlängt Rör"
 L["csgo_mag_sg_ext.compactname"] = "Förl. Rör"
--- L["csgo_mag_sg_ext.description"] = "Installs a longer magazine tube that <color=100,255,100>increases magazine capacity</color>."
+L["csgo_mag_sg_ext.description"] = "Monterar ett längre magasinrör som <color=100,255,100>ökar magasinkapaciteten</color>."
 
 /////////////////// Stocks
 L["go_stock_extended.printname"] = "Förlängd Kolv"
 L["go_stock_extended.compactname"] = "Förlängd"
--- L["go_stock_extended.description"] = "Extend the stock."
+L["go_stock_extended.description"] = "Förlänger kolven."
 
 L["go_stock_retract.printname"] = "Kollapsad Kolv"
 L["go_stock_retract.compactname"] = "Kollapsad"
--- L["go_stock_retract.description"] = "Collapses the stock."
+L["go_stock_retract.description"] = "Kollapsar kolven."
 
 L["go_stock_basilisk.printname"] = "Basilisk-Kolv"
 L["go_stock_basilisk.compactname"] = "Basilisk"
--- L["go_stock_basilisk.description"] = "Extremely lightweight crane stock."
+L["go_stock_basilisk.description"] = "Extremt lätt krankolv."
 
 L["go_stock_contractor.printname"] = "Entreprenadkolv"
 L["go_stock_contractor.compactname"] = "Entre."
--- L["go_stock_contractor.description"] = "Adjustable and modular stock from the M4A4."
+L["go_stock_contractor.description"] = "Justerbar och modulär kolv från M4A1:an."
 
 L["go_stock_ergo.printname"] = "Ergonomisk Kolv"
 L["go_stock_ergo.compactname"] = "Ergonomisk"
--- L["go_stock_ergo.description"] = "Lightweight and ergonomic stock from the SIG556."
+L["go_stock_ergo.description"] = "Lätt och ergonomisk kolv från SIG556:an."
 
 L["go_stock_moe.printname"] = "MOE-Kolv"
 L["go_stock_moe.compactname"] = "MOE"
--- L["go_stock_moe.description"] = "Modular aftermarket stock."
+L["go_stock_moe.description"] = "Modulär eftermarknadskolv."
 
 L["go_stock_xm10.printname"] = "XM-Kolv"
 L["go_stock_xm10.compactname"] = "XM"
--- L["go_stock_xm10.description"] = "Modular stock from the XM1014."
+L["go_stock_xm10.description"] = "Modulär kolv från XM1014."
 
 /////////////////// Tacticals
 L["go_tac_laser_genpistol.printname"] = "Gen-Lasersikte"
@@ -834,11 +841,11 @@ L["csgo_ammo_he.description"] = "Explosiv ammunition som orsakar en mindre sprä
 
 L["csgo_ammo_sg_magnum.printname"] = "Magnum Hagelammunition"
 L["csgo_ammo_sg_magnum.compactname"] = "Magnum"
--- L["csgo_ammo_sg_magnum.description"] = "High-powered buckshot loaded with larger pellets in reduced quantity."
+L["csgo_ammo_sg_magnum.description"] = "Hagelskott med hög kraft med större, men färre hagelbitar."
 
 L["csgo_ammo_sg_bird.printname"] = "Fågelskott"
 L["csgo_ammo_sg_bird.compactname"] = "Fågelskott"
--- L["csgo_ammo_sg_bird.description"] = "Rounds loaded with smaller pellets in higher quantity."
+L["csgo_ammo_sg_bird.description"] = "Skott laddade med mindre men fler hagelbitar."
 
 L["csgo_ammo_sg_slug.printname"] = "Helhål Sluggpatron"
 L["csgo_ammo_sg_slug.compactname"] = "Slugg"
@@ -867,32 +874,32 @@ L["csgo_ammo_sg_frag_x4.description"] = "Ersätter dem små skotten med fyra pro
 /////////////////// Muzzles
 L["go_muzzle_akm.printname"] = "AK-Mynningsbroms"
 L["go_muzzle_akm.compactname"] = "AK-MB"
--- L["go_muzzle_akm.description"] = "Muzzle brake that reduces side-to-side recoil alongside increase melee efficiency."
+L["go_muzzle_akm.description"] = "Mynningsbroms som sänker sida-till-sida-rekylen, och ökar effektiviteten i närstrid."
 
--- L["go_muzzle_p226.printname"] = "Pistol Muzzle Brake"
--- L["go_muzzle_p226.compactname"] = "Pistol MB"
--- L["go_muzzle_p226.description"] = "Muzzle brake that reduces side-to-side recoil intended for handguns."
+L["go_muzzle_p226.printname"] = "Pistol Mynningsbroms"
+L["go_muzzle_p226.compactname"] = "Pistol MB"
+L["go_muzzle_p226.description"] = "Mynningsbroms som sänker sida-till-sida-rekylen gjord för sidovapen."
 
 L["go_muzzle_ar15.printname"] = "AR-Mynningsbroms"
 L["go_muzzle_ar15.compactname"] = "AR-MB"
--- L["go_muzzle_ar15.description"] = "Muzzle brake that reduces side-to-side recoil."
+L["go_muzzle_ar15.description"] = "Mynningsbroms som sänker sida-till-sida-rekylen."
 
 L["go_muzzle_r870.printname"] = "Carlsons Taktisk Brytare Mynningsbroms"
 L["go_muzzle_r870.compactname"] = "Dörrbrytare"
 L["go_muzzle_r870.description"] = "Mynningsanordning som kraftigt ökar spridningen.\nPerfekt att rensa en massiv samling zombies!"
 
-L["go_muzzle_uzi.printname"] = "UZI-Mynningsbroms"
-L["go_muzzle_uzi.compactname"] = "UZI-MB"
+L["go_muzzle_uzi.printname"] = "KPist. Mynningsbroms"
+L["go_muzzle_uzi.compactname"] = "KPist. MB"
 L["go_muzzle_uzi.description"] = "Mynningsbroms som rätar ut rekylmönstret med kostnad på ökad vertikal rekyl."
 
 /////////////////// Suppressors
 L["go_supp_233.printname"] = "Lättvikt Ljuddämpare"
 L["go_supp_233.compactname"] = "Lättvikt"
--- L["go_supp_233.description"] = "Lightweight suppressor that reduces the decibel level from gunshots."
+L["go_supp_233.description"] = "Lätt ljuddämpare som sänker decibelnivån på skottljud."
 
 L["go_supp_m4.printname"] = "A1-S-Ljuddämpare"
 L["go_supp_m4.compactname"] = "A1-S"
--- L["go_supp_m4.description"] = "Custom suppressor that reduces the decibel level from gunshots.\nOriginally made for the M4A1-S."
+L["go_supp_m4.description"] = "Anpassad ljuddämpare som sänker decibelnivån på skottljud.\nEgentligen gjord till M4A1-S."
 
 L["go_supp_p90.printname"] = "FN P90 Attenuator"
 L["go_supp_p90.compactname"] = "P90 Ljudd."
@@ -900,27 +907,27 @@ L["go_supp_p90.description"] = "En taktisk ljuddämpare designad specikt till P9
 
 L["go_supp_pbs01.printname"] = "PBS-1-Ljuddämpare"
 L["go_supp_pbs01.compactname"] = "PBS-1"
--- L["go_supp_pbs01.description"] = "Soviet-made suppressor that reduces the decibel level from gunshots."
+L["go_supp_pbs01.description"] = "Sovjetisk ljuddämpare som sänker decibelnivån på skottljud."
 
 L["go_supp_shit9.printname"] = "SEC9mm-Ljuddämpare"
 L["go_supp_shit9.compactname"] = "SEC9mm"
--- L["go_supp_shit9.description"] = "Heavy suppressor designed to reduce the decibel level from gunshots."
+L["go_supp_shit9.description"] = "Tung ljuddämpare som sänker decibelnivån på skottljud."
 
 L["go_supp_shitvo.printname"] = "Salvo-12-Ljuddämpare"
 L["go_supp_shitvo.compactname"] = "Salvo-12"
--- L["go_supp_shitvo.description"] = "Large and bulky suppressor designed for shotguns that reduces the decibel level from gunshots."
+L["go_supp_shitvo.description"] = "Stor och skrymmande ljuddämpare designad till hagelgevär som sänker decibelnivån på skottljud."
 
 L["go_supp_tirant45.printname"] = "Ti-Rant 45 Ljuddämpare"
 L["go_supp_tirant45.compactname"] = "Ti-Rant 45"
-L["go_supp_tirant45.description"] = "Taktisk ljuddämpare designad att sänka decibelnivån på skottljud."
+L["go_supp_tirant45.description"] = "Taktisk ljuddämpare som sänker decibelnivån på skottljud."
 
 L["go_supp_clothwrapped.printname"] = "Tyglindad Ljuddämpare"
 L["go_supp_clothwrapped.compactname"] = "Tyglindad"
--- L["go_supp_clothwrapped.description"] = "Tactical suppressor wrapped in cloth designed to reduce the decibel level from gunshots."
+L["go_supp_clothwrapped.description"] = "Taktiskt ljuddämpare invirrad i tyg som sänker decibelnivån på skottljud."
 
 L["go_supp_m110.printname"] = "M110-Ljuddämpare"
 L["go_supp_m110.compactname"] = "M110"
--- L["go_supp_m110.description"] = "Very long suppressor that reduces the decibel level from gunshots.\nOriginally made for the M110."
+L["go_supp_m110.description"] = "Väldigt lång ljuddämpare som sänker decibelnivån på skottljud.\nEgentligen gjord till M110:an."
 
 L["go_supp_kriss.printname"] = "KRISS 4GSK Ljuddämpare"
 L["go_supp_kriss.compactname"] = "4GSK"
@@ -933,19 +940,19 @@ L["csgo_perk_fastreload.description"] = "Ökar omladdning hastigheten."
 
 L["csgo_perk_headshot.printname"] = "Kirurgiskt Skott"
 L["csgo_perk_headshot.compactname"] = "Kirurgiskt"
--- L["csgo_perk_headshot.description"] = "Increases headshot damage."
+L["csgo_perk_headshot.description"] = "Ökar skadan på huvudskott."
 
 L["csgo_perk_enforcer.printname"] = "Enforcer"
 L["csgo_perk_enforcer.compactname"] = "Enforcer"
--- L["csgo_perk_enforcer.description"] = "Reduces damage taken."
+L["csgo_perk_enforcer.description"] = "Sänker tagen skada."
 
 L["csgo_perk_ace.printname"] = "Ess i Hålet"
 L["csgo_perk_ace.compactname"] = "Ess"
--- L["csgo_perk_ace.description"] = "33% chance to deal double damage to NPC's.\n<color=255,100,100>Does nothing to players</color>."
+L["csgo_perk_ace.description"] = "33% chans att göra dubbel skada på NPC:er.\n<color=255,100,100>Gör inget mot spelare</color>."
 
--- L["csgo_perk_bolt.printname"] = "Dexterity"
--- L["csgo_perk_bolt.compactname"] = "Dexterity"
--- L["csgo_perk_bolt.description"] = "Improves weapon rechamber speed."
+L["csgo_perk_bolt.printname"] = "Rörlighet"
+L["csgo_perk_bolt.compactname"] = "Rörlighet"
+L["csgo_perk_bolt.description"] = "Förbättrar vapnets cykelhastighet."
 
 L["csgo_perk_burst.printname"] = "Förbättrad Salvo"
 L["csgo_perk_burst.compactname"] = "Salvo"
@@ -961,7 +968,7 @@ L["csgo_perk_diver.description"] = "Aktiverar förmågan att skjuta medans under
 
 L["csgo_perk_melee_lounge.printname"] = "Utfall"
 L["csgo_perk_melee_lounge.compactname"] = "Utfall"
--- L["csgo_perk_melee_lounge.description"] = "Enables the ability to lunge towards an enemy when meleeing."
+L["csgo_perk_melee_lounge.description"] = "Aktiverar förmågan att utföra snabba utfall mot en fiende när du anfaller med närstrid."
 
 L["csgo_perk_melee_speed.printname"] = "Knivhuggare"
 L["csgo_perk_melee_speed.compactname"] = "Knivhuggare"
@@ -970,7 +977,7 @@ L["csgo_perk_melee_speed.description"] = "Ökar närstridshastigheten."
 /////////////////// Perks, added later
 L["csgo_perk_last.printname"] = "Sista Ut"
 L["csgo_perk_last.compactname"] = "Sista Ut"
--- L["csgo_perk_last.description"] = "Increases damage on the final round in the magazine."
+L["csgo_perk_last.description"] = "Ökar skadan på magasinets sista skott."
 
 L["csgo_perk_light.printname"] = "Lättvikt Ram"
 L["csgo_perk_light.compactname"] = "Lättvikt"
@@ -1028,19 +1035,19 @@ L["csgo_sticker_zeusception_holo.description"] = "Klistermärke inkluderad i <co
 /////////////////// Underbarrel Weapons
 L["go_ubgl_m203.printname"] = "M203 Granattillsats"
 L["go_ubgl_m203.compactname"] = "M203"
--- L["go_ubgl_m203.description"] = "Installs an undermounted grenade launcher.\n\nBoom, baby, boom!"
+L["go_ubgl_m203.description"] = "Monterar en undermonterad granattillsats.\n\nBoom, baby, boom!"
 
 L["go_ubgl_m203_sight.printname"] = "M203-Sikte"
 L["go_ubgl_m203_sight.compactname"] = "Sikte"
--- L["go_ubgl_m203_sight.description"] = "Installs a side-mounted sight, allowing aiming with the M203 Grenade Launcher."
+L["go_ubgl_m203_sight.description"] = "Monterar ett sidomonterat sikte, vilket tillåter att du kan sikta med granattillsatsen M203."
 
 L["go_ubgl_mass26.printname"] = "MASS-26 Hagelgevär"
 L["go_ubgl_mass26.compactname"] = "MASS"
--- L["go_ubgl_mass26.description"] = "Installs an undermounted pump-action shotgun."
+L["go_ubgl_mass26.description"] = "Monterar en undermonterad pumprepeter hagelbössa."
 
 L["go_ubgl_xm1014.printname"] = "XM1014 Hagelgevär"
 L["go_ubgl_xm1014.compactname"] = "XM1014"
--- L["go_ubgl_xm1014.description"] = "Installs an undermounted semi-automatic shotgun."
+L["go_ubgl_xm1014.description"] = "Monterar en undermonterad halvautomatisk hagelbössa."
 
 /////////////////// Weapon Specific
 -- "Universal"
@@ -1976,7 +1983,7 @@ L["csgo_xm1014_mag_fed.compactname"] = "5S Låda"
 L["csgo_xm1014_mag_fed.description"] = "Ersätter rörmagasinet med ett traditionellt lådmagasin.\nKan inte längre ladda individuellt.\nSänker lätt magasinkapaciteten och vapenhanteringen."
 
 -- Escape from Tarkov Integration
-eftdesc = "Aktiverar förmågan att utrusta tillbehör från EFT-tilläggen.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar.\n\"Ergonomics\" har ingen effekt."
+eftdesc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>Escape from Tarkov</color>-tilläggen.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar.\n<color=175,175,255>Ergonomics</color> har ingen effekt."
 
 L["go_eft_scopes.printname"] = "Escape from Tarkov - Sikten"
 L["go_eft_scopes.compactname"] = "EFT"
@@ -1999,7 +2006,7 @@ L["go_eft_muzzle.compactname"] = "EFT"
 L["go_eft_muzzle.description"] = eftdesc
 
 -- Gunsmith Arms: Source integration
-gasdesc = "Aktiverar förmågan att utrusta tillbehör från Gunsmith Arms: Source-tillägget.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar."
+gasdesc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>Gunsmith Arms: Source</color>-tillägget.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar."
 
 L["go_gas_scopes.printname"] = "Gunsmith Arms: Source - Sikten"
 L["go_gas_scopes.compactname"] = "GAS"
@@ -2014,24 +2021,24 @@ L["go_gas_muzzle.compactname"] = "GAS"
 L["go_gas_muzzle.description"] = gasdesc
 
 -- cod Packs Integration
-coddesc = "Aktiverar förmågan att utrusta tillbehör från Black Ops Classic / Modern Warfare Classic-tilläggen.\n\nNotera: Inte optimerad för GSR - kan orsaka visuella glitchar."
+coddesc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>Black Ops & Modern Warfare Classic</color>-tilläggen.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar."
 
-L["go_cod_scopes.printname"] = "Black Ops Classic | Modern Warfare Classic - Sikten"
+L["go_cod_scopes.printname"] = "Black Ops & Modern Warfare Classic - Sikten"
 L["go_cod_scopes.compactname"] = "BOC/MWC"
 L["go_cod_scopes.description"] = coddesc
 
-L["go_cod_scopes_pistol.printname"] = "Black Ops Classic | Modern Warfare Classic - Sikten"
+L["go_cod_scopes_pistol.printname"] = "Black Ops & Modern Warfare Classic - Sikten"
 L["go_cod_scopes_pistol.compactname"] = "BOC/MWC"
 L["go_cod_scopes_pistol.description"] = coddesc
 
-L["go_cod_rail.printname"] = "Black Ops Classic | Modern Warfare Classic - Skena"
+L["go_cod_rail.printname"] = "Black Ops & Modern Warfare Classic - Skena"
 L["go_cod_rail.compactname"] = "BOC/MWC"
 L["go_cod_rail.description"] = coddesc
 
-L["go_cod_grips.printname"] = "Black Ops Classic | Modern Warfare Classic - Framgrepp"
+L["go_cod_grips.printname"] = "Black Ops & Modern Warfare Classic - Framgrepp"
 L["go_cod_grips.compactname"] = "BOC/MWC"
 L["go_cod_grips.description"] = coddesc
 
-L["go_cod_muzzle.printname"] = "Black Ops Classic | Modern Warfare Classic - Mynningstillbehör"
+L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Mynningstillbehör"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc

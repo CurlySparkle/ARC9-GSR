@@ -158,7 +158,7 @@ L["csgo_weapon_knife_widowmaker"] = "Talon Knife"
 L["csgo_weapon_knife_stiletto"] = "Stiletto Knife"
 L["csgo_weapon_knife_skeleton"] = "Skeleton Knife"
 
-L["csgo_weapon_m3"] = "Benelli M3 Super 90"
+L["csgo_weapon_m3"] = "M3"
 
 L["csgo_weapon_m4a1"] = "M4A1-S"
 L["csgo_weapon_m4a1_m16a3"] = "M16A3-S"
@@ -410,6 +410,8 @@ L["csgo_folder_muzzlebrake"] = "Muzzle Brake"
 L["csgo_folder_suppressor"] = "Suppressor"
 L["csgo_folder_ubgl"] = "Weapon"
 L["csgo_folder_tube"] = "Tube"
+L["csgo_folder_special"] = "Special"
+L["csgo_folder_scopes"] = "Scopes"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Ammo"
@@ -424,7 +426,7 @@ L["csgo_category_gripping"] = "Gripping"
 L["csgo_category_mag"] = "Magazine"
 L["csgo_category_model"] = "Model"
 L["csgo_category_muzzle"] = "Muzzle"
-L["csgo_category_optics"] = "Optics"
+L["csgo_category_optics"] = "Optic"
 L["csgo_category_perk"] = "Perk"
 L["csgo_category_pistolgrip"] = "Pistol Grip"
 L["csgo_category_rail"] = "Rail"
@@ -464,6 +466,10 @@ L["csgo_stat_light"] = "Light"
 
 L["csgo_stat_global"] = "Globally"
 L["csgo_stat_curlife"] = "Current Life"
+
+/////////////////// Optic Stats
+L["gsr_zoomlevel"] = "Zoom Level"
+L["gsr_ifstat"] = "%s - %s"
 
 /////////////////// Optics with Magnifiers
 L["csgo_optic_2x_aimpoint.printname"] = "Aimpoint CompM4 with 2x Magnifier"
@@ -505,7 +511,7 @@ L["csgo_optic_c79.description"] = "Medium-range combat optic with <color=100,255
 
 L["csgo_optic_pkas.printname"] = "PK-AS"
 L["csgo_optic_pkas.compactname"] = "PK-AS"
-L["csgo_optic_pkas.description"] = "Russian-made combat optic with <color=100,255,100>1.5x magnification</color>."
+L["csgo_optic_pkas.description"] = "Russian-made combat optic."
 
 L["csgo_optic_scope_awp.printname"] = "AWP Scope"
 L["csgo_optic_scope_awp.compactname"] = "AWP"
@@ -585,8 +591,11 @@ L["csgo_optic_t1_lp.compactname"] = "T1 LP"
 L["csgo_optic_trijicon.printname"] = "Trijicon RMR, Low Profile"
 L["csgo_optic_trijicon.compactname"] = "RMR LP"
 
-L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO"
-L["csgo_optic_trijicon_alt.compactname"] = "SRO"
+L["csgo_optic_trijicon_alt.printname"] = "Trijicon SRO, Low Profile"
+L["csgo_optic_trijicon_alt.compactname"] = "SRO LP"
+
+L["csgo_optic_trijicon_alt_nonrail.printname"] = "Trijicon SRO"
+L["csgo_optic_trijicon_alt_nonrail.compactname"] = "SRO"
 
 L["csgo_optic_trijicon_mro.printname"] = "Trijicon MRO"
 L["csgo_optic_trijicon_mro.compactname"] = "MRO"
@@ -1961,8 +1970,8 @@ L["csgo_xm1014_mag_fed.printname"] = "5-Round Box Magazine"
 L["csgo_xm1014_mag_fed.compactname"] = "5S Box"
 L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine.\nCan no longer single load.\nSlightly decreases the magazine capacity and weapon handling."
 
--- Escape from Tarkov Integration
-eftdesc = "Enables the ability to equip attachments from the EFT packs.\n\nNote: Not optimised for GSR - may cause visual glitches.\n\"Ergonomics\" have no effect."
+-- Integration: Escape from Tarkov
+eftdesc = "Enables the ability to equip attachments from the <color=255,255,100>Escape from Tarkov</color> packs.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches.\n<color=175,175,255>Ergonomics</color> have no effect."
 
 L["go_eft_scopes.printname"] = "Escape from Tarkov - Optics"
 L["go_eft_scopes.compactname"] = "EFT"
@@ -1984,8 +1993,8 @@ L["go_eft_muzzle.printname"] = "Escape from Tarkov - Muzzle"
 L["go_eft_muzzle.compactname"] = "EFT"
 L["go_eft_muzzle.description"] = eftdesc
 
--- Gunsmith Arms: Source integration
-gasdesc = "Enables the ability to equip attachments from the Gunsmith Arms: Source pack.\n\nNote: Not optimised for GSR - may cause visual glitches."
+-- Integration: Gunsmith Arms: Source
+gasdesc = "Enables the ability to equip attachments from the <color=255,255,100>Gunsmith Arms: Source</color> pack.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
 
 L["go_gas_scopes.printname"] = "Gunsmith Arms: Source - Optics"
 L["go_gas_scopes.compactname"] = "GAS"
@@ -1999,26 +2008,26 @@ L["go_gas_muzzle.printname"] = "Gunsmith Arms: Source - Muzzle"
 L["go_gas_muzzle.compactname"] = "GAS"
 L["go_gas_muzzle.description"] = gasdesc
 
--- cod Packs Integration
-coddesc = "Enables the ability to equip attachments from the Black Ops Classic / Modern Warfare Classic packs.\n\nNote: Not optimised for GSR - may cause visual glitches."
+-- Integration: BO and MWC Packs
+coddesc = "Enables the ability to equip attachments from the <color=255,255,100>Black Ops & Modern Warfare Classic</color> packs.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
 
-L["go_cod_scopes.printname"] = "Black Ops Classic | Modern Warfare Classic - Optics"
+L["go_cod_scopes.printname"] = "Black Ops & Modern Warfare Classic - Optics"
 L["go_cod_scopes.compactname"] = "BOC/MWC"
 L["go_cod_scopes.description"] = coddesc
 
-L["go_cod_scopes_pistol.printname"] = "Black Ops Classic | Modern Warfare Classic - Optics"
+L["go_cod_scopes_pistol.printname"] = "Black Ops & Modern Warfare Classic - Optics"
 L["go_cod_scopes_pistol.compactname"] = "BOC/MWC"
 L["go_cod_scopes_pistol.description"] = coddesc
 
-L["go_cod_rail.printname"] = "Black Ops Classic | Modern Warfare Classic - Rail"
+L["go_cod_rail.printname"] = "Black Ops & Modern Warfare Classic - Rail"
 L["go_cod_rail.compactname"] = "BOC/MWC"
 L["go_cod_rail.description"] = coddesc
 
-L["go_cod_grips.printname"] = "Black Ops Classic | Modern Warfare Classic - Foregrips"
+L["go_cod_grips.printname"] = "Black Ops & Modern Warfare Classic - Foregrips"
 L["go_cod_grips.compactname"] = "BOC/MWC"
 L["go_cod_grips.description"] = coddesc
 
-L["go_cod_muzzle.printname"] = "Black Ops Classic | Modern Warfare Classic - Muzzle"
+L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Muzzle"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
 
@@ -2189,8 +2198,6 @@ L["csgo_optic_rmr3_rifle.description"] = ARC9:GetPhrase("csgo_optic_rmr_rifle.de
 
 L["csgo_optic_t1_lp.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
 
-L["csgo_optic_trijicon_alt_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.printname") or "Trijicon SRO"
-L["csgo_optic_trijicon_alt_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.compactname") or "SRO"
 L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
 
 L["csgo_optic_trijicon_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.printname") or "Trijicon RMR"
@@ -2202,3 +2209,5 @@ L["csgo_optic_trijicon_mro.description"] = ARC9:GetPhrase("csgo_optic_trijicon_a
 L["csgo_optic_trijicon.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
 
 L["csgo_optic_trijicon_alt.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+
+L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
