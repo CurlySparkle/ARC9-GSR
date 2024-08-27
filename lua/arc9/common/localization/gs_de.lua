@@ -411,6 +411,8 @@ L["csgo_folder_suppressor"] = "Schalldämpfer"
 L["csgo_folder_ubgl"] = "Waffe"
 L["csgo_folder_tube"] = "Rohr"
 L["csgo_folder_special"] = "Spezial"
+L["csgo_folder_scopes"] = "Zielfernrohr"
+-- L["csgo_folder_holdtype"] = "Hold Type"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Munition"
@@ -712,11 +714,11 @@ L["go_grip_assault.compactname"] = "Assault"
 /////////////////// Alt. Holding Styles
 L["go_holdstyle_1.printname"] = "Alt. Hold-Stil"
 L["go_holdstyle_1.compactname"] = "Alt. Halten"
-L["go_holdstyle_1.description"] = "Ändert den Haltestil der Waffe."
+-- L["go_holdstyle_1.description"] = "Ändert den Haltestil der Waffe.\nPurely <color=175,175,255>cosmetic</color>"
 
 L["go_holdstyle_augf.printname"] = "Gefalteter Griff"
 L["go_holdstyle_augf.compactname"] = "Gefaltet"
--- L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon.\nPurely <color=175,175,255>cosmetic</color>."
+-- L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon."
 
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Erweiterte Zeitschriften"
@@ -2037,3 +2039,57 @@ L["go_cod_grips.description"] = coddesc
 L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Maulkorb"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
+
+-- Integration: MW19
+mw19desc = "Enables the ability to equip attachments from the <color=255,255,100>Modern Warfare 2019</color> pack.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
+
+L["go_mw19_scopes.printname"] = "Modern Warfare 2019 - Optik"
+L["go_mw19_scopes.compactname"] = "MW19"
+L["go_mw19_scopes.description"] = mw19desc
+
+L["go_mw19_scopes_pistol.printname"] = "Modern Warfare 2019 - Optik"
+L["go_mw19_scopes_pistol.compactname"] = "MW19"
+L["go_mw19_scopes_pistol.description"] = mw19desc
+
+L["go_mw19_rail.printname"] = "Modern Warfare 2019 - Schiene"
+L["go_mw19_rail.compactname"] = "MW19"
+L["go_mw19_rail.description"] = mw19desc
+
+L["go_mw19_grips.printname"] = "Modern Warfare 2019 - Griff"
+L["go_mw19_grips.compactname"] = "MW19"
+L["go_mw19_grips.description"] = mw19desc
+
+L["go_mw19_muzzle.printname"] = "Modern Warfare 2019 - Maulkorb"
+L["go_mw19_muzzle.compactname"] = "MW19"
+L["go_mw19_muzzle.description"] = mw19desc
+
+L["go_mw19_stocks.printname"] = "Modern Warfare 2019 - Aktie"
+L["go_mw19_stocks.compactname"] = "MW19"
+L["go_mw19_stocks.description"] = mw19desc
+
+-- Integration: PolyArms
+polydesc = "Enables the ability to equip attachments from the <color=255,255,100>PolyArms Project</color> pack.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
+
+L["go_polyarms_scopes.printname"] = "PolyArms Project - Optik"
+L["go_polyarms_scopes.compactname"] = "PolyArms"
+L["go_polyarms_scopes.description"] = polydesc
+
+L["go_polyarms_scopes_pistol.printname"] = "PolyArms Project - Optik"
+L["go_polyarms_scopes_pistol.compactname"] = "PolyArms"
+L["go_polyarms_scopes_pistol.description"] = polydesc
+
+L["go_polyarms_rail.printname"] = "PolyArms Project - Schiene"
+L["go_polyarms_rail.compactname"] = "PolyArms"
+L["go_polyarms_rail.description"] = polydesc
+
+L["go_polyarms_grips.printname"] = "PolyArms Project - Griff"
+L["go_polyarms_grips.compactname"] = "PolyArms"
+L["go_polyarms_grips.description"] = polydesc
+
+L["go_polyarms_muzzle.printname"] = "PolyArms Project - Maulkorb"
+L["go_polyarms_muzzle.compactname"] = "PolyArms"
+L["go_polyarms_muzzle.description"] = polydesc
+
+L["go_polyarms_stocks.printname"] = "PolyArms Project - Aktie"
+L["go_polyarms_stocks.compactname"] = "PolyArms"
+L["go_polyarms_stocks.description"] = mw19desc

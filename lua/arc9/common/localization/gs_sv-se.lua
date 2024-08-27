@@ -411,6 +411,8 @@ L["csgo_folder_suppressor"] = "Ljuddämpare"
 L["csgo_folder_ubgl"] = "Vapen"
 L["csgo_folder_tube"] = "Rör"
 L["csgo_folder_special"] = "Special"
+L["csgo_folder_scopes"] = "Sikten"
+L["csgo_folder_holdtype"] = "Håll typ"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Ammo"
@@ -712,11 +714,11 @@ L["go_grip_assault.description"] = "Anpassat framgrepp vinklat 45 grader vänste
 /////////////////// Alt. Holding Styles
 L["go_holdstyle_1.printname"] = "Alt. Hållstil"
 L["go_holdstyle_1.compactname"] = "Alt. Håll."
-L["go_holdstyle_1.description"] = "Ändrar vapnets hållstil."
+L["go_holdstyle_1.description"] = "Ändrar vapnets hållstil.\nEndast <color=175,175,255>kosmetiskt</color>"
 
 L["go_holdstyle_augf.printname"] = "Hopfällt Grepp"
 L["go_holdstyle_augf.compactname"] = "Hopfällt"
-L["go_holdstyle_augf.description"] = "Viker framgreppet uppåt vilket ändrar hur du håller vapnet.\nEnbart <color=175,175,255>kosmetiskt</color>."
+L["go_holdstyle_augf.description"] = "Viker framgreppet uppåt vilket ändrar hur du håller vapnet."
 
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Förlängda Magasin"
@@ -2042,3 +2044,57 @@ L["go_cod_grips.description"] = coddesc
 L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Mynningstillbehör"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
+
+-- Integration: MW19
+mw19desc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>Modern Warfare 2019</color>-tillägget.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar."
+
+L["go_mw19_scopes.printname"] = "Modern Warfare 2019 - Sikten"
+L["go_mw19_scopes.compactname"] = "MW19"
+L["go_mw19_scopes.description"] = mw19desc
+
+L["go_mw19_scopes_pistol.printname"] = "Modern Warfare 2019 - Sikten"
+L["go_mw19_scopes_pistol.compactname"] = "MW19"
+L["go_mw19_scopes_pistol.description"] = mw19desc
+
+L["go_mw19_rail.printname"] = "Modern Warfare 2019 - Skena"
+L["go_mw19_rail.compactname"] = "MW19"
+L["go_mw19_rail.description"] = mw19desc
+
+L["go_mw19_grips.printname"] = "Modern Warfare 2019 - Framgrepp"
+L["go_mw19_grips.compactname"] = "MW19"
+L["go_mw19_grips.description"] = mw19desc
+
+L["go_mw19_muzzle.printname"] = "Modern Warfare 2019 - Mynningstillbehör"
+L["go_mw19_muzzle.compactname"] = "MW19"
+L["go_mw19_muzzle.description"] = mw19desc
+
+L["go_mw19_stocks.printname"] = "Modern Warfare 2019 - Kolvar"
+L["go_mw19_stocks.compactname"] = "MW19"
+L["go_mw19_stocks.description"] = mw19desc
+
+-- Integration: PolyArms
+polydesc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>PolyArms-Projektet</color>.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar."
+
+L["go_polyarms_scopes.printname"] = "PolyArms-Projektet - Sikten"
+L["go_polyarms_scopes.compactname"] = "PolyArms"
+L["go_polyarms_scopes.description"] = polydesc
+
+L["go_polyarms_scopes_pistol.printname"] = "PolyArms-Projektet - Sikten"
+L["go_polyarms_scopes_pistol.compactname"] = "PolyArms"
+L["go_polyarms_scopes_pistol.description"] = polydesc
+
+L["go_polyarms_rail.printname"] = "PolyArms-Projektet - Skena"
+L["go_polyarms_rail.compactname"] = "PolyArms"
+L["go_polyarms_rail.description"] = polydesc
+
+L["go_polyarms_grips.printname"] = "PolyArms-Projektet - Framgrepp"
+L["go_polyarms_grips.compactname"] = "PolyArms"
+L["go_polyarms_grips.description"] = polydesc
+
+L["go_polyarms_muzzle.printname"] = "PolyArms-Projektet - Mynningstillbehör"
+L["go_polyarms_muzzle.compactname"] = "PolyArms"
+L["go_polyarms_muzzle.description"] = polydesc
+
+L["go_polyarms_stocks.printname"] = "PolyArms-Projektet - Kolvar"
+L["go_polyarms_stocks.compactname"] = "PolyArms"
+L["go_polyarms_stocks.description"] = mw19desc

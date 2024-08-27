@@ -320,10 +320,6 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    ["enter_sights"] = {
-        Source = "idle",
-        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
-    },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},

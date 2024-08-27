@@ -91,10 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.5
-
--- SWEP.RecoilPerShot = 0.25
--- SWEP.RecoilMax = 1
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
@@ -103,19 +100,22 @@ SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.6
+SWEP.RecoilRandomSide = 0.33
 
-SWEP.RecoilPerShot = 0.5
+SWEP.RecoilPerShot = 0.25
+SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilKickCrouch = 1
+
+SWEP.RecoilMultRecoil = 1.75
 
 -- SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 0.95
@@ -124,14 +124,21 @@ SWEP.RecoilAutoControlMultHipFire = 0.25
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = -0.5
-SWEP.VisualRecoilUpSights = 0.25
 SWEP.VisualRecoilSide = -.05
+
+SWEP.VisualRecoilPunchSights = 1
+SWEP.VisualRecoilUpSights = .25
+SWEP.VisualRecoilSideSights = -.05
+SWEP.VisualRecoilRollSights = 1
+
+SWEP.VisualRecoilPositionBumpSights = 1
+-- SWEP.VisualRecoilPositionBumpUpSights = 0.5
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.035 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0475 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
@@ -146,6 +153,8 @@ SWEP.RecoilModifierCapSights = 0.15
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ReloadTimeMult = 0.75
 
 -------------------------- SWAY
 
@@ -175,7 +184,7 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 70
 
-SWEP.SprintPos = Vector(0, 1.5, 0.5)
+SWEP.SprintPos = Vector(2.5, -1.5, 0.5)
 SWEP.SprintAng = Angle(0, 0, 0)
 
 SWEP.SprintMidPoint = {
@@ -202,7 +211,7 @@ SWEP.CustomizePos = Vector(12.5, 45, 5)
 
 SWEP.CustomizeRotateAnchor = Vector(12.5, -4, -4)
 
-SWEP.CustomizeSnapshotPos = Vector(-1, 5, 2)
+SWEP.CustomizeSnapshotPos = Vector(1, 30, 2)
 SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
 
@@ -285,7 +294,6 @@ SWEP.Animations = {
         Source = "reload_short",
 		MinProgress = 0.725,
 		MagSwapTime = 1,
-		Mult = .9,
         IKTimeLine = {
             {
                 t = 0,
@@ -320,7 +328,6 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.85,
 		MagSwapTime = 1,
-		Mult = .9,
         IKTimeLine = {
             {
                 t = 0,
@@ -328,17 +335,17 @@ SWEP.Animations = {
                 rhik = 1
             },
             {
-                t = 0.2,
+                t = 0.1,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.8,
+                t = 0.825,
                 lhik = 0,
                 rhik = 1
             },
             {
-                t = 0.9,
+                t = 0.95,
                 lhik = 1,
                 rhik = 1
             },
@@ -357,7 +364,6 @@ SWEP.Animations = {
         Source = "reload2",
 		MinProgress = 0.85,
 		MagSwapTime = 1,
-		Mult = .9,
         IKTimeLine = {
             {
                 t = 0,
@@ -503,10 +509,6 @@ SWEP.Animations = {
     },
     ["idle"] = {
         Source = "idle",
-    },
-    ["enter_sights"] = {
-        Source = "idle",
-        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["idle_sprint"] = {
         Source = "sprint",

@@ -410,7 +410,9 @@ L["csgo_folder_muzzlebrake"] = "Freno de boca"
 L["csgo_folder_suppressor"] = "Supresor"
 L["csgo_folder_ubgl"] = "Arma"
 L["csgo_folder_tube"] = "Tubo"
-L["csgo_folder_special"] = "Special"
+-- L["csgo_folder_special"] = "Special"
+-- L["csgo_folder_scopes"] = "Scopes"
+-- L["csgo_folder_holdtype"] = "Hold Type"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Munición"
@@ -712,11 +714,11 @@ L["go_grip_assault.compactname"] = "Assault"
 /////////////////// Alt. Holding Styles
 L["go_holdstyle_1.printname"] = "Estilo de agarre Alt."
 L["go_holdstyle_1.compactname"] = "Agarre Alt."
-L["go_holdstyle_1.description"] = "Altera el estilo de agarre del arma."
+-- L["go_holdstyle_1.description"] = "Altera el estilo de agarre del arma.\nPurely <color=175,175,255>cosmetic</color>."
 
 L["go_holdstyle_augf.printname"] = "Grip Plegado"
 L["go_holdstyle_augf.compactname"] = "Plegado"
--- L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon.\nPurely <color=175,175,255>cosmetic</color>."
+-- L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon."
 
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Cargadores Ampliados"
@@ -2037,3 +2039,57 @@ L["go_cod_grips.description"] = coddesc
 L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Boca"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
+
+-- Integration: MW19
+mw19desc = "Permite equipar accesorios de los packs de <color=255,255,100>Modern Warfare 2019</color> pack.\n\n<color=255,100,100>ADVERTENCIA</color>: No optimizado para Gunsmith Reloaded - puede causar fallos visuales."
+
+L["go_mw19_scopes.printname"] = "Modern Warfare 2019 - Visores"
+L["go_mw19_scopes.compactname"] = "MW19"
+L["go_mw19_scopes.description"] = mw19desc
+
+L["go_mw19_scopes_pistol.printname"] = "Modern Warfare 2019 - Visores"
+L["go_mw19_scopes_pistol.compactname"] = "MW19"
+L["go_mw19_scopes_pistol.description"] = mw19desc
+
+L["go_mw19_rail.printname"] = "Modern Warfare 2019 - Riel"
+L["go_mw19_rail.compactname"] = "MW19"
+L["go_mw19_rail.description"] = mw19desc
+
+L["go_mw19_grips.printname"] = "Modern Warfare 2019 - Grip"
+L["go_mw19_grips.compactname"] = "MW19"
+L["go_mw19_grips.description"] = mw19desc
+
+L["go_mw19_muzzle.printname"] = "Modern Warfare 2019 - Boca"
+L["go_mw19_muzzle.compactname"] = "MW19"
+L["go_mw19_muzzle.description"] = mw19desc
+
+L["go_mw19_stocks.printname"] = "Modern Warfare 2019 - Culata"
+L["go_mw19_stocks.compactname"] = "MW19"
+L["go_mw19_stocks.description"] = mw19desc
+
+-- Integration: PolyArms
+polydesc = "Permite equipar accesorios de los packs de <color=255,255,100>PolyArms Project</color> pack.\n\n<color=255,100,100>ADVERTENCIA</color>: No optimizado para Gunsmith Reloaded - puede causar fallos visuales."
+
+L["go_polyarms_scopes.printname"] = "PolyArms Project - Visores"
+L["go_polyarms_scopes.compactname"] = "PolyArms"
+L["go_polyarms_scopes.description"] = polydesc
+
+L["go_polyarms_scopes_pistol.printname"] = "PolyArms Project - Visores"
+L["go_polyarms_scopes_pistol.compactname"] = "PolyArms"
+L["go_polyarms_scopes_pistol.description"] = polydesc
+
+L["go_polyarms_rail.printname"] = "PolyArms Project - Riel"
+L["go_polyarms_rail.compactname"] = "PolyArms"
+L["go_polyarms_rail.description"] = polydesc
+
+L["go_polyarms_grips.printname"] = "PolyArms Project - Grip"
+L["go_polyarms_grips.compactname"] = "PolyArms"
+L["go_polyarms_grips.description"] = polydesc
+
+L["go_polyarms_muzzle.printname"] = "PolyArms Project - Boca"
+L["go_polyarms_muzzle.compactname"] = "PolyArms"
+L["go_polyarms_muzzle.description"] = polydesc
+
+L["go_polyarms_stocks.printname"] = "PolyArms Project - Culata"
+L["go_polyarms_stocks.compactname"] = "PolyArms"
+L["go_polyarms_stocks.description"] = mw19desc

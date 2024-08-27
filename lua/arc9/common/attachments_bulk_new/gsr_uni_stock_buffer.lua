@@ -14,7 +14,7 @@ local sharedcode = {
 	MenuCategory = "ARC9 - CSGO Attachments",
 }
 
-//////////////////////////////////////      Buffer Tube
+////////////////////////////////////// Buffer Tube
 
 ATT = {}
 

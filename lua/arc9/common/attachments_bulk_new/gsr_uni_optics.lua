@@ -20,7 +20,7 @@ local sharedcode = {
 
 }
 
-//////////////////////////////////////      Optics with Magnifiers
+////////////////////////////////////// Optics with Magnifiers
 
 ATT = {}
 
@@ -289,7 +289,7 @@ ATT.SortOrder = 2
 
 ARC9.LoadAttachment(ATT, "csgo_optic_2x_okp")
 
-//////////////////////////////////////      Magnified Optics
+////////////////////////////////////// Magnified Optics
 
 ATT = {}
 
@@ -1065,7 +1065,7 @@ ATT.SortOrder = 100
 
 ARC9.LoadAttachment(ATT, "csgo_optic_nvis")
 
-//////////////////////////////////////      Non-Magnified Optics
+////////////////////////////////////// Non-Magnified Optics
 
 ATT = {}
 
@@ -1385,12 +1385,15 @@ ATT.AimDownSightsTimeMult = 1.1
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.recoilpershot")) ] = "-7.5%",
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("settings.crosshair.crosshair_peeking.title")) ] = ARC9:GetPhrase("autostat.enable.pre"),
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
-	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.recoilpershot")) ] = "-20%",
+	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15", -- Don't ask why it is like this; It allows the zoom level prompt to be above the others in the pros list.
+	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
 }
 
 ATT.CustomCons = {
-	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+15%",
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+10%",
 }
 
 table.Merge(ATT, sharedcode)
@@ -1423,7 +1426,11 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = true,
 		
-		RecoilPerShotMult = 0.8,
+		PeekPos = Vector(1.5, -5, -1.5),
+		PeekAng = Angle(0, 0, -10),
+		NoPeekCrosshair = false,
+		
+		RecoilPerShotMult = 0.95,
 		AimDownSightsTimeMult = 1.25,
     },
     {

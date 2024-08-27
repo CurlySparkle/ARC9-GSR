@@ -61,12 +61,12 @@ zeus
 Universal - Supports DONE
 Universal - Foregrips & UBGLs DONE
 Universal - Optics DONE
-Universal - Rails
-Universal - Tacticals
+Universal - Rails DONE
+Universal - Tacticals DONE
 Universal - Ammo
 Universal - Magazines
 Universal - Muzzles
-Universal - Perks
+Universal - Perks DONE
 Universal - Skins
 Universal - Stickers
 Universal - Stocks DONE

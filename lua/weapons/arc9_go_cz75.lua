@@ -321,9 +321,6 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    ["enter_sights"] = {
-        Source = "idle",
-    },
     ["fire"] = {
         Source = {"shoot1"},
     },

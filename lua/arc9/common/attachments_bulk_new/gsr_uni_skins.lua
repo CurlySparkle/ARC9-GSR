@@ -2,9 +2,11 @@ local ATT = {}
 
 --[[
 This file includes attachments related to weapon skins.
+
+These do not have any stats.
 ]]--
 
-//////////////////////////////////////      USP-S
+////////////////////////////////////// USP-S
 
 ATT = {}
 
@@ -20,7 +22,7 @@ ATT.SubMaterial1 = "skins/usp/usp_nostalgia"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_usp_nostalgia")
 
-//////////////////////////////////////      Galil AR
+////////////////////////////////////// Galil AR
 
 ATT = {}
 

@@ -63,6 +63,8 @@ SWEP.RicochetChance = 0.05
 SWEP.SwayMultSights = 0
 SWEP.FreeAimRadius = 0
 
+SWEP.NoPeekCrosshair = true
+
 -------------------------- SWAY
 SWEP.Sway = 0
 SWEP.SwayMultSights = 1

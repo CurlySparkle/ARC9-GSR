@@ -387,9 +387,6 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    ["enter_sights"] = {
-        Source = "idle",
-    },
     ["idle_sprint"] = {
         Source = "sprint",
     },

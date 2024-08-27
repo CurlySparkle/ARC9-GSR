@@ -15,7 +15,7 @@ local sharedcode = {
 	Category = "grip",
 }
 
-//////////////////////////////////////      Foregrips
+////////////////////////////////////// Foregrips
 
 ATT = {}
 
@@ -26,7 +26,7 @@ ATT.RecoilAutoControlMult = 3.5
 ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilMultMove = 0.66
 
-ATT.SprintToFireTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.1
 ATT.SpeedMult = 0.98
 
 table.Merge(ATT, sharedcode)
@@ -53,8 +53,8 @@ ATT.PrintName = "Grip Pod"
 ATT.VisualRecoilMult = 0.75
 ATT.RecoilMult = 0.75
 
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.125
 ATT.SpeedMult = 0.95
 
 ATT.Bipod = true
@@ -91,7 +91,7 @@ ATT.VisualRecoilMult = 0.9
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.33
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 table.Merge(ATT, sharedcode)
@@ -111,14 +111,23 @@ ATT = {}
 
 ATT.PrintName = "Point Shooting Foregrip"
 
-ATT.VisualRecoilMult = 0.66
-ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.75
+ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 2.5
 
-ATT.AimDownSightsTimeMult = 1.33
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SpeedMult = 0.975
 ATT.SpeedMultSights = 0.8
-ATT.SprintToFireTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.CustomPros = {
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("settings.crosshair.crosshair_peeking.title")) ] = ARC9:GetPhrase("autostat.enable.pre"),
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.recoilpershot")) ] = "-7.5%",
+}
+
+ATT.CustomCons = {
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+5%",
+}
 
 table.Merge(ATT, sharedcode)
 
@@ -147,6 +156,8 @@ ATT.ToggleStats = {
         SpreadAddRecoil = -0.01,
 		PeekPos = Vector(3, 0, 1),
 		PeekAng = Angle(-0.3, 0, 30),
+		NoPeekCrosshair = false,
+		
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -190,8 +201,8 @@ ATT.PrintName = "Vertical Foregrip"
 ATT.VisualRecoilMult = 0.7
 ATT.RecoilMult = 0.8
 
-ATT.AimDownSightsTimeMult = 1.33
-ATT.SprintToFireTimeMult = 1.25
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.125
 ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
@@ -212,12 +223,12 @@ ATT = {}
 ATT.PrintName = "Assault Grip"
 
 ATT.VisualRecoilMult = 0.7
-ATT.RecoilMult = 0.8
 ATT.RecoilUpMult = 0.8
 
-ATT.AimDownSightsTimeMult = 1.33
-ATT.SprintToFireTimeMult = 1.5
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
 ATT.SpeedMult = 0.925
+ATT.RecoilSideMult = 1.5
 
 table.Merge(ATT, sharedcode)
 
@@ -233,7 +244,7 @@ ATT.LHIK_Priority = 10
 ARC9.LoadAttachment(ATT, "go_grip_assault")
 
 
-//////////////////////////////////////      Underbarrel Weapons
+////////////////////////////////////// Underbarrel Weapons
 local rejectatts = {"barrel_stub"} -- add elements that are rejected by all three
 
 ATT = {}

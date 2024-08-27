@@ -3,57 +3,26 @@ A gigantic overhaul update is now available for Gunsmith Reloaded.
 Here's an abbrevriated version:
 [list]
 	[*] Added support for recent ARC9 base features on all weapons.
-	[*] All weapons have altered spread values and has their visual recoil either removed or adjusted
+	[*] All weapons have altered spread and recoil values and has their visual recoil either removed or adjusted
 	[*] All attachments are remade from scratch, including names, descriptions and stats
-	[*] Localizations have been redone almost from scratch, including new attachment names and descriptions
+	[*] Localizations have been updated, including altered attachment names and descriptions
 	And more!
 [/list]
 
 And here's the long, more detailed version:
 
-[b][u]Attachment Changes[/u][/b]
-[u]Notes[/u]
-All attachments have altered behaviour and brand new stats which alter the weapon stats depending on which slot they belong to. Here's a list of what some slots alter, in no particular order:
-[list]
-	[*] Ammo: Damage, Range, Spread, Recoil
-	[*] Barrel: Range, Spread, Recoil, Handling
-	[*] Grip: Recoil, Handling
-	[*] Mag: Mag Size, Handling
-	[*] Muzzle: Spread, Recoil
-	[*] Optic: Handling
-	[*] Pistol Grip: Handling
-	[*] Stock: Recoil, Handling
-	[*] Tactical: Spread, Handling
-	[*] Tube: Nothing
-[/list]
-
-Other changes:
-[list]
-	[*] Various attachments that come from specific weapons now alter their appearance depending on the skin they have applied.
-		[list]
-			[*] M4A1-S: [b]A1-S Suppressor[/b]
-			[*] M4A1: [b]Contractor Stock[/b]
-			[*] SIG556: [b]SIG556 Scope[/b]
-			[*] AWP: [b]AWP Scope[/b]
-			[*] G3SG1: [b]G3SG1 Scope[/b]
-			[*] SCAR-20: [b]SCAR-20 Scope[/b]
-		[/list]
-		[b]Requires Appearance Expansion [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]Part 1[/url] & [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]Part 2[/url]![/b]
-	[*] Optics: Magnified optics are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
-[/list]
-
 [b][u]Weapon changes[/u][/b]
 [u]All weapons[/u]
 [list]
-	[*] Reduced the overall spread and spread penalties when both moving and when mid-air.
-	[*] Heavily reduced or removed visual recoil to improve visual clarity when shooting in ADS.
-	[*] Added very slight aim sway to all weapons, tuned depending on the weapon weight.
-	[*] Adjusted the customize position on all weapons.
+	[*] Reduced spread, reduced spread penalties when moving & being mid-air
+	[*] Reduced or removed visual recoil
+	[*] Added sway when aiming
+	[*] Adjusted customization positions
 [/list]
 
 [u]Assault Rifles[/u]
-[b]AK-47[/b]: Increased overall recoil, but reduced recoil modifier when ADS.
-[b]AUG[/b]: Increased overall recoil, but increased recoil centering; Also fixed that the camera "jumped" when reloading.
+[b]AK-47[/b]: Reduced recoil
+[b]AUG[/b]: Increased recoil, increased recoil centering, fixed camera "hick-ups", improved reload speed
 [b]FAMAS[/b]: 
 [b]Galil AR[/b]: 
 [b]Galil SAR[/b]: 
@@ -111,4 +80,48 @@ Other changes:
 [b]Flip Knife[/b]: 
 
 [u]Extras[/u]
-[b]All (except Zeus x27)[/b]: Can now be thrown or planted using Quickthrow (+grenade1).
+[b]Claymore[/b]: Fixed LUA errors when planting.
+
+[b][u]Attachment Changes[/u][/b]
+[u]Brand New Stats[/u]
+All attachments have brand new stats with altered behaviour:
+[list]
+	[*] Barrels: Now alters weapon range, spread, recoil and/or handling.
+	[*] Muzzles: Now alters weapon handling and/or recoil.
+	[*] Optics: All Optics now have an ADS time and ADS sway penalty tied to their zoom level.
+	[*] Tacticals: Now alters spread and/or weapon handling.
+	[*] Underbarrels: Now alters weapon recoil and/or handling.
+	[*] Stocks: Now alters weapon recoil and/or handling.
+	[*] Magazines: Depending on the type, they now alter weapon capacity, handling, range, spread, recoil and/or damage.
+	[*] Ammo: Now alters weapon range, spread, recoil and/or handling.
+	[*] Perks: Some perks have altered values, and some have been removed due to not working as intended (Enforcer, Ace in the Hole, Last One Out, Head Hunt, Full Stop).
+[/list]
+And more that's not listed.
+
+[u]New Integrations[/u]
+Added two new sets of attachment integrations:
+[list]
+	[*] Modern Warfare 2019: Support for Optics, Tacticals, Muzzles, Grips and Stocks.
+	[*] PolyArms Project: Support for Optics, Tacticals, Muzzles, Grips and Stocks.
+[/list]
+
+[u]Other Changes[/u]
+[list]
+	[*] Various attachments that come from specific weapons now alter their appearance depending on the skin they have applied.
+		[list]
+			[*] M4A1-S: [b]A1-S Suppressor[/b]
+			[*] M4A1: [b]Contractor Stock[/b]
+			[*] SIG556: [b]SIG556 Scope[/b]
+			[*] AWP: [b]AWP Scope[/b]
+			[*] G3SG1: [b]G3SG1 Scope[/b]
+			[*] SCAR-20: [b]SCAR-20 Scope[/b]
+		[/list]
+		[b]Requires Appearance Expansion [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]Part 1[/url] & [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]Part 2[/url]![/b]
+	[*] [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
+	[*] The [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
+[/list]
+
+[b][u]Other Changes[/u][/b]
+[list]
+	[*] Xin chào người Việt Nam! Vietnamese localizations have been added thanks to [b]annesting[/b]!
+[/list]

@@ -412,6 +412,7 @@ L["csgo_folder_ubgl"] = "Weapon"
 L["csgo_folder_tube"] = "Tube"
 L["csgo_folder_special"] = "Special"
 L["csgo_folder_scopes"] = "Scopes"
+L["csgo_folder_holdtype"] = "Hold Type"
 
 /////////////////// Attachment Categories
 L["csgo_category_ammo"] = "Ammo"
@@ -714,11 +715,11 @@ L["go_grip_assault.description"] = "Custom-made foregrip angled 45 degrees to th
 /////////////////// Alt. Holding Styles
 L["go_holdstyle_1.printname"] = "Alt. Hold Style"
 L["go_holdstyle_1.compactname"] = "Alt. Hold"
-L["go_holdstyle_1.description"] = "Alters the holding style of the weapon."
+L["go_holdstyle_1.description"] = "Alters the holding style of the weapon.\nPurely <color=175,175,255>cosmetic</color>."
 
 L["go_holdstyle_augf.printname"] = "Folded Grip"
 L["go_holdstyle_augf.compactname"] = "Folded"
-L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon.\nPurely <color=175,175,255>cosmetic</color>."
+L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the way you hold the weapon."
 
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Extended Magazines"
@@ -962,7 +963,7 @@ L["csgo_perk_burst.description"] = "Changes the weapon firing mode to 3-round bu
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
-L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting."
+L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting, and improves hip-fire accuracy when moving."
 
 L["csgo_perk_diver.printname"] = "Deep Sea"
 L["csgo_perk_diver.compactname"] = "Deep Sea"
@@ -2030,6 +2031,60 @@ L["go_cod_grips.description"] = coddesc
 L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Muzzle"
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
+
+-- Integration: MW19
+mw19desc = "Enables the ability to equip attachments from the <color=255,255,100>Modern Warfare 2019</color> pack.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
+
+L["go_mw19_scopes.printname"] = "Modern Warfare 2019 - Optics"
+L["go_mw19_scopes.compactname"] = "MW19"
+L["go_mw19_scopes.description"] = mw19desc
+
+L["go_mw19_scopes_pistol.printname"] = "Modern Warfare 2019 - Optics"
+L["go_mw19_scopes_pistol.compactname"] = "MW19"
+L["go_mw19_scopes_pistol.description"] = mw19desc
+
+L["go_mw19_rail.printname"] = "Modern Warfare 2019 - Rail"
+L["go_mw19_rail.compactname"] = "MW19"
+L["go_mw19_rail.description"] = mw19desc
+
+L["go_mw19_grips.printname"] = "Modern Warfare 2019 - Foregrips"
+L["go_mw19_grips.compactname"] = "MW19"
+L["go_mw19_grips.description"] = mw19desc
+
+L["go_mw19_muzzle.printname"] = "Modern Warfare 2019 - Muzzle"
+L["go_mw19_muzzle.compactname"] = "MW19"
+L["go_mw19_muzzle.description"] = mw19desc
+
+L["go_mw19_stocks.printname"] = "Modern Warfare 2019 - Stocks"
+L["go_mw19_stocks.compactname"] = "MW19"
+L["go_mw19_stocks.description"] = mw19desc
+
+-- Integration: PolyArms
+polydesc = "Enables the ability to equip attachments from the <color=255,255,100>PolyArms Project</color> pack.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches."
+
+L["go_polyarms_scopes.printname"] = "PolyArms Project - Optics"
+L["go_polyarms_scopes.compactname"] = "PolyArms"
+L["go_polyarms_scopes.description"] = polydesc
+
+L["go_polyarms_scopes_pistol.printname"] = "PolyArms Project - Optics"
+L["go_polyarms_scopes_pistol.compactname"] = "PolyArms"
+L["go_polyarms_scopes_pistol.description"] = polydesc
+
+L["go_polyarms_rail.printname"] = "PolyArms Project - Rail"
+L["go_polyarms_rail.compactname"] = "PolyArms"
+L["go_polyarms_rail.description"] = polydesc
+
+L["go_polyarms_grips.printname"] = "PolyArms Project - Foregrips"
+L["go_polyarms_grips.compactname"] = "PolyArms"
+L["go_polyarms_grips.description"] = polydesc
+
+L["go_polyarms_muzzle.printname"] = "PolyArms Project - Muzzle"
+L["go_polyarms_muzzle.compactname"] = "PolyArms"
+L["go_polyarms_muzzle.description"] = polydesc
+
+L["go_polyarms_stocks.printname"] = "PolyArms Project - Stocks"
+L["go_polyarms_stocks.compactname"] = "PolyArms"
+L["go_polyarms_stocks.description"] = mw19desc
 
 
 ///////////////////  GetPhrase Stuff - If other language, remove everything below here!

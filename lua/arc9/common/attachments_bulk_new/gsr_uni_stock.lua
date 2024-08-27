@@ -3,7 +3,7 @@ local ATT = {}
 --[[
 This file includes attachments related to universal stocks.
 
-Stocks only affect recoil (including visual recoil) and weapon handling, such as aiming and movement speeds.
+Stocks only affect recoil (including visual recoil) and weapon handling, such as aiming and movement speeds. (Only exception is 'Collapse Stock' which alters weapon sway as well)
 
 Stats will always be placed after the "PrintName"  and before the table.Merge so they are high up and noticable.
 ]]--
@@ -15,18 +15,24 @@ local sharedcode = {
 	Category = "csgo_stock",
 }
 
-//////////////////////////////////////      Buffer Tube
+////////////////////////////////////// Buffer Tube
 
 ATT = {}
 
 ATT.PrintName = "Collapse Stock"
+
+ATT.AimDownSightsTimeMult = 0.66
+ATT.SpeedMult = 1.1
+
+ATT.RecoilMult = 1.4
+ATT.VisualRecoilMult = 1.4
+ATT.SwayMultSights = 6
 
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/stock_retract.png")
 ATT.Category = "stock_retract"
 
-ATT.Folder = ARC9:GetPhrase("csgo_folder_tube")
 ATT.ActivateElements = {"stock_retract"}
 
 ARC9.LoadAttachment(ATT, "go_stock_retract")
@@ -55,7 +61,7 @@ ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMultSights = 1.1
 ATT.VisualRecoilMult = 0.9
 
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.075
 ATT.SpeedMult = 0.98
 
 table.Merge(ATT, sharedcode)
@@ -116,7 +122,7 @@ ATT = {}
 ATT.PrintName = "Ergonomic Stock"
 
 ATT.RecoilMult = 0.95
-ATT.AimDownSightsTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
 ATT.SpeedMult = 0.98
@@ -135,11 +141,12 @@ ATT = {}
 
 ATT.PrintName = "MOE Stock"
 
-ATT.RecoilAutoControlMult = 2.25
+ATT.RecoilMult = 0.33
+ATT.VisualRecoilMult = 0.33
 
-ATT.RecoilMult = 1.25
-ATT.VisualRecoilMult = 1.25
-ATT.AimDownSightsTimeMult = 1.33
+ATT.RecoilMultRecoil = 6
+ATT.RecoilAutoControlMult = 0.1
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
