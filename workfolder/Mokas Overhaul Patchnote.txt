@@ -22,10 +22,10 @@ And here's the long, more detailed version:
 
 [u]Assault Rifles[/u]
 [b]AK-47[/b]: Reduced recoil
-[b]AUG[/b]: Increased recoil, increased recoil centering, fixed camera "hick-ups", improved reload speed
-[b]FAMAS[/b]: 
+[b]AUG[/b]: Increased recoil | Increased recoil centering | Fixed camera "hick-ups" | Improved reload speed
+[b]FAMAS[/b]: Reduced recoil centering | Improved reload speed | Burst: Reduced recoil & spread
 [b]Galil AR[/b]: 
-[b]Galil SAR[/b]: 
+[b]Galil SAR[/b]: Altered animations | Increased recoil | Reduced recoil centering | Improved reload speed
 [b]M4A1-S[/b]: 
 [b]M4A4[/b]: 
 [b]SCAR-17[/b]: 
@@ -108,16 +108,17 @@ Added two new sets of attachment integrations:
 [u]Other Changes[/u]
 [list]
 	[*] Various attachments that come from specific weapons now alter their appearance depending on the skin they have applied.
+	[i]Note: Requires Appearance Expansion [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]Part 1[/url] & [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]Part 2[/url][/i]
 		[list]
 			[*] M4A1-S: [b]A1-S Suppressor[/b]
-			[*] M4A1: [b]Contractor Stock[/b]
+			[*] M4A4: [b]Contractor Stock[/b]
 			[*] SIG556: [b]SIG556 Scope[/b]
 			[*] AWP: [b]AWP Scope[/b]
 			[*] G3SG1: [b]G3SG1 Scope[/b]
 			[*] SCAR-20: [b]SCAR-20 Scope[/b]
 		[/list]
-		[b]Requires Appearance Expansion [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]Part 1[/url] & [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]Part 2[/url]![/b]
 	[*] [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
+	[*] [u]Muzzle Brakes[/u] and [u]Suppressors[/u] are no longer placed in a separate folder and are instead unified outside of folders.
 	[*] The [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
 [/list]
 

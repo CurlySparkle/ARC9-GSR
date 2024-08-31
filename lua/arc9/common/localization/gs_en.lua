@@ -724,7 +724,7 @@ L["go_holdstyle_augf.description"] = "Folds the front grip upwards, altering the
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Extended Magazines"
 L["go_mag_extended.compactname"] = "Ext. Mag"
-L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color> by a slight bit."
+L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color>."
 
 L["go_mag_extended_ak47.printname"] = "Extended Magazines"
 L["go_mag_extended_ak47.compactname"] = "Ext. Mag"
@@ -830,8 +830,8 @@ L["csgo_ammo_exacto.printname"] = "EXtreme ACcuracy Tasked Ordnance"
 L["csgo_ammo_exacto.compactname"] = "EXACTO"
 L["csgo_ammo_exacto.description"] = "Special ammunition that provides no bullet drop at the cost of muzzle velocity."
 
-L["csgo_ammo_subsonic.printname"] = "Low Profile"
-L["csgo_ammo_subsonic.compactname"] = "LP"
+L["csgo_ammo_subsonic.printname"] = "Subsonic"
+L["csgo_ammo_subsonic.compactname"] = "Sub."
 L["csgo_ammo_subsonic.description"] = "Ammunition with reduced powder loads for easier weapon handling."
 
 L["csgo_ammo_tracer_col.printname"] = "Player Color Tracers"
@@ -862,7 +862,7 @@ L["csgo_ammo_sg_flechette.printname"] = "Flechettes"
 L["csgo_ammo_sg_flechette.compactname"] = "Flechette"
 L["csgo_ammo_sg_flechette.description"] = "Replaces the small pellets with thin, dart-shaped projectiles."
 
-L["csgo_ammo_sg_frag.printname"] = "\"FRAG-12\" High Explosive"
+L["csgo_ammo_sg_frag.printname"] = "\"FRAG-12\" High-Explosive"
 L["csgo_ammo_sg_frag.compactname"] = "FRAG-12"
 L["csgo_ammo_sg_frag.description"] = "Replaces the small pellets with a single slug that explodes on contact."
 
@@ -870,7 +870,7 @@ L["csgo_ammo_sg_rebounder.printname"] = "Rebounder Rounds"
 L["csgo_ammo_sg_rebounder.compactname"] = "Rebounder"
 L["csgo_ammo_sg_rebounder.description"] = "Replaces the pellets with specialized ones designed to bounce on contact."
 
-L["csgo_ammo_sg_frag_x4.printname"] = "\"FRAG-12\" High Explosive x4"
+L["csgo_ammo_sg_frag_x4.printname"] = "\"FRAG-12\" High-Explosive x4"
 L["csgo_ammo_sg_frag_x4.compactname"] = "FRAG-12 x4"
 L["csgo_ammo_sg_frag_x4.description"] = "Replaces the small pellets with four projectiles that explode on contact."
 
@@ -904,7 +904,7 @@ L["go_supp_m4.printname"] = "A1-S Suppressor"
 L["go_supp_m4.compactname"] = "A1-S"
 L["go_supp_m4.description"] = "Custom suppressor that reduces the decibel level from gunshots.\nOriginally made for the M4A1-S."
 
-L["go_supp_p90.printname"] = "FN P90 Attenuator"
+L["go_supp_p90.printname"] = "P90 Attenuator"
 L["go_supp_p90.compactname"] = "P90 Supp."
 L["go_supp_p90.description"] = "A tactical suppressor designed specifically for the P90 that reduces the decibel level from gunshots."
 
@@ -1053,10 +1053,10 @@ L["go_ubgl_xm1014.compactname"] = "XM1014"
 L["go_ubgl_xm1014.description"] = "Installs an undermounted semi-automatic shotgun."
 
 /////////////////// Weapon Specific
--- "Universal"
-L["csgo_barrel_short.printname"] = "Short Barrel"
-L["csgo_barrel_short.compactname"] = "Short"
-L["csgo_barrel_short.description"] = "Shortened barrel that improves weapon handling at the cost of recoil control."
+-- Appears to be unused?
+-- L["csgo_barrel_short.printname"] = "Short Barrel"
+-- L["csgo_barrel_short.compactname"] = "Short"
+-- L["csgo_barrel_short.description"] = "Shortened barrel that improves weapon handling at the cost of recoil control."
 
 L["csgo_r8_model.printname"] = "6-Round Cylinder"
 L["csgo_r8_model.compactname"] = "6R"
@@ -2199,7 +2199,7 @@ L["csgo_rail_optic_2_alt.compactname"] = ARC9:GetPhrase("csgo_rail_optic_2.compa
 L["csgo_rail_optic_2_alt.description"] = ARC9:GetPhrase("csgo_rail_optic_2.description") or "Installs an RIS rail via the dovetail, allowing installation of custom optics."
 
 L["csgo_rail_optic_4.printname"] = ARC9:GetPhrase("csgo_rail_optic_1.printname") or "Custom Optics Rail"
-L["csgo_rail_optic_4.compactname"] = ARC9:GetPhrase("csgo_rail_optic_1.printname") or "Sight Rail"
+L["csgo_rail_optic_4.compactname"] = ARC9:GetPhrase("csgo_rail_optic_1.compactname") or "Sight Rail"
 
 L["csgo_rail_ub_mp5.printname"] = ARC9:GetPhrase("csgo_rail_ub_1.printname") or "Underbarrel Picatinny Rail"
 L["csgo_rail_ub_mp5.compactname"] = ARC9:GetPhrase("csgo_rail_ub_1.compactname") or "UB Rail"

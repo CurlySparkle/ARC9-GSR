@@ -88,7 +88,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.33
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = .65 -- Multiplier for vertical recoil
@@ -99,26 +99,18 @@ SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.5
 SWEP.RecoilRandomSide = 0.8
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.75
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.6 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.8
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 1
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.8
-SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
@@ -132,42 +124,37 @@ SWEP.VisualRecoilMultCrouch = .9
 SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilPositionBumpSights = 1
-SWEP.VisualRecoilPositionBumpUpSights = .1
+SWEP.VisualRecoilPositionBumpUpSights = 0
 
 SWEP.VisualRecoilPunchSights = 5
-SWEP.VisualRecoilUpSights = .15
-SWEP.VisualRecoilSideSights = .01
-
-SWEP.VisualRecoilDampingConst = 120
-SWEP.VisualRecoilSpringPunchDamping = 12
-
--- SWEP.ViewRecoil = false
--- SWEP.ViewRecoilUpMult = 10
--- SWEP.ViewRecoilSideMult = -5
-
--- ]]--
+SWEP.VisualRecoilUpSights = -0.01
+SWEP.VisualRecoilSideSights = 0.01
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.075 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0325 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.1
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.0125
 
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
 SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
 SWEP.AimDownSightsTime = 0.35 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.ReloadTimeMult = 0.9
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -217,10 +204,12 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(12, 30, 5.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 3)
+SWEP.CustomizePos = Vector(12, 45, 5.5)
+
+SWEP.CustomizeRotateAnchor = Vector(12, -3.5, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 3.5)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
@@ -469,7 +458,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
-		Time = 0.6,
+		Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -482,6 +471,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
+		Mult = 0.8,
         MinProgress = 0.9,
         FireASAP = true,
         IKTimeLine = {

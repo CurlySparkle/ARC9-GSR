@@ -723,7 +723,7 @@ L["go_holdstyle_augf.description"] = "Viker framgreppet uppåt vilket ändrar hu
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Förlängda Magasin"
 L["go_mag_extended.compactname"] = "Förl. Mag."
-L["go_mag_extended.description"] = "<color=100,255,100>Ökar magasinkapaciteten</color> universalt en liten bit."
+L["go_mag_extended.description"] = "<color=100,255,100>Ökar magasinkapaciteten</color> universalt."
 
 L["go_mag_extended_ak47.printname"] = "Förlängda Magasin"
 L["go_mag_extended_ak47.compactname"] = "Förl. Mag."
@@ -829,8 +829,8 @@ L["csgo_ammo_exacto.printname"] = "EXtreme ACcuracy Tasked Ordnance"
 L["csgo_ammo_exacto.compactname"] = "EXACTO"
 L["csgo_ammo_exacto.description"] = "Speciell ammunition som erbjuder noll nedsläpp av skotten med kostnad av utgångshastighet."
 
-L["csgo_ammo_subsonic.printname"] = "Låg Profil"
-L["csgo_ammo_subsonic.compactname"] = "LP"
+L["csgo_ammo_subsonic.printname"] = "Subsonisk"
+L["csgo_ammo_subsonic.compactname"] = "Sub."
 L["csgo_ammo_subsonic.description"] = "Ammunition med sänkt kraftladdning för lättare vapenhantering."
 
 L["csgo_ammo_tracer_col.printname"] = "Spelare Färgade Spårljus"
@@ -892,7 +892,7 @@ L["go_muzzle_r870.description"] = "Mynningsanordning som kraftigt ökar spridnin
 
 L["go_muzzle_uzi.printname"] = "KPist. Mynningsbroms"
 L["go_muzzle_uzi.compactname"] = "KPist. MB"
-L["go_muzzle_uzi.description"] = "Mynningsbroms som rätar ut rekylmönstret med kostnad på ökad vertikal rekyl."
+L["go_muzzle_uzi.description"] = "Mynningsbroms som sänker sida-till-sida-rekylen gjord för eldvapen av mindre kaliber."
 
 /////////////////// Suppressors
 L["go_supp_233.printname"] = "Lättvikt Ljuddämpare"
@@ -903,7 +903,7 @@ L["go_supp_m4.printname"] = "A1-S-Ljuddämpare"
 L["go_supp_m4.compactname"] = "A1-S"
 L["go_supp_m4.description"] = "Anpassad ljuddämpare som sänker decibelnivån på skottljud.\nEgentligen gjord till M4A1-S."
 
-L["go_supp_p90.printname"] = "FN P90 Attenuator"
+L["go_supp_p90.printname"] = "P90 Attenuator"
 L["go_supp_p90.compactname"] = "P90 Ljudd."
 L["go_supp_p90.description"] = "En taktisk ljuddämpare designad specikt till P90:n för att sänka decibelnivån på skottljud."
 
@@ -925,7 +925,7 @@ L["go_supp_tirant45.description"] = "Taktisk ljuddämpare som sänker decibelniv
 
 L["go_supp_clothwrapped.printname"] = "Tyglindad Ljuddämpare"
 L["go_supp_clothwrapped.compactname"] = "Tyglindad"
-L["go_supp_clothwrapped.description"] = "Taktiskt ljuddämpare invirrad i tyg som sänker decibelnivån på skottljud."
+L["go_supp_clothwrapped.description"] = "Taktisk ljuddämpare invirrad i tyg som sänker decibelnivån på skottljud."
 
 L["go_supp_m110.printname"] = "M110-Ljuddämpare"
 L["go_supp_m110.compactname"] = "M110"
@@ -962,7 +962,7 @@ L["csgo_perk_burst.description"] = "Byter vapnets skjutläge till 3-skottsalva."
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
-L["csgo_perk_cowboy.description"] = "Aktiverar förmågan att skjuta medans man springer."
+L["csgo_perk_cowboy.description"] = "Aktiverar förmågan att skjuta när du springer, och förbättrar träffsäkerheten från höften under rörelse."
 
 L["csgo_perk_diver.printname"] = "Djupt Hav"
 L["csgo_perk_diver.compactname"] = "Djupt Hav"
@@ -1020,7 +1020,7 @@ L["csgo_sticker_kawaii_ct_holo.description"] = "Klistermärke inkluderad i <colo
 
 L["csgo_sticker_nice_try_holo.printname"] = "Nice Try"
 L["csgo_sticker_nice_try_holo.compactname"] = "Nice Try"
-L["csgo_sticker_nice_try_holo.description"] = "Klistermärke inkluderad i Gunsmith Reloaded.\nBra försök, pucko."
+L["csgo_sticker_nice_try_holo.description"] = "Klistermärke inkluderad i <color=255,150,50>Gunsmith Reloaded</color>.\nBra försök, pucko."
 
 L["csgo_sticker_noble_steed.printname"] = "Noble Steed"
 L["csgo_sticker_noble_steed.compactname"] = "Noble Steed"
@@ -1052,10 +1052,10 @@ L["go_ubgl_xm1014.compactname"] = "XM1014"
 L["go_ubgl_xm1014.description"] = "Monterar en undermonterad halvautomatisk hagelbössa."
 
 /////////////////// Weapon Specific
--- "Universal"
-L["csgo_barrel_short.printname"] = "Kort Pipa"
-L["csgo_barrel_short.compactname"] = "Kort"
-L["csgo_barrel_short.description"] = "Förkortad pipa som förbättrar vapenhantering med kostnad på rekylkontroll."
+-- Appears to be unused?
+-- L["csgo_barrel_short.printname"] = "Kort Pipa"
+-- L["csgo_barrel_short.compactname"] = "Kort"
+-- L["csgo_barrel_short.description"] = "Förkortad pipa som förbättrar vapenhantering med kostnad på rekylkontroll."
 
 L["csgo_r8_model.printname"] = "6-Skott Cylinder"
 L["csgo_r8_model.compactname"] = "6S"

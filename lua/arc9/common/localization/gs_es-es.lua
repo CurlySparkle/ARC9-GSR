@@ -723,7 +723,7 @@ L["go_holdstyle_augf.compactname"] = "Plegado"
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Cargadores Ampliados"
 L["go_mag_extended.compactname"] = "Carg. Amp"
--- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color> by a slight bit."
+-- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color>."
 
 L["go_mag_extended_ak47.printname"] = "Cargadores Ampliados"
 L["go_mag_extended_ak47.compactname"] = "Carg. Amp"
@@ -829,8 +829,8 @@ L["csgo_ammo_exacto.printname"] = "Artillería de Precisión Extrema"
 L["csgo_ammo_exacto.compactname"] = "EXACTO"
 L["csgo_ammo_exacto.description"] = "Munición especial que no deja caer la bala a costa de reducir la velocidad de salida."
 
-L["csgo_ammo_subsonic.printname"] = "Bajo Perfil"
-L["csgo_ammo_subsonic.compactname"] = "LP"
+L["csgo_ammo_subsonic.printname"] = "Subsonic"
+L["csgo_ammo_subsonic.compactname"] = "Sub."
 L["csgo_ammo_subsonic.description"] = "Munición con cargas de pólvora reducidas para facilitar el manejo del arma."
 
 L["csgo_ammo_tracer_col.printname"] = "Rastreadores de color del jugador"
@@ -903,7 +903,7 @@ L["go_supp_m4.printname"] = "Supresor A1-S"
 L["go_supp_m4.compactname"] = "A1-S"
 -- L["go_supp_m4.description"] = "Custom suppressor that reduces the decibel level from gunshots.\nOriginally made for the M4A1-S."
 
-L["go_supp_p90.printname"] = "Atenuador FN P90"
+L["go_supp_p90.printname"] = "Atenuador P90"
 L["go_supp_p90.compactname"] = "P90 Supp."
 L["go_supp_p90.description"] = "Un supresor táctico diseñado específicamente para la P90 con el fin de reducir el nivel de decibelios de los disparos."
 
@@ -962,7 +962,7 @@ L["csgo_perk_burst.description"] = "Cambia el modo de disparo del arma a ráfaga
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
-L["csgo_perk_cowboy.description"] = "Permite disparar mientras se esprinta."
+-- L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting, and improves hip-fire accuracy when moving."
 
 L["csgo_perk_diver.printname"] = "Profundidad Marina"
 L["csgo_perk_diver.compactname"] = "Mar Profundo"
@@ -1020,7 +1020,7 @@ L["csgo_sticker_kawaii_ct_holo.description"] = "Pegatina incluida en <color=255,
 
 L["csgo_sticker_nice_try_holo.printname"] = "Nice Try"
 L["csgo_sticker_nice_try_holo.compactname"] = "Nice Try"
-L["csgo_sticker_nice_try_holo.description"] = "Pegatina incluida en Gunsmith Reloaded.\nBuen intento, payazo."
+L["csgo_sticker_nice_try_holo.description"] = "Pegatina incluida en <color=255,150,50>Gunsmith Reloaded</color>.\nBuen intento, payazo."
 
 L["csgo_sticker_noble_steed.printname"] = "Noble Steed"
 L["csgo_sticker_noble_steed.compactname"] = "Noble Steed"
@@ -1052,10 +1052,10 @@ L["go_ubgl_xm1014.compactname"] = "XM1014"
 -- L["go_ubgl_xm1014.description"] = "Installs an undermounted semi-automatic shotgun."
 
 /////////////////// Weapon Specific
--- "Universal"
-L["csgo_barrel_short.printname"] = "Cañón corto"
-L["csgo_barrel_short.compactname"] = "Corto"
-L["csgo_barrel_short.description"] = "Cañón acortado que mejora el manejo del arma a costa del control del retroceso."
+-- Appears to be unused?
+-- L["csgo_barrel_short.printname"] = "Cañón corto"
+-- L["csgo_barrel_short.compactname"] = "Corto"
+-- L["csgo_barrel_short.description"] = "Cañón acortado que mejora el manejo del arma a costa del control del retroceso."
 
 L["csgo_r8_model.printname"] = "Cilindro de 6 rondas"
 L["csgo_r8_model.compactname"] = "6R"

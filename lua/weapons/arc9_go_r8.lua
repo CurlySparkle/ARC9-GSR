@@ -387,7 +387,9 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendCylinder
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["r6"] = { Bodygroups = {{0,1},},},
+	["csgo_r8_model"] = { 
+		Bodygroups = { {0,1} },
+	},
 }
 
 SWEP.HookP_NameChange = function(self, name)

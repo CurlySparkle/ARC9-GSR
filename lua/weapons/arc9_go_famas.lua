@@ -26,7 +26,7 @@ SWEP.Credits = {
 SWEP.Description = ARC9:GetPhrase("csgo_description_famas")
 
 SWEP.ViewModel = "models/weapons/csgo/c_rif_famas.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/w_rif_famas.mdl"
 SWEP.DefaultBodygroups = "000000000"
 
 SWEP.Slot = 2
@@ -85,17 +85,16 @@ SWEP.Firemodes = {
     },
     {
         Mode = 3,
-        RPM = 800,
-		-- SpreadAddRecoil = 0.0002,
-		SpreadAddHipFire = 0.02,
-		-- SpreadAddMove = 0.05,
-		--ActivePos = Vector(-0.3, 0, -0.3)
-        -- add other attachment modifiers
+        RPM = 900,
+		RunawayBurst = true,
+		PostBurstDelay = 0.25,
+		RecoilDissipationRate = 6,
+		
+		SpreadAddRecoil = -0.005,
+		RecoilMult = 0.8,
+		VisualRecoilMult = 0.5,
     }
 }
-
-SWEP.RunawayBurst = true
-SWEP.PostBurstDelay = 0.15
 
 -------------------------- RECOIL
 
@@ -111,71 +110,60 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.6
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.85 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.1 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 0.5
--- SWEP.VisualRecoilRoll = 1
-
--- [[ Moka's testing area - do not touch nor uncomment
-
-SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
+SWEP.RecoilMultCrouch = 0.85
 SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = .5
-SWEP.VisualRecoilUpSights = .2
+SWEP.VisualRecoilUpSights = 0
 SWEP.VisualRecoilSide = .15
-SWEP.VisualRecoilSideSights = .01
+SWEP.VisualRecoilSideSights = 0
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 4
 SWEP.VisualRecoilPositionBumpUp = .5
-SWEP.VisualRecoilPositionBumpUpSights = .35
+SWEP.VisualRecoilPositionBumpUpSights = .1
 SWEP.VisualRecoilMultCrouch = .85
 SWEP.VisualRecoilMultSights = .25
-
--- SWEP.VisualRecoilDampingConst = 60 -- Leave be
-SWEP.VisualRecoilSpringPunchDamping = 9
-
--- ]]--
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.035 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.075
-SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.005
-SWEP.SpreadAddSights = 0.015
+SWEP.SpreadAddCrouch = -0.01
 
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
 SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
+SWEP.ReloadTimeMult = 0.9
+
 SWEP.Bipod = true
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -223,10 +211,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32, 6)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 3)
+SWEP.CustomizePos = Vector(18, 45, 6)
+
+SWEP.CustomizeRotateAnchor = Vector(18, -6.6, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 3.5)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-2, 2, -5)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -407,6 +403,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

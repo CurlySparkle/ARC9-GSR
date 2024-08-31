@@ -354,12 +354,9 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["r6"] = { 
-	Bodygroups = {
-	{0,1},{1,1}
+	["csgo_r8_model"] = { 
+		Bodygroups = { {0,1},{1,1} },
 	},
-  --AttPosMods = { [2] = { Pos = Vector(10.5, 0.55, 1.8), } }
-  },
 }
 
 SWEP.HookP_NameChange = function(self, name)

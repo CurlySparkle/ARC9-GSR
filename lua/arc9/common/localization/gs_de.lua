@@ -723,7 +723,7 @@ L["go_holdstyle_augf.compactname"] = "Gefaltet"
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Erweiterte Zeitschriften"
 L["go_mag_extended.compactname"] = "Ext. Mag"
--- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color> by a slight bit."
+-- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color>."
 
 L["go_mag_extended_ak47.printname"] = "Erweiterte Zeitschriften"
 L["go_mag_extended_ak47.compactname"] = "Ext. Mag"
@@ -829,8 +829,8 @@ L["csgo_ammo_exacto.printname"] = "Extreme Accuracy Tasked Ordnance"
 L["csgo_ammo_exacto.compactname"] = "EXACTO"
 L["csgo_ammo_exacto.description"] = "Spezialmunition, die keinen Geschossabfall auf Kosten der Mündungsgeschwindigkeit bietet."
 
-L["csgo_ammo_subsonic.printname"] = "Niedriges Profil"
-L["csgo_ammo_subsonic.compactname"] = "LP"
+L["csgo_ammo_subsonic.printname"] = "Subsonic"
+L["csgo_ammo_subsonic.compactname"] = "Sub."
 L["csgo_ammo_subsonic.description"] = "Munition mit reduzierter Pulverladung für eine einfachere Waffenhandhabung."
 
 L["csgo_ammo_tracer_col.printname"] = "Spieler-Farbmarker"
@@ -903,7 +903,7 @@ L["go_supp_m4.printname"] = "A1-S-Unterdrücker"
 L["go_supp_m4.compactname"] = "A1-S"
 -- L["go_supp_m4.description"] = "Custom suppressor that reduces the decibel level from gunshots.\nOriginally made for the M4A1-S."
 
-L["go_supp_p90.printname"] = "FN P90 Dämpfungsglied"
+L["go_supp_p90.printname"] = "P90 Dämpfungsglied"
 L["go_supp_p90.compactname"] = "P90-Unterstützung."
 L["go_supp_p90.description"] = "Ein taktischer Unterdrücker, der speziell für den P90 entwickelt wurde, um den Dezibelpegel von Schüssen zu reduzieren."
 
@@ -962,7 +962,7 @@ L["csgo_perk_burst.description"] = "Ändert den Schussmodus zu 3er-Salve."
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
-L["csgo_perk_cowboy.description"] = "Aktiviert die Fähigkeit, beim Sprinten zu schießen."
+-- L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting, and improves hip-fire accuracy when moving."
 
 L["csgo_perk_diver.printname"] = "Tiefsee"
 L["csgo_perk_diver.compactname"] = "Tiefsee"
@@ -1052,10 +1052,10 @@ L["go_ubgl_xm1014.compactname"] = "XM1014"
 -- L["go_ubgl_xm1014.description"] = "Installs an undermounted semi-automatic shotgun."
 
 /////////////////// Weapon Specific
--- "Universal"
-L["csgo_barrel_short.printname"] = "Kurzer Lauf"
-L["csgo_barrel_short.compactname"] = "Kurz"
-L["csgo_barrel_short.description"] = "Verkürzter Lauf, der die Waffenhandhabung auf Kosten der Rückstoßkontrolle verbessert."
+-- Appears to be unused?
+-- L["csgo_barrel_short.printname"] = "Kurzer Lauf"
+-- L["csgo_barrel_short.compactname"] = "Kurz"
+-- L["csgo_barrel_short.description"] = "Verkürzter Lauf, der die Waffenhandhabung auf Kosten der Rückstoßkontrolle verbessert."
 
 L["csgo_r8_model.printname"] = "6-Runden-Zylinder"
 L["csgo_r8_model.compactname"] = "6R"

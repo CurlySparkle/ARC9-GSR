@@ -723,7 +723,7 @@ L["go_holdstyle_augf.compactname"] = "Складная"
 /////////////////// Magazines
 L["go_mag_extended.printname"] = "Расширенный магазин"
 L["go_mag_extended.compactname"] = "Расш. магазин"
--- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color> by a slight bit."
+-- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color>."
 
 L["go_mag_extended_ak47.printname"] = "Расширенный магазин"
 L["go_mag_extended_ak47.compactname"] = "Расш. магазин"
@@ -829,8 +829,8 @@ L["csgo_ammo_exacto.printname"] = "EXACTO"
 L["csgo_ammo_exacto.compactname"] = "EXACTO"
 L["csgo_ammo_exacto.description"] = "Специальные боеприпасы, обеспечивающие отсутствие падения пули ценой снижения скорости пули."
 
-L["csgo_ammo_subsonic.printname"] = "Облегчённые"
-L["csgo_ammo_subsonic.compactname"] = "ОБ"
+L["csgo_ammo_subsonic.printname"] = "Subsonic"
+L["csgo_ammo_subsonic.compactname"] = "Sub."
 L["csgo_ammo_subsonic.description"] = "Патроны с уменьшенным зарядом пороха для облегчения обращения с оружием."
 
 L["csgo_ammo_tracer_col.printname"] = "Цветовые трассировщики игрока"
@@ -903,7 +903,7 @@ L["go_supp_m4.printname"] = "Глушитель A1-S"
 L["go_supp_m4.compactname"] = "A1-S"
 -- L["go_supp_m4.description"] = "Custom suppressor that reduces the decibel level from gunshots.\nOriginally made for the M4A1-S."
 
-L["go_supp_p90.printname"] = "FN P90 Attenuator"
+L["go_supp_p90.printname"] = "P90 Attenuator"
 L["go_supp_p90.compactname"] = "Глуш. P90"
 L["go_supp_p90.description"] = "Тактический глушитель, разработанный специально для P90 для снижения уровня децибел от выстрелов."
 
@@ -962,7 +962,7 @@ L["csgo_perk_burst.description"] = "Заменяет режим стрельбы
 
 L["csgo_perk_cowboy.printname"] = "Ганг-Хо"
 L["csgo_perk_cowboy.compactname"] = "Ганг-Хо"
-L["csgo_perk_cowboy.description"] = "Позволяет стрелять во время бега."
+-- L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting, and improves hip-fire accuracy when moving."
 
 L["csgo_perk_diver.printname"] = "Глубоководный"
 L["csgo_perk_diver.compactname"] = "Глубоководный"
@@ -1052,10 +1052,10 @@ L["go_ubgl_xm1014.compactname"] = "XM1014"
 -- L["go_ubgl_xm1014.description"] = "Installs an undermounted semi-automatic shotgun."
 
 /////////////////// Weapon Specific
--- "Universal"
-L["csgo_barrel_short.printname"] = "Короткий ствол"
-L["csgo_barrel_short.compactname"] = "Короткий"
-L["csgo_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия за счёт снижения отдачи."
+-- Appears to be unused?
+-- L["csgo_barrel_short.printname"] = "Короткий ствол"
+-- L["csgo_barrel_short.compactname"] = "Короткий"
+-- L["csgo_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия за счёт снижения отдачи."
 
 L["csgo_r8_model.printname"] = "6-зарядный барабан"
 L["csgo_r8_model.compactname"] = "6-патр."
