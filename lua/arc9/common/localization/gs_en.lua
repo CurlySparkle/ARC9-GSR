@@ -1196,11 +1196,11 @@ L["csgo_bizon_hold_2.compactname"] = "Alt. Hold II"
 -- CZ75-Auto
 L["csgo_cz_slide_long.printname"] = "CZ-L Slide and Barrel"
 L["csgo_cz_slide_long.compactname"] = "CZ-L"
-L["csgo_cz_slide_long.description"] = "Slightly longer barrel and slide with the built-in muzzle brake removed."
+L["csgo_cz_slide_long.description"] = "Slightly longer slide and barrel with the built-in muzzle brake removed."
 
 L["csgo_cz_slide_short.printname"] = "CZ-C Slide and Barrel"
 L["csgo_cz_slide_short.compactname"] = "CZ-C"
-L["csgo_cz_slide_short.description"] = "Shortest barrel and slide available."
+L["csgo_cz_slide_short.description"] = "Shortest slide and barrel available."
 
 L["csgo_cz_slide_factory.printname"] = "CZ-A Barrel"
 L["csgo_cz_slide_factory.compactname"] = "CZ-A"
@@ -1213,176 +1213,154 @@ L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 -- Desert Eagle
 L["csgo_deagle_s.printname"] = "Desert Eagle Suppressor"
 L["csgo_deagle_s.compactname"] = "DE Supp."
-L["csgo_deagle_s.description"] = "A suppressor designed specifically for the Desert Eagle.\nDesigned to reduce the decibel level from gunshots. Also increases range at the cost of weapon handling."
+L["csgo_deagle_s.description"] = "A suppressor designed specifically for the Desert Eagle.\nDesigned to reduce the decibel level from gunshots."
 
-L["csgo_deagle_c.printname"] = "Desert Eagle Compensator"
+L["csgo_deagle_c.printname"] = "Compensator"
 L["csgo_deagle_c.compactname"] = "Comp."
-L["csgo_deagle_c.description"] = "Compensator designed to decrease recoil at the cost of aiming speed."
+L["csgo_deagle_c.description"] = "Special compensator that reduce side-to-side recoil."
 
-L["csgo_deagle_c_2.printname"] = "Desert Eagle Long Compensator"
+L["csgo_deagle_c_2.printname"] = "Long Compensator"
 L["csgo_deagle_c_2.compactname"] = "L-Comp."
-L["csgo_deagle_c_2.description"] = "Compensator designed to decrease recoil even further at the heavier cost of aiming speed."
+L["csgo_deagle_c_2.description"] = "Even bigger special compensator that reduces side-to-side recoil."
 
-L["csgo_deagle_barrel.printname"] = "Desert Eagle Long Barrel"
+L["csgo_deagle_barrel.printname"] = "Long Barrel"
 L["csgo_deagle_barrel.compactname"] = "Long"
-L["csgo_deagle_barrel.description"] = "Longer barrel that improves range at the cost of weapon handling."
+L["csgo_deagle_barrel.description"] = "Factory-made long barrel."
 
-L["csgo_deagle_mag_extend.printname"] = "Extended Magazines"
-L["csgo_deagle_mag_extend.compactname"] = "Ext. Mag"
-L["csgo_deagle_mag_extend.description"] = "Increases the magazine capacity at the cost of reload speed."
+L["csgo_deagle_mag_extend.printname"] = "15-Round .50 Action Express Magazine"
+L["csgo_deagle_mag_extend.compactname"] = ".50 AE+"
+L["csgo_deagle_mag_extend.description"] = string.format(quicktext.bigmag, 15)
 
 -- Beretta
-L["csgo_elite_slide_long.printname"] = "240mm L Slide and Barrel"
-L["csgo_elite_slide_long.compactname"] = "240mm L"
-L["csgo_elite_slide_long.description"] = "Longer slide and barrel that improves range and recoil control at the cost of weapon handling."
+L["csgo_elite_slide_long.printname"] = "L Slide and Barrel"
+L["csgo_elite_slide_long.compactname"] = "L"
+L["csgo_elite_slide_long.description"] = "Longer slide and barrel."
 
-L["csgo_elite_slide_short.printname"] = "170mm G Slide and Barrel"
-L["csgo_elite_slide_short.compactname"] = "170mm G"
-L["csgo_elite_slide_short.description"] = "Compact slide and barrel that improves weapon handling and firing speed at the cost of range and recoil control."
+L["csgo_elite_slide_short.printname"] = "G Slide and Barrel"
+L["csgo_elite_slide_short.compactname"] = "G"
+L["csgo_elite_slide_short.description"] = "Shortened slide and barrel."
 
 L["csgo_elite_slide_p38.printname"] = "Officer Slide"
 L["csgo_elite_slide_p38.compactname"] = "Officer"
-L["csgo_elite_slide_p38.description"] = "Compact slide and barrel replacement that improves firing speed and weapon handling at the cost of range and recoil control.\nResembles another, unsuspicious firearm from a certain era."
+L["csgo_elite_slide_p38.description"] = "Replaces the slide with a custom aftermarket one.\nResembles another, unsuspicious firearm from a certain era."
 
 L["csgo_elite_slide_raffica.printname"] = "Raffica Conversion"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Converts the Beretta to fire in 3-round burst.\nAlso adds a foregrip and compensator that improves range and recoil control at the cost of weapon handling.\nNot compatible with the <Enhanced Burst> perk."
+L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management."
 
 -- FAMAS
 L["csgo_famas_barrel_long.printname"] = "Tireur Barrel"
 L["csgo_famas_barrel_long.compactname"] = "Tireur"
-L["csgo_famas_barrel_long.description"] = "Longer barrel that improves recoil control and range at the cost of weapon handling."
+L["csgo_famas_barrel_long.description"] = "Custom marksman barrel."
 
-L["csgo_famas_barrel_short.printname"] = "405mm Raider Barrel"
-L["csgo_famas_barrel_short.compactname"] = "405mm Raider"
-L["csgo_famas_barrel_short.description"] = "Shortened barrel that improves weapon handling at the cost of recoil control and range."
+L["csgo_famas_barrel_short.printname"] = "Raider Barrel"
+L["csgo_famas_barrel_short.compactname"] = "Raider"
+L["csgo_famas_barrel_short.description"] = "Shortened barrel."
 
-L["csgo_famas_mag_30.printname"] = "30-Round Curved Magazine"
-L["csgo_famas_mag_30.compactname"] = "30R"
-L["csgo_famas_mag_30.description"] = "Curved 30-round magazine. Decreases aiming speed."
+L["csgo_famas_mag_30.printname"] = "30-Round 5.56x45mm Magazine"
+L["csgo_famas_mag_30.compactname"] = "5.56mm+"
+L["csgo_famas_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_famas_mag_long.printname"] = "60-Round Curved Casket Magazine"
-L["csgo_famas_mag_long.compactname"] = "60R"
-L["csgo_famas_mag_long.description"] = "Curved 60-round casket magazine. Decreases reload speed."
-
-L["csgo_famas_bipod_on.printname"] = "Deploy Bipod"
-L["csgo_famas_bipod_on.compactname"] = "Deploy"
-L["csgo_famas_bipod_on.description"] = "Lowers the bipod, improving recoil control at the cost of weapon handling."
-
-L["csgo_famas_view_alt.printname"] = "Alternative View"
-L["csgo_famas_view_alt.compactname"] = "Alt. View"
-L["csgo_famas_view_alt.description"] = "Alters the position of the weapon in view."
+L["csgo_famas_mag_long.printname"] = "60-Round 5.56x45mm Casket Magazine"
+L["csgo_famas_mag_long.compactname"] = "5.56mm++"
+L["csgo_famas_mag_long.description"] = string.format(quicktext.bigmag, 60)
 
 -- Five-SeveN
-L["csgo_five_slide_long.printname"] = "160mm Plus Slide and Barrel"
-L["csgo_five_slide_long.compactname"] = "160mm+"
-L["csgo_five_slide_long.description"] = "Long slide and barrel that improves range and recoil control at the cost of weapon handling."
+L["csgo_five_slide_long.printname"] = "Plus Slide and Barrel"
+L["csgo_five_slide_long.compactname"] = "Plus"
 
-L["csgo_five_slide_short.printname"] = "110mm FN Slide and Barrel"
-L["csgo_five_slide_short.compactname"] = "110mm FN"
-L["csgo_five_slide_short.description"] = "Compact slide and barrel that improves weapon handling and firing speed at the cost of recoil control and range."
+L["csgo_five_slide_short.printname"] = "FN Slide and Barrel"
+L["csgo_five_slide_short.compactname"] = "FN"
 
 -- G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Whisper Barrel"
-L["csgo_g3_barrel_sd.compactname"] = "SD"
-L["csgo_g3_barrel_sd.description"] = "Medium-length barrel with integrated suppressor.\nReduces the decibel level from gunshots and improves recoil control at the cost of muzzle velocity, range and weapon handling."
+L["csgo_g3_barrel_sd.compactname"] = "Whisper"
+L["csgo_g3_barrel_sd.description"] = "Medium-length barrel with integrated suppressor.\nReduces the decibel level from gunshots."
 
 L["csgo_g3_barrel_g3a3.printname"] = "G3A3 Barrel"
 L["csgo_g3_barrel_g3a3.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3.description"] = "Medium-length barrel from the G3A3 that improves weapon handling at the cost of range."
+L["csgo_g3_barrel_g3a3.description"] = "Medium-length barrel from the G3A3."
 
-L["csgo_g3_barrel_g3a3_smg.printname"] = "G3A3 Barrel"
-L["csgo_g3_barrel_g3a3_smg.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3_smg.description"] = "Medium-length barrel from the G3A3 that improves weapon handling at the cost of range."
+L["csgo_g3_barrel_medium.printname"] = "G3KA4 Barrel"
+L["csgo_g3_barrel_medium.compactname"] = "KA4"
+L["csgo_g3_barrel_medium.description"] = "Medium-length barrel from the G3KA4."
 
-L["csgo_g3_barrel_medium.printname"] = "400mm G3KA4 Barrel"
-L["csgo_g3_barrel_medium.compactname"] = "400mm KA4"
-L["csgo_g3_barrel_medium.description"] = "Medium-length barrel from the G3KA4 that improves weapon handling at the cost of range."
+L["csgo_g3_barrel_short.printname"] = "Kurz Barrel"
+L["csgo_g3_barrel_short.compactname"] = "Kurz"
+L["csgo_g3_barrel_short.description"] = "Shortened G3KA4 barrel."
 
-L["csgo_g3_barrel_medium_smg.printname"] = "400mm G3KA4 Barrel"
-L["csgo_g3_barrel_medium_smg.compactname"] = "400mm KA4"
-L["csgo_g3_barrel_medium_smg.description"] = "Long barrel from the G3KA4 that improves recoil and range at the cost of weapon handling."
+L["csgo_g3_mag_30.printname"] = "30-Round 7.62x51mm Magazine"
+L["csgo_g3_mag_30.compactname"] = "7.62mm+"
+L["csgo_g3_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_barrel_short.printname"] = "350mm Kurz Barrel"
-L["csgo_g3_barrel_short.compactname"] = "350mm Kurz"
-L["csgo_g3_barrel_short.description"] = "Shortened G3KA4 barrel that improves weapon handling further at the cost of range and recoil control."
+L["csgo_g3_mag_10.printname"] = "10-Round 7.62x51mm Magazine"
+L["csgo_g3_mag_10.compactname"] = "7.62mm-"
+L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_barrel_short_smg.printname"] = "350mm Kurz Barrel"
-L["csgo_g3_barrel_short_smg.compactname"] = "350mm Kurz"
-L["csgo_g3_barrel_short_smg.description"] = "Shortened G3KA4 barrel that improves weapon handling further at the cost of range and recoil control."
+L["csgo_g3_mag_30_auto.printname"] = "30-Round 7.62x51mm Magazine (Automatic)"
+L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
+L["csgo_g3_mag_30_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_30.printname"] = "30-Round Magazine"
-L["csgo_g3_mag_30.compactname"] = "30R"
-L["csgo_g3_mag_30.description"] = "Increases the magazine capacity at the cost of reload speed."
+L["csgo_g3_mag_20_auto.printname"] = "20-Round 7.62x51mm Magazine (Automatic)"
+L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
+L["csgo_g3_mag_20_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>."
 
-L["csgo_g3_mag_10.printname"] = "10-Round Magazine"
-L["csgo_g3_mag_10.compactname"] = "10R"
-L["csgo_g3_mag_10.description"] = "Decreases the magazine capacity with the benefit of improved reload speed."
-
-L["csgo_g3_mag_30_auto.printname"] = "30-Round Magazine - Automatic"
-L["csgo_g3_mag_30_auto.compactname"] = "30R [A]"
-L["csgo_g3_mag_30_auto.description"] = "Changes the firing mode to fully automatic.\nIncreases the magazine capacity and firing speed at the cost of drastically reduced damage."
-
-L["csgo_g3_mag_20_auto.printname"] = "20-Round Magazine - Automatic"
-L["csgo_g3_mag_20_auto.compactname"] = "20R [A]"
-L["csgo_g3_mag_20_auto.description"] = "Changes the firing mode to fully automatic.\nIncreases the firing speed at the cost of damage."
-
-L["csgo_g3_mag_10_auto.printname"] = "10-Round Magazine - Automatic"
-L["csgo_g3_mag_10_auto.compactname"] = "10R [A]"
-L["csgo_g3_mag_10_auto.description"] = "Changes the firing mode to fully automatic.\nDecreases the magazine capacity with the benefit of improved reload speed."
+L["csgo_g3_mag_10_auto.printname"] = "10-Round 7.62x51mm Magazine (Automatic)"
+L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
+L["csgo_g3_mag_10_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_stock_collapsed.printname"] = "Collapsible Stock"
 L["csgo_g3_stock_collapsed.compactname"] = "Collapsible"
-L["csgo_g3_stock_collapsed.description"] = "Retractable G3 stock that improves weapon handling at the cost of recoil control."
+L["csgo_g3_stock_collapsed.description"] = "Retractable G3 stock."
 
 L["csgo_g3_stock_padded.printname"] = "Cheek Riser"
 L["csgo_g3_stock_padded.compactname"] = "Cheek R."
-L["csgo_g3_stock_padded.description"] = "Standard stock with attached cheek riser.\nImproves aiming speed."
+L["csgo_g3_stock_padded.description"] = "Standard stock with attached cheek riser."
 
 L["csgo_g3_stock_fixed.printname"] = "Fixed A2 Stock"
 L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
-L["csgo_g3_stock_fixed.description"] = "Fixed shortened stock that improves recoil at the cost of aiming speed."
+L["csgo_g3_stock_fixed.description"] = "Fixed shortened stock."
 
 L["csgo_g3_mag_20_556.printname"] = "20-Round 5.56x45mm Magazine"
-L["csgo_g3_mag_20_556.compactname"] = "20R 5.56mm"
-L["csgo_g3_mag_20_556.description"] = "Converts the weapon to use 5.56x45mm magazines and makes it fully automatic.\nDecreases damage and spread."
+L["csgo_g3_mag_20_556.compactname"] = "5.56mm"
+L["csgo_g3_mag_20_556.description"] = "Converts the weapon to use 5.56x45mm magazines and makes it <color=100,255,100>fully automatic</color>."
 
 L["csgo_g3_mag_30_556.printname"] = "30-Round 5.56x45mm Magazine"
-L["csgo_g3_mag_30_556.compactname"] = "30R 5.56mm"
-L["csgo_g3_mag_30_556.description"] = "Converts the weapon to use 5.56x45mm magazines and makes it fully automatic.\nIncreases the magazine capacity at the cost of damage and spread."
+L["csgo_g3_mag_30_556.compactname"] = "5.56mm+"
+L["csgo_g3_mag_30_556.description"] = "Converts the weapon to use 5.56x45mm magazines and makes it <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_g3_mag_50_556.printname"] = "60-Round 5.56x45mm Casket Magazine"
-L["csgo_g3_mag_50_556.compactname"] = "60R 5.56mm"
-L["csgo_g3_mag_50_556.description"] = "Converts the weapon to use 5.56x45mm magazines and makes it fully automatic.\nIncreases the magazine capacity at the cost of damage and spread."
+L["csgo_g3_mag_50_556.compactname"] = "5.56mm++"
+L["csgo_g3_mag_50_556.description"] = "Converts the weapon to use 5.56x45mm magazines and makes it <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 60)
 
 L["csgo_g3_mag_20_g41.printname"] = "20-Round 5.56x45mm NATO Magazine and Adapter"
-L["csgo_g3_mag_20_g41.compactname"] = "20R NATO"
-L["csgo_g3_mag_20_g41.description"] = "Converts the weapon to use 5.56x45mm AR-15 magazines through an adapter and makes it fully automatic.\nImproves recoil control, firing speed and reload speed at the cost of damage and spread."
+L["csgo_g3_mag_20_g41.compactname"] = "NATO"
+L["csgo_g3_mag_20_g41.description"] = "Converts the weapon to use 5.56x45mm AR-15 magazines through an adapter and makes it <color=100,255,100>fully automatic</color>."
 
 L["csgo_g3_mag_30_g41.printname"] = "30-Round 5.56x45mm NATO Magazine and Adapter"
-L["csgo_g3_mag_30_g41.compactname"] = "30R NATO"
-L["csgo_g3_mag_30_g41.description"] = "Converts the weapon to use 5.56x45mm AR-15 magazines through an adapter and makes it fully automatic.\nIncreases the magazine capacity, improves recoil control and firing speed at the cost of damage, spread and reload speed."
+L["csgo_g3_mag_30_g41.compactname"] = "NATO+"
+L["csgo_g3_mag_30_g41.description"] = "Converts the weapon to use 5.56x45mm AR-15 magazines through an adapter and makes it <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_g3_mag_60_g41.printname"] = "60-Round 5.56x45mm NATO Casket Magazine and Adapter"
-L["csgo_g3_mag_60_g41.compactname"] = "60R NATO"
-L["csgo_g3_mag_60_g41.description"] = "Converts the weapon to use 5.56x45mm AR-15 magazines through an adapter and makes it fully automatic.\nIncreases the magazine capacity, improves recoil control and firing speed at the cost of damage, spread and reload speed."
+L["csgo_g3_mag_60_g41.compactname"] = "NATO++"
+L["csgo_g3_mag_60_g41.description"] = "Converts the weapon to use 5.56x45mm AR-15 magazines through an adapter and makes it <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 60)
 
 L["csgo_g3_mag_30_waf.printname"] = "30-Round .45 ACP Conversion"
-L["csgo_g3_mag_30_waf.compactname"] = "30R .45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Converts the weapon to use .45 ACP magazines. Also shortens the barrel and stock length.\nIncreases magazine capacity, reload speed, firing speed, recoil control and hip-fire spread at the cost of damage and firing spread."
+L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
+L["csgo_g3_mag_30_waf.description"] = "Converts the weapon to use .45 ACP magazines and makes it <color=100,255,100>fully automatic</color>. Also shortens the barrel and stock length."
 
 L["csgo_g3_mag_40_mp9.printname"] = "40-Round 9x19mm Conversion"
-L["csgo_g3_mag_40_mp9.compactname"] = "40R 9mm"
-L["csgo_g3_mag_40_mp9.description"] = "Converts the weapon to use 9x19mm magazines. Also shortens the barrel and stock length.\nIncreases magazine capacity, reload speed, firing speed, recoil control and firing spread when moving at the cost of damage and hip-fire spread."
+L["csgo_g3_mag_40_mp9.compactname"] = "9mm"
+L["csgo_g3_mag_40_mp9.description"] = "Converts the weapon to use 9x19mm magazines and makes it <color=100,255,100>fully automatic</color>. Also shortens the barrel and stock length."
 
 -- Galil
-L["csgo_galil_barrel_long.printname"] = "520mm Barrel"
-L["csgo_galil_barrel_long.compactname"] = "520mm"
-L["csgo_galil_barrel_long.description"] = "Longer barrel that improves recoil control and range at the cost of weapon handling."
+L["csgo_galil_barrel_long.printname"] = "Long Barrel"
+L["csgo_galil_barrel_long.compactname"] = "Long"
+L["csgo_galil_barrel_long.description"] = "Long marksman barrel."
 
-L["csgo_galil_barrel_short.printname"] = "305mm Barrel"
-L["csgo_galil_barrel_short.compactname"] = "305mm"
-L["csgo_galil_barrel_short.description"] = "Shortened barrel that improves weapon handling at the cost of recoil control and range."
+L["csgo_galil_barrel_short.printname"] = "Short Barrel"
+L["csgo_galil_barrel_short.compactname"] = "Short"
+L["csgo_galil_barrel_short.description"] = "Shortened CQB barrel."
 
 L["csgo_galil_mag_35.printname"] = "35-Round Magazine"
 L["csgo_galil_mag_35.compactname"] = "35R"
@@ -1432,10 +1410,6 @@ L["csgo_galilar_mag_40.description"] = "Increases the magazine capacity at the c
 L["csgo_galilar_mag_60.printname"] = "60-Round Casket Magazine"
 L["csgo_galilar_mag_60.compactname"] = "60R"
 L["csgo_galilar_mag_60.description"] = "Increases the magazine capacity at the cost of recoil control and reload speed."
-
-L["csgo_galilar_view_alt.printname"] = "Alternative View"
-L["csgo_galilar_view_alt.compactname"] = "Alt. View"
-L["csgo_galilar_view_alt.description"] = "Alters the position of the weapon in view."
 
 -- Glock-18
 L["csgo_glock_slide_long.printname"] = "Extended Slide and Barrel"
@@ -1572,10 +1546,6 @@ L["csgo_mp5_mag_k.compactname"] = "20R Mag"
 L["csgo_mp5_mag_k.description"] = "Reduces magazine capacity with the benefit of improved reload speed and weapon handling."
 
 -- MP5-SD
-L["csgo_mp5sd_view_alt.printname"] = "Alternative View"
-L["csgo_mp5sd_view_alt.compactname"] = "Alt. View"
-L["csgo_mp5sd_view_alt.description"] = "Alters the position of the weapon in view."
-
 L["csgo_mp5_stock_none.printname"] = "No Stock"
 L["csgo_mp5_stock_none.compactname"] = "None"
 L["csgo_mp5_stock_none.description"] = "Removes the stock entirely which improves weapon handling at the cost of recoil control and spread."
@@ -1588,10 +1558,6 @@ L["csgo_mp7_mag_short.description"] = "Decreases the magazine capacity with the 
 L["csgo_mp7_mag_long.printname"] = "40-Round Magazine"
 L["csgo_mp7_mag_long.compactname"] = "40R"
 L["csgo_mp7_mag_long.description"] = "Increases the magazine capacity at the cost of reload speed."
-
-L["csgo_mp7_view_alt.printname"] = "Alternative View"
-L["csgo_mp7_view_alt.compactname"] = "Alt. View"
-L["csgo_mp7_view_alt.description"] = "Alters the position of the weapon in view."
 
 L["csgo_mp7_iron2.printname"] = "Flip Down Iron Sights"
 L["csgo_mp7_iron2.compactname"] = "Flipped"
@@ -1610,20 +1576,12 @@ L["csgo_mp9_mag_short.printname"] = "20-Round Magazine"
 L["csgo_mp9_mag_short.compactname"] = "20R"
 L["csgo_mp9_mag_short.description"] = "Decreases the magazine capacity with the benefit of improved reload speed."
 
-L["csgo_mp9_view_alt.printname"] = "Alternative View"
-L["csgo_mp9_view_alt.compactname"] = "Alt. View"
-L["csgo_mp9_view_alt.description"] = "Alters the position of the weapon in view."
-
 -- Nades
 L["csgo_nade_timer.printname"] = "Grenade Fuse (3 Seconds)"
 L["csgo_nade_timer.compactname"] = "Fuse"
 L["csgo_nade_timer.description"] = "Gives your grenade a 3 second fuse timer.\nPlan your throws beforehand!"
 
 -- Negev
-L["csgo_negev_view_alt.printname"] = "Alternative View"
-L["csgo_negev_view_alt.compactname"] = "Alt. View"
-L["csgo_negev_view_alt.description"] = "Alters the position of the weapon in view."
-
 L["csgo_negev_stock_skeleton.printname"] = "Skeleton Stock"
 L["csgo_negev_stock_skeleton.compactname"] = "Skeleton"
 L["csgo_negev_stock_skeleton.description"] = "Lightweight stock that improves aiming speed at the cost of recoil control."
@@ -1888,10 +1846,6 @@ L["csgo_tec9_mag_10.compactname"] = "10R"
 L["csgo_tec9_mag_10.description"] = "Reduces the magazine capacity with the benefit of improved reload speed and weapon handling."
 
 -- UMP-45
-L["csgo_ump_view_alt.printname"] = "Alternative View"
-L["csgo_ump_view_alt.compactname"] = "Alt. View"
-L["csgo_ump_view_alt.description"] = "Alters the position of the weapon in view."
-
 L["csgo_ump_barrel_long.printname"] = "350mm USC Barrel"
 L["csgo_ump_barrel_long.compactname"] = "350mm USC"
 L["csgo_ump_barrel_long.description"] = "Extended civilian barrel that improves recoil control and range at the cost of weapon handling."
@@ -2227,49 +2181,93 @@ L["csgo_optic_trijicon_alt.description"] = ARC9:GetPhrase("csgo_optic_trijicon_a
 L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
 
 L["csgo_pistols_view2.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_pistols_view2.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_pistols_view2.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_pistols_view2.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_pistols_view2.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_pistols_view3.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_pistols_view3.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_pistols_view3.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_pistols_view3.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_pistols_view3.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["go_stock_awp_lc10.printname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "Skeleton Stock"
-L["go_stock_awp_lc10.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "Skeleton"
-L["go_stock_awp_lc10.description"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "Lightweight skeleton stock."
+L["go_stock_awp_lc10.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.compactname") or "Skeleton"
+L["go_stock_awp_lc10.description"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.description") or "Lightweight skeleton stock."
 
 L["csgo_bizon_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_bizon_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_bizon_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_bizon_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_bizon_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_m4a4_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_m4a4_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_m4a4_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_m4a4_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_m4a4_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_mac10_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_mac10_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_mac10_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_mac10_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_mac10_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_mag7_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_mag7_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_mag7_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_mag7_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_mag7_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_nova_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_nova_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_nova_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_nova_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_nova_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_p90_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_p90_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_p90_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_p90_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_p90_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_sawedoff_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_sawedoff_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_sawedoff_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_sawedoff_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_sawedoff_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_scar20_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_scar20_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_scar20_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_scar20_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_scar20_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_sg552_view.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
-L["csgo_sg552_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alt. View"
-L["csgo_sg552_view.description"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alters the position of the weapon in view."
+L["csgo_sg552_view.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_sg552_view.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_famas_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_famas_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_famas_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_galilar_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_galilar_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_galilar_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_mp5sd_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_mp5sd_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_mp5sd_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_mp7_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_mp7_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_mp7_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_mp9_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_mp9_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_mp9_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_negev_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_negev_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_negev_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_ump_view_alt.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_ump_view_alt.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_ump_view_alt.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
+
+L["csgo_five_slide_long.description"] = ARC9:GetPhrase("csgo_elite_slide_long.description") or "Longer slide and barrel."
+
+L["csgo_five_slide_short.description"] = ARC9:GetPhrase("csgo_elite_slide_short.description") or "Shortened slide and barrel."
+
+L["csgo_g3_barrel_g3a3_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "G3A3 Barrel"
+L["csgo_g3_barrel_g3a3_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "A3"
+L["csgo_g3_barrel_g3a3_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "Medium-length barrel from the G3A3."
+
+L["csgo_g3_barrel_medium_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "G3KA4 Barrel"
+L["csgo_g3_barrel_medium_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "KA4"
+L["csgo_g3_barrel_medium_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "Medium-length barrel from the G3KA4."
+
+L["csgo_g3_barrel_short_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "Kurz Barrel"
+L["csgo_g3_barrel_short_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "Kurz"
+L["csgo_g3_barrel_short_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "Shortened G3KA4 barrel."

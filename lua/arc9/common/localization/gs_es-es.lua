@@ -1195,11 +1195,11 @@ L["csgo_bizon_hold_2.compactname"] = "Agarre Alt. 2"
 -- CZ75-Auto
 L["csgo_cz_slide_long.printname"] = "Corredera y cañón CZ-L"
 L["csgo_cz_slide_long.compactname"] = "CZ-L"
--- L["csgo_cz_slide_long.description"] = "Slightly longer barrel and slide with the built-in muzzle brake removed."
+-- L["csgo_cz_slide_long.description"] = "Slightly longer slide and barrel with the built-in muzzle brake removed."
 
 L["csgo_cz_slide_short.printname"] = "Corredera y cañón CZ-C"
 L["csgo_cz_slide_short.compactname"] = "CZ-C"
--- L["csgo_cz_slide_short.description"] = "Shortest barrel and slide available."
+-- L["csgo_cz_slide_short.description"] = "Shortest slide and barrel available."
 
 L["csgo_cz_slide_factory.printname"] = "Cañón CZ-A"
 L["csgo_cz_slide_factory.compactname"] = "CZ-A"
@@ -1211,177 +1211,155 @@ L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 
 -- Desert Eagle
 L["csgo_deagle_s.printname"] = "Supresor Desert Eagle"
-L["csgo_deagle_s.compactname"] = "DE Sup."
-L["csgo_deagle_s.description"] = "Un supresor diseñado específicamente para la Desert Eagle.\nDiseñado para reducir el nivel de decibelios de los disparos. También aumenta el alcance a costa del manejo del arma."
+L["csgo_deagle_s.compactname"] = "Sup. DE"
+L["csgo_deagle_s.description"] = "Un supresor diseñado específicamente para la Desert Eagle.\nDiseñado para reducir el nivel de decibelios de los disparos."
 
-L["csgo_deagle_c.printname"] = "Compensador Desert Eagle"
+L["csgo_deagle_c.printname"] = "Compensador"
 L["csgo_deagle_c.compactname"] = "Comp."
-L["csgo_deagle_c.description"] = "Compensador diseñado para disminuir el retroceso a costa de la velocidad de puntería."
+-- L["csgo_deagle_c.description"] = "Special compensator that reduce side-to-side recoil."
 
-L["csgo_deagle_c_2.printname"] = "Compensador Largo Desert Eagle"
-L["csgo_deagle_c_2.compactname"] = "L-Comp."
-L["csgo_deagle_c_2.description"] = "Compensador diseñado para disminuir aún más el retroceso a costa de una mayor velocidad de puntería."
+L["csgo_deagle_c_2.printname"] = "Compensador Largo"
+L["csgo_deagle_c_2.compactname"] = "Comp.-L"
+-- L["csgo_deagle_c_2.description"] = "Even bigger special compensator that reduces side-to-side recoil."
 
-L["csgo_deagle_barrel.printname"] = "Cañón largo Desert Eagle"
-L["csgo_deagle_barrel.compactname"] = "Long"
-L["csgo_deagle_barrel.description"] = "Cañón más largo que mejora el alcance a costa del manejo del arma."
+L["csgo_deagle_barrel.printname"] = "Cañón largo"
+L["csgo_deagle_barrel.compactname"] = "Largo"
+-- L["csgo_deagle_barrel.description"] = "Factory-made long barrel."
 
-L["csgo_deagle_mag_extend.printname"] = "Cargadores Ampliados"
-L["csgo_deagle_mag_extend.compactname"] = "Carg. Amp"
-L["csgo_deagle_mag_extend.description"] = "Aumenta la capacidad del cargador a costa de la velocidad de recarga."
+L["csgo_deagle_mag_extend.printname"] = "Cargador de 15-Cartuchos .50 Action Express"
+L["csgo_deagle_mag_extend.compactname"] = ".50 AE+"
+L["csgo_deagle_mag_extend.description"] = string.format(quicktext.bigmag, 15)
 
 -- Beretta
-L["csgo_elite_slide_long.printname"] = "Corredera y cañón L de 240mm"
-L["csgo_elite_slide_long.compactname"] = "240mm L"
-L["csgo_elite_slide_long.description"] = "Corredera y cañón más largos que mejoran el alcance y el control del retroceso a costa del manejo del arma."
+L["csgo_elite_slide_long.printname"] = "Corredera y cañón L"
+L["csgo_elite_slide_long.compactname"] = "L"
+-- L["csgo_elite_slide_long.description"] = "Longer slide and barrel."
 
-L["csgo_elite_slide_short.printname"] = "Corredera y cañón G de 170 mm"
-L["csgo_elite_slide_short.compactname"] = "170mm G"
-L["csgo_elite_slide_short.description"] = "Corredera y cañón compactos que mejoran el manejo del arma y la velocidad de disparo a costa del alcance y el control del retroceso."
+L["csgo_elite_slide_short.printname"] = "Corredera y cañón G"
+L["csgo_elite_slide_short.compactname"] = "G"
+-- L["csgo_elite_slide_short.description"] = "Shortened slide and barrel."
 
 L["csgo_elite_slide_p38.printname"] = "Corredera de Oficial"
 L["csgo_elite_slide_p38.compactname"] = "Oficial"
-L["csgo_elite_slide_p38.description"] = "Recambio compacto de corredera y cañón que mejora la velocidad de disparo y el manejo del arma a costa del alcance y el control del retroceso.\nSe parece a otra arma de fuego poco sospechosa de cierta época."
+-- L["csgo_elite_slide_p38.description"] = "Replaces the slide with a custom aftermarket one.\nSe parece a otra arma de fuego poco sospechosa de cierta época."
 
 L["csgo_elite_slide_raffica.printname"] = "Conversión de Raffica"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Convierte la Beretta para que dispare en ráfaga de 3 disparos.\nTambién añade una empuñadura y un compensador que mejoran el alcance y el control del retroceso a costa del manejo del arma.\nNo es compatible con el perk <Ráfaga mejorada>."
+-- L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management."
 
 -- FAMAS
 L["csgo_famas_barrel_long.printname"] = "Cañón Tireur"
 L["csgo_famas_barrel_long.compactname"] = "Tireur"
-L["csgo_famas_barrel_long.description"] = "Cañón más largo que mejora el control del retroceso y el alcance a costa del manejo del arma."
+-- L["csgo_famas_barrel_long.description"] = "Custom marksman barrel."
 
-L["csgo_famas_barrel_short.printname"] = "Cañón Raider de 405 mm"
+L["csgo_famas_barrel_short.printname"] = "Cañón Raider"
 L["csgo_famas_barrel_short.compactname"] = "405mm Raider"
-L["csgo_famas_barrel_short.description"] = "Cañón acortado que mejora el manejo del arma a costa del control del retroceso y el alcance."
+-- L["csgo_famas_barrel_short.description"] = "Shortened barrel."
 
-L["csgo_famas_mag_30.printname"] = "Cargador curvo de 30 cartuchos"
-L["csgo_famas_mag_30.compactname"] = "30R"
-L["csgo_famas_mag_30.description"] = "Cargador curvo de 30 cartuchos. Disminuye la velocidad de puntería."
+L["csgo_famas_mag_30.printname"] = "Cargador de 30 cartuchos 5.56x45mm"
+L["csgo_famas_mag_30.compactname"] = "5.56mm+"
+L["csgo_famas_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_famas_mag_long.printname"] = "Cargador Casket curvo de 60 cartuchos"
-L["csgo_famas_mag_long.compactname"] = "60R"
-L["csgo_famas_mag_long.description"] = "Cargador Casket curvado de 60 cartuchos. Disminuye la velocidad de recarga."
-
-L["csgo_famas_bipod_on.printname"] = "Desplegar Bípode"
-L["csgo_famas_bipod_on.compactname"] = "Deplegar"
-L["csgo_famas_bipod_on.description"] = "Baja el bípode, mejorando el control del retroceso a costa del manejo del arma."
-
-L["csgo_famas_view_alt.printname"] = "Vista Alternativa"
-L["csgo_famas_view_alt.compactname"] = "Vista Alt."
-L["csgo_famas_view_alt.description"] = "Altera la posición del arma a la vista."
+L["csgo_famas_mag_long.printname"] = "Cargador Casket de 60 cartuchos 5.56x45mm"
+L["csgo_famas_mag_long.compactname"] = "5.56mm++"
+L["csgo_famas_mag_long.description"] = string.format(quicktext.bigmag, 60)
 
 -- Five-SeveN
-L["csgo_five_slide_long.printname"] = "Corredera y cañón 160mm Plus"
-L["csgo_five_slide_long.compactname"] = "160mm+"
-L["csgo_five_slide_long.description"] = "Corredera y cañón largos que mejoran el alcance y el control del retroceso a costa del manejo del arma."
+L["csgo_five_slide_long.printname"] = "Corredera y cañón Plus"
+L["csgo_five_slide_long.compactname"] = "Plus"
 
 L["csgo_five_slide_short.printname"] = "Corredera y cañón FN de 110mm"
-L["csgo_five_slide_short.compactname"] = "110mm FN"
-L["csgo_five_slide_short.description"] = "Corredera y cañón compactos que mejoran el manejo del arma y la velocidad de disparo a costa del control del retroceso y el alcance."
+L["csgo_five_slide_short.compactname"] = "FN"
 
 -- G3SG1
-L["csgo_g3_barrel_sd.printname"] = "Cañón Whisper de 450mm"
-L["csgo_g3_barrel_sd.compactname"] = "SD"
-L["csgo_g3_barrel_sd.description"] = "Cañón de longitud media con supresor integrado.\nReduce el nivel de decibelios de los disparos y mejora el control del retroceso a costa de la velocidad de salida, el alcance y el manejo del arma."
+L["csgo_g3_barrel_sd.printname"] = "Cañón Whisper"
+L["csgo_g3_barrel_sd.compactname"] = "Whisper"
+L["csgo_g3_barrel_sd.description"] = "Cañón de longitud media con supresor integrado.\nReduce el nivel de decibelios de los disparos."
 
-L["csgo_g3_barrel_g3a3.printname"] = "Cañón G3A3 de 450mm"
+L["csgo_g3_barrel_g3a3.printname"] = "Cañón G3A3"
 L["csgo_g3_barrel_g3a3.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3.description"] = "Cañón de longitud media del G3A3 que mejora el manejo del arma a costa del alcance."
+L["csgo_g3_barrel_g3a3.description"] = "Cañón de longitud media del G3A3."
 
-L["csgo_g3_barrel_g3a3_smg.printname"] = "Cañón G3A3 de 450mm"
-L["csgo_g3_barrel_g3a3_smg.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3_smg.description"] = "Cañón de longitud media del G3A3 que mejora el manejo del arma a costa del alcance."
-
-L["csgo_g3_barrel_medium.printname"] = "Cañón G3KA4 de 400mm"
-L["csgo_g3_barrel_medium.compactname"] = "400mm KA4"
-L["csgo_g3_barrel_medium.description"] = "Cañón de longitud media del G3KA4 que mejora el manejo del arma a costa del alcance."
-
-L["csgo_g3_barrel_medium_smg.printname"] = "Cañón G3KA4 de 400 mm"
-L["csgo_g3_barrel_medium_smg.compactname"] = "400mm KA4"
-L["csgo_g3_barrel_medium_smg.description"] = "Cañón largo del G3KA4 que mejora el retroceso y el alcance a costa del manejo del arma."
+L["csgo_g3_barrel_medium.printname"] = "Cañón G3KA4"
+L["csgo_g3_barrel_medium.compactname"] = "KA4"
+L["csgo_g3_barrel_medium.description"] = "Cañón de longitud media del G3KA4."
 
 L["csgo_g3_barrel_short.printname"] = "Cañon Kurz de 350mm"
-L["csgo_g3_barrel_short.compactname"] = "350mm Kurz"
-L["csgo_g3_barrel_short.description"] = "Cañón G3KA4 acortado que mejora aún más el manejo del arma a costa del alcance y el control del retroceso."
+L["csgo_g3_barrel_short.compactname"] = "Kurz"
+L["csgo_g3_barrel_short.description"] = "Cañón G3KA4 acortado."
 
-L["csgo_g3_barrel_short_smg.printname"] = "Cañon Kurz de 350mm"
-L["csgo_g3_barrel_short_smg.compactname"] = "350mm Kurz"
-L["csgo_g3_barrel_short_smg.description"] = "Cañón G3KA4 acortado que mejora aún más el manejo del arma a costa del alcance y el control del retroceso."
+L["csgo_g3_mag_30.printname"] = "Cargador de 30 cartuchos 7.62x51mm"
+L["csgo_g3_mag_30.compactname"] = "7.62mm+"
+L["csgo_g3_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_30.printname"] = "Cargador de 30 cartuchos"
-L["csgo_g3_mag_30.compactname"] = "30R"
-L["csgo_g3_mag_30.description"] = "Aumenta la capacidad del cargador a costa de la velocidad de recarga."
+L["csgo_g3_mag_10.printname"] = "Cargador de 10 cartuchos 7.62x51mm"
+L["csgo_g3_mag_10.compactname"] = "7.62mm-"
+L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_mag_10.printname"] = "Cargador de 10 cartuchos"
-L["csgo_g3_mag_10.compactname"] = "10R"
-L["csgo_g3_mag_10.description"] = "Disminuye la capacidad del cargador con el beneficio de una mayor velocidad de recarga."
+L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos 7.62x51mm (Automático)"
+L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
+L["csgo_g3_mag_30_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos - Automático"
-L["csgo_g3_mag_30_auto.compactname"] = "30R [A]"
-L["csgo_g3_mag_30_auto.description"] = "Cambia el modo de disparo a totalmente automático.\nAumenta la capacidad del cargador y la velocidad de disparo a costa de reducir drásticamente el daño.."
+L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos 7.62x51mm (Automático)"
+L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
+L["csgo_g3_mag_20_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>."
 
-L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos - Automático"
-L["csgo_g3_mag_20_auto.compactname"] = "20R [A]"
-L["csgo_g3_mag_20_auto.description"] = "Cambia el modo de disparo a totalmente automático.\nAumenta la capacidad del cargador y la velocidad de disparo a costa de reducir drásticamente el daño."
-
-L["csgo_g3_mag_10_auto.printname"] = "10-Round Magazine - Automático"
-L["csgo_g3_mag_10_auto.compactname"] = "10R [A]"
-L["csgo_g3_mag_10_auto.description"] = "Cambia el modo de disparo a totalmente automático.\nDisminuye la capacidad del cargador con el beneficio de mejorar la velocidad de recarga."
+L["csgo_g3_mag_10_auto.printname"] = "Cargador de 10 cartuchos 7.62x51mm (Automático)"
+L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
+L["csgo_g3_mag_10_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_stock_collapsed.printname"] = "Culata plegable"
 L["csgo_g3_stock_collapsed.compactname"] = "Plegable"
-L["csgo_g3_stock_collapsed.description"] = "Culata G3 retráctil que mejora el manejo del arma a costa del control del retroceso."
+L["csgo_g3_stock_collapsed.description"] = "Culata G3 retráctil."
 
 L["csgo_g3_stock_padded.printname"] = "Carillera"
 L["csgo_g3_stock_padded.compactname"] = "Carillera"
-L["csgo_g3_stock_padded.description"] = "Culata estándar con carrillera incorporada.\nMejora la velocidad de puntería."
+L["csgo_g3_stock_padded.description"] = "Culata estándar con carrillera incorporada."
 
 L["csgo_g3_stock_fixed.printname"] = "Culata fija A2"
 L["csgo_g3_stock_fixed.compactname"] = "Fija A2"
-L["csgo_g3_stock_fixed.description"] = "Culata acortada fija que mejora el retroceso a costa de la velocidad de puntería."
+L["csgo_g3_stock_fixed.description"] = "Culata acortada fija."
 
 L["csgo_g3_mag_20_556.printname"] = "Cargador de 20 cartuchos 5.56x45mm"
-L["csgo_g3_mag_20_556.compactname"] = "20R 5.56mm"
-L["csgo_g3_mag_20_556.description"] = "Convierte el arma para usar cargadores de 5.56x45mm y la hace totalmente automática.\nDisminuye el daño y la dispersión."
+L["csgo_g3_mag_20_556.compactname"] = "5.56mm"
+L["csgo_g3_mag_20_556.description"] = "Convierte el arma para usar cargadores de 5.56x45mm y la hace <color=100,255,100>totalmente automática</color>."
 
 L["csgo_g3_mag_30_556.printname"] = "Cargador de 30 cartuchos de 5.56x45mm"
-L["csgo_g3_mag_30_556.compactname"] = "30R 5.56mm"
-L["csgo_g3_mag_30_556.description"] = "Convierte el arma para usar cargadores de 5.56x45mm y la hace totalmente automática.\nAumenta la capacidad del cargador a costa del daño y la dispersión."
+L["csgo_g3_mag_30_556.compactname"] = "5.56mm+"
+L["csgo_g3_mag_30_556.description"] = "Convierte el arma para usar cargadores de 5.56x45mm y la hace <color=100,255,100>totalmente automática</color>.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_g3_mag_50_556.printname"] = "Cargador de 60 balas Casket de 5.56x45mm"
-L["csgo_g3_mag_50_556.compactname"] = "60R 5.56mm"
-L["csgo_g3_mag_50_556.description"] = "Convierte el arma para usar cargadores de 5.56x45mm y la hace totalmente automática.\nAumenta la capacidad del cargador a costa del daño y la dispersión."
+L["csgo_g3_mag_50_556.compactname"] = "5.56mm++"
+L["csgo_g3_mag_50_556.description"] = "Convierte el arma para usar cargadores de 5.56x45mm y la hace <color=100,255,100>totalmente automática</color>.\n" .. string.format(quicktext.bigmag, 60)
 
 L["csgo_g3_mag_20_g41.printname"] = "Cargador y adaptador de 20 cartuchos 5.56x45mm NATO"
-L["csgo_g3_mag_20_g41.compactname"] = "20R NATO"
-L["csgo_g3_mag_20_g41.description"] = "Convierte el arma para usar cargadores AR-15 de 5.56x45mm mediante un adaptador y la hace totalmente automática.\nMejora el control del retroceso, la velocidad de disparo y la velocidad de recarga a costa del daño y la dispersión."
+L["csgo_g3_mag_20_g41.compactname"] = "NATO"
+L["csgo_g3_mag_20_g41.description"] = "Convierte el arma para usar cargadores AR-15 de 5.56x45mm mediante un adaptador y la hace <color=100,255,100>totalmente automática</color>."
 
 L["csgo_g3_mag_30_g41.printname"] = "Cargador y adaptador de 30 cartuchos 5.56x45mm NATO"
-L["csgo_g3_mag_30_g41.compactname"] = "30R NATO"
-L["csgo_g3_mag_30_g41.description"] = "Convierte el arma para usar cargadores AR-15 de 5.56x45mm mediante un adaptador y la hace totalmente automática.\nAumenta la capacidad del cargador, mejora el control del retroceso y la velocidad de disparo a costa del daño, la dispersión y la velocidad de recarga."
+L["csgo_g3_mag_30_g41.compactname"] = "NATO+"
+L["csgo_g3_mag_30_g41.description"] = "Convierte el arma para usar cargadores AR-15 de 5.56x45mm mediante un adaptador y la hace <color=100,255,100>totalmente automática</color>.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_g3_mag_60_g41.printname"] = "Cargador y adaptador de 60 cartuchos de 5,56x45 mm OTAN"
-L["csgo_g3_mag_60_g41.compactname"] = "60R NATO"
-L["csgo_g3_mag_60_g41.description"] = "Convierte el arma para usar cargadores AR-15 de 5.56x45mm mediante un adaptador y la hace totalmente automática.\nAumenta la capacidad del cargador, mejora el control del retroceso y la velocidad de disparo a costa del daño, la dispersión y la velocidad de recarga."
+L["csgo_g3_mag_60_g41.compactname"] = "NATO++"
+L["csgo_g3_mag_60_g41.description"] = "Convierte el arma para usar cargadores AR-15 de 5.56x45mm mediante un adaptador y la hace <color=100,255,100>totalmente automática</color>.\n" .. string.format(quicktext.bigmag, 60)
 
 L["csgo_g3_mag_30_waf.printname"] = "Conversión de 30 cartuchos de .45 ACP"
-L["csgo_g3_mag_30_waf.compactname"] = "30R .45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Convierte el arma para usar cargadores del .45 ACP. También acorta la longitud del cañón y de la culata.\nAumenta la capacidad del cargador, la velocidad de recarga, la velocidad de disparo, el control del retroceso y la dispersión del fuego de cadera a costa del daño y la dispersión del disparo."
+L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
+L["csgo_g3_mag_30_waf.description"] = "Convierte el arma para usar cargadores del .45 ACP y la hace <color=100,255,100>totalmente automática</color>. También acorta la longitud del cañón y de la culata."
 
 L["csgo_g3_mag_40_mp9.printname"] = "Conversión 9x19mm de 40 cartuchos"
-L["csgo_g3_mag_40_mp9.compactname"] = "40R 9mm"
-L["csgo_g3_mag_40_mp9.description"] = "Convierte el arma para usar cargadores de 9x19mm. También acorta la longitud del cañón y la culata.\nAumenta la capacidad del cargador, la velocidad de recarga, la velocidad de disparo, el control del retroceso y la dispersión del disparo en movimiento a costa del daño y la dispersión del disparo a la cadera."
+L["csgo_g3_mag_40_mp9.compactname"] = "9mm"
+L["csgo_g3_mag_40_mp9.description"] = "Convierte el arma para usar cargadores de 9x19mm y la hace <color=100,255,100>totalmente automática</color>. También acorta la longitud del cañón y la culata."
 
 -- Galil
-L["csgo_galil_barrel_long.printname"] = "Cañón de 520mm"
-L["csgo_galil_barrel_long.compactname"] = "520mm"
-L["csgo_galil_barrel_long.description"] = "Cañón más largo que mejora el control del retroceso y el alcance a costa del manejo del arma."
+-- L["csgo_galil_barrel_long.printname"] = "Long Barrel"
+-- L["csgo_galil_barrel_long.compactname"] = "Long"
+-- L["csgo_galil_barrel_long.description"] = "Long marksman barrel."
 
-L["csgo_galil_barrel_short.printname"] = "305mm Barrel"
-L["csgo_galil_barrel_short.compactname"] = "305mm"
-L["csgo_galil_barrel_short.description"] = "Cañón acortado que mejora el manejo del arma a costa del control del retroceso y el alcance."
+-- L["csgo_galil_barrel_short.printname"] = "Short Barrel"
+-- L["csgo_galil_barrel_short.compactname"] = "Short"
+-- L["csgo_galil_barrel_short.description"] = "Shortened CQB barrel."
 
 L["csgo_galil_mag_35.printname"] = "Cargador de 35 cartuchos"
 L["csgo_galil_mag_35.compactname"] = "35R"
@@ -1550,7 +1528,7 @@ L["csgo_mac10_barrel_med.compactname"] = "200mm Patrol"
 L["csgo_mac10_barrel_med.description"] = "Cañón alargado que mejora el control del retroceso, el alcance y la dispersión a costa de la velocidad de puntería."
 
 L["csgo_mac10_barrel_long.printname"] = "Cañón de carabina de 350mm"
-L["csgo_mac10_barrel_long.compactname"] = "350mm C."
+L["csgo_mac10_barrel_long.compactname"] = "C."
 L["csgo_mac10_barrel_long.description"] = "Cañón largo que mejora aún más el control del retroceso, el alcance y la dispersión a costa de una enorme reducción de la velocidad de puntería."
 
 L["csgo_mac10_barrel_shroud.printname"] = "Cañón de cubierta de 300 mm"
@@ -1754,7 +1732,7 @@ L["csgo_scout_barrel_long.printname"] = "Cañón Elite de 570mm"
 L["csgo_scout_barrel_long.compactname"] = "Elite 570mm"
 L["csgo_scout_barrel_long.description"] = "Cañón largo y pesado que mejora la velocidad de salida y el alcance a costa del manejo del arma."
 
-L["csgo_scout_barrel_short.printname"] = "Cañón de supervivencia de 400mm"
+L["csgo_scout_barrel_short.printname"] = "Cañón de supervivencia"
 L["csgo_scout_barrel_short.compactname"] = "Survival 400mm"
 L["csgo_scout_barrel_short.description"] = "Cañón compacto que mejora el manejo del arma a costa de la velocidad de salida, el alcance y el daño."
 
@@ -1892,7 +1870,7 @@ L["csgo_ump_view_alt.compactname"] = "Vista Alt."
 L["csgo_ump_view_alt.description"] = "Altera la posición del arma a la vista."
 
 L["csgo_ump_barrel_long.printname"] = "Cañón USC de 350mm"
-L["csgo_ump_barrel_long.compactname"] = "350mm USC"
+L["csgo_ump_barrel_long.compactname"] = "USC"
 L["csgo_ump_barrel_long.description"] = "Cañón civil extendido que mejora el control del retroceso y el alcance a costa del manejo del arma."
 
 L["csgo_ump_barrel_mid.printname"] = "Cañón H&K de 220mm"

@@ -1195,11 +1195,11 @@ L["csgo_bizon_hold_2.compactname"] = "Альт. держание 2"
 -- CZ75-Auto
 L["csgo_cz_slide_long.printname"] = "Затвор и ствол CZ-L"
 L["csgo_cz_slide_long.compactname"] = "CZ-L"
--- L["csgo_cz_slide_long.description"] = "Slightly longer barrel and slide with the built-in muzzle brake removed."
+-- L["csgo_cz_slide_long.description"] = "Slightly longer slide and barrel with the built-in muzzle brake removed."
 
 L["csgo_cz_slide_short.printname"] = "Затвор и ствол CZ-C"
 L["csgo_cz_slide_short.compactname"] = "90-мм CZ-C"
--- L["csgo_cz_slide_short.description"] = "Shortest barrel and slide available."
+-- L["csgo_cz_slide_short.description"] = "Shortest slide and barrel available."
 
 L["csgo_cz_slide_factory.printname"] = "Ствол CZ-A"
 L["csgo_cz_slide_factory.compactname"] = "CZ-A"
@@ -1212,180 +1212,154 @@ L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 -- Desert Eagle
 L["csgo_deagle_s.printname"] = "Глушитель Desert Eagle"
 L["csgo_deagle_s.compactname"] = "Глуш. DE"
-L["csgo_deagle_s.description"] = "Глушитель, разработанный специально для пистолета Desert Eagle.\nДля снижения уровня децибел от выстрелов. Также увеличивает дальность стрельбы за счёт ухудшения эргономичности оружия."
+L["csgo_deagle_s.description"] = "Глушитель, разработанный специально для пистолета Desert Eagle.\nДля снижения уровня децибел от выстрелов."
 
-L["csgo_deagle_c.printname"] = "Компенсатор Desert Eagle"
+L["csgo_deagle_c.printname"] = "Компенсатор"
 L["csgo_deagle_c.compactname"] = "Комп."
-L["csgo_deagle_c.description"] = "Компенсатор, предназначенный для снижения отдачи ценой снижения скорости прицеливания."
+-- L["csgo_deagle_c.description"] = "Special compensator that reduce side-to-side recoil."
 
-L["csgo_deagle_c_2.printname"] = "Удлинённый компенсатор Desert Eagle"
+L["csgo_deagle_c_2.printname"] = "Удлинённый компенсатор"
 L["csgo_deagle_c_2.compactname"] = "У-комп."
-L["csgo_deagle_c_2.description"] = "Компенсатор разработан для ещё большего снижения отдачи ценой снижения скорости прицеливания."
+-- L["csgo_deagle_c_2.description"] = "Even bigger special compensator that reduces side-to-side recoil."
 
-L["csgo_deagle_barrel.printname"] = "Длинный ствол Desert Eagle"
+L["csgo_deagle_barrel.printname"] = "Длинный ствол"
 L["csgo_deagle_barrel.compactname"] = "Длинный"
-L["csgo_deagle_barrel.description"] = "Удлинённый ствол, повышающий дальность стрельбы за счёт ухудшения эргономичности оружия."
+-- L["csgo_deagle_barrel.description"] = "Factory-made long barrel."
 
-L["csgo_deagle_mag_extend.printname"] = "Расширенный магазин"
-L["csgo_deagle_mag_extend.compactname"] = "Расш. магазин"
-L["csgo_deagle_mag_extend.description"] = "Увеличивает ёмкость магазина за счёт снижения скорости перезарядки."
+L["csgo_deagle_mag_extend.printname"] = "18-зарядный магазин .50 «Action Express»"
+L["csgo_deagle_mag_extend.compactname"] = ".50 AE+"
+L["csgo_deagle_mag_extend.description"] = string.format(quicktext.bigmag, 15)
 
 -- Beretta
-L["csgo_elite_slide_long.printname"] = "240-мм затвор и ствол L"
-L["csgo_elite_slide_long.compactname"] = "240-мм L"
-L["csgo_elite_slide_long.description"] = "Более длинные затвор и ствол, улучшающие дальность стрельбы и контроль отдачи за счёт ухудшения эргономичности оружия."
+L["csgo_elite_slide_long.printname"] = "Затвор и ствол L"
+L["csgo_elite_slide_long.compactname"] = "L"
+-- L["csgo_elite_slide_long.description"] = "Longer slide and barrel."
 
-L["csgo_elite_slide_short.printname"] = "170-мм затвор и ствол G"
-L["csgo_elite_slide_short.compactname"] = "170-мм G"
-L["csgo_elite_slide_short.description"] = "Компактные затвор и ствол, улучшающие эргономичность оружия и скорость стрельбы за счёт снижения дальности и отдачи."
+L["csgo_elite_slide_short.printname"] = "Затвор и ствол G"
+L["csgo_elite_slide_short.compactname"] = "G"
+-- L["csgo_elite_slide_short.description"] = "Shortened slide and barrel."
 
 L["csgo_elite_slide_p38.printname"] = "Офицерский затвор"
 L["csgo_elite_slide_p38.compactname"] = "Офицерский"
-L["csgo_elite_slide_p38.description"] = "Компактная замена затвора и ствола, улучшающая скорость стрельбы и эргономичность оружия за счёт снижения дальности и отдачи.\nПохожа на другое, не вызывающее подозрений огнестрельное оружие определённой эпохи."
+-- L["csgo_elite_slide_p38.description"] = "Replaces the slide with a custom aftermarket one.\nПохожа на другое, не вызывающее подозрений огнестрельное оружие определённой эпохи."
 
 L["csgo_elite_slide_raffica.printname"] = "Модификация Raffica"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Переделывает Beretta под стрельбу очередями по 3 патрона.\nДобавляет цевье и компенсатор, улучшающий дальность стрельбы и контроль отдачи за счёт ухудшения эргономичности оружия.\nНе совместим с перком <Улучшенная очередь>."
-
--- L["csgo_elite_ik_bodge.printname"] = "Альт. стиль держания"
--- L["csgo_elite_ik_bodge.compactname"] = "Альт. держание"
--- L["csgo_elite_ik_bodge.description"] = ""
+-- L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management."
 
 -- FAMAS
-L["csgo_famas_barrel_long.printname"] = "ствол Tireur"
+L["csgo_famas_barrel_long.printname"] = "Ствол Tireur"
 L["csgo_famas_barrel_long.compactname"] = "Tireur"
-L["csgo_famas_barrel_long.description"] = "Удлинённый ствол, улучшающий отдачу и дальность стрельбы за счёт ухудшения эргономичности оружия."
+-- L["csgo_famas_barrel_long.description"] = "Custom marksman barrel."
 
-L["csgo_famas_barrel_short.printname"] = "405-мм ствол «Рейдер»"
-L["csgo_famas_barrel_short.compactname"] = "405-мм «Рейдер»"
-L["csgo_famas_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия ценой снижения отдачи и дальности стрельбы."
+L["csgo_famas_barrel_short.printname"] = "Ствол «Рейдер»"
+L["csgo_famas_barrel_short.compactname"] = "«Рейдер»"
+-- L["csgo_famas_barrel_short.description"] = "Shortened barrel."
 
-L["csgo_famas_mag_30.printname"] = "30-зарядный изогнутый магазин"
-L["csgo_famas_mag_30.compactname"] = "30-патр."
-L["csgo_famas_mag_30.description"] = "Изогнутый магазин на 30 патронов. Снижает скорость прицеливания."
+L["csgo_famas_mag_30.printname"] = "30-зарядный магазин 5,56x45-мм"
+L["csgo_famas_mag_30.compactname"] = "5,56-мм+"
+L["csgo_famas_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_famas_mag_long.printname"] = "60-зарядный изогнутый коробчатый магазин"
-L["csgo_famas_mag_long.compactname"] = "60-патр."
-L["csgo_famas_mag_long.description"] = "Изогнутый коробчатый магазин на 60 патронов. Снижает скорость перезарядки."
-
-L["csgo_famas_bipod_on.printname"] = "Развернуть сошки"
-L["csgo_famas_bipod_on.compactname"] = "Развёрнуты"
-L["csgo_famas_bipod_on.description"] = "Опускает сошки, улучшая контроль отдачи за счёт ухудшения эргономичности оружия."
-
-L["csgo_famas_view_alt.printname"] = "Альтернативный вид"
-L["csgo_famas_view_alt.compactname"] = "Альт. вид"
-L["csgo_famas_view_alt.description"] = "Меняет положение оружия в поле зрения."
+L["csgo_famas_mag_long.printname"] = "60-зарядный коробчатый магазин 5,56x45-мм"
+L["csgo_famas_mag_long.compactname"] = "5,56-мм++"
+L["csgo_famas_mag_long.description"] = string.format(quicktext.bigmag, 60)
 
 -- Five-SeveN
-L["csgo_five_slide_long.printname"] = "160-мм затвор и ствол +"
-L["csgo_five_slide_long.compactname"] = "160-мм+"
-L["csgo_five_slide_long.description"] = "Длинный затвор и ствол, улучшающий дальность стрельбы и контроль отдачи за счёт ухудшения эргономичности оружия."
+L["csgo_five_slide_long.printname"] = "Затвор и ствол Plus"
+L["csgo_five_slide_long.compactname"] = "Plus"
 
-L["csgo_five_slide_short.printname"] = "110-мм затвор и ствол FN"
-L["csgo_five_slide_short.compactname"] = "110-мм FN"
-L["csgo_five_slide_short.description"] = "Компактные затвор и ствол, улучшающие эргономичность оружия и скорость стрельбы за счёт снижения отдачи и дальности стрельбы."
+L["csgo_five_slide_short.printname"] = "затвор и ствол FN"
+L["csgo_five_slide_short.compactname"] = "FN"
 
 -- G3SG1
-L["csgo_g3_barrel_sd.printname"] = "ствол «Шептун»"
-L["csgo_g3_barrel_sd.compactname"] = "SD"
-L["csgo_g3_barrel_sd.description"] = "Ствол средней длины со встроенным глушителем.\nСнижает уровень децибел от выстрелов и улучшает контроль отдачи за счёт снижения скорости пули, дальности и эргономичности оружия."
+L["csgo_g3_barrel_sd.printname"] = "Ствол «Шептун»"
+L["csgo_g3_barrel_sd.compactname"] = "Шептун"
+L["csgo_g3_barrel_sd.description"] = "Ствол средней длины со встроенным глушителем.\nСнижает уровень децибел от выстрелов и улучшает контроль."
 
-L["csgo_g3_barrel_g3a3.printname"] = "ствол G3A3"
+L["csgo_g3_barrel_g3a3.printname"] = "Ствол G3A3"
 L["csgo_g3_barrel_g3a3.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3.description"] = "Ствол средней длины от G3A3, улучшающий эргономичность оружия ценой снижения дальности стрельбы."
+L["csgo_g3_barrel_g3a3.description"] = "Ствол средней длины от G3A3."
 
-L["csgo_g3_barrel_g3a3_smg.printname"] = "ствол G3A3"
-L["csgo_g3_barrel_g3a3_smg.compactname"] = "A3"
-L["csgo_g3_barrel_g3a3_smg.description"] = "Ствол средней длины от G3A3, улучшающий эргономичность оружия ценой снижения дальности стрельбы."
+L["csgo_g3_barrel_medium.printname"] = "Ствол G3KA4"
+L["csgo_g3_barrel_medium.compactname"] = "KA4"
+L["csgo_g3_barrel_medium.description"] = "Ствол средней длины от G3KA4."
 
-L["csgo_g3_barrel_medium.printname"] = "400-мм ствол G3KA4"
-L["csgo_g3_barrel_medium.compactname"] = "400-мм KA4"
-L["csgo_g3_barrel_medium.description"] = "Ствол средней длины от G3KA4, улучшающий эргономичность оружия ценой снижения дальности стрельбы."
+L["csgo_g3_barrel_short.printname"] = "Ствол Kurz"
+L["csgo_g3_barrel_short.compactname"] = "Kurz"
+L["csgo_g3_barrel_short.description"] = "Укороченный ствол G3KA4."
 
-L["csgo_g3_barrel_medium_smg.printname"] = "400-мм ствол G3KA4"
-L["csgo_g3_barrel_medium_smg.compactname"] = "400-мм KA4"
-L["csgo_g3_barrel_medium_smg.description"] = "Длинный ствол от G3KA4, улучшающий отдачу и дальность стрельбы ценой ухудшения эргономичности оружия."
+L["csgo_g3_mag_30.printname"] = "30-зарядный магазин 7,62x51-мм"
+L["csgo_g3_mag_30.compactname"] = "7,62-мм+"
+L["csgo_g3_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_barrel_short.printname"] = "350-мм ствол Kurz"
-L["csgo_g3_barrel_short.compactname"] = "350-мм Kurz"
-L["csgo_g3_barrel_short.description"] = "Укороченный ствол G3KA4, улучшающий эргономичность оружия за счёт снижения дальности стрельбы и отдачи."
+L["csgo_g3_mag_10.printname"] = "10-Round 7.62x51mm Magazine"
+L["csgo_g3_mag_10.compactname"] = "7,62-мм-"
+L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_barrel_short_smg.printname"] = "350-мм ствол Kurz"
-L["csgo_g3_barrel_short_smg.compactname"] = "350-мм Kurz"
-L["csgo_g3_barrel_short_smg.description"] = "Укороченный ствол G3KA4, улучшающий эргономичность оружия за счёт снижения дальности стрельбы и отдачи."
+L["csgo_g3_mag_30_auto.printname"] = "30-зарядный магазин 7,62x51-мм (Автоматический)"
+L["csgo_g3_mag_30_auto.compactname"] = "7,62-мм+ А"
+L["csgo_g3_mag_30_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_30.printname"] = "30-зарядный магазин"
-L["csgo_g3_mag_30.compactname"] = "30-патр."
-L["csgo_g3_mag_30.description"] = "Увеличивает ёмкость магазина за счёт снижения скорости перезарядки."
+L["csgo_g3_mag_20_auto.printname"] = "20-зарядный магазин 7,62x51-мм (Автоматический)"
+L["csgo_g3_mag_20_auto.compactname"] = "7,62-мм А"
+L["csgo_g3_mag_20_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>."
 
-L["csgo_g3_mag_10.printname"] = "10-зарядный магазин"
-L["csgo_g3_mag_10.compactname"] = "10-патр."
-L["csgo_g3_mag_10.description"] = "Уменьшает ёмкость магазина и улучшает скорость перезарядки."
-
-L["csgo_g3_mag_30_auto.printname"] = "30-зарядный магазин - Автоматический"
-L["csgo_g3_mag_30_auto.compactname"] = "30-патр. [А]"
-L["csgo_g3_mag_30_auto.description"] = "Изменяет режим стрельбы на полностью автоматический.\nУвеличивает ёмкость магазина и скорость стрельбы ценой резкого снижения урона."
-
-L["csgo_g3_mag_20_auto.printname"] = "20-зарядный магазин - Автоматический"
-L["csgo_g3_mag_20_auto.compactname"] = "20-патр. [А]"
-L["csgo_g3_mag_20_auto.description"] = "Изменяет режим стрельбы на полностью автоматический.\nУвеличивает скорость стрельбы ценой урона."
-
-L["csgo_g3_mag_10_auto.printname"] = "10-зарядный магазин - Автоматический"
-L["csgo_g3_mag_10_auto.compactname"] = "10-патр. [А]"
-L["csgo_g3_mag_10_auto.description"] = "Изменяет режим стрельбы на полностью автоматический.\nУменьшает ёмкость магазина и повышая скорость перезарядки."
+L["csgo_g3_mag_10_auto.printname"] = "10-зарядный магазин 7,62x51-мм (Автоматический)"
+L["csgo_g3_mag_10_auto.compactname"] = "7,62-мм- А"
+L["csgo_g3_mag_10_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_stock_collapsed.printname"] = "Складной приклад"
 L["csgo_g3_stock_collapsed.compactname"] = "Складной"
-L["csgo_g3_stock_collapsed.description"] = "Выдвижной приклад G3, улучшающий эргономичность оружия за счёт снижения отдачи."
+L["csgo_g3_stock_collapsed.description"] = "Выдвижной приклад G3."
 
 L["csgo_g3_stock_padded.printname"] = "Подщечник"
 L["csgo_g3_stock_padded.compactname"] = "Подщечник"
-L["csgo_g3_stock_padded.description"] = "Стандартный приклад с прикреплённым подщечником.\nУвеличивает скорость прицеливания."
+L["csgo_g3_stock_padded.description"] = "Стандартный приклад с прикреплённым подщечником."
 
 L["csgo_g3_stock_fixed.printname"] = "Фиксированный приклад A2"
 L["csgo_g3_stock_fixed.compactname"] = "Фиксированный A2"
-L["csgo_g3_stock_fixed.description"] = "Фиксированный укороченный приклад, улучшающий отдачу ценой снижения скорости прицеливания."
+L["csgo_g3_stock_fixed.description"] = "Фиксированный укороченный приклад."
 
 L["csgo_g3_mag_20_556.printname"] = "20-зарядный магазин 5,56x45-мм"
-L["csgo_g3_mag_20_556.compactname"] = "20-патр. 5,56-мм"
-L["csgo_g3_mag_20_556.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм и делает его полностью автоматическим.\nУменьшает урон и разброс."
+L["csgo_g3_mag_20_556.compactname"] = "5,56-мм"
+L["csgo_g3_mag_20_556.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм и делает его <color=100,255,100>полностью автоматическим</color>."
 
 L["csgo_g3_mag_30_556.printname"] = "30-зарядный магазин 5,56x45-мм"
-L["csgo_g3_mag_30_556.compactname"] = "30-патр. 5,56-мм"
-L["csgo_g3_mag_30_556.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм и делает его полностью автоматическим.\nУвеличивает ёмкость магазина за счёт урона и разброса."
+L["csgo_g3_mag_30_556.compactname"] = "5,56-мм+"
+L["csgo_g3_mag_30_556.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм и делает его <color=100,255,100>полностью автоматическим</color>.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_g3_mag_50_556.printname"] = "60-зарядный коробчатый магазин 5,56x45-мм"
-L["csgo_g3_mag_50_556.compactname"] = "60-патр. 5,56-мм"
-L["csgo_g3_mag_50_556.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм и делает его полностью автоматическим.\nУвеличивает ёмкость магазина за счёт урона и разброса."
+L["csgo_g3_mag_50_556.compactname"] = "5,56-мм++"
+L["csgo_g3_mag_50_556.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм и делает его <color=100,255,100>полностью автоматическим</color>.\n" .. string.format(quicktext.bigmag, 60)
 
 L["csgo_g3_mag_20_g41.printname"] = "20-зарядный магазин и адаптер 5,56x45-мм НАТО"
-L["csgo_g3_mag_20_g41.compactname"] = "20-патр. НАТО"
-L["csgo_g3_mag_20_g41.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм AR-15 через адаптер и делает его полностью автоматическим.\nУлучшает контроль отдачи, скорость стрельбы и скорость перезарядки за счёт урона и разброса."
+L["csgo_g3_mag_20_g41.compactname"] = "НАТО"
+L["csgo_g3_mag_20_g41.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм AR-15 через адаптер и делает его <color=100,255,100>полностью автоматическим</color>."
 
 L["csgo_g3_mag_30_g41.printname"] = "30-зарядный магазин и адаптер 5,56x45-мм НАТО"
-L["csgo_g3_mag_30_g41.compactname"] = "30-патр. НАТО"
-L["csgo_g3_mag_30_g41.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм AR-15 через адаптер и делает его полностью автоматическим.\nУвеличивает ёмкость магазина, улучшает контроль отдачи и скорость стрельбы за счёт урона, разброса и скорости перезарядки."
+L["csgo_g3_mag_30_g41.compactname"] = "НАТО+"
+L["csgo_g3_mag_30_g41.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм AR-15 через адаптер и делает его <color=100,255,100>полностью автоматическим</color>.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_g3_mag_60_g41.printname"] = "60-зарядный коробчатый магазин и адаптер 5,56x45-мм НАТО"
-L["csgo_g3_mag_60_g41.compactname"] = "60-патр. НАТО"
-L["csgo_g3_mag_60_g41.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм AR-15 через адаптер и делает его полностью автоматическим.\nУвеличивает ёмкость магазина, улучшает контроль отдачи и скорость стрельбы за счёт урона, разброса и скорости перезарядки."
+L["csgo_g3_mag_60_g41.compactname"] = "НАТО++"
+L["csgo_g3_mag_60_g41.description"] = "Переделывает оружие на использование магазинов 5,56x45-мм AR-15 через адаптер и делает его <color=100,255,100>полностью автоматическим</color>.\n" .. string.format(quicktext.bigmag, 60)
 
 L["csgo_g3_mag_30_waf.printname"] = "30-зарядная модификация .45 ACP"
-L["csgo_g3_mag_30_waf.compactname"] = "30-патр. .45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Переделывает оружие под использование магазинов .45 ACP.\nУвеличивает ёмкость магазина, скорость перезарядки, скорость стрельбы, контроль отдачи и разброс при стрельбе от бедра за счёт урона и разброса при стрельбе."
+L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
+L["csgo_g3_mag_30_waf.description"] = "Переделывает оружие под использование магазинов .45 ACP и делает его <color=100,255,100>полностью автоматическим</color>. Также укорачивает длину ствола и приклада."
 
 L["csgo_g3_mag_40_mp9.printname"] = "40-зарядная модификация 9x19-мм"
-L["csgo_g3_mag_40_mp9.compactname"] = "40-патр. 9-мм"
-L["csgo_g3_mag_40_mp9.description"] = "Переделывает оружие под использование магазинов 9х19-мм. Также укорачивает длину ствола и приклада.\nУвеличивает ёмкость магазина, скорость перезарядки, скорость стрельбы, контроль отдачи и разброс при стрельбе в движении за счёт урона и разброса при стрельбе от бедра."
+L["csgo_g3_mag_40_mp9.compactname"] = "9-мм"
+L["csgo_g3_mag_40_mp9.description"] = "Переделывает оружие под использование магазинов 9х19-мм и делает его <color=100,255,100>полностью автоматическим</color>. Также укорачивает длину ствола и приклада."
 
 -- Galil
-L["csgo_galil_barrel_long.printname"] = "520-мм ствол"
-L["csgo_galil_barrel_long.compactname"] = "520-мм"
-L["csgo_galil_barrel_long.description"] = "Удлинённый ствол, улучшающий отдачу и дальность стрельбы за счёт ухудшения эргономичности оружия."
+-- L["csgo_galil_barrel_long.printname"] = "Long Barrel"
+-- L["csgo_galil_barrel_long.compactname"] = "Long"
+-- L["csgo_galil_barrel_long.description"] = "Long marksman barrel."
 
-L["csgo_galil_barrel_short.printname"] = "305-мм ствол"
-L["csgo_galil_barrel_short.compactname"] = "305-мм"
-L["csgo_galil_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия ценой снижения отдачи и дальности стрельбы."
+-- L["csgo_galil_barrel_short.printname"] = "Short Barrel"
+-- L["csgo_galil_barrel_short.compactname"] = "Short"
+-- L["csgo_galil_barrel_short.description"] = "Shortened CQB barrel."
 
 L["csgo_galil_mag_35.printname"] = "35-зарядный магазин"
 L["csgo_galil_mag_35.compactname"] = "35-патр."
@@ -1553,8 +1527,8 @@ L["csgo_mac10_barrel_med.printname"] = "200-мм ствол Patrol"
 L["csgo_mac10_barrel_med.compactname"] = "200-мм Patrol"
 L["csgo_mac10_barrel_med.description"] = "Удлинённый ствол, улучшающий контроль отдачи, дальность и разброс за счёт снижения скорости прицеливания."
 
-L["csgo_mac10_barrel_long.printname"] = "350-мм ствол карабина"
-L["csgo_mac10_barrel_long.compactname"] = "350-мм к."
+L["csgo_mac10_barrel_long.printname"] = "Ствол карабина"
+L["csgo_mac10_barrel_long.compactname"] = "к."
 L["csgo_mac10_barrel_long.description"] = "Длинный ствол, который ещё больше улучшает контроль отдачи, дальность и разброс за счёт снижения скорости прицеливания."
 
 L["csgo_mac10_barrel_shroud.printname"] = "300-мм ствол Shroud"
@@ -1758,8 +1732,8 @@ L["csgo_scout_barrel_long.printname"] = "570mm Элитный ствол"
 L["csgo_scout_barrel_long.compactname"] = "570mm Элитный"
 L["csgo_scout_barrel_long.description"] = "Длинный ствол, повышающий дульную скорость и дальность стрельбы за счет ухудшения управляемости оружия."
 
-L["csgo_scout_barrel_short.printname"] = "400mm Выживания ствол"
-L["csgo_scout_barrel_short.compactname"] = "400mm Выживания"
+L["csgo_scout_barrel_short.printname"] = "Выживания ствол"
+L["csgo_scout_barrel_short.compactname"] = "Выживания"
 L["csgo_scout_barrel_short.description"] = "Компактный ствол, улучшающий управляемость оружия за счет снижения дульной скорости, дальности и урона."
 
 -- SIG556
@@ -1895,8 +1869,8 @@ L["csgo_ump_view_alt.printname"] = "Альтернативный вид"
 L["csgo_ump_view_alt.compactname"] = "Альт. вид"
 L["csgo_ump_view_alt.description"] = "Меняет положение оружия в поле зрения."
 
-L["csgo_ump_barrel_long.printname"] = "350-мм ствол USC"
-L["csgo_ump_barrel_long.compactname"] = "350-мм USC"
+L["csgo_ump_barrel_long.printname"] = "Ствол USC"
+L["csgo_ump_barrel_long.compactname"] = "USC"
 L["csgo_ump_barrel_long.description"] = "Удлинённый гражданский ствол, улучшающий контроль отдачи и дальность стрельбы за счёт ухудшения эргономичности оружия."
 
 L["csgo_ump_barrel_mid.printname"] = "220-мм ствол H&K"
@@ -1925,7 +1899,7 @@ L["csgo_xm1014_barrel_long.printname"] = "750-мм ствол"
 L["csgo_xm1014_barrel_long.compactname"] = "750-мм"
 L["csgo_xm1014_barrel_long.description"] = "Удлинённый ствол, улучшающий контроль отдачи, дальность и точность стрельбы от бедра за счёт ухудшения эргономичности оружия.\nНеобходим для модуля <10-зарядное цевьё>."
 
-L["csgo_xm1014_barrel_short.printname"] = "350-мм ствол"
+L["csgo_xm1014_barrel_short.printname"] = "Ствол"
 L["csgo_xm1014_barrel_short.compactname"] = "350-мм"
 L["csgo_xm1014_barrel_short.description"] = "Укороченный ствол, улучшающий эргономичность оружия за счёт снижения отдачи, дальности и разброса при стрельбе от бедра.\nНесовместим с модулем <10-зарядное цевьё>."
 
