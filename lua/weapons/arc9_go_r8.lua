@@ -77,23 +77,20 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 85
+SWEP.RPM = 150
+SWEP.RPMSights = 85
 
 SWEP.Firemodes = {
     {
         Mode = 1,
 		PrintName = ARC9:GetPhrase("hud.firemode.single"),
-		SpreadAddHipFire = 0.05,
-		SpreadAddMove = 0.03,
-		SpreadAddRecoil = 0.05,
-		TriggerDelay = 0,
-		RPM = 150,
-		TriggerDelay = false,
+		-- SpreadAddHipFire = 0.05,
+		-- SpreadAddMove = 0.03,
+		-- SpreadAddRecoil = 0.05,
+		-- TriggerDelay = 0,
+		-- RPM = 150,
+		-- TriggerDelay = false,
     },
-    -- {
-        -- Mode = 1,
-		-- PrintName = "Fanning",
-    -- },
 }
 -------------------------- RECOIL
 
@@ -148,11 +145,11 @@ SWEP.VisualRecoilMultSights = 1
 
 SWEP.Spread = 0
 
--- SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.02
 
 -------------------------- HANDLING
@@ -167,11 +164,11 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 
 SWEP.TriggerDelay = 2 -- Set to > 0 to play the "trigger" animation before shooting. Delay time is based on this value.
 
-SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
-SWEP.TriggerDelayTime = 0.2 -- Time until weapon fires.
+SWEP.TriggerDelay = false
+SWEP.TriggerDelaySights = true
+SWEP.TriggerDelayTimeSights = 0.2 -- Time until weapon fires.
 
 SWEP.TriggerDelaySights = 0.2
-SWEP.RPMSights = 85
 
 -------------------------- TRACERS
 
@@ -390,6 +387,12 @@ SWEP.AttachmentElements = {
 	["csgo_r8_model"] = { 
 		Bodygroups = { {0,1} },
 	},
+}
+
+SWEP.AttachmentTableOverrides = {
+    ["csgo_r8_model"] = {
+		RPMMultSights = 1.75,
+    },
 }
 
 SWEP.HookP_NameChange = function(self, name)

@@ -197,11 +197,6 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 SWEP.IronSights = {
     Pos = Vector(-5.42, -2, -0.2),
     Ang = Angle(-0.1, 1.25, -1.5),
-    Midpoint = { -- Where the gun should be at the middle of it's irons
-        Pos = Vector(0, 50, -4),
-        Ang = Angle(0, 0, -45),
-		ViewModelFOV = 50,
-    },
     Magnification = 1.1,
     CrosshairInSights = false,
     ViewModelFOV = 36,
@@ -912,7 +907,7 @@ SWEP.Attachments = {
         Category = {"csgo_optic","csgo_optic_m4a1"},
         --InstalledElements = {"reciever_m16a4"},
 		Installed = "csgo_m4a1_reciever_default",
-        Integral = true,
+        Integral = "csgo_m4a1_reciever_default",
         CorrectiveAng = Angle(-0.1, 0.45, 0),
     },
     {

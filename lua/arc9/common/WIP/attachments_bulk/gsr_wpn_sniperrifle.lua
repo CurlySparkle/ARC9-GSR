@@ -14,7 +14,67 @@ local sharedcode = {
 	MenuCategory = "ARC9 - CSGO Attachments",
 }
 
-////////////////////////////////////// AK-47
+////////////////////////////////////// AWP
+
+-- ATT = {}
+
+-- ATT.PrintName = "Gen Laser Sight"
+
+-- table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
+-- ATT.Category = "csgo_tac_pistols"
+
+-- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+------------------------------------------------------------------------
+
+
+////////////////////////////////////// G3SG1
+
+-- ATT = {}
+
+-- ATT.PrintName = "Gen Laser Sight"
+
+-- table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
+-- ATT.Category = "csgo_tac_pistols"
+
+-- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+------------------------------------------------------------------------
+
+
+////////////////////////////////////// SCAR-20
+
+-- ATT = {}
+
+-- ATT.PrintName = "Gen Laser Sight"
+
+-- table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
+-- ATT.Category = "csgo_tac_pistols"
+
+-- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+------------------------------------------------------------------------
+
+
+////////////////////////////////////// Scout
+
+-- ATT = {}
+
+-- ATT.PrintName = "Gen Laser Sight"
+
+-- table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
+-- ATT.Category = "csgo_tac_pistols"
+
+-- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+------------------------------------------------------------------------
+
+
+////////////////////////////////////// SSG 08
 
 -- ATT = {}
 

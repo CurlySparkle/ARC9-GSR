@@ -201,6 +201,15 @@ SWEP.IronSightsHook = function(self)
 			ViewModelFOV = 56,
         }
     end
+	
+     if attached["csgo_ak47_barrel_tactical"] then
+        return {
+            Pos = Vector(-4.95, -7.5, 1.05),
+            Ang = Angle(0.35, 0, -1.5),
+			Magnification = 1.25,
+			ViewModelFOV = 56,
+        }
+    end
 end
 
 SWEP.IronSightsPos = Vector(-4.989, -10, 1.118)
@@ -631,99 +640,75 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["csgo_ak47_grip_tactical"] = {
+        Bodygroups = { { 5, 1}, },
+    },
+    ["csgo_ak47_barrel_tactical"] = {
+        Bodygroups = { { 3, 4}, },
+		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3) } }, -- REMOVE LATER
+    },
+    ["csgo_ak47_barrel_long"] = {
+        Bodygroups = { { 3, 2}, },
+		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 31.4) } }, -- REMOVE LATER
+    },
+    ["csgo_ak47_barrel_short"] = {
+        Bodygroups = { { 3, 3}, },
+		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 17.5) }, [6] = { Pos = Vector(0, -2.3, 12) } }, -- REMOVE LATER
+    },
+    ["csgo_ak47_mag_50"] = {
+        Bodygroups = { {4, 1}, },
+    },
+    ["csgo_ak47_mag_556"] = {
+        Bodygroups = { {4, 2}, },
+    },
+    ["csgo_ak47_mag_556_ext"] = {
+        Bodygroups = { {4, 3}, },
+    },
+    ["csgo_ak47_mag_545"] = {
+        Bodygroups = { {4, 4}, },
+    },
+    ["csgo_ak47_mag_545_ext"] = {
+        Bodygroups = { {4, 5}, },
+    },
+    ["csgo_ak47_stock_rpk"] = {
+        Bodygroups = { { 1, 1}, },
+    },
+    ["csgo_ak47_stock_skeleton"] = {
+        Bodygroups = { { 1, 2}, },
+    },
+	
     ["stock_none"] = {
-        Bodygroups = {
-            {1,3},
-        },
+        Bodygroups = { { 1, 3}, },
     },
     ["topcover"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["grip_poly"] = {
-        Bodygroups = {
-            {5,1},
-        },
-    },
-    ["barrel_tactical"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3), } }
-    },
-	["barrel_tactical_alt"] = {
-        Bodygroups = {
-            {3,4},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3), } }
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.4, 31.4), } }
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {3,3},
-        },
-    AttPosMods = { 
-	[2] = { Pos = Vector(0, -3.4, 17.5), },
-	[6] = { Pos = Vector(0, -2.3, 12), },
-	}
-    },
-    ["mag_drum"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
-    ["mag_556"] = {
-        Bodygroups = {
-            {4,2},
-        },
-    },
-    ["mag_556_ext"] = {
-        Bodygroups = {
-            {4,3},
-        },
-    },
-    ["mag_545"] = {
-        Bodygroups = {
-            {4,4},
-        },
-    },
-    ["mag_545_ext"] = {
-        Bodygroups = {
-            {4,5},
-        },
+        Bodygroups = { { 2, 1}, },
     },
     ["mag_none"] = {
-        Bodygroups = {
-            {4,6},
-        },
-    },
-    ["stock_rpk"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["stock_skeleton"] = {
-        Bodygroups = {
-            {1,2},
-        },
+        Bodygroups = { {4, 6}, },
     },
     ["csgo_rail_optic_2_alt"] = {
-    AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3), } }
+		AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3), } }
     },
 }
 
 SWEP.AttachmentTableOverrides = {
     ["arc9_stat_proscreen_main"] = {
-    ModelOffset = Vector(4, -0.5, 0.9),
-	ModelAngleOffset = Angle(-3, 0, 0)
+		ModelOffset = Vector(4, -0.5, 0.9),
+		ModelAngleOffset = Angle(-3, 0, 0)
     },
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+	
+	-- If any grip without any barrel
+	if wep.Attachments[6].Installed then
+		if !(wep:HasElement("csgo_ak47_barrel_tactical") or wep:HasElement("csgo_ak47_barrel_long") or wep:HasElement("csgo_ak47_barrel_short")) then
+			model:SetBodygroup(3,1)
+		end
+	end
+
+end
 
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
@@ -854,7 +839,7 @@ SWEP.Attachments = {
         DefaultAttName = "Default",
         Category = "csgo_rail_tac",
         Bone = "v_weapon.ak47_Parent",
-        Pos = Vector(-0.9, -3.9, 14),
+        Pos = Vector(-0.9, -4.55, 14),
         Ang = Angle(90, 0, 90),
 		Icon_Offset = Vector(0, 0, -0.5),
     },

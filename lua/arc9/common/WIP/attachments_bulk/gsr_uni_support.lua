@@ -46,7 +46,7 @@ ATT.Attachments = {
         Category = {"fas_optic"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(.5, 0, 0),
+        Icon_Offset = Vector(-1, 0, 1.5),
     },
 }
 
@@ -67,7 +67,7 @@ ATT.Attachments = {
         Category = {"fas_optic_small"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0.5, 0, 0),
+        Icon_Offset = Vector(-1, 0, 1.5),
     },
 }
 
@@ -109,9 +109,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod_optic", "cod_optic_alt"},
-        Pos = Vector(-1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
     },
 }
 
@@ -130,9 +130,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod_optic_alt"},
-        Pos = Vector(-1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
     },
 }
 
@@ -263,9 +263,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(-0.5, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(1.5, 0, 0),
+        Icon_Offset = Vector(-0.5, 0, 1.5),
     },
 }
 
@@ -286,7 +286,7 @@ ATT.Attachments = {
         Category = {"eft_optic_small"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(1.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
     },
 }
 
@@ -354,9 +354,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod2019_optic", "cod2019_optic_raised", "cod2019_optic_big"},
-        Pos = Vector(-1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
 		RejectAttachments = {
 			["cod2019_attach_support_gsr_optics"] = true,
 			["cod2019_eft_scopes"] = true,
@@ -379,9 +379,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod2019_optic_pistol", "cod2019_optics_pistols_scope"},
-        Pos = Vector(-1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
 		RejectAttachments = {
 			["cod2019_attach_support_gsr_optics"] = true,
 			["cod2019_eft_scopes"] = true,
@@ -502,9 +502,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"uplp_optic_small", "uplp_optic_backup", "uplp_optic_mid", "uplp_optic_big"},
-        Pos = Vector(-1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
     },
 }
 
@@ -523,9 +523,9 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod2019_optic_pistol", "cod2019_optics_pistols_scope"},
-        Pos = Vector(-1, 0, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0.5, 0, 0),
+        Icon_Offset = Vector(0, 0, 1.5),
     },
 }
 

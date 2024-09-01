@@ -140,11 +140,11 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.125 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.1
+SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.02
 SWEP.SpreadAddRecoilSight = 0.0025
 

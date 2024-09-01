@@ -115,7 +115,7 @@ SWEP.RecoilMultSights = 1
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 1
-SWEP.VisualRecoilSide = .15
+SWEP.VisualRecoilSide = -.05
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 0.15
@@ -211,6 +211,11 @@ SWEP.CustomizeRotateAnchor = Vector(12, -3.5, -4)
 SWEP.CustomizeSnapshotPos = Vector(0, 30, 3.5)
 SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, 1, -2.75)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 

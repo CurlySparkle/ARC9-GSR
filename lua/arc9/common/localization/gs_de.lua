@@ -47,7 +47,7 @@ L["csgo_firemode_sil"] = "AN"
 L["csgo_firemode_nosil"] = "AUS"
 
 /////////////////// Weapon Categories
-L["csgo_category_weapon_akimbo"] = "Akimbos"
+L["csgo_category_weapon_akimbo"] = "Dual-Waffen"
 L["csgo_category_weapon_ar"] = "Sturmgewehre"
 L["csgo_category_weapon_extra"] = "Extras"
 L["csgo_category_weapon_lmg"] = "LMGs"
@@ -725,10 +725,6 @@ L["go_mag_extended.printname"] = "Erweiterte Zeitschriften"
 L["go_mag_extended.compactname"] = "Ext. Mag"
 -- L["go_mag_extended.description"] = "Universally <color=100,255,100>increases magazine capacity</color>."
 
-L["go_mag_extended_ak47.printname"] = "Erweiterte Zeitschriften"
-L["go_mag_extended_ak47.compactname"] = "Ext. Mag"
--- L["go_mag_extended_ak47.description"] = "High-capacity <color=100,255,100>45-round</color> magazine."
-
 L["go_mag_extended_m4.printname"] = "50-Runden-Trommelmagazin"
 L["go_mag_extended_m4.compactname"] = "50R Trommel"
 -- L["go_mag_extended_m4.description"] = "High-capacity <color=100,255,100>50-round</color> drum magazine."
@@ -1057,182 +1053,161 @@ L["go_ubgl_xm1014.compactname"] = "XM1014"
 -- L["csgo_barrel_short.compactname"] = "Kurz"
 -- L["csgo_barrel_short.description"] = "Verkürzter Lauf, der die Waffenhandhabung auf Kosten der Rückstoßkontrolle verbessert."
 
-L["csgo_r8_model.printname"] = "6-Runden-Zylinder"
-L["csgo_r8_model.compactname"] = "6R"
-L["csgo_r8_model.description"] = "6-Schuss-Zylinder kombiniert mit einem schlankeren Lauf. Erhöht die Abzugsverzögerung."
-
-L["csgo_mp5_k.printname"] = "Kurzer Lauf und Handschutz"
-L["csgo_mp5_k.compactname"] = "Kurz"
-L["csgo_mp5_k.description"] = "Kürzt Lauf und Handschutz für ein kompakteres Profil.\nFügt einen kosmetischen Vordergriff hinzu."
-
-L["csgo_mp5_stock_k.printname"] = "Klappschaft"
-L["csgo_mp5_stock_k.compactname"] = "Falten"
-L["csgo_mp5_stock_k.description"] = "Klappbarer PDW-Schaft.\nVerbessert die Rückstoßkontrolle auf Kosten der Zielgeschwindigkeit."
-
-L["csgo_mp5_mag_k.printname"] = "20-Runden-Magazin"
-L["csgo_mp5_mag_k.compactname"] = "20R Mag"
-L["csgo_mp5_mag_k.description"] = "Reduziert die Magazinkapazität mit dem Vorteil einer verbesserten Nachladegeschwindigkeit und Waffenhandhabung."
-
 L["csgo_pistols_view.printname"] = "Alternative Ansicht"
 L["csgo_pistols_view.compactname"] = "Alternative Ansicht"
 L["csgo_pistols_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
-L["csgo_pistols_view2.printname"] = "Alternative Ansicht"
-L["csgo_pistols_view2.compactname"] = "Alternative Ansicht"
-L["csgo_pistols_view2.description"] = "Ändert die Position der Waffe im Blickfeld."
+-- Quick Translations (Universally done)
 
-L["csgo_pistols_view3.printname"] = "Alternative Ansicht"
-L["csgo_pistols_view3.compactname"] = "Alternative Ansicht"
-L["csgo_pistols_view3.description"] = "Ändert die Position der Waffe im Blickfeld."
+local quicktext = {
+	bigmag = "Extended magazine holding <color=100,255,100>%s rounds</color>.",
+	drummag = "High capacity drum magazine holding <color=100,255,100>%s rounds</color>.",
+	smallmag = "Shortened magazine holding <color=255,100,100>%s rounds</color>.",
+}
 
 -- AK-47
-L["csgo_ak47_mag_50.printname"] = "50-Runden-Trommelmagazin"
-L["csgo_ak47_mag_50.compactname"] = "50R-Trommel"
-L["csgo_ak47_mag_50.description"] = "Erhöht die Magazinkapazität auf Kosten der Nachladegeschwindigkeit und Waffenhandhabung."
+L["go_mag_extended_ak47.printname"] = "7,62 x 39 mm 40-Schuss-Magazin"
+L["go_mag_extended_ak47.compactname"] = "7,62 mm+"
+L["go_mag_extended_ak47.description"] = string.format(quicktext.bigmag, 40)
 
-L["csgo_ak47_barrel_long.printname"] = "590-mm-RPK-Lauf"
-L["csgo_ak47_barrel_long.compactname"] = "590 mm RPK"
-L["csgo_ak47_barrel_long.description"] = "Längerer Lauf, der beim RPK verwendet wird.\nVerbessert Reichweite und Rückstoßkontrolle auf Kosten der Waffenhandhabung."
+L["csgo_ak47_mag_50.printname"] = "7,62 x 39 mm 50-Schuss-Trommelmagazin"
+L["csgo_ak47_mag_50.compactname"] = "7,62 mm++"
+L["csgo_ak47_mag_50.description"] = string.format(quicktext.drummag, 50)
 
-L["csgo_ak47_barrel_short.printname"] = "314-mm-Ukorochenniy-Lauf"
-L["csgo_ak47_barrel_short.compactname"] = "314 mm U"
-L["csgo_ak47_barrel_short.description"] = "Kurzer Lauf, der beim AKS-74U verwendet wird.\nVerbessert die Waffenhandhabung auf Kosten der Reichweite und Rückstoßkontrolle."
+L["csgo_ak47_barrel_long.printname"] = "RPK-Lauf"
+L["csgo_ak47_barrel_long.compactname"] = "RPK"
+L["csgo_ak47_barrel_long.description"] = "Längerer Lauf, der beim RPK verwendet wird."
 
-L["csgo_ak47_barrel_tactical.printname"] = "415-mm-taktischer Spetsnaz-Lauf"
-L["csgo_ak47_barrel_tactical.compactname"] = "415mm TS"
-L["csgo_ak47_barrel_tactical.description"] = "Ersetzt den unteren Handschutz durch einen RIS-Adapter, wodurch mehr Zubehör möglich ist.\nVerbessert Reichweite und Rückstoßkontrolle auf Kosten der Waffenhandhabung."
+L["csgo_ak47_barrel_short.printname"] = "Ukorochenniy-Lauf"
+L["csgo_ak47_barrel_short.compactname"] = "U"
+L["csgo_ak47_barrel_short.description"] = "Kurzer Lauf, der beim AKS-74U verwendet wird."
+
+L["csgo_ak47_barrel_tactical.printname"] = "Taktischer Spetsnaz-Lauf"
+L["csgo_ak47_barrel_tactical.compactname"] = "TS"
+-- L["csgo_ak47_barrel_tactical.description"] = "Tactical handguard with built-in picatinny rails."
 
 L["csgo_ak47_grip_tactical.printname"] = "Taktischer Pistolengriff"
-L["csgo_ak47_grip_tactical.compactname"] = "Takt. Griff"
-L["csgo_ak47_grip_tactical.description"] = "Ersetzt den hölzernen Pistolengriff durch einen Plastikgriff für verbesserte Ergonomie.\nVerbessert die Rückstoßkontrolle auf Kosten der Zielgeschwindigkeit."
+L["csgo_ak47_grip_tactical.compactname"] = "Taktischer"
+L["csgo_ak47_grip_tactical.description"] = "Ersetzt den hölzernen Pistolengriff durch einen Plastikgriff für verbesserte Ergonomie."
 
 L["csgo_ak47_stock_rpk.printname"] = "RPK-Aktie"
 L["csgo_ak47_stock_rpk.compactname"] = "RPK"
-L["csgo_ak47_stock_rpk.description"] = "Schwerer RPK-Schaft, der die Rückstoßkontrolle auf Kosten der Zielgeschwindigkeit verbessert."
+L["csgo_ak47_stock_rpk.description"] = "Schwerer RPK-Schaft."
 
 L["csgo_ak47_stock_skeleton.printname"] = "Skelettbestand"
 L["csgo_ak47_stock_skeleton.compactname"] = "Skelett"
-L["csgo_ak47_stock_skeleton.description"] = "Leichter Schaft, der die Zielgeschwindigkeit auf Kosten der Rückstoßkontrolle verbessert."
+-- L["csgo_ak47_stock_skeleton.description"] = "Lightweight skeleton stock."
 
-L["csgo_ak47_mag_556.printname"] = "30-Runden Polymer 5,56 x 45 mm Magazin"
-L["csgo_ak47_mag_556.compactname"] = "30R 5,56 mm"
-L["csgo_ak47_mag_556.description"] = "Ändert die AK-47 für die Verwendung von 5,56 x 45 mm Magazinen und Munition.\nVerbessert die Rückstoßkontrolle und Feuerrate auf Kosten von Reichweite und Schaden."
+L["csgo_ak47_mag_556.printname"] = "5,56 x 45 mm 30-Schuss-Magazin"
+L["csgo_ak47_mag_556.compactname"] = "5,56 mm"
+L["csgo_ak47_mag_556.description"] = "Ändert die AK-47 für die Verwendung von 5,56 x 45 mm Magazinen und Munition."
 
-L["csgo_ak47_mag_556_ext.printname"] = "50-Runden-Polymer-Sargmagazin 5,56 x 45 mm"
-L["csgo_ak47_mag_556_ext.compactname"] = "50R 5,56 mm"
-L["csgo_ak47_mag_556_ext.description"] = "Konvertiert die AK-47 zur Verwendung von 5,56 x 45 mm Magazinen und Munition.\nVerbessert die Magazinkapazität, Rückstoßkontrolle und Feuerrate auf Kosten von Reichweite, Schaden und Nachladegeschwindigkeit."
+L["csgo_ak47_mag_556_ext.printname"] = "5,56 x 45 mm 45-Schuss-Sargmagazin"
+L["csgo_ak47_mag_556_ext.compactname"] = "5,56 mm+"
+L["csgo_ak47_mag_556_ext.description"] = "Konvertiert die AK-47 zur Verwendung von 5,56 x 45 mm Magazinen und Munition.\n" .. string.format(quicktext.bigmag, 45)
 
-L["csgo_ak47_mag_545.printname"] = "30-Runden 5,45 x 39 mm Magazin"
-L["csgo_ak47_mag_545.compactname"] = "30R 5,45 x 39 mm"
-L["csgo_ak47_mag_545.description"] = "Ändert die AK-47 für die Verwendung von 5,45 x 39 Magazinen und Munition.\nVerbessert die Rückstoßkontrolle und die Feuerrate auf Kosten des Schadens."
+L["csgo_ak47_mag_545.printname"] = "5,45 x 39 mm 30-Schuss-Magazin"
+L["csgo_ak47_mag_545.compactname"] = "5,45 mm"
+L["csgo_ak47_mag_545.description"] = "Ändert die AK-47 für die Verwendung von 5,45 x 39 Magazinen und Munition."
 
-L["csgo_ak47_mag_545_ext.printname"] = "40-Runden 5,45 x 39 mm Magazin"
-L["csgo_ak47_mag_545_ext.compactname"] = "40R 5,45 x 39 mm"
-L["csgo_ak47_mag_545_ext.description"] = "Ändert die AK-47 zur Verwendung von 5,45 x 39 Magazinen und Munition.\nVerbessert die Magazinkapazität, Rückstoßkontrolle und Feuerrate auf Kosten von Schaden und Nachladegeschwindigkeit."
+L["csgo_ak47_mag_545_ext.printname"] = "5,45 x 39 mm 40-Schuss-Magazin"
+L["csgo_ak47_mag_545_ext.compactname"] = "5,45 mm+"
+L["csgo_ak47_mag_545_ext.description"] = "Ändert die AK-47 zur Verwendung von 5,45 x 39 Magazinen und Munition.\n" .. string.format(quicktext.bigmag, 40)
 
 -- AUG
-L["csgo_aug_mag_1.printname"] = "9x19mm Magazin"
-L["csgo_aug_mag_1.compactname"] = "9x19mm"
-L["csgo_aug_mag_1.description"] = "Wandelt die AUG mit einem 9x19mm Magazinadapter in die AUG Para um.\nVerbessert Schussgeschwindigkeit, Rückstoßkontrolle und Nachladegeschwindigkeit auf Kosten von Magazinkapazität, Schaden und Streuung."
+L["csgo_aug_mag_1.printname"] = "9 x 19 mm 25-Schuss-Magazin"
+L["csgo_aug_mag_1.compactname"] = "9 mm"
+L["csgo_aug_mag_1.description"] = "Wandelt die AUG mit einem 9x19mm Magazinadapter in die AUG Para um.\n" .. string.format(quicktext.smallmag, 25)
 
-L["csgo_aug_mag_2.printname"] = "9x19mm Erweitertes Magazin"
-L["csgo_aug_mag_2.compactname"] = "9x19mm+"
-L["csgo_aug_mag_2.description"] = "Wandelt die AUG mit einem 9x19mm Magazinadapter in die AUG Para um.\nVerbessert die Magazinkapazität, Schussgeschwindigkeit, Rückstoßkontrolle und Nachladegeschwindigkeit auf Kosten von Schaden und Streuung."
+L["csgo_aug_mag_2.printname"] = "9 x 19 mm 32-Schuss-Magazin"
+L["csgo_aug_mag_2.compactname"] = "9 mm+"
+L["csgo_aug_mag_2.description"] = "Wandelt die AUG mit einem 9x19mm Magazinadapter in die AUG Para um.\n" .. string.format(quicktext.bigmag, 32)
 
-L["csgo_aug_barrel_long.printname"] = "Schwerer 620-mm-Lauf"
-L["csgo_aug_barrel_long.compactname"] = "620 mm schwer"
-L["csgo_aug_barrel_long.description"] = "Längerer Lauf, der beim AUG HBAR verwendet wird.\nVerbessert Reichweite und Rückstoßkontrolle auf Kosten der Waffenhandhabung."
+L["csgo_aug_barrel_long.printname"] = "Schwerer Lauf"
+L["csgo_aug_barrel_long.compactname"] = "Schwer"
+L["csgo_aug_barrel_long.description"] = "Längerer Lauf, der beim AUG HBAR verwendet wird."
 
-L["csgo_aug_barrel_short.printname"] = "420 mm Para-Lauf"
-L["csgo_aug_barrel_short.compactname"] = "420mm Para"
-L["csgo_aug_barrel_short.description"] = "Kürzerer Lauf, der beim AUG Para verwendet wird.\nVerbessert die Waffenhandhabung auf Kosten der Rückstoßkontrolle und Reichweite."
+L["csgo_aug_barrel_short.printname"] = "Para-Lauf"
+L["csgo_aug_barrel_short.compactname"] = "Para"
+L["csgo_aug_barrel_short.description"] = "Kürzerer Lauf, der beim AUG Para verwendet wird."
 
 L["csgo_grip_no.printname"] = "Griff entfernen"
 L["csgo_grip_no.compactname"] = "Entfernen"
-L["csgo_grip_no.description"] = "Entfernt den Frontgriff, verbessert die Waffenhandhabung auf Kosten der Rückstoßkontrolle."
+L["csgo_grip_no.description"] = "Entfernt den Frontgriff."
 
 -- AWP
-L["csgo_awp_barrel_bull.printname"] = "430 mm Bull Barrel"
-L["csgo_awp_barrel_bull.compactname"] = "430 mm Stier"
-L["csgo_awp_barrel_bull.description"] = "Stierlauf, der die Rückstoßkontrolle und das Waffenhandling auf Kosten der Reichweite verbessert."
+L["csgo_awp_barrel_bull.printname"] = "Bull-Lauf"
+L["csgo_awp_barrel_bull.compactname"] = "Bull"
+-- L["csgo_awp_barrel_bull.description"] = "Aggressive Bull barrel."
 
-L["csgo_awp_barrel_short.printname"] = "390 mm kurzer Lauf"
-L["csgo_awp_barrel_short.compactname"] = "390 mm kurz"
-L["csgo_awp_barrel_short.description"] = "Verkürzter individueller Lauf, der die Waffenhandhabung auf Kosten von Reichweite und Rückstoßkontrolle verbessert."
+L["csgo_awp_barrel_short.printname"] = "Kurzer Lauf"
+L["csgo_awp_barrel_short.compactname"] = "Kurz"
+-- L["csgo_awp_barrel_short.description"] = "Shortened aftermarket barrel."
 
-L["csgo_awp_barrel_factory.printname"] = "450-mm-Fabrikfass"
-L["csgo_awp_barrel_factory.compactname"] = "450-mm-Fabrik"
-L["csgo_awp_barrel_factory.description"] = "Lauf in Werkslänge, der die Waffenhandhabung auf Kosten der Mündungsgeschwindigkeit und -reichweite verbessert."
+L["csgo_awp_barrel_factory.printname"] = "Fabrikfass"
+L["csgo_awp_barrel_factory.compactname"] = "Fabrik"
+-- L["csgo_awp_barrel_factory.description"] = "Factory-made barrel."
 
 L["csgo_awp_stock_folding.printname"] = "Anpassbares Material"
 L["csgo_awp_stock_folding.compactname"] = "Einstellbar"
-L["csgo_awp_stock_folding.description"] = "Anpassbarer Schaft für das AWP.\nVerbessert die Rückstoßkontrolle auf Kosten der Waffenhandhabung."
+L["csgo_awp_stock_folding.description"] = "Anpassbarer Schaft."
 
 L["csgo_awp_stock_obrez.printname"] = "Obrez Shaft"
 L["csgo_awp_stock_obrez.compactname"] = "Obrez"
-L["csgo_awp_stock_obrez.description"] = "Entfernt den Schaft für eine verbesserte Waffenhandhabung auf Kosten der Rückstoßkontrolle."
+-- L["csgo_awp_stock_obrez.description"] = "Cuts off the stock."
 
-L["csgo_awp_mag_15.printname"] = "15-Runde .338 AWM"
-L["csgo_awp_mag_15.compactname"] = "15R .338"
-L["csgo_awp_mag_15.description"] = "Erweitert die Magazinkapazität auf Kosten der Nachladegeschwindigkeit."
+L["csgo_awp_mag_15.printname"] = ".338 „Lapua Magnum“ 15-Schuss-Magazin"
+L["csgo_awp_mag_15.compactname"] = ".338+"
+L["csgo_awp_mag_15.description"] = string.format(quicktext.bigmag, 15)
 
-L["csgo_awp_mag_5.printname"] = "5-Runde .338 AWM"
-L["csgo_awp_mag_5.compactname"] = "5R .338"
-L["csgo_awp_mag_5.description"] = "Reduziert die Magazinkapazität mit dem Vorteil von erhöhter Nachladegeschwindigkeit, Schaden und Waffenhandhabung."
+L["csgo_awp_mag_5.printname"] = ".338 „Lapua Magnum“ 5-Schuss-Magazin"
+L["csgo_awp_mag_5.compactname"] = ".338-"
+L["csgo_awp_mag_5.description"] = string.format(quicktext.smallmag, 5)
 
 L["csgo_awp_sight_iron.printname"] = "Iron Sights"
 L["csgo_awp_sight_iron.compactname"] = "Eisen"
-L["csgo_awp_sight_iron.description"] = "Fügt standardmäßige Eisenvisiere hinzu, die ein schnelles und zuverlässiges Zielen ermöglichen."
-
-L["go_stock_awp_lc10.printname"] = "Skelettbestand"
-L["go_stock_awp_lc10.compactname"] = "Skelett"
-L["go_stock_awp_lc10.description"] = "Leichter Schaft, der die Waffenhandhabung auf Kosten der Rückstoßkontrolle verbessert."
+-- L["csgo_awp_sight_iron.description"] = "Aftermarket iron sights."
 
 -- PP-Bizon
-L["csgo_bizon_barrel_long.printname"] = "290 mm GRU-Lauf"
-L["csgo_bizon_barrel_long.compactname"] = "290mm GRU"
-L["csgo_bizon_barrel_long.description"] = "Längerer Lauf und vergrößerter Hitzeschild bieten verbesserte Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung."
+L["csgo_bizon_barrel_long.printname"] = "GRU-Lauf"
+L["csgo_bizon_barrel_long.compactname"] = "GRU"
+-- L["csgo_bizon_barrel_long.description"] = "Custom long barrel and heat shield."
 
-L["csgo_bizon_barrel_mid.printname"] = "230 mm FSB-Lauf"
-L["csgo_bizon_barrel_mid.compactname"] = "230 mm FSB"
-L["csgo_bizon_barrel_mid.description"] = "Längerer Lauf, der die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessert."
+L["csgo_bizon_barrel_mid.printname"] = "FSB-Lauf"
+L["csgo_bizon_barrel_mid.compactname"] = "FSB"
+-- L["csgo_bizon_barrel_mid.description"] = "Custom mid-sized barrel."
 
-L["csgo_bizon_mag_47.printname"] = "47-Runden Spiralmagazin"
-L["csgo_bizon_mag_47.compactname"] = "47R spiralförmig"
-L["csgo_bizon_mag_47.description"] = "Kleineres spiralförmiges Magazin mit reduzierter Magazinkapazität. Verbessert die Nachladegeschwindigkeit und das Waffenhandling."
+L["csgo_bizon_mag_47.printname"] = "9 x 19 mm 47-Runden Spiralmagazin"
+L["csgo_bizon_mag_47.compactname"] = "Spiral-"
+L["csgo_bizon_mag_47.description"] = string.format(quicktext.smallmag, 47)
 
-L["csgo_bizon_mag_82.printname"] = "82-Runden Spiralmagazin"
-L["csgo_bizon_mag_82.compactname"] = "82R spiralförmig"
-L["csgo_bizon_mag_82.description"] = "Längeres spiralförmiges Magazin, das die Magazinkapazität auf Kosten der Waffenhandhabung und Nachladegeschwindigkeit erhöht."
+L["csgo_bizon_mag_82.printname"] = "9 x 19 mm 82-Runden Spiralmagazin"
+L["csgo_bizon_mag_82.compactname"] = "Spiral+"
+L["csgo_bizon_mag_82.description"] = string.format(quicktext.bigmag, 82)
 
-L["csgo_bizon_mag_saiga.printname"] = "30-Runden-Saiga-Box-Magazin"
-L["csgo_bizon_mag_saiga.compactname"] = "30R Saiga"
-L["csgo_bizon_mag_saiga.description"] = "Ersetzt das spiralförmige Magazin durch ein traditionelles Kastenmagazin und fügt einen Standard-Magazinschacht hinzu.\nReduziert die Magazinkapazität auf Kosten einer verbesserten Waffenhandhabung."
+L["csgo_bizon_mag_saiga.printname"] = "9 x 19 mm 30-Runden Saiga-Magazin"
+L["csgo_bizon_mag_saiga.compactname"] = "Saiga"
+-- L["csgo_bizon_mag_saiga.description"] = "Attaches a traditional magwell which accepts a standard, lower capacity magazine holding <color=255,100,100>30 rounds</color>."
 
 L["csgo_bizon_hold_2.printname"] = "Alt. Hold-Stil 2"
 L["csgo_bizon_hold_2.compactname"] = "Alt. Halten 2"
-L["csgo_bizon_hold_2.description"] = "Ändert den Haltestil der Waffe."
-
-L["csgo_bizon_view.printname"] = "Alternative Ansicht"
-L["csgo_bizon_view.compactname"] = "Alternative Ansicht"
-L["csgo_bizon_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
 -- CZ75-Auto
-L["csgo_cz_slide_long.printname"] = "150 mm CZ-L Schlitten und Lauf"
-L["csgo_cz_slide_long.compactname"] = "150mm CZ-L"
-L["csgo_cz_slide_long.description"] = "Langer Schlitten und Lauf zur Verbesserung von Reichweite und Rückstoß auf Kosten der Waffenhandhabung."
+L["csgo_cz_slide_long.printname"] = "CZ-L Schlitten und Lauf"
+L["csgo_cz_slide_long.compactname"] = "CZ-L"
+-- L["csgo_cz_slide_long.description"] = "Slightly longer barrel and slide with the built-in muzzle brake removed."
 
-L["csgo_cz_slide_short.printname"] = "90 mm CZ-C Schlitten und Lauf"
-L["csgo_cz_slide_short.compactname"] = "90mm CZ-C"
-L["csgo_cz_slide_short.description"] = "Kompakter Verschluss und kurzer Lauf zur Verbesserung der Waffenhandhabung und Schussgeschwindigkeit auf Kosten von Rückstoß und Reichweite."
+L["csgo_cz_slide_short.printname"] = "CZ-C Schlitten und Lauf"
+L["csgo_cz_slide_short.compactname"] = "CZ-C"
+-- L["csgo_cz_slide_short.description"] = "Shortest barrel and slide available."
 
-L["csgo_cz_slide_factory.printname"] = "120-mm-CZ-A-Lauf"
-L["csgo_cz_slide_factory.compactname"] = "120mm CZ-A"
-L["csgo_cz_slide_factory.description"] = "Werkslauf mit integriertem Kompensator, der den Rückstoß auf Kosten der Reichweite und Waffenhandhabung reduziert."
+L["csgo_cz_slide_factory.printname"] = "CZ-A-Lauf"
+L["csgo_cz_slide_factory.compactname"] = "CZ-A"
+-- L["csgo_cz_slide_factory.description"] = "Shortened barrel with the built-in muzzle brake removed."
 
-L["csgo_cz_mag_ext.printname"] = "Erweiterte Zeitschriften"
-L["csgo_cz_mag_ext.compactname"] = "Ext. Mag"
-L["csgo_cz_mag_ext.description"] = "Erhöht die Magazinkapazität auf Kosten der Nachladegeschwindigkeit."
+L["csgo_cz_mag_ext.printname"] = "9 x 19 mm 18-Schuss-Magazin"
+L["csgo_cz_mag_ext.compactname"] = "9 mm+"
+L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 
 -- Desert Eagle
 L["csgo_deagle_s.printname"] = "Desert Eagle Suppressor"
@@ -1311,15 +1286,15 @@ L["csgo_five_slide_short.compactname"] = "110mm FN"
 L["csgo_five_slide_short.description"] = "Kompakter Schlitten und Lauf, der die Waffenhandhabung und Schussgeschwindigkeit auf Kosten von Rückstoßkontrolle und Reichweite verbessert."
 
 -- G3SG1
-L["csgo_g3_barrel_sd.printname"] = "450-mm-Flüsterlauf"
+L["csgo_g3_barrel_sd.printname"] = "Flüsterlauf"
 L["csgo_g3_barrel_sd.compactname"] = "450 mm SD"
 L["csgo_g3_barrel_sd.description"] = "Mittellanger Lauf mit integriertem Schalldämpfer.\nReduziert den Dezibelpegel von Schüssen und verbessert die Rückstoßkontrolle auf Kosten von Mündungsgeschwindigkeit, Reichweite und Waffenhandhabung."
 
-L["csgo_g3_barrel_g3a3.printname"] = "450-mm-G3A3-Lauf"
+L["csgo_g3_barrel_g3a3.printname"] = "G3A3-Lauf"
 L["csgo_g3_barrel_g3a3.compactname"] = "450 mm A3"
 L["csgo_g3_barrel_g3a3.description"] = "Mittellanger Lauf des G3A3, der die Waffenhandhabung auf Kosten der Reichweite verbessert."
 
-L["csgo_g3_barrel_g3a3_smg.printname"] = "450-mm-G3A3-Lauf"
+L["csgo_g3_barrel_g3a3_smg.printname"] = "G3A3-Lauf"
 L["csgo_g3_barrel_g3a3_smg.compactname"] = "450 mm A3"
 L["csgo_g3_barrel_g3a3_smg.description"] = "Mittellanger Lauf des G3A3, der die Waffenhandhabung auf Kosten der Reichweite verbessert."
 
@@ -1512,13 +1487,13 @@ L["csgo_m249_mag_556_60.compactname"] = "60R NATO"
 L["csgo_m249_mag_556_60.description"] = "Beseitigt die Gürtelbox und verwendet ein herkömmliches Magazin.\nVerringert die Magazinkapazität, die Schussgeschwindigkeit und die Rückstoßkontrolle mit dem Vorteil eines erhöhten Schadens und einer höheren Nachladegeschwindigkeit."
 
 -- M4A1-S
-L["csgo_m4a1_barrel_m16a4.printname"] = "510-mm-A4-Lauf"
-L["csgo_m4a1_barrel_m16a4.compactname"] = "510 mm A4"
-L["csgo_m4a1_barrel_m16a4.description"] = "Langer Lauf mit RIS-Handschutz vom M16A4.\nVerbessert Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung."
-
 L["csgo_m4a1_reciever_default.printname"] = "M16 Tragegriff"
 L["csgo_m4a1_reciever_default.compactname"] = "M16-Griff"
 L["csgo_m4a1_reciever_default.description"] = "Standard-M16-Tragegriff für M4A1-S."
+
+L["csgo_m4a1_barrel_m16a4.printname"] = "510-mm-A4-Lauf"
+L["csgo_m4a1_barrel_m16a4.compactname"] = "510 mm A4"
+L["csgo_m4a1_barrel_m16a4.description"] = "Langer Lauf mit RIS-Handschutz vom M16A4.\nVerbessert Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung."
 
 L["csgo_m4a1_stock_m16.printname"] = "Fester Bestand"
 L["csgo_m4a1_stock_m16.compactname"] = "Behoben"
@@ -1561,19 +1536,11 @@ L["csgo_m4_barrel_sniper.printname"] = "600-mm-Schützenlauf"
 L["csgo_m4_barrel_sniper.compactname"] = "600 mm M."
 L["csgo_m4_barrel_sniper.description"] = "Langer Schützenlauf, der die Reichweite und das Waffenhandling auf Kosten der Streuung verbessert."
 
-L["csgo_m4a4_view.printname"] = "Alternative Ansicht"
-L["csgo_m4a4_view.compactname"] = "Alternative Ansicht"
-L["csgo_m4a4_view.description"] = "Ändert die Position der Waffe im Blickfeld."
-
 L["csgo_m4_tube_retract.printname"] = "Pufferlauf - kurz"
 L["csgo_m4_tube_retract.compactname"] = "B. Lauf (S)"
 L["csgo_m4_tube_retract.description"] = "Schließt den Schaft auf seinen kürzesten Punkt zusammen, was die Zielgeschwindigkeit auf Kosten der Rückstoßkontrolle verbessert."
 
 -- MAC-10
-L["csgo_mac10_view.printname"] = "Alternative Ansicht"
-L["csgo_mac10_view.compactname"] = "Alternative Ansicht"
-L["csgo_mac10_view.description"] = "Ändert die Position der Waffe im Blickfeld."
-
 L["csgo_mac10_mag_16.printname"] = "20-Runden .45 ACP Ingram Magazine"
 L["csgo_mac10_mag_16.compactname"] = "20R Ingram"
 L["csgo_mac10_mag_16.description"] = "Verringert die Magazinkapazität mit dem Vorteil verbesserter Nachlade- und Zielgeschwindigkeiten."
@@ -1594,10 +1561,18 @@ L["csgo_mac10_barrel_shroud.printname"] = "300-mm-Shroud-Lauf"
 L["csgo_mac10_barrel_shroud.compactname"] = "300 mm S."
 L["csgo_mac10_barrel_shroud.description"] = "Langer ummantelter Lauf, der die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessert."
 
--- MAG-7
-L["csgo_mag7_view.printname"] = "Alternative Ansicht"
-L["csgo_mag7_view.compactname"] = "Alternative Ansicht"
-L["csgo_mag7_view.description"] = "Ändert die Position der Waffe im Blickfeld."
+-- MP5
+L["csgo_mp5_k.printname"] = "Kurzer Lauf und Handschutz"
+L["csgo_mp5_k.compactname"] = "Kurz"
+L["csgo_mp5_k.description"] = "Kürzt Lauf und Handschutz für ein kompakteres Profil.\nFügt einen kosmetischen Vordergriff hinzu."
+
+L["csgo_mp5_stock_k.printname"] = "Klappschaft"
+L["csgo_mp5_stock_k.compactname"] = "Falten"
+L["csgo_mp5_stock_k.description"] = "Klappbarer PDW-Schaft."
+
+L["csgo_mp5_mag_k.printname"] = "20-Runden-Magazin"
+L["csgo_mp5_mag_k.compactname"] = "20R Mag"
+L["csgo_mp5_mag_k.description"] = "Reduziert die Magazinkapazität mit dem Vorteil einer verbesserten Nachladegeschwindigkeit und Waffenhandhabung."
 
 -- MP5-SD
 L["csgo_mp5sd_view_alt.printname"] = "Alternative Ansicht"
@@ -1672,14 +1647,9 @@ L["csgo_negev_mag_556m.printname"] = "50-Runden 5,56 mm Trommelmagazin"
 L["csgo_negev_mag_556m.compactname"] = "50R 5,56 mm"
 L["csgo_negev_mag_556m.description"] = "Verringert die Magazinkapazität mit dem Vorteil einer verbesserten Nachladegeschwindigkeit."
 
--- Nova
-L["csgo_nova_view.printname"] = "Alternative Ansicht"
-L["csgo_nova_view.compactname"] = "Alternative Ansicht"
-L["csgo_nova_view.description"] = "Ändert die Position der Waffe im Blickfeld."
-
 -- P2000
 L["csgo_p2000_slide_long.printname"] = "120 mm P2000-L Schlitten und Lauf"
-L["csgo_p2000_slide_long.compactname"] = "120mm L"
+L["csgo_p2000_slide_long.compactname"] = "L"
 L["csgo_p2000_slide_long.description"] = "Erweiterter Schlitten und Lauf, der die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessert."
 
 L["csgo_p2000_slide_short.printname"] = "80 mm P2000-SK Schlitten und Lauf"
@@ -1687,17 +1657,22 @@ L["csgo_p2000_slide_short.compactname"] = "80mm SK"
 L["csgo_p2000_slide_short.description"] = "Leichter Schlitten und leichter Lauf, die das Waffenhandling und die Schussgeschwindigkeit auf Kosten der Rückstoßkontrolle und Reichweite verbessern."
 
 -- P250
+L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW-Rahmen"
+L["csgo_p250_slide_flux.compactname"] = "FR-Rahmen"
+L["csgo_p250_slide_flux.description"] = "Attaches a PDW frame around the weapon alongside a longer slide and barrel."
+
 L["csgo_p250_slide_long.printname"] = "140-mm-Folie in voller Größe"
 L["csgo_p250_slide_long.compactname"] = "140 mm voll"
 L["csgo_p250_slide_long.description"] = "Längerer Schlitten und Lauf, die die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessern."
 
 L["csgo_p250_slide_short.printname"] = "90-mm-Kleinwagenrahmen"
-L["csgo_p250_slide_short.compactname"] = "90mm Sub"
+L["csgo_p250_slide_short.compactname"] = "Sub"
 L["csgo_p250_slide_short.description"] = "Verkürzt Verschluss, Lauf und Pistolengriff, wodurch die Schussgeschwindigkeit und Waffenhandhabung auf Kosten von Rückstoßkontrolle und Reichweite verbessert werden."
 
-L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW-Rahmen"
-L["csgo_p250_slide_flux.compactname"] = "FR-Rahmen"
-L["csgo_p250_slide_flux.description"] = "Längerer Schlitten und Lauf, die die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessern.\nBefestigt auch einen PDW-Rahmen um die Waffe."
+-- R8 Revolver
+-- L["csgo_r8_model.printname"] = ".357 Conversion"
+-- L["csgo_r8_model.compactname"] = ".357"
+-- L["csgo_r8_model.description"] = "Rechambers the R8 into .357 by replacing the cylinder and barrel."
 
 -- P90
 L["csgo_p90_sling.printname"] = "Schlinge"
@@ -1712,17 +1687,9 @@ L["csgo_p90_top_2.printname"] = "Alternative obere Abdeckung"
 L["csgo_p90_top_2.compactname"] = "Alternative Abdeckung"
 L["csgo_p90_top_2.description"] = "Ersetzt die obere Abdeckung des P90 durch eine modernere."
 
-L["csgo_p90_hold.printname"] = "Alt. Hold-Stil"
-L["csgo_p90_hold.compactname"] = "Alt. Halten"
-L["csgo_p90_hold.description"] = "Ändert den Haltestil der Waffe."
-
-L["csgo_p90_view.printname"] = "Alternative Ansicht"
-L["csgo_p90_view.compactname"] = "Alternative Ansicht"
-L["csgo_p90_view.description"] = "Ändert die Position der Waffe im Blickfeld."
-
 L["go_p90_extendedbarrel.printname"] = "500 mm verlängerter Lauf und RIS-Handschutz"
-L["go_p90_extendedbarrel.compactname"] = "500mm RIS"
-L["go_p90_extendedbarrel.description"] = "Sehr langer Lauf mit angebrachtem RIS-Handschutz, der mehr Zubehör ermöglicht.\nVerbessert Reichweite und Rückstoßkontrolle auf Kosten der Waffenhandhabung."
+L["go_p90_extendedbarrel.compactname"] = "RIS"
+L["go_p90_extendedbarrel.description"] = "Sehr langer Lauf mit angebrachtem RIS-Handschutz, der mehr Zubehör ermöglicht."
 
 L["csgo_p90_barrel_med.printname"] = "410-mm-PS90-Lauf"
 L["csgo_p90_barrel_med.compactname"] = "410 mm PS90"
@@ -1739,11 +1706,6 @@ L["csgo_p90_mag_30_stanag.description"] = "Frankenstein bringt ein 30-Schuss-5,5
 L["csgo_p90_mag_20_stanag.printname"] = "20-Runden-NATO-Magazin"
 L["csgo_p90_mag_20_stanag.compactname"] = "20R NATO"
 L["csgo_p90_mag_20_stanag.description"] = "Frankenstein bringt ein 20-Schuss-5,56x45-mm-STANAG-Magazin an der P90 an.\nVerbessert die Waffenhandhabung und Nachladegeschwindigkeit.\n\nMein Therapeut antwortet nicht..."
-
--- Sawed-Off
-L["csgo_sawedoff_view.printname"] = "Alternative Ansicht"
-L["csgo_sawedoff_view.compactname"] = "Alternative Ansicht"
-L["csgo_sawedoff_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
 -- SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Schützenfass"
@@ -1791,10 +1753,6 @@ L["csgo_scar20_mag_30.printname"] = "30-Runden-Magazin"
 L["csgo_scar20_mag_30.compactname"] = "30R"
 L["csgo_scar20_mag_30.description"] = "Erhöht die Magazinkapazität auf Kosten der Waffenhandhabung."
 
-L["csgo_scar20_view.printname"] = "Alternative Ansicht"
-L["csgo_scar20_view.compactname"] = "Alternative Ansicht"
-L["csgo_scar20_view.description"] = "Ändert die Position der Waffe im Blickfeld."
-
 -- Scout
 L["csgo_scout_barrel_long.printname"] = "570mm Elite-Lauf"
 L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
@@ -1824,10 +1782,6 @@ L["csgo_sg556_stock_proto.description"] = "Solider Schaft des SG 541 Prototyps.\
 L["csgo_sg556_mag_ak.printname"] = "7,62-mm-Polymermagazin"
 L["csgo_sg556_mag_ak.compactname"] = "7,62 mm"
 L["csgo_sg556_mag_ak.description"] = "Konvertiert das SIG556 zur Aufnahme von AK-Magazinen.\nErhöht Schaden und Streuung auf Kosten der Rückstoßkontrolle und Schussgeschwindigkeit."
-
-L["csgo_sg552_view.printname"] = "Alternative Ansicht"
-L["csgo_sg552_view.compactname"] = "Alternative Ansicht"
-L["csgo_sg552_view.description"] = "Ändert die Position der Waffe im Blickfeld."
 
 -- Shotguns
 L["csgo_xm1014_mag_6.printname"] = "4-Rundlauf"
@@ -1924,8 +1878,8 @@ L["csgo_tec9_barrel_long.printname"] = "200 mm JATI-Lauf"
 L["csgo_tec9_barrel_long.compactname"] = "200 mm JATI"
 L["csgo_tec9_barrel_long.description"] = "Verlängerter ummantelter Lauf, der die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessert."
 
-L["csgo_tec9_barrel_short.printname"] = "90mm AB-1 Lauf"
-L["csgo_tec9_barrel_short.compactname"] = "90mm AB-1"
+L["csgo_tec9_barrel_short.printname"] = "AB-1 Lauf"
+L["csgo_tec9_barrel_short.compactname"] = "AB-1"
 L["csgo_tec9_barrel_short.description"] = "Verkürzter Lauf, der die Waffenhandhabung und Schussgeschwindigkeit auf Kosten der Rückstoßkontrolle und Reichweite verbessert.\n\nErfüllt die Vorschriften des Angriffswaffenverbots von 1994 in den Vereinigten Staaten."
 
 L["csgo_tec9_mag_32.printname"] = "32-Runden-Magazin"
@@ -1958,12 +1912,12 @@ L["csgo_ump_mag_30_9.compactname"] = "30R 9x19mm"
 L["csgo_ump_mag_30_9.description"] = "Verwandelt den UMP-45 in das Abfeuern von 9 x 19-mm-Patronen aus einem UMP-9-Magazin.\nVerbessert die Magazinkapazität, Rückstoßkontrolle, Reichweite und Schussgeschwindigkeit auf Kosten von Waffenhandhabung, Nachladegeschwindigkeit und Schaden ."
 
 -- USP-S
-L["csgo_usp_slide_long.printname"] = "150 mm Elite Schlitten und Lauf"
-L["csgo_usp_slide_long.compactname"] = "150 mm Elite"
+L["csgo_usp_slide_long.printname"] = "Elite Schlitten und Lauf"
+L["csgo_usp_slide_long.compactname"] = "Elite"
 L["csgo_usp_slide_long.description"] = "Erweiterter Schlitten und Lauf, die die Rückstoßkontrolle und Reichweite auf Kosten der Waffenhandhabung verbessern."
 
-L["csgo_usp_slide_short.printname"] = "90 mm USP-C Schlitten und Lauf"
-L["csgo_usp_slide_short.compactname"] = "90mm USP-C"
+L["csgo_usp_slide_short.printname"] = "USP-C Schlitten und Lauf"
+L["csgo_usp_slide_short.compactname"] = "USP-C"
 L["csgo_usp_slide_short.description"] = "Verkürzter Schlitten und Lauf, der die Waffenhandhabung und Feuergeschwindigkeit auf Kosten der Rückstoßkontrolle und Reichweite verbessert."
 
 -- XM1014

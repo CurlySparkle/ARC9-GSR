@@ -228,7 +228,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
         Pos = Vector(0, -0.05, 0.05),
         Ang = Angle(0, 0, 90),
-        Icon_Offset = Vector(0, 1, -1.5),
+        Icon_Offset = Vector(0, 2.5, 0),
         Category = {"csgo_tac"},
     }
 }

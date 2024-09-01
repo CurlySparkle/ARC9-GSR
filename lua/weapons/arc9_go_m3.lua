@@ -78,6 +78,11 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 
+SWEP.CustomCrosshair = true
+SWEP.CustomCrosshairSingle = true
+SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
+SWEP.CustomCrosshairSize = 30
+
 -------------------------- FIREMODES
 
 SWEP.RPM = 200

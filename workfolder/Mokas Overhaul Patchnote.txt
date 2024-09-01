@@ -117,9 +117,12 @@ Added two new sets of attachment integrations:
 			[*] G3SG1: [b]G3SG1 Scope[/b]
 			[*] SCAR-20: [b]SCAR-20 Scope[/b]
 		[/list]
-	[*] [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
-	[*] [u]Muzzle Brakes[/u] and [u]Suppressors[/u] are no longer placed in a separate folder and are instead unified outside of folders.
-	[*] The [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
+	[*] Optic: [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
+	[*] Muzzle: [u]Muzzle Brakes[/u] and [u]Suppressors[/u] are no longer placed in a separate folder and are instead unified outside of folders.
+	[*] Perk: [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
+	
+	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
+	[*] R8 Revolver: [u].357 Conversion[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
 [/list]
 
 [b][u]Other Changes[/u][/b]

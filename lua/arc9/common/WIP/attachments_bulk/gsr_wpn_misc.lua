@@ -1,7 +1,7 @@
 local ATT = {}
 
 --[[
-This file includes attachments specifically for Assault Rifles.
+This file includes attachments that are
 
 The attachments affect various stats depending on what they are.
 

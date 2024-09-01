@@ -14,7 +14,7 @@ local sharedcode = {
 	MenuCategory = "ARC9 - CSGO Attachments",
 }
 
-////////////////////////////////////// AK-47
+////////////////////////////////////// M249
 
 -- ATT = {}
 
@@ -27,3 +27,19 @@ local sharedcode = {
 
 -- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
 ------------------------------------------------------------------------
+
+
+////////////////////////////////////// Negev
+
+-- ATT = {}
+
+-- ATT.PrintName = "Gen Laser Sight"
+
+-- table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
+-- ATT.Category = "csgo_tac_pistols"
+
+-- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+------------------------------------------------------------------------
+

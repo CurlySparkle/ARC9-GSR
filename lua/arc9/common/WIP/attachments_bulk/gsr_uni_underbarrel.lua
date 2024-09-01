@@ -38,7 +38,7 @@ ATT.ModelOffset = Vector(0, 0, -0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ATT.DrawFunc = function(swep, model, wm)
     model:SetPoseParameter("gripstyle", swep.GripPoseParam or 0)
@@ -71,7 +71,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ModelBodygroups = "0"
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ATT.DrawFunc = function(self, model, wm)
 	if self:GetBipod() then
@@ -103,7 +103,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ARC9.LoadAttachment(ATT, "go_grip_kac")
 ------------------------------------------------------------------------
@@ -138,7 +138,7 @@ ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -186,7 +186,7 @@ ATT.ModelOffset = Vector(0, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ATT.DrawFunc = function(swep, model, wm)
     model:SetPoseParameter("gripstyle2", swep.GripPoseParam2 or 0)
@@ -214,7 +214,7 @@ ATT.ModelOffset = Vector(0, 0, 0.2)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ARC9.LoadAttachment(ATT, "go_grip_vertical_stubby")
 ------------------------------------------------------------------------
@@ -239,7 +239,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 10
+ATT.LHIK_Priority = 50
 
 ARC9.LoadAttachment(ATT, "go_grip_assault")
 
@@ -264,7 +264,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ModelBodygroups = "00"
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 100
+ATT.LHIK_Priority = 500
 
 ATT.SprintAngUBGL = Angle(30, -15, 0)
 ATT.SprintPosUBGL = Vector(2, 4, 2)
@@ -433,7 +433,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ModelBodygroups = "00"
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 100
+ATT.LHIK_Priority = 500
 
 ATT.SprintAngUBGL = Angle(30, -15, 0)
 ATT.SprintPosUBGL = Vector(2, 4, 2)
@@ -582,6 +582,11 @@ ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before de
 
 ATT.PenetrationUBGL = 5 -- Units of wood that can be penetrated by this gun.
 
+ATT.CustomCrosshairUBGL = true
+ATT.CustomCrosshairSingleUBGL = true
+ATT.CustomCrosshairMaterialUBGL = Material("arc9/circlehollow.png", "mips smooth")
+ATT.CustomCrosshairSizeUBGL = 30
+
 ATT.DrawFunc = function(swep, model, wm)
     if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
 end
@@ -622,7 +627,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.ModelBodygroups = "00"
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 100
+ATT.LHIK_Priority = 500
 
 ATT.SprintAngUBGL = Angle(30, -15, 0)
 ATT.SprintPosUBGL = Vector(2, 4, 2)
@@ -729,8 +734,8 @@ ATT.BobSprintMultUBGL = 1
 ATT.ActivePosUBGL = Vector(-1.35, -0.5, 1.25)
 ATT.ActiveAngUBGL = Angle(0, 0, 0)
 
-ATT.MovingPosUBGL = Vector(-1.5, -1, 1.25)
-ATT.MovingAngUBGL = Angle(0, 0, 0)
+-- ATT.MovingPosUBGL = Vector(-1.5, -1, 1.25)
+-- ATT.MovingAngUBGL = Angle(0, 0, 0)
 
 ATT.CrouchPosUBGL = Vector(-1.35, -1, 1.25)
 ATT.CrouchAngUBGL = Angle(0, 0, 0)
@@ -781,6 +786,11 @@ ATT.RangeMinUBGL = 300 -- How far bullets retain their maximum damage for.
 ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 ATT.PenetrationUBGL = 5 -- Units of wood that can be penetrated by this gun.
+
+ATT.CustomCrosshairUBGL = true
+ATT.CustomCrosshairSingleUBGL = true
+ATT.CustomCrosshairMaterialUBGL = Material("arc9/circlehollow.png", "mips smooth")
+ATT.CustomCrosshairSizeUBGL = 30
 
 ATT.DrawFunc = function(swep, model, wm)
     if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
