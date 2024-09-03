@@ -11,14 +11,6 @@ SWEP.NotForNPCs = true
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_claymores")
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_proximity")
 SWEP.Description = ARC9:GetPhrase("csgo_description_nade_claymores")
--- SWEP.Trivia = {
-    -- Designer = "Norman Macleod et al.",
-    -- Manufacturer = "Mohawk Electrical Systems Inc",
-    -- Mechanism = "Detonation by Radius",
-    -- Origin = "United States of America",
-    -- ["Explosive Mass"] = "680g",
-    -- ["Explosive Type"] = "C4"
--- }
 
 SWEP.Credits = {
     [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",

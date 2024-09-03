@@ -9,13 +9,14 @@ SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_pistol")
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_usp")
 
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistol")
+
 SWEP.Trivia = {
     [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_germany"),
-    [ARC9:GetPhrase("csgo_trivia_caliber")] = ".45 ACP",
-    [ARC9:GetPhrase("csgo_trivia_weight_loaded")] = "1 kg",
-    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = "230 gr",
-    [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,148.29 ft/s",
-    [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "913 joules"
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ARC9:GetPhrase("csgo_caliber_45acp"),
+    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 1, 1 * 2.20),
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 230 ),
+    -- [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,148.29 ft/s",
+    -- [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "913 joules"
 }
 
 SWEP.Credits = {

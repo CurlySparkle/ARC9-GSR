@@ -9,9 +9,10 @@ SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_extra")
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_zeus")
 
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_special")
+
 SWEP.Trivia = {
     [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
-    [ARC9:GetPhrase("csgo_trivia_weight")] = "~500 g",
+    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.50, 0.5 * 2.20),
 }
 
 SWEP.Credits = {

@@ -11,9 +11,9 @@ SWEP.NotForNPCs = true
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_rock")
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_throwable")
 SWEP.Description = ARC9:GetPhrase("csgo_description_nade_rock")
+
 SWEP.Trivia = {
     [ARC9:GetPhrase("csgo_trivia_country")] = "Nova Pangea",
-    [ARC9:GetPhrase("csgo_trivia_year")] = "-3300000",
 }
 
 SWEP.Credits = {

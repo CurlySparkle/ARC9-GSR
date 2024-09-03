@@ -1,7 +1,8 @@
 L = {}
 
 ////////////////////////////////////// Trivia
-L["csgo_trivia_country"] = "Ursprungsland"
+/////////////////// Country of Origin
+L["csgo_trivia_country"] = "Ursprungsland1"
 
 L["csgo_trivia_country_austria"] = "Österrike"
 L["csgo_trivia_country_belgium"] = "Belgien"
@@ -19,19 +20,46 @@ L["csgo_trivia_country_switzerland"] = "Schweiz"
 L["csgo_trivia_country_uk"] = "Storbritannien"
 L["csgo_trivia_country_usa"] = "Förenta Staterna"
 
-L["csgo_trivia_caliber"] = "Kaliber"
-L["csgo_trivia_weight"] = "Vikt"
-L["csgo_trivia_weight_loaded"] = "Vikt (Laddad)"
-L["csgo_trivia_weight_projectile"] = "Projektilvikt"
-L["csgo_trivia_muzzle_velocity"] = "Utgångshastighet"
-L["csgo_trivia_muzzle_energy"] = "Utgångsenergi"
-L["csgo_trivia_year"] = "År"
+/////////////////// Manufacturer
+L["csgo_trivia_manufacturer"] = "Tillverkare"
 
+/////////////////// Caliber
+L["csgo_trivia_caliber"] = "Kaliber3"
+
+L["csgo_caliber_12gauge"] = "Kaliber 12"
+L["csgo_caliber_308"] = ".308 Winchester"
+L["csgo_caliber_338"] = ".338 Lapua Magnum"
+L["csgo_caliber_357"] = ".357 Magnum"
+L["csgo_caliber_357sig"] = ".357 SIG"
+L["csgo_caliber_45acp"] = ".45 ACP"
+L["csgo_caliber_46"] = "4,6 × 30 mm"
+L["csgo_caliber_50ae"] = ".50 Action Express"
+L["csgo_caliber_556"] = "5,56 × 45 mm"
+L["csgo_caliber_57"] = "5,7 × 28 mm"
+L["csgo_caliber_762"] = "7,62 × 51 mm"
+L["csgo_caliber_762soviet"] = "7,62 × 39 mm"
+L["csgo_caliber_919"] = "9 × 19 mm"
+
+/////////////////// Weight
+L["csgo_trivia_weight"] = "Vikt4"
+L["csgo_trivia_weight_val"] = "%s kg / ~%s lb"
+
+/////////////////// Projectile Weight
+L["csgo_trivia_weight_projectile"] = "Projektilvikt5"
+L["csgo_trivia_weight_projectile_val"] = "%s g"
+
+/////////////////// Year
+L["csgo_trivia_year"] = "År6"
+
+/////////////////// Credits
 L["csgo_trivia_authors"] = "Skapare"
 L["csgo_trivia_assets"] = "Tillgångar"
 
+/////////////////// TO BE REMOVED
+L["csgo_trivia_weight_loaded"] = "Vikt (Laddad)"
+L["csgo_trivia_muzzle_velocity"] = "Utgångshastighet"
+L["csgo_trivia_muzzle_energy"] = "Utgångsenergi"
 L["csgo_trivia_designer"] = "Designer"
-L["csgo_trivia_manufacturer"] = "Tillverkare"
 L["csgo_trivia_mechanism"] = "Mekanism"
 L["csgo_trivia_explosive_mass"] = "Nettomängd"
 L["csgo_trivia_explosive_type"] = "Typ av Sprängmedel"
@@ -1043,7 +1071,8 @@ L["go_ubgl_xm1014.printname"] = "XM1014 Hagelgevär"
 L["go_ubgl_xm1014.compactname"] = "XM1014"
 L["go_ubgl_xm1014.description"] = "Monterar en undermonterad halvautomatisk hagelbössa."
 
-/////////////////// Weapon Specific
+////////////////////////////////////// Weapon Specific Attachments
+/////////////////// Universal
 -- Appears to be unused?
 -- L["csgo_barrel_short.printname"] = "Kort Pipa"
 -- L["csgo_barrel_short.compactname"] = "Kort"
@@ -1061,7 +1090,7 @@ local quicktext = {
 	smallmag = "Förkortat magasin som håller <color=255,100,100>%s skott</color>.",
 }
 
--- AK-47
+/////////////////// AK-47
 L["go_mag_extended_ak47.printname"] = "7,62 × 39 mm 40-Patronersmagasin"
 L["go_mag_extended_ak47.compactname"] = "7,62 mm+"
 L["go_mag_extended_ak47.description"] = string.format(quicktext.bigmag, 40)
@@ -1110,7 +1139,7 @@ L["csgo_ak47_mag_545_ext.printname"] = "5,45 x 39 mm 40-Patronersmagasin"
 L["csgo_ak47_mag_545_ext.compactname"] = "5,45 mm+"
 L["csgo_ak47_mag_545_ext.description"] = "Konverterar AK-47:an att använda 5,45 x 39 mm magasin och ammunition.\n" .. string.format(quicktext.bigmag, 40)
 
--- AUG
+/////////////////// AUG
 L["csgo_aug_mag_1.printname"] = "9 x 19 mm 25-Patronersmagasin"
 L["csgo_aug_mag_1.compactname"] = "9 mm"
 L["csgo_aug_mag_1.description"] = "Konverterar AUG:n till en AUG Para med en 9 x 19 mm magasinsadapter.\n" .. string.format(quicktext.smallmag, 25)
@@ -1131,7 +1160,7 @@ L["csgo_grip_no.printname"] = "Ta Bort Grepp"
 L["csgo_grip_no.compactname"] = "Ta Bort"
 L["csgo_grip_no.description"] = "Tar bort framgreppet."
 
--- AWP
+/////////////////// AWP
 L["csgo_awp_barrel_bull.printname"] = "Tjurpipa"
 L["csgo_awp_barrel_bull.compactname"] = "Tjur"
 L["csgo_awp_barrel_bull.description"] = "Aggressiv Tjurpipa."
@@ -1164,7 +1193,7 @@ L["csgo_awp_sight_iron.printname"] = "Sikte och Korn"
 L["csgo_awp_sight_iron.compactname"] = "Korn"
 L["csgo_awp_sight_iron.description"] = "Sikte och korn från eftermarknaden."
 
--- PP-Bizon
+/////////////////// PP-Bizon
 L["csgo_bizon_barrel_long.printname"] = "GRU-Pipa"
 L["csgo_bizon_barrel_long.compactname"] = "GRU"
 L["csgo_bizon_barrel_long.description"] = "Anpassad lång pipa och värmesköld."
@@ -1188,7 +1217,7 @@ L["csgo_bizon_mag_saiga.description"] = "Sätter på en traditionell magasinbrun
 L["csgo_bizon_hold_2.printname"] = "Alt. Hållstil 2"
 L["csgo_bizon_hold_2.compactname"] = "Alt. Håll. 2"
 
--- CZ75-Auto
+/////////////////// CZ75-Auto
 L["csgo_cz_slide_long.printname"] = "CZ-L Slutstycke och Pipa"
 L["csgo_cz_slide_long.compactname"] = "CZ-L"
 L["csgo_cz_slide_long.description"] = "Lite längre slutstycke och pipa med den inbyggda mynningsbromsen bortplockad."
@@ -1205,7 +1234,7 @@ L["csgo_cz_mag_ext.printname"] = "9×19mm 18-Patronersmagasin"
 L["csgo_cz_mag_ext.compactname"] = "9 mm+"
 L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 
--- Desert Eagle
+/////////////////// Desert Eagle
 L["csgo_deagle_s.printname"] = "Desert Eagle-Ljuddämpare"
 L["csgo_deagle_s.compactname"] = "DE-Ljud."
 L["csgo_deagle_s.description"] = "En ljuddämpare specifikt gjord för Desert Eagle.\nDesignad att sänka decibelnivån på skottljud."
@@ -1226,7 +1255,7 @@ L["csgo_deagle_mag_extend.printname"] = ".50 \"Action Express\" 15-Patronersmaga
 L["csgo_deagle_mag_extend.compactname"] = ".50 AE+"
 L["csgo_deagle_mag_extend.description"] = string.format(quicktext.bigmag, 15)
 
--- Beretta
+/////////////////// Beretta
 L["csgo_elite_slide_long.printname"] = "L-Slutstycke och Pipa"
 L["csgo_elite_slide_long.compactname"] = "L"
 L["csgo_elite_slide_long.description"] = "Längre slutstycke och pipa."
@@ -1243,7 +1272,7 @@ L["csgo_elite_slide_raffica.printname"] = "Raffica-Konvertering"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
 L["csgo_elite_slide_raffica.description"] = "Konverterar vapnet att skjuta i <color=100,255,100>3-skottsalva</color> och sätter på ett framgrepp och kompensator för att hjälpa med rekylkontrollen."
 
--- FAMAS
+/////////////////// FAMAS
 L["csgo_famas_barrel_long.printname"] = "Tireur-Pipa"
 L["csgo_famas_barrel_long.compactname"] = "Tireur"
 L["csgo_famas_barrel_long.description"] = "Anpassad krypskyttepipa."
@@ -1260,14 +1289,14 @@ L["csgo_famas_mag_long.printname"] = "5,56 × 45 mm 60-Patroners Skrinmagasin"
 L["csgo_famas_mag_long.compactname"] = "5,56 mm++"
 L["csgo_famas_mag_long.description"] = string.format(quicktext.bigmag, 60)
 
--- Five-SeveN
+/////////////////// Five-SeveN
 L["csgo_five_slide_long.printname"] = "Plus-Slutstycke och Pipa"
 L["csgo_five_slide_long.compactname"] = "Plus"
 
 L["csgo_five_slide_short.printname"] = "FN-Slutstycke och Pipa"
 L["csgo_five_slide_short.compactname"] = "FN"
 
--- G3SG1
+/////////////////// G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Viskare Pipa"
 L["csgo_g3_barrel_sd.compactname"] = "Viskare"
 L["csgo_g3_barrel_sd.description"] = "Medellängd pipa med inbyggd ljuddämpare.\nSänker decibelnivån på skottljud."
@@ -1348,7 +1377,7 @@ L["csgo_g3_mag_40_mp9.printname"] = "9 x 19 mm 40-Patroners Konvertering"
 L["csgo_g3_mag_40_mp9.compactname"] = "9 mm"
 L["csgo_g3_mag_40_mp9.description"] = "Konverterar vapnet att använda 9 x 19 mm-magasin och gör den <color=100,255,100>helautomatisk</color>. Förkortar också pipan och längden på kolven."
 
--- Galil
+/////////////////// Galil SAR
 L["csgo_galil_barrel_long.printname"] = "Lång Pipa"
 L["csgo_galil_barrel_long.compactname"] = "Lång"
 L["csgo_galil_barrel_long.description"] = "Lång krypskyttepipa."
@@ -1373,7 +1402,7 @@ L["csgo_galil_mag_ak_40.printname"] = "7,62 × 39 mm 40-Patroners Polymer Magasi
 L["csgo_galil_mag_ak_40.compactname"] = "7,62 mm+"
 L["csgo_galil_mag_ak_40.description"] = "Konverterar Galil:en att acceptera AK-magasin.\n" .. string.format(quicktext.bigmag, 40)
 
--- Galil AR
+/////////////////// Galil AR
 L["csgo_galilar_barrel_long.printname"] = "Krypskyttepipa"
 L["csgo_galilar_barrel_long.compactname"] = "Krypskytt."
 L["csgo_galilar_barrel_long.description"] = "Lång krypskyttepipa."
@@ -1402,7 +1431,7 @@ L["csgo_galilar_mag_60.printname"] = "5,56 × 45 mm 60-Patroners Skrinmagasin"
 L["csgo_galilar_mag_60.compactname"] = "5,56mm+++"
 L["csgo_galilar_mag_60.description"] = string.format(quicktext.bigmag, 60)
 
--- Glock-18
+/////////////////// Glock-18
 L["csgo_glock_slide_long.printname"] = "Förlängd Slutstycke och Pipa"
 L["csgo_glock_slide_long.compactname"] = "Förlängd"
 L["csgo_glock_slide_long.description"] = "Förlänger pipan."
@@ -1411,7 +1440,7 @@ L["csgo_glock_slide_auto.printname"] = "Helautomatisk Konvertering"
 L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Konverterar Glock-18 till en Glock-18C och gör den <color=100,255,100>helautomatisk</color>."
 
--- M249
+/////////////////// M249
 L["csgo_m249_barrel_long.printname"] = "SAW-Pipa"
 L["csgo_m249_barrel_long.compactname"] = "SAW"
 L["csgo_m249_barrel_long.description"] = "Lång och tung pipa gjord för täckande eld."
@@ -1440,7 +1469,7 @@ L["csgo_m249_mag_556_60.printname"] = "5,56 × 45 mm 60-Patroners NATO-Skrinmaga
 L["csgo_m249_mag_556_60.compactname"] = "NATO-"
 L["csgo_m249_mag_556_60.description"] = "Tar bort lådan och använder ett traditionellt magasin.\n" ..  string.format(quicktext.smallmag, 60)
 
--- M4A1-S
+/////////////////// M4A1-S
 L["csgo_m4a1_reciever_default.printname"] = "M16 Bärhandtag"
 L["csgo_m4a1_reciever_default.compactname"] = "M16 Bärh."
 L["csgo_m4a1_reciever_default.description"] = "Standard M16 bärhandtag till M4A1-S."
@@ -1461,7 +1490,7 @@ L["csgo_m4a1_mag_50.printname"] = "5,56 × 45 mm 50-Patroners Trummagasin"
 L["csgo_m4a1_mag_50.compactname"] = "5,56mm++"
 L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 
--- M4A4
+/////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "20-Round 12.7x42mmRB Magazine"
 L["csgo_m4_mag_20.compactname"] = "12.7mm"
 L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
@@ -1488,7 +1517,7 @@ L["csgo_m4_barrel_sniper.description"] = "Lång krypskyttepipa."
 
 L["csgo_m4_tube_retract.description"] = "Sätter kolven närmare monteringen."
 
--- MAC-10
+/////////////////// MAC-10
 L["csgo_mac10_mag_16.printname"] = "20-Skott .45AP Ingram-Magasin"
 L["csgo_mac10_mag_16.compactname"] = ".45 ACP"
 L["csgo_mac10_mag_16.description"] = string.format(quicktext.smallmag, 20)
@@ -1509,7 +1538,7 @@ L["csgo_mac10_barrel_shroud.printname"] = "Höljd Pipa"
 L["csgo_mac10_barrel_shroud.compactname"] = "Höljd"
 L["csgo_mac10_barrel_shroud.description"] = "Lång pipa med påsatt värmesköld."
 
--- MP5
+/////////////////// MP5
 L["csgo_mp5_k.printname"] = "Kurz-Pipa och Handgrepp"
 L["csgo_mp5_k.compactname"] = "Kurz"
 L["csgo_mp5_k.description"] = "Förkortar pipan och handgreppet till en mer kompakt profil.\nLägger till ett <color=255,255,100>kosmetiskt framgrepp</color>."
@@ -1522,12 +1551,12 @@ L["csgo_mp5_mag_k.printname"] = "9 x 19 mm 20-Patronersmagasin"
 L["csgo_mp5_mag_k.compactname"] = "9 mm-"
 L["csgo_mp5_mag_k.description"] = string.format(quicktext.smallmag, 20)
 
--- MP5-SD
+/////////////////// MP5-SD
 L["csgo_mp5_stock_none.printname"] = "Ingen Kolv"
 L["csgo_mp5_stock_none.compactname"] = "Ingen"
 L["csgo_mp5_stock_none.description"] = "Tar helt bort kolven."
 
--- MP7
+/////////////////// MP7
 L["csgo_mp7_mag_short.printname"] = "20-Patronersmagasin"
 L["csgo_mp7_mag_short.compactname"] = "4,6 mm-"
 L["csgo_mp7_mag_short.description"] = string.format(quicktext.smallmag, 20)
@@ -1540,7 +1569,7 @@ L["csgo_mp7_iron2.printname"] = "Nedfälld Sikte och Korn"
 L["csgo_mp7_iron2.compactname"] = "Nedfälld"
 L["csgo_mp7_iron2.description"] = "Fäll ner sikte och kornen till den så kallade PDW-positionen."
 
--- MP9
+/////////////////// MP9
 L["csgo_mp9_barrel_long.printname"] = "Lång Pipa"
 L["csgo_mp9_barrel_long.compactname"] = "Lång"
 L["csgo_mp9_barrel_long.description"] = "Lite längre pipa."
@@ -1553,12 +1582,12 @@ L["csgo_mp9_mag_short.printname"] = "9 × 19 mm 20-Patronersmagasin"
 L["csgo_mp9_mag_short.compactname"] = "9 mm-"
 L["csgo_mp9_mag_short.description"] = string.format(quicktext.smallmag, 20)
 
--- Nades
+/////////////////// Grenades
 L["csgo_nade_timer.printname"] = "Handgranat Tidrör (3 Sekunder)"
 L["csgo_nade_timer.compactname"] = "Tidrör"
 L["csgo_nade_timer.description"] = "Ger din handgranat ett <color=100,255,100>3 sekunders</color> tidsrör.\nPlanera in dina kast innan du kastar!"
 
--- Negev
+/////////////////// Negev
 L["csgo_negev_stock_skeleton.printname"] = "Skelettkolv"
 L["csgo_negev_stock_skeleton.compactname"] = "Skelett"
 L["csgo_negev_stock_skeleton.description"] = "Lätt kolv som förbättrar siktehastigheten med kostnad på rekylkontroll."
@@ -1579,7 +1608,7 @@ L["csgo_negev_mag_556m.printname"] = "50-Skott 5,56 mm Trummagasin"
 L["csgo_negev_mag_556m.compactname"] = "50S 5,56 mm"
 L["csgo_negev_mag_556m.description"] = "Sänker magasinkapaciteten med förmån av förbättrad omladdning hastighet."
 
--- P2000
+/////////////////// P2000
 L["csgo_p2000_slide_long.printname"] = "P2000-L-Slutstycke och Pipa"
 L["csgo_p2000_slide_long.compactname"] = "L"
 L["csgo_p2000_slide_long.description"] = "Förlängt slutstycke och pipa som förbättrar rekylkontrollen och räckvidden med kostnad på vapenhantering."
@@ -1588,7 +1617,7 @@ L["csgo_p2000_slide_short.printname"] = "80mm P2000-SK-Slutstycke och Pipa"
 L["csgo_p2000_slide_short.compactname"] = "80mm SK"
 L["csgo_p2000_slide_short.description"] = "Lätt slutstycke och pipa som förbättrar vapenhantering och eldhastighet med kostnad på rekylkontroll och räckvidd."
 
--- P250
+/////////////////// P250
 L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW-Ram"
 L["csgo_p250_slide_flux.compactname"] = "FR-Ram"
 L["csgo_p250_slide_flux.description"] = "Utrustar en PDW-ram runt vapnet, kombinerat med längre slutstycke och pipa."
@@ -1601,12 +1630,12 @@ L["csgo_p250_slide_short.printname"] = "Ultrakompakt Ram"
 L["csgo_p250_slide_short.compactname"] = "Ultra"
 L["csgo_p250_slide_short.description"] = "Förkortar slutstycket, pipan och pistolgreppet som erbjuder förbättrad eldhastighet och vapenhantering med kostnad på rekylkontroll och räckvidd."
 
--- R8 Revolver
+/////////////////// R8 Revolver
 L["csgo_r8_model.printname"] = ".357-Konvertering"
 L["csgo_r8_model.compactname"] = ".357"
 L["csgo_r8_model.description"] = "Mater om R8:an till .357 genom att ersätta cylindern och pipan."
 
--- P90
+/////////////////// P90
 L["csgo_p90_sling.printname"] = "Slinga"
 L["csgo_p90_sling.compactname"] = "Slinga"
 L["csgo_p90_sling.description"] = "Lindar en slinga runt P90:n.\nÖkar rekylkontrollen med kostnad på vapenhantering."
@@ -1639,7 +1668,7 @@ L["csgo_p90_mag_20_stanag.printname"] = "20-Skott NATO-Magasin"
 L["csgo_p90_mag_20_stanag.compactname"] = "20S NATO"
 L["csgo_p90_mag_20_stanag.description"] = "Frankenstein-installerar ett 20-skott 5,56 × 45 mm STANAG-magasin på P90:n.\nFörbättrar vapenhantering och omladdning hastigheten.\n\nMin teraput svarar inte..."
 
--- SCAR-17
+/////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Krypskytte Pipa"
 L["csgo_scar17_barrel_long.compactname"] = "Krypskytt"
 L["csgo_scar17_barrel_long.description"] = "Lång pipa som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
@@ -1668,7 +1697,7 @@ L["csgo_scar17_stock_bullpup.printname"] = "Bullpup Kit"
 L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
 L["csgo_scar17_stock_bullpup.description"] = "Installerar en bullpup-konvertering på SCAR-17:n som förvandlar den till ett bullpup-gevär.\nFörbättrar rekylen medans hukad och vapenhantering med kostnad på rekylkontroll."
 
--- SCAR-20
+/////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "410mm CQC Fabrik Pipa"
 L["csgo_scar20_barrel_factory.compactname"] = "410mm CQC"
 L["csgo_scar20_barrel_factory.description"] = "Fabrik SCAR-17-pipa som förbättrar rekylkontroll och räckvidd med kostnad på siktehastighet."
@@ -1685,7 +1714,7 @@ L["csgo_scar20_mag_30.printname"] = "30-Patronersmagasin"
 L["csgo_scar20_mag_30.compactname"] = "30S"
 L["csgo_scar20_mag_30.description"] = "Ökar magasinkapaciteten med kostnad på vapenhantering."
 
--- Scout
+/////////////////// Scout
 L["csgo_scout_barrel_long.printname"] = "570mm Elite-Pipa"
 L["csgo_scout_barrel_long.compactname"] = "570mm Elite"
 L["csgo_scout_barrel_long.description"] = "Lång, tung pipa som förbättrar mynningshastigheten och räckvidden med kostnad på vapenhantering."
@@ -1694,7 +1723,7 @@ L["csgo_scout_barrel_short.printname"] = "Överlevnadspipa"
 L["csgo_scout_barrel_short.compactname"] = "Överl."
 L["csgo_scout_barrel_short.description"] = "Kompakt pipa som förbättrar vapenhantering med kostnad på mynninghastighet, räckvidd och skada."
 
--- SIG556
+/////////////////// SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 300mm Commando-Pipa och Handgrepp"
 L["csgo_sg556_barrel_short.compactname"] = "Commando"
 L["csgo_sg556_barrel_short.description"] = "Commando-pipa och handgrepp från SIG 552 Commando.\nFörbättrar eldhastighet, vapenhantering och spridning under rörelse med kostnad på rekylkontroll, räckvidd och total spridning."
@@ -1715,7 +1744,7 @@ L["csgo_sg556_mag_ak.printname"] = "7.62mm Polymer Magasin"
 L["csgo_sg556_mag_ak.compactname"] = "7.62mm"
 L["csgo_sg556_mag_ak.description"] = "Konverterar SIG556:an att acceptera AK-magasin.\nÖkar skadan och spridningen med kostnad på rekylkontroll och eldhastighet."
 
--- Shotguns
+/////////////////// Shotguns
 L["csgo_xm1014_mag_6.printname"] = "4-Skottrör"
 L["csgo_xm1014_mag_6.compactname"] = "4S"
 L["csgo_xm1014_mag_6.description"] = "Förkortat rör som sänker rörkapaciteten. Förbättrar också omladdning hastigheten med kostnad på vapenhantering och spridning."
@@ -1784,7 +1813,7 @@ L["csgo_nova_stock_xm1014.printname"] = "Justerbar Kolv med Pistolgrepp"
 L["csgo_nova_stock_xm1014.compactname"] = "Justerbar"
 L["csgo_nova_stock_xm1014.description"] = "Standard kolv och pistolgrepp från XM1014.\nFörbättrar spridning från höften med kostnad på rekylkontroll."
 
--- SSG 08
+/////////////////// SSG 08
 L["csgo_ssg08_barrel_factory.printname"] = "Fabrik Pipa"
 L["csgo_ssg08_barrel_factory.compactname"] = "Fab."
 L["csgo_ssg08_barrel_factory.description"] = "Standard fabrik pipa som förbättrar rekylkontroll och utgångshastighet med kostnad på räckvidd och vapenhantering."
@@ -1805,7 +1834,7 @@ L["csgo_ssg08_sight_iron.printname"] = "Sikte och Korn"
 L["csgo_ssg08_sight_iron.compactname"] = "Korn"
 L["csgo_ssg08_sight_iron.description"] = "Installerar standard sikte och korn som tillåter för ett snabb och pålitligt sätt att sikta."
 
--- TEC-9
+/////////////////// TEC-9
 L["csgo_tec9_barrel_long.printname"] = "200mm JATI-Pipa"
 L["csgo_tec9_barrel_long.compactname"] = "200mm JATI"
 L["csgo_tec9_barrel_long.description"] = "Förlängd höljd pipa som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
@@ -1822,7 +1851,7 @@ L["csgo_tec9_mag_10.printname"] = "10-Patronersmagasin"
 L["csgo_tec9_mag_10.compactname"] = "10R"
 L["csgo_tec9_mag_10.description"] = "Sänker magasinkapaciteten med förmån av förbättrad omladdning hastighet och vapenhantering."
 
--- UMP-45
+/////////////////// UMP-45
 L["csgo_ump_view_alt.printname"] = "Alternativ Vy"
 L["csgo_ump_view_alt.compactname"] = "Alt. Vy"
 L["csgo_ump_view_alt.description"] = "Ändrar positionen på vapnet i vy."
@@ -1843,7 +1872,7 @@ L["csgo_ump_mag_30_9.printname"] = "30-Skott 9 x 19 mm Magasin"
 L["csgo_ump_mag_30_9.compactname"] = "30S 9 x 19 mm"
 L["csgo_ump_mag_30_9.description"] = "Konverterar UMP-45:an för att skjuta 9 x 19 mm skott från ett UMP-9-magasin.\nFörbättrar magasinkapaciteten, rekylkontrollen, räckvidden och eldhastigheten med kostnad på vapenhantering, omladdning hastighet och skada."
 
--- USP-S
+/////////////////// USP-S
 L["csgo_usp_slide_long.printname"] = "Elite-Slutstycke och Pipa"
 L["csgo_usp_slide_long.compactname"] = "Elite"
 L["csgo_usp_slide_long.description"] = "Förlängt slutstycke och pipa som förbättrar rekylkontroll och räckvidd med kostnad på vapenhantering."
@@ -1852,7 +1881,7 @@ L["csgo_usp_slide_short.printname"] = "USP-C-Slutstycke och Pipa"
 L["csgo_usp_slide_short.compactname"] = "USP-C"
 L["csgo_usp_slide_short.description"] = "Förkortat slutstycke och pipa som förbättrar vapenhantering och eldhastighet med kostnad på rekylkontroll och räckvidd."
 
--- XM1014
+/////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "750mm Pipa"
 L["csgo_xm1014_barrel_long.compactname"] = "750mm"
 L["csgo_xm1014_barrel_long.description"] = "Förlängd pipa som förbättrar rekylkontroll, räckvidd och träffsäkerhet från höften med kostnad på vapenhantering.\nKrävs för <10-Skottrör> tillbehöret."
@@ -1926,7 +1955,7 @@ L["go_cod_muzzle.printname"] = "Black Ops & Modern Warfare Classic - Mynningstil
 L["go_cod_muzzle.compactname"] = "BOC/MWC"
 L["go_cod_muzzle.description"] = coddesc
 
--- Integration: MW19
+/////////////////// Integration: MW19
 mw19desc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>Modern Warfare 2019</color>-tillägget.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar."
 
 L["go_mw19_scopes.printname"] = "Modern Warfare 2019 - Sikten"
@@ -1953,7 +1982,7 @@ L["go_mw19_stocks.printname"] = "Modern Warfare 2019 - Kolvar"
 L["go_mw19_stocks.compactname"] = "MW19"
 L["go_mw19_stocks.description"] = mw19desc
 
--- Integration: PolyArms
+/////////////////// Integration: PolyArms
 polydesc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>PolyArms-Projektet</color>.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar."
 
 L["go_polyarms_scopes.printname"] = "PolyArms-Projektet - Sikten"
