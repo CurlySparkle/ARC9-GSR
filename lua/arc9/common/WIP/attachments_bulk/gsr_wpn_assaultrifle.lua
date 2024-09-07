@@ -33,7 +33,6 @@ ATT.ActivateElements = {"mag","mag_none"}
 
 ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
 ATT.ModelOffset = Vector(1.325, 0, -2.5)
-ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Scale = 0.95
 
 ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
@@ -50,6 +49,8 @@ ATT.ReloadTimeMult = 1.2
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
 ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
 
 table.Merge(ATT, sharedcode)
 ATT.SortOrder = 10
@@ -240,6 +241,8 @@ ATT.RangeMaxAdd = 50 / ARC9.HUToM
 ATT.DamageMinMult = 0.75
 ATT.DamageMaxMult = 0.825
 
+ATT.DropMagazineTimeMult = 1.1
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png", "mips smooth")
@@ -297,6 +300,8 @@ ATT.RangeMaxAdd = 150 / ARC9.HUToM
 ATT.DamageMinMult = 1.2
 ATT.DamageMaxMult = 0.825
 
+ATT.DropMagazineTimeMult = 1.05
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png", "mips smooth")
@@ -313,61 +318,622 @@ ARC9.LoadAttachment(ATT, "csgo_ak47_mag_545_ext")
 
 ////////////////////////////////////// AUG
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "25-Round 9x19mm Magazine"
 
--- table.Merge(ATT, sharedcode)
+ATT.RPMAdd = 100
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.8
 
--- ARC9.LoadAttachment(ATT, "csgo_aug_mag_1")
+ATT.ClipSizeAdd = -5
+ATT.DamageMaxMult = 0.75
+ATT.RangeMinMult = 0.5
+ATT.RangeMaxMult = 0.65
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
+ATT.Category = "go_mag_aug"
+-- ATT.SortOrder = -1
+
+ATT.Ammo = "SMG1"
+
+ATT.ShootSound = "CSGO.MP9.Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp9_mag.mdl"
+ATT.DropMagazineTimeOverride = 0.65
+
+ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_9"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_aug_mag_1")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "32-Round 9x19mm Magazine"
+
+ATT.RPMAdd = 100
+
+ATT.ClipSizeAdd = 2
+ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.8
+
+ATT.ReloadTimeMult = 1.075
+ATT.DamageMaxMult = 0.75
+ATT.RangeMinMult = 0.5
+ATT.RangeMaxMult = 0.65
+
+ATT.DropMagazineTimeMult = 1.075
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_aug_ammo_9mm.png", "mips smooth")
+ATT.Category = "go_mag_aug"
+
+ATT.Ammo = "SMG1"
+
+ATT.ShootSound = "CSGO.MP9.Fire"
+ATT.FirstShootSoundSilenced = "CSGO.mp7.Silenced_Fire_First" 
+ATT.ShootSoundSilenced = "CSGO.mp7.Silenced_Fire"
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_smg_mp9_mag.mdl"
+ATT.DropMagazineTimeOverride = 0.65
+
+ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_9"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_aug_mag_2")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "HBAR Barrel"
+
+ATT.RangeMinMult = 1.25
+ATT.RangeMaxMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.SpreadMultRecoil = 1.1
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_aug_barrel_long.png", "mips smooth")
+ATT.Category = "csgo_aug_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.1, 14.8, -2.45) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_aug_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Para Barrel"
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.025
+
+ATT.SpreadMultRecoil = 1.15
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_aug_barrel_short.png", "mips smooth")
+ATT.Category = "csgo_aug_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.1, 11.4, -2.45) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_aug_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "No Grip"
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.05
+
+ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.15
+ATT.SwayMultSights = 2.5
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/holdstyle.png", "mips smooth")
+ATT.Category = { "grip_aug", "grip_aug_2_alt" }
+ATT.ActivateElements = {"no_grip"}
+ATT.SortOrder = -10
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 10
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_aug_2.mdl"
+ATT.ModelOffset = Vector(-5, 1, -1.5)
+ATT.ModelAngleOffset = Angle(0, 15, 180)
+
+ARC9.LoadAttachment(ATT, "csgo_grip_no")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// FAMAS
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Tireur Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.25
+ATT.RangeMaxMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.2
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.SpreadMultRecoil = 1.1
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.95
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_famas_barrel_long.png", "mips smooth")
+ATT.Category = "go_famas_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -2.85, 19) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_famas_barrel_long")
 ------------------------------------------------------------------------
+ATT = {}
 
+ATT.PrintName = "Raider Barrel"
 
-////////////////////////////////////// Galil AR
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.025
 
--- ATT = {}
+ATT.SpreadMultRecoil = 1.15
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
 
--- ATT.PrintName = "Gen Laser Sight"
+table.Merge(ATT, sharedcode)
 
--- table.Merge(ATT, sharedcode)
+ATT.Icon = Material("entities/attachs/go_famas_barrel_short.png", "mips smooth")
+ATT.Category = "go_famas_barrel"
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -2.85, 14.1) }, -- Muzzle
+	}
+}
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+ARC9.LoadAttachment(ATT, "csgo_famas_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56×45mm Magazine"
+
+ATT.ClipSizeAdd = 5
+
+ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.05
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png", "mips smooth")
+ATT.Category = "go_mag_famas"
+
+ARC9.LoadAttachment(ATT, "csgo_famas_mag_30")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "60-Round 5.56×45mm Magazine"
+
+ATT.ClipSizeAdd = 30
+
+ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SpeedMult = 0.975
+ATT.ReloadTimeMult = 1.15
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png", "mips smooth")
+ATT.Category = "go_mag_famas"
+
+ARC9.LoadAttachment(ATT, "csgo_famas_mag_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (FAMAS)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "go_famas_view"
+
+ATT.ActivePos = Vector(-2.5, -4, 0.5)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+ATT.MovingPos = Vector(0.5, -1, -1.25)
+ATT.MovingAng = Angle(0, 0, 0)
+
+ATT.CrouchPos = Vector(-1.5, -2, -1)
+ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.BipodPos = Vector(-2.5, -7.5, 1)
+ATT.BipodAng = Angle(0, 0, 0)
+
+ATT.SprintPos = Vector(0, -6, -0.3)
+ATT.SprintAng = Angle(0, 0, 0)
+
+ATT.ViewModelFOVBase = 65
+
+ARC9.LoadAttachment(ATT, "csgo_famas_view_alt")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// Galil SAR
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Long Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.SpreadMultRecoil = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_galil_barrel_long.png", "mips smooth")
+ATT.Category = "go_galil_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -0.7, 22) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_galil_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Short Barrel"
+
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+
+ATT.SpreadMultRecoil = 1.075
+ATT.RangeMinMult = 0.925
+ATT.RangeMaxMult = 0.925
+ATT.PhysBulletMuzzleVelocityMult = 0.925
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_galil_barrel_short.png", "mips smooth")
+ATT.Category = "go_galil_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -0.7, 18) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_galil_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "35-Round 5.56×45mm Magazine"
+
+ATT.ClipSizeAdd = 5
+
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_g3_mag_30_556.png", "mips smooth")
+ATT.Category = "go_mag_galil"
+
+ARC9.LoadAttachment(ATT, "csgo_galil_mag_35")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "50-Round 5.56×45mm Drum Magazine"
+
+ATT.ClipSizeAdd = 20
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ak47_mag_drum.png", "mips smooth")
+ATT.Category = "go_mag_galil"
+
+ARC9.LoadAttachment(ATT, "csgo_galil_mag_50")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62×39mm Polymer Magazine"
+
+ATT.DamageMaxMult = 1.2
+
+ATT.RPMAdd = -50
+ATT.RangeMinMult = 0.825
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
+ATT.Category = "go_mag_galil"
+ATT.ActivateElements = {"mag_none"}
+
+ATT.Model = "models/weapons/csgo/atts/mags/mag_ak.mdl"
+ATT.ModelOffset = Vector(1.4, 0, -2.5)
+
+ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_ak.mdl"
+
+ARC9.LoadAttachment(ATT, "csgo_galil_mag_ak_30")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "40-Round 7.62×39mm Polymer Magazine"
+
+ATT.ClipSizeAdd = 10
+ATT.DamageMaxMult = 1.2
+
+ATT.RPMAdd = -50
+ATT.RangeMinMult = 0.825
+ATT.ReloadTimeMult = 1.05
+
+ATT.DropMagazineTimeMult = 1.05
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
+ATT.Category = "go_mag_galil"
+ATT.ActivateElements = {"mag_none"}
+
+ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
+ATT.ModelOffset = Vector(1.55, 0, -2.5)
+
+ATT.DropMagazineModel = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
+
+ARC9.LoadAttachment(ATT, "csgo_galil_mag_ak_40")
+------------------------------------------------------------------------
+
+
+////////////////////////////////////// Galil AR
+
+ATT = {}
+
+ATT.PrintName = "SAW Barrel"
+
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.SpreadMultRecoil = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ace_barrel_long.png", "mips smooth")
+ATT.Category = "go_galilar_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -3.21, 24) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Navy Barrel"
+
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.875
+ATT.SpeedMult = 1.05
+
+ATT.SpreadMultRecoil = 1.25
+ATT.RangeMinMult = 0.65
+ATT.RangeMaxMult = 0.6
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_ace_barrel_short.png", "mips smooth")
+ATT.Category = "go_galilar_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -3.21, 15.8) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Carbine Barrel"
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.025
+
+ATT.SpreadMultRecoil = 1.15
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
+
+ATT.Icon = Material("entities/attachs/go_ace_barrel_factory.png", "mips smooth")
+ATT.Category = "go_galilar_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -3.21, 17.2) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_barrel_factory")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62×39mm Polymer Magazine"
+
+ATT.ClipSizeAdd = 10
+ATT.DamageMaxMult = 1.2
+
+ATT.RPMAdd = -66
+ATT.RangeMinMult = 0.5
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
+ATT.Category = "go_galilar_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_ak_30")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "40-Round 7.62×39mm Polymer Magazine"
+
+ATT.ClipSizeAdd = 20
+ATT.DamageMaxMult = 1.2
+
+ATT.RPMAdd = -66
+ATT.RangeMinMult = 0.5
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.95
+
+ATT.DropMagazineTimeMult = 1.2
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/csgo/atts/mags/mag_akalpha_40.mdl"
+ATT.ModelOffset = Vector(1.8, 0, -2.5)
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png", "mips smooth")
+ATT.Category = "go_galilar_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_ak_45")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56×45mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.05
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
+ATT.Category = "go_galilar_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_30")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "40-Round 5.56×45mm Magazine"
+
+ATT.ClipSizeAdd = 20
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.95
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png", "mips smooth")
+ATT.Category = "go_galilar_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_40")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "60-Round 5.56×45mm Casket Magazine"
+
+ATT.ClipSizeAdd = 40
+
+ATT.ReloadTimeMult = 1.25
+ATT.AimDownSightsTimeMult = 1.225
+ATT.SprintToFireTimeMult = 1.225
+ATT.SpeedMult = 0.925
+
+ATT.DropMagazineTimeMult = 1.25
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png", "mips smooth")
+ATT.Category = "go_galilar_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_galilar_mag_60")
 ------------------------------------------------------------------------
 
 

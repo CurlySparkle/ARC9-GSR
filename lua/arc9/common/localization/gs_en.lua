@@ -1412,9 +1412,9 @@ L["csgo_galil_mag_ak_40.compactname"] = "7.62mm+"
 L["csgo_galil_mag_ak_40.description"] = "Converts the Galil to accept AK magazines.\n" .. string.format(quicktext.bigmag, 40)
 
 /////////////////// Galil AR
-L["csgo_galilar_barrel_long.printname"] = "Marksman Barrel"
-L["csgo_galilar_barrel_long.compactname"] = "Marksman"
-L["csgo_galilar_barrel_long.description"] = "Long marksman barrel."
+L["csgo_galilar_barrel_long.printname"] = "SAW Barrel"
+L["csgo_galilar_barrel_long.compactname"] = "SAW"
+L["csgo_galilar_barrel_long.description"] = "Longer barrel."
 
 L["csgo_galilar_barrel_short.printname"] = "Navy Barrel"
 L["csgo_galilar_barrel_short.compactname"] = "Navy"
@@ -1450,8 +1450,6 @@ L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Converts the Glock-18 to the Glock-18C, making it <color=100,255,100>fully automatic</color>."
 
 /////////////////// M249
-L["csgo_m249_barrel_long.printname"] = "SAW Barrel"
-L["csgo_m249_barrel_long.compactname"] = "SAW"
 L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."
 
 L["csgo_m249_barrel_short.printname"] = "Paratrooper Barrel"
@@ -2309,3 +2307,6 @@ L["csgo_negev_stock_skeleton.description"] = ARC9:GetPhrase("csgo_ak47_stock_ske
 L["csgo_ssg08_sight_iron.printname"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "Iron Sights"
 L["csgo_ssg08_sight_iron.compactname"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "Irons"
 L["csgo_ssg08_sight_iron.description"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "Aftermarket iron sights."
+
+L["csgo_m249_barrel_long.printname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.printname") or "SAW Barrel"
+L["csgo_m249_barrel_long.compactname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.compactname") or "SAW"

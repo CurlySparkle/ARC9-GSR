@@ -25,6 +25,7 @@ ATT.VisualRecoilMultMove = 0.8
 ATT.RecoilAutoControlMult = 3.5
 ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilMultMove = 0.66
+ATT.SwayAdd = -0.1
 
 ATT.SprintToFireTimeMult = 1.1
 ATT.SpeedMult = 0.98
@@ -52,6 +53,7 @@ ATT.PrintName = "Grip Pod"
 
 ATT.VisualRecoilMult = 0.75
 ATT.RecoilMult = 0.75
+ATT.SwayAdd = -0.225
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.125
@@ -90,6 +92,7 @@ ATT.PrintName = "Mr. Stumpy Foregrip"
 ATT.VisualRecoilMult = 0.9
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.33
+ATT.SwayAdd = -0.1
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
@@ -114,6 +117,7 @@ ATT.PrintName = "Point Shooting Foregrip"
 ATT.VisualRecoilMult = 0.75
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 2.5
+ATT.SwayAdd = -0.2
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SpeedMult = 0.975
@@ -200,6 +204,7 @@ ATT.PrintName = "Vertical Foregrip"
 
 ATT.VisualRecoilMult = 0.7
 ATT.RecoilMult = 0.8
+ATT.SwayAdd = -0.225
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.125
@@ -222,13 +227,14 @@ ATT = {}
 
 ATT.PrintName = "Assault Grip"
 
-ATT.VisualRecoilMult = 0.7
-ATT.RecoilUpMult = 0.8
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilUpMult = 0.9
+ATT.SwayAdd = -0.125
 
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.2
-ATT.SpeedMult = 0.925
-ATT.RecoilSideMult = 1.5
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.95
+ATT.RecoilSideMult = 1.33
 
 table.Merge(ATT, sharedcode)
 

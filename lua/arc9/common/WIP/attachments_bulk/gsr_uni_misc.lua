@@ -349,7 +349,7 @@ ATT = {}
 ATT.PrintName = "Extended Magazine"
 
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.Icon = Material("entities/attachs/ext_mag")
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
 
 ATT.Category = {"go_mag"}
 
@@ -366,7 +366,7 @@ ATT = {}
 ATT.PrintName = "Extended Tube"
 
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
-ATT.Icon = Material("entities/attachs/ext_mag")
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
 
 ATT.Category = {"go_mag_sg"}
 

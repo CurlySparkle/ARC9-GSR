@@ -18,7 +18,7 @@ cz75
 deagle
 elite
 elite_single
-famas
+famas DONE
 fiveseven
 g1sg3
 galil
@@ -63,12 +63,12 @@ Universal - Foregrips & UBGLs DONE
 Universal - Optics DONE
 Universal - Rails DONE
 Universal - Tacticals DONE
-Universal - Ammo
-Universal - Magazines
-Universal - Muzzles
+Universal - Ammo DONE
+Universal - Magazines DONE
+Universal - Muzzles DONE
 Universal - Perks DONE
-Universal - Skins
-Universal - Stickers
+Universal - Skins DONE
+Universal - Stickers DONE
 Universal - Stocks DONE
 
 Weapon-Specific - Assault Rifles

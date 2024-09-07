@@ -89,7 +89,7 @@ SWEP.Firemodes = {
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.9 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -97,10 +97,13 @@ SWEP.RecoilSide = 0.8 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.6
 SWEP.RecoilRandomSide = 0.6
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.33 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -120,15 +123,15 @@ SWEP.RecoilMultSights = 1
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 1
-SWEP.VisualRecoilUpSights = .25
+SWEP.VisualRecoilUpSights = .1
 SWEP.VisualRecoilSide = -.15
-SWEP.VisualRecoilSideSights = -.015
+SWEP.VisualRecoilSideSights = .02
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 3
-SWEP.VisualRecoilPositionBumpUp = .5
+SWEP.VisualRecoilPositionBump = 1.5
+SWEP.VisualRecoilPositionBumpUp = .2
 SWEP.VisualRecoilMultCrouch = .9
-SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = 0.33
 
 -- SWEP.VisualRecoilDampingConst = 120
 -- SWEP.VisualRecoilSpringPunchDamping = 12
@@ -143,15 +146,16 @@ SWEP.VisualRecoilMultSights = .25
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.035 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
@@ -209,10 +213,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 30, 5.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
+SWEP.CustomizePos = Vector(20, 40, 5.5)
+
+SWEP.CustomizeRotateAnchor = Vector(20, -5.25, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, 1, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -288,7 +300,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		Mult = 0.85,
+		RefillProgress = 0.525,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -324,7 +338,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		Mult = 0.85,
+		RefillProgress = 0.75,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -416,6 +432,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -442,7 +459,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.55,
+                t = 0.45,
                 lhik = 0,
                 rhik = 1
             },
@@ -470,58 +487,37 @@ SWEP.DefaultBodygroups = "0000000"
 
 SWEP.AttachmentElements = {
 	["sight_galil"] = {
-    AttPosMods = { [1] = { Pos = Vector(0, -4.9, 10.5), } }	
+		AttPosMods = { [1] = { Pos = Vector(0, -4.9, 10.5), } }	
 	},
     ["stock_none"] = {
-        Bodygroups = {
-            {1,1},
-        },
+		Bodygroups = { { 1, 1 } },
     },
-    ["mag_30"] = {
-        Bodygroups = {
-            {2,1},
-        },
+    ["csgo_galilar_mag_30"] = {
+		Bodygroups = { { 2, 1 } },
     },
-    ["mag_40"] = {
-        Bodygroups = {
-            {2,2},
-        },
+    ["csgo_galilar_mag_40"] = {
+		Bodygroups = { { 2, 2 } },
     },
-    ["mag_60"] = {
-        Bodygroups = {
-            {2,3},
-        },
+    ["csgo_galilar_mag_60"] = {
+		Bodygroups = { { 2, 3 } },
     },
-    ["mag_ak47"] = {
-        Bodygroups = {
-            {2,4},
-        },
+    ["csgo_galilar_mag_ak_30"] = {
+		Bodygroups = { { 2, 4 } },
     },
-    ["mag_none"] = {
-        Bodygroups = {
-            {2,5},
-        },
+    ["csgo_galilar_mag_ak_45"] = {
+		Bodygroups = { { 2, 5 } },
     },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {3,1},
-			{4,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 24), } }	
+    ["csgo_galilar_barrel_long"] = {
+		Bodygroups = { { 3, 1 }, { 4, 1 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -3.21, 24), } }	
     },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {3,2},
-			{4,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 15.8), } }	
+    ["csgo_galilar_barrel_short"] = {
+		Bodygroups = { { 3, 2 }, { 4, 2 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -3.21, 15.8), } }	
     },
-    ["barrel_factory"] = {
-        Bodygroups = {
-            {3,3},
-			{4,3},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.2), } }	
+    ["csgo_galilar_barrel_factory"] = {
+		Bodygroups = { { 3, 3 }, { 4, 3 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -3.21, 17.2), } }	
     },
 }
 
@@ -719,5 +715,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 3
+SWEP.GripPoseParam = 3.5
 SWEP.GripPoseParam2 = 0.8

@@ -51,7 +51,7 @@ SWEP.WorldModelOffset = {
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 28 -- Damage done at point blank range
-SWEP.DamageMin = 10 -- Damage done at maximum range
+SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
@@ -292,8 +292,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.725,
-		MagSwapTime = 1,
+		RefillProgress = 0.725,
+		MinProgress = 0.925,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -326,8 +327,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.85,
-		MagSwapTime = 1,
+		RefillProgress = 0.8,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -362,8 +364,9 @@ SWEP.Animations = {
     },
     ["1_reload_empty"] = {
         Source = "reload2",
-		MinProgress = 0.85,
-		MagSwapTime = 1,
+		RefillProgress = 0.8,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -399,9 +402,9 @@ SWEP.Animations = {
     },
     ["reload_9"] = {
         Source = "reload_short", --PlaceHolder
-		MinProgress = 0.75,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.7,
+		MinProgress = 0.925,
+		FireASAP = true,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
@@ -417,9 +420,9 @@ SWEP.Animations = {
     },
     ["reload_empty_9"] = {
         Source = "reload2", --PlaceHolder
-		MinProgress = 0.9,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.9,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 1 },
             {t = 0.2, lhik = 0, rhik = 1},
@@ -564,38 +567,34 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mount"] = { Bodygroups = {{5,1},},},
-    ["grip"] = {
-        Bodygroups = {
-            {1,1},
-        },
+    ["mount"] = { 
+		Bodygroups = { { 5, 1 } }
+	},
+    ["grip"] = { 
+		Bodygroups = { { 1, 1 } }
     },
-    ["grip_folded"] = { Bodygroups = { {1,2}, }, },
-    ["grip_extender"] = {
-        Bodygroups = {
-            {2,1},
-        },
+    ["grip_folded"] = { 
+		Bodygroups = { { 1, 2 } }
+	},
+    ["grip_extender"] = { 
+		Bodygroups = { { 2, 1 } }
     },
-    ["mag"] = {
-        Bodygroups = {
-            {4,1},
-        },
+    ["go_mag_extended"] = { 
+		Bodygroups = { { 4, 1 } }
     },
-    ["mag_9mm"] = { Bodygroups = {{4,3},},},
-    ["mag_9mmx"] = { Bodygroups = {{4,4},},},
-    ["barrel_long"] = {
-        Bodygroups = {
-            {3,1},
-			{6,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0.1, 14.8, -2.45), } }
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {3,2},
-			{6,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0.1, 11.4, -2.45), } }
+    ["csgo_aug_mag_1"] = { 
+		Bodygroups = { { 4, 3 } }
+	},
+    ["csgo_aug_mag_2"] = { 
+		Bodygroups = { { 4, 4 } }
+	},
+    ["csgo_aug_barrel_long"] = { 
+		Bodygroups = { { 3,1 }, { 6, 1 } },
+		AttPosMods = { [3] = { Pos = Vector(0.1, 14.8, -2.45) }
+	},
+    ["csgo_aug_barrel_short"] = { 
+		Bodygroups = { { 3, 2 }, { 6, 2 } },
+		AttPosMods = { [3] = { Pos = Vector(0.1, 11.4, -2.45), } }
     },
 }
 

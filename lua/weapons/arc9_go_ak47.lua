@@ -48,8 +48,8 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-9, 5.5, -5.5),
     Ang = Angle(-7, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-10, 7, 0),
-    TPIKAng = Angle(0, 0, 175)
+    TPIKPos = Vector(-12.5, 7.5, -1),
+    TPIKAng = Angle(-15, -1.5, 170)
 }
 
 
@@ -255,10 +255,10 @@ SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "ar2"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -317,9 +317,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.7,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.675,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -349,9 +349,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.8,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -382,9 +382,9 @@ SWEP.Animations = {
     },
     ["reload_alt"] = {
         Source = "reload_short_alt",
-		MinProgress = 0.65,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.65,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -413,10 +413,10 @@ SWEP.Animations = {
         },
     },
     ["reload_empty_alt"] = {
-		MinProgress = 0.75,
-		MagSwapTime = 1,
-		Mult = 1,
         Source = "reload_alt",
+		RefillProgress = 0.75,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -447,9 +447,9 @@ SWEP.Animations = {
     },
     ["reload_drum"] = {
         Source = "reload_short_drum",
-		MinProgress = 0.7,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.675,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -480,9 +480,9 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "reload_drum",
-		MinProgress = 0.85,
-		MagSwapTime = 1,
-		Mult = 1,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -641,53 +641,53 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {
     ["csgo_ak47_grip_tactical"] = {
-        Bodygroups = { { 5, 1}, },
+        Bodygroups = { { 5, 1 } },
     },
     ["csgo_ak47_barrel_tactical"] = {
-        Bodygroups = { { 3, 4}, },
+        Bodygroups = { { 3, 4 } },
 		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3) } }, -- REMOVE LATER
     },
     ["csgo_ak47_barrel_long"] = {
-        Bodygroups = { { 3, 2}, },
+        Bodygroups = { { 3, 2 } },
 		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 31.4) } }, -- REMOVE LATER
     },
     ["csgo_ak47_barrel_short"] = {
-        Bodygroups = { { 3, 3}, },
+        Bodygroups = { { 3, 3 } },
 		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 17.5) }, [6] = { Pos = Vector(0, -2.3, 12) } }, -- REMOVE LATER
     },
     ["csgo_ak47_mag_50"] = {
-        Bodygroups = { {4, 1}, },
+        Bodygroups = { {4, 1 } },
     },
     ["csgo_ak47_mag_556"] = {
-        Bodygroups = { {4, 2}, },
+        Bodygroups = { {4, 2 } },
     },
     ["csgo_ak47_mag_556_ext"] = {
-        Bodygroups = { {4, 3}, },
+        Bodygroups = { {4, 3 } },
     },
     ["csgo_ak47_mag_545"] = {
-        Bodygroups = { {4, 4}, },
+        Bodygroups = { {4, 4 } },
     },
     ["csgo_ak47_mag_545_ext"] = {
-        Bodygroups = { {4, 5}, },
+        Bodygroups = { {4, 5 } },
     },
     ["csgo_ak47_stock_rpk"] = {
-        Bodygroups = { { 1, 1}, },
+        Bodygroups = { { 1, 1 } },
     },
     ["csgo_ak47_stock_skeleton"] = {
-        Bodygroups = { { 1, 2}, },
+        Bodygroups = { { 1, 2 } },
     },
 	
     ["stock_none"] = {
-        Bodygroups = { { 1, 3}, },
+        Bodygroups = { { 1, 3 } },
     },
     ["topcover"] = {
-        Bodygroups = { { 2, 1}, },
+        Bodygroups = { { 2, 1 } },
     },
     ["mag_none"] = {
-        Bodygroups = { {4, 6}, },
+        Bodygroups = { {4, 6 } },
     },
     ["csgo_rail_optic_2_alt"] = {
-		AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3), } }
+		AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3) } }
     },
 }
 

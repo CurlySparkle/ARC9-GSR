@@ -250,6 +250,7 @@ ATT.ActivateElements = {"csgo_rail_ub1"}
 
 ATT.Model = "models/weapons/csgo/atts/rail_foregrips.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.5)
+ATT.ModelAngleOffset = Angle(0,180,0)
 
 ATT.Attachments = {
     {

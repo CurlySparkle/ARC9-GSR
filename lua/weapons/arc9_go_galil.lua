@@ -310,8 +310,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		Mult = 0.8,
-		MinProgress = 0.65,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -341,8 +342,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		Mult = 0.8,
-		MinProgress = 0.8,
+		RefillProgress = 0.775,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -374,8 +376,9 @@ SWEP.Animations = {
     },
     ["reload_drum"] = {
         Source = "reload_short_drum",
-		Mult = 0.9,
-		MinProgress = 0.65,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -405,8 +408,9 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "reload_drum",
-		Mult = 0.9,
-		MinProgress = 0.8,
+		RefillProgress = 0.775,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -519,58 +523,40 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "0000000"
 
 SWEP.AttachmentTableOverrides = {
-    ["go_holdstyle_15"] = {
-    ModelOffset = Vector(-0.5, -0.1, 1)
- }
+	["go_holdstyle_15"] = {
+		ModelOffset = Vector(-0.5, -0.1, 1)
+	}
 }
 
 SWEP.AttachmentElements = {
+    ["csgo_galil_barrel_long"] = {
+		Bodygroups = { { 3, 1 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -0.7, 22), } }	
+    },
+    ["csgo_galil_barrel_short"] = {
+		Bodygroups = { { 3, 2 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -0.7, 18), } }	
+    },
+    ["csgo_galil_mag_35"] = {
+		Bodygroups = { { 2, 1 } },
+    },
+    ["csgo_galil_mag_50"] = {
+		Bodygroups = { { 2, 2 } },
+    },
     ["stock_retract"] = {
-        Bodygroups = {
-            {1,1},
-        },
+		Bodygroups = { { 1, 1 } },
     },
     ["stock_none"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -0.7, 22), } }	
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -0.7, 18), } }	
-    },
-    ["mag_35"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["mag_drum"] = {
-        Bodygroups = {
-            {2,2},
-        },
+		Bodygroups = { { 1, 2 } },
     },
     ["mag_none"] = {
-        Bodygroups = {
-            {2,3},
-        },
+		Bodygroups = { { 2, 3 } },
     },
     ["sight_mount"] = {
-        Bodygroups = {
-            {4,1},
-        },
+		Bodygroups = { { 4, 1 } },
     },
     ["foregrip"] = {
-        Bodygroups = {
-            {5,1},
-        },
+		Bodygroups = { { 5, 1 } },
     },
 }
 
@@ -721,5 +707,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 4
-SWEP.GripPoseParam2 = 0.4
+SWEP.GripPoseParam = 5
+SWEP.GripPoseParam2 = 0

@@ -92,8 +92,9 @@ SWEP.Firemodes = {
 		RecoilDissipationRate = 6,
 		
 		SpreadAddRecoil = -0.005,
-		RecoilMult = 0.8,
-		VisualRecoilMult = 0.5,
+		RecoilMult = 0.25,
+		VisualRecoilMult = 0.8,
+		RecoilMultRecoil = 5,
     }
 }
 
@@ -289,8 +290,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.75,
-		MagSwapTime = 1,
+		RefillProgress = 0.775,
+		MinProgress = 0.95,
+		FireASAP = true,
 		Mult = 0.95,
         IKTimeLine = {
             {
@@ -322,8 +324,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.85,
-		MagSwapTime = 1,
+		RefillProgress = 0.825,
+		MinProgress = 0.95,
+		FireASAP = true,
 		Mult = 0.95,
         IKTimeLine = {
             {
@@ -456,37 +459,22 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag_increased"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    },
-    ["mag_decreased"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -2.85, 19), } }	
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -2.85, 14.1), } }	
-    },
-    -- ["bipod_deployed"] = {
-        -- Bodygroups = {
-            -- {3,1},
-        -- },
-    -- },
     ["sight_mount"] = {
-        Bodygroups = {
-            {4,1},
-        },
+        Bodygroups = { { 4, 1 } },
+    },
+    ["csgo_famas_barrel_long"] = {
+        Bodygroups = { { 2, 1 } },
+		-- AttPosMods = { [2] = { Pos = Vector(0, -2.85, 19) } }	
+    },
+    ["csgo_famas_barrel_short"] = {
+        Bodygroups = { { 2, 2 } },
+		-- AttPosMods = { [2] = { Pos = Vector(0, -2.85, 14.1) } }	
+    },
+    ["csgo_famas_mag_30"] = {
+        Bodygroups = { { 1, 1 } },
+    },
+    ["csgo_famas_mag_long"] = {
+        Bodygroups = { { 1, 2 } },
     },
 }
 

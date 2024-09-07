@@ -1405,9 +1405,9 @@ L["csgo_galil_mag_ak_40.compactname"] = "7.62mm+"
 L["csgo_galil_mag_ak_40.description"] = "Convierte el Galil para aceptar cargadores AK.\n" .. string.format(quicktext.bigmag, 40)
 
 /////////////////// Galil AR
-L["csgo_galilar_barrel_long.printname"] = "Cañón Marksman"
-L["csgo_galilar_barrel_long.compactname"] = "510mm"
--- L["csgo_galilar_barrel_long.description"] = "Long marksman barrel."
+L["csgo_galilar_barrel_long.printname"] = "Cañón SAW"
+L["csgo_galilar_barrel_long.compactname"] = "SAW"
+-- L["csgo_galilar_barrel_long.description"] = "Longer barrel."
 
 L["csgo_galilar_barrel_short.printname"] = "Cañón Navy"
 L["csgo_galilar_barrel_short.compactname"] = "Navy"
@@ -1443,8 +1443,6 @@ L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Convierte la Glock-18 en la Glock-18C, haciéndola <color=100,255,100>totalmente automática</color>."
 
 /////////////////// M249
-L["csgo_m249_barrel_long.printname"] = "Cañón SAW"
-L["csgo_m249_barrel_long.compactname"] = "SAW"
 -- L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."
 
 L["csgo_m249_barrel_short.printname"] = "Cañón Paratrooper"

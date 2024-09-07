@@ -1407,9 +1407,9 @@ L["csgo_galil_mag_ak_40.compactname"] = "7,62 mm+"
 L["csgo_galil_mag_ak_40.description"] = "Konverterar Galil:en att acceptera AK-magasin.\n" .. string.format(quicktext.bigmag, 40)
 
 /////////////////// Galil AR
-L["csgo_galilar_barrel_long.printname"] = "Krypskyttepipa"
-L["csgo_galilar_barrel_long.compactname"] = "Krypskytt."
-L["csgo_galilar_barrel_long.description"] = "Lång krypskyttepipa."
+L["csgo_galilar_barrel_long.printname"] = "SAW-Pipa"
+L["csgo_galilar_barrel_long.compactname"] = "SAW."
+L["csgo_galilar_barrel_long.description"] = "Längre pipa."
 
 L["csgo_galilar_barrel_short.printname"] = "Marinpipa"
 L["csgo_galilar_barrel_short.compactname"] = "Marin"
@@ -1445,8 +1445,6 @@ L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Konverterar Glock-18 till en Glock-18C och gör den <color=100,255,100>helautomatisk</color>."
 
 /////////////////// M249
-L["csgo_m249_barrel_long.printname"] = "SAW-Pipa"
-L["csgo_m249_barrel_long.compactname"] = "SAW"
 L["csgo_m249_barrel_long.description"] = "Lång och tung pipa gjord för täckande eld."
 
 L["csgo_m249_barrel_short.printname"] = "Paratrooper-Pipa"

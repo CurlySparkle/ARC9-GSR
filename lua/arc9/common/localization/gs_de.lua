@@ -1405,8 +1405,8 @@ L["csgo_galil_mag_ak_40.compactname"] = "7,62 mm+"
 L["csgo_galil_mag_ak_40.description"] = "Konvertiert die Galil zur Aufnahme von AK-Magazinen.\n" .. string.format(quicktext.bigmag, 40)
 
 /////////////////// Galil AR
-L["csgo_galilar_barrel_long.printname"] = "Marksman-Lauf"
-L["csgo_galilar_barrel_long.compactname"] = "Marksman"
+L["csgo_galilar_barrel_long.printname"] = "SAW-Lauf"
+L["csgo_galilar_barrel_long.compactname"] = "SAW"
 -- L["csgo_galilar_barrel_long.description"] = "Long marksman barrel."
 
 L["csgo_galilar_barrel_short.printname"] = "Navy-Lauf"
@@ -1443,8 +1443,6 @@ L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Wandelt die Glock-18 in die Glock-18C um, wodurch sie <color=100,255,100>vollautomatisch</color> wird."
 
 /////////////////// M249
-L["csgo_m249_barrel_long.printname"] = "SAW-Lauf"
-L["csgo_m249_barrel_long.compactname"] = "SAW"
 -- L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."
 
 L["csgo_m249_barrel_short.printname"] = "Fallschirmjäger-Lauf"

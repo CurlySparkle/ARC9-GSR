@@ -1405,9 +1405,9 @@ L["csgo_galil_mag_ak_40.compactname"] = "7,62-мм+"
 L["csgo_galil_mag_ak_40.description"] = "Переделывает «Галиль» под магазины от АК.\n" .. string.format(quicktext.bigmag, 40)
 
 /////////////////// Galil AR
-L["csgo_galilar_barrel_long.printname"] = "Стрелковый ствол"
-L["csgo_galilar_barrel_long.compactname"] = "Стрелк."
--- L["csgo_galilar_barrel_long.description"] = "Long marksman barrel."
+L["csgo_galilar_barrel_long.printname"] = "Ствол SAW"
+L["csgo_galilar_barrel_long.compactname"] = "SAW"
+-- L["csgo_galilar_barrel_long.description"] = "Longer barrel."
 
 L["csgo_galilar_barrel_short.printname"] = "Ствол Navy"
 L["csgo_galilar_barrel_short.compactname"] = "Navy"
@@ -1443,8 +1443,6 @@ L["csgo_glock_slide_auto.compactname"] = "Автоматический"
 L["csgo_glock_slide_auto.description"] = "Переделывает Glock-18 в Glock-18C, делая его <color=100,255,100>полностью автоматическим</color>."
 
 /////////////////// M249
-L["csgo_m249_barrel_long.printname"] = "Ствол SAW"
-L["csgo_m249_barrel_long.compactname"] = "SAW"
 -- L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."
 
 L["csgo_m249_barrel_short.printname"] = "Ствол Para"
