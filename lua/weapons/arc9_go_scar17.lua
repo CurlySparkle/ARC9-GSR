@@ -101,12 +101,15 @@ SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
-SWEP.RecoilRandomSide = 0.2
+SWEP.RecoilRandomSide = 0.5
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 SWEP.RecoilKickSights = 1
@@ -125,9 +128,9 @@ SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 2
-SWEP.VisualRecoilUp = 1
-SWEP.VisualRecoilSide = .35
+SWEP.VisualRecoilPunch = 1.5
+SWEP.VisualRecoilUp = 0.5
+SWEP.VisualRecoilSide = -.05
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
@@ -150,20 +153,25 @@ SWEP.VisualRecoilMultSights = 1
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.2
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -211,10 +219,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 32.5, 6.5)
-SWEP.CustomizeSnapshotPos = Vector(-3, 10, 4)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizePos = Vector(16, 45, 6.5)
+
+SWEP.CustomizeRotateAnchor = Vector(16, -3.75, -1)
+
+SWEP.CustomizeSnapshotPos = Vector(1, 30, 4)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, -2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -433,6 +449,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -467,49 +484,43 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {
     ["sights"] = {
-        Bodygroups = {
-            {1,1},
-        },
+		Bodygroups = { { 1,1 } },
     },
     ["stock_retract"] = {
-        Bodygroups = {
-            {2,2},
-        },
+		Bodygroups = { { 2,2 } },
     },
     ["stock_none"] = {
-        Bodygroups = {
-            {2,1},
-        },
+		Bodygroups = { { 2,1 } },
     },
-    ["stock_specialized"] = {
-        Bodygroups = {
-            {2,3},
-        },
+    ["csgo_scar17_stock_specialized"] = {
+		Bodygroups = { { 2,3 } },
     },
-    ["mag"] = {
-        Bodygroups = {
-            {3,1},
-        },
+    ["csgo_scar17_stock_pdw"] = {
+		Bodygroups = { { 2,5 } },
     },
-    ["mag_556"] = { Bodygroups = { {3,4},{0,1} }, },
-    ["mag_556x"] = { Bodygroups = { {3,3},{0,1} }, }, 
-	["stock_scarab"] = {
-	Bodygroups = { {5,1},{2,6} },
-    AttPosMods = { [4] = { Pos = Vector(0, -2.4, 17), }, [1] = { Pos = Vector(0, -6.35, 4), } },
+    ["go_mag_extended"] = {
+		Bodygroups = { { 3,1 } },
+    },
+    ["csgo_mk17_mag_1"] = { 
+		Bodygroups = { { 3,4 }, { 0,1 } }
 	},
-    ["barrel_long"] = {
-        Bodygroups = {
-            {4,1},
-			{6,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 19), } }	
+    ["csgo_mk17_mag_2"] = { 
+		Bodygroups = { { 3,3 }, { 0,1 } }
+	},
+	["csgo_scar17_stock_bullpup"] = {
+		Bodygroups = { {5,1},{2,6} },
+		-- AttPosMods = {
+			-- [4] = { Pos = Vector(0, -2.4, 17) },
+			-- [1] = { Pos = Vector(0, -6.35, 4), }
+		-- },
+	},
+    ["csgo_scar17_barrel_long"] = {
+		Bodygroups = { { 4,1 }, { 6,1 } },
+		-- AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 19), } }	
     },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {4,2},
-			{6,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 15.5), } }	
+    ["csgo_scar17_barrel_short"] = {
+		Bodygroups = { { 4,2 }, { 6,2 } },
+		-- AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 15.5), } }	
     },
 }
 
@@ -517,8 +528,8 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("stock_retract") then model:SetBodygroup(2,2) end	
-	if wep:HasElement("stock_pdw") then model:SetBodygroup(2,5) end	
-	if wep:HasElement("stock_scarab") then model:SetBodygroup(2,6) end		
+	-- if wep:HasElement("stock_pdw") then model:SetBodygroup(2,5) end	
+	-- if wep:HasElement("stock_scarab") then model:SetBodygroup(2,6) end		
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,3) end
 end
 
@@ -533,8 +544,6 @@ SWEP.HookP_NameChange = function(self, name)
 
 	if att["csgo_mk17_mag_1"] or att["csgo_mk17_mag_2"] then
 		wpnname = wpnname .. "_16"
-	else
-		wpnname = wpnname
 	end
 
     return ARC9:GetPhrase(wpnname)

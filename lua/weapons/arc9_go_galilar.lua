@@ -521,6 +521,12 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.AttachmentTableOverrides = {
+    ["csgo_optic_m21"] = {
+		ModelOffset = Vector(7.5, 0, -0.1),
+    },
+}
+
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep.Attachments[3].Installed then model:SetBodygroup(4,4) end

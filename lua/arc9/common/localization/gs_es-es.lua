@@ -1512,11 +1512,11 @@ L["csgo_m4a1_mag_50.compactname"] = "5.56mm++"
 L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 
 /////////////////// M4A4
-L["csgo_m4_mag_20.printname"] = "Cargador de 20 cartuchos de 12.7x42mmRB"
+L["csgo_m4_mag_20.printname"] = "Cargador de 10 cartuchos de 12.7×42mmRB"
 L["csgo_m4_mag_20.compactname"] = "12.7mm"
 -- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
-L["csgo_m4_mag_20_5.printname"] = "Cargador de 20 cartuchos"
+L["csgo_m4_mag_20_5.printname"] = "Cargador de 20 cartuchos de 5.56×45mm"
 L["csgo_m4_mag_20_5.compactname"] = "5.56mm-"
 L["csgo_m4_mag_20_5.description"] = string.format(quicktext.smallmag, 20)
 
@@ -1745,7 +1745,7 @@ L["csgo_mk17_mag_1.compactname"] = "5.56mm"
 L["csgo_mk17_mag_1.description"] = "Convierte el SCAR-17 para aceptar cargadores de 5.56mm."
 
 L["csgo_mk17_mag_2.printname"] = "Cargador de 30 cartuchos de 5.56 × 45 mm"
-L["csgo_mk17_mag_2.compactname"] = "30R 5.56mm"
+L["csgo_mk17_mag_2.compactname"] = "5.56mm"
 L["csgo_mk17_mag_2.description"] = "Convierte el SCAR-17 para que acepte cargadores de 5.56 mm.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "Culata PDW"
@@ -1877,11 +1877,11 @@ L["csgo_xm1014_mag_fed.compactname"] = "C12 Caja"
 L["csgo_xm1014_mag_fed.description"] = "Sustituye el cargador de tubo por un cargador de caja tradicional.\nYa no puede cargarse una sola vez."
 
 L["csgo_xm1014_mag_6.printname"] = "Tubo de 4 cartuchos"
-L["csgo_xm1014_mag_6.compactname"] = "4R"
+L["csgo_xm1014_mag_6.compactname"] = "C12-"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
 
 L["csgo_xm1014_mag_8.printname"] = "Tubo de 10 cartuchos"
-L["csgo_xm1014_mag_8.compactname"] = "10R"
+L["csgo_xm1014_mag_8.compactname"] = "C12+"
 L["csgo_xm1014_mag_8.description"] = "REQUIERE <color=255,255,100>Cañón de policía</color>\n" .. string.format(quicktext.bigtube, 10)
 
 /////////////////// Integration: Escape from Tarkov

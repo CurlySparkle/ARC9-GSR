@@ -113,7 +113,10 @@ SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.6
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
@@ -146,7 +149,7 @@ SWEP.VisualRecoilPositionBumpUp = -0.5
 SWEP.VisualRecoilPositionBumpUpSights = 0.15
 
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = 1
+SWEP.VisualRecoilMultSights = 0
 
 -- SWEP.ViewRecoil = false
 -- SWEP.ViewRecoilUpMult = .25
@@ -158,20 +161,25 @@ SWEP.VisualRecoilMultSights = 1
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.07 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0475 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.015
-SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.2
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
 SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -241,10 +249,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21, 30, 7)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(2, 15, 3)
+SWEP.CustomizePos = Vector(21, 45, 7)
+
+SWEP.CustomizeRotateAnchor = Vector(21, -5, -7)
+
+SWEP.CustomizeSnapshotPos = Vector(2, 30, 3)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, -2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -459,6 +475,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -513,27 +530,34 @@ SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
     ["mount"] = {
-        Bodygroups = {
-            {1,1},
-            {2,1},
-        },
+		Bodygroups = { { 1,1 }, { 2, 1 } },
     },
     ["stock_none"] = {
-        Bodygroups = {
-            {3,1},
-        },
+		Bodygroups = { { 3,1 } },
     },
-    ["stock_fold"] = { Bodygroups = { {3,2}, }, },
-    ["stock_proto"] = { Bodygroups = { {3,3}, }, },
+    ["stock_fold"] = { 
+		Bodygroups = { {3,2} }
+	},
+    ["stock_proto"] = { 
+		Bodygroups = { {3,3} }
+	},
     ["552"] = {
-    Bodygroups = { {4,1}, {1,2}, {2,2} },
-    AttPosMods = { [2] = { Pos = Vector(0, -2.8, 18), }, [4] = { Pos = Vector(0, -1.5, 11.5), }, [5] = { Pos = Vector(-0.95, -2.95, 12.5), } }
+		Bodygroups = { {4,1}, {1,2}, {2,2} },
+		AttPosMods = { 
+			[2] = { Pos = Vector(0, -2.8, 18) }, 
+			[4] = { Pos = Vector(0, -1.5, 11.5) }, 
+			[5] = { Pos = Vector(-0.95, -2.95, 12.5) }
+		}
     },
     ["proto"] = {
     Bodygroups = { {4,2}, {1,2}, {2,3} },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, [4] = { Pos = Vector(0, -1, 11.5), }, [5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75), } }
+    AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, 
+		[4] = { Pos = Vector(0, -1, 11.5), }, 
+		[5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75) } }
     },
-    ["mag_ak"] = { Bodygroups = { {0,1}, {6,1}, }, },
+    ["mag_ak"] = { 
+		Bodygroups = { {0,1}, {6,1} }
+	},
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

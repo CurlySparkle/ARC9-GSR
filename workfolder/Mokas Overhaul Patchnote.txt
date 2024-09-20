@@ -27,9 +27,9 @@ And here's the long, more detailed version:
 [b]FAMAS[/b]: Reduced recoil centering | Improved reload speed | Burst: Reduced recoil & spread | Burst: Increased recoil when firing rapid bursts
 [b]Galil AR[/b]: Increased vertical recoil | Reduced recoil centering | Reduced reload speed
 [b]Galil SAR[/b]: Altered animations | Increased recoil | Reduced recoil centering
-[b]M4A1-S[/b]: 
-[b]M4A4[/b]: 
-[b]SCAR-17[/b]: 
+[b]M4A1-S[/b]: Reduced recoil | Increased recoil when auto-firing | When suppressed: Reduced spread when auto-firing
+[b]M4A4[/b]: Increased recoil | Reduced recoil centering
+[b]SCAR-17[/b]: Increased recoil | Reduced recoil centering
 [b]SIG556[/b]: 
 
 [u]SMGs[/u]
@@ -123,7 +123,8 @@ Added two new sets of attachment integrations:
 	[*] Perk: [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
 	
 	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
-	[*] R8 Revolver: [u].357 Conversion[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
+	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
+	[*] R8 Revolver: [u]6-Round Cylinder[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
 [/list]
 
 [b][u]Other[/u][/b]

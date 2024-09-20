@@ -325,19 +325,19 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.65,
+                t = 0.7,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.9,
                 lhik = 1,
                 rhik = 1
             },
         },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 50/30},
+            {s = path .. "galil_clipin.wav", t = 41.5/30},
         },
     },
     ["reload_empty"] = {
@@ -369,9 +369,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 50/30},
-            {s = path .. "galil_boltback.wav", t = 92/30},
-            {s = path .. "galil_boltforward.wav", t = 100/30},
+            {s = path .. "galil_clipin.wav", t = 41.5/30},
+            {s = path .. "galil_boltback.wav", t = 85/30},
+            {s = path .. "galil_boltforward.wav", t = 92.5/30},
         },
     },
     ["reload_drum"] = {
@@ -403,7 +403,7 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 50/30},
+            {s = path .. "galil_clipin.wav", t = 41.5/30},
         },
     },
     ["reload_empty_drum"] = {
@@ -435,9 +435,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "galil_clipout.wav", t = 13/30},
-            {s = path .. "galil_clipin.wav", t = 50/30},
-            {s = path .. "galil_boltback.wav", t = 92/30},
-            {s = path .. "galil_boltforward.wav", t = 100/30},
+            {s = path .. "galil_clipin.wav", t = 41.5/30},
+            {s = path .. "galil_boltback.wav", t = 85/30},
+            {s = path .. "galil_boltforward.wav", t = 92.5/30},
         },
     },
     ["ready"] = {
@@ -514,7 +514,28 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee"},
-        IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.15,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.45,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+		},
     },
 }
 

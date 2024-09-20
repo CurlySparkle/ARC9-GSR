@@ -65,6 +65,8 @@ SWEP.FreeAimRadius = 0
 
 SWEP.NoPeekCrosshair = true
 
+SWEP.BashCancelsReload = true
+
 -------------------------- SWAY
 SWEP.Sway = 0
 SWEP.SwayMultSights = 1

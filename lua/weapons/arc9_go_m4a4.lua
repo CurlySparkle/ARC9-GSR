@@ -103,25 +103,24 @@ SWEP.Recoil = 1.2
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.75 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.85 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.5
-SWEP.RecoilRandomSide = 0.5
+SWEP.RecoilRandomSide = 0.9
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3.75 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.15 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
-
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -- [[ Moka's testing area - do not touch nor uncomment
 
@@ -130,16 +129,19 @@ SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = .5
-SWEP.VisualRecoilUpSights = -.25
-SWEP.VisualRecoilSide = .15
+SWEP.VisualRecoilPunch = -1.75
+SWEP.VisualRecoilUp = -0.5
+SWEP.VisualRecoilSide = .05
 SWEP.VisualRecoilRoll = 1
 
+SWEP.VisualRecoilPunchSights = -6.5
+SWEP.VisualRecoilUpSights = 0
+SWEP.VisualRecoilSideSights = 0
+
 SWEP.VisualRecoilPositionBump = 1
-SWEP.VisualRecoilPositionBumpUp = -1
+SWEP.VisualRecoilPositionBumpUp = .5
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .2
+SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -154,20 +156,25 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.045 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.3
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -215,10 +222,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17.5, 30, 6.5)
-SWEP.CustomizeSnapshotPos = Vector(0, 15, 3)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizePos = Vector(17.5, 45, 6.5)
+
+SWEP.CustomizeRotateAnchor = Vector(17.5, -5, -6.5)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 3)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1.5, 2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -301,7 +316,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.6,
+		RefillProgress = 0.575,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -331,7 +348,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.7,
+		RefillProgress = 0.675,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -362,7 +381,9 @@ SWEP.Animations = {
     }, 
 	["reload_alt"] = {
         Source = "reload_short_alt",
-		MinProgress = 0.75,
+		RefillProgress = 0.775,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -393,7 +414,9 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload_alt",
-		MinProgress = 0.85,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -426,7 +449,9 @@ SWEP.Animations = {
     }, 
 	["reload_empty_alt_2"] = {
         Source = "reload_alt_2",
-		MinProgress = 0.75,
+		RefillProgress = 0.675,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -501,6 +526,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -545,7 +571,9 @@ SWEP.Animations = {
     },
     ["reload_sniper"] = {
         Source = "reload_short_sniper",
-		MinProgress = 0.55,
+		RefillProgress = 0.575,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -575,7 +603,9 @@ SWEP.Animations = {
     },
     ["reload_empty_sniper"] = {
         Source = "reload_sniper",
-		MinProgress = 0.8,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -615,75 +645,54 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {
     ["mount"] = {
-        Bodygroups = {
-            {1,1},
-        },
+		Bodygroups = { { 1,1 } },
     },
     ["frontiron"] = {
-        Bodygroups = {
-            {2,1},
-        },
+		Bodygroups = { { 2,1 } },
     },
-    ["stock_sniper"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    },
-    ["stock_none_m4"] = {
-    AttPosMods = { [7] = { Pos = Vector(0, -5.05, -0.25), } }	
+    ["csgo_m4_stock_sniper"] = {
+		Bodygroups = { { 3,2 } },
     },
     ["sidecover"] = {
-        Bodygroups = {
-            {4,2},
-        },
+		Bodygroups = { { 4,2 } },
     },
     ["sidecover_long"] = {
-        Bodygroups = {
-            {4,2},
-        },
+		Bodygroups = { { 4,2 } },
     },
-    ["m4_barrel_long"] = {
-        Bodygroups = {
-			{5,1},
-			{2,2},
-			{4,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -5.1, 23.1), } }	
+    ["csgo_m4_barrel_long"] = {
+		Bodygroups = { {5,1}, {2,2}, {4,1 } },
+		-- AttPosMods = { 
+			-- [2] = { Pos = Vector(0, -5.1, 23.1) } 
+		-- },	
     },
-    ["m4_barrel_sniper"] = {
-        Bodygroups = {
-			{5,2},
-			{3,4},
-			{5,2},
-			{7,1},
-			{2,2},
-        },
-    AttPosMods = { 
-	[2] = { Pos = Vector(0, -5, 27.4),
+    ["csgo_m4_barrel_sniper"] = {
+		Bodygroups = { {5,2}, {3,4}, {5,2}, {7,1}, {2,2 } },
+		-- AttPosMods = { 
+			-- [2] = { Pos = Vector(0, -5, 27.4) },
+			-- [4] = { Pos = Vector(0, -3.75, 10) },
+		-- }
+    },
+    ["go_mag_extended_m4"] = {
+		Bodygroups = { { 6,1 } }
+    },
+    ["csgo_m4_mag_20"] = {
+		Bodygroups = { { 6,3 } }
+    },
+    ["csgo_m4_mag_20_5"] = { 
+		Bodygroups = { {6,2} } 
 	},
-	[4] = { Pos = Vector(0, -3.75, 10),
+	["csgo_m4_mag_25_9"] = { 
+		Bodygroups = { {6,4} } 
 	},
-	}
-    },
-    ["mag"] = {
-        Bodygroups = {
-            {6,1},
-        },
-    },
-    ["mag_20"] = {
-        Bodygroups = {
-            {6,3},
-        },
-    },
-    ["mag_20_5"] = { Bodygroups = { {6,2}, }, },  
-	["mag_25_9"] = { Bodygroups = { {6,4}, }, },
-	["mag_32_9"] = { Bodygroups = { {6,5}, }, },
+	["csgo_m4_mag_32_9"] = { 
+		Bodygroups = { {6,5} } 
+	},
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("m4_barrel_long") and wep.Attachments[1].Installed then model:SetBodygroup(2,3) end
-    if wep:HasElement("m4_barrel_sniper") then model:SetBodygroup(2,4) end
+    if wep:HasElement("csgo_m4_barrel_long") and wep.Attachments[1].Installed then model:SetBodygroup(2,3) end
+    if wep:HasElement("csgo_m4_barrel_sniper") then model:SetBodygroup(2,4) model:SetBodygroup(4,2) end
 end
 
 SWEP.HookP_NameChange = function(self, name)
@@ -806,7 +815,7 @@ SWEP.Attachments = {
         Category = {"go_m4_tube"},
         Bone = "v_weapon.M4A1_Parent",
 		--InstalledElements = {"stock_none"},
-		ExcludeElements = {"stock_sniper"},
+		ExcludeElements = {"csgo_m4_stock_sniper"},
         Pos = Vector(0, -5.05, -2.95),
         Ang = Angle(90, 0, -90),
 		Scale = 1,
@@ -909,4 +918,5 @@ SWEP.Attachments = {
     },
 }
 
+SWEP.GripPoseParam = 0.5
 SWEP.GripPoseParam2 = 0

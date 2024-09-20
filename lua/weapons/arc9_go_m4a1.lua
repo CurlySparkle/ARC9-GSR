@@ -75,13 +75,15 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 600
+SWEP.RPM = 700
 
 SWEP.Firemodes = {
     {
         Mode = -1,
         PrintName = ARC9:GetPhrase("csgo_firemode_sil"),
         Silencer = true,
+		RPMAdd = -100,
+		SpreadMultRecoil = 0.95,
         -- add other attachment modifiers
     },
     {
@@ -97,9 +99,6 @@ SWEP.Firemodes = {
         Hook_TranslateAnimation = function(swep, anim)
             return anim .. "_silenced"
         end,
-
-        RPM = 700,
-        SpreadMultRecoil = 1.2,
     }
 }
 
@@ -121,12 +120,17 @@ SWEP.RecoilSide = 1.4 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.8
 SWEP.RecoilRandomSide = 1
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.2 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
+
+SWEP.RecoilMultRecoil = 1.33
 
 -- SWEP.RecoilMultCrouch = 0.7
 -- SWEP.RecoilMultHipFire = 1.25
@@ -140,18 +144,18 @@ SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = .75
-SWEP.VisualRecoilPunchSights = 1
-SWEP.VisualRecoilUp = 2
+SWEP.VisualRecoilPunchSights = -2.5
+SWEP.VisualRecoilUp = 0.5
 SWEP.VisualRecoilUpSights = 0
-SWEP.VisualRecoilSide = .2
-SWEP.VisualRecoilSideSights = -.01
+SWEP.VisualRecoilSide = .1
+SWEP.VisualRecoilSideSights = 0
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1.25
-SWEP.VisualRecoilPositionBumpUp = 0.5
-SWEP.VisualRecoilPositionBumpUpSights = 1
+SWEP.VisualRecoilPositionBumpUp = 0.1
+SWEP.VisualRecoilPositionBumpUpSights = -1
 SWEP.VisualRecoilMultCrouch = .9
-SWEP.VisualRecoilMultSights = .5
+SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -166,20 +170,25 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0375 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.075
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.0125
 
-SWEP.RecoilModifierCapSights = 0.35
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -228,11 +237,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 33, 7)
+SWEP.CustomizePos = Vector(22, 50, 7)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 15, 2)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeRotateAnchor = Vector(22, -5, -7)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 2)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, -2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -321,7 +337,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.6,
+		RefillProgress = 0.575,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -351,7 +369,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.7,
+		RefillProgress = 0.675,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -422,6 +442,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -565,6 +586,9 @@ SWEP.Animations = {
     },
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
+		RefillProgress = 0.575,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -595,6 +619,9 @@ SWEP.Animations = {
     },
     ["reload_empty_silenced"] = {
         Source = "reload_silenced",
+		RefillProgress = 0.675,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -670,6 +697,7 @@ SWEP.Animations = {
     ["idle_sprint_silenced"] = {
         Source = "sprint_silenced",
         HideBoneIndex = 1,
+        Time = 0.525,
     },
     ["exit_sprint_silenced"] = {
         Source = "sprint_out_silenced",
@@ -746,67 +774,33 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {
     ["silencer_remove"] = {
-        Bodygroups = {
-            {1,1},
-        },
+		Bodygroups = { { 1,1 } },
     },
     ["stock_retract"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["stock_m16"] = {
-        Bodygroups = {
-            {2,2},
-        },
+		Bodygroups = { { 2,1 } },
     },
     ["stock_none"] = {
-        Bodygroups = {
-            {2,3},
-        },
+		Bodygroups = { { 2,3 } },
     },
-    -- ["foregrip_long"] = {
-        -- Bodygroups = {
-            -- {3,1},
-			-- {5,2},
-        -- },
-    -- },
-    ["foregrip_m16a4"] = {
-        Bodygroups = {
-            {3,2},
-			-- {5,4},
-			-- {7,1},
-        },
-    AttPosMods = {
-	[4] = { Pos = Vector(-1.35, -5.2, 15), },
-	[3] = { Pos = Vector(0, -2.3, 0), },
-	}
+    ["csgo_m4a1_stock_m16"] = {
+		Bodygroups = { { 2,2 } },
     },
-    ["mag_30"] = {
-        Bodygroups = {
-            {4,1},
-        },
+    ["csgo_m4a1_barrel_m16a4"] = {
+		Bodygroups = { { 3,2} },
+		-- AttPosMods = {
+			-- [4] = { Pos = Vector(-1.35, -5.2, 15), },
+			-- [3] = { Pos = Vector(0, -2.3, 0), },
+		-- }
     },
-    ["mag_50"] = {
-        Bodygroups = {
-            {4,3},
-        },
+    ["csgo_m4a1_mag_30"] = {
+		Bodygroups = { { 4,1 } },
+    },
+    ["csgo_m4a1_mag_50"] = {
+		Bodygroups = { { 4,3 } },
     },
     ["reciever_m16"] = {
-        Bodygroups = {
-            {6,1},
-        },
+		Bodygroups = { { 6,1 } },
     },
-    -- ["reciever_m16a4"] = {
-        -- Bodygroups = {
-            -- {6,1},
-        -- },
-    -- },
-    -- ["reciever_m16a2"] = {
-        -- Bodygroups = {
-            -- {6,1},
-        -- },
-    -- },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -824,13 +818,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	end
 
 	-- If A4 barrel
-	if wep:HasElement("foregrip_m16a4") then
+	if wep:HasElement("csgo_m4a1_barrel_m16a4") then
 		-- If muzzle or not
-		if wep.Attachments[3].Installed then
-			model:SetBodygroup(7,0)
-		else
+		-- if wep.Attachments[3].Installed then
 			model:SetBodygroup(7,1)
-		end
+		-- else
+			-- model:SetBodygroup(7,1)
+		-- end
 		-- If scope
 		if wep.Attachments[1].Installed then
 			-- If carry handle or not
@@ -848,7 +842,7 @@ SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
 	if att["csgo_m4a1_barrel_m16a4"] and att["csgo_m4a1_stock_m16"] then
-		name = "M16A3-S"
+		name = string.Replace(name, "M4A1", "M16A3")
 	end
 
 -- For Skins

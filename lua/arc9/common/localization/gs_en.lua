@@ -1519,7 +1519,7 @@ L["csgo_m4a1_mag_50.compactname"] = "5.56mm++"
 L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 
 /////////////////// M4A4
-L["csgo_m4_mag_20.printname"] = "20-Round 12.7x42mmRB Magazine"
+L["csgo_m4_mag_20.printname"] = "10-Round 12.7×42mmRB Magazine"
 L["csgo_m4_mag_20.compactname"] = "12.7mm"
 L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
@@ -1711,15 +1711,15 @@ L["csgo_p90_mag_20_stanag.description"] = "Frankenstein-attaches a <color=255,10
 
 /////////////////// Sawed-Off
 L["csgo_sawedoff_mag_5.printname"] = "5-Round Tube"
-L["csgo_sawedoff_mag_5.compactname"] = "5R"
+L["csgo_sawedoff_mag_5.compactname"] = "12G+"
 L["csgo_sawedoff_mag_5.description"] = string.format(quicktext.bigtube, 5)
 
 L["csgo_sawedoff_mag_6.printname"] = "6-Round Tube"
-L["csgo_sawedoff_mag_6.compactname"] = "6R"
+L["csgo_sawedoff_mag_6.compactname"] = "12G++"
 L["csgo_sawedoff_mag_6.description"] = "REQUIRES <color=255,255,100>Uncut Barrel</color>\n" .. string.format(quicktext.bigtube, 6)
 
 L["csgo_sawedoff_mag_7.printname"] = "7-Round Tube"
-L["csgo_sawedoff_mag_7.compactname"] = "7R"
+L["csgo_sawedoff_mag_7.compactname"] = "12G+++"
 L["csgo_sawedoff_mag_7.description"] = "REQUIRES <color=255,255,100>Uncut Barrel</color>\n" .. string.format(quicktext.bigtube, 7)
 
 L["csgo_sawedoff_barrel_ext.printname"] = "Uncut Barrel"
@@ -1737,7 +1737,7 @@ L["csgo_sawedoff_stock_m3.description"] = "Default stock and pistol grip from th
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Marksman Barrel"
 L["csgo_scar17_barrel_long.compactname"] = "Marksman"
-L["csgo_scar17_barrel_long.description"] = "Long barrel."
+L["csgo_scar17_barrel_long.description"] = "Long barrel.\nRequired for the <color=255,255,100>Bullpup Kit</color> attachment."
 
 L["csgo_scar17_barrel_short.printname"] = "Short Barrel"
 L["csgo_scar17_barrel_short.compactname"] = "Short"
@@ -1752,7 +1752,7 @@ L["csgo_mk17_mag_1.compactname"] = "5.56mm"
 L["csgo_mk17_mag_1.description"] = "Converts the SCAR-17 to accept 5.56mm magazines."
 
 L["csgo_mk17_mag_2.printname"] = "30-Round 5.56×45mm Magazine"
-L["csgo_mk17_mag_2.compactname"] = "30R 5.56mm+"
+L["csgo_mk17_mag_2.compactname"] = "5.56mm+"
 L["csgo_mk17_mag_2.description"] = "Converts the SCAR-17 to accept 5.56mm magazines.\n" .. string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "PDW Stock"
@@ -1761,7 +1761,7 @@ L["csgo_scar17_stock_pdw.description"] = "Lightweight and cut down stock."
 
 L["csgo_scar17_stock_bullpup.printname"] = "Bullpup Kit"
 L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
-L["csgo_scar17_stock_bullpup.description"] = "Applies a bullpup kit onto the SCAR-17, turning it into a bullpup rifle."
+L["csgo_scar17_stock_bullpup.description"] = "REQUIRES <color=255,255,100>Marksman Barrel</color>\n" .. "Applies a bullpup kit onto the SCAR-17, turning it into a bullpup rifle."
 
 /////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "CQC Factory Barrel"
@@ -1884,11 +1884,11 @@ L["csgo_xm1014_mag_fed.compactname"] = "12G Box"
 L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine.\nCan no longer single load."
 
 L["csgo_xm1014_mag_6.printname"] = "4-Round Tube"
-L["csgo_xm1014_mag_6.compactname"] = "4R"
+L["csgo_xm1014_mag_6.compactname"] = "12G-"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
 
 L["csgo_xm1014_mag_8.printname"] = "10-Round Tube"
-L["csgo_xm1014_mag_8.compactname"] = "10R"
+L["csgo_xm1014_mag_8.compactname"] = "12G+"
 L["csgo_xm1014_mag_8.description"] = "REQUIRES <color=255,255,100>Police Barrel</color>\n" .. string.format(quicktext.bigtube, 10)
 
 /////////////////// Integration: Escape from Tarkov
@@ -2298,7 +2298,7 @@ L["csgo_m4_stock_sniper.compactname"] = ARC9:GetPhrase("csgo_m4a1_stock_m16.comp
 L["csgo_m4_stock_sniper.description"] = ARC9:GetPhrase("csgo_m4a1_stock_m16.description") or "Standard fixed stock."
 
 L["csgo_m4_tube_retract.printname"] = ARC9:GetPhrase("csgo_stock_tube_retracted.printname") or "Buffer Tube - Short"
-L["csgo_m4_tube_retract.compactname"] = ARC9:GetPhrase("csgo_stock_tube_retracted.printname") or "Buffer (S)"
+L["csgo_m4_tube_retract.compactname"] = ARC9:GetPhrase("csgo_stock_tube_retracted.compactname") or "Buffer (S)"
 
 L["csgo_negev_stock_skeleton.printname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.printname") or "Skeleton Stock"
 L["csgo_negev_stock_skeleton.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.compactname") or "Skeleton"

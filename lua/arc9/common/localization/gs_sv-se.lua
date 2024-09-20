@@ -1514,11 +1514,11 @@ L["csgo_m4a1_mag_50.compactname"] = "5,56mm++"
 L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 
 /////////////////// M4A4
-L["csgo_m4_mag_20.printname"] = "20-Round 12.7x42mmRB Magazine"
-L["csgo_m4_mag_20.compactname"] = "12.7mm"
+L["csgo_m4_mag_20.printname"] = "12,7 × 42 mmRB 10-Patronersmagasin"
+L["csgo_m4_mag_20.compactname"] = "12,7 mm"
 L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
-L["csgo_m4_mag_20_5.printname"] = "20-Patronersmagasin"
+L["csgo_m4_mag_20_5.printname"] = "5,56 × 45 mm 20-Patronersmagasin"
 L["csgo_m4_mag_20_5.compactname"] = "5,56 mm-"
 L["csgo_m4_mag_20_5.description"] = string.format(quicktext.smallmag, 20)
 
@@ -1814,13 +1814,13 @@ L["csgo_ssg08_barrel_short.printname"] = "Anpassad Pipa"
 L["csgo_ssg08_barrel_short.compactname"] = "Anpassad"
 L["csgo_ssg08_barrel_short.description"] = "Anpassad förkortad pipa."
 
-L["csgo_ssg08_mag_15.printname"] = "15-Skott .308 SSG-Magasin"
+L["csgo_ssg08_mag_15.printname"] = ".308 15-Patroners SSG-Magasin"
 L["csgo_ssg08_mag_15.compactname"] = ".308+"
 L["csgo_ssg08_mag_15.description"] = string.format(quicktext.bigmag, 15)
 
-L["csgo_ssg08_mag_5.printname"] = "5-Skott .338 Lapua Magnum-Magasin"
+L["csgo_ssg08_mag_5.printname"] = ".338 Lapua Magnum 5-Patronersmagasin"
 L["csgo_ssg08_mag_5.compactname"] = ".338"
-L["csgo_ssg08_mag_5.description"] = "Konverterar SSG 08:an att skjuta .338 Lapua Magnum skott."
+L["csgo_ssg08_mag_5.description"] = "Konverterar SSG 08:an att skjuta .338 Lapua Magnum-patroner."
 
 /////////////////// TEC-9
 L["csgo_tec9_barrel_long.printname"] = "200mm JATI-Pipa"
@@ -1879,11 +1879,11 @@ L["csgo_xm1014_mag_fed.compactname"] = "K12-Låda"
 L["csgo_xm1014_mag_fed.description"] = "Ersätter rörmagasinet med ett traditionellt lådmagasin.\nKan inte längre ladda individuellt."
 
 L["csgo_xm1014_mag_6.printname"] = "4-Skottrör"
-L["csgo_xm1014_mag_6.compactname"] = "4S"
+L["csgo_xm1014_mag_6.compactname"] = "K12-"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
 
 L["csgo_xm1014_mag_8.printname"] = "10-Skottrör"
-L["csgo_xm1014_mag_8.compactname"] = "10S"
+L["csgo_xm1014_mag_8.compactname"] = "K12+"
 L["csgo_xm1014_mag_8.description"] = "KRÄVER <color=255,255,100>Polis Pipa</color>\n" .. string.format(quicktext.bigtube, 10)
 
 /////////////////// Integration: Escape from Tarkov

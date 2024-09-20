@@ -26,7 +26,7 @@ ATT = {}
 ATT.PrintName = "Odyssey"
 ATT.Description = "Custom skin for the Galil AR."
 
-ATT.Category = "go_skins_usp"
+ATT.Category = "go_skins_galilar"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 
 ATT.SubMaterial0 = "skins/galilar/galil_odyssy"

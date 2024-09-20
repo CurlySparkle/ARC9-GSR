@@ -1512,11 +1512,11 @@ L["csgo_m4a1_mag_50.compactname"] = "5,56 mm++"
 L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 
 /////////////////// M4A4
-L["csgo_m4_mag_20.printname"] = "12,7 x 42 mmRB 20-Schuss-Magazin"
+L["csgo_m4_mag_20.printname"] = "12,7 × 42 mmRB 10-Schuss-Magazin"
 L["csgo_m4_mag_20.compactname"] = "12,7 mm"
 -- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
-L["csgo_m4_mag_20_5.printname"] = "20-Schuss-Magazin"
+L["csgo_m4_mag_20_5.printname"] = "5,56 × 45 mm 20-Schuss-Magazin"
 L["csgo_m4_mag_20_5.compactname"] = "5,56 mm-"
 L["csgo_m4_mag_20_5.description"] = string.format(quicktext.smallmag, 20)
 
@@ -1877,11 +1877,11 @@ L["csgo_xm1014_mag_fed.compactname"] = "12G-Box"
 L["csgo_xm1014_mag_fed.description"] = "Ersetzt das Röhrenmagazin durch ein traditionelles Kastenmagazin.\nKann nicht mehr einzeln geladen werden."
 
 L["csgo_xm1014_mag_6.printname"] = "4-Rundlauf"
-L["csgo_xm1014_mag_6.compactname"] = "4R"
+L["csgo_xm1014_mag_6.compactname"] = "12G-"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
 
 L["csgo_xm1014_mag_8.printname"] = "Lauf mit 10 Runden"
-L["csgo_xm1014_mag_8.compactname"] = "10R"
+L["csgo_xm1014_mag_8.compactname"] = "12G+"
 L["csgo_xm1014_mag_8.description"] = "ERFORDERT <color=255,255,100>Polizei-Lauf</color>\n" .. string.format(quicktext.bigtube, 10)
 
 /////////////////// Integration: Escape from Tarkov
