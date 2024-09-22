@@ -135,6 +135,46 @@ ATT.Category = "csgo_stock"
 
 ATT.Model = "models/weapons/csgo/atts/stocks/stock_ergo.mdl"
 
+ATT.DrawFunc = function(self, model, wm) 
+	local att = self:GetElements()
+	local skin = "moka_csgo_skin_sg556_"
+
+    local function GetSkinNames( skintable, skinpath )
+		for activeskin,skintable in pairs(skintable) do
+			if att[skin .. activeskin] then
+				model:SetSubMaterial(0, skintable)
+				model:SetSubMaterial(1, skintable)
+			end
+		end
+    end
+
+    GetSkinNames( 
+	{
+		-- Antiqued
+		damascus = "csgoskins/antiqued/sg556_damascus",
+		
+		-- Custom
+		luggage = "csgoskins/custom/sg556_luggage",
+		caution = "csgoskins/custom/sg556_caution",
+		rally = "csgoskins/custom/sg556_rally",
+		atlas = "csgoskins/custom/sg556_atlas",
+		cyber_dragon = "csgoskins/custom/sg556_cyber_dragon",
+		cyberforce = "csgoskins/custom/sg556_cyberforce",
+		darkwing = "csgoskins/custom/sg556_darkwing",
+		reactor = "csgoskins/custom/sg556_reactor",
+		triarch = "csgoskins/custom/sg556_triarch",
+		
+		-- Gunsmith
+		aerial = "csgoskins/gunsmith/sg556_aerial",
+		deathmetal = "csgoskins/gunsmith/sg556_deathmetal",
+		over_heated = "csgoskins/gunsmith/sg556_over_heated",
+		phantom = "csgoskins/gunsmith/sg556_phantom",
+		rusty = "csgoskins/gunsmith/sg556_rusty",
+		tigermoth = "csgoskins/gunsmith/sg556_tigermoth",
+	})
+
+end
+
 ARC9.LoadAttachment(ATT, "go_stock_ergo")
 ------------------------------------------------------------------------
 ATT = {}

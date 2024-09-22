@@ -44,9 +44,9 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_m4a1.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10.9, 6, -6.5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-10, 4, 0),
-    TPIKAng = Angle(0, 0, 175),
-    Scale = 1
+    Scale = 1,
+    TPIKPos = Vector(-10, 7.5, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -237,10 +237,10 @@ SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "physgun"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
@@ -661,16 +661,9 @@ SWEP.AttachmentElements = {
     },
     ["csgo_m4_barrel_long"] = {
 		Bodygroups = { {5,1}, {2,2}, {4,1 } },
-		-- AttPosMods = { 
-			-- [2] = { Pos = Vector(0, -5.1, 23.1) } 
-		-- },	
     },
     ["csgo_m4_barrel_sniper"] = {
 		Bodygroups = { {5,2}, {3,4}, {5,2}, {7,1}, {2,2 } },
-		-- AttPosMods = { 
-			-- [2] = { Pos = Vector(0, -5, 27.4) },
-			-- [4] = { Pos = Vector(0, -3.75, 10) },
-		-- }
     },
     ["go_mag_extended_m4"] = {
 		Bodygroups = { { 6,1 } }

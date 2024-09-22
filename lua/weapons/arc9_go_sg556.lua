@@ -37,9 +37,9 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_sg556.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10.9, 6, -6.5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-10, 4, 0),
-    TPIKAng = Angle(0, 0, 175),
     Scale = 1,
+    TPIKPos = Vector(-13, 7.5, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -106,7 +106,7 @@ SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -119,16 +119,11 @@ SWEP.RecoilMax = 1
 SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.3 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
 
--- SWEP.RecoilMultCrouch = 0.6
--- SWEP.RecoilMultHipFire = 1
--- SWEP.RecoilAutoControlMultHipFire = 1
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 1.2
+SWEP.RecoilMultRecoil = 1.5
 
 -- [[ Moka's testing area - do not touch nor uncomment
 
@@ -140,7 +135,7 @@ SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 2
 SWEP.VisualRecoilUp = -1
 SWEP.VisualRecoilUpSights = 0.1
-SWEP.VisualRecoilSide = .4
+SWEP.VisualRecoilSide = -.1
 SWEP.VisualRecoilSideSights = -.005
 SWEP.VisualRecoilRoll = 1
 
@@ -259,15 +254,15 @@ SWEP.CustomizeNoRotate = false
 
 SWEP.PeekMaxFOV = 56
 
-SWEP.PeekPos = Vector(-1, -2, -4)
+SWEP.PeekPos = Vector(-1.5, 2, -4)
 SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -332,6 +327,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		RefillProgress = 0.625,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -349,7 +347,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.85,
+                t = 0.95,
                 lhik = 1,
                 rhik = 1
             },
@@ -361,6 +359,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -393,6 +394,9 @@ SWEP.Animations = {
     },
     ["reload_ak"] = {
         Source = "reload_short_ak",
+		RefillProgress = 0.675,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -422,6 +426,9 @@ SWEP.Animations = {
     },
     ["reload_empty_ak"] = {
         Source = "reload_ak",
+		RefillProgress = 0.85,
+		MinProgress = 0.9575,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -535,46 +542,38 @@ SWEP.AttachmentElements = {
     ["stock_none"] = {
 		Bodygroups = { { 3,1 } },
     },
-    ["stock_fold"] = { 
+    ["csgo_sg556_stock_folding"] = { 
 		Bodygroups = { {3,2} }
 	},
-    ["stock_proto"] = { 
+    ["csgo_sg556_stock_proto"] = { 
 		Bodygroups = { {3,3} }
 	},
-    ["552"] = {
+    ["csgo_sg556_barrel_short"] = {
 		Bodygroups = { {4,1}, {1,2}, {2,2} },
-		AttPosMods = { 
-			[2] = { Pos = Vector(0, -2.8, 18) }, 
-			[4] = { Pos = Vector(0, -1.5, 11.5) }, 
-			[5] = { Pos = Vector(-0.95, -2.95, 12.5) }
-		}
     },
-    ["proto"] = {
-    Bodygroups = { {4,2}, {1,2}, {2,3} },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.2, 22), }, 
-		[4] = { Pos = Vector(0, -1, 11.5), }, 
-		[5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75) } }
-    },
-    ["mag_ak"] = { 
+    ["csgo_sg556_barrel_proto"] = {
+		Bodygroups = { {4,2}, {1,2}, {2,3} },
+	},
+    ["csgo_sg556_mag_ak"] = { 
 		Bodygroups = { {0,1}, {6,1} }
 	},
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("stock_fold") then model:SetBodygroup(3,2) end
-    if wep:HasElement("stock_proto") then model:SetBodygroup(3,3) end
+    if wep:HasElement("csgo_sg556_stock_folding") then model:SetBodygroup(3,2) end
+    if wep:HasElement("csgo_sg556_stock_proto") then model:SetBodygroup(3,3) end
 
-    if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(2,1) end
-    if wep:HasElement("mount") and wep:HasElement("552") then model:SetBodygroup(1,2) end
-    if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(2,1) end
-    if wep:HasElement("mount") and wep:HasElement("proto") then model:SetBodygroup(1,2) end
+    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_short") then model:SetBodygroup(2,1) end
+    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_short") then model:SetBodygroup(1,2) end
+    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_proto") then model:SetBodygroup(2,1) end
+    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_proto") then model:SetBodygroup(1,2) end
 end
 
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
-	if att["csgo_sg556_barrel_short"] then
+	if att["csgo_sg556_barrel_short"] and att["csgo_sg556_stock_folding"] then
         name = ARC9:GetPhrase("csgo_weapon_sg556_sg552")
     end
 	if att["csgo_sg556_barrel_proto"] and att["csgo_sg556_stock_proto"] then
@@ -656,7 +655,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
         DefaultAttName = "Default",
         Category = {"grip"},
-		ExcludeElements = {"proto"},
+		ExcludeElements = {"csgo_sg556_barrel_proto"},
         Bone = "v_weapon.sg556_Parent",
         Pos = Vector(0, -1.35, 12.5),
         Ang = Angle(90, 0, 90),
@@ -769,5 +768,5 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.GripPoseParam = 4.3
-SWEP.GripPoseParam2 = 0.7
+SWEP.GripPoseParam = 4.5
+SWEP.GripPoseParam2 = 0.3

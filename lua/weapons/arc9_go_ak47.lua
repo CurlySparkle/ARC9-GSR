@@ -48,8 +48,8 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-9, 5.5, -5.5),
     Ang = Angle(-7, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-12.5, 7.5, -1),
-    TPIKAng = Angle(-15, -1.5, 170)
+    TPIKPos = Vector(-10, 7.5, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 
@@ -645,15 +645,12 @@ SWEP.AttachmentElements = {
     },
     ["csgo_ak47_barrel_tactical"] = {
         Bodygroups = { { 3, 4 } },
-		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 25.3) } }, -- REMOVE LATER
     },
     ["csgo_ak47_barrel_long"] = {
         Bodygroups = { { 3, 2 } },
-		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 31.4) } }, -- REMOVE LATER
     },
     ["csgo_ak47_barrel_short"] = {
         Bodygroups = { { 3, 3 } },
-		AttPosMods = { [2] = { Pos = Vector(0, -3.4, 17.5) }, [6] = { Pos = Vector(0, -2.3, 12) } }, -- REMOVE LATER
     },
     ["csgo_ak47_mag_50"] = {
         Bodygroups = { {4, 1 } },

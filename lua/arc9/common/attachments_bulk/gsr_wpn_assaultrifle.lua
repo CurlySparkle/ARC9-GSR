@@ -925,7 +925,7 @@ ARC9.LoadAttachment(ATT, "csgo_galilar_mag_60")
 ------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Alternative View"
+ATT.PrintName = "Alternative View (Galil AR)"
 
 table.Merge(ATT, sharedcode)
 
@@ -1302,7 +1302,7 @@ ARC9.LoadAttachment(ATT, "csgo_m4_barrel_sniper")
 ------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Alternative View"
+ATT.PrintName = "Alternative View (M4A4)"
 
 table.Merge(ATT, sharedcode)
 
@@ -1509,6 +1509,8 @@ ATT.ReloadTimeMult = 1.15
 ATT.RecoilMult = 1.15
 ATT.VisualRecoilMult = 1.05
 
+ATT.VisualRecoilPositionBumpAdd = -1.25 
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_scar17_stock_scarab.png", "mips smooth")
@@ -1544,20 +1546,169 @@ ATT.Element = {
 	}
 }
 
+ATT.WorldModelOffsetOverride = {
+    Pos = Vector(-3, 4, -6.25),
+    Ang = Angle(-5, 0, 180),
+    Scale = 1,
+    TPIKPos = Vector(-4, 4.5, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
+}
+
 ARC9.LoadAttachment(ATT, "csgo_scar17_stock_bullpup")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// SIG556
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "SG 552 Commando Barrel and Handguard"
 
--- table.Merge(ATT, sharedcode)
+-- ATT.RPMAdd = 155
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.025
+ATT.SpreadMultRecoil = 0.85
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
+ATT.Category = "go_sg556_barrel"
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_ump.mdl"
+ATT.ModelOffset = Vector(2, 0, -0.4)
+
+ATT.LHIK_Priority = 5
+ATT.LHIK = true
+
+ATT.Element = {
+    AttPosMods = {
+		[2] = { Pos = Vector(0, -2.8, 18) }, -- Muzzle
+		[4] = { Pos = Vector(0, -1.5, 11.5) }, -- Grip
+		[5] = { Pos = Vector(-0.95, -2.95, 12.5) }, -- Tactical
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_short")
 ------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "SG 541 Prototype Barrel and Hanguard"
+
+-- ATT.RPMAdd = 75
+
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.925
+
+ATT.SpreadMultRecoil = 1.05
+ATT.RangeMinMult = 0.925
+ATT.RangeMaxMult = 0.925
+ATT.PhysBulletMuzzleVelocityMult = 0.925
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
+ATT.Category = "go_sg556_barrel"
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_m4.mdl"
+ATT.ModelOffset = Vector(1.25, -0.3, -0.55)
+
+ATT.LHIK_Priority = 5
+ATT.LHIK = true
+
+ATT.Element = {
+    AttPosMods = {
+		[2] = { Pos = Vector(0, -3.2, 22), }, -- Muzzle
+		[4] = { Pos = Vector(0, -1, 11.5), }, -- Grip
+		[5] = { Pos = Vector(-1.05, -3.35, 15), Ang = Angle(90, 90, 75) }, -- Tactical
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_sg556_barrel_proto")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "SG 552 Commando Folding Stock"
+
+ATT.RecoilMult = 0.95
+ATT.VisualRecoilMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 1.05
+
+ATT.RecoilAutoControlMult = 0.95
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_sg556_stock_folding.png", "mips smooth")
+ATT.Category = "go_sg556_stock"
+
+ARC9.LoadAttachment(ATT, "csgo_sg556_stock_folding")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "SG 541 Prototype Solid Stock"
+
+ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.9
+ATT.RecoilAutoControlMultMove = 1.15
+
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_g3_stock_padded.png", "mips smooth")
+ATT.Category = "go_sg556_stock"
+
+ARC9.LoadAttachment(ATT, "csgo_sg556_stock_proto")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "7.62×39mm Polymer Magazine"
+
+ATT.RPMAdd = 55
+ATT.DamageMinMult = 2
+ATT.DamageMaxMult = 1.2
+
+ATT.RangeMinMult = 0.4
+ATT.RangeMaxMult = 0.575
+ATT.RecoilMultRecoil = 1.25
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
+ATT.Category = "go_mag_sg556"
+
+ATT.DropMagazineModel = "models/weapons/csgo/mags/w_rif_ak47_mag.mdl"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_ak"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_sg556_mag_ak")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (SIG556)"
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
+ATT.Category = "go_sg552_view"
+
+ATT.ActivePos = Vector(-1.3, -2, 0.5)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.3, -2.3, 0)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.3, -2.3, 0)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_sg552_view")

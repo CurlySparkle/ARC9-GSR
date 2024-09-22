@@ -36,11 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_famas.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-11, 4, -6),
+    Pos = Vector(-14, 6.25, -7.5),
     Ang = Angle(-5, 0, 180),
-    Scale = 1,
-    TPIKPos = Vector(-13, 6, -2),
-    TPIKAng = Angle(0, 0, 180)
+    Scale = 0.8,
+    TPIKPos = Vector(-14, 7.5, -6),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -228,10 +228,10 @@ SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -464,11 +464,9 @@ SWEP.AttachmentElements = {
     },
     ["csgo_famas_barrel_long"] = {
         Bodygroups = { { 2, 1 } },
-		-- AttPosMods = { [2] = { Pos = Vector(0, -2.85, 19) } }	
     },
     ["csgo_famas_barrel_short"] = {
         Bodygroups = { { 2, 2 } },
-		-- AttPosMods = { [2] = { Pos = Vector(0, -2.85, 14.1) } }	
     },
     ["csgo_famas_mag_30"] = {
         Bodygroups = { { 1, 1 } },

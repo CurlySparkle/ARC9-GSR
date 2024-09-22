@@ -38,8 +38,8 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-4, 4.25, -5.5),
     Ang = Angle(-4, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-4, 4, 0),
-    TPIKAng = Angle(0, 0, 175)
+    TPIKPos = Vector(-4, 5, -4),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -220,10 +220,10 @@ SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -552,11 +552,9 @@ SWEP.AttachmentTableOverrides = {
 SWEP.AttachmentElements = {
     ["csgo_galil_barrel_long"] = {
 		Bodygroups = { { 3, 1 } },
-		AttPosMods = { [3] = { Pos = Vector(0, -0.7, 22), } }	
     },
     ["csgo_galil_barrel_short"] = {
 		Bodygroups = { { 3, 2 } },
-		AttPosMods = { [3] = { Pos = Vector(0, -0.7, 18), } }	
     },
     ["csgo_galil_mag_35"] = {
 		Bodygroups = { { 2, 1 } },

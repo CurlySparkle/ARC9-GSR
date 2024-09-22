@@ -41,11 +41,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_aug.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-11, 4, -6),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-9, 4.25, -4.5),
+    Ang = Angle(-10, 0, 180),
     Scale = 1,
-    TPIKPos = Vector(-11, 4, 4),
-    TPIKAng = Angle(0, 0, 180)
+    TPIKPos = Vector(-7, 5, -3),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -222,10 +222,10 @@ SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -590,11 +590,9 @@ SWEP.AttachmentElements = {
 	},
     ["csgo_aug_barrel_long"] = { 
 		Bodygroups = { { 3,1 }, { 6, 1 } },
-		AttPosMods = { [3] = { Pos = Vector(0.1, 14.8, -2.45) }
 	},
     ["csgo_aug_barrel_short"] = { 
 		Bodygroups = { { 3, 2 }, { 6, 2 } },
-		AttPosMods = { [3] = { Pos = Vector(0.1, 11.4, -2.45), } }
     },
 }
 

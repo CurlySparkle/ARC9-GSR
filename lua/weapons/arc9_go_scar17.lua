@@ -36,11 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_rif_scar17.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10.9, 5, -6.5),
+    Pos = Vector(-9, 4, -6.25),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-10, 4, 0),
-    TPIKAng = Angle(0, 0, 175),
-    Scale = 1
+    Scale = 1,
+    TPIKPos = Vector(-10, 4.5, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -234,10 +234,10 @@ SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -509,18 +509,12 @@ SWEP.AttachmentElements = {
 	},
 	["csgo_scar17_stock_bullpup"] = {
 		Bodygroups = { {5,1},{2,6} },
-		-- AttPosMods = {
-			-- [4] = { Pos = Vector(0, -2.4, 17) },
-			-- [1] = { Pos = Vector(0, -6.35, 4), }
-		-- },
 	},
     ["csgo_scar17_barrel_long"] = {
 		Bodygroups = { { 4,1 }, { 6,1 } },
-		-- AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 19), } }	
     },
     ["csgo_scar17_barrel_short"] = {
 		Bodygroups = { { 4,2 }, { 6,2 } },
-		-- AttPosMods = { [3] = { Pos = Vector(-0.05, -4.54, 15.5), } }	
     },
 }
 
