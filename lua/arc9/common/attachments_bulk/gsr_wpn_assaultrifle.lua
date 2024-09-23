@@ -549,7 +549,7 @@ ATT = {}
 
 ATT.PrintName = "60-Round 5.56×45mm Magazine"
 
-ATT.ClipSizeAdd = 30
+ATT.ClipSizeAdd = 35
 
 ATT.SprintToFireTimeMult = 1.15
 ATT.AimDownSightsTimeMult = 1.2
@@ -1037,7 +1037,7 @@ ATT = {}
 
 ATT.PrintName = "50-Round 5.56×45mm Drum Magazine"
 
-ATT.ClipSizeAdd = 20
+ATT.ClipSizeAdd = 30
 
 ATT.ReloadTimeMult = 1.125
 ATT.AimDownSightsTimeMult = 1.175

@@ -194,15 +194,8 @@ table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_perk_last.png", "mips smooth")
 
-ATT.Hook_GetDamageAtRange = function(self, data) 
-
-	local clip = self:Clip1()
-	
-	if clip == 0 then -- It has to be zero since the function is triggered when the bullet lands, on which in this case we are already out of ammo when the bullet lands.
-		data.dmg = data.dmg * 1.25
-	end -- Worked on Physbullets and also non-Physbullets, specially Zeus.
-	
-end
+ATT.DamageMinMultEmpty = 1.5
+ATT.DamageMaxMultEmpty = 1.5
 
 ARC9.LoadAttachment(ATT, "csgo_perk_last")
 ------------------------------------------------------------------------
@@ -242,23 +235,23 @@ ATT.Icon = Material("entities/attachs/go_perk_rapidfire.png", "mips smooth")
 
 ARC9.LoadAttachment(ATT, "csgo_perk_rapidfire")
 ------------------------------------------------------------------------
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Head Hunt"
+ATT.PrintName = "Head Hunt"
 
--- table.Merge(ATT, sharedcode)
+table.Merge(ATT, sharedcode)
 
--- ATT.Icon = Material("entities/attachs/go_perk_refund.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_perk_refund.png", "mips smooth")
 
--- ARC9.LoadAttachment(ATT, "csgo_perk_refund")
+ARC9.LoadAttachment(ATT, "csgo_perk_refund")
 ------------------------------------------------------------------------
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Full Stop"
+ATT.PrintName = "Full Stop"
 
--- table.Merge(ATT, sharedcode)
+table.Merge(ATT, sharedcode)
 
--- ATT.Icon = Material("entities/attachs/go_perk_slow.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_perk_slow.png", "mips smooth")
 
--- ARC9.LoadAttachment(ATT, "csgo_perk_slow")
+ARC9.LoadAttachment(ATT, "csgo_perk_slow")
 ------------------------------------------------------------------------
