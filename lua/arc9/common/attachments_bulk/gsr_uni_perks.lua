@@ -235,23 +235,23 @@ ATT.Icon = Material("entities/attachs/go_perk_rapidfire.png", "mips smooth")
 
 ARC9.LoadAttachment(ATT, "csgo_perk_rapidfire")
 ------------------------------------------------------------------------
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Head Hunt"
+-- ATT.PrintName = "Head Hunt"
 
-table.Merge(ATT, sharedcode)
+-- table.Merge(ATT, sharedcode)
 
-ATT.Icon = Material("entities/attachs/go_perk_refund.png", "mips smooth")
+-- ATT.Icon = Material("entities/attachs/go_perk_refund.png", "mips smooth")
 
-ARC9.LoadAttachment(ATT, "csgo_perk_refund")
+-- ARC9.LoadAttachment(ATT, "csgo_perk_refund")
 ------------------------------------------------------------------------
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Full Stop"
+-- ATT.PrintName = "Full Stop"
 
-table.Merge(ATT, sharedcode)
+-- table.Merge(ATT, sharedcode)
 
-ATT.Icon = Material("entities/attachs/go_perk_slow.png", "mips smooth")
+-- ATT.Icon = Material("entities/attachs/go_perk_slow.png", "mips smooth")
 
-ARC9.LoadAttachment(ATT, "csgo_perk_slow")
+-- ARC9.LoadAttachment(ATT, "csgo_perk_slow")
 ------------------------------------------------------------------------
