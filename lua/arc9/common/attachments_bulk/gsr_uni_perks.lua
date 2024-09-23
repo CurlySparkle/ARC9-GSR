@@ -186,15 +186,25 @@ ARC9.LoadAttachment(ATT, "csgo_perk_melee_lounge")
 
 ////////////////////////////////////// Perk Set 2
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Last One Out"
+ATT.PrintName = "Last One Out"
 
--- table.Merge(ATT, sharedcode)
+table.Merge(ATT, sharedcode)
 
--- ATT.Icon = Material("entities/attachs/go_perk_last.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_perk_last.png", "mips smooth")
 
--- ARC9.LoadAttachment(ATT, "csgo_perk_last")
+ATT.Hook_GetDamageAtRange = function(self, data) 
+
+	local clip = self:Clip1()
+	
+	if clip == 0 then -- It has to be zero since the function is triggered when the bullet lands, on which in this case we are already out of ammo when the bullet lands.
+		data.dmg = data.dmg * 1.25
+	end -- Worked on Physbullets and also non-Physbullets, specially Zeus.
+	
+end
+
+ARC9.LoadAttachment(ATT, "csgo_perk_last")
 ------------------------------------------------------------------------
 ATT = {}
 
