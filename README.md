@@ -6,7 +6,7 @@ Weapon pack from [Counter-Strike: Global Offensive](https://en.wikipedia.org/wik
 - Sticker & skins support for all weapons.
 - Addition of the cut weapons from old versions of CS:GO (M3 Shotgun, Steyr Scout, and more).
 - Overall improved rigs (no more floaty hands, these hands are made to hold weapons and not in the air).
-- Improved & also new overall weapon animations for some of the weapons (courtesy of [CturiX](https://github.com/CturiX) & [Mytton](https://steamcommunity.com/profiles/76561198319904471)).
+- Improved and also new overall animations for some of the weapons (courtesy of [CturiX](https://github.com/CturiX) & [Mytton](https://steamcommunity.com/profiles/76561198319904471)).
 - New dual wield weapon variant and UBGLs support.
 - And many more things that I completely forgot.
 
