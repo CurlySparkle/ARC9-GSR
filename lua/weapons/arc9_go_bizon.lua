@@ -43,9 +43,9 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_bizon.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-11, 5.5, -5.5),
     Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-12, 7, -2),
-    TPIKAng = Angle(0, 0, 181),
-    Scale = 1
+    Scale = 1,
+    TPIKPos = Vector(-13, 6.5, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -106,19 +106,17 @@ SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.5
 SWEP.RecoilRandomSide = 1
 
-SWEP.RecoilPerShot = 0.2
+SWEP.RecoilPerShot = 0.25
+SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 2.5 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.2 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
-SWEP.RecoilMultSights = 1.25
 
 SWEP.RecoilPatternDrift = 12
 
@@ -162,19 +160,19 @@ SWEP.SpreadAddMove = 0.06
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.01
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -239,10 +237,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -342,7 +340,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.75,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -368,13 +368,15 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "bizon_clipout.wav", t = 10/30},
             {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20/30},
-            {s = path .. "bizon_clipin.wav", t = 31/30},
+            {s = path .. "bizon_clipin.wav", t = 29/30},
             {s = path .. "bizon_reloadend_short.ogg", t = 38/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.8,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -408,7 +410,9 @@ SWEP.Animations = {
     },
     ["reload_saiga"] = {
         Source = "reload_saiga_short",
-		MinProgress = 0.75,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -434,13 +438,15 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "bizon_clipout_stick.ogg", t = 10/30},
             {s = "ARC9_CSGO_Magazinefetch.Rifle", t = 20/30},
-            {s = path .. "bizon_clipin_stick.ogg", t = 31/30},
+            {s = path .. "bizon_clipin_stick.ogg", t = 30/30},
             {s = path .. "bizon_reloadend_short.ogg", t = 38/30},
         },
     },
     ["reload_empty_saiga"] = {
         Source = "reload_saiga",
-		MinProgress = 0.8,
+		RefillProgress = 0.825,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -474,7 +480,9 @@ SWEP.Animations = {
     },	
     ["reload_alt"] = {
         Source = "reload_short_alt",
-		MinProgress = 0.75,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -506,7 +514,9 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload_alt",
-		MinProgress = 0.8,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -590,6 +600,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

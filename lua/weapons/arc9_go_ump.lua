@@ -36,11 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_ump.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-17, 6, -6.5),
+    Pos = Vector(-15, 6, -6.5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-15, 4, 0),
-    TPIKAng = Angle(0, 0, 175),
-    Scale = 1,
+    Scale = 0.85,
+    TPIKPos = Vector(-15, 7, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -107,10 +107,13 @@ SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.2
 SWEP.RecoilRandomSide = 0.75
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 2.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.3 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -128,24 +131,21 @@ SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilPunch = 1.75
+SWEP.VisualRecoilPunchSights = 10
 SWEP.VisualRecoilUp = 1.5
-SWEP.VisualRecoilUpSights = 0.05
-SWEP.VisualRecoilSide = -0.15
-SWEP.VisualRecoilSideSights = 0.01
+SWEP.VisualRecoilUpSights = -0.015
+SWEP.VisualRecoilSide = -0.025
+SWEP.VisualRecoilSideSights = 0
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 1.25
-SWEP.VisualRecoilPositionBumpUp = 1.25
-SWEP.VisualRecoilPositionBumpUpSights = 1.5
+SWEP.VisualRecoilPositionBump = 2
+SWEP.VisualRecoilPositionBumpUp = 0.5
+SWEP.VisualRecoilPositionBumpUpSights = 1
 SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 15
-
--- SWEP.ViewRecoil = false
--- SWEP.ViewRecoilUpMult = .25
--- SWEP.ViewRecoilSideMult = 1
 
 -- ]]--
 
@@ -153,25 +153,25 @@ SWEP.VisualRecoilSpringPunchDamping = 15
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.0425 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.04
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = 0.0125
+SWEP.SpreadAddCrouch = -0.01
 
-SWEP.RecoilModifierCapSights = 0.4
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -196,8 +196,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -5, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(3, -3, 0)
+SWEP.SprintAng = Angle(-5, 0, 10)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -226,10 +226,10 @@ SWEP.CustomizeSnapshotPos = Vector(-2, 10, 3)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -296,6 +296,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		RefillProgress = 0.675,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -325,6 +328,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		RefillProgress = 0.75,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -399,6 +405,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 2,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

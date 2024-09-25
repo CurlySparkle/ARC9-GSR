@@ -15,10 +15,10 @@ And here's the long, more detailed version:
 [b][u]Weapon changes[/u][/b]
 [u]All weapons[/u]
 [list]
-	[*] Reduced spread, reduced spread penalties when moving & being mid-air
-	[*] Reduced or removed visual recoil
-	[*] Added sway when aiming
+	[*] Adjusted spread and spread penalties when moving & being mid-air
+	[*] Adjusted or removed visual recoil
 	[*] Adjusted customization positions
+	[*] Added sway when aiming
 [/list]
 
 [u]Assault Rifles[/u]
@@ -30,18 +30,17 @@ And here's the long, more detailed version:
 [b]M4A1-S[/b]: Reduced recoil | Increased recoil when auto-firing | When suppressed: Reduced spread when auto-firing
 [b]M4A4[/b]: Increased recoil | Reduced recoil centering
 [b]SCAR-17[/b]: Increased recoil | Reduced recoil centering
-[b]SIG556[/b]: 
+[b]SIG556[/b]: Increased hor. recoil | Reduced recoil centering | Increased recoil when auto-firing
 
 [u]SMGs[/u]
-[b]MAC-10[/b]: 
-[b]MP5[/b]: 
-[b]MP5-SD[/b]: 
-[b]MP7[/b]: 
-[b]MP9 (& Dual version)[/b]: 
-[b]P90[/b]: 
-[b]PP-Bizon[/b]: 
-[b]UMP-45[/b]: 
-
+[b]MAC-10[/b]: Reduced recoil | Reduced recoil centering
+[b]MP5[/b]: N/A
+[b]MP5-SD[/b]: Reduced recoil | Increased recoil when auto-firing
+[b]MP7[/b]: Reduced recoil
+[b]MP9[/b]: Reduced recoil | Increased recoil when auto-firing
+[b]P90[/b]: Increased recoil | Increased hor. recoil
+[b]PP-Bizon[/b]: N/A
+[b]UMP-45[/b]: N/A
 
 [u]Shotguns[/u]
 [b]Benelli M3 Super 90[/b]: Shortened name to just "M3".
@@ -61,7 +60,7 @@ And here's the long, more detailed version:
 [b]M249[/b]:
 [b]Negev[/b]: 
 
-[u]Pistols (& Dual versions)[/u]
+[u]Pistols[/u]
 [b]Beretta[/b]:
 [b]CZ75-Auto[/b]: 
 [b]Desert Eagle[/b]: 
@@ -82,6 +81,20 @@ And here's the long, more detailed version:
 
 [u]Extras[/u]
 [b]Claymore[/b]: Fixed LUA errors when planting.
+
+[u]Dual-Wielded[/u]
+[b]Beretta[/b]:
+[b]CZ75-Auto[/b]: 
+[b]Desert Eagle[/b]: 
+[b]Five-SeveN[/b]: 
+[b]Glock-18[/b]: 
+[b]MP9[/b]: 
+[b]P2000[/b]: 
+[b]P250[/b]: 
+[b]R8 Revolvers[/b]: 
+[b]Sawed-Offs[/b]: 
+[b]USP[/b]: 
+[b]Zeus x27[/b]: 
 
 [b][u]Attachment Changes[/u][/b]
 [u]Brand New Stats[/u]

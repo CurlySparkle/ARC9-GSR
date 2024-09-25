@@ -37,9 +37,9 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_smg_p90.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-12, 6.3, -4.5),
     Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-10, 6, -1), -- rpg
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+    TPIKPos = Vector(-11, 6, -3),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -103,22 +103,25 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 1.25
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
 
-SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.66
 
-SWEP.RecoilDissipationRate = 30 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.125
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 2.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.25 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -138,14 +141,12 @@ SWEP.RecoilMultSights = 1
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 4
 SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilUpSights = 0.5
-SWEP.VisualRecoilSide = .65
-SWEP.VisualRecoilSideSights = .05
+SWEP.VisualRecoilSide = .1
 SWEP.VisualRecoilRoll = 10
 
 SWEP.VisualRecoilPositionBump = 0.65
 SWEP.VisualRecoilPositionBumpUp = 0.75
-SWEP.VisualRecoilMultSights = .15
+SWEP.VisualRecoilMultSights = 0
 
 -- SWEP.VisualRecoilDampingConst = 240
 -- SWEP.VisualRecoilSpringPunchDamping = 25
@@ -156,25 +157,27 @@ SWEP.VisualRecoilMultSights = .15
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.065 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.09 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.04
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.0045
-SWEP.SpreadAddSights = 0.0125
+SWEP.SpreadAddCrouch = -0.01
 
-SWEP.RecoilModifierCapSights = 0.3
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
 
 SWEP.SwayMultSights = 0
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -240,10 +243,10 @@ SWEP.BlindFireLeftAng = Angle(90, -20, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -309,9 +312,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		-- RareSource = "reload_short",
-		-- RareSourceChance = 1,
-		MinProgress = 0.75,
+		RefillProgress = 0.725,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -343,9 +346,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		-- RareSource = "reload_alt",
-		-- RareSourceChance = 0.5,
-		MinProgress = 0.9,
+		RefillProgress = 0.925,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -379,7 +382,9 @@ SWEP.Animations = {
     },
     ["reload_stanag30"] = {
         Source = "reload_short_stag_30",
-		MinProgress = 0.75,
+		RefillProgress = 0.7,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -411,7 +416,9 @@ SWEP.Animations = {
     },
     ["reload_empty_stanag30"] = {
         Source = "reload_stag_30",
-		MinProgress = 0.9,
+		RefillProgress = 0.925,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -445,7 +452,9 @@ SWEP.Animations = {
     },
     ["reload_stanag20"] = {
         Source = "reload_short_stag_20",
-		MinProgress = 0.75,
+		RefillProgress = 0.7,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -477,7 +486,9 @@ SWEP.Animations = {
     },
     ["reload_empty_stanag20"] = {
         Source = "reload_stag_20",
-		MinProgress = 0.9,
+		RefillProgress = 0.925,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -554,6 +565,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
