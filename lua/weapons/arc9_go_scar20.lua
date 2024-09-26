@@ -35,11 +35,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_scar20.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12, 6, -7.5),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-10, 4, 0),
-    TPIKAng = Angle(0, 0, 175),
-    Scale = 1
+    Pos = Vector(-12, 6, -6),
+    Ang = Angle(-7.5, 0, 180),
+    Scale = 1,
+    TPIKPos = Vector(-10, 7.5, -3),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -103,39 +103,17 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.65
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.15 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
-
--- SWEP.RecoilMultCrouch = 0.6
-
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--------------------------- VISUAL RECOIL
-
--- SWEP.RecoilKick = 1
-
--- SWEP.UseVisualRecoil = true
-
--- SWEP.VisualRecoilUp = 0 -- Vertical tilt for visual recoil.
--- SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
--- SWEP.VisualRecoilRoll = 0 -- Roll tilt for visual recoil.
-
--- SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
-
--- SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
-
--- SWEP.VisualRecoilMult = 1
-
--- SWEP.VisualRecoilHipFire = false
-
--- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.85
 SWEP.RecoilMultHipFire = 1
@@ -144,49 +122,45 @@ SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 2
-SWEP.VisualRecoilPunchSights = 20
-SWEP.VisualRecoilUp = 1.5
-SWEP.VisualRecoilUpSights = .4
-SWEP.VisualRecoilSide = .25
-SWEP.VisualRecoilSideSights = .01
+SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilSide = -.25
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 2
-SWEP.VisualRecoilPositionBumpSights = 2
-SWEP.VisualRecoilPositionBumpUp = 1
-SWEP.VisualRecoilPositionBumpUpSights = 2
+SWEP.VisualRecoilPositionBumpUp = 0.5
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = 1
+SWEP.VisualRecoilMultSights = 0.01
 
 SWEP.VisualRecoilDampingConst = 180
 SWEP.VisualRecoilSpringPunchDamping = 12
-
--- ]]--
 
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.065 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = -0.1
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-SWEP.SwayMultSights = 0
 
 SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.NoAimAssist = true
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -205,7 +179,7 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 SWEP.IronSights = {
     Pos = Vector(-4.84, -9, 2.15),
     Ang = Angle(1.1, -3, 0),
-    Magnification = 1.15,
+    Magnification = 1.1,
     ViewModelFOV = 56,
 	CrosshairInSights = false
 }
@@ -217,7 +191,7 @@ SWEP.IronSightsHook = function(self)
         return {
 			Pos = Vector(-4.84, -9, 2.3),
 			Ang = Angle(1.1, -3.5, 0),
-			Magnification = 1.15,
+			Magnification = 1.1,
 			ViewModelFOV = 56,
         }
     end
@@ -248,18 +222,25 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(23, 32.5, 6)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
-SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizePos = Vector(23, 45, 6)
+
+SWEP.CustomizeRotateAnchor = Vector(23, -5, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 55, 0)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-2, 2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -324,7 +305,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.55,
+		RefillProgress = 0.55,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -354,7 +337,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.7,
+		RefillProgress = 0.675,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -427,6 +412,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -624,7 +610,7 @@ SWEP.Attachments = {
         InstalledElements = {"mount"},
         Installed = "csgo_optic_scope_scar20",
 		//Integral = true,
-        CorrectiveAng = Angle(0.35, -1.25, 0),
+        CorrectiveAng = Angle(0.4, -1.275, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),

@@ -36,10 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_ssg08.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-8, 7, -6.5),
-    Ang = Angle(-10, 0, 180),
+    Pos = Vector(-8, 7, -5),
+    Ang = Angle(-12.5, 0, 180),
     Scale = 1,
-	TPIKPos = Vector(-12, 5, -2),
+    TPIKPos = Vector(-10, 7.5, -4),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -96,7 +97,7 @@ SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.2
 
-SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 1 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
@@ -108,27 +109,19 @@ SWEP.RecoilMultHipFire = 1
 SWEP.RecoilUpMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 2
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 2
-SWEP.VisualRecoilUp = 1.15
+SWEP.VisualRecoilUp = 2
 SWEP.VisualRecoilSide = 0.5
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 9
-SWEP.VisualRecoilPositionBumpUp = 1
-SWEP.VisualRecoilPositionBumpUpSights = 1
+SWEP.VisualRecoilPositionBump = 4
+SWEP.VisualRecoilPositionBumpUp = 0.25
 SWEP.VisualRecoilMultCrouch = .45
 SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 60
 SWEP.VisualRecoilSpringPunchDamping = 12
-
--- ]]--
 
 -------------------------- SPREAD
 
@@ -140,14 +133,12 @@ SWEP.SpreadAddMove = 0.0425
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.025
+
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0
 
 SWEP.SpeedMultSights = 0.65
 
@@ -158,6 +149,12 @@ SWEP.ManualAction = true
 SWEP.NoLastCycle = true
 
 SWEP.Bipod = true
+
+SWEP.NoAimAssist = true
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -176,7 +173,7 @@ SWEP.TracerColor = Color(255, 255, 200) -- Color of tracers. Only works if trace
 SWEP.IronSights = {
     Pos = Vector(-3.59, -3, 0.2),
     Ang = Angle(0, -0.5, 0),
-    Magnification = 1,
+    Magnification = 1.1,
     ViewModelFOV = 56,
 }
 
@@ -205,17 +202,25 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 35, 6)
-SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
-SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizePos = Vector(22, 50, 6)
+
+SWEP.CustomizeRotateAnchor = Vector(22, -6, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(-1.5, 55, 0)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, 2, -5)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -311,6 +316,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		RefillProgress = 0.675,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/60},
@@ -322,6 +330,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
+		RefillProgress = 0.8,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/60},
@@ -356,6 +367,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -508,9 +520,9 @@ SWEP.Attachments = {
         Pos = Vector(0.2, -3.5, 9.5),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic","csgo_sights_ssg08"},
-        CorrectiveAng = Angle(0.2, -0.25, 0),
+        CorrectiveAng = Angle(0.25, -0.2, 0),
         Installed = "csgo_optic_scope_ssg08",
-        Integral = true,
+        Integral = "csgo_ssg08_sight_iron",
 		Scale = 1.1,
     },
     {

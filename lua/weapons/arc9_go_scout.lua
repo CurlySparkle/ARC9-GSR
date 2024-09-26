@@ -32,12 +32,14 @@ SWEP.WorldModel = "models/weapons/w_snip_scout.mdl"
 SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_scout.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 5.5, -4.5),
-    Ang = Angle(-10, 0, 180),
+    Pos = Vector(-8.5, 5, -3),
+    Ang = Angle(-12.5, 2.5, 180),
     Scale = 1,
-	TPIKPos = Vector(-12, 5, -2),
+    TPIKPos = Vector(-10, 6, -4),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -96,7 +98,7 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 1 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
@@ -108,31 +110,16 @@ SWEP.RecoilMultHipFire = 1
 SWEP.RecoilUpMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 1
 
--- SWEP.ViewRecoil = false -- true
--- SWEP.ViewRecoilUpMult = 40 -- 40-100
--- SWEP.ViewRecoilUpMultSights = 10
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunch = 1.5
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 2
 SWEP.VisualRecoilUp = 1
 SWEP.VisualRecoilSide = 0.5
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 3
+SWEP.VisualRecoilPositionBump = 1.5
 SWEP.VisualRecoilPositionBumpUp = -1
-SWEP.VisualRecoilPositionBumpUpSights = 1
 SWEP.VisualRecoilMultCrouch = .45
-SWEP.VisualRecoilMultSights = 2
-
--- SWEP.VisualRecoilDampingConst = 30
--- SWEP.VisualRecoilSpringPunchDamping = 12
-
--- ]]--
+SWEP.VisualRecoilMultSights = 0.5
 
 -------------------------- SPREAD
 
@@ -144,14 +131,12 @@ SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.065
 SWEP.SpreadAddCrouch = -0.03
-SWEP.SpreadAddSights = 0.025
+
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0
 
 SWEP.SpeedMultSights = 0.65
 
@@ -162,6 +147,12 @@ SWEP.ManualAction = true
 SWEP.NoLastCycle = true
 
 SWEP.CycleTime = 0.85
+
+SWEP.NoAimAssist = true
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -211,19 +202,25 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(20, 35, 6)
+SWEP.CustomizePos = Vector(20, 45, 6)
 
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
-SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(20, -4, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 55, 0)
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-2, 2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -325,7 +322,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short2",
-		MinProgress = 0.65,
+		RefillProgress = 0.675,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -356,7 +355,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.9,
+		RefillProgress = 0.875,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -490,6 +491,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -523,9 +525,9 @@ SWEP.Animations = {
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
 
-   if anim == "reload_empty" and attached["go_mag_extended"] then 
-        return "reload_empty_long"
-    end
+   -- if anim == "reload_empty" and attached["go_mag_extended"] then 
+        -- return "reload_empty_long"
+    -- end
 
 end
 
@@ -537,8 +539,11 @@ end
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentTableOverrides = {
+    ["csgo_optic_scope_awp"] = {
+		ModelOffset = Vector(-5.25, 0, 0),
+    },
     ["csgo_optic_scope_scout"] = {
-    Vector(0.09, -3.8, 6.2),
+		ModelOffset = Vector(-5, 0, 0),
     },
     ["go_muzzle_akm"] = {
     Scale = 0.35,
@@ -559,21 +564,21 @@ SWEP.AttachmentElements = {
         Bodygroups = { {1,2} },
         AttPosMods = { [3] = { Pos = Vector(0.15, -3.25, 22.75), } }
     },
-    ["scout_scope"] = {
-        AttPosMods = { [1] = { Pos = Vector(5, 0, 0), } }
-    },
+    -- ["scout_scope"] = {
+        -- AttPosMods = { [1] = { Pos = Vector(5, 0, 0), } }
+    -- },
 }
 
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.awp_parent",
-        Pos = Vector(0.09, -3.8, 6.2),
+        Pos = Vector(0.09, -3.8, 11),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
-        CorrectiveAng = Angle(0.2, -0.2, 0),
+        CorrectiveAng = Angle(0.225, -0.2, 0),
         Installed = "csgo_optic_scope_scout",
-        Integral = true,
+        Integral = "csgo_optic_scope_scout",
 		Scale = 1,
     },
     {

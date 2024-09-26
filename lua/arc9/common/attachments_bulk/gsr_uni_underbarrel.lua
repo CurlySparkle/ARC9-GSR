@@ -257,6 +257,8 @@ ATT = {}
 
 ATT.PrintName = "M203 Grenade Launcher"
 
+ATT.SpeedMultUBGL = 0.85
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_attach_ubgl_m230.png", "mips smooth")
@@ -285,9 +287,6 @@ ATT.IKCameraMotionOffsetAngle = Angle(0, 90, 90)
 ATT.CamCoolViewUBGL = true
 
 ATT.Category = {"ubgl", "grip"}  -- maybe its own category?
-
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
@@ -417,6 +416,7 @@ ATT.Sights = {
         Blur = true,
         UBGLOnly = true,
         Disassociate = true,
+		SwayAddSights = -2
     },		
 }
 
@@ -425,6 +425,8 @@ ARC9.LoadAttachment(ATT, "go_ubgl_m203_sight")
 ATT = {}
 
 ATT.PrintName = "MASS-26 Shotgun"
+
+ATT.SpeedMultUBGL = 0.85
 
 table.Merge(ATT, sharedcode)
 
@@ -619,6 +621,8 @@ ARC9.LoadAttachment(ATT, "go_ubgl_mass26")
 ATT = {}
 
 ATT.PrintName = "XM1014 Shotgun"
+
+ATT.SpeedMultUBGL = 0.85
 
 table.Merge(ATT, sharedcode)
 

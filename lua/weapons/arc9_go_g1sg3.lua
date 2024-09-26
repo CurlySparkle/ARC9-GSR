@@ -43,9 +43,9 @@ SWEP.WorldModelMirror = "models/weapons/csgo/c_snip_g3sg1.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-14, 5.5, -7),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-14, 4, -3),
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+    TPIKPos = Vector(-13, 6.75, -2),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -101,7 +101,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.45
+SWEP.Recoil = 2
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -109,61 +109,18 @@ SWEP.RecoilSide = 0.35 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomUp = 0.25
+SWEP.RecoilRandomSide = 0.5
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.15 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 0.5
-
--- SWEP.RecoilMultCrouch = 0.6
-
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- SWEP.UseVisualRecoil = true
-
--- SWEP.PhysicalVisualRecoil = true
-
--- SWEP.VisualRecoilUp = 2 -- Vertical tilt for visual recoil.F
--- SWEP.VisualRecoilSide = 0.15 -- Horizontal tilt for visual recoil.
--- SWEP.VisualRecoilRoll = 15 -- Roll tilt for visual recoil.
--- SWEP.VisualRecoilPunch = 0.25
-
--- SWEP.VisualRecoil = 1
--- SWEP.VisualRecoilMultSights = 1
--- SWEP.VisualRecoilPositionBump = 1.5
-
--- SWEP.VisualRecoilMultHipFire = 1
--- SWEP.VisualRecoilSideMultHipFire = 2
-
--- SWEP.VisualRecoilDampingConst = 40
--- SWEP.VisualRecoilSpringMagnitude = 1
-
--- SWEP.VisualRecoilCenter = Vector(4, 4, 1)
-
--------------------------- VISUAL RECOIL
-
--- SWEP.RecoilKick = 1
-
--- SWEP.UseVisualRecoil = true
-
--- SWEP.VisualRecoilUp = 0 -- Vertical tilt for visual recoil.
--- SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
--- SWEP.VisualRecoilRoll = 0 -- Roll tilt for visual recoil.
-
--- SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
-
--- SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun.
-
--- SWEP.VisualRecoilMult = 1
-
--- SWEP.VisualRecoilHipFire = false
-
--- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.85
 SWEP.RecoilMultHipFire = 1
@@ -171,22 +128,18 @@ SWEP.RecoilMultSights = 1
 SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
-SWEP.VisualRecoilPunch = 2
-SWEP.VisualRecoilUp = 3
-SWEP.VisualRecoilSide = 1
-SWEP.VisualRecoilSideSights = .25
+SWEP.VisualRecoilPunch = 1
+SWEP.VisualRecoilUp = 1.5
+SWEP.VisualRecoilSide = 0.1
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1.15
 SWEP.VisualRecoilPositionBumpUp = .45
-SWEP.VisualRecoilPositionBumpUpSights = .25
 SWEP.VisualRecoilMultCrouch = .8
-SWEP.VisualRecoilMultSights = .15
+SWEP.VisualRecoilMultSights = 0
 
 SWEP.VisualRecoilDampingConst = 180
 SWEP.VisualRecoilSpringPunchDamping = 12
-
--- ]]--
 
 -------------------------- SPREAD
 
@@ -198,21 +151,23 @@ SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0.05
 SWEP.SpreadAddCrouch = -0.015
-SWEP.SpreadAddSights = 0.015
 
-SWEP.RecoilModifierCapSights = 0.4
+SWEP.SpreadSights = 0
+SWEP.SpreadAddSights = 0
+SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0
 
 SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+SWEP.NoAimAssist = true
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -238,8 +193,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(0, -2, -0.3)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = Vector(3, -3, 1)
+SWEP.SprintAng = Angle(-10, 0, 25)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1, -0.15),
@@ -268,12 +223,26 @@ SWEP.CustomizeSnapshotPos = Vector(0, 7, 2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
+SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(24, 45, 6)
+
+SWEP.CustomizeRotateAnchor = Vector(24, -5, -4)
+
+SWEP.CustomizeSnapshotPos = Vector(0, 55, 0)
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeNoRotate = false
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-2, 2, -4)
+SWEP.PeekAng = Angle(-0.3, 0, -30)
+
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -341,7 +310,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-        MinProgress = 0.7,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -366,12 +337,14 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "g3sg1_clipout.wav", t = 16/30},
-            {s = path .. "g3sg1_clipin.wav", t = 65/30},
+            {s = path .. "g3sg1_clipin.wav", t = 72.5/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
-        MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -401,34 +374,11 @@ SWEP.Animations = {
 			{s = path .. "g3sg1_slideforward.wav", t = 104/30},
         },
     },
-    ["ready"] = {
-        Source = "draw",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.95,
-                lhik = 1,
-                rhik = 1
-            },
-        },
-        EventTable = {
-            {s = path .. "g3sg1_draw.wav", t = 0/30},
-            {s = path .. "g3sg1_slideback.wav", t = 6/30},
-            {s = path .. "g3sg1_slideforward.wav", t = 12/30},
-        },
-    },
     ["reload_alt"] = {
         Source = "reload_short",
-        MinProgress = 0.7,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -458,7 +408,9 @@ SWEP.Animations = {
     },
     ["reload_empty_alt"] = {
         Source = "reload",
-        MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -490,7 +442,9 @@ SWEP.Animations = {
     },  
 	["reload_smg"] = {
         Source = "reload_short_smg",
-        MinProgress = 0.7,
+		RefillProgress = 0.7,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -520,7 +474,9 @@ SWEP.Animations = {
     },
     ["reload_empty_smg"] = {
         Source = "reload_smg",
-        MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.95,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -548,6 +504,31 @@ SWEP.Animations = {
             {s = path .. "g3sg1_mag_in.wav", t = 73/30},
             {s = path .. "g3sg1_charging_handle_pull.wav", t = 97/30},
 			{s = path .. "g3sg1_charging_handle_lock.wav", t = 104/30},
+        },
+    },
+    ["ready"] = {
+        Source = "draw",
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "g3sg1_draw.wav", t = 0/30},
+            {s = path .. "g3sg1_slideback.wav", t = 6/30},
+            {s = path .. "g3sg1_slideforward.wav", t = 12/30},
         },
     },
     ["ready_alt"] = {
@@ -590,6 +571,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 2,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

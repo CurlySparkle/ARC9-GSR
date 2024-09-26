@@ -2008,105 +2008,105 @@ L["go_polyarms_stocks.description"] = mw19desc
 
 
 ///////////////////  GetPhrase Stuff - If other language, remove everything below here!
-L["go_holdstyle_2.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_2.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_3.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_3.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_3.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_3.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_4.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_4.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_4.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_4.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_5.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_5.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_5.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_5.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_6.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_6.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_6.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_6.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_7.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_7.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_7.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_7.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_8.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_8.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_8.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_8.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_9.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_9.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_9.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_9.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_10_mp9.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_10_mp9.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_10_mp9.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_10_mp9.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_11_m4.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_11_m4.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_11_m4.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_11_m4.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_12.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_12.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_12.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_12.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_13.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_13.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_13.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_13.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_14.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_14.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_14.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_14.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_15.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_15.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_15.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_15.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_16_ump.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_16_ump.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_16_ump.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_16_ump.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_17_awp.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_17_awp.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_17_awp.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_17_awp.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_18_nova.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_18_nova.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_18_nova.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_18_nova.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_19.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_19.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_19.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_19.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_20.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_20.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_20.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_20.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_aug_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_aug_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_aug_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_aug_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_aug_integral_2.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_aug_integral_2.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_aug_integral_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_aug_integral_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_elite_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_elite_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_elite_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_elite_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_mp7_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_mp7_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_mp7_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_mp7_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["go_holdstyle_scout_integral.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["go_holdstyle_scout_integral.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_scout_integral.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_scout_integral.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
 L["csgo_bizon_hold_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
-L["csgo_p90_hold.printname"] =ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
+L["csgo_p90_hold.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["csgo_p90_hold.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["csgo_p90_hold.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."
 
@@ -2305,8 +2305,16 @@ L["csgo_negev_stock_skeleton.compactname"] = ARC9:GetPhrase("csgo_ak47_stock_ske
 L["csgo_negev_stock_skeleton.description"] = ARC9:GetPhrase("csgo_ak47_stock_skeleton.description") or "Lightweight skeleton stock."
 
 L["csgo_ssg08_sight_iron.printname"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "Iron Sights"
-L["csgo_ssg08_sight_iron.compactname"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "Irons"
-L["csgo_ssg08_sight_iron.description"] = ARC9:GetPhrase("csgo_awp_sight_iron.printname") or "Aftermarket iron sights."
+L["csgo_ssg08_sight_iron.compactname"] = ARC9:GetPhrase("csgo_awp_sight_iron.compactname") or "Irons"
+L["csgo_ssg08_sight_iron.description"] = ARC9:GetPhrase("csgo_awp_sight_iron.description") or "Aftermarket iron sights."
 
 L["csgo_m249_barrel_long.printname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.printname") or "SAW Barrel"
 L["csgo_m249_barrel_long.compactname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.compactname") or "SAW"
+
+L["csgo_scar20_mag_20_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.printname") or "20-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_scar20_mag_20_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.compactname") or "7.62mm A"
+L["csgo_scar20_mag_20_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.description") or "Changes the firing mode to <color=100,255,100>fully automatic</color>."
+
+L["csgo_scar20_mag_30_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.printname") or "30-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_scar20_mag_30_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.compactname") or "7.62mm+ A"
+L["csgo_scar20_mag_30_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.description") or "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
