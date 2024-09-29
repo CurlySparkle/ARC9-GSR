@@ -28,7 +28,7 @@ SWEP.Description = ARC9:GetPhrase("csgo_description_mp5sd")
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp5sd.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_mp5.mdl"
-SWEP.DefaultBodygroups = "000000000"
+SWEP.DefaultBodygroups = "010000000"
 
 SWEP.Slot = 2
 
@@ -132,12 +132,12 @@ SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 1.75
+SWEP.VisualRecoilUp = 1.25
 SWEP.VisualRecoilSide = .15
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 1.5
-SWEP.VisualRecoilPositionBumpUp = .5
+SWEP.VisualRecoilPositionBump = 1.25
+SWEP.VisualRecoilPositionBumpUp = .25
 -- SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = 0
 
@@ -216,11 +216,11 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24.5, 45, 6.5)
+SWEP.CustomizePos = Vector(22, 45, 6.5)
 
-SWEP.CustomizeRotateAnchor = Vector(24.5, -5.5, -5)
+SWEP.CustomizeRotateAnchor = Vector(22, -5.5, -5)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
 SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
 
@@ -496,46 +496,14 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["stock_extend"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["stock_fixed"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {1,3},
-        },
-    },
-    ["stock_none_alt"] = {
-        Bodygroups = {
-            {1,4},
-        },
-    },
-    ["mag"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-	["mag2"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["mag_none"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    },
-    ["silencer_none"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
+    ["stock_retract"] = { Bodygroups = { { 1, 0 } } },
+    ["stock_fixed"] = { Bodygroups = { { 1, 2 } } },
+    ["stock_none"] = { Bodygroups = { { 1, 3 } } },
+    ["csgo_mp5_stock_none"] = { Bodygroups = { { 1, 4 } } },
+	["csgo_mp5_mag_40"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_mp5_mag_10mm"] = { Bodygroups = { { 2, 2 } } },
+    ["mag_none"] = { Bodygroups = { { 2, 3 } } },
+    ["silencer_none"] = { Bodygroups = { { 3, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -626,7 +594,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_extend","go_mp5_stock"},
+        Category = {"csgo_tube","stock_retract","go_mp5_stock"},
         Bone = "v_weapon.mp5sd_parent",
 		--InstalledElements = {"stock_none"},
         Pos = Vector(0, -2.6, 3.75),
@@ -636,7 +604,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.mag",
-        Category = "go_mag",
+        Category = "go_mp5sd_mag",
         Pos = Vector(0, -1.3, 2),
     },
     {

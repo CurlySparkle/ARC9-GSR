@@ -459,21 +459,11 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["sight_mount"] = {
-        Bodygroups = { { 4, 1 } },
-    },
-    ["csgo_famas_barrel_long"] = {
-        Bodygroups = { { 2, 1 } },
-    },
-    ["csgo_famas_barrel_short"] = {
-        Bodygroups = { { 2, 2 } },
-    },
-    ["csgo_famas_mag_30"] = {
-        Bodygroups = { { 1, 1 } },
-    },
-    ["csgo_famas_mag_long"] = {
-        Bodygroups = { { 1, 2 } },
-    },
+    ["csgo_famas_mag_30"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_famas_mag_long"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_famas_barrel_long"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_famas_barrel_short"] = { Bodygroups = { { 2, 2 } } },
+    ["sight_mount"] = { Bodygroups = { { 4, 1 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

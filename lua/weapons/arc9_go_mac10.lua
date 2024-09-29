@@ -168,7 +168,7 @@ SWEP.SprintToFireTime = 0.23 -- How long it takes to go from sprinting to being 
 
 -------------------------- SWAY
 
-SWEP.SwayAddSights = 0.325
+SWEP.SwayAddSights = 0.225
 
 -------------------------- MELEE
 
@@ -602,65 +602,23 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["DefGrip"] = {
-        Bodygroups = {
-            {1,1}, {3,1},
-        },
-    AttPosMods = { 
-	[4] = { Pos = Vector(-1.7, -2.9, 4.7) },
-	[18] = { Pos = Vector(1.4, -0.75, 2) }
-	}	
+    ["DefGrip"] = { 
+		Bodygroups = { { 1, 1 }, { 3, 1 } },
+		AttPosMods = { 
+			[4] = { Pos = Vector(-1.7, -2.9, 4.7) },
+			[18] = { Pos = Vector(1.4, -0.75, 2) }
+		},
     },
-    ["stock_extend"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["stock_skeleton"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    },
-    ["barrel_med"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -2.92, 9), } }	
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {4,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -2.92, 14.7), } }	
-    },
-    ["barrel_shroud"] = {
-    AttPosMods = { [3] = { Pos = Vector(0, -2.92, 13.5), } }	
-    },
-    ["mag_16"] = {
-        Bodygroups = {
-            {5,1},
-        },
-    },
-    ["mag_50"] = {
-        Bodygroups = {
-            {5,2},
-        },
-    },
-    ["sight_mount"] = {
-        Bodygroups = {
-            {6,1},
-        },
-    },
-    ["stock_adapter"] = {
-        Bodygroups = {
-            {7,1},
-        },
-    },
+    ["stock_extend"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_ak47_stock_skeleton"] = { Bodygroups = { { 2, 2 } } },
+    ["stock_none"] = { Bodygroups = { { 2, 3 } } },
+    ["csgo_mac10_barrel_med"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_mac10_barrel_long"] = { Bodygroups = { { 4, 2 } } },
+    ["csgo_mac10_barrel_shroud"] = { Bodygroups = { { 4, 3 } } },
+    ["csgo_mac10_mag_16"] = { Bodygroups = { { 5, 1 } } },
+    ["csgo_mac10_mag_50"] = { Bodygroups = { { 5, 2 } } },
+    ["sight_mount"] = { Bodygroups = { { 6, 1 } } },
+    ["stock_adapter"] = { Bodygroups = { { 7, 1 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  

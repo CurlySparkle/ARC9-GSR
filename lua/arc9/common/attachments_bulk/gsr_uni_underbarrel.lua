@@ -23,10 +23,10 @@ ATT.PrintName = "Angled Grip"
 
 ATT.VisualRecoilMultMove = 0.8
 ATT.RecoilAutoControlMult = 3.5
-ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilMultMove = 0.66
 ATT.SwayAdd = -0.1
 
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.SpeedMult = 0.98
 
@@ -56,7 +56,7 @@ ATT.RecoilMult = 0.75
 ATT.SwayAdd = -0.225
 
 ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.1
 ATT.SpeedMult = 0.95
 
 ATT.Bipod = true
@@ -119,7 +119,7 @@ ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 2.5
 ATT.SwayAdd = -0.2
 
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMult = 0.975
 ATT.SpeedMultSights = 0.8
 ATT.SprintToFireTimeMult = 1.1
@@ -176,7 +176,7 @@ ATT.PrintName = "Rapid Foregrip"
 
 ATT.VisualRecoilMult = 0.66
 ATT.RecoilMult = 0.95
-ATT.AimDownSightsTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 
 ATT.SpeedMult = 0.95
@@ -206,8 +206,8 @@ ATT.VisualRecoilMult = 0.7
 ATT.RecoilMult = 0.8
 ATT.SwayAdd = -0.225
 
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.125
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.1
 ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)

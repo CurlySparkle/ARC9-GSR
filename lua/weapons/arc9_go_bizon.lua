@@ -657,55 +657,23 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["stock_retract"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
+    ["stock_retract"] = { Bodygroups = { { 1, 1 } } },
     ["stock_none"] = {
 		AttPosMods = { [17] = { Pos = Vector(0.75, 13.25, 0.5), } },
-        Bodygroups = {
-            {1,2},
-        },
+		Bodygroups = { { 1, 2 } } },
+    ["barrel_mid"] = { 
+		Bodygroups = { { 2, 1 }, { 3, 1 } },
+		AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18), } }	
     },
-    ["barrel_mid"] = {
-        Bodygroups = {
-            {2,1},
-			{3,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18), } }	
+    ["barrel_long"] = { 
+		Bodygroups = { { 2, 2 }, { 3, 2 } },
+		AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18.5), } }	
     },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {2,2},
-			{3,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18.5), } }	
-    },
-    ["muzzle_none"] = {
-        Bodygroups = {
-			{3,3},
-        },
-    },
-    ["mag_82"] = {
-        Bodygroups = {
-			{4,2},
-        },
-    },
-    ["mag_47"] = {
-        Bodygroups = {
-			{4,1},
-        },
-    },
-    ["mag_saiga"] = {
-        Bodygroups = {
-            {4,3},
-			{5,1},
-        },
-    },
-    ["csgo_rail_optic_2_alt"] = {
-    AttPosMods = { [3] = { Pos = Vector(0.02, -4, 3.5), } }
-    },
+    ["muzzle_none"] = { Bodygroups = { { 3, 3 } } },
+    ["mag_82"] = { Bodygroups = { { 4, 2 } } },
+    ["mag_47"] = { Bodygroups = { { 4, 1 } } },
+    ["mag_saiga"] = { Bodygroups = { { 4, 3 }, { 5, 1 } } },
+    ["csgo_rail_optic_2_alt"] = { AttPosMods = { [3] = { Pos = Vector(0.02, -4, 3.5) } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  

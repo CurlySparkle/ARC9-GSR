@@ -640,52 +640,22 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["csgo_ak47_grip_tactical"] = {
-        Bodygroups = { { 5, 1 } },
-    },
-    ["csgo_ak47_barrel_tactical"] = {
-        Bodygroups = { { 3, 4 } },
-    },
-    ["csgo_ak47_barrel_long"] = {
-        Bodygroups = { { 3, 2 } },
-    },
-    ["csgo_ak47_barrel_short"] = {
-        Bodygroups = { { 3, 3 } },
-    },
-    ["csgo_ak47_mag_50"] = {
-        Bodygroups = { {4, 1 } },
-    },
-    ["csgo_ak47_mag_556"] = {
-        Bodygroups = { {4, 2 } },
-    },
-    ["csgo_ak47_mag_556_ext"] = {
-        Bodygroups = { {4, 3 } },
-    },
-    ["csgo_ak47_mag_545"] = {
-        Bodygroups = { {4, 4 } },
-    },
-    ["csgo_ak47_mag_545_ext"] = {
-        Bodygroups = { {4, 5 } },
-    },
-    ["csgo_ak47_stock_rpk"] = {
-        Bodygroups = { { 1, 1 } },
-    },
-    ["csgo_ak47_stock_skeleton"] = {
-        Bodygroups = { { 1, 2 } },
-    },
+    ["csgo_ak47_stock_rpk"] = { Bodygroups = { { 1, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 1, 3 } } },
+    ["csgo_ak47_stock_skeleton"] = { Bodygroups = { { 1, 2 } } },
+    ["topcover"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_ak47_barrel_long"] = { Bodygroups = { { 3, 2 } } },
+    ["csgo_ak47_barrel_short"] = { Bodygroups = { { 3, 3 } } },
+    ["csgo_ak47_barrel_tactical"] = { Bodygroups = { { 3, 4 } } },
+    ["csgo_ak47_mag_50"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_ak47_mag_556"] = { Bodygroups = { { 4, 2 } } },
+    ["csgo_ak47_mag_556_ext"] = { Bodygroups = { { 4, 3 } } },
+    ["csgo_ak47_mag_545"] = { Bodygroups = { { 4, 4 } } },
+    ["csgo_ak47_mag_545_ext"] = { Bodygroups = { { 4, 5 } } },
+    ["mag_none"] = { Bodygroups = { { 4, 6 } } },
+    ["csgo_ak47_grip_tactical"] = { Bodygroups = { { 5, 1 } } },
 	
-    ["stock_none"] = {
-        Bodygroups = { { 1, 3 } },
-    },
-    ["topcover"] = {
-        Bodygroups = { { 2, 1 } },
-    },
-    ["mag_none"] = {
-        Bodygroups = { {4, 6 } },
-    },
-    ["csgo_rail_optic_2_alt"] = {
-		AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3) } }
-    },
+    ["csgo_rail_optic_2_alt"] = { AttPosMods = { [4] = { Pos = Vector(0.075, -4, 4.3) } } },
 }
 
 SWEP.AttachmentTableOverrides = {

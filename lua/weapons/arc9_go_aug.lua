@@ -567,33 +567,15 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mount"] = { 
-		Bodygroups = { { 5, 1 } }
-	},
-    ["grip"] = { 
-		Bodygroups = { { 1, 1 } }
-    },
-    ["grip_folded"] = { 
-		Bodygroups = { { 1, 2 } }
-	},
-    ["grip_extender"] = { 
-		Bodygroups = { { 2, 1 } }
-    },
-    ["go_mag_extended"] = { 
-		Bodygroups = { { 4, 1 } }
-    },
-    ["csgo_aug_mag_1"] = { 
-		Bodygroups = { { 4, 3 } }
-	},
-    ["csgo_aug_mag_2"] = { 
-		Bodygroups = { { 4, 4 } }
-	},
-    ["csgo_aug_barrel_long"] = { 
-		Bodygroups = { { 3,1 }, { 6, 1 } },
-	},
-    ["csgo_aug_barrel_short"] = { 
-		Bodygroups = { { 3, 2 }, { 6, 2 } },
-    },
+    ["grip"] = { Bodygroups = { { 1, 1 } } },
+    ["grip_folded"] = { Bodygroups = { { 1, 2 } } },
+    ["grip_extender"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_aug_barrel_long"] = { Bodygroups = { { 3,1 }, { 6, 1 } } },
+    ["csgo_aug_barrel_short"] = { Bodygroups = { { 3, 2 }, { 6, 2 } } },
+    ["go_mag_extended"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_aug_mag_1"] = { Bodygroups = { { 4, 3 } } },
+    ["csgo_aug_mag_2"] = { Bodygroups = { { 4, 4 } } },
+    ["mount"] = { Bodygroups = { { 5, 1 } } },
 }
 
 // Forced Override Bodygroup

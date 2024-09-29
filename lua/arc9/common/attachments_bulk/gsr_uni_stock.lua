@@ -21,12 +21,12 @@ ATT = {}
 
 ATT.PrintName = "Collapse Stock"
 
-ATT.AimDownSightsTimeMult = 0.75
+ATT.AimDownSightsTimeMult = 0.9
 ATT.SpeedMult = 1.1
 
 ATT.RecoilMult = 1.25
 ATT.VisualRecoilMult = 1.25
-ATT.SwayMultSights = 4
+ATT.SwayMultSights = 2
 
 table.Merge(ATT, sharedcode)
 
@@ -203,7 +203,7 @@ ATT = {}
 ATT.PrintName = "XM10 Stock"
 
 
-ATT.AimDownSightsTimeMult = 0.8
+ATT.AimDownSightsTimeMult = 0.9
 
 ATT.SpeedMult = 0.98
 ATT.RecoilMult = 1.15

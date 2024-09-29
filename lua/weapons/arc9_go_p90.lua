@@ -628,49 +628,34 @@ end
 SWEP.DefaultBodygroups = "0000000000000"
 
 SWEP.AttachmentElements = {
+	["no_stock"] = { Bodygroups = { { 0, 1 } } },
     ["top_rail"] = {
-    Bodygroups = {
-            {1,1},
-			{2,1},
-			{4,1},
-        },
-    AttPosMods = { 
-	[1] = { Pos = Vector(0, -6.25, 4), },
-	[5] = { Pos = Vector(-0.9, -5.5, 5.5), },
-	},
-    Override_IronSights = {
-    Pos = Vector(-5.145, -50, -0.325),
-    Ang = Angle(0.1, -0.025, 0),
-        },
+		Bodygroups = { { 1, 1 }, { 2, 1 }, { 4, 1 } },
+		AttPosMods = { 
+			[1] = { Pos = Vector(0, -6.25, 4), },
+			[5] = { Pos = Vector(-0.9, -5.5, 5.5), },
+		},
+		Override_IronSights = {
+			Pos = Vector(-5.145, -50, -0.325),
+			Ang = Angle(0.1, -0.025, 0),
+		},
     },
-    ["sights"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["sling"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
+    ["sights"] = { Bodygroups = { { 2, 2 } } },
+    ["sling"] = { Bodygroups = { { 3, 1 } } },
     ["ext_barrel"] = {
-    AttPosMods = { 
-	[4] = { Pos = Vector(0, -3.05, 13.2), },
-	[5] = { Pos = Vector(-0.85, -2.77, 9), },
-	}	
+		AttPosMods = { 
+			[4] = { Pos = Vector(0, -3.05, 13.2) },
+			[5] = { Pos = Vector(-0.85, -2.77, 9) },
+		},
     },
-	
-    -- ["muzzle_none"] = { Bodygroups = { {6,2}, }, },
-	
+    -- ["muzzle_none"] = { Bodygroups = { { 6, 2 } } },
     ["barrel_mid"] = {
-	Bodygroups = { {5,1}, {6,1}, },
-    AttPosMods = { [4] = { Pos = Vector(0, -3.05, 9.7), } }	
+		Bodygroups = { {5,1}, {6,1}, },
+		AttPosMods = { [4] = { Pos = Vector(0, -3.05, 9.7), } }	
     },
-	
-    ["mag_30"] = { Bodygroups = { {7,1}, }, },
-    ["mag_30_stanag"] = { Bodygroups = { {7,2}, }, },
-    ["mag_20_stanag"] = { Bodygroups = { {7,3}, }, }, 
-	["no_stock"] = { Bodygroups = { {0,1}, }, },
+    ["mag_30"] = { Bodygroups = { { 7, 1 } } },
+    ["mag_30_stanag"] = { Bodygroups = { { 7, 2 } } },
+    ["mag_20_stanag"] = { Bodygroups = { { 7, 3 } } }, 
 }
 
 SWEP.HookP_NameChange = function(self, name)

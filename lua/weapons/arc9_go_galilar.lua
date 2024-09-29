@@ -486,36 +486,16 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "0000000"
 
 SWEP.AttachmentElements = {
-	["sight_galil"] = {
-		AttPosMods = { [1] = { Pos = Vector(0, -4.9, 10.5), } }	
-	},
-    ["stock_none"] = {
-		Bodygroups = { { 1, 1 } },
-    },
-    ["csgo_galilar_mag_30"] = {
-		Bodygroups = { { 2, 1 } },
-    },
-    ["csgo_galilar_mag_40"] = {
-		Bodygroups = { { 2, 2 } },
-    },
-    ["csgo_galilar_mag_60"] = {
-		Bodygroups = { { 2, 3 } },
-    },
-    ["csgo_galilar_mag_ak_30"] = {
-		Bodygroups = { { 2, 4 } },
-    },
-    ["csgo_galilar_mag_ak_45"] = {
-		Bodygroups = { { 2, 5 } },
-    },
-    ["csgo_galilar_barrel_long"] = {
-		Bodygroups = { { 3, 1 }, { 4, 1 } },
-    },
-    ["csgo_galilar_barrel_short"] = {
-		Bodygroups = { { 3, 2 }, { 4, 2 } },
-    },
-    ["csgo_galilar_barrel_factory"] = {
-		Bodygroups = { { 3, 3 }, { 4, 3 } },
-    },
+	["sight_galil"] = { AttPosMods = { [1] = { Pos = Vector(0, -4.9, 10.5) } }	},
+    ["stock_none"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_galilar_mag_30"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_galilar_mag_40"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_galilar_mag_60"] = { Bodygroups = { { 2, 3 } } },
+    ["csgo_galilar_mag_ak_30"] = { Bodygroups = { { 2, 4 } } },
+    ["csgo_galilar_mag_ak_45"] = { Bodygroups = { { 2, 5 } } },
+    ["csgo_galilar_barrel_long"] = { Bodygroups = { { 3, 1 }, { 4, 1 } } },
+    ["csgo_galilar_barrel_short"] = { Bodygroups = { { 3, 2 }, { 4, 2 } } },
+    ["csgo_galilar_barrel_factory"] = { Bodygroups = { { 3, 3 }, { 4, 3 } } },
 }
 
 SWEP.AttachmentTableOverrides = {

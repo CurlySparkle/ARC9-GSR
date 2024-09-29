@@ -536,38 +536,31 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
-    ["mount"] = {
-		Bodygroups = { { 1,1 }, { 2, 1 } },
-    },
-    ["stock_none"] = {
-		Bodygroups = { { 3,1 } },
-    },
-    ["csgo_sg556_stock_folding"] = { 
-		Bodygroups = { {3,2} }
-	},
-    ["csgo_sg556_stock_proto"] = { 
-		Bodygroups = { {3,3} }
-	},
-    ["csgo_sg556_barrel_short"] = {
-		Bodygroups = { {4,1}, {1,2}, {2,2} },
-    },
-    ["csgo_sg556_barrel_proto"] = {
-		Bodygroups = { {4,2}, {1,2}, {2,3} },
-	},
-    ["csgo_sg556_mag_ak"] = { 
-		Bodygroups = { {0,1}, {6,1} }
-	},
+    ["csgo_sg556_mag_ak"] = { Bodygroups = { { 0, 1 }, { 6, 1 } } },
+    ["mount"] = { Bodygroups = { { 1, 1 }, { 2, 1} } },
+    ["stock_none"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_sg556_stock_folding"] = { Bodygroups = { { 3, 2 } } },
+    ["csgo_sg556_stock_proto"] = { Bodygroups = { { 3, 3 } } },
+    ["csgo_sg556_barrel_short"] = { Bodygroups = { { 4, 1 }, { 1, 2 }, { 2, 2 } } },
+    ["csgo_sg556_barrel_proto"] = { Bodygroups = { { 4, 2 }, { 1, 2 }, { 2, 3 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
+	
     if wep:HasElement("csgo_sg556_stock_folding") then model:SetBodygroup(3,2) end
     if wep:HasElement("csgo_sg556_stock_proto") then model:SetBodygroup(3,3) end
 
-    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_short") then model:SetBodygroup(2,1) end
-    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_short") then model:SetBodygroup(1,2) end
-    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_proto") then model:SetBodygroup(2,1) end
-    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_proto") then model:SetBodygroup(1,2) end
+    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_short") then
+		model:SetBodygroup( 1, 2 ) 
+		model:SetBodygroup( 2, 1 ) 
+	end
+
+    if wep:HasElement("mount") and wep:HasElement("csgo_sg556_barrel_proto") then
+		model:SetBodygroup( 1, 2 ) 
+		model:SetBodygroup( 2, 1 ) 
+	end
+
 end
 
 SWEP.HookP_NameChange = function(self, name)

@@ -644,42 +644,18 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mount"] = {
-		Bodygroups = { { 1,1 } },
-    },
-    ["frontiron"] = {
-		Bodygroups = { { 2,1 } },
-    },
-    ["csgo_m4_stock_sniper"] = {
-		Bodygroups = { { 3,2 } },
-    },
-    ["sidecover"] = {
-		Bodygroups = { { 4,2 } },
-    },
-    ["sidecover_long"] = {
-		Bodygroups = { { 4,2 } },
-    },
-    ["csgo_m4_barrel_long"] = {
-		Bodygroups = { {5,1}, {2,2}, {4,1 } },
-    },
-    ["csgo_m4_barrel_sniper"] = {
-		Bodygroups = { {5,2}, {3,4}, {5,2}, {7,1}, {2,2 } },
-    },
-    ["go_mag_extended_m4"] = {
-		Bodygroups = { { 6,1 } }
-    },
-    ["csgo_m4_mag_20"] = {
-		Bodygroups = { { 6,3 } }
-    },
-    ["csgo_m4_mag_20_5"] = { 
-		Bodygroups = { {6,2} } 
-	},
-	["csgo_m4_mag_25_9"] = { 
-		Bodygroups = { {6,4} } 
-	},
-	["csgo_m4_mag_32_9"] = { 
-		Bodygroups = { {6,5} } 
-	},
+    ["mount"] = { Bodygroups = { { 1, 1 } } },
+    ["frontiron"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_m4_stock_sniper"] = { Bodygroups = { { 3, 2 } } },
+    ["sidecover"] = { Bodygroups = { { 4, 2 } } },
+    ["sidecover_long"] = { Bodygroups = { { 4, 2 } } },
+    ["csgo_m4_barrel_long"] = { Bodygroups = { { 5, 1 }, { 2, 2 }, { 4, 1 } } },
+    ["csgo_m4_barrel_sniper"] = { Bodygroups = { { 5, 2 }, { 3, 4 }, { 5, 2 }, { 7, 1 }, { 2, 2 } } },
+    ["go_mag_extended_m4"] = { Bodygroups = { { 6, 1 } } },
+    ["csgo_m4_mag_20"] = { Bodygroups = { { 6, 3 } } },
+    ["csgo_m4_mag_20_5"] = { Bodygroups = { {6, 2 } } },
+	["csgo_m4_mag_25_9"] = { Bodygroups = { {6, 4 } } },
+	["csgo_m4_mag_32_9"] = { Bodygroups = { {6, 5 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

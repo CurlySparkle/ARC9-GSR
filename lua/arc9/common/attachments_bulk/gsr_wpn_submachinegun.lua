@@ -16,31 +16,312 @@ local sharedcode = {
 
 ////////////////////////////////////// MAC-10
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "20-Round .45 ACP Ingram Magazine"
 
--- table.Merge(ATT, sharedcode)
+ATT.ReloadTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.95
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.ClipSizeAdd = -10
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mac10_mag_16.png", "mips smooth")
+ATT.Category = "go_mac10_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_mag_16")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "50-Round .45 ACP Grave Magazine"
+
+ATT.ClipSizeAdd = 20
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mac10_mag_48.png", "mips smooth")
+ATT.Category = "go_mac10_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_mag_50")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Patrol Barrel"
+
+ATT.RangeMinMult = 1.15
+ATT.RangeMaxMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.075
+
+ATT.SpreadMultRecoil = 1.075
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.05
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mac10_barrel_med.png", "mips smooth")
+ATT.Category = "go_mac10_barrels"
+ATT.SortOrder = 1
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -2.92, 9) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_med")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Carbine Barrel"
+
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.SpreadMultRecoil = 1.15
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mac10_barrel_med.png", "mips smooth")
+ATT.Category = "go_mac10_barrels"
+ATT.SortOrder = 2
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -2.92, 14.7) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Shroud Barrel"
+
+ATT.RangeMinMult = 1.25
+ATT.RangeMaxMult = 1.3
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+
+ATT.SpreadMultRecoil = 1.125
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mac10_barrel_med.png", "mips smooth")
+ATT.Category = "go_mac10_barrels"
+ATT.SortOrder = 3
+
+ATT.Model = "models/weapons/csgo/atts/etc/tec9_barrel_shroud.mdl"
+ATT.ModelOffset = Vector(-3.8, 0, 0)
+ATT.Scale = 1.4
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -2.92, 14.15) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_shroud")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (MAC-10)"
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_mac10_barrel_med.png", "mips smooth")
+ATT.Category = "go_mac10_view"
+
+ATT.ActivePos = Vector(-2.5, -4, 0.5)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-2.5, -4.3, -0.3)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-2.5, -4.3, -0.3)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_mac10_view")
 ------------------------------------------------------------------------
 
 
-////////////////////////////////////// MP5
+////////////////////////////////////// MP5 & MP5SD
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Kurz Barrel and Handguard"
 
--- table.Merge(ATT, sharedcode)
+ATT.VisualRecoilMult = 0.975
+ATT.SwayMultSights = 0.9
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 1.025
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.SpreadMultRecoil = 1.15
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+ATT.Category = "go_mp5_hg"
+
+ATT.Model = "models/weapons/csgo/atts/grip_kac.mdl"
+ATT.ModelOffset = Vector(-0.5, 0.3, 0.7)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
+ATT.ModelBodygroups = "1"
+
+ATT.LHIK_Priority = 10
+ATT.LHIK = true
+
+ATT.Element = {
+    AttPosMods = {
+		[1] = { Pos = Vector(0, -3.91, 14) }, -- Muzzle
+		[4] = { Pos = Vector(-1, -3.95, 8) }, -- Tactical
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_k")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Folding Stock"
+
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.1
+
+ATT.AimDownSightsTimeMult = 1.075
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp5_stock_folding.png", "mips smooth")
+ATT.Category = "go_mp5_stock2"
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_stock_k")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "No Stock"
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SpeedMult = 1.1
+
+ATT.RecoilMult = 1.25
+ATT.VisualRecoilMult = 1.25
+ATT.SwayMultSights = 2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp5_stock_none.png", "mips smooth")
+ATT.Category = "go_mp5_stock"
+ATT.SortOrder = -10
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_stock_none")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "20-Round 9×19mm Magazine"
+
+ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.ClipSizeAdd = -10
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp5_mag_15.png", "mips smooth")
+ATT.Category = "go_mp5_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_mag_k")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "40-Round 9×19mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp5_mag_40.png", "mips smooth")
+ATT.Category = { "go_mp5_mag", "go_mp5sd_mag" }
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_mag_40")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 10mm Auto Magazine"
+
+ATT.PhysBulletMuzzleVelocityMult = 1.5
+ATT.DamageMaxMult = 1.125
+
+ATT.RecoilMult = 1.15
+ATT.VisualRecoilMult = 1.1
+ATT.RPMAdd = -100
+ATT.RangeMinMult = 0.775
+ATT.RangeMaxMult = 0.7
+
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 2,
+		RunawayBurst = true,
+		PostBurstDelay = 0.2,
+		RPMMult = 1.33,
+    },
+}
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m4_mag_30_9mm.png", "mips smooth")
+ATT.Category = { "go_mp5_mag", "go_mp5sd_mag" }
+
+ARC9.LoadAttachment(ATT, "csgo_mp5_mag_10mm")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (MP5-SD)"
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_m4_mag_30_9mm.png", "mips smooth")
+ATT.Category = "go_mp5sd_view"
+
+ATT.ActivePos = Vector(-1.5, -2.5, 0)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.5, -2.9, -0.7)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.5, -2.9, -0.7)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.ViewModelFOVBase = 60
+
+ARC9.LoadAttachment(ATT, "csgo_mp5sd_view_alt")
 ------------------------------------------------------------------------
 
 

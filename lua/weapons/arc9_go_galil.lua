@@ -550,33 +550,15 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["csgo_galil_barrel_long"] = {
-		Bodygroups = { { 3, 1 } },
-    },
-    ["csgo_galil_barrel_short"] = {
-		Bodygroups = { { 3, 2 } },
-    },
-    ["csgo_galil_mag_35"] = {
-		Bodygroups = { { 2, 1 } },
-    },
-    ["csgo_galil_mag_50"] = {
-		Bodygroups = { { 2, 2 } },
-    },
-    ["stock_retract"] = {
-		Bodygroups = { { 1, 1 } },
-    },
-    ["stock_none"] = {
-		Bodygroups = { { 1, 2 } },
-    },
-    ["mag_none"] = {
-		Bodygroups = { { 2, 3 } },
-    },
-    ["sight_mount"] = {
-		Bodygroups = { { 4, 1 } },
-    },
-    ["foregrip"] = {
-		Bodygroups = { { 5, 1 } },
-    },
+    ["stock_retract"] = { Bodygroups = { { 1, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_galil_mag_35"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_galil_mag_50"] = { Bodygroups = { { 2, 2 } } },
+    ["mag_none"] = { Bodygroups = { { 2, 3 } } },
+    ["csgo_galil_barrel_long"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_galil_barrel_short"] = { Bodygroups = { { 3, 2 } } },
+    ["sight_mount"] = { Bodygroups = { { 4, 1 } } },
+    ["foregrip"] = { Bodygroups = { { 5, 1 } } },
 }
 
 SWEP.Attachments = {

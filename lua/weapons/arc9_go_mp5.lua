@@ -94,6 +94,7 @@ SWEP.Firemodes = {
 		-- PostBurstDelay = 0.2,
     -- },
 }
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
@@ -115,7 +116,7 @@ SWEP.RecoilMax = 1
 SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0.2 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -493,67 +494,29 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["rearsight"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["side_cover"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["bottom_cover"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
-    ["mag"] = {
-        Bodygroups = {
-            {4,3},
-        },
-    },
-	["mag2"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {5,1},
-        },
-    },
-    ["stock_fixed"] = {
-        Bodygroups = {
-			{5,2},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-			{5,3},
-        },
-    },
-    ["stock_none_alt"] = {
-        Bodygroups = {
-			{5,5},
-        },
-    }, 
-	["stock_k"] = { Bodygroups = { {5,4}, }, },
-	["mag_k"] = { Bodygroups = { {4,2}, }, },
-    ["hg_k"] = {
-		Bodygroups = { {0,1}, },
-		AttPosMods = { 
-		[1] = { Pos = Vector(0, -3.91, 14), }, 
-		[4] = { Pos = Vector(-1, -3.95, 8), } 
-		}		
-	},	
+    ["csgo_mp5_k"] = { Bodygroups = { { 0, 1 }, { 2, 1 }, { 3, 1 } } },	
+    ["rearsight"] = { Bodygroups = { { 1, 1 } } },
+    ["side_cover"] = { Bodygroups = { { 2, 1 } } },
+    ["bottom_cover"] = { Bodygroups = { { 3, 1 } } },
+	["csgo_mp5_mag_40"] = { Bodygroups = { { 4, 1 } } },
+	["csgo_mp5_mag_k"] = { Bodygroups = { { 4, 2 } } },
+	["csgo_mp5_mag_10mm"] = { Bodygroups = { { 4, 3 } } },
+    ["stock_retract"] = { Bodygroups = { { 5, 1 } } },
+    ["csgo_g3_stock_fixed"] = { Bodygroups = { { 5, 2 } } },
+    ["stock_none"] = { Bodygroups = { { 5, 3 } } },
+    ["csgo_mp5_stock_none"] = { Bodygroups = { { 5, 5 } } }, 
+	["csgo_mp5_stock_k"] = { Bodygroups = { { 5, 4 } } },
 }
 
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("hg_k") then model:SetBodygroup(2,1) end 
-	if wep:HasElement("hg_k") then model:SetBodygroup(3,1) end
+	
+    -- if wep:HasElement("csgo_mp5_k") then 
+		-- model:SetBodygroup( 2, 1 )
+		-- model:SetBodygroup( 3, 1 )
+	-- end 
+	
 end
 
 SWEP.HookP_NameChange = function(self, name)
@@ -617,7 +580,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.MP5_Clip",
-        Category = {"go_mag", "go_mp5_mag"},
+        Category = {"go_mp5_mag"},
         Pos = Vector(0, -2, -0.5),
     },
     {

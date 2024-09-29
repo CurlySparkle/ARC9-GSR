@@ -773,30 +773,14 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["silencer_remove"] = {
-		Bodygroups = { { 1,1 } },
-    },
-    ["stock_retract"] = {
-		Bodygroups = { { 2,1 } },
-    },
-    ["stock_none"] = {
-		Bodygroups = { { 2,3 } },
-    },
-    ["csgo_m4a1_stock_m16"] = {
-		Bodygroups = { { 2,2 } },
-    },
-    ["csgo_m4a1_barrel_m16a4"] = {
-		Bodygroups = { { 3,2} },
-    },
-    ["csgo_m4a1_mag_30"] = {
-		Bodygroups = { { 4,1 } },
-    },
-    ["csgo_m4a1_mag_50"] = {
-		Bodygroups = { { 4,3 } },
-    },
-    ["reciever_m16"] = {
-		Bodygroups = { { 6,1 } },
-    },
+    ["silencer_remove"] = { Bodygroups = { { 1,1 } } },
+    ["stock_retract"] = { Bodygroups = { { 2,1 } } },
+    ["stock_none"] = { Bodygroups = { { 2,3 } } },
+    ["csgo_m4a1_stock_m16"] = { Bodygroups = { { 2,2 } } },
+    ["csgo_m4a1_barrel_m16a4"] = { Bodygroups = { { 3,2 } } },
+    ["csgo_m4a1_mag_30"] = { Bodygroups = { { 4,1 } } },
+    ["csgo_m4a1_mag_50"] = { Bodygroups = { { 4,3 } } },
+    ["reciever_m16"] = { Bodygroups = { { 6,1 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)

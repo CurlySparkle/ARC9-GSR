@@ -467,48 +467,20 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag_15"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["mag_30_9"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["mag"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    },
-    ["grip"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    },
-    ["barrel_med"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.95, 17.5), } }
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.95, 20.4), } }
-    },
+    ["barrel_med"] = { 
+		Bodygroups = { { 1,1 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -3.95, 17.5),} }
+	},
+    ["barrel_long"] = { 
+		Bodygroups = { { 1, 2 } },
+		AttPosMods = { [3] = { Pos = Vector(0, -3.95, 20.4),} }
+	},
+    ["mag_15"] = { Bodygroups = { { 2, 1 } } },
+    ["mag_30_9"] = { Bodygroups = { { 2, 2 } } },
+    ["mag"] = { Bodygroups = { { 2, 3 } } },
+    ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 3, 2 } } },
+    ["grip"] = { Bodygroups = { { 4, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)

@@ -19,6 +19,7 @@ And here's the long, more detailed version:
 	[*] Adjusted or removed visual recoil
 	[*] Adjusted customization positions
 	[*] Added sway when aiming
+	[*] Various other small tweaks
 [/list]
 
 [u]Assault Rifles[/u]
@@ -35,7 +36,7 @@ And here's the long, more detailed version:
 [u]SMGs[/u]
 [b]MAC-10[/b]: Reduced recoil | Reduced recoil centering
 [b]MP5[/b]: N/A
-[b]MP5-SD[/b]: Reduced recoil | Increased recoil when auto-firing
+[b]MP5-SD[/b]: Reduced recoil | Increased recoil when auto-firing | Stock is now extended by default; now has access to "Collapsed Stock" attachment
 [b]MP7[/b]: Reduced recoil
 [b]MP9[/b]: Reduced recoil | Increased recoil when auto-firing
 [b]P90[/b]: Increased recoil | Increased hor. recoil
@@ -50,11 +51,11 @@ And here's the long, more detailed version:
 [b]XM1014[/b]: 
 
 [u]Snipers[/u]
-[b]AWP[/b]:
-[b]G3SG1[/b]: 
-[b]SCAR-20[/b]: 
-[b]Scout[/b]: 
-[b]SSG 08[/b]: 
+[b]AWP[/b]: Disabled the use of Aim Assist
+[b]G3SG1[/b]: Disabled the use of Aim Assist | Increased recoil | Reduced recoil centering
+[b]SCAR-20[/b]: Disabled the use of Aim Assist | Increased recoil | Reduced recoil centering
+[b]Scout[/b]: Disabled the use of Aim Assist
+[b]SSG 08[/b]: Disabled the use of Aim Assist
 
 [u]LMGs[/u]
 [b]M249[/b]:
@@ -111,6 +112,12 @@ All attachments have brand new stats with altered behaviour:
 	[*] Perks: Some perks have altered values, and some have been removed due to not working as intended (Enforcer, Ace in the Hole, Last One Out, Head Hunt, Full Stop).
 [/list]
 And more that's not listed.
+
+[u]New Attachments[/u]
+A few weapons have received brand-new attachments:
+[list]
+	[*] MP5 & MP5-SD: 40-Round Magazine & 30-Round 10x25mm Magazine
+[/list]
 
 [u]New Integrations[/u]
 Added two new sets of attachment integrations:

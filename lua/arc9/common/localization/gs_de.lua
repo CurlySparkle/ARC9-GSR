@@ -200,8 +200,13 @@ L["csgo_weapon_m4a4_sr25"] = "SR-25"
 L["csgo_weapon_m249"] = "M249"
 L["csgo_weapon_mac10"] = "MAC-10"
 L["csgo_weapon_mag7"] = "MAG-7"
+
 L["csgo_weapon_mp5"] = "MP5"
+L["csgo_weapon_mp5_10"] = "MP5/10"
+
 L["csgo_weapon_mp5sd"] = "MP5-SD"
+L["csgo_weapon_mp5sd_10"] = "MP5/10-SD"
+
 L["csgo_weapon_mp7"] = "MP7"
 L["csgo_weapon_mp9"] = "MP9"
 
@@ -1572,6 +1577,14 @@ L["csgo_mp5_mag_k.printname"] = "9 x 19 mm 20-Schuss-Magazin"
 L["csgo_mp5_mag_k.compactname"] = "9 mm-"
 L["csgo_mp5_mag_k.description"] = string.format(quicktext.smallmag, 20)
 
+L["csgo_mp5_mag_40.printname"] = "9 × 19 mm 40-Schuss-Magazin"
+L["csgo_mp5_mag_40.compactname"] = "9 mm+"
+L["csgo_mp5_mag_40.description"] = string.format(quicktext.bigmag, 40)
+
+L["csgo_mp5_mag_10mm.printname"] = "10 × 25 mm 30-Schuss-Magazin"
+L["csgo_mp5_mag_10mm.compactname"] = "10 mm"
+-- L["csgo_mp5_mag_10mm.description"] = "Rechambers the MP5 into firing the more powerful 10×25mm cartridge, better known as <color=255,255,100>10mm Auto</color>.\nLocks the weapon to <color=255,255,100>full auto & fast-firing 2-round burst</color>."
+
 /////////////////// MP5-SD
 L["csgo_mp5_stock_none.printname"] = "Kein Bestand"
 L["csgo_mp5_stock_none.compactname"] = "Keine"
@@ -1821,8 +1834,8 @@ L["csgo_ssg08_mag_5.compactname"] = ".338 LM"
 L["csgo_ssg08_mag_5.description"] = "Konvertiert die SSG 08 zum Abfeuern von .338 Lapua Magnum-Patronen."
 
 /////////////////// TEC-9
-L["csgo_tec9_barrel_long.printname"] = "200 mm JATI-Lauf"
-L["csgo_tec9_barrel_long.compactname"] = "200 mm JATI"
+L["csgo_tec9_barrel_long.printname"] = "JATI-Lauf"
+L["csgo_tec9_barrel_long.compactname"] = "JATI"
 -- L["csgo_tec9_barrel_long.description"] = "Extended barrel with built-in shroud."
 
 L["csgo_tec9_barrel_short.printname"] = "AB-1 Lauf"

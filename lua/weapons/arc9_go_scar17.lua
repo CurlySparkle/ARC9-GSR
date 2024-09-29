@@ -483,39 +483,17 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["sights"] = {
-		Bodygroups = { { 1,1 } },
-    },
-    ["stock_retract"] = {
-		Bodygroups = { { 2,2 } },
-    },
-    ["stock_none"] = {
-		Bodygroups = { { 2,1 } },
-    },
-    ["csgo_scar17_stock_specialized"] = {
-		Bodygroups = { { 2,3 } },
-    },
-    ["csgo_scar17_stock_pdw"] = {
-		Bodygroups = { { 2,5 } },
-    },
-    ["go_mag_extended"] = {
-		Bodygroups = { { 3,1 } },
-    },
-    ["csgo_mk17_mag_1"] = { 
-		Bodygroups = { { 3,4 }, { 0,1 } }
-	},
-    ["csgo_mk17_mag_2"] = { 
-		Bodygroups = { { 3,3 }, { 0,1 } }
-	},
-	["csgo_scar17_stock_bullpup"] = {
-		Bodygroups = { {5,1},{2,6} },
-	},
-    ["csgo_scar17_barrel_long"] = {
-		Bodygroups = { { 4,1 }, { 6,1 } },
-    },
-    ["csgo_scar17_barrel_short"] = {
-		Bodygroups = { { 4,2 }, { 6,2 } },
-    },
+    ["sights"] = { Bodygroups = { { 1, 1 } } },
+    ["stock_retract"] = { Bodygroups = { { 2, 2 } } },
+    ["stock_none"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_scar17_stock_specialized"] = { Bodygroups = { { 2, 3 } } },
+    ["csgo_scar17_stock_pdw"] = { Bodygroups = { { 2, 5 } } },
+    ["go_mag_extended"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_mk17_mag_1"] = { Bodygroups = { { 3, 4 }, { 0, 1 } } },
+    ["csgo_mk17_mag_2"] = { Bodygroups = { { 3, 3 }, { 0, 1 } } },
+    ["csgo_scar17_barrel_long"] = { Bodygroups = { { 4, 1 }, { 6, 1 } } },
+    ["csgo_scar17_barrel_short"] = { Bodygroups = { { 4, 2 }, { 6, 2 } } },
+	["csgo_scar17_stock_bullpup"] = { Bodygroups = { { 5, 1 },{ 2, 6 } } },
 }
 
 // Forced Override Bodygroup
