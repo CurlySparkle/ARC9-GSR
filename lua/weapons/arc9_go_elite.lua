@@ -260,8 +260,8 @@ SWEP.AfterShotParticle = "muzzle_smoke_trace"
 SWEP.MuzzleEffectQCA = 1
 SWEP.MuzzleEffectQCAEvenShot = 2
 
-SWEP.CaseEffectQCA = 3
-SWEP.CaseEffectQCAEvenShot = 4
+SWEP.CaseEffectQCA = 4
+SWEP.CaseEffectQCAEvenShot = 3
 
 SWEP.ProceduralViewQCA = 1
 
