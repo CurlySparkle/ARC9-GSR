@@ -309,7 +309,7 @@ SWEP.Animations = {
         },
     },
     ["reload"] = {
-        Source = "reload_short_alt",
+        Source = "reload_short",
 		RefillProgress = 0.75,
 		MinProgress = 0.975,
 		FireASAP = true,
@@ -346,7 +346,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty"] = {
-        Source = "reload_alt",
+        Source = "reload",
 		RefillProgress = 0.85,
 		MinProgress = 0.975,
 		FireASAP = true,

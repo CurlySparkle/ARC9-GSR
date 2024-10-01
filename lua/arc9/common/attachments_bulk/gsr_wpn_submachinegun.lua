@@ -26,6 +26,8 @@ ATT.SprintToFireTimeMult = 0.95
 
 ATT.ClipSizeAdd = -10
 
+ATT.DropMagazineTimeMult = 0.95
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_mac10_mag_16.png", "mips smooth")
@@ -43,6 +45,8 @@ ATT.ReloadTimeMult = 1.2
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
 ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
 
 table.Merge(ATT, sharedcode)
 
@@ -143,7 +147,6 @@ ATT.PrintName = "Alternative View (MAC-10)"
 
 table.Merge(ATT, sharedcode)
 
--- ATT.Icon = Material("entities/attachs/go_mac10_barrel_med.png", "mips smooth")
 ATT.Category = "go_mac10_view"
 
 ATT.ActivePos = Vector(-2.5, -4, 0.5)
@@ -156,7 +159,6 @@ ATT.ActiveAng = Angle(0, 0, 0)
 -- ATT.CrouchAng = Angle(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "csgo_mac10_view")
-------------------------------------------------------------------------
 
 
 ////////////////////////////////////// MP5 & MP5SD
@@ -244,6 +246,8 @@ ATT.SprintToFireTimeMult = 0.975
 
 ATT.ClipSizeAdd = -10
 
+ATT.DropMagazineTimeMult = 0.9
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_mp5_mag_15.png", "mips smooth")
@@ -261,6 +265,8 @@ ATT.ReloadTimeMult = 1.1
 ATT.AimDownSightsTimeMult = 1.075
 ATT.SprintToFireTimeMult = 1.05
 ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
 
 table.Merge(ATT, sharedcode)
 
@@ -307,7 +313,6 @@ ATT.PrintName = "Alternative View (MP5-SD)"
 
 table.Merge(ATT, sharedcode)
 
--- ATT.Icon = Material("entities/attachs/go_m4_mag_30_9mm.png", "mips smooth")
 ATT.Category = "go_mp5sd_view"
 
 ATT.ActivePos = Vector(-1.5, -2.5, 0)
@@ -322,51 +327,192 @@ ATT.ActiveAng = Angle(0, 0, 0)
 ATT.ViewModelFOVBase = 60
 
 ARC9.LoadAttachment(ATT, "csgo_mp5sd_view_alt")
-------------------------------------------------------------------------
-
-
-////////////////////////////////////// MP5-SD
-
--- ATT = {}
-
--- ATT.PrintName = "Gen Laser Sight"
-
--- table.Merge(ATT, sharedcode)
-
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
-
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
-------------------------------------------------------------------------
 
 
 ////////////////////////////////////// MP7
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "20-Round 4.6×30mm Magazine"
 
--- table.Merge(ATT, sharedcode)
+ATT.CustomPros = {
+	[ ARC9:GetPhrase("Autostat.ReloadTime") ] = "15%"
+}
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.ClipSizeAdd = -10
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+ATT.DropMagazineTimeMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp7_mag_20.png", "mips smooth")
+ATT.Category = "go_mp7_mag"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_smallmag"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_mp7_mag_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "40-Round 4.6×30mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.025
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp7_mag_40.png", "mips smooth")
+ATT.Category = "go_mp7_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_mp7_mag_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Flip Down Iron Sights"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "go_optic_mp7"
+
+ARC9.LoadAttachment(ATT, "csgo_mp7_iron2")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (MP7)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "go_mp7_view"
+
+ATT.ActivePos = Vector(-1.3, -2.5, -0.2)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.3, -3, -0.7)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.3, -3, -0.7)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.ViewModelFOVBase = 65
+
+ARC9.LoadAttachment(ATT, "csgo_mp7_view_alt")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// MP9
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Long Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.SpreadMultRecoil = 1.075
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp9_barrel_long.png", "mips smooth")
+ATT.Category = "go_mp9_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -2.96, 8.55) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_mp9_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "ATF Barrel"
+
+ATT.SpreadMultRecoil = 0.95
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.RangeMinMult = 0.9
+ATT.RangeMaxMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp9_barrel_short.png", "mips smooth")
+ATT.Category = "go_mp9_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -2.96, 6.8) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_mp9_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "20-Round 9×19mm Magazine"
+
+ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.ClipSizeAdd = -10
+
+ATT.DropMagazineTimeMult = 0.9
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp9_mag_15.png", "mips smooth")
+ATT.Category = "go_mag_mp9"
+
+ARC9.LoadAttachment(ATT, "csgo_mp9_mag_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "40-Round 9×19mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.025
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_mp9_mag_15.png", "mips smooth")
+ATT.Category = "go_mag_mp9"
+
+ARC9.LoadAttachment(ATT, "csgo_mp9_mag_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (MP9)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "go_mp9_view"
+
+ATT.ActivePos = Vector(-1.5, -2, -0.5)
+ATT.MovingPos = Vector(-0.25, 0, -1)
+-- ATT.CrouchPos = Vector(-1.5, -2.9, -0.7)
+
+ATT.ViewModelFOVBase = 60
+
+ARC9.LoadAttachment(ATT, "csgo_mp9_view_alt")
 ------------------------------------------------------------------------
 
 

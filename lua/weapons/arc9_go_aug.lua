@@ -572,7 +572,7 @@ SWEP.AttachmentElements = {
     ["grip_extender"] = { Bodygroups = { { 2, 1 } } },
     ["csgo_aug_barrel_long"] = { Bodygroups = { { 3,1 }, { 6, 1 } } },
     ["csgo_aug_barrel_short"] = { Bodygroups = { { 3, 2 }, { 6, 2 } } },
-    ["go_mag_extended"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_aug_mag_40"] = { Bodygroups = { { 4, 1 } } },
     ["csgo_aug_mag_1"] = { Bodygroups = { { 4, 3 } } },
     ["csgo_aug_mag_2"] = { Bodygroups = { { 4, 4 } } },
     ["mount"] = { Bodygroups = { { 5, 1 } } },
@@ -665,7 +665,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
-        Category = {"go_mag_aug","go_mag"},
+        Category = {"go_mag_aug"},
         Bone = "v_weapon.aug_Clip",
         Pos = Vector(0, 0 , 2),
     },

@@ -1155,6 +1155,10 @@ L["csgo_aug_mag_2.printname"] = "Cargador de 42 cartuchos 9×19mm"
 L["csgo_aug_mag_2.compactname"] = "9mm+"
 L["csgo_aug_mag_2.description"] = "Convierte la AUG en la AUG Para utilizando un adaptador de cargador de 9×19mm.\n" .. string.format(quicktext.bigmag, 32)
 
+L["csgo_aug_mag_40.printname"] = "Cargador de 40 cartuchos 5.56×45mm"
+L["csgo_aug_mag_40.compactname"] = "5.56mm+"
+L["csgo_aug_mag_40.description"] = string.format(quicktext.bigmag, 40)
+
 L["csgo_aug_barrel_long.printname"] = "Cañón pesado"
 L["csgo_aug_barrel_long.compactname"] = "Pesado"
 L["csgo_aug_barrel_long.description"] = "Cañón más largo utilizado en la AUG HBAR."
@@ -1613,8 +1617,12 @@ L["csgo_mp9_barrel_short.compactname"] = "ATF"
 -- L["csgo_mp9_barrel_short.description"] = "Even shorter barrel."
 
 L["csgo_mp9_mag_short.printname"] = "Cargador de 20 cartuchos 9×19mm"
-L["csgo_mp9_mag_short.compactname"] = "20R"
+L["csgo_mp9_mag_short.compactname"] = "9mm-"
 L["csgo_mp9_mag_short.description"] = string.format(quicktext.smallmag, 20)
+
+L["csgo_mp9_mag_long.printname"] = "Cargador de 40 cartuchos 9×19mm"
+L["csgo_mp9_mag_long.compactname"] = "9mm+"
+L["csgo_mp9_mag_long.description"] = string.format(quicktext.bigmag, 40)
 
 /////////////////// Grenades
 L["csgo_nade_timer.printname"] = "Mecha de granada (3 segundos)"
@@ -1704,15 +1712,15 @@ L["csgo_p90_barrel_med.compactname"] = "410mm PS90"
 L["csgo_p90_barrel_med.description"] = "Cañón de longitud media."
 
 L["csgo_p90_mag_30.printname"] = "Cargador de 30 cartuchos de 5.7×28mm"
-L["csgo_p90_mag_30.compactname"] = "30R"
+L["csgo_p90_mag_30.compactname"] = "5.7mm-"
 L["csgo_p90_mag_30.description"] = "Disminuye el tamaño y la capacidad del cargador con el beneficio de mejorar la velocidad de recarga y el manejo del arma."
 
 L["csgo_p90_mag_30_stanag.printname"] = "Cargador de 30 cartuchos de 5.56×45mm OTAN"
-L["csgo_p90_mag_30_stanag.compactname"] = "30R NATO"
+L["csgo_p90_mag_30_stanag.compactname"] = "NATO-"
 L["csgo_p90_mag_30_stanag.description"] = "Frankenstein-acopla un cargador STANAG de 30 balas de 5.56×45mm al P90.\n\nNecesito terapia."
 
 L["csgo_p90_mag_20_stanag.printname"] = "Cargador de 20 cartuchos de 5.56×45mm OTAN"
-L["csgo_p90_mag_20_stanag.compactname"] = "20R NATO"
+L["csgo_p90_mag_20_stanag.compactname"] = "NATO--"
 L["csgo_p90_mag_20_stanag.description"] = "Frankenstein-acopla un cargador STANAG 5.56×45mm de 20 cartuchos a la P90.\n\nMi terapeuta no responde..."
 
 /////////////////// Sawed-Off
@@ -1760,6 +1768,10 @@ L["csgo_mk17_mag_1.description"] = "Convierte el SCAR-17 para aceptar cargadores
 L["csgo_mk17_mag_2.printname"] = "Cargador de 30 cartuchos de 5.56 × 45 mm"
 L["csgo_mk17_mag_2.compactname"] = "5.56mm"
 L["csgo_mk17_mag_2.description"] = "Convierte el SCAR-17 para que acepte cargadores de 5.56 mm.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_mk17_mag_30.printname"] = "Cargador de 30 cartuchos de 7.62 × 51 mm"
+L["csgo_mk17_mag_30.compactname"] = "7.62mm+"
+L["csgo_mk17_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "Culata PDW"
 L["csgo_scar17_stock_pdw.compactname"] = "PDW"
@@ -1847,7 +1859,7 @@ L["csgo_tec9_mag_32.compactname"] = "9mm+"
 L["csgo_tec9_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 L["csgo_tec9_mag_10.printname"] = "Cargador de 10 cartuchos 9×19mm"
-L["csgo_tec9_mag_10.compactname"] = "10R"
+L["csgo_tec9_mag_10.compactname"] = "9mm-"
 L["csgo_tec9_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
 /////////////////// UMP-45

@@ -1155,6 +1155,10 @@ L["csgo_aug_mag_2.printname"] = "9 x 19 mm 32-Schuss-Magazin"
 L["csgo_aug_mag_2.compactname"] = "9 mm+"
 L["csgo_aug_mag_2.description"] = "Wandelt die AUG mit einem 9×19mm Magazinadapter in die AUG Para um.\n" .. string.format(quicktext.bigmag, 32)
 
+L["csgo_aug_mag_40.printname"] = "5,56 × 45 mm 40-Schuss-Magazin"
+L["csgo_aug_mag_40.compactname"] = "5,56 mm+"
+L["csgo_aug_mag_40.description"] = string.format(quicktext.bigmag, 40)
+
 L["csgo_aug_barrel_long.printname"] = "Schwerer Lauf"
 L["csgo_aug_barrel_long.compactname"] = "Schwer"
 L["csgo_aug_barrel_long.description"] = "Längerer Lauf, der beim AUG HBAR verwendet wird."
@@ -1616,6 +1620,10 @@ L["csgo_mp9_mag_short.printname"] = "9 × 19 mm 20-Schuss-Magazin"
 L["csgo_mp9_mag_short.compactname"] = "9 mm-"
 L["csgo_mp9_mag_short.description"] = string.format(quicktext.smallmag, 20)
 
+L["csgo_mp9_mag_long.printname"] = "9 × 19 mm 40-Schuss-Magazin"
+L["csgo_mp9_mag_long.compactname"] = "9 mm+"
+L["csgo_mp9_mag_long.description"] = string.format(quicktext.bigmag, 40)
+
 /////////////////// Grenades
 L["csgo_nade_timer.printname"] = "Granatzünder (3 Sekunden)"
 L["csgo_nade_timer.compactname"] = "Sicherung"
@@ -1703,8 +1711,8 @@ L["csgo_p90_barrel_med.printname"] = "PS90-Lauf"
 L["csgo_p90_barrel_med.compactname"] = "PS90"
 L["csgo_p90_barrel_med.description"] = "Mittellanger Lauf."
 
-L["csgo_p90_mag_30.printname"] = "5.7×28mm 30-Schuss-Magazin"
-L["csgo_p90_mag_30.compactname"] = "30R"
+L["csgo_p90_mag_30.printname"] = "5,7 × 28 mm 30-Schuss-Magazin"
+L["csgo_p90_mag_30.compactname"] = "5,7 mm-"
 L["csgo_p90_mag_30.description"] = "Verringert die Größe und Kapazität des Magazins mit dem Vorteil einer verbesserten Nachladegeschwindigkeit und Waffenhandhabung."
 
 L["csgo_p90_mag_30_stanag.printname"] = "30-Schuss 5,56 × 45 mm NATO-Magazin"
@@ -1760,6 +1768,10 @@ L["csgo_mk17_mag_1.description"] = "Konvertiert den SCAR-17 zur Aufnahme von 5,5
 L["csgo_mk17_mag_2.printname"] = "5,56 × 45 mm 30-Schuss-Magazin"
 L["csgo_mk17_mag_2.compactname"] = "5,56 mm+"
 L["csgo_mk17_mag_2.description"] = "Konvertiert den SCAR-17 zur Aufnahme von 5,56-mm-Magazinen.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_mk17_mag_30.printname"] = "7,62 × 51 mm 30-Schuss-Magazin"
+L["csgo_mk17_mag_30.compactname"] = "7,62 mm+"
+L["csgo_mk17_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "PDW-Aktie"
 L["csgo_scar17_stock_pdw.compactname"] = "PDW"

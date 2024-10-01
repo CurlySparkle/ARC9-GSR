@@ -396,6 +396,26 @@ ARC9.LoadAttachment(ATT, "csgo_aug_mag_2")
 ------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "40-Round 5.56×45mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.95
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_mag_aug"
+
+ARC9.LoadAttachment(ATT, "csgo_aug_mag_40")
+------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "HBAR Barrel"
 
 ATT.RangeMinMult = 1.25
@@ -1159,6 +1179,8 @@ ATT.ReloadTimeMult = 0.975
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 
+ATT.DropMagazineTimeMult = 0.975
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_m4_mag_20.png", "mips smooth")
@@ -1223,6 +1245,7 @@ ATT.ReloadTimeMult = 1.075
 ATT.DamageMaxMult = 0.75
 ATT.RangeMinMult = 0.5
 ATT.RangeMaxMult = 0.65
+
 ATT.DropMagazineTimeMult = 1.075
 
 table.Merge(ATT, sharedcode)
@@ -1460,6 +1483,8 @@ ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.SpeedMult = 0.975
 
+ATT.DropMagazineTimeMult = 1.1
+
 ATT.ShootSound = "CSGO.M4A4.Fire"
 ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
 
@@ -1478,6 +1503,26 @@ ATT.Icon = Material("entities/attachs/go_scar17_mag_10_50.png", "mips smooth")
 ATT.Category = "go_mag_scar17"
 
 ARC9.LoadAttachment(ATT, "csgo_mk17_mag_2")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62×51mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.95
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_mag_scar17"
+
+ARC9.LoadAttachment(ATT, "csgo_mk17_mag_30")
 ------------------------------------------------------------------------
 ATT = {}
 
@@ -1508,6 +1553,8 @@ ATT.SprintToFireTimeMult = 1.1
 ATT.ReloadTimeMult = 1.15
 ATT.RecoilMult = 1.15
 ATT.VisualRecoilMult = 1.05
+
+ATT.DropMagazineTimeMult = 1.15
 
 ATT.VisualRecoilPositionBumpAdd = -1.25 
 

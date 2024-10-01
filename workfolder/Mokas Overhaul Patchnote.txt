@@ -37,7 +37,7 @@ And here's the long, more detailed version:
 [b]MAC-10[/b]: Reduced recoil | Reduced recoil centering
 [b]MP5[/b]: N/A
 [b]MP5-SD[/b]: Reduced recoil | Increased recoil when auto-firing | Stock is now extended by default; now has access to "Collapsed Stock" attachment
-[b]MP7[/b]: Reduced recoil
+[b]MP7[/b]: Reduced recoil | Removed 2-round burst | Stock is now extended by default; now has access to "Collapsed Stock" attachment
 [b]MP9[/b]: Reduced recoil | Increased recoil when auto-firing
 [b]P90[/b]: Increased recoil | Increased hor. recoil
 [b]PP-Bizon[/b]: N/A
@@ -109,21 +109,31 @@ All attachments have brand new stats with altered behaviour:
 	[*] Stocks: Now alters weapon recoil and/or handling.
 	[*] Magazines: Depending on the type, they now alter weapon capacity, handling, range, spread, recoil and/or damage.
 	[*] Ammo: Now alters weapon range, spread, recoil and/or handling.
-	[*] Perks: Some perks have altered values, and some have been removed due to not working as intended (Enforcer, Ace in the Hole, Last One Out, Head Hunt, Full Stop).
+	[*] Perks: Some perks have altered values, and some have been removed due to not working as intended (Enforcer, Ace in the Hole, Head Hunt, Full Stop).
 [/list]
 And more that's not listed.
 
 [u]New Attachments[/u]
 A few weapons have received brand-new attachments:
 [list]
-	[*] MP5 & MP5-SD: 40-Round Magazine & 30-Round 10x25mm Magazine
+	[*] Removed the generic [b]Extended Mags[/b] on plenty of, but not all weapons, replacing them with correct weapon-specific magazine attachments.
+	This applies to the:
+		[list]
+			[*] Rifles: AUG, SCAR-17
+			[*] Pistols: Beretta, Five-SeveN, Glock-18, P2000, P250, USP-S
+			[*] SMGs: MP5, MP5-SD, MP7, MP9, UMP-45
+			[*] Snipers: Scout
+		[/list]
+	[*] All [b]Dual Wield[/b] weapons will use their respective weapon's extended magazines (except the R8 Revolvers & Sawed-Offs)
+	[*] MP5 & MP5-SD: [b]40-Round Magazine[/b] & [b]30-Round 10x25mm Magazine[/b]
+	[*] SCAR-20: [b]20-Round Magazine (Automatic)[/b] & [b]30-Round Magazine (Automatic)[/b]
 [/list]
 
 [u]New Integrations[/u]
 Added two new sets of attachment integrations:
 [list]
-	[*] Modern Warfare 2019: Support for Optics, Tacticals, Muzzles, Grips and Stocks.
-	[*] PolyArms Project: Support for Optics, Tacticals, Muzzles, Grips and Stocks.
+	[*] Modern Warfare 2019: Support for [b]Optics, Tacticals, Muzzles, Grips & Stocks[/b].
+	[*] PolyArms Project: Support for [b]Optics, Tacticals, Muzzles, Grips & Stocks[/b].
 [/list]
 
 [u]Other Changes[/u]
@@ -133,7 +143,7 @@ Added two new sets of attachment integrations:
 		[list]
 			[*] M4A1-S: [b]A1-S Suppressor[/b]
 			[*] M4A4: [b]Contractor Stock[/b]
-			[*] SIG556: [b]SIG556 Scope[/b]
+			[*] SIG556: [b]SIG556 Scope[/b] & [b]Ergonomic Stock[/b]
 			[*] AWP: [b]AWP Scope[/b]
 			[*] G3SG1: [b]G3SG1 Scope[/b]
 			[*] SCAR-20: [b]SCAR-20 Scope[/b]
@@ -141,7 +151,7 @@ Added two new sets of attachment integrations:
 	[*] Optic: [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
 	[*] Muzzle: [u]Muzzle Brakes[/u] and [u]Suppressors[/u] are no longer placed in a separate folder and are instead unified outside of folders.
 	[*] Perk: [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
-	
+
 	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
 	[*] R8 Revolver: [u]6-Round Cylinder[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.

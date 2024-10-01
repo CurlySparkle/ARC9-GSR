@@ -490,20 +490,20 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = { Bodygroups = { { 1, 1 } } },
-    ["mag_decreased"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_mp9_mag_long"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_mp9_mag_short"] = { Bodygroups = { { 1, 2 } } },
     ["grip"] = { Bodygroups = { { 2, 1 } } },
     ["grip_none"] = { Bodygroups = { { 2, 2 } } },
     ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
     ["stock_none"] = { Bodygroups = { { 3, 2 } } },
     ["stock_adapter"] = { Bodygroups = { { 5, 1 } } },
-    ["barrel_long"] = { 
+    ["csgo_mp9_barrel_long"] = { 
 		Bodygroups = { { 4, 1 } },
-		AttPosMods = { [3] = { Pos = Vector(0, -2.96, 8.55) } }	
+		-- AttPosMods = { [3] = { Pos = Vector(0, -2.96, 8.55) } }	
     },
-    ["barrel_short"] = { 
+    ["csgo_mp9_barrel_short"] = { 
 		Bodygroups = { { 4, 2 } },
-		AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6.8) } }	
+		-- AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6.8) } }	
     },
 }
 
@@ -617,7 +617,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.clip",
-        Category = {"go_mag","go_mag_mp9"},
+        Category = {"go_mag_mp9"},
         Pos = Vector(0, -1, 0),
     },
     {

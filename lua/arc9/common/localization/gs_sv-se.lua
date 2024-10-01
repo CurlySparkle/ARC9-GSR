@@ -1157,6 +1157,10 @@ L["csgo_aug_mag_2.printname"] = "9 × 19 mm 32-Patronersmagasin"
 L["csgo_aug_mag_2.compactname"] = "9 mm+"
 L["csgo_aug_mag_2.description"] = "Konverterar AUG:n till en AUG Para med en 9 × 19 mm magasinsadapter.\n" .. string.format(quicktext.bigmag, 32)
 
+L["csgo_aug_mag_40.printname"] = "5,56 × 45 mm 40-Patronersmagasin"
+L["csgo_aug_mag_40.compactname"] = "5,56 mm+"
+L["csgo_aug_mag_40.description"] = string.format(quicktext.bigmag, 40)
+
 L["csgo_aug_barrel_long.printname"] = "Tung Pipa"
 L["csgo_aug_barrel_long.compactname"] = "Tung"
 L["csgo_aug_barrel_long.description"] = "Längre pipa som används på AUG HBAR."
@@ -1618,6 +1622,10 @@ L["csgo_mp9_mag_short.printname"] = "9 × 19 mm 20-Patronersmagasin"
 L["csgo_mp9_mag_short.compactname"] = "9 mm-"
 L["csgo_mp9_mag_short.description"] = string.format(quicktext.smallmag, 20)
 
+L["csgo_mp9_mag_long.printname"] = "9 × 19 mm 40-Patronersmagasin"
+L["csgo_mp9_mag_long.compactname"] = "9 mm+"
+L["csgo_mp9_mag_long.description"] = string.format(quicktext.bigmag, 40)
+
 /////////////////// Grenades
 L["csgo_nade_timer.printname"] = "Handgranat Tidrör (3 Sekunder)"
 L["csgo_nade_timer.compactname"] = "Tidrör"
@@ -1705,8 +1713,8 @@ L["csgo_p90_barrel_med.printname"] = "PS90-Pipa"
 L["csgo_p90_barrel_med.compactname"] = "PS90"
 L["csgo_p90_barrel_med.description"] = "Medellängd pipa."
 
-L["csgo_p90_mag_30.printname"] = "5.7×28mm 30-Patronersmagasin"
-L["csgo_p90_mag_30.compactname"] = "30S"
+L["csgo_p90_mag_30.printname"] = "5,7 × 28 mm 30-Patronersmagasin"
+L["csgo_p90_mag_30.compactname"] = "5,7 mm-"
 L["csgo_p90_mag_30.description"] = "Sänker storleken och kapaciteten på magasinet med förmån av ökad omladdning hastighet och vapenhantering."
 
 L["csgo_p90_mag_30_stanag.printname"] = "5,56 × 45 mm 30-Patroners NATO-Magasin"
@@ -1762,6 +1770,10 @@ L["csgo_mk17_mag_1.description"] = "Konverterar SCAR-17:n att acceptera 5,56 mm 
 L["csgo_mk17_mag_2.printname"] = "5,56 × 45 mm 30-Patronersmagasin"
 L["csgo_mk17_mag_2.compactname"] = "5,56 mm+"
 L["csgo_mk17_mag_2.description"] = "Konverterar SCAR-17:n att acceptera 5,56 mm magasin.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_mk17_mag_30.printname"] = "7,62 × 51 mm 30-Patronersmagasin"
+L["csgo_mk17_mag_30.compactname"] = "7,62 mm+"
+L["csgo_mk17_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "PDW-Kolv"
 L["csgo_scar17_stock_pdw.compactname"] = "PDW"

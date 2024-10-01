@@ -488,7 +488,7 @@ SWEP.AttachmentElements = {
     ["stock_none"] = { Bodygroups = { { 2, 1 } } },
     ["csgo_scar17_stock_specialized"] = { Bodygroups = { { 2, 3 } } },
     ["csgo_scar17_stock_pdw"] = { Bodygroups = { { 2, 5 } } },
-    ["go_mag_extended"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_mk17_mag_30"] = { Bodygroups = { { 3, 1 } } },
     ["csgo_mk17_mag_1"] = { Bodygroups = { { 3, 4 }, { 0, 1 } } },
     ["csgo_mk17_mag_2"] = { Bodygroups = { { 3, 3 }, { 0, 1 } } },
     ["csgo_scar17_barrel_long"] = { Bodygroups = { { 4, 1 }, { 6, 1 } } },
@@ -578,7 +578,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.SCAR_Clip",
-        Category = {"go_mag", "go_mag_scar17"},
+        Category = {"go_mag_scar17"},
         Pos = Vector(0, 0, -1.5),
     },
     {

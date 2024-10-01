@@ -7,6 +7,8 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.15
 ATT.SpeedMult = 0.975
 
+ATT.DropMagazineTimeMult = 1.2
+
 -- Barrels, Long --
 
 ATT.RangeMinMult = 1.4

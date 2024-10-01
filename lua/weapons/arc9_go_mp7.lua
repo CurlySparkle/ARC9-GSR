@@ -28,7 +28,7 @@ SWEP.Description = ARC9:GetPhrase("csgo_description_mp7")
 
 SWEP.ViewModel = "models/weapons/csgo/c_smg_mp7.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_tmp.mdl"
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "00010"
 
 SWEP.Slot = 2
 
@@ -198,6 +198,20 @@ SWEP.IronSights = {
     ViewModelFOV = 70,
 }
 
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["csgo_mp7_iron2"] then
+        return {
+			Pos = Vector(-5.25, -7.5, 1.6),
+			Ang = Angle(0.1, -1, -0),
+			Magnification = 1.1,
+			ViewModelFOV = 70,
+        }
+    end
+
+end
+
 SWEP.ViewModelFOVBase = 56
 
 SWEP.SprintPos = Vector(-1, -2, -0.5)
@@ -333,7 +347,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "mp7_clipout.wav", t = 9/30},
-            {s = path .. "mp7_clipin.wav", t = 41/30}, }, },
+            {s = path .. "mp7_clipin.wav", t = 37/30},
+		},
+	},
     ["reload_empty"] = {
         Source = "reload",
 		RefillProgress = 0.8,
@@ -363,9 +379,11 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "mp7_clipout.wav", t = 9/30},
-            {s = path .. "mp7_clipin.wav", t = 41/30},
+            {s = path .. "mp7_clipin.wav", t = 37/30},
             {s = path .. "mp7_slideback.wav", t = 63/30},
-            {s = path .. "mp7_slideforward.wav", t = 70/30}, }, },
+            {s = path .. "mp7_slideforward.wav", t = 70/30},
+		},
+	},
     ["reload_smallmag"] = {
         Source = "reload_short_smallmag",
 		RefillProgress = 0.675,
@@ -395,7 +413,9 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "mp7_clipout.wav", t = 9/30},
-            {s = path .. "mp7_clipin.wav", t = 41/30}, }, },
+            {s = path .. "mp7_clipin.wav", t = 41/30},
+		},
+	},
     ["reload_empty_smallmag"] = {
         Source = "reload_smallmag",
 		RefillProgress = 0.8,
@@ -427,7 +447,9 @@ SWEP.Animations = {
             {s = path .. "mp7_clipout.wav", t = 9/30},
             {s = path .. "mp7_clipin.wav", t = 41/30},
             {s = path .. "mp7_slideback.wav", t = 63/30},
-            {s = path .. "mp7_slideforward.wav", t = 70/30}, }, },
+            {s = path .. "mp7_slideforward.wav", t = 70/30},
+		},
+	},
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -455,7 +477,9 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "mp7_draw.wav", t = 0/30},
             {s = path .. "mp7_slideback.wav", t = 8/30},
-            {s = path .. "mp7_slideforward.wav", t = 13/30}, }, },
+            {s = path .. "mp7_slideforward.wav", t = 13/30},
+		},
+	},
     ["draw"] = {
         Source = "draw_short",
     },
@@ -463,7 +487,9 @@ SWEP.Animations = {
         Source = "holster",
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
-            {s = "CSGO.Item.Movement", t = 0/30}, }, },
+            {s = "CSGO.Item.Movement", t = 0/30},
+		},
+	},
     ["idle"] = {
         Source = "idle",
     },
@@ -509,7 +535,9 @@ SWEP.Animations = {
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
             {s = "weapons/csgo/movement2.wav", t = 92/30},
-            {s = "weapons/csgo/movement3.wav", t = 116/30}, }, },
+            {s = "weapons/csgo/movement3.wav", t = 116/30},
+		},
+	},
     ["bash"] = {
         Source = {"melee", "melee2", "melee3"},
         IKTimeLine = {
@@ -532,7 +560,9 @@ SWEP.Animations = {
                 t = 1,
                 lhik = 1,
                 rhik = 1
-            }, }, },
+            },
+		},
+	},
 }
 
 --SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
@@ -543,10 +573,11 @@ SWEP.AttachmentElements = {
     ["mount"] = { Bodygroups = { { 1, 1 }, }, },
     ["grip"] = { Bodygroups = { { 2, 1 }, }, }, 
 	["grip_folded"] = { Bodygroups = { {2, 2 }, }, },
+    ["stock_retract"] = { Bodygroups = { { 3, 0 }, }, },
     ["stock_extend"] = { Bodygroups = { { 3, 1 }, }, },
     ["stock_none"] = { Bodygroups = { { 3, 2 }, }, },
-    ["mag_20"] = { Bodygroups = { { 4, 1 }, }, },
-    ["mag_40"] = { Bodygroups = { { 4, 2 }, }, },
+    ["csgo_mp7_mag_short"] = { Bodygroups = { { 4, 1 }, }, },
+    ["csgo_mp7_mag_long"] = { Bodygroups = { { 4, 2 }, }, },
     ["stock_adapter"] = { Bodygroups = { { 5, 1 }, }, },
     ["grip_rail"] = { Bodygroups = { { 6, 1 }, }, },
 }
@@ -640,7 +671,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
         DefaultAttName = "Default",
-        Category = {"csgo_tube","stock_extend"},
+        Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.mp7_parent",
 		InstalledElements = {"stock_adapter"},
         Pos = Vector(-0.01, -2.65, -5.2),

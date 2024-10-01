@@ -1162,6 +1162,10 @@ L["csgo_aug_mag_2.printname"] = "32-Round 9×19mm Magazine"
 L["csgo_aug_mag_2.compactname"] = "9mm+"
 L["csgo_aug_mag_2.description"] = "Converts the AUG into the AUG Para using a 9×19mm magazine adapter.\n" .. string.format(quicktext.bigmag, 32)
 
+L["csgo_aug_mag_40.printname"] = "40-Round 5.56×45mm Magazine"
+L["csgo_aug_mag_40.compactname"] = "5.56mm+"
+L["csgo_aug_mag_40.description"] = string.format(quicktext.bigmag, 40)
+
 L["csgo_aug_barrel_long.printname"] = "Heavy Barrel"
 L["csgo_aug_barrel_long.compactname"] = "Heavy"
 L["csgo_aug_barrel_long.description"] = "Longer barrel used on the AUG HBAR."
@@ -1623,6 +1627,10 @@ L["csgo_mp9_mag_short.printname"] = "20-Round 9×19mm Magazine"
 L["csgo_mp9_mag_short.compactname"] = "9mm-"
 L["csgo_mp9_mag_short.description"] = string.format(quicktext.smallmag, 20)
 
+L["csgo_mp9_mag_long.printname"] = "40-Round 9×19mm Magazine"
+L["csgo_mp9_mag_long.compactname"] = "9mm+"
+L["csgo_mp9_mag_long.description"] = string.format(quicktext.bigmag, 40)
+
 /////////////////// Grenades
 L["csgo_nade_timer.printname"] = "Grenade Fuse (3 Seconds)"
 L["csgo_nade_timer.compactname"] = "Fuse"
@@ -1767,6 +1775,10 @@ L["csgo_mk17_mag_1.description"] = "Converts the SCAR-17 to accept 5.56mm magazi
 L["csgo_mk17_mag_2.printname"] = "30-Round 5.56×45mm Magazine"
 L["csgo_mk17_mag_2.compactname"] = "5.56mm+"
 L["csgo_mk17_mag_2.description"] = "Converts the SCAR-17 to accept 5.56mm magazines.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_mk17_mag_30.printname"] = "30-Round 7.62×51mm Magazine"
+L["csgo_mk17_mag_30.compactname"] = "7.62mm+"
+L["csgo_mk17_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 L["csgo_scar17_stock_pdw.printname"] = "PDW Stock"
 L["csgo_scar17_stock_pdw.compactname"] = "PDW"
