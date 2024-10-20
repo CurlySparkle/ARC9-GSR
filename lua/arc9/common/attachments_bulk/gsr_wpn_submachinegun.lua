@@ -715,7 +715,7 @@ ATT.DamageMaxMult = 1.375
 ATT.DamageMinMult = 3
 ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.5
-ATT.RPMMult = 0.7775
+ATT.RPMAdd = -191
 ATT.RecoilMult = 1.3
 
 ATT.ShootSound = "CSGO.M4A4.Fire"
@@ -756,7 +756,7 @@ ATT.DamageMaxMult = 1.375
 ATT.DamageMinMult = 3
 ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.5
-ATT.RPMMult = 0.7775
+ATT.RPMAdd = -191
 ATT.RecoilMult = 1.3
 
 ATT.ShootSound = "CSGO.M4A4.Fire"
@@ -1065,7 +1065,7 @@ ATT.SpeedMult = 0.975
 ATT.DropMagazineTimeMult = 1.1
 
 ATT.DamageMinMult = 0.8
-ATT.RPMMult = 1.165
+ATT.RPMAdd = 100
 ATT.RecoilMult = 0.85
 
 table.Merge(ATT, sharedcode)
