@@ -229,7 +229,7 @@ SWEP.CustomizeNoRotate = false
 
 SWEP.PeekMaxFOV = 56
 
-SWEP.PeekPos = Vector(-1, -2, -4)
+SWEP.PeekPos = Vector(-1, 2, -3)
 SWEP.PeekAng = Angle(-0.3, 0, -30)
 
 -------------------------- HoldTypes

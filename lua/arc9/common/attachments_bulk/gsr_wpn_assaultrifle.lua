@@ -1585,6 +1585,9 @@ ATT.ActivePos = Vector(0, -5, -0.5)
 ATT.SprintPos = Vector(3, 0, 0)
 
 ATT.CustomizePos = Vector(21, 45, 6.5)
+ATT.CustomizeRotateAnchor = Vector(21, -3.75, -1)
+
+ATT.PeekPos = Vector(-1, 1, -3)
 
 ATT.Element = {
     AttPosMods = {
