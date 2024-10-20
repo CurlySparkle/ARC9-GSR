@@ -74,7 +74,7 @@ L["csgo_firemode_plantable"] = "ЗАКЛАДЫВАЕМОЕ"
 L["csgo_firemode_sil"] = "НАДЕТ"
 L["csgo_firemode_nosil"] = "СНЯТ"
 
-/////////////////// Weapon Categories
+/////////////////// (Old) Weapon Categories
 L["csgo_category_weapon_akimbo"] = "Двойное"
 L["csgo_category_weapon_ar"] = "Штурмовые винтовки"
 L["csgo_category_weapon_extra"] = "Дополнительно"
@@ -84,6 +84,15 @@ L["csgo_category_weapon_pistol"] = "Пистолеты"
 L["csgo_category_weapon_shotgun"] = "Дробовики"
 L["csgo_category_weapon_sniper"] = "Снайперские винтовки"
 L["csgo_category_weapon_smg"] = "ПП"
+
+/////////////////// Weapon Categories
+L["csgo_category_slot_0"] = "0. Два оружия"
+L["csgo_category_slot_1"] = "1. Пистолеты"
+L["csgo_category_slot_2"] = "2. Тяжелое оружие"
+L["csgo_category_slot_3"] = "3. Пистолеты-пулемёты"
+L["csgo_category_slot_4"] = "4. Штурмовые винтовки"
+L["csgo_category_slot_5"] = "5. Гранаты"
+L["csgo_category_slot_6"] = "6. Разное"
 
 /////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Штурмовая винтовка"
@@ -1713,15 +1722,15 @@ L["csgo_p90_barrel_med.description"] = "Ствол средней длины."
 
 L["csgo_p90_mag_30.printname"] = "30-зарядный магазин 5.7×28-мм"
 L["csgo_p90_mag_30.compactname"] = "5.7-мм-"
-L["csgo_p90_mag_30.description"] = "Уменьшает размер и ёмкость магазина с преимуществом в виде повышения скорости перезарядки и эргономичности оружия."
+L["csgo_p90_mag_30.description"] = string.format(quicktext.smallmag, 30)
 
 L["csgo_p90_mag_30_stanag.printname"] = "30-зарядный магазин 5,56×45-мм НАТО"
 L["csgo_p90_mag_30_stanag.compactname"] = "НАТО-"
-L["csgo_p90_mag_30_stanag.description"] = "Франкенштейный модуль к P90 - магазин STANAG на 30 патронов 5,56×45-мм.\n\nЕсть смысл начать терапию."
+L["csgo_p90_mag_30_stanag.description"] = "Франкенштейный модуль к P90 - магазин STANAG на <color=255,100,100>30 патронов</color> 5,56×45-мм.\n\nЕсть смысл начать терапию."
 
 L["csgo_p90_mag_20_stanag.printname"] = "20-зарядный магазин 5,56×45-мм НАТО"
 L["csgo_p90_mag_20_stanag.compactname"] = "НАТО--"
-L["csgo_p90_mag_20_stanag.description"] = "Франкенштейный модуль к P90 - магазин STANAG на 20 патронов 5,56×45-мм.\n\nМой терапевт не отвечает..."
+L["csgo_p90_mag_20_stanag.description"] = "Франкенштейный модуль к P90 - магазин STANAG на <color=255,100,100>20 патронов</color> 5,56×45-мм.\n\nМой терапевт не отвечает..."
 
 /////////////////// Sawed-Off
 L["csgo_sawedoff_mag_5.printname"] = "5-зарядное цевьё"
@@ -1878,6 +1887,10 @@ L["csgo_ump_mag_15.description"] = string.format(quicktext.smallmag, 12)
 L["csgo_ump_mag_30_9.printname"] = "30-зарядный магазин 9×19-мм"
 L["csgo_ump_mag_30_9.compactname"] = "9-мм"
 L["csgo_ump_mag_30_9.description"] = "Переделывает UMP-45 под стрельбу патронами 9х19-мм из магазина UMP-9."
+
+L["csgo_ump_mag_30.printname"] = "30-зарядный магазин .45 ACP"
+L["csgo_ump_mag_30.compactname"] = ".45 ACP+"
+L["csgo_ump_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 /////////////////// USP-S
 L["csgo_usp_slide_long.printname"] = "Затвор и ствол Elite"

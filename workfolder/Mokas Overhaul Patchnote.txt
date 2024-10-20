@@ -155,6 +155,7 @@ Added two new sets of attachment integrations:
 	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
 	[*] R8 Revolver: [u]6-Round Cylinder[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
+	[*] P90: The [u]20-Round[/u] and [u]30-Round 5.56x45mm NATO[/b] magazines now change the damage, range and RPM to be closer to the M4A4.
 [/list]
 
 [b][u]Other[/u][/b]

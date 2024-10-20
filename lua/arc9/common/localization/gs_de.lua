@@ -74,7 +74,7 @@ L["csgo_firemode_plantable"] = "SETZBAR"
 L["csgo_firemode_sil"] = "AN"
 L["csgo_firemode_nosil"] = "AUS"
 
-/////////////////// Weapon Categories
+/////////////////// (Old) Weapon Categories
 L["csgo_category_weapon_akimbo"] = "Dual-Waffen"
 L["csgo_category_weapon_ar"] = "Sturmgewehre"
 L["csgo_category_weapon_extra"] = "Extras"
@@ -84,6 +84,15 @@ L["csgo_category_weapon_pistol"] = "Pistolen"
 L["csgo_category_weapon_shotgun"] = "Schrotflinten"
 L["csgo_category_weapon_sniper"] = "Scharfschützengewehre"
 L["csgo_category_weapon_smg"] = "MPs"
+
+/////////////////// Weapon Categories
+L["csgo_category_slot_0"] = "0. Akimbo"
+L["csgo_category_slot_1"] = "1. Pistole"
+L["csgo_category_slot_2"] = "2. Schwer"
+L["csgo_category_slot_3"] = "3. MPs"
+L["csgo_category_slot_4"] = "4. Gewehre"
+L["csgo_category_slot_5"] = "5. Granaten"
+L["csgo_category_slot_6"] = "6. Verschiedenes"
 
 /////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Sturmgewehr"
@@ -113,20 +122,20 @@ L["csgo_weapon_ak47_aks74u"] = "AKS-74U"
 L["csgo_weapon_ak47_ak101"] = "AK-101"
 L["csgo_weapon_ak47_rpk201"] = "RPK-201"
 
-L["csgo_weapon_akimbo_cz75"] = "Dual CZ75-Auto"
-L["csgo_weapon_akimbo_deagle"] = "Dual Desert Eagle"
-L["csgo_weapon_akimbo_fiveseven"] = "Dual Five-SeveN"
-L["csgo_weapon_akimbo_glock"] = "Dual Glock-18"
-L["csgo_weapon_akimbo_mp9"] = "Dual MP9"
-L["csgo_weapon_akimbo_p250"] = "Dual P250"
-L["csgo_weapon_akimbo_p2000"] = "Dual P2000"
+L["csgo_weapon_akimbo_cz75"] = "Akimbo CZ75-Auto"
+L["csgo_weapon_akimbo_deagle"] = "Akimbo Desert Eagle"
+L["csgo_weapon_akimbo_fiveseven"] = "Akimbo Five-SeveN"
+L["csgo_weapon_akimbo_glock"] = "Akimbo Glock-18"
+L["csgo_weapon_akimbo_mp9"] = "Akimbo MP9"
+L["csgo_weapon_akimbo_p250"] = "Akimbo P250"
+L["csgo_weapon_akimbo_p2000"] = "Akimbo P2000"
 
-L["csgo_weapon_akimbo_r8"] = "Dual R8-Revolver"
-L["csgo_weapon_akimbo_r8_357"] = "Dual .357-Revolver"
+L["csgo_weapon_akimbo_r8"] = "Akimbo R8-Revolver"
+L["csgo_weapon_akimbo_r8_357"] = "Akimbo .357-Revolver"
 
-L["csgo_weapon_akimbo_sawnoff"] = "Dual Sawed-Offs"
-L["csgo_weapon_akimbo_taser"] = "Dual Zeus x27"
-L["csgo_weapon_akimbo_usp"] = "Dual USP"
+L["csgo_weapon_akimbo_sawnoff"] = "Akimbo Abgesägte Schrotflinte"
+L["csgo_weapon_akimbo_taser"] = "Akimbo Zeus x27"
+L["csgo_weapon_akimbo_usp"] = "Akimbo USP"
 
 L["csgo_weapon_aug"] = "AUG"
 L["csgo_weapon_aug_para"] = "AUG Para"
@@ -139,7 +148,7 @@ L["csgo_weapon_bizon_vityaz"] = "PP-Vityaz"
 
 L["csgo_weapon_cz75"] = "CZ75-Auto"
 L["csgo_weapon_deagle"] = "Desert Eagle"
-L["csgo_weapon_elite"] = "Dual Berettas"
+L["csgo_weapon_elite"] = "Akimbo-Berettas"
 L["csgo_weapon_elite_single"] = "Beretta"
 L["csgo_weapon_famas"] = "FAMAS"
 L["csgo_weapon_fiveseven"] = "Five-SeveN"
@@ -233,7 +242,7 @@ L["csgo_weapon_p2000"] = "P2000"
 L["csgo_weapon_r8"] = "R8-Revolver"
 L["csgo_weapon_r8_357"] = ".357-Revolver"
 
-L["csgo_weapon_sawedoff"] = "Abgesägt"
+L["csgo_weapon_sawedoff"] = "Abgesägte Schrotflinte"
 L["csgo_weapon_sawedoff_r870"] = "Remington 870"
 
 L["csgo_weapon_scar17"] = "SCAR-17"
@@ -1704,7 +1713,7 @@ L["csgo_p90_nosock.compactname"] = "Kompakt"
 L["csgo_p90_nosock.description"] = "Frankensteins der Rahmen des P90, indem der größte Teil des Hecks entfernt und ihm ein herkömmlicher Pistolengriff gegeben wurde."
 
 L["csgo_p90_top_2.printname"] = "Alternative obere Abdeckung"
-L["csgo_p90_top_2.compactname"] = "Alternative Abdeckung"
+L["csgo_p90_top_2.compactname"] = "Alt. Abdeckung"
 L["csgo_p90_top_2.description"] = "Ersetzt die obere Abdeckung des P90 durch eine modernere."
 
 L["csgo_p90_barrel_med.printname"] = "PS90-Lauf"
@@ -1713,15 +1722,15 @@ L["csgo_p90_barrel_med.description"] = "Mittellanger Lauf."
 
 L["csgo_p90_mag_30.printname"] = "5,7 × 28 mm 30-Schuss-Magazin"
 L["csgo_p90_mag_30.compactname"] = "5,7 mm-"
-L["csgo_p90_mag_30.description"] = "Verringert die Größe und Kapazität des Magazins mit dem Vorteil einer verbesserten Nachladegeschwindigkeit und Waffenhandhabung."
+L["csgo_p90_mag_30.description"] = string.format(quicktext.smallmag, 30)
 
 L["csgo_p90_mag_30_stanag.printname"] = "30-Schuss 5,56 × 45 mm NATO-Magazin"
 L["csgo_p90_mag_30_stanag.compactname"] = "NATO-"
-L["csgo_p90_mag_30_stanag.description"] = "Frankenstein bringt ein 30-Schuss-5,56×45-mm-STANAG-Magazin an der P90 an.\n\nIch brauche eine Therapie."
+L["csgo_p90_mag_30_stanag.description"] = "Frankenstein bringt ein <color=255,100,100>30-Schuss</color>-5,56×45-mm-STANAG-Magazin an der P90 an.\n\nIch brauche eine Therapie."
 
 L["csgo_p90_mag_20_stanag.printname"] = "20-Schuss 5,56 × 45 mm NATO-Magazin"
 L["csgo_p90_mag_20_stanag.compactname"] = "NATO--"
-L["csgo_p90_mag_20_stanag.description"] = "Frankenstein bringt ein 20-Schuss-5,56×45-mm-STANAG-Magazin an der P90 an.\n\nMein Therapeut antwortet nicht..."
+L["csgo_p90_mag_20_stanag.description"] = "Frankenstein bringt ein <color=255,100,100>20-Schuss</color>-5,56×45-mm-STANAG-Magazin an der P90 an.\n\nMein Therapeut antwortet nicht..."
 
 /////////////////// Sawed-Off
 L["csgo_sawedoff_mag_5.printname"] = "5-Rundlauf"
@@ -1878,6 +1887,10 @@ L["csgo_ump_mag_15.description"] = string.format(quicktext.smallmag, 12)
 L["csgo_ump_mag_30_9.printname"] = "30-Runde 9×19mm-Magazin"
 L["csgo_ump_mag_30_9.compactname"] = "9 mm"
 L["csgo_ump_mag_30_9.description"] = "Verwandelt den UMP-45 in das Abfeuern von 9 x 19-mm-Patronen aus einem UMP-9-Magazin."
+
+L["csgo_ump_mag_30.printname"] = "30-Runden .45 ACP-Magazin"
+L["csgo_ump_mag_30.compactname"] = ".45 ACP+"
+L["csgo_ump_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 /////////////////// USP-S
 L["csgo_usp_slide_long.printname"] = "Elite Schlitten und Lauf"

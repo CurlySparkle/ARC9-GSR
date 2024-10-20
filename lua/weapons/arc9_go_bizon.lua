@@ -4,7 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_smg")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_3")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_bizon")
 
@@ -659,26 +659,26 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["stock_retract"] = { Bodygroups = { { 1, 1 } } },
     ["stock_none"] = {
-		AttPosMods = { [17] = { Pos = Vector(0.75, 13.25, 0.5), } },
+		-- AttPosMods = { [17] = { Pos = Vector(0.75, 13.25, 0.5), } },
 		Bodygroups = { { 1, 2 } } },
-    ["barrel_mid"] = { 
+    ["csgo_bizon_barrel_mid"] = { 
 		Bodygroups = { { 2, 1 }, { 3, 1 } },
-		AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18), } }	
+		-- AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18), } }	
     },
-    ["barrel_long"] = { 
+    ["csgo_bizon_barrel_long"] = { 
 		Bodygroups = { { 2, 2 }, { 3, 2 } },
-		AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18.5), } }	
+		-- AttPosMods = { [2] = { Pos = Vector(0, -3.15, 18.5), } }	
     },
     ["muzzle_none"] = { Bodygroups = { { 3, 3 } } },
-    ["mag_82"] = { Bodygroups = { { 4, 2 } } },
-    ["mag_47"] = { Bodygroups = { { 4, 1 } } },
-    ["mag_saiga"] = { Bodygroups = { { 4, 3 }, { 5, 1 } } },
+    ["csgo_bizon_mag_82"] = { Bodygroups = { { 4, 2 } } },
+    ["csgo_bizon_mag_47"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_bizon_mag_saiga"] = { Bodygroups = { { 4, 3 }, { 5, 1 } } },
     ["csgo_rail_optic_2_alt"] = { AttPosMods = { [3] = { Pos = Vector(0.02, -4, 3.5) } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("mag_saiga") and wep:HasElement("barrel_long") then model:SetBodygroup(5,2) end	
+	if wep:HasElement("csgo_bizon_mag_saiga") and wep:HasElement("csgo_bizon_barrel_long") then model:SetBodygroup(5,2) end	
 end
 
 SWEP.HookP_NameChange = function(self, name)

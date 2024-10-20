@@ -4,7 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_pistol")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_1")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_fiveseven")
 

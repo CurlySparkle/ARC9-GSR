@@ -522,12 +522,21 @@ ATT = {}
 
 ATT.PrintName = "Extended Barrel and RIS Handguard"
 
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.SpreadMultRecoil = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
+
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/p90_extended_barrel.png", "mips smooth")
 
-ATT.Category = {"go_p90_barrel","cod2019_p90_barrel"}
-ATT.ActivateElements = {"ext_barrel", "p90_ris","gsr_p90_extbarrel"}
+ATT.Category = {"go_p90_barrel", "cod2019_p90_barrel"}
+ATT.ActivateElements = { "ext_barrel", "p90_ris", "gsr_p90_extbarrel" }
 
 ATT.Model = "models/weapons/csgo/atts/p90_extended_barrel.mdl"
 ATT.ModelOffset = Vector(-10, 0, -1)
@@ -540,16 +549,342 @@ ATT.Attachments = {
         Pos = Vector(-2.5, 0, 1.1),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0),
-		ExcludeElements = {"cod2019_p90_b"},
     },
 }
 
+ATT.Element = {
+    AttPosMods = {
+		[4] = { Pos = Vector(0, -3.05, 13.2) }, -- Muzzle
+		[5] = { Pos = Vector(-0.85, -2.77, 9) }, -- Tactical
+	}
+}
+
 ARC9.LoadAttachment(ATT, "go_p90_extendedbarrel")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Sling"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p90_sling.png", "mips smooth")
+
+ATT.Category = {"go_p90_sling"}
+
+ARC9.LoadAttachment(ATT, "csgo_p90_sling")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Compact Frame"
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_p90_sling.png", "mips smooth")
+
+ATT.Category = {"go_p90_sling"}
+
+ARC9.LoadAttachment(ATT, "csgo_p90_nosock")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alt Top Cover"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p90_top_2.png", "mips smooth")
+
+ATT.Category = {"go_p90_top"}
+
+ATT.Sights = {
+    {
+		Pos = Vector(-0.06,8,-3.1),
+		Ang = Angle(0.25, 0.1, -0),
+        ViewModelFOV = 56,
+        Magnification = 1.15,
+        IsIronSight  = true,
+		KeepBaseIrons = false,
+    },
+}
+
+ATT.Element = {
+    AttPosMods = {
+		[1] = { Pos = Vector(0, -6.25, 4), }, -- Optics
+		[5] = { Pos = Vector(-0.9, -5.5, 5.5), }, -- Tactical
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_p90_top_2")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative Holding (P90)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/holdstyle.png", "mips smooth")
+
+ATT.Category = {"grip_p90"}
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_p90.mdl"
+ATT.ModelOffset = Vector(1, -0.55, -0.3)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ARC9.LoadAttachment(ATT, "csgo_p90_hold")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (P90)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = {"go_p90_view"}
+
+ATT.ActivePos = Vector(-1.5, -2, -1)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.5, -2.5, -1.3)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.5, -2.5, -1.5)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.ViewModelFOVBase = 65
+
+ARC9.LoadAttachment(ATT, "csgo_p90_view")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "PS90 Barrel"
+
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ATT.SpreadMultRecoil = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p90_barrel_med.png", "mips smooth")
+
+ATT.Category = {"go_p90_barrel"}
+
+ATT.Element = {
+    AttPosMods = {
+        [4] = { Pos = Vector(0, -3.05, 9.7) } -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_p90_barrel_med")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 5.7×28mm Magazine"
+
+ATT.ClipSizeAdd = -20
+
+ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.DropMagazineTimeMult = 0.9
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p90_mag_30.png", "mips smooth")
+
+ATT.Category = {"go_p90_mag"}
+
+ARC9.LoadAttachment(ATT, "csgo_p90_mag_30")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56×45mm NATO Magazine"
+
+ATT.ClipSizeAdd = -20
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.DamageMaxMult = 1.375
+ATT.DamageMinMult = 3
+ATT.RangeMaxMult = 1.5
+ATT.RangeMinMult = 1.5
+ATT.RPMMult = 0.7775
+ATT.RecoilMult = 1.3
+
+ATT.ShootSound = "CSGO.M4A4.Fire"
+ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.m4a4.Distance_Fire"
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_ace_mag_60.png", "mips smooth")
+
+ATT.Category = {"go_p90_mag"}
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_stanag30"
+    end
+
+end
+
+ARC9.LoadAttachment(ATT, "csgo_p90_mag_30_stanag")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "20-Round 5.56×45mm NATO Magazine"
+
+ATT.ClipSizeAdd = -30
+
+ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.DropMagazineTimeMult = 0.9
+
+ATT.DamageMaxMult = 1.375
+ATT.DamageMinMult = 3
+ATT.RangeMaxMult = 1.5
+ATT.RangeMinMult = 1.5
+ATT.RPMMult = 0.7775
+ATT.RecoilMult = 1.3
+
+ATT.ShootSound = "CSGO.M4A4.Fire"
+ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
+ATT.DistantShootSound = "CSGO.m4a4.Distance_Fire"
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 3
+
+ATT.Icon = Material("entities/attachs/go_m4_mag_20.png", "mips smooth")
+
+ATT.Category = {"go_p90_mag"}
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_stanag20"
+    end
+
+end
+
+ARC9.LoadAttachment(ATT, "csgo_p90_mag_20_stanag")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// PP-Bizon
 
+ATT = {}
+
+ATT.PrintName = "GRU Barrel"
+
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.SpreadMultRecoil = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_bizon_barrel_long.png", "mips smooth")
+ATT.Category = "go_bizon_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -3.15, 18.5) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "FSB Barrel"
+
+ATT.RangeMinMult = 1.3
+ATT.RangeMaxMult = 1.3
+ATT.PhysBulletMuzzleVelocityMult = 1.125
+
+ATT.SpreadMultRecoil = 1.075
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_bizon_barrel_med.png", "mips smooth")
+ATT.Category = "go_bizon_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -3.15, 18) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_barrel_mid")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "47-Round 9×19mm Helical Magazine"
+
+ATT.ClipSizeAdd = -17
+
+ATT.ReloadTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.95
+ATT.SpeedMult = 1.025
+
+ATT.DropMagazineTimeMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_bizon_mag_47.png", "mips smooth")
+ATT.Category = "go_bizon_mag"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_mag_47")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "82-Round 9×19mm Helical Magazine"
+
+ATT.ClipSizeAdd = 18
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.95
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_bizon_mag_82.png", "mips smooth")
+ATT.Category = "go_bizon_mag"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_alt"
+end
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_mag_82")
+------------------------------------------------------------------------
 ATT = {}
 
 ATT.PrintName = "30-Round 9mm Saiga"
@@ -580,19 +915,181 @@ end
 
 ARC9.LoadAttachment(ATT, "csgo_bizon_mag_saiga")
 ------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative Hold (PP-Bizon)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Folder = ARC9:GetPhrase("csgo_folder_holdtype")
+ATT.Icon = Material("entities/attachs/holdstyle.png", "mips smooth")
+ATT.Category = "grip_bizon"
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_bizon.mdl"
+ATT.ModelOffset = Vector(1.4, -0.3, -2.7)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
+
+ATT.LHIK_Priority = 5
+ATT.LHIK = true
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_hold_2")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (PP-Bizon)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "go_bizon_view"
+
+ATT.ActivePos = Vector(-1.5, -3, 0)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.5, -4, -0.5)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.5, -4, -0.5)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_bizon_view")
+------------------------------------------------------------------------
 
 
 ////////////////////////////////////// UMP-45
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Alternative View (UMP-45)"
 
--- table.Merge(ATT, sharedcode)
+table.Merge(ATT, sharedcode)
 
 -- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.Category = "go_ump_view"
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+ATT.ActivePos = Vector(-1.4, -4.5, 0)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.4, -5, -0.5)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.4, -5, -0.5)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.ViewModelFOVBase = 54
+
+ARC9.LoadAttachment(ATT, "csgo_ump_view_alt")
 ------------------------------------------------------------------------
+ATT = {}
 
+ATT.PrintName = "USC Barrel"
+
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.SpreadMultRecoil = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ump_barrel_long.png", "mips smooth")
+ATT.Category = "go_ump_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -3.95, 20.4) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_ump_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "H&K Barrel"
+
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ATT.SpreadMultRecoil = 1.075
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ump_barrel_med.png", "mips smooth")
+ATT.Category = "go_ump_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, -3.95, 17.5) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_ump_barrel_mid")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "12-Round .45 ACP Magazines"
+
+ATT.ClipSizeAdd = -13
+
+ATT.ReloadTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.95
+ATT.SpeedMult = 1.025
+
+ATT.DropMagazineTimeMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ump_mag_12.png", "mips smooth")
+ATT.Category = "go_ump_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_ump_mag_15")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 9×19mm Magazines"
+
+ATT.ClipSizeAdd = 5
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+ATT.DamageMinMult = 0.8
+ATT.RPMMult = 1.165
+ATT.RecoilMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ump_mag_30_9mm.png", "mips smooth")
+ATT.Category = "go_ump_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_ump_mag_30_9")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round .45 ACP Magazines"
+
+ATT.ClipSizeAdd = 5
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m4_mag_30_9mm.png", "mips smooth")
+ATT.Category = "go_ump_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_ump_mag_30")
+------------------------------------------------------------------------

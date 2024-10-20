@@ -80,7 +80,7 @@ L["csgo_firemode_plantable"] = "PLANTABLE"
 L["csgo_firemode_sil"] = "ON"
 L["csgo_firemode_nosil"] = "OFF"
 
-/////////////////// Weapon Categories
+/////////////////// (Old) Weapon Categories
 L["csgo_category_weapon_akimbo"] = "Dual Wield"
 L["csgo_category_weapon_ar"] = "Assault Rifles"
 L["csgo_category_weapon_extra"] = "Extras"
@@ -90,6 +90,15 @@ L["csgo_category_weapon_pistol"] = "Pistols"
 L["csgo_category_weapon_shotgun"] = "Shotguns"
 L["csgo_category_weapon_sniper"] = "Sniper Rifles"
 L["csgo_category_weapon_smg"] = "SMGs"
+
+/////////////////// Weapon Categories
+L["csgo_category_slot_0"] = "0. Dual"
+L["csgo_category_slot_1"] = "1. Pistol"
+L["csgo_category_slot_2"] = "2. Heavy"
+L["csgo_category_slot_3"] = "3. SMG"
+L["csgo_category_slot_4"] = "4. Rifle"
+L["csgo_category_slot_5"] = "5. Grenades"
+L["csgo_category_slot_6"] = "6. Miscellaneous"
 
 /////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Assault Rifle"
@@ -1232,7 +1241,7 @@ L["csgo_bizon_mag_saiga.printname"] = "30-Round 9×19mm Saiga Magazine"
 L["csgo_bizon_mag_saiga.compactname"] = "Saiga"
 L["csgo_bizon_mag_saiga.description"] = "Attaches a traditional magwell which accepts a standard, lower capacity magazine holding <color=255,100,100>30 rounds</color>."
 
-L["csgo_bizon_hold_2.printname"] = "Alt. Hold II"
+L["csgo_bizon_hold_2.printname"] = "Alt. Hold Style II"
 L["csgo_bizon_hold_2.compactname"] = "Alt. Hold II"
 
 /////////////////// CZ75-Auto
@@ -1885,6 +1894,10 @@ L["csgo_ump_mag_15.description"] = string.format(quicktext.smallmag, 12)
 L["csgo_ump_mag_30_9.printname"] = "30-Round 9×19mm Magazines"
 L["csgo_ump_mag_30_9.compactname"] = "9mm"
 L["csgo_ump_mag_30_9.description"] = "Converts the UMP-45 into firing 9×19mm rounds from a UMP-9 magazine."
+
+L["csgo_ump_mag_30.printname"] = "30-Round .45 ACP Magazines"
+L["csgo_ump_mag_30.compactname"] = ".45 ACP+"
+L["csgo_ump_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 /////////////////// USP-S
 L["csgo_usp_slide_long.printname"] = "Elite Slide and Barrel"

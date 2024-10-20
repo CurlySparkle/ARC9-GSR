@@ -4,7 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_akimbo")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_akimbo_taser")
 

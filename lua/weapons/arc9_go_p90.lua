@@ -4,7 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_smg")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_3")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_p90")
 
@@ -621,41 +621,21 @@ SWEP.Animations = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("top_rail") and wep.Attachments[1].Installed then model:SetBodygroup(2,2) end
+    if wep:HasElement("csgo_p90_top_2") and wep.Attachments[1].Installed then model:SetBodygroup(2,2) end
     if wep:HasElement("muzzle_none") and wep.Attachments[3].Installed then model:SetBodygroup(6,2) end
 end
 
 SWEP.DefaultBodygroups = "0000000000000"
 
 SWEP.AttachmentElements = {
-	["no_stock"] = { Bodygroups = { { 0, 1 } } },
-    ["top_rail"] = {
-		Bodygroups = { { 1, 1 }, { 2, 1 }, { 4, 1 } },
-		AttPosMods = { 
-			[1] = { Pos = Vector(0, -6.25, 4), },
-			[5] = { Pos = Vector(-0.9, -5.5, 5.5), },
-		},
-		Override_IronSights = {
-			Pos = Vector(-5.145, -50, -0.325),
-			Ang = Angle(0.1, -0.025, 0),
-		},
-    },
+	["csgo_p90_nosock"] = { Bodygroups = { { 0, 1 } } },
+    ["csgo_p90_top_2"] = { Bodygroups = { { 1, 1 }, { 2, 1 }, { 4, 1 } } },
     ["sights"] = { Bodygroups = { { 2, 2 } } },
-    ["sling"] = { Bodygroups = { { 3, 1 } } },
-    ["ext_barrel"] = {
-		AttPosMods = { 
-			[4] = { Pos = Vector(0, -3.05, 13.2) },
-			[5] = { Pos = Vector(-0.85, -2.77, 9) },
-		},
-    },
-    -- ["muzzle_none"] = { Bodygroups = { { 6, 2 } } },
-    ["barrel_mid"] = {
-		Bodygroups = { {5,1}, {6,1}, },
-		AttPosMods = { [4] = { Pos = Vector(0, -3.05, 9.7), } }	
-    },
-    ["mag_30"] = { Bodygroups = { { 7, 1 } } },
-    ["mag_30_stanag"] = { Bodygroups = { { 7, 2 } } },
-    ["mag_20_stanag"] = { Bodygroups = { { 7, 3 } } }, 
+    ["csgo_p90_sling"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_p90_barrel_med"] = { Bodygroups = { {5,1}, {6,1}, } },
+    ["csgo_p90_mag_30"] = { Bodygroups = { { 7, 1 } } },
+    ["csgo_p90_mag_30_stanag"] = { Bodygroups = { { 7, 2 } } },
+    ["csgo_p90_mag_20_stanag"] = { Bodygroups = { { 7, 3 } } }, 
 }
 
 SWEP.HookP_NameChange = function(self, name)

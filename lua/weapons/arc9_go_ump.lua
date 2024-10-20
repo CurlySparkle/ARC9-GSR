@@ -4,7 +4,7 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_weapon_smg")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_3")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_ump")
 
@@ -467,17 +467,11 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["barrel_med"] = { 
-		Bodygroups = { { 1,1 } },
-		AttPosMods = { [3] = { Pos = Vector(0, -3.95, 17.5),} }
-	},
-    ["barrel_long"] = { 
-		Bodygroups = { { 1, 2 } },
-		AttPosMods = { [3] = { Pos = Vector(0, -3.95, 20.4),} }
-	},
-    ["mag_15"] = { Bodygroups = { { 2, 1 } } },
-    ["mag_30_9"] = { Bodygroups = { { 2, 2 } } },
-    ["mag"] = { Bodygroups = { { 2, 3 } } },
+    ["csgo_ump_barrel_mid"] = { Bodygroups = { { 1,1 } } },
+    ["csgo_ump_barrel_long"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_ump_mag_15"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_ump_mag_30_9"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_ump_mag_30"] = { Bodygroups = { { 2, 3 } } },
     ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
     ["stock_none"] = { Bodygroups = { { 3, 2 } } },
     ["grip"] = { Bodygroups = { { 4, 1 } } },
@@ -594,7 +588,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.ump45_Clip",
-        Category = {"go_ump_mag","go_mag"},
+        Category = {"go_ump_mag"},
         Pos = Vector(0, -3, 0),
         Ang = Angle(0, 0, 0),
     },

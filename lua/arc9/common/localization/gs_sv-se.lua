@@ -74,7 +74,7 @@ L["csgo_firemode_plantable"] = "PLANTBAR"
 L["csgo_firemode_sil"] = "PÅSATT"
 L["csgo_firemode_nosil"] = "AVTAGEN"
 
-/////////////////// Weapon Categories
+/////////////////// (Old) Weapon Categories
 L["csgo_category_weapon_akimbo"] = "Dual-Vapen"
 L["csgo_category_weapon_ar"] = "Automatkarbiner"
 L["csgo_category_weapon_extra"] = "Extras"
@@ -84,6 +84,15 @@ L["csgo_category_weapon_pistol"] = "Pistoler"
 L["csgo_category_weapon_shotgun"] = "Hagelbössor"
 L["csgo_category_weapon_sniper"] = "Krypskyttegevär"
 L["csgo_category_weapon_smg"] = "KPistar"
+
+/////////////////// Weapon Categories
+L["csgo_category_slot_0"] = "0. Dual"
+L["csgo_category_slot_1"] = "1. Pistoler"
+L["csgo_category_slot_2"] = "2. Hagel- och Kulsprutegevär"
+L["csgo_category_slot_3"] = "3. K-Pistar"
+L["csgo_category_slot_4"] = "4. Gevär"
+L["csgo_category_slot_5"] = "5. Granater"
+L["csgo_category_slot_6"] = "6. Övrigt"
 
 /////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Automatkarbin"
@@ -1715,15 +1724,15 @@ L["csgo_p90_barrel_med.description"] = "Medellängd pipa."
 
 L["csgo_p90_mag_30.printname"] = "5,7 × 28 mm 30-Patronersmagasin"
 L["csgo_p90_mag_30.compactname"] = "5,7 mm-"
-L["csgo_p90_mag_30.description"] = "Sänker storleken och kapaciteten på magasinet med förmån av ökad omladdning hastighet och vapenhantering."
+L["csgo_p90_mag_30.description"] = string.format(quicktext.smallmag, 30)
 
 L["csgo_p90_mag_30_stanag.printname"] = "5,56 × 45 mm 30-Patroners NATO-Magasin"
 L["csgo_p90_mag_30_stanag.compactname"] = "NATO-"
-L["csgo_p90_mag_30_stanag.description"] = "Frankenstein-installerar ett 30-skott 5,56 × 45 mm STANAG-magasin på P90:n.\n\nJag behöver terapi."
+L["csgo_p90_mag_30_stanag.description"] = "Frankenstein-installerar ett <color=255,100,100>30-skott</color> 5,56 × 45 mm STANAG-magasin på P90:n.\n\nJag behöver terapi."
 
 L["csgo_p90_mag_20_stanag.printname"] = "5,56 × 45 mm 20-Patroners NATO-Magasin"
 L["csgo_p90_mag_20_stanag.compactname"] = "NATO--"
-L["csgo_p90_mag_20_stanag.description"] = "Frankenstein-installerar ett 20-skott 5,56 × 45 mm STANAG-magasin på P90:n.\n\nMin teraput svarar inte..."
+L["csgo_p90_mag_20_stanag.description"] = "Frankenstein-installerar ett <color=255,100,100>20-skott</color> 5,56 × 45 mm STANAG-magasin på P90:n.\n\nMin teraput svarar inte..."
 
 /////////////////// Sawed-Off
 L["csgo_sawedoff_mag_5.printname"] = "5-Skottrör"
@@ -1880,6 +1889,10 @@ L["csgo_ump_mag_15.description"] = string.format(quicktext.smallmag, 12)
 L["csgo_ump_mag_30_9.printname"] = "30-Skott 9 × 19 mm Magasin"
 L["csgo_ump_mag_30_9.compactname"] = "9 mm"
 L["csgo_ump_mag_30_9.description"] = "Konverterar UMP-45:an för att skjuta 9 × 19 mm patroner från ett UMP-9-magasin."
+
+L["csgo_ump_mag_30.printname"] = "30-Skott .45 ACP Magasin"
+L["csgo_ump_mag_30.compactname"] = ".45 ACP+"
+L["csgo_ump_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
 /////////////////// USP-S
 L["csgo_usp_slide_long.printname"] = "Elite-Slutstycke och Pipa"
