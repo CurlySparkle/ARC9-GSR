@@ -496,15 +496,9 @@ SWEP.AttachmentElements = {
     ["grip_none"] = { Bodygroups = { { 2, 2 } } },
     ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
     ["stock_none"] = { Bodygroups = { { 3, 2 } } },
+    ["csgo_mp9_barrel_long"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_mp9_barrel_short"] = { Bodygroups = { { 4, 2 } } },
     ["stock_adapter"] = { Bodygroups = { { 5, 1 } } },
-    ["csgo_mp9_barrel_long"] = { 
-		Bodygroups = { { 4, 1 } },
-		-- AttPosMods = { [3] = { Pos = Vector(0, -2.96, 8.55) } }	
-    },
-    ["csgo_mp9_barrel_short"] = { 
-		Bodygroups = { { 4, 2 } },
-		-- AttPosMods = { [3] = { Pos = Vector(0, -2.96, 6.8) } }	
-    },
 }
 
 SWEP.AttachmentTableOverrides = {
@@ -628,7 +622,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk",
+        Category = { "go_perk", "go_perk_burst" },
         Bone = "v_weapon.mp9_parent",
         Pos = Vector(0, 3, 3.5),
     },

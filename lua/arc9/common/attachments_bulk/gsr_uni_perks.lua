@@ -124,6 +124,7 @@ ATT.FiremodesOverride = {
 }
 
 table.Merge(ATT, sharedcode)
+ATT.Category = "go_perk_burst"
 
 ATT.Icon = Material("entities/attachs/go_perk_burst.png", "mips smooth")
 

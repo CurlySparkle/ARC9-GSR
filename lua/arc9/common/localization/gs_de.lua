@@ -1341,18 +1341,6 @@ L["csgo_g3_mag_10.printname"] = "7,62 × 51 mm 10-Schuss-Magazin"
 L["csgo_g3_mag_10.compactname"] = "7,62 mm-"
 L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Schuss-Magazin (Automatisch)"
-L["csgo_g3_mag_30_auto.compactname"] = "7,62 mm+ A"
-L["csgo_g3_mag_30_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>.\n" .. string.format(quicktext.bigmag, 30)
-
-L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Schuss-Magazin (Automatisch)"
-L["csgo_g3_mag_20_auto.compactname"] = "7,62 mm A"
-L["csgo_g3_mag_20_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>."
-
-L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Schuss-Magazin (Automatisch)"
-L["csgo_g3_mag_10_auto.compactname"] = "7,62 mm- A"
-L["csgo_g3_mag_10_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>.\n" .. string.format(quicktext.smallmag, 10)
-
 L["csgo_g3_stock_collapsed.printname"] = "Zusammenklappbarer Vorrat"
 L["csgo_g3_stock_collapsed.compactname"] = "Zusammenklappbar"
 L["csgo_g3_stock_collapsed.description"] = "Einziehbarer G3-Schaft, der die Waffenhandhabung auf Kosten der Rückstoßkontrolle verbessert."
@@ -1364,6 +1352,19 @@ L["csgo_g3_stock_padded.description"] = "Standardschaft mit angebrachter Wangene
 L["csgo_g3_stock_fixed.printname"] = "Fixiertes A2-Lager"
 L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
 L["csgo_g3_stock_fixed.description"] = "Verkürzter Schaft behoben."
+
+-- Fully Automatic Attachments
+L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Schuss-Magazin (Automatisch)"
+L["csgo_g3_mag_30_auto.compactname"] = "7,62 mm+ A"
+L["csgo_g3_mag_30_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Schuss-Magazin (Automatisch)"
+L["csgo_g3_mag_20_auto.compactname"] = "7,62 mm A"
+L["csgo_g3_mag_20_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>."
+
+L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Schuss-Magazin (Automatisch)"
+L["csgo_g3_mag_10_auto.compactname"] = "7,62 mm- A"
+L["csgo_g3_mag_10_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_mag_20_556.printname"] = "20-Runden 5,56 × 45 mm Magazin"
 L["csgo_g3_mag_20_556.compactname"] = "5,56 mm"
@@ -1391,11 +1392,11 @@ L["csgo_g3_mag_60_g41.description"] = "Konvertiert die Waffe über einen Adapter
 
 L["csgo_g3_mag_30_waf.printname"] = "30-Runden-.45-ACP-Konvertierung"
 L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Ändert die Waffe zur Verwendung von .45 ACP-Magazinen und macht sie <color=100,255,100>vollautomatisch</color>. Verkürzt außerdem die Lauf- und Schaftlänge."
+L["csgo_g3_mag_30_waf.description"] = "Ändert die Waffe zur Verwendung von .45 ACP-Magazinen und macht sie <color=100,255,100>vollautomatisch</color>."
 
 L["csgo_g3_mag_40_mp9.printname"] = "40-Runde 9 x 19 mm Konvertierung"
 L["csgo_g3_mag_40_mp9.compactname"] = "9 mm"
-L["csgo_g3_mag_40_mp9.description"] = "Ändert die Waffe zur Verwendung von 9×19-mm-Magazinen und macht sie <color=100,255,100>vollautomatisch</color>. Verkürzt außerdem Lauf und Schaftlänge."
+L["csgo_g3_mag_40_mp9.description"] = "Ändert die Waffe zur Verwendung von 9×19-mm-Magazinen und macht sie <color=100,255,100>vollautomatisch</color>."
 
 /////////////////// Galil SAR
 -- L["csgo_galil_barrel_long.printname"] = "Long Barrel"

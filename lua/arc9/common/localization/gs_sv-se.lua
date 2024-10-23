@@ -1343,18 +1343,6 @@ L["csgo_g3_mag_10.printname"] = "7,62 × 51 mm 10-Patronersmagasin"
 L["csgo_g3_mag_10.compactname"] = "7,62 mm-"
 L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Patronersmagasin (Automateld)"
-L["csgo_g3_mag_30_auto.compactname"] = "7,62 mm+ A"
-L["csgo_g3_mag_30_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>.\n" .. string.format(quicktext.bigmag, 30)
-
-L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Patronersmagasin (Automateld)"
-L["csgo_g3_mag_20_auto.compactname"] = "7,62 mm A"
-L["csgo_g3_mag_20_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>."
-
-L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Patronersmagasin (Automateld)"
-L["csgo_g3_mag_10_auto.compactname"] = "7,62 mm- A"
-L["csgo_g3_mag_10_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>.\n" .. string.format(quicktext.smallmag, 10)
-
 L["csgo_g3_stock_collapsed.printname"] = "Hopfällbar Kolv"
 L["csgo_g3_stock_collapsed.compactname"] = "Hopfällbar"
 L["csgo_g3_stock_collapsed.description"] = "Hopfällbar G3-kolv."
@@ -1366,6 +1354,19 @@ L["csgo_g3_stock_padded.description"] = "Standard kolv med installerat kindstöd
 L["csgo_g3_stock_fixed.printname"] = "Fast A2-kolv"
 L["csgo_g3_stock_fixed.compactname"] = "Fast A2"
 L["csgo_g3_stock_fixed.description"] = "Fast förkortad kolv."
+
+-- Fully Automatic Attachments
+L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Patronersmagasin (Automateld)"
+L["csgo_g3_mag_30_auto.compactname"] = "7,62 mm+ A"
+L["csgo_g3_mag_30_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Patronersmagasin (Automateld)"
+L["csgo_g3_mag_20_auto.compactname"] = "7,62 mm A"
+L["csgo_g3_mag_20_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>."
+
+L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Patronersmagasin (Automateld)"
+L["csgo_g3_mag_10_auto.compactname"] = "7,62 mm- A"
+L["csgo_g3_mag_10_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_mag_20_556.printname"] = "5,56 × 45 mm 20-Patronersmagasin"
 L["csgo_g3_mag_20_556.compactname"] = "5,56 mm"
@@ -1393,11 +1394,11 @@ L["csgo_g3_mag_60_g41.description"] = "Konverterar vapnet att använda 5,56 × 4
 
 L["csgo_g3_mag_30_waf.printname"] = ".45 ACP 30-Patroners Konvertering"
 L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Konverterar vapnet att använda .45 ACP-magasin och gör den <color=100,255,100>helautomatisk</color>. Förkortar också pipan och längden på kolven."
+L["csgo_g3_mag_30_waf.description"] = "Konverterar vapnet att använda .45 ACP-magasin och gör den <color=100,255,100>helautomatisk</color>."
 
 L["csgo_g3_mag_40_mp9.printname"] = "9 × 19 mm 40-Patroners Konvertering"
 L["csgo_g3_mag_40_mp9.compactname"] = "9 mm"
-L["csgo_g3_mag_40_mp9.description"] = "Konverterar vapnet att använda 9 × 19 mm-magasin och gör den <color=100,255,100>helautomatisk</color>. Förkortar också pipan och längden på kolven."
+L["csgo_g3_mag_40_mp9.description"] = "Konverterar vapnet att använda 9 × 19 mm-magasin och gör den <color=100,255,100>helautomatisk</color>."
 
 /////////////////// Galil SAR
 L["csgo_galil_barrel_long.printname"] = "Lång Pipa"

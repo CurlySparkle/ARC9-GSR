@@ -27,9 +27,9 @@ SWEP.Credits = {
 SWEP.Description = ARC9:GetPhrase("csgo_description_g1sg3")
 
 SWEP.StandardPresets = {
-"[G3A3]XQAAAQDvAAAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs5EtmNLxnvtA6rZ6ivSJrQpQmLXFcLWoGVlnCIzOkUXrmJvHTuLbPNU9iHqAsMX7+hByWioxqQ/UQg+bSmAxK84wYGZxw+tjw5O0p/KmGDdrvWhDwNK/V/i566wg69ugo4E/vE3b/4=",
-"[G3KA4]XQAAAQAVAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAjLdjsPoVJtsmd5N6AUrBb0Q8T82dA5mdeiR5As4LRnZWGLUYxv/2sj/HOK6P6uuKhlmzHK06newGgiUUKku7siUcx8s5c2Bh8lgqNxw3VNxDV8B0Ox9CMcdpUwUki++edVJONH2XcapV4v0TiScConhRTgA=",
-"[MP3]XQAAAQA6AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsZg6Dr12trs3UfUOXZ1ica+IjHobLLcJ1sLmGCPXasYsGkAiKqrnpnM7pILDjezqWbqovs6EuMKJHbSWqIyLT7PnbPaGt4ssD8cuA53DnfXGidNAxxEsTvyC9pArYQ+R+wFN5THHgbYm1gTrkCWPd1NQVBQLs5wA=",
+"[G3A3 (A)]XQAAAQA+AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAjLdjsPoVJtsmd5N6AUrCMEzN1sCQD3xtN5HsMxulqTfaB7/fLOcTe2r2P8aayty7qON7Xzg8q3HEabgW5HzKCgbRt9DFScLefMc9fH0rZ9IYOZto/MtxVB1pNmZ8EwVwYkXOaG4UCt93De+OHUQxWSm0nQA=",
+"[MP3 45]XQAAAQBZAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAjLdjsPoVJtsmd5N6AUrBb0Q8T82dA5mdeiR5As4LRmw9ghLMGmyTiSUPaaJcTgLGuQ28WRHmPcJuaKOAavJAze+LT+78LMQDG9Nl9Rb0kXjp/qA+2WOkbO8tsHRHMQ3Y9BAbm767W0ANRjD9v3o/bl3IfYaQ28/bu+7XGND6huLsRejcidA=",
+"[MP3 9mm]XQAAAQBuAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAjLdjsPoVJtsmd5N6AUrBbkQ8GzG9EItWW3cm1LLHiqn5wiPZPftOowuZrsIzKliaV0AS1rAHZBs9YDr7U0fKBXW6DxiVvNv4tNS52Xtz7BmzHcdfDsQXwZVOfPLFTM+UtkFKs2jfVfFjfH2k3SD3/i4uMYfDqELX8Qc7hVCH9CDTXwV+iQMTAbQoAViv46ZaWgA=",
 }
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_g3sg1.mdl"
@@ -625,153 +625,33 @@ SWEP.Animations = {
 SWEP.DefaultBodygroups = "00000000000000000000000"
 
 SWEP.AttachmentElements = {
-    ["barrel_1"] = {
-    },
-    ["barrel_2"] = {
-    },
-    ["mag_g4_barrel"] = {
-        Bodygroups = {
-			{3,5},
-			{6,5},
-			{7,2},
-        },
-	AttPosMods = { 
-	[4] = { Pos = Vector(0.17, -3.315, 17.8), },
-	[6] = { Pos = Vector(-0.8, -3.5, 13), },
-	[5] = { Pos = Vector(0, -2, 11), },
-	}
-    },
-    ["barrel_med"] = {
-        Bodygroups = {
-            {3,1},
-			{6,1},
-			{7,1},
-        },
-	AttPosMods = { 
-	[4] = { Pos = Vector(0.17, -3.3, 20.85), },
-	[6] = { Pos = Vector(-0.8, -3.5, 15), },
-	}	
-    },
-    ["barrel_med_alt"] = {
-        Bodygroups = {
-            {3,1},
-			{6,1},
-			{7,1},
-			{8,1},
-        },
-	AttPosMods = { 
-	[4] = { Pos = Vector(0.17, -3.3, 21), },
-	[5] = { Pos = Vector(0, -2, 12), },
-	[6] = { Pos = Vector(-0.8, -3.5, 15), },
-	}	
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {3,2},
-			{6,2},
-        },
-	AttPosMods = { 
-	[4] = { Pos = Vector(0.17, -3.3, 19), },
-	[6] = { Pos = Vector(-0.8, -3.5, 15), },
-	}
-    },
-    ["barrel_short_alt"] = {
-        Bodygroups = {
-            {3,7},
-			{6,7},
-        },
-	AttPosMods = { 
-	[4] = { Pos = Vector(0.17, -3.32, 17.1), },
-	[6] = { Pos = Vector(-0.8, -3.5, 13), },
-	}
-    },
-    ["barrel_sd"] = {
-        Bodygroups = {
-            {3,3},
-			{6,3},
-			{7,2},
-        },
-    },
-    ["barrel_sd_alt"] = {
-        Bodygroups = {
-            {3,3},
-			{6,3},
-			{7,2},
-        },
-    },
-    ["barrel_g3a3"] = {
-        Bodygroups = {
-			{3,4},
-			{6,4},
-			{7,1},
-        },
-    AttPosMods = { [4] = { Pos = Vector(0.17, -3.3, 22.1), } }	
-    },
-    ["barrel_g3a3_alt"] = {
-        Bodygroups = {
-			{3,6},
-			{6,4},
-			{7,1},
-        },
-	AttPosMods = { 
-	[4] = { Pos = Vector(0.17, -3.3, 16.3), },
-	[6] = { Pos = Vector(-0.8, -3.5, 12), },
-	}
-    },
-    ["rearsight"] = {
-        Bodygroups = {
-            {1,0},
-        },
-    },
-    ["rearsight2"] = {
-        Bodygroups = {
-            {1,0},
-        },
-    },
-    ["stock_padded"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["stock_collapsed"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["stock_short"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    },
-    ["stock_fixed"] = {
-        Bodygroups = {
-            {2,4},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {2,5},
-        },
-    },
-    ["mag_30"] = {
-        Bodygroups = {
-            {4,2},
-        },
-    },
-    ["mag_10"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
+    ["rearsight"] = { Bodygroups = { { 1, 0 } } },
+    ["rearsight2"] = { Bodygroups = { { 1, 0 } } },
+    ["csgo_g3_stock_padded"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_g3_stock_collapsed"] = { Bodygroups = { { 2,2 } } },
+    ["csgo_g3_stock_short"] = { Bodygroups = { { 2,3 } } },
+    ["csgo_g3_stock_fixed"] = { Bodygroups = { { 2,4 } } },
+    ["csgo_g3_stock_none"] = { Bodygroups = { { 2,5 } } },
+    ["csgo_g3_barrel_medium"] = { Bodygroups = { { 3, 1 }, { 6, 1 }, { 7, 1 } } },
+    ["csgo_g3_barrel_short"] = { Bodygroups = { { 3, 2 }, { 6, 2 } } },
+    ["csgo_g3_barrel_sd"] = { Bodygroups = { { 3,3}, { 6, 3 }, { 7, 2 } } },
+    ["csgo_g3_barrel_g3a3"] = { Bodygroups = { { 3, 4 }, { 6, 4 }, { 7, 1 } } },
+	
+    ["csgo_g3_mag_10"] = { Bodygroups = { { 4,1 } } },
+    ["csgo_g3_mag_30"] = { Bodygroups = { { 4,2 } } },
 
-    ["mag_556_20"] = { Bodygroups = {{4,3},{0,2} },},
-	["mag_556_30"] = { Bodygroups = {{4,4},{0,2} },},
-	["mag_556_60"] = { Bodygroups = {{4,5},{0,2} },},
-    ["mag_g41_20"] = { Bodygroups = {{4,6},{5,1} },},
-	["mag_g41_30"] = { Bodygroups = {{4,7},{5,1} },},
-	["mag_g41_60"] = { Bodygroups = {{4,8},{5,1} },},
-	["mag_g4_waffle"] = { Bodygroups = { {0,1},{2,3},{4,9} },},
-	["mag_g4_mp9"] = { Bodygroups = { {0,1},{2,3},{3,8},{4,11} },},	
+    ["csgo_g3_mag_10_auto"] = { Bodygroups = { { 4,1 } } },
+    ["csgo_g3_mag_30_auto"] = { Bodygroups = { { 4,2 } } },
+
+    ["csgo_g3_mag_20_556"] = { Bodygroups = {{ 4, 3 },{ 0, 2 } },},
+	["csgo_g3_mag_30_556"] = { Bodygroups = {{ 4, 4 },{ 0, 2 } },},
+	["csgo_g3_mag_50_556"] = { Bodygroups = {{ 4, 5 },{ 0, 2 } },},
+    ["csgo_g3_mag_20_g41"] = { Bodygroups = {{ 4, 6 },{ 5, 1 } },},
+	["csgo_g3_mag_30_g41"] = { Bodygroups = {{ 4, 7 },{ 5, 1 } },},
+	["csgo_g3_mag_60_g41"] = { Bodygroups = {{ 4, 8 },{ 5, 1 } },},
+	
+	["csgo_g3_mag_30_waf"] = { Bodygroups = { { 0, 1 } ,{ 4, 9 } },},
+	["csgo_g3_mag_40_mp9"] = { Bodygroups = { { 0, 1 }, { 4, 11 } },},	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
@@ -782,16 +662,16 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("smg_g3") and wep:HasElement("barrel_sd") then model:SetBodygroup(3,9) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_collapsed") then model:SetBodygroup(2,2) end
 	if wep:HasElement("smg_g3") and wep:HasElement("stock_none") then model:SetBodygroup(2,5) end	
-	if wep.Attachments[4].Installed then model:SetBodygroup(6,9) end
+	
+	if wep:HasElement("csgo_g3_mag_30_waf") or wep:HasElement("csgo_g3_mag_30_waf") then -- When either SMG mags are on
+		if wep:HasElement("csgo_g3_barrel_sd") then model:SetBodygroup(3, 9) end
+		-- if wep:HasElement("csgo_g3_barrel_g3a3") then model:SetBodygroup(3, 6) model:SetBodygroup(6, 6) end
+		-- if wep:HasElement("csgo_g3_barrel_medium") then model:SetBodygroup(3, 1) end
+		-- if wep:HasElement("csgo_g3_barrel_short") then model:SetBodygroup(3, 8) end
+	end
+	
+	if wep.Attachments[4].Installed then model:SetBodygroup(6,9) end -- Remove muzzle when muzzle att equipped
 end
-
--- SWEP.Hook_GetAttPos = function(self, data, wep)
-  -- if data.atttbl.Installed == "csgo_g3_mag_30_waf" then
-    -- AttPosMods = { [3] = { Pos = Vector(0.17, -3.25, 20), } }	
-    -- --data.ang = Angle(90, 0, -90)
-  -- end
-  -- return data
--- end
 
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
@@ -877,6 +757,7 @@ SWEP.Attachments = {
         Category = "go_g3_barrel_smg2",
         Bone = "v_weapon.g3sg1_Parent",
         Pos = Vector(0, -4.5, 9),
+		Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -884,7 +765,7 @@ SWEP.Attachments = {
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.g3sg1_Parent",
 		--InstalledElements = {"barrel_muzzle"},
-		ExcludeElements = {"barrel_sd"},
+		ExcludeElements = {"csgo_g3_barrel_sd"},
         Pos = Vector(0.17, -3.3, 25.1),
         Ang = Angle(90, 0, -90),
 		Scale = 1,

@@ -473,79 +473,32 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["mount"] = {
-        Bodygroups = {
-            {1,1},
-			{5,1},
-        },
-    },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["mag"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
-    ["mag_556_20"] = {
-        Bodygroups = {
-            {3,2},
-			{0,1},
-        },
-    },
-    ["mag_556_30"] = {
-        Bodygroups = {
-            {3,3},
-			{0,1},
-        },
-    },
-    ["mag_556_60"] = {
-        Bodygroups = {
-            {3,3},
-			{0,1},
-        },
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {4,1},
-			{5,6},
-			{6,1},
+    ["mount"] = { Bodygroups = { { 1, 1 }, { 5, 1 } } },
+    ["stock_retract"] = { Bodygroups = { { 2, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 2, 2 } } },
+    ["mag"] = { Bodygroups = { { 3, 1 } } },
+    ["mag_556_20"] = { Bodygroups = { { 3, 2 }, {0, 1 } } },
+    ["mag_556_30"] = { Bodygroups = { { 3, 3 }, {0, 1 } } },
+    ["mag_556_60"] = { Bodygroups = { { 3, 3 }, {0, 1 } } },
+    ["barrel_short"] = { Bodygroups = { { 4, 1 }, {5, 6 }, {6, 1 },
     },
     AttPosMods = { 
-	[6] = { Pos = Vector(-0.8, -4.6, 11), },
-	-- [4] = { Pos = Vector(0, -3.6, 9), },
-	[3] = { Pos = Vector(0.05, -4.52, 15.55), }
+		[6] = { Pos = Vector(-0.8, -4.6, 11), },
+		[3] = { Pos = Vector(0.05, -4.52, 15.55), }
 	}
     },
-    ["barrel_stub"] = {
-        Bodygroups = {
-            {4,2},
-			{5,4},
-			{6,2},
-        },
+    ["barrel_stub"] = { Bodygroups = { { 4,2}, {5,4}, {6,2} },
     AttPosMods = { 
-	[6] = { Pos = Vector(-0.8, -4.6, 9), },
-	[4] = { Pos = Vector(0, -3.6, 8), },
-	[3] = { Pos = Vector(0.05, -4.52, 12.15), }
+		[6] = { Pos = Vector(-0.8, -4.6, 9), },
+		[4] = { Pos = Vector(0, -3.6, 8), },
+		[3] = { Pos = Vector(0.05, -4.52, 12.15), }
 	}
     },
-    ["barrel_factory"] = {
-        Bodygroups = {
-            {4,3},
-			{5,6},
-			{6,3},
-        },
+    ["barrel_factory"] = { Bodygroups = { { 4,3}, {5,6}, {6,3} },
     AttPosMods = { 
-	[6] = { Pos = Vector(-0.8, -4.6, 11), },
-	[4] = { Pos = Vector(0, -3.6, 9), },
-	[3] = { Pos = Vector(0.05, -4.52, 18), }
+		[6] = { Pos = Vector(-0.8, -4.6, 11), },
+		[4] = { Pos = Vector(0, -3.6, 9), },
+		[3] = { Pos = Vector(0.05, -4.52, 18), }
 	}
     },
 }

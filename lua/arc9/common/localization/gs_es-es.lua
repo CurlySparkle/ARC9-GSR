@@ -1341,18 +1341,6 @@ L["csgo_g3_mag_10.printname"] = "Cargador de 10 cartuchos 7.62×51mm"
 L["csgo_g3_mag_10.compactname"] = "7.62mm-"
 L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos 7.62×51mm (Automático)"
-L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
-L["csgo_g3_mag_30_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.bigmag, 30)
-
-L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos 7.62×51mm (Automático)"
-L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
-L["csgo_g3_mag_20_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>."
-
-L["csgo_g3_mag_10_auto.printname"] = "Cargador de 10 cartuchos 7.62×51mm (Automático)"
-L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
-L["csgo_g3_mag_10_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.smallmag, 10)
-
 L["csgo_g3_stock_collapsed.printname"] = "Culata plegable"
 L["csgo_g3_stock_collapsed.compactname"] = "Plegable"
 L["csgo_g3_stock_collapsed.description"] = "Culata G3 retráctil."
@@ -1364,6 +1352,19 @@ L["csgo_g3_stock_padded.description"] = "Culata estándar con carrillera incorpo
 L["csgo_g3_stock_fixed.printname"] = "Culata fija A2"
 L["csgo_g3_stock_fixed.compactname"] = "Fija A2"
 L["csgo_g3_stock_fixed.description"] = "Culata acortada fija."
+
+-- Fully Automatic Attachments
+L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos 7.62×51mm (Automático)"
+L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
+L["csgo_g3_mag_30_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos 7.62×51mm (Automático)"
+L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
+L["csgo_g3_mag_20_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>."
+
+L["csgo_g3_mag_10_auto.printname"] = "Cargador de 10 cartuchos 7.62×51mm (Automático)"
+L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
+L["csgo_g3_mag_10_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_mag_20_556.printname"] = "Cargador de 20 cartuchos 5.56×45mm"
 L["csgo_g3_mag_20_556.compactname"] = "5.56mm"
@@ -1391,11 +1392,11 @@ L["csgo_g3_mag_60_g41.description"] = "Convierte el arma para usar cargadores AR
 
 L["csgo_g3_mag_30_waf.printname"] = "Conversión de 30 cartuchos de .45 ACP"
 L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Convierte el arma para usar cargadores del .45 ACP y la hace <color=100,255,100>totalmente automática</color>. También acorta la longitud del cañón y de la culata."
+L["csgo_g3_mag_30_waf.description"] = "Convierte el arma para usar cargadores del .45 ACP y la hace <color=100,255,100>totalmente automática</color>."
 
 L["csgo_g3_mag_40_mp9.printname"] = "Conversión 9×19mm de 40 cartuchos"
 L["csgo_g3_mag_40_mp9.compactname"] = "9mm"
-L["csgo_g3_mag_40_mp9.description"] = "Convierte el arma para usar cargadores de 9×19mm y la hace <color=100,255,100>totalmente automática</color>. También acorta la longitud del cañón y la culata."
+L["csgo_g3_mag_40_mp9.description"] = "Convierte el arma para usar cargadores de 9×19mm y la hace <color=100,255,100>totalmente automática</color>."
 
 /////////////////// Galil SAR
 -- L["csgo_galil_barrel_long.printname"] = "Long Barrel"

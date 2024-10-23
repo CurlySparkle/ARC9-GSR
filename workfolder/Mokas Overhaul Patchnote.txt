@@ -150,7 +150,8 @@ Added two new sets of attachment integrations:
 		[/list]
 	[*] Optic: [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
 	[*] Muzzle: [u]Muzzle Brakes[/u] and [u]Suppressors[/u] are no longer placed in a separate folder and are instead unified outside of folders.
-	[*] Perk: [u]Enhanced Burst[/u] perk can now be equipped onto all weapons that have an automatic firing mode.
+	[*] Perk: [u]Enhanced Burst[/u] perk can now only be equipped onto assault rifles* and submachine guns.
+		∟ *Excluding the M4A1-S
 
 	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.

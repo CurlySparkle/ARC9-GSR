@@ -188,13 +188,13 @@ ATT.ModelOffset = Vector(0, 0, 1)
 ATT.Scale = 0.5
 
 ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Pos = Vector(1.1, -0.05, -0.5),
-        Ang = Angle(0, 0, 180),
-        Icon_Offset = Vector(0, 0, 0),
-        Category = {"csgo_optic"},
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- Pos = Vector(1.1, -0.05, -0.5),
+        -- Ang = Angle(0, 0, 180),
+        -- Icon_Offset = Vector(0, 0, 0),
+        -- Category = {"csgo_optic"},
+    -- },
     {
         PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
         Pos = Vector(0, 0.07, -4.5),
@@ -203,6 +203,14 @@ ATT.Attachments = {
         Category = {"grip"},
         CorrectiveAng = Angle(-1, -50, 0),
     }
+}
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -4.9, 3.5) }, -- Optics
+        [4] = { Pos = Vector(-1.7, -2.9, 4.7) }, -- Side
+		[18] = { Pos = Vector(1.4, -0.75, 2) } -- Stats
+	}
 }
 
 ARC9.LoadAttachment(ATT, "csgo_rail_optic_mac")

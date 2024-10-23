@@ -546,27 +546,18 @@ SWEP.AttachmentTableOverrides = {
 		ModelOffset = Vector(-5, 0, 0),
     },
     ["go_muzzle_akm"] = {
-    Scale = 0.35,
+		Scale = 0.35,
     },
 }
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = { {1,1} },
+    ["barrel_long"] = { Bodygroups = { {1,1} },
         AttPosMods = { [3] = { Pos = Vector(0.15, -3.3, 30.5), } }
     },
-    ["barrel_short"] = {
-        Bodygroups = { {1,2} },
+    ["barrel_short"] = { Bodygroups = { {1,2} },
         AttPosMods = { [3] = { Pos = Vector(0.15, -3.25, 22.75), } }
     },
-    -- ["scout_scope"] = {
-        -- AttPosMods = { [1] = { Pos = Vector(5, 0, 0), } }
-    -- },
+    ["mag"] = { Bodygroups = { { 2,1} } },
 }
 
 SWEP.Attachments = {

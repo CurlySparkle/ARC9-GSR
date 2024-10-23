@@ -602,13 +602,7 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["DefGrip"] = { 
-		Bodygroups = { { 1, 1 }, { 3, 1 } },
-		AttPosMods = { 
-			[4] = { Pos = Vector(-1.7, -2.9, 4.7) },
-			[18] = { Pos = Vector(1.4, -0.75, 2) }
-		},
-    },
+    ["DefGrip"] = { Bodygroups = { { 1, 1 }, { 3, 1 } } },
     ["stock_extend"] = { Bodygroups = { { 2, 1 } } },
     ["csgo_ak47_stock_skeleton"] = { Bodygroups = { { 2, 2 } } },
     ["stock_none"] = { Bodygroups = { { 2, 3 } } },
@@ -623,8 +617,10 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("stock_extend") then model:SetBodygroup(7,0) end	
-	if wep:HasElement("stock_skeleton") then model:SetBodygroup(7,0) end		
+		if wep:HasElement("DefGrip") and wep.Attachments[2].Installed then model:SetBodygroup(6,0) end	
+		
+		if wep:HasElement("stock_extend") then model:SetBodygroup(7,0) end	
+		if wep:HasElement("stock_skeleton") then model:SetBodygroup(7,0) end		
 end
 
 SWEP.HookP_NameChange = function(self, name)
@@ -694,7 +690,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_optic"},
         InstalledElements = {"sight_mount"},
-        ExcludeElements = {"DefGrip"},
+        -- ExcludeElements = {"DefGrip"},
         CorrectiveAng = Angle(0.15, 0, 0),
     },
     {
@@ -749,7 +745,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
-        Category = "go_perk",
+        Category = { "go_perk", "go_perk_burst" },
 		Bone = "v_weapon.mac10_parent",
         Pos = Vector(0, 3.5, 4),
     },

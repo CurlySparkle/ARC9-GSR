@@ -487,66 +487,29 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["mag_15"] = {
-        Bodygroups = {
-            {3,2},
-        },
+    ["csgo_awp_barrel_bull"] = { Bodygroups = { { 1,3 } },
+    -- AttPosMods = { [3] = { Pos = Vector(0, -3.4, 28.3), } }	
     },
-    ["mag_5"] = {
-        Bodygroups = {
-            {3,1},
-        },
+    ["csgo_awp_barrel_short"] = { Bodygroups = { { 1,1 } },
+    -- AttPosMods = { [3] = { Pos = Vector(0, -3.4, 21.4), } }	
     },
-    ["sight_iron"] = {
-        Bodygroups = {
-            {2,1},
-        },
+    ["csgo_awp_barrel_factory"] = { Bodygroups = { { 1,2 } },
+    -- AttPosMods = { [3] = { Pos = Vector(0, -3.4, 29.4), } }	
     },
-    ["barrel_bull"] = {
-        Bodygroups = {
-            {1,3},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.4, 28.3), } }	
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.4, 21.4), } }	
-    },
-    ["barrel_factory"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -3.4, 29.4), } }	
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
-    ["stock_lc10"] = {Bodygroups = {{4,2},},},
-    ["stock_folding"] = {
-        Bodygroups = {
-            {4,3},
-        },
-    },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {4,4},
-        },
-    },
-    ["bipod_up"] = {
-        Bodygroups = {
-            {5,1},
-        },
-    },
+    ["csgo_awp_sight_iron"] = { Bodygroups = { { 2,1 } } },
+    ["csgo_awp_mag_15"] = { Bodygroups = { { 3, 2} } },
+    ["csgo_awp_mag_5"] = { Bodygroups = { { 3,1 } } },
+    ["csgo_awp_stock_obrez"] = { Bodygroups = { { 4,1 } } },
+    ["go_stock_awp_lc10"] = {Bodygroups = {{4,2},},},
+    ["stock_folding"] = { Bodygroups = { { 4,3 } } },
+    ["stock_retract"] = { Bodygroups = { { 4,4 } } },
+    ["bipod_up"] = { Bodygroups = { { 5,1 } } },
 }
 
 // Forced Override Bodygroup
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-    if wep:HasElement("stock_lc10") then model:SetBodygroup(4,2) end
+    -- if wep:HasElement("stock_lc10") then model:SetBodygroup(4,2) end
 end
 
 SWEP.HookP_NameChange = function(self, name)

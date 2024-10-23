@@ -1348,18 +1348,6 @@ L["csgo_g3_mag_10.printname"] = "10-Round 7.62×51mm Magazine"
 L["csgo_g3_mag_10.compactname"] = "7.62mm-"
 L["csgo_g3_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
-L["csgo_g3_mag_30_auto.printname"] = "30-Round 7.62×51mm Magazine (Automatic)"
-L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
-L["csgo_g3_mag_30_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
-
-L["csgo_g3_mag_20_auto.printname"] = "20-Round 7.62×51mm Magazine (Automatic)"
-L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
-L["csgo_g3_mag_20_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>."
-
-L["csgo_g3_mag_10_auto.printname"] = "10-Round 7.62×51mm Magazine (Automatic)"
-L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
-L["csgo_g3_mag_10_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.smallmag, 10)
-
 L["csgo_g3_stock_collapsed.printname"] = "Collapsible Stock"
 L["csgo_g3_stock_collapsed.compactname"] = "Collapsible"
 L["csgo_g3_stock_collapsed.description"] = "Retractable G3 stock."
@@ -1371,6 +1359,19 @@ L["csgo_g3_stock_padded.description"] = "Standard stock with attached cheek rise
 L["csgo_g3_stock_fixed.printname"] = "Fixed A2 Stock"
 L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
 L["csgo_g3_stock_fixed.description"] = "Fixed shortened stock."
+
+-- Fully Automatic Attachments
+L["csgo_g3_mag_30_auto.printname"] = "30-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
+L["csgo_g3_mag_30_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_g3_mag_20_auto.printname"] = "20-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
+L["csgo_g3_mag_20_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>."
+
+L["csgo_g3_mag_10_auto.printname"] = "10-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
+L["csgo_g3_mag_10_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.smallmag, 10)
 
 L["csgo_g3_mag_20_556.printname"] = "20-Round 5.56×45mm Magazine"
 L["csgo_g3_mag_20_556.compactname"] = "5.56mm"
@@ -1398,11 +1399,11 @@ L["csgo_g3_mag_60_g41.description"] = "Converts the weapon to use 5.56×45mm AR-
 
 L["csgo_g3_mag_30_waf.printname"] = "30-Round .45 ACP Conversion"
 L["csgo_g3_mag_30_waf.compactname"] = ".45 ACP"
-L["csgo_g3_mag_30_waf.description"] = "Converts the weapon to use .45 ACP magazines and makes it <color=100,255,100>fully automatic</color>. Also shortens the barrel and stock length."
+L["csgo_g3_mag_30_waf.description"] = "Converts the weapon to use .45 ACP magazines and makes it <color=100,255,100>fully automatic</color>."
 
 L["csgo_g3_mag_40_mp9.printname"] = "40-Round 9×19mm Conversion"
 L["csgo_g3_mag_40_mp9.compactname"] = "9mm"
-L["csgo_g3_mag_40_mp9.description"] = "Converts the weapon to use 9×19mm magazines and makes it <color=100,255,100>fully automatic</color>. Also shortens the barrel and stock length."
+L["csgo_g3_mag_40_mp9.description"] = "Converts the weapon to use 9×19mm magazines and makes it <color=100,255,100>fully automatic</color>."
 
 /////////////////// Galil SAR
 L["csgo_galil_barrel_long.printname"] = "Long Barrel"
@@ -2316,6 +2317,10 @@ L["csgo_g3_barrel_medium_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3
 L["csgo_g3_barrel_short_smg.printname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.printname") or "Kurz Barrel"
 L["csgo_g3_barrel_short_smg.compactname"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.compactname") or "Kurz"
 L["csgo_g3_barrel_short_smg.description"] = ARC9:GetPhrase("csgo_g3_barrel_g3a3.description") or "Shortened G3KA4 barrel."
+
+L["csgo_g3_view_alt_1.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
+L["csgo_g3_view_alt_1.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"
+L["csgo_g3_view_alt_1.description"] = ARC9:GetPhrase("csgo_pistols_view.description") or "Alters the position of the weapon in view."
 
 L["csgo_galilar_mag_ak_30.printname"] = ARC9:GetPhrase("csgo_galil_mag_ak_30.printname") or "30-Round 7.62×39mm Polymer Magazine"
 L["csgo_galilar_mag_ak_30.compactname"] = ARC9:GetPhrase("csgo_galil_mag_ak_30.compactname") or "7.62mm"
