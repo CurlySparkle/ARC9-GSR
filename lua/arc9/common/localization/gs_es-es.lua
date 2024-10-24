@@ -1078,7 +1078,7 @@ L["go_ubgl_m203_sight.compactname"] = "Mira"
 -- L["go_ubgl_m203_sight.description"] = "Installs a side-mounted sight, allowing aiming with the M203 Grenade Launcher."
 
 L["go_ubgl_mass26.printname"] = "Escopeta MASS-26"
-L["go_ubgl_mass26.compactname"] = "MASS"
+L["go_ubgl_mass26.compactname"] = "MASS-26"
 -- L["go_ubgl_mass26.description"] = "Installs an undermounted pump-action shotgun."
 
 L["go_ubgl_xm1014.printname"] = "Escopeta XM1014"
@@ -1354,15 +1354,15 @@ L["csgo_g3_stock_fixed.compactname"] = "Fija A2"
 L["csgo_g3_stock_fixed.description"] = "Culata acortada fija."
 
 -- Fully Automatic Attachments
-L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos 7.62×51mm (Automático)"
+L["csgo_g3_mag_30_auto.printname"] = "Cargador de 30 cartuchos 7.62×51mm [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
 L["csgo_g3_mag_30_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos 7.62×51mm (Automático)"
+L["csgo_g3_mag_20_auto.printname"] = "Cargador de 20 cartuchos 7.62×51mm [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
 L["csgo_g3_mag_20_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>."
 
-L["csgo_g3_mag_10_auto.printname"] = "Cargador de 10 cartuchos 7.62×51mm (Automático)"
+L["csgo_g3_mag_10_auto.printname"] = "Cargador de 10 cartuchos 7.62×51mm [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
 L["csgo_g3_mag_10_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.smallmag, 10)
 
@@ -1792,13 +1792,13 @@ L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
 L["csgo_scar17_stock_bullpup.description"] = "Aplica un kit bullpup al SCAR-17, convirtiéndolo en un rifle bullpup."
 
 /////////////////// SCAR-20
-L["csgo_scar20_barrel_factory.printname"] = "Cañón CQC Factory"
-L["csgo_scar20_barrel_factory.compactname"] = "Factory"
+L["csgo_scar20_barrel_factory.printname"] = "Cañón Mk 17"
+L["csgo_scar20_barrel_factory.compactname"] = "Mk 17"
 L["csgo_scar20_barrel_factory.description"] = "Cañón SCAR-17 de fábrica."
 
 L["csgo_scar20_barrel_short.printname"] = "Cañón CQC"
 L["csgo_scar20_barrel_short.compactname"] = "CQC"
-L["csgo_scar20_barrel_short.description"] = "Cañón compacto."
+L["csgo_scar20_barrel_short.description"] = "Cañón SCAR-17 compacto."
 
 L["csgo_scar20_barrel_stub.printname"] = "Cañón PDW"
 L["csgo_scar20_barrel_stub.compactname"] = "PDW"
@@ -1816,6 +1816,10 @@ L["csgo_scout_barrel_long.description"] = "Cañón largo y pesado."
 L["csgo_scout_barrel_short.printname"] = "Cañón de supervivencia"
 L["csgo_scout_barrel_short.compactname"] = "Superviv."
 L["csgo_scout_barrel_short.description"] = "Cañón compacto."
+
+L["csgo_scout_mag_10.printname"] = "Cargador de 10 cartuchos de 7.62 × 51 mm"
+L["csgo_scout_mag_10.compactname"] = "7.62mm+"
+L["csgo_scout_mag_10.description"] = string.format(quicktext.bigmag, 10)
 
 /////////////////// SIG556
 L["csgo_sg556_barrel_short.printname"] = "Cañón y Guardamanos SG 552 300mm Commando"

@@ -364,4 +364,18 @@ ATT.ModelOffset = Vector(-5.5, -0.3, -1.5)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 
 ARC9.LoadAttachment(ATT, "go_holdstyle_scout_integral")
+------------------------------------------------------------------------
+ATT = {}
 
+table.Merge(ATT, sharedcode)
+
+ATT.Folder = ARC9:GetPhrase("csgo_folder_holdtype")
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_scout.mdl"
+ATT.Category = "grip_scout_r"
+ATT.ModelOffset = Vector(1, -0.55, -0.3)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
+
+ATT.LHIK_Priority = 1
+ATT.LHIK = true
+
+ARC9.LoadAttachment(ATT, "csgo_scout_primary_hold")

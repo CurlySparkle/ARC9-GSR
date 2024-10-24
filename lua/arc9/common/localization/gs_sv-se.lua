@@ -1078,7 +1078,7 @@ L["go_ubgl_m203_sight.compactname"] = "Sikte"
 L["go_ubgl_m203_sight.description"] = "Monterar ett sidomonterat sikte, vilket tillåter att du kan sikta med granattillsatsen M203."
 
 L["go_ubgl_mass26.printname"] = "MASS-26 Hagelgevär"
-L["go_ubgl_mass26.compactname"] = "MASS"
+L["go_ubgl_mass26.compactname"] = "MASS-26"
 L["go_ubgl_mass26.description"] = "Monterar en undermonterad pumprepeter hagelbössa."
 
 L["go_ubgl_xm1014.printname"] = "XM1014 Hagelgevär"
@@ -1356,15 +1356,15 @@ L["csgo_g3_stock_fixed.compactname"] = "Fast A2"
 L["csgo_g3_stock_fixed.description"] = "Fast förkortad kolv."
 
 -- Fully Automatic Attachments
-L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Patronersmagasin (Automateld)"
+L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Patronersmagasin [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_30_auto.compactname"] = "7,62 mm+ A"
 L["csgo_g3_mag_30_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Patronersmagasin (Automateld)"
+L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Patronersmagasin [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_20_auto.compactname"] = "7,62 mm A"
 L["csgo_g3_mag_20_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>."
 
-L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Patronersmagasin (Automateld)"
+L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Patronersmagasin [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_10_auto.compactname"] = "7,62 mm- A"
 L["csgo_g3_mag_10_auto.description"] = "Växlar skjutläget till <color=100,255,100>automateld</color>.\n" .. string.format(quicktext.smallmag, 10)
 
@@ -1794,8 +1794,8 @@ L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
 L["csgo_scar17_stock_bullpup.description"] = "Installerar en bullpup-konvertering på SCAR-17:n som förvandlar den till ett bullpup-gevär."
 
 /////////////////// SCAR-20
-L["csgo_scar20_barrel_factory.printname"] = "Fabrikstillverkad CQC-Pipa"
-L["csgo_scar20_barrel_factory.compactname"] = "Fabriks."
+L["csgo_scar20_barrel_factory.printname"] = "Mk 17 Pipa"
+L["csgo_scar20_barrel_factory.compactname"] = "Mk 17"
 L["csgo_scar20_barrel_factory.description"] = "Fabrikstillverkad pipa från SCAR-17."
 
 L["csgo_scar20_barrel_short.printname"] = "CQC-Pipa"
@@ -1818,6 +1818,10 @@ L["csgo_scout_barrel_long.description"] = "Lång och tung pipa."
 L["csgo_scout_barrel_short.printname"] = "Överlevnadspipa"
 L["csgo_scout_barrel_short.compactname"] = "Överl."
 L["csgo_scout_barrel_short.description"] = "Kompakt pipa."
+
+L["csgo_scout_mag_10.printname"] = "7,62 × 51 mm 10-Patronersmagasin"
+L["csgo_scout_mag_10.compactname"] = "7,62 mm+"
+L["csgo_scout_mag_10.description"] = string.format(quicktext.bigmag, 10)
 
 /////////////////// SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 300mm Commando-Pipa och Handgrepp"

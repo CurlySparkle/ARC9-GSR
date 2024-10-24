@@ -1085,7 +1085,7 @@ L["go_ubgl_m203_sight.compactname"] = "Sight"
 L["go_ubgl_m203_sight.description"] = "Installs a side-mounted sight, allowing aiming with the M203 Grenade Launcher."
 
 L["go_ubgl_mass26.printname"] = "MASS-26 Shotgun"
-L["go_ubgl_mass26.compactname"] = "MASS"
+L["go_ubgl_mass26.compactname"] = "MASS-26"
 L["go_ubgl_mass26.description"] = "Installs an undermounted pump-action shotgun."
 
 L["go_ubgl_xm1014.printname"] = "XM1014 Shotgun"
@@ -1361,15 +1361,15 @@ L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
 L["csgo_g3_stock_fixed.description"] = "Fixed shortened stock."
 
 -- Fully Automatic Attachments
-L["csgo_g3_mag_30_auto.printname"] = "30-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_g3_mag_30_auto.printname"] = "30-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_30_auto.compactname"] = "7.62mm+ A"
 L["csgo_g3_mag_30_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_20_auto.printname"] = "20-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_g3_mag_20_auto.printname"] = "20-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_20_auto.compactname"] = "7.62mm A"
 L["csgo_g3_mag_20_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>."
 
-L["csgo_g3_mag_10_auto.printname"] = "10-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_g3_mag_10_auto.printname"] = "10-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_10_auto.compactname"] = "7.62mm- A"
 L["csgo_g3_mag_10_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.smallmag, 10)
 
@@ -1799,13 +1799,13 @@ L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
 L["csgo_scar17_stock_bullpup.description"] = "REQUIRES <color=255,255,100>Marksman Barrel</color>\n" .. "Applies a bullpup kit onto the SCAR-17, turning it into a bullpup rifle."
 
 /////////////////// SCAR-20
-L["csgo_scar20_barrel_factory.printname"] = "CQC Factory Barrel"
-L["csgo_scar20_barrel_factory.compactname"] = "Factory"
+L["csgo_scar20_barrel_factory.printname"] = "Mk 17 Barrel"
+L["csgo_scar20_barrel_factory.compactname"] = "Mk 17"
 L["csgo_scar20_barrel_factory.description"] = "Factory SCAR-17 barrel."
 
 L["csgo_scar20_barrel_short.printname"] = "CQC Barrel"
 L["csgo_scar20_barrel_short.compactname"] = "CQC"
-L["csgo_scar20_barrel_short.description"] = "Compact barrel."
+L["csgo_scar20_barrel_short.description"] = "Shortened SCAR-17 barrel."
 
 L["csgo_scar20_barrel_stub.printname"] = "PDW Barrel"
 L["csgo_scar20_barrel_stub.compactname"] = "PDW"
@@ -1823,6 +1823,10 @@ L["csgo_scout_barrel_long.description"] = "Long heavy barrel."
 L["csgo_scout_barrel_short.printname"] = "Survival Barrel"
 L["csgo_scout_barrel_short.compactname"] = "Survival"
 L["csgo_scout_barrel_short.description"] = "Compact barrel."
+
+L["csgo_scout_mag_10.printname"] = "10-Round 7.62×51mm Magazine"
+L["csgo_scout_mag_10.compactname"] = "7.62mm+"
+L["csgo_scout_mag_10.description"] = string.format(quicktext.bigmag, 10)
 
 /////////////////// SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 Commando Barrel and Handguard"
@@ -2354,10 +2358,10 @@ L["csgo_ssg08_sight_iron.description"] = ARC9:GetPhrase("csgo_awp_sight_iron.des
 L["csgo_m249_barrel_long.printname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.printname") or "SAW Barrel"
 L["csgo_m249_barrel_long.compactname"] = ARC9:GetPhrase("csgo_galilar_barrel_long.compactname") or "SAW"
 
-L["csgo_scar20_mag_20_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.printname") or "20-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_scar20_mag_20_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.printname") or "20-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_scar20_mag_20_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.compactname") or "7.62mm A"
 L["csgo_scar20_mag_20_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.description") or "Changes the firing mode to <color=100,255,100>fully automatic</color>."
 
-L["csgo_scar20_mag_30_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.printname") or "30-Round 7.62×51mm Magazine (Automatic)"
+L["csgo_scar20_mag_30_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.printname") or "30-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_scar20_mag_30_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.compactname") or "7.62mm+ A"
 L["csgo_scar20_mag_30_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.description") or "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)

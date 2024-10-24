@@ -54,7 +54,7 @@ And here's the long, more detailed version:
 [b]AWP[/b]: Disabled the use of Aim Assist
 [b]G3SG1[/b]: Disabled the use of Aim Assist | Increased recoil | Reduced recoil centering
 [b]SCAR-20[/b]: Disabled the use of Aim Assist | Increased recoil | Reduced recoil centering
-[b]Scout[/b]: Disabled the use of Aim Assist
+[b]Scout[/b]: Disabled the use of Aim Assist | Decreased mag. capacity | Increased reload speed
 [b]SSG 08[/b]: Disabled the use of Aim Assist
 
 [u]LMGs[/u]
@@ -127,6 +127,7 @@ A few weapons have received brand-new attachments:
 	[*] All [b]Dual Wield[/b] weapons will use their respective weapon's extended magazines (except the R8 Revolvers & Sawed-Offs)
 	[*] MP5 & MP5-SD: [b]40-Round Magazine[/b] & [b]30-Round 10x25mm Magazine[/b]
 	[*] SCAR-20: [b]20-Round Magazine (Automatic)[/b] & [b]30-Round Magazine (Automatic)[/b]
+	[*] Scout: [b]10-Round Magazine[/b]
 [/list]
 
 [u]New Integrations[/u]

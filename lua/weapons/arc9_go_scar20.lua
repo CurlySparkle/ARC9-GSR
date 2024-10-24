@@ -473,44 +473,37 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["mount"] = { Bodygroups = { { 1, 1 }, { 5, 1 } } },
+    ["mount"] = { Bodygroups = { { 1, 2 }, { 5, 1 } } },
     ["stock_retract"] = { Bodygroups = { { 2, 1 } } },
     ["stock_none"] = { Bodygroups = { { 2, 2 } } },
-    ["mag"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_scar20_mag_30"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_scar20_mag_30_auto"] = { Bodygroups = { { 3, 1 } } },
     ["mag_556_20"] = { Bodygroups = { { 3, 2 }, {0, 1 } } },
     ["mag_556_30"] = { Bodygroups = { { 3, 3 }, {0, 1 } } },
     ["mag_556_60"] = { Bodygroups = { { 3, 3 }, {0, 1 } } },
-    ["barrel_short"] = { Bodygroups = { { 4, 1 }, {5, 6 }, {6, 1 },
-    },
-    AttPosMods = { 
-		[6] = { Pos = Vector(-0.8, -4.6, 11), },
-		[3] = { Pos = Vector(0.05, -4.52, 15.55), }
-	}
-    },
-    ["barrel_stub"] = { Bodygroups = { { 4,2}, {5,4}, {6,2} },
-    AttPosMods = { 
-		[6] = { Pos = Vector(-0.8, -4.6, 9), },
-		[4] = { Pos = Vector(0, -3.6, 8), },
-		[3] = { Pos = Vector(0.05, -4.52, 12.15), }
-	}
-    },
-    ["barrel_factory"] = { Bodygroups = { { 4,3}, {5,6}, {6,3} },
-    AttPosMods = { 
-		[6] = { Pos = Vector(-0.8, -4.6, 11), },
-		[4] = { Pos = Vector(0, -3.6, 9), },
-		[3] = { Pos = Vector(0.05, -4.52, 18), }
-	}
-    },
+    ["csgo_scar20_barrel_short"] = { Bodygroups = { { 4, 1 }, {5, 6 }, {6, 1 } } },
+    ["csgo_scar20_barrel_stub"] = { Bodygroups = { { 4,2}, {5,4}, {6,2} } },
+    ["csgo_scar20_barrel_factory"] = { Bodygroups = { { 4,3}, {5,6}, {6,3} } },
 }
 
 // Forced Override Bodygroup
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("stock_retract") then model:SetBodygroup(2,1) end		
-	if wep:HasElement("barrel_short") and wep.Attachments[1].Installed then model:SetBodygroup(5,3) end
-	if wep:HasElement("barrel_stub") and wep.Attachments[1].Installed then model:SetBodygroup(5,5) end
-	if wep:HasElement("barrel_factory") and wep.Attachments[1].Installed then model:SetBodygroup(5,7) end
+	local fsbg = 0
+	
+	if wep.Attachments[1].Installed then
+		if wep:HasElement("csgo_scar20_barrel_factory") then model:SetBodygroup(5,7) end
+		if wep:HasElement("csgo_scar20_barrel_short") then model:SetBodygroup(5,3) end
+		if wep:HasElement("csgo_scar20_barrel_stub") then model:SetBodygroup(5,5) end
+	end
+	
+	if wep:HasElement("csgo_optic_scope_scar20") then 
+		model:SetBodygroup(1,1)
+	end
+	
+	if wep:HasElement("stock_retract") then model:SetBodygroup(2,1) end
 	if wep.Attachments[3].Installed then model:SetBodygroup(6,4) end
+
 end
 
 SWEP.HookP_NameChange = function(self, name)
@@ -608,7 +601,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.8, -4.6, 18),
         Ang = Angle(90, 90, 90),
-		LaserCorrectionAngle = Angle(0.4, 0, 1),
+		LaserCorrectionAngle = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),

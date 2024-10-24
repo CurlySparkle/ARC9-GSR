@@ -1078,7 +1078,7 @@ L["go_ubgl_m203_sight.compactname"] = "Sicht"
 -- L["go_ubgl_m203_sight.description"] = "Installs a side-mounted sight, allowing aiming with the M203 Grenade Launcher."
 
 L["go_ubgl_mass26.printname"] = "MASS-26 Schrotflinte"
-L["go_ubgl_mass26.compactname"] = "MASS"
+L["go_ubgl_mass26.compactname"] = "MASS-26"
 -- L["go_ubgl_mass26.description"] = "Installs an undermounted pump-action shotgun."
 
 L["go_ubgl_xm1014.printname"] = "XM1014 Schrotflinte"
@@ -1354,15 +1354,15 @@ L["csgo_g3_stock_fixed.compactname"] = "Fixed A2"
 L["csgo_g3_stock_fixed.description"] = "Verkürzter Schaft behoben."
 
 -- Fully Automatic Attachments
-L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Schuss-Magazin (Automatisch)"
+L["csgo_g3_mag_30_auto.printname"] = "7,62 × 51 mm 30-Schuss-Magazin [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_30_auto.compactname"] = "7,62 mm+ A"
 L["csgo_g3_mag_30_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Schuss-Magazin (Automatisch)"
+L["csgo_g3_mag_20_auto.printname"] = "7,62 × 51 mm 20-Schuss-Magazin [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_20_auto.compactname"] = "7,62 mm A"
 L["csgo_g3_mag_20_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>."
 
-L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Schuss-Magazin (Automatisch)"
+L["csgo_g3_mag_10_auto.printname"] = "7,62 × 51 mm 10-Schuss-Magazin [<color=100,175,100>Auto</color>]"
 L["csgo_g3_mag_10_auto.compactname"] = "7,62 mm- A"
 L["csgo_g3_mag_10_auto.description"] = "Ändert den Schussmodus auf <color=100,255,100>vollautomatisch</color>.\n" .. string.format(quicktext.smallmag, 10)
 
@@ -1792,8 +1792,8 @@ L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
 L["csgo_scar17_stock_bullpup.description"] = "Befestigt das SCAR-17 mit einem Bullpup-Kit und verwandelt es in ein Bullpup-Gewehr."
 
 /////////////////// SCAR-20
-L["csgo_scar20_barrel_factory.printname"] = "CQC-Fabriklauf"
-L["csgo_scar20_barrel_factory.compactname"] = "Fabrik."
+L["csgo_scar20_barrel_factory.printname"] = "Mk 17-Fabriklauf"
+L["csgo_scar20_barrel_factory.compactname"] = "Mk 17"
 L["csgo_scar20_barrel_factory.description"] = "Factory SCAR-17-Lauf."
 
 L["csgo_scar20_barrel_short.printname"] = "CQC-Lauf"
@@ -1816,6 +1816,10 @@ L["csgo_scout_barrel_long.description"] = "Langer und schwerer Lauf."
 L["csgo_scout_barrel_short.printname"] = "Survival-Lauf"
 L["csgo_scout_barrel_short.compactname"] = "Survival"
 L["csgo_scout_barrel_short.description"] = "Kompakter Lauf."
+
+L["csgo_scout_mag_10.printname"] = "7,62 × 51 mm 10-Schuss-Magazin"
+L["csgo_scout_mag_10.compactname"] = "7,62 mm+"
+L["csgo_scout_mag_10.description"] = string.format(quicktext.bigmag, 10)
 
 /////////////////// SIG556
 L["csgo_sg556_barrel_short.printname"] = "SG 552 300 mm Kommandolauf und Handschutz"

@@ -464,6 +464,7 @@ local g3autostats = {
 	end,
 
 	SpreadAddHipFire = -0.05,
+	NoAimAssist = false,
 
 }
 
@@ -908,31 +909,300 @@ ARC9.LoadAttachment(ATT, "csgo_g3_mag_40_mp9")
 
 ////////////////////////////////////// SCAR-20
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Mk 17 Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.95
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.SpreadMultRecoil = 1.1
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = -10
+
+ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+ATT.Category = "go_scar20_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+		[3] = { Pos = Vector(0.05, -4.52, 19.75) }, -- Muzzle
+		-- [4] = { Pos = Vector(0, -3.6, 9) }, -- Underbarrel
+        [6] = { Pos = Vector(-0.8, -4.6, 11) }, -- Tactical
+	}
+}
+
+ATT.CustomizePos = Vector(21.5, 45, 6)
+ATT.CustomizeRotateAnchor = Vector(21.5, -5, -4)
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_barrel_factory")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "CQC Barrel"
+
+ATT.AimDownSightsTimeMult = 0.875
+ATT.SprintToFireTimeMult = 0.875
+
+ATT.SpreadMultRecoil = 1.125
+ATT.RangeMinMult = 0.8
+ATT.RangeMaxMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_scar_barrel_short.png", "mips smooth")
+ATT.Category = "go_scar20_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+		[3] = { Pos = Vector(0.05, -4.52, 15.65) }, -- Muzzle
+		-- [4] = { Pos = Vector(0, -3.6, 9) }, -- Underbarrel
+        [6] = { Pos = Vector(-0.8, -4.6, 11) }, -- Tactical
+	}
+}
+
+ATT.CustomizePos = Vector(19, 45, 6)
+ATT.CustomizeRotateAnchor = Vector(19, -5, -4)
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "PDW Barrel"
+
+ATT.AimDownSightsTimeMult = 0.8
+ATT.SprintToFireTimeMult = 0.8
+ATT.SpeedMult = 1.05
+
+ATT.RecoilMult = 1.33
+ATT.SpreadMultRecoil = 1.3
+ATT.RangeMinMult = 0.66
+ATT.RangeMaxMult = 0.66
+ATT.PhysBulletMuzzleVelocityMult = 0.66
+
+table.Merge(ATT, sharedcode)
+
+ATT.ExcludeElements = {"ubgl"}
+
+ATT.Icon = Material("entities/attachs/go_scar_barrel_stub.png", "mips smooth")
+ATT.Category = "go_scar20_barrel"
+
+ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_mk18.mdl"
+ATT.ModelOffset = Vector(-1, -0.5, -2.75)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK_Priority = 5
+ATT.LHIK = true
+
+ATT.Element = {
+    AttPosMods = {
+		[3] = { Pos = Vector(0.05, -4.52, 12.15) }, -- Muzzle
+		[4] = { Pos = Vector(0, -3.6, 9) }, -- Underbarrel
+        [6] = { Pos = Vector(-0.8, -4.6, 9) }, -- Tactical
+	}
+}
+
+ATT.CustomizePos = Vector(17, 45, 6)
+ATT.CustomizeRotateAnchor = Vector(17, -5, -4)
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_barrel_stub")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62×51mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.075
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_scar_mag_30.png", "mips smooth")
+ATT.Category = "go_scar20_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_mag_30")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Alternative View (SCAR-20)"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "go_scar20_view"
+
+ATT.ActivePos = Vector(-1.5, -2, 0.5)
+ATT.ActiveAng = Angle(1, 0, 0)
+
+-- ATT.MovingPos = Vector(-1.5, -2.3, 0)
+-- ATT.MovingAng = Angle(1, 0, 0)
+
+-- ATT.CrouchPos = Vector(-1.5, -2.3, 0)
+-- ATT.CrouchAng = Angle(1, 0, 0)
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_view")
+------------------------------------------------------------------------ Automatic Mags
+
+local scar20autostats = {
+	SortOrder = 20,
+	MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle",
+
+	Firemodes = {
+		{
+			Mode = -1,
+		},
+		{
+			Mode = 1,
+		}
+	},
+
+	SpreadAddHipFire = -0.05,
+	NoAimAssist = false,
+	
+	RPMAdd = 360,
+	-- RecoilMult = 0.9,
+	-- VisualRecoilMult = 0.9,
+	RecoilPerShot = 0.25,
+	
+	DamageMinAdd = -15,
+	DamageMaxAdd = -40,
+	RangeMinMult = 0.4,
+	RangeMaxMult = 0.66,
+	SpreadAddRecoil = 0.01,
+	
+	ShootSound = "CSGO.G3SG1.Fire_Auto",
+	FirstShootSound = "CSGO.G3SG1.Fire_Auto_First",
+	FirstShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto_First",
+	ShootSoundSilenced = "CSGO.G3SG1.Silenced_Fire_Auto",
+	DistantShootSound = "CSGO.g3sg1.Distance_Fire",
+
+}
+
+ATT = {}
+
+ATT.PrintName = "20-Round 7.62×51mm Magazine (Automatic)"
+
+table.Merge(ATT, sharedcode)
+
+table.Merge(ATT, scar20autostats)
+
+ATT.Icon = Material("entities/attachs/go_scar_mag_30.png", "mips smooth")
+ATT.Category = "go_scar20_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_mag_20_auto")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62×51mm Magazine (Automatic)"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.075
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+table.Merge(ATT, scar20autostats)
+
+ATT.Icon = Material("entities/attachs/go_scar_mag_30.png", "mips smooth")
+ATT.Category = "go_scar20_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_scar20_mag_30_auto")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// Scout
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Elite Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+ATT.SpeedMult = 0.975
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_scout_barrel_long.png", "mips smooth")
+ATT.Category = "go_scout_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.15, -3.3, 30.5) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_scout_barrel_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Survival Barrel"
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.025
+
+ATT.SpreadMultRecoil = 1.15
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_scout_barrel_short.png", "mips smooth")
+ATT.Category = "go_scout_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.15, -3.3, 22.75) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_scout_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "10-Round 7.62×51mm Magazine"
+
+ATT.ClipSizeAdd = 5
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.05
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_scout_barrel_short.png", "mips smooth")
+ATT.Category = "go_scout_mag"
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+   if anim == "reload" or anim == "reload_empty" then 
+        return anim .. "_long"
+    end
+
+end
+
+ARC9.LoadAttachment(ATT, "csgo_scout_mag_10")
 ------------------------------------------------------------------------
 
 

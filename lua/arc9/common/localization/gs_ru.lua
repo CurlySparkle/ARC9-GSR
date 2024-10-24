@@ -1078,7 +1078,7 @@ L["go_ubgl_m203_sight.compactname"] = "Прицел"
 -- L["go_ubgl_m203_sight.description"] = "Installs a side-mounted sight, allowing aiming with the M203 Grenade Launcher."
 
 L["go_ubgl_mass26.printname"] = "Пробивной дробовик MASS-26"
-L["go_ubgl_mass26.compactname"] = "MASS"
+L["go_ubgl_mass26.compactname"] = "MASS-26"
 -- L["go_ubgl_mass26.description"] = "Installs an undermounted pump-action shotgun."
 
 L["go_ubgl_xm1014.printname"] = "Пробивной дробовик XM1014"
@@ -1354,15 +1354,15 @@ L["csgo_g3_stock_fixed.compactname"] = "Фиксированный A2"
 L["csgo_g3_stock_fixed.description"] = "Фиксированный укороченный приклад."
 
 -- Fully Automatic Attachments
-L["csgo_g3_mag_30_auto.printname"] = "30-зарядный магазин 7,62×51-мм (Автоматический)"
+L["csgo_g3_mag_30_auto.printname"] = "30-зарядный магазин 7,62×51-мм [<color=100,175,100>Авто.</color>]"
 L["csgo_g3_mag_30_auto.compactname"] = "7,62-мм+ А"
 L["csgo_g3_mag_30_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>.\n" .. string.format(quicktext.bigmag, 30)
 
-L["csgo_g3_mag_20_auto.printname"] = "20-зарядный магазин 7,62×51-мм (Автоматический)"
+L["csgo_g3_mag_20_auto.printname"] = "20-зарядный магазин 7,62×51-мм [<color=100,175,100>Авто.</color>]"
 L["csgo_g3_mag_20_auto.compactname"] = "7,62-мм А"
 L["csgo_g3_mag_20_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>."
 
-L["csgo_g3_mag_10_auto.printname"] = "10-зарядный магазин 7,62×51-мм (Автоматический)"
+L["csgo_g3_mag_10_auto.printname"] = "10-зарядный магазин 7,62×51-мм [<color=100,175,100>Авто.</color>]"
 L["csgo_g3_mag_10_auto.compactname"] = "7,62-мм- А"
 L["csgo_g3_mag_10_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>.\n" .. string.format(quicktext.smallmag, 10)
 
@@ -1792,8 +1792,8 @@ L["csgo_scar17_stock_bullpup.compactname"] = "«Буллпап»"
 L["csgo_scar17_stock_bullpup.description"] = "Применяет комплект «Буллпап» на SCAR-17, превращая его в винтовку «Буллпап»."
 
 /////////////////// SCAR-20
-L["csgo_scar20_barrel_factory.printname"] = "Заводской ствол CQC"
-L["csgo_scar20_barrel_factory.compactname"] = "Завод."
+L["csgo_scar20_barrel_factory.printname"] = "Заводской ствол Mk 17"
+L["csgo_scar20_barrel_factory.compactname"] = "Mk 17"
 L["csgo_scar20_barrel_factory.description"] = "Заводской ствол SCAR-17."
 
 L["csgo_scar20_barrel_short.printname"] = "Ствол CQC"
@@ -1802,7 +1802,7 @@ L["csgo_scar20_barrel_short.description"] = "Компактный ствол."
 
 L["csgo_scar20_barrel_stub.printname"] = "Ствол пистолета-пулемёта"
 L["csgo_scar20_barrel_stub.compactname"] = "ПП"
-L["csgo_scar20_barrel_stub.description"] = "Короткий ствол для использования на пистолете-пулемёте SCAR.\nУлучшение эргономичности оружия за счёт снижения отдачи и дальности стрельбы."
+L["csgo_scar20_barrel_stub.description"] = "Короткий ствол для использования на пистолете-пулемёте SCAR."
 
 L["csgo_scar20_mag_30.printname"] = "30-зарядная коробка 7,62×51-мм"
 L["csgo_scar20_mag_30.compactname"] = "7,62-мм+"
@@ -1816,6 +1816,10 @@ L["csgo_scout_barrel_long.description"] = "Длинный ствол."
 L["csgo_scout_barrel_short.printname"] = "Выживания ствол"
 L["csgo_scout_barrel_short.compactname"] = "Выживания"
 L["csgo_scout_barrel_short.description"] = "Компактный ствол."
+
+L["csgo_scout_mag_10.printname"] = "10-зарядная коробка 7,62×51-мм"
+L["csgo_scout_mag_10.compactname"] = "7,62-мм+"
+L["csgo_scout_mag_10.description"] = string.format(quicktext.bigmag, 10)
 
 /////////////////// SIG556
 L["csgo_sg556_barrel_short.printname"] = "Ствол и рукоять SG 552 Commando"

@@ -67,7 +67,7 @@ SWEP.PhysBulletDrag = 1
 SWEP.Ammo = "sniperPenetratedRound" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 10 -- Self-explanatory.
+SWEP.ClipSize = 5 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 6 -- Amount of reserve UBGL magazines you can take.
 
@@ -149,6 +149,8 @@ SWEP.NoLastCycle = true
 SWEP.CycleTime = 0.85
 
 SWEP.NoAimAssist = true
+
+SWEP.ReloadTimeMult = 0.9
 
 -------------------------- SWAY
 
@@ -353,6 +355,39 @@ SWEP.Animations = {
             {s = path .. "scout_cliphit.ogg", t = 45/30},
         },
     },
+    ["reload_long"] = {
+        Source = "reload_short",
+		RefillProgress = 0.725,
+		MinProgress = 0.95,
+		FireASAP = true,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 1
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.7,
+                lhik = 0,
+                rhik = 1
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 1
+            },
+        },
+        EventTable = {
+            {s = path .. "scout_clipout.ogg", t = 7/30},
+            {s = path .. "scout_clipin.ogg", t = 40/30},
+            {s = path .. "scout_cliphit.ogg", t = 60/30},
+        },
+    },
     ["reload_empty"] = {
         Source = "reload",
 		RefillProgress = 0.875,
@@ -435,10 +470,10 @@ SWEP.Animations = {
         },
         EventTable = {
             {s = path .. "scout_boltback.ogg", t = 7/30},	
-            {s = path .. "scout_clipin.ogg", t = 40/30},
-            {s = path .. "scout_cliphit.ogg", t = 60/30},
+            {s = path .. "scout_clipout.ogg", t = 25/30},
+            {s = path .. "scout_clipin.ogg", t = 60/30},
             {s = path .. "scout_cliphit.ogg", t = 79/30},
-            {s = path .. "scout_boltforward.ogg", t = 95/30},
+            {s = path .. "scout_boltforward_cock.ogg", t = 95/30},
         },
     },
     ["ready"] = {
@@ -551,13 +586,13 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["barrel_long"] = { Bodygroups = { {1,1} },
-        AttPosMods = { [3] = { Pos = Vector(0.15, -3.3, 30.5), } }
+    ["csgo_scout_barrel_long"] = { Bodygroups = { {1,1} },
+        -- AttPosMods = { [3] = { Pos = Vector(0.15, -3.3, 30.5), } }
     },
-    ["barrel_short"] = { Bodygroups = { {1,2} },
-        AttPosMods = { [3] = { Pos = Vector(0.15, -3.25, 22.75), } }
+    ["csgo_scout_barrel_short"] = { Bodygroups = { {1,2} },
+        -- AttPosMods = { [3] = { Pos = Vector(0.15, -3.25, 22.75), } }
     },
-    ["mag"] = { Bodygroups = { { 2,1} } },
+    ["csgo_scout_mag_10"] = { Bodygroups = { { 2,1} } },
 }
 
 SWEP.Attachments = {
@@ -619,7 +654,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.awp_clip",
-        Category = {"go_mag"},
+        Category = {"go_scout_mag"},
         Pos = Vector(0, -1, 0),
     },
     {
