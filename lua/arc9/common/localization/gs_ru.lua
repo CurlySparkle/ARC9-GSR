@@ -231,7 +231,7 @@ L["csgo_weapon_nade_mines"] = "Толчковые мины"
 L["csgo_weapon_nade_molotov"] = "Коктейль Молотова"
 L["csgo_weapon_nade_rock"] = "Камень"
 L["csgo_weapon_nade_smoke"] = "Дымовая граната"
-L["csgo_weapon_nade_sonar"] = "Сонарная граната"
+L["csgo_weapon_nade_sonar"] = "Тактическая граната"
 
 L["csgo_weapon_negev"] = "Негев"
 L["csgo_weapon_nova"] = "Nova"

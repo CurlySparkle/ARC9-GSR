@@ -231,7 +231,7 @@ L["csgo_weapon_nade_mines"] = "Stoßminen"
 L["csgo_weapon_nade_molotov"] = "Molotow"
 L["csgo_weapon_nade_rock"] = "Stein"
 L["csgo_weapon_nade_smoke"] = "Rauchgranate"
-L["csgo_weapon_nade_sonar"] = "Sonar-Nade"
+L["csgo_weapon_nade_sonar"] = "Taktische Aufklärungsgranate"
 
 L["csgo_weapon_negev"] = "Negev"
 L["csgo_weapon_nova"] = "Nova"
@@ -408,7 +408,7 @@ L["csgo_description_nade_rock"] = "Der experimentelle Felsen, sehr tödlich und 
 
 L["csgo_description_nade_smoke"] = "Die Rauchgranate erzeugt eine Nebelwand mit mittlerer Reichweite. Sie kann Ihr Team effektiv vor Scharfschützen verstecken oder einfach nur eine nützliche Ablenkung schaffen."
 
-L["csgo_description_nade_sonar"] = "Tactical Awareness Grenade ist eine Gebrauchsgranate, die hilft, indem sie beim Wurf an Oberflächen haftet und mit einer Funktion explodiert, die Feinde aus etwa 200 Metern Entfernung erkennen kann."
+L["csgo_description_nade_sonar"] = "Taktische Aufklärungsgranate ist eine Gebrauchsgranate, die hilft, indem sie beim Wurf an Oberflächen haftet und mit einer Funktion explodiert, die Feinde aus etwa 200 Metern Entfernung erkennen kann."
 
 L["csgo_description_negev"] = "Die Negev ist eine Bestie, die den Feind mit ihrem punktgenauen Unterdrückungsfeuer in Schach halten kann, vorausgesetzt, Sie haben genügend Zeit, um die Kontrolle über sie zu erlangen."
 

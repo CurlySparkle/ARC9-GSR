@@ -224,14 +224,14 @@ L["csgo_weapon_nade_c4"] = "C4-Sprängämne"
 L["csgo_weapon_nade_claymores"] = "Claymore"
 L["csgo_weapon_nade_decoy"] = "Lockgranat"
 L["csgo_weapon_nade_flashbang"] = "Chockgranat"
-L["csgo_weapon_nade_frag"] = "Handgranat"
+L["csgo_weapon_nade_frag"] = "Splittergranat"
 L["csgo_weapon_nade_incendiary"] = "Brandgranat"
 L["csgo_weapon_nade_landmines"] = "Landmina"
 L["csgo_weapon_nade_mines"] = "Studsmina"
 L["csgo_weapon_nade_molotov"] = "Molotov"
 L["csgo_weapon_nade_rock"] = "Sten"
 L["csgo_weapon_nade_smoke"] = "Rökgranat"
-L["csgo_weapon_nade_sonar"] = "Sonar-Granat"
+L["csgo_weapon_nade_sonar"] = "Taktisk medvetenhetsgranat"
 
 L["csgo_weapon_negev"] = "Negev"
 L["csgo_weapon_nova"] = "Nova"
@@ -408,7 +408,7 @@ L["csgo_description_nade_rock"] = "Experimentell sten som är väldigt dödlig o
 
 L["csgo_description_nade_smoke"] = "Rökgranaten skapar en mediumstor rökridå. Den kan användas för att effektivt dölja ditt lag från krypskyttar, eller bara som distraktion."
 
-L["csgo_description_nade_sonar"] = "Taktisk Uppmärkelsegranat är en verktygsgranat som hjälper till genom att klistra fast sig efter den kastats och detonerar med en funktion som kan upptäcka fiender inom 200 meter."
+L["csgo_description_nade_sonar"] = "Taktisk medvetenhetsgranaten är en verktygsgranat som hjälper till genom att klistra fast sig efter den kastats och detonerar med en funktion som kan upptäcka fiender inom 200 meter."
 
 L["csgo_description_negev"] = "Negev är ett odjur som kan hålla fienden i schack med dess precisa nedhållande eldkraft, förutsatt att du har tid till att få kontroll på den."
 

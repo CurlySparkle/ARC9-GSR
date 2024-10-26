@@ -7,6 +7,7 @@ SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
+SWEP.NoAimAssist = true
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_sonar")
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_grenade")

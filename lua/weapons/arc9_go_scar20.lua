@@ -123,7 +123,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.9
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 2
 SWEP.VisualRecoilUp = 1
-SWEP.VisualRecoilSide = -.25
+SWEP.VisualRecoilSide = -.1
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 2

@@ -237,7 +237,7 @@ L["csgo_weapon_nade_mines"] = "Bump Mines"
 L["csgo_weapon_nade_molotov"] = "Molotov"
 L["csgo_weapon_nade_rock"] = "Rock"
 L["csgo_weapon_nade_smoke"] = "Smoke Grenade"
-L["csgo_weapon_nade_sonar"] = "Sonar Nade"
+L["csgo_weapon_nade_sonar"] = "Tactical Awareness Grenade"
 
 L["csgo_weapon_negev"] = "Negev"
 L["csgo_weapon_nova"] = "Nova"

@@ -322,9 +322,9 @@ SWEP.Animations = {
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/60},
-            {s = path .. "ssg08_clipout.wav", t = 14/60},
-            {s = path .. "ssg08_clipin.wav", t = 65/60},
+            {s = path .. "ssg08_clipout.wav", t = 16/60},
             {s = path .. "ssg08_cliphit.wav", t = 70/60},
+            {s = path .. "ssg08_clipin.wav", t = 78/60},
 			{s = "weapons/csgo/movement1.wav", t = 80/60},
         },
     },
@@ -336,12 +336,12 @@ SWEP.Animations = {
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/60},
-            {s = path .. "ssg08_clipout.wav", t = 53/60},
-            {s = path .. "ssg08_clipin.wav", t = 110/60},
-            {s = path .. "ssg08_cliphit.wav", t = 105/60},
             {s = path .. "ssg08_boltback.wav", t = 23/60},
+            {s = path .. "ssg08_clipout.wav", t = 53/60},
+            {s = path .. "ssg08_cliphit.wav", t = 101/60},
+            {s = path .. "ssg08_clipin.wav", t = 109/60},
 			{s = "weapons/csgo/movement1.wav", t = 130/60},
-            {s = path .. "ssg08_boltforward.wav", t = 145/60},
+            {s = path .. "ssg08_boltforward.wav", t = 142.5/60},
         },
     },
     ["ready"] = {
@@ -426,22 +426,16 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.AttachmentElements = {
-    ["barrel_short"] = { Bodygroups = { { 1, 2 },
-        },
-    -- AttPosMods = { [3] = { Pos = Vector(0.3, -2.6, 24.5), } }	
-    },
-    ["barrel_factory"] = { Bodygroups = { { 1, 1 },
-        },
-    -- AttPosMods = { [3] = { Pos = Vector(0.3, -2.55, 27.6), } }
-    },
-    ["mag_15"] = { Bodygroups = { { 2, 1 } } },
-    ["mag_5"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_ssg08_barrel_short"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_ssg08_barrel_factory"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_ssg08_mag_15"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_ssg08_mag_5"] = { Bodygroups = { { 2, 2 } } },
     ["stock_none"] = { Bodygroups = { { 3, 2 } } },
     ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
-    ["sight_iron"] = { Bodygroups = { { 4, 1 } } },
+    ["csgo_ssg08_sight_iron"] = { Bodygroups = { { 4, 1 } } },
     ["grip"] = {
-		Bipod = false,
 		Bodygroups = { {5,2} },
+		Bipod = false,
 	},
 }
 
@@ -539,9 +533,9 @@ SWEP.Attachments = {
         --DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract",},
         Bone = "v_weapon.ssg08_Parent",
-        Pos = Vector(0.5, -0, -3),
+        Pos = Vector(0.5, -0.35, -2.8),
         Ang = Angle(90, 0, -90),
-		Scale = 1.1,
+		Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),

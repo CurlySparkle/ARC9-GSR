@@ -1208,14 +1208,125 @@ ARC9.LoadAttachment(ATT, "csgo_scout_mag_10")
 
 ////////////////////////////////////// SSG 08
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Factory Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ssg08_barrel_long.png", "mips smooth")
+ATT.Category = "go_ssg08_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.3, -2.55, 27.6) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePos = Vector(20.5, 50, 6)
+ATT.CustomizeRotateAnchor = Vector(20.5, -6, -4)
+
+ARC9.LoadAttachment(ATT, "csgo_ssg08_barrel_factory")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Custom Barrel"
+
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+ATT.RangeMinMult = 0.825
+ATT.RangeMaxMult = 0.825
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
+
+ATT.Icon = Material("entities/attachs/go_ssg08_barrel_short.png", "mips smooth")
+ATT.Category = "go_ssg08_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.3, -2.55, 24.5) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePos = Vector(19, 50, 6)
+ATT.CustomizeRotateAnchor = Vector(19, -6, -4)
+
+ARC9.LoadAttachment(ATT, "csgo_ssg08_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "15-Round .308 SSG Magazine"
+
+ATT.ClipSizeAdd = 5
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ssg08_mag_10.png", "mips smooth")
+ATT.Category = "go_ssg08_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_ssg08_mag_15")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "5-Round .338 Lapua Magnum Magazine"
+
+ATT.ClipSizeAdd = -5
+
+ATT.ReloadTimeMult = 0.925
+ATT.DropMagazineTimeMult = 0.925
+
+ATT.DamageMaxAdd = 27
+ATT.DamageMinAdd = 5
+
+ATT.RecoilMult = 1.66
+ATT.AimDownSightsTimeMult = 1.33
+ATT.CycleTimeMult = 1.25
+ATT.RPMMult = 0.7
+ATT.RecoilAutoControlMult = 0.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ssg08_mag_5_338.png", "mips smooth")
+ATT.Category = "go_ssg08_mag"
+
+ATT.ShootSound = "CSGO.AWP.Fire"
+ATT.ShootSoundSilenced = "CSGO.AWP.Fire_Silenced"
+
+ARC9.LoadAttachment(ATT, "csgo_ssg08_mag_5")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Iron Sights"
+
+table.Merge(ATT, sharedcode)
+
+ATT.Category = "csgo_sights_ssg08"
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0, 9, -0.75),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 56,
+        IgnoreExtra = false
+    },
+}
+
+ARC9.LoadAttachment(ATT, "csgo_ssg08_sight_iron")
 ------------------------------------------------------------------------

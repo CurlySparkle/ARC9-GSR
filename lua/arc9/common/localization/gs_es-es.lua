@@ -224,14 +224,14 @@ L["csgo_weapon_nade_c4"] = "Explosivo C4"
 L["csgo_weapon_nade_claymores"] = "Claymore"
 L["csgo_weapon_nade_decoy"] = "Granada de Señuelo"
 L["csgo_weapon_nade_flashbang"] = "Granada Aturdidora"
-L["csgo_weapon_nade_frag"] = "Granada de Frag."
+L["csgo_weapon_nade_frag"] = "Granada de fragmentación"
 L["csgo_weapon_nade_incendiary"] = "Granada Inciendiaria"
 L["csgo_weapon_nade_landmines"] = "Mina Terrestre"
-L["csgo_weapon_nade_mines"] = "Bump Mines"
+L["csgo_weapon_nade_mines"] = "Eyectores"
 L["csgo_weapon_nade_molotov"] = "Molotov"
 L["csgo_weapon_nade_rock"] = "Roca"
 L["csgo_weapon_nade_smoke"] = "Granada de Humo"
-L["csgo_weapon_nade_sonar"] = "Sonar Nade"
+L["csgo_weapon_nade_sonar"] = "Granada de reconocimiento táctico"
 
 L["csgo_weapon_negev"] = "Negev"
 L["csgo_weapon_nova"] = "Nova"
@@ -408,7 +408,7 @@ L["csgo_description_nade_rock"] = "La roca experimental, muy mortal y todo un \"
 
 L["csgo_description_nade_smoke"] = "La granada de humo crea una cortina de humo de medio área. Es útil cuando quieres provocar distracciones al enemigo o simplemente esconderte de un francotirador."
 
-L["csgo_description_nade_sonar"] = "Tactical Awareness Grenade es una granada de utilidad que ayuda pegándose en superficies al lanzarla y detona con una función en la que puede detectar enemigos desde unos 200 metros."
+L["csgo_description_nade_sonar"] = "Granada de reconocimiento táctico es una granada de utilidad que ayuda pegándose en superficies al lanzarla y detona con una función en la que puede detectar enemigos desde unos 200 metros."
 
 L["csgo_description_negev"] = "La Negev es una bestia que puede mantener a raya al enemigo con su preciso fuego de supresión, siempre y cuando dispongas del tiempo necesario para hacerte con su control."
 

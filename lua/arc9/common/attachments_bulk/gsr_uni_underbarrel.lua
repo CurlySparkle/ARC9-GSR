@@ -390,6 +390,8 @@ ATT.Attachments = {
     -- },
 }
 
+ATT.NoAimAssistUBGL = true
+
 ARC9.LoadAttachment(ATT, "go_ubgl_m203")
 ------------------------------------------------------------------------
 ATT = {}

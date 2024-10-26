@@ -84,3 +84,5 @@ end
 
 SWEP.SpeedMultSights = 0.75
 SWEP.RecoilMax = 1
+
+SWEP.SwayAddBipod = -10
