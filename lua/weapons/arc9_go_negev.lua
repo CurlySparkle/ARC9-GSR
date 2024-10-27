@@ -36,11 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_mach_negev.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-18, 8.5, -7.2),
+    Pos = Vector(-17.25, 8.5, -7.2),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-20, 9, 4),
-    TPIKAng = Angle(-13, 0, 180),
-    Scale = 1
+    Scale = 0.875,
+    TPIKPos = Vector(-18, 10, -3),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -100,7 +100,10 @@ SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.1
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
@@ -130,11 +133,11 @@ SWEP.VisualRecoilSide = -.15
 SWEP.VisualRecoilSideSights = .05
 SWEP.VisualRecoilRoll = 1
 
-SWEP.VisualRecoilPositionBump = 1.75
-SWEP.VisualRecoilPositionBumpUp = 1
+SWEP.VisualRecoilPositionBump = 2
+SWEP.VisualRecoilPositionBumpUp = 0.5
 SWEP.VisualRecoilPositionBumpUpSights = .5
 SWEP.VisualRecoilMultCrouch = .75
-SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = 0
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -149,28 +152,27 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.08 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = -0.08 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.1
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddHipFire = 0.08
 SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = -0.1
+SWEP.SpreadAddSights = 0.04
 
-SWEP.RecoilModifierCapSights = 0.2
+SWEP.RecoilModifierCapSights = 1
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
-SWEP.AimDownSightsTime = 0.9 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.6 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.35
 
 -------------------------- MELEE
 
@@ -219,27 +221,24 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(27, 27.5, 7)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 25, 0)
+SWEP.CustomizePos = Vector(27, 45, 8.5)
+
+SWEP.CustomizeRotateAnchor = Vector(27, -7.5, -8.5)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(-5, 45, -2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.PeekPos = Vector(4, 4, -1)
+SWEP.PeekAng = Angle(-0.3, 0, 5)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -270,7 +269,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_mach_negev_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 1
+SWEP.DropMagazineTime = 1.5
 SWEP.DropMagazineQCA = 3
 
 SWEP.ExtraShellModels = {
@@ -337,7 +336,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.9,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         MagSwapTime = 2.1,
         IKTimeLine = {
             {
@@ -371,7 +372,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.9,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         MagSwapTime = 2.1,
         IKTimeLine = {
             {
@@ -406,7 +409,9 @@ SWEP.Animations = {
     },	
     ["reload_empty_mag"] = {
         Source = "reload_mag",
-		MinProgress = 0.9,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -437,7 +442,9 @@ SWEP.Animations = {
     },
     ["reload_mag"] = {
         Source = "reload_short_mag",
-		MinProgress = 0.9,
+		RefillProgress = 0.775,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -513,6 +520,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.6,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -597,53 +605,15 @@ SWEP.ReloadHideBoneTables = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["rearsight"] = {
-        Bodygroups = {
-            {1,1},
-			{4,1},
-        },
-    },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["stock_skeleton"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    },
-    ["bipod"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
-    ["foregrip"] = {
-        Bodygroups = {
-            {5,1},
-			{3,1},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {7,1},
-        },
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {7,2},
-        },
-    },
-    ["mag_762"] = {
-        Bodygroups = {
-            {0,1},
-			{6,1},
-        },
+    ["rearsight"] = { Bodygroups = { { 1, 1 }, { 4, 1 } } },
+    ["stock_retract"] = { Bodygroups = { { 2, 1 } } },
+    ["stock_skeleton"] = { Bodygroups = { { 2, 2 } } },
+    ["stock_none"] = { Bodygroups = { { 2, 3 } } },
+    ["bipod"] = { Bodygroups = { { 3, 1 } } },
+    ["foregrip"] = { Bodygroups = { { 5,1 }, { 3, 1 } } },
+    ["csgo_negev_barrel_long"] = { Bodygroups = { { 7, 1 } } },
+    ["csgo_negev_barrel_short"] = { Bodygroups = { { 7, 2 } } },
+    ["csgo_negev_mag_762"] = { Bodygroups = { { 0, 1 }, { 6, 1 } },
 		BulletBones = {
 		[1] = "v_weapon.bullet_18",
 		[2] = "v_weapon.bullet_16",
@@ -658,12 +628,7 @@ SWEP.AttachmentElements = {
 		[11] = "v_weapon.bullet_00",
 		},
     },
-    ["mag_556m"] = {
-        Bodygroups = {
-            {0,2},
-			{6,2},
-        },
-    },	
+    ["csgo_negev_mag_556m"] = { Bodygroups = { { 0, 2 }, { 6, 2 } } },	
 }
 
 SWEP.HookP_NameChange = function(self, name)

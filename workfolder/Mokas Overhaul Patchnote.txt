@@ -20,6 +20,7 @@ And here's the long, more detailed version:
 	[*] Adjusted customization positions
 	[*] Added sway when aiming
 	[*] Various other small tweaks
+	[*] Reduced ADS speed penalty while firing
 [/list]
 
 [u]Assault Rifles[/u]
@@ -58,8 +59,8 @@ And here's the long, more detailed version:
 [b]SSG 08[/b]: Disabled the use of Aim Assist
 
 [u]LMGs[/u]
-[b]M249[/b]:
-[b]Negev[/b]: 
+[b]M249[/b]: Inverted the spread values | Decreased visual recoil | Increased reload speed
+[b]Negev[/b]: Inverted the spread values | Decreased visual recoil | Increased aiming speed
 
 [u]Pistols[/u]
 [b]Beretta[/b]:

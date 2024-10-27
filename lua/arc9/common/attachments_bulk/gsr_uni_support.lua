@@ -522,7 +522,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
-        Category = {"cod2019_optic_pistol", "cod2019_optics_pistols_scope"},
+        Category = {"uplp_optic_small"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),

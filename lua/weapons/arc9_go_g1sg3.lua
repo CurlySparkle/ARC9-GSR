@@ -631,7 +631,7 @@ SWEP.AttachmentElements = {
     ["csgo_g3_stock_collapsed"] = { Bodygroups = { { 2,2 } } },
     ["csgo_g3_stock_short"] = { Bodygroups = { { 2,3 } } },
     ["csgo_g3_stock_fixed"] = { Bodygroups = { { 2,4 } } },
-    ["csgo_g3_stock_none"] = { Bodygroups = { { 2,5 } } },
+    ["stock_none"] = { Bodygroups = { { 2,5 } } },
     ["csgo_g3_barrel_medium"] = { Bodygroups = { { 3, 1 }, { 6, 1 }, { 7, 1 } } },
     ["csgo_g3_barrel_short"] = { Bodygroups = { { 3, 2 }, { 6, 2 } } },
     ["csgo_g3_barrel_sd"] = { Bodygroups = { { 3,3}, { 6, 3 }, { 7, 2 } } },

@@ -26,7 +26,7 @@ ATT = {}
 
 ATT.PrintName = "Aimpoint CompM4 with Magnifier"
 
-ATT.AimDownSightsTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SwayAddSights = (0.2 * 2)
 
 ATT.CustomPros = {
@@ -92,7 +92,7 @@ ATT = {}
 
 ATT.PrintName = "EOTech with Magnifier"
 
-ATT.AimDownSightsTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SwayAddSights = (0.2 * 2)
 
 ATT.CustomPros = {
@@ -158,7 +158,7 @@ ATT = {}
 
 ATT.PrintName = "Kobra with Magnifier"
 
-ATT.AimDownSightsTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SwayAddSights = (0.2 * 2)
 
 ATT.CustomPros = {
@@ -225,7 +225,7 @@ ATT = {}
 
 ATT.PrintName = "OKP-7 with Magnifier"
 
-ATT.AimDownSightsTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SwayAddSights = (0.2 * 2)
 
 ATT.CustomPros = {
@@ -295,7 +295,7 @@ ATT = {}
 
 ATT.PrintName = "M110 Scope"
 
-ATT.AimDownSightsTimeMult = 1.8
+ATT.AimDownSightsTimeMult = 1.25
 ATT.SwayAddSights = (0.2 * 8)
 
 ATT.CustomPros = {
@@ -344,7 +344,7 @@ ATT = {}
 
 ATT.PrintName = "SIG556 Scope"
 
-ATT.AimDownSightsTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SwayAddSights = (0.2 * 3)
 
 ATT.CustomPros = {
@@ -435,7 +435,7 @@ ATT = {}
 
 ATT.PrintName = "AUG Scope"
 
-ATT.AimDownSightsTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.125
 ATT.SwayAddSights = (0.2 * 3)
 
 ATT.CustomPros = {
@@ -479,7 +479,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon ACOG"
 
-ATT.AimDownSightsTimeMult = 1.4
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SwayAddSights = (0.2 * 4)
 
 ATT.CustomPros = {
@@ -541,7 +541,7 @@ ATT = {}
 
 ATT.PrintName = "C79"
 
-ATT.AimDownSightsTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SwayAddSights = (0.2 * 3)
 
 ATT.CustomPros = {
@@ -593,7 +593,7 @@ ATT = {}
 
 ATT.PrintName = "AWP Scope"
 
-ATT.AimDownSightsTimeMult = 1.8
+ATT.AimDownSightsTimeMult = 1.2
 ATT.SwayAddSights = (0.2 * 8)
 
 ATT.CustomPros = {
@@ -682,7 +682,7 @@ ATT = {}
 
 ATT.PrintName = "G3SG1 Scope"
 
-ATT.AimDownSightsTimeMult = 1.8
+ATT.AimDownSightsTimeMult = 1.2
 ATT.SwayAddSights = (0.2 * 8)
 
 ATT.CustomPros = {
@@ -759,7 +759,7 @@ ATT = {}
 
 ATT.PrintName = "SCAR-20 Scope"
 
-ATT.AimDownSightsTimeMult = 1.8
+ATT.AimDownSightsTimeMult = 1.2
 ATT.SwayAddSights = (0.2 * 8)
 
 ATT.CustomPros = {
@@ -836,7 +836,7 @@ ATT = {}
 
 ATT.PrintName = "Scout Scope"
 
-ATT.AimDownSightsTimeMult = 1.6
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SwayAddSights = (0.2 * 6)
 
 ATT.CustomPros = {
@@ -878,7 +878,7 @@ ATT = {}
 
 ATT.PrintName = "SSG 08 Scope"
 
-ATT.AimDownSightsTimeMult = 1.6
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SwayAddSights = (0.2 * 6)
 
 ATT.CustomPros = {
@@ -919,7 +919,7 @@ ATT = {}
 
 ATT.PrintName = "Elcan SpecterDR"
 
-ATT.AimDownSightsTimeMult = 1.35
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SwayAddSights = (0.2 * 3.5)
 
 ATT.CustomPros = {
@@ -973,7 +973,7 @@ ATT = {}
 
 ATT.PrintName = "N-Vision Halo-LR Thermal Type"
 
-ATT.AimDownSightsTimeMult = 2
+ATT.AimDownSightsTimeMult = 1.25
 ATT.SwayAddSights = (0.2 * 6)
 
 ATT.CustomPros = {
@@ -1112,7 +1112,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon RMR (Backup Sight)"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
 -- ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1152,7 +1152,7 @@ ATT = {}
 
 ATT.PrintName = "Barska"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1190,7 +1190,7 @@ ATT = {}
 
 ATT.PrintName = "C-More Railway"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1229,7 +1229,7 @@ ATT = {}
 
 ATT.PrintName = "Aimpoint CompM4"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1267,7 +1267,7 @@ ATT = {}
 
 ATT.PrintName = "EOTech"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1305,7 +1305,7 @@ ATT = {}
 
 ATT.PrintName = "Kobra"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1344,7 +1344,7 @@ ATT = {}
 
 ATT.PrintName = "Mepro M21"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1382,7 +1382,7 @@ ATT = {}
 
 ATT.PrintName = "ITL MARS"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1394,7 +1394,7 @@ ATT.CustomPros = {
 }
 
 ATT.CustomCons = {
-	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+10%",
+	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+2.5%",
 }
 
 table.Merge(ATT, sharedcode)
@@ -1432,7 +1432,7 @@ ATT.ToggleStats = {
 		NoPeekCrosshair = false,
 		
 		RecoilPerShotMult = 0.95,
-		AimDownSightsTimeMult = 1.25,
+		AimDownSightsTimeMult = 1.025,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_stat_off"),
@@ -1453,7 +1453,7 @@ ATT = {}
 
 ATT.PrintName = "OKP-7"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1492,7 +1492,7 @@ ATT = {}
 
 ATT.PrintName = "PK-AS"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.2 * 2)
 
 ATT.CustomPros = {
@@ -1537,7 +1537,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon RMR I, High Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1575,7 +1575,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon RMR II, High Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1613,7 +1613,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon SRO, High Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1651,7 +1651,7 @@ ATT = {}
 
 ATT.PrintName = "Micro T1, High Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1689,7 +1689,7 @@ ATT = {}
 
 ATT.PrintName = "Micro T1, Low Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1727,7 +1727,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon RMR 1, Low Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1766,7 +1766,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon SRO, Low Profile"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1805,7 +1805,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon SRO (Backup Sight)"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 -- ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {
@@ -1844,7 +1844,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon MRO"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayAddSights = (0.1 * 1.15)
 
 ATT.CustomPros = {
@@ -1882,7 +1882,7 @@ ATT = {}
 
 ATT.PrintName = "Trijicon RMR II (Backup Sight)"
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
 -- ATT.SwayAddSights = (0.1 * 1.1)
 
 ATT.CustomPros = {

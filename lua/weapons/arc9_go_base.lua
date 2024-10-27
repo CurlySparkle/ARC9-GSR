@@ -74,7 +74,7 @@ SWEP.SwayAddSights = 0.15
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
-SWEP.AimDownSightsTimeMultShooting = 1.5
+SWEP.AimDownSightsTimeMultShooting = 1.2
 
 SWEP.ShotgunReloadIncludesChamber = false
 

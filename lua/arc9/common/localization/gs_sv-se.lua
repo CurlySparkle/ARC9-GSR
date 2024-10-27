@@ -207,6 +207,8 @@ L["csgo_weapon_m4a4_m16a3_smg"] = "M16A3 9mm KPist."
 L["csgo_weapon_m4a4_sr25"] = "SR-25"
 
 L["csgo_weapon_m249"] = "M249"
+L["csgo_weapon_m249_para"] = "M249 Para"
+
 L["csgo_weapon_mac10"] = "MAC-10"
 L["csgo_weapon_mag7"] = "MAG-7"
 

@@ -36,11 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_mach_m249.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 7.5, -9.2),
+    Pos = Vector(-11, 7.5, -8.5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-12, 5, 0),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    Scale = 0.8,
+    TPIKPos = Vector(-10, 10, -5),
+    TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -102,7 +102,10 @@ SWEP.RecoilSide = 0.35 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.6
 SWEP.RecoilRandomSide = 0.25
 
-SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.1
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0.75 -- Multiplier for automatic recoil control.
@@ -127,7 +130,7 @@ SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 3
+SWEP.VisualRecoilUp = 1.75
 SWEP.VisualRecoilUpSights = .15
 SWEP.VisualRecoilSide = -.35
 SWEP.VisualRecoilSideSights = -.05
@@ -136,7 +139,7 @@ SWEP.VisualRecoilRoll = 1
 SWEP.VisualRecoilPositionBump = 1.75
 SWEP.VisualRecoilPositionBumpUp = .5
 SWEP.VisualRecoilMultCrouch = .75
-SWEP.VisualRecoilMultSights = .25
+SWEP.VisualRecoilMultSights = .1
 
 SWEP.VisualRecoilDampingConst = 90
 SWEP.VisualRecoilSpringPunchDamping = 6
@@ -151,23 +154,17 @@ SWEP.VisualRecoilSpringPunchDamping = 6
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = -0.06 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddSighted = 0
+SWEP.SpreadAddHipFire = 0.06
 SWEP.SpreadAddCrouch = -0.005
-SWEP.SpreadAddSights = 0.0125
+SWEP.SpreadAddSights = 0.03
 
-SWEP.RecoilModifierCapSights = 0.35
+SWEP.RecoilModifierCapSights = 1
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.6 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
@@ -176,6 +173,12 @@ SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
 
 SWEP.Bipod = true
+
+SWEP.ReloadTimeMult = 0.8
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.35
 
 -------------------------- MELEE
 
@@ -225,27 +228,24 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(23, 35, 7.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 30, 2)
+SWEP.CustomizePos = Vector(23, 55, 8.5)
+
+SWEP.CustomizeRotateAnchor = Vector(23, -5, -8.5)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(-5, 45, -2)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.PeekPos = Vector(4, 4, 0.5)
+SWEP.PeekAng = Angle(-0.3, 0, 15)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
@@ -279,7 +279,7 @@ SWEP.ShouldDropMag = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_mach_m249_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 1
+SWEP.DropMagazineTime = 2
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -329,7 +329,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.85,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -366,7 +368,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.85,
+		RefillProgress = 0.875,
+		MinProgress = 0.975,
+		FireASAP = true,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -404,7 +408,9 @@ SWEP.Animations = {
     },
     ["reload_stag"] = {
         Source = "reload_stag_short",
-		MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -437,7 +443,9 @@ SWEP.Animations = {
     },
     ["reload_empty_stag"] = {
         Source = "reload_stag",
-		MinProgress = 0.9,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         MagSwapTime = 2.3,
         IKTimeLine = {
             {
@@ -494,15 +502,16 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 1,
+        Time = 0.85,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
-        Time = 1,
+        Time = 0.75,
     },
     ["inspect"] = {
         Source = "lookat01",
@@ -526,62 +535,19 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["barrel_short"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -4.4, 26.5), } }
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -4.4, 37), } }
-    },
-    ["stock_skeleton"] = {
-        Bodygroups = {
-            {5,1},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {5,2},
-        },
-    },
-    ["foregrip"] = {
-        Bodygroups = {
-            {3,2},
-        },
+    ["csgo_m249_mag_9mm"] = { Bodygroups = { { 0, 1 }, { 2, 1 }, { 4, 2 } } },
+    ["csgo_m249_mag_12g"] = { Bodygroups = { { 0, 2 }, { 2, 2 }, { 4, 3 } } },
+    ["csgo_m249_barrel_short"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_m249_barrel_long"] = { Bodygroups = { { 1, 2 } } },
+    ["foregrip"] = { Bodygroups = { { 3, 2 } },
 		Bipod = false
     },
-    -- ["bipod_deployed"] = {
-        -- Bodygroups = {
-            -- {3,1},
-        -- },
-    -- },
-    ["go_m249_mag_9_200"] = {
-        Bodygroups = {
-            {0,1},
-			{2,1},
-			{4,2},
-        },
-    },
-    ["go_m249_mag_12g_45"] = {
-        Bodygroups = {
-            {0,2},
-			{2,2},
-			{4,3},
-        },
-    },
-    ["rearsight"] = {
-        Bodygroups = {
-            {6,2},
-			{7,1},
-        },
-    },
-    ["go_m249_mag_556_20"] = { Bodygroups = { {4,4},{2,3},{8,1}, },},
-    ["go_m249_mag_556_30"] = { Bodygroups = { {4,5},{2,3},{8,1}, },},
-    ["go_m249_mag_556_60"] = { Bodygroups = { {4,6},{2,3},{8,1}, },},
+    ["csgo_m249_mag_556_20"] = { Bodygroups = { { 4, 4 },{ 2, 3 },{ 8, 1 }, },},
+    ["csgo_m249_mag_556_30"] = { Bodygroups = { { 4, 5 },{ 2, 3 },{ 8, 1 }, },},
+    ["csgo_m249_mag_556_60"] = { Bodygroups = { { 4, 6 },{ 2, 3 },{ 8, 1 }, },},
+    ["csgo_m249_stock_skeleton"] = { Bodygroups = { { 5, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 5, 2 } } },
+    ["rearsight"] = { Bodygroups = { { 6, 2 }, { 7, 1 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -593,7 +559,7 @@ SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
 	if att["csgo_m249_barrel_short"] and att["csgo_m249_stock_skeleton"] then
-		name = "M249 Para"
+		name = ARC9:GetPhrase("csgo_weapon_m249_para") or "M249 Para"
 	end
 
 -- For Skins
@@ -701,7 +667,7 @@ SWEP.Attachments = {
         Category = "go_ammo",
         -- Icon_Offset = Vector(0, 1, 1),
         Pos = Vector(0, 1.5, 6),
-		ExcludeElements = {"go_m249_mag_12g_45"},
+		ExcludeElements = {"csgo_m249_mag_12g"},
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
