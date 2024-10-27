@@ -181,10 +181,10 @@ ATT = {}
 
 ATT.PrintName = "MOE Stock"
 
-ATT.RecoilMult = 0.33
-ATT.VisualRecoilMult = 0.33
+ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.66
 
-ATT.RecoilMultRecoil = 3.5
+ATT.RecoilMultRecoil = 2
 ATT.RecoilAutoControlMult = 0.1
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMult = 0.95
