@@ -592,11 +592,6 @@ ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before de
 
 ATT.PenetrationUBGL = 5 -- Units of wood that can be penetrated by this gun.
 
-ATT.CustomCrosshairUBGL = true
-ATT.CustomCrosshairSingleUBGL = true
-ATT.CustomCrosshairMaterialUBGL = Material("arc9/circlehollow.png", "mips smooth")
-ATT.CustomCrosshairSizeUBGL = 30
-
 ATT.DrawFunc = function(swep, model, wm)
     if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end
 end
@@ -798,11 +793,6 @@ ATT.RangeMinUBGL = 300 -- How far bullets retain their maximum damage for.
 ATT.RangeMaxUBGL = 2000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 ATT.PenetrationUBGL = 5 -- Units of wood that can be penetrated by this gun.
-
-ATT.CustomCrosshairUBGL = true
-ATT.CustomCrosshairSingleUBGL = true
-ATT.CustomCrosshairMaterialUBGL = Material("arc9/circlehollow.png", "mips smooth")
-ATT.CustomCrosshairSizeUBGL = 30
 
 ATT.DrawFunc = function(swep, model, wm)
     if swep:GetElements()["ubgl_accune_canon"] then model:SetBodygroup(3,1) end

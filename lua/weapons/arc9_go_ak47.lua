@@ -114,7 +114,7 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.45
 
-SWEP.RecoilPerShot = 0.5
+SWEP.RecoilPerShot = 0.2
 SWEP.RecoilMax = 1
 
 SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
@@ -140,7 +140,7 @@ SWEP.VisualRecoilPositionBumpUp = 0.5
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.1

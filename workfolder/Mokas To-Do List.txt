@@ -12,17 +12,17 @@ akimbo_sawnoff
 akimbo_taser
 akimbo_usp
 aug DONE
-awp
-bizon
+awp DONE
+bizon DONE
 cz75
 deagle
 elite
 elite_single
 famas DONE
 fiveseven
-g1sg3
-galil
-galilar
+g1sg3 DONE
+galil DONE
+galilar DONE
 glock
 knife_bayonet
 knife_ct
@@ -30,29 +30,29 @@ knife_flip
 knife_shield
 knife_t
 m3
-m4a1
-m4a4
-m249
-mac10
+m4a1 DONE
+m4a4 DONE
+m249 DONE
+mac10 DONE
 mag7
-mp5
-mp5sd
-mp7
-mp9
-negev
+mp5 DONE
+mp5sd DONE
+mp7 DONE
+mp9 DONE
+negev DONE
 nova
-p90
+p90 DONE
 p250
 p2000
 r8
 sawedoff
-scar17
-scar20
-scout
-sg556
-ssg08
+scar17 DONE
+scar20 DONE
+scout DONE
+sg556 DONE
+ssg08 DONE
 tec9
-ump
+ump DONE
 usp
 xm1014
 zeus
@@ -71,9 +71,9 @@ Universal - Skins DONE
 Universal - Stickers DONE
 Universal - Stocks DONE
 
-Weapon-Specific - Assault Rifles
-Weapon-Specific - SMGs
+Weapon-Specific - Assault Rifles DONE
+Weapon-Specific - SMGs DONE
 Weapon-Specific - Shotguns
-Weapon-Specific - Sniper Rifles
+Weapon-Specific - Sniper Rifles DONE
 Weapon-Specific - Machine Guns
 Weapon-Specific - Pistols
