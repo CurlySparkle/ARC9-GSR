@@ -26,8 +26,8 @@ ATT.RecoilAutoControlMult = 3.5
 ATT.RecoilMultMove = 0.66
 ATT.SwayAdd = -0.1
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.98
 
 table.Merge(ATT, sharedcode)
@@ -55,8 +55,8 @@ ATT.VisualRecoilMult = 0.75
 ATT.RecoilMult = 0.75
 ATT.SwayAdd = -0.225
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.05
 ATT.SpeedMult = 0.95
 
 ATT.Bipod = true
@@ -94,8 +94,8 @@ ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.33
 ATT.SwayAdd = -0.1
 
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 
 table.Merge(ATT, sharedcode)
 
@@ -119,10 +119,10 @@ ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 2.5
 ATT.SwayAdd = -0.2
 
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
 ATT.SpeedMult = 0.975
 ATT.SpeedMultSights = 0.8
-ATT.SprintToFireTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
 
 ATT.CustomPros = {
 	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("settings.crosshair.crosshair_peeking.title")) ] = ARC9:GetPhrase("autostat.enable.pre"),
@@ -130,7 +130,7 @@ ATT.CustomPros = {
 }
 
 ATT.CustomCons = {
-	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+5%",
+	-- [ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.aimdownsightstime")) ] = "+2.5%",
 }
 
 table.Merge(ATT, sharedcode)
@@ -176,8 +176,8 @@ ATT.PrintName = "Rapid Foregrip"
 
 ATT.VisualRecoilMult = 0.66
 ATT.RecoilMult = 0.95
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 
 ATT.SpeedMult = 0.95
 
@@ -206,8 +206,8 @@ ATT.VisualRecoilMult = 0.7
 ATT.RecoilMult = 0.8
 ATT.SwayAdd = -0.225
 
-ATT.AimDownSightsTimeMult = 1.125
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.05
 ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
@@ -231,8 +231,8 @@ ATT.VisualRecoilMult = 0.85
 ATT.RecoilUpMult = 0.9
 ATT.SwayAdd = -0.125
 
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.95
 ATT.RecoilSideMult = 1.33
 

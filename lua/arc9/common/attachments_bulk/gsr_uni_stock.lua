@@ -41,7 +41,7 @@ ATT = {}
 
 ATT.PrintName = "Basilisk Stock"
 
-ATT.AimDownSightsTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
 
 ATT.RecoilAutoControlMult = 0.85
 
@@ -61,7 +61,7 @@ ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMultSights = 1.1
 ATT.VisualRecoilMult = 0.9
 
-ATT.AimDownSightsTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMult = 0.98
 
 table.Merge(ATT, sharedcode)
@@ -122,7 +122,7 @@ ATT = {}
 ATT.PrintName = "Ergonomic Stock"
 
 ATT.RecoilMult = 0.95
-ATT.AimDownSightsTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
 ATT.VisualRecoilMult = 0.95
 
 ATT.SpeedMult = 0.98
@@ -186,7 +186,7 @@ ATT.VisualRecoilMult = 0.75
 
 ATT.RecoilMultRecoil = 2
 ATT.RecoilAutoControlMult = 0.5
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
@@ -202,12 +202,12 @@ ATT = {}
 
 ATT.PrintName = "XM10 Stock"
 
-
-ATT.AimDownSightsTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.RecoilAutoControlMultShooting = 1.66
 
 ATT.SpeedMult = 0.98
 ATT.RecoilMult = 1.15
-ATT.RecoilAutoControlMult = 0.4
+ATT.RecoilAutoControlMult = 0.75
 ATT.VisualRecoilMult = 1.15
 
 table.Merge(ATT, sharedcode)

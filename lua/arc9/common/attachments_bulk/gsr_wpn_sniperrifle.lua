@@ -20,7 +20,7 @@ ATT = {}
 
 ATT.PrintName = "Bull Barrel"
 
-ATT.AimDownSightsTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
 ATT.SprintToFireTimeMult = 0.975
 
 ATT.RangeMinMult = 0.85
@@ -44,8 +44,8 @@ ATT = {}
 
 ATT.PrintName = "Short Barrel"
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.925
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 
 ATT.RangeMinMult = 0.6
 ATT.RangeMaxMult = 0.6
@@ -68,8 +68,8 @@ ATT = {}
 
 ATT.PrintName = "Factory Barrel"
 
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 
 ATT.RangeMinMult = 0.8
 ATT.RangeMaxMult = 0.8
@@ -92,7 +92,7 @@ ATT = {}
 
 ATT.PrintName = "Adjustable Stock"
 
-ATT.AimDownSightsTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.025
 ATT.SwayMultSights = 0.85
 
 table.Merge(ATT, sharedcode)
@@ -127,8 +127,8 @@ ATT.PrintName = "15-Round .338 Lapua Magnum Magazine"
 ATT.ClipSizeAdd = 5
 
 ATT.CustomCons = {	[ ARC9:GetPhrase("Autostat.ReloadTime") ] = "+10%"	}
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeAddEmpty = 0.65
@@ -151,8 +151,8 @@ ATT.PrintName = "5-Round .338 Lapua Magnum Magazine"
 ATT.ClipSizeAdd = -5
 
 ATT.CustomPros = {	[ ARC9:GetPhrase("Autostat.ReloadTime") ] = "-10%"	}
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.925
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.95
 
 -- ATT.DropMagazineTimeMult = 0.85
 
@@ -191,7 +191,7 @@ ATT = {}
 
 ATT.PrintName = "Skeleton Stock"
 
-ATT.AimDownSightsTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
 
 ATT.RecoilMult = 1.05
 
@@ -210,7 +210,7 @@ ATT = {}
 
 ATT.PrintName = "Whisper Barrel"
 
-ATT.AimDownSightsTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
 ATT.SprintToFireTimeMult = 0.975
 
 ATT.RangeMinMult = 0.8
@@ -241,8 +241,8 @@ ATT = {}
 
 ATT.PrintName = "G3A3 Barrel"
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
 
 ATT.SpreadMultRecoil = 1.075
 ATT.RangeMinMult = 0.9
@@ -266,8 +266,8 @@ ATT = {}
 
 ATT.PrintName = "G3KA4 Barrel"
 
-ATT.AimDownSightsTimeMult = 0.875
-ATT.SprintToFireTimeMult = 0.875
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.925
 
 ATT.SpreadMultRecoil = 1.1
 ATT.RangeMinMult = 0.875
@@ -295,8 +295,8 @@ ATT = {}
 
 ATT.PrintName = "Kurz Barrel"
 
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.875
 
 ATT.SpreadMultRecoil = 1.15
 ATT.RangeMinMult = 0.825
@@ -327,8 +327,8 @@ ATT.PrintName = "30-Round 7.62×51mm Magazine"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 1.1
@@ -347,8 +347,8 @@ ATT.PrintName = "10-Round 7.62×51mm Magazine"
 ATT.ClipSizeAdd = -10
 
 ATT.ReloadTimeMult = 0.85
-ATT.AimDownSightsTimeMult = 0.925
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.025
 
 ATT.DropMagazineTimeMult = 0.85
@@ -364,8 +364,8 @@ ATT = {}
 
 ATT.PrintName = "Collapsible Stock"
 
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.05
 
 ATT.RecoilMult = 1.125
@@ -384,7 +384,7 @@ ATT.PrintName = "Cheek Riser"
 
 ATT.SwayMultSights = 0.85
 
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.025
 
 table.Merge(ATT, sharedcode)
 
@@ -397,8 +397,8 @@ ATT = {}
 
 ATT.PrintName = "Fixed A2 Stock"
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.975
 
 ATT.RecoilMult = 1.075
 ATT.VisualRecoilMult = 1.1
@@ -493,8 +493,8 @@ ATT.DistantShootSound = "CSGO.g3sg1.Distance_Fire"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 1.1
@@ -566,8 +566,8 @@ ATT.DistantShootSound = "CSGO.g3sg1.Distance_Fire"
 ATT.ClipSizeAdd = -10
 
 ATT.ReloadTimeMult = 0.85
-ATT.AimDownSightsTimeMult = 0.925
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.025
 
 ATT.DropMagazineTimeMult = 0.85
@@ -647,8 +647,8 @@ ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 0.875
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 0.875
@@ -689,8 +689,8 @@ ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
 ATT.ClipSizeAdd = 40
 
 -- ATT.ReloadTimeMult = 1.2
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.075
 ATT.SpeedMult = 0.925
 
 -- ATT.DropMagazineTimeMult = 1.2
@@ -771,8 +771,8 @@ ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 0.875
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 0.875
@@ -813,8 +813,8 @@ ATT.DistantShootSound = "CSGO.SG556.Distance_Fire"
 ATT.ClipSizeAdd = 40
 
 -- ATT.ReloadTimeMult = 1.2
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.075
 ATT.SpeedMult = 0.925
 
 -- ATT.DropMagazineTimeMult = 1.2
@@ -859,8 +859,8 @@ ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 0.75
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.925
 
 ATT.DropMagazineTimeMult = 0.75
@@ -904,8 +904,8 @@ ATT.ShellModelOverride = "models/models/weapons/shared/shell_9mm_hr.mdl"
 ATT.ClipSizeAdd = 20
 
 ATT.ReloadTimeMult = 0.9
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.925
 
 ATT.DropMagazineTimeMult = 0.9
@@ -929,8 +929,8 @@ ATT = {}
 
 ATT.PrintName = "Mk 17 Barrel"
 
-ATT.AimDownSightsTimeMult = 0.925
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 
 ATT.SpreadMultRecoil = 1.1
 ATT.RangeMinMult = 0.875
@@ -960,8 +960,8 @@ ATT = {}
 
 ATT.PrintName = "CQC Barrel"
 
-ATT.AimDownSightsTimeMult = 0.875
-ATT.SprintToFireTimeMult = 0.875
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 
 ATT.SpreadMultRecoil = 1.125
 ATT.RangeMinMult = 0.8
@@ -990,8 +990,8 @@ ATT = {}
 
 ATT.PrintName = "PDW Barrel"
 
-ATT.AimDownSightsTimeMult = 0.8
-ATT.SprintToFireTimeMult = 0.8
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.9
 ATT.SpeedMult = 1.05
 
 ATT.RecoilMult = 1.15
@@ -1034,8 +1034,8 @@ ATT.PrintName = "30-Round 7.62×51mm Magazine"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 1.1
@@ -1122,8 +1122,8 @@ ATT.PrintName = "30-Round 7.62×51mm Magazine (Automatic)"
 ATT.ClipSizeAdd = 10
 
 ATT.ReloadTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.075
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 1.1
@@ -1149,8 +1149,8 @@ ATT.RangeMinMult = 1.2
 ATT.RangeMaxMult = 1.2
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
 ATT.SpeedMult = 0.975
 
 table.Merge(ATT, sharedcode)
@@ -1170,8 +1170,8 @@ ATT = {}
 
 ATT.PrintName = "Survival Barrel"
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 ATT.SpeedMult = 1.025
 
 ATT.SpreadMultRecoil = 1.15
@@ -1199,8 +1199,8 @@ ATT.PrintName = "10-Round 7.62×51mm Magazine"
 ATT.ClipSizeAdd = 5
 
 ATT.ReloadTimeMult = 1.15
-ATT.AimDownSightsTimeMult = 1.075
-ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 
 ATT.DropMagazineTimeMult = 1.15
 
@@ -1228,8 +1228,8 @@ ATT = {}
 
 ATT.PrintName = "Factory Barrel"
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 
 ATT.RangeMinMult = 0.875
 ATT.RangeMaxMult = 0.875
@@ -1255,8 +1255,8 @@ ATT = {}
 
 ATT.PrintName = "Custom Barrel"
 
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.925
 
 ATT.RangeMinMult = 0.825
 ATT.RangeMaxMult = 0.825
@@ -1286,8 +1286,8 @@ ATT.PrintName = "15-Round .308 SSG Magazine"
 ATT.ClipSizeAdd = 5
 
 ATT.ReloadTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
 
 ATT.DropMagazineTimeMult = 1.1
 
@@ -1311,7 +1311,7 @@ ATT.DamageMaxAdd = 27
 ATT.DamageMinAdd = 5
 
 ATT.RecoilMult = 1.66
-ATT.AimDownSightsTimeMult = 1.33
+ATT.AimDownSightsTimeMult = 1.075
 ATT.CycleTimeMult = 1.25
 ATT.RPMMult = 0.7
 ATT.RecoilAutoControlMult = 0.1

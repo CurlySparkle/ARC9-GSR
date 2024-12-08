@@ -3,8 +3,8 @@
 ATT.ClipSizeAdd = 20
 
 ATT.ReloadTimeMult = 1.2
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 ATT.SpeedMult = 0.975
 
 ATT.DropMagazineTimeMult = 1.2
@@ -16,8 +16,8 @@ ATT.RangeMaxMult = 1.4
 ATT.PhysBulletMuzzleVelocityMult = 1.2
 
 ATT.SpreadMultRecoil = 1.15
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
 ATT.SpeedMult = 0.95
 
 ATT.Element = {
@@ -28,8 +28,8 @@ ATT.Element = {
 
 -- Barrels, Short --
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.025
 
 ATT.SpreadMultRecoil = 1.15
@@ -43,13 +43,13 @@ ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.9
 ATT.RecoilAutoControlMultMove = 1.15
 
-ATT.AimDownSightsTimeMult = 1.125
-ATT.SpeedMult = 0.95
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SpeedMult = 0.975
 
 -- Grips --
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.05
 
 ATT.RecoilMult = 1.2

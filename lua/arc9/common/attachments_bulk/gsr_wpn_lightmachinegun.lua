@@ -25,8 +25,8 @@ ATT.RangeMaxMult = 1.4
 ATT.PhysBulletMuzzleVelocityMult = 1.2
 
 ATT.SpreadMultRecoil = 1.15
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.075
+ATT.SprintToFireTimeMult = 1.075
 ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
@@ -46,8 +46,8 @@ ATT = {}
 
 ATT.PrintName = "Paratrooper Barrel"
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.025
 
 ATT.SpreadMultRecoil = 1.15
@@ -152,7 +152,7 @@ ATT.ClipSizeAdd = -80
 ATT.DropMagazineTimeAdd = -1.1
 
 ATT.ReloadTimeMult = 0.85
-ATT.AimDownSightsTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.925
 ATT.SpeedMult = 0.95
 
@@ -187,8 +187,8 @@ ATT.ClipSizeAdd = -70
 ATT.DropMagazineTimeAdd = -1.1
 
 ATT.ReloadTimeMult = 0.925
-ATT.AimDownSightsTimeMult = 0.875
-ATT.SprintToFireTimeMult = 0.925
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.95
 ATT.SpeedMult = 0.95
 
 ATT.DropMagazineTimeMult = 0.925
@@ -221,7 +221,7 @@ ATT.PrintName = "60-Round 5.56×45mm NATO Magazine"
 ATT.ClipSizeAdd = -40
 ATT.DropMagazineTimeAdd = -1.1
 
-ATT.AimDownSightsTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 ATT.SpeedMult = 0.95
 
