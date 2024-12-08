@@ -1424,7 +1424,7 @@ ATT.Category = "go_scar17_barrel"
 
 ATT.Element = {
     AttPosMods = {
-        [3] = { Pos = Vector(-0.05, -4.54, 19) }, -- Muzzle
+        [3] = { Pos = Vector(-0.05, -4.54, 20) }, -- Muzzle
 	}
 }
 
@@ -1624,7 +1624,12 @@ ATT.RHIK = true
 ATT.LHIK_Priority = 1
 ATT.LHIK = true
 
-ATT.ActivePos = Vector(0, -5, -0.5)
+-- ATT.ActivePos = Vector(0, -5, -0.5)
+
+ATT.ActivePosHook = function(swep, pos)
+	return pos - Vector(0, 5, 0.5)
+end
+
 ATT.SprintPos = Vector(3, 0, 0)
 
 ATT.PeekPos = Vector(-1, 1, -3)

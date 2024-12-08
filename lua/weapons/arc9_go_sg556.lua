@@ -119,11 +119,12 @@ SWEP.RecoilMax = 1
 SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlMultShooting = 0.2
 
 SWEP.RecoilKick = 0.5
 
-SWEP.RecoilMultRecoil = 1.5
+SWEP.RecoilMultRecoil = 1.15
 
 -- [[ Moka's testing area - do not touch nor uncomment
 

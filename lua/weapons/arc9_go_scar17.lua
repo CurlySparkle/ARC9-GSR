@@ -91,7 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.5
+SWEP.Recoil = 1.25
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -103,13 +103,14 @@ SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.2
 SWEP.RecoilRandomSide = 0.5
 
-SWEP.RecoilPerShot = 0.5
+SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
 SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlMultShooting = 0.15
 
 SWEP.RecoilKick = 1.5
 SWEP.RecoilKickSights = 1
@@ -136,7 +137,7 @@ SWEP.VisualRecoilRoll = 1
 SWEP.VisualRecoilPositionBump = 1
 SWEP.VisualRecoilPositionBumpUp = 1
 
-SWEP.VisualRecoilUpSights = .05
+SWEP.VisualRecoilUpSights = 0
 SWEP.VisualRecoilSideSights = -0.01
 SWEP.VisualRecoilPositionBumpUpSights = -.15
 
@@ -153,7 +154,7 @@ SWEP.VisualRecoilMultSights = 1
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0525 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.1
@@ -188,8 +189,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.675, -5, 0.35),
-    Ang = Angle(-0.37, -0.8, -2),
+    Pos = Vector(-3.68, -5, 0.365),
+    Ang = Angle(-0.37, -0.65, -1.75),
     Magnification = 1.1,
     ViewModelFOV = 46,
 }
