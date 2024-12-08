@@ -106,6 +106,8 @@ ATT.PrintName = "45-Round 12-Gauge Box"
 ATT.ClipSizeAdd = -55
 ATT.RPMAdd = -450
 ATT.NumAdd = 7
+ATT.RecoilMult = 1.5
+ATT.VisualRecoilMult = 1.5
 
 ATT.SpreadAddRecoil = 0.08
 ATT.SpreadAddHipFire = 0.05
@@ -139,11 +141,6 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 }
-
-ATT.CustomCrosshair = true
-ATT.CustomCrosshairSingle = true
-ATT.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
-ATT.CustomCrosshairSize = 90
 
 ARC9.LoadAttachment(ATT, "csgo_m249_mag_12g")
 ------------------------------------------------------------------------

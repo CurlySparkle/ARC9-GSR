@@ -91,7 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.1
+SWEP.Recoil = 0.65
 
 SWEP.RecoilSeed = 61649 -- CSGO Seed Input Test
 
@@ -105,13 +105,14 @@ SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.2
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilPerShot = 0.25
+SWEP.RecoilPerShot = 0.2
 SWEP.RecoilMax = 1
 
 SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0.2 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlMultShooting = 0.05
 
 SWEP.RecoilKick = 1
 
@@ -126,7 +127,7 @@ SWEP.RecoilMultRecoil = 1.33
 
 -- [[ Moka's testing area - do not touch nor uncomment
 
-SWEP.RecoilMultCrouch = 0.7
+SWEP.RecoilMultCrouch = 0.85
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
 

@@ -588,12 +588,12 @@ ATT = {}
 ATT.PrintName = "20-Round 5.56×45mm Magazine"
 
 ATT.RPMAdd = 460
-ATT.RecoilMult = 0.4
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.75
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.3
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.DamageMinAdd = -15
 ATT.DamageMaxAdd = -50
@@ -627,12 +627,12 @@ ATT = {}
 ATT.PrintName = "30-Round 5.56×45mm Magazine"
 
 ATT.RPMAdd = 460
-ATT.RecoilMult = 0.4
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.75
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.3
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.DamageMinAdd = -15
 ATT.DamageMaxAdd = -50
@@ -669,12 +669,12 @@ ATT = {}
 ATT.PrintName = "60-Round 5.56×45mm Casket Magazine"
 
 ATT.RPMAdd = 460
-ATT.RecoilMult = 0.4
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.75
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.3
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.DamageMinAdd = -15
 ATT.DamageMaxAdd = -50
@@ -712,12 +712,12 @@ ATT = {}
 ATT.PrintName = "20-Round 5.56×45mm NATO Magazine and Adapter"
 
 ATT.RPMAdd = 460
-ATT.RecoilMult = 0.4
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.75
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.3
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.DamageMinAdd = -15
 ATT.DamageMaxAdd = -50
@@ -751,12 +751,12 @@ ATT = {}
 ATT.PrintName = "30-Round 5.56×45mm NATO Magazine and Adapter"
 
 ATT.RPMAdd = 460
-ATT.RecoilMult = 0.4
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.75
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.3
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.DamageMinAdd = -15
 ATT.DamageMaxAdd = -50
@@ -793,12 +793,12 @@ ATT = {}
 ATT.PrintName = "60-Round 5.56×45mm NATO Casket Magazine and Adapter"
 
 ATT.RPMAdd = 460
-ATT.RecoilMult = 0.4
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.75
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.3
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.DamageMinAdd = -15
 ATT.DamageMaxAdd = -50
@@ -836,12 +836,12 @@ ATT = {}
 ATT.PrintName = "30-Round .45 ACP Conversion"
 
 ATT.RPMAdd = 435
-ATT.RecoilMult = 0.3
+ATT.RecoilMult = 0.6
 ATT.RecoilMultRecoil = 1.33
-ATT.VisualRecoilMult = 0.85
+ATT.VisualRecoilMult = 0.6
 ATT.RecoilPerShot = 0.2
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilRandomSideAdd = 0.35
 
 ATT.DamageMinAdd = -20
 ATT.DamageMaxAdd = -50
@@ -883,10 +883,10 @@ ATT.PrintName = "40-Round 9×19mm Conversion"
 ATT.RPMAdd = 560
 ATT.RecoilMult = 0.5
 ATT.RecoilMultRecoil = 1.25
-ATT.VisualRecoilMult = 0.95
+ATT.VisualRecoilMult = 0.55
 ATT.RecoilPerShot = 0.1
 ATT.RecoilAutoControlMult = 1.5
-ATT.RecoilRandomSideAdd = 0.66
+ATT.RecoilRandomSideAdd = 0.5
 
 ATT.DamageMinAdd = -20
 ATT.DamageMaxAdd = -50
