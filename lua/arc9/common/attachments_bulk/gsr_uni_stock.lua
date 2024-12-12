@@ -32,6 +32,7 @@ table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/stock_retract.png", "mips smooth")
 ATT.Category = "stock_retract"
+ATT.Free = true
 
 ATT.ActivateElements = {"stock_retract"}
 

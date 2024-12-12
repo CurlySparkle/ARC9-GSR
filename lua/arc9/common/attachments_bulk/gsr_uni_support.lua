@@ -19,6 +19,7 @@ ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -40,6 +41,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -61,6 +63,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -84,6 +87,7 @@ ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -105,6 +109,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -126,6 +131,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -147,6 +153,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_tac"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_rail"),
@@ -168,6 +175,7 @@ ATT.SortOrder = 10000
 ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
@@ -192,6 +200,7 @@ ATT.SortOrder = 10000
 ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
@@ -238,6 +247,7 @@ ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -259,6 +269,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -280,6 +291,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -301,6 +313,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_stock"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
@@ -325,6 +338,7 @@ ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -350,6 +364,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -375,6 +390,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -400,6 +416,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_tac"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_rail"),
@@ -424,6 +441,7 @@ ATT.SortOrder = 10000
 ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
@@ -449,6 +467,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_stock"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),
@@ -477,6 +496,7 @@ ATT.SortOrder = 10000
 ATT.Category = "muzzle"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
@@ -498,6 +518,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optic"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -519,6 +540,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_optics_pistols"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_optics"),
@@ -540,6 +562,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_tac"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_rail"),
@@ -561,6 +584,7 @@ ATT.SortOrder = 10000
 ATT.Category = "grip"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_grip"),
@@ -582,6 +606,7 @@ ATT.SortOrder = 10000
 ATT.Category = "csgo_stock"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
 ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
+ATT.Free = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_stock"),

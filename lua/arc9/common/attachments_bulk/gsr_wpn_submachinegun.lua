@@ -157,6 +157,7 @@ ATT.PrintName = "Alternative View (MAC-10)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_mac10_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-2.5, -4, 0.5)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -333,6 +334,7 @@ ATT.PrintName = "Alternative View (MP5-SD)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_mp5sd_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.5, -2.5, 0)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -409,6 +411,7 @@ ATT.PrintName = "Alternative View (MP7)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_mp7_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.3, -2.5, -0.2)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -525,6 +528,7 @@ ATT.PrintName = "Alternative View (MP9)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_mp9_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.5, -2, -0.5)
 ATT.MovingPos = Vector(-0.25, 0, -1)
@@ -663,7 +667,8 @@ ATT.PrintName = "Alternative View (P90)"
 
 table.Merge(ATT, sharedcode)
 
-ATT.Category = {"go_p90_view"}
+ATT.Category = "go_p90_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.5, -2, -1)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -973,6 +978,7 @@ ATT.PrintName = "Alternative View (PP-Bizon)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_bizon_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.5, -3, 0)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -997,6 +1003,7 @@ table.Merge(ATT, sharedcode)
 
 -- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
 ATT.Category = "go_ump_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.4, -4.5, 0)
 ATT.ActiveAng = Angle(0, 0, 0)

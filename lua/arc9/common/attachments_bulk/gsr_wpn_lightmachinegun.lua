@@ -256,15 +256,104 @@ ARC9.LoadAttachment(ATT, "csgo_m249_mag_556_60")
 
 ////////////////////////////////////// Negev
 
+ATT = {}
+
+ATT.PrintName = "Alternative View (Negev)"
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
+ATT.Category = "go_negev_view"
+ATT.Free = true
+
+ATT.ActivePos = Vector(-3, -6.5, 0.5)
+ATT.ActiveAng = Angle(0, 0, 0)
+
+-- ATT.MovingPos = Vector(-3, -7, 0)
+-- ATT.MovingAng = Angle(0, 0, 0)
+
+-- ATT.CrouchPos = Vector(-3, -7, 0)
+-- ATT.CrouchAng = Angle(0, 0, 0)
+
+ATT.ViewModelFOVBase = 65
+
+ARC9.LoadAttachment(ATT, "csgo_negev_view_alt")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Skeleton Stock"
+
+ATT.RecoilAutoControlMultMove = 1.01
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ak_stock_skeleton.png", "mips smooth")
+ATT.Category = "go_negev_stock"
+
+ARC9.LoadAttachment(ATT, "csgo_negev_stock_skeleton")
+------------------------------------------------------------------------
 -- ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+-- ATT.PrintName = "Heavy Barrel"
 
 -- table.Merge(ATT, sharedcode)
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+-- ATT.Icon = Material("entities/attachs/go_negev_barrel_long.png", "mips smooth")
+-- ATT.Category = "go_negev_barrel"
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+-- ARC9.LoadAttachment(ATT, "csgo_negev_barrel_long")
 ------------------------------------------------------------------------
+-- ATT = {}
 
+-- ATT.PrintName = "SF Barrel"
+
+-- table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_negev_barrel_short.png", "mips smooth")
+-- ATT.Category = "go_negev_barrel"
+
+-- ARC9.LoadAttachment(ATT, "csgo_negev_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "50-Round 7.62×51mm Box"
+
+ATT.ClipSizeAdd = -100
+
+ATT.RPMAdd = -150
+ATT.DamageMinAdd = 10
+ATT.DamageMaxAdd = 1
+ATT.RecoilAutoControlMultShooting = 1.2
+
+ATT.RecoilMult = 1.2
+ATT.VisualRecoilMult = 1.2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_negev_belt_100.png", "mips smooth")
+ATT.Category = "go_negev_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_negev_mag_762")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "50-Round 5.56×45mm Drum Magazine"
+
+ATT.ClipSizeAdd = -100
+
+ATT.CustomPros = { [ ARC9:GetPhrase( "autostat.reloadtime" ) ] = "-25%" }
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m4_mag_drum.png", "mips smooth")
+ATT.Category = "go_negev_mag"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_mag"
+end
+
+ATT.ShellModel = "models/models/weapons/shared/shell_249_hr.mdl"
+ATT.DropMagazineModel = "models/weapons/csgo/mags/attachs/w_rif_m4_drum_mag.mdl"
+ATT.DropMagazineTimeOverride = 0.8
+
+ARC9.LoadAttachment(ATT, "csgo_negev_mag_556m")

@@ -611,6 +611,7 @@ ATT.PrintName = "Alternative View (FAMAS)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_famas_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-2.5, -4, 0.5)
 -- ATT.MovingPos = Vector(0.5, -1, -1.25)
@@ -985,6 +986,7 @@ table.Merge(ATT, sharedcode)
 
 -- ATT.Icon = Material("entities/attachs/go_ace_mag_60.png", "mips smooth")
 ATT.Category = "go_galilar_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.7, -3, 0)
 --ATT.ReloadPos = Vector(3, -4, 0)
@@ -1371,6 +1373,7 @@ table.Merge(ATT, sharedcode)
 
 -- ATT.Icon = Material("entities/attachs/go_m4_barrel_long.png", "mips smooth")
 ATT.Category = "go_m4a4_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.4, -1.8, 0)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -1805,6 +1808,7 @@ table.Merge(ATT, sharedcode)
 
 -- ATT.Icon = Material("entities/attachs/go_ace_mag_ak_30.png", "mips smooth")
 ATT.Category = "go_sg552_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.3, -2, 0.5)
 ATT.ActiveAng = Angle(0, 0, 0)

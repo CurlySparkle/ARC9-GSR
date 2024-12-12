@@ -417,6 +417,7 @@ ATT.PrintName = "Alternative View (G3SG1)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_g3_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1, -5, 1)
 ATT.ActiveAng = Angle(0, 0, 0)
@@ -1054,6 +1055,7 @@ ATT.PrintName = "Alternative View (SCAR-20)"
 table.Merge(ATT, sharedcode)
 
 ATT.Category = "go_scar20_view"
+ATT.Free = true
 
 ATT.ActivePos = Vector(-1.5, -2, 0.5)
 ATT.ActiveAng = Angle(1, 0, 0)

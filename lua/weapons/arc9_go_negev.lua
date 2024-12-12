@@ -273,16 +273,6 @@ SWEP.DropMagazineAmount = 1
 SWEP.DropMagazineTime = 1.5
 SWEP.DropMagazineQCA = 3
 
-SWEP.ExtraShellModels = {
-    [1] = {
-        model = "models/models/weapons/shared/shell_249_hr.mdl",
-        physbox = Vector(1, 1, 1)
-    },
-    [2] = {
-        model = "models/models/weapons/shared/lmg_starter.mdl",
-    }
-}
-
 -------------------------- SOUNDS
 
 local path = "weapons/csgo/negev/"
@@ -608,7 +598,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.AttachmentElements = {
     ["rearsight"] = { Bodygroups = { { 1, 1 }, { 4, 1 } } },
     ["stock_retract"] = { Bodygroups = { { 2, 1 } } },
-    ["stock_skeleton"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_negev_stock_skeleton"] = { Bodygroups = { { 2, 2 } } },
     ["stock_none"] = { Bodygroups = { { 2, 3 } } },
     ["bipod"] = { Bodygroups = { { 3, 1 } } },
     ["foregrip"] = { Bodygroups = { { 5,1 }, { 3, 1 } } },

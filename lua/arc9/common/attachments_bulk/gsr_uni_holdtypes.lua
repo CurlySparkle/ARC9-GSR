@@ -14,6 +14,7 @@ local sharedcode = {
 	Icon = Material("entities/attachs/holdstyle.png", "mips smooth"),
 	LHIK_Priority = 10,
 	LHIK = true,
+	Free = true,
 }
 
 ////////////////////////////////////// Alternative Hold Styles
@@ -263,6 +264,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_mp7.mdl"
 ATT.SortOrder = -1
 ATT.Category = {"grip_aug"}
 ATT.ActivateElements = {"grip_folded"}
+ATT.Free = false
 
 ATT.ModelOffset = Vector(3, -0.15, -0.2)
 ATT.ModelAngleOffset = Angle(0, 10, 160)
@@ -331,6 +333,7 @@ ATT.Model = "models/weapons/csgo/atts/holdstyle/hold_mp7.mdl"
 ATT.SortOrder = -1
 ATT.Category = "grip_mp7"
 ATT.ActivateElements = {"grip_folded"}
+ATT.Free = false
 
 ATT.ModelOffset = Vector(-0.2, -0.4, -0.2)
 ATT.ModelAngleOffset = Angle(-5, -5, 185)

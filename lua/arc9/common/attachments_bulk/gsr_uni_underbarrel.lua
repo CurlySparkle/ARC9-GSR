@@ -22,7 +22,7 @@ ATT = {}
 ATT.PrintName = "Angled Grip"
 
 ATT.VisualRecoilMultMove = 0.8
-ATT.RecoilAutoControlMult = 3.5
+ATT.RecoilAutoControlMultMove = 2
 ATT.RecoilMultMove = 0.66
 ATT.SwayAdd = -0.1
 

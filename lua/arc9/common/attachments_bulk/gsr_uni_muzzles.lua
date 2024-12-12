@@ -12,7 +12,6 @@ local sharedcode = {
 	Description = "This is unlocalized!",
 	SortOrder = 0,
 	MenuCategory = "ARC9 - CSGO Attachments",
-	Free = true,
 }
 
 ////////////////////////////////////// Muzzle Brakes
