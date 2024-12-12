@@ -79,6 +79,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_med")
 ------------------------------------------------------------------------
 ATT = {}
@@ -105,6 +108,9 @@ ATT.Element = {
         [3] = { Pos = Vector(0, -2.92, 14.7) }, -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.75, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.75, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_long")
 ------------------------------------------------------------------------
@@ -138,6 +144,9 @@ ATT.Element = {
         [3] = { Pos = Vector(0, -2.92, 14.15) }, -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_mac10_barrel_shroud")
 ------------------------------------------------------------------------
@@ -199,6 +208,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_mp5_k")
 ------------------------------------------------------------------------
 ATT = {}
@@ -215,6 +227,9 @@ table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_mp5_stock_folding.png", "mips smooth")
 ATT.Category = "go_mp5_stock2"
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_mp5_stock_k")
 ------------------------------------------------------------------------
@@ -234,6 +249,9 @@ table.Merge(ATT, sharedcode)
 ATT.Icon = Material("entities/attachs/go_mp5_stock_none.png", "mips smooth")
 ATT.Category = "go_mp5_stock"
 ATT.SortOrder = -10
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4.5, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_mp5_stock_none")
 ------------------------------------------------------------------------
@@ -432,6 +450,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_mp9_barrel_long")
 ------------------------------------------------------------------------
 ATT = {}
@@ -558,6 +579,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "go_p90_extendedbarrel")
 ------------------------------------------------------------------------
 ATT = {}
@@ -678,6 +702,9 @@ ATT.Element = {
         [4] = { Pos = Vector(0, -3.05, 9.7) } -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_p90_barrel_med")
 ------------------------------------------------------------------------
@@ -808,6 +835,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_bizon_barrel_long")
 ------------------------------------------------------------------------
 ATT = {}
@@ -833,6 +863,9 @@ ATT.Element = {
         [2] = { Pos = Vector(0, -3.15, 18) }, -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_bizon_barrel_mid")
 ------------------------------------------------------------------------
@@ -1002,6 +1035,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_ump_barrel_long")
 ------------------------------------------------------------------------
 ATT = {}
@@ -1027,6 +1063,9 @@ ATT.Element = {
         [3] = { Pos = Vector(0, -3.95, 17.5) }, -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_ump_barrel_mid")
 ------------------------------------------------------------------------

@@ -40,6 +40,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_m249_barrel_long")
 ------------------------------------------------------------------------
 ATT = {}
@@ -66,6 +69,9 @@ ATT.Element = {
         [2] = { Pos = Vector(0, -4.4, 26.5) }, -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_m249_barrel_short")
 ------------------------------------------------------------------------
