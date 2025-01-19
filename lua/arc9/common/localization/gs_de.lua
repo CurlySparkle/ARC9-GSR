@@ -1915,7 +1915,7 @@ L["csgo_xm1014_barrel_long.description"] = "Verlängerter Lauf.\nErforderlich f�
 
 L["csgo_xm1014_barrel_short.printname"] = "Breacher-Lauf"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Verkürzter Lauf.\nInkompatibel mit dem <10-Runden-Lauf</color>-Aufsatz."
+L["csgo_xm1014_barrel_short.description"] = "Verkürzter Lauf.\nInkompatibel mit dem <color=255,255,100>10-Runden-Lauf</color>-Aufsatz."
 
 L["csgo_xm1014_mag_fed.printname"] = "5-Runden-Box-Magazin"
 L["csgo_xm1014_mag_fed.compactname"] = "12G-Box"

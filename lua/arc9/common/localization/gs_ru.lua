@@ -1915,7 +1915,7 @@ L["csgo_xm1014_barrel_long.description"] = "Удлинённый ствол.\nН
 
 L["csgo_xm1014_barrel_short.printname"] = "Ствол Breacher"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Укороченный ствол.\nНесовместим с модулем <10-зарядное цевьё</color>."
+L["csgo_xm1014_barrel_short.description"] = "Укороченный ствол.\nНесовместим с модулем <color=255,255,100>10-зарядное цевьё</color>."
 
 L["csgo_xm1014_mag_fed.printname"] = "5-зарядный коробчатый магазин"
 L["csgo_xm1014_mag_fed.compactname"] = "12-К. маг."

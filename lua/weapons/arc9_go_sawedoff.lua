@@ -13,7 +13,7 @@ SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_shotgun")
 SWEP.Trivia = {
     [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
     [ARC9:GetPhrase("csgo_trivia_caliber")] = ARC9:GetPhrase("csgo_caliber_12gauge"),
-    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.450, 0.45 * 2.20),
+    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.45, 0.45 * 2.20),
     [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 493 ),
     -- [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "850 ft/s",
     -- [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "1,073 joules"
@@ -80,11 +80,6 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairSingle = true
-SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
-
 -------------------------- FIREMODES
 
 SWEP.RPM = 220
@@ -99,7 +94,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 3
+SWEP.Recoil = 2.25
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
@@ -113,8 +108,8 @@ SWEP.RecoilSide = 1 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.65 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
 
@@ -122,7 +117,7 @@ SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
+SWEP.RecoilMultSights = 1.15
 SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.ViewRecoil = true
@@ -135,16 +130,15 @@ SWEP.VisualRecoilMultSights = 1
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.08
+SWEP.Spread = 0.05
 
-SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
 
+SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.015
-SWEP.SpreadAddCrouch = -0.004
-SWEP.SpreadAddSightsMove = -0.1
-SWEP.SpreadAddSights = -0.005
+SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
@@ -172,11 +166,11 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4.26, -7, 1),
+    Pos = Vector(-4.26, -7, 1.9),
     Ang = Angle(0, 0.5, 1),
     Magnification = 1.1,
     ViewModelFOV = 56,
-    CrosshairInSights = true
+    CrosshairInSights = false
 }
 
 SWEP.ViewModelFOVBase = 56
@@ -204,10 +198,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 30, 5)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizePos = Vector(21.5, 45, 5)
+
+SWEP.CustomizeRotateAnchor = Vector(21.5, -4.5, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
 SWEP.CustomizeNoRotate = false
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 3)
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+
+SWEP.PeekMaxFOV = 56
+
+SWEP.PeekPos = Vector(-1, 3, -4)
+SWEP.PeekAng = Angle(0, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -398,15 +400,16 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.5,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-        Time = 0.1,
+        Time = 0.7,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
-        Time = 0.1,
+        Time = 0.7,
     },
     ["inspect"] = {
         Source = "lookat01",

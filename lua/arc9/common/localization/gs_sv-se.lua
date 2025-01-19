@@ -1917,7 +1917,7 @@ L["csgo_xm1014_barrel_long.description"] = "Förlängd pipa.\nKrävs för <color
 
 L["csgo_xm1014_barrel_short.printname"] = "Breacher-Pipa"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Förkortad pipa.\nInte kompatibel med <10-Skottrör</color> tillbehöret."
+L["csgo_xm1014_barrel_short.description"] = "Förkortad pipa.\nInte kompatibel med <color=255,255,100>10-Skottrör</color> tillbehöret."
 
 L["csgo_xm1014_mag_fed.printname"] = "5-Skott Lådmagasin"
 L["csgo_xm1014_mag_fed.compactname"] = "K12-Låda"

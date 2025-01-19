@@ -79,11 +79,6 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairSingle = true
-SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
-
 -------------------------- FIREMODES
 
 SWEP.RPM = 80
@@ -101,6 +96,8 @@ SWEP.Firemodes = {
         RecoilMult = 1.5,
         AmmoPerShot = 2,
         NumMult = 2,
+		SpreadMult = 1.25,
+		RPMMult = 0.66,
     },
 }
 -------------------------- RECOIL
@@ -119,9 +116,8 @@ SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 40 -- How much recoil dissipates per second.
-SWEP.RecoilDissipationRateSights = 50
-SWEP.RecoilResetTime = 0.5 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 
@@ -150,17 +146,15 @@ SWEP.Akimbo = true
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.1
+SWEP.Spread = 0.05
 
-SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.035
+SWEP.SpreadAddSights = 0
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.05
-SWEP.SpreadAddSights = 0.0025
-SWEP.SpreadMultHipFire = 1
-SWEP.SpreadMultSights = 1
-SWEP.SpreadAddCrouch = -0.004
+SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
@@ -230,30 +224,26 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.MovingPos = Vector(-1, -2, -1)
+SWEP.MovingPos = Vector(0, -2, -1)
 SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(22, 35, 4)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(-22, 0, 4)
+SWEP.CustomizePos = Vector(22, 55, 4)
+
+SWEP.CustomizeRotateAnchor = Vector(22, -1, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 0, 6)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
 SWEP.PeekPos = Vector(0, -6, -2)
 SWEP.PeekAng = Angle(0, 2.5, -2.5)
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.CantPeek = true
 
 -------------------------- HoldTypes
 
@@ -404,6 +394,7 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "draw",
+        Time = 2,
     },
     ["enter_sprint"] = {
         Source = "holster",

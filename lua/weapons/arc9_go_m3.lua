@@ -79,11 +79,6 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairSingle = true
-SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
-
 -------------------------- FIREMODES
 
 SWEP.RPM = 200
@@ -111,8 +106,8 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.6 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 4 -- Multiplier for automatic recoil control.
 
@@ -134,9 +129,11 @@ SWEP.RecoilAutoControlMultHipFire = 0.9
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
-SWEP.VisualRecoilUp = 10
-SWEP.VisualRecoilSide = 1
-SWEP.VisualRecoilSideSights = .15
+SWEP.VisualRecoilPunchSights = 5
+SWEP.VisualRecoilUp = -1
+SWEP.VisualRecoilUpSights = 1
+SWEP.VisualRecoilSide = 0.5
+SWEP.VisualRecoilSideSights = 0.05
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1.5
@@ -156,14 +153,14 @@ SWEP.VisualRecoilSpringPunchDamping = 8
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.055
+SWEP.Spread = 0.035
 
 SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddSights = -0.005
-SWEP.SpreadAddMove = 0.055
+SWEP.SpreadAddSights = 0.005
+SWEP.SpreadAddMove = 0.035
 SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0.015
 SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
@@ -226,19 +223,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 30, 4)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 15, 2)
+SWEP.CustomizePos = Vector(17, 45, 4)
+
+SWEP.CustomizeRotateAnchor = Vector(17, -4, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 2)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-22, 20, 0)
-SWEP.BlindFireRightAng = Angle(-80, -20, 3)
-
-SWEP.BlindFireLeftPos = Vector(22, 20, 0)
-SWEP.BlindFireLeftAng = Angle(80, -20, 3)
+SWEP.PeekPos = Vector(-1, 3, -4)
+SWEP.PeekAng = Angle(0, 0, -30)
 
 -------------------------- HoldTypes
 
@@ -379,7 +375,7 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = path .. "nova_pump.wav", t = 15/30},
+            {s = path .. "nova_pump.wav", t = 10/30},
         },
     },
     ["ready"] = {
@@ -421,12 +417,15 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.5,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
+        Time = 0.7,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
+        Time = 0.7,
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
     },
     ["inspect"] = {

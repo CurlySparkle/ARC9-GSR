@@ -67,6 +67,8 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.Ignore = true
+
 ARC9.LoadAttachment(ATT, "go_muzzle_ak74")
 ------------------------------------------------------------------------
 ATT = {}
@@ -189,6 +191,9 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "go_supp_233")
 ------------------------------------------------------------------------
 ATT = {}
@@ -215,6 +220,9 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_m4")
 ------------------------------------------------------------------------
@@ -243,6 +251,9 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4.5, 6, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_p90")
 ------------------------------------------------------------------------
@@ -274,6 +285,9 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "go_supp_pbs01")
 ------------------------------------------------------------------------
 ATT = {}
@@ -300,6 +314,9 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_shit9")
 ------------------------------------------------------------------------
@@ -328,6 +345,9 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_shotgun_parent_silenced"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_shitvo")
 ------------------------------------------------------------------------
@@ -387,6 +407,9 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "go_supp_tirant45")
 ------------------------------------------------------------------------
 ATT = {}
@@ -415,6 +438,9 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_clothwrapped")
 ------------------------------------------------------------------------
@@ -448,6 +474,9 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(9, 7, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(9, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "go_supp_m110")
 ------------------------------------------------------------------------
 ATT = {}
@@ -475,5 +504,8 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_kriss")

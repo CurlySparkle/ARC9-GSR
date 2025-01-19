@@ -1922,7 +1922,7 @@ L["csgo_xm1014_barrel_long.description"] = "Extended barrel.\nRequired for the <
 
 L["csgo_xm1014_barrel_short.printname"] = "Breacher Barrel"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Shortened barrel.\nIncompatible with the <10-Round Tube</color> attachment."
+L["csgo_xm1014_barrel_short.description"] = "Shortened barrel.\nIncompatible with the <color=255,255,100>10-Round Tube</color> attachment."
 
 L["csgo_xm1014_mag_fed.printname"] = "5-Round Box Magazine"
 L["csgo_xm1014_mag_fed.compactname"] = "12G Box"
@@ -2224,13 +2224,13 @@ L["csgo_optic_trijicon_nonrail.printname"] = ARC9:GetPhrase("csgo_optic_acog_rmr
 L["csgo_optic_trijicon_nonrail.compactname"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.compactname") or "RMR"
 L["csgo_optic_trijicon_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
 
-L["csgo_optic_trijicon_mro.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+L["csgo_optic_trijicon_mro.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
 
-L["csgo_optic_trijicon.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+L["csgo_optic_trijicon.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
 
-L["csgo_optic_trijicon_alt.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+L["csgo_optic_trijicon_alt.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
 
-L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_trijicon_alt.description") or "Compact reflex optic."
+L["csgo_optic_trijicon_alt_nonrail.description"] = ARC9:GetPhrase("csgo_optic_acog_rmr_alt.description") or "Compact reflex optic."
 
 L["csgo_pistols_view2.printname"] = ARC9:GetPhrase("csgo_pistols_view.printname") or "Alternative View"
 L["csgo_pistols_view2.compactname"] = ARC9:GetPhrase("csgo_pistols_view.compactname") or "Alt. View"

@@ -80,11 +80,6 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.DrawCrosshair = true
 SWEP.Crosshair = true
 
-SWEP.CustomCrosshair = true
-SWEP.CustomCrosshairSingle = true
-SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
-SWEP.CustomCrosshairSize = 30
-
 -------------------------- FIREMODES
 
 SWEP.RPM = 71
@@ -111,7 +106,7 @@ SWEP.RecoilSide = 3 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.75
 
-SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 3.5 -- Multiplier for automatic recoil control.
@@ -134,8 +129,9 @@ SWEP.RecoilAutoControlMultHipFire = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 3
-SWEP.VisualRecoilUp = 10
-SWEP.VisualRecoilSide = .25
+SWEP.VisualRecoilUp = -3
+SWEP.VisualRecoilUpSights = 3
+SWEP.VisualRecoilSide = .1
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 2.5
@@ -155,17 +151,15 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.07
+SWEP.Spread = 0.035
 
-SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
 SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.025
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.015
-SWEP.SpreadMultHipFire = 1
-SWEP.SpreadAddCrouch = -0.004
-SWEP.SpreadAddSightsMove = -0.1
+SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
@@ -223,20 +217,19 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(26, 30, 8)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 0, 0)
+SWEP.CustomizePos = Vector(26, 40, 8)
+
+SWEP.CustomizeRotateAnchor = Vector(26, -6.5, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-22, 20, 0)
-SWEP.BlindFireRightAng = Angle(-80, -20, 3)
-
-SWEP.BlindFireLeftPos = Vector(22, 20, 0)
-SWEP.BlindFireLeftAng = Angle(80, -20, 3)
+SWEP.PeekPos = Vector(-2, 6, -8)
+SWEP.PeekAng = Angle(0, 0, -45)
 
 -------------------------- HoldTypes
 
@@ -319,7 +312,7 @@ SWEP.Animations = {
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
             {s = path .. "mag7_pump_back.wav", t = 1/30},
-            {s = path .. "mag7_pump_forward.wav", t = 4/30},
+            {s = path .. "mag7_pump_forward.wav", t = 5.5/30},
         },
     },
     -- ["fire_sights"] = {
@@ -331,6 +324,9 @@ SWEP.Animations = {
     -- },
     ["reload"] = {
         Source = "reload",
+		RefillProgress = 0.55,
+		MinProgress = 0.925,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -360,6 +356,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
+		RefillProgress = 0.875,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -413,6 +412,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.5,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -462,6 +462,9 @@ SWEP.Animations = {
     },
     ["reload_longmag"] = {
         Source = "reload_extra",
+		RefillProgress = 0.55,
+		MinProgress = 0.925,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -491,6 +494,9 @@ SWEP.Animations = {
     },
     ["reload_longmag_empty"] = {
         Source = "reload_empty_extra",
+		RefillProgress = 0.875,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {
                 t = 0,
@@ -618,7 +624,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic"},
         CorrectiveAng = Angle(0, 0, 0),
-		Scale = 1.1,
+		Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_side"),
