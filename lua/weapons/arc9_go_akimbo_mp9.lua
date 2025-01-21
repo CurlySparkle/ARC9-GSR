@@ -30,7 +30,7 @@ SWEP.ViewModel = "models/weapons/csgo/c_akimbo_mp9.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite.mdl"
 SWEP.DefaultBodygroups = "00000"
 
-SWEP.Slot = 1
+SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_akimbo_mp9.mdl"
@@ -51,16 +51,18 @@ SWEP.DamageMin = 16 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 800 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 4000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 25 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 9 -- Units of wood that can be penetrated by this gun.
 
 SWEP.ImpactForce = 8
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 2900 * 12
+SWEP.PhysBulletMuzzleVelocity = 1050 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.15
 
 -------------------------- MAGAZINE
 
@@ -77,58 +79,48 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
---SWEP.RPM = 857*1.5 -- Why this????
 SWEP.RPM = 857
 
 SWEP.Firemodes = {
     {
         Mode = -1,
-        AkimboBoth = true,
-        AmmoPerShot = 2,
-        Num = 2,
-		RecoilDissipationRate = 20
+		RPMMult = 1.25,
     },
     {
         Mode = 1,
-		Recoil = 0.85,
-		RecoilDissipationRate = 50
     }
 }
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.65
+SWEP.Recoil = 0.85
 
--- SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
+SWEP.RecoilSeed = 50729 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 1 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.9 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.2
 SWEP.RecoilRandomSide = 0.3
 
--- SWEP.RecoilDissipationRate = 15 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlMultShooting = 0.15
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilMultSights = 1.15
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
 SWEP.Akimbo = true
 
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -138,7 +130,7 @@ SWEP.VisualRecoilRoll = 0.25
 
 SWEP.VisualRecoilPositionBump = 1
 SWEP.VisualRecoilPositionBumpUp = .25
-SWEP.VisualRecoilPositionBumpUpSights = 1
+SWEP.VisualRecoilPositionBumpUpSights = .75
 SWEP.VisualRecoilMultCrouch = 1
 SWEP.VisualRecoilMultSights = 1
 
@@ -149,31 +141,27 @@ SWEP.ViewRecoil = false
 SWEP.ViewRecoilUpMult = 10
 SWEP.ViewRecoilSideMult = 2.5
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.08 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.09 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.075
-SWEP.SpreadAddMidAir = 0.02
+SWEP.SpreadAddMove = 0.065
+SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadAddHipFire = 0
 SWEP.SpreadAddCrouch = -0.01
-SWEP.SpreadAddSights = 0.0025
+
+SWEP.RecoilModifierCapSights = 0.5
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.75
 
 -------------------------- MELEE
 
@@ -240,23 +228,16 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(16, 40, 4)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 0, 2)
+SWEP.CustomizePos = Vector(12.5, 47.5, 4.5)
+
+SWEP.CustomizeRotateAnchor = Vector(12.5, 0, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.PeekPos = Vector(0, -6, -2)
-SWEP.PeekAng = Angle(0, 2.5, -2.5)
-
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.CantPeek = true
 
 -------------------------- HoldTypes
 
@@ -339,7 +320,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
+		RefillProgress = 0.725,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 0/30},
             {s = path .. "mp9_clipout.wav", t = 5/30},
@@ -352,7 +335,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+		RefillProgress = 0.825,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 0/30},
             {s = path .. "mp9_clipout.wav", t = 7/30},
@@ -413,43 +398,19 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["mag_decreased"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    },
-    ["grip"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
-    ["stock_retract"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(8.5, 0, 1), } }
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(6.75, 0, 1), } }
-    },
+    ["csgo_mp9_mag_long"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_mp9_mag_short"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_mp9_barrel_long"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_mp9_barrel_short"] = { Bodygroups = { { 2, 2 } } },
+    ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 3, 2 } } },
+	["grip"] = { Bodygroups = { { 4, 1 } } },
+    ["grip_none"] = { Bodygroups = { { 4, 2 } } },
+}
+
+SWEP.AttachmentTableOverrides = {
+    ["csgo_mp9_mag_long"] = { ClipSizeAdd = 20 },
+    ["csgo_mp9_mag_short"] = { ClipSizeAdd = 20 },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -570,7 +531,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "j_mag1_l",
-        Category = {"go_mag","go_mag_mp9"},
+        Category = {"go_mag_mp9"},
         Pos = Vector(0, 0, -1),
     },
     {

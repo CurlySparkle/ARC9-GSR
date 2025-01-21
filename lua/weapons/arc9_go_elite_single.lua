@@ -81,7 +81,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 500
+SWEP.RPM = 400
 
 SWEP.Firemodes = {
     {
@@ -92,7 +92,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.6
+SWEP.Recoil = 0.4
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -105,7 +105,7 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilMultRecoil = 1.66
+SWEP.RecoilMultRecoil = 2
 
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
@@ -113,15 +113,12 @@ SWEP.RecoilMax = 1
 SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 2.5 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlShooting = 0.25
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 0.5
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
@@ -141,24 +138,22 @@ SWEP.VisualRecoilSpringPunchDamping = 12
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.01
 
 SWEP.RecoilModifierCapSights = 0.1
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 

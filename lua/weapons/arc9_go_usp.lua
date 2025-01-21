@@ -33,13 +33,14 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_usp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 4, -4.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-15, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
+    Pos = Vector(-12.5, 2.25, -1.75),
+    Ang = Angle(-12.5, -5, 180),
     Scale = 1,
+    TPIKPos = Vector(-16, 6, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -92,7 +93,6 @@ SWEP.Firemodes = {
         Silencer = false,
         AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
-        --ActivateElements = {"unsil"},
         IgnoreMuzzleDevice = true,
         MuzzleParticleOverride = "weapon_muzzle_flash_pistol",
         MuzzleParticleOverride_Priority = 100,
@@ -102,7 +102,6 @@ SWEP.Firemodes = {
 
         DamageMaxAdd = 3,
         DamageMinAdd = 3,
-        SpreadAddRecoil = 0.005,
     }
 }
 SWEP.FiremodeAnimLock = true
@@ -110,7 +109,7 @@ SWEP.FiremodeAnimLock = true
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.45
+SWEP.Recoil = 0.8
 
 SWEP.RecoilSeed = 5426 -- CSGO Seed Input Test
 
@@ -123,22 +122,20 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilMultRecoil = 1.66
+
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.25
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.6
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -161,10 +158,6 @@ SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
@@ -174,19 +167,17 @@ SWEP.SpreadAddRecoil = 0.045 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.01
 
-SWEP.RecoilModifierCapSights = 0.2
+SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -212,8 +203,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -1, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(5, 3, 1)
+SWEP.SprintAng = Angle(-5, 0, 10)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -235,19 +226,18 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21.5, 25, 4)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, 0, 3)
+SWEP.CustomizePos = Vector(21.5, 35, 4)
+
+SWEP.CustomizeRotateAnchor = Vector(21.5, -2.75, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.PeekPos = Vector(-1, 0, -5)
+SWEP.PeekAng = Angle(0, 0, -50)
 
 -------------------------- HoldTypes
 
@@ -331,20 +321,24 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-        MinProgress = 0.65,
+		RefillProgress = 0.6,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
-            {s = path .. "usp_clipout.wav", t = 12/30},
-            {s = path .. "usp_clipin.wav", t = 25/30},
+            {s = path .. "usp_clipout.wav", t = 8/30},
+            {s = path .. "usp_clipin.wav", t = 20/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload",
-        MinProgress = 0.75,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
-            {s = path .. "usp_clipout.wav", t = 12/30},
-            {s = path .. "usp_clipin.wav", t = 25/30},
-            {s = path .. "usp_slideback.wav", t = 44/30},
-            {s = path .. "usp_sliderelease.wav", t = 50/30},
+            {s = path .. "usp_clipout.wav", t = 8/30},
+            {s = path .. "usp_clipin.wav", t = 20/30},
+            {s = path .. "usp_slideback.wav", t = 40/30},
+            {s = path .. "usp_sliderelease.wav", t = 46/30},
         },
     },
     ["ready"] = {
@@ -369,6 +363,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 2,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -440,21 +435,25 @@ SWEP.Animations = {
     ["reload_silenced"] = {
         Source = "reload_short_silenced",
         HideBoneIndex = 1,
-        MinProgress = 0.65,
+		RefillProgress = 0.6,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
-            {s = path .. "usp_clipout.wav", t = 12/30},
-            {s = path .. "usp_clipin.wav", t = 25/30},
+            {s = path .. "usp_clipout.wav", t = 8/30},
+            {s = path .. "usp_clipin.wav", t = 20/30},
         },
     },
     ["reload_empty_silenced"] = {
         Source = "reload_silenced",
         HideBoneIndex = 1,
-        MinProgress = 0.75,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
-            {s = path .. "usp_clipout.wav", t = 12/30},
-            {s = path .. "usp_clipin.wav", t = 25/30},
-            {s = path .. "usp_slideback.wav", t = 44/30},
-            {s = path .. "usp_sliderelease.wav", t = 50/30},
+            {s = path .. "usp_clipout.wav", t = 8/30},
+            {s = path .. "usp_clipin.wav", t = 20/30},
+            {s = path .. "usp_slideback.wav", t = 40/30},
+            {s = path .. "usp_sliderelease.wav", t = 46/30},
         },
     },
     ["ready_silenced"] = {

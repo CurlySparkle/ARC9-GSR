@@ -33,13 +33,14 @@ SWEP.DefaultBodygroups = "0000000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_p250.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 4, -3.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-15, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
+    Pos = Vector(-12.5, 2.25, -1.75),
+    Ang = Angle(-12.5, -5, 180),
     Scale = 1,
+    TPIKPos = Vector(-16, 4, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -88,7 +89,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.7
+SWEP.Recoil = 1.3
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -104,11 +105,11 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlShooting = 0.25
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 1
 
@@ -119,9 +120,9 @@ SWEP.RecoilMultSights = 1
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilUpSights = 10
+SWEP.VisualRecoilUpSights = 3
 SWEP.VisualRecoilSide = .5
-SWEP.VisualRecoilSideSights = .25
+SWEP.VisualRecoilSideSights = .05
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
@@ -142,19 +143,17 @@ SWEP.SpreadAddRecoil = 0.055 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.01
 
 SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -202,22 +201,19 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17.5, 25, 4.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 1)
+SWEP.CustomizePos = Vector(17.5, 35, 4.5)
+
+SWEP.CustomizeRotateAnchor = Vector(17.5, -2.75, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
-
-SWEP.SpeedMultMelee = 1
+SWEP.PeekPos = Vector(-1, 0, -5)
+SWEP.PeekAng = Angle(0, 0, -50)
 
 -------------------------- HoldTypes
 
@@ -294,6 +290,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
+		RefillProgress = 0.6,
+		MinProgress = 0.925,
+		FireASAP = true,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 0},
             {t = 0.2, lhik = 0, rhik = 0},
@@ -307,7 +306,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         IKTimeLine = {
             {t = 0,	lhik = 1, rhik = 0 },
             {t = 0.2, lhik = 0, rhik = 0},
@@ -350,6 +351,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

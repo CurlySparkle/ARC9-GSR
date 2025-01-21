@@ -1,17 +1,17 @@
 A gigantic overhaul update is now available for Gunsmith Reloaded.
 
-Here's an abbrevriated version:
+[h1]Abbrevriated[/h1]
 [list]
 	[*] Added support for recent ARC9 base features on all weapons.
 	[*] All weapons have altered spread and recoil values and has their visual recoil either removed or adjusted
 	[*] All attachments are remade from scratch, including names, descriptions and stats
 	[*] Localizations have been updated, including altered attachment names and descriptions
-	[*] [i]Português brasileiro[/i] & [i]tiếng Việt[/i]
+	[*] [i]Português brasileiro[/i] & [i]tiếng Việt[/i]!
 [/list]
 And more!
 
-And here's the long, more detailed version:
 
+[h1]Detailed[/h1]
 [b][u]Weapon changes[/u][/b]
 [u]All weapons[/u]
 [list]
@@ -36,20 +36,15 @@ And here's the long, more detailed version:
 
 [u]SMGs[/u]
 [b]MAC-10[/b]: Reduced recoil | Reduced recoil centering
-[b]MP5[/b]: N/A
 [b]MP5-SD[/b]: Reduced recoil | Increased recoil when auto-firing | Stock is now extended by default; now has access to "Collapsed Stock" attachment
 [b]MP7[/b]: Reduced recoil | Removed 2-round burst | Stock is now extended by default; now has access to "Collapsed Stock" attachment
 [b]MP9[/b]: Reduced recoil | Increased recoil when auto-firing
 [b]P90[/b]: Increased recoil | Increased hor. recoil
-[b]PP-Bizon[/b]: N/A
-[b]UMP-45[/b]: N/A
 
 [u]Shotguns[/u]
 [b]Benelli M3 Super 90[/b]: Shortened name to just "M3".
-[b]MAG-7[/b]: 
-[b]Nova[/b]: 
-[b]Sawed-Off[/b]: 
-[b]XM1014[/b]: 
+[b]MAG-7[/b]: Increased ADS speed | Decreased Sprint-to-Fire time
+[b]Nova[/b]: Reduced ADS speed | Increased Sprint-to-Fire time
 
 [u]Snipers[/u]
 [b]AWP[/b]: Disabled the use of Aim Assist
@@ -63,16 +58,14 @@ And here's the long, more detailed version:
 [b]Negev[/b]: Inverted the spread values | Decreased visual recoil | Increased aiming speed
 
 [u]Pistols[/u]
-[b]Beretta[/b]:
-[b]CZ75-Auto[/b]: 
-[b]Desert Eagle[/b]: 
-[b]Five-SeveN[/b]: 
-[b]Glock-18[/b]: 
-[b]P2000[/b]: 
-[b]P250[/b]: 
-[b]R8 Revolver[/b]: 
-[b]Tec-9[/b]: 
-[b]USP-S[/b]: 
+[b]Beretta[/b]: Reduced recoil | Reduced RPM | Added a 66% Recoil penalty when rapid-firing
+[b]CZ75-Auto[/b]: Reduced recoil | Removed Vis. Recoil penalty when in Auto; lowered Spread penalty when in Auto
+[b]Desert Eagle[/b]: Reduced recoil
+[b]Five-SeveN[/b]: Reduced recoil
+[b]Glock-18[/b]: Reduced recoil | Added a 100% Recoil penalty when rapid-firing | Burst: Removed Vertical Recoil and Spread penalties; Also increased Burst Delay by 0.05.
+[b]P2000[/b]: Fixed that the empty reload animation for the extended mag played even when not using extended mags
+[b]P250[/b]: Reduced recoil
+[b]USP-S[/b]: Reduced recoil | Added a 66% Recoil penalty when rapid-firing | Removed Spread penalty when unsuppressed
 
 [u]Knives[/u]
 [b]CT Knife[/b]:
@@ -85,18 +78,14 @@ And here's the long, more detailed version:
 [b]Claymore[/b]: Fixed LUA errors when planting.
 
 [u]Dual-Wielded[/u]
+[b]ALL[/b]: Rebalanced stats to be more in-line with their single-use counterparts; this includes, but is not limited to: recoil, spread, damage and range. Additionally, all dual-wielded weapons can no longer utilize peeking.
+
 [b]Beretta[/b]:
-[b]CZ75-Auto[/b]: 
-[b]Desert Eagle[/b]: 
-[b]Five-SeveN[/b]: 
-[b]Glock-18[/b]: 
-[b]MP9[/b]: 
-[b]P2000[/b]: 
-[b]P250[/b]: 
-[b]R8 Revolvers[/b]: 
-[b]Sawed-Offs[/b]: 
-[b]USP[/b]: 
-[b]Zeus x27[/b]: 
+[b]CZ75-Auto[/b]: Removed 'Both' firing mode; Replaced with standard left-right Auto with a 50% RPM buff
+[b]Glock-18[/b]: Tweaked the 3-Burst mode to now have the same tweaks as the base Glock-18
+[b]MP9[/b]: Removed 'Both' firing mode; Replaced with standard left-right Auto with a 25% RPM buff | Moved to SMG slot
+[b]R8 Revolvers[/b]: Added a -33% RPM penalty when aiming to simulate the single-use R8
+[b]Sawed-Offs[/b]: Added +25% Spread & -33% RPM stats when in 'Both' firing mode
 
 [b][u]Attachment Changes[/u][/b]
 [u]Brand New Stats[/u]
@@ -158,7 +147,7 @@ Added two new sets of attachment integrations:
 	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
 	[*] R8 Revolver: [u]6-Round Cylinder[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
-	[*] P90: The [u]20-Round[/u] and [u]30-Round 5.56x45mm NATO[/b] magazines now change the damage, range and RPM to be closer to the M4A4.
+	[*] P90: The [u]20-Round[/u] and [u]30-Round 5.56x45mm NATO[/u] magazines now change the damage, range and RPM to be closer to the M4A4.
 [/list]
 
 [b][u]Other[/u][/b]

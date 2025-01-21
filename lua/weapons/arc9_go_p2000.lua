@@ -33,13 +33,14 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_p2000.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 4, -3.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-15, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
+    Pos = Vector(-12.5, 2.25, -1.25),
+    Ang = Angle(-12.5, -5, 180),
     Scale = 1,
+    TPIKPos = Vector(-16, 6, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 
@@ -103,38 +104,32 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlShooting = 0.25
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilUpSights = -0.5
+SWEP.VisualRecoilUpSights = 0
 SWEP.VisualRecoilSide = .5
-SWEP.VisualRecoilSideSights = .15
+SWEP.VisualRecoilSideSights = .025
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
 SWEP.VisualRecoilPositionBumpUp = 1
-SWEP.VisualRecoilPositionBumpUpSights = -.25
+SWEP.VisualRecoilPositionBumpUpSights = 0
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = 1
 
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringPunchDamping = 12
-
--- SWEP.BottomlessClip = true
-
--- ]]--
 
 -------------------------- SPREAD
 
@@ -145,19 +140,17 @@ SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.01
 
 SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -174,16 +167,16 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.82, -4, 0.8),
-    Ang = Angle(0, 1, 0),
+    Pos = Vector(-2.82, -4, 0.825),
+    Ang = Angle(0, 1.1, 0),
     Magnification = 1.1,
     ViewModelFOV = 56,
 }
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -1, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(5, 3, 1)
+SWEP.SprintAng = Angle(-5, 0, 10)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -205,20 +198,19 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17.5, 23, 3.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 1)
+SWEP.CustomizePos = Vector(17.5, 33, 3.5)
+
+SWEP.CustomizeRotateAnchor = Vector(17.5, -2.75, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.PeekPos = Vector(-1, 0, -5)
+SWEP.PeekAng = Angle(0, 0, -50)
 
 -------------------------- HoldTypes
 
@@ -282,11 +274,13 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
 
-    if anim == "reload" and attached["go_mag_extended"] then
-        return "reload_longmag"
-    elseif anim == "reload_empty" then
-        return "reload_longmag_empty"
-    end
+	if attached["go_mag_extended"] then
+		if anim == "reload" then
+			return "reload_longmag"
+		elseif anim == "reload_empty" then
+			return "reload_longmag_empty"
+		end
+	end
 end
 
 
@@ -305,7 +299,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.4,
+		RefillProgress = 0.65,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
             {s = "ARC9_CSGO_HKP2000.Magout", t = 10/30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
@@ -314,12 +310,14 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.4,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10/30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
-            {s = "ARC9_CSGO_HKP2000.Slideback", t = 44/30},
-            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 50/30},
+            {s = "ARC9_CSGO_HKP2000.Slideback", t = 40/30},
+            {s = "ARC9_CSGO_HKP2000.Slideforward", t = 46/30},
             {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 55/30},
         },
     },
@@ -345,6 +343,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 2,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -365,7 +364,9 @@ SWEP.Animations = {
     },
     ["reload_longmag"] = {
         Source = "reload_short_alt",
-		MinProgress = 0.7,
+		RefillProgress = 0.65,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
             {s = "ARC9_CSGO_HKP2000.Magout", t = 10/30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},
@@ -374,7 +375,9 @@ SWEP.Animations = {
     },
     ["reload_longmag_empty"] = {
         Source = "reload_alt",
-		MinProgress = 0.4,
+		RefillProgress = 0.825,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 10/30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 23/30},

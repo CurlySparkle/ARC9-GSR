@@ -35,11 +35,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_xm1014_tp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 5.5, -4.5),
-    Ang = Angle(-10, 0, 180),
-    TPIKPos = Vector(-10, 5, -4),
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Pos = Vector(-9.25, 5.2, -2.25),
+    Ang = Angle(-15, 0, 180),
+    Scale = 1,
+    TPIKPos = Vector(-10, 6, -4),
+    TPIKAng = Angle(-12.5, -1.5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -166,13 +166,12 @@ SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -276,6 +275,8 @@ SWEP.DistantShootSound = "CSGO.xm1014.Fire.Distance"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
+
+SWEP.HideBones = { "v_weapon.m3_SHELL" }
 
 SWEP.ReloadHideBoneTables = {
     [1] = {

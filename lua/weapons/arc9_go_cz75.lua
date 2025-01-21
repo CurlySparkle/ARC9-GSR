@@ -121,8 +121,6 @@ SWEP.RecoilAutoControlShooting = 0.25
 SWEP.RecoilKick = 1
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 1
@@ -158,13 +156,12 @@ SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- TRACERS
 

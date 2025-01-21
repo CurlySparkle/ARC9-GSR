@@ -51,8 +51,8 @@ SWEP.DamageMin = 15 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8192 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 3000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 8 -- Units of wood that can be penetrated by this gun.
 
@@ -77,20 +77,9 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 750
+SWEP.RPM = 352 * 1.25
 
 SWEP.Firemodes = {
-    -- {
-        -- Mode = 1,
-		-- PrintName = "Single",
-        -- -- add other attachment modifiers
-    -- },
-    -- {
-        -- Mode = 2,
-        -- PostBurstDelay = 0.12,
-		-- PrintName = "Double",
-        -- -- add other attachment modifiers
-    -- }
 	{
         Mode = 1,
         -- add other attachment modifiers
@@ -99,7 +88,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2
+SWEP.Recoil = 1.5
 
 SWEP.RecoilSeed = 59299 -- CSGO Seed Input Test
 
@@ -112,30 +101,25 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 25 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.1 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 1
 
--- SWEP.RecoilMultCrouch = 0.6
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilMultSights = 1.4
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
 SWEP.Akimbo = true
 
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 4
-SWEP.VisualRecoilSide = .5
+SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
@@ -146,31 +130,26 @@ SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.085 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.09
-SWEP.SpreadAddMidAir = 0.02
+SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = 0.0025
+
+SWEP.RecoilModifierCapSights = 0.4
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.75
 
 -------------------------- MELEE
 
@@ -237,23 +216,16 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32.5, 3.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
+SWEP.CustomizePos = Vector(18, 40, 3.5)
+
+SWEP.CustomizeRotateAnchor = Vector(18, 0, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.PeekPos = Vector(0, -6, -2)
-SWEP.PeekAng = Angle(0, 2.5, -2.5)
-
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.CantPeek = true
 
 -------------------------- HoldTypes
 
@@ -338,35 +310,34 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.95,
+		RefillProgress = 0.725,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/30},
 			{s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 3/30},
             {s = "ARC9_CSGO_HKP2000.Magout", t = 5/30},
-			{s = path .. "hkp2000_clipin.wav", t = 22/30},
-            {s = "ARC9_CSGO_HKP2000.Magin", t = 25/30},
-            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 35/30},
+            {s = "ARC9_CSGO_HKP2000.Magout", t = 8/30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 40/30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 49/30},
             {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 65/30},
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.95,
+		RefillProgress = 0.825,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
 		    {s = "weapons/csgo/movement1.wav", t = 0/30},
 			{s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 3/30},
-			{s = path .. "hkp2000_clipout.wav", t = 3/30},
-            {s = "ARC9_CSGO_HKP2000.Magout", t = 5/30},
+            {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 5/30},
             {s = "ARC9_CSGO_HKP2000.MagoutEmpty", t = 8/30},
-			{s = path .. "hkp2000_clipin.wav", t = 22/30},
-            {s = "ARC9_CSGO_HKP2000.Magin", t = 25/30},
-            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 30/30},
+            {s = "ARC9_CSGO_HKP2000.Magin", t = 40/30},
             {s = "ARC9_CSGO_HKP2000.Magin", t = 49/30},
-            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 65/30},
-            {s = "ARC9_CSGO_HKP2000.Slideback", t = 67/30},
             {s = "ARC9_CSGO_HKP2000.Slideforward", t = 69/30},
             {s = "ARC9_CSGO_HKP2000.SlideforwardAlt", t = 74/30},
+            {s = "ARC9_CSGO_HKP2000.ReloadEnd", t = 80/30},
         },
     },
     ["ready"] = {

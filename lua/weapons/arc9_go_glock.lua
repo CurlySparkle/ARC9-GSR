@@ -37,13 +37,14 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_glock_tp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 4, -3.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-15, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
+    Pos = Vector(-12.5, 2.25, -1.75),
+    Ang = Angle(-12.5, -5, 180),
     Scale = 1,
+    TPIKPos = Vector(-16, 6, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 
@@ -91,12 +92,10 @@ SWEP.Firemodes = {
     },
     {
         Mode = 3,
-        RPM = 1000,
-		Recoil = 1.4,
-        RecoilUp = 0.75,
-        SpreadAddRecoil = 0.015,
+        RPMAdd = 600,
+		RecoilAdd = 0.4,
         RunawayBurst = true,
-        PostBurstDelay = 0.3,
+        PostBurstDelay = 0.35,
         Hook_TranslateAnimation = function (self, anim)
             if anim == "fire" then
                 return "fire_auto"
@@ -108,7 +107,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 0.4
 
 SWEP.RecoilSeed = 4484 -- CSGO Seed Input Test
 
@@ -121,14 +120,16 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
+SWEP.RecoilMultRecoil = 2
+
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlShooting = 0.25
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.1
 
 SWEP.RecoilKick = 1
 
@@ -138,8 +139,8 @@ SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilSide = -0.5
+SWEP.VisualRecoilUp = 0.5
+SWEP.VisualRecoilSide = -0.15
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
@@ -158,24 +159,22 @@ SWEP.ViewRecoilSideMult = 2.5
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
 SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.01
 
 SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -203,8 +202,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, -1, 0)
-SWEP.SprintAng = Angle(-5, 0, 5)
+SWEP.SprintPos = Vector(5, 3, 1)
+SWEP.SprintAng = Angle(-5, 0, 10)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -226,22 +225,19 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17.5, 25, 4.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 0.5)
+SWEP.CustomizePos = Vector(17.5, 35, 4.5)
+
+SWEP.CustomizeRotateAnchor = Vector(17.5, -2.75, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
-
-SWEP.SpeedMultMelee = 1
+SWEP.PeekPos = Vector(-1, 0, -5)
+SWEP.PeekAng = Angle(0, 0, -50)
 
 -------------------------- HoldTypes
 
@@ -273,12 +269,12 @@ SWEP.ShellCorrectAng = Angle(0, 0, 0)
 SWEP.ShellScale = 0.09
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
-SWEP.ShouldDropMag = true
+SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/csgo/mags/w_pist_glock18_mag.mdl"
 SWEP.DropMagazineSounds = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
 SWEP.DropMagazineAmount = 1
-SWEP.DropMagazineTime = 0.55
+SWEP.DropMagazineTime = 1.45
 SWEP.DropMagazineQCA = 3
 
 -------------------------- SOUNDS
@@ -292,8 +288,7 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
-SWEP.HideBones = {
-}
+SWEP.HideBones = { "v_weapon.glock_magazine_secondary" }
 
 SWEP.HideBonesSilenced = {}
 
@@ -327,7 +322,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.6,
+		RefillProgress = 0.6,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 16/30},
             {s = path .. "glock_clipin.wav", t = 28/30},
@@ -335,7 +332,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-        MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12/30},
             {s = path .. "glock_clipin.wav", t = 25/30},
@@ -344,7 +343,9 @@ SWEP.Animations = {
     },
     ["reload_x"] = {
         Source = "reload_short_x",
-		MinProgress = 0.6,
+		RefillProgress = 0.6,
+		MinProgress = 0.925,
+		FireASAP = true,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 16/30},
             {s = path .. "glock_clipin.wav", t = 28/30},
@@ -352,7 +353,9 @@ SWEP.Animations = {
     },
     ["reload_empty_x"] = {
         Source = "reload_x",
-        MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "glock_clipout.wav", t = 12/30},
             {s = path .. "glock_clipin.wav", t = 25/30},
@@ -381,6 +384,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 2,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

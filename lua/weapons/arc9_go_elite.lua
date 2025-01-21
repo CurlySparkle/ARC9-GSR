@@ -2,6 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
 
+SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
@@ -87,7 +88,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.3
+SWEP.Recoil = 0.6
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -100,25 +101,22 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilMultRecoil = 2
+
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 1.5
 
 SWEP.Akimbo = true
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -134,31 +132,26 @@ SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilDampingConst = 360
 SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMove = 0.04
 SWEP.SpreadAddMidAir = 0.02
-SWEP.SpreadAddHipFire = 0.004
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = 0.0025
+SWEP.SpreadAddHipFire = 0
+
+SWEP.RecoilModifierCapSights = 0.4
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.75
 
 -------------------------- MELEE
 
@@ -221,9 +214,12 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32.5, 4.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -5, 0)
+SWEP.CustomizePos = Vector(18, 40, 4.5)
+
+SWEP.CustomizeRotateAnchor = Vector(18, 0, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -312,7 +308,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.95,
+		RefillProgress = 0.9,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5/30},
             {s = path .. "elite_clipout.wav", t = 7/30},
@@ -322,7 +320,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.95,
+		RefillProgress = 0.975,
+		MinProgress = 1,
+		FireASAP = true,
         EventTable = {
             {s = path .. "elite_clipout.wav", t = 5/30},
             {s = path .. "elite_clipout.wav", t = 7/30},

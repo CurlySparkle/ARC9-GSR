@@ -163,13 +163,12 @@ SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
+SWEP.AimDownSightsTime = 0.26 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SwayMultSights = 0.3
+-------------------------- SWAY
 
-SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.3 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SwayAddSights = 0.35
 
 -------------------------- MELEE
 

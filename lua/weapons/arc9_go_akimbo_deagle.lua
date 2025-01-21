@@ -46,21 +46,23 @@ SWEP.WorldModelOffset = {
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 45 -- Damage done at point blank range
+SWEP.DamageMax = 53 -- Damage done at point blank range
 SWEP.DamageMin = 13 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 12000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 3500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 8
+SWEP.ImpactForce = 11
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 1380 * 12
+SWEP.PhysBulletMuzzleVelocity = 1542 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.5
 
 -------------------------- MAGAZINE
 
@@ -77,7 +79,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 267 * 2
+SWEP.RPM = 267 * 1.25
 
 SWEP.Firemodes = {
     {
@@ -85,10 +87,11 @@ SWEP.Firemodes = {
         -- add other attachment modifiers
     }
 }
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 3
+SWEP.Recoil = 1.75
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -101,27 +104,21 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0.15 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
+SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 1.5
 
 SWEP.Akimbo = true
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilMultSights = 1.4
--- SWEP.RecoilAutoControlMultSights = 1.5
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = .75
-SWEP.RecoilAutoControlMultHipFire = 0.9
+SWEP.RecoilMultSights = 0.85
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -137,31 +134,26 @@ SWEP.VisualRecoilMultSights = .75
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.075
-SWEP.SpreadAddMidAir = 0.02
+SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddSights = 0.0025
+
+SWEP.RecoilModifierCapSights = 0.75
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.31 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.4 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.75
 
 -------------------------- MELEE
 
@@ -228,23 +220,16 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 35, 3)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 2)
+SWEP.CustomizePos = Vector(18, 40, 3)
+
+SWEP.CustomizeRotateAnchor = Vector(18, 0, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.PeekPos = Vector(0, -6, -2)
-SWEP.PeekAng = Angle(0, 2.5, -2.5)
-
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.CantPeek = true
 
 -------------------------- HoldTypes
 

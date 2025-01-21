@@ -116,9 +116,7 @@ SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1.5
 
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1.15
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.ViewRecoil = true
 SWEP.ViewRecoilUpMult = 4
@@ -142,14 +140,15 @@ SWEP.SpreadAddCrouch = 0
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
 SWEP.AimDownSightsTime = 0.22 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.21 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ManualAction = true
 SWEP.NoLastCycle = true
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.35
 
 -------------------------- MELEE
 

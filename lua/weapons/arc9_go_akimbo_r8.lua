@@ -2,6 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
 
+SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
@@ -47,20 +48,22 @@ SWEP.WorldModelOffset = {
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 86 -- Damage done at point blank range
-SWEP.DamageMin = 46 -- Damage done at maximum range
+SWEP.DamageMin = 40 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 300 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 12000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 400 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 1500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
 
-SWEP.ImpactForce = 8
+SWEP.ImpactForce = 11
 
 -------------------------- PHYS BULLET BALLISTICS
 
-SWEP.PhysBulletMuzzleVelocity = 1380 * 12
+SWEP.PhysBulletMuzzleVelocity = 1921 * 12
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 2.5
 
 -------------------------- MAGAZINE
 
@@ -77,7 +80,8 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 120
+SWEP.RPM = 150
+SWEP.RPMSights = 100
 
 SWEP.Firemodes = {
     {
@@ -87,7 +91,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 4
+SWEP.Recoil = 2
 
 SWEP.RecoilSeed = 1454 -- CSGO Seed Input Test
 
@@ -100,24 +104,21 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 20 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 1
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 2.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 2
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
 SWEP.Akimbo = true
 
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
-SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
+SWEP.RecoilMultHipFire = 1.75
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -133,31 +134,24 @@ SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilDampingConst = 240
 SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
 SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.05
-SWEP.SpreadAddCrouch = -0.02
-SWEP.SpreadAddRecoilSight = 0.0025
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
-
 SWEP.AimDownSightsTime = 0.3 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.1 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.75
 
 -------------------------- MELEE
 
@@ -222,23 +216,16 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 35, 3.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -5, 2)
+SWEP.CustomizePos = Vector(19, 42.5, 3.5)
+
+SWEP.CustomizeRotateAnchor = Vector(19, 0, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.PeekPos = Vector(0, -6, -2)
-SWEP.PeekAng = Angle(0, 2.5, -2.5)
-
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.CantPeek = true
 
 -------------------------- HoldTypes
 
@@ -296,7 +283,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.95,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
 			{s = path .. "revolver_prepare.wav", t = 11/30},
             {s = path .. "revolver_siderelease.wav", t = 13/30},        {s = path .. "revolver_siderelease.wav", t = 17/30},
@@ -408,6 +397,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_model"),
         DefaultAttName = "R8",
         Category = "go_r8",
+        InstalledElements = {"6shot"},
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(4.5, 0, 2.3),
     }, 
@@ -418,7 +408,7 @@ SWEP.Attachments = {
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(8.5, 0.55, 1.8),
         Ang = Angle(0, 0, 0),
-		ExcludeElements = {"r6"},
+		ExcludeElements = {"6shot"},
         DuplicateModels = {
             {
                 Bone = "tag_pistol_attachments",

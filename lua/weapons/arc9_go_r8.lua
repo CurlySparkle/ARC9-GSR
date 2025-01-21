@@ -33,13 +33,14 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_r8_tp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 4, -3.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-16, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
+    Pos = Vector(-12.5, 2.25, -1.75),
+    Ang = Angle(-12.5, -5, 180),
     Scale = 1,
+    TPIKPos = Vector(-16, 6, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 
@@ -84,7 +85,7 @@ SWEP.RPMSights = 85
 SWEP.Firemodes = {
     {
         Mode = 1,
-		PrintName = ARC9:GetPhrase("hud.firemode.single"),
+		-- PrintName = ARC9:GetPhrase("hud.firemode.single"),
 		-- SpreadAddHipFire = 0.05,
 		-- SpreadAddMove = 0.03,
 		-- SpreadAddRecoil = 0.05,
@@ -116,7 +117,7 @@ SWEP.RecoilDissipationRate = 2.5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlShooting = 0.25
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 2
 
@@ -126,13 +127,13 @@ SWEP.RecoilMultSights = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 5
+SWEP.VisualRecoilUp = 2
 SWEP.VisualRecoilSide = .5
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
 SWEP.VisualRecoilPositionBumpUp = 1
-SWEP.VisualRecoilPositionBumpUpSights = 5
+SWEP.VisualRecoilPositionBumpUpSights = 1.5
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = 1
 
@@ -145,14 +146,8 @@ SWEP.SpreadAddRecoil = 0.05 -- Applied per unit of recoil.
 SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0.05
-SWEP.SpreadAddCrouch = -0.01
 
 -------------------------- HANDLING
-
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-
-SWEP.SwayMultSights = 0.3
 
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
@@ -164,6 +159,10 @@ SWEP.TriggerDelaySights = true
 SWEP.TriggerDelayTimeSights = 0.2 -- Time until weapon fires.
 
 SWEP.TriggerDelaySights = 0.2
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- TRACERS
 
@@ -212,23 +211,20 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 3.5)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizePos = Vector(19, 35, 3.5)
 
-SWEP.CustomizeSnapshotPos = Vector(0, -5, 2)
+SWEP.CustomizeRotateAnchor = Vector(19, -3.5, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.CantPeek = true
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
-
-SWEP.SpeedMultMelee = 1
+SWEP.PeekPos = Vector(-1, 0, -3)
+SWEP.PeekAng = Angle(0, 0, -20)
 
 -------------------------- HoldTypes
 
@@ -241,7 +237,7 @@ SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
@@ -276,8 +272,7 @@ SWEP.DryFireSound = "weapons/csgo/revolver/revolver_sideback.wav"
 
 SWEP.FiremodeSound = "weapons/csgo/auto_semiauto_switch.wav"
 
-SWEP.HideBones = {
-}
+SWEP.HideBones = { "v_weapon.loader_handle" }
 
 SWEP.HideBonesSilenced = {}
 
@@ -293,7 +288,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.7,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "revolver_siderelease.wav", t = 3/30},
 			{s = path .. "revolver_prepare.wav", t = 3/30},
@@ -332,6 +329,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -461,7 +459,7 @@ SWEP.Attachments = {
         ExcludeElements = {"6shot"},
         CorrectiveAng = Angle(-0.4, 0.8, 0),
 		Scale = 1,
-		ExtraSightDistance = 8,
+		ExtraSightDistance = 4,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_tactical"),
