@@ -35,11 +35,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_m3_tp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7.5, 5.2, -5.5),
-    Ang = Angle(-7, 0, 180),
-    TPIKPos = Vector(-10, 3, -1),
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Pos = Vector(-8, 5.2, -3.5),
+    Ang = Angle(-15, 0, 180),
+    Scale = 1,
+    TPIKPos = Vector(-10, 6, -4),
+    TPIKAng = Angle(-12.5, -1.5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -238,10 +238,10 @@ SWEP.PeekAng = Angle(0, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

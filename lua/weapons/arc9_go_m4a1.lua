@@ -1046,3 +1046,25 @@ SWEP.Attachments = {
 }
 
 SWEP.GripPoseParam = 3
+
+SWEP.CustomizePosHook = function(wep, vec)
+	local s1, s2, s3 = wep:HasElement("go_supp_233"), wep:HasElement("go_supp_m4"), wep:HasElement("go_supp_pbs01")
+	local s4, s5, s6, s7 = wep:HasElement("go_supp_shit9"), wep:HasElement("go_supp_tirant45"), wep:HasElement("go_supp_clothwrapped"), wep:HasElement("go_supp_kriss")
+	local s8 = wep:HasElement("go_supp_m110")
+	
+	if s1 or s2 or s3 or s4 or s5 or s6 or s7 or s8 then
+		return vec - Vector(3.5, 4, 0)
+	end
+
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local s1, s2, s3 = wep:HasElement("go_supp_233"), wep:HasElement("go_supp_m4"), wep:HasElement("go_supp_pbs01")
+	local s4, s5, s6, s7 = wep:HasElement("go_supp_shit9"), wep:HasElement("go_supp_tirant45"), wep:HasElement("go_supp_clothwrapped"), wep:HasElement("go_supp_kriss")
+	local s8 = wep:HasElement("go_supp_m110")
+	
+	if s1 or s2 or s3 or s4 or s5 or s6 or s7 or s8 then
+		return vec - Vector(3.5, 0, 0)
+	end
+
+end

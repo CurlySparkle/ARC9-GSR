@@ -36,11 +36,11 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_shot_sawedoff.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-11, 6, -2.5),
-    Ang = Angle(-17, 3, 180),
-    TPIKPos = Vector(-15, 5, 0),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    Pos = Vector(-10, 5.2, -2.75),
+    Ang = Angle(-12.5, 0, 180),
+    Scale = 1,
+    TPIKPos = Vector(-11, 6, -2),
+    TPIKAng = Angle(-12.5, -1.5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -213,10 +213,10 @@ SWEP.PeekAng = Angle(0, 0, -30)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "rpg"
-SWEP.HoldTypeHolstered = "rpg"
-SWEP.HoldTypeSights = "rpg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "ar2"
+SWEP.HoldTypeHolstered = "ar2"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

@@ -33,13 +33,14 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_fiveseven.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 4, -3.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-14, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
+    Pos = Vector(-13, 2.25, -1),
+    Ang = Angle(-12.5, -5, 180),
     Scale = 1,
+    TPIKPos = Vector(-19, 6, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -86,7 +87,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.5
+SWEP.Recoil = 0.75
 
 SWEP.RecoilSeed = 9788 -- CSGO Seed Input Test
 
@@ -99,58 +100,51 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilMultRecoil = 1.33
+
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2.25 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.25
 
 SWEP.RecoilKick = 1.25
 
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- SWEP.UseVisualRecoil = true
--- SWEP.VisualRecoilPunchMultSights = 1
-
--- [[ Moka's testing area - do not touch nor uncomment
-
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1
-SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.RecoilMultSights = 0.85
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
-SWEP.VisualRecoilUp = 2
-SWEP.VisualRecoilUpSights = 1
+SWEP.VisualRecoilUp = 1
+SWEP.VisualRecoilUpSights = 0.8
 SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
 
 SWEP.VisualRecoilPositionBump = 1
 SWEP.VisualRecoilPositionBumpUp = 1
-SWEP.VisualRecoilPositionBumpUpSights = -0.75
+SWEP.VisualRecoilPositionBumpUpSights = -0.25
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = .15
 
 SWEP.VisualRecoilDampingConst = 200
 SWEP.VisualRecoilSpringPunchDamping = 12
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.06
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.02
 SWEP.SpreadAddHipFire = 0
+SWEP.SpreadAddCrouch = -0.01
 
-SWEP.RecoilModifierCapSights = 0.45
+SWEP.RecoilModifierCapSights = 0.2
 
 -------------------------- HANDLING
 
@@ -185,8 +179,8 @@ SWEP.IronSights = {
 
 SWEP.ViewModelFOVBase = 56
 
-SWEP.SprintPos = Vector(-1, 0, 0)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = Vector(5, 3, 1)
+SWEP.SprintAng = Angle(-5, 0, 10)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-0.5, -2.5, 0),
@@ -208,22 +202,19 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 25, 3.5)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 0.5)
+SWEP.CustomizePos = Vector(18, 32.5, 3.5)
+
+SWEP.CustomizeRotateAnchor = Vector(18, -3, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
-
-SWEP.SpeedMultMelee = 1
+SWEP.PeekPos = Vector(-0.5, 0, -5)
+SWEP.PeekAng = Angle(0, 0, -50)
 
 -------------------------- HoldTypes
 
@@ -289,7 +280,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-        MinProgress = 0.7,
+		RefillProgress = 0.7,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "fiveseven_clipout.wav", t = 12/30},
             {s = path .. "fiveseven_clipin.wav", t = 25/30},
@@ -297,7 +290,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-        MinProgress = 0.85,
+		RefillProgress = 0.85,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "fiveseven_clipout.wav", t = 12/30},
             {s = path .. "fiveseven_clipin.wav", t = 25/30},
@@ -327,6 +322,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 2,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

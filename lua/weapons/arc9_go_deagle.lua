@@ -33,13 +33,14 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
 SWEP.WorldModelMirror = "models/weapons/csgo/c_pist_deagle.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12.5, 5, -3.7),
-    Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-14, 1, -2),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    Pos = Vector(-12.5, 3.5, -1.25),
+    Ang = Angle(-12.5, -5, 180),
+    Scale = 1,
+    TPIKPos = Vector(-17, 6, -4),
+    TPIKAng = Angle(-7.5, 5, 175)
 }
 
 -------------------------- DAMAGE PROFILE
@@ -88,7 +89,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2.25
+SWEP.Recoil = 1.75
 
 SWEP.RecoilSeed = 1454 -- CSGO Seed Input Test
 
@@ -101,54 +102,50 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 20 -- How much recoil dissipates per second.
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 2
-
--- SWEP.RecoilMultCrouch = 0.7
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.7
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = .75
-SWEP.RecoilAutoControlMultHipFire = 1
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
 SWEP.VisualRecoilUp = 10
-SWEP.VisualRecoilSide = .75
+SWEP.VisualRecoilSide = .25
 SWEP.VisualRecoilRoll = 1
+SWEP.VisualRecoilUpSights = 2
+SWEP.VisualRecoilSideSights = .2
 
 SWEP.VisualRecoilPositionBump = .5
 SWEP.VisualRecoilPositionBumpUp = .75
+SWEP.VisualRecoilPositionBumpUpSights = 0
 SWEP.VisualRecoilMultCrouch = .8
 SWEP.VisualRecoilMultSights = .5
 
 SWEP.VisualRecoilDampingConst = 120
 SWEP.VisualRecoilSpringPunchDamping = 8
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.1 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.065
+SWEP.SpreadAddMove = 0.045
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddCrouch = -0.02
+SWEP.SpreadAddCrouch = -0.01
 
-SWEP.RecoilModifierCapSights = 0.45
+SWEP.RecoilModifierCapSights = 0.3
 
 -------------------------- HANDLING
 
@@ -175,8 +172,8 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.74, -3, 0.25),
-    Ang = Angle(0.34, 0.9, 0),
+    Pos = Vector(-3.74, -3, 0.31),
+    Ang = Angle(0.34, 0.825, 0),
     Magnification = 1.1,
     ViewModelFOV = 56,
 }
@@ -206,20 +203,19 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(19, 25, 4)
-SWEP.CustomizeSnapshotFOV = 90
-SWEP.CustomizeSnapshotPos = Vector(0, -10, 0)
+SWEP.CustomizePos = Vector(19, 32.5, 4)
+
+SWEP.CustomizeRotateAnchor = Vector(19, -3.75, -4)
+
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
+SWEP.PeekMaxFOV = 56
 
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.PeekPos = Vector(0, 0, -5)
+SWEP.PeekAng = Angle(0, 0, -50)
 
 -------------------------- HoldTypes
 
@@ -318,7 +314,9 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_short",
-		MinProgress = 0.75,
+		RefillProgress = 0.75,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8/30},
             {s = path .. "de_clipin.wav", t = 19/30},
@@ -326,7 +324,9 @@ SWEP.Animations = {
     },  
 	["1_reload"] = {
         Source = "reload_short_tacticool",
-		MinProgress = 0.75,
+		RefillProgress = 0.75,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 15/30},
             {s = path .. "de_clipin.wav", t = 32/30},
@@ -334,7 +334,9 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload",
-		MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 8/30},
             {s = path .. "de_clipin.wav", t = 19/30},
@@ -344,7 +346,9 @@ SWEP.Animations = {
     },   
 	["1_reload_empty"] = {
         Source = "reload_tacticool",
-		MinProgress = 0.8,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 15/30},
             {s = path .. "de_clipin.wav", t = 32/30},
@@ -354,7 +358,9 @@ SWEP.Animations = {
     },
     ["2_reload"] = {
         Source = "reload_short_alt",
-		MinProgress = 0.65,
+		RefillProgress = 0.6,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 10/30},
             {s = path .. "de_clipin.wav", t = 25/30},
@@ -362,7 +368,9 @@ SWEP.Animations = {
     },
     ["3_reload_empty"] = {
         Source = "reload_alt",
-		MinProgress = 0.42,
+		RefillProgress = 0.8,
+		MinProgress = 0.975,
+		FireASAP = true,
         EventTable = {
             {s = path .. "de_clipout.wav", t = 10/30},
             {s = path .. "de_clipin.wav", t = 25/30},
@@ -390,6 +398,7 @@ SWEP.Animations = {
     },
     ["idle_sprint"] = {
         Source = "sprint",
+        Time = 0.525,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

@@ -121,23 +121,20 @@ SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
+SWEP.RecoilPerShot = 0.33
+SWEP.RecoilMax = 1
+
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 0.25
 
 SWEP.RecoilKick = 1
-
--- SWEP.RecoilMultCrouch = 0.6
--- SWEP.RecoilMultHipFire = 1.25
--- SWEP.RecoilAutoControlMultHipFire = 0.5
-
--- [[ Moka's testing area - do not touch nor uncomment
 
 SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1
 SWEP.RecoilMultSights = 1
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilPunch = 0.5
@@ -157,22 +154,18 @@ SWEP.ViewRecoil = false
 SWEP.ViewRecoilUpMult = 2.5
 SWEP.ViewRecoilSideMult = 2.5
 
--- SWEP.BottomlessClip = true
-
--- ]]--
-
 -------------------------- SPREAD
 
 SWEP.Spread = 0
 
 SWEP.SpreadAddRecoil = 0.06 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.035
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadAddHipFire = 0
-SWEP.SpreadAddSights = 0.0025
+SWEP.SpreadAddCrouch = -0.01
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.RecoilModifierCapSights = 0.15
 
 -------------------------- HANDLING
 
