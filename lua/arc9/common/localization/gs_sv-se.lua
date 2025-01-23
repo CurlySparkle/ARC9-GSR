@@ -1254,7 +1254,7 @@ L["csgo_cz_slide_factory.printname"] = "CZ-A Pipa"
 L["csgo_cz_slide_factory.compactname"] = "CZ-A"
 L["csgo_cz_slide_factory.description"] = "Förkortad pipa med den inbyggda mynningsbromsen bortplockad."
 
-L["csgo_cz_mag_ext.printname"] = "9×19mm 18-Patronersmagasin"
+L["csgo_cz_mag_ext.printname"] = "9 × 19 mm 18-Patronersmagasin"
 L["csgo_cz_mag_ext.compactname"] = "9 mm+"
 L["csgo_cz_mag_ext.description"] = string.format(quicktext.bigmag, 18)
 
@@ -1495,7 +1495,7 @@ L["csgo_m249_mag_556_60.description"] = "Tar bort lådan och använder ett tradi
 /////////////////// M3
 L["csgo_m3_mag_7.printname"] = "7-Skottrör"
 L["csgo_m3_mag_7.compactname"] = "K12+"
-L["csgo_m3_mag_7.description"] = "KRÄVER <color=255,255,100>Förlängd Pipa</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_m3_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Kräver <color=255,255,100>Förlängd Pipa</color> ]"
 
 L["csgo_m3_mag_4.printname"] = "4-Skottrör"
 L["csgo_m3_mag_4.compactname"] = "K12-"
@@ -1507,7 +1507,8 @@ L["csgo_m3_barrel_default.description"] = "Pipan som M3:an kom ut ur fabriken me
 
 L["csgo_m3_barrel_long.printname"] = "Förlängd Pipa"
 L["csgo_m3_barrel_long.compactname"] = "Förlängd"
-L["csgo_m3_barrel_long.description"] = "Förlängd pipa.\nKrävs för <color=255,255,100>7-Skottrör</color> tillbehöret."
+L["csgo_m3_barrel_long.description"] = "Förlängd pipa."
+-- L["csgo_m3_barrel_long.description"] = "Förlängd pipa.\nKrävs för <color=255,255,100>7-Skottrör</color> tillbehöret."
 
 L["csgo_m3_barrel_short.printname"] = "Förkortad Pipa"
 L["csgo_m3_barrel_short.compactname"] = "Förkortad"
@@ -1581,6 +1582,11 @@ L["csgo_mac10_barrel_long.description"] = "Väldigt lång och träffsäker pipa.
 L["csgo_mac10_barrel_shroud.printname"] = "Höljd Pipa"
 L["csgo_mac10_barrel_shroud.compactname"] = "Höljd"
 L["csgo_mac10_barrel_shroud.description"] = "Lång pipa med påsatt värmesköld."
+
+/////////////////// MAG-7
+L["csgo_mag7_mag_7.printname"] = "Kaliber-12 7-Patroners Låda"
+L["csgo_mag7_mag_7.compactname"] = "K12+"
+L["csgo_mag7_mag_7.description"] = string.format(quicktext.bigmag, 7)
 
 /////////////////// MP5
 L["csgo_mp5_k.printname"] = "Kurz-Pipa och Handgrepp"
@@ -1661,6 +1667,14 @@ L["csgo_negev_mag_556m.compactname"] = "5,56 mm-"
 L["csgo_negev_mag_556m.description"] = "Tar bort lådan och använder ett traditionellt magasin.\n" ..  string.format(quicktext.smallmag, 50)
 
 /////////////////// Nova
+L["csgo_nova_barrel_long.printname"] = "Förlängd Pipa"
+L["csgo_nova_barrel_long.compactname"] = "Förlängd"
+L["csgo_nova_barrel_long.description"] = "Anpassad förlängd pipa."
+
+L["csgo_nova_barrel_short.printname"] = "CQC-Pipa"
+L["csgo_nova_barrel_short.compactname"] = "CQC"
+L["csgo_nova_barrel_short.description"] = "Anpassad förkortad pipa."
+
 L["csgo_nova_mag_6.printname"] = "6-Skottrör"
 L["csgo_nova_mag_6.compactname"] = "K12+"
 L["csgo_nova_mag_6.description"] = string.format(quicktext.bigtube, 6)
@@ -1744,15 +1758,16 @@ L["csgo_sawedoff_mag_5.description"] = string.format(quicktext.bigtube, 5)
 
 L["csgo_sawedoff_mag_6.printname"] = "6-Skottrör"
 L["csgo_sawedoff_mag_6.compactname"] = "K12++"
-L["csgo_sawedoff_mag_6.description"] = "KRÄVER <color=255,255,100>Oavsågad Pipa</color>\n" .. string.format(quicktext.bigtube, 6)
+L["csgo_sawedoff_mag_6.description"] = string.format(quicktext.bigtube, 6) .. "\n\n[ Kräver <color=255,255,100>Oavsågad Pipa</color> ]"
 
 L["csgo_sawedoff_mag_7.printname"] = "7-Skottrör"
 L["csgo_sawedoff_mag_7.compactname"] = "K12+++"
-L["csgo_sawedoff_mag_7.description"] = "KRÄVER <color=255,255,100>Oavsågad Pipa</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Kräver <color=255,255,100>Oavsågad Pipa</color> ]"
 
 L["csgo_sawedoff_barrel_ext.printname"] = "Oavsågad Pipa"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Oavsågad"
-L["csgo_sawedoff_barrel_ext.description"] = "Oavsågad pipa med ett fast framkorn.\nKrävs för <color=255,255,100>6-Skottrör</color> och <color=255,255,100>7-Skottrör</color> tillbehören."
+L["csgo_sawedoff_barrel_ext.description"] = "Oavsågad pipa med ett fast framkorn."
+-- L["csgo_sawedoff_barrel_ext.description"] = "Oavsågad pipa med ett fast framkorn.\nKrävs för <color=255,255,100>6-Skottrör</color> och <color=255,255,100>7-Skottrör</color> tillbehören."
 
 L["csgo_sawedoff_stock_full.printname"] = "Fabrik Kolv"
 L["csgo_sawedoff_stock_full.compactname"] = "Fabrik"
@@ -1793,7 +1808,7 @@ L["csgo_scar17_stock_pdw.description"] = "Lätt och nedhuggen kolv."
 
 L["csgo_scar17_stock_bullpup.printname"] = "Bullpup Kit"
 L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
-L["csgo_scar17_stock_bullpup.description"] = "Installerar en bullpup-konvertering på SCAR-17:n som förvandlar den till ett bullpup-gevär."
+L["csgo_scar17_stock_bullpup.description"] = "Installerar en bullpup-konvertering på SCAR-17:n som förvandlar den till ett bullpup-gevär." .. "\n\n[ Kräver <color=255,255,100>Krypskyttepipa</color> ]"
 
 /////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "Mk 17 Pipa"
@@ -1913,23 +1928,27 @@ L["csgo_usp_slide_short.description"] = "Förkortat slutstycke och pipa."
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Polis Pipa"
 L["csgo_xm1014_barrel_long.compactname"] = "Polis"
-L["csgo_xm1014_barrel_long.description"] = "Förlängd pipa.\nKrävs för <color=255,255,100>10-Skottrör</color> tillbehöret."
+L["csgo_xm1014_barrel_long.description"] = "Förlängd pipa."
 
 L["csgo_xm1014_barrel_short.printname"] = "Breacher-Pipa"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Förkortad pipa.\nInte kompatibel med <color=255,255,100>10-Skottrör</color> tillbehöret."
+L["csgo_xm1014_barrel_short.description"] = "Förkortad pipa." .. "\n\n[ Kräver <color=255,255,100>4-Skottrör</color>, <color=255,255,100>5-Skottrör</color> eller <color=255,255,100>5-Skott Lådmagasin</color> ]"
 
 L["csgo_xm1014_mag_fed.printname"] = "5-Skott Lådmagasin"
 L["csgo_xm1014_mag_fed.compactname"] = "K12-Låda"
-L["csgo_xm1014_mag_fed.description"] = "Ersätter rörmagasinet med ett traditionellt lådmagasin.\nKan inte längre ladda individuellt."
+L["csgo_xm1014_mag_fed.description"] = "Ersätter rörmagasinet med ett traditionellt lådmagasin."
 
 L["csgo_xm1014_mag_6.printname"] = "4-Skottrör"
-L["csgo_xm1014_mag_6.compactname"] = "K12-"
+L["csgo_xm1014_mag_6.compactname"] = "K12--"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
+
+L["csgo_xm1014_mag_7.printname"] = "5-Skottrör"
+L["csgo_xm1014_mag_7.compactname"] = "K12-"
+L["csgo_xm1014_mag_7.description"] = string.format(quicktext.smalltube, 5)
 
 L["csgo_xm1014_mag_8.printname"] = "10-Skottrör"
 L["csgo_xm1014_mag_8.compactname"] = "K12+"
-L["csgo_xm1014_mag_8.description"] = "KRÄVER <color=255,255,100>Polis Pipa</color>\n" .. string.format(quicktext.bigtube, 10)
+L["csgo_xm1014_mag_8.description"] = string.format(quicktext.bigtube, 10) .. "\n\n[ Kräver <color=255,255,100>Polis Pipa</color> ]\n[ Ej kompatibel med <color=255,100,100>Breacher-Pipa</color> ]"
 
 /////////////////// Integration: Escape from Tarkov
 eftdesc = "Aktiverar förmågan att utrusta tillbehör från <color=255,255,100>Escape from Tarkov</color>-tilläggen.\n\n<color=255,100,100>VARNING</color>: Ej optimerad för GSR - kan orsaka visuella glitchar.\n<color=175,175,255>Ergonomics</color> har ingen effekt."

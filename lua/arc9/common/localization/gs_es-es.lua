@@ -1493,7 +1493,7 @@ L["csgo_m249_mag_556_60.description"] = "Se deshace de la caja del cinturón y u
 /////////////////// M3
 L["csgo_m3_mag_7.printname"] = "Tubo de 7 cartuchos"
 L["csgo_m3_mag_7.compactname"] = "C12+"
-L["csgo_m3_mag_7.description"] = "REQUIERE <color=255,255,100>Cañón Extendido</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_m3_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Requiere <color=255,255,100>Cañón Extendido</color> ]"
 
 L["csgo_m3_mag_4.printname"] = "Tubo de 4 cartuchos"
 L["csgo_m3_mag_4.compactname"] = "C12-"
@@ -1505,7 +1505,8 @@ L["csgo_m3_barrel_default.description"] = "El cañón con el que la M3 salió de
 
 L["csgo_m3_barrel_long.printname"] = "Cañón extendido"
 L["csgo_m3_barrel_long.compactname"] = "Extendido"
-L["csgo_m3_barrel_long.description"] = "Cañón alargado.\nRequerido para el accesorio <color=255,255,100>Tubo de 7 cartuchos</color>."
+L["csgo_m3_barrel_long.description"] = "Cañón alargado."
+-- L["csgo_m3_barrel_long.description"] = "Cañón alargado.\nRequerido para el accesorio <color=255,255,100>Tubo de 7 cartuchos</color>."
 
 L["csgo_m3_barrel_short.printname"] = "Cañón acortado"
 L["csgo_m3_barrel_short.compactname"] = "Acortado"
@@ -1579,6 +1580,11 @@ L["csgo_mac10_barrel_long.compactname"] = "Carabina"
 L["csgo_mac10_barrel_shroud.printname"] = "Cañón de cubierta"
 L["csgo_mac10_barrel_shroud.compactname"] = "Cubierta"
 -- L["csgo_mac10_barrel_shroud.description"] = "Long barrel with attached heat shield."
+
+/////////////////// MAG-7
+L["csgo_mag7_mag_7.printname"] = "Caja de 7 cartuchos de calibre 12"
+L["csgo_mag7_mag_7.compactname"] = "C12+"
+L["csgo_mag7_mag_7.description"] = string.format(quicktext.bigmag, 7)
 
 /////////////////// MP5
 L["csgo_mp5_k.printname"] = "Cañón y guardamanos Kurz"
@@ -1659,6 +1665,14 @@ L["csgo_negev_mag_556m.compactname"] = "5.56mm-"
 L["csgo_negev_mag_556m.description"] = "Se deshace de la caja del cinturón y utiliza un cargador tradicional.\n" ..  string.format(quicktext.smallmag, 50)
 
 /////////////////// Nova
+L["csgo_nova_barrel_long.printname"] = "Cañón extendido"
+L["csgo_nova_barrel_long.compactname"] = "Extendido"
+-- L["csgo_nova_barrel_long.description"] = "Custom-made extended barrel."
+
+L["csgo_nova_barrel_short.printname"] = "Cañón CQC"
+L["csgo_nova_barrel_short.compactname"] = "CQC"
+-- L["csgo_nova_barrel_short.description"] = "Custom-made shortened barrel."
+
 L["csgo_nova_mag_6.printname"] = "Tubo de 6 cartuchos"
 L["csgo_nova_mag_6.compactname"] = "C12+"
 L["csgo_nova_mag_6.description"] = string.format(quicktext.bigtube, 6)
@@ -1742,15 +1756,16 @@ L["csgo_sawedoff_mag_5.description"] = string.format(quicktext.bigtube, 5)
 
 L["csgo_sawedoff_mag_6.printname"] = "Tubo de 6 cartuchos"
 L["csgo_sawedoff_mag_6.compactname"] = "C12++"
-L["csgo_sawedoff_mag_6.description"] = "REQUIERE <color=255,255,100>Cañón sin cortar</color>\n" .. string.format(quicktext.bigtube, 6)
+L["csgo_sawedoff_mag_6.description"] = string.format(quicktext.bigtube, 6) .. "\n\n[ Requiere <color=255,255,100>Cañón sin cortar</color> ]"
 
 L["csgo_sawedoff_mag_7.printname"] = "Tubo de 7 cartuchos"
 L["csgo_sawedoff_mag_7.compactname"] = "C12+++"
-L["csgo_sawedoff_mag_7.description"] = "REQUIERE <color=255,255,100>Cañón sin cortar</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Requiere <color=255,255,100>Cañón sin cortar</color> ]"
 
 L["csgo_sawedoff_barrel_ext.printname"] = "Cañón sin cortar"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Sin cortar"
-L["csgo_sawedoff_barrel_ext.description"] = "Cañón sin cortar con un punto de mira delantero fijo.\nRequerido para los accesorios <color=255,255,100>Tubo de 6 cartuchos</color> y <color=255,255,100>Tubo de 7 cartuchos</color>."
+L["csgo_sawedoff_barrel_ext.description"] = "Cañón sin cortar con un punto de mira delantero fijo."
+-- L["csgo_sawedoff_barrel_ext.description"] = "Cañón sin cortar con un punto de mira delantero fijo.\nRequerido para los accesorios <color=255,255,100>Tubo de 6 cartuchos</color> y <color=255,255,100>Tubo de 7 cartuchos</color>."
 
 L["csgo_sawedoff_stock_full.printname"] = "Culata de fábrica"
 L["csgo_sawedoff_stock_full.compactname"] = "Fábrica"
@@ -1791,7 +1806,7 @@ L["csgo_scar17_stock_pdw.description"] = "Culata ligera y recortada."
 
 L["csgo_scar17_stock_bullpup.printname"] = "Kit Bullpup"
 L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
-L["csgo_scar17_stock_bullpup.description"] = "Aplica un kit bullpup al SCAR-17, convirtiéndolo en un rifle bullpup."
+L["csgo_scar17_stock_bullpup.description"] = "Aplica un kit bullpup al SCAR-17, convirtiéndolo en un rifle bullpup." .. "\n\n[ Requiere <color=255,255,100>Cañón Marksman</color> ]"
 
 /////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "Cañón Mk 17"
@@ -1911,26 +1926,30 @@ L["csgo_usp_slide_short.description"] = "Corredera y cañón acortados."
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Cañón de policía"
 L["csgo_xm1014_barrel_long.compactname"] = "Policía"
-L["csgo_xm1014_barrel_long.description"] = "Cañón extendido.\nRequerido para el accesorio <color=255,255,100>Tubo de 10 cartuchos</color>."
+L["csgo_xm1014_barrel_long.description"] = "Cañón extendido."
 
 L["csgo_xm1014_barrel_short.printname"] = "Cañón Breacher"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Cañón acortado.\nIncompatible con el accesorio <color=255,255,100>Tubo de 10 cartuchos</color>."
+L["csgo_xm1014_barrel_short.description"] = "Cañón acortado." .. "\n\n[ Requiere <color=255,255,100>Tubo de 4 cartuchos</color>, <color=255,255,100>Tubo de 5 cartuchos</color> o <color=255,255,100>Cargador de caja de 5 cartuchos</color> ]"
 
 L["csgo_xm1014_mag_fed.printname"] = "Cargador de caja de 5 cartuchos"
 L["csgo_xm1014_mag_fed.compactname"] = "C12 Caja"
-L["csgo_xm1014_mag_fed.description"] = "Sustituye el cargador de tubo por un cargador de caja tradicional.\nYa no puede cargarse una sola vez."
+L["csgo_xm1014_mag_fed.description"] = "Sustituye el cargador de tubo por un cargador de caja tradicional."
 
 L["csgo_xm1014_mag_6.printname"] = "Tubo de 4 cartuchos"
-L["csgo_xm1014_mag_6.compactname"] = "C12-"
+L["csgo_xm1014_mag_6.compactname"] = "C12--"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
+
+L["csgo_xm1014_mag_7.printname"] = "Tubo de 5 cartuchos"
+L["csgo_xm1014_mag_7.compactname"] = "C12-"
+L["csgo_xm1014_mag_7.description"] = string.format(quicktext.smalltube, 5)
 
 L["csgo_xm1014_mag_8.printname"] = "Tubo de 10 cartuchos"
 L["csgo_xm1014_mag_8.compactname"] = "C12+"
-L["csgo_xm1014_mag_8.description"] = "REQUIERE <color=255,255,100>Cañón de policía</color>\n" .. string.format(quicktext.bigtube, 10)
+L["csgo_xm1014_mag_8.description"] = string.format(quicktext.bigtube, 10) .. "\n\n[ Requiere <color=255,255,100>Cañón de policía</color> ]\n[ Incompatible con <color=255,100,100>Cañón Breacher</color> ]"
 
 /////////////////// Integration: Escape from Tarkov
-eftdesc = "Permite equipar accesorios de los packs de <color=255,255,100>Escape from Tarkov</color>.\n\n<color=255,100,100>ADVERTENCIA</color>: No optimizado para Gunsmith Reloaded - puede causar fallos visuales.\n\"<color=175,175,255>Ergonomics</color>\" no tiene ningún efecto." -- TRANSLATE
+eftdesc = "Permite equipar accesorios de los packs de <color=255,255,100>Escape from Tarkov</color>.\n\n<color=255,100,100>ADVERTENCIA</color>: No optimizado para GSR - puede causar fallos visuales.\n\"<color=175,175,255>Ergonomics</color>\" no tiene ningún efecto." -- TRANSLATE
 
 L["go_eft_scopes.printname"] = "Escape from Tarkov - Visores"
 L["go_eft_scopes.compactname"] = "EFT"

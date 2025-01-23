@@ -94,7 +94,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2.25
+SWEP.Recoil = 3.25
 
 SWEP.RecoilSeed = 1089 -- CSGO Seed Input Test
 
@@ -111,7 +111,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 1.5 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
@@ -171,6 +171,20 @@ SWEP.IronSights = {
     ViewModelFOV = 56,
     CrosshairInSights = false
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["csgo_sawedoff_barrel_ext"] then
+        return {
+            Pos = Vector(-4.26, -7, 1.45),
+            Ang = Angle(0, 0.5, 1),
+			Magnification = 1.1,
+			ViewModelFOV = 56,
+        }
+    end
+
+end
 
 SWEP.ViewModelFOVBase = 56
 
@@ -453,37 +467,12 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1, 1},
-        },
-    },
-    ["mag2"] = {
-        Bodygroups = {
-            {1, 2},
-        },
-    },
-    ["mag3"] = {
-        Bodygroups = {
-            {1, 3},
-        },
-    },
-    ["barrel_ext"] = {
-        Bodygroups = {
-            {2,1},
-        },
-        AttPosMods = { [3] = { Pos = Vector(0, -2, 27), } },
-    },
-    ["pistolgrip"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    },
-    ["stock_extend"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
+    ["csgo_sawedoff_mag_5"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_sawedoff_mag_6"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_sawedoff_mag_7"] = { Bodygroups = { { 1, 3 } } },
+    ["csgo_sawedoff_barrel_ext"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_sawedoff_stock_full"] = { Bodygroups = { { 3, 1 } } },
+    ["pistolgrip"] = { Bodygroups = { { 3, 2 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -537,7 +526,7 @@ end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("stock_extend") then model:SetBodygroup(3,1) end
+    if wep:HasElement("csgo_sawedoff_stock_full") then model:SetBodygroup(3,1) end
 end
 
 SWEP.AttachmentTableOverrides = {
@@ -573,7 +562,7 @@ SWEP.Attachments = {
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle_shotgun","muzzle"},
         Bone = "v_weapon.sawedoff_parent",
-        Pos = Vector(0, -2, 22.2),
+        Pos = Vector(0, -2, 22.5),
         Ang = Angle(90, 0, -90),
     },
     {

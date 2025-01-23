@@ -1493,7 +1493,7 @@ L["csgo_m249_mag_556_60.description"] = "Beseitigt die Gürtelbox und verwendet 
 /////////////////// M3
 L["csgo_m3_mag_7.printname"] = "Lauf mit 7 Runden"
 L["csgo_m3_mag_7.compactname"] = "12G+"
-L["csgo_m3_mag_7.description"] = "ERFORDERT <color=255,255,100>Verkürzter Lauf</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_m3_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Erfordert <color=255,255,100>Verkürzter Lauf</color> ]"
 
 L["csgo_m3_mag_4.printname"] = "4-Rundlauf"
 L["csgo_m3_mag_4.compactname"] = "12G-"
@@ -1505,7 +1505,8 @@ L["csgo_m3_barrel_default.description"] = "Der Lauf, mit dem der M3 aus der Fabr
 
 L["csgo_m3_barrel_long.printname"] = "Verlängerter Lauf"
 L["csgo_m3_barrel_long.compactname"] = "Erweitert"
-L["csgo_m3_barrel_long.description"] = "Verlängerter Lauf.\nErforderlich für den <color=255,255,100>7-Runden-Lauf</color>-Aufsatz."
+L["csgo_m3_barrel_long.description"] = "Verlängerter Lauf."
+-- L["csgo_m3_barrel_long.description"] = "Verlängerter Lauf.\nErforderlich für den <color=255,255,100>7-Runden-Lauf</color>-Aufsatz."
 
 L["csgo_m3_barrel_short.printname"] = "Verkürzter Lauf"
 L["csgo_m3_barrel_short.compactname"] = "Kurz"
@@ -1579,6 +1580,11 @@ L["csgo_mac10_barrel_long.compactname"] = "Karabin."
 L["csgo_mac10_barrel_shroud.printname"] = "Shroud-Lauf"
 L["csgo_mac10_barrel_shroud.compactname"] = "Shroud"
 -- L["csgo_mac10_barrel_shroud.description"] = "Long barrel with attached heat shield."
+
+/////////////////// MAG-7
+L["csgo_mag7_mag_7.printname"] = "7-Runde 12-Gauge-Box"
+L["csgo_mag7_mag_7.compactname"] = "12G+"
+L["csgo_mag7_mag_7.description"] = string.format(quicktext.bigmag, 7)
 
 /////////////////// MP5
 L["csgo_mp5_k.printname"] = "Kurzer Lauf und Handschutz"
@@ -1659,6 +1665,14 @@ L["csgo_negev_mag_556m.compactname"] = "5,56 mm-"
 L["csgo_negev_mag_556m.description"] = "Beseitigt die Gürtelbox und verwendet ein herkömmliches Magazin.\n" ..  string.format(quicktext.smallmag, 50)
 
 /////////////////// Nova
+L["csgo_nova_barrel_long.printname"] = "Verlängerter Lauf"
+L["csgo_nova_barrel_long.compactname"] = "Erweitert"
+-- L["csgo_nova_barrel_long.description"] = "Custom-made extended barrel."
+
+L["csgo_nova_barrel_short.printname"] = "CQC-Lauf"
+L["csgo_nova_barrel_short.compactname"] = "CQC"
+-- L["csgo_nova_barrel_short.description"] = "Custom-made shortened barrel."
+
 L["csgo_nova_mag_6.printname"] = "Lauf mit 6 Runden"
 L["csgo_nova_mag_6.compactname"] = "12G+"
 L["csgo_nova_mag_6.description"] = string.format(quicktext.bigtube, 6)
@@ -1742,15 +1756,16 @@ L["csgo_sawedoff_mag_5.description"] = string.format(quicktext.bigtube, 5)
 
 L["csgo_sawedoff_mag_6.printname"] = "Lauf mit 6 Runden"
 L["csgo_sawedoff_mag_6.compactname"] = "12G++"
-L["csgo_sawedoff_mag_6.description"] = "ERFORDERT <color=255,255,100>Ungeschnittener Lauf</color>\n" .. string.format(quicktext.bigtube, 6)
+L["csgo_sawedoff_mag_6.description"] = string.format(quicktext.bigtube, 6) .. "\n\n[ Erfordert <color=255,255,100>Ungeschnittener Lauf</color> ]"
 
 L["csgo_sawedoff_mag_7.printname"] = "Lauf mit 7 Runden"
 L["csgo_sawedoff_mag_7.compactname"] = "12G+++"
-L["csgo_sawedoff_mag_7.description"] = "ERFORDERT <color=255,255,100>Ungeschnittener Lauf</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Erfordert <color=255,255,100>Ungeschnittener Lauf</color> ]"
 
 L["csgo_sawedoff_barrel_ext.printname"] = "Ungeschnittener Lauf"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Ungeschnitten"
-L["csgo_sawedoff_barrel_ext.description"] = "Ungeschnittener Lauf mit festem Visierpfosten.\nErforderlich für das <color=255,255,100>Lauf mit 6 Runden</color> und <color=255,255,100>Lauf mit 7 Runden</color> Anhänge."
+L["csgo_sawedoff_barrel_ext.description"] = "Ungeschnittener Lauf mit festem Visierpfosten."
+-- L["csgo_sawedoff_barrel_ext.description"] = "Ungeschnittener Lauf mit festem Visierpfosten.\nErforderlich für das <color=255,255,100>Lauf mit 6 Runden</color> und <color=255,255,100>Lauf mit 7 Runden</color> Anhänge."
 
 L["csgo_sawedoff_stock_full.printname"] = "Fabriklager"
 L["csgo_sawedoff_stock_full.compactname"] = "Fabrik"
@@ -1791,7 +1806,7 @@ L["csgo_scar17_stock_pdw.description"] = "Leichter und reduzierter Schaft."
 
 L["csgo_scar17_stock_bullpup.printname"] = "Bullpup-Kit"
 L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
-L["csgo_scar17_stock_bullpup.description"] = "Befestigt das SCAR-17 mit einem Bullpup-Kit und verwandelt es in ein Bullpup-Gewehr."
+L["csgo_scar17_stock_bullpup.description"] = "Befestigt das SCAR-17 mit einem Bullpup-Kit und verwandelt es in ein Bullpup-Gewehr." .. "\n\n[ Erfordert <color=255,255,100>Schützenfass</color> ]"
 
 /////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "Mk 17-Fabriklauf"
@@ -1911,23 +1926,27 @@ L["csgo_usp_slide_short.description"] = "Verkürzter Schlitten und Lauf."
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Polizei-Lauf"
 L["csgo_xm1014_barrel_long.compactname"] = "Polizei"
-L["csgo_xm1014_barrel_long.description"] = "Verlängerter Lauf.\nErforderlich für den <color=255,255,100>10-Runden-Lauf</color>-Aufsatz."
+L["csgo_xm1014_barrel_long.description"] = "Verlängerter Lauf."
 
 L["csgo_xm1014_barrel_short.printname"] = "Breacher-Lauf"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Verkürzter Lauf.\nInkompatibel mit dem <color=255,255,100>10-Runden-Lauf</color>-Aufsatz."
+L["csgo_xm1014_barrel_short.description"] = "Verkürzter Lauf." .. "\n\n[ Erfordert <color=255,255,100>4-Rundlauf</color>, <color=255,255,100>5-Rundlauf</color> oder <color=255,255,100>5-Runden-Box-Magazin</color> ]"
 
 L["csgo_xm1014_mag_fed.printname"] = "5-Runden-Box-Magazin"
 L["csgo_xm1014_mag_fed.compactname"] = "12G-Box"
-L["csgo_xm1014_mag_fed.description"] = "Ersetzt das Röhrenmagazin durch ein traditionelles Kastenmagazin.\nKann nicht mehr einzeln geladen werden."
+L["csgo_xm1014_mag_fed.description"] = "Ersetzt das Röhrenmagazin durch ein traditionelles Kastenmagazin."
 
 L["csgo_xm1014_mag_6.printname"] = "4-Rundlauf"
-L["csgo_xm1014_mag_6.compactname"] = "12G-"
+L["csgo_xm1014_mag_6.compactname"] = "12G--"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
+
+L["csgo_xm1014_mag_7.printname"] = "5-Rundlauf"
+L["csgo_xm1014_mag_7.compactname"] = "12G-"
+L["csgo_xm1014_mag_7.description"] = string.format(quicktext.smalltube, 5)
 
 L["csgo_xm1014_mag_8.printname"] = "Lauf mit 10 Runden"
 L["csgo_xm1014_mag_8.compactname"] = "12G+"
-L["csgo_xm1014_mag_8.description"] = "ERFORDERT <color=255,255,100>Polizei-Lauf</color>\n" .. string.format(quicktext.bigtube, 10)
+L["csgo_xm1014_mag_8.description"] = string.format(quicktext.bigtube, 10) .. "\n\n[ Erfordert <color=255,255,100>Polizei-Lauf</color> ]\n[ Inkompatibel mit <color=255,100,100>Breacher-Lauf</color> ]"
 
 /////////////////// Integration: Escape from Tarkov
 eftdesc = "Enables the ability to equip attachments from the <color=255,255,100>Escape from Tarkov</color> packs.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches.\n<color=175,175,255>Ergonomics</color> have no effect."

@@ -45,6 +45,8 @@ And more!
 [b]Benelli M3 Super 90[/b]: Shortened name to just "M3".
 [b]MAG-7[/b]: Increased ADS speed | Decreased Sprint-to-Fire time
 [b]Nova[/b]: Reduced ADS speed | Increased Sprint-to-Fire time
+[b]Sawed-Off[/b]: Slightly increased recoil
+[b]XM1014[/b]: Reduced recoil | Increased recoil when auto-firing
 
 [u]Snipers[/u]
 [b]AWP[/b]: Disabled the use of Aim Assist
@@ -113,11 +115,14 @@ A few weapons have received brand-new attachments:
 			[*] Pistols: Beretta, Five-SeveN, Glock-18, P2000, P250, USP-S
 			[*] SMGs: MP5, MP5-SD, MP7, MP9, UMP-45
 			[*] Snipers: Scout
+			[*] Shotguns: MAG-7
 		[/list]
-	[*] All [b]Dual Wield[/b] weapons will use their respective weapon's extended magazines (except the R8 Revolvers & Sawed-Offs)
+	[*] [b]Dual Wield[/b] weapons (except the Sawed-Off) will now use new attachments with slightly altered stats from their single-use counterparts
 	[*] MP5 & MP5-SD: [b]40-Round Magazine[/b] & [b]30-Round 10x25mm Magazine[/b]
 	[*] SCAR-20: [b]20-Round Magazine (Automatic)[/b] & [b]30-Round Magazine (Automatic)[/b]
 	[*] Scout: [b]10-Round Magazine[/b]
+	[*] Nova: [b]Extended Barrel[/b] & [b]CQC Barrel[/b]
+	[*] XM1014: [b]5-Round Tube[/b]
 [/list]
 
 [u]New Integrations[/u]
@@ -148,6 +153,8 @@ Added two new sets of attachment integrations:
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
 	[*] R8 Revolver: [u]6-Round Cylinder[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
 	[*] P90: The [u]20-Round[/u] and [u]30-Round 5.56x45mm NATO[/u] magazines now change the damage, range and RPM to be closer to the M4A4.
+	[*] M3: The [u]7-Round Tube[/u] attachment now correctly requires the [u]Extended Barrel[/u] attachment.
+	[*] XM1014: The [u]Breacher Barrel[/u] now requires any lower capacity magazine attachment.
 [/list]
 
 [b][u]Other[/u][/b]

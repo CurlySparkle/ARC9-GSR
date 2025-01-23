@@ -110,7 +110,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilPerShot = 0.2
 SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 3.5 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
@@ -398,19 +398,14 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["csgo_mp9_mag_long"] = { Bodygroups = { { 1, 1 } } },
-    ["csgo_mp9_mag_short"] = { Bodygroups = { { 1, 2 } } },
-    ["csgo_mp9_barrel_long"] = { Bodygroups = { { 2, 1 } } },
-    ["csgo_mp9_barrel_short"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_dual_mp9_mag_long"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_dual_mp9_mag_short"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_dual_mp9_barrel_long"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_dual_mp9_barrel_short"] = { Bodygroups = { { 2, 2 } } },
     ["stock_retract"] = { Bodygroups = { { 3, 1 } } },
     ["stock_none"] = { Bodygroups = { { 3, 2 } } },
 	["grip"] = { Bodygroups = { { 4, 1 } } },
     ["grip_none"] = { Bodygroups = { { 4, 2 } } },
-}
-
-SWEP.AttachmentTableOverrides = {
-    ["csgo_mp9_mag_long"] = { ClipSizeAdd = 20 },
-    ["csgo_mp9_mag_short"] = { ClipSizeAdd = 20 },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -457,14 +452,14 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         --Bone = "v_weapon.glock_magazine",
-        Category = "go_mp9_barrel",
+        Category = "go_dual_mp9_barrel",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(7, 0, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
-        Category = {"muzzle","muzzle_pistols"},
+        Category = {"muzzle", "muzzle_pistols"},
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(7, 0, 1),
         Ang = Angle(0, 0, 0),
@@ -531,7 +526,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "j_mag1_l",
-        Category = {"go_mag_mp9"},
+        Category = {"go_mag_dual_mp9"},
         Pos = Vector(0, 0, -1),
     },
     {

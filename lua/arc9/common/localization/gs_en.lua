@@ -1500,7 +1500,7 @@ L["csgo_m249_mag_556_60.description"] = "Gets rid of the belt box and uses a tra
 /////////////////// M3
 L["csgo_m3_mag_7.printname"] = "7-Round Tube"
 L["csgo_m3_mag_7.compactname"] = "12G+"
-L["csgo_m3_mag_7.description"] = "REQUIRES <color=255,255,100>Extended Barrel</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_m3_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Requires <color=255,255,100>Extended Barrel</color> ]"
 
 L["csgo_m3_mag_4.printname"] = "4-Round Tube"
 L["csgo_m3_mag_4.compactname"] = "12G-"
@@ -1512,7 +1512,7 @@ L["csgo_m3_barrel_default.description"] = "The barrel the M3 came out of the fac
 
 L["csgo_m3_barrel_long.printname"] = "Extended Barrel"
 L["csgo_m3_barrel_long.compactname"] = "Extended"
-L["csgo_m3_barrel_long.description"] = "Extended barrel.\nRequired for the <color=255,255,100>7-Round Tube</color> attachment."
+L["csgo_m3_barrel_long.description"] = "Extended barrel."
 
 L["csgo_m3_barrel_short.printname"] = "Shortened Barrel"
 L["csgo_m3_barrel_short.compactname"] = "Short"
@@ -1586,6 +1586,11 @@ L["csgo_mac10_barrel_long.description"] = "Very long precision barrel."
 L["csgo_mac10_barrel_shroud.printname"] = "Shroud Barrel"
 L["csgo_mac10_barrel_shroud.compactname"] = "Shroud"
 L["csgo_mac10_barrel_shroud.description"] = "Long barrel with attached heat shield."
+
+/////////////////// MAG-7
+L["csgo_mag7_mag_7.printname"] = "7-Round 12-Gauge Magazine"
+L["csgo_mag7_mag_7.compactname"] = "12G+"
+L["csgo_mag7_mag_7.description"] = string.format(quicktext.bigmag, 7)
 
 /////////////////// MP5
 L["csgo_mp5_k.printname"] = "Kurz Barrel and Handguard"
@@ -1666,6 +1671,14 @@ L["csgo_negev_mag_556m.compactname"] = "5.56mm-"
 L["csgo_negev_mag_556m.description"] = "Gets rid of the belt box and uses a traditional magazine.\n" ..  string.format(quicktext.smallmag, 50)
 
 /////////////////// Nova
+L["csgo_nova_barrel_long.printname"] = "Extended Barrel"
+L["csgo_nova_barrel_long.compactname"] = "Extended"
+L["csgo_nova_barrel_long.description"] = "Custom-made extended barrel."
+
+L["csgo_nova_barrel_short.printname"] = "CQC Barrel"
+L["csgo_nova_barrel_short.compactname"] = "CQC"
+L["csgo_nova_barrel_short.description"] = "Custom-made shortened barrel."
+
 L["csgo_nova_mag_6.printname"] = "6-Round Tube"
 L["csgo_nova_mag_6.compactname"] = "12G+"
 L["csgo_nova_mag_6.description"] = string.format(quicktext.bigtube, 6)
@@ -1749,15 +1762,15 @@ L["csgo_sawedoff_mag_5.description"] = string.format(quicktext.bigtube, 5)
 
 L["csgo_sawedoff_mag_6.printname"] = "6-Round Tube"
 L["csgo_sawedoff_mag_6.compactname"] = "12G++"
-L["csgo_sawedoff_mag_6.description"] = "REQUIRES <color=255,255,100>Uncut Barrel</color>\n" .. string.format(quicktext.bigtube, 6)
+L["csgo_sawedoff_mag_6.description"] = string.format(quicktext.bigtube, 6) .. "\n\n[ Requires <color=255,255,100>Uncut Barrel</color> ]"
 
 L["csgo_sawedoff_mag_7.printname"] = "7-Round Tube"
 L["csgo_sawedoff_mag_7.compactname"] = "12G+++"
-L["csgo_sawedoff_mag_7.description"] = "REQUIRES <color=255,255,100>Uncut Barrel</color>\n" .. string.format(quicktext.bigtube, 7)
+L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\n\n[ Requires <color=255,255,100>Uncut Barrel</color> ]"
 
 L["csgo_sawedoff_barrel_ext.printname"] = "Uncut Barrel"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Uncut"
-L["csgo_sawedoff_barrel_ext.description"] = "Uncut barrel with a fixed front sight post.\nRequired for the <color=255,255,100>6-Round Tube</color> and <color=255,255,100>7-Round Tube</color> attachments."
+L["csgo_sawedoff_barrel_ext.description"] = "Uncut barrel with a fixed front sight post."
 
 L["csgo_sawedoff_stock_full.printname"] = "Factory Stock"
 L["csgo_sawedoff_stock_full.compactname"] = "Factory"
@@ -1770,7 +1783,7 @@ L["csgo_sawedoff_stock_m3.description"] = "Default stock and pistol grip from th
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Marksman Barrel"
 L["csgo_scar17_barrel_long.compactname"] = "Marksman"
-L["csgo_scar17_barrel_long.description"] = "Long barrel.\nRequired for the <color=255,255,100>Bullpup Kit</color> attachment."
+L["csgo_scar17_barrel_long.description"] = "Long barrel."
 
 L["csgo_scar17_barrel_short.printname"] = "Short Barrel"
 L["csgo_scar17_barrel_short.compactname"] = "Short"
@@ -1798,7 +1811,7 @@ L["csgo_scar17_stock_pdw.description"] = "Lightweight and cut down stock."
 
 L["csgo_scar17_stock_bullpup.printname"] = "Bullpup Kit"
 L["csgo_scar17_stock_bullpup.compactname"] = "Bullpup"
-L["csgo_scar17_stock_bullpup.description"] = "REQUIRES <color=255,255,100>Marksman Barrel</color>\n" .. "Applies a bullpup kit onto the SCAR-17, turning it into a bullpup rifle."
+L["csgo_scar17_stock_bullpup.description"] = "Applies a bullpup kit onto the SCAR-17, turning it into a bullpup rifle."  .. "\n\n[ Requires <color=255,255,100>Marksman Barrel</color> ]"
 
 /////////////////// SCAR-20
 L["csgo_scar20_barrel_factory.printname"] = "Mk 17 Barrel"
@@ -1918,23 +1931,27 @@ L["csgo_usp_slide_short.description"] = "Shortened slide and barrel."
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Police Barrel"
 L["csgo_xm1014_barrel_long.compactname"] = "Police"
-L["csgo_xm1014_barrel_long.description"] = "Extended barrel.\nRequired for the <color=255,255,100>10-Round Tube</color> attachment."
+L["csgo_xm1014_barrel_long.description"] = "Extended barrel."
 
 L["csgo_xm1014_barrel_short.printname"] = "Breacher Barrel"
 L["csgo_xm1014_barrel_short.compactname"] = "Breacher"
-L["csgo_xm1014_barrel_short.description"] = "Shortened barrel.\nIncompatible with the <color=255,255,100>10-Round Tube</color> attachment."
+L["csgo_xm1014_barrel_short.description"] = "Shortened barrel." .. "\n\n[ Requires <color=255,255,100>4-Round Tube</color>, <color=255,255,100>5-Round Tube</color> or <color=255,255,100>5-Round Box Magazine</color> ]"
 
 L["csgo_xm1014_mag_fed.printname"] = "5-Round Box Magazine"
 L["csgo_xm1014_mag_fed.compactname"] = "12G Box"
-L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine.\nCan no longer single load."
+L["csgo_xm1014_mag_fed.description"] = "Replaces the tube magazine with a traditional box magazine."
 
 L["csgo_xm1014_mag_6.printname"] = "4-Round Tube"
-L["csgo_xm1014_mag_6.compactname"] = "12G-"
+L["csgo_xm1014_mag_6.compactname"] = "12G--"
 L["csgo_xm1014_mag_6.description"] = string.format(quicktext.smalltube, 4)
+
+L["csgo_xm1014_mag_7.printname"] = "5-Round Tube"
+L["csgo_xm1014_mag_7.compactname"] = "12G-"
+L["csgo_xm1014_mag_7.description"] = string.format(quicktext.smalltube, 5)
 
 L["csgo_xm1014_mag_8.printname"] = "10-Round Tube"
 L["csgo_xm1014_mag_8.compactname"] = "12G+"
-L["csgo_xm1014_mag_8.description"] = "REQUIRES <color=255,255,100>Police Barrel</color>\n" .. string.format(quicktext.bigtube, 10)
+L["csgo_xm1014_mag_8.description"] = string.format(quicktext.bigtube, 10) .. "\n\n[ Requires <color=255,255,100>Police Barrel</color> ]\n[ Incompatible with <color=255,100,100>Breacher Barrel</color> ]"
 
 /////////////////// Integration: Escape from Tarkov
 eftdesc = "Enables the ability to equip attachments from the <color=255,255,100>Escape from Tarkov</color> packs.\n\n<color=255,100,100>WARNING</color>: Not optimised for GSR - may cause visual glitches.\n<color=175,175,255>Ergonomics</color> have no effect."
@@ -2367,3 +2384,24 @@ L["csgo_scar20_mag_20_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.d
 L["csgo_scar20_mag_30_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.printname") or "30-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_scar20_mag_30_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.compactname") or "7.62mm+ A"
 L["csgo_scar20_mag_30_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.description") or "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_sawedoff_stock_xm1014.printname"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.printname") or "Adjustable Stock with Pistol Grip"
+L["csgo_sawedoff_stock_xm1014.compactname"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.compactname") or "Adjustable"
+L["csgo_sawedoff_stock_xm1014.description"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.description") or "Default stock and pistol grip from the XM1014."
+
+/////////////////// Dual-wielded Attachments
+L["csgo_dual_mp9_barrel_long.printname"] = ARC9:GetPhrase("csgo_mp9_barrel_long.printname") or "Long Barrel"
+L["csgo_dual_mp9_barrel_long.compactname"] = ARC9:GetPhrase("csgo_mp9_barrel_long.compactname") or "Long"
+L["csgo_dual_mp9_barrel_long.description"] = ARC9:GetPhrase("csgo_mp9_barrel_long.description") or "Slightly longer barrel."
+
+L["csgo_dual_mp9_barrel_short.printname"] = ARC9:GetPhrase("csgo_mp9_barrel_short.printname") or "ATF Barrel"
+L["csgo_dual_mp9_barrel_short.compactname"] = ARC9:GetPhrase("csgo_mp9_barrel_short.compactname") or "ATF"
+L["csgo_dual_mp9_barrel_short.description"] = ARC9:GetPhrase("csgo_mp9_barrel_short.description") or "Even shorter barrel."
+
+L["csgo_dual_mp9_mag_short.printname"] = ARC9:GetPhrase("csgo_mp9_mag_short.printname") or "20-Round 9×19mm Magazine"
+L["csgo_dual_mp9_mag_short.compactname"] = ARC9:GetPhrase("csgo_mp9_mag_short.compactname") or "9mm-"
+L["csgo_dual_mp9_mag_short.description"] = ARC9:GetPhrase("csgo_mp9_mag_short.description") or string.format(quicktext.smallmag, 20)
+
+L["csgo_dual_mp9_mag_long.printname"] = ARC9:GetPhrase("csgo_mp9_mag_long.printname") or "40-Round 9×19mm Magazine"
+L["csgo_dual_mp9_mag_long.compactname"] = ARC9:GetPhrase("csgo_mp9_mag_long.compactname") or "9mm+"
+L["csgo_dual_mp9_mag_long.description"] = ARC9:GetPhrase("csgo_mp9_mag_long.description") or string.format(quicktext.bigmag, 40)

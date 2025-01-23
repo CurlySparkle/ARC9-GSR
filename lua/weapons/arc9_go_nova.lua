@@ -505,41 +505,13 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendSights
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["mag2"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    },
-    ["pistolgrip"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["noirons"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {4,1},
-			{3,1},
-        },
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {4,2},
-			{3,2},
-        },
-    },
-    ["csgo_rail_optic"] = {
-    AttPosMods = {[1] = { Pos = Vector(0, -1.9, 8), } }
-    },
+    ["csgo_nova_mag_6"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_nova_mag_8"] = { Bodygroups = { { 1, 2 } } },
+    ["pistolgrip"] = { Bodygroups = { { 2, 1 } } },
+    ["noirons"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_nova_barrel_long"] = { Bodygroups = { { 4, 1 }, { 3, 1 } } },
+    ["csgo_nova_barrel_short"] = { Bodygroups = { { 4, 2 }, { 3, 2 } } },
+    ["csgo_rail_optic"] = { AttPosMods = { [1] = { Pos = Vector(0, -1.9, 8) } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -596,13 +568,11 @@ SWEP.Attachments = {
 		-- Hidden = true,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_top"),
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
         Bone = "v_weapon.NOVA_PARENT",
-        Pos = Vector(0, -1.9, 8),
+        Category = {"go_nova_barrel"},
+        Pos = Vector(0, -1.9, 12.5),
         Ang = Angle(90, 0, -90),
-        Category = {},
-        CorrectiveAng = Angle(0, 0, 0),
-		Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),

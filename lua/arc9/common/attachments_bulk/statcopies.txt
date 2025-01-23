@@ -15,7 +15,6 @@ ATT.RangeMinMult = 1.4
 ATT.RangeMaxMult = 1.4
 ATT.PhysBulletMuzzleVelocityMult = 1.2
 
-ATT.SpreadMultRecoil = 1.15
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 ATT.SpeedMult = 0.95
@@ -26,16 +25,21 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 6, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
+
 -- Barrels, Short --
 
 ATT.AimDownSightsTimeMult = 0.975
 ATT.SprintToFireTimeMult = 0.975
 ATT.SpeedMult = 1.025
 
-ATT.SpreadMultRecoil = 1.15
 ATT.RangeMinMult = 0.875
 ATT.RangeMaxMult = 0.875
 ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 6, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 -- Stocks --
 

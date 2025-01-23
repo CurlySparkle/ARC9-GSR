@@ -92,13 +92,12 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 2
+SWEP.Recoil = 1.66
 
 SWEP.RecoilSeed = 24862 -- CSGO Seed Input Test
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 1.5 -- Multiplier for vertical recoil
-
 SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -106,13 +105,16 @@ SWEP.RecoilSide = 2 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.5
 
+SWEP.RecoilMultRecoil = 1.5
+
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
-SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2.5 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControlShooting = 1
 
 SWEP.RecoilKick = 1.5
 
@@ -156,7 +158,7 @@ SWEP.VisualRecoilSpringPunchDamping = 8
 
 SWEP.Spread = 0.045
 
-SWEP.SpreadAddRecoil = 0.09 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.03 -- Applied per unit of recoil.
 
 SWEP.SpreadAddSights = 0
 SWEP.SpreadAddMove = 0.03
@@ -511,44 +513,14 @@ SWEP.AttachmentTableOverrides = {
 SWEP.DefaultBodygroups = "000000000000"
 
 SWEP.AttachmentElements = {
-    ["stock_retract"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["stock_none"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 29), } }	
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {2,2},
-			{3,3},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 24.5), } }	
-    },
-    ["mag_short"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    }, 
-	["mag_fed"] = {
-        Bodygroups = {
-            {3,4}, {4,1},
-        },
-    },
-    ["mag_long"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    },
+    ["stock_retract"] = { Bodygroups = { { 1, 1 } } },
+    ["stock_none"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_xm1014_barrel_long"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_xm1014_barrel_short"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_xm1014_mag_6"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_xm1014_mag_8"] = { Bodygroups = { { 3, 2 } } },
+    ["csgo_xm1014_mag_7"] = { Bodygroups = { { 3, 3 } } },
+    ["csgo_xm1014_mag_fed"] = { Bodygroups = { { 3, 4 }, { 4, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)

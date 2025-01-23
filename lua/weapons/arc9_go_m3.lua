@@ -491,38 +491,11 @@ SWEP.DefaultBodygroups = "000000000"
 -- }
 
 SWEP.AttachmentElements = {
-    ["mag_default"] = {
-        Bodygroups = {
-            {2,0},
-        },
-    },
-    ["mag_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["mag_none"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["pistolgrip"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.85, 28.3), } }
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0, -1.8, 23.2), } }
-    },
+    ["pistolgrip"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_m3_mag_7"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_m3_mag_4"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_m3_barrel_long"] = { Bodygroups = { { 3, 1 } } },
+    ["csgo_m3_barrel_short"] = { Bodygroups = { { 3, 2 } } },
 }
 
 SWEP.Attachments = {

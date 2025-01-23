@@ -221,7 +221,7 @@ SWEP.CustomizePos = Vector(26, 40, 8)
 SWEP.CustomizeRotateAnchor = Vector(26, -6.5, -4)
 
 SWEP.CustomizeSnapshotFOV = 60
-SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotPos = Vector(-5, 30, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -294,7 +294,7 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
 
-	if attached["go_mag_extended"] then
+	if attached["csgo_mag7_mag_7"] then
 		if anim == "reload" then
 			return "reload_longmag"
 		end
@@ -550,17 +550,8 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["stock_none"] = {
-        Bodygroups = {
-            {1,1},
-			{4,1},
-        },
-    },
-    ["mag"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
+    ["stock_none"] = { Bodygroups = { {1,1}, {4,1} } },
+    ["csgo_mag7_mag_7"] = { Bodygroups = { {2,1} } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -654,8 +645,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
-        Category = "go_mag",
-        InstalledElements = {"mag"},
+        Category = "go_mag7_mag",
         Bone = "v_weapon.magazine",
         Pos = Vector(0, -2.25, -0.25),
     },
