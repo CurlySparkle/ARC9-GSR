@@ -1542,7 +1542,7 @@ L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 /////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "10-Round 12.7×42mmRB Magazine"
 L["csgo_m4_mag_20.compactname"] = "12.7mm"
-L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
+L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7×42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
 L["csgo_m4_mag_20_5.printname"] = "20-Round 5.56×45mm Magazine"
 L["csgo_m4_mag_20_5.compactname"] = "5.56mm-"
@@ -1775,10 +1775,6 @@ L["csgo_sawedoff_barrel_ext.description"] = "Uncut barrel with a fixed front sig
 L["csgo_sawedoff_stock_full.printname"] = "Factory Stock"
 L["csgo_sawedoff_stock_full.compactname"] = "Factory"
 L["csgo_sawedoff_stock_full.description"] = "Wooden stock straight from the factory."
-
-L["csgo_sawedoff_stock_m3.printname"] = "Polymer Stock with Pistol Grip"
-L["csgo_sawedoff_stock_m3.compactname"] = "Polymer"
-L["csgo_sawedoff_stock_m3.description"] = "Default stock and pistol grip from the M3."
 
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Marksman Barrel"
@@ -2384,6 +2380,10 @@ L["csgo_scar20_mag_20_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_20_auto.d
 L["csgo_scar20_mag_30_auto.printname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.printname") or "30-Round 7.62×51mm Magazine [<color=100,175,100>Auto</color>]"
 L["csgo_scar20_mag_30_auto.compactname"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.compactname") or "7.62mm+ A"
 L["csgo_scar20_mag_30_auto.description"] = ARC9:GetPhrase("csgo_g3_mag_30_auto.description") or "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 30)
+
+L["csgo_sawedoff_stock_m3.printname"] = ARC9:GetPhrase("csgo_nova_stock_m3.printname") or "Polymer Stock with Pistol Grip"
+L["csgo_sawedoff_stock_m3.compactname"] = ARC9:GetPhrase("csgo_nova_stock_m3.compactname") or "Polymer"
+L["csgo_sawedoff_stock_m3.description"] = ARC9:GetPhrase("csgo_nova_stock_m3.description") or "Default stock and pistol grip from the M3."
 
 L["csgo_sawedoff_stock_xm1014.printname"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.printname") or "Adjustable Stock with Pistol Grip"
 L["csgo_sawedoff_stock_xm1014.compactname"] = ARC9:GetPhrase("csgo_nova_stock_xm1014.compactname") or "Adjustable"

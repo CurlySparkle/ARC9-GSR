@@ -1536,7 +1536,7 @@ L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 /////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "10-зарядный магазин 12,7×42-ммРБ"
 L["csgo_m4_mag_20.compactname"] = "12,7-мм"
--- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
+-- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7×42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
 L["csgo_m4_mag_20_5.printname"] = "20-зарядный магазин 5,56×45-мм"
 L["csgo_m4_mag_20_5.compactname"] = "5,56-мм-"
@@ -1765,15 +1765,10 @@ L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\
 L["csgo_sawedoff_barrel_ext.printname"] = "Необрезной ствол"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Необрезной"
 L["csgo_sawedoff_barrel_ext.description"] = "Необрезанный ствол с неподвижной мушкой."
--- L["csgo_sawedoff_barrel_ext.description"] = "Необрезанный ствол с неподвижной мушкой.\nНеобходим для модулей <color=255,255,100>6-зарядное цевьё</color> и <color=255,255,100>7-зарядное цевьё</color>."
 
 L["csgo_sawedoff_stock_full.printname"] = "Заводской приклад"
 L["csgo_sawedoff_stock_full.compactname"] = "Заводской"
 L["csgo_sawedoff_stock_full.description"] = "Деревянный приклад прямо с завода."
-
-L["csgo_sawedoff_stock_m3.printname"] = "Полимерный приклад с пистолетной рукоятью"
-L["csgo_sawedoff_stock_m3.compactname"] = "Полимерный"
-L["csgo_sawedoff_stock_m3.description"] = "Приклад и пистолетная рукоять от M3."
 
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Стрелковый ствол"

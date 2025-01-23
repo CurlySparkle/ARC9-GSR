@@ -1536,7 +1536,7 @@ L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 /////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "Cargador de 10 cartuchos de 12.7×42mmRB"
 L["csgo_m4_mag_20.compactname"] = "12.7mm"
--- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
+-- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7×42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
 L["csgo_m4_mag_20_5.printname"] = "Cargador de 20 cartuchos de 5.56×45mm"
 L["csgo_m4_mag_20_5.compactname"] = "5.56mm-"
@@ -1765,15 +1765,10 @@ L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\
 L["csgo_sawedoff_barrel_ext.printname"] = "Cañón sin cortar"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Sin cortar"
 L["csgo_sawedoff_barrel_ext.description"] = "Cañón sin cortar con un punto de mira delantero fijo."
--- L["csgo_sawedoff_barrel_ext.description"] = "Cañón sin cortar con un punto de mira delantero fijo.\nRequerido para los accesorios <color=255,255,100>Tubo de 6 cartuchos</color> y <color=255,255,100>Tubo de 7 cartuchos</color>."
 
 L["csgo_sawedoff_stock_full.printname"] = "Culata de fábrica"
 L["csgo_sawedoff_stock_full.compactname"] = "Fábrica"
 L["csgo_sawedoff_stock_full.description"] = "Culata de madera directamente de fábrica."
-
-L["csgo_sawedoff_stock_m3.printname"] = "Culata de polímero con empuñadura de pistola"
-L["csgo_sawedoff_stock_m3.compactname"] = "Polímero"
-L["csgo_sawedoff_stock_m3.description"] = "Culata y empuñadura de pistola por defecto de la M3."
 
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Cañón Marksman"

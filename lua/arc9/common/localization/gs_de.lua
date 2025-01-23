@@ -1536,7 +1536,7 @@ L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 /////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "12,7 × 42 mmRB 10-Schuss-Magazin"
 L["csgo_m4_mag_20.compactname"] = "12,7 mm"
--- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
+-- L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7×42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
 
 L["csgo_m4_mag_20_5.printname"] = "5,56 × 45 mm 20-Schuss-Magazin"
 L["csgo_m4_mag_20_5.compactname"] = "5,56 mm-"
@@ -1765,15 +1765,10 @@ L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\
 L["csgo_sawedoff_barrel_ext.printname"] = "Ungeschnittener Lauf"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Ungeschnitten"
 L["csgo_sawedoff_barrel_ext.description"] = "Ungeschnittener Lauf mit festem Visierpfosten."
--- L["csgo_sawedoff_barrel_ext.description"] = "Ungeschnittener Lauf mit festem Visierpfosten.\nErforderlich für das <color=255,255,100>Lauf mit 6 Runden</color> und <color=255,255,100>Lauf mit 7 Runden</color> Anhänge."
 
 L["csgo_sawedoff_stock_full.printname"] = "Fabriklager"
 L["csgo_sawedoff_stock_full.compactname"] = "Fabrik"
 L["csgo_sawedoff_stock_full.description"] = "Holzschaft direkt ab Werk."
-
-L["csgo_sawedoff_stock_m3.printname"] = "Polymerschaft mit Pistolengriff"
-L["csgo_sawedoff_stock_m3.compactname"] = "Polymer"
-L["csgo_sawedoff_stock_m3.description"] = "Standardschaft und Pistolengriff vom M3."
 
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Schützenfass"

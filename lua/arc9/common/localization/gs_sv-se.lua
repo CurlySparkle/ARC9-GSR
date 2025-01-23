@@ -1538,7 +1538,7 @@ L["csgo_m4a1_mag_50.description"] = string.format(quicktext.drummag, 50)
 /////////////////// M4A4
 L["csgo_m4_mag_20.printname"] = "12,7 × 42 mmRB 10-Patronersmagasin"
 L["csgo_m4_mag_20.compactname"] = "12,7 mm"
-L["csgo_m4_mag_20.description"] = "Converts the M4A4 into firing the very powerful 12.7x42mmRB ammo, better known as <color=255,255,100>.50 Beowulf</color>.\nLocks the weapon to <color=255,100,100>semi-automatic</color>."
+L["csgo_m4_mag_20.description"] = "Konverterar M4A4:an att skjuta den kraftfulla 12,7 × 42 mmRB patronen, också känd som <color=255,255,100>.50 Beowulf</color>.\nLåser vapnet till <color=255,100,100>halvautomat</color>."
 
 L["csgo_m4_mag_20_5.printname"] = "5,56 × 45 mm 20-Patronersmagasin"
 L["csgo_m4_mag_20_5.compactname"] = "5,56 mm-"
@@ -1607,7 +1607,7 @@ L["csgo_mp5_mag_40.description"] = string.format(quicktext.bigmag, 40)
 
 L["csgo_mp5_mag_10mm.printname"] = "10 × 25 mm 30-Patronersmagasin"
 L["csgo_mp5_mag_10mm.compactname"] = "10 mm"
-L["csgo_mp5_mag_10mm.description"] = "Matar om MP5:an till den mer kraftfulla 10×25mm patronen, mer känd som <color=255,255,100>10 mm Auto</color>.\nLåser vapnet till <color=255,255,100>helautomat och snabbt skjutande 2-skottsalvo</color>."
+L["csgo_mp5_mag_10mm.description"] = "Matar om MP5:an till den mer kraftfulla 10 × 25 mm patronen, mer känd som <color=255,255,100>10 mm Auto</color>.\nLåser vapnet till <color=255,255,100>automateld och snabbt skjutande 2-skottsalvo</color>."
 
 /////////////////// MP5-SD
 L["csgo_mp5_stock_none.printname"] = "Ingen Kolv"
@@ -1767,15 +1767,10 @@ L["csgo_sawedoff_mag_7.description"] = string.format(quicktext.bigtube, 7) .. "\
 L["csgo_sawedoff_barrel_ext.printname"] = "Oavsågad Pipa"
 L["csgo_sawedoff_barrel_ext.compactname"] = "Oavsågad"
 L["csgo_sawedoff_barrel_ext.description"] = "Oavsågad pipa med ett fast framkorn."
--- L["csgo_sawedoff_barrel_ext.description"] = "Oavsågad pipa med ett fast framkorn.\nKrävs för <color=255,255,100>6-Skottrör</color> och <color=255,255,100>7-Skottrör</color> tillbehören."
 
 L["csgo_sawedoff_stock_full.printname"] = "Fabrik Kolv"
 L["csgo_sawedoff_stock_full.compactname"] = "Fabrik"
 L["csgo_sawedoff_stock_full.description"] = "Kolv av trä direkt från fabriken."
-
-L["csgo_sawedoff_stock_m3.printname"] = "Polymer Kolv med Pistolgrepp"
-L["csgo_sawedoff_stock_m3.compactname"] = "Polymer"
-L["csgo_sawedoff_stock_m3.description"] = "Standard kolv och pistolgrepp från M3:an."
 
 /////////////////// SCAR-17
 L["csgo_scar17_barrel_long.printname"] = "Krypskyttepipa"

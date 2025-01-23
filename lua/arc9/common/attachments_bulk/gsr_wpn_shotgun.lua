@@ -246,14 +246,37 @@ ARC9.LoadAttachment(ATT, "csgo_nova_mag_8")
 ------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "Polymer Stock with Pistol Grip"
+
+ATT.RecoilMult = 0.75
+ATT.VisualRecoilMult = 0.85
+
+ATT.RecoilAutoControlAdd = 0.75
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/grip_m3.png", "mips smooth")
+ATT.Category = "go_nova_stock"
+
+ATT.Model = "models/weapons/csgo/atts/pistol_grips/grip_m3.mdl"
+ATT.ModelAngleOffset = Angle(0, 0, 180)
+ATT.RHIK = true
+ATT.RHIK_Priority = 10
+
+ARC9.LoadAttachment(ATT, "csgo_nova_stock_m3")
+------------------------------------------------------------------------
+ATT = {} -- Also on the M3
+
 ATT.PrintName = "Adjustable Stock with Pistol Grip"
 
 ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.925
+ATT.VisualRecoilMult = 0.9
 
-ATT.RecoilAutoControlAdd = -0.45
+ATT.RecoilAutoControlAdd = 0.4
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SpeedMult = 1.05
+ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
 
@@ -407,7 +430,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.RHIK = true
 ATT.RHIK_Priority = 10
 
-ARC9.LoadAttachment(ATT, "csgo_nova_stock_m3")
+ARC9.LoadAttachment(ATT, "csgo_sawedoff_stock_m3")
 ------------------------------------------------------------------------
 ATT = {}
 
