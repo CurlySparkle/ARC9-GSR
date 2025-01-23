@@ -246,6 +246,30 @@ ARC9.LoadAttachment(ATT, "csgo_nova_mag_8")
 ------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "Adjustable Stock with Pistol Grip"
+
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.925
+
+ATT.RecoilAutoControlAdd = -0.45
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SpeedMult = 1.05
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/grip_xm1014.png", "mips smooth")
+ATT.Category = { "go_nova_stock", "go_m3_stock" }
+
+ATT.Model = "models/weapons/csgo/atts/pistol_grips/grip_xm1014.mdl"
+ATT.ModelOffset = Vector(-0.3, 0, -0.7)
+ATT.ModelAngleOffset = Angle(0, 0, 180)
+ATT.RHIK = true
+ATT.RHIK_Priority = 10
+
+ARC9.LoadAttachment(ATT, "csgo_nova_stock_xm1014")
+------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Alternative View (Nova)"
 
 table.Merge(ATT, sharedcode)
