@@ -10,8 +10,37 @@ These do not have any stats.
 
 ATT = {}
 
+ATT.PrintName = "Administrator"
+ATT.Description = "Admin skin for the Desert Eagle."
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
+
+ATT.Free = true
+
+ATT.AdminOnly = true
+ATT.BottomlessClip = true
+ATT.InfiniteAmmo = true
+
+ATT.DamageMaxMult = 5
+ATT.DamageMinMult = 5
+ATT.RPMMult = 2
+ATT.RecoilMult = 0.2
+ATT.VisualRecoilMult = 0.2
+ATT.SpreadAddRecoil = -0.1
+
+ATT.Category = "go_skins_deagle"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+
+ATT.SubMaterial0 = "skins/deagle/deagle_admin"
+ATT.SubMaterial1 = "skins/deagle/deagle_admin"
+ATT.SubMaterial2 = "skins/deagle/deagle_admin"
+
+ARC9.LoadAttachment(ATT, "csgo_skin_deagle_admin")
+------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Nostalgia"
 ATT.Description = "Classic skin for the USP-S."
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
 
 ATT.Category = "go_skins_usp"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
@@ -25,6 +54,7 @@ ATT = {}
 
 ATT.PrintName = "Odyssey"
 ATT.Description = "Custom skin for the Galil AR."
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
 
 ATT.Category = "go_skins_galilar"
 ATT.MenuCategory = "ARC9 - CSGO Attachments"
@@ -33,6 +63,45 @@ ATT.SubMaterial0 = "skins/galilar/galil_odyssy"
 ATT.SubMaterial1 = "skins/galilar/galil_odyssy"
 
 ARC9.LoadAttachment(ATT, "csgo_skin_galilar_odyssy")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Golden CT Knife"
+ATT.Description = "Bling bling."
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
+
+ATT.Category = "go_skins_knife_ct"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+
+ATT.SubMaterial0 = "models/csgo/knife_ct/gg/knife_ct"
+
+ARC9.LoadAttachment(ATT, "csgo_skin_knife_ct_gold")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Golden T Knife"
+ATT.Description = "Bling bling."
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
+
+ATT.Category = "go_skins_knife_t"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+
+ATT.SubMaterial0 = "models/csgo/knife_t/gg/knife_t"
+
+ARC9.LoadAttachment(ATT, "csgo_skin_knife_t_gold")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Spectral Shiv"
+ATT.Description = "Boo!"
+ATT.Icon = Material("entities/attachs/go_etc_skin.png", "mips smooth")
+
+ATT.Category = "go_skins_knife_flip"
+ATT.MenuCategory = "ARC9 - CSGO Attachments"
+
+ATT.SubMaterial0 = "models/csgo/knife_flip/ghost/knife_flip_ghost"
+
+ARC9.LoadAttachment(ATT, "csgo_skin_knife_ghost")
 
 
 ////////////////////////////////////// Stat Trackers

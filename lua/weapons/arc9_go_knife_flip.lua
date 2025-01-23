@@ -68,6 +68,8 @@ SWEP.SprintVerticalOffset = false
 
 SWEP.CanLean = false
 
+SWEP.NoAimAssist = true
+
 -------------------------- MELEE
 
 SWEP.Bash = true
@@ -257,6 +259,16 @@ SWEP.HookP_NameChange = function(self, name)
 	end
 
     return name
+end
+
+SWEP.HookP_DescriptionChange = function(self, desc)
+	local att = self:GetElements()
+
+	if att["csgo_skin_knife_ghost"] then
+		desc = ARC9:GetPhrase("csgo_description_knife_ghost")
+	end
+
+    return desc
 end
 
 -------------------------- ATTACHMENTS

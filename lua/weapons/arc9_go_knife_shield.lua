@@ -68,6 +68,8 @@ SWEP.CanLean = false
 SWEP.CamQCA = 1 -- QC Attachment for camera movement.
 --SWEP.CamQCA_Mult = nil -- Intensity for QC camera movement.
 
+SWEP.NoAimAssist = true
+
 -------------------------- MELEE
 
 SWEP.Bash = true

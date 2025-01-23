@@ -1,4 +1,4 @@
-L = {}
+L = {} -- English strings by the original team; Tweaked by Moka
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
@@ -261,7 +261,7 @@ L["csgo_weapon_scar17_bp_16"] = "SCAR-BP-16"
 L["csgo_weapon_scar20"] = "SCAR-20"
 L["csgo_weapon_scout"] = "Scout"
 
-L["csgo_weapon_sg556"] = "SIG556"
+L["csgo_weapon_sg556"] = "SG 553"
 L["csgo_weapon_sg556_sg552"] = "SG 552 Commando"
 L["csgo_weapon_sg556_sg541"] = "SG 541 Prototype"
 
@@ -308,7 +308,7 @@ L["csgo_description_awp"] = "High risk and high reward, the infamous AWP is reco
 
 L["csgo_description_bizon"] = "The Bizon SMG is low-damage, but offers a uniquely designed high-capacity drum magazine that reloads quickly."
 
-L["csgo_description_cz75"] = "A fully automatic variant of the CZ75, the CZ75-Auto is another inexpensive choice against armored opponents. But with very little ammo provided, strong trigger discipline is required."
+L["csgo_description_cz75"] = "A fully automatic variant of the CZ75, the CZ75-Auto is the ideal short-term choice for turning the tables and gaining your opponents weapon. But with very little ammo in the magazine, strong trigger discipline is required."
 
 L["csgo_description_deagle"] = "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range."
 
@@ -322,17 +322,17 @@ L["csgo_description_fiveseven"] = "Highly accurate and armor-piercing, the pricy
 
 L["csgo_description_g1sg3"] = "The pricy G3SG1 lowers movement speed considerably but compensates with a higher rate of fire than other sniper rifles."
 
-L["csgo_description_galil"] = "A less expensive option among the terrorist-exclusive assault rifles, the Galil is a serviceable weapon in medium to long-range combat."
+L["csgo_description_galil"] = "A classic terrorist-exclusive assault rifle, the Galil was a serviceable weapon for medium to long-range combat."
 
-L["csgo_description_galilar"] = "Modern variant of the Galil, the AR variant brings the terrorist-exclusive balanced assault rifle to the modern era. Effective in medium to long-range combat."
+L["csgo_description_galilar"] = "A less expensive option among the terrorist-exclusive assault rifles, the Galil AR is a serviceable weapon in medium to long-range combat." -- NEW
 
 L["csgo_description_glock"] = "The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts."
 
 L["csgo_description_knife_ct"] = "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
 
-L["csgo_description_knife_shield"] = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers."
+L["csgo_description_knife_ghost"] = "Ghosts love ghost knives. When they get their hands on one, look out! They'll try stab you first chance they get. Too bad they are a ghost and ghost knives can't hurt people...."
 
-L["csgo_description_knife_t"] = "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
+L["csgo_description_knife_shield"] = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers."
 
 L["csgo_description_knife_bayonet"] = "Relatively unchanged in its design since World War II, the bayonet still retains a place in modern military strategy. Bayonet charges have continued to be effective as recently as the second Gulf War and the war in Afghanistan."
 
@@ -374,7 +374,7 @@ L["csgo_description_knife_skeleton"] = "This skeletonized-tang knife has been ta
 
 L["csgo_description_m3"] = "The M3 is a well-rounded shotgun that retains effectiveness at medium ranges without giving up on close range power."
 
-L["csgo_description_m4a1"] = "With a smaller magazine than its unmuffled counterpart, the suppressed M4A1 provides quieter shots with less recoil and better accuracy.\nCan toggle the suppressor on and off.\nWhile unsuppressed, the weapon fires faster but has higher spread."
+L["csgo_description_m4a1"] = "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>." -- NEW
 
 L["csgo_description_m4a4"] = "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs."
 
@@ -382,11 +382,11 @@ L["csgo_description_m249"] = "A strong open-area LMG, the M249 is the perfect ch
 
 L["csgo_description_mac10"] = "Essentially a box that bullets come out of, the MAC-10 SMG boasts a high rate of fire, with poor spread accuracy and high recoil as trade-offs."
 
-L["csgo_description_mag7"] = "The MAG-7 excels as a mobile, close range ambush weapon. Its magazine reload makes it a great tactical choice as well."
+L["csgo_description_mag7"] = "The CT-exclusive Mag-7 delivers a devastating amount of damage at close range. Its rapid magazine-style reloads make it a great tactical choice."
 
 L["csgo_description_mp5"] = "Deadly at close, but not so good at mid- to long range distances, the MP5, just like its SD variant, is the most versatile and popular SMG in the world, if you can manage to control its recoil."
 
-L["csgo_description_mp5sd"] = "Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant comes equipped with an integrated silencer, making an already formidable weapon whisper-quiet."
+L["csgo_description_mp5sd"] = "Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant features an integrated silencer, making an already formidable weapon whisper-quiet."
 
 L["csgo_description_mp7"] = "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat."
 
@@ -420,7 +420,7 @@ L["csgo_description_nade_sonar"] = "Tactical Awareness Grenade is an utility gre
 
 L["csgo_description_negev"] = "The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it."
 
-L["csgo_description_nova"] = "The Nova's high sighted precision makes it a great ambush weapon, though it is not as effective while on the move."
+L["csgo_description_nova"] = "The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team."
 
 L["csgo_description_p90"] = "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil."
 
@@ -438,17 +438,17 @@ L["csgo_description_scar20"] = "The SCAR-20 is a semi-automatic sniper rifle tha
 
 L["csgo_description_scout"] = "Compensating for its recoil and accuracy, the Steyr Scout makes it a great weapon for mid-large distances."
 
-L["csgo_description_sg556"] = "The SG 556 is a premium scoped alternative to the AK-47 for effective long-range engagement.\nOriginally a civilian rifle, it has been illegally converted for automatic fire."
+L["csgo_description_sg556"] = "The terrorist-exclusive SG553 is a premium scoped alternative to the AK47 for effective long-range engagement."
 
-L["csgo_description_ssg08"] = "The SSG 08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship."
+L["csgo_description_ssg08"] = "The SSG08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship."
 
-L["csgo_description_tec9"] = "An ideal pistol for the Terrorist on the move, the Tec-9 is lethal in close quarters and features a high magazine capacity but a terrible recoil."
+L["csgo_description_tec9"] = "An ideal pistol for the Terrorist on the move, the Tec-9 is lethal in close quarters and features a high magazine capacity."
 
 L["csgo_description_ump"] = "The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic."
 
-L["csgo_description_usp"] = "A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise.\nCan toggle the suppressor on and off. While unsuppressed, the weapon deals more damage but has higher spread."
+L["csgo_description_usp"] = "A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>." -- NEW
 
-L["csgo_description_xm1014"] = "The XM1014 is a powerful automatic shotgun with the ability to paint a room with lead fast."
+L["csgo_description_xm1014"] = "The XM1014 is a powerful fully automatic shotgun that justifies its heftier price tag with the ability to paint a room with lead fast."
 
 L["csgo_description_zeus"] = "Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit."
 
@@ -544,8 +544,8 @@ L["csgo_optic_acog.printname"] = "M110 Scope"
 L["csgo_optic_acog.compactname"] = "M110"
 L["csgo_optic_acog.description"] = "Long-range sniper scope with <color=100,255,100>8-12x magnification</color>."
 
-L["csgo_optic_acog_1.printname"] = "SIG556 Scope"
-L["csgo_optic_acog_1.compactname"] = "SIG556"
+L["csgo_optic_acog_1.printname"] = "SG 553 Scope"
+L["csgo_optic_acog_1.compactname"] = "SG 553"
 L["csgo_optic_acog_1.description"] = "Medium-range combat optic with <color=100,255,100>3x magnification</color>.\nIntended for use on the SIG556.\nComes with backup iron sights."
 
 L["csgo_optic_acog_2.printname"] = "AUG Scope"
@@ -2066,6 +2066,8 @@ L["go_polyarms_stocks.description"] = mw19desc
 
 
 ///////////////////  GetPhrase Stuff - If other language, remove everything below here!
+L["csgo_description_knife_t"] = ARC9:GetPhrase("csgo_description_knife_ct") or "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
+
 L["go_holdstyle_2.printname"] = ARC9:GetPhrase("go_holdstyle_1.printname") or "Alt. Hold Style"
 L["go_holdstyle_2.compactname"] = ARC9:GetPhrase("go_holdstyle_1.compactname") or "Alt. Hold"
 L["go_holdstyle_2.description"] = ARC9:GetPhrase("go_holdstyle_1.description") or "Alters the holding style of the weapon."

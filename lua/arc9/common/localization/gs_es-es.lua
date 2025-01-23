@@ -1,4 +1,4 @@
-L = {}
+L = {} -- Spanish strings by HyperNeonX
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
@@ -255,7 +255,7 @@ L["csgo_weapon_scar17_bp_16"] = "SCAR-BP-16"
 L["csgo_weapon_scar20"] = "SCAR-20"
 L["csgo_weapon_scout"] = "Scout"
 
-L["csgo_weapon_sg556"] = "SIG556"
+L["csgo_weapon_sg556"] = "SG 553"
 L["csgo_weapon_sg556_sg552"] = "SG 552 Commando"
 L["csgo_weapon_sg556_sg541"] = "SG 541 Prototype"
 
@@ -316,17 +316,17 @@ L["csgo_description_fiveseven"] = "Muy precisa y perforante, la cara Five-seveN 
 
 L["csgo_description_g1sg3"] = "El costoso G3SG1 reduce considerablemente la velocidad de movimiento, pero lo compensa con una cadencia de disparo superior a la de otros rifles de francotirador."
 
-L["csgo_description_galil"] = "El Galil, una opción menos costosa entre los fusiles de asalto exclusivos para terroristas, es un arma útil en combates de medio a largo alcance."
+-- L["csgo_description_galil"] = "A classic terrorist-exclusive assault rifle, the Galil was a serviceable weapon for medium to long-range combat."
 
-L["csgo_description_galilar"] = "Una opción más barata entre los rifles de asalto exclusivos de los terroristas es el Galil AR, un arma útil en combate a media y larga distancia."
+L["csgo_description_galilar"] = "Una opción más barata entre los rifles de asalto exclusivos de los terroristas es el Galil AR, un arma útil en combate a media y larga distancia." -- NEW
 
 L["csgo_description_glock"] = "La Glock 18 es una práctica pistola de primera ronda que funciona mejor contra oponentes sin protección y cuenta con un modo ráfaga de tres balas."
 
 L["csgo_description_knife_ct"] = "El cuchillo, silencioso y siempre disponible, tiene un ataque principal rápido y de daño reducido y un ataque secundario lento y de daño elevado. Una puñalada por la espalda con el ataque secundario permite asesinar de manera instantánea y discreta."
 
-L["csgo_description_knife_shield"] = "Un dispositivo de protección diseñado para desviar o absorber el daño balístico y ayudar a proteger al usuario de las balas de varios calibres."
+L["csgo_description_knife_ghost"] = "A los fantasmas les encantan los cuchillos. ¡Ten cuidado si ves a alguno con uno en sus manos! Intentarán clavártelo por la espalda en cuanto puedan. Una pena que sean fantasmas y los cuchillos fantasma no puedan hacer daño..."
 
-L["csgo_description_knife_t"] = "El cuchillo, silencioso y siempre disponible, tiene un ataque principal rápido y de daño reducido y un ataque secundario lento y de daño elevado. Una puñalada por la espalda con el ataque secundario permite asesinar de manera instantánea y discreta."
+L["csgo_description_knife_shield"] = "Un dispositivo de protección diseñado para desviar o absorber el daño balístico y ayudar a proteger al usuario de las balas de varios calibres."
 
 L["csgo_description_knife_bayonet"] = "Relativamente idéntica al diseño de la Segunda Guerra Mundial, la bayoneta aún conserva su lugar en la estrategia militar moderna. El uso de la bayoneta ha seguido siendo efectivo en conflictos actuales como la Guerra del Golfo y la de Afganistán."
 
@@ -368,7 +368,7 @@ L["csgo_description_knife_skeleton"] = "Se ha encintado el puñal de este cuchil
 
 L["csgo_description_m3"] = "La M3 es una escopeta muy completa que mantiene la eficacia a media distancia sin renunciar a la potencia a corta distancia."
 
-L["csgo_description_m4a1"] = "El M4A1 con silenciador tiene un cargador más pequeño que su homólogo no silenciado, pero proporciona disparos menos audibles con menor retroceso y mayor precisión.\nPuede activar y desactivar el supresor.\nSin supresión, el arma dispara más rápido pero tiene mayor dispersión."
+L["csgo_description_m4a1"] = "El M4A1 con silenciador tiene un cargador más pequeño que su homólogo no silenciado, pero proporciona disparos menos audibles con menor retroceso y mayor precisión." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>." -- NEW; INCOMPLETE
 
 L["csgo_description_m4a4"] = "Más precisa pero menos potente que su equivalente, el AK-47, la M4A4 es el rifle de asalto automático disponible para los antiterroristas."
 
@@ -432,7 +432,7 @@ L["csgo_description_scar20"] = "El SCAR-20 es un rifle de francotirador semiauto
 
 L["csgo_description_scout"] = "Compensando su retroceso y precisión, el Steyr Scout lo convierte en una gran arma para distancias medias-grandes."
 
-L["csgo_description_sg556"] = "El SG 556 es una alternativa al AK-47 con visor de alta calidad para un combate eficaz a larga distancia.\nOriginalmente un rifle civil, ha sido convertido ilegalmente para el fuego automático."
+L["csgo_description_sg556"] = "El SG553 exclusivo de los terroristas es una alternativa superior al AK-47 por su mayor efectividad en largas distancias."
 
 L["csgo_description_ssg08"] = "El SSG08 de cerrojo es un rifle de francotirador que no causa mucho daño pero es bastante rentable, considerándose una sabia elección para los enfrentamientos a larga distancia durante las primeras rondas."
 
@@ -440,7 +440,7 @@ L["csgo_description_tec9"] = "Como pistola ideal para el terrorista en movimient
 
 L["csgo_description_ump"] = "El UMP-45 es el hijo mediano incomprendido de la familia de los subfusiles. Su reducido cargador es el único inconveniente de esta versátil arma automática para distancias cortas."
 
-L["csgo_description_usp"] = "La favorita de los fans de Counter-Strike: Source, la pistola USP con silenciador de quita y pon tiene menos retroceso y menos ruido para no llamar la atención."
+L["csgo_description_usp"] = "La favorita de los fans de Counter-Strike: Source, la pistola USP con silenciador de quita y pon tiene menos retroceso y menos ruido para no llamar la atención." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>." -- NEW
 
 L["csgo_description_xm1014"] = "La XM1014 es una poderosa escopeta automática que, aunque es muy cara, cuenta con la habilidad de rociar una sala de plomo rápidamente."
 
@@ -537,8 +537,8 @@ L["csgo_optic_acog.printname"] = "Visor M110"
 L["csgo_optic_acog.compactname"] = "M110"
 -- L["csgo_optic_acog.description"] = "Long-range sniper scope with <color=100,255,100>8-12x magnification</color>."
 
-L["csgo_optic_acog_1.printname"] = "Visor SIG556"
-L["csgo_optic_acog_1.compactname"] = "Visor SIG556"
+L["csgo_optic_acog_1.printname"] = "Visor SG 553"
+L["csgo_optic_acog_1.compactname"] = "SG 553"
 -- L["csgo_optic_acog_1.description"] = "Medium-range combat optic with <color=100,255,100>3x magnification</color>.\nIntended for use on the SIG556.\nComes with backup iron sights."
 
 L["csgo_optic_acog_2.printname"] = "AUG"

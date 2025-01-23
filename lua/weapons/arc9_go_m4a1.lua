@@ -107,7 +107,7 @@ SWEP.FiremodeAnimLock = true
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.65
+SWEP.Recoil = 0.45
 
 SWEP.RecoilSeed = 38965 -- CSGO Seed Input Test
 
@@ -127,7 +127,7 @@ SWEP.RecoilDissipationRate = 5 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
-SWEP.RecoilAutoControlMultShooting = 0.33
+SWEP.RecoilAutoControlMultShooting = 0.25
 
 SWEP.RecoilKick = 1
 
@@ -398,7 +398,7 @@ SWEP.Animations = {
         EventTable = {
             {s = path .. "m4a1_clipout.wav", t = 11/30},
             {s = path .. "m4a1_clipin.wav", t = 35/30},
-            {s = path .. "m4a1_silencer_boltforward.wav", t = 57/30},
+            {s = path .. "m4a1_cliphit.wav", t = 57/30},
         },
     },
     ["ready"] = {

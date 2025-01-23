@@ -77,6 +77,24 @@ ARC9.LoadAttachment(ATT, "csgo_m249_barrel_short")
 ------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "Skeleton Stock"
+
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SpeedMult = 1.05
+-- ATT.RecoilAutoControlMultMove = 1.2
+
+ATT.RecoilMult = 1.05
+ATT.VisualRecoilMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_ak_stock_skeleton.png", "mips smooth")
+ATT.Category = "go_m249_stock"
+
+ARC9.LoadAttachment(ATT, "csgo_m249_stock_skeleton")
+------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "200-Round 9×19mm Box"
 
 ATT.ClipSizeAdd = 100

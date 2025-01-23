@@ -1,4 +1,4 @@
-L = {}
+L = {} -- Swedish strings by Moka
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
@@ -255,7 +255,7 @@ L["csgo_weapon_scar17_bp_16"] = "SCAR-BP-16"
 L["csgo_weapon_scar20"] = "SCAR-20"
 L["csgo_weapon_scout"] = "Scout"
 
-L["csgo_weapon_sg556"] = "SIG556"
+L["csgo_weapon_sg556"] = "SG 553"
 L["csgo_weapon_sg556_sg552"] = "SG 552 Commando"
 L["csgo_weapon_sg556_sg541"] = "SG 541 Prototype"
 
@@ -316,17 +316,17 @@ L["csgo_description_fiveseven"] = "Mycket träffsäker och pansarbrytande. Den d
 
 L["csgo_description_g1sg3"] = "Den dyra G3SG1 sänker förflyttningshastigheten märkbart men kompenserar med en eldgivningshastighet som är högre än de flesta andra prickskyttegevär."
 
-L["csgo_description_galil"] = "Ett mindre dyrt alternativ bland de terroristexklusiva automatkarbinerna. Galil AR är ett funktionsdugligt vapen i medel-långdistansstrid."
+L["csgo_description_galil"] = "Klassisk terroristexklusiv automatkarbin, Galil:en är ett funktionsdugligt vapen för mede-långdistansstrid."
 
-L["csgo_description_galilar"] = "Modern version av Galil, AR-versionen tar fram den terroristexklusiva balanserade automatkarbinen till den moderna tiden. Effektiv i medel-långdistansstrid."
+L["csgo_description_galilar"] = "Ett mindre dyrt alternativ bland de terroristexklusiva automatkarbinerna. Galil AR är ett funktionsdugligt vapen i medel-långdistansstrid." -- NEW
 
 L["csgo_description_glock"] = "Glock 18 är en funktionsduglig pistol som fungerar bäst mot opansrade fiender och kan avfyra tre-skottsalvor."
 
 L["csgo_description_knife_ct"] = "Kniven är tyst och alltid tillgänglig. Den har en snabb primär attack som gör lite skada och en långsam sekundär attack som gör hög skada. Rygghugg gör att tysta spelare kan döda sina fiender i ett enda slag."
 
-L["csgo_description_knife_shield"] = "En skyddsanordning utformad för att avleda eller absorbera ballistisk skada och skydda bäraren från en rad projektilkalibrer."
+L["csgo_description_knife_ghost"] = "Spöken älskar spökknivar. När de får tag på en, se upp! De kommer att försöka hugga dig direkt. Synd att de är spöken och att spökknivar inte kan skada folk..."
 
-L["csgo_description_knife_t"] = "Kniven är tyst och alltid tillgänglig. Den har en snabb primär attack som gör lite skada och en långsam sekundär attack som gör hög skada. Rygghugg gör att tysta spelare kan döda sina fiender i ett enda slag."
+L["csgo_description_knife_shield"] = "En skyddsanordning utformad för att avleda eller absorbera ballistisk skada och skydda bäraren från en rad projektilkalibrer."
 
 L["csgo_description_knife_bayonet"] = "Bajonettens design har förändrats relativt lite sedan andra världskriget, och har fortfarande en plats i modern militärstrategi. Bajonettanfall har fortsatt varit effektiva så sent som i Kuwaitkriget och kriget i Afghanistan."
 
@@ -368,7 +368,7 @@ L["csgo_description_knife_skeleton"] = "Denna avskalade kniv med full tang har e
 
 L["csgo_description_m3"] = "M3:an är ett välbalanserat hagelgevär som behåller sin effektivitet på medeldistanser utan att ge upp närdistanskraft."
 
-L["csgo_description_m4a1"] = "Med ett mindre magasin än sin oljuddämpade motsvarighet så erbjuder den ljuddämpade M4A1:an mer tysta skott med mindre rekyl och bättre precision.\nKan växla ljuddämparen på och av.\nNär den är avtagen så skjuter vapnet snabbare men har högre spridning."
+L["csgo_description_m4a1"] = "Med ett mindre magasin än sin oljuddämpade motsvarighet så erbjuder den ljuddämpade M4A1:an mer tysta skott med mindre rekyl och bättre precision." .. "\n\nOm <color=255,255,100>ej ljuddämpad</color>: Högre <color=100,255,100>eldhastighet</color> och <color=255,100,100>spridning</color>."
 
 L["csgo_description_m4a4"] = "Mer precis men mindre skadlig är sin motsvarighet AK-47. M4A4 är antiterroristernas val när det gäller helautomatiska automatkarbiner."
 
@@ -440,7 +440,7 @@ L["csgo_description_tec9"] = "En ideal pistol för terrorister på resande fot, 
 
 L["csgo_description_ump"] = "Det missförstådda mittenbarnet i kulsprutefamiljen. UMP45:s lilla magasin är den enda olägenheten i ett för övrigt mångsidigt automatvapen för närstrid."
 
-L["csgo_description_usp"] = "En favorit bland fansen i Counter Strike: Source, den ljuddämpade USP-pistolen har en borttagbar ljuddämpare som gör att skotten ger svagare rekyl och dämpar oönskat oljud."
+L["csgo_description_usp"] = "En favorit bland fansen i Counter Strike: Source, den ljuddämpade USP-pistolen har en borttagbar ljuddämpare som gör att skotten ger svagare rekyl och dämpar oönskat oljud." .. "\n\nOm <color=255,255,100>ej ljuddämpad</color>: Högre <color=100,255,100>skada</color> och <color=255,100,100>spridning</color>." -- NEW
 
 L["csgo_description_xm1014"] = "XM1014 är ett kraftfullt helautomatiskt hagelgevär som rättfärdigar sitt höga pris med förmågan att kunna måla ett rum med hagel snabbt."
 
@@ -537,8 +537,8 @@ L["csgo_optic_acog.printname"] = "M110-Kikarsikte"
 L["csgo_optic_acog.compactname"] = "M110"
 L["csgo_optic_acog.description"] = "Långdistans kikarsikte med <color=100,255,100>8 till 12x magnifiering</color>."
 
-L["csgo_optic_acog_1.printname"] = "SIG556-Sikte"
-L["csgo_optic_acog_1.compactname"] = "SIG556"
+L["csgo_optic_acog_1.printname"] = "SG 553-Sikte"
+L["csgo_optic_acog_1.compactname"] = "SG 553"
 L["csgo_optic_acog_1.description"] = "Medelräckvidd stridssikte med <color=100,255,100>3x magnifiering</color>.\nGjord till SIG556.\nKommer med reservsikten."
 
 L["csgo_optic_acog_2.printname"] = "AUG-Sikte"

@@ -1,4 +1,4 @@
-L = {}
+L = {} -- German strings by Marvin; new strings by marig
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
@@ -255,7 +255,7 @@ L["csgo_weapon_scar17_bp_16"] = "SCAR-BP-16"
 L["csgo_weapon_scar20"] = "SCAR-20"
 L["csgo_weapon_scout"] = "Kundschafter"
 
-L["csgo_weapon_sg556"] = "SIG556"
+L["csgo_weapon_sg556"] = "SG 553"
 L["csgo_weapon_sg556_sg552"] = "SG 552 Kommando"
 L["csgo_weapon_sg556_sg541"] = "SG 541 Prototyp"
 
@@ -272,7 +272,7 @@ L["csgo_weapon_xm1014"] = "XM1014"
 L["csgo_weapon_zeus"] = "Zeus x27"
 
 /////////////////// Weapon Descriptions
-L["csgo_description_ak47"] = "Das AK-47 ist leistungsstark und zuverlässig und eines der beliebtesten Sturmgewehre der Welt. Es ist am tödlichsten bei kurzen, kontrollierten Feuerstößen."
+L["csgo_description_ak47"] = "Als eines der beliebtesten Sturmgewehre der Welt ist das AK-47 sehr stark und zuverlässig. Mit kurzen, kontrollierten Feuerstößen ist diese Waffe besonders tödlich."
 
 L["csgo_description_akimbo_cz75"] = "Ein Paar automatische Pistolen. Seine niedrige Feuerrate macht es zu einer abgerundeten Akimbo-Option."
 
@@ -296,37 +296,37 @@ L["csgo_description_akimbo_taser"] = "Ein Paar Zeus x27 Einzelschuss-Taser, die 
 
 L["csgo_description_akimbo_usp"] = "Die USP ist ein Paar der beliebtesten Handfeuerwaffen der Fans aus älteren Counter-Strikes und bietet einen geringen Rückstoß und dennoch zuverlässigen Schaden."
 
-L["csgo_description_aug"] = "Das leistungsstarke und präzise AUG-Sturmgewehr mit Zielfernlauf kompensiert seine langen Nachladezeiten mit geringer Streuung und hoher Feuerrate."
+L["csgo_description_aug"] = "Bekannt als mächtige und genaue Waffe kompensiert das mit einem Zielfernrohr ausgestattete AUG-Sturmgewehr seine lange Nachladezeit mit einem geringen Streuradius und einer hohen Feuerrate."
 
-L["csgo_description_awp"] = "Hohes Risiko und hohe Belohnung, das berüchtigte AWP ist an seinem Signaturbericht und seiner One-Shot-One-Kill-Richtlinie erkennbar."
+L["csgo_description_awp"] = "Mit hohem Risiko und hohem Gewinn ist das AWP wegen seines unverkennbaren Schussgeräusches und seiner tödlichen Einzeltreffer berüchtigt."
 
-L["csgo_description_bizon"] = "Die Bizon MP ist schadensarm, bietet aber ein einzigartig gestaltetes Trommelmagazin mit hoher Kapazität, das sich schnell nachlädt."
+L["csgo_description_bizon"] = "Die Bizon-Maschinenpistole verursacht wenig Schaden, bietet aber ein einzigartig entworfenes Helixmagazin mit hoher Kapazität und kurzer Nachladedauer."
 
-L["csgo_description_cz75"] = "Als vollautomatische Variante des CZ75 ist der CZ75-Auto eine weitere kostengünstige Wahl gegen gepanzerte Gegner. Aber mit sehr wenig Munition ist eine starke Abzugsdisziplin erforderlich."
+L["csgo_description_cz75"] = "Als vollautomatische Variante der CZ75 ist die CZ75-Auto die ideale Übergangswaffe, bis sie einem überraschten Gegner dessen Waffe abgenommen haben. Aufgrund des geringen Munitionsvorrats ist jedoch eine hohe Disziplin am Abzug geboten."
 
-L["csgo_description_deagle"] = "So teuer wie stark, ist die Desert Eagle eine ikonische Pistole, die schwer zu beherrschen, aber auf große Distanz überraschend präzise ist."
+L["csgo_description_deagle"] = "Die genauso wirksame wie teure Desert Eagle ist eine Pistole mit Kultstatus, die zwar schwer zu beherrschen, aber auf weite Distanzen überraschend präzise ist."
 
-L["csgo_description_elite"] = "Das gleichzeitige Abfeuern von zwei Berettas mit großem Magazin verringert die Genauigkeit und verlängert die Ladezeiten. Auf der positiven Seite können Sie zwei Berettas mit großem Magazin gleichzeitig abfeuern."
+L["csgo_description_elite"] = "Das gleichzeitige Abfeuern zweier Berettas mit großen Magazinen verringert die Genauigkeit und erhöht die Nachladedauer. Wenn man es jedoch mal positiv betrachtet, so kommen Sie immerhin zum gleichzeitigen Abfeuern zweier Berettas mit großen Magazinen."
 
 L["csgo_description_elite_single"] = "Der Verlust einer Beretta mit großem Magazin erhöht die Genauigkeit und verkürzt die Ladezeiten. Auf der positiven Seite können Sie stattdessen eine Beretta mit großem Magazin abfeuern."
 
-L["csgo_description_famas"] = "Das FAMAS ist eine günstige Option für Spieler mit knappen Kassen und füllt effektiv die Nische zwischen teureren Gewehren und den weniger effektiven MPs."
+L["csgo_description_famas"] = "Als günstige Option für Spieler mit begrenztem Budget schließt das FAMAS die Lücke zwischen den teureren Gewehren und den weniger effektiven Maschinenpistolen."
 
-L["csgo_description_fiveseven"] = "Der teure Five-Seven ist ein sehr präziser und panzerbrechender Langsamlader, der mit einem großzügigen 20-Schuss-Magazin und einem fehlerverzeihenden Rückstoß kompensiert."
+L["csgo_description_fiveseven"] = "Die sehr präzise und panzerbrechende Five-SeveN ist eine kostspielige Pistole mit langer Nachladedauer, welche dafür ein großzügiges 20-Patronen-Magazin und einen einfach zu handhabenden Rückschlag bietet."
 
-L["csgo_description_g1sg3"] = "Das teure G3SG1 verringert die Bewegungsgeschwindigkeit erheblich, gleicht dies aber mit einer höheren Feuerrate als andere Scharfschützengewehre aus."
+L["csgo_description_g1sg3"] = "Das teure G3SG1 verringert die Laufgeschwindigkeit stark, macht dies aber mit einer hohen Feurrate wieder wett, die andere Scharfschützengewehre in den Schatten stellt."
 
-L["csgo_description_galil"] = "Das Galil ist eine kostengünstigere Option unter den Sturmgewehren, die nur Terroristen vorbehalten sind, und eine brauchbare Waffe im Kampf auf mittlere bis lange Distanz."
+-- L["csgo_description_galil"] = "A classic terrorist-exclusive assault rifle, the Galil was a serviceable weapon for medium to long-range combat."
 
-L["csgo_description_galilar"] = "Moderne Variante des Galil, die AR-Variante bringt das Terroristen-exklusive ausgewogene Sturmgewehr in die Neuzeit. Effektiv im Kampf auf mittlere bis lange Distanz."
+L["csgo_description_galilar"] = "A less expensive option among the terrorist-exclusive assault rifles, the Galil AR is a serviceable weapon in medium to long-range combat." -- NEW
 
-L["csgo_description_glock"] = "Die Glock 18 ist eine brauchbare Erstrundenpistole, die am besten gegen ungepanzerte Gegner funktioniert und in der Lage ist, drei Schüsse abzufeuern."
+L["csgo_description_glock"] = "Die Glock 18 ist eine brauchbare Pistole für die erste Runde, die am effektivsten gegen ungepanzerte Gegner eingesetzt werden kann und in der Lage ist, drei Kugeln gleichzeitig abzufeuern."
 
-L["csgo_description_knife_ct"] = "Leise und immer verfügbar, das Messer hat einen schnellen primären Angriff mit geringem Schaden und einen langsamen sekundären Angriff mit hohem Schaden. Ein Rückenstich bringt leisen Spielern einen sofortigen Kill ein."
+L["csgo_description_knife_ct"] = "Das leise und stets verfügbare Messer hat einen schnellen, wenig Schaden anrichtenden Primärangriff und einen langsamen, hohen Schaden anrichtenden Sekundärangriff, welcher leisen Spielern bei einem Rückenstich einen sofortigen Kill einbringt."
+
+L["csgo_description_knife_ghost"] = "Geister lieben Geistermesser. Wenn sie eins bekommen, sollten Sie aufpassen! Sie werden versuchen, Sie bei der ersten Gelegenheit zu erstechen. Zu schade, dass sie Geister sind und Geistermesser Menschen nicht verletzen können …"
 
 L["csgo_description_knife_shield"] = "Eine Schutzvorrichtung, die entwickelt wurde, um ballistischen Schaden abzulenken oder zu absorbieren und dabei hilft, den Träger vor einer Reihe von Projektilkalibern zu schützen."
-
-L["csgo_description_knife_t"] = "Leise und immer verfügbar, das Messer hat einen schnellen primären Angriff mit geringem Schaden und einen langsamen sekundären Angriff mit hohem Schaden. Ein Rückenstich bringt leisen Spielern einen sofortigen Kill ein."
 
 L["csgo_description_knife_bayonet"] = "Das Bajonett ist in seinem Design seit dem Zweiten Weltkrieg relativ unverändert geblieben und behält immer noch seinen Platz in der modernen Militärstrategie. Bajonettladungen waren bis in den zweiten Golfkrieg und den Krieg in Afghanistan hinein wirksam."
 
@@ -368,23 +368,23 @@ L["csgo_description_knife_skeleton"] = "Dieses Messer mit skelettiertem Erl wurd
 
 L["csgo_description_m3"] = "Die M3 ist eine vielseitige Schrotflinte, die auf mittlere Entfernungen effektiv bleibt, ohne auf Nahkampfleistung zu verzichten."
 
-L["csgo_description_m4a1"] = "Mit einem kleineren Magazin als sein nicht gedämpftes Gegenstück liefert die schallgedämpfte M4A1 leisere Schüsse mit weniger Rückstoß und besserer Genauigkeit.\nKann den Schalldämpfer ein- und ausschalten.\nWährend sie nicht gedämpft ist, feuert die Waffe schneller, aber höher Ausbreitung."
+L["csgo_description_m4a1"] = "Mit einem kleineren Magazin ausgestattet als das nicht schallgedämpfte Gegenstück, liefert die schallgedämpfte M4A1 leisere Schüsse mit weniger Rückschlag und besserer Präzision.\nKann den Schalldämpfer ein- und ausschalten." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>." -- NEW; INCOMPLETE
 
-L["csgo_description_m4a4"] = "Das M4A4 ist präziser, aber weniger schädlich als sein AK-47-Pendant und das vollautomatische Sturmgewehr der Wahl für CTs."
+L["csgo_description_m4a4"] = "Mit höherer Präzision aber geringerem Schaden als sein Gegenstück AK-47 ist das M4A4 das bevorzugte vollautomatische Sturmgewehr der Antiterroreinheit."
 
-L["csgo_description_m249"] = "Das M249 ist ein starkes Open-Area-LMG und die perfekte Wahl für Spieler, die bereit sind, eine langsame Feuerrate gegen erhöhte Genauigkeit und eine hohe Munitionskapazität einzutauschen."
+L["csgo_description_m249"] = "Als solides Maschinengewehr für offenes Gelände ist das M249 die perfekte Wahl für Spieler, die gute Präzision und ein großes Magazin einer hohen Feuerrate vorziehen."
 
-L["csgo_description_mac10"] = "Das MAC-10 MP ist im Wesentlichen eine Kiste, aus der Kugeln kommen, und weist eine hohe Feuerrate auf, mit schlechter Streugenauigkeit und hohem Rückstoß als Kompromiss."
+L["csgo_description_mac10"] = "Die MAC-10, im Grunde genommen nur eine Box, die Kugeln ausspuckt, bietet eine hohe Feuerrate in Kombination mit geringer Präzision und hohem Rückstoß."
 
-L["csgo_description_mag7"] = "Die MAG-7 zeichnet sich als mobile Hinterhaltswaffe für kurze Distanzen aus. Ihr Magazin-Nachladen macht sie auch zu einer großartigen taktischen Wahl."
+L["csgo_description_mag7"] = "Die AT-exklusive MAG-7 richtet auf geringe Distanz verheerenden Schaden an. Ihre dank Magazinen kurze Nachladedauer macht sie zu einer großartigen taktischen Wahl."
 
 L["csgo_description_mp5"] = "Tödlich auf kurze Distanz, aber nicht so gut auf mittlere bis große Entfernungen, ist die MP5, genau wie ihre SD-Variante, die vielseitigste und beliebteste MP der Welt, wenn Sie es schaffen, sie zu kontrollieren sein Rückstoß."
 
-L["csgo_description_mp5sd"] = "Oft imitiert, aber nie erreicht, ist die legendäre MP5 vielleicht die vielseitigste und beliebteste MP der Welt. Diese SD-Variante ist mit einem integrierten Schalldämpfer ausgestattet, der eine bereits beeindruckende Waffe flüsterleise macht."
+L["csgo_description_mp5sd"] = "Die oft kopierte, aber nie erreichte, ikonische MP5 ist wahrscheinlich die vielseitigste und beliebteste MP der Welt. Diese SD-Veriante kommt mit einem integrierten Schalldämpfer und macht eine bereits beeindruckende Waffe flüsterleise."
 
-L["csgo_description_mp7"] = "Vielseitig, aber teuer, die in Deutschland hergestellte MP7 MP ist die perfekte Wahl für hochwirksame Nahkämpfe."
+L["csgo_description_mp7"] = "Als vielseitige aber teure Maschinenpistole ist die in Deutschland hergestellte MP7 die perfekte Wahl für den intensiven Nahkampf."
 
-L["csgo_description_mp9"] = "Das hochmoderne MP9 MP wird in der Schweiz hergestellt und ist eine ergonomische Polymerwaffe, die von privaten Sicherheitsfirmen bevorzugt wird."
+L["csgo_description_mp9"] = "Die in der Schweiz hergestellte, innovative Maschinenpistole MP9 ist eine ergonomische Polymer-Waffe, die von privaten Sicherheitsfirmen bevorzugt wird."
 
 L["csgo_description_nade_breach"] = "Die Sprengladung ist eine Sprengladung, die es ermöglicht, Türen und Zielfernlaufe zu durchbrechen. Sie können nur maximal 3 Sprengladungen gleichzeitig halten."
 
@@ -432,19 +432,19 @@ L["csgo_description_scar20"] = "Das SCAR-20 ist ein halbautomatisches Scharfsch�
 
 L["csgo_description_scout"] = "Der Steyr Scout kompensiert seinen Rückstoß und seine Genauigkeit und macht ihn zu einer großartigen Waffe für mittlere bis große Entfernungen."
 
-L["csgo_description_sg556"] = "Das SG 556 ist eine Premium-Zielfernlaufalternative zum AK-47 für effektive Langstreckenkämpfe.\nUrsprünglich ein ziviles Gewehr, wurde es illegal für automatisches Feuer umgebaut."
+L["csgo_description_sg556"] = "Das den Terroristen vorbehaltene SG553 ist eine hochklassige und mit einem Zielfernrohr ausgestattete Alternative zum AK-47, wenn es um effektiven Kampf auf lange Distanz geht."
 
-L["csgo_description_ssg08"] = "Die Repetierbüchse SSG 08 ist ein schadensarmes, aber sehr kostengünstiges Scharfschützengewehr, was es zu einer klugen Wahl für Langstrecken-Treffsicherheit in der Anfangsphase macht."
+L["csgo_description_ssg08"] = "Das SSG08 mit Kammerverschluss ist ein schwaches, aber sehr kosteneffektives Scharfschützengewehr. Dies macht es in den ersten Runden des Spiels zu einer guten Wahl für treffsichere Distanzschüsse."
 
-L["csgo_description_tec9"] = "Die Tec-9 ist eine ideale Pistole für den Terroristen in Bewegung. Sie ist aus nächster Nähe tödlich und verfügt über eine hohe Magazinkapazität, aber einen schrecklichen Rückstoß."
+L["csgo_description_tec9"] = "Als ideale Pistole für den Terroristen unterwegs, ist die Tec-9 tödlich in kleinen Räumen und bietet ein großes Magazin."
 
-L["csgo_description_ump"] = "Das missverstandene mittlere Kind der MP-Familie, das kleine Magazin des UMP45, ist der einzige Nachteil einer ansonsten vielseitigen Nahkampfautomatik."
+L["csgo_description_ump"] = "Das verkannte Mittelkind der MP-Familie - Das kleine Magazin der UMP45 ist der einzige Nachteil einer ansonsten vielseitigen Automatikwaffe für Nahkampfeinsätze."
 
-L["csgo_description_usp"] = "Ein Fanfavorit aus Counter-Strike: Source, die Silenced USP Pistol hat einen abnehmbaren Schalldämpfer, der Schüssen weniger Rückstoß gibt und gleichzeitig auffällige Geräusche unterdrückt.\nKann den Schalldämpfer ein- und ausschalten. Solange er nicht unterdrückt ist, Die Waffe verursacht mehr Schaden, hat aber eine höhere Streuung."
+L["csgo_description_usp"] = "Die schallgedämpfte USP-Pistole, ein Fan-Favorit aus Counter-Strike: Source, hat einen abnehmbaren Schalldämpfer, der den Rückschlag bei Schüssen reduziert und außerdem aufsehenerregende Geräusche vermeidet." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>." -- NEW; INCOMPLETE
 
-L["csgo_description_xm1014"] = "Die XM1014 ist eine leistungsstarke automatische Schrotflinte mit der Fähigkeit, einen Raum schnell mit Blei zu streichen."
+L["csgo_description_xm1014"] = "Die XM1014 ist eine schlagkräftige, vollautomatische Schrotflinte, die ihren höheren Preis mit der Fähigkeit rechtfertigt, einen Raum schnell mit Blei zu füllen."
 
-L["csgo_description_zeus"] = "Perfekt für Hinterhalte aus nächster Nähe und Begegnungen in geschlossenen Gebieten, der Einzelschuss x27 Zeus ist in der Lage, einen Feind mit einem einzigen Treffer außer Gefecht zu setzen."
+L["csgo_description_zeus"] = "Die Einzelschusswaffe x27 Zeus kann einen Gegner mit einem einzigen Treffer außer Gefecht setzen und ist perfekt für Überfälle aus kurzer Distanz und in geschlossenen Bereichen geeignet."
 
 ////////////////////////////////////// Attachments
 /////////////////// Attachment Folders
@@ -537,8 +537,8 @@ L["csgo_optic_acog.printname"] = "M110-Zielfernrohr"
 L["csgo_optic_acog.compactname"] = "M110"
 -- L["csgo_optic_acog.description"] = "Long-range sniper scope with <color=100,255,100>8-12x magnification</color>."
 
-L["csgo_optic_acog_1.printname"] = "SIG556-Zielfernrohr"
-L["csgo_optic_acog_1.compactname"] = "SIG556"
+L["csgo_optic_acog_1.printname"] = "SG 553-Zielfernrohr"
+L["csgo_optic_acog_1.compactname"] = "SG 553"
 -- L["csgo_optic_acog_1.description"] = "Medium-range combat optic with <color=100,255,100>3x magnification</color>.\nIntended for use on the SIG556.\nComes with backup iron sights."
 
 L["csgo_optic_acog_2.printname"] = "AUG-Zielfernrohr"
