@@ -18,7 +18,7 @@ local sharedcode = {
 
 ATT = {}
 
-ATT.PrintName = "Alternative View"
+ATT.PrintName = "Alternative View (Pistol)"
 
 table.Merge(ATT, sharedcode)
 
@@ -41,7 +41,7 @@ ARC9.LoadAttachment(ATT, "csgo_pistols_view")
 ------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Alternative View"
+ATT.PrintName = "Alternative View (Pistol II)"
 
 table.Merge(ATT, sharedcode)
 
@@ -64,7 +64,7 @@ ARC9.LoadAttachment(ATT, "csgo_pistols_view2")
 ------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Alternative View"
+ATT.PrintName = "Alternative View (Pistol III)"
 
 table.Merge(ATT, sharedcode)
 
@@ -89,16 +89,129 @@ ARC9.LoadAttachment(ATT, "csgo_pistols_view3")
 
 ////////////////////////////////////// Beretta
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "L Barrel & Slide"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m9_slide_long.png", "mips smooth")
+ATT.Category = "go_elite_s" -- "go_elite_slide" for Dual
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0, -3.325, 9.175) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_elite_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "G Barrel & Slide"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+ATT.SpeedMult = 1.025
+
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
+ATT.Category = "go_elite_s"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0, -3.325, 7.35) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.75, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.75, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_elite_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Officer Slide"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+ATT.RPMMult = 1.25
+
+ATT.RecoilMult = 1.25
+ATT.VisualRecoilMult = 1.25
+ATT.RecoilAutoControlMult = 0.75
+
+table.Merge(ATT, sharedcode)
+
+-- ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
+ATT.Category = "go_elite_s"
+
+ARC9.LoadAttachment(ATT, "csgo_elite_slide_p38")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Raffica Conversion"
+
+ATT.Firemodes = { { Mode = 3 } }
+ATT.RunawayBurst = true
+ATT.PostBurstDelay = 0.275
+ATT.RPMAdd = 600
+
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
+ATT.RecoilMultRecoil = 3
+ATT.RecoilAutoControlAddShooting = -0.49
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m9_slide_auto.png", "mips smooth")
+ATT.Category = "go_elite_s"
+
+ATT.Model = "models/weapons/csgo/atts/grip_kac.mdl"
+ATT.ModelBodygroups = "1"
+ATT.ModelOffset = Vector(0, 0.3, -1)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.LHIK = true
+ATT.LHIK_Priority = 10
+
+ARC9.LoadAttachment(ATT, "csgo_elite_slide_raffica")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "24-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 9
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_elite_mag_s"
+
+ARC9.LoadAttachment(ATT, "csgo_elite_mag_24")
 ------------------------------------------------------------------------
 
 

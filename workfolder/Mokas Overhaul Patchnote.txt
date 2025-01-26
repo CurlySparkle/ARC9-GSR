@@ -6,7 +6,6 @@ A gigantic overhaul update is now available for Gunsmith Reloaded.
 	[*] All weapons have altered spread and recoil values and has their visual recoil either removed or adjusted
 	[*] All attachments are remade from scratch, including names, descriptions and stats
 	[*] Localizations have been updated, including altered attachment names and descriptions
-	[*] [i]Português brasileiro[/i] & [i]tiếng Việt[/i]!
 [/list]
 And more!
 
@@ -82,7 +81,6 @@ And more!
 [u]Dual-Wielded[/u]
 [b]ALL[/b]: Rebalanced stats to be more in-line with their single-use counterparts; this includes, but is not limited to: recoil, spread, damage and range. Additionally, all dual-wielded weapons can no longer utilize peeking.
 
-[b]Beretta[/b]:
 [b]CZ75-Auto[/b]: Removed 'Both' firing mode; Replaced with standard left-right Auto with a 50% RPM buff
 [b]Glock-18[/b]: Tweaked the 3-Burst mode to now have the same tweaks as the base Glock-18
 [b]MP9[/b]: Removed 'Both' firing mode; Replaced with standard left-right Auto with a 25% RPM buff | Moved to SMG slot
@@ -149,16 +147,40 @@ Added two new sets of attachment integrations:
 	[*] Perk: [u]Enhanced Burst[/u] perk can now only be equipped onto assault rifles* and submachine guns.
 		∟ *Excluding the M4A1-S
 
-	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is.
+	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is. Now uses default reload animations regardless of magazine attachment (excluding drum).
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
 	[*] R8 Revolver: [u]6-Round Cylinder[/u] now alters how quickly you can fire the weapon again while aiming. Only applied to the single weapon.
 	[*] P90: The [u]20-Round[/u] and [u]30-Round 5.56x45mm NATO[/u] magazines now change the damage, range and RPM to be closer to the M4A4.
 	[*] M3: The [u]7-Round Tube[/u] attachment now correctly requires the [u]Extended Barrel[/u] attachment.
+	[*] MP5-SD: Now uses default CS:GO reload animations.
 	[*] XM1014: The [u]Breacher Barrel[/u] now requires any lower capacity magazine attachment.
 [/list]
 
 [b][u]Other[/u][/b]
 [list]
-	[*] Added [b]Brazilian Portuguese[/b] translations thanks to [b]AJIsUnbreakable[/b].
-	[*] Added [b]Vietnamese[/b] translations thanks to [b]annesting[/b].
+	[*] Added support for more languages:
+		[list]
+			[*] [b]Bulgarian[/b]
+			[*] [b]Czech[/b]
+			[*] [b]Danish[/b]
+			[*] [b]Greek[/b]
+			[*] [b]Finnish[/b]
+			[*] [b]French[/b]
+			[*] [b]Hungarian[/b]
+			[*] [b]Italian[/b]
+			[*] [b]Japanese[/b]
+			[*] [b]Korean[/b]
+			[*] [b]Dutch[/b]
+			[*] [b]Norwegian[/b]
+			[*] [b]Polish[/b]
+			[*] [b]Brazilian Portuguese[/b] - [b]AJIsUnbreakable[/b]
+			[*] [b]Portuguese[/b]
+			[*] [b]Thai[/b]
+			[*] [b]Turkish[/b]
+			[*] [b]Ukrainian[/b]
+			[*] [b]Vietnamese[/b]
+			[*] [b]Traditional Chinese[/b]
+			[*] [b]Simplified Chinese[/b]
+		[/list]
 [/list]
+[i][b]Note[/b]: Most languages will only have base CS:GO weapon names and descriptions translated, as well as spawn menu categories. If you'd like to contribute and fully localize GSR, then contact us.[/i]

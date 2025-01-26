@@ -523,32 +523,16 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-            {2,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 7.15), } }
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-            {3,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 5.5) } },
-    },
-    ["slide_factory"] = {
-        Bodygroups = {
-            {3,3},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 6.5), } }
-    },
+    ["csgo_cz_mag_ext"] = { Bodygroups = { { 1, 1 }, { 2, 2 } } },
+    ["csgo_cz_slide_long"] = { Bodygroups = { { 3, 1 } } },
+    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 7.15), } }
+    ["csgo_cz_slide_short"] = { Bodygroups = { { 3, 2 } } },
+    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 5.5) } },
+    ["csgo_cz_slide_factory"] = { Bodygroups = { { 3, 3 } } },
+    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 6.5), } }
+
     ["movekilltrack"] = {
-    AttPosMods = { [15] = { Pos = Vector(0.25, -5, 0) } },
+		AttPosMods = { [15] = { Pos = Vector(0.25, -5, 0) } },
     },
 }
 

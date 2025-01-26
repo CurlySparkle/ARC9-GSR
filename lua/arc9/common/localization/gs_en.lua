@@ -1,5 +1,7 @@
 L = {} -- English strings by the original team; Tweaked by Moka
 
+IncludeCS("csgostrings/wpnstring-" .. "en" .. ".lua")
+
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
 L["csgo_trivia_country"] = "Country of Origin1"
@@ -56,19 +58,13 @@ L["csgo_trivia_authors"] = "Authors"
 L["csgo_trivia_assets"] = "Assets"
 
 /////////////////// TO BE REMOVED - DO NOT TRANSLATE
-L["csgo_trivia_mechanism"] = "Mechanism" -- TO BE REMOVED
-
-L["csgo_trivia_weight_loaded"] = "Weight (Loaded)" -- TO BE REMOVED
-
-L["csgo_trivia_muzzle_velocity"] = "Muzzle Velocity" -- TO BE REMOVED
-
-L["csgo_trivia_muzzle_energy"] = "Muzzle Energy" -- TO BE REMOVED
-
-L["csgo_trivia_designer"] = "Designer" -- TO BE REMOVED
-
-L["csgo_trivia_explosive_mass"] = "Explosive Mass" -- TO BE REMOVED
-
-L["csgo_trivia_explosive_type"] = "Explosive Type" -- TO BE REMOVED
+L["csgo_trivia_mechanism"] = "Mechanism"
+L["csgo_trivia_weight_loaded"] = "Weight (Loaded)"
+L["csgo_trivia_muzzle_velocity"] = "Muzzle Velocity"
+L["csgo_trivia_muzzle_energy"] = "Muzzle Energy"
+L["csgo_trivia_designer"] = "Designer"
+L["csgo_trivia_explosive_mass"] = "Explosive Mass"
+L["csgo_trivia_explosive_type"] = "Explosive Type"
 
 /////////////////// Firing Modes
 L["csgo_firemode_both"] = "BOTH"
@@ -92,13 +88,13 @@ L["csgo_category_weapon_sniper"] = "Sniper Rifles"
 L["csgo_category_weapon_smg"] = "SMGs"
 
 /////////////////// Weapon Categories
-L["csgo_category_slot_0"] = "0. Dual"
-L["csgo_category_slot_1"] = "1. Pistol"
-L["csgo_category_slot_2"] = "2. Heavy"
-L["csgo_category_slot_3"] = "3. SMG"
-L["csgo_category_slot_4"] = "4. Rifle"
-L["csgo_category_slot_5"] = "5. Grenades"
-L["csgo_category_slot_6"] = "6. Miscellaneous"
+L["csgo_category_slot_0"] = "0. Dual Weapons"
+L["csgo_category_slot_1"] = "1. " .. csstring["cat_pistols"]
+L["csgo_category_slot_2"] = "2. " .. csstring["cat_heavy"]
+L["csgo_category_slot_3"] = "3. " .. csstring["cat_smg"]
+L["csgo_category_slot_4"] = "4. " .. csstring["cat_rifles"]
+L["csgo_category_slot_5"] = "5. " .. csstring["cat_grenades"]
+L["csgo_category_slot_6"] = "6. " .. csstring["cat_gear"]
 
 /////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Assault Rifle"
@@ -120,14 +116,152 @@ L["csgo_class_weapon_special"] = "Special"
 
 ////////////////////////////////////// Weapons
 /////////////////// Weapon Display Names
-L["csgo_weapon_ak47"] = "AK-47"
-L["csgo_weapon_ak47_rpk"] = "RPK"
-L["csgo_weapon_ak47_ak74"] = "AK-74"
-L["csgo_weapon_ak47_rpk74"] = "RPK-74"
-L["csgo_weapon_ak47_aks74u"] = "AKS-74U"
-L["csgo_weapon_ak47_ak101"] = "AK-101"
-L["csgo_weapon_ak47_rpk201"] = "RPK-201"
+L["csgo_weapon_ak47"] = csstring["ak47"].name
+L["csgo_weapon_aug"] = csstring["aug"].name
+L["csgo_weapon_awp"] = csstring["awp"].name
+L["csgo_weapon_bizon"] = csstring["bizon"].name
+L["csgo_weapon_cz75"] = csstring["cz75"]
+L["csgo_weapon_deagle"] = csstring["deserteagle"].name
+L["csgo_weapon_elite"] = csstring["elites"].name
+L["csgo_weapon_famas"] = csstring["famas"].name
+L["csgo_weapon_fiveseven"] = csstring["fiveseven"].name
+L["csgo_weapon_g1sg3"] =csstring["g3sg1"].name
+L["csgo_weapon_galilar"] = csstring["galilar"].name
+L["csgo_weapon_glock"] = csstring["glock18"].name
 
+L["csgo_weapon_knife_shield"] = csstring["shield"].name
+
+L["csgo_weapon_knife_ct"] = csstring["knife"].name .. " (CT)" -- Counter-Terrorist Knife
+L["csgo_weapon_knife_ct_gold"] = csstring["knife_gg"] .. " (CT)"
+
+L["csgo_weapon_knife_t"] = csstring["knife"].name .. " (T)" -- Terrorist Knife
+L["csgo_weapon_knife_t_gold"] =csstring["knife_gg"] .. " (T)"
+
+L["csgo_weapon_knife_ghost"] = csstring["knife_ghost"].name
+
+L["csgo_weapon_knife_bayonet"] = csstring["knifebayonet"].name
+L["csgo_weapon_knife_flip"] = csstring["knifeflip"].name
+L["csgo_weapon_knife_gut"] = csstring["knifegut"].name
+L["csgo_weapon_knife_css"] = csstring["knifecss"].name
+L["csgo_weapon_knife_m9"] = csstring["knifem9"].name
+L["csgo_weapon_knife_karam"] = csstring["knifekaram"].name
+L["csgo_weapon_knife_tactical"] = csstring["knifetactical"].name
+L["csgo_weapon_knife_butterfly"] = csstring["knife_butterfly"].name
+L["csgo_weapon_knife_falchion"] = csstring["knife_falchion_advanced"].name
+L["csgo_weapon_knife_push"] = csstring["knife_push"].name
+L["csgo_weapon_knife_bowie"] = csstring["knife_survival_bowie"].name
+L["csgo_weapon_knife_cord"] = csstring["knife_cord"].name
+L["csgo_weapon_knife_canis"] = csstring["knife_canis"].name
+L["csgo_weapon_knife_ursus"] = csstring["knife_ursus"].name
+L["csgo_weapon_knife_gypsy"] = csstring["knife_gypsy_jackknife"].name
+L["csgo_weapon_knife_outdoor"] = csstring["knife_outdoor"].name
+L["csgo_weapon_knife_widowmaker"] = csstring["knife_widowmaker"].name
+L["csgo_weapon_knife_stiletto"] = csstring["knife_stiletto"].name
+L["csgo_weapon_knife_skeleton"] = csstring["knife_skeleton"].name
+
+L["csgo_weapon_m4a1"] = csstring["m4a1_silencer"].name
+L["csgo_weapon_m4a4"] = csstring["m4a1"]
+L["csgo_weapon_m249"] = csstring["m249"].name
+L["csgo_weapon_mac10"] = csstring["mac10"].name
+L["csgo_weapon_mag7"] = csstring["mag7"].name
+L["csgo_weapon_mp5sd"] = csstring["mp5sd"].name
+L["csgo_weapon_mp7"] = csstring["mp7"].name
+L["csgo_weapon_mp9"] = csstring["mp9"].name
+
+L["csgo_weapon_nade_breach"] = csstring["breachcharge"]
+L["csgo_weapon_nade_c4"] = csstring["c4"].name
+L["csgo_weapon_nade_decoy"] = csstring["decoy"]
+L["csgo_weapon_nade_flashbang"] = csstring["flashbang"].name
+L["csgo_weapon_nade_frag"] = csstring["he_grenade"].name
+L["csgo_weapon_nade_incendiary"] = csstring["incgrenade"]
+L["csgo_weapon_nade_mines"] = csstring["bumpmine"]
+L["csgo_weapon_nade_molotov"] = csstring["molotov"].name
+L["csgo_weapon_nade_smoke"] = csstring["smoke_grenade"].name
+L["csgo_weapon_nade_sonar"] = csstring["tagrenade"]
+
+L["csgo_weapon_negev"] = csstring["negev"].name
+L["csgo_weapon_nova"] = csstring["nova"].name
+L["csgo_weapon_p90"] = csstring["p90"].name
+L["csgo_weapon_p250"] = csstring["p250"].name
+L["csgo_weapon_p2000"] = csstring["hkp2000"].name
+L["csgo_weapon_r8"] = csstring["revolver"].name
+L["csgo_weapon_sawedoff"] = csstring["sawedoff"].name
+L["csgo_weapon_scar20"] = csstring["scar20"].name
+L["csgo_weapon_sg556"] = csstring["sg556"]
+L["csgo_weapon_ssg08"] = csstring["ssg08"].name
+L["csgo_weapon_tec9"] = csstring["tec9"].name
+L["csgo_weapon_ump"] = csstring["ump45"].name
+L["csgo_weapon_usp"] = csstring["usp_silencer"].name
+L["csgo_weapon_xm1014"] = csstring["xm1014"].name
+L["csgo_weapon_zeus"] = csstring["taser"].name
+
+/////////////////// Weapon Descriptions
+L["csgo_description_ak47"] = csstring["ak47"].desc
+L["csgo_description_aug"] = csstring["aug"].desc
+L["csgo_description_awp"] = csstring["awp"].desc
+L["csgo_description_bizon"] = csstring["bizon"].desc
+L["csgo_description_cz75"] = csstring["cz75a"]
+L["csgo_description_deagle"] = csstring["deserteagle"].desc
+L["csgo_description_elite"] = csstring["elites"].desc
+L["csgo_description_famas"] = csstring["famas"].desc
+L["csgo_description_fiveseven"] = csstring["fiveseven"].desc
+L["csgo_description_g1sg3"] = csstring["g3sg1"].desc
+L["csgo_description_galilar"] = csstring["galilar"].desc
+L["csgo_description_glock"] = csstring["glock18"].desc
+L["csgo_description_knife_ct"] = csstring["knife"].desc
+L["csgo_description_knife_ghost"] = csstring["knife_ghost"].desc
+L["csgo_description_knife_shield"] = csstring["shield"].desc
+L["csgo_description_knife_bayonet"] = csstring["knifebayonet"].desc
+L["csgo_description_knife_flip"] = csstring["knifeflip"].desc
+L["csgo_description_knife_gut"] = csstring["knifegut"].desc
+L["csgo_description_knife_css"] = csstring["knifecss"].desc
+L["csgo_description_knife_m9"] = csstring["knifem9"].desc
+L["csgo_description_knife_karam"] = csstring["knifekaram"].desc
+L["csgo_description_knife_tactical"] = csstring["knifetactical"].desc
+L["csgo_description_knife_butterfly"] = csstring["knife_butterfly"].desc
+L["csgo_description_knife_falchion"] = csstring["knife_falchion_advanced"].desc
+L["csgo_description_knife_push"] = csstring["knife_push"].desc
+L["csgo_description_knife_bowie"] = csstring["knife_survival_bowie"].desc
+L["csgo_description_knife_cord"] = csstring["knife_cord"].desc
+L["csgo_description_knife_canis"] = csstring["knife_canis"].desc
+L["csgo_description_knife_ursus"] = csstring["knife_ursus"].desc
+L["csgo_description_knife_gypsy"] = csstring["knife_gypsy_jackknife"].desc
+L["csgo_description_knife_outdoor"] = csstring["knife_outdoor"].desc
+L["csgo_description_knife_widowmaker"] = csstring["knife_widowmaker"].desc
+L["csgo_description_knife_stiletto"] = csstring["knife_stiletto"].desc
+L["csgo_description_knife_skeleton"] = csstring["knife_skeleton"].desc
+L["csgo_description_m4a1"] = csstring["m4a1_silencer"].desc .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>." -- CUSTOM TEXT ADDED
+L["csgo_description_m4a4"] = csstring["m4a4"]
+L["csgo_description_m249"] = csstring["m249"].desc
+L["csgo_description_mac10"] = csstring["mac10"].desc
+L["csgo_description_mag7"] = csstring["mag7"].desc
+L["csgo_description_mp5sd"] = csstring["mp5sd"].desc
+L["csgo_description_mp7"] = csstring["mp7"].desc
+L["csgo_description_mp9"] = csstring["mp9"].desc
+L["csgo_description_nade_c4"] = csstring["c4"].desc
+L["csgo_description_nade_decoy"] = csstring["decoy_grenade"]
+L["csgo_description_nade_flashbang"] = csstring["flashbang"].desc
+L["csgo_description_nade_frag"] = csstring["he_grenade"].desc
+L["csgo_description_nade_incendiary"] = csstring["incindiary_grenade"]
+L["csgo_description_nade_molotov"] = csstring["molotov"].desc
+L["csgo_description_nade_smoke"] = csstring["smoke_grenade"].desc
+L["csgo_description_negev"] = csstring["negev"].desc
+L["csgo_description_nova"] = csstring["nova"].desc
+L["csgo_description_p90"] = csstring["p90"].desc
+L["csgo_description_p250"] = csstring["p250"].desc
+L["csgo_description_p2000"] = csstring["hkp2000"].desc
+L["csgo_description_r8"] = csstring["revolver"].desc
+L["csgo_description_sawedoff"] = csstring["sawedoff"].desc
+L["csgo_description_scar20"] = csstring["scar20"].desc
+L["csgo_description_sg556"] = csstring["sg553"]
+L["csgo_description_ssg08"] = csstring["ssg08"].desc
+L["csgo_description_tec9"] = csstring["tec9"].desc
+L["csgo_description_ump"] = csstring["ump45"].desc
+L["csgo_description_usp"] = csstring["usp_silencer"].desc .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>." -- CUSTOM TEXT ADDED
+L["csgo_description_xm1014"] = csstring["xm1014"].desc
+L["csgo_description_zeus"] = csstring["taser"].desc
+
+/////////////////// Unofficial Weapon Names
 L["csgo_weapon_akimbo_cz75"] = "Dual CZ75-Auto"
 L["csgo_weapon_akimbo_deagle"] = "Dual Desert Eagle"
 L["csgo_weapon_akimbo_fiveseven"] = "Dual Five-SeveN"
@@ -135,322 +269,99 @@ L["csgo_weapon_akimbo_glock"] = "Dual Glock-18"
 L["csgo_weapon_akimbo_mp9"] = "Dual MP9"
 L["csgo_weapon_akimbo_p250"] = "Dual P250"
 L["csgo_weapon_akimbo_p2000"] = "Dual P2000"
-
 L["csgo_weapon_akimbo_r8"] = "Dual R8 Revolvers"
-L["csgo_weapon_akimbo_r8_357"] = "Dual .357 Revolvers"
-
 L["csgo_weapon_akimbo_sawnoff"] = "Dual Sawed-Offs"
 L["csgo_weapon_akimbo_taser"] = "Dual Zeus x27"
 L["csgo_weapon_akimbo_usp"] = "Dual USP"
 
-L["csgo_weapon_aug"] = "AUG"
+L["csgo_weapon_elite_single"] = "Beretta"
+
+L["csgo_weapon_galil"] = "Galil SAR"
+
+L["csgo_weapon_m3"] = "M3"
+L["csgo_weapon_mp5"] = "MP5"
+
+L["csgo_weapon_nade_claymores"] = "Claymore"
+L["csgo_weapon_nade_landmines"] = "Landmine"
+L["csgo_weapon_nade_rock"] = "Rock"
+
+L["csgo_weapon_scar17"] = "SCAR-17"
+L["csgo_weapon_scout"] = "Scout"
+
+/////////////////// Custom Weapon Names
+L["csgo_weapon_ak47_rpk"] = "RPK"
+L["csgo_weapon_ak47_ak74"] = "AK-74"
+L["csgo_weapon_ak47_rpk74"] = "RPK-74"
+L["csgo_weapon_ak47_aks74u"] = "AKS-74U"
+L["csgo_weapon_ak47_ak101"] = "AK-101"
+L["csgo_weapon_ak47_rpk201"] = "RPK-201"
+
+L["csgo_weapon_akimbo_r8_357"] = "Dual .357 Revolvers"
+
 L["csgo_weapon_aug_para"] = "AUG Para"
 L["csgo_weapon_aug_hbar"] = "AUG HBAR"
 
-L["csgo_weapon_awp"] = "AWP"
-
-L["csgo_weapon_bizon"] = "PP-Bizon"
-L["csgo_weapon_bizon_vityaz"] = "PP-Vityaz"
-
-L["csgo_weapon_cz75"] = "CZ75-Auto"
-L["csgo_weapon_deagle"] = "Desert Eagle"
-L["csgo_weapon_elite"] = "Dual Berettas"
-L["csgo_weapon_elite_single"] = "Beretta"
-L["csgo_weapon_famas"] = "FAMAS"
-L["csgo_weapon_fiveseven"] = "Five-SeveN"
-
-L["csgo_weapon_g1sg3"] = "G3SG1"
 L["csgo_weapon_g1sg3_g3sg1sd"] = "G3SG1SD"
 L["csgo_weapon_g1sg3_g3a3"] = "G3A3"
 L["csgo_weapon_g1sg3_g3ka4"] = "G3KA4"
 L["csgo_weapon_g1sg3_smg"] = "MP3"
 
-L["csgo_weapon_galil"] = "Galil SAR"
-L["csgo_weapon_galilar"] = "Galil AR"
+L["csgo_weapon_bizon_vityaz"] = "PP-Vityaz"
 
-L["csgo_weapon_glock"] = "Glock-18"
 L["csgo_weapon_glock_18c"] = "Glock-18C"
 
-L["csgo_weapon_knife_ct"] = "CT Knife"
-L["csgo_weapon_knife_ct_gold"] = "Golden CT Knife"
-
-L["csgo_weapon_knife_shield"] = "Riot Shield"
-
-L["csgo_weapon_knife_t"] = "T Knife"
-L["csgo_weapon_knife_t_gold"] = "Golden T Knife"
-
-L["csgo_weapon_knife_ghost"] = "Spectral Shiv"
-
-L["csgo_weapon_knife_bayonet"] = "Bayonet"
-L["csgo_weapon_knife_flip"] = "Flip Knife"
-L["csgo_weapon_knife_gut"] = "Gut Knife"
-L["csgo_weapon_knife_css"] = "Classic Knife"
-L["csgo_weapon_knife_m9"] = "M9 Bayonet"
-L["csgo_weapon_knife_karam"] = "Karambit"
-L["csgo_weapon_knife_tactical"] = "Huntsman Knife"
-L["csgo_weapon_knife_butterfly"] = "Butterfly Knife"
-L["csgo_weapon_knife_falchion"] = "Falchion Knife"
-L["csgo_weapon_knife_push"] = "Shadow Daggers"
-L["csgo_weapon_knife_bowie"] = "Bowie Knife"
-L["csgo_weapon_knife_cord"] = "Paracord Knife"
-L["csgo_weapon_knife_canis"] = "Survival Knife"
-L["csgo_weapon_knife_ursus"] = "Ursus Knife"
-L["csgo_weapon_knife_gypsy"] = "Navaja Knife"
-L["csgo_weapon_knife_outdoor"] = "Nomad Knife"
-L["csgo_weapon_knife_widowmaker"] = "Talon Knife"
-L["csgo_weapon_knife_stiletto"] = "Stiletto Knife"
-L["csgo_weapon_knife_skeleton"] = "Skeleton Knife"
-
-L["csgo_weapon_m3"] = "M3"
-
-L["csgo_weapon_m4a1"] = "M4A1-S"
 L["csgo_weapon_m4a1_m16a3"] = "M16A3-S"
 
-L["csgo_weapon_m4a4"] = "M4A4"
 L["csgo_weapon_m4a4_smg"] = "M4A4 9mm SMG"
 L["csgo_weapon_m4a4_m16a3"] = "M16A3"
 L["csgo_weapon_m4a4_m16a3_smg"] = "M16A3 9mm SMG"
 L["csgo_weapon_m4a4_sr25"] = "SR-25"
 
-L["csgo_weapon_m249"] = "M249"
 L["csgo_weapon_m249_para"] = "M249 Para"
 
-L["csgo_weapon_mac10"] = "MAC-10"
-L["csgo_weapon_mag7"] = "MAG-7"
-
-L["csgo_weapon_mp5"] = "MP5"
 L["csgo_weapon_mp5_10"] = "MP5/10"
 
-L["csgo_weapon_mp5sd"] = "MP5-SD"
 L["csgo_weapon_mp5sd_10"] = "MP5/10-SD"
 
-L["csgo_weapon_mp7"] = "MP7"
-L["csgo_weapon_mp9"] = "MP9"
-
-L["csgo_weapon_nade_breach"] = "Breach Charge"
-L["csgo_weapon_nade_c4"] = "C4 Explosive"
-L["csgo_weapon_nade_claymores"] = "Claymore"
-L["csgo_weapon_nade_decoy"] = "Decoy Grenade"
-L["csgo_weapon_nade_flashbang"] = "Flashbang"
-L["csgo_weapon_nade_frag"] = "Frag Grenade"
-L["csgo_weapon_nade_incendiary"] = "Incendiary Grenade"
-L["csgo_weapon_nade_landmines"] = "Landmine"
-L["csgo_weapon_nade_mines"] = "Bump Mines"
-L["csgo_weapon_nade_molotov"] = "Molotov"
-L["csgo_weapon_nade_rock"] = "Rock"
-L["csgo_weapon_nade_smoke"] = "Smoke Grenade"
-L["csgo_weapon_nade_sonar"] = "Tactical Awareness Grenade"
-
-L["csgo_weapon_negev"] = "Negev"
-L["csgo_weapon_nova"] = "Nova"
-L["csgo_weapon_p90"] = "P90"
-L["csgo_weapon_p250"] = "P250"
-L["csgo_weapon_p2000"] = "P2000"
-
-L["csgo_weapon_r8"] = "R8 Revolver"
 L["csgo_weapon_r8_357"] = ".357 Revolver"
 
-L["csgo_weapon_sawedoff"] = "Sawed-Off"
 L["csgo_weapon_sawedoff_r870"] = "Remington 870"
 
-L["csgo_weapon_scar17"] = "SCAR-17"
 L["csgo_weapon_scar17_bp"] = "SCAR-BP-17"
 L["csgo_weapon_scar17_16"] = "SCAR-16"
 L["csgo_weapon_scar17_bp_16"] = "SCAR-BP-16"
 
-L["csgo_weapon_scar20"] = "SCAR-20"
-L["csgo_weapon_scout"] = "Scout"
-
-L["csgo_weapon_sg556"] = "SG 553"
 L["csgo_weapon_sg556_sg552"] = "SG 552 Commando"
 L["csgo_weapon_sg556_sg541"] = "SG 541 Prototype"
 
-L["csgo_weapon_ssg08"] = "SSG 08"
-L["csgo_weapon_tec9"] = "Tec-9"
-
-L["csgo_weapon_ump"] = "UMP-45"
 L["csgo_weapon_ump_9"] = "UMP-9"
 L["csgo_weapon_ump_usc"] = "USC-45"
 L["csgo_weapon_ump_usc_9"] = "USC-9"
 
-L["csgo_weapon_usp"] = "USP-S"
-L["csgo_weapon_xm1014"] = "XM1014"
-L["csgo_weapon_zeus"] = "Zeus x27"
-
-/////////////////// Weapon Descriptions
-L["csgo_description_ak47"] = "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire."
-
+/////////////////// Unofficial Weapon Descriptions
 L["csgo_description_akimbo_cz75"] = "A pair of automatic pistols. Its low fire rate makes it a well rounded akimbo option."
-
 L["csgo_description_akimbo_deagle"] = "Two very expensive but powerful Desert Eagles, one in each hand, allowing the user to break not only their wrists when firing, but also put a large hole in whatever they are aimed at."
-
 L["csgo_description_akimbo_fiveseven"] = "Highly accurate and armor-piercing, the pricy Five-Seven is a slow-loader that compensates with a generous 20-round magazine and forgiving recoil."
-
 L["csgo_description_akimbo_glock"] = "A pair of Glocks means twice the capacity and a twice as lethal burst fire."
-
 L["csgo_description_akimbo_mp9"] = "A pair of automatic SMGs providing very impressive firepower."
-
 L["csgo_description_akimbo_p250"] = "A pair of low-recoil handguns with a high rate of fire and low cost."
-
 L["csgo_description_akimbo_p2000"] = "A pair of accurate and controllable German-made P2000s. Serviceable first-round pistols that work best against unarmored opponents."
-
 L["csgo_description_akimbo_r8"] = "A pair of R8 Revolvers that deliver highly accurate and powerful rounds at the expense of lengthy trigger-pulls."
-
 L["csgo_description_akimbo_sawnoff"] = "If one shotgun isn't enough for the job, simply bring another. Fire two weapons alternatingly for faster follow up shots, or both at the same time to maximize lethality."
-
 L["csgo_description_akimbo_taser"] = "A pair of Zeus x27 single-shot tasers capable of incapacitating an enemy in a single hit.\n\nTwice the power, twice the police brutality!"
-
 L["csgo_description_akimbo_usp"] = "A pair of the fan favorite handgun from older Counter-Strikes, the USP offers low recoil, yet reliable damage output."
-
-L["csgo_description_aug"] = "Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire."
-
-L["csgo_description_awp"] = "High risk and high reward, the infamous AWP is recognizable by its signature report and one-shot, one-kill policy."
-
-L["csgo_description_bizon"] = "The Bizon SMG is low-damage, but offers a uniquely designed high-capacity drum magazine that reloads quickly."
-
-L["csgo_description_cz75"] = "A fully automatic variant of the CZ75, the CZ75-Auto is the ideal short-term choice for turning the tables and gaining your opponents weapon. But with very little ammo in the magazine, strong trigger discipline is required."
-
-L["csgo_description_deagle"] = "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range."
-
-L["csgo_description_elite"] = "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once."
-
-L["csgo_description_elite_single"] = "Losing one large-mag Beretta will increase accuracy and decrease load times. On the bright side, you'll get to fire one large-mag Beretta instead."
-
-L["csgo_description_famas"] = "A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs."
-
-L["csgo_description_fiveseven"] = "Highly accurate and armor-piercing, the pricy Five-Seven is a slow-loader that compensates with a generous 20-round magazine and forgiving recoil."
-
-L["csgo_description_g1sg3"] = "The pricy G3SG1 lowers movement speed considerably but compensates with a higher rate of fire than other sniper rifles."
-
 L["csgo_description_galil"] = "A classic terrorist-exclusive assault rifle, the Galil was a serviceable weapon for medium to long-range combat."
-
-L["csgo_description_galilar"] = "A less expensive option among the terrorist-exclusive assault rifles, the Galil AR is a serviceable weapon in medium to long-range combat." -- NEW
-
-L["csgo_description_glock"] = "The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts."
-
-L["csgo_description_knife_ct"] = "Quiet and always available, the knife has a fast, low-damage primary attack and a slow, high-damage secondary attack. A backstab will earn quiet players an instant kill."
-
-L["csgo_description_knife_ghost"] = "Ghosts love ghost knives. When they get their hands on one, look out! They'll try stab you first chance they get. Too bad they are a ghost and ghost knives can't hurt people...."
-
-L["csgo_description_knife_shield"] = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers."
-
-L["csgo_description_knife_bayonet"] = "Relatively unchanged in its design since World War II, the bayonet still retains a place in modern military strategy. Bayonet charges have continued to be effective as recently as the second Gulf War and the war in Afghanistan."
-
-L["csgo_description_knife_flip"] = "Flip knives sport a Persian-style back-swept blade with an acute point.  While the point itself may be fragile, the overall design of the flip knife's design is surprisingly durable."
-
-L["csgo_description_knife_gut"] = "The most notable feature of a gut knife is the gut hook on the spine of the blade.  Originally popularized as an aid for field dressing game, the gut hook is also effective at  cutting through fibrous materials like rope, webbing, or safety belts with ease."
-
-L["csgo_description_knife_css"] = "A classic of the Counter-Strike series, the edge of this knife is press-fit Stellite perfectly held in place due to its precise fit with the titanium on the blade's cheek and spine. The handle is fossilized mastodon ivory held in a carbon fibre pocket."
-
-L["csgo_description_knife_m9"] = "This is the M-9 bayonet.  Originally intended to be mounted on a rifle, it is also well suited to close-quarters combat."
-
-L["csgo_description_knife_karam"] = "With its curved blade mimicking a tiger's claw, the karambit was developed as part of the southeast Asian martial discipline of silat. The knife is typically used with a reverse grip, with the finger ring on the index finger."
-
-L["csgo_description_knife_tactical"] = "A knife designed for modern tactical uses, the blade is well suited for a range of both combat and utilitarian needs.  The unique Tanto point allows for maximum penetration through even the toughest of surfaces."
-
-L["csgo_description_knife_butterfly"] = "This is a custom-designed balisong, commonly known as a butterfly knife. The defining characteristic of this weapon is the fan-like opening of a freely pivoting blade, allowing rapid deployment or concealment. As a result, butterfly knives are outlawed in many countries."
-
-L["csgo_description_knife_falchion"] = "A modern homage to a falchion sword, this clip point blade has a curved edge."
-
-L["csgo_description_knife_push"] = "Designed for efficient brutality, using a push dagger is as simple as throwing a punch or two."
-
-L["csgo_description_knife_bowie"] = "This full-tang sawback Bowie knife is designed for heavy use in brutal survival situations."
-
-L["csgo_description_knife_cord"] = "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord."
-
-L["csgo_description_knife_canis"] = "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts."
-
-L["csgo_description_knife_ursus"] = "This tanto-style survival knife features a faceted blade and full tang, complete with impact pommel. No fuss, no moving parts - just a reliable blade that's ready to work."
-
-L["csgo_description_knife_gypsy"] = "This marble-enamel-handled flip knife conceals a small but viciously tapered blade."
-
-L["csgo_description_knife_outdoor"] = "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material."
-
-L["csgo_description_knife_widowmaker"] = "This ivory-handled karambit features brass rivets and saw-tooth ridges, so it cuts on the way in, and tears on the way out."
-
-L["csgo_description_knife_stiletto"] = "Historically a focal point of contention and even regulation, this Italian-style stiletto switchblade knife features a spring-loaded blade that can be deployed almost instantly with the push of a release catch."
-
-L["csgo_description_knife_skeleton"] = "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety."
-
+L["csgo_description_elite_single"] = "Losing one large-mag Beretta will increase accuracy and decrease load times. On the bright side, you'll get to fire one large-mag Beretta instead."
 L["csgo_description_m3"] = "The M3 is a well-rounded shotgun that retains effectiveness at medium ranges without giving up on close range power."
-
-L["csgo_description_m4a1"] = "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>." -- NEW
-
-L["csgo_description_m4a4"] = "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs."
-
-L["csgo_description_m249"] = "A strong open-area LMG, the M249 is the perfect choice for players willing to trade a slow fire rate for increased accuracy and a high ammo capacity."
-
-L["csgo_description_mac10"] = "Essentially a box that bullets come out of, the MAC-10 SMG boasts a high rate of fire, with poor spread accuracy and high recoil as trade-offs."
-
-L["csgo_description_mag7"] = "The CT-exclusive Mag-7 delivers a devastating amount of damage at close range. Its rapid magazine-style reloads make it a great tactical choice."
-
 L["csgo_description_mp5"] = "Deadly at close, but not so good at mid- to long range distances, the MP5, just like its SD variant, is the most versatile and popular SMG in the world, if you can manage to control its recoil."
-
-L["csgo_description_mp5sd"] = "Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant features an integrated silencer, making an already formidable weapon whisper-quiet."
-
-L["csgo_description_mp7"] = "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat."
-
-L["csgo_description_mp9"] = "Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms."
-
 L["csgo_description_nade_breach"] = "The Breach Charge is an explosive equipment which allows to breaching doors and areas. You can only hold a maximum 3 breach charges at a time."
-
-L["csgo_description_nade_c4"] = "Stable and resistant to most physical shocks, this improvised plastic explosive has a detonation velocity of over 8,000 meters per second when ignited."
-
 L["csgo_description_nade_claymores"] = "Anti-personnel proximity mine that fires lethal shrapnel in a large cone.\nWhile it has a wide area of effect, its laser is quite easy to spot and can be jumped over by daring opponents."
-
-L["csgo_description_nade_decoy"] = "When thrown, the decoy grenade emulates the sound of the most powerful weapon you are carrying, creating the illusion of additional supporting forces."
-
-L["csgo_description_nade_flashbang"] = "The non-lethal flashbang grenade temporarily blinds anybody within its concussive blast, making it perfect for flushing out closed-in areas. Its loud explosion also temporarily masks the sound of footsteps."
-
-L["csgo_description_nade_frag"] = "The high explosive fragmentation grenade administers high damage through a wide area, making it ideal for clearing out hostile rooms."
-
-L["csgo_description_nade_incendiary"] = "When thrown, the incendiary grenade releases a high-temperature chemical reaction capable of burning anyone within its wide blast radius."
-
 L["csgo_description_nade_landmines"] = "Anti-personnel proximity mine that sticks to any surface. Less effective on walls, and buries itself on soft ground. Difficult to spot, but its motion sensor cannot detect slowly moving targets."
-
 L["csgo_description_nade_mines"] = "Toss one of these on the ground and send your opponents flying (also can be set to explode). Hope you don't step on one."
-
-L["csgo_description_nade_molotov"] = "The Molotov is a powerful and unpredictable area denial weapon that bursts into flames when thrown on the ground, injuring any player in its radius."
-
 L["csgo_description_nade_rock"] = "The experimental rock, very deadly and quite a \"Stoner\" upon hitting enemies."
-
-L["csgo_description_nade_smoke"] = "The smoke grenade creates a medium-area smoke screen. It can effectively hide your team from snipers, or even just create a useful distraction."
-
-L["csgo_description_nade_sonar"] = "Tactical Awareness Grenade is an utility grenade that helps by sticking on surfaces upon throw and detonates with a function in which can detect enemies from around 200 meters."
-
-L["csgo_description_negev"] = "The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it."
-
-L["csgo_description_nova"] = "The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team."
-
-L["csgo_description_p90"] = "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil."
-
-L["csgo_description_p250"] = "A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents."
-
-L["csgo_description_p2000"] = "Accurate and controllable, the German-made P2000 is a serviceable first-round pistol that works best against unarmored opponents."
-
-L["csgo_description_r8"] = "The R8 Revolver delivers a highly accurate and powerful round at the expense of a lengthy trigger-pull. Firing rapidly by fanning the hammer may be the best option when point-blank stopping power is required."
-
-L["csgo_description_sawedoff"] = "The classic Sawed-Off deals very heavy close-range damage, but with its low accuracy, high spread and slow rate of fire, you'd better kill what you hit."
-
+L["csgo_description_nade_sonar"] = "The Tactical Awareness Grenade is an utility grenade that helps by sticking on surfaces upon throw and detonates with a function in which can detect enemies from around 200 meters."
 L["csgo_description_scar17"] = "The SCAR-17 is a automatic with a burst-fire option that trades a high rate of fire and powerful mid-distance damage for sluggish movement speed and still with its counter-part, the SCAR-20, having a big price tag."
-
-L["csgo_description_scar20"] = "The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag."
-
 L["csgo_description_scout"] = "Compensating for its recoil and accuracy, the Steyr Scout makes it a great weapon for mid-large distances."
-
-L["csgo_description_sg556"] = "The terrorist-exclusive SG553 is a premium scoped alternative to the AK47 for effective long-range engagement."
-
-L["csgo_description_ssg08"] = "The SSG08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship."
-
-L["csgo_description_tec9"] = "An ideal pistol for the Terrorist on the move, the Tec-9 is lethal in close quarters and features a high magazine capacity."
-
-L["csgo_description_ump"] = "The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic."
-
-L["csgo_description_usp"] = "A fan favorite from Counter-Strike: Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise." .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>." -- NEW
-
-L["csgo_description_xm1014"] = "The XM1014 is a powerful fully automatic shotgun that justifies its heftier price tag with the ability to paint a room with lead fast."
-
-L["csgo_description_zeus"] = "Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit."
 
 ////////////////////////////////////// Attachments
 /////////////////// Attachment Folders
@@ -1300,6 +1211,10 @@ L["csgo_elite_slide_p38.description"] = "Replaces the slide with a custom afterm
 L["csgo_elite_slide_raffica.printname"] = "Raffica Conversion"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
 L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management."
+
+L["csgo_elite_mag_24.printname"] = "24-Round 9×19mm Magazine"
+L["csgo_elite_mag_24.compactname"] = "9mm+"
+L["csgo_elite_mag_24.description"] = string.format(quicktext.bigmag, 24)
 
 /////////////////// FAMAS
 L["csgo_famas_barrel_long.printname"] = "Tireur Barrel"

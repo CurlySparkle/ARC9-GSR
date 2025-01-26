@@ -434,32 +434,11 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {0,1},
-            {1,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0, -3.325, 9.1), } }	
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0, -3.325, 7.35), } }	
-    },
-
-    ["slide_p38"] = { 
-    Bodygroups = { {0,2},{1,3}, },
-    AttPosMods = { [2] = { Pos = Vector(-0, -3.325, 8.475), } }	
-    },
-    ["slide_raffica"] = { 
-    Bodygroups = { {0,3},{1,4}, },
-    },
+    ["csgo_elite_slide_long"] = { Bodygroups = { { 0, 1 }, { 1, 1 } } },
+    ["csgo_elite_slide_short"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_elite_slide_p38"] = { Bodygroups = { { 0, 2 }, { 1, 3 } } },
+    ["csgo_elite_slide_raffica"] = { Bodygroups = { { 0,3},{ 1, 4 } } },
+    ["csgo_elite_mag_24"] = { Bodygroups = { { 2, 1 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
@@ -572,7 +551,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.m9a1_R_magazine",
-        Category = "go_mag",
+        Category = "go_elite_mag_s",
         Pos = Vector(0, -3, -0.5),
         Ang = Angle(0, 0, 0),
     },

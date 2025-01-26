@@ -474,8 +474,8 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-ATT.CustomizePosHook = function(wep, vec) return vec + Vector(9, 7, 0) end
-ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(9, 0, 0) end
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, 6, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "go_supp_m110")
 ------------------------------------------------------------------------
