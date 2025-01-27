@@ -108,7 +108,7 @@ SWEP.RecoilMax = 1
 SWEP.RecoilDissipationRate = 2 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 3 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 2 -- Multiplier for automatic recoil control.
 SWEP.RecoilAutoControlShooting = 0.5
 
 SWEP.RecoilKick = 2
@@ -444,29 +444,10 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["deagle_slide_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 9.81), } }	
-    },
-    ["deagle_slide_long_long"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 10.8), } }	
-    },
-    ["deagle_barrel_long"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -3.1, 11.9), } }	
-    },
+    ["csgo_deagle_mag_extend"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_deagle_c"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_deagle_c_2"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_deagle_barrel"] = { Bodygroups = { { 2, 3 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -534,7 +515,10 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
-		ExcludeElements = {"deagle_slide_long", "deagle_slide_long_long"},
+		ExcludeElements = {
+			"csgo_deagle_c",
+			"csgo_deagle_c_2"
+		},
         Bone = "v_weapon.deagle_parent",
         Pos = Vector(-0.025, -3.1, 8.74),
         Ang = Angle(90, 0, -90),

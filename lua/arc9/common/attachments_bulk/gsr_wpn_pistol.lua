@@ -217,31 +217,221 @@ ARC9.LoadAttachment(ATT, "csgo_elite_mag_24")
 
 ////////////////////////////////////// CZ75-Auto
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "CZ-L Slide and Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.075
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_cz75_slide_long.png", "mips smooth")
+ATT.Category = "go_cz_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.45, 7.15) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.25, 0.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.25, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_cz_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "CZ-C Slide and Barrel"
+
+ATT.AimDownSightsTimeMult = 0.925
+ATT.SprintToFireTimeMult = 0.925
+
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+ATT.RecoilMult = 1.1
+ATT.VisualRecoilMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_cz75_slide_short.png", "mips smooth")
+ATT.Category = "go_cz_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.45, 5.5) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -0.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_cz_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "CZ-A Slide and Barrel"
+
+-- TODO; STATS
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_cz75_slide_factory.png", "mips smooth")
+ATT.Category = "go_cz_slide"
+
+ATT.Ignore = true -- Why does this attachment exist?
+
+ARC9.LoadAttachment(ATT, "csgo_cz_slide_factory")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "18-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 6
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_cz_mag"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+	if anim == "reload_empty" then
+		return anim .. "_ext"
+	end
+end
+
+ARC9.LoadAttachment(ATT, "csgo_cz_mag_ext")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// Desert Eagle
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Desert Eagle Suppressor"
 
--- table.Merge(ATT, sharedcode)
+ATT.AimDownSightsTimeMult = 1.05
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 0.95
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+ATT.Icon = Material("entities/attachs/silencer_deagle.png", "mips smooth")
+ATT.Category = "muzzle_sil_pist"
+
+ATT.Model = "models/weapons/csgo/atts/silencer_deagle.mdl"
+ATT.ModelOffset = Vector(-0.03, 0, 0)
+ATT.Scale = 0.5
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.75, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.75, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_s")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Compensator"
+
+ATT.RecoilSideMult = 0.6
+
+ATT.RecoilUpMult = 1.2
+ATT.AimDownSightsTimeMult = 1.05
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
+ATT.Category = "go_deagle_long_slide"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_c")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Long Compensator"
+
+ATT.RecoilSideMult = 0.35
+
+ATT.RecoilUpMult = 1.35
+ATT.AimDownSightsTimeMult = 1.125
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
+ATT.Category = "go_deagle_long_slide"
+
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_c_2")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Long Barrel"
+
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.95
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 3
+
+ATT.Icon = Material("entities/attachs/go_deagle_slide_long.png", "mips smooth")
+ATT.Category = "go_deagle_long_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -3.1, 11.9) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_barrel")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "15-Round .50 Action Express Magazine"
+
+ATT.ClipSizeAdd = 8
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.075
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_deagle_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_deagle_mag_extend")
 ------------------------------------------------------------------------
 
 

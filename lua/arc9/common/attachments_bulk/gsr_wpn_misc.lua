@@ -1,7 +1,7 @@
 local ATT = {}
 
 --[[
-This file includes attachments that are
+This file includes attachments that lack a category.
 
 The attachments affect various stats depending on what they are.
 
@@ -12,18 +12,21 @@ local sharedcode = {
 	Description = "This is unlocalized!",
 	SortOrder = 0,
 	MenuCategory = "ARC9 - CSGO Attachments",
+	Free = true,
 }
 
-////////////////////////////////////// AK-47
+////////////////////////////////////// Misc.
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Grenade Fuse (3 Seconds)"
 
--- table.Merge(ATT, sharedcode)
+ATT.FuseTimer = 3
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+table.Merge(ATT, sharedcode)
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+ATT.Icon = Material("entities/attachs/go_nade_timer.png", "mips smooth")
+ATT.Category = "go_nade_type"
+
+ARC9.LoadAttachment(ATT, "csgo_nade_timer")
 ------------------------------------------------------------------------

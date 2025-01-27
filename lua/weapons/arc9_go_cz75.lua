@@ -332,10 +332,10 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             {s = path .. "p250_clipout.wav", t = 9/30},
-            {s = path .. "p250_clipout.wav", t = 23/30},
-            {s = path .. "p250_clipin.wav", t = 46/30},
-            {s = path .. "p250_slideback.wav", t = 64/30},
-            {s = path .. "p250_sliderelease.wav", t = 68/30},
+            {s = path .. "p250_clipout.wav", t = 24/30, v = 0.25},
+            {s = path .. "p250_clipin.wav", t = 42/30},
+            {s = path .. "p250_slideback.wav", t = 60/30},
+            {s = path .. "p250_sliderelease.wav", t = 65/30},
         },
     },
     ["reload_empty_ext"] = {
@@ -523,7 +523,7 @@ SWEP.AttachmentTableOverrides = {
 }
 
 SWEP.AttachmentElements = {
-    ["csgo_cz_mag_ext"] = { Bodygroups = { { 1, 1 }, { 2, 2 } } },
+    ["csgo_cz_mag_ext"] = { Bodygroups = { { 1, 1 }, { 2, 1 } } },
     ["csgo_cz_slide_long"] = { Bodygroups = { { 3, 1 } } },
     -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.45, 7.15), } }
     ["csgo_cz_slide_short"] = { Bodygroups = { { 3, 2 } } },
