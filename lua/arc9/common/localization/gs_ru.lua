@@ -1627,6 +1627,10 @@ L["csgo_p2000_slide_short.printname"] = "Затвор и ствол P2000-SK"
 L["csgo_p2000_slide_short.compactname"] = "SK"
 L["csgo_p2000_slide_short.description"] = "Облегчённые затвор и ствол."
 
+L["csgo_p2000_mag_20.printname"] = "30-зарядный магазин 9×19-мм"
+L["csgo_p2000_mag_20.compactname"] = "9-мм+"
+L["csgo_p2000_mag_20.description"] = string.format(quicktext.bigmag, 20)
+
 /////////////////// P250
 L["csgo_p250_slide_flux.printname"] = "Рама пистолета-пулемёта FR"
 L["csgo_p250_slide_flux.compactname"] = "Рама FR"
@@ -1666,8 +1670,8 @@ L["csgo_p90_barrel_med.printname"] = "Ствол PS90"
 L["csgo_p90_barrel_med.compactname"] = "PS90"
 L["csgo_p90_barrel_med.description"] = "Ствол средней длины."
 
-L["csgo_p90_mag_30.printname"] = "30-зарядный магазин 5.7×28-мм"
-L["csgo_p90_mag_30.compactname"] = "5.7-мм-"
+L["csgo_p90_mag_30.printname"] = "30-зарядный магазин 5,7×28-мм"
+L["csgo_p90_mag_30.compactname"] = "5,7-мм-"
 L["csgo_p90_mag_30.description"] = string.format(quicktext.smallmag, 30)
 
 L["csgo_p90_mag_30_stanag.printname"] = "30-зарядный магазин 5,56×45-мм НАТО"
@@ -1846,6 +1850,10 @@ L["csgo_usp_slide_long.description"] = "Удлинённые затвор и с�
 L["csgo_usp_slide_short.printname"] = "Затвор и ствол USP-C"
 L["csgo_usp_slide_short.compactname"] = "USP-C"
 L["csgo_usp_slide_short.description"] = "Укороченные затвор и ствол."
+
+L["csgo_usp_mag_18.printname"] = "18-зарядный магазин .45 ACP"
+L["csgo_usp_mag_18.compactname"] = ".45 ACP+"
+L["csgo_usp_mag_18.description"] = string.format(quicktext.bigmag, 18)
 
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Полиция ствол"

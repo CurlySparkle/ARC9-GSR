@@ -1623,6 +1623,10 @@ L["csgo_p2000_slide_short.printname"] = "P2000-SK Schlitten und Lauf"
 L["csgo_p2000_slide_short.compactname"] = "SK"
 L["csgo_p2000_slide_short.description"] = "Leichter Schlitten und leichter Lauf."
 
+L["csgo_p2000_mag_20.printname"] = "9 × 19 mm 20-Schuss-Magazin"
+L["csgo_p2000_mag_20.compactname"] = "9 mm+"
+L["csgo_p2000_mag_20.description"] = string.format(quicktext.bigmag, 20)
+
 /////////////////// P250
 L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW-Rahmen"
 L["csgo_p250_slide_flux.compactname"] = "FR-Rahmen"
@@ -1842,6 +1846,10 @@ L["csgo_usp_slide_long.description"] = "Erweiterter Schlitten und Lauf."
 L["csgo_usp_slide_short.printname"] = "USP-C Schlitten und Lauf"
 L["csgo_usp_slide_short.compactname"] = "USP-C"
 L["csgo_usp_slide_short.description"] = "Verkürzter Schlitten und Lauf."
+
+L["csgo_usp_mag_18.printname"] = "18-Schuss .45 ACP-Magazin"
+L["csgo_usp_mag_18.compactname"] = ".45 ACP+"
+L["csgo_usp_mag_18.description"] = string.format(quicktext.bigmag, 18)
 
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Polizei-Lauf"

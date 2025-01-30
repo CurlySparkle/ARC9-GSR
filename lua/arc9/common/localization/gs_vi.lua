@@ -1633,6 +1633,10 @@ local quicktext = {
 -- L["csgo_p2000_slide_short.compactname"] = "SK"
 -- L["csgo_p2000_slide_short.description"] = "Lightweight slide and barrel."
 
+-- L["csgo_p2000_mag_20.printname"] = "20-Round 9×19mm Magazine"
+-- L["csgo_p2000_mag_20.compactname"] = "9mm+"
+-- L["csgo_p2000_mag_20.description"] = string.format(quicktext.bigmag, 20)
+
 /////////////////// P250
 -- L["csgo_p250_slide_flux.printname"] = "Flux Raider PDW Frame"
 -- L["csgo_p250_slide_flux.compactname"] = "FR Frame"
@@ -1852,6 +1856,10 @@ local quicktext = {
 -- L["csgo_usp_slide_short.printname"] = "USP-C Slide and Barrel"
 -- L["csgo_usp_slide_short.compactname"] = "USP-C"
 -- L["csgo_usp_slide_short.description"] = "Shortened slide and barrel."
+
+-- L["csgo_usp_mag_18.printname"] = "18-Round .45 ACP Magazines"
+-- L["csgo_usp_mag_18.compactname"] = ".45 ACP+"
+-- L["csgo_usp_mag_18.description"] = string.format(quicktext.bigmag, 18)
 
 /////////////////// XM1014
 -- L["csgo_xm1014_barrel_long.printname"] = "Police Barrel"

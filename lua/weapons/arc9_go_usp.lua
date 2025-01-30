@@ -510,39 +510,18 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["rocket_usb"] = { Bodygroups = { {1,3}, }, },	
-    ["silencer"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["silencer_none"] = {
-        Bodygroups = {
-            {1,4},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {3,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, 0.4, 0), } }	
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-            {3,2},
-            {0,1},
-            {1,2},
-        },
-    AttPosMods = { 
-    [2] = { Pos = Vector(0, -1.9, 0), },
-    [3] = { Pos = Vector(-0.02, -0.9, 5), }
-    }
-    },
+    ["csgo_usp_slide_long"] = { Bodygroups = { { 3, 1 }, { 1, 1 } } },
+    -- AttPosMods = { [2] = { Pos = Vector(0, 0.4, 0), } }	
+    ["csgo_usp_slide_short"] = { Bodygroups = { { 0, 1 }, { 1, 2 }, { 3, 2 } } },
+    -- AttPosMods = { 
+		-- [2] = { Pos = Vector(0, -1.9, 0), },
+		-- [3] = { Pos = Vector(-0.02, -0.9, 5), }
+    -- }
+    ["csgo_usp_mag_18"] = { Bodygroups = { { 2, 1 } } },
+	
+    -- ["silencer"] = { Bodygroups = { { 1, 1 } } },
+    ["rocket_usb"] = { Bodygroups = { { 1, 3 } } },
+    -- ["silencer_none"] = { Bodygroups = { { 1, 4 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
@@ -593,6 +572,10 @@ SWEP.HookP_NameChange = function(self, name)
 		voltage = "",
 		hangedman = "",
 	})
+
+	if att["csgo_skin_usp_nostalgia"] then
+		name = name .. " | " .. ARC9:GetPhrase("csgo_skin_usp_nostalgia.printname")
+	end
 
 	if att["arc9_stat_stattrak"] then
 		name = "StatTrak™ " .. name
@@ -650,7 +633,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.Clip",
-        Category = "go_mag",
+        Category = "go_usp_mag",
         Pos = Vector(0, -1.5, -0.25),
     },
     {

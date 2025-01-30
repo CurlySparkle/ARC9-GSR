@@ -474,49 +474,21 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
-    ["mag_10"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["mag_32"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    },
-    ["barrel_short"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0.5, -4, 8.5), } }
-    },
-    ["barrel_long"] = {
-        Bodygroups = {
-            {1,2},
-        },
-    AttPosMods = { [3] = { Pos = Vector(0.5, -3.98, 15.5), } }	
-    },
-    ["ubrms"] = {
-        Bodygroups = {
-            {4,2},
-        },
-    },
-    ["tacms"] = {
-        Bodygroups = {
-            {4,1},
-        },
-    },
-    ["stock_adapter"] = {
-        Bodygroups = {
-            {5,1},
-        },
-    },
+    ["csgo_tec9_barrel_short"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_tec9_barrel_long"] = { Bodygroups = { { 1, 2 } } },
+    ["csgo_tec9_mag_10"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_tec9_mag_32"] = { Bodygroups = { { 2, 2 } } },
+	
+    ["ubrms"] = { Bodygroups = { { 4, 2 } } },
+    ["tacms"] = { Bodygroups = { { 4, 1 } } },
+    ["stock_adapter"] = { Bodygroups = { { 5, 1 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("ubrms") and wep.Attachments[4].Installed then model:SetBodygroup(4,3) end
-    if wep:HasElement("tacms") and wep.Attachments[5].Installed then model:SetBodygroup(4,3) end
+    if (wep:HasElement("ubrms") and wep.Attachments[4].Installed) or (wep:HasElement("tacms") and wep.Attachments[5].Installed) then 
+		model:SetBodygroup(4,3)
+	end
 end
 
 SWEP.HookP_NameChange = function(self, name)
@@ -577,7 +549,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.tec9_parent",
-        Pos = Vector(0.5, -4.35, 2),
+        Pos = Vector(0.5, -4.55, 1.15),
         Ang = Angle(90, 0, -90),
         Category = {"csgo_rail_optic"},
         CorrectiveAng = Angle(0.25, 0, 0),
@@ -642,7 +614,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
         Bone = "v_weapon.tec9_parent",
-        Pos = Vector(0.5, 2.5, 6.5),
+        Pos = Vector(0.5, 1, 3),
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_skins"),

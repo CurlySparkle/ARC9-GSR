@@ -449,36 +449,10 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -- }
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-		    {0,1},
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 6.8), } }	
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-		    {0,2},
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.6, 5.35), } }	
-    },
-
-    ["slide_flux"] = {
-        Bodygroups = {
-		    {0,3},
-            {2,1},
-        },
-    AttPosMods = {
-	[2] = { Pos = Vector(-0.025, -2.6, 6.8), },
-	[4] = { Pos = Vector(0, -1.1, 6.5), }, 
-	[16] = { Pos = Vector(0.5, -7.75, 1.85), } },	
-    },	
+    ["csgo_p250_mag_20"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_p250_slide_long"] = { Bodygroups = { { 0, 1 }, { 2, 1 } } },
+    ["csgo_p250_slide_short"] = { Bodygroups = { { 0, 2 }, { 2, 2 } } },
+    ["csgo_p250_slide_flux"] = { Bodygroups = { { 0, 3 }, { 2, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -579,7 +553,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.glock_magazine",
-        Category = "go_mag",
+        Category = "go_p250_mag",
         Pos = Vector(0, -0.75, -0.5),
     },
     {

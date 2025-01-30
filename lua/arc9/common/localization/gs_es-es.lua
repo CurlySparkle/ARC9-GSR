@@ -1627,6 +1627,10 @@ L["csgo_p2000_slide_short.printname"] = "Corredera y cañón P2000-SK"
 L["csgo_p2000_slide_short.compactname"] = "SK"
 L["csgo_p2000_slide_short.description"] = "Corredera y cañón ligeros."
 
+L["csgo_p2000_mag_20.printname"] = "Cargador de 20 cartuchos de 9×19mm"
+L["csgo_p2000_mag_20.compactname"] = "9mm+"
+L["csgo_p2000_mag_20.description"] = string.format(quicktext.bigmag, 20)
+
 /////////////////// P250
 L["csgo_p250_slide_flux.printname"] = "Armazón Flux Raider PDW"
 L["csgo_p250_slide_flux.compactname"] = "Armazón FR"
@@ -1846,6 +1850,10 @@ L["csgo_usp_slide_long.description"] = "Corredera y cañón alargados."
 L["csgo_usp_slide_short.printname"] = "Corredera y cañón USP-C"
 L["csgo_usp_slide_short.compactname"] = "USP-C"
 L["csgo_usp_slide_short.description"] = "Corredera y cañón acortados."
+
+L["csgo_usp_mag_18.printname"] = "Cargadores de 18 balas calibre .45 ACP"
+L["csgo_usp_mag_18.compactname"] = ".45 ACP+"
+L["csgo_usp_mag_18.description"] = string.format(quicktext.bigmag, 18)
 
 /////////////////// XM1014
 L["csgo_xm1014_barrel_long.printname"] = "Cañón de policía"

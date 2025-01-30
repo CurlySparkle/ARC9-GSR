@@ -396,17 +396,8 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(0, -2.4, 6.85), } }	
-    },
+    ["csgo_p2000_mag_20"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_p2000_slide_long"] = { Bodygroups = { { 2, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -501,7 +492,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.HKP2000_Clip",
-        Category = "go_mag",
+        Category = "go_p2000_mag",
         Pos = Vector(0, -1.5, 0),
         Ang = Angle(0, 0, 0),
     },

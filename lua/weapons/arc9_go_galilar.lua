@@ -544,7 +544,7 @@ SWEP.HookP_NameChange = function(self, name)
 	})
 
 	if att["csgo_skin_galilar_odyssy"] then
-		name = name .. " | Odyssey"
+		name = name .. " | " .. ARC9:GetPhrase("csgo_skin_galilar_odyssy.printname")
 	end
 
 	if att["arc9_stat_stattrak"] then

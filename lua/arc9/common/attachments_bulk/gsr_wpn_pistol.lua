@@ -540,6 +540,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.25, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.25, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_glock_slide_long")
 ------------------------------------------------------------------------
 ATT = {}
@@ -599,16 +602,68 @@ ARC9.LoadAttachment(ATT, "csgo_glock_mag_32")
 
 ////////////////////////////////////// P2000
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "P2000-L Slide and Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p2000_slide_long.png", "mips smooth")
+ATT.Category = "go_p2000_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -2.4, 6.85) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_p2000_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "P2000-SK Slide and Barrel"
+
+-- TODO; Stats
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p2000_slide_short.png", "mips smooth")
+ATT.Category = "go_p2000_slide"
+
+ATT.Ignore = true -- This goes unused
+
+ARC9.LoadAttachment(ATT, "csgo_p2000_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "20-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 7
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_p2000_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_p2000_mag_20")
 ------------------------------------------------------------------------
 
 
@@ -618,13 +673,15 @@ ATT = {}
 
 ATT.PrintName = "Flux Raider PDW Frame"
 
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.1
-ATT.RangeMinMult = 1.05
-ATT.RangeMaxMult = 1.05
+ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.25
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.25
+ATT.AimDownSightsTimeMult = 1.175
+ATT.SprintToFireTimeMult = 1.2
+ATT.SpeedMult = 0.95
 
 table.Merge(ATT, sharedcode)
 
@@ -656,7 +713,93 @@ ATT.Hook_TranslateAnimation = function (self, anim)
 	end
 end
 
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.6, 6.8) }, -- Muzzle
+        [4] = { Pos = Vector(0, -1.1, 6.5) }, -- Tactical
+        [16] = { Pos = Vector(0.5, -7.75, 1.85) }, -- Stats
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_p250_slide_flux")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Full-Size Slide"
+
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p250_slide_long.png", "mips smooth")
+ATT.Category = "go_p250_slide" -- "go_p250_slide2" for Dual
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.6, 6.8) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_p250_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Subcompact Slide"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.RangeMinMult = 0.9
+ATT.RangeMaxMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_p250_slide_short.png", "mips smooth")
+ATT.Category = "go_p250_slide" -- "go_p250_slide2" for Dual
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.6, 5.35) }, -- Muzzle
+        [16] = { Pos = Vector(0, -0.75, 0.4) }, -- Stats
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_p250_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "20-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 7
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_p250_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_p250_mag_20")
 ------------------------------------------------------------------------
 
 
@@ -664,7 +807,7 @@ ARC9.LoadAttachment(ATT, "csgo_p250_slide_flux")
 
 ATT = {}
 
-ATT.PrintName = ".357 Conversion"
+ATT.PrintName = "6-Round Cylinder"
 
 table.Merge(ATT, sharedcode)
 
@@ -673,17 +816,11 @@ ATT.Category = "go_r8"
 
 ATT.ClipSizeMult = 0.75
 
-ATT.RecoilMult = 0.75
-ATT.VisualRecoilMult = 0.25
-ATT.RPMMult = 1.25
-ATT.TriggerDelayTimeMult = 0.66
-ATT.SpreadAddHipFire = -0.02
-ATT.SpreadAddRecoil = -0.025
+ATT.RangeMinMult = 1.15
+ATT.RangeMaxMult = 1.15
 
-ATT.DamageMinMult = 0.75
-ATT.DamageMaxMult = 0.75
-ATT.RangeMinMult = 0.85
-ATT.RangeMaxMult = 0.85
+ATT.SpreadAddHipFire = 0.01
+ATT.SpreadAddRecoil = 0.005
 
 ARC9.LoadAttachment(ATT, "csgo_r8_model")
 ------------------------------------------------------------------------
@@ -691,29 +828,179 @@ ARC9.LoadAttachment(ATT, "csgo_r8_model")
 
 ////////////////////////////////////// Tec-9
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "JATI Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.4
+ATT.RangeMaxMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 1.2
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.95
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_tec9_barrel_long.png", "mips smooth")
+ATT.Category = "go_tec9_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.5, -3.98, 16) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_barrel_long")
 ------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "AB-1 Barrel"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+ATT.SpeedMult = 1.025
+
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_tec9_barrel_short.png", "mips smooth")
+ATT.Category = "go_tec9_barrel"
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0.5, -4, 8.6), Icon_Offset = Vector(1.5, 0, 0) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_barrel_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "32-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 14
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_tec9_mag_32.png", "mips smooth")
+ATT.Category = "go_tec9_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_mag_32")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "10-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = -8
+
+ATT.ReloadTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+ATT.SpeedMult = 1.025
+
+ATT.DropMagazineTimeMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_tec9_mag_10.png", "mips smooth")
+ATT.Category = "go_tec9_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_mag_10")
+------------------------------------------------------------------------
+
+-- TODO; Tec-9 Auto Mags
 
 
 ////////////////////////////////////// USP-S
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Elite Slide and Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_usp_slide_long.png", "mips smooth")
+ATT.Category = "go_usp_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, 0.4, 0) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_usp_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "USP-C Slide and Barrel"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.RangeMinMult = 0.925
+ATT.RangeMaxMult = 0.925
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_usp_slide_short.png", "mips smooth")
+ATT.Category = "go_usp_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(0, -1.9, 0) }, -- Muzzle
+        [3] = { Pos = Vector(-0.02, -0.9, 4.1) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_usp_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "18-Round .45 ACP Magazines"
+
+ATT.ClipSizeAdd = 6
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_usp_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_usp_mag_18")
 ------------------------------------------------------------------------
