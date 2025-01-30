@@ -1241,6 +1241,10 @@ L["csgo_five_slide_long.compactname"] = "Plus"
 L["csgo_five_slide_short.printname"] = "FN-Slutstycke och Pipa"
 L["csgo_five_slide_short.compactname"] = "FN"
 
+L["csgo_five_mag_30.printname"] = "5,7 × 28 mm 30-Patronersmagasin"
+L["csgo_five_mag_30.compactname"] = "5,7 mm+"
+L["csgo_five_mag_30.description"] = string.format(quicktext.bigmag, 30)
+
 /////////////////// G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Viskare Pipa"
 L["csgo_g3_barrel_sd.compactname"] = "Viskare"
@@ -1385,6 +1389,10 @@ L["csgo_glock_slide_long.description"] = "Förlänger pipan."
 L["csgo_glock_slide_auto.printname"] = "Helautomatisk Konvertering"
 L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Konverterar Glock-18 till en Glock-18C och gör den <color=100,255,100>helautomatisk</color>."
+
+L["csgo_glock_mag_32.printname"] = "9 × 19 mm 32-Patronersmagasin"
+L["csgo_glock_mag_32.compactname"] = "9 mm+"
+L["csgo_glock_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 /////////////////// M249
 L["csgo_m249_barrel_long.description"] = "Lång och tung pipa gjord för täckande eld."

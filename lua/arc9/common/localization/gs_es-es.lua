@@ -1239,6 +1239,10 @@ L["csgo_five_slide_long.compactname"] = "Plus"
 L["csgo_five_slide_short.printname"] = "Corredera y cañón FN de 110mm"
 L["csgo_five_slide_short.compactname"] = "FN"
 
+L["csgo_five_mag_30.printname"] = "Cargador de 30 cartuchos 5.7×28mm"
+L["csgo_five_mag_30.compactname"] = "5.7mm+"
+L["csgo_five_mag_30.description"] = string.format(quicktext.bigmag, 30)
+
 /////////////////// G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Cañón Whisper"
 L["csgo_g3_barrel_sd.compactname"] = "Whisper"
@@ -1363,15 +1367,15 @@ L["csgo_galilar_mag_ak_30.description"] = "Convierte el Galil AR para aceptar ca
 
 L["csgo_galilar_mag_ak_45.description"] = "Convierte el Galil AR para aceptar cargadores AK.\n" .. string.format(quicktext.bigmag, 40)
 
-L["csgo_galilar_mag_30.printname"] = "30-Round 5.56×45mm Magazine"
+L["csgo_galilar_mag_30.printname"] = "Cargador de 30 cartuchos 5.56×45mm"
 L["csgo_galilar_mag_30.compactname"] = "5.56mm+"
 L["csgo_galilar_mag_30.description"] = string.format(quicktext.bigmag, 30)
 
-L["csgo_galilar_mag_40.printname"] = "40-Round 5.56×45mm Magazine"
+L["csgo_galilar_mag_40.printname"] = "Cargador de 40 cartuchos  5.56×45mm"
 L["csgo_galilar_mag_40.compactname"] = "5.56mm++"
 L["csgo_galilar_mag_40.description"] = string.format(quicktext.bigmag, 40)
 
-L["csgo_galilar_mag_60.printname"] = "60-Round 5.56×45mm Casket Magazine"
+L["csgo_galilar_mag_60.printname"] = "Cargador Casket de 60 cartuchos 5.56×45mm"
 L["csgo_galilar_mag_60.compactname"] = "5.56mm+++"
 L["csgo_galilar_mag_60.description"] = string.format(quicktext.bigmag, 60)
 
@@ -1383,6 +1387,10 @@ L["csgo_glock_slide_long.description"] = "Alarga el cañón."
 L["csgo_glock_slide_auto.printname"] = "Conversión automática"
 L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Convierte la Glock-18 en la Glock-18C, haciéndola <color=100,255,100>totalmente automática</color>."
+
+L["csgo_glock_mag_32.printname"] = "Cargador de 32 cartuchos 9×19mm"
+L["csgo_glock_mag_32.compactname"] = "9mm+"
+L["csgo_glock_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 /////////////////// M249
 -- L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."

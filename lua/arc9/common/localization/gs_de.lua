@@ -1235,6 +1235,10 @@ L["csgo_five_slide_long.compactname"] = "Plus"
 L["csgo_five_slide_short.printname"] = "FN Schlitten und Lauf"
 L["csgo_five_slide_short.compactname"] = "FN"
 
+L["csgo_five_mag_30.printname"] = "5,7 × 28 mm 30-Schuss-Magazin"
+L["csgo_five_mag_30.compactname"] = "5,7 mm+"
+L["csgo_five_mag_30.description"] = string.format(quicktext.bigmag, 30)
+
 /////////////////// G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Flüsterlauf"
 L["csgo_g3_barrel_sd.compactname"] = "Flüster"
@@ -1379,6 +1383,10 @@ L["csgo_glock_slide_long.description"] = "Verlängert den Lauf."
 L["csgo_glock_slide_auto.printname"] = "Automatische Konvertierung"
 L["csgo_glock_slide_auto.compactname"] = "Auto"
 L["csgo_glock_slide_auto.description"] = "Wandelt die Glock-18 in die Glock-18C um, wodurch sie <color=100,255,100>vollautomatisch</color> wird."
+
+L["csgo_glock_mag_32.printname"] = "9 × 19 mm 32-Schuss-Magazin"
+L["csgo_glock_mag_32.compactname"] = "9 mm+"
+L["csgo_glock_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 /////////////////// M249
 L["csgo_m249_barrel_long.description"] = "Langer und schwerer Lauf, der für Unterdrückungsfeuer gedacht ist."

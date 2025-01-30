@@ -1246,6 +1246,10 @@ local quicktext = {
 -- L["csgo_five_slide_short.printname"] = "FN Slide and Barrel"
 -- L["csgo_five_slide_short.compactname"] = "FN"
 
+-- L["csgo_five_mag_30.printname"] = "30-Round 5.7×28mm Magazine"
+-- L["csgo_five_mag_30.compactname"] = "5.7mm+"
+-- L["csgo_five_mag_30.description"] = string.format(quicktext.bigmag, 30)
+
 /////////////////// G3SG1
 -- L["csgo_g3_barrel_sd.printname"] = "Whisper Barrel"
 -- L["csgo_g3_barrel_sd.compactname"] = "Whisper"
@@ -1390,6 +1394,10 @@ local quicktext = {
 -- L["csgo_glock_slide_auto.printname"] = "Automatic Conversion"
 -- L["csgo_glock_slide_auto.compactname"] = "Auto"
 -- L["csgo_glock_slide_auto.description"] = "Converts the Glock-18 to the Glock-18C, making it <color=100,255,100>fully automatic</color>."
+
+-- L["csgo_glock_mag_32.printname"] = "32-Round 9×19mm Magazine"
+-- L["csgo_glock_mag_32.compactname"] = "9mm+"
+-- L["csgo_glock_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 /////////////////// M249
 -- L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."

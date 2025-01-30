@@ -295,20 +295,6 @@ SWEP.HideBonesSilenced = {}
 SWEP.ReloadHideBoneTables = {
 }
 
-SWEP.Hook_TranslateAnimation = function (self, anim)
-    local attached = self:GetElements()
-
-    -- if anim == "reload" and attached["go_mag_extended"] then
-       -- return "reload_x"
-    -- elseif anim == "reload_empty" then
-        -- return "reload_empty_x"
-    -- end
-	
-	if attached["go_mag_extended"] then
-		return anim .. "_x"
-	end
-end
-
 SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
@@ -452,24 +438,11 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {0,1},
-            {1,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 7.1), } }	
-    },
-    ["slide_auto"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(-0.025, -2.375, 6.6), } }	
-    },	
+    ["csgo_glock_mag_32"] = { Bodygroups = { { 0, 1 }, { 1, 1 } } },
+    ["csgo_glock_slide_long"] = { Bodygroups = { { 2, 1 } } },
+    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 7.1), } }	
+    ["csgo_glock_slide_auto"] = { Bodygroups = { { 2, 2 } } },
+    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.375, 6.6), } }	
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -581,7 +554,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.glock_magazine",
-        Category = "go_mag",
+        Category = "go_glock_mag",
         Pos = Vector(0, -2, 0),
         Ang = Angle(0, 0, 0),
     },

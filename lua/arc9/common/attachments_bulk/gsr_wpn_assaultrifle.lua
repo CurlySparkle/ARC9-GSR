@@ -27,7 +27,7 @@ ATT.ClipSizeAdd = 10
 
 table.Merge(ATT, sharedcode)
 
-ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/go_ace_mag_ak_40.png", "mips smooth")
 ATT.Category = "go_mag_ak"
 ATT.ActivateElements = {"mag","mag_none"}
 
@@ -53,7 +53,7 @@ ATT.SpeedMult = 0.975
 ATT.DropMagazineTimeMult = 1.2
 
 table.Merge(ATT, sharedcode)
-ATT.SortOrder = 10
+ATT.SortOrder = 0.5
 
 ATT.Icon = Material("entities/attachs/go_ak47_mag_drum.png", "mips smooth")
 ATT.Category = "go_mag_ak"
@@ -217,6 +217,7 @@ ATT.DamageMinMult = 0.75
 ATT.DamageMaxMult = 0.825
 
 table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png", "mips smooth")
 ATT.Category = "go_mag_ak"
@@ -250,6 +251,7 @@ ATT.DamageMaxMult = 0.825
 ATT.DropMagazineTimeMult = 1.1
 
 table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
 
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png", "mips smooth")
 ATT.Category = "go_mag_ak"
@@ -276,6 +278,7 @@ ATT.DamageMinMult = 1.2
 ATT.DamageMaxMult = 0.825
 
 table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
 
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png", "mips smooth")
 ATT.Category = "go_mag_ak"
@@ -309,6 +312,7 @@ ATT.DamageMaxMult = 0.825
 ATT.DropMagazineTimeMult = 1.05
 
 table.Merge(ATT, sharedcode)
+ATT.SortOrder = 2
 
 ATT.Icon = Material("entities/attachs/go_ak_mag_30_545.png", "mips smooth")
 ATT.Category = "go_mag_ak"

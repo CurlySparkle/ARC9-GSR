@@ -173,10 +173,13 @@ ATT.RunawayBurst = true
 ATT.PostBurstDelay = 0.275
 ATT.RPMAdd = 600
 
+ATT.CustomPros = { [ ARC9:GetPhrase("customize.stats.firemodes") ] = "3-" .. ARC9:GetPhrase("hud.firemode.burst") }
+
 ATT.RecoilMult = 0.5
 ATT.VisualRecoilMult = 0.5
 
 ATT.RecoilMultRecoil = 3
+ATT.RecoilAutoControlAdd = -1
 ATT.RecoilAutoControlAddShooting = -0.49
 
 table.Merge(ATT, sharedcode)
@@ -394,7 +397,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.2
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
-ATT.SpeedMult = 0.95
+ATT.SpeedMult = 0.975
 
 table.Merge(ATT, sharedcode)
 ATT.SortOrder = 3
@@ -437,31 +440,160 @@ ARC9.LoadAttachment(ATT, "csgo_deagle_mag_extend")
 
 ////////////////////////////////////// Five-SeveN
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Plus Slide and Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.3
+ATT.RangeMaxMult = 1.3
+ATT.PhysBulletMuzzleVelocityMult = 1.15
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_fiveseven_slide_long.png", "mips smooth")
+ATT.Category = "go_fiveseven_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.2, 6.53) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_five_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "FN Slide and Barrel"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_fiveseven_slide_short.png", "mips smooth")
+ATT.Category = "go_fiveseven_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.2, 5.66) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_five_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "30-Round 5.7x28mm Magazine"
+
+ATT.ClipSizeAdd = 10
+
+ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.15
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_fiveseven_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_five_mag_30")
 ------------------------------------------------------------------------
 
 
 ////////////////////////////////////// Glock-18
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "Gen Laser Sight"
+ATT.PrintName = "Extended Slide and Barrel"
 
--- table.Merge(ATT, sharedcode)
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
--- ATT.Icon = Material("entities/attachs/GENLaserPISTOL.png", "mips smooth")
--- ATT.Category = "csgo_tac_pistols"
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
 
--- ARC9.LoadAttachment(ATT, "go_tac_laser_genpistol")
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_glock_slide_auto.png", "mips smooth")
+ATT.Category = "go_glock_s" -- "s2" for Dual
+
+ATT.Element = {
+    AttPosMods = {
+        [2] = { Pos = Vector(-0.025, -2.365, 7.1) }, -- Muzzle
+	}
+}
+
+ARC9.LoadAttachment(ATT, "csgo_glock_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Automatic Conversion"
+
+ATT.Firemodes = { { Mode = -1 } }
+ATT.RPMAdd = 700
+ATT.RangeMinMult = 1.1
+ATT.RangeMaxMult = 1.1
+
+ATT.CustomPros = { [ ARC9:GetPhrase("customize.stats.firemodes") ] = ARC9:GetPhrase("hud.firemode.auto") }
+
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpreadAddRecoil = 0.04
+ATT.RecoilMult = 1.66
+ATT.RecoilModifierCapAddSights = 0.2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_glock_slide_auto.png", "mips smooth")
+ATT.Category = "go_glock_s" -- "s2" for Dual
+
+ARC9.LoadAttachment(ATT, "csgo_glock_slide_auto")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "32-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 12
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_glock_mag"
+
+ATT.Hook_TranslateAnimation = function (self, anim)
+    local attached = self:GetElements()
+
+	if anim == "reload" or anim == "reload_empty" then
+		return anim .. "_x"
+	end
+
+end
+
+ARC9.LoadAttachment(ATT, "csgo_glock_mag_32")
 ------------------------------------------------------------------------
 
 

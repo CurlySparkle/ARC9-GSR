@@ -1239,6 +1239,10 @@ L["csgo_five_slide_long.compactname"] = "Plus"
 L["csgo_five_slide_short.printname"] = "Затвор и ствол FN"
 L["csgo_five_slide_short.compactname"] = "FN"
 
+L["csgo_five_mag_30.printname"] = "30-зарядный коробчатый магазин 5,7×28-мм"
+L["csgo_five_mag_30.compactname"] = "5,7-мм+"
+L["csgo_five_mag_30.description"] = string.format(quicktext.bigmag, 30)
+
 /////////////////// G3SG1
 L["csgo_g3_barrel_sd.printname"] = "Ствол «Шептун»"
 L["csgo_g3_barrel_sd.compactname"] = "Шептун"
@@ -1383,6 +1387,10 @@ L["csgo_glock_slide_long.description"] = "Удлиняет ствол."
 L["csgo_glock_slide_auto.printname"] = "Модификация автомата"
 L["csgo_glock_slide_auto.compactname"] = "Автоматический"
 L["csgo_glock_slide_auto.description"] = "Переделывает Glock-18 в Glock-18C, делая его <color=100,255,100>полностью автоматическим</color>."
+
+L["csgo_glock_mag_32.printname"] = "32-зарядный магазин 9×19-мм"
+L["csgo_glock_mag_32.compactname"] = "9-мм+"
+L["csgo_glock_mag_32.description"] = string.format(quicktext.bigmag, 32)
 
 /////////////////// M249
 -- L["csgo_m249_barrel_long.description"] = "Long and heavy barrel meant for suppressive fire."
