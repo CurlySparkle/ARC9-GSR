@@ -606,9 +606,9 @@ SWEP.Attachments = {
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.m3_Parent",
         --InstalledElements = {"stock_none"},
-        Pos = Vector(0, -0.3, 1.5),
+        Pos = Vector(0, -0.3, 1),
         Ang = Angle(90, 0, -90),
-        Scale = 1.1,
+        Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
@@ -621,7 +621,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.8, -.75, 0),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_capacity"),
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.m3_Parent",
         Category = "go_xm1014_mag",
         Icon_Offset = Vector(0, 0),
@@ -701,3 +701,15 @@ SWEP.Attachments = {
 
 SWEP.GripPoseParam = 3
 SWEP.GripPoseParam2 = 0.5
+
+SWEP.CustomizePosHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(2, -1, 0)
+	end
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(2, 0, 0)
+	end
+end

@@ -621,3 +621,15 @@ SWEP.Attachments = {
 
 SWEP.GripPoseParam = 3.3
 SWEP.GripPoseParam2 = 0.4
+
+SWEP.CustomizePosHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(4, -3, 0)
+	end
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(4, 0, 0)
+	end
+end

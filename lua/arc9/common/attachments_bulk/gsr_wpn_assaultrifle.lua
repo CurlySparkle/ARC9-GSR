@@ -1405,6 +1405,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_m4_tube_retract")
 ------------------------------------------------------------------------
 
@@ -1656,7 +1659,7 @@ ATT.WorldModelOffsetOverride = {
     TPIKAng = Angle(-12.5, -1.5, 170)
 }
 
-ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, -4, -0.66) end
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_scar17_stock_bullpup")

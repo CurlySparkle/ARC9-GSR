@@ -38,6 +38,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-8, -5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-8, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_awp_barrel_bull")
 ------------------------------------------------------------------------
 ATT = {}
@@ -62,6 +65,9 @@ ATT.Element = {
 	}
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-8.5, -5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-8.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "csgo_awp_barrel_short")
 ------------------------------------------------------------------------
 ATT = {}
@@ -85,6 +91,9 @@ ATT.Element = {
         [3] = { Pos = Vector(0, -3.4, 29.4) }, -- Muzzle
 	}
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-7.5, -5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-7.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_awp_barrel_factory")
 ------------------------------------------------------------------------
@@ -117,6 +126,9 @@ table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_awp_stock_obrez.png", "mips smooth")
 ATT.Category = "go_stock_awp"
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(6, -6, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_awp_stock_obrez")
 ------------------------------------------------------------------------

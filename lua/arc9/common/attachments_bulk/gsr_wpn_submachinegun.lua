@@ -251,8 +251,8 @@ ATT.Icon = Material("entities/attachs/go_mp5_stock_none.png", "mips smooth")
 ATT.Category = "go_mp5_stock"
 ATT.SortOrder = -10
 
-ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4.5, -2, 0) end
-ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4.5, 0, 0) end
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "csgo_mp5_stock_none")
 ------------------------------------------------------------------------

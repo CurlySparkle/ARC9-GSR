@@ -205,7 +205,7 @@ SWEP.CustomizePos = Vector(18.5, 40, 6.5)
 SWEP.CustomizeRotateAnchor = Vector(18.5, -3.5, -4)
 
 SWEP.CustomizeSnapshotFOV = 60
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -663,3 +663,21 @@ SWEP.Attachments = {
 
 SWEP.GripPoseParam = 4
 SWEP.GripPoseParam2 = 0.6
+
+SWEP.CustomizePosHook = function(wep, vec)
+	local s1, s2, s3 = wep:HasElement("csgo_stock_tube"), wep:HasElement("csgo_stock_tube_retracted"), wep:HasElement("csgo_ak47_stock_skeleton")
+	
+	if s1 or s2 or s3 then
+		return vec - Vector(3.5, -1, 0)
+	end
+
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local s1, s2, s3 = wep:HasElement("csgo_stock_tube"), wep:HasElement("csgo_stock_tube_retracted"), wep:HasElement("csgo_ak47_stock_skeleton")
+	
+	if s1 or s2 or s3 then
+		return vec - Vector(3.5, 0, 0)
+	end
+
+end

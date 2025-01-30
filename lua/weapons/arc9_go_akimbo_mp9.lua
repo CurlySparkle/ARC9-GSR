@@ -583,3 +583,15 @@ SWEP.Attachments = {
         Pos = Vector(-1, 0, 3.5),
     },
 }
+
+SWEP.CustomizePosHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(5, -2, 0)
+	end
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(5, 0, 0)
+	end
+end

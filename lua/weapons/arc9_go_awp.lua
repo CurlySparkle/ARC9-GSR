@@ -202,9 +202,9 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(25, 55, 5.5)
+SWEP.CustomizePos = Vector(28, 55, 5.5)
 
-SWEP.CustomizeRotateAnchor = Vector(25, -5, -4)
+SWEP.CustomizeRotateAnchor = Vector(28, -5, -4)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 55, 0)
 SWEP.CustomizeSnapshotFOV = 60
@@ -692,3 +692,15 @@ SWEP.Attachments = {
 
 SWEP.GripPoseParam = 4.5
 SWEP.GripPoseParam2 = 0.5
+
+SWEP.CustomizePosHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(6, -6, 0)
+	end
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	if wep:HasElement("go_stock_retract") then
+		return vec + Vector(6, 0, 0)
+	end
+end

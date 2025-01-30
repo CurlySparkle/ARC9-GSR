@@ -584,7 +584,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.8, -0.8, 0),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_tube"),
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.sawedoff_parent",
         Category = "go_sawedoff_mag",
         Pos = Vector(0, 0, 0),
