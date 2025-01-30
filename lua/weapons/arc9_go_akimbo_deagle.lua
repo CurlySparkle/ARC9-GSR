@@ -2,6 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
 
+SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
@@ -383,29 +384,10 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["deagle_slide_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(9.71, 0, 1.6), } }	
-    },
-    ["deagle_slide_long_long"] = {
-        Bodygroups = {
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(10.71, 0, 1.6), } }	
-    },
-    ["deagle_barrel_long"] = {
-        Bodygroups = {
-            {2,3},
-        },
-    AttPosMods = { [2] = { Pos = Vector(8.68, 0, 1.6), } }	
-    },
+    ["csgo_dual_deagle_mag_extend"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_deagle_c"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_deagle_c_2"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_dual_deagle_barrel"] = { Bodygroups = { { 2, 3 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -463,7 +445,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		Bone = "v_weapon.deagle_parent",
-        Category = "go_deagle_long_slide",
+        Category = "go_dual_deagle_long_slide",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(7, 0, 1.6),
         Ang = Angle(0, 0, 0),
@@ -478,6 +460,10 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols","muzzle_sil_pist","muzzle_pist_d"},
+		ExcludeElements = {
+			"csgo_deagle_c",
+			"csgo_deagle_c_2"
+		},
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(8.68, 0, 1.6),
         Ang = Angle(0, 0, 0),
@@ -519,7 +505,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
-        Category = "go_mag",
+        Category = "go_dual_deagle_mag",
         Pos = Vector(0, 0, -1),
     },
     {

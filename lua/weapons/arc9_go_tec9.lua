@@ -478,6 +478,8 @@ SWEP.AttachmentElements = {
     ["csgo_tec9_barrel_long"] = { Bodygroups = { { 1, 2 } } },
     ["csgo_tec9_mag_10"] = { Bodygroups = { { 2, 1 } } },
     ["csgo_tec9_mag_32"] = { Bodygroups = { { 2, 2 } } },
+    ["csgo_tec9_mag_10_auto"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_tec9_mag_32_auto"] = { Bodygroups = { { 2, 2 } } },
 	
     ["ubrms"] = { Bodygroups = { { 4, 2 } } },
     ["tacms"] = { Bodygroups = { { 4, 1 } } },

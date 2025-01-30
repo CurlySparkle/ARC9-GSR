@@ -440,9 +440,7 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 SWEP.AttachmentElements = {
     ["csgo_glock_mag_32"] = { Bodygroups = { { 0, 1 }, { 1, 1 } } },
     ["csgo_glock_slide_long"] = { Bodygroups = { { 2, 1 } } },
-    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.365, 7.1), } }	
     ["csgo_glock_slide_auto"] = { Bodygroups = { { 2, 2 } } },
-    -- AttPosMods = { [2] = { Pos = Vector(-0.025, -2.375, 6.6), } }	
 }
 
 SWEP.HookP_NameChange = function(self, name)

@@ -1821,6 +1821,19 @@ L["csgo_tec9_mag_10.printname"] = "Cargador de 10 cartuchos 9×19mm"
 L["csgo_tec9_mag_10.compactname"] = "9mm-"
 L["csgo_tec9_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
+-- Fully Automatic Attachments
+L["csgo_tec9_mag_18_auto.printname"] = "Cargador de 18 cartuchos 9×19mm [<color=100,175,100>Auto</color>]"
+L["csgo_tec9_mag_18_auto.compactname"] = "9mm A"
+L["csgo_tec9_mag_18_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>."
+
+L["csgo_tec9_mag_32_auto.printname"] = "Cargador de 32 cartuchos 9×19mm [<color=100,175,100>Auto</color>]"
+L["csgo_tec9_mag_32_auto.compactname"] = "9mm+ A"
+L["csgo_tec9_mag_32_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.bigmag, 32)
+
+L["csgo_tec9_mag_10_auto.printname"] = "Cargador de 10 cartuchos 9×19mm [<color=100,175,100>Auto</color>]"
+L["csgo_tec9_mag_10_auto.compactname"] = "9mm- A"
+L["csgo_tec9_mag_10_auto.description"] = "Cambia el modo de disparo a <color=100,255,100>totalmente automático</color>.\n" .. string.format(quicktext.smallmag, 10)
+
 /////////////////// UMP-45
 L["csgo_ump_barrel_long.printname"] = "Cañón USC"
 L["csgo_ump_barrel_long.compactname"] = "USC"

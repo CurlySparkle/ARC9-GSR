@@ -1821,6 +1821,19 @@ L["csgo_tec9_mag_10.printname"] = "10-Round 9×19mm Magazine"
 L["csgo_tec9_mag_10.compactname"] = "9mm-"
 L["csgo_tec9_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
+-- Fully Automatic Attachments
+L["csgo_tec9_mag_18_auto.printname"] = "18-Round 9×19mm Magazine [<color=100,175,100>Auto</color>]"
+L["csgo_tec9_mag_18_auto.compactname"] = "9mm A"
+L["csgo_tec9_mag_18_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>."
+
+L["csgo_tec9_mag_32_auto.printname"] = "32-Round 9×19mm Magazine [<color=100,175,100>Auto</color>]"
+L["csgo_tec9_mag_32_auto.compactname"] = "9mm+ A"
+L["csgo_tec9_mag_32_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 32)
+
+L["csgo_tec9_mag_10_auto.printname"] = "10-Round 9×19mm Magazine [<color=100,175,100>Auto</color>]"
+L["csgo_tec9_mag_10_auto.compactname"] = "9mm- A"
+L["csgo_tec9_mag_10_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.smallmag, 10)
+
 /////////////////// UMP-45
 L["csgo_ump_barrel_long.printname"] = "USC Barrel"
 L["csgo_ump_barrel_long.compactname"] = "USC"
@@ -2342,3 +2355,71 @@ L["csgo_dual_mp9_mag_short.description"] = ARC9:GetPhrase("csgo_mp9_mag_short.de
 L["csgo_dual_mp9_mag_long.printname"] = ARC9:GetPhrase("csgo_mp9_mag_long.printname") or "40-Round 9×19mm Magazine"
 L["csgo_dual_mp9_mag_long.compactname"] = ARC9:GetPhrase("csgo_mp9_mag_long.compactname") or "9mm+"
 L["csgo_dual_mp9_mag_long.description"] = ARC9:GetPhrase("csgo_mp9_mag_long.description") or string.format(quicktext.bigmag, 40)
+
+L["csgo_dual_cz_slide_long.printname"] = ARC9:GetPhrase("csgo_cz_slide_long.printname") or "CZ-L Slide and Barrel"
+L["csgo_dual_cz_slide_long.compactname"] = ARC9:GetPhrase("csgo_cz_slide_long.compactname") or "CZ-L"
+L["csgo_dual_cz_slide_long.description"] = ARC9:GetPhrase("csgo_cz_slide_long.description") or "Slightly longer slide and barrel with the built-in muzzle brake removed."
+
+L["csgo_dual_cz_slide_short.printname"] = ARC9:GetPhrase("csgo_cz_slide_short.printname") or "CZ-C Slide and Barrel"
+L["csgo_dual_cz_slide_short.compactname"] = ARC9:GetPhrase("csgo_cz_slide_short.compactname") or "CZ-C"
+L["csgo_dual_cz_slide_short.description"] = ARC9:GetPhrase("csgo_cz_slide_short.description") or "Shortest slide and barrel available."
+
+L["csgo_dual_cz_mag_ext.printname"] = ARC9:GetPhrase("csgo_cz_mag_ext.printname") or "18-Round 9×19mm Magazine"
+L["csgo_dual_cz_mag_ext.compactname"] = ARC9:GetPhrase("csgo_cz_mag_ext.compactname") or "9mm+"
+L["csgo_dual_cz_mag_ext.description"] = ARC9:GetPhrase("csgo_cz_mag_ext.description") or string.format(quicktext.bigmag, 18)
+
+L["csgo_dual_deagle_barrel.printname"] = ARC9:GetPhrase("csgo_deagle_barrel.printname") or "Long Barrel"
+L["csgo_dual_deagle_barrel.compactname"] = ARC9:GetPhrase("csgo_deagle_barrel.compactname") or "Long"
+L["csgo_dual_deagle_barrel.description"] = ARC9:GetPhrase("csgo_deagle_barrel.description") or "Factory-made long barrel."
+
+L["csgo_dual_deagle_mag_extend.printname"] = ARC9:GetPhrase("csgo_deagle_mag_extend.printname") or "15-Round .50 Action Express Magazine"
+L["csgo_dual_deagle_mag_extend.compactname"] = ARC9:GetPhrase("csgo_deagle_mag_extend.compactname") or ".50 AE+"
+L["csgo_dual_deagle_mag_extend.description"] = ARC9:GetPhrase("csgo_deagle_mag_extend.description") or string.format(quicktext.bigmag, 15)
+
+L["csgo_dual_five_slide_long.printname"] = ARC9:GetPhrase("csgo_five_slide_long.printname") or "Plus Slide and Barrel"
+L["csgo_dual_five_slide_long.compactname"] = ARC9:GetPhrase("csgo_five_slide_long.compactname") or "Plus"
+L["csgo_dual_five_slide_long.description"] = ARC9:GetPhrase("csgo_elite_slide_long.description") or "Longer slide and barrel."
+
+L["csgo_dual_five_slide_short.printname"] = ARC9:GetPhrase("csgo_five_slide_short.printname") or "FN Slide and Barrel"
+L["csgo_dual_five_slide_short.compactname"] = ARC9:GetPhrase("csgo_five_slide_short.compactname") or "FN"
+L["csgo_dual_five_slide_short.description"] = ARC9:GetPhrase("csgo_elite_slide_short.description") or "Shortened slide and barrel."
+
+L["csgo_dual_five_mag_30.printname"] = ARC9:GetPhrase("csgo_five_mag_30.printname") or "30-Round 5.7×28mm Magazine"
+L["csgo_dual_five_mag_30.compactname"] = ARC9:GetPhrase("csgo_five_mag_30.compactname") or "5.7mm+"
+L["csgo_dual_five_mag_30.description"] = ARC9:GetPhrase("csgo_five_mag_30.description") or string.format(quicktext.bigmag, 30)
+
+L["csgo_dual_glock_slide_long.printname"] = ARC9:GetPhrase("csgo_glock_slide_long.printname") or "Extended Slide and Barrel"
+L["csgo_dual_glock_slide_long.compactname"] = ARC9:GetPhrase("csgo_glock_slide_long.compactname") or "Extended"
+L["csgo_dual_glock_slide_long.description"] = ARC9:GetPhrase("csgo_glock_slide_long.description") or "Extends the barrel."
+
+L["csgo_dual_glock_mag_32.printname"] = ARC9:GetPhrase("csgo_glock_mag_32.printname") or "32-Round 9×19mm Magazine"
+L["csgo_dual_glock_mag_32.compactname"] = ARC9:GetPhrase("csgo_glock_mag_32.compactname") or "9mm+"
+L["csgo_dual_glock_mag_32.description"] = ARC9:GetPhrase("csgo_glock_mag_32.description") or string.format(quicktext.bigmag, 32)
+
+L["csgo_dual_p2000_slide_long.printname"] = ARC9:GetPhrase("csgo_p2000_slide_long.printname") or "P2000-L Slide and Barrel"
+L["csgo_dual_p2000_slide_long.compactname"] = ARC9:GetPhrase("csgo_p2000_slide_long.compactname") or "L"
+L["csgo_dual_p2000_slide_long.description"] = ARC9:GetPhrase("csgo_p2000_slide_long.description") or "Extended slide and barrel."
+
+L["csgo_dual_p2000_mag_20.printname"] = ARC9:GetPhrase("csgo_p2000_mag_20.printname") or "20-Round 9×19mm Magazine"
+L["csgo_dual_p2000_mag_20.compactname"] = ARC9:GetPhrase("csgo_p2000_mag_20.compactname") or "9mm+"
+L["csgo_dual_p2000_mag_20.description"] = ARC9:GetPhrase("csgo_p2000_mag_20.description") or string.format(quicktext.bigmag, 20)
+
+L["csgo_dual_p250_slide_long.printname"] = ARC9:GetPhrase("csgo_p250_slide_long.printname") or "Full Size Slide"
+L["csgo_dual_p250_slide_long.compactname"] = ARC9:GetPhrase("csgo_p250_slide_long.compactname") or "Full"
+L["csgo_dual_p250_slide_long.description"] = ARC9:GetPhrase("csgo_p250_slide_long.description") or "Longer slide and barrel."
+
+L["csgo_dual_p250_slide_short.printname"] = ARC9:GetPhrase("csgo_p250_slide_short.printname") or "Subcompact Frame"
+L["csgo_dual_p250_slide_short.compactname"] = ARC9:GetPhrase("csgo_p250_slide_short.compactname") or "Sub"
+L["csgo_dual_p250_slide_short.description"] = ARC9:GetPhrase("csgo_p250_slide_short.description") or "Shortens the slide, barrel and pistol grip."
+
+L["csgo_dual_p250_mag_20.printname"] = ARC9:GetPhrase("csgo_p2000_mag_20.printname") or "20-Round 9×19mm Magazine"
+L["csgo_dual_p250_mag_20.compactname"] = ARC9:GetPhrase("csgo_p2000_mag_20.compactname") or "9mm+"
+L["csgo_dual_p250_mag_20.description"] = ARC9:GetPhrase("csgo_p2000_mag_20.description") or string.format(quicktext.bigmag, 20)
+
+L["csgo_dual_usp_slide_long.printname"] = ARC9:GetPhrase("csgo_usp_slide_long.printname") or "Elite Slide and Barrel"
+L["csgo_dual_usp_slide_long.compactname"] = ARC9:GetPhrase("csgo_usp_slide_long.compactname") or "Elite"
+L["csgo_dual_usp_slide_long.description"] = ARC9:GetPhrase("csgo_usp_slide_long.description") or "Extended slide and barrel."
+
+L["csgo_dual_usp_mag_18.printname"] = ARC9:GetPhrase("csgo_usp_mag_18.printname") or "18-Round .45 ACP Magazines"
+L["csgo_dual_usp_mag_18.compactname"] = ARC9:GetPhrase("csgo_usp_mag_18.compactname") or ".45 ACP+"
+L["csgo_dual_usp_mag_18.description"] = ARC9:GetPhrase("csgo_usp_mag_18.description") or string.format(quicktext.bigmag, 18)

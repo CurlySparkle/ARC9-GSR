@@ -2,6 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
 
+SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
@@ -218,12 +219,12 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 37.5, 2.5)
+SWEP.CustomizePos = Vector(18, 37.5, 3.5)
 
 SWEP.CustomizeRotateAnchor = Vector(18, 0, -4)
 
 SWEP.CustomizeSnapshotFOV = 60
-SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -383,25 +384,9 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-		    {0,2},
-            {1,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(6.42, 0, 0.9), } }	
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-		    {0,1},
-            {1,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(5.58, 0, 0.9), } }	
-    },
+    ["csgo_dual_five_mag_30"] = { Bodygroups = { { 2, 1 } } },
+    ["csgo_dual_five_slide_long"] = { Bodygroups = { { 0, 2 }, { 1, 2 } } },
+    ["csgo_dual_five_slide_short"] = { Bodygroups = { { 0, 1 }, { 1, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -455,7 +440,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		DefaultAttName = "Standard",
 		--Bone = "v_weapon.glock_magazine",
-        Category = "go_fiveseven_slide",
+        Category = "go_dual_fiveseven_slide",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(4, 0, 1),
     },
@@ -504,7 +489,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
-        Category = "go_mag",
+        Category = "go_dual_fiveseven_mag",
         Pos = Vector(0, 0, 0),
     },
     {

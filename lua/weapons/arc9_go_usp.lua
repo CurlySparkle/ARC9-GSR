@@ -511,17 +511,10 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmpty
 
 SWEP.AttachmentElements = {
     ["csgo_usp_slide_long"] = { Bodygroups = { { 3, 1 }, { 1, 1 } } },
-    -- AttPosMods = { [2] = { Pos = Vector(0, 0.4, 0), } }	
     ["csgo_usp_slide_short"] = { Bodygroups = { { 0, 1 }, { 1, 2 }, { 3, 2 } } },
-    -- AttPosMods = { 
-		-- [2] = { Pos = Vector(0, -1.9, 0), },
-		-- [3] = { Pos = Vector(-0.02, -0.9, 5), }
-    -- }
     ["csgo_usp_mag_18"] = { Bodygroups = { { 2, 1 } } },
 	
-    -- ["silencer"] = { Bodygroups = { { 1, 1 } } },
     ["rocket_usb"] = { Bodygroups = { { 1, 3 } } },
-    -- ["silencer_none"] = { Bodygroups = { { 1, 4 } } },
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  

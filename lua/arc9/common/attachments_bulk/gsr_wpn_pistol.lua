@@ -359,7 +359,7 @@ ATT.AimDownSightsTimeMult = 1.05
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
-ATT.Category = "go_deagle_long_slide"
+ATT.Category = { "go_deagle_long_slide", "go_dual_deagle_long_slide" }
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -379,7 +379,7 @@ ATT.AimDownSightsTimeMult = 1.125
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/muzzle_deagle.png", "mips smooth")
-ATT.Category = "go_deagle_long_slide"
+ATT.Category = { "go_deagle_long_slide", "go_dual_deagle_long_slide" }
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -925,7 +925,91 @@ ATT.Category = "go_tec9_mag"
 ARC9.LoadAttachment(ATT, "csgo_tec9_mag_10")
 ------------------------------------------------------------------------
 
--- TODO; Tec-9 Auto Mags
+-- Auto Mags
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "18-Round 9x19mm Magazine (Automatic)"
+
+ATT.Firemodes = { { Mode = -1 } }
+ATT.RPMAdd = 200
+
+ATT.CustomPros = { [ ARC9:GetPhrase("customize.stats.firemodes") ] = ARC9:GetPhrase("hud.firemode.auto") }
+
+ATT.RecoilAutoControlAdd = -0.5
+ATT.SpreadAddRecoil = 0.01
+ATT.RecoilMult = 1.66
+ATT.RecoilModifierCapAddSights = 0.2
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 0.95
+
+ATT.Icon = Material("entities/attachs/go_tec9_mag_32.png", "mips smooth")
+ATT.Category = "go_tec9_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_mag_18_auto")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "32-Round 9x19mm Magazine (Automatic)"
+
+ATT.Firemodes = { { Mode = -1 } }
+ATT.RPMAdd = 200
+
+ATT.CustomPros = { [ ARC9:GetPhrase("customize.stats.firemodes") ] = ARC9:GetPhrase("hud.firemode.auto") }
+
+ATT.RecoilAutoControlAdd = -0.5
+ATT.SpreadAddRecoil = 0.01
+ATT.RecoilMult = 1.66
+ATT.RecoilModifierCapAddSights = 0.2
+
+ATT.ClipSizeAdd = 14
+
+ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.2
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
+
+ATT.Icon = Material("entities/attachs/go_tec9_mag_32.png", "mips smooth")
+ATT.Category = "go_tec9_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_mag_32_auto")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "10-Round 9x19mm Magazine (Automatic)"
+
+ATT.Firemodes = { { Mode = -1 } }
+ATT.RPMAdd = 200
+
+ATT.CustomPros = { [ ARC9:GetPhrase("customize.stats.firemodes") ] = ARC9:GetPhrase("hud.firemode.auto") }
+
+ATT.RecoilAutoControlAdd = -0.5
+ATT.SpreadAddRecoil = 0.01
+ATT.RecoilMult = 1.66
+ATT.RecoilModifierCapAddSights = 0.2
+
+ATT.ClipSizeAdd = -8
+
+ATT.ReloadTimeMult = 0.85
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+ATT.SpeedMult = 1.025
+
+ATT.DropMagazineTimeMult = 0.85
+
+table.Merge(ATT, sharedcode)
+ATT.SortOrder = 1
+
+ATT.Icon = Material("entities/attachs/go_tec9_mag_10.png", "mips smooth")
+ATT.Category = "go_tec9_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_tec9_mag_10_auto")
 
 
 ////////////////////////////////////// USP-S

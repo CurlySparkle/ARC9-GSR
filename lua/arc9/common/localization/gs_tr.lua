@@ -1801,6 +1801,19 @@ local quicktext = {
 -- L["csgo_tec9_mag_10.compactname"] = "9mm-"
 -- L["csgo_tec9_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
+-- Fully Automatic Attachments
+-- L["csgo_tec9_mag_18_auto.printname"] = "18-Round 9×19mm Magazine [<color=100,175,100>Auto</color>]"
+-- L["csgo_tec9_mag_18_auto.compactname"] = "9mm A"
+-- L["csgo_tec9_mag_18_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>."
+
+-- L["csgo_tec9_mag_32_auto.printname"] = "32-Round 9×19mm Magazine [<color=100,175,100>Auto</color>]"
+-- L["csgo_tec9_mag_32_auto.compactname"] = "9mm+ A"
+-- L["csgo_tec9_mag_32_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.bigmag, 32)
+
+-- L["csgo_tec9_mag_10_auto.printname"] = "10-Round 9×19mm Magazine [<color=100,175,100>Auto</color>]"
+-- L["csgo_tec9_mag_10_auto.compactname"] = "9mm- A"
+-- L["csgo_tec9_mag_10_auto.description"] = "Changes the firing mode to <color=100,255,100>fully automatic</color>.\n" .. string.format(quicktext.smallmag, 10)
+
 /////////////////// UMP-45
 -- L["csgo_ump_barrel_long.printname"] = "USC Barrel"
 -- L["csgo_ump_barrel_long.compactname"] = "USC"

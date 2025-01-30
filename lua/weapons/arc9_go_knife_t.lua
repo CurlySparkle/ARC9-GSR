@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_tknife")
+-- SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_tknife")
 
 SWEP.Base = "arc9_go_base"
 
@@ -133,10 +133,14 @@ SWEP.MovingAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(0, 45, -25)
 SWEP.CustomizePos = Vector(3, 20, -13)
+
 SWEP.CustomizeSnapshotFOV = 56
+SWEP.CustomizeSnapshotPos = Vector(-1, -7.5, 3.5)
+SWEP.CustomizeNoRotate = true
 
 SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "knife"

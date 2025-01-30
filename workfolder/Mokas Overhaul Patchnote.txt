@@ -68,15 +68,11 @@ And more!
 [b]P250[/b]: Reduced recoil
 [b]USP-S[/b]: Reduced recoil | Added a 66% Recoil penalty when rapid-firing | Removed Spread penalty when unsuppressed
 
-[u]Knives[/u]
-[b]CT Knife[/b]:
-[b]T Knife[/b]: 
-[b]Riot Shield[/b]: 
-[b]Bayonet[/b]: 
-[b]Flip Knife[/b]: 
-
 [u]Extras[/u]
 [b]Claymore[/b]: Fixed LUA errors when planting.
+
+[u]Gear[/u]
+[b]Zeus x27[/b]: Increased range | Reduced RPM
 
 [u]Dual-Wielded[/u]
 [b]ALL[/b]: Rebalanced stats to be more in-line with their single-use counterparts; this includes, but is not limited to: recoil, spread, damage and range. Additionally, all dual-wielded weapons can no longer utilize peeking.
@@ -115,12 +111,13 @@ A few weapons have received brand-new attachments:
 			[*] Snipers: Scout
 			[*] Shotguns: MAG-7
 		[/list]
-	[*] [b]Dual Wield[/b] weapons (except the Sawed-Off) will now use new attachments with slightly altered stats from their single-use counterparts
+	[*] [b]Dual Wield[/b] weapons (except the R8 Revoler & Sawed-Off) will now use new attachments with slightly altered stats from their single-use counterparts
 	[*] MP5 & MP5-SD: [b]40-Round Magazine[/b] & [b]30-Round 10x25mm Magazine[/b]
-	[*] SCAR-20: [b]20-Round Magazine (Automatic)[/b] & [b]30-Round Magazine (Automatic)[/b]
+	[*] SCAR-20: [b]20-Round Magazine (Auto)[/b] & [b]30-Round Magazine (Auto)[/b]
 	[*] Scout: [b]10-Round Magazine[/b]
 	[*] Nova: [b]Extended Barrel[/b] & [b]CQC Barrel[/b]
 	[*] XM1014: [b]5-Round Tube[/b]
+	[*] Tec-9: [b]18-Round Magazine (Auto)[/b], [b]32-Round Magazine (Auto)[/b] & [b]10-Round Magazine (Auto)[/b]
 [/list]
 
 [u]New Integrations[/u]

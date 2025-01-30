@@ -46,8 +46,8 @@ SWEP.DamageMin = 0 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 150 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 200 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 200 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 575 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 0 -- Units of wood that can be penetrated by this gun.
 
@@ -71,7 +71,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 352
+SWEP.RPM = 250
 
 SWEP.Firemodes = {
     {
@@ -82,7 +82,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0.25
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.5 -- Multiplier for vertical recoil
@@ -93,12 +93,12 @@ SWEP.RecoilSide = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 3 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 2
 
 SWEP.RecoilMultCrouch = 0.6
 SWEP.RecoilMultHipFire = 1.25
@@ -106,24 +106,22 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.04 -- Applied per unit of recoil.
 
-SWEP.SpreadAddMove = 0.03
-SWEP.SpreadAddMidAir = 0.03
-SWEP.SpreadAddHipFire = 0.003
-SWEP.SpreadAddCrouch = -0.05
-SWEP.SpreadAddSights = -0.05
+SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMidAir = 0.15
+SWEP.SpreadAddHipFire = 0
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0 -- How much the gun sways.
-SWEP.SwayMultSights = 0
-
 SWEP.AimDownSightsTime = 0.2 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
+
+-------------------------- SWAY
+
+SWEP.SwayAddSights = 0.2
 
 -------------------------- MELEE
 
@@ -171,10 +169,11 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, -20, 0)
-SWEP.CustomizePos = Vector(20, 25, 4.5)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizePos = Vector(20, 32.5, 4)
+SWEP.CustomizeRotateAnchor = Vector(20, -2, -4)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 0, 2)
+SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0.5)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -242,7 +241,7 @@ SWEP.Hook_BulletImpact = function(wep, data)
     wep.Owner:EmitSound("weapons/csgo/taser/taser_hit.ogg", 60, 100, 1, CHAN_VOICE_BASE)
 
     -- play the second sound with a 33% chance
-    if math.Rand(0, 1) <= 0.222 then
+    if math.Rand(0, 1) <= 0.33 then
         wep.Owner:EmitSound("weapons/csgo/taser/hpain1.wav", 60, 100, 1, CHAN_VOICE_BASE)
     end
     end

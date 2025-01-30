@@ -2,6 +2,7 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_go_base"
 
+SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
 SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
@@ -218,7 +219,7 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 40, 2.5)
+SWEP.CustomizePos = Vector(18, 40, 3.5)
 
 SWEP.CustomizeRotateAnchor = Vector(18, 0, -4)
 
@@ -384,25 +385,9 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-		    {0,1},
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(6.45, 0, 1), } }	
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-		    {0,2},
-            {2,2},
-        },
-    AttPosMods = { [2] = { Pos = Vector(5, 0, 1), } }	
-    },
+    ["csgo_dual_p250_mag_20"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_dual_p250_slide_long"] = { Bodygroups = { { 0, 1 }, { 2, 1 } } },
+    ["csgo_dual_p250_slide_short"] = { Bodygroups = { { 0, 2 }, { 2, 2 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -506,7 +491,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
-        Category = "go_mag",
+        Category = "go_dual_p250_mag",
         Pos = Vector(0, 0, 0),
     },
     {

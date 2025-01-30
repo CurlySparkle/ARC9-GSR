@@ -235,12 +235,12 @@ SWEP.CrouchPos = Vector(-0.5, -0, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(18, 32.5, 3.5)
+SWEP.CustomizePos = Vector(18, 40, 3.5)
 
 SWEP.CustomizeRotateAnchor = Vector(18, 0, -4)
 
 SWEP.CustomizeSnapshotFOV = 60
-SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 2.5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
@@ -404,18 +404,8 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {2,1},
-            {0,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(5.88, 0, 1), } }
-    },
+    ["csgo_dual_glock_mag_32"] = { Bodygroups = { { 0, 1 }, { 2, 1 } } },
+    ["csgo_dual_glock_slide_long"] = { Bodygroups = { { 1, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -523,7 +513,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
-        Category = "go_mag",
+        Category = "go_dual_glock_mag",
         Bone = "j_mag1_l",
         Pos = Vector(0, 0, -.25),
     },

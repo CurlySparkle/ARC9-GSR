@@ -1821,6 +1821,19 @@ L["csgo_tec9_mag_10.printname"] = "10-зарядный магазин 9×19-мм
 L["csgo_tec9_mag_10.compactname"] = "9-мм-"
 L["csgo_tec9_mag_10.description"] = string.format(quicktext.smallmag, 10)
 
+-- Fully Automatic Attachments
+L["csgo_tec9_mag_18_auto.printname"] = "18-зарядный магазин 9×19-мм [<color=100,175,100>Авто.</color>]"
+L["csgo_tec9_mag_18_auto.compactname"] = "9-мм А"
+L["csgo_tec9_mag_18_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>."
+
+L["csgo_tec9_mag_32_auto.printname"] = "32-зарядный магазин 9×19-мм [<color=100,175,100>Авто.</color>]"
+L["csgo_tec9_mag_32_auto.compactname"] = "9-мм+ А"
+L["csgo_tec9_mag_32_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>.\n" .. string.format(quicktext.bigmag, 32)
+
+L["csgo_tec9_mag_10_auto.printname"] = "10-зарядный магазин 9×19-мм [<color=100,175,100>Авто.</color>]"
+L["csgo_tec9_mag_10_auto.compactname"] = "9-мм- А"
+L["csgo_tec9_mag_10_auto.description"] = "Изменяет режим стрельбы на <color=100,255,100>полностью автоматический</color>.\n" .. string.format(quicktext.smallmag, 10)
+
 /////////////////// UMP-45
 L["csgo_ump_barrel_long.printname"] = "Ствол USC"
 L["csgo_ump_barrel_long.compactname"] = "USC"

@@ -388,17 +388,8 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-            {1,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-            {2,1},
-        },
-    AttPosMods = { [2] = { Pos = Vector(6, 0, 1), } }	
-    },
+    ["csgo_dual_p2000_mag_20"] = { Bodygroups = { { 1, 1 } } },
+    ["csgo_dual_p2000_slide_long"] = { Bodygroups = { { 2, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -449,7 +440,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_slide"),
 		--Bone = "v_weapon.glock_magazine",
-        Category = "go_p2000_slide",
+        Category = "go_dual_p2000_slide",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(2.7, 0, 1),
     },
@@ -498,7 +489,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "j_mag1_l",
-        Category = "go_mag",
+        Category = "go_dual_p2000_mag",
         Pos = Vector(0, 0, 0),
     },
     {
