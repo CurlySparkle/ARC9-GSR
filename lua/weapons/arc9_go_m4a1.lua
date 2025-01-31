@@ -80,15 +80,16 @@ SWEP.RPM = 700
 SWEP.Firemodes = {
     {
         Mode = -1,
-        PrintName = ARC9:GetPhrase("csgo_firemode_sil"),
+        PrintName = ARC9:GetPhrase("hud.firemode.auto") .. "-S",
         Silencer = true,
 		RPMAdd = -100,
 		SpreadMultRecoil = 0.95,
+		TracerNum = 0,
         -- add other attachment modifiers
     },
     {
         Mode = -1,
-        PrintName = ARC9:GetPhrase("csgo_firemode_nosil"),
+        -- PrintName = ARC9:GetPhrase("csgo_firemode_nosil"),
         AfterShotQCA = 1,
         MuzzleEffectQCA = 1,
         IgnoreMuzzleDevice = true,

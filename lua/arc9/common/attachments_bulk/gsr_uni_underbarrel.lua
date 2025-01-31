@@ -369,6 +369,8 @@ ATT.ShootAngOffsetUBGL = Angle(5, 0, 0)
 
 ATT.BobSprintMultUBGL = 1
 
+ATT.DropMagazineAmountUBGL = 0
+
 ATT.DrawFunc = function(swep, model, wm) 
     if swep:GetElements()["go_ubgl_m203_sight"] then model:SetBodygroup(2,1) end
 end
@@ -545,6 +547,14 @@ ATT.HasSightsUBGL = false
 
 ATT.BobSprintMultUBGL = 1
 
+ATT.ShouldDropMagUBGL = true
+ATT.ShouldDropMagEmptyUBGL = true
+
+ATT.DropMagazineModelUBGL = "models/weapons/csgo/mags/w_shot_mag7_mag.mdl"
+ATT.DropMagazineSoundsUBGL = {"physics/metal/weapon_impact_soft1.wav", "physics/metal/weapon_impact_soft2.wav", "physics/metal/weapon_impact_soft3.wav"}
+ATT.DropMagazineAmountUBGL = 1
+ATT.DropMagazineTime = 0.4
+
 -------------------------- SPREAD
 
 ATT.SpreadUBGL = 0.065
@@ -554,7 +564,7 @@ ATT.SpreadAddRecoilUBGL = 0.1 -- Applied per unit of recoil.
 -------------------------- RECOIL
 
 -- General recoil multiplier
-ATT.RecoilUBGL = 4
+ATT.RecoilUBGL = 1.5
 ATT.RecoilSeedUBGL = 24862
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
@@ -566,10 +576,10 @@ ATT.RecoilSideUBGL = 2 -- Multiplier for vertical recoil
 ATT.RecoilRandomUpUBGL = 0.3
 ATT.RecoilRandomSideUBGL = 1.2
 
-ATT.RecoilDissipationRateUBGL = 5 -- How much recoil dissipates per second.
+ATT.RecoilDissipationRateUBGL = 3 -- How much recoil dissipates per second.
 ATT.RecoilResetTimeUBGL = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-ATT.RecoilAutoControlUBGL = 2 -- Multiplier for automatic recoil control.
+ATT.RecoilAutoControlUBGL = 4 -- Multiplier for automatic recoil control.
 
 ATT.RecoilKickUBGL = 1.5
 ATT.RecoilMultCrouchUBGL = 0.7
@@ -738,7 +748,7 @@ ATT.HasSightsUBGL = false
 
 ATT.BobSprintMultUBGL = 1
 
-ATT.ActivePosUBGL = Vector(-1.35, -0.5, 1.25)
+ATT.ActivePosUBGL = Vector(-1.35, 0, 2)
 ATT.ActiveAngUBGL = Angle(0, 0, 0)
 
 -- ATT.MovingPosUBGL = Vector(-1.5, -1, 1.25)
@@ -746,6 +756,8 @@ ATT.ActiveAngUBGL = Angle(0, 0, 0)
 
 ATT.CrouchPosUBGL = Vector(-1.35, -1, 1.25)
 ATT.CrouchAngUBGL = Angle(0, 0, 0)
+
+ATT.DropMagazineAmountUBGL = 0
 
 -------------------------- SPREAD
 
@@ -756,7 +768,7 @@ ATT.SpreadAddRecoilUBGL = 0.1 -- Applied per unit of recoil.
 -------------------------- RECOIL
 
 -- General recoil multiplier
-ATT.RecoilUBGL = 4
+ATT.RecoilUBGL = 1.25
 ATT.RecoilSeedUBGL = 24862
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.

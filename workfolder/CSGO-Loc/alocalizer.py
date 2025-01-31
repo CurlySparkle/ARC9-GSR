@@ -5,11 +5,14 @@ n = len(sys.argv)
 file_name = "csgo_english.txt"
 file_name_fallback = "csgo_english.txt"
 output_name = "output.lua"
+langname = "English"
 
 if n >= 2:
     file_name = sys.argv[1]
 if n >= 3:
     output_name = sys.argv[2]
+if n >= 4:
+    langname = sys.argv[3]
 
 dict_lang = {}
 
@@ -107,7 +110,7 @@ for key, value in dict_lang.items():
 
 # Spit out lua table
 with open(output_name, "w", encoding="utf_8") as f:
-    f.write("text = {\n")
+    f.write(f"text = {{ -- {langname}\n")
     for key, value in merged_dict_lang.items():
         if value[1] is None:
             f.write(f"\t[\"{key.lower()}\"] = \"{value[0]}\",\n")

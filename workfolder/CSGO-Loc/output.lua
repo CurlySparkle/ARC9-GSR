@@ -1,4 +1,4 @@
-text = {
+text = { -- English
 	["pistol"] = "Pistol",
 	["smg"] = "SMG",
 	["rifle"] = "Rifle",

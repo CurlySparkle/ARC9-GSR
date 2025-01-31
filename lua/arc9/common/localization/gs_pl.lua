@@ -1,6 +1,6 @@
 L = {} -- Polish strings by ??
 
-IncludeCS("csgostrings/wpnstring-" .. "pl" .. ".lua")
+IncludeCS("cs2strings/wpnstring-" .. "pl" .. ".lua")
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
@@ -176,18 +176,24 @@ L["csgo_weapon_xm1014"] = csstring["xm1014"].name
 L["csgo_weapon_zeus"] = csstring["taser"].name
 
 /////////////////// Weapon Descriptions
-L["csgo_description_ak47"] = csstring["ak47"].desc
-L["csgo_description_aug"] = csstring["aug"].desc
-L["csgo_description_awp"] = csstring["awp"].desc
-L["csgo_description_bizon"] = csstring["bizon"].desc
-L["csgo_description_cz75"] = csstring["cz75a"]
-L["csgo_description_deagle"] = csstring["deserteagle"].desc
-L["csgo_description_elite"] = csstring["elites"].desc
-L["csgo_description_famas"] = csstring["famas"].desc
-L["csgo_description_fiveseven"] = csstring["fiveseven"].desc
-L["csgo_description_g1sg3"] = csstring["g3sg1"].desc
-L["csgo_description_galilar"] = csstring["galilar"].desc
-L["csgo_description_glock"] = csstring["glock18"].desc
+
+local customdesc = {
+	m4a1s = "\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>.",
+	usps = "\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>.",
+}
+
+L["csgo_description_ak47"] = csstring["ak47_use"] .. csstring["ak47"].desc
+L["csgo_description_aug"] = csstring["aug_use"] .. csstring["aug"].desc
+L["csgo_description_awp"] = csstring["awp_use"] .. csstring["awp"].desc
+L["csgo_description_bizon"] = csstring["bizon_use"] .. csstring["bizon"].desc
+L["csgo_description_cz75"] = csstring["cz75a_use"] .. csstring["cz75a"]
+L["csgo_description_deagle"] = csstring["deagle_use"] .. csstring["deserteagle"].desc
+L["csgo_description_elite"] = csstring["elite_use"] .. csstring["elites"].desc
+L["csgo_description_famas"] = csstring["famas_use"] .. csstring["famas"].desc
+L["csgo_description_fiveseven"] = csstring["fiveseven_use"] .. csstring["fiveseven"].desc
+L["csgo_description_g1sg3"] = csstring["g3sg1_use"] .. csstring["g3sg1"].desc
+L["csgo_description_galilar"] = csstring["galilar_use"] .. csstring["galilar"].desc
+L["csgo_description_glock"] = csstring["glock_use"] .. csstring["glock18"].desc
 L["csgo_description_knife_ct"] = csstring["knife"].desc
 L["csgo_description_knife_ghost"] = csstring["knife_ghost"].desc
 L["csgo_description_knife_shield"] = csstring["shield"].desc
@@ -210,36 +216,36 @@ L["csgo_description_knife_outdoor"] = csstring["knife_outdoor"].desc
 L["csgo_description_knife_widowmaker"] = csstring["knife_widowmaker"].desc
 L["csgo_description_knife_stiletto"] = csstring["knife_stiletto"].desc
 L["csgo_description_knife_skeleton"] = csstring["knife_skeleton"].desc
-L["csgo_description_m4a1"] = csstring["m4a1_silencer"].desc .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>rate of fire</color> and <color=255,100,100>spread</color>." -- CUSTOM TEXT ADDED
-L["csgo_description_m4a4"] = csstring["m4a4"]
-L["csgo_description_m249"] = csstring["m249"].desc
-L["csgo_description_mac10"] = csstring["mac10"].desc
-L["csgo_description_mag7"] = csstring["mag7"].desc
-L["csgo_description_mp5sd"] = csstring["mp5sd"].desc
-L["csgo_description_mp7"] = csstring["mp7"].desc
-L["csgo_description_mp9"] = csstring["mp9"].desc
+L["csgo_description_m4a1"] = csstring["m4a1_silencer_use"] .. csstring["m4a1_silencer"].desc .. customdesc.m4a1s
+L["csgo_description_m4a4"] = csstring["m4a1_use"] .. csstring["m4a4"]
+L["csgo_description_m249"] = csstring["m249_use"] .. csstring["m249"].desc
+L["csgo_description_mac10"] = csstring["mac10_use"] .. csstring["mac10"].desc
+L["csgo_description_mag7"] = csstring["mag7_use"] .. csstring["mag7"].desc
+L["csgo_description_mp5sd"] = csstring["mp5sd_use"] .. csstring["mp5sd"].desc
+L["csgo_description_mp7"] = csstring["mp7_use"] .. csstring["mp7"].desc
+L["csgo_description_mp9"] = csstring["mp9_use"] .. csstring["mp9"].desc
 L["csgo_description_nade_c4"] = csstring["c4"].desc
-L["csgo_description_nade_decoy"] = csstring["decoy_grenade"]
-L["csgo_description_nade_flashbang"] = csstring["flashbang"].desc
-L["csgo_description_nade_frag"] = csstring["he_grenade"].desc
-L["csgo_description_nade_incendiary"] = csstring["incindiary_grenade"]
-L["csgo_description_nade_molotov"] = csstring["molotov"].desc
-L["csgo_description_nade_smoke"] = csstring["smoke_grenade"].desc
-L["csgo_description_negev"] = csstring["negev"].desc
-L["csgo_description_nova"] = csstring["nova"].desc
-L["csgo_description_p90"] = csstring["p90"].desc
-L["csgo_description_p250"] = csstring["p250"].desc
-L["csgo_description_p2000"] = csstring["hkp2000"].desc
-L["csgo_description_r8"] = csstring["revolver"].desc
-L["csgo_description_sawedoff"] = csstring["sawedoff"].desc
-L["csgo_description_scar20"] = csstring["scar20"].desc
-L["csgo_description_sg556"] = csstring["sg553"]
-L["csgo_description_ssg08"] = csstring["ssg08"].desc
-L["csgo_description_tec9"] = csstring["tec9"].desc
-L["csgo_description_ump"] = csstring["ump45"].desc
-L["csgo_description_usp"] = csstring["usp_silencer"].desc .. "\n\nWhen <color=255,255,100>Unsuppressed</color>: Increased <color=100,255,100>damage</color> and <color=255,100,100>spread</color>." -- CUSTOM TEXT ADDED
-L["csgo_description_xm1014"] = csstring["xm1014"].desc
-L["csgo_description_zeus"] = csstring["taser"].desc
+L["csgo_description_nade_decoy"] = csstring["decoy_use"] .. csstring["decoy_grenade"]
+L["csgo_description_nade_flashbang"] = csstring["flashbang_use"] .. csstring["flashbang"].desc
+L["csgo_description_nade_frag"] = csstring["hegrenade_use"] .. csstring["he_grenade"].desc
+L["csgo_description_nade_incendiary"] = csstring["incgrenade_use"] .. csstring["incindiary_grenade"]
+L["csgo_description_nade_molotov"] = csstring["molotov_use"] .. csstring["molotov"].desc
+L["csgo_description_nade_smoke"] = csstring["smokegrenade_use"] .. csstring["smoke_grenade"].desc
+L["csgo_description_negev"] = csstring["negev_use"] .. csstring["negev"].desc
+L["csgo_description_nova"] = csstring["nova_use"] .. csstring["nova"].desc
+L["csgo_description_p90"] = csstring["p90_use"] .. csstring["p90"].desc
+L["csgo_description_p250"] = csstring["p250_use"] .. csstring["p250"].desc
+L["csgo_description_p2000"] = csstring["hkp2000_use"] .. csstring["hkp2000"].desc
+L["csgo_description_r8"] = csstring["revolver_use"] .. csstring["revolver"].desc
+L["csgo_description_sawedoff"] = csstring["sawedoff_use"] .. csstring["sawedoff"].desc
+L["csgo_description_scar20"] = csstring["scar20_use"] .. csstring["scar20"].desc
+L["csgo_description_sg556"] = csstring["sg556_use"] .. csstring["sg553"]
+L["csgo_description_ssg08"] = csstring["ssg08_use"] .. csstring["ssg08"].desc
+L["csgo_description_tec9"] = csstring["tec9_use"] .. csstring["tec9"].desc
+L["csgo_description_ump"] = csstring["ump45_use"] .. csstring["ump45"].desc
+L["csgo_description_usp"] = csstring["usp_silencer_use"] .. csstring["usp_silencer"].desc .. customdesc.usps
+L["csgo_description_xm1014"] = csstring["xm1014_use"] .. csstring["xm1014"].desc
+L["csgo_description_zeus"] = csstring["taser_use"] .. csstring["taser"].desc
 
 /////////////////// Unofficial Weapon Names
 -- L["csgo_weapon_akimbo_cz75"] = "Dual CZ75-Auto"
