@@ -105,7 +105,7 @@ csstring = { -- Czech
     ["firebomb"] = { name = "Ohnivý granát", desc = "Ohnivý granát je mocná experimentální zbraň, která po dopadu vyvolá chemickou reakci o vysoké teplotě a začne spalovat své okolí." },
     ["diversion"] = { name = "Matoucí granát", desc = "Matoucí granát po odhození zvýrazní daný sektor na nepřátelských tabletech, čímž vytvoří iluzi přítomnosti nepřátel." },
     ["frag_grenade"] = { name = "Tříštivý granát", desc = "Experimentální tříštivý granát schopný udělit vysoké poškození ve velké oblasti kolem místa výbuchu. Ideální pro ofenzivu i defenzivu." },
-    ["shield"] = "Zásahový štít",
+    ["shield"] = { name = "Zásahový štít", desc = "Ochranná pomůcka schopná odrazit nebo absorbovat balistické útoky a ochránit nositele před zbraněmi různých kalibrů." },
     ["zone_repulsor"] = { name = "Repulzní zařízení", desc = "Prototyp zařízení stínícího emisní částice." },
     ["glock_use"] = "• Na blízko smrtící, na dálku ne moc účinná pistole\n• Dobrá volba pro první kolo poloviny\n• Náročnost: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Na dálku přesná a na blízko dostatečně rychlá pistole\n• Dobrá volba pro první kolo poloviny\n• Náročnost: <color=191,191,64>★★</color>\n\n",

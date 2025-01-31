@@ -105,7 +105,7 @@ csstring = { -- Hungarian
     ["firebomb"] = { name = "Gyújtóbomba", desc = "A gyújtóbomba nagy hatású kísérleti fegyver, amely eldobva magas hőmérsékletű lánggal égő területet hoz létre, megégetve minden játékost nagy hatóterületén." },
     ["diversion"] = { name = "Figyelemelterelő gránát", desc = "Eldobva a figyelemelterelő gránát további szektorokat emel ki a táblagépeken, további ellenségek illúzióját keltve." },
     ["frag_grenade"] = { name = "Repeszgránát", desc = "A kísérleti repeszgránát nagyobb területen okoz rendkívüli mennyiségű robbanási sebzést, ami támadó és védekező taktikákhoz is ideálissá teszi." },
-    ["shield"] = "Rohampajzs",
+    ["shield"] = { name = "Rohampajzs", desc = "Lövedékek eltérítésére vagy elnyelésére szolgáló védőeszköz, segít megvédeni a használóját különféle űrméretű lövedékektől." },
     ["zone_repulsor"] = { name = "Visszaverő készülék", desc = "Körsugárzó részecskeárnyékoló készülék prototípus." },
     ["glock_use"] = "• Közelről halálos, távolról csak kellemetlenség.\n• A félidő első körében vedd fontolóra.\n• Nehézség: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Távolra pontos, közelre lehet szórni vele.\n• A félidő első körében vedd fontolóra.\n• Nehézség: <color=191,191,64>★★</color>\n\n",

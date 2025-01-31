@@ -105,7 +105,7 @@ csstring = { -- Dutch
     ["firebomb"] = { name = "Brandbom", desc = "De brandbom is een krachtig en experimenteel wapen dat als het op de grond gegooid wordt een chemische reactie loslaat op hoge temperatuur en iedereen verbrandt die in zijn wijde pad staat." },
     ["diversion"] = { name = "Afleidingsapparaat", desc = "When thrown, the diversion device will highlight sectors on tablets, creating the illusion of additional enemies." },
     ["frag_grenade"] = { name = "Fragmentatiegranaat", desc = "The experimental fragmentation grenade can output extreme amounts of highly explosive damage in a wider area, making it ideal for both attacking and defensive strategies." },
-    ["shield"] = "Oproerschild",
+    ["shield"] = { name = "Oproerschild", desc = "Een beschermende uitrusting die is ontworpen om ballistische schade af te ketsen of te absorberen en de drager te helpen beschermen tegen een scala aan projectielkalibers." },
     ["zone_repulsor"] = { name = "Afweerapparaat", desc = "Prototype Radial Emission Particulate Shielding Device" },
     ["cz75a"] = "Een volledig automatische variant van de CZ75, de CZ75-Auto is de ideale keuze om de rollen om te draaien en je tegenstanders wapen te verkrijgen. Maar met zeer weinig munitie wordt een sterke discipline vereist.",
     ["m4a4"] = "Meer precies maar die minder schade doet dan de AK-47: de M4A4 is een volautomatisch geweer dat door vele CT's gekozen wordt.",

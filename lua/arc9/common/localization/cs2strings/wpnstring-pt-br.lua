@@ -105,7 +105,7 @@ csstring = { -- Brazilian Portuguese
     ["firebomb"] = { name = "Bomba Incendiária", desc = "A Bomba Incendiária é uma poderosa arma experimental que explode em chamas de alta temperatura quando jogada no chão, queimando qualquer jogador que esteja no seu amplo raio de alcance." },
     ["diversion"] = { name = "Dispositivo de Distração", desc = "Quando lançado, este dispositivo destacará seções vazias em tablets, criando a ilusão de mais inimigos." },
     ["frag_grenade"] = { name = "Granada de Fragmentação", desc = "Esta granada de fragmentação experimental pode causar um dano explosivo tremendo em uma grande área, sendo ideal para estratégias de ataque e defesa." },
-    ["shield"] = "Escudo Antimotim",
+    ["shield"] = { name = "Escudo Antimotim", desc = "Um dispositivo de proteção concebido para refletir ou absorver dano balístico e ajudar a proteger o portador contra projéteis de vários calibres." },
     ["zone_repulsor"] = { name = "Dispositivo Repulsor", desc = "Protótipo de dispositivo de proteção contra emissões de partículas radiais." },
     ["glock_use"] = "• Mortal de perto, nada além de um incômodo a distância\n• Boa opção na primeira rodada do tempo\n• Dificuldade: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Precisa à distância, senta o dedo no gatilho de perto\n• Boa opção na primeira rodada do tempo\n• Dificuldade: <color=191,191,64>★★</color>\n\n",

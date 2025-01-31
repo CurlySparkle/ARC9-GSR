@@ -105,7 +105,7 @@ csstring = { -- Polish
     ["firebomb"] = { name = "Bomba zapalająca", desc = "Bomba zapalająca jest potężną eksperymentalną bronią, która po rzuceniu na ziemię wytwarza reakcję chemiczną o wysokiej temperaturze będącej w stanie spalić każdego w swym szerokim polu działania." },
     ["diversion"] = { name = "Urządzenie dywersyjne", desc = "Urządzenie dywersyjne po rzuceniu oznaczy sektor na tablecie, tworząc iluzję większej liczby wrogów." },
     ["frag_grenade"] = { name = "Granat odłamkowy", desc = "Wybuch tego eksperymentalnego granatu odłamkowego potrafi zadać poważne obrażenia na dużym obszarze. Dzięki temu idealnie nadaje się zarówno do działań ofensywnych, jak i defensywnych." },
-    ["shield"] = "Tarcza balistyczna",
+    ["shield"] = { name = "Tarcza balistyczna", desc = "Sprzęt ochronny służący do odbijania lub pochłaniania obrażeń balistycznych i chroniący noszącego przed pociskami różnego kalibru." },
     ["zone_repulsor"] = { name = "Urządzenie rozpraszające", desc = "Prototypowe urządzenie chroniące przed promieniowaniem cząstek stałych" },
     ["glock_use"] = "• Zabójczy z bliska, tylko drażniący z daleka.\n• Rozważ użycie go w pierwszej rundzie danej połowy.\n• Trudność: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Celny na dystans, szybkostrzelny z bliska.\n• Rozważ użycie go w pierwszej rundzie danej połowy.\n• Trudność: <color=191,191,64>★★</color>\n\n",

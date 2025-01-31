@@ -105,7 +105,7 @@ csstring = { -- Danish
     ["firebomb"] = { name = "Ildbombe", desc = "En ildbombe er et kraftfuldt eksperimentelt våben, som frigiver en kemisk reaktion ved høj temperatur, der kan brænde enhver inden for dens store radius." },
     ["diversion"] = { name = "Afledningsapparat", desc = "Når et afledningsapparat kastes, aktiveres sektorer på tablets og giver illusionen af yderligere fjender." },
     ["frag_grenade"] = { name = "Fragmentationsgranat", desc = "Den eksperimentelle fragmentationsgranat kan yde ekstrem eksplosiv skade på et større område, hvilket gør den ideel til både angreb og forsvar." },
-    ["shield"] = "Beskyttelsesskjold",
+    ["shield"] = { name = "Beskyttelsesskjold", desc = "Beskyttelsesudstyr til at afværge eller absorbere ballistisk skade og hjælpe med at beskytte brugeren mod projektiler i forskellige kalibre." },
     ["zone_repulsor"] = { name = "Afskærmningsenhed", desc = "Prototype af en radial afskærmningsenhed mod partikeludslip" },
     ["glock_use"] = "• Farlig tæt på, men blot en irritation over afstand\n• Overvej den i halvlegens første runde\n• Sværhedsgrad: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Nøjagtig på afstand og kan affyrres hurtigt tæt på\n• Overvej den i halvlegens første runde\n• Sværhedsgrad: <color=191,191,64>★★</color>\n\n",

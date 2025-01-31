@@ -105,7 +105,7 @@ csstring = { -- Finnish
     ["firebomb"] = { name = "Polttopullo", desc = "Palopommi on voimakas kokeellinen ase. Heitettäessä se syttyy palamaan, vapauttaa suuren määrän lämpöä ja polttaa sen laajalla räjähdysalueella olevia." },
     ["diversion"] = { name = "Harhautuslaite", desc = "Heitetty harhautuslaite korostaa tabletilla sektoreita, mikä luo harhan useammasta vihollisesta." },
     ["frag_grenade"] = { name = "Sirpalekranaatti", desc = "Kokeellinen sirpalekranaatti voi aiheuttaa valtavan räjähdysvahingon laajalla alueella. Nämä ominaisuudet tekevät siitä ihanteellisen sekä hyökkäys- että puolustusstrategioille." },
-    ["shield"] = "Mellakkakilpi",
+    ["shield"] = { name = "Mellakkakilpi", desc = "Suojavaruste, joka on suunniteltu vaimentamaan ja kääntämään ballistinen vahinko pois kohteesta sekä auttamaan suojaamaan kantajaansa ammussateelta." },
     ["zone_repulsor"] = { name = "Repulsorilaite", desc = "Pienhiukkassäteilyn suojalaitteen prototyyppi" },
     ["glock_use"] = "• Tehokas lähietäisyydeltä, hyödytön kaukotaistelussa\n• Sopii puoliskon ensimmäiseen erään\n• Vaikeustaso: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Tarkka kaukoetäisyydeltä, räiskintäominaisuus lähitaistelussa\n• Sopii puoliskon ensimmäiseen erään\n• Vaikeustaso: <color=191,191,64>★★</color>\n\n",

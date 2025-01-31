@@ -105,7 +105,7 @@ csstring = { -- English
     ["firebomb"] = { name = "Fire Bomb", desc = "The Fire Bomb is a powerful experimental weapon that bursts into high-temperature flames when thrown on the ground, chemically burning any player in its wide spread radius." },
     ["diversion"] = { name = "Diversion Device", desc = "When thrown, the diversion device will highlight sectors on tablets, creating the illusion of additional enemies." },
     ["frag_grenade"] = { name = "Frag Grenade", desc = "The experimental fragmentation grenade can output extreme amounts of highly explosive damage in a wider area, making it ideal for both attacking and defensive strategies." },
-    ["shield"] = "Riot Shield",
+    ["shield"] = { name = "Riot Shield", desc = "A protection device designed to deflect or absorb ballistic damage and help protect the carrier from an array of projectile calibers." },
     ["zone_repulsor"] = { name = "Repulsor Device", desc = "Prototype Radial Emission Particulate Shielding Device" },
     ["glock_use"] = "• Deadly up close, just a nuisance at range\n• Consider in the first round of the half\n• Difficulty: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Accurate at range, spammable up close\n• Consider in the first round of the half\n• Difficulty: <color=191,191,64>★★</color>\n\n",

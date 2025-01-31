@@ -105,7 +105,7 @@ csstring = { -- Swedish
     ["firebomb"] = { name = "Brandbomb", desc = "Brandbomben är ett kraftfullt experimentellt vapen som ger upphov till mycket varma flammor när den kastas mot marken, som bränner alla inom ett stort område." },
     ["diversion"] = { name = "Diversionsapparat", desc = "När diversionsapparaten kastas mot en plats kommer den att lysa upp sektorer på plattor, vilket skapar illusionen att det finns fiender där." },
     ["frag_grenade"] = { name = "Splittergranat", desc = "Den experimentella splittergranaten kan göra extremt mycket skada i ett större område, vilket gör den ideal för både offensiva och defensiva syften." },
-    ["shield"] = "Kravallsköld",
+    ["shield"] = { name = "Kravallsköld", desc = "En skyddsanordning utformad för att avleda eller absorbera ballistisk skada och skydda bäraren från en rad projektilkalibrer." },
     ["zone_repulsor"] = { name = "Avskärmningsenhet", desc = "Prototyp av en radial avskärmningsenhet mot partikelutsläpp" },
     ["glock_use"] = "• Dödlig på nära håll, blott en plåga på avstånd\n• Ett alternativ i halvlekens första runda\n• Svårighetsgrad: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Träffsäker på avstånd och kan avfyras snabbt på nära håll\n• Ett alternativ i halvlekens första runda\n• Svårighetsgrad: <color=191,191,64>★★</color>\n\n",

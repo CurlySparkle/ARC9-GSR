@@ -105,7 +105,7 @@ csstring = { -- French
     ["firebomb"] = { name = "Bombe incendiaire", desc = "La grenade incendiaire est une arme expérimentale puissante qui éclate en formant des flammes à haute température quand elle est lancée au sol, causant des brûlures chimiques à tous les joueurs situés dans son large rayon d'action." },
     ["diversion"] = { name = "Leurre", desc = "Lorsqu'un leurre est lancé, il ajoute des zones en surbrillance sur les tablettes pour créer l'illusion qu'il y a davantage d'unités ennemies." },
     ["frag_grenade"] = { name = "Grenade à fragmentation", desc = "La grenade à fragmentation expérimentale peut causer des dégâts extrêmes sur une zone importante ; elle est donc idéale autant dans les stratégies offensives que défensives." },
-    ["shield"] = "Bouclier antiémeute",
+    ["shield"] = { name = "Bouclier antiémeute", desc = "Un dispositif de protection conçu pour dévier ou absorber les dommages balistiques et aider à protéger la personne qui le porte de projectiles de différents calibres." },
     ["zone_repulsor"] = { name = "Répulsif", desc = "Prototype de dispositif de protection contre les émissions de particules radiales" },
     ["glock_use"] = "• Mortel à bout portant, mais peu efficace à distance\n• À privilégier lors de la première manche de la mi-temps\n• Difficulté : <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Précis à longue portée, et mortel à courte portée grâce à sa gâchette facile à actionner\n • À privilégier lors de la première manche de la mi-temps\n• Difficulté : <color=191,191,64>★★</color>\n\n",

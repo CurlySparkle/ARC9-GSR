@@ -27,7 +27,7 @@ ATT = {}
 ATT.PrintName = "Aimpoint CompM4 with Magnifier"
 
 ATT.AimDownSightsTimeMult = 1.1
-ATT.SwayAddSights = (0.2 * 2)
+ATT.SwayMultSights = 1.2
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15 | 2",
@@ -58,7 +58,7 @@ ATT.Sights = {
         Disassociate = true,
 		CantPeek = true,
     },
-    { -- Reflex
+    { -- Magnifier
         Pos = Vector(0.01, 14, -1.57),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
@@ -93,7 +93,7 @@ ATT = {}
 ATT.PrintName = "EOTech with Magnifier"
 
 ATT.AimDownSightsTimeMult = 1.1
-ATT.SwayAddSights = (0.2 * 2)
+ATT.SwayMultSights = 1.2
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15 | 2",
@@ -159,7 +159,7 @@ ATT = {}
 ATT.PrintName = "Kobra with Magnifier"
 
 ATT.AimDownSightsTimeMult = 1.1
-ATT.SwayAddSights = (0.2 * 2)
+ATT.SwayMultSights = 1.2
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15 | 2",
@@ -226,7 +226,7 @@ ATT = {}
 ATT.PrintName = "OKP-7 with Magnifier"
 
 ATT.AimDownSightsTimeMult = 1.1
-ATT.SwayAddSights = (0.2 * 2)
+ATT.SwayMultSights = 1.2
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15 | 2",
@@ -296,7 +296,7 @@ ATT = {}
 ATT.PrintName = "M110 Scope"
 
 ATT.AimDownSightsTimeMult = 1.25
-ATT.SwayAddSights = (0.2 * 8)
+ATT.SwayMultSights = 1.8
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "8 | 10 | 12",
@@ -345,7 +345,7 @@ ATT = {}
 ATT.PrintName = "SIG556 Scope"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.SwayAddSights = (0.2 * 3)
+ATT.SwayMultSights = 1.3
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "3",
@@ -436,7 +436,7 @@ ATT = {}
 ATT.PrintName = "AUG Scope"
 
 ATT.AimDownSightsTimeMult = 1.125
-ATT.SwayAddSights = (0.2 * 3)
+ATT.SwayMultSights = 1.3
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "2.75",
@@ -480,7 +480,7 @@ ATT = {}
 ATT.PrintName = "Trijicon ACOG"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.SwayAddSights = (0.2 * 4)
+ATT.SwayMultSights = 1.4
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "4",
@@ -542,7 +542,7 @@ ATT = {}
 ATT.PrintName = "C79"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.SwayAddSights = (0.2 * 3)
+ATT.SwayMultSights = 1.3
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "3",
@@ -594,7 +594,7 @@ ATT = {}
 ATT.PrintName = "AWP Scope"
 
 ATT.AimDownSightsTimeMult = 1.2
-ATT.SwayAddSights = (0.2 * 8)
+ATT.SwayMultSights = 1.8
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "8",
@@ -683,7 +683,7 @@ ATT = {}
 ATT.PrintName = "G3SG1 Scope"
 
 ATT.AimDownSightsTimeMult = 1.2
-ATT.SwayAddSights = (0.2 * 8)
+ATT.SwayMultSights = 1.8
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "8",
@@ -760,7 +760,7 @@ ATT = {}
 ATT.PrintName = "SCAR-20 Scope"
 
 ATT.AimDownSightsTimeMult = 1.2
-ATT.SwayAddSights = (0.2 * 8)
+ATT.SwayMultSights = 1.8
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "8",
@@ -837,7 +837,7 @@ ATT = {}
 ATT.PrintName = "Scout Scope"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.SwayAddSights = (0.2 * 6)
+ATT.SwayMultSights = 1.6
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "6",
@@ -879,7 +879,7 @@ ATT = {}
 ATT.PrintName = "SSG 08 Scope"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.SwayAddSights = (0.2 * 6)
+ATT.SwayMultSights = 1.6
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "6",
@@ -920,7 +920,7 @@ ATT = {}
 ATT.PrintName = "Elcan SpecterDR"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.SwayAddSights = (0.2 * 3.5)
+ATT.SwayMultSights = 1.35
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "3.5",
@@ -974,7 +974,7 @@ ATT = {}
 ATT.PrintName = "N-Vision Halo-LR Thermal Type"
 
 ATT.AimDownSightsTimeMult = 1.25
-ATT.SwayAddSights = (0.2 * 6)
+ATT.SwayMultSights = 1.6
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.5 | 3",
@@ -1073,7 +1073,7 @@ ATT = {}
 ATT.PrintName = "Trijicon RMR"
 
 -- ATT.AimDownSightsTimeMult = 1.01
-ATT.SwayAddSights = (0.1 * 1.1)
+ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1113,7 +1113,7 @@ ATT = {}
 ATT.PrintName = "Trijicon RMR (Backup Sight)"
 
 ATT.AimDownSightsTimeMult = 1.05
--- ATT.SwayAddSights = (0.1 * 1.1)
+-- ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1153,7 +1153,7 @@ ATT = {}
 ATT.PrintName = "Barska"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1191,7 +1191,7 @@ ATT = {}
 ATT.PrintName = "C-More Railway"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1230,7 +1230,7 @@ ATT = {}
 ATT.PrintName = "Aimpoint CompM4"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1268,7 +1268,7 @@ ATT = {}
 ATT.PrintName = "EOTech"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1306,7 +1306,7 @@ ATT = {}
 ATT.PrintName = "Kobra"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1345,7 +1345,7 @@ ATT = {}
 ATT.PrintName = "Mepro M21"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1383,7 +1383,7 @@ ATT = {}
 ATT.PrintName = "ITL MARS"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ string.format( ARC9:GetPhrase("gsr_ifstat"), ARC9:GetPhrase("csgo_stat_laser"), ARC9:GetPhrase("autostat.recoilpershot")) ] = "-7.5%",
@@ -1454,7 +1454,7 @@ ATT = {}
 ATT.PrintName = "OKP-7"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1493,7 +1493,7 @@ ATT = {}
 ATT.PrintName = "PK-AS"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.2 * 2)
+ATT.SwayMultSights = 1.2
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.2",
@@ -1538,7 +1538,7 @@ ATT = {}
 ATT.PrintName = "Trijicon RMR I, High Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.1)
+ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.1",
@@ -1576,7 +1576,7 @@ ATT = {}
 ATT.PrintName = "Trijicon RMR II, High Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.1)
+ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.1",
@@ -1614,7 +1614,7 @@ ATT = {}
 ATT.PrintName = "Trijicon SRO, High Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.1)
+ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.1",
@@ -1652,7 +1652,7 @@ ATT = {}
 ATT.PrintName = "Micro T1, High Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1690,7 +1690,7 @@ ATT = {}
 ATT.PrintName = "Micro T1, Low Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1728,7 +1728,7 @@ ATT = {}
 ATT.PrintName = "Trijicon RMR 1, Low Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.1)
+ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.1",
@@ -1767,7 +1767,7 @@ ATT = {}
 ATT.PrintName = "Trijicon SRO, Low Profile"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.1)
+ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.1",
@@ -1806,7 +1806,7 @@ ATT = {}
 ATT.PrintName = "Trijicon SRO (Backup Sight)"
 
 ATT.AimDownSightsTimeMult = 1.025
--- ATT.SwayAddSights = (0.1 * 1.1)
+-- ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1845,7 +1845,7 @@ ATT = {}
 ATT.PrintName = "Trijicon MRO"
 
 ATT.AimDownSightsTimeMult = 1.025
-ATT.SwayAddSights = (0.1 * 1.15)
+ATT.SwayMultSights = 1.15
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",
@@ -1883,7 +1883,7 @@ ATT = {}
 ATT.PrintName = "Trijicon RMR II (Backup Sight)"
 
 ATT.AimDownSightsTimeMult = 1.025
--- ATT.SwayAddSights = (0.1 * 1.1)
+-- ATT.SwayMultSights = 1.1
 
 ATT.CustomPros = {
 	[ ARC9:GetPhrase("gsr_zoomlevel") ] = "1.15",

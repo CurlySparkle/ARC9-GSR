@@ -105,7 +105,7 @@ csstring = { -- Turkish
     ["firebomb"] = { name = "Yangın Bombası", desc = "Güçlü deneysel yangın bombası, yere atıldığı zaman oldukça yüksek ısıda yanan alevler saçarak geniş etki alanında yer alan oyuncuları kimyasal olarak yakmaya başlar." },
     ["diversion"] = { name = "Dikkat Dağıtma Aygıtı", desc = "Dikkat dağıtma aygıtı atıldığı zaman sektörleri yakarak daha fazla düşman varmış gibi bir izlenim yaratır." },
     ["frag_grenade"] = { name = "El Bombası", desc = "Deneysel parça tesirli bomba, geniş bölgelere muazzam seviyede patlayıcı hasarı verdiği için hem saldırı hem de savunma stratejileri için idealdir." },
-    ["shield"] = "Polis Kalkanı",
+    ["shield"] = { name = "Polis Kalkanı", desc = "Balistik hasarı emmek veya savuşturmak ve taşıyıcısını farklı kalibredeki mermilerden korumaya yardımcı olmak üzere tasarlanmış bir korunma eşyası." },
     ["zone_repulsor"] = { name = "İtme Aygıtı", desc = "Prototip Radyal Emisyon Parçacıklara Karşı Koruyucu Kalkan Aygıtı" },
     ["glock_use"] = "• Yakın mesafede ölümcül, uzak mesafelerde etkisi az.\n• Yarının ilk raundunda alınabilir.\n• Zorluk: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Uzak mesafelerde isabetli, yakın mesafede tarama yapılabilir.\n• Yarının ilk raundunda alınabilir.\n• Zorluk: <color=191,191,64>★★</color>\n\n",

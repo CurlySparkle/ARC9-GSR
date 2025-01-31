@@ -105,7 +105,7 @@ csstring = { -- Spanish
     ["firebomb"] = { name = "Bomba incendiaria", desc = "La granada incendiaria es una poderosa arma experimental que estalla en llamas de alta temperatura cuando se tira al suelo, quemando químicamente a cualquier jugador que se encuentre dentro de su amplio radio de propagación." },
     ["diversion"] = { name = "Dispositivo de distracción", desc = "Al lanzarlo, el dispositivo de distracción iluminará sectores en las tabletas y creará la ilusión de que hay enemigos adicionales." },
     ["frag_grenade"] = { name = "Granada de fragmentación", desc = "La granada de fragmentación experimental puede producir cantidades extremas de daño altamente explosivo en un área más amplia, por lo que es ideal tanto para estrategias ofensivas como defensivas." },
-    ["shield"] = "Escudo antidisturbios",
+    ["shield"] = { name = "Escudo antidisturbios", desc = "Un dispositivo de protección diseñado para desviar o absorber el daño balístico y ayudar a proteger al usuario de las balas de varios calibres." },
     ["zone_repulsor"] = { name = "el dispositivo repulsor", desc = "Prototipo de Dispositivo de Protección contra Partículas de Emisión Radial" },
     ["glock_use"] = "• Letal de cerca y un fastidio a distancia.\n• Buena opción en la primera ronda de la mitad.\n• Dificultad: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Precisión a distancia y disparos rápidos de cerca.\n• Buena opción en la primera ronda de la mitad.\n• Dificultad: <color=191,191,64>★★</color>\n\n",

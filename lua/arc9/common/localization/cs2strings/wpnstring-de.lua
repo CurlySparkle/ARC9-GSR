@@ -105,7 +105,7 @@ csstring = { -- German
     ["firebomb"] = { name = "Brandbombe", desc = "Die Brandbombe ist eine leistungsstarke experimentelle Waffe, die in Hochtemperatur-Flammen ausbricht, wenn sie auf den Boden geworfen wird, und jeden Spieler in seinem weitläufigen Radius chemisch verbrennt." },
     ["diversion"] = { name = "Ablenkungsgerät", desc = "Wenn es geworfen wird, hebt das Ablenkungsgerät Sektoren auf Tablets hervor, um die Illusion zusätzlicher Gegner zu erzeugen." },
     ["frag_grenade"] = { name = "Splittergranate", desc = "Die experimentelle Splittergranate kann extreme Mengen an hochexplosivem Schaden in einem größeren Gebiet auslösen, was sie ideal für Angriffs- und Verteidigungsstrategien macht." },
-    ["shield"] = "Taktischer Einsatzschild",
+    ["shield"] = { name = "Taktischer Einsatzschild", desc = "Eine Schutzvorrichtung, die ballistischen Schaden ablenken oder absorbieren und den Träger vor einer Reihe von Projektilkalibern schützen soll." },
     ["zone_repulsor"] = { name = "Zonenabwehrgerät", desc = "Prototyp einer radialen Partikel-Abschirmvorrichtung" },
     ["glock_use"] = "• Tödlich aus der Nähe, lästig auf Distanz\n• Für die erste Runde einer Hälfte\n• Handhabung: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Präzise auf Entfernung, hohe Feuerrate im Nahkampf\n• Für die erste Runde einer Hälfte\n• Handhabung: <color=191,191,64>★★</color>\n\n",

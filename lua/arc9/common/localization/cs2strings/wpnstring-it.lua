@@ -105,7 +105,7 @@ csstring = { -- Italian
     ["firebomb"] = { name = "Molotov", desc = "La bomba molotov è una potente arma sperimentale che sparge fiamme ad alta temperatura una volta lanciata al suolo, bruciando qualsiasi giocatore che si trovi nel suo raggio di diffusione." },
     ["diversion"] = { name = "Dispositivo di diversione", desc = "Quando viene lanciato, il dispositivo di diversione evidenzierà dei settori sui tablet, creando l'illusione che ci siano altri nemici nelle vicinanze." },
     ["frag_grenade"] = { name = "Granata a frammentazione", desc = "La granata a frammentazione sperimentale può infliggere enormi quantità di danni esplosivi in un'area molto vasta, rendendola ideale sia per strategie di attacco che di difesa." },
-    ["shield"] = "Scudo antisommossa",
+    ["shield"] = { name = "Scudo antisommossa", desc = "Un dispositivo protettivo progettato per deviare o assorbire danni balistici e aiutare a proteggere chi lo indossa da proiettili di vario calibro." },
     ["zone_repulsor"] = { name = "Dispositivo di repulsione", desc = "Prototipo di dispositivo protettivo a emissioni di particolato radiali" },
     ["glock_use"] = "• Letale negli scontri ravvicinati, rappresenta solo un ingombro dalla distanza.\n• Considerala nel primo round.\n• Difficoltà: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Precisa da lontano, valida per sparare alla rinfusa da vicino.\n• Considerala nel primo round.\n• Difficoltà: <color=191,191,64>★★</color>\n\n",

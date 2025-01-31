@@ -105,7 +105,7 @@ csstring = { -- Norwegian
     ["firebomb"] = { name = "Brannbombe", desc = "Brannbomben er et kraftig, eksperimentelt våpen som sprer ut flammer når den kastes på bakken, noe som brenner alle innenfor dens store spredningsradius." },
     ["diversion"] = { name = "Avledningsutstyr", desc = "Når avledningsutstyret kastes, uthever det sektorer på nettbrett, noe som skaper illusjonen av at det finnes flere fiender." },
     ["frag_grenade"] = { name = "Sprenggranat", desc = "Den eksperimentelle sprenggranaten kan gjøre ekstremt mye skade i et større område, noe som gjør den ideell for både offensive og defensive formål." },
-    ["shield"] = "Politiskjold",
+    ["shield"] = { name = "Politiskjold", desc = "Beskyttelsesutstyr designet for å avlede eller absorbere ballistisk skade og verne brukeren fra prosjektiler i en rekke kaliber." },
     ["zone_repulsor"] = { name = "Skjermingsenhet", desc = "Prototype av en radial skjermingsenhet mot partikkelutslipp." },
     ["glock_use"] = "• Dødelig på kloss hold, bare en plage på avstand\n• Et alternativ i den første runden av omgangen\n• Vanskegrad: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Treffsikker på avstand, rask på kloss hold\n• Et alternativ i den første runden av omgangen\n• Vanskegrad: <color=191,191,64>★★</color>\n\n",

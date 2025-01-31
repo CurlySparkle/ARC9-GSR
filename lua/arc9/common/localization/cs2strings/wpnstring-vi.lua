@@ -105,7 +105,7 @@ csstring = { -- Vietnamese
     ["firebomb"] = { name = "Bom lửa", desc = "Khi ném, bom lửa (mặc dù còn trong giải đoạn thử nghiệm) tạo ra lửa nhiệt độ cao trên mặt đất, gây phỏng hóa học lên bất cứ người chơi nào ở trong tầm tỏa rộng của nó." },
     ["diversion"] = { name = "Thiết bị đánh lạc hướng", desc = "Khi ném, thiết bị đánh lạc hướng sẽ làm khu vực trên máy tính bảng phát sáng, gây lầm tưởng rằng ở đó có kẻ địch." },
     ["frag_grenade"] = { name = "Lựu đạn nổ", desc = "Lựu đạn nổ (tuy còn trong giai đoạn thí nghiệm) này có thể bung một lượng sát thương nổ cực cao lên khu vực rộng, khiến nó lý tưởng trong chiến lược tấn công lẫn phòng thủ." },
-    ["shield"] = "Khiên chống bạo động",
+    ["shield"] = { name = "Khiên chống bạo động", desc = "Thiết bị bảo vệ được thiết kế để dội hoặc hấp thu sát thương đạn đạo và bảo vệ người cầm khỏi nhiều cỡ đạn khác nhau." },
     ["zone_repulsor"] = { name = "Thiết bị lá chắn", desc = "Nguyên mẫu lá chắn chống hạt phát xạ" },
     ["glock_use"] = "• Chết chóc ở tầm gần, muỗi cắn ở tầm xa\n• Cân nhắc dùng ở ván đầu mỗi hiệp\n• Độ khó: <color=191,191,64>★★</color>\n\n",
     ["hkp2000_use"] = "• Chuẩn xác ở nhiều cự ly, xả được đạn tầm gần\n• Cân nhắc dùng ở ván đầu mỗi hiệp\n• Độ khó: <color=191,191,64>★★</color>\n\n",
