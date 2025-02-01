@@ -88,7 +88,7 @@ L["csgo_category_weapon_sniper"] = "Krypskyttegevär"
 L["csgo_category_weapon_smg"] = "KPistar"
 
 /////////////////// Weapon Categories
-L["csgo_category_slot_0"] = "0. Dual"
+L["csgo_category_slot_0"] = "0. Dubbla Vapen"
 L["csgo_category_slot_1"] = "1. " .. csstring["cat_pistols"]
 L["csgo_category_slot_2"] = "2. " .. csstring["cat_heavy"]
 L["csgo_category_slot_3"] = "3. " .. csstring["cat_smg"]

@@ -274,7 +274,11 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/ak47/ak47_01.ogg",
+        -- "weapons/csgo/ak47/ak47_01.ogg",
+        "weapons/cs2/ak47/ak47_01.ogg",
+        "weapons/cs2/ak47/ak47_02.ogg",
+        "weapons/cs2/ak47/ak47_03.ogg",
+        "weapons/cs2/ak47/ak47_04.ogg",
     }
 } )
 
@@ -285,7 +289,8 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "weapons/csgo/ak47/ak47_distant.wav",
+        -- "weapons/csgo/ak47/ak47_distant.wav",
+        "weapons/cs2/ak47/ak47_distant.wav",
     }
 } )
 
@@ -297,10 +302,13 @@ sound.Add( {
     pitch = 100,
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/famas/famas_01.ogg",
-		"weapons/csgo/famas/famas_02.ogg",
-		"weapons/csgo/famas/famas_03.ogg",
-		"weapons/csgo/famas/famas_04.ogg",
+        -- "weapons/csgo/famas/famas_01.ogg",
+		-- "weapons/csgo/famas/famas_02.ogg",
+		-- "weapons/csgo/famas/famas_03.ogg",
+		-- "weapons/csgo/famas/famas_04.ogg",
+        "weapons/cs2/famas/famas_01.ogg",
+		"weapons/cs2/famas/famas_02.ogg",
+		"weapons/cs2/famas/famas_03.ogg",
     }
 } )
 
@@ -311,7 +319,8 @@ sound.Add( {
     level = 120,
     pitch = 100,
     sound = {
-        "weapons/csgo/famas/famas-1-distant.wav",
+        -- "weapons/csgo/famas/famas-1-distant.wav",
+        "weapons/cs2/famas/famas_distant_1.wav",
     }
 } )
 
@@ -323,10 +332,14 @@ sound.Add( {
     pitch = {95,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/galilar/galil_01.ogg",
-		"weapons/csgo/galilar/galil_02.ogg",
-		"weapons/csgo/galilar/galil_03.ogg",
-		"weapons/csgo/galilar/galil_04.ogg",
+        -- "weapons/csgo/galilar/galil_01.ogg",
+		-- "weapons/csgo/galilar/galil_02.ogg",
+		-- "weapons/csgo/galilar/galil_03.ogg",
+		-- "weapons/csgo/galilar/galil_04.ogg",
+        "weapons/cs2/galilar/galil_01.ogg",
+		"weapons/cs2/galilar/galil_02.ogg",
+		"weapons/cs2/galilar/galil_03.ogg",
+		"weapons/cs2/galilar/galil_04.ogg",
     }
 } )
 
@@ -337,7 +350,8 @@ sound.Add( {
     level = 120,
     pitch = {99,102},
     sound = {
-		"^weapons/csgo/galilar/galil_distant.ogg",
+		-- "^weapons/csgo/galilar/galil_distant.ogg",
+		"^weapons/cs2/galilar/galil_distant.ogg",
     }
 } )
 
@@ -536,8 +550,10 @@ sound.Add( {
     pitch = {100,103},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/bizon/bizon_fire-01.ogg",
-		"weapons/csgo/bizon/bizon_fire-02.ogg",
+        -- "weapons/csgo/bizon/bizon_fire-01.ogg",
+		-- "weapons/csgo/bizon/bizon_fire-02.ogg",
+        "weapons/cs2/bizon/bizon_01.ogg",
+		"weapons/cs2/bizon/bizon_02.ogg",
     }
 } )
 
@@ -548,8 +564,9 @@ sound.Add( {
     level = 120,
     pitch = {90,90},
     sound = {
-        "^weapons/csgo/bizon/bizon_fire_distant-01.ogg",
-		"^weapons/csgo/bizon/bizon_fire_distant-02.ogg",
+        -- "^weapons/csgo/bizon/bizon_fire_distant-01.ogg",
+		-- "^weapons/csgo/bizon/bizon_fire_distant-02.ogg",
+        "^weapons/cs2/bizon/bizon-1-distant.ogg",
     }
 } )
 
@@ -1079,10 +1096,12 @@ sound.Add( {
     pitch = {95,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/glock18/glock_01.ogg",
-		"weapons/csgo/glock18/glock_02.ogg",
-		"weapons/csgo/glock18/glock_03.ogg",
-		"weapons/csgo/glock18/glock_04.ogg",
+        -- "weapons/csgo/glock18/glock_01.ogg",
+		-- "weapons/csgo/glock18/glock_02.ogg",
+		-- "weapons/csgo/glock18/glock_03.ogg",
+		-- "weapons/csgo/glock18/glock_04.ogg",
+        "weapons/cs2/glock18/glock_01.ogg",
+		"weapons/cs2/glock18/glock_02.ogg",
     }
 } )
 
@@ -1093,7 +1112,8 @@ sound.Add( {
     level = 120,
     pitch = {97,103},
     sound = {
-        "weapons/csgo/glock18/glock18-1-distant.ogg",
+        -- "weapons/csgo/glock18/glock18-1-distant.ogg",
+        "weapons/cs2/glock18/glock18-1-distant.ogg",
     }
 } )
 
@@ -1323,7 +1343,10 @@ sound.Add( {
     pitch = {90,105},
 	soundlevel = SNDLVL_GUNFIRE,
     sound = {
-        "weapons/csgo/m249/m249-1.ogg",
+        -- "weapons/csgo/m249/m249-1.ogg",
+        "weapons/cs2/m249/m249_01.ogg",
+        "weapons/cs2/m249/m249_02.ogg",
+        "weapons/cs2/m249/m249_03.ogg",
     }
 } )
 
@@ -1334,7 +1357,8 @@ sound.Add( {
     level = 120,
     pitch = {95,105},
     sound = {
-        "weapons/csgo/m249/m249-1-distant.ogg",
+        -- "weapons/csgo/m249/m249-1-distant.ogg",
+        "weapons/cs2/m249/m249-1-distant.ogg",
     }
 } )
 

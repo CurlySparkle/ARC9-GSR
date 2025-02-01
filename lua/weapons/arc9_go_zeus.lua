@@ -71,7 +71,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 250
+SWEP.RPM = 100
 
 SWEP.Firemodes = {
     {
@@ -222,7 +222,10 @@ SWEP.ImpactDecal = "FadingScorch"
 
 local path = "weapons/csgo/hkp2000/"
 
-SWEP.ShootSound = "weapons/csgo/taser/taser_shoot.ogg"
+SWEP.ShootSound = { 
+	"weapons/cs2/taser/taser_shoot.ogg",
+}
+
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "CSGO.Rifle.Switch_Mode"
@@ -270,14 +273,16 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.75,
-		Mult = 0.8,
+		MinProgress = 1,
+		Mult = 0.9,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 9/30},
 			{s = "weapons/csgo/taser/taser_clipout.ogg", t = 20/30},
 			{s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 60/30},
 			{s = "weapons/csgo/taser/taser_clipin.ogg", t = 65/30},
+            {s = "weapons/cs2/taser/taser_charging.wav", t = 65/30},
             {s = "weapons/csgo/taser/taser_draw.ogg", t = 77/30},
+            {s = "weapons/cs2/taser/taser_charge_ready.wav", t = 88/30},
         },
     },
     ["idle_sprint"] = {

@@ -284,10 +284,12 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"shoot4"},
         IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },
+        EventTable = { { s = "weapons/cs2/famas/famas_mech.ogg", t = 0, v = 0.33} },
     },
     ["fire_iron"] = {
         Source = "shoot1_ads",
         IKTimeLine = { {t = 0,	lhik = 1, rhik = 1} },
+        EventTable = { { s = "weapons/cs2/famas/famas_mech.ogg", t = 0, v = 0.33} },
     },
     ["reload"] = {
         Source = "reload_short",
@@ -318,9 +320,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/famas/famas_clipout.wav", t = 15/30},
-            {s = "weapons/csgo/famas/famas_clipin.wav", t = 42/30},
-            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 57/30},
+            {s = "weapons/cs2/famas/famas_clipout.wav", t = 15/30},
+            {s = "weapons/cs2/famas/famas_clipin.wav", t = 42/30},
+            {s = "weapons/cs2/famas/famas_cliphit.wav", t = 57/30},
         },
     },
     ["reload_empty"] = {
@@ -352,11 +354,11 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/famas/famas_clipout.wav", t = 15/30},
-            {s = "weapons/csgo/famas/famas_clipin.wav", t = 49/30},
-            --{s = "weapons/csgo/famas/famas_cliphit.wav", t = 57/30},
-            {s = "weapons/csgo/famas/famas_boltback.wav", t = 71/30},
-            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 77/30},
+            {s = "weapons/cs2/famas/famas_clipout.wav", t = 15/30},
+            {s = "weapons/cs2/famas/famas_clipin.wav", t = 49/30},
+            {s = "weapons/csgo/famas/famas_cliphit.wav", t = 54/30},
+            {s = "weapons/cs2/famas/famas_boltback.wav", t = 71/30},
+            {s = "weapons/cs2/famas/famas_boltforward.wav", t = 79/30},
         },
     },
     ["ready"] = {
@@ -384,9 +386,9 @@ SWEP.Animations = {
             },
         },
         EventTable = {
-            {s = "weapons/csgo/famas/famas_draw.wav", t = 0/30},
-            {s = "weapons/csgo/famas/famas_boltback.wav", t = 9/30},
-            {s = "weapons/csgo/famas/famas_boltforward.wav", t = 12/30},
+            {s = "weapons/cs2/famas/famas_draw.wav", t = 0/30},
+            {s = "weapons/cs2/famas/famas_boltback.wav", t = 9/30},
+            {s = "weapons/cs2/famas/famas_boltforward.wav", t = 12/30},
         },
     },
     ["draw"] = {

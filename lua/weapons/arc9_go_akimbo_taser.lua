@@ -72,7 +72,7 @@ SWEP.Crosshair = true
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 250 * 1.25
+SWEP.RPM = 100 * 1.25
 
 SWEP.Firemodes = {
     {
@@ -267,16 +267,21 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_zeus",
-		MinProgress = 0.8,
+		MinProgress = 1,
+		Mult = 1.15,
         EventTable = {
             { s = "weapons/csgo/movement1.wav", t = 2/30 },
 			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 10/30 },
 			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 20/30 },
 			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 35/30 },
+            {s = "weapons/cs2/taser/taser_charging.wav", t = 35/30},
 			{ s = "weapons/csgo/taser/taser_clipout.ogg", t = 15/30 },
 			{ s = "weapons/csgo/fiveseven/fiveseven_clipin.wav", t = 25/30 },
-			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 40/30 },			
+			{ s = "weapons/csgo/taser/taser_clipin.ogg", t = 40/30 },
+            {s = "weapons/cs2/taser/taser_charging.wav", t = 40/30},
             { s = "weapons/csgo/taser/taser_draw.ogg", t = 50/30 },
+            {s = "weapons/cs2/taser/taser_charge_ready.wav", t = 63/30},
+            {s = "weapons/cs2/taser/taser_charge_ready.wav", t = 65/30},
         },
     },
     ["ready"] = {

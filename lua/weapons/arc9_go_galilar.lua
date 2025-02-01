@@ -287,16 +287,16 @@ SWEP.Animations = {
         Source = {"shoot1"},
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
-            {s = "CSGO.GALILAR.Fire_Beef", t = 0/30},
-            {s = "CSGO.GALILAR.Fire_Mech", t = 0/30},
+            -- {s = "CSGO.GALILAR.Fire_Beef", t = 0/30},
+            -- {s = "CSGO.GALILAR.Fire_Mech", t = 0/30},
         },
     },
     ["fire_sights"] = {
         Source = "shoot1_ads",
         IKTimeLine = {{t = 0, lhik = 1, rhik = 1}},
         EventTable = {
-            {s = "CSGO.GALILAR.Fire_Beef_ADS", t = 0/30},
-            {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0/30},
+            -- {s = "CSGO.GALILAR.Fire_Beef_ADS", t = 0/30},
+            -- {s = "CSGO.GALILAR.Fire_Mech_ADS", t = 0/30},
         },
     },
     ["reload"] = {
