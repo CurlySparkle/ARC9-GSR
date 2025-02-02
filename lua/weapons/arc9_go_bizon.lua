@@ -146,7 +146,7 @@ SWEP.VisualRecoilSide = .05
 SWEP.VisualRecoilPositionBump = 1.5
 SWEP.VisualRecoilPositionBumpUp = .75
 SWEP.VisualRecoilMultCrouch = .9
-SWEP.VisualRecoilMultSights = .1
+SWEP.VisualRecoilMultSights = 0
 
 -- SWEP.VisualRecoilDampingConst = 60
 -- SWEP.VisualRecoilSpringPunchDamping = 12
@@ -661,7 +661,7 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["stock_retract"] = { Bodygroups = { { 1, 1 } } },
     ["stock_none"] = {
-		-- AttPosMods = { [17] = { Pos = Vector(0.75, 13.25, 0.5), } },
+		AttPosMods = { [17] = { Pos = Vector(0.75, 10.15, 1.35), } },
 		Bodygroups = { { 1, 2 } } },
     ["csgo_bizon_barrel_mid"] = { 
 		Bodygroups = { { 2, 1 }, { 3, 1 } },

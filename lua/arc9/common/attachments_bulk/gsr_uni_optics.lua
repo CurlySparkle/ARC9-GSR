@@ -36,7 +36,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/2x_aimpoint.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/sights/2x_aimpoint.mdl"
 ATT.ModelOffset = Vector(-1.5, 0, 0.1)
@@ -102,7 +102,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/2x_eotech.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/sights/2x_eotech.mdl"
 ATT.ModelOffset = Vector(-1.5, 0, 0.05)
@@ -168,7 +168,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/2x_Kobra.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/sights/2x_kobra.mdl"
 ATT.ModelOffset = Vector(-1.5, 0, 0.05)
@@ -235,7 +235,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/2x_okp.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/sights/2x_okp.mdl"
 ATT.ModelOffset = Vector(-1.5, 0, 0.05)
@@ -305,7 +305,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/scope_M110.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_M110.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.1)
@@ -354,7 +354,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_optic_acog.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/acog_1.mdl"
 ATT.ModelOffset = Vector(0, -0.09, 0)
@@ -445,7 +445,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_optic_acog2.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/acog_2.mdl"
 ATT.ModelOffset = Vector(0, -0.09, 0)
@@ -489,7 +489,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/TA31_RMR.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/ta31_rmr2.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.1)
@@ -551,7 +551,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/c79.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/sights/c79.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.1)
@@ -603,7 +603,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_optic_awp.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_awp.mdl"
 
@@ -769,7 +769,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_optic_ssr.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_scar.mdl"
 ATT.ModelOffset = Vector(0, 0, -0.25)
@@ -846,7 +846,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_optic_hunter.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 ATT.ActiveElements = {"scout_scope"}
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_scout.mdl"
@@ -888,7 +888,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/go_optic_schmidt.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/scope_ssg08.mdl"
 
@@ -929,7 +929,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/specter.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/sights/specter.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.1)
@@ -983,7 +983,7 @@ ATT.CustomPros = {
 table.Merge(ATT, sharedcode)
 
 ATT.Icon = Material("entities/attachs/qts.png", "mips smooth")
-ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
+-- ATT.Folder = ARC9:GetPhrase("csgo_folder_scopes")
 
 ATT.Model = "models/weapons/csgo/atts/scopes/QTS.mdl"
 ATT.ModelOffset = Vector(0, 0, 0.1)

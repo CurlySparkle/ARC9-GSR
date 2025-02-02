@@ -127,6 +127,14 @@ Added two new sets of attachment integrations:
 	[*] PolyArms Project: Support for [b]Optics, Tacticals, Muzzles, Grips & Stocks[/b].
 [/list]
 
+[u]CS2 Sounds[/u]
+A few weapons have gotten new sounds from Counter-Strike 2:
+[list]
+	[*] Added new firing sounds to the AK-47, FAMAS, Galil AR, PP-Bizon, Glock-18 and M249
+	[*] Added new reloading sounds to the FAMAS and PP-Bizon
+	[*] Added new miscellaneous sounds to the Zeus x27
+[/list]
+
 [u]Other Changes[/u]
 [list]
 	[*] Various attachments that come from specific weapons now alter their appearance depending on the skin they have applied.
@@ -139,10 +147,10 @@ Added two new sets of attachment integrations:
 			[*] G3SG1: [b]G3SG1 Scope[/b]
 			[*] SCAR-20: [b]SCAR-20 Scope[/b]
 		[/list]
-	[*] Optic: [u]Magnified optics[/u] are now placed in a "Scopes" folder, while non-magnified optics are no longer in one.
+	[*] Optic: [u]Magnified[/u] and [u]Unmagnified[/u] optics are no longer placed in a separate folder and are instead unified outside of folders.
 	[*] Muzzle: [u]Muzzle Brakes[/u] and [u]Suppressors[/u] are no longer placed in a separate folder and are instead unified outside of folders.
 	[*] Perk: [u]Enhanced Burst[/u] perk can now only be equipped onto assault rifles* and submachine guns.
-		∟ *Excluding the M4A1-S
+		∟ *Excluding the FAMAS and M4A1-S
 
 	[*] AK-47: [u]Tactical Spetsnaz Barrel[/u] now has a different appearance. The previous appearance is now used when no barrel attachment is equipped, but a foregrip is. Now uses default reload animations regardless of magazine attachment (excluding drum).
 	[*] SCAR-17: [u]Bullpup Kit[/u] now requires the [b]Long Barrel[/b] attachment.
