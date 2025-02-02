@@ -1216,11 +1216,13 @@ L["csgo_elite_slide_p38.description"] = "Replaces the slide with a custom afterm
 
 L["csgo_elite_slide_raffica.printname"] = "Raffica Conversion"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management."
+L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management." .. "\n\n[ Incompatible with <color=255,100,100>Muzzle Brakes</color> ]"
 
 L["csgo_elite_mag_24.printname"] = "24-Round 9×19mm Magazine"
 L["csgo_elite_mag_24.compactname"] = "9mm+"
 L["csgo_elite_mag_24.description"] = string.format(quicktext.bigmag, 24)
+
+L["csgo_dual_elite_slide_raffica.description"] = "Converts the weapons to fire in <color=100,255,100>3-round burst</color> and adds a compensator to assist in recoil management." .. "\n\n[ Incompatible with <color=255,100,100>Muzzle Brakes</color> ]"
 
 /////////////////// FAMAS
 L["csgo_famas_barrel_long.printname"] = "Tireur Barrel"
@@ -2429,3 +2431,18 @@ L["csgo_dual_usp_slide_long.description"] = ARC9:GetPhrase("csgo_usp_slide_long.
 L["csgo_dual_usp_mag_18.printname"] = ARC9:GetPhrase("csgo_usp_mag_18.printname") or "18-Round .45 ACP Magazines"
 L["csgo_dual_usp_mag_18.compactname"] = ARC9:GetPhrase("csgo_usp_mag_18.compactname") or ".45 ACP+"
 L["csgo_dual_usp_mag_18.description"] = ARC9:GetPhrase("csgo_usp_mag_18.description") or string.format(quicktext.bigmag, 18)
+
+L["csgo_dual_elite_slide_long.printname"] = ARC9:GetPhrase("csgo_elite_slide_long.printname") or "L Slide and Barrel"
+L["csgo_dual_elite_slide_long.compactname"] = ARC9:GetPhrase("csgo_elite_slide_long.compactname") or "L"
+L["csgo_dual_elite_slide_long.description"] = ARC9:GetPhrase("csgo_elite_slide_long.description") or "Longer slide and barrel."
+
+L["csgo_dual_elite_slide_short.printname"] = ARC9:GetPhrase("csgo_elite_slide_short.printname") or "G Slide and Barrel"
+L["csgo_dual_elite_slide_short.compactname"] = ARC9:GetPhrase("csgo_elite_slide_short.compactname") or "G"
+L["csgo_dual_elite_slide_short.description"] = ARC9:GetPhrase("csgo_elite_slide_short.description") or "Shortened slide and barrel."
+
+L["csgo_dual_elite_slide_raffica.printname"] = ARC9:GetPhrase("csgo_elite_slide_raffica.printname") or "Raffica Conversion"
+L["csgo_dual_elite_slide_raffica.compactname"] = ARC9:GetPhrase("csgo_elite_slide_raffica.compactname") or "Raffica"
+
+L["csgo_dual_elite_mag_24.printname"] = ARC9:GetPhrase("csgo_elite_mag_24.printname") or "24-Round 9×19mm Magazine"
+L["csgo_dual_elite_mag_24.compactname"] = ARC9:GetPhrase("csgo_elite_mag_24.compactname") or "9mm+"
+L["csgo_dual_elite_mag_24.description"] = ARC9:GetPhrase("csgo_elite_mag_24.description") or string.format(quicktext.bigmag, 24)

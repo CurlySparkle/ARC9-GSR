@@ -437,7 +437,7 @@ SWEP.AttachmentElements = {
     ["csgo_elite_slide_long"] = { Bodygroups = { { 0, 1 }, { 1, 1 } } },
     ["csgo_elite_slide_short"] = { Bodygroups = { { 1, 2 } } },
     ["csgo_elite_slide_p38"] = { Bodygroups = { { 0, 2 }, { 1, 3 } } },
-    ["csgo_elite_slide_raffica"] = { Bodygroups = { { 0,3},{ 1, 4 } } },
+    ["csgo_elite_slide_raffica"] = { Bodygroups = { { 0,3 },{ 1, 4 } } },
     ["csgo_elite_mag_24"] = { Bodygroups = { { 2, 1 } } },
 }
 

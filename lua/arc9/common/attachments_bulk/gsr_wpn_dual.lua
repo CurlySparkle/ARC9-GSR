@@ -15,6 +15,114 @@ local sharedcode = {
 	MenuCategory = "ARC9 - CSGO Attachments",
 }
 
+////////////////////////////////////// Dual Berettas
+
+ATT = {}
+
+ATT.PrintName = "L Barrel & Slide"
+
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.975
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m9_slide_long.png", "mips smooth")
+ATT.Category = "go_elite_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [1] = { Pos = Vector(-0.025, -3.325, 9.1) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_dual_elite_slide_long")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "G Barrel & Slide"
+
+ATT.AimDownSightsTimeMult = 0.975
+ATT.SprintToFireTimeMult = 0.975
+ATT.SpeedMult = 1.025
+
+ATT.RangeMinMult = 0.875
+ATT.RangeMaxMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m9_slide_short.png", "mips smooth")
+ATT.Category = "go_elite_slide"
+
+ATT.Element = {
+    AttPosMods = {
+        [1] = { Pos = Vector(-0.025, -3.325, 7.35) }, -- Muzzle
+	}
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.75, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.75, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "csgo_dual_elite_slide_short")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Raffica Conversion"
+
+ATT.Firemodes = { { Mode = 6, PrintName = "3-" .. ARC9:GetPhrase("hud.firemode.burst") } }
+ATT.RunawayBurst = true
+ATT.PostBurstDelay = 0.275 * 1.5
+ATT.RPMAdd = 600 * 1.5
+ATT.RecoilPerShotAdd = -0.13
+
+ATT.CustomPros = { [ ARC9:GetPhrase("customize.stats.firemodes") ] = "3-" .. ARC9:GetPhrase("hud.firemode.burst") }
+
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
+ATT.RecoilMultRecoil = 3
+ATT.RecoilAutoControlAdd = -1
+ATT.RecoilAutoControlAddShooting = -0.49
+ATT.SpreadMultRecoil = 2
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/go_m9_slide_auto.png", "mips smooth")
+ATT.Category = "go_elite_slide"
+
+ATT.ActivateElements = {"no_mb"}
+
+ARC9.LoadAttachment(ATT, "csgo_dual_elite_slide_raffica")
+------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "24-Round 9x19mm Magazine"
+
+ATT.ClipSizeAdd = 18
+
+ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMult = 0.975
+
+ATT.DropMagazineTimeMult = 1.1
+
+table.Merge(ATT, sharedcode)
+
+ATT.Icon = Material("entities/attachs/ext_mag.png", "mips smooth")
+ATT.Category = "go_dual_elite_mag"
+
+ARC9.LoadAttachment(ATT, "csgo_dual_elite_mag_24")
+------------------------------------------------------------------------
+
 ////////////////////////////////////// Dual CZ 75-Auto
 
 ATT = {}
@@ -122,7 +230,7 @@ ATT.Category = "go_dual_deagle_long_slide"
 
 ATT.Element = {
     AttPosMods = {
-        [2] = { Pos = Vector(-0.025, -3.1, 11.9) }, -- Muzzle
+        [2] = { Pos = Vector(11.75, 0, 1.6) }, -- Muzzle
 	}
 }
 

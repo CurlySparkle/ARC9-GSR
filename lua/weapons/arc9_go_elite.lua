@@ -176,11 +176,11 @@ SWEP.TracerColor = Color(255, 255, 155) -- Color of tracers. Only works if trace
 -- }
 
 SWEP.IronSights = {
-    Pos = Vector(0, 0, -1),
-    Ang = Angle(0, 2, 0),
+    Pos = Vector(0, 3, 0.5),
+    Ang = Angle(0, 0, 0),
     Midpoint = { -- Where the gun should be at the middle of it's irons
-        Pos = Vector(0, -1, -1),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0, 0, -0),
+        Ang = Angle(0, 0, 50),
     },
     Magnification = 1.1,
 	ViewModelFOV = 56,
@@ -223,17 +223,7 @@ SWEP.CustomizeSnapshotPos = Vector(0, 7.5, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.PeekPos = Vector(0, -6, -2)
-SWEP.PeekAng = Angle(0, 2.5, -2.5)
-
-SWEP.BlindFirePos = Vector(-3, -1, 2)
-SWEP.BlindFireAng = Angle(0, 0, -50)
-
-SWEP.BlindFireRightPos = Vector(-12, 25, 0)
-SWEP.BlindFireRightAng = Angle(-90, -20, 0)
-
-SWEP.BlindFireLeftPos = Vector(12, 25, 0)
-SWEP.BlindFireLeftAng = Angle(90, -20, 0)
+SWEP.CantPeek = true
 
 -------------------------- HoldTypes
 
@@ -365,7 +355,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},
@@ -375,21 +365,21 @@ SWEP.Animations = {
 			{s = "weapons/csgo/movement2.wav", t = 113/30},
         },
     },
-    ["enter_sights"] = {
-        Source = "ads_enter",
-    },
-    ["idle_sights"] = {
-        Source = "ads_idle",
-    },
-    ["fire_left_sights"] = {
-        Source = "shoot1_right_ads",
-    },
-    ["fire_right_sights"] = {
-        Source = "shoot1_left_ads",
-    },
-    ["exit_sights"] = {
-        Source = "ads_exit",
-    },
+    -- ["enter_sights"] = {
+        -- Source = "ads_enter",
+    -- },
+    -- ["idle_sights"] = {
+        -- Source = "ads_idle",
+    -- },
+    -- ["fire_left_sights"] = {
+        -- Source = "shoot1_right_ads",
+    -- },
+    -- ["fire_right_sights"] = {
+        -- Source = "shoot1_left_ads",
+    -- },
+    -- ["exit_sights"] = {
+        -- Source = "ads_exit",
+    -- },
     ["bash"] = {
         Source = {"melee", "melee2"},
         IKTimeLine = {
@@ -422,24 +412,12 @@ SWEP.Hook_Think	= ARC9.CSGO.BlendEmptyElite
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["mag"] = {
-        Bodygroups = {
-			{2,1},
-        },
-    },
-    ["slide_long"] = {
-        Bodygroups = {
-		    {1,2},
-        },
-    AttPosMods = { [1] = { Pos = Vector(-0.025, -3.325, 9.1), } }	
-    },
-    ["slide_short"] = {
-        Bodygroups = {
-            {1,1},
-            {0,1},
-        },
-    AttPosMods = { [1] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
-    },
+    ["csgo_dual_elite_slide_long"] = { Bodygroups = { { 1, 2 } } },
+    -- AttPosMods = { [1] = { Pos = Vector(-0.025, -3.325, 9.1), } }	
+    ["csgo_dual_elite_slide_short"] = { Bodygroups = { { 0, 1 }, { 1, 1 } } },
+    -- AttPosMods = { [1] = { Pos = Vector(-0.025, -3.325, 7.35), } }	
+    ["csgo_dual_elite_slide_raffica"] = { Bodygroups = { { 1, 3 } } },
+    ["csgo_dual_elite_mag_24"] = { Bodygroups = { { 2, 1 } } },
 }
 
 SWEP.HookP_NameChange = function(self, name)
@@ -534,7 +512,7 @@ SWEP.Attachments = {
                 Bone = "v_weapon.m9a1_R_parent",
             }
         },
-        Category = "go_mag"
+        Category = "go_dual_elite_mag"
     },
     {
         PrintName = ARC9:GetPhrase("csgo_category_ammo"),

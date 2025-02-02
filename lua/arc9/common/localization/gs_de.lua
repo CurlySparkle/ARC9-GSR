@@ -1141,7 +1141,7 @@ L["csgo_awp_sight_iron.description"] = "Aftermarket Kimme und Korn."
 /////////////////// PP-Bizon
 L["csgo_bizon_barrel_long.printname"] = "GRU-Lauf"
 L["csgo_bizon_barrel_long.compactname"] = "GRU"
-L["csgo_bizon_barrel_long.description"] = "Custom long barrel and heat shield."
+L["csgo_bizon_barrel_long.description"] = "Langer Lauf mit Hitzeschild."
 
 L["csgo_bizon_barrel_mid.printname"] = "FSB-Lauf"
 L["csgo_bizon_barrel_mid.compactname"] = "FSB"
@@ -1185,11 +1185,11 @@ L["csgo_deagle_s.compactname"] = "DE-Unterstützung."
 L["csgo_deagle_s.description"] = "Ein Unterdrücker, der speziell für den Desert Eagle entwickelt wurde.\nEntwickelt, um den Dezibelpegel von Schüssen zu reduzieren."
 
 L["csgo_deagle_c.printname"] = "Kompensator"
-L["csgo_deagle_c.compactname"] = "Comp."
+L["csgo_deagle_c.compactname"] = "Komp."
 L["csgo_deagle_c.description"] = "Spezieller Kompensator, der seitlichen Rückstoß reduziert."
 
-L["csgo_deagle_c_2.printname"] = "Long Compensator"
-L["csgo_deagle_c_2.compactname"] = "L-Comp."
+L["csgo_deagle_c_2.printname"] = "Langer Kompensator"
+L["csgo_deagle_c_2.compactname"] = "L-Komp."
 L["csgo_deagle_c_2.description"] = "Noch größerer Spezial-Kompensator, der seitlichen Rückstoß reduziert."
 
 L["csgo_deagle_barrel.printname"] = "Langer Lauf"
@@ -1215,15 +1215,21 @@ L["csgo_elite_slide_p38.description"] = "Ersetzt den Schlitten mit einer Afterma
 
 L["csgo_elite_slide_raffica.printname"] = "Raffica-Umbau"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Umbau der Waffe zum Verschießen einer <color=100,255,100>3er-Salve (Burst)</color>. Fügt zudem einen Vorderschaftgriff und Kompensator hinzu, um bei der Bewältigung des Rückstoßs zu helfen"
+L["csgo_elite_slide_raffica.description"] = "Umbau der Waffe zum Verschießen einer <color=100,255,100>3er-Salve (Burst)</color>. Fügt zudem einen Vorderschaftgriff und Kompensator hinzu, um bei der Bewältigung des Rückstoßs zu helfen." .. "\n\n[ Inkompatibel mit <color=255,100,100>Mündungsbremse</color> ]"
+
+L["csgo_elite_mag_24.printname"] = "9 × 19 mm 24-Schuss Magazin"
+L["csgo_elite_mag_24.compactname"] = "9 mm+"
+L["csgo_elite_mag_24.description"] = string.format(quicktext.bigmag, 24)
+
+L["csgo_dual_elite_slide_raffica.description"] = "Umbau der Waffe zum Verschießen einer <color=100,255,100>3er-Salve (Burst)</color>. Fügt zudem einen Kompensator hinzu, um bei der Bewältigung des Rückstoßs zu helfen." .. "\n\n[ Inkompatibel mit <color=255,100,100>Mündungsbremse</color> ]"
 
 /////////////////// FAMAS
-L["csgo_famas_barrel_long.printname"] = "620 mm Reifenlauf"
-L["csgo_famas_barrel_long.compactname"] = "620mm Reifen"
+L["csgo_famas_barrel_long.printname"] = "Reifenlauf"
+L["csgo_famas_barrel_long.compactname"] = "Reifen"
 L["csgo_famas_barrel_long.description"] = "Custom-Präzisionslauf."
 
-L["csgo_famas_barrel_short.printname"] = "405-mm-Räuberlauf"
-L["csgo_famas_barrel_short.compactname"] = "405 mm Raider"
+L["csgo_famas_barrel_short.printname"] = "Räuberlauf"
+L["csgo_famas_barrel_short.compactname"] = "Räuber"
 L["csgo_famas_barrel_short.description"] = "Gekürzter Lauf."
 
 L["csgo_famas_mag_30.printname"] = "5,56 × 45 mm 30-Schuss-Magazin"
@@ -1382,7 +1388,7 @@ L["csgo_galilar_mag_60.compactname"] = "5,56mm+++"
 L["csgo_galilar_mag_60.description"] = string.format(quicktext.bigmag, 60)
 
 /////////////////// Glock-18
-L["csgo_glock_slide_long.printname"] = "Extended Slide and Barrel"
+L["csgo_glock_slide_long.printname"] = "Erweiterter Schlitten und Lauf"
 L["csgo_glock_slide_long.compactname"] = "Erweitert"
 L["csgo_glock_slide_long.description"] = "Verlängert den Lauf."
 
@@ -1437,7 +1443,6 @@ L["csgo_m3_barrel_default.description"] = "Der Lauf, mit dem der M3 aus der Fabr
 L["csgo_m3_barrel_long.printname"] = "Verlängerter Lauf"
 L["csgo_m3_barrel_long.compactname"] = "Erweitert"
 L["csgo_m3_barrel_long.description"] = "Verlängerter Lauf."
-L["csgo_m3_barrel_long.description"] = "Verlängerter Lauf.\nErforderlich für den <color=255,255,100>7-Schuss-Lauf</color>-Aufsatz."
 
 L["csgo_m3_barrel_short.printname"] = "Verkürzter Lauf"
 L["csgo_m3_barrel_short.compactname"] = "Kurz"

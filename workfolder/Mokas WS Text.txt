@@ -1,0 +1,154 @@
+-- [ ENGLISH ] --
+
+As the release of ARC9 has come, so has quite a few weapon packs, so I present to you: Gunsmith Reloaded, or GSR for short!
+
+Taking inspiration from the infamous and controversial yet beloved Gunsmith Offensive addon, Gunsmith Reloaded utilises the power of the mighty ARC9 by adding many features and finally introducing new features, such as functional Akimbo weapons, functional UBGL's and even more attachments than before!
+
+Join the official [url=https://discord.gg/gaHXusZ]Diamond Doves Discord server![/url]
+
+[h1]Highlights/Features[/h1]
+[list]
+	[*] Plenty of attachments and customization
+	[*] Returning attachments from GSO
+	[*] Support for Stickers, Skins and Charms
+	[*] Added cut CS:GO weapons, such as the M3 and Scout
+	[*] Overall improved rigging
+	[*] Improved weapon animations
+	[*] New weapon animations on select weapons thanks to CturiX, SlogoKolt and Moka
+	[*] Multiple dual-wielded weapons
+	[*] Actual functioning Riot Shield and Zeus x27
+	[*] Underbarrel weapons
+	[*] Full* localization support:
+		[list]
+			[*] English
+			[*] Swedish - Moka
+			[*] Spanish - HyperNeonX
+			[*] German - Marvin, marig
+			[*] Russian - Blueberry
+		[/list]
+	*Full support, meaning that [b]everything[/b] (or close to) is translated.
+	
+	[*] Partial** Localization support:
+		[list]
+			[*] Bulgarian, Czech, Danish, Greek, Finnish, French, Hungarian, Italian
+			[*] Japanese, Korean, Dutch, Norwegian, Polish, Brazilian Portuguese
+			[*] Portuguese, Thai, Turkish, Ukrainian, Vietnamese
+			[*] Traditional & Simplified Chinese
+		[/list]
+	**Means that only [b]weapon names, descriptions & category names[/b] are translated.
+[/list]
+And so much more!
+
+[h1]FAQ[/h1]
+- [b]How do I customize?[/b] - Just like on ArcCW, you press your Context button (default 'C')
+- [b]How do I melee?[/b] - Hold your USE (default 'E') button and press your primary attack (default 'Left Mouse')
+- [b]Will it add more weapons later?[/b] - Maybe.
+- [b]Will it receive more attachments later?[/b] - Only time will tell.
+- [b]What do I need to use this?[/b] - All you need is the ARC9 base.
+
+[h1]Credits and Appreciation for the greatest minds of this generation[/h1]
+[list]
+	[*][b]Twilight Sparkle[/b]
+	[*][b]SlogoKolt[/b]
+	[*][b]CturiX[/b]
+	[*][b]Arctic[/b]
+	[*][b]TheOnly8Z[/b]
+	[*][b]Darsu[/b]
+	[*][b]Ma_rv*[/b]
+	[*][b]Matsilagi[/b]
+	[*][b]Firmeteran[/b]
+	[*][b]Cylo[/b]
+	[*][b]Odec3D[/b]
+	[*][b]Millenia[/b]
+	[*][b]Johannes Bazaryan[/b]
+	[*][b]Moka*[/b]
+	[*][b]HyperNeonX*[/b]
+	[*][b]marig*[/b]
+	[*][b]Valve[/b]
+	[*][b]New World Interactive[/b]
+	[*][b]Infinity Ward[/b]
+	And of course you, for supporting this great addon!
+[/list]
+*[i]Also helped with localization[/i]
+
+If you encounter any bugs or want to suggest new features and help improving this addon, then you can follow the development on the [url=https://github.com/CurlySparkle/ARC9-GSR]GitHub page[/url].
+
+[i]Want to add in a bunch of official CS:GO skins for as many applicable weapons as possible? Subscribe to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]part 1[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]part 2[/url] of the Appearance Expansion![/i]
+
+-- [ SWEDISH ] --
+
+Då lanseringen av ARC9 har kommit så har flertal vapenpaket också gjort det, och jag presenterar till er Gunsmith Reloaded, eller förkortat GSR!
+
+Inspiration har tagits från den ökände och kontroversiella men ändå älskade Gunsmith Offensive-tillägget, Gunsmith Reloaded tar och använder kraften från den mäktige ARC9 genom att lägga till många funktioner och äntligen introducerar nya funktioner, exempelvis fungerande Akimbo-vapen, fungerande undermonterade tillsatser och även fler tillbehör än förr!
+
+Gå med den officiella [url=https://discord.gg/gaHXusZ]Diamond Doves Discord-servern här![/url]
+
+[h1]Högpunkter/Funktioner[/h1]
+[list]
+	[*] Massvis med tillbehör och anpassning
+	[*] Återkommande tillbehör från GSO
+	[*] Stöd för Klistermärken, Skins och Smycken
+	[*] Lade till borttagna CS:GO-vapen, exempelvis M3 och Scout
+	[*] Generellt förbättrad rigging
+	[*] Förbättrade vapen animationer
+	[*] Nya vapen animationer på utvalda vapen tack vare CturiX, SlogoKolt och Moka
+	[*] Flertal dubbla vapen
+	[*] Helt fungerande Kravallsköld och Zeus x27
+	[*] Undermonterade vapen
+	[*] Fullt* översättningsstöd:
+		[list]
+			[*] Engelska
+			[*] Svenska - Moka
+			[*] Spanska - HyperNeonX
+			[*] Tyska - Marvin, marig
+			[*] Ryska - Blueberry
+		[/list]
+	*Fullt stöd betyder att [b]allt[/b] (eller så nära som allt) är översatt.
+	
+	[*] Delvist** översättningsstöd:
+		[list]
+			[*] Bulgariska, Tjeckiska, Danska, Grekiska, Finska, Franska, Ungerska, Italienska
+			[*] Japanska, Koreanska, Holländska, Norska, Polska, Brasiliansk Portugisiska
+			[*] Portugisiska, Thai, Turkiska, Ukrainska, Vietnamesiska
+			[*] Traditionell & Simplifierad Kinesiska
+		[/list]
+	**Betyder att endast [b]vapnens namn, beskrivningar och kategori namn[/b] är översatta.
+[/list]
+Och mycket mer därtill!
+
+
+[h1]FAQ[/h1]
+- [b]Hur anpassar jag?[/b] - Precis som på ArcCW så trycker du på Context-knappen (standard 'C')
+- [b]Hur använder jag närstridsanfall?[/b] - Håll inne din ANVÄND (standard 'E') knapp och tryck på din primäreld (standard 'Vänster Mus')
+- [b]Kommer fler vapen läggas till senare?[/b] - Kanske.
+- [b]Kommer den motta fler tillbehör senare?[/b] - Får vänta och se.
+- [b]Vad behöver jag för att använda detta?[/b] - Allt du behöver är ARC9-basen.
+
+[h1]Skapare och Tackar till generationens största hjärnor[/h1]
+[list]
+	[*][b]Twilight Sparkle[/b]
+	[*][b]SlogoKolt[/b]
+	[*][b]CturiX[/b]
+	[*][b]Arctic[/b]
+	[*][b]TheOnly8Z[/b]
+	[*][b]Darsu[/b]
+	[*][b]Ma_rv*[/b]
+	[*][b]Matsilagi[/b]
+	[*][b]Firmeteran[/b]
+	[*][b]Cylo[/b]
+	[*][b]Odec3D[/b]
+	[*][b]Millenia[/b]
+	[*][b]Johannes Bazaryan[/b]
+	[*][b]Moka*[/b]
+	[*][b]HyperNeonX*[/b]
+	[*][b]marig*[/b]
+	[*][b]Valve[/b]
+	[*][b]New World Interactive[/b]
+	[*][b]Infinity Ward[/b]
+	Och dig själv för att du stödjer detta tillägg!
+[/list]
+*[i]Hjälpte också till med översättningar[/i]
+
+Om du upptäcker några bugger, eller vill föreslå nya funktioner och hjälpa till att förbättra tillägget så kan du följa tillverkningen på [url=https://github.com/CurlySparkle/ARC9-GSR]GitHub-sidan[/url].
+
+[i]Vill du lägga till flertal officiella CS:GO skins till så många tillämpliga vapen som möjligt? Prenumerera till [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973836476]del 1[/url] och [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2973837301]del 2[/url] av Appearance Expansion![/url][/i]

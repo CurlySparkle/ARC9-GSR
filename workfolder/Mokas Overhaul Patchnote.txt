@@ -118,6 +118,7 @@ A few weapons have received brand-new attachments:
 	[*] Nova: [b]Extended Barrel[/b] & [b]CQC Barrel[/b]
 	[*] XM1014: [b]5-Round Tube[/b]
 	[*] Tec-9: [b]18-Round Magazine (Auto)[/b], [b]32-Round Magazine (Auto)[/b] & [b]10-Round Magazine (Auto)[/b]
+	[*] Dual Berettas: [b]Raffica Conversion[/b]
 [/list]
 
 [u]New Integrations[/u]

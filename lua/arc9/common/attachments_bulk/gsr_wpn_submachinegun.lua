@@ -748,6 +748,7 @@ ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.5
 ATT.RPMAdd = -191
 ATT.RecoilMult = 1.3
+ATT.RecoilPerShotAdd = 0.1
 
 ATT.ShootSound = "CSGO.M4A4.Fire"
 ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"
@@ -789,6 +790,7 @@ ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.5
 ATT.RPMAdd = -191
 ATT.RecoilMult = 1.3
+ATT.RecoilPerShotAdd = 0.1
 
 ATT.ShootSound = "CSGO.M4A4.Fire"
 ATT.ShootSoundSilenced = "CSGO.M4A4.Silenced_Fire"

@@ -373,7 +373,7 @@ SWEP.Animations = {
     },
     ["inspect"] = {
         Source = "lookat01",
-        MinProgress = 0.1,
+        MinProgress = 0.9,
         FireASAP = true,
         EventTable = {
             {s = "weapons/csgo/movement1.wav", t = 2/30},

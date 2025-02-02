@@ -35,7 +35,7 @@ ATT.Category = {"muzzle"}
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AKM.mdl"
 ATT.Scale = 0.45
 
-ATT.ExcludeElements = {"p90_ris"}
+ATT.ExcludeElements = {"p90_ris", "no_mb"}
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -61,7 +61,7 @@ ATT.Category = {"muzzle"}
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_AK74.mdl"
 ATT.Scale = 0.35
 
-ATT.ExcludeElements = {"p90_ris"}
+ATT.ExcludeElements = {"p90_ris", "no_mb"}
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -93,6 +93,8 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_attach_comp"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.ExcludeElements = {"no_mb"}
+
 ARC9.LoadAttachment(ATT, "go_muzzle_p226")
 ------------------------------------------------------------------------
 ATT = {}
@@ -113,7 +115,7 @@ ATT.Category = {"muzzle"}
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_ar15.mdl"
 ATT.Scale = 0.45
 
-ATT.ExcludeElements = {"p90_ris"}
+ATT.ExcludeElements = {"p90_ris", "no_mb"}
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -160,7 +162,7 @@ ATT.Category = {"muzzle"}
 ATT.Model = "models/weapons/csgo/atts/muzzle/muzzle_uzi.mdl"
 ATT.Scale = 0.45
 
-ATT.ExcludeElements = {"p90_ris"}
+ATT.ExcludeElements = {"p90_ris", "no_mb"}
 
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_comp"
 ATT.MuzzleParticleOverride_Priority = 10

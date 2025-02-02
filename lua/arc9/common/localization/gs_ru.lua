@@ -1215,11 +1215,13 @@ L["csgo_elite_slide_p38.compactname"] = "Офицерский"
 
 L["csgo_elite_slide_raffica.printname"] = "Модификация Raffica"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
--- L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management."
+-- L["csgo_elite_slide_raffica.description"] = "Converts the weapon to fire in <color=100,255,100>3-round burst</color> and adds a foregrip and compensator to assist in recoil management." .. "\n\n[ Несовместим с <color=255,100,100>дульный тормоз</color> ]"
 
 L["csgo_elite_mag_24.printname"] = "24-зарядный магазин 9×19-мм"
 L["csgo_elite_mag_24.compactname"] = "9-мм+"
 L["csgo_elite_mag_24.description"] = string.format(quicktext.bigmag, 24)
+
+-- L["csgo_dual_elite_slide_raffica.description"] = "Converts the weapons to fire in <color=100,255,100>3-round burst</color> and adds a compensator to assist in recoil management." .. "\n\n[ Несовместим с <color=255,100,100>дульный тормоз</color> ]"
 
 /////////////////// FAMAS
 L["csgo_famas_barrel_long.printname"] = "Ствол Tireur"

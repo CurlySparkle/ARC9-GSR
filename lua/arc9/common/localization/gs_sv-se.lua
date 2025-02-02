@@ -1217,11 +1217,13 @@ L["csgo_elite_slide_p38.description"] = "Ersätter slutstycket med en anpassad f
 
 L["csgo_elite_slide_raffica.printname"] = "Raffica-Konvertering"
 L["csgo_elite_slide_raffica.compactname"] = "Raffica"
-L["csgo_elite_slide_raffica.description"] = "Konverterar vapnet att skjuta i <color=100,255,100>3-skottsalva</color> och sätter på ett framgrepp och kompensator för att hjälpa med rekylkontrollen."
+L["csgo_elite_slide_raffica.description"] = "Konverterar vapnet att skjuta i <color=100,255,100>3-skottsalva</color> och sätter på ett framgrepp och kompensator för att hjälpa med rekylkontrollen." .. "\n\n[ Ej kompatibel med <color=255,100,100>Mynningsbroms</color> ]"
 
 L["csgo_elite_mag_24.printname"] = "9 × 19 mm 24-Patronersmagasin"
 L["csgo_elite_mag_24.compactname"] = "9 mm+"
 L["csgo_elite_mag_24.description"] = string.format(quicktext.bigmag, 24)
+
+L["csgo_dual_elite_slide_raffica.description"] = "Konverterar vapnen att skjuta i <color=100,255,100>3-skottsalva</color> och sätter på en kompensator för att hjälpa med rekylkontrollen." .. "\n\n[ Ej kompatibel med <color=255,100,100>Mynningsbroms</color> ]"
 
 /////////////////// FAMAS
 L["csgo_famas_barrel_long.printname"] = "Tireur-Pipa"

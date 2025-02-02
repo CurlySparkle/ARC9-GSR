@@ -187,6 +187,8 @@ table.Merge(ATT, sharedcode)
 ATT.Icon = Material("entities/attachs/go_m9_slide_auto.png", "mips smooth")
 ATT.Category = "go_elite_s"
 
+ATT.ActivateElements = {"no_mb"}
+
 ATT.Model = "models/weapons/csgo/atts/grip_kac.mdl"
 ATT.ModelBodygroups = "1"
 ATT.ModelOffset = Vector(0, 0.3, -1)
