@@ -734,3 +734,21 @@ SWEP.Attachments = {
 
 SWEP.GripPoseParam = 3
 SWEP.GripPoseParam2 = 0.3
+
+SWEP.CustomizePosHook = function(wep, vec)
+	local s1, s2, s3 = wep:HasElement("csgo_stock_tube"), wep:HasElement("csgo_stock_tube_retracted"), wep:HasElement("csgo_ak47_stock_skeleton")
+	
+	if s1 or s2 or s3 then
+		return vec - Vector(3.5, -3, 0)
+	end
+
+end
+
+SWEP.CustomizeRotateAnchorHook = function(wep, vec)
+	local s1, s2, s3 = wep:HasElement("csgo_stock_tube"), wep:HasElement("csgo_stock_tube_retracted"), wep:HasElement("csgo_ak47_stock_skeleton")
+	
+	if s1 or s2 or s3 then
+		return vec - Vector(3.5, 0, 0)
+	end
+
+end
