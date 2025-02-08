@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_molotov")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -73,6 +73,12 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true 
+
+SWEP.QuickSwapTo = true
+SWEP.NoHolsterOnPrimed = true
+SWEP.CanLean = false
+SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 -------------------------- POSITIONS
 
@@ -171,5 +177,16 @@ SWEP.Animations = {
             {s = "weapons/csgo/molotov/grenade_throw.wav", t = 0},
         },
         MinProgress = 0
+    },
+    ["quicknade"] = {
+        Source = "pullpin",
+        MinProgress = 0.8,
+        FireASAP = true,
+        EventTable = {
+            {s = "CSGO.Item.Movement", t = 1/30},
+            {s = "weapons/csgo/molotov/lighter_open.wav", t = 3/30 },
+			--{s = "", t = 15/30},
+			{s = "weapons/csgo/molotov/lighter_closed.wav", t = 22/30},
+        },
     },
 }

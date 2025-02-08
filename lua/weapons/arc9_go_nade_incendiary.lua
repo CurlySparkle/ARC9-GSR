@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_incendiary")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -12,6 +12,8 @@ SWEP.NoAimAssist = true
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_incendiary")
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_grenade")
 SWEP.Description = ARC9:GetPhrase("csgo_description_nade_incendiary")
+
+SWEP.ShortPrintName = ARC9:GetPhrase("csgo_weapon_nade_incendiary_short")
 
 SWEP.Trivia = {
     [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
@@ -75,6 +77,12 @@ SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true 
 
 SWEP.ShootAngOffset = Angle(3, 0, 0)
+
+SWEP.QuickSwapTo = true
+SWEP.NoHolsterOnPrimed = true
+SWEP.CanLean = false
+SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 -------------------------- POSITIONS
 
@@ -174,5 +182,14 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
+    },
+    ["quicknade"] = {
+        Source = "pullpin",
+        MinProgress = 0.666,
+        FireASAP = true,
+        EventTable = {
+            {s = "weapons/csgo/hegrenade/pinpull_start.wav", t = 0},
+            {s = "weapons/csgo/hegrenade/pinpull.wav", t = 10/30},
+        },
     },
 }

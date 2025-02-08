@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_landmines")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -75,6 +75,12 @@ SWEP.ThrowInstantly = true
 SWEP.ShootEntInheritPlayerVelocity = true
 
 SWEP.ShootPosOffset = Vector(0, 30, -7)
+
+SWEP.QuickSwapTo = true
+SWEP.NoHolsterOnPrimed = true
+SWEP.CanLean = false
+SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 -------------------------- POSITIONS
 
@@ -169,5 +175,11 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee","melee2","melee3"}
+    },
+    ["quicknade"] = {
+        Source = "deploy",
+        EventTable = {
+            {s = "weapons/csgo/mine/proxy_pull_out.wav", t = 0/30},
+        },
     },
 }

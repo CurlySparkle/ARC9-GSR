@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_mines")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -72,6 +72,12 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true
+
+SWEP.QuickSwapTo = true
+SWEP.NoHolsterOnPrimed = true
+SWEP.CanLean = false
+SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 -------------------------- POSITIONS
 
@@ -171,5 +177,11 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = "melee"
+    },
+    ["quicknade"] = {
+        Source = "deploy",
+        EventTable = {
+            {s = "weapons/csgo/bumpmines/bumpmine_pickup.wav", t = 0},
+        },
     },
 }

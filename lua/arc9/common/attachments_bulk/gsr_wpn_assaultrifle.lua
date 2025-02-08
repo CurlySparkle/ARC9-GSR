@@ -334,8 +334,8 @@ ATT.PrintName = "25-Round 9×19mm Magazine"
 
 ATT.RPMAdd = 100
 
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
+ATT.RecoilMult = 0.55
+ATT.VisualRecoilMult = 0.55
 
 ATT.ClipSizeAdd = -5
 ATT.DamageMaxMult = 0.75
@@ -372,8 +372,8 @@ ATT.PrintName = "32-Round 9×19mm Magazine"
 ATT.RPMAdd = 100
 
 ATT.ClipSizeAdd = 2
-ATT.RecoilMult = 0.8
-ATT.VisualRecoilMult = 0.8
+ATT.RecoilMult = 0.55
+ATT.VisualRecoilMult = 0.55
 
 ATT.ReloadTimeMult = 1.075
 ATT.DamageMaxMult = 0.75

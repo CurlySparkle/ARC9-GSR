@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_decoy")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -12,6 +12,8 @@ SWEP.NoAimAssist = true
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_decoy")
 SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_grenade")
 SWEP.Description = ARC9:GetPhrase("csgo_description_nade_decoy")
+
+SWEP.ShortPrintName = ARC9:GetPhrase("csgo_weapon_nade_decoy_short")
 
 SWEP.Trivia = {
     [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
@@ -73,6 +75,12 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true
+
+SWEP.QuickSwapTo = true
+SWEP.NoHolsterOnPrimed = true
+SWEP.CanLean = false
+SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 -------------------------- POSITIONS
 
@@ -172,5 +180,14 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
+    },
+    ["quicknade"] = {
+        Source = "pullpin",
+        MinProgress = 0.666,
+        FireASAP = true,
+        EventTable = {
+            {s = "weapons/csgo/hegrenade/pinpull_start.wav", t = 0},
+            {s = "weapons/csgo/hegrenade/pinpull.wav", t = 10/30},
+        },
     },
 }

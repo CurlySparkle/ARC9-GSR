@@ -88,13 +88,13 @@ L["csgo_category_weapon_sniper"] = "Krypskyttegevär"
 L["csgo_category_weapon_smg"] = "KPistar"
 
 /////////////////// Weapon Categories
-L["csgo_category_slot_0"] = "0. Dubbla Vapen"
-L["csgo_category_slot_1"] = "1. " .. csstring["cat_pistols"]
-L["csgo_category_slot_2"] = "2. " .. csstring["cat_heavy"]
-L["csgo_category_slot_3"] = "3. " .. csstring["cat_smg"]
-L["csgo_category_slot_4"] = "4. " .. csstring["cat_rifles"]
-L["csgo_category_slot_5"] = "5. " .. csstring["cat_grenades"]
-L["csgo_category_slot_6"] = "6. " .. csstring["cat_gear"]
+L["csgo_category_slot_0"] = "0Dubbla Vapen"
+L["csgo_category_slot_1"] = "1" .. csstring["cat_pistols"]
+L["csgo_category_slot_2"] = "2" .. csstring["cat_heavy"]
+L["csgo_category_slot_3"] = "3" .. csstring["cat_smg"]
+L["csgo_category_slot_4"] = "4" .. csstring["cat_rifles"]
+L["csgo_category_slot_5"] = "5" .. csstring["cat_gear"]
+L["csgo_category_slot_6"] = "6" .. csstring["cat_grenades"]
 
 /////////////////// Weapon Classes
 L["csgo_class_weapon_ar"] = "Automatkarbin"
@@ -178,6 +178,11 @@ L["csgo_weapon_nade_mines"] = csstring["bumpmine"]
 L["csgo_weapon_nade_molotov"] = csstring["molotov"].name
 L["csgo_weapon_nade_smoke"] = csstring["smoke_grenade"].name
 L["csgo_weapon_nade_sonar"] = csstring["tagrenade"]
+
+L["csgo_weapon_nade_decoy_short"] = csstring["decoy_short"]
+L["csgo_weapon_nade_frag_short"] = csstring["he_grenade_short"]
+L["csgo_weapon_nade_incendiary_short"] = csstring["incgrenade_short"]
+L["csgo_weapon_nade_sonar_short"] = csstring["tagrenade"]
 
 L["csgo_weapon_negev"] = csstring["negev"].name
 L["csgo_weapon_nova"] = csstring["nova"].name

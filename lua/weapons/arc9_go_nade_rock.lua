@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_rock")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -74,6 +74,12 @@ SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maxim
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
 SWEP.Disposable = true 
+
+SWEP.QuickSwapTo = true
+SWEP.NoHolsterOnPrimed = true
+SWEP.CanLean = false
+SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 -------------------------- POSITIONS
 
@@ -187,6 +193,12 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "lookat01",
         MinProgress = 0.9,
+        FireASAP = true,
+    },
+    ["quicknade"] = {
+        Source = "pullpin",
+        MinProgress = 0,
+		Mult = 1.4,
         FireASAP = true,
     },
 }

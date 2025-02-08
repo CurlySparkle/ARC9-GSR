@@ -62,14 +62,15 @@ function ENT:PhysicsCollide( data,phys )
 			molotovfire:Spawn()
 			SafeRemoveEntityDelayed(molotovfire, 8)
 			
-			self:SetMoveType( MOVETYPE_NONE )
-			self:SetSolid( SOLID_NONE )
-			self:PhysicsInit( SOLID_NONE )
-			self:SetCollisionGroup( COLLISION_GROUP_NONE )
-			self:SetRenderMode( RENDERMODE_TRANSALPHA )
-			self:SetColor( Color( 255, 255, 255, 0 ) )
-			self:DrawShadow( false )
-			self:StopParticles()
+			SafeRemoveEntityDelayed(self, 0) -- This works for some reason.
+			-- self:SetMoveType( MOVETYPE_NONE )
+			-- self:SetSolid( SOLID_NONE )
+			-- self:PhysicsInit( SOLID_NONE )
+			-- self:SetCollisionGroup( COLLISION_GROUP_NONE )
+			-- self:SetRenderMode( RENDERMODE_TRANSALPHA )
+			-- self:SetColor( Color( 255, 255, 255, 0 ) )
+			-- self:DrawShadow( false )
+			-- self:StopParticles()
 		end
 		self:EmitSound("CSGO.Incendiary.Explode")
 		self.IgniteEnd = 1
