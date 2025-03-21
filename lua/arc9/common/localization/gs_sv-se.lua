@@ -902,68 +902,72 @@ L["go_supp_kriss.description"] = "Tung taktisk ljuddämpare designad att sänka 
 /////////////////// Perks
 L["csgo_perk_fastreload.printname"] = "Snabb Omladdning"
 L["csgo_perk_fastreload.compactname"] = "Omladdning"
-L["csgo_perk_fastreload.description"] = "Ökar omladdning hastigheten."
+L["csgo_perk_fastreload.description"] = "Ökar <color=100,255,100>omladdning hastigheten</color>."
 
 L["csgo_perk_headshot.printname"] = "Kirurgiskt Skott"
 L["csgo_perk_headshot.compactname"] = "Kirurgiskt"
-L["csgo_perk_headshot.description"] = "Ökar skadan på huvudskott."
+L["csgo_perk_headshot.description"] = "Ökar <color=100,255,100>skadan på huvudskott</color>."
 
 L["csgo_perk_enforcer.printname"] = "Enforcer"
 L["csgo_perk_enforcer.compactname"] = "Enforcer"
-L["csgo_perk_enforcer.description"] = "Sänker tagen skada."
+L["csgo_perk_enforcer.description"] = "Sänker <color=100,255,100>tagen skada</color>."
 
 L["csgo_perk_ace.printname"] = "Ess i Hålet"
 L["csgo_perk_ace.compactname"] = "Ess"
-L["csgo_perk_ace.description"] = "33% chans att göra dubbel skada på NPC:er.\n<color=255,100,100>Gör inget mot spelare</color>."
+L["csgo_perk_ace.description"] = "33% chans att göra <color=100,255,100>dubbel skada</color> på NPC:er.\n<color=255,100,100>Gör inget mot spelare</color>."
 
 L["csgo_perk_bolt.printname"] = "Rörlighet"
 L["csgo_perk_bolt.compactname"] = "Rörlighet"
-L["csgo_perk_bolt.description"] = "Förbättrar vapnets cykelhastighet."
+L["csgo_perk_bolt.description"] = "Förbättrar vapnets <color=100,255,100>cykelhastighet</color>."
 
 L["csgo_perk_burst.printname"] = "Förbättrad Salvo"
 L["csgo_perk_burst.compactname"] = "Salvo"
-L["csgo_perk_burst.description"] = "Byter vapnets skjutläge till 3-skottsalva."
+L["csgo_perk_burst.description"] = "Byter vapnets skjutläge till <color=175,175,255>3-skottsalva</color>."
 
 L["csgo_perk_cowboy.printname"] = "Gung-Ho"
 L["csgo_perk_cowboy.compactname"] = "Gung-Ho"
-L["csgo_perk_cowboy.description"] = "Aktiverar förmågan att skjuta när du springer, och förbättrar träffsäkerheten från höften under rörelse."
+L["csgo_perk_cowboy.description"] = "Aktiverar förmågan att <color=100,255,100>skjuta när du springer</color>, och förbättrar <color=100,255,100>träffsäkerheten från höften</color> under rörelse."
 
 L["csgo_perk_diver.printname"] = "Djupt Hav"
 L["csgo_perk_diver.compactname"] = "Djupt Hav"
-L["csgo_perk_diver.description"] = "Aktiverar förmågan att skjuta medans under vatten."
+L["csgo_perk_diver.description"] = "Aktiverar förmågan att <color=100,255,100>skjuta medans under vatten</color>."
 
 L["csgo_perk_melee_lounge.printname"] = "Utfall"
 L["csgo_perk_melee_lounge.compactname"] = "Utfall"
-L["csgo_perk_melee_lounge.description"] = "Aktiverar förmågan att utföra snabba utfall mot en fiende när du anfaller med närstrid."
+L["csgo_perk_melee_lounge.description"] = "Aktiverar förmågan att utföra <color=100,255,100>snabba utfall mot en fiende</color> när du anfaller med närstrid."
 
 L["csgo_perk_melee_speed.printname"] = "Knivhuggare"
 L["csgo_perk_melee_speed.compactname"] = "Knivhuggare"
-L["csgo_perk_melee_speed.description"] = "Ökar närstridshastigheten."
+L["csgo_perk_melee_speed.description"] = "Ökar <color=100,255,100>närstridshastigheten</color>."
 
 /////////////////// Perks, added later
 L["csgo_perk_last.printname"] = "Sista Ut"
 L["csgo_perk_last.compactname"] = "Sista Ut"
-L["csgo_perk_last.description"] = "Ökar skadan på magasinets sista skott."
+L["csgo_perk_last.description"] = "Ökar <color=100,255,100>skadan</color> på <color=175,175,255>magasinets sista skott</color>."
 
 L["csgo_perk_light.printname"] = "Lättvikt Ram"
 L["csgo_perk_light.compactname"] = "Lättvikt"
-L["csgo_perk_light.description"] = "Ökar rörelsehastigheten i siktet."
+L["csgo_perk_light.description"] = "Ökar <color=100,255,100>rörelsehastigheten</color> i siktet."
 
 L["csgo_perk_quickdraw.printname"] = "Snabbdrag"
 L["csgo_perk_quickdraw.compactname"] = "Snabbdrag"
-L["csgo_perk_quickdraw.description"] = "Ökar siktehastigheten."
+L["csgo_perk_quickdraw.description"] = "Ökar <color=100,255,100>siktehastigheten</color>."
 
 L["csgo_perk_rapidfire.printname"] = "Snabbeld"
 L["csgo_perk_rapidfire.compactname"] = "Snabbeld"
-L["csgo_perk_rapidfire.description"] = "Ökar eldhastigheten."
+L["csgo_perk_rapidfire.description"] = "Ökar <color=100,255,100>eldhastigheten</color>."
 
 L["csgo_perk_refund.printname"] = "Huvudjakt"
 L["csgo_perk_refund.compactname"] = "Huvudjakt"
-L["csgo_perk_refund.description"] = "Laddar ett skott från reserver när ett huvudskott görs."
+L["csgo_perk_refund.description"] = "Laddar <color=100,255,100>ett skott</color> från reserver när ett <color=175,175,255>huvudskott</color> görs."
 
 L["csgo_perk_slow.printname"] = "Helstopp"
 L["csgo_perk_slow.compactname"] = "Helstopp"
-L["csgo_perk_slow.description"] = "Tillämpar en omedelbar slow-down-effekt på träff."
+L["csgo_perk_slow.description"] = "Tillämpar en omedelbar <color=100,255,100>slow-down-effekt</color> på träff."
+
+L["csgo_perk_classicrpm.printname"] = "Klassisk Eldhastighet"
+L["csgo_perk_classicrpm.compactname"] = "K.E.H."
+L["csgo_perk_classicrpm.description"] = "Justerar vapnets <color=175,175,255>eldhastighet</color> för att likna dem äldre Counter-Strike-spelen"
 
 /////////////////// Stickers
 L["csgo_sticker_kawai.printname"] = "Kawaii Killer"

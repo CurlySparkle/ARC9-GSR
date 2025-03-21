@@ -902,68 +902,72 @@ L["go_supp_kriss.description"] = "Тяжёлый тактический глуш
 /////////////////// Perks
 L["csgo_perk_fastreload.printname"] = "Быстрая перезарядка"
 L["csgo_perk_fastreload.compactname"] = "Перезарядка"
-L["csgo_perk_fastreload.description"] = "Увеличивает скорость перезарядки."
+L["csgo_perk_fastreload.description"] = "Увеличивает <color=100,255,100>скорость перезарядки</color>."
 
 L["csgo_perk_headshot.printname"] = "Хирургический выстрел"
 L["csgo_perk_headshot.compactname"] = "Хирургический"
--- L["csgo_perk_headshot.description"] = "Increases headshot damage."
+-- L["csgo_perk_headshot.description"] = "Increases <color=100,255,100>headshot damage</color>."
 
 L["csgo_perk_enforcer.printname"] = "Принудитель"
 L["csgo_perk_enforcer.compactname"] = "Принудитель"
--- L["csgo_perk_enforcer.description"] = "Reduces damage taken."
+-- L["csgo_perk_enforcer.description"] = "Reduces <color=100,255,100>damage taken</color>."
 
 L["csgo_perk_ace.printname"] = "Туз в рукаве"
 L["csgo_perk_ace.compactname"] = "Туз"
--- L["csgo_perk_ace.description"] = "33% chance to deal double damage to NPC's.\n<color=255,100,100>Does nothing to players</color>."
+-- L["csgo_perk_ace.description"] = "33% chance to deal <color=100,255,100>double damage</color> to NPC's.\n<color=255,100,100>Does nothing to players</color>."
 
 -- L["csgo_perk_bolt.printname"] = "Dexterity"
 -- L["csgo_perk_bolt.compactname"] = "Dexterity"
--- L["csgo_perk_bolt.description"] = "Improves weapon rechamber speed."
+-- L["csgo_perk_bolt.description"] = "Improves weapon <color=100,255,100>rechamber speed</color>."
 
 L["csgo_perk_burst.printname"] = "Улучшенная очередь"
 L["csgo_perk_burst.compactname"] = "Очередь"
-L["csgo_perk_burst.description"] = "Заменяет режим стрельбы на очереди по 3 патрона." 
+L["csgo_perk_burst.description"] = "Заменяет режим стрельбы на <color=175,175,255>очереди по 3 патрона</color>." 
 
 L["csgo_perk_cowboy.printname"] = "Ганг-Хо"
 L["csgo_perk_cowboy.compactname"] = "Ганг-Хо"
--- L["csgo_perk_cowboy.description"] = "Enables the ability to shoot while sprinting, and improves hip-fire accuracy when moving."
+-- L["csgo_perk_cowboy.description"] = "Enables the ability to <color=100,255,100>shoot while sprinting</color>, and improves <color=100,255,100>hip-fire accuracy</color> when moving."
 
 L["csgo_perk_diver.printname"] = "Глубоководный"
 L["csgo_perk_diver.compactname"] = "Глубоководный"
-L["csgo_perk_diver.description"] = "Позволяет стрелять под водой."
+L["csgo_perk_diver.description"] = "Позволяет <color=100,255,100>стрелять под водой</color>."
 
 L["csgo_perk_melee_lounge.printname"] = "Прыгун"
 L["csgo_perk_melee_lounge.compactname"] = "Прыгун"
--- L["csgo_perk_melee_lounge.description"] = "Enables the ability to lunge towards an enemy when meleeing."
+-- L["csgo_perk_melee_lounge.description"] = "Enables the ability to <color=100,255,100>lunge towards an enemy</color> when meleeing."
 
 L["csgo_perk_melee_speed.printname"] = "Вонзатель"
 L["csgo_perk_melee_speed.compactname"] = "Вонзатель"
-L["csgo_perk_melee_speed.description"] = "Увеличивает скорость атаки ближнего боя."
+L["csgo_perk_melee_speed.description"] = "Увеличивает <color=100,255,100>скорость атаки ближнего боя</color>."
 
 /////////////////// Perks, added later
 L["csgo_perk_last.printname"] = "Последний выход"
 L["csgo_perk_last.compactname"] = "Последний"
--- L["csgo_perk_last.description"] = "Increases damage on the final round in the magazine."
+-- L["csgo_perk_last.description"] = "Increases <color=100,255,100>damage</color> on the <color=150,255,255>final round in the magazine</color>."
 
 L["csgo_perk_light.printname"] = "Легкая рамка"
 L["csgo_perk_light.compactname"] = "Легкая рамка"
-L["csgo_perk_light.description"] = "Улучшает скорость движения при нацеливании."
+L["csgo_perk_light.description"] = "Улучшает <color=100,255,100>скорость движения</color> при нацеливании."
 
 L["csgo_perk_quickdraw.printname"] = "Быстрый прицел"
 L["csgo_perk_quickdraw.compactname"] = "Быстрый"
-L["csgo_perk_quickdraw.description"] = "Увеличивает скорость прицеливания."
+L["csgo_perk_quickdraw.description"] = "Увеличивает <color=100,255,100>скорость прицеливания</color>."
 
 L["csgo_perk_rapidfire.printname"] = "Быстрый огонь"
 L["csgo_perk_rapidfire.compactname"] = "Быстрый"
-L["csgo_perk_rapidfire.description"] = "Увеличивает скоростельность."
+L["csgo_perk_rapidfire.description"] = "Увеличивает <color=100,255,100>скоростельность</color>."
 
 L["csgo_perk_refund.printname"] = "Охота за головами"
 L["csgo_perk_refund.compactname"] = "Охота за головами"
-L["csgo_perk_refund.description"] = "Перезаряжает одну пулю из боезапаса при попадании в голову."
+L["csgo_perk_refund.description"] = "Перезаряжает <color=100,255,100>одну пулю</color> из боезапаса при <color=175,255,255>попадании в голову</color>."
 
 L["csgo_perk_slow.printname"] = "Полная остановка"
 L["csgo_perk_slow.compactname"] = "Полная остановка"
-L["csgo_perk_slow.description"] = "Применяет эффект мгновенного замедления при попадании в цель."
+L["csgo_perk_slow.description"] = "Применяет эффект <color=100,255,100>мгновенного замедления</color> при попадании в цель."
+
+-- L["csgo_perk_classicrpm.printname"] = "Classic RPM"
+-- L["csgo_perk_classicrpm.compactname"] = "C. RPM"
+-- L["csgo_perk_classicrpm.description"] = "Adjusts weapon <color=175,175,255>rate of fire</color> to behave similar to older Counter-Strike titles."
 
 /////////////////// Stickers
 L["csgo_sticker_kawai.printname"] = "Кавайный убийца"

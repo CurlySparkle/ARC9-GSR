@@ -256,3 +256,29 @@ ARC9.LoadAttachment(ATT, "csgo_perk_rapidfire")
 
 -- ARC9.LoadAttachment(ATT, "csgo_perk_slow")
 ------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Classic RPM"
+
+table.Merge(ATT, sharedcode)
+ATT.Category = {"go_perk_sg553", "go_perk_aug"}
+
+ATT.RPM = 666
+
+ATT.RPMSights = 444
+ATT.RecoilMultSights = 0.66
+
+-- ATT.CustomPros = {
+	-- [ ARC9:GetPhrase("csgo_weapon_aug") .. ": " .. ARC9:GetPhrase("autostat.rpm") ] = "666 " .. ARC9:GetPhrase("unit.rpm"),
+	-- [ ARC9:GetPhrase("csgo_weapon_sg556") .. ": " .. ARC9:GetPhrase("autostat.rpm") ] = "??? " .. ARC9:GetPhrase("unit.rpm"),
+-- }
+
+-- ATT.CustomCons = {
+	-- [ ARC9:GetPhrase("csgo_weapon_aug") .. ": " .. string.format( ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.rpm") ) ] = "444 " .. ARC9:GetPhrase("unit.rpm"),
+	-- [ ARC9:GetPhrase("csgo_weapon_sg556") .. ": " .. string.format( ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.rpm") ) ] = "??? " .. ARC9:GetPhrase("unit.rpm"),
+-- }
+
+ATT.Icon = Material("entities/attachs/go_perk_burst.png", "mips smooth") -- Temp
+
+ARC9.LoadAttachment(ATT, "csgo_perk_classicrpm")
+------------------------------------------------------------------------
