@@ -4,18 +4,18 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_5")
+SWEP.SubCategory = "csgo_category_slot_5"
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_knife_shield")
 
-SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_melee")
+SWEP.Class = "csgo_class_weapon_melee"
 
 SWEP.Credits = {
-    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve"
+    ["csgo_trivia_authors1"] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    ["csgo_trivia_assets2"] = "Valve"
 }
 
-SWEP.Description = ARC9:GetPhrase("csgo_description_knife_shield")
+SWEP.Description = "csgo_description_knife_shield"
 
 SWEP.ViewModel = "models/weapons/csgo/v_shield.mdl"
 SWEP.WorldModel = "models/weapons/csgo/v_shield.mdl"
@@ -49,7 +49,7 @@ SWEP.SecondarySupplyLimit = 0 -- Amount of reserve UBGL magazines you can take.
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = ARC9:GetPhrase("csgo_firemode_melee")
+        PrintName = "csgo_firemode_melee"
         -- add other attachment modifiers
     },
 }
@@ -218,11 +218,11 @@ sound.Add({
 
 SWEP.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_perk"),
+        PrintName = "csgo_category_perk",
         Category = {"go_perk_melee"},
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_skins"),
+        PrintName = "csgo_category_skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_shield",
 		InstalledElements = {"skins"},
@@ -230,22 +230,22 @@ SWEP.Attachments = {
 		CosmeticOnly = true,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/shield_a.mdl",
         Category = "stickers",
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/shield_b.mdl",
         Category = "stickers",
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/shield_c.mdl",
         Category = "stickers",
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_camo"),
+        PrintName = "csgo_category_camo",
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},

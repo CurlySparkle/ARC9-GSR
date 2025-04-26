@@ -35,7 +35,7 @@ ATT.Scale = 0.5
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_on"),
+        PrintName = "csgo_stat_on",
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
@@ -48,7 +48,7 @@ ATT.ToggleStats = {
         SpreadAddRecoil = -0.005
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "csgo_stat_off"
     }
 }
 
@@ -74,7 +74,7 @@ ATT.Scale = 0.4
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_on"),
+        PrintName = "csgo_stat_on",
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
@@ -90,7 +90,7 @@ ATT.ToggleStats = {
 		AimDownSightsTimeMult = 1.05,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "csgo_stat_off"
     }
 }
 
@@ -122,7 +122,7 @@ ATT.Scale = 0.45
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser_r"),
+        PrintName = "csgo_stat_laser_r",
         Laser = true,
         LaserColor = Color(255, 0, 0),
         FlareColor = Color(255, 0, 0),
@@ -131,7 +131,7 @@ ATT.ToggleStats = {
 		AimDownSightsTimeMult = 1.05,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser_g"),
+        PrintName = "csgo_stat_laser_g",
         Laser = true,
         LaserColor = Color(0, 255, 0),
         FlareColor = Color(0, 255, 0),
@@ -140,7 +140,7 @@ ATT.ToggleStats = {
 		AimDownSightsTimeMult = 1.05,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser_b"),
+        PrintName = "csgo_stat_laser_b",
         Laser = true,
         LaserColor = Color(0, 0, 255),
         FlareColor = Color(0, 0, 255),
@@ -149,7 +149,7 @@ ATT.ToggleStats = {
 		AimDownSightsTimeMult = 1.05,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "csgo_stat_off"
     }
 }
 
@@ -182,7 +182,7 @@ ATT.Scale = 0.45
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_on"),
+        PrintName = "csgo_stat_on",
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
@@ -195,7 +195,7 @@ ATT.ToggleStats = {
         FlareAttachment = 1
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "csgo_stat_off"
     }
 }
 
@@ -225,7 +225,7 @@ ATT.Model = "models/weapons/csgo/atts/tactical/peq15.mdl"
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser_light"),
+        PrintName = "csgo_stat_laser_light",
         Laser = true,
         Flashlight = true,
         FlareAttachment = 1,
@@ -234,12 +234,12 @@ ATT.ToggleStats = {
 		AimDownSightsTimeMult = 1.1,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_light"),
+        PrintName = "csgo_stat_light",
         Flashlight = true,
         FlareAttachment = 1,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_laser"),
+        PrintName = "csgo_stat_laser",
         Laser = true,
         Flare = true,
         FlareColor = Color(0, 255, 0),
@@ -251,7 +251,7 @@ ATT.ToggleStats = {
 		AimDownSightsTimeMult = 1.1,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_stat_off"),
+        PrintName = "csgo_stat_off"
     }
 }
 

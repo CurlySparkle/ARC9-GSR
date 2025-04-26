@@ -4,7 +4,7 @@ IncludeCS("cs2strings/wpnstring-" .. "el" .. ".lua")
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
--- L["csgo_trivia_country"] = "Country of Origin1"
+-- L["csgo_trivia_country"] = "Country of Origin"
 
 -- L["csgo_trivia_country_austria"] = "Austria"
 -- L["csgo_trivia_country_belgium"] = "Belgium"
@@ -23,10 +23,10 @@ IncludeCS("cs2strings/wpnstring-" .. "el" .. ".lua")
 -- L["csgo_trivia_country_usa"] = "United States"
 
 /////////////////// Manufacturer
--- L["csgo_trivia_manufacturer"] = "Manufacturer2"
+-- L["csgo_trivia_manufacturer"] = "Manufacturer"
 
 /////////////////// Caliber
--- L["csgo_trivia_caliber"] = "Caliber3"
+-- L["csgo_trivia_caliber"] = "Caliber"
 
 -- L["csgo_caliber_12gauge"] = "12 Gauge"
 -- L["csgo_caliber_308"] = ".308 Winchester"
@@ -43,15 +43,15 @@ IncludeCS("cs2strings/wpnstring-" .. "el" .. ".lua")
 -- L["csgo_caliber_919"] = "9×19mm"
 
 /////////////////// Weight
--- L["csgo_trivia_weight"] = "Weight4"
+-- L["csgo_trivia_weight"] = "Weight"
 -- L["csgo_trivia_weight_val"] = "%s kg / ~%s lb"
 
 /////////////////// Projectile Weight
--- L["csgo_trivia_weight_projectile"] = "Projectile Weight5"
+-- L["csgo_trivia_weight_projectile"] = "Projectile Weight"
 -- L["csgo_trivia_weight_projectile_val"] = "%s g"
 
 /////////////////// Year
--- L["csgo_trivia_year"] = "Year6"
+-- L["csgo_trivia_year"] = "Year"
 
 /////////////////// Credits
 -- L["csgo_trivia_authors"] = "Authors"

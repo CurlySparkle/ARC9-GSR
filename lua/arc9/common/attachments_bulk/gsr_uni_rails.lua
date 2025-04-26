@@ -29,7 +29,7 @@ ATT.ModelOffset = Vector(0, 0, 0.5)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "csgo_category_optics",
         Pos = Vector(0, 0, -0.83),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -56,7 +56,7 @@ ATT.Scale = 0.5
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "csgo_category_optics",
         Pos = Vector(0, -0.05, -1.45),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -83,7 +83,7 @@ ATT.Scale = 0.4
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "csgo_category_optics",
         Pos = Vector(0, 0, -1.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -109,7 +109,7 @@ ATT.ModelOffset = Vector(-0.5, 0.05, 2.9)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "csgo_category_optics",
         Pos = Vector(0.45, 0, -2.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -136,7 +136,7 @@ ATT.ModelOffset = Vector(0, 0, 0.5)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "csgo_category_optics",
         Pos = Vector(0.5, 0, -1.05),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -162,7 +162,7 @@ ATT.ModelOffset = Vector(1.5, 0, 0.5)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        PrintName = "csgo_category_optics",
         Pos = Vector(-1.5, 0, -0.83),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -189,14 +189,14 @@ ATT.Scale = 0.5
 
 ATT.Attachments = {
     -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- PrintName = "csgo_category_optics",
         -- Pos = Vector(1.1, -0.05, -0.5),
         -- Ang = Angle(0, 0, 180),
         -- Icon_Offset = Vector(0, 0, 0),
         -- Category = {"csgo_optic"},
     -- },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
+        PrintName = "csgo_category_underbarrel",
         Pos = Vector(0, 0.07, -4.5),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -233,7 +233,7 @@ ATT.ModelAngleOffset = Angle(0,90,0)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
+        PrintName = "csgo_category_tactical",
         Pos = Vector(0, -0.05, 0.05),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(0, 2.5, 0),
@@ -262,7 +262,7 @@ ATT.ModelAngleOffset = Angle(0,0,180)
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
+        PrintName = "csgo_category_underbarrel",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 1.5),
@@ -288,7 +288,7 @@ ATT.Scale = 0.6
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
+        PrintName = "csgo_category_underbarrel",
         Pos = Vector(0, 0, -0.1),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 2.5),

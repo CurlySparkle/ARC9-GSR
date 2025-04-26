@@ -2,7 +2,7 @@ SWEP.CustomSelectIcon = Material("vgui/hud/arc9_go_nade_c4")
 
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_6")
+SWEP.SubCategory = "csgo_category_slot_6"
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -10,19 +10,27 @@ SWEP.NotForNPCs = true
 SWEP.NoAimAssist = true
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_nade_c4")
-SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_explosive")
-SWEP.Description = ARC9:GetPhrase("csgo_description_nade_c4")
+SWEP.Class = "csgo_class_weapon_explosive"
+SWEP.Description = "csgo_description_nade_c4"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_usa"),
+    ["csgo_trivia_country1"] = "csgo_trivia_country_usa",
 }
 
 SWEP.Credits = {
-    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve"
+    ["csgo_trivia_authors1"] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    ["csgo_trivia_assets2"] = "Valve"
 }
 
 SWEP.Slot = 4
+
+SWEP.Firemodes = {
+    {
+        Mode = 1,
+        PrintName = "csgo_firemode_plantable"
+        -- add other attachment modifiers
+    },
+}
 
 SWEP.UseHands = true
 

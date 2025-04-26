@@ -5,27 +5,25 @@ SWEP.Base = "arc9_go_base"
 SWEP.NotForNPCs = true
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_0")
+SWEP.SubCategory = "csgo_category_slot_0"
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_akimbo_glock")
 
-SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistols")
+SWEP.Class = "csgo_class_weapon_pistols"
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_austria"),
-    [ARC9:GetPhrase("csgo_trivia_caliber")] = ARC9:GetPhrase("csgo_caliber_919"),
-    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.56, 0.56 * 2.20),
-    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 115 ),
-    -- [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,230 ft/s",
-    -- [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "524 joules"
+    ["csgo_trivia_country1"] = "csgo_trivia_country_austria",
+    ["csgo_trivia_caliber2"] = "csgo_caliber_919",
+    ["csgo_trivia_weight3"] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.56, 0.56 * 2.20),
+    ["csgo_trivia_weight_projectile4"] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 115 ),
 }
 
 SWEP.Credits = {
-    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
+    ["csgo_trivia_authors1"] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    ["csgo_trivia_assets2"] = "Valve/New World Interactive"
 }
 
-SWEP.Description = ARC9:GetPhrase("csgo_description_akimbo_glock")
+SWEP.Description = "csgo_description_akimbo_glock"
 
 SWEP.ViewModel = "models/weapons/csgo/c_akimbo_glock.mdl"
 SWEP.WorldModel = "models/weapons/csgo/c_akimbo_usp.mdl"
@@ -463,15 +461,13 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("csgo_category_slide"),
-        DefaultAttName = "Standard",
+        PrintName = "csgo_category_slide",
         Bone = "tag_pistol_attachments_l",
         Category = "go_glock_s2",
         Pos = Vector(4, 0, 1.5),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
-        DefaultAttName = "Standard Muzzle",
+        PrintName = "csgo_category_muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(5.6, 0, 1),
@@ -484,7 +480,7 @@ SWEP.Attachments = {
         Scale = 0.75,
     },
     -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_optics"),
+        -- PrintName = "csgo_category_optics"),
         -- Bone = "j_slide",
         -- Pos = Vector(-2, 0, 0.2),
         -- Ang = Angle(0, 0, 0),
@@ -498,8 +494,7 @@ SWEP.Attachments = {
         -- Scale = 0.9,
     -- },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
-        DefaultAttName = "Default",
+        PrintName = "csgo_category_tactical",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(4, 0, 0.17),
@@ -512,25 +507,25 @@ SWEP.Attachments = {
         Scale = 1,
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_mag"),
+        PrintName = "csgo_category_mag",
         Category = "go_dual_glock_mag",
         Bone = "j_mag1_l",
         Pos = Vector(0, 0, -.25),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
+        PrintName = "csgo_category_ammo",
         Category = "go_ammo",
         Bone = "j_mag1_l",
         Pos = Vector(0, 0, -1.5),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_perk"),
+        PrintName = "csgo_category_perk",
         Category = "go_perk",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(2.5, 0, -2),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_skins"),
+        PrintName = "csgo_category_skins",
         --Bone = "v_weapon.Clip",
         Category = "go_skins_glock",
 		InstalledElements = {"skins"},
@@ -540,7 +535,7 @@ SWEP.Attachments = {
         Pos = Vector(2.5, 0, -2),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_camo"),
+        PrintName = "csgo_category_camo",
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
@@ -549,35 +544,35 @@ SWEP.Attachments = {
         Pos = Vector(1.5, 0, -2),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_a.mdl",
         Category = "stickers",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(5, 0, 2.5),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_b.mdl",
         Category = "stickers",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(3, 0, 2.5),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_c.mdl",
         Category = "stickers",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(1, 0, 2.5),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
+        PrintName = "csgo_category_sticker",
         StickerModel = "models/weapons/stickers/v_models/akimbo_glock_d.mdl",
         Category = "stickers",
         Bone = "tag_pistol_attachments_l",
         Pos = Vector(-1, 0, 2.5),
     },
     {
-        PrintName = ARC9:GetPhrase("csgo_category_stats"),
+        PrintName = "csgo_category_stats",
         Category = "killcounter",
         Bone = "tag_pistol_attachments",
         Pos = Vector(3.7, -0.4, 0.25),
