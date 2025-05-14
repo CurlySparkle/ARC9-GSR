@@ -1,6 +1,6 @@
-L = {} -- Simplified Chinese strings by ??
+L = {} -- Traditional Chinese strings by ??
 
-IncludeCS("cs2strings/wpnstring-" .. "zh-tw" .. ".lua")
+IncludeCS("cs2strings/wpnstring-" .. "zh-cn" .. ".lua")
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
