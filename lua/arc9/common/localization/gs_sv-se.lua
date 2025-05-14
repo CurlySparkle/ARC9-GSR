@@ -4,7 +4,7 @@ IncludeCS("cs2strings/wpnstring-" .. "sv-se" .. ".lua")
 
 ////////////////////////////////////// Trivia
 /////////////////// Country of Origin
-L["csgo_trivia_country"] = "Ursprungsland"
+L["csgo_trivia_country"] = "Ursprungsland1"
 
 L["csgo_trivia_country_austria"] = "Österrike"
 L["csgo_trivia_country_belgium"] = "Belgien"
@@ -26,7 +26,7 @@ L["csgo_trivia_country_usa"] = "Förenta Staterna"
 L["csgo_trivia_manufacturer"] = "Tillverkare"
 
 /////////////////// Caliber
-L["csgo_trivia_caliber"] = "Kaliber"
+L["csgo_trivia_caliber"] = "Kaliber3"
 
 L["csgo_caliber_12gauge"] = "Kaliber 12"
 L["csgo_caliber_308"] = ".308 Winchester"
@@ -43,15 +43,15 @@ L["csgo_caliber_762soviet"] = "7,62 × 39 mm"
 L["csgo_caliber_919"] = "9 × 19 mm"
 
 /////////////////// Weight
-L["csgo_trivia_weight"] = "Vikt"
+L["csgo_trivia_weight"] = "Vikt4"
 L["csgo_trivia_weight_val"] = "%s kg / ~%s lb"
 
 /////////////////// Projectile Weight
-L["csgo_trivia_weight_projectile"] = "Projektilvikt"
+L["csgo_trivia_weight_projectile"] = "Projektilvikt5"
 L["csgo_trivia_weight_projectile_val"] = "%s g"
 
 /////////////////// Year
-L["csgo_trivia_year"] = "År"
+L["csgo_trivia_year"] = "År6"
 
 /////////////////// Credits
 L["csgo_trivia_authors"] = "Skapare"

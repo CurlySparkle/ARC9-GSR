@@ -4,25 +4,27 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "csgo_category_slot_1"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_1")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_glock")
 
-SWEP.Class = "csgo_class_weapon_pistol"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_pistol")
 
 SWEP.Trivia = {
-    ["csgo_trivia_country1"] = "csgo_trivia_country_austria",
-    ["csgo_trivia_caliber2"] = "csgo_caliber_919",
-    ["csgo_trivia_weight3"] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.28, 0.28 * 2.20),
-    ["csgo_trivia_weight_projectile4"] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 115 ),
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_austria"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ARC9:GetPhrase("csgo_caliber_919"),
+    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 0.28, 0.28 * 2.20),
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 115 ),
+    -- [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "1,230 ft/s",
+    -- [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "524 joules"
 }
 
 SWEP.Credits = {
-    ["csgo_trivia_authors1"] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    ["csgo_trivia_assets2"] = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = "csgo_description_glock"
+SWEP.Description = ARC9:GetPhrase("csgo_description_glock")
 
 SWEP.StandardPresets = {
 "[Glock-18C]XQAAAQC5AAAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+vRQyll6RQhfmAWgYvPNRDIYD2ezV/8i1GMqgQRkAK9gKkB84A4jKEj+OfVoTrsl3KdLy5/jGpcp5UbL0j4Nw8g6kjR1/u0MpOvF7I54iIA=="
@@ -501,14 +503,15 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "csgo_category_slide",
+        PrintName = ARC9:GetPhrase("csgo_category_slide"),
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -2.5, 3.5),
         Ang = Angle(90, 0, -90),
         Category = "go_glock_s"
     },
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
+        DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_pistols"},
         Bone = "v_weapon.glock_parent",
         Pos = Vector(-0.025, -2.375, 6.6),
@@ -516,7 +519,7 @@ SWEP.Attachments = {
         Scale = 0.8,
     },
     {
-        PrintName = "csgo_category_top",
+        PrintName = ARC9:GetPhrase("csgo_category_top"),
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -0.7, 4),
         Ang = Angle(90, 0, -90),
@@ -526,7 +529,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.67, 0.65, 0),
     },
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.glock_slide",
         Pos = Vector(0, -0.57, 0.6),
         Ang = Angle(90, 0, -90),
@@ -538,7 +541,8 @@ SWEP.Attachments = {
 		ExtraSightDistance = -6.5,
     },
     {
-        PrintName = "csgo_category_tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
+        DefaultAttName = "Default",
         Category = {"csgo_tac","csgo_tac_pistols"},
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -1.35, 4.9),
@@ -546,27 +550,27 @@ SWEP.Attachments = {
         Scale = 1.1,
     },
     {
-        PrintName = "csgo_category_mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
         Bone = "v_weapon.glock_magazine",
         Category = "go_glock_mag",
         Pos = Vector(0, -2, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "csgo_category_ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.glock_magazine",
         Category = "go_ammo",
         Pos = Vector(0, -0.5, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "csgo_category_perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, 2.5, 3),
     },
     {
-        PrintName = "csgo_category_skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_glock",
 		InstalledElements = {"skins"},
@@ -576,35 +580,35 @@ SWEP.Attachments = {
         Pos = Vector(0, 2.5, 3),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/glock_a.mdl",
         Category = "stickers",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -2.25, 0),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/glock_b.mdl",
         Category = "stickers",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -2.25, 2.2),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/glock_c.mdl",
         Category = "stickers",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, -2.25, 4.3),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/glock_d.mdl",
         Category = "stickers",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, 0, -0.15),
     },
     {
-        PrintName = "csgo_category_camo",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
@@ -613,20 +617,20 @@ SWEP.Attachments = {
         Pos = Vector(0, 2.5, 2),
     },
     {
-        PrintName = "csgo_category_charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.glock_slide", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.55, 0, 5), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "csgo_category_view",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_pistols_view",
         Bone = "v_weapon.glock_parent",
         Pos = Vector(0, 2.5, 2),
     },
     {
-        PrintName = "csgo_category_stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0.15, -0.1, 0.12),

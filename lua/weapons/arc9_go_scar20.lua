@@ -4,25 +4,27 @@ SWEP.Base = "arc9_go_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - GS:R"
-SWEP.SubCategory = "csgo_category_slot_4"
+SWEP.SubCategory = ARC9:GetPhrase("csgo_category_slot_4")
 
 SWEP.PrintName = ARC9:GetPhrase("csgo_weapon_scar20")
 
-SWEP.Class = "csgo_class_weapon_sniper"
+SWEP.Class = ARC9:GetPhrase("csgo_class_weapon_sniper")
 
 SWEP.Trivia = {
-    ["csgo_trivia_country1"] = "csgo_trivia_country_belgium",
-    ["csgo_trivia_caliber2"] = "csgo_caliber_762",
-    ["csgo_trivia_weight3"] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 3.58, 3.58 * 2.20),
-    ["csgo_trivia_weight_projectile4"] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 175 ),
+    [ARC9:GetPhrase("csgo_trivia_country")] = ARC9:GetPhrase("csgo_trivia_country_belgium"),
+    [ARC9:GetPhrase("csgo_trivia_caliber")] = ARC9:GetPhrase("csgo_caliber_762"),
+    [ARC9:GetPhrase("csgo_trivia_weight")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_val"), 3.58, 3.58 * 2.20),
+    [ARC9:GetPhrase("csgo_trivia_weight_projectile")] = string.format( ARC9:GetPhrase("csgo_trivia_weight_projectile_val"), 175 ),
+    -- [ARC9:GetPhrase("csgo_trivia_muzzle_velocity")] = "2,342 ft/s",
+    -- [ARC9:GetPhrase("csgo_trivia_muzzle_energy")] = "2,890 joules"
 }
 
 SWEP.Credits = {
-    ["csgo_trivia_authors1"] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
-    ["csgo_trivia_assets2"] = "Valve/New World Interactive"
+    [ARC9:GetPhrase("csgo_trivia_authors")] = "Twilight Sparkle/SlogoKolt/Arctic/TheOnly8Z/Matsilagi/CturiX",
+    [ARC9:GetPhrase("csgo_trivia_assets")] = "Valve/New World Interactive"
 }
 
-SWEP.Description = "csgo_description_scar20"
+SWEP.Description = ARC9:GetPhrase("csgo_description_scar20")
 
 SWEP.ViewModel = "models/weapons/csgo/c_snip_scar20.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_g3sg1.mdl"
@@ -547,7 +549,7 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -6.4, 3.4),
         Ang = Angle(90, 0, -90),
@@ -558,14 +560,15 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.4, -1.275, 0),
     },
     {
-        PrintName = "csgo_category_barrel",
+        PrintName = ARC9:GetPhrase("csgo_category_barrel"),
 		Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -4.52, 6.5),
         Ang = Angle(90, 0, -90),
         Category = "go_scar20_barrel"
     },
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
+        DefaultAttName = "Standard Muzzle",
         Category = {"muzzle","muzzle_snipers"},
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -4.52, 23.1),
@@ -573,7 +576,8 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "csgo_category_underbarrel",
+        PrintName = ARC9:GetPhrase("csgo_category_underbarrel"),
+        DefaultAttName = "Default",
         Category = {"grip","grip_scar20"},
 		InstalledElements = {"scar20_grip"},
         Bone = "v_weapon.SCAR_Parent",
@@ -582,7 +586,8 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(-0.5, -2, 0),
     },
     {
-        PrintName = "csgo_category_stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
+        DefaultAttName = "Default",
         Category = {"csgo_tube","stock_retract"},
         Bone = "v_weapon.SCAR_Parent",
 		InstalledElements = {"stock_none"},
@@ -591,7 +596,8 @@ SWEP.Attachments = {
 		Scale = 1,
     },
     {
-        PrintName = "csgo_category_tactical",
+        PrintName = ARC9:GetPhrase("csgo_category_tactical"),
+        DefaultAttName = "Default",
         Category = "csgo_tac",
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(-0.8, -4.6, 18),
@@ -599,25 +605,25 @@ SWEP.Attachments = {
 		LaserCorrectionAngle = Angle(0, 0, 0),
     },
     {
-        PrintName = "csgo_category_ammo",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo"),
         Bone = "v_weapon.SCAR_Clip",
         Category = "go_ammo",
         Pos = Vector(0, 0, -3.25),
     },
     {
-        PrintName = "csgo_category_mag",
+        PrintName = ARC9:GetPhrase("csgo_category_mag"),
 		Bone = "v_weapon.SCAR_Clip",
         Category = "go_scar20_mag",
         Pos = Vector(0, 0, -1),
     },
     {
-        PrintName = "csgo_category_perk",
+        PrintName = ARC9:GetPhrase("csgo_category_perk"),
         Category = "go_perk",
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, 0, 9),
     },
     {
-        PrintName = "csgo_category_skins",
+        PrintName = ARC9:GetPhrase("csgo_category_skins"),
         --Bone = "v_weapon.Clip",
         Category = "go_skins_scar20",
 		InstalledElements = {"skins"},
@@ -627,7 +633,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 9),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_a.mdl",
         Category = "stickers",
 		ExcludeElements = {"stock_none"},
@@ -635,26 +641,26 @@ SWEP.Attachments = {
         Pos = Vector(0, -4.5, -4.5),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_b.mdl",
         Category = "stickers",
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -3.5, 0.25),
     },
     {
-        PrintName = "csgo_category_sticker",
+        PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_c.mdl",
         Category = "stickers",
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, -3, 3.65),
     },
     -- {
-        -- PrintName = "csgo_category_sticker"),
+        -- PrintName = ARC9:GetPhrase("csgo_category_sticker"),
         -- StickerModel = "models/weapons/stickers/v_models/snip_scar20_decal_d.mdl",
         -- Category = "stickers",
     -- },
     {
-        PrintName = "csgo_category_camo",
+        PrintName = ARC9:GetPhrase("csgo_category_camo"),
         Category = {"universal_camo"},
 		InstalledElements = {"camos"},
 		ExcludeElements = {"skins"},
@@ -663,20 +669,20 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 7.5),
     },
     {
-        PrintName = "csgo_category_charm",
+        PrintName = ARC9:GetPhrase("csgo_category_charm"),
         Category = "charm",
         Bone = "v_weapon.SCAR_Parent", -- relevant bone any attachments will be mostly referring to
         Pos = Vector(0.71, -4.75, 5.6), -- offset that the attachment will be relative to the bone
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = "csgo_category_view",
+        PrintName = ARC9:GetPhrase("csgo_category_view"),
         Category = "go_scar20_view",
         Bone = "v_weapon.SCAR_Parent",
         Pos = Vector(0, 0, 7.5),
     },
     {
-        PrintName = "csgo_category_stats",
+        PrintName = ARC9:GetPhrase("csgo_category_stats"),
         Category = "killcounter",
         Bone = "v_weapon.stattrack",
         Pos = Vector(0, 0, 0),

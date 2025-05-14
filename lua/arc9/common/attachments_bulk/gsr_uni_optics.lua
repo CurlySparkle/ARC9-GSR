@@ -511,7 +511,7 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics") .. " II",
 		InstalledElements = {"acog_mount_rail"},	
         Category = {"csgo_optics_pistols_alt",},
         Pos = Vector(4.2, 0, -3.15),

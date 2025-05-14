@@ -22,7 +22,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         Category = {"fas_supp_pistol", "fas_supp_rifle", "fas_supp_shotgun"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -44,7 +44,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"fas_optic"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -66,7 +66,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"fas_optic_small"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -90,7 +90,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         Category = {"cod_muzzle", "cod_muzzle_pistol", "cod_muzzle_sniper"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -112,7 +112,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod_optic", "cod_optic_alt"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -134,7 +134,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod_optic_alt"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -156,7 +156,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_rail",
+        PrintName = ARC9:GetPhrase("csgo_category_rail"),
         Category = {"cod_tactical"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -178,7 +178,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         Category = {"cod_grips"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 180, 0),
@@ -203,7 +203,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         Category = {"eft_foregrip_small", "eft_foregrip_large"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 180),
@@ -250,7 +250,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         Category = {"eft_ar15_muzzle"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -272,7 +272,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(-0.5, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -294,7 +294,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"eft_optic_small"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -316,7 +316,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         Category = {"eft_ar_stock"},
         Pos = Vector(5, 0, 0.85),
         Ang = Angle(0, 0, 0),
@@ -341,7 +341,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         Category = {"cod2019_muzzle"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -367,7 +367,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod2019_optic", "cod2019_optic_raised", "cod2019_optic_big"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -393,7 +393,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"cod2019_optic_pistol", "cod2019_optics_pistols_scope"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -419,7 +419,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_rail",
+        PrintName = ARC9:GetPhrase("csgo_category_rail"),
         Category = {"cod2019_tac"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -444,7 +444,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         Category = {"cod2019_grip"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -470,7 +470,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         Category = {"cod2019_stocks"},
         Pos = Vector(1, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -499,7 +499,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle"),
         Category = {"uplp_muzzle", "uplp_muzzle_pistol"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -521,7 +521,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"uplp_optic_small", "uplp_optic_backup", "uplp_optic_mid", "uplp_optic_big"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -543,7 +543,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics",
+        PrintName = ARC9:GetPhrase("csgo_category_optics"),
         Category = {"uplp_optic_small"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -565,7 +565,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_rail",
+        PrintName = ARC9:GetPhrase("csgo_category_rail"),
         Category = {"uplp_tac", "uplp_tac_top"},
         Pos = Vector(-1, 0, 0),
         Ang = Angle(0, 0, 180),
@@ -587,7 +587,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_grip",
+        PrintName = ARC9:GetPhrase("csgo_category_grip"),
         Category = {"uplp_grip_horiz", "uplp_grip_vert"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 90, 90),
@@ -609,7 +609,7 @@ ATT.Folder = ARC9:GetPhrase("csgo_folder_special")
 ATT.Free = true
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_stock",
+        PrintName = ARC9:GetPhrase("csgo_category_stock"),
         Category = {"uplp_ar15_stock"},
         Pos = Vector(3.5, 0, 0),
         Ang = Angle(0, 0, 0),

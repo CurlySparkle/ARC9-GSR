@@ -377,8 +377,8 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_optics_m203",
-        Category = {"sight_m203_ubgl"},
+        PrintName = ARC9:GetPhrase("csgo_category_optics_m203"),
+        Category = {"sight_m203_ubgl"},		
         Pos = Vector(-15.4, 0.2, -0.75),
         Ang = Angle(0, 0, 180),
 		Icon_Offset = Vector(-13, 0, -0.75),
@@ -608,7 +608,7 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle_mass",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle_mass"),
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
         Pos = Vector(-15.4, 0.2, -0.75),
@@ -616,7 +616,7 @@ ATT.Attachments = {
 		Icon_Offset = Vector(-7, 0, 0),
 	},
     {
-        PrintName = "csgo_category_ammo_mass",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo_mass"),
         Category = "go_ammo_sg_ubgl",
         Pos = Vector(-4.5, 0.2, -2.5),
         Ang = Angle(0, 0, 0),		
@@ -812,7 +812,7 @@ end
 
 ATT.Attachments = {
     {
-        PrintName = "csgo_category_muzzle_xm1014",
+        PrintName = ARC9:GetPhrase("csgo_category_muzzle_xm1014"),
         Category = {"muzzle_shotgun_ubgl"},
         InstalledElements = {"ubgl_accune_canon"},		
         Pos = Vector(-14.1, 0.2, -0.25),
@@ -820,7 +820,7 @@ ATT.Attachments = {
 		Icon_Offset = Vector(-7, 0, 0),
 	},   
     {
-        PrintName = "csgo_category_ammo_xm1014",
+        PrintName = ARC9:GetPhrase("csgo_category_ammo_xm1014"),
         Category = "go_ammo_sg_ubgl",
         Pos = Vector(-3, 0.2, -2),
         Ang = Angle(0, 0, 0),		
